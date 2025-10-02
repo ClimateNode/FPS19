@@ -1,6 +1,6 @@
 
 
-# Topics with coordinates
+# Mapped topics
 
 ## Bournemouth
 * The report investigates flooding that affected Bournemouth on 3rd July 2015; it documents the event for local flood investigation purposes (Section 19). (p1)
@@ -184,7 +184,7 @@
 * Observed surface-water flooding locations (red) within the ward on 3rd July 2015 as shown on the map; some observed flood points coincide with modelled 1-in-100-year (>150mm) predicted flood zones along low-lying corridors. (p31) [IMG]
 
 
-# Topics without coordinates
+# Unmapped topics
 
 ## Bournemouth Borough Council
 * Bournemouth Borough Council recorded and responded to widespread flash flooding on the night of 3 July 2015; carried out urgent carriageway repairs where highways were damaged; involved in reporting/recording incidents and supporting cleanup operations alongside Wessex Water. (p3)

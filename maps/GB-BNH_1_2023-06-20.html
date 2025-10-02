@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b2a628994b9c0a041a20de066a2e5cd2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b2a628994b9c0a041a20de066a2e5cd2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b2a628994b9c0a041a20de066a2e5cd2 = L.map(
+                "map_b2a628994b9c0a041a20de066a2e5cd2",
+                {
+                    center: [50.83764876791773, -0.13806687561250106],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c2ea1dd7e6fd2b64b990e8283bc12379 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_c2ea1dd7e6fd2b64b990e8283bc12379.addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+    
+            var marker_218e7d10327d9b923c19d673c2b429d7 = L.marker(
+                [50.83979647313847, -0.14627916690978693],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_59c659b0bb1680272a2d1b45a7ba97da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_218e7d10327d9b923c19d673c2b429d7.setIcon(icon_59c659b0bb1680272a2d1b45a7ba97da);
+        
+    
+        var popup_5cb3a8de6277285a4345b9d55e9125f3 = L.popup({});
+
+        
+            
+                var html_a81cf9748e2e26476979606fccc14378 = $(`<div id="html_a81cf9748e2e26476979606fccc14378" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Preston Park</h1><div class="nugget-popup"><p>Preston Park was one of the areas where recorded flooding incidents occurred during the 20 June 2023 event; it formed part of the concentration of incidents in central Brighton and Hove. (p16)</p></div></div></body></div>`)[0];
+                popup_5cb3a8de6277285a4345b9d55e9125f3.setContent(html_a81cf9748e2e26476979606fccc14378);
+            
+        
+
+        marker_218e7d10327d9b923c19d673c2b429d7.bindPopup(popup_5cb3a8de6277285a4345b9d55e9125f3)
+        ;
+
+        
+    
+    
+            var marker_12944b5ba58d6fb1616dd424cdd9776f = L.marker(
+                [50.8243499, -0.1486285],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_14cf9e3957bab43589b8122cf820d75f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_12944b5ba58d6fb1616dd424cdd9776f.setIcon(icon_14cf9e3957bab43589b8122cf820d75f);
+        
+    
+        var popup_5370a1d0cb48e08b98a30c0d6db595b9 = L.popup({});
+
+        
+            
+                var html_49a8225a980aba4ffa51027db286cd0d = $(`<div id="html_49a8225a980aba4ffa51027db286cd0d" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Poundland</h1><div class="nugget-popup"><p>Poundland on Western Road experienced internal flooding and was evacuated, affecting the store and customers. (p14)</p></div></div></body></div>`)[0];
+                popup_5370a1d0cb48e08b98a30c0d6db595b9.setContent(html_49a8225a980aba4ffa51027db286cd0d);
+            
+        
+
+        marker_12944b5ba58d6fb1616dd424cdd9776f.bindPopup(popup_5370a1d0cb48e08b98a30c0d6db595b9)
+        ;
+
+        
+    
+    
+            var marker_f5fa210c43289e8afc1bd6181a62f29c = L.marker(
+                [50.82302348929441, -0.1403780234254464],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_ceee83fa403406b4a87fafafdc730f36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f5fa210c43289e8afc1bd6181a62f29c.setIcon(icon_ceee83fa403406b4a87fafafdc730f36);
+        
+    
+        var popup_e937f4aa7689b4289236eff7b7fe959f = L.popup({});
+
+        
+            
+                var html_67e3adc63128aa9e37ba5b13f3de5ec4 = $(`<div id="html_67e3adc63128aa9e37ba5b13f3de5ec4" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Post and Telegraph</h1><div class="nugget-popup"><p>Listed among homes and businesses reported as flooded in news coverage, indicating the premises experienced flooding. (p14)</p></div></div></body></div>`)[0];
+                popup_e937f4aa7689b4289236eff7b7fe959f.setContent(html_67e3adc63128aa9e37ba5b13f3de5ec4);
+            
+        
+
+        marker_f5fa210c43289e8afc1bd6181a62f29c.bindPopup(popup_e937f4aa7689b4289236eff7b7fe959f)
+        ;
+
+        
+    
+    
+            var marker_75f7c89f43be120c449223d424fd2e82 = L.marker(
+                [50.8360475, -0.1422632],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_f2c25263398981695f0ec0bb508b62d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_75f7c89f43be120c449223d424fd2e82.setIcon(icon_f2c25263398981695f0ec0bb508b62d4);
+        
+    
+        var popup_4f7e82bbe3f9489afc42d6ed023252f7 = L.popup({});
+
+        
+            
+                var html_d37089561c0c82a0ec8e4199e7817045 = $(`<div id="html_d37089561c0c82a0ec8e4199e7817045" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wellend Villas</h1><div class="nugget-popup"><p>East Sussex Fire and Rescue attended Wellend Villas / Springfield Road area as a result of flooding. (p15)</p></div></div></body></div>`)[0];
+                popup_4f7e82bbe3f9489afc42d6ed023252f7.setContent(html_d37089561c0c82a0ec8e4199e7817045);
+            
+        
+
+        marker_75f7c89f43be120c449223d424fd2e82.bindPopup(popup_4f7e82bbe3f9489afc42d6ed023252f7)
+        ;
+
+        
+    
+    
+            var marker_18a7fedf457dfe2f487b0e2a413e0264 = L.marker(
+                [50.8321466, -0.1299916],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_46ecb5b206a42349bb243ba559ae8952 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_18a7fedf457dfe2f487b0e2a413e0264.setIcon(icon_46ecb5b206a42349bb243ba559ae8952);
+        
+    
+        var popup_ec6172cc7190836ceb98604944aadee2 = L.popup({});
+
+        
+            
+                var html_52bf7d036db7d02a3f1785f01cc43e70 = $(`<div id="html_52bf7d036db7d02a3f1785f01cc43e70" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Park Crescent Health Centre</h1><div class="nugget-popup"><p>Standing floodwater outside the health centre impeded pedestrian movement and affected the street immediately adjacent to the building; wheelie bins and parked vehicles were in the flooded area. [IMG] (p31)</p></div></div></body></div>`)[0];
+                popup_ec6172cc7190836ceb98604944aadee2.setContent(html_52bf7d036db7d02a3f1785f01cc43e70);
+            
+        
+
+        marker_18a7fedf457dfe2f487b0e2a413e0264.bindPopup(popup_ec6172cc7190836ceb98604944aadee2)
+        ;
+
+        
+    
+    
+            var marker_9918ac37d5db64b33ac8015b18804a15 = L.marker(
+                [50.8250647, -0.1518967],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_37cced428a2e24f486bfea6f3a5e0c2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9918ac37d5db64b33ac8015b18804a15.setIcon(icon_37cced428a2e24f486bfea6f3a5e0c2e);
+        
+    
+        var popup_d1a1b0d284e6033bd6b55585003c73b2 = L.popup({});
+
+        
+            
+                var html_473f3e63aa871fe86b963889a95ce8b5 = $(`<div id="html_473f3e63aa871fe86b963889a95ce8b5" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Waitrose</h1><div class="nugget-popup"><p>Internal flooding of the Waitrose supermarket causing the store to close. (p14)</p></div><div class="nugget-popup"><p>Floodwater pooled on the pavement immediately outside the Waitrose store, forming a large puddle that reflected the building and temporary barriers; barriers were deployed at the store frontage to manage the flooding, disrupting the store frontage and pedestrian access. [IMG] (p32)</p></div></div></body></div>`)[0];
+                popup_d1a1b0d284e6033bd6b55585003c73b2.setContent(html_473f3e63aa871fe86b963889a95ce8b5);
+            
+        
+
+        marker_9918ac37d5db64b33ac8015b18804a15.bindPopup(popup_d1a1b0d284e6033bd6b55585003c73b2)
+        ;
+
+        
+    
+    
+            var marker_18c2a2741df329b51ca82bc9dde90750 = L.marker(
+                [50.8453169, -0.1497469],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_b0d4962021f48eb43f046ccd8bc2f85c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_18c2a2741df329b51ca82bc9dde90750.setIcon(icon_b0d4962021f48eb43f046ccd8bc2f85c);
+        
+    
+        var popup_9180ac115d8797afe77e962e6bfcdd08 = L.popup({});
+
+        
+            
+                var html_80c04685c2d9c922b85606668d2c9e7b = $(`<div id="html_80c04685c2d9c922b85606668d2c9e7b" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brighton and Hove</h1><div class="nugget-popup"><p>Heavy rainfall on 20 June 2023 produced localised surface water flooding across Brighton and Hove, affecting both commercial and residential locations; flows were routed along the highway network and followed the steeply sloping terrain. (p5)</p></div><div class="nugget-popup"><p>Reports of flooding across several locations in the city on 20 June 2023, affecting both commercial and residential areas. (p6)</p></div><div class="nugget-popup"><p>Reported flood incidents across the study area on 20 June 2023 affected multiple catchments and identified &#8216;hotspot&#8217; locations, prompting a Section 19 investigation and formulation of an Action Plan and mitigation measures for the city. (p8)</p></div><div class="nugget-popup"><p>The City was impacted by flooding on 20th June 2023 due to heavy rain and thunderstorms, causing surface water flooding across the City. (p13)</p></div><div class="nugget-popup"><p>Authority area experienced recorded flooding incidents during the 20 June 2023 heavy&ndash;shower event; incidents were concentrated in central Brighton and Hove and surrounding neighbourhoods. (p16)</p></div><div class="nugget-popup"><p>The authority area experienced multiple localised flood incidents during the June 2023 event; the report locates a centroid (531477, 106640) in the centre of most recorded flood incidents in the urban area and uses local gauge and FEH point data to analyse the event. (p18)</p></div><div class="nugget-popup"><p>Multiple recorded flood incidents across the authority area during the 1&ndash;hour intense rainfall on 20th June 2023, concentrated in central Brighton and the southern seafront. The local gauge observed ~26.6&ndash;26.8 mm in one hour; modelling translated this to a ~150&ndash;year 1&ndash;hour design hyetograph, indicating an unusually severe short&ndash;duration surface&ndash;water flooding episode affecting the urban area. [IMG] (p19)</p></div><div class="nugget-popup"><p>Surface water flooding during the June 2023 rainfall led to multiple reported incidents from local residents. The Lead Local Flood Authority (Brighton and Hove City Council) commissioned an investigation into these reported incidents, and the Highway Authority responded to emails from the public reporting blocked gullies and drains and concerns that flood water was not draining away. (p20)</p></div><div class="nugget-popup"><p>Heavy rainfall in June 2023 produced surface water flooding across the city; the urban form (hills and valleys, lack of open watercourses) caused runoff to concentrate and produce reported flooding incidents, with floodwaters routed along urban streets and into low&ndash;lying areas. (p22)</p></div><div class="nugget-popup"><p>Heavy rainfall on 20th June 2023 produced localised surface water flooding across the area, affecting both commercial and residential locations; 11 incidents were reported to the city council and flooding was reported in social media and news. (p23)</p></div><div class="nugget-popup"><p>Homes and businesses in the city were flooded following a thunderstorm, causing internal property flooding and disruption to commerce and local streets. (p31)</p></div><div class="nugget-popup"><p>Experienced flooding in June 2023, prompting ESFRS call&ndash;outs and a Section 19 Flood Investigation by the local authority. (p41)</p></div></div></body></div>`)[0];
+                popup_9180ac115d8797afe77e962e6bfcdd08.setContent(html_80c04685c2d9c922b85606668d2c9e7b);
+            
+        
+
+        marker_18c2a2741df329b51ca82bc9dde90750.bindPopup(popup_9180ac115d8797afe77e962e6bfcdd08)
+        ;
+
+        
+    
+    
+            var marker_51e778ca42ea076c1669a84422aaa26e = L.marker(
+                [50.8335862, -0.1387796],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_1899155604e9b67324d1045ed529561b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_51e778ca42ea076c1669a84422aaa26e.setIcon(icon_1899155604e9b67324d1045ed529561b);
+        
+    
+        var popup_2ce9d8d7dc383e8d9fcc6481172a539f = L.popup({});
+
+        
+            
+                var html_dfb6cf0be3fac8964368da91cb2a8f94 = $(`<div id="html_dfb6cf0be3fac8964368da91cb2a8f94" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>A23 at Brighton and Hove</h1><div class="nugget-popup"><p>The A23 experienced flooding&ndash;related delays and roads leading up to it were reported flooded during the storm on 20 June 2023. (p14)</p></div></div></body></div>`)[0];
+                popup_2ce9d8d7dc383e8d9fcc6481172a539f.setContent(html_dfb6cf0be3fac8964368da91cb2a8f94);
+            
+        
+
+        marker_51e778ca42ea076c1669a84422aaa26e.bindPopup(popup_2ce9d8d7dc383e8d9fcc6481172a539f)
+        ;
+
+        
+    
+    
+            var marker_599cdb03544cee5745ff48b8629ad4b1 = L.marker(
+                [50.8460091, -0.1553443],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_0c3aed90293f3fb918f15e57af280d74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_599cdb03544cee5745ff48b8629ad4b1.setIcon(icon_0c3aed90293f3fb918f15e57af280d74);
+        
+    
+        var popup_ba9120dd5b24510f4db3cf660bad6259 = L.popup({});
+
+        
+            
+                var html_1c16c52ef73d7fe901be63f78967da7d = $(`<div id="html_1c16c52ef73d7fe901be63f78967da7d" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Preston Park Station</h1><div class="nugget-popup"><p>The footpath at Preston Park Station was recorded as flooded during the storm. (p14)</p></div></div></body></div>`)[0];
+                popup_ba9120dd5b24510f4db3cf660bad6259.setContent(html_1c16c52ef73d7fe901be63f78967da7d);
+            
+        
+
+        marker_599cdb03544cee5745ff48b8629ad4b1.bindPopup(popup_ba9120dd5b24510f4db3cf660bad6259)
+        ;
+
+        
+    
+    
+            var marker_e15159da990aa8103829b236ae4db7dd = L.marker(
+                [50.8545097, -0.2391693],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_d2c9db1baa022cae34eca675fd3fff32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e15159da990aa8103829b236ae4db7dd.setIcon(icon_d2c9db1baa022cae34eca675fd3fff32);
+        
+    
+        var popup_4baebd217b8a97445507f965e097a344 = L.popup({});
+
+        
+            
+                var html_841210e876288e24affe621b4a68b93d = $(`<div id="html_841210e876288e24affe621b4a68b93d" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brighton Bypass</h1><div class="nugget-popup"><p>The A27 Brighton bypass experienced flooding&ndash;related delays as a result of heavy rain on 20 June 2023. (p14)</p></div></div></body></div>`)[0];
+                popup_4baebd217b8a97445507f965e097a344.setContent(html_841210e876288e24affe621b4a68b93d);
+            
+        
+
+        marker_e15159da990aa8103829b236ae4db7dd.bindPopup(popup_4baebd217b8a97445507f965e097a344)
+        ;
+
+        
+    
+    
+            var marker_fb9b3f50b9f5462ecab60f63d11eee59 = L.marker(
+                [50.8315522, -0.1240981],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_58b74457253d73180cb202a8a20987bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fb9b3f50b9f5462ecab60f63d11eee59.setIcon(icon_58b74457253d73180cb202a8a20987bc);
+        
+    
+        var popup_bfd8e58f8d73cce7bea1274e9e51a226 = L.popup({});
+
+        
+            
+                var html_2b570dd0db607b6abc7e4816d2bba3a3 = $(`<div id="html_2b570dd0db607b6abc7e4816d2bba3a3" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Elm Grove</h1><div class="nugget-popup"><p>A flow path was observed running down Elm Grove toward the Lewes Road junction, indicating surface water flow along the street. (p14)</p></div><div class="nugget-popup"><p>Photographic evidence shows standing floodwater on the road affecting pedestrians, wheelie bins and parked vehicles, demonstrating localized street flooding during heavy rain. (p31)</p></div></div></body></div>`)[0];
+                popup_bfd8e58f8d73cce7bea1274e9e51a226.setContent(html_2b570dd0db607b6abc7e4816d2bba3a3);
+            
+        
+
+        marker_fb9b3f50b9f5462ecab60f63d11eee59.bindPopup(popup_bfd8e58f8d73cce7bea1274e9e51a226)
+        ;
+
+        
+    
+    
+            var marker_cbcd8c39da6eeba3f8393f4147865955 = L.marker(
+                [50.822773, -0.1215913],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_f05ef46f623272b132d446a05b87b224 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cbcd8c39da6eeba3f8393f4147865955.setIcon(icon_f05ef46f623272b132d446a05b87b224);
+        
+    
+        var popup_3210cfb719166f45f52b63971d80340a = L.popup({});
+
+        
+            
+                var html_46031568c6e0c17aaf5c26f04ecbc9bc = $(`<div id="html_46031568c6e0c17aaf5c26f04ecbc9bc" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sutherland Road</h1><div class="nugget-popup"><p>Flash flooding observed pouring down Sutherland Road from Whitehawk Hill, inundating the road and contributing to local transport disruption. (p14)</p></div></div></body></div>`)[0];
+                popup_3210cfb719166f45f52b63971d80340a.setContent(html_46031568c6e0c17aaf5c26f04ecbc9bc);
+            
+        
+
+        marker_cbcd8c39da6eeba3f8393f4147865955.bindPopup(popup_3210cfb719166f45f52b63971d80340a)
+        ;
+
+        
+    
+    
+            var marker_04a0129a8e66d2135e8cbf35b8364fd6 = L.marker(
+                [50.8502553, -0.1107518],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_102ca3ace1f0f23e285766298786ae3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_04a0129a8e66d2135e8cbf35b8364fd6.setIcon(icon_102ca3ace1f0f23e285766298786ae3a);
+        
+    
+        var popup_5c4a906574b5204e2171a50f986741b2 = L.popup({});
+
+        
+            
+                var html_a07371839e8220c5e336268a4551f0e4 = $(`<div id="html_a07371839e8220c5e336268a4551f0e4" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lewes Road</h1><div class="nugget-popup"><p>The junction with Elm Grove at Lewes Road received overland flow from Elm Grove during the storm, indicating localized flooding at the junction. (p14)</p></div></div></body></div>`)[0];
+                popup_5c4a906574b5204e2171a50f986741b2.setContent(html_a07371839e8220c5e336268a4551f0e4);
+            
+        
+
+        marker_04a0129a8e66d2135e8cbf35b8364fd6.bindPopup(popup_5c4a906574b5204e2171a50f986741b2)
+        ;
+
+        
+    
+    
+            var marker_89a2545cc08084860d7f77d10a5b5953 = L.marker(
+                [50.865875, -0.129302],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_edc937a867966502d3923a5f37593ab4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_89a2545cc08084860d7f77d10a5b5953.setIcon(icon_edc937a867966502d3923a5f37593ab4);
+        
+    
+        var popup_9fbe2ceb9e7223ea5860d9c6791fe6cf = L.popup({});
+
+        
+            
+                var html_51732e43b16639ac73260278f88f3000 = $(`<div id="html_51732e43b16639ac73260278f88f3000" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Carden Avenue</h1><div class="nugget-popup"><p>Reported flooding affecting properties on Carden Avenue (reported as an incident in the council correspondence). (p14)</p></div><div class="nugget-popup"><p>Floodwater entered the property threshold and garden as evidenced by horizontal mud marks on the door and exterior wall; garden was flooded. (p33)</p></div></div></body></div>`)[0];
+                popup_9fbe2ceb9e7223ea5860d9c6791fe6cf.setContent(html_51732e43b16639ac73260278f88f3000);
+            
+        
+
+        marker_89a2545cc08084860d7f77d10a5b5953.bindPopup(popup_9fbe2ceb9e7223ea5860d9c6791fe6cf)
+        ;
+
+        
+    
+    
+            var marker_38e1adc7c3b64305b795c8f1ab16db7e = L.marker(
+                [50.82511188520854, -0.15449762398882658],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_fa3ef3a8bb69afb20cd848f610721eb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_38e1adc7c3b64305b795c8f1ab16db7e.setIcon(icon_fa3ef3a8bb69afb20cd848f610721eb9);
+        
+    
+        var popup_c20821af343decc413a8ead07d7eefa6 = L.popup({});
+
+        
+            
+                var html_2077908685142492b4fb8cfe0c34b1e0 = $(`<div id="html_2077908685142492b4fb8cfe0c34b1e0" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Western Road</h1><div class="nugget-popup"><p>Flooding affected retail premises on Western Road (internal flooding at Waitrose and Poundland), leading to store closure/evacuation and local disruption. (p14)</p></div></div></body></div>`)[0];
+                popup_c20821af343decc413a8ead07d7eefa6.setContent(html_2077908685142492b4fb8cfe0c34b1e0);
+            
+        
+
+        marker_38e1adc7c3b64305b795c8f1ab16db7e.bindPopup(popup_c20821af343decc413a8ead07d7eefa6)
+        ;
+
+        
+    
+    
+            var marker_22b525f993572f587b773a7e2bd9ac4c = L.marker(
+                [50.8479625, -0.223097],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_c99758084933c52d93c01b8b5525060d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_22b525f993572f587b773a7e2bd9ac4c.setIcon(icon_c99758084933c52d93c01b8b5525060d);
+        
+    
+        var popup_ecd8dd1d375f6a94acd431b718fe2ced = L.popup({});
+
+        
+            
+                var html_a4b42eced4d157e89a143f5ec9cf8f37 = $(`<div id="html_a4b42eced4d157e89a143f5ec9cf8f37" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Valley Road</h1><div class="nugget-popup"><p>Valley Road was reported as flooded during the heavy rain and thunderstorms on 20 June 2023. (p14)</p></div><div class="nugget-popup"><p>Standing floodwater pooled immediately outside a ground&ndash;floor window and against the building, submerging garden and adjacent paved/parking area and posing a risk of water ingress to the property. [IMG] (p36)</p></div></div></body></div>`)[0];
+                popup_ecd8dd1d375f6a94acd431b718fe2ced.setContent(html_a4b42eced4d157e89a143f5ec9cf8f37);
+            
+        
+
+        marker_22b525f993572f587b773a7e2bd9ac4c.bindPopup(popup_ecd8dd1d375f6a94acd431b718fe2ced)
+        ;
+
+        
+    
+    
+            var marker_d61b4b9c5aab3ea639d4a1abe5b1b96a = L.marker(
+                [50.862199903876906, -0.14281134673687101],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_45217bc55b9a6d4caa590eb4ba4ba652 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d61b4b9c5aab3ea639d4a1abe5b1b96a.setIcon(icon_45217bc55b9a6d4caa590eb4ba4ba652);
+        
+    
+        var popup_e6a30ee3ef7434dacc1beab64fd72993 = L.popup({});
+
+        
+            
+                var html_dcc7d855277ca6b8ef852b1958cccfcb = $(`<div id="html_dcc7d855277ca6b8ef852b1958cccfcb" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Warmdene Road</h1><div class="nugget-popup"><p>Residential properties (No. 12, 14, 18, 19 and 20b Warmdene Road) were flooded during the heavy rain and thunderstorms. (p14)</p></div></div></body></div>`)[0];
+                popup_e6a30ee3ef7434dacc1beab64fd72993.setContent(html_dcc7d855277ca6b8ef852b1958cccfcb);
+            
+        
+
+        marker_d61b4b9c5aab3ea639d4a1abe5b1b96a.bindPopup(popup_e6a30ee3ef7434dacc1beab64fd72993)
+        ;
+
+        
+    
+    
+            var marker_2c3408eddbc6ca934138a9d9b51631d0 = L.marker(
+                [50.857292, -0.1337647],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_a5e916a9cc4e1f23eaa8780df138407e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2c3408eddbc6ca934138a9d9b51631d0.setIcon(icon_a5e916a9cc4e1f23eaa8780df138407e);
+        
+    
+        var popup_07cb451a384e939a3bcaaa22e51d73b8 = L.popup({});
+
+        
+            
+                var html_3735d0a56ba7753b9c76ebe025b075dc = $(`<div id="html_3735d0a56ba7753b9c76ebe025b075dc" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hartfield Avenue</h1><div class="nugget-popup"><p>Residential property at 63 Hartfield Avenue flooded during the heavy rain and thunderstorms. (p14)</p></div></div></body></div>`)[0];
+                popup_07cb451a384e939a3bcaaa22e51d73b8.setContent(html_3735d0a56ba7753b9c76ebe025b075dc);
+            
+        
+
+        marker_2c3408eddbc6ca934138a9d9b51631d0.bindPopup(popup_07cb451a384e939a3bcaaa22e51d73b8)
+        ;
+
+        
+    
+    
+            var marker_fc45a3bf652f40475fb02f2dbf52cf69 = L.marker(
+                [50.8590693, -0.1289882],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_1c5746a8f5a345531dd4b35736a9d60f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fc45a3bf652f40475fb02f2dbf52cf69.setIcon(icon_1c5746a8f5a345531dd4b35736a9d60f);
+        
+    
+        var popup_5b11f01db5592e546068487fef331543 = L.popup({});
+
+        
+            
+                var html_739e164c0cf2cf32c833d44da4d83581 = $(`<div id="html_739e164c0cf2cf32c833d44da4d83581" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rotherfield Crescent</h1><div class="nugget-popup"><p>Residential property at 87 Rotherfield Crescent flooded during the heavy rain and thunderstorms. (p14)</p></div></div></body></div>`)[0];
+                popup_5b11f01db5592e546068487fef331543.setContent(html_739e164c0cf2cf32c833d44da4d83581);
+            
+        
+
+        marker_fc45a3bf652f40475fb02f2dbf52cf69.bindPopup(popup_5b11f01db5592e546068487fef331543)
+        ;
+
+        
+    
+    
+            var marker_b77d56d1d8dd5a17ddf11cfd43471bcf = L.marker(
+                [50.8209009, -0.1398446],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_11d6ea5ae0693a5c6e1d3c044b01152b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b77d56d1d8dd5a17ddf11cfd43471bcf.setIcon(icon_11d6ea5ae0693a5c6e1d3c044b01152b);
+        
+    
+        var popup_88183f2957c050db3821b31157ddc53b = L.popup({});
+
+        
+            
+                var html_0e432aebb3fcad940f2999dada0f3aeb = $(`<div id="html_0e432aebb3fcad940f2999dada0f3aeb" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bartholomews</h1><div class="nugget-popup"><p>Flooding at Batholomews (Brighton) that required attendance by East Sussex Fire and Rescue Service on 23rd June 2023. (p15)</p></div></div></body></div>`)[0];
+                popup_88183f2957c050db3821b31157ddc53b.setContent(html_0e432aebb3fcad940f2999dada0f3aeb);
+            
+        
+
+        marker_b77d56d1d8dd5a17ddf11cfd43471bcf.bindPopup(popup_88183f2957c050db3821b31157ddc53b)
+        ;
+
+        
+    
+    
+            var marker_60512122031a84aeb0f2594ed60acbca = L.marker(
+                [50.8411355, -0.1421619],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_cce3e842fe455e80af458562e4bd193b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_60512122031a84aeb0f2594ed60acbca.setIcon(icon_cce3e842fe455e80af458562e4bd193b);
+        
+    
+        var popup_9a370d64cc4da42baa5a8c9e2bc08c36 = L.popup({});
+
+        
+            
+                var html_f7fc6b31ee7cfbcde3c40059176633bb = $(`<div id="html_f7fc6b31ee7cfbcde3c40059176633bb" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Beaconsfield Villas</h1><div class="nugget-popup"><p>Flooding on Beaconsfield Villas (Brighton) requiring East Sussex Fire and Rescue Service attendance on 23rd June 2023. (p15)</p></div></div></body></div>`)[0];
+                popup_9a370d64cc4da42baa5a8c9e2bc08c36.setContent(html_f7fc6b31ee7cfbcde3c40059176633bb);
+            
+        
+
+        marker_60512122031a84aeb0f2594ed60acbca.bindPopup(popup_9a370d64cc4da42baa5a8c9e2bc08c36)
+        ;
+
+        
+    
+    
+            var marker_5ce6ddb2b8a363ddad12a74b06b99c99 = L.marker(
+                [50.8191584, -0.1255236],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_437dcf5e2aad96066f7c88cc044ca16d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5ce6ddb2b8a363ddad12a74b06b99c99.setIcon(icon_437dcf5e2aad96066f7c88cc044ca16d);
+        
+    
+        var popup_db7ade483e511ea32064decfdfa34f3f = L.popup({});
+
+        
+            
+                var html_aea47a924f9a93ef6ef6fc3964e26322 = $(`<div id="html_aea47a924f9a93ef6ef6fc3964e26322" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bristol Road</h1><div class="nugget-popup"><p>Flooding on Bristol Road (Brighton) which was attended by East Sussex Fire and Rescue Service on 23rd June 2023. (p15)</p></div></div></body></div>`)[0];
+                popup_db7ade483e511ea32064decfdfa34f3f.setContent(html_aea47a924f9a93ef6ef6fc3964e26322);
+            
+        
+
+        marker_5ce6ddb2b8a363ddad12a74b06b99c99.bindPopup(popup_db7ade483e511ea32064decfdfa34f3f)
+        ;
+
+        
+    
+    
+            var marker_1e72013024fd3cf27e6422f84b862798 = L.marker(
+                [50.8261909, -0.15838],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_c7881bc1a2ee38cdfc995cf262d62ca6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1e72013024fd3cf27e6422f84b862798.setIcon(icon_c7881bc1a2ee38cdfc995cf262d62ca6);
+        
+    
+        var popup_73b23f969ce58293ceaabd909b49f940 = L.popup({});
+
+        
+            
+                var html_1714c4b871414cd390efc90e4e928eb9 = $(`<div id="html_1714c4b871414cd390efc90e4e928eb9" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brunswick Place</h1><div class="nugget-popup"><p>East Sussex Fire and Rescue Service attended Brunswick Place due to flooding; road&ndash;level flooding and emergency response were reported at this location. (p15)</p></div></div></body></div>`)[0];
+                popup_73b23f969ce58293ceaabd909b49f940.setContent(html_1714c4b871414cd390efc90e4e928eb9);
+            
+        
+
+        marker_1e72013024fd3cf27e6422f84b862798.bindPopup(popup_73b23f969ce58293ceaabd909b49f940)
+        ;
+
+        
+    
+    
+            var marker_9548b380d1437b64f2744c892cd9a1e5 = L.marker(
+                [50.8263801, -0.1317678],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_36e22e2482f6a8ccbfe0670e3ae73f15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9548b380d1437b64f2744c892cd9a1e5.setIcon(icon_36e22e2482f6a8ccbfe0670e3ae73f15);
+        
+    
+        var popup_4e89a325083b81b82eb37563f2109e9d = L.popup({});
+
+        
+            
+                var html_ee588696ef8cf5946e905c21ac7eb21a = $(`<div id="html_ee588696ef8cf5946e905c21ac7eb21a" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>John Street</h1><div class="nugget-popup"><p>East Sussex Fire and Rescue Service attended John Street due to flooding; the attendance indicates flooding impact on the street (roads/properties) at this address. (p15)</p></div></div></body></div>`)[0];
+                popup_4e89a325083b81b82eb37563f2109e9d.setContent(html_ee588696ef8cf5946e905c21ac7eb21a);
+            
+        
+
+        marker_9548b380d1437b64f2744c892cd9a1e5.bindPopup(popup_4e89a325083b81b82eb37563f2109e9d)
+        ;
+
+        
+    
+    
+            var marker_651ee76343f0f9a5955763e441f2fa2b = L.marker(
+                [50.8374988, -0.1722591],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_1035373eab408d3b978f8e8380380f01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_651ee76343f0f9a5955763e441f2fa2b.setIcon(icon_1035373eab408d3b978f8e8380380f01);
+        
+    
+        var popup_792f348d4a5c166e373c2070506f4ca2 = L.popup({});
+
+        
+            
+                var html_eaf31be525388f4b22a6651462b65c4d = $(`<div id="html_eaf31be525388f4b22a6651462b65c4d" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fonthill Road</h1><div class="nugget-popup"><p>East Sussex Fire and Rescue Service attended Hove Business Centre on Fonthill Road due to flooding; indicates flooding affected the road and business premises at this location. (p15)</p></div></div></body></div>`)[0];
+                popup_792f348d4a5c166e373c2070506f4ca2.setContent(html_eaf31be525388f4b22a6651462b65c4d);
+            
+        
+
+        marker_651ee76343f0f9a5955763e441f2fa2b.bindPopup(popup_792f348d4a5c166e373c2070506f4ca2)
+        ;
+
+        
+    
+    
+            var marker_9e966d71248a5c61d011f1ba48cb809f = L.marker(
+                [50.8297089, -0.1279712],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_425d91a94a11a7db165fe1d040072cc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9e966d71248a5c61d011f1ba48cb809f.setIcon(icon_425d91a94a11a7db165fe1d040072cc5);
+        
+    
+        var popup_711c752ae8cb38356f6ba8a11e52268f = L.popup({});
+
+        
+            
+                var html_984dfd0b2720a5d5664f25b556cc2591 = $(`<div id="html_984dfd0b2720a5d5664f25b556cc2591" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Jackson Street</h1><div class="nugget-popup"><p>East Sussex Fire and Rescue Service attended Jackson Street due to flooding; indicates road/property flooding and emergency response at this location. (p15)</p></div></div></body></div>`)[0];
+                popup_711c752ae8cb38356f6ba8a11e52268f.setContent(html_984dfd0b2720a5d5664f25b556cc2591);
+            
+        
+
+        marker_9e966d71248a5c61d011f1ba48cb809f.bindPopup(popup_711c752ae8cb38356f6ba8a11e52268f)
+        ;
+
+        
+    
+    
+            var marker_459ba12f35c753ed7a9c36594c4e05c7 = L.marker(
+                [50.8254456, -0.1375859],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_77399e2c37fae12bcd0a7a37472939d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_459ba12f35c753ed7a9c36594c4e05c7.setIcon(icon_77399e2c37fae12bcd0a7a37472939d9);
+        
+    
+        var popup_217944d2eaab1c433e39d642602ac473 = L.popup({});
+
+        
+            
+                var html_8301dda749dc8fc69e6e71b42f7027eb = $(`<div id="html_8301dda749dc8fc69e6e71b42f7027eb" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North Road</h1><div class="nugget-popup"><p>East Sussex Fire & Rescue Service attended North Road in Preston in response to flooding; emergency response to flood&ndash;affected road and adjacent properties. (p15)</p></div></div></body></div>`)[0];
+                popup_217944d2eaab1c433e39d642602ac473.setContent(html_8301dda749dc8fc69e6e71b42f7027eb);
+            
+        
+
+        marker_459ba12f35c753ed7a9c36594c4e05c7.bindPopup(popup_217944d2eaab1c433e39d642602ac473)
+        ;
+
+        
+    
+    
+            var marker_4bfdc3a72a7b3654f16ff0e3ddd8cf8d = L.marker(
+                [50.8228403, -0.1535082],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_f3de31d3225e50cf645d28ce43b887b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4bfdc3a72a7b3654f16ff0e3ddd8cf8d.setIcon(icon_f3de31d3225e50cf645d28ce43b887b4);
+        
+    
+        var popup_853a14b597b960bac26d0b9f0de20299 = L.popup({});
+
+        
+            
+                var html_01ac1c02b5c13d306e9529f4324c86e8 = $(`<div id="html_01ac1c02b5c13d306e9529f4324c86e8" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oriental Place</h1><div class="nugget-popup"><p>East Sussex Fire & Rescue Service attended Oriental Place in response to flooding; emergency response to flood&ndash;affected street and nearby properties. (p15)</p></div></div></body></div>`)[0];
+                popup_853a14b597b960bac26d0b9f0de20299.setContent(html_01ac1c02b5c13d306e9529f4324c86e8);
+            
+        
+
+        marker_4bfdc3a72a7b3654f16ff0e3ddd8cf8d.bindPopup(popup_853a14b597b960bac26d0b9f0de20299)
+        ;
+
+        
+    
+    
+            var marker_420c5ca4c87227232ce2cc68e6664ed5 = L.marker(
+                [50.842633, -0.1520865],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_c2721f889c0673c8fb4512399b1a9f98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_420c5ca4c87227232ce2cc68e6664ed5.setIcon(icon_c2721f889c0673c8fb4512399b1a9f98);
+        
+    
+        var popup_57d5c1c999825fc91391895b1fa25898 = L.popup({});
+
+        
+            
+                var html_e49fadf0f351cdf0d0b38ac9eff69178 = $(`<div id="html_e49fadf0f351cdf0d0b38ac9eff69178" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Preston Village Mews</h1><div class="nugget-popup"><p>Preston Village Mews / Middle Road area was attended by East Sussex Fire & Rescue Service due to flooding, affecting the street and adjacent properties. (p15)</p></div></div></body></div>`)[0];
+                popup_57d5c1c999825fc91391895b1fa25898.setContent(html_e49fadf0f351cdf0d0b38ac9eff69178);
+            
+        
+
+        marker_420c5ca4c87227232ce2cc68e6664ed5.bindPopup(popup_57d5c1c999825fc91391895b1fa25898)
+        ;
+
+        
+    
+    
+            var marker_aeb70196c153949e0493db86b7788706 = L.marker(
+                [50.8427586, -0.1523231],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_dbeae410ca9da5bab5076e61aba1e5b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aeb70196c153949e0493db86b7788706.setIcon(icon_dbeae410ca9da5bab5076e61aba1e5b9);
+        
+    
+        var popup_d693865cbb96e54487afb1555cb54b67 = L.popup({});
+
+        
+            
+                var html_2f0cf99d467649e849383d785c56b24b = $(`<div id="html_2f0cf99d467649e849383d785c56b24b" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Middle Road</h1><div class="nugget-popup"><p>East Sussex Fire & Rescue Service attended Middle Road in relation to flooding; road and nearby properties were affected by floodwater. (p15)</p></div></div></body></div>`)[0];
+                popup_d693865cbb96e54487afb1555cb54b67.setContent(html_2f0cf99d467649e849383d785c56b24b);
+            
+        
+
+        marker_aeb70196c153949e0493db86b7788706.bindPopup(popup_d693865cbb96e54487afb1555cb54b67)
+        ;
+
+        
+    
+    
+            var marker_452acccb93fb1982e55de71fa4501d83 = L.marker(
+                [50.83237593309317, -0.16723130255873778],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_5e1be0216c1363824955c1ce70c71512 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_452acccb93fb1982e55de71fa4501d83.setIcon(icon_5e1be0216c1363824955c1ce70c71512);
+        
+    
+        var popup_5e17569534cd161d7bb7548682f445e8 = L.popup({});
+
+        
+            
+                var html_269e75b21722c550aa2e7d8ea34edcbd = $(`<div id="html_269e75b21722c550aa2e7d8ea34edcbd" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Drive</h1><div class="nugget-popup"><p>The Drive in Hove was attended by East Sussex Fire & Rescue Service due to flooding, indicating flood&ndash;affected road and potential impacts to adjacent properties. (p15)</p></div></div></body></div>`)[0];
+                popup_5e17569534cd161d7bb7548682f445e8.setContent(html_269e75b21722c550aa2e7d8ea34edcbd);
+            
+        
+
+        marker_452acccb93fb1982e55de71fa4501d83.bindPopup(popup_5e17569534cd161d7bb7548682f445e8)
+        ;
+
+        
+    
+    
+            var marker_ec5fa5909a0e7c573c28536101afdf97 = L.marker(
+                [50.8263385, -0.1391954],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_4b9a8129162ddd08e8d8b4b137bd1930 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ec5fa5909a0e7c573c28536101afdf97.setIcon(icon_4b9a8129162ddd08e8d8b4b137bd1930);
+        
+    
+        var popup_ed72694d468cd7a4a0ee11a2431564b2 = L.popup({});
+
+        
+            
+                var html_22990cc183bdd35f49ec96416359ed08 = $(`<div id="html_22990cc183bdd35f49ec96416359ed08" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Upper Gardner Street</h1><div class="nugget-popup"><p>East Sussex Fire and Rescue attended the street as a result of flooding. (p15)</p></div></div></body></div>`)[0];
+                popup_ed72694d468cd7a4a0ee11a2431564b2.setContent(html_22990cc183bdd35f49ec96416359ed08);
+            
+        
+
+        marker_ec5fa5909a0e7c573c28536101afdf97.bindPopup(popup_ed72694d468cd7a4a0ee11a2431564b2)
+        ;
+
+        
+    
+    
+            var marker_29ba06619f685c424cd5b6d5d2390169 = L.marker(
+                [50.8372802, -0.1368957],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_c04121bff197e79c1482878632e402bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_29ba06619f685c424cd5b6d5d2390169.setIcon(icon_c04121bff197e79c1482878632e402bd);
+        
+    
+        var popup_a922171ebc9fd286996fb4f6e00d3335 = L.popup({});
+
+        
+            
+                var html_dfdbe7acbc2ebfbe32e1530be331804d = $(`<div id="html_dfdbe7acbc2ebfbe32e1530be331804d" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Springfield Road</h1><div class="nugget-popup"><p>East Sussex Fire and Rescue attended the Springfield Road / Wellend Villas area due to flooding. (p15)</p></div></div></body></div>`)[0];
+                popup_a922171ebc9fd286996fb4f6e00d3335.setContent(html_dfdbe7acbc2ebfbe32e1530be331804d);
+            
+        
+
+        marker_29ba06619f685c424cd5b6d5d2390169.bindPopup(popup_a922171ebc9fd286996fb4f6e00d3335)
+        ;
+
+        
+    
+    
+            var marker_c53f4f02d25dd6a13d15c7a252d4751e = L.marker(
+                [50.8287927, -0.1519896],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_d1b80dfaff66de950feb0fead0fc826c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c53f4f02d25dd6a13d15c7a252d4751e.setIcon(icon_d1b80dfaff66de950feb0fead0fc826c);
+        
+    
+        var popup_0037dfdf3189476f60a8caf3ee7cf2d3 = L.popup({});
+
+        
+            
+                var html_187cc8297d0e8b710c743eaccfb36b5e = $(`<div id="html_187cc8297d0e8b710c743eaccfb36b5e" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Windlesham Road</h1><div class="nugget-popup"><p>East Sussex Fire and Rescue attended Windlesham Road as a result of flooding. (p15)</p></div></div></body></div>`)[0];
+                popup_0037dfdf3189476f60a8caf3ee7cf2d3.setContent(html_187cc8297d0e8b710c743eaccfb36b5e);
+            
+        
+
+        marker_c53f4f02d25dd6a13d15c7a252d4751e.bindPopup(popup_0037dfdf3189476f60a8caf3ee7cf2d3)
+        ;
+
+        
+    
+    
+            var marker_8ee39dd009bfc5747553b7e1dd8e26b5 = L.marker(
+                [50.832144013915176, -0.13719395101826584],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_9f78916ca188094a200ca0c00a130963 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8ee39dd009bfc5747553b7e1dd8e26b5.setIcon(icon_9f78916ca188094a200ca0c00a130963);
+        
+    
+        var popup_7eabca610cc0e9bb5f2481589abc9f15 = L.popup({});
+
+        
+            
+                var html_b2edcfac7cc227957c41153b2cf3b990 = $(`<div id="html_b2edcfac7cc227957c41153b2cf3b990" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>London Road</h1><div class="nugget-popup"><p>Flooding occurred on London Road which required attendance by East Sussex Fire and Rescue. (p15)</p></div></div></body></div>`)[0];
+                popup_7eabca610cc0e9bb5f2481589abc9f15.setContent(html_b2edcfac7cc227957c41153b2cf3b990);
+            
+        
+
+        marker_8ee39dd009bfc5747553b7e1dd8e26b5.bindPopup(popup_7eabca610cc0e9bb5f2481589abc9f15)
+        ;
+
+        
+    
+    
+            var marker_e226da602b95f87a625dadd523491a62 = L.marker(
+                [50.8399136, -0.1172029],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_d41ebb79df233e3679fab7752e0f6f09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e226da602b95f87a625dadd523491a62.setIcon(icon_d41ebb79df233e3679fab7752e0f6f09);
+        
+    
+        var popup_250a23a004185338dc1922b137ee57f1 = L.popup({});
+
+        
+            
+                var html_b014f40788cabc648cdb43fc67ff7da0 = $(`<div id="html_b014f40788cabc648cdb43fc67ff7da0" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Milner Road</h1><div class="nugget-popup"><p>Flooding occurred on Milner Road which required attendance by East Sussex Fire and Rescue. (p15)</p></div></div></body></div>`)[0];
+                popup_250a23a004185338dc1922b137ee57f1.setContent(html_b014f40788cabc648cdb43fc67ff7da0);
+            
+        
+
+        marker_e226da602b95f87a625dadd523491a62.bindPopup(popup_250a23a004185338dc1922b137ee57f1)
+        ;
+
+        
+    
+    
+            var marker_773607e3d088ed2cb7cb4c187c21aba1 = L.marker(
+                [50.8249912, -0.1535305],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_94b8064fe3ac61e38bd382617d1c5b52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_773607e3d088ed2cb7cb4c187c21aba1.setIcon(icon_94b8064fe3ac61e38bd382617d1c5b52);
+        
+    
+        var popup_4d6925ce700aa44a378921c8ae55414a = L.popup({});
+
+        
+            
+                var html_a81864a0f0a7a1587def9966e7b5e0a7 = $(`<div id="html_a81864a0f0a7a1587def9966e7b5e0a7" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Western Road</h1><div class="nugget-popup"><p>Surface water flooding along Western Road with large standing water on the pavement outside Waitrose, temporary barriers placed along the pavement and disruption to pedestrian access and the immediate streetscape. [IMG] (p32)</p></div></div></body></div>`)[0];
+                popup_4d6925ce700aa44a378921c8ae55414a.setContent(html_a81864a0f0a7a1587def9966e7b5e0a7);
+            
+        
+
+        marker_773607e3d088ed2cb7cb4c187c21aba1.bindPopup(popup_4d6925ce700aa44a378921c8ae55414a)
+        ;
+
+        
+    
+    
+            var marker_ae1b2796161f9e5afcfba3ee52cbd930 = L.marker(
+                [50.8432088, -0.1510967],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_dae0fa6c46e15baff50c26f433cb03f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ae1b2796161f9e5afcfba3ee52cbd930.setIcon(icon_dae0fa6c46e15baff50c26f433cb03f5);
+        
+    
+        var popup_2823822de7484cf90008574786798d21 = L.popup({});
+
+        
+            
+                var html_946c9df2603fd93dc052f354073128b8 = $(`<div id="html_946c9df2603fd93dc052f354073128b8" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Preston</h1><div class="nugget-popup"><p>Flooding incidents in the Preston area that required attendance by East Sussex Fire & Rescue Service, affecting roads and nearby properties. (p15)</p></div></div></body></div>`)[0];
+                popup_2823822de7484cf90008574786798d21.setContent(html_946c9df2603fd93dc052f354073128b8);
+            
+        
+
+        marker_ae1b2796161f9e5afcfba3ee52cbd930.bindPopup(popup_2823822de7484cf90008574786798d21)
+        ;
+
+        
+    
+    
+            var marker_6de7196d8920a8b5608413fc0c49d057 = L.marker(
+                [50.8634792, -0.1458904],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_d86e4af0b447dfd9d7e1ab3f39dda1b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6de7196d8920a8b5608413fc0c49d057.setIcon(icon_d86e4af0b447dfd9d7e1ab3f39dda1b7);
+        
+    
+        var popup_f1e5dc37fbb01a6556bb255dcc5e403f = L.popup({});
+
+        
+            
+                var html_0d1f5d5479984ce8ab261d2ac6ddbe0e = $(`<div id="html_0d1f5d5479984ce8ab261d2ac6ddbe0e" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Patcham</h1><div class="nugget-popup"><p>Patcham was identified among the locations with recorded flooding incidents during the 20 June 2023 event and formed part of the main cluster of affected areas. (p16)</p></div></div></body></div>`)[0];
+                popup_f1e5dc37fbb01a6556bb255dcc5e403f.setContent(html_0d1f5d5479984ce8ab261d2ac6ddbe0e);
+            
+        
+
+        marker_6de7196d8920a8b5608413fc0c49d057.bindPopup(popup_f1e5dc37fbb01a6556bb255dcc5e403f)
+        ;
+
+        
+    
+    
+            var marker_b98aa601e009a984c3511f99c6b9f8e6 = L.marker(
+                [50.8597766, -0.13225],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_97faa0e0d027a7cb5dcf82b4135d9b73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b98aa601e009a984c3511f99c6b9f8e6.setIcon(icon_97faa0e0d027a7cb5dcf82b4135d9b73);
+        
+    
+        var popup_55e1eeafa87abb207ba4578bab1ddd16 = L.popup({});
+
+        
+            
+                var html_07c0a4cc1046ddcbaf486dc139a50851 = $(`<div id="html_07c0a4cc1046ddcbaf486dc139a50851" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hollingbury</h1><div class="nugget-popup"><p>Map annotations and analysis identify clusters of recorded flood incident pins in the northern parts of the authority (including Hollingbury) associated with the 20th June 2023 intense 1&ndash;hour rainfall, indicating localised surface&ndash;water flooding in these neighbourhoods. The report does not provide further site&ndash;specific impact details. [IMG] (p19)</p></div></div></body></div>`)[0];
+                popup_55e1eeafa87abb207ba4578bab1ddd16.setContent(html_07c0a4cc1046ddcbaf486dc139a50851);
+            
+        
+
+        marker_b98aa601e009a984c3511f99c6b9f8e6.bindPopup(popup_55e1eeafa87abb207ba4578bab1ddd16)
+        ;
+
+        
+    
+    
+            var marker_df0679c42fa3c36cf7bf2849ed0fbe35 = L.marker(
+                [50.823073531753735, -0.13968549330531355],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_cc47ecb091039d263a4492bc588e9400 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_df0679c42fa3c36cf7bf2849ed0fbe35.setIcon(icon_cc47ecb091039d263a4492bc588e9400);
+        
+    
+        var popup_350dda37a00503773e4ca30fd4a1fcda = L.popup({});
+
+        
+            
+                var html_74d4287aafc0149602cd88d6c97e4b3a = $(`<div id="html_74d4287aafc0149602cd88d6c97e4b3a" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brighton</h1><div class="nugget-popup"><p>Reports of surface water flooding affecting commercial and residential locations in Brighton during the flood event on 20 June 2023. (p6)</p></div><div class="nugget-popup"><p>Surface water flooding affected the city on 20 June 2023 due to heavy rain and thunderstorms, with runoff following flow routes from the South Downs toward the sea along dry valleys and major roads. (p13)</p></div><div class="nugget-popup"><p>Flooding on 20 June 2023 affected multiple locations in Brighton: internal flooding occurred at Waitrose and Poundland on Western Road; flash flooding poured down Sutherland Road from Whitehawk Hill; surface&ndash;water flow was observed down Elm Grove to the Lewes Road junction; and numerous residential properties were reported flooded. (p14)</p></div><div class="nugget-popup"><p>Multiple locations within Brighton experienced flooding during the June 2023 events; East Sussex Fire and Rescue Service attended several Brighton addresses on 23rd June 2023. Brighton and Hove Council correspondence indicates 11 reported incidents of flooding during the June 2023 event across the council area. (p15)</p></div><div class="nugget-popup"><p>Intense 1&ndash;hour rainfall on 20 June 2023 caused surface&ndash;water flooding across the Brighton and Hove authority area, with multiple recorded flood incidents concentrated in the city. The event (≈26.6&ndash;26.8 mm in 1 hour) was modelled as approximately a 150&ndash;year design rainfall, and the report locates the centroid of recorded incidents in the centre of the city. [IMG] (p19)</p></div><div class="nugget-popup"><p>Surface water flooding during the June 2023 rainfall event caused local drainage issues; residents reported blocked gullies and drains, prompting Brighton and Hove City Council (the Lead Local Flood Authority and Highway Authority) to receive reports and commission an investigation. (p20)</p></div><div class="nugget-popup"><p>Experienced flooding in June 2023 that prompted a Section 19 investigation and led to flood&ndash;related call&ndash;outs (investigation and FOI request reference flooding in Brighton). (p41)</p></div><div class="nugget-popup"><p>Flooding on 20 June 2023 generated flood&ndash;related incidents in the Brighton & Hove area that required emergency response and assistance to people. (p43)</p></div></div></body></div>`)[0];
+                popup_350dda37a00503773e4ca30fd4a1fcda.setContent(html_74d4287aafc0149602cd88d6c97e4b3a);
+            
+        
+
+        marker_df0679c42fa3c36cf7bf2849ed0fbe35.bindPopup(popup_350dda37a00503773e4ca30fd4a1fcda)
+        ;
+
+        
+    
+    
+            var marker_f74e3b550319063dd9ef135c5ea5b1ed = L.marker(
+                [50.8452678, -0.1835802],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_cf0fdc00495eabb36c4bac339176ee51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f74e3b550319063dd9ef135c5ea5b1ed.setIcon(icon_cf0fdc00495eabb36c4bac339176ee51);
+        
+    
+        var popup_1ae3b814d9345475faff694956346ed7 = L.popup({});
+
+        
+            
+                var html_b1b6ebfc787465040b6eab1baccb41fc = $(`<div id="html_b1b6ebfc787465040b6eab1baccb41fc" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hove</h1><div class="nugget-popup"><p>Reports of surface water flooding affecting commercial and residential locations in Hove during the flood event on 20 June 2023. (p6)</p></div><div class="nugget-popup"><p>Surface water flooding impacted the city (including Hove) on 20 June 2023 as a result of heavy rain and thunderstorms. (p13)</p></div><div class="nugget-popup"><p>Part of the City of Brighton and Hove affected by the 20 June 2023 storm event, with flooding impacting homes, businesses and roads as part of the wider city&ndash;wide flooding reported. (p14)</p></div><div class="nugget-popup"><p>Flooding incidents in Hove locations (including Brunswick Place, Hove Business Centre and The Drive) that required East Sussex Fire and Rescue Service attendance on 23rd June 2023. (p15)</p></div></div></body></div>`)[0];
+                popup_1ae3b814d9345475faff694956346ed7.setContent(html_b1b6ebfc787465040b6eab1baccb41fc);
+            
+        
+
+        marker_f74e3b550319063dd9ef135c5ea5b1ed.bindPopup(popup_1ae3b814d9345475faff694956346ed7)
+        ;
+
+        
+    
+    
+            var marker_8f1127ddef893617e5b1d627231e3405 = L.marker(
+                [50.8064619, -0.0416442],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_b721edc89de7fa776edd0f4e1ee1f0db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8f1127ddef893617e5b1d627231e3405.setIcon(icon_b721edc89de7fa776edd0f4e1ee1f0db);
+        
+    
+        var popup_eb45a0ba0e47e0776f82b5964c6f6064 = L.popup({});
+
+        
+            
+                var html_f60d5372ef97cd826e32ca1ad70e64c2 = $(`<div id="html_f60d5372ef97cd826e32ca1ad70e64c2" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Saltdean</h1><div class="nugget-popup"><p>The map of recorded June 2023 incidents shows pins clustering in the eastern coastal area including Saltdean, indicating localised flooding during the 20th June 2023 intense 1&ndash;hour rainfall event. Specific property or infrastructure impacts are not detailed in the text. [IMG] (p19)</p></div></div></body></div>`)[0];
+                popup_eb45a0ba0e47e0776f82b5964c6f6064.setContent(html_f60d5372ef97cd826e32ca1ad70e64c2);
+            
+        
+
+        marker_8f1127ddef893617e5b1d627231e3405.bindPopup(popup_eb45a0ba0e47e0776f82b5964c6f6064)
+        ;
+
+        
+    
+    
+            var marker_ccfa0b2726e5abae045970ce6993d9d3 = L.marker(
+                [50.8192795, -0.1231562],
+                {}
+            ).addTo(map_b2a628994b9c0a041a20de066a2e5cd2);
+        
+    
+            var icon_3af10a8ade93b750e5760a9aa4950819 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ccfa0b2726e5abae045970ce6993d9d3.setIcon(icon_3af10a8ade93b750e5760a9aa4950819);
+        
+    
+        var popup_879d7f38ffede50aa1197dcc3eb26096 = L.popup({});
+
+        
+            
+                var html_36d57e8a6be471da87430fdca0f614d0 = $(`<div id="html_36d57e8a6be471da87430fdca0f614d0" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kemptown</h1><div class="nugget-popup"><p>A residential home in Kemptown experienced internal flooding attributed to a drain blockage during the storm. (p14)</p></div><div class="nugget-popup"><p>A residential property experienced internal flooding with standing water across the hallway, affecting personal belongings and footwear and indicating interior water damage. [IMG] (p31)</p></div></div></body></div>`)[0];
+                popup_879d7f38ffede50aa1197dcc3eb26096.setContent(html_36d57e8a6be471da87430fdca0f614d0);
+            
+        
+
+        marker_ccfa0b2726e5abae045970ce6993d9d3.bindPopup(popup_879d7f38ffede50aa1197dcc3eb26096)
+        ;
+
+        
+    
+</script>
+</html>
