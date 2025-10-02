@@ -1,6 +1,6 @@
 
 
-# Mapped topics
+# Topics with coordinates
 
 ## Brighton and Hove
 * Heavy rainfall on 20 June 2023 produced localised surface water flooding across Brighton and Hove, affecting both commercial and residential locations; flows were routed along the highway network and followed the steeply sloping terrain. (p5) [PAG]
@@ -259,7 +259,7 @@
 * East Sussex Fire and Rescue attended Wellend Villas / Springfield Road area as a result of flooding. (p15)
 
 
-# Unmapped topics
+# Topics without coordinates
 
 ## East Sussex Fire and Rescue Service
 * Attended locations in response to the 20 June 2023 flood event. (p5)
