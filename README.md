@@ -2,7 +2,7 @@
 
 ## Intro
 
-This repository contains the outputs to date of an experimental *pro bono* project being undertaken by Helen Jackson for Flooded People using an LLM to extract information on flood impacts from Local Authority Section 19 reports.
+This repository contains the outputs to date of an experimental *pro bono* project being undertaken by Helen Jackson (Director of [ClimateNode](https://www.climatenode.org)) for Flooded People using an LLM to extract information on flood impacts from Local Authority Section 19 reports.
 
 It contains two types of outputs:
 
