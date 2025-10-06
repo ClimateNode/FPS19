@@ -17,9 +17,15 @@ It contains two types of outputs:
 
 •  Map coordinates of places are typically dervied from geocoding and do not indicate the precise locations of flood impacts – do not interpret them as such.
 
-• Page numbers are counted from the cover page as page 1 and may differ from page numbering in the document (for example, where page numbering begins after the front matter).
+• Page numbers:
 
-• Information extracted from images and tables (particularly images) should be viewed with caution. Page numbers for information extracted from lists and tables overlapping pages may not be accurate. Quality flags for LLM outputs are as follows:
+  * Page numbers are counted from the cover page as page 1 and may differ from page numbering in the document (for example, where page numbering begins after the front matter).
+  * A small amount of information from preceding and following pages is usually included in the context sent to the LLM for each page. Therefore information about a place or organisation may sometimes be on the following or preceding page to the one indicated.
+  * Page numbers for information extracted from lists and tables overlapping pages is least likely to be accurate.
+
+• Information extracted from images and tables (particularly images) should be viewed with caution. 
+
+• Quality flags for LLM outputs are as follows:
   * **IMG**: information may have been extracted from an image
   * **TAB**: information may have been extracted from a table
   * **LST**: information may have been extracted from a list overlapping pages 
