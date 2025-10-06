@@ -15,7 +15,7 @@ It contains two types of outputs:
 
 •  Outputs linked to individual Section 19 reports can be identified via the file name of each readout/map in the following format:<br>[_ISO code of the relevant local authority_](https://www.iso.org/obp/ui#iso:code:3166:GB) _ _index_ _ _start date of the event (YYYY-mm-dd)_ _ _file extension_
 
-•  Map coordinates of places are typically dervied from geocoding and do not indicate the precise locations of flood impacts – do not interpret them as such.
+• Map coordinates of places are typically dervied from geocoding and do not indicate the precise locations of flood impacts – do not interpret them as such.
 
 • Page numbers:
 
@@ -31,6 +31,8 @@ It contains two types of outputs:
   * **LST**: information may have been extracted from a list overlapping pages 
   * **PAG**: information may have been extracted from the preceding or following page rather than the page number shown
   * **MUL**: information has been extracted from a sentence/paragraph about events on more than one date
+
+• Maps show only information specific to the event which triggered the report, while readouts also contain any information in the report about historic flood events, or flooding in general, at a location.
 
 •  Curly braces {} in readouts
   * If a piece of information has no curly braces it means that it relates to the main flood event described in the report
