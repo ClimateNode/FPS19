@@ -19,9 +19,11 @@ It contains two types of outputs:
 
 • Page numbers:
 
-  * Page numbers are counted from the cover page as page 1 and may differ from page numbering in the document (for example, where page numbering begins after the front matter).
-  * A small amount of information from preceding and following pages is usually included in the context sent to the LLM for each page. Therefore information about a place or organisation may sometimes be on the following or preceding page to the one indicated.
-  * Page numbers for information extracted from lists and tables overlapping pages is least likely to be accurate.
+  * Counting: page numbers are counted from the cover page as page 1 and may differ from page numbering in the document (for example, where page numbering begins after the front matter).
+  * Sources of inaccuracy:
+    * Overlapping context: a small amount of information from preceding and following pages is usually included in the context sent to the LLM for each page. Therefore information about a place or organisation may sometimes be on the following or preceding page to the one indicated.
+    * Overlapping lists and tables: page numbers for information extracted from lists and tables overlapping pages may also not be accurate.
+    * Images: if a figure is referred to on a previous page, this is included in the context sent to the LLM, along with the page the figure is actually on. Information used to interpret images may therefore be taken from pages other than the one indicated.
 
 • Information extracted from images and tables (particularly images) should be viewed with caution. 
 
