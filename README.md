@@ -21,8 +21,9 @@ It contains two types of outputs:
   * **IMG**: information may have been extracted from an image
   * **TAB**: information may have been extracted from a table
   * **LST**: information may have been extracted from a list overlapping pages 
-  * **PAG**: information may have been extracted from the preceding or following page rather than the page nmber shown
+  * **PAG**: information may have been extracted from the preceding or following page rather than the page number shown
   * **MUL**: information has been extracted from a sentence/paragraph about events on more than one date
+ Page numbers for information extracted from lists and tables overlapping pages may not be accurate
 
 •  Curley braces {} in readouts
   * If a piece of information has no curly braces it means that it relates to the main flood event described in the report
