@@ -27,4 +27,4 @@ It contains two types of outputs:
 •  Curley braces {} in readouts
   * If a piece of information has no curly braces it means that it relates to the main flood event described in the report
   * Curly braces surrounding date(s) indicate that the information is about events on the date(s) shown
-  * ```{general}``` indicates that the information is about flooding in general, not specific events
+  * `{general}` indicates that the information is about flooding in general, not specific events
