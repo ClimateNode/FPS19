@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4afeba87444e48815bac48178ce4050a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4afeba87444e48815bac48178ce4050a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4afeba87444e48815bac48178ce4050a = L.map(
+                "map_4afeba87444e48815bac48178ce4050a",
+                {
+                    center: [53.54317140638491, -1.4608581799612022],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5298f24a5b8b9715e8eb322c4ac114a3 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_5298f24a5b8b9715e8eb322c4ac114a3.addTo(map_4afeba87444e48815bac48178ce4050a);
+    
+            var marker_2dcd703de5a3c02d4d5b9b3486d9e0b6 = L.marker(
+                [53.52277, -1.1335312],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_47ee2ffc6eaa9264ee811c8ff6df89e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2dcd703de5a3c02d4d5b9b3486d9e0b6.setIcon(icon_47ee2ffc6eaa9264ee811c8ff6df89e9);
+        
+    
+        var popup_ca2e388f528893ff0c4f605e757c9e91 = L.popup({});
+
+        
+            
+                var html_a84c3eff6f171414c3522a4b0741df50 = $(`<div id="html_a84c3eff6f171414c3522a4b0741df50" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Doncaster</h1><div class="nugget-popup"><p>Identified as area where the worst flooding impacts were seen; Barnsley Council provided multi&ndash;service mutual aid to Doncaster MBC during the incident. (p5)</p></div></div></body></div>`)[0];
+                popup_ca2e388f528893ff0c4f605e757c9e91.setContent(html_a84c3eff6f171414c3522a4b0741df50);
+            
+        
+
+        marker_2dcd703de5a3c02d4d5b9b3486d9e0b6.bindPopup(popup_ca2e388f528893ff0c4f605e757c9e91)
+        ;
+
+        
+    
+    
+            var marker_1146dc863d1d1728f1dd333c96adfe9d = L.marker(
+                [53.5603, -1.4714344],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_4233fc1e4348db7d751c0598ed6616d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1146dc863d1d1728f1dd333c96adfe9d.setIcon(icon_4233fc1e4348db7d751c0598ed6616d4);
+        
+    
+        var popup_428a375ca2e7cff2f05a8ee5ee8e12e6 = L.popup({});
+
+        
+            
+                var html_e4a4e3602e31a47ce58de654e5b736ee = $(`<div id="html_e4a4e3602e31a47ce58de654e5b736ee" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Dearne</h1><div class="nugget-popup"><p>Heavy rainfall on the Dearne catchment increased runoff and contributed to watercourses and drainage systems becoming overwhelmed, leading to flooding of properties and roads in the borough. (p6)</p></div></div></body></div>`)[0];
+                popup_428a375ca2e7cff2f05a8ee5ee8e12e6.setContent(html_e4a4e3602e31a47ce58de654e5b736ee);
+            
+        
+
+        marker_1146dc863d1d1728f1dd333c96adfe9d.bindPopup(popup_428a375ca2e7cff2f05a8ee5ee8e12e6)
+        ;
+
+        
+    
+    
+            var marker_ab57a1925da862880b7cfdf92667f3b6 = L.marker(
+                [53.5252966, -1.389255],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_de49bbec1f39385c50a39933b791bad6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ab57a1925da862880b7cfdf92667f3b6.setIcon(icon_de49bbec1f39385c50a39933b791bad6);
+        
+    
+        var popup_d1ff4015adb00c7fe1c6b01b642cffb1 = L.popup({});
+
+        
+            
+                var html_b4de9e74f5996e71f320f36e6712b717 = $(`<div id="html_b4de9e74f5996e71f320f36e6712b717" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cotterdale Gardens</h1><div class="nugget-popup"><p>Properties at Cotterdale Gardens were flooded as part of the Low Valley flooding impacts. (p5)</p></div><div class="nugget-popup"><p>Residential properties flooded internally as local drainage and watercourses were overwhelmed and in places blocked by debris, causing flooding to properties and roads at Cotterdale Gardens. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_d1ff4015adb00c7fe1c6b01b642cffb1.setContent(html_b4de9e74f5996e71f320f36e6712b717);
+            
+        
+
+        marker_ab57a1925da862880b7cfdf92667f3b6.bindPopup(popup_d1ff4015adb00c7fe1c6b01b642cffb1)
+        ;
+
+        
+    
+    
+            var marker_a9786b6a15ee7113525d3e8001246495 = L.marker(
+                [53.5569038, -1.4366842],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_e2be14824edd2ea8e4590ed361ce182b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a9786b6a15ee7113525d3e8001246495.setIcon(icon_e2be14824edd2ea8e4590ed361ce182b);
+        
+    
+        var popup_0468df03d44cd4e170e67de89d928ee6 = L.popup({});
+
+        
+            
+                var html_7e87243059e1db567a2ba08f4a70ed9c = $(`<div id="html_7e87243059e1db567a2ba08f4a70ed9c" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lang Avenue</h1><div class="nugget-popup"><p>Residential properties were flooded internally on Lang Avenue. (p6)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties on Lang Avenue. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_0468df03d44cd4e170e67de89d928ee6.setContent(html_7e87243059e1db567a2ba08f4a70ed9c);
+            
+        
+
+        marker_a9786b6a15ee7113525d3e8001246495.bindPopup(popup_0468df03d44cd4e170e67de89d928ee6)
+        ;
+
+        
+    
+    
+            var marker_df483c43c9c6c9aeaaef40b64aed1d9d = L.marker(
+                [53.5581891, -1.435341],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_b17e48a89c983ad932f99618ace900bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_df483c43c9c6c9aeaaef40b64aed1d9d.setIcon(icon_b17e48a89c983ad932f99618ace900bd);
+        
+    
+        var popup_4e54e939a8202485aae6a845ffd53fc2 = L.popup({});
+
+        
+            
+                var html_5fe6ef788438c5a11b445b0bac84aa7e = $(`<div id="html_5fe6ef788438c5a11b445b0bac84aa7e" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Michael's Road</h1><div class="nugget-popup"><p>Residential properties were flooded internally on Michaels Road. (p6)</p></div><div class="nugget-popup"><p>Properties on Michael&#8217;s Road experienced internal flooding as local drainage/watercourses were overwhelmed during the event. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_4e54e939a8202485aae6a845ffd53fc2.setContent(html_5fe6ef788438c5a11b445b0bac84aa7e);
+            
+        
+
+        marker_df483c43c9c6c9aeaaef40b64aed1d9d.bindPopup(popup_4e54e939a8202485aae6a845ffd53fc2)
+        ;
+
+        
+    
+    
+            var marker_968e91c1556da1da0c710a1ef4e7c0a7 = L.marker(
+                [53.5864117, -1.5290556],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_e59fd03cfafcad7c6a9e2a347b402e9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_968e91c1556da1da0c710a1ef4e7c0a7.setIcon(icon_e59fd03cfafcad7c6a9e2a347b402e9b);
+        
+    
+        var popup_7dfbacc05ee637d26b57c51d6968eb94 = L.popup({});
+
+        
+            
+                var html_881f6a041760fcd7098d19c9b191c370 = $(`<div id="html_881f6a041760fcd7098d19c9b191c370" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Street</h1><div class="nugget-popup"><p>Internal flooding to residential properties and businesses on Church Street. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_7dfbacc05ee637d26b57c51d6968eb94.setContent(html_881f6a041760fcd7098d19c9b191c370);
+            
+        
+
+        marker_968e91c1556da1da0c710a1ef4e7c0a7.bindPopup(popup_7dfbacc05ee637d26b57c51d6968eb94)
+        ;
+
+        
+    
+    
+            var marker_746e21f7715270d7a3925d201ce56bcb = L.marker(
+                [53.527381, -1.6457586],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_c4cbb3aeb6571963c2eccb61990fd76e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_746e21f7715270d7a3925d201ce56bcb.setIcon(icon_c4cbb3aeb6571963c2eccb61990fd76e);
+        
+    
+        var popup_8f2e7c6564c33674c065c44e59055d5e = L.popup({});
+
+        
+            
+                var html_15e0c7afac16a799cb76daa549613b38 = $(`<div id="html_15e0c7afac16a799cb76daa549613b38" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Manchester Road</h1><div class="nugget-popup"><p>Internal flooding of a residential property on Manchester Road (Thurlstone). [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_8f2e7c6564c33674c065c44e59055d5e.setContent(html_15e0c7afac16a799cb76daa549613b38);
+            
+        
+
+        marker_746e21f7715270d7a3925d201ce56bcb.bindPopup(popup_8f2e7c6564c33674c065c44e59055d5e)
+        ;
+
+        
+    
+    
+            var marker_803ed3b11b042e3bde85b5e3cd699d46 = L.marker(
+                [53.5943401, -1.4580648],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_5d8096539a6e07066a3fece05c84cd0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_803ed3b11b042e3bde85b5e3cd699d46.setIcon(icon_5d8096539a6e07066a3fece05c84cd0e);
+        
+    
+        var popup_08ce50e6740b248339c546b965f94684 = L.popup({});
+
+        
+            
+                var html_01c27a2d230cafdcd1eb0159de5311d0 = $(`<div id="html_01c27a2d230cafdcd1eb0159de5311d0" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sitka Close</h1><div class="nugget-popup"><p>Internal flooding of a residential property on Sitka Close (Royston). [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_08ce50e6740b248339c546b965f94684.setContent(html_01c27a2d230cafdcd1eb0159de5311d0);
+            
+        
+
+        marker_803ed3b11b042e3bde85b5e3cd699d46.bindPopup(popup_08ce50e6740b248339c546b965f94684)
+        ;
+
+        
+    
+    
+            var marker_e0ff2b909d1e27f10862a4d5066457ca = L.marker(
+                [53.5227136, -1.3963454],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_ec38ef8877e4cbf9b142c396ae30e452 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e0ff2b909d1e27f10862a4d5066457ca.setIcon(icon_ec38ef8877e4cbf9b142c396ae30e452);
+        
+    
+        var popup_8415818d8ea05def7da7a7f050878d20 = L.popup({});
+
+        
+            
+                var html_b2db77e49cad38429d465168eadda7cc = $(`<div id="html_b2db77e49cad38429d465168eadda7cc" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Station Road</h1><div class="nugget-popup"><p>Internal flooding of residential properties and at least one business; local roads inundated as watercourses and drainage were overwhelmed and debris&ndash;blocked during the event. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_8415818d8ea05def7da7a7f050878d20.setContent(html_b2db77e49cad38429d465168eadda7cc);
+            
+        
+
+        marker_e0ff2b909d1e27f10862a4d5066457ca.bindPopup(popup_8415818d8ea05def7da7a7f050878d20)
+        ;
+
+        
+    
+    
+            var marker_57fa03377706894bdcacf81452ce4d8b = L.marker(
+                [53.5400829, -1.430994],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_b69bb6aaa3bdf5f3ad6b1945670baaf9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_57fa03377706894bdcacf81452ce4d8b.setIcon(icon_b69bb6aaa3bdf5f3ad6b1945670baaf9);
+        
+    
+        var popup_f7c0a5962f7fe094bc301a38f7d3353c = L.popup({});
+
+        
+            
+                var html_1d1b633400d1ae82aadaa909ed54856c = $(`<div id="html_1d1b633400d1ae82aadaa909ed54856c" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wombwell Lane</h1><div class="nugget-popup"><p>Internal flooding of businesses on the street caused by overwhelmed local watercourses/drainage during the event. [TAB] (p7)</p></div><div class="nugget-popup"><p>Internal flooding of commercial premises on Wombwell Lane resulting in internal flood damage to businesses. [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_f7c0a5962f7fe094bc301a38f7d3353c.setContent(html_1d1b633400d1ae82aadaa909ed54856c);
+            
+        
+
+        marker_57fa03377706894bdcacf81452ce4d8b.bindPopup(popup_f7c0a5962f7fe094bc301a38f7d3353c)
+        ;
+
+        
+    
+    
+            var marker_1998d01a19b041b0cdb4d426dbd08252 = L.marker(
+                [53.5444016, -1.5927443],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_8466f0a61f9fc5c70215a42167ee735c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1998d01a19b041b0cdb4d426dbd08252.setIcon(icon_8466f0a61f9fc5c70215a42167ee735c);
+        
+    
+        var popup_45c3e2e0a2e2f63bbeca1e2ae754c946 = L.popup({});
+
+        
+            
+                var html_0770f14aa0dfa34a46a5946770c35fca = $(`<div id="html_0770f14aa0dfa34a46a5946770c35fca" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cooper Lane</h1><div class="nugget-popup"><p>Internal flooding to a residential property on Cooper Lane. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_45c3e2e0a2e2f63bbeca1e2ae754c946.setContent(html_0770f14aa0dfa34a46a5946770c35fca);
+            
+        
+
+        marker_1998d01a19b041b0cdb4d426dbd08252.bindPopup(popup_45c3e2e0a2e2f63bbeca1e2ae754c946)
+        ;
+
+        
+    
+    
+            var marker_d985d50ba84d49ff8a1517db62e20055 = L.marker(
+                [53.5347851, -1.6374525],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_adcce952eb58efa7542b94067d4e6684 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d985d50ba84d49ff8a1517db62e20055.setIcon(icon_adcce952eb58efa7542b94067d4e6684);
+        
+    
+        var popup_5eab72253313ced88789dcd72164f410 = L.popup({});
+
+        
+            
+                var html_93385eaac41f981047b6c703dd4285b5 = $(`<div id="html_93385eaac41f981047b6c703dd4285b5" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Huddersfield Road</h1><div class="nugget-popup"><p>Flooding entered premises on Huddersfield Road resulting in internal flooding of a business. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_5eab72253313ced88789dcd72164f410.setContent(html_93385eaac41f981047b6c703dd4285b5);
+            
+        
+
+        marker_d985d50ba84d49ff8a1517db62e20055.bindPopup(popup_5eab72253313ced88789dcd72164f410)
+        ;
+
+        
+    
+    
+            var marker_63461045efab7544d3356f2a8fcb34d4 = L.marker(
+                [53.5277953, -1.3834462],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_de5e76497ef2c704495d591c6eff18e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_63461045efab7544d3356f2a8fcb34d4.setIcon(icon_de5e76497ef2c704495d591c6eff18e3);
+        
+    
+        var popup_a06b73f30512d62d4fa7f962ad0de2ef = L.popup({});
+
+        
+            
+                var html_548fa7c256774851e1a39364bce2e7b2 = $(`<div id="html_548fa7c256774851e1a39364bce2e7b2" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ings Road</h1><div class="nugget-popup"><p>Internal flooding of residential properties on Ings Road. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_a06b73f30512d62d4fa7f962ad0de2ef.setContent(html_548fa7c256774851e1a39364bce2e7b2);
+            
+        
+
+        marker_63461045efab7544d3356f2a8fcb34d4.bindPopup(popup_a06b73f30512d62d4fa7f962ad0de2ef)
+        ;
+
+        
+    
+    
+            var marker_5c9853d8a866266d4fda5c2d568e8ecd = L.marker(
+                [53.4759228, -1.4524614],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_b3fe332012c4a9350b5c89279f462c1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5c9853d8a866266d4fda5c2d568e8ecd.setIcon(icon_b3fe332012c4a9350b5c89279f462c1c);
+        
+    
+        var popup_d581b7bfdbc0b9b1d5d4491eb15907b8 = L.popup({});
+
+        
+            
+                var html_bb142888a7910daa04633dad4fd6e49b = $(`<div id="html_bb142888a7910daa04633dad4fd6e49b" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sheffield Road</h1><div class="nugget-popup"><p>Internal flooding to a residential property on Sheffield Road. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_d581b7bfdbc0b9b1d5d4491eb15907b8.setContent(html_bb142888a7910daa04633dad4fd6e49b);
+            
+        
+
+        marker_5c9853d8a866266d4fda5c2d568e8ecd.bindPopup(popup_d581b7bfdbc0b9b1d5d4491eb15907b8)
+        ;
+
+        
+    
+    
+            var marker_cc13c9c95fc57787b26f8cdd412fe81d = L.marker(
+                [53.5754849, -1.3816352],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_fbb4b74423a2070462ce55a1b8cce13e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cc13c9c95fc57787b26f8cdd412fe81d.setIcon(icon_fbb4b74423a2070462ce55a1b8cce13e);
+        
+    
+        var popup_b678cb16b9674d83789178b013cfce0b = L.popup({});
+
+        
+            
+                var html_51097d06db1fb1220d7b7ac16fb58649 = $(`<div id="html_51097d06db1fb1220d7b7ac16fb58649" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street</h1><div class="nugget-popup"><p>Commercial premises on High Street were flooded internally. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_b678cb16b9674d83789178b013cfce0b.setContent(html_51097d06db1fb1220d7b7ac16fb58649);
+            
+        
+
+        marker_cc13c9c95fc57787b26f8cdd412fe81d.bindPopup(popup_b678cb16b9674d83789178b013cfce0b)
+        ;
+
+        
+    
+    
+            var marker_af0d6a4f31266ca2914fc84bd3ef92d6 = L.marker(
+                [53.499435, -1.4894114],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_04436bdfbbe53f2dfcd7d58fc7a662c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_af0d6a4f31266ca2914fc84bd3ef92d6.setIcon(icon_04436bdfbbe53f2dfcd7d58fc7a662c8);
+        
+    
+        var popup_00fbfffaadc3188cda96d4026030449f = L.popup({});
+
+        
+            
+                var html_e66bea8334cdc18c8cfa58eb6cbb7bdc = $(`<div id="html_e66bea8334cdc18c8cfa58eb6cbb7bdc" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lidgett Lane</h1><div class="nugget-popup"><p>Internal flooding of a residential property on Lidget Lane. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_00fbfffaadc3188cda96d4026030449f.setContent(html_e66bea8334cdc18c8cfa58eb6cbb7bdc);
+            
+        
+
+        marker_af0d6a4f31266ca2914fc84bd3ef92d6.bindPopup(popup_00fbfffaadc3188cda96d4026030449f)
+        ;
+
+        
+    
+    
+            var marker_9e463f75dad7bfeb3e7e6ddfba9c1f5b = L.marker(
+                [53.59267, -1.4557509],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_eea230a64e90c839ac60129276d11589 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9e463f75dad7bfeb3e7e6ddfba9c1f5b.setIcon(icon_eea230a64e90c839ac60129276d11589);
+        
+    
+        var popup_66e76d61abd8144f16a80707a76f7f61 = L.popup({});
+
+        
+            
+                var html_026283776985f0264c90bf2e1961a9fb = $(`<div id="html_026283776985f0264c90bf2e1961a9fb" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pinfold Lane</h1><div class="nugget-popup"><p>Internal flooding to a residential property on Pinfold Lane. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_66e76d61abd8144f16a80707a76f7f61.setContent(html_026283776985f0264c90bf2e1961a9fb);
+            
+        
+
+        marker_9e463f75dad7bfeb3e7e6ddfba9c1f5b.bindPopup(popup_66e76d61abd8144f16a80707a76f7f61)
+        ;
+
+        
+    
+    
+            var marker_31ed676b9e0b6b763fe6b157d11033f3 = L.marker(
+                [53.4815334, -1.3810422],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_72bcc33088f4fcc8e102f9e6ad5ff717 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_31ed676b9e0b6b763fe6b157d11033f3.setIcon(icon_72bcc33088f4fcc8e102f9e6ad5ff717);
+        
+    
+        var popup_c6f65c33fb2baa59905a9f1c612bc039 = L.popup({});
+
+        
+            
+                var html_2491914685fd867137da175c2cadb69f = $(`<div id="html_2491914685fd867137da175c2cadb69f" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Yorkshire</h1><div class="nugget-popup"><p>Region experienced the worst flooding impacts during the incident; heavy rainfall on the Dearne and Dove catchments on 7&ndash;8 November contributed to flooding across the area. (p5)</p></div></div></body></div>`)[0];
+                popup_c6f65c33fb2baa59905a9f1c612bc039.setContent(html_2491914685fd867137da175c2cadb69f);
+            
+        
+
+        marker_31ed676b9e0b6b763fe6b157d11033f3.bindPopup(popup_c6f65c33fb2baa59905a9f1c612bc039)
+        ;
+
+        
+    
+    
+            var marker_607470dcff385808603f434956d3bac3 = L.marker(
+                [53.556802868656305, -1.4370619092831343],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_cdb47277f484499bc9c300cef06326f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_607470dcff385808603f434956d3bac3.setIcon(icon_cdb47277f484499bc9c300cef06326f7);
+        
+    
+        var popup_997ccc534840681d15afab6d97252e15 = L.popup({});
+
+        
+            
+                var html_90b620b1febc0d1a9ee903e9c52049a4 = $(`<div id="html_90b620b1febc0d1a9ee903e9c52049a4" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burton Grange</h1><div class="nugget-popup"><p>Internal flooding of residential properties in the Burton Grange area (notably on Lang Avenue and Michaels Road). (p5)</p></div><div class="nugget-popup"><p>Residential properties on streets within Burton Grange were flooded internally; specific streets affected included Lang Avenue and Michaels Road. (p6)</p></div></div></body></div>`)[0];
+                popup_997ccc534840681d15afab6d97252e15.setContent(html_90b620b1febc0d1a9ee903e9c52049a4);
+            
+        
+
+        marker_607470dcff385808603f434956d3bac3.bindPopup(popup_997ccc534840681d15afab6d97252e15)
+        ;
+
+        
+    
+    
+            var marker_c8b0c679c1373541776e8a7918f12cac = L.marker(
+                [53.52975251012114, -1.3867092296305277],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_345fd70fa51937ff3227b210c51d0d0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c8b0c679c1373541776e8a7918f12cac.setIcon(icon_345fd70fa51937ff3227b210c51d0d0c);
+        
+    
+        var popup_1878e8da4e2b5815aa6fcb585c1bf360 = L.popup({});
+
+        
+            
+                var html_c7b7ea62f6b183377c04898e198dd95b = $(`<div id="html_c7b7ea62f6b183377c04898e198dd95b" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Low Valley</h1><div class="nugget-popup"><p>Internal flooding of residential properties in the Low Valley area (including a caravan site and properties on Cotterdale Gardens). (p5)</p></div><div class="nugget-popup"><p>Internal flooding to multiple residential addresses and at least one business: Cotterdale Gardens (16 residential properties flooded internally), Ings Road (15 residential properties flooded internally) and Station Road (34 residential properties flooded internally and 1 business flooded internally). [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_1878e8da4e2b5815aa6fcb585c1bf360.setContent(html_c7b7ea62f6b183377c04898e198dd95b);
+            
+        
+
+        marker_c8b0c679c1373541776e8a7918f12cac.bindPopup(popup_1878e8da4e2b5815aa6fcb585c1bf360)
+        ;
+
+        
+    
+    
+            var marker_db61d31199cfcc80714650565e8d0090 = L.marker(
+                [53.58705, -1.52676],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_b6f34d7ead61c98f85811e15c63b7839 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_db61d31199cfcc80714650565e8d0090.setIcon(icon_b6f34d7ead61c98f85811e15c63b7839);
+        
+    
+        var popup_e87bfe220266d8e77398f8c291846bcf = L.popup({});
+
+        
+            
+                var html_e92fc2d2ed2786b348d6609e95ea5564 = $(`<div id="html_e92fc2d2ed2786b348d6609e95ea5564" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Darton</h1><div class="nugget-popup"><p>Flooding affected Church Street in Darton, causing internal flooding to properties and businesses in the locality. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_e87bfe220266d8e77398f8c291846bcf.setContent(html_e92fc2d2ed2786b348d6609e95ea5564);
+            
+        
+
+        marker_db61d31199cfcc80714650565e8d0090.bindPopup(popup_e87bfe220266d8e77398f8c291846bcf)
+        ;
+
+        
+    
+    
+            var marker_1d4d3dd16507c653964691458c9237f7 = L.marker(
+                [53.56116, -1.43381],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_2a4756dc3d78b1c27f40e279fba9658b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1d4d3dd16507c653964691458c9237f7.setIcon(icon_2a4756dc3d78b1c27f40e279fba9658b);
+        
+    
+        var popup_c77fea39a7ad95a2a7d168167bb50e05 = L.popup({});
+
+        
+            
+                var html_4ef98ecca1b6784da8530042f051d622 = $(`<div id="html_4ef98ecca1b6784da8530042f051d622" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lundwood</h1><div class="nugget-popup"><p>Internal flooding to residential properties at Lang Avenue (24 properties flooded internally) and Michael&#8217;s Road (3 properties flooded internally). [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_c77fea39a7ad95a2a7d168167bb50e05.setContent(html_4ef98ecca1b6784da8530042f051d622);
+            
+        
+
+        marker_1d4d3dd16507c653964691458c9237f7.bindPopup(popup_c77fea39a7ad95a2a7d168167bb50e05)
+        ;
+
+        
+    
+    
+            var marker_7161f33721a099f9ce50e48aaae48b0f = L.marker(
+                [53.532104, -1.6401665],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_7b44dcf1ec7db4c81fb45eb7a9e95981 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7161f33721a099f9ce50e48aaae48b0f.setIcon(icon_7b44dcf1ec7db4c81fb45eb7a9e95981);
+        
+    
+        var popup_e5cb73922a6a340f24d091c83686653d = L.popup({});
+
+        
+            
+                var html_9dc2500000ec25fb1df7bf55160e5ac0 = $(`<div id="html_9dc2500000ec25fb1df7bf55160e5ac0" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Penistone</h1><div class="nugget-popup"><p>Internal flooding to 1 business on Huddersfield Road, Penistone. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_e5cb73922a6a340f24d091c83686653d.setContent(html_9dc2500000ec25fb1df7bf55160e5ac0);
+            
+        
+
+        marker_7161f33721a099f9ce50e48aaae48b0f.bindPopup(popup_e5cb73922a6a340f24d091c83686653d)
+        ;
+
+        
+    
+    
+            var marker_aac251e2081c2f4d986239c487902e33 = L.marker(
+                [53.5209656, -1.4032589],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_53b2ea546e24ed5b43c79f961d910e0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aac251e2081c2f4d986239c487902e33.setIcon(icon_53b2ea546e24ed5b43c79f961d910e0c);
+        
+    
+        var popup_95b6ff66229a789674a686dd95595687 = L.popup({});
+
+        
+            
+                var html_fec5131c37d0cb0507bc8fa3648b3942 = $(`<div id="html_fec5131c37d0cb0507bc8fa3648b3942" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wombwell</h1><div class="nugget-popup"><p>Flooding affected the Wombwell area (notably Wombwell Lane) with internal flooding of businesses as local watercourses and drainage were overwhelmed. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_95b6ff66229a789674a686dd95595687.setContent(html_fec5131c37d0cb0507bc8fa3648b3942);
+            
+        
+
+        marker_aac251e2081c2f4d986239c487902e33.bindPopup(popup_95b6ff66229a789674a686dd95595687)
+        ;
+
+        
+    
+    
+            var marker_f31cdeb87c45d3dab6bf9937678a85f3 = L.marker(
+                [53.5768042, -1.379153],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_4f1239a189f47b87b37c32b9719d6cc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f31cdeb87c45d3dab6bf9937678a85f3.setIcon(icon_4f1239a189f47b87b37c32b9719d6cc0);
+        
+    
+        var popup_e3a12c825a8a2300a6125a1848d51b46 = L.popup({});
+
+        
+            
+                var html_b8a288b1ee12b56d78b6cc6b0e908678 = $(`<div id="html_b8a288b1ee12b56d78b6cc6b0e908678" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Grimethorpe</h1><div class="nugget-popup"><p>Flooding affected the town&#8217;s High Street with internal flooding to commercial properties. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_e3a12c825a8a2300a6125a1848d51b46.setContent(html_b8a288b1ee12b56d78b6cc6b0e908678);
+            
+        
+
+        marker_f31cdeb87c45d3dab6bf9937678a85f3.bindPopup(popup_e3a12c825a8a2300a6125a1848d51b46)
+        ;
+
+        
+    
+    
+            var marker_f2c9efc69adf52d7cf404ddc72c836a4 = L.marker(
+                [53.5385378, -1.607022],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_b20e8baf6a047a2691d21d584306e167 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f2c9efc69adf52d7cf404ddc72c836a4.setIcon(icon_b20e8baf6a047a2691d21d584306e167);
+        
+    
+        var popup_2c4be2dc80a162567342d84ac6e08b9f = L.popup({});
+
+        
+            
+                var html_533de91bdb9ea7948719312adda986fc = $(`<div id="html_533de91bdb9ea7948719312adda986fc" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hoylandswaine</h1><div class="nugget-popup"><p>Cooper Lane in Hoylandswaine reported internal flooding to property as drainage and watercourses were overwhelmed during the event. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_2c4be2dc80a162567342d84ac6e08b9f.setContent(html_533de91bdb9ea7948719312adda986fc);
+            
+        
+
+        marker_f2c9efc69adf52d7cf404ddc72c836a4.bindPopup(popup_2c4be2dc80a162567342d84ac6e08b9f)
+        ;
+
+        
+    
+    
+            var marker_9a417e5752ea69f6ce4311352b01851b = L.marker(
+                [53.50065, -1.4380847],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_c281fcb4609e6188e0d9ad070c2274bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9a417e5752ea69f6ce4311352b01851b.setIcon(icon_c281fcb4609e6188e0d9ad070c2274bf);
+        
+    
+        var popup_d8eb99409a783aaa86aa10bbff5ccc25 = L.popup({});
+
+        
+            
+                var html_54571958333aef72d4b9f37c9c595d56 = $(`<div id="html_54571958333aef72d4b9f37c9c595d56" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hoyland</h1><div class="nugget-popup"><p>Internal flooding of a residential property on Sheffield Road (Hoyland). [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_d8eb99409a783aaa86aa10bbff5ccc25.setContent(html_54571958333aef72d4b9f37c9c595d56);
+            
+        
+
+        marker_9a417e5752ea69f6ce4311352b01851b.bindPopup(popup_d8eb99409a783aaa86aa10bbff5ccc25)
+        ;
+
+        
+    
+    
+            var marker_feba4289494f93ed33747ee3aa541fae = L.marker(
+                [53.5012235, -1.4979121],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_449a5ce5dca5df72cdaabc27e5736bd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_feba4289494f93ed33747ee3aa541fae.setIcon(icon_449a5ce5dca5df72cdaabc27e5736bd0);
+        
+    
+        var popup_c574031a840d07b7dd61679ca1b3891d = L.popup({});
+
+        
+            
+                var html_62715695f7632c24e3e488338c654fa4 = $(`<div id="html_62715695f7632c24e3e488338c654fa4" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pilley</h1><div class="nugget-popup"><p>Internal flooding of a residential property on Lidget Lane (within Pilley). [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_c574031a840d07b7dd61679ca1b3891d.setContent(html_62715695f7632c24e3e488338c654fa4);
+            
+        
+
+        marker_feba4289494f93ed33747ee3aa541fae.bindPopup(popup_c574031a840d07b7dd61679ca1b3891d)
+        ;
+
+        
+    
+    
+            var marker_ecc7600f0d74ee7e394c2aaf778e9954 = L.marker(
+                [53.5982976, -1.4569413],
+                {}
+            ).addTo(map_4afeba87444e48815bac48178ce4050a);
+        
+    
+            var icon_aae7ee1e72ff4f32a75b24918988c566 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ecc7600f0d74ee7e394c2aaf778e9954.setIcon(icon_aae7ee1e72ff4f32a75b24918988c566);
+        
+    
+        var popup_69900caebe9204ccde0fd70eac6348af = L.popup({});
+
+        
+            
+                var html_6b10d290b84535181d9ee67d43e5e76a = $(`<div id="html_6b10d290b84535181d9ee67d43e5e76a" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Royston</h1><div class="nugget-popup"><p>Internal flooding of residential properties in Royston, specifically at Pinfold Lane and Sitka Close. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_69900caebe9204ccde0fd70eac6348af.setContent(html_6b10d290b84535181d9ee67d43e5e76a);
+            
+        
+
+        marker_ecc7600f0d74ee7e394c2aaf778e9954.bindPopup(popup_69900caebe9204ccde0fd70eac6348af)
+        ;
+
+        
+    
+</script>
+</html>
