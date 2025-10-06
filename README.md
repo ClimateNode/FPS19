@@ -6,8 +6,8 @@ This repository contains the outputs to date of an experimental project being un
 
 It contains two types of outputs:
 
-* maps (HTML files)
-* readouts (markdown files)
+- maps (HTML files)
+- readouts (markdown files)
 (One of each per individual document)
 
 ## Interpretation notes
