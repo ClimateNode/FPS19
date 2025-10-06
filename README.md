@@ -5,6 +5,7 @@
 This repository contains the outputs to date of an experimental project being undertaken by Helen Jackson for Flooded People using an LLM to extract information on flood impacts from Setion 19 reports.
 
 It contains two types of outputs:
+
 * maps (HTML files)
 * readouts (markdown files)
 (One of each per individual document)
