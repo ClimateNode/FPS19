@@ -31,7 +31,7 @@ It contains two types of outputs:
   * **IMG**: information may have been extracted from an image
   * **TAB**: information may have been extracted from a table
   * **LST**: information may have been extracted from a list overlapping pages 
-  * **PAG**: information may have been extracted from the preceding or following page rather than the page number shown
+  * **PAG**: information may have been extracted from text added to the context from a page other than the one indicated
   * **MUL**: information has been extracted from a sentence/paragraph about events on more than one date
 
 • Maps show only information specific to the event which triggered the report, while readouts also contain any information in the report about historic flood events, or flooding in general, at a location.
