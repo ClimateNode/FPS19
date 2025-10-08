@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7ce66ea1ec15b0699f765e93e8fe6182 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7ce66ea1ec15b0699f765e93e8fe6182" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7ce66ea1ec15b0699f765e93e8fe6182 = L.map(
+                "map_7ce66ea1ec15b0699f765e93e8fe6182",
+                {
+                    center: [50.72730201125194, -1.954555349405586],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7d15cc2f0fce2bc5c8e77e7f0885a06a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_7d15cc2f0fce2bc5c8e77e7f0885a06a.addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+    
+            var marker_9c7dd5f2f3c1a826287a0201c6fc24f4 = L.marker(
+                [50.719069, -1.9178217],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_cf636b0949d0768e8887512d85c6fb0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9c7dd5f2f3c1a826287a0201c6fc24f4.setIcon(icon_cf636b0949d0768e8887512d85c6fb0d);
+        
+    
+        var popup_ba1b2fc97e5888adabef839f31a95c52 = L.popup({});
+
+        
+            
+                var html_a4275c58175f97531ed8eade9c398770 = $(`<div id="html_a4275c58175f97531ed8eade9c398770" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Branksome Park Wood</h1><div class="nugget-popup"><p>An open watercourse that receives flow from the Wessex Water surface water sewer runs down Branksome Park Wood; this channel conveyed excess runoff during the event (including 4 June 2022). A debris screen at the culvert leading into this watercourse was cleared at the end of October 2022 to improve drainage after the flooding. [PAG] (p24)</p></div><div class="nugget-popup"><p>The debris screen at the end of the culvert that leads into the watercourse in Branksome Park Wood was blocking drainage (contributing to reduced drainage capacity) and was cleared at the end of October 2022, which improved the drainage capability. [MUL] (p25)</p></div></div></body></div>`)[0];
+                popup_ba1b2fc97e5888adabef839f31a95c52.setContent(html_a4275c58175f97531ed8eade9c398770);
+            
+        
+
+        marker_9c7dd5f2f3c1a826287a0201c6fc24f4.bindPopup(popup_ba1b2fc97e5888adabef839f31a95c52)
+        ;
+
+        
+    
+    
+            var marker_a104e0ccf7d3ebffe6c185f5e72edab1 = L.marker(
+                [50.7284684, -1.9824474],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_b2d23e4cc4eaf0d20e576dd6254c213b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a104e0ccf7d3ebffe6c185f5e72edab1.setIcon(icon_b2d23e4cc4eaf0d20e576dd6254c213b);
+        
+    
+        var popup_df4f68230531d1573a49d3b9cd89f09c = L.popup({});
+
+        
+            
+                var html_802a8c0040757ae0e36ce0a8591974b8 = $(`<div id="html_802a8c0040757ae0e36ce0a8591974b8" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oakdale Junior School</h1><div class="nugget-popup"><p>The watercourse adjacent to Oakdale Junior School was associated with some of the flood reports for 4&ndash;5 June 2022; it drains into the Sterte Surface Water Pumping Station and contributed to local flooding observations. [IMG] (p27)</p></div><div class="nugget-popup"><p>The watercourse adjacent to the school was implicated in flooding reports; debris screens along that watercourse were found opened after the event, indicating local watercourse flooding impacted the school vicinity. (p28)</p></div></div></body></div>`)[0];
+                popup_df4f68230531d1573a49d3b9cd89f09c.setContent(html_802a8c0040757ae0e36ce0a8591974b8);
+            
+        
+
+        marker_a104e0ccf7d3ebffe6c185f5e72edab1.bindPopup(popup_df4f68230531d1573a49d3b9cd89f09c)
+        ;
+
+        
+    
+    
+            var marker_4a6df6a66be8e5b2ed629727a5bdf69e = L.marker(
+                [50.71835, -1.8761166],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_7ba95360c9a33814b6ae411cce14d207 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4a6df6a66be8e5b2ed629727a5bdf69e.setIcon(icon_7ba95360c9a33814b6ae411cce14d207);
+        
+    
+        var popup_1154d72572c47caf3597a52ae9fe4496 = L.popup({});
+
+        
+            
+                var html_756bc8060304405046fc3ff8fef2d75c = $(`<div id="html_756bc8060304405046fc3ff8fef2d75c" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lower Gardens</h1><div class="nugget-popup"><p>Floodwater covered much of the park area, submerging benches and pathways as shown in imagery and described in the report; one kiosk likely flooded. [IMG] (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one kiosk [IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_1154d72572c47caf3597a52ae9fe4496.setContent(html_756bc8060304405046fc3ff8fef2d75c);
+            
+        
+
+        marker_4a6df6a66be8e5b2ed629727a5bdf69e.bindPopup(popup_1154d72572c47caf3597a52ae9fe4496)
+        ;
+
+        
+    
+    
+            var marker_24cd993c27b0335590027f62b464631f = L.marker(
+                [50.73681543722981, -1.9407545054998117],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_3b4c021ce216c5e64a26c3a4e7d4555e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_24cd993c27b0335590027f62b464631f.setIcon(icon_3b4c021ce216c5e64a26c3a4e7d4555e);
+        
+    
+        var popup_96ca22cf931d0d889dba1b77f7f1e56f = L.popup({});
+
+        
+            
+                var html_500e2c42f441cef499745e8b36960ab8 = $(`<div id="html_500e2c42f441cef499745e8b36960ab8" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Newtown and Heatherlands</h1><div class="nugget-popup"><p>Experienced internal flooding of residential properties during the event. [TAB] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 residential properties [TAB] (p19)</p></div></div></body></div>`)[0];
+                popup_96ca22cf931d0d889dba1b77f7f1e56f.setContent(html_500e2c42f441cef499745e8b36960ab8);
+            
+        
+
+        marker_24cd993c27b0335590027f62b464631f.bindPopup(popup_96ca22cf931d0d889dba1b77f7f1e56f)
+        ;
+
+        
+    
+    
+            var marker_85a365a5dcd7a81358c874b9977d9ede = L.marker(
+                [50.741102556132695, -1.9146957283486086],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_49fe91f9dc1d5df45b2bce075760da69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_85a365a5dcd7a81358c874b9977d9ede.setIcon(icon_49fe91f9dc1d5df45b2bce075760da69);
+        
+    
+        var popup_11b5e252e6246fe17eeb3d1723bed673 = L.popup({});
+
+        
+            
+                var html_b67909e1ec2d7e267f6ec4bf739f1995 = $(`<div id="html_b67909e1ec2d7e267f6ec4bf739f1995" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Alderney and Bourne Valley</h1><div class="nugget-popup"><p>Experienced internal flooding of commercial property during the event. [TAB] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 commercial property [TAB] (p19)</p></div></div></body></div>`)[0];
+                popup_11b5e252e6246fe17eeb3d1723bed673.setContent(html_b67909e1ec2d7e267f6ec4bf739f1995);
+            
+        
+
+        marker_85a365a5dcd7a81358c874b9977d9ede.bindPopup(popup_11b5e252e6246fe17eeb3d1723bed673)
+        ;
+
+        
+    
+    
+            var marker_6ab5c6bbcfee406dfaf656c93f304c6a = L.marker(
+                [50.76724526192537, -1.885822907103926],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_d9fd1851689135fc669875b40bd2598c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6ab5c6bbcfee406dfaf656c93f304c6a.setIcon(icon_d9fd1851689135fc669875b40bd2598c);
+        
+    
+        var popup_3ca86107d4977de543d3f619e17d3bb7 = L.popup({});
+
+        
+            
+                var html_44c53854e399945a6bf726b5adcf7887 = $(`<div id="html_44c53854e399945a6bf726b5adcf7887" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Redhill and Northbourne</h1><div class="nugget-popup"><p>Internal flooding of a residential property (home flooded internally). [TAB] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property [TAB] (p19)</p></div></div></body></div>`)[0];
+                popup_3ca86107d4977de543d3f619e17d3bb7.setContent(html_44c53854e399945a6bf726b5adcf7887);
+            
+        
+
+        marker_6ab5c6bbcfee406dfaf656c93f304c6a.bindPopup(popup_3ca86107d4977de543d3f619e17d3bb7)
+        ;
+
+        
+    
+    
+            var marker_338ff492c2f85504f6dea5a815f078a5 = L.marker(
+                [50.7269859, -1.9987384],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_52b0cdc8c79ef4572911e1397b0e5f6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_338ff492c2f85504f6dea5a815f078a5.setIcon(icon_52b0cdc8c79ef4572911e1397b0e5f6f);
+        
+    
+        var popup_28f58f32220e6008c0a064e42ba93ce8 = L.popup({});
+
+        
+            
+                var html_396e560c76dec2d41a3ef4c52ffcc3a9 = $(`<div id="html_396e560c76dec2d41a3ef4c52ffcc3a9" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holes Bay</h1><div class="nugget-popup"><p>Downstream channel capacity within the SSSI in Holes Bay restricted the outfall&#8217;s ability to discharge surface water after the flood event, contributing to reduced drainage efficiency from upstream (including Blandford Road). [IMG] (p22)</p></div></div></body></div>`)[0];
+                popup_28f58f32220e6008c0a064e42ba93ce8.setContent(html_396e560c76dec2d41a3ef4c52ffcc3a9);
+            
+        
+
+        marker_338ff492c2f85504f6dea5a815f078a5.bindPopup(popup_28f58f32220e6008c0a064e42ba93ce8)
+        ;
+
+        
+    
+    
+            var marker_d9d21f1d007b8452aee1b6dc1a90735b = L.marker(
+                [50.7642066, -1.9240679],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_35586609f869e7df463b4398949d4b7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d9d21f1d007b8452aee1b6dc1a90735b.setIcon(icon_35586609f869e7df463b4398949d4b7e);
+        
+    
+        var popup_16902ff38c38ec305f6638a50a1e9a62 = L.popup({});
+
+        
+            
+                var html_fb2311cf7fbb6bb1c7d0241db0c60442 = $(`<div id="html_fb2311cf7fbb6bb1c7d0241db0c60442" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ringwood Road, Bournemouth</h1><div class="nugget-popup"><p>Reports on social media described Ringwood Road as flooded during the intense rainfall on the night of 4&ndash;5 June 2022, indicating highway/surface&ndash;water flooding affecting the road. (p20)</p></div></div></body></div>`)[0];
+                popup_16902ff38c38ec305f6638a50a1e9a62.setContent(html_fb2311cf7fbb6bb1c7d0241db0c60442);
+            
+        
+
+        marker_d9d21f1d007b8452aee1b6dc1a90735b.bindPopup(popup_16902ff38c38ec305f6638a50a1e9a62)
+        ;
+
+        
+    
+    
+            var marker_7359a6e5c28f01fe13cc4c1e62258b1e = L.marker(
+                [50.7125533, -1.9981511],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_d5757e7fde244bf186030f2afe696217 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7359a6e5c28f01fe13cc4c1e62258b1e.setIcon(icon_d5757e7fde244bf186030f2afe696217);
+        
+    
+        var popup_db8bf7e2e45164acc71d69f91f8764fe = L.popup({});
+
+        
+            
+                var html_c06f261812cc93e2b56a7df58d74f561 = $(`<div id="html_c06f261812cc93e2b56a7df58d74f561" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Blandford Road, Poole</h1><div class="nugget-popup"><p>Surface water accumulated at the low point on Blandford Road causing localised flooding of the highway; runoff south of the railway entered highway gullies and drained into a channel near Hewitt Road that discharges to Holes Bay. Following the flooding event, outfall channels were desilted and reprofiled to improve drainage, and highways gully improvements were carried out. [PAG] (p22)</p></div><div class="nugget-popup"><p>Blandford Road is at a low point where surface water accumulates south of the railway, flows into highway gullies and drains into a channel near Hewitt Road toward Holes Bay. The location has experienced flooding (investigated for the 20 July 2021 rainfall event) and is shown to be at risk on local surface water flood maps; this topographic and tidal situation limits the effectiveness of partial works and suggests property&ndash;level resilience measures should be considered. (p23)</p></div><div class="nugget-popup"><p>Identified as being affected by surface water flooding during the June 2022 rainfall event and nominated as a location needing a Surface Water Management Plan / consideration for flood alleviation options. [TAB] (p33)</p></div></div></body></div>`)[0];
+                popup_db8bf7e2e45164acc71d69f91f8764fe.setContent(html_c06f261812cc93e2b56a7df58d74f561);
+            
+        
+
+        marker_7359a6e5c28f01fe13cc4c1e62258b1e.bindPopup(popup_db8bf7e2e45164acc71d69f91f8764fe)
+        ;
+
+        
+    
+    
+            var marker_eea38e88e65974938c54dee7804b1768 = L.marker(
+                [50.7251935, -2.0110911],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_24002451cbb429d307748fd4d5a516ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eea38e88e65974938c54dee7804b1768.setIcon(icon_24002451cbb429d307748fd4d5a516ed);
+        
+    
+        var popup_c38b4ea557ef94dbf7f4fe6f5e48d2cb = L.popup({});
+
+        
+            
+                var html_03ae0b3e85b7d84ea80b3af3d4267d4c = $(`<div id="html_03ae0b3e85b7d84ea80b3af3d4267d4c" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hewitt Road, Poole</h1><div class="nugget-popup"><p>The drainage channel near Hewitt Road was heavily silted and contributed to restricted discharge capacity; it was desilted and reprofiled by BCP in late October 2022 after flooding, which visibly improved channel capacity and outfall discharge. Flows, however, remain somewhat restricted further downstream within the Holes Bay SSSI and the channel will require regular hand maintenance and periodic mechanical works. [IMG] (p23)</p></div></div></body></div>`)[0];
+                popup_c38b4ea557ef94dbf7f4fe6f5e48d2cb.setContent(html_03ae0b3e85b7d84ea80b3af3d4267d4c);
+            
+        
+
+        marker_eea38e88e65974938c54dee7804b1768.bindPopup(popup_c38b4ea557ef94dbf7f4fe6f5e48d2cb)
+        ;
+
+        
+    
+    
+            var marker_7c38a07e24e2ddc4dd0c0702c3405486 = L.marker(
+                [50.7242302, -1.9250543],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_1f32c6ac590d1827e0a79956f8113a7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7c38a07e24e2ddc4dd0c0702c3405486.setIcon(icon_1f32c6ac590d1827e0a79956f8113a7c);
+        
+    
+        var popup_4a5a89a4b0c8a5b97f04c0cc75f31adc = L.popup({});
+
+        
+            
+                var html_8668f72a1c46c91a296191c24de07e56 = $(`<div id="html_8668f72a1c46c91a296191c24de07e56" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Archway Road, Penn Hill</h1><div class="nugget-popup"><p>Surface water runoff was channelled to a low point at the bottom of Archway Road where drainage was overwhelmed beyond design capacity, resulting in flooding during the event on 4 June 2022. Blocked highway gullies (exacerbated by pine needles and debris) and the connection to a Wessex Water surface water sewer contributed to the issue. Post&ndash;event works included an additional gully connection completed in October 2022 and clearance of the downstream culvert debris screen to improve drainage. (p24)</p></div><div class="nugget-popup"><p>The area around Archway Road experienced surface water flooding during the heavy rainfall of 04 Jun 2022 &ndash; 05 Jun 2022 and was identified as requiring a Surface Water Management Plan (SWMP) study. [TAB] (p33)</p></div></div></body></div>`)[0];
+                popup_4a5a89a4b0c8a5b97f04c0cc75f31adc.setContent(html_8668f72a1c46c91a296191c24de07e56);
+            
+        
+
+        marker_7c38a07e24e2ddc4dd0c0702c3405486.bindPopup(popup_4a5a89a4b0c8a5b97f04c0cc75f31adc)
+        ;
+
+        
+    
+    
+            var marker_5bb06180feb80a100dfaba90301648c6 = L.marker(
+                [50.7238809, -1.9259572],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_15e3a1dbf1f39abf4678acb933df20bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5bb06180feb80a100dfaba90301648c6.setIcon(icon_15e3a1dbf1f39abf4678acb933df20bf);
+        
+    
+        var popup_f2fa13343397bd055ca6c622b21f0bdd = L.popup({});
+
+        
+            
+                var html_33f65fba640a92207ad2217fd60881f0 = $(`<div id="html_33f65fba640a92207ad2217fd60881f0" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North Lodge Road, Penn Hill</h1><div class="nugget-popup"><p>Described as being on the route of surface water flow paths that channel runoff toward the low point at the bottom of Archway Road; this routing contributed to the drainage being overwhelmed and the subsequent flooding experienced on 4 June 2022. (p24)</p></div></div></body></div>`)[0];
+                popup_f2fa13343397bd055ca6c622b21f0bdd.setContent(html_33f65fba640a92207ad2217fd60881f0);
+            
+        
+
+        marker_5bb06180feb80a100dfaba90301648c6.bindPopup(popup_f2fa13343397bd055ca6c622b21f0bdd)
+        ;
+
+        
+    
+    
+            var marker_1bd4a0c8e67892e475284f1298dc8e86 = L.marker(
+                [50.7225759, -1.9335096],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_1b6b67a524da5a810d9924007a87abee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1bd4a0c8e67892e475284f1298dc8e86.setIcon(icon_1b6b67a524da5a810d9924007a87abee);
+        
+    
+        var popup_ae5dcc393f69bf8ce529538e86b8ba1b = L.popup({});
+
+        
+            
+                var html_bf31594894844c50eb9ddd5f6414ff7a = $(`<div id="html_bf31594894844c50eb9ddd5f6414ff7a" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Penn Hill Avenue, Penn Hill</h1><div class="nugget-popup"><p>Parts of Penn Hill Avenue are identified as being on the flow paths directing runoff toward the low point at Archway Road; this contributed to drainage being overwhelmed and flooding during the 4 June 2022 event. (p24)</p></div></div></body></div>`)[0];
+                popup_ae5dcc393f69bf8ce529538e86b8ba1b.setContent(html_bf31594894844c50eb9ddd5f6414ff7a);
+            
+        
+
+        marker_1bd4a0c8e67892e475284f1298dc8e86.bindPopup(popup_ae5dcc393f69bf8ce529538e86b8ba1b)
+        ;
+
+        
+    
+    
+            var marker_4ac330406587652c4cd634e296c2e533 = L.marker(
+                [50.7102325, -1.9262284],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_086cedda794937e76570c40be2631c38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4ac330406587652c4cd634e296c2e533.setIcon(icon_086cedda794937e76570c40be2631c38);
+        
+    
+        var popup_6e2099a106f4fc3fc6eae6e4cd86de64 = L.popup({});
+
+        
+            
+                var html_54581c203b4181b21ca0f916d929ccd4 = $(`<div id="html_54581c203b4181b21ca0f916d929ccd4" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Canford Cliffs Road, Poole</h1><div class="nugget-popup"><p>Parts of these roads are on surface water flow paths that direct runoff toward the low point at the bottom of Archway Road; runoff from these streets contributed to the drainage being overwhelmed and to flooding recorded on 4 June 2022. (p24)</p></div></div></body></div>`)[0];
+                popup_6e2099a106f4fc3fc6eae6e4cd86de64.setContent(html_54581c203b4181b21ca0f916d929ccd4);
+            
+        
+
+        marker_4ac330406587652c4cd634e296c2e533.bindPopup(popup_6e2099a106f4fc3fc6eae6e4cd86de64)
+        ;
+
+        
+    
+    
+            var marker_22a34aebd4f1f4f2b7ad2dbfe568d5b2 = L.marker(
+                [50.7189077, -1.9303618],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_c8092faa00436a38de19f20761516e05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_22a34aebd4f1f4f2b7ad2dbfe568d5b2.setIcon(icon_c8092faa00436a38de19f20761516e05);
+        
+    
+        var popup_ae71b014d4b3fa0c43f4ca7b066e90bf = L.popup({});
+
+        
+            
+                var html_f09b0428f8f958fb0275cfb3322fbb8d = $(`<div id="html_f09b0428f8f958fb0275cfb3322fbb8d" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kings Avenue, Penn Hill</h1><div class="nugget-popup"><p>Parts of these roads are on surface water flow paths that direct runoff toward the low point at the bottom of Archway Road; runoff from these streets contributed to the drainage being overwhelmed and to flooding recorded on 4 June 2022. (p24)</p></div></div></body></div>`)[0];
+                popup_ae71b014d4b3fa0c43f4ca7b066e90bf.setContent(html_f09b0428f8f958fb0275cfb3322fbb8d);
+            
+        
+
+        marker_22a34aebd4f1f4f2b7ad2dbfe568d5b2.bindPopup(popup_ae71b014d4b3fa0c43f4ca7b066e90bf)
+        ;
+
+        
+    
+    
+            var marker_213f766c5c7849ac2a49d93437ee4290 = L.marker(
+                [50.7176609, -1.9813076],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_760d1e6f77e35d4d6b6ff146b2a52e7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_213f766c5c7849ac2a49d93437ee4290.setIcon(icon_760d1e6f77e35d4d6b6ff146b2a52e7c);
+        
+    
+        var popup_0be6d1abcb9a078ed75299190116ca46 = L.popup({});
+
+        
+            
+                var html_ef9335f3f50109ef5bacaf4c178b6382 = $(`<div id="html_ef9335f3f50109ef5bacaf4c178b6382" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingland Crescent, Poole</h1><div class="nugget-popup"><p>Kingland Crescent experienced flooding during the event; the Poole Food Bank storage facility located on this street had its ground floor flooded and lost stock. [PAG] (p26)</p></div><div class="nugget-popup"><p>Flood modelling confirms that surface&ndash;water flooding is likely in Kingland Crescent; the Poole Food Bank storage facility is located here and was affected by flooding during the event. (p27)</p></div></div></body></div>`)[0];
+                popup_0be6d1abcb9a078ed75299190116ca46.setContent(html_ef9335f3f50109ef5bacaf4c178b6382);
+            
+        
+
+        marker_213f766c5c7849ac2a49d93437ee4290.bindPopup(popup_0be6d1abcb9a078ed75299190116ca46)
+        ;
+
+        
+    
+    
+            var marker_8e4b9ea99b6b733752e66216de326cc2 = L.marker(
+                [50.7181168, -1.9781434],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_ad6e7fdc206b0289967716c3ef6484d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8e4b9ea99b6b733752e66216de326cc2.setIcon(icon_ad6e7fdc206b0289967716c3ef6484d5);
+        
+    
+        var popup_5756372abd350c5bac9a03f3152860df = L.popup({});
+
+        
+            
+                var html_c60d5eb2da08e8fa80dfcd8827df4cc5 = $(`<div id="html_c60d5eb2da08e8fa80dfcd8827df4cc5" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingland Road, Poole</h1><div class="nugget-popup"><p>Area described as low&ndash;lying with the bus station low relative to Kingland Road; surface&ndash;water flood modelling (1 in 30&ndash;year 1 hour and 1.0PCSYM AEP) indicates flooding is likely at Kingland Road and adjacent bus station during the event. (p27)</p></div></div></body></div>`)[0];
+                popup_5756372abd350c5bac9a03f3152860df.setContent(html_c60d5eb2da08e8fa80dfcd8827df4cc5);
+            
+        
+
+        marker_8e4b9ea99b6b733752e66216de326cc2.bindPopup(popup_5756372abd350c5bac9a03f3152860df)
+        ;
+
+        
+    
+    
+            var marker_cdf4e0f32c90429eb9a77e3af2b18ae8 = L.marker(
+                [50.7201514, -1.8799118],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_bafaa5244b622a5c58d1db78a46e6c2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cdf4e0f32c90429eb9a77e3af2b18ae8.setIcon(icon_bafaa5244b622a5c58d1db78a46e6c2e);
+        
+    
+        var popup_388b33046760df36c492569430538f13 = L.popup({});
+
+        
+            
+                var html_cb1c5eab09b10b3f2dcef9fb3036402d = $(`<div id="html_cb1c5eab09b10b3f2dcef9fb3036402d" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bournemouth Christchurch and Poole</h1><div class="nugget-popup"><p>Intense convective rainfall on the night of 4&ndash;5 June 2022 produced extensive surface water / urban flooding across the BCP conurbation, causing internal flooding of residential and commercial properties. Some reports indicated foul sewage was present in floodwater. Six of the previously flooded properties were recorded as flooding internally again during a heavy rainfall event on 5 September 2022. (p5)</p></div><div class="nugget-popup"><p>Recorded cluster of flooding incidents on 4&ndash;5 June 2022 concentrated over Poole, including internal property flooding, internal + sewage incidents, external + sewage incidents and highway (road) flooding; social media and reports captured gardens, highways and roads flooding across the area. (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>21 residential properties; 4 commercial properties; 6 properties (subsequently flooded again on 5 September 2022) (p5)</p></div></div></body></div>`)[0];
+                popup_388b33046760df36c492569430538f13.setContent(html_cb1c5eab09b10b3f2dcef9fb3036402d);
+            
+        
+
+        marker_cdf4e0f32c90429eb9a77e3af2b18ae8.bindPopup(popup_388b33046760df36c492569430538f13)
+        ;
+
+        
+    
+    
+            var marker_da071a5af7814b196252735745c822ca = L.marker(
+                [50.74737687263831, -2.4192394577688887],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_0a1ddee4ed3d87892f4d88b58298d5b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_da071a5af7814b196252735745c822ca.setIcon(icon_0a1ddee4ed3d87892f4d88b58298d5b5);
+        
+    
+        var popup_77e2463a7defaed1e7eda76937747eef = L.popup({});
+
+        
+            
+                var html_4c69aac8d0e9dc480e8147d3fb19b11a = $(`<div id="html_4c69aac8d0e9dc480e8147d3fb19b11a" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dorset</h1><div class="nugget-popup"><p>Local and media reports described a thunderstorm on 4&ndash;5 June 2022 that &#8216;brought flash flooding&#8217; across Dorset; specific local reports (e.g. Upton) described torrential rain and flooding impacts associated with the event. (p20)</p></div><div class="nugget-popup"><p>Intense thunderstorm on the night of 4&ndash;5 June 2022 produced flash and surface&ndash;water flooding across the county: social media and news reports describe gardens and highways flooding (reports specifically naming Ringwood Road, Whitecliff, Lilliput and Canford Cliffs), flooded roads in Parkstone, and widespread intense rainfall, thunder and lightning. The storm is also associated with severe road&ndash;surface damage reported in Poole. [IMG,PAG] (p21)</p></div></div></body></div>`)[0];
+                popup_77e2463a7defaed1e7eda76937747eef.setContent(html_4c69aac8d0e9dc480e8147d3fb19b11a);
+            
+        
+
+        marker_da071a5af7814b196252735745c822ca.bindPopup(popup_77e2463a7defaed1e7eda76937747eef)
+        ;
+
+        
+    
+    
+            var marker_402a6a581a30278689236d1e95a16c2d = L.marker(
+                [50.71932710846497, -1.9795429619647233],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_2c2d6cbb134ef17b79e07288eb54c748 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_402a6a581a30278689236d1e95a16c2d.setIcon(icon_2c2d6cbb134ef17b79e07288eb54c748);
+        
+    
+        var popup_05f69db5b86edc8c8ca75cb7d743ff17 = L.popup({});
+
+        
+            
+                var html_0c204873856fee35cad75a308b09bf42 = $(`<div id="html_0c204873856fee35cad75a308b09bf42" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>George Roundabout</h1><div class="nugget-popup"><p>A subway near The George Roundabout reportedly flooded to a shallow depth during the event. (p27)</p></div></div></body></div>`)[0];
+                popup_05f69db5b86edc8c8ca75cb7d743ff17.setContent(html_0c204873856fee35cad75a308b09bf42);
+            
+        
+
+        marker_402a6a581a30278689236d1e95a16c2d.bindPopup(popup_05f69db5b86edc8c8ca75cb7d743ff17)
+        ;
+
+        
+    
+    
+            var marker_f24b6a7558525dff5d9ec93f902ae73f = L.marker(
+                [50.7201514, -1.8799118],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_81fe97f0ff92e09d28e983759d1eea43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f24b6a7558525dff5d9ec93f902ae73f.setIcon(icon_81fe97f0ff92e09d28e983759d1eea43);
+        
+    
+        var popup_ef20db34b3ee29ecf9cecf79bc9a179d = L.popup({});
+
+        
+            
+                var html_e54bf4fd7ffd44017d2a46fb406ca40e = $(`<div id="html_e54bf4fd7ffd44017d2a46fb406ca40e" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bournemouth</h1><div class="nugget-popup"><p>Parts of Bournemouth experienced intense, short&ndash;duration rainfall (examples in the text include Southbourne and small numbers of reports in Northbourne), resulting in surface water flooding and internal flooding of residential and commercial properties in parts of the town. (p5)</p></div><div class="nugget-popup"><p>Localized, intense rainfall on the evening of 4 June 2022 produced surface&ndash;water/urban flooding in Bournemouth; the event is the subject of this flood investigation and was highlighted by Met Office radar showing the heaviest rainfall concentrated around Bournemouth and adjacent areas. [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_ef20db34b3ee29ecf9cecf79bc9a179d.setContent(html_e54bf4fd7ffd44017d2a46fb406ca40e);
+            
+        
+
+        marker_f24b6a7558525dff5d9ec93f902ae73f.bindPopup(popup_ef20db34b3ee29ecf9cecf79bc9a179d)
+        ;
+
+        
+    
+    
+            var marker_9a0ad8f86cc00ef5b016349718e01e62 = L.marker(
+                [50.716917044392346, -1.9761308319391357],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_3cfe7133643f25dcab852c5b4551a8ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9a0ad8f86cc00ef5b016349718e01e62.setIcon(icon_3cfe7133643f25dcab852c5b4551a8ca);
+        
+    
+        var popup_a6db09f83b08c14b7da37e3218c33a5d = L.popup({});
+
+        
+            
+                var html_9fc8c6c0f927efdbbede4c89e6aaee9a = $(`<div id="html_9fc8c6c0f927efdbbede4c89e6aaee9a" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Poole</h1><div class="nugget-popup"><p>Areas of the conurbation within Poole (examples given include Hamworthy and Upper Parkstone) experienced the intense rainfall event and associated surface water flooding; the Livingstone Road Junior School rain gauge in Upper Parkstone recorded ~31 mm in one hour during the event. (p5)</p></div><div class="nugget-popup"><p>Residential and commercial properties flooded internally during the event; internal flooding recorded in homes and businesses. [TAB] (p19)</p></div><div class="nugget-popup"><p>Parts of Poole Town Centre around Kingland Road/Crescent flooded during the event; two buildings in the area flooded internally and a subway near The George Roundabout flooded to a shallow depth. [PAG] (p26)</p></div><div class="nugget-popup"><p>Low&ndash;lying area around the Dolphin Shopping Centre and Kingland Road where surface&ndash;water/urban flooding occurred or was modelled as likely; two nearby buildings were reported to have flooded internally during the event and local low subways flooded to a shallow depth. (p27)</p></div><div class="nugget-popup"><p>Intense, localised rainfall on 4&ndash;5 June 2022 caused surface water / urban flooding that mainly affected properties in Poole. Local drainage was overwhelmed in some areas, with blocked gullies and debris contributing to poor drainage performance and localized inundation. (p31)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 residential properties; 2 commercial properties [TAB] (p19)</p></div><div class="nugget-popup quant"><p>2 buildings; 1 subway [PAG] (p26)</p></div><div class="nugget-popup quant"><p>two buildings (p27)</p></div></div></body></div>`)[0];
+                popup_a6db09f83b08c14b7da37e3218c33a5d.setContent(html_9fc8c6c0f927efdbbede4c89e6aaee9a);
+            
+        
+
+        marker_9a0ad8f86cc00ef5b016349718e01e62.bindPopup(popup_a6db09f83b08c14b7da37e3218c33a5d)
+        ;
+
+        
+    
+    
+            var marker_f3ec84c0d3749abfc59535db8466dd71 = L.marker(
+                [50.7178289, -2.012165],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_9071a9c6305ecb561e001aded85df76b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f3ec84c0d3749abfc59535db8466dd71.setIcon(icon_9071a9c6305ecb561e001aded85df76b);
+        
+    
+        var popup_9ade486b8ff3e9f2d4ab07346dc37a22 = L.popup({});
+
+        
+            
+                var html_f2559f453bb7d2b83ebca442ae43d1c1 = $(`<div id="html_f2559f453bb7d2b83ebca442ae43d1c1" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hamworthy</h1><div class="nugget-popup"><p>Experienced intense, short&ndash;duration surface water/urban flooding during the 4&ndash;5 June 2022 heavy rainfall event. The area was within the western sector where the heaviest rainfall and most flood reports were recorded; the event caused localized surface water inundation and contributed to internal flooding incidents in the western conurbation. (p5)</p></div><div class="nugget-popup"><p>Hamworthy experienced an intense convective rainfall event on the night of 4 June 2022 (heavy downpour starting around 23:15). Rainfall observations record approximately 22.6 mm between 23:00 and 00:00 on 4 June 2022, producing conditions associated with local surface&ndash;water/flash flooding and significant drainage stress in the Hamworthy area. [IMG] (p18)</p></div><div class="nugget-popup"><p>Surface water accumulated south of the railway and ponded at a low point on Blandford Road causing highway flooding. Water flowed into gullies and a nearby channel that discharges to Holes Bay; restricted channel capacity downstream (within the Holes Bay SSSI) limited discharge. Post&ndash;event works (desilting and reprofiling of outfall channels in late Oct 2022) were carried out to improve channel and outfall capacity. BCP Highways improved the local gully system and plan increased gully inspection frequency; Wessex Water plan to improve a pipe junction in a manhole near the Blandford Road low point to improve drainage. [IMG] (p22)</p></div><div class="nugget-popup"><p>Experienced flooding impacts during the intense rainfall on 04 Jun 2022 &ndash; 05 Jun 2022; channel clearance was organised/undertaken in response to blocked channels and drainage issues. (p31)</p></div><div class="nugget-popup"><p>Area experienced surface water flooding during the rainfall event of June 2022 and contains locations (e.g. Blandford Road) identified for further study and potential flood alleviation works. [TAB] (p33)</p></div></div></body></div>`)[0];
+                popup_9ade486b8ff3e9f2d4ab07346dc37a22.setContent(html_f2559f453bb7d2b83ebca442ae43d1c1);
+            
+        
+
+        marker_f3ec84c0d3749abfc59535db8466dd71.bindPopup(popup_9ade486b8ff3e9f2d4ab07346dc37a22)
+        ;
+
+        
+    
+    
+            var marker_70a529372f5cb0f5774e1387eae73d3f = L.marker(
+                [50.7676415, -1.8842778],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_af1bf8c89263ac904c34c7980a4eb2d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_70a529372f5cb0f5774e1387eae73d3f.setIcon(icon_af1bf8c89263ac904c34c7980a4eb2d9);
+        
+    
+        var popup_a938a56bbd82979b4f488ffadb5c98b0 = L.popup({});
+
+        
+            
+                var html_8676fd9f709045a6b35f1afc65f1db0f = $(`<div id="html_8676fd9f709045a6b35f1afc65f1db0f" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northbourne</h1><div class="nugget-popup"><p>A small number of flood reports were recorded in Northbourne during the 4&ndash;5 June 2022 intense rainfall event, indicating localized surface water flooding impacts in the area. (p5)</p></div></div></body></div>`)[0];
+                popup_a938a56bbd82979b4f488ffadb5c98b0.setContent(html_8676fd9f709045a6b35f1afc65f1db0f);
+            
+        
+
+        marker_70a529372f5cb0f5774e1387eae73d3f.bindPopup(popup_a938a56bbd82979b4f488ffadb5c98b0)
+        ;
+
+        
+    
+    
+            var marker_0896efef8dc1c087f61e1a8a30aea753 = L.marker(
+                [50.7224115, -1.9272815],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_690cf15558a8144dcca991c422b2f2c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0896efef8dc1c087f61e1a8a30aea753.setIcon(icon_690cf15558a8144dcca991c422b2f2c4);
+        
+    
+        var popup_40bcd4e9cdc13c327ec6db22e3334d0e = L.popup({});
+
+        
+            
+                var html_e8f650ef3a34cb7c1ff0152fa8f281ea = $(`<div id="html_e8f650ef3a34cb7c1ff0152fa8f281ea" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Penn Hill</h1><div class="nugget-popup"><p>Residential properties flooded internally during the event. [TAB] (p19)</p></div><div class="nugget-popup"><p>The Penn Hill area directs surface water runoff down local roads toward a low point (bottom of Archway Road) where drainage was overwhelmed, causing flooding on multiple occasions including 4 June 2022. Accumulation of pine needles in gullies and urban creep increasing impermeable surfaces were identified as contributing factors. (p24)</p></div><div class="nugget-popup"><p>Penn Hill was affected by surface water flooding during the 04 Jun 2022 &ndash; 05 Jun 2022 rainfall; locations within the area (notably around Archway Road) were identified for further SWMP study. [TAB] (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 residential properties [TAB] (p19)</p></div></div></body></div>`)[0];
+                popup_40bcd4e9cdc13c327ec6db22e3334d0e.setContent(html_e8f650ef3a34cb7c1ff0152fa8f281ea);
+            
+        
+
+        marker_0896efef8dc1c087f61e1a8a30aea753.bindPopup(popup_40bcd4e9cdc13c327ec6db22e3334d0e)
+        ;
+
+        
+    
+    
+            var marker_7a5e8bd210251dd45e4b1cac61781fdd = L.marker(
+                [50.72298, -1.9513429],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_f25baa7b45a6d7224ea0643baedee77a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7a5e8bd210251dd45e4b1cac61781fdd.setIcon(icon_f25baa7b45a6d7224ea0643baedee77a);
+        
+    
+        var popup_0572a204db4d74e213155dd68b0990fa = L.popup({});
+
+        
+            
+                var html_f3b28e6fdd5a9560332ad0c44f7f07ed = $(`<div id="html_f3b28e6fdd5a9560332ad0c44f7f07ed" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Parkstone</h1><div class="nugget-popup"><p>Internal flooding of a commercial property (business premises flooded internally). [TAB] (p19)</p></div><div class="nugget-popup"><p>Flooded roads reported during the 4&ndash;5 June 2022 storm (social media/comments on local articles noted flooded roads in Parkstone). (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 commercial property [TAB] (p19)</p></div></div></body></div>`)[0];
+                popup_0572a204db4d74e213155dd68b0990fa.setContent(html_f3b28e6fdd5a9560332ad0c44f7f07ed);
+            
+        
+
+        marker_7a5e8bd210251dd45e4b1cac61781fdd.bindPopup(popup_0572a204db4d74e213155dd68b0990fa)
+        ;
+
+        
+    
+    
+            var marker_b2e4dc8efb91070efd7e93267fde857f = L.marker(
+                [50.731529, -1.975416],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_c3b7ac2cd08efc7b9d2afd93c065834a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b2e4dc8efb91070efd7e93267fde857f.setIcon(icon_c3b7ac2cd08efc7b9d2afd93c065834a);
+        
+    
+        var popup_9f97e419a4f922d58169c4b4e0838249 = L.popup({});
+
+        
+            
+                var html_9596d710d557743a5867ccffb31a6de0 = $(`<div id="html_9596d710d557743a5867ccffb31a6de0" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oakdale</h1><div class="nugget-popup"><p>Internal flooding of residential properties (homes flooded internally). [TAB] (p19)</p></div><div class="nugget-popup"><p>There were reports of flooding on 4&ndash;5 Jun 2022 impacting Oakdale/Sterte: internal, external and highway flooding. Some reports related to the watercourse adjacent to Oakdale Junior School; debris screens were observed opened and water pooled behind a screen. (p28)</p></div><div class="nugget-popup"><p>Flooding on 04&ndash;05 Jun 2022 led to multiple internal, external and highway flood reports in the Oakdale locality; the watercourse adjacent to Oakdale Junior School contributed to local inundation and debris screens were compromised/opened during the event. [IMG] (p29)</p></div><div class="nugget-popup"><p>Affected by surface water/urban flooding during the intense rainfall on 04 Jun 2022 &ndash; 05 Jun 2022; debris and leaf litter contributed to blocked gullies/channels, prompting consideration/installing of debris screens and channel clearance works. (p31)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 residential properties [TAB] (p19)</p></div><div class="nugget-popup quant"><p>10 reports of flooding (p28)</p></div><div class="nugget-popup quant"><p>10 reports of flooding [IMG] (p29)</p></div></div></body></div>`)[0];
+                popup_9f97e419a4f922d58169c4b4e0838249.setContent(html_9596d710d557743a5867ccffb31a6de0);
+            
+        
+
+        marker_b2e4dc8efb91070efd7e93267fde857f.bindPopup(popup_9f97e419a4f922d58169c4b4e0838249)
+        ;
+
+        
+    
+    
+            var marker_613948d77a773550072069f5cec3553b = L.marker(
+                [50.717855996309275, -1.9506355780616862],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_60e04e324b18a7ec2955612f3d3ef8ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_613948d77a773550072069f5cec3553b.setIcon(icon_60e04e324b18a7ec2955612f3d3ef8ea);
+        
+    
+        var popup_240afd5b298bc05f200edc0294a6f755 = L.popup({});
+
+        
+            
+                var html_db012f020a101780a23b32b13410650c = $(`<div id="html_db012f020a101780a23b32b13410650c" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Whitecliff</h1><div class="nugget-popup"><p>Social media reports identified areas of Whitecliff as experiencing flooding during the 4&ndash;5 June 2022 storm, with mentions of gardens and highways flooding. (p20)</p></div></div></body></div>`)[0];
+                popup_240afd5b298bc05f200edc0294a6f755.setContent(html_db012f020a101780a23b32b13410650c);
+            
+        
+
+        marker_613948d77a773550072069f5cec3553b.bindPopup(popup_240afd5b298bc05f200edc0294a6f755)
+        ;
+
+        
+    
+    
+            var marker_d127970f6d956b264b33f90661f04079 = L.marker(
+                [50.7080846, -1.9451658],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_a0d3dc3ffca709a7bccceadd14a2e245 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d127970f6d956b264b33f90661f04079.setIcon(icon_a0d3dc3ffca709a7bccceadd14a2e245);
+        
+    
+        var popup_7694780355de4018ea1980608af63fea = L.popup({});
+
+        
+            
+                var html_c38b320fb67b6a13dab0eda2c75f5d78 = $(`<div id="html_c38b320fb67b6a13dab0eda2c75f5d78" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lilliput</h1><div class="nugget-popup"><p>Social media reports cited Lilliput and Canford Cliffs among the areas where gardens and highways flooded during the storm on 4&ndash;5 June 2022. (p20)</p></div></div></body></div>`)[0];
+                popup_7694780355de4018ea1980608af63fea.setContent(html_c38b320fb67b6a13dab0eda2c75f5d78);
+            
+        
+
+        marker_d127970f6d956b264b33f90661f04079.bindPopup(popup_7694780355de4018ea1980608af63fea)
+        ;
+
+        
+    
+    
+            var marker_de51e6af8f42de57b11af0110baa71b1 = L.marker(
+                [50.70495, -1.921341],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_dbc4bd827b93bbce9a4998e329afe6db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_de51e6af8f42de57b11af0110baa71b1.setIcon(icon_dbc4bd827b93bbce9a4998e329afe6db);
+        
+    
+        var popup_fcb4ba3609042c1b409c1288b3bd486d = L.popup({});
+
+        
+            
+                var html_aeaff2050bff844b341125717d63cb97 = $(`<div id="html_aeaff2050bff844b341125717d63cb97" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Canford Cliffs</h1><div class="nugget-popup"><p>Social media reports cited Lilliput and Canford Cliffs among the areas where gardens and highways flooded during the storm on 4&ndash;5 June 2022. (p20)</p></div><div class="nugget-popup"><p>Topography of the Penn Hill / Canford Cliffs area channels surface water runoff down roads (including Archway Road) toward a low point where drainage was overwhelmed and caused flooding on multiple occasions, including 4 June 2022. (p24)</p></div></div></body></div>`)[0];
+                popup_fcb4ba3609042c1b409c1288b3bd486d.setContent(html_aeaff2050bff844b341125717d63cb97);
+            
+        
+
+        marker_de51e6af8f42de57b11af0110baa71b1.bindPopup(popup_fcb4ba3609042c1b409c1288b3bd486d)
+        ;
+
+        
+    
+    
+            var marker_013af01fb7182ec75030401b3d0d2355 = L.marker(
+                [50.7071063, -1.9088698],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_4de4f6db72211bd5996be6564a274513 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_013af01fb7182ec75030401b3d0d2355.setIcon(icon_4de4f6db72211bd5996be6564a274513);
+        
+    
+        var popup_39c04beb37b862ca159a1240a0563419 = L.popup({});
+
+        
+            
+                var html_82d1f7ff761fb13a09c8930cc85c8a4d = $(`<div id="html_82d1f7ff761fb13a09c8930cc85c8a4d" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Branksome Chine</h1><div class="nugget-popup"><p>Branksome Chine is the downstream receiver of the open watercourse that conveyed excess surface water runoff from the Penn Hill/Archway Road area during the event (including 4 June 2022). (p24)</p></div></div></body></div>`)[0];
+                popup_39c04beb37b862ca159a1240a0563419.setContent(html_82d1f7ff761fb13a09c8930cc85c8a4d);
+            
+        
+
+        marker_013af01fb7182ec75030401b3d0d2355.bindPopup(popup_39c04beb37b862ca159a1240a0563419)
+        ;
+
+        
+    
+    
+            var marker_5a6de524292c56d3f9ce97530a04518f = L.marker(
+                [50.7230966, -1.987281],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_bc2e8a4c58a3805d2a5ace27f58fa61b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5a6de524292c56d3f9ce97530a04518f.setIcon(icon_bc2e8a4c58a3805d2a5ace27f58fa61b);
+        
+    
+        var popup_3bdd1dc94c75705f6c762aef04047d64 = L.popup({});
+
+        
+            
+                var html_e2c789ef433159755f52a5d5bca3ca0d = $(`<div id="html_e2c789ef433159755f52a5d5bca3ca0d" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sterte</h1><div class="nugget-popup"><p>Part of the Oakdale/Sterte area where flooding reports were received; system outlets are at/below sea level requiring pumping and the local drainage/pumping system and debris screens were implicated during the event. (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>10 reports of flooding (p28)</p></div></div></body></div>`)[0];
+                popup_3bdd1dc94c75705f6c762aef04047d64.setContent(html_e2c789ef433159755f52a5d5bca3ca0d);
+            
+        
+
+        marker_5a6de524292c56d3f9ce97530a04518f.bindPopup(popup_3bdd1dc94c75705f6c762aef04047d64)
+        ;
+
+        
+    
+    
+            var marker_aed89aaedccb4ce7dea71a20710bfa14 = L.marker(
+                [50.7179979, -1.9782703020313623],
+                {}
+            ).addTo(map_7ce66ea1ec15b0699f765e93e8fe6182);
+        
+    
+            var icon_0b7365f7943b7da364948dc2f8a26e7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aed89aaedccb4ce7dea71a20710bfa14.setIcon(icon_0b7365f7943b7da364948dc2f8a26e7a);
+        
+    
+        var popup_e2ea12d5355246785cfd393a978309c2 = L.popup({});
+
+        
+            
+                var html_dd2de6bc7e3595bc0e7226ff48a90b71 = $(`<div id="html_dd2de6bc7e3595bc0e7226ff48a90b71" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Poole Bus Station</h1><div class="nugget-popup"><p>Floodwater covered the bus station platform and surrounding pavement, with water reflecting station structures; the station appeared non&ndash;operational due to inundation. [IMG] (p26)</p></div><div class="nugget-popup"><p>Within the Poole Town Centre / Kingland Road area: two buildings were reported to have flooded internally in total; the bus station and a subway flooded (subway to a shallow depth); Poole Food Bank storage flooded and lost stock. [IMG] (p27)</p></div></div></body></div>`)[0];
+                popup_e2ea12d5355246785cfd393a978309c2.setContent(html_dd2de6bc7e3595bc0e7226ff48a90b71);
+            
+        
+
+        marker_aed89aaedccb4ce7dea71a20710bfa14.bindPopup(popup_e2ea12d5355246785cfd393a978309c2)
+        ;
+
+        
+    
+</script>
+</html>
