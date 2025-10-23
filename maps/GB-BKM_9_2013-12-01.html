@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bb3d9e470d2d29d6fb82e8795615675e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bb3d9e470d2d29d6fb82e8795615675e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bb3d9e470d2d29d6fb82e8795615675e = L.map(
+                "map_bb3d9e470d2d29d6fb82e8795615675e",
+                {
+                    center: [51.813797998039995, -0.8159678847212624],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_80b139c6aa7eaa83e80d800573935efe = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_80b139c6aa7eaa83e80d800573935efe.addTo(map_bb3d9e470d2d29d6fb82e8795615675e);
+    
+            var marker_4de02ea61b328fd7d8bf2f4c43b77452 = L.marker(
+                [51.7889167, -0.797117],
+                {}
+            ).addTo(map_bb3d9e470d2d29d6fb82e8795615675e);
+        
+    
+            var icon_c2f1cc19cde253a57ffdeaffddf8d524 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4de02ea61b328fd7d8bf2f4c43b77452.setIcon(icon_c2f1cc19cde253a57ffdeaffddf8d524);
+        
+    
+        var popup_af772d30d206124bb8377b52a09ca354 = L.popup({});
+
+        
+            
+                var html_8aa04b89652397d4924a669cb010b52e = $(`<div id="html_8aa04b89652397d4924a669cb010b52e" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lower Road, Stoke Mandeville</h1><div class="nugget-popup"><p>Carriageway covered by deep surface water during winter 2013/2014; vehicles were forced to drive through floodwater with large splashes, making the road difficult and dangerous to traverse and disrupting local transport. (p1)</p></div><div class="nugget-popup"><p>Surface water flooding occurred during the winter 2013/2014 flood event and prompted a formal flood investigation by Risk Management Authorities (Buckinghamshire CC, AVDC, TfB). The location was highlighted soon after the event as requiring investigation. [IMG,PAG] (p8)</p></div><div class="nugget-popup"><p>Recorded flooding of Lower Road (road inundation) reported by a local resident; surface water inundation affecting the road and nearby properties in the Lower Road area. [IMG,PAG] (p9)</p></div></div></body></div>`)[0];
+                popup_af772d30d206124bb8377b52a09ca354.setContent(html_8aa04b89652397d4924a669cb010b52e);
+            
+        
+
+        marker_4de02ea61b328fd7d8bf2f4c43b77452.bindPopup(popup_af772d30d206124bb8377b52a09ca354)
+        ;
+
+        
+    
+    
+            var marker_02881acf107dea858b1f60bba5b28b01 = L.marker(
+                [51.78627977542804, -0.7897635899241652],
+                {}
+            ).addTo(map_bb3d9e470d2d29d6fb82e8795615675e);
+        
+    
+            var icon_9fed7b83e1a341b7ebbb4d83e2159f2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_02881acf107dea858b1f60bba5b28b01.setIcon(icon_9fed7b83e1a341b7ebbb4d83e2159f2c);
+        
+    
+        var popup_b0b6e7eab1640f165e89cb8591cab7ef = L.popup({});
+
+        
+            
+                var html_96b8fb8ddd9c2731d93372a8b65d8cb1 = $(`<div id="html_96b8fb8ddd9c2731d93372a8b65d8cb1" style="width: 100.0%; height: 100.0%;"><head><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stoke Mandeville</h1><div class="nugget-popup"><p>Lower Road (B4443) in Stoke Mandeville experienced surface water/urban flooding in winter 2013/2014 that covered the roadway and disrupted local transport, forcing vehicles to traverse deep water and reducing road safety. (p1)</p></div><div class="nugget-popup"><p>The settlement experienced surface water flooding during winter 2013/2014 that inundated roads (including Lower Road) as the catchment and road drainage were at or near capacity. [MUL] (p4)</p></div></div></body></div>`)[0];
+                popup_b0b6e7eab1640f165e89cb8591cab7ef.setContent(html_96b8fb8ddd9c2731d93372a8b65d8cb1);
+            
+        
+
+        marker_02881acf107dea858b1f60bba5b28b01.bindPopup(popup_b0b6e7eab1640f165e89cb8591cab7ef)
+        ;
+
+        
+    
+</script>
+</html>
