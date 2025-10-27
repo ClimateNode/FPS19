@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d5008e271e4a909c76ab7f73a0a6113 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2d5008e271e4a909c76ab7f73a0a6113" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2d5008e271e4a909c76ab7f73a0a6113 = L.map(
+                "map_2d5008e271e4a909c76ab7f73a0a6113",
+                {
+                    center: [51.80720642360002, -0.8340344515992189],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e33f2c85a23c3794b39757fd5afbe021 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_e33f2c85a23c3794b39757fd5afbe021.addTo(map_2d5008e271e4a909c76ab7f73a0a6113);
+    
+            var marker_ff764d3ea4e09c23ab0fc6dd74e4909b = L.marker(
+                [51.78332268672904, -0.8297786104320022],
+                {}
+            ).addTo(map_2d5008e271e4a909c76ab7f73a0a6113);
+        
+    
+            var icon_037f0692590e7941c6a192a7719ec36c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ff764d3ea4e09c23ab0fc6dd74e4909b.setIcon(icon_037f0692590e7941c6a192a7719ec36c);
+        
+    
+        var popup_91d45b6286fe0c7a50b49a7905c7451a = L.popup({});
+
+        
+            
+                var html_cbb0706f0c0815ddf35a2dbb972631c0 = $(`<div id="html_cbb0706f0c0815ddf35a2dbb972631c0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Rookery</h1><div class="nugget-popup"><p>Surface water flooding during the 24 Dec 2013&ndash;14 Feb 2014 event produced the highest predicted (and corresponding observed) depths concentrated at The Rookery and immediately east of the village centre, causing deeper inundation at this location. [IMG] (p11)</p></div><div class="nugget-popup"><p>Labelled on the surface&ndash;water depth map within the map coverage that the report states matched actual flooding; therefore inferred to have been subject to surface&ndash;water inundation (flooding affecting the property/grounds) during the event. [IMG] (p12)</p></div></div></body></div>`)[0];
+                popup_91d45b6286fe0c7a50b49a7905c7451a.setContent(html_cbb0706f0c0815ddf35a2dbb972631c0);
+            
+        
+
+        marker_ff764d3ea4e09c23ab0fc6dd74e4909b.bindPopup(popup_91d45b6286fe0c7a50b49a7905c7451a)
+        ;
+
+        
+    
+    
+            var marker_374b73fc7a279d9f7e02a7de9217808f = L.marker(
+                [51.7845224, -0.8310356],
+                {}
+            ).addTo(map_2d5008e271e4a909c76ab7f73a0a6113);
+        
+    
+            var icon_dcabdbf38500decaf368ace7164ef1c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_374b73fc7a279d9f7e02a7de9217808f.setIcon(icon_dcabdbf38500decaf368ace7164ef1c1);
+        
+    
+        var popup_ff422562dc4efd107b03bd9500bbdd24 = L.popup({});
+
+        
+            
+                var html_53bebfbf5c42e7c53ba52ae49014e34c = $(`<div id="html_53bebfbf5c42e7c53ba52ae49014e34c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Model Farm</h1><div class="nugget-popup"><p>Shown on the surface&ndash;water depth map within the area where deeper and shallower surface&ndash;water flooding was predicted and which the report says matched actual flooding; inferred to have experienced surface&ndash;water inundation of land and potentially buildings during the event. [IMG] (p12)</p></div></div></body></div>`)[0];
+                popup_ff422562dc4efd107b03bd9500bbdd24.setContent(html_53bebfbf5c42e7c53ba52ae49014e34c);
+            
+        
+
+        marker_374b73fc7a279d9f7e02a7de9217808f.bindPopup(popup_ff422562dc4efd107b03bd9500bbdd24)
+        ;
+
+        
+    
+    
+            var marker_5405d07bdaeeb661dc860a478ae3b5c3 = L.marker(
+                [51.86619751869193, -0.8610230642396219],
+                {}
+            ).addTo(map_2d5008e271e4a909c76ab7f73a0a6113);
+        
+    
+            var icon_63d8ead66354b86dce48240ad41ad296 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5405d07bdaeeb661dc860a478ae3b5c3.setIcon(icon_63d8ead66354b86dce48240ad41ad296);
+        
+    
+        var popup_c8e6d9f89128ea518b917ef72faaf798 = L.popup({});
+
+        
+            
+                var html_a34f6979efdcbf39060b33c57a8db50a = $(`<div id="html_a34f6979efdcbf39060b33c57a8db50a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Buckinghamshire</h1><div class="nugget-popup"><p>Surface&ndash;water flooding occurred in and around Bishopstone during the event (24 Dec 2013 &ndash; 14 Feb 2014). The southeast of Bishopstone experienced the deepest inundation, with deeper flooding concentrated adjacent to watercourses and ponds (particularly to the south and southeast of the village). Low&ndash;lying built&ndash;up areas were inundated and properties close to water features experienced inundation consistent with the mapped depths. [IMG] (p12)</p></div><div class="nugget-popup"><p>Residents experienced internal flooding of their properties; affected residents contacted Buckinghamshire County Council about the Repair and Renew grant and BCC directed them to Aylesbury Vale District Council who coordinate the grant scheme for the Aylesbury District. (p18)</p></div><div class="nugget-popup"><p>Buckinghamshire County Council (BCC) undertook responsibilities arising from the flooding, including ensuring owners of culverts and watercourses are aware of maintenance duties, considering upstream flood alleviation/land management measures, facilitating information sharing with the community, and using enforcement under Section 25 of the Land Drainage Act where landowners failed to maintain watercourses. [TAB] (p22)</p></div></div></body></div>`)[0];
+                popup_c8e6d9f89128ea518b917ef72faaf798.setContent(html_a34f6979efdcbf39060b33c57a8db50a);
+            
+        
+
+        marker_5405d07bdaeeb661dc860a478ae3b5c3.bindPopup(popup_c8e6d9f89128ea518b917ef72faaf798)
+        ;
+
+        
+    
+    
+            var marker_7896d09baf23561a6219bd706ff5aff9 = L.marker(
+                [51.78584831257912, -0.8352966833244703],
+                {}
+            ).addTo(map_2d5008e271e4a909c76ab7f73a0a6113);
+        
+    
+            var icon_b5c5dd329a8823b3477cb8a43d27ce44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7896d09baf23561a6219bd706ff5aff9.setIcon(icon_b5c5dd329a8823b3477cb8a43d27ce44);
+        
+    
+        var popup_bb0a5973ce772bdc3af7c673ee2478a3 = L.popup({});
+
+        
+            
+                var html_8071874c394920b7f991fbae00f9070a = $(`<div id="html_8071874c394920b7f991fbae00f9070a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bishopstone</h1><div class="nugget-popup"><p>Prolonged above&ndash;average rainfall saturated surrounding land and increased surface water flows into highway drainage and main rivers. Unmaintained rivers, undersized culverts and tight river bends caused rivers to overtop; floodwaters used the highway as a secondary flow route. (p4)</p></div><div class="nugget-popup"><p>Floodwater covered the full width of a rural road, rendering the route impassable (ROAD CLOSED sign deployed). Vehicles were observed driving through standing water and at least one person was seen wading; local transport was disrupted. [IMG,MUL] (p28)</p></div></div></body></div>`)[0];
+                popup_bb0a5973ce772bdc3af7c673ee2478a3.setContent(html_8071874c394920b7f991fbae00f9070a);
+            
+        
+
+        marker_7896d09baf23561a6219bd706ff5aff9.bindPopup(popup_bb0a5973ce772bdc3af7c673ee2478a3)
+        ;
+
+        
+    
+</script>
+</html>
