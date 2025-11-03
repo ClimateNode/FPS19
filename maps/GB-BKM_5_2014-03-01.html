@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_646a13cf5a1e169532042f76c826b066 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_646a13cf5a1e169532042f76c826b066" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_646a13cf5a1e169532042f76c826b066 = L.map(
+                "map_646a13cf5a1e169532042f76c826b066",
+                {
+                    center: [51.64155900652109, -0.5699895879301821],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d5aa612ce87374142adc161d150de075 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_d5aa612ce87374142adc161d150de075.addTo(map_646a13cf5a1e169532042f76c826b066);
+    
+            var marker_730b079e334743f9823da75a6eec9367 = L.marker(
+                [51.633296692438385, -0.5702658135162323],
+                {}
+            ).addTo(map_646a13cf5a1e169532042f76c826b066);
+        
+    
+            var icon_44acaf237ba1186d6221415eb67ca459 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_730b079e334743f9823da75a6eec9367.setIcon(icon_44acaf237ba1186d6221415eb67ca459);
+        
+    
+        var popup_dd5ba86bc8511ec738c5a5cd174a4db8 = L.popup({});
+
+        
+            
+                var html_0fdbceb1916c5718550b2d3e71442f3d = $(`<div id="html_0fdbceb1916c5718550b2d3e71442f3d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Telephone Exchange</h1><div class="nugget-popup"><p>The British Telecom telephone exchange in Chalfont St Giles was impacted by groundwater flooding. (p4)</p></div><div class="nugget-popup"><p>The high groundwater flooded the British Telecom (BT) telephone exchange in Chalfont St Giles; BT had to pump excess groundwater from their basement, and that pumping contributed to flooding of the high street and car park and disruption to village services and traffic, with economic impacts on small businesses. (p18)</p></div><div class="nugget-popup"><p>The BT telephone exchange in Chalfont St Giles was impacted by groundwater flooding. (p23)</p></div><div class="nugget-popup"><p>The BT telephone exchange was impacted by the groundwater flooding during the event. [TAB] (p24)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 telephone exchange (p23)</p></div></div></body></div>`)[0];
+                popup_dd5ba86bc8511ec738c5a5cd174a4db8.setContent(html_0fdbceb1916c5718550b2d3e71442f3d);
+            
+        
+
+        marker_730b079e334743f9823da75a6eec9367.bindPopup(popup_dd5ba86bc8511ec738c5a5cd174a4db8)
+        ;
+
+        
+    
+    
+            var marker_1668f0a0601d1cda1609379b58090182 = L.marker(
+                [51.6341785, -0.4172156],
+                {}
+            ).addTo(map_646a13cf5a1e169532042f76c826b066);
+        
+    
+            var icon_9b743e4af278283fe627430c0dfb3f5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1668f0a0601d1cda1609379b58090182.setIcon(icon_9b743e4af278283fe627430c0dfb3f5a);
+        
+    
+        var popup_6ee25241e14ffd8941b2d97dd6d64f4d = L.popup({});
+
+        
+            
+                var html_be15bcf2e2e325b06efb8d534a87849f = $(`<div id="html_be15bcf2e2e325b06efb8d534a87849f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Colne</h1><div class="nugget-popup"><p>The Colne catchment experienced exceptionally high groundwater and river levels during the period; saturated soils (SMD = 0 in Feb 2014) exacerbated runoff and flooding across the catchment. [MUL] (p17)</p></div></div></body></div>`)[0];
+                popup_6ee25241e14ffd8941b2d97dd6d64f4d.setContent(html_be15bcf2e2e325b06efb8d534a87849f);
+            
+        
+
+        marker_1668f0a0601d1cda1609379b58090182.bindPopup(popup_6ee25241e14ffd8941b2d97dd6d64f4d)
+        ;
+
+        
+    
+    
+            var marker_2ec3a39c050e0904a3735c6738c0849b = L.marker(
+                [51.6313294, -0.5706319],
+                {}
+            ).addTo(map_646a13cf5a1e169532042f76c826b066);
+        
+    
+            var icon_9fa15b9d461a08652b3f11390f55c43f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2ec3a39c050e0904a3735c6738c0849b.setIcon(icon_9fa15b9d461a08652b3f11390f55c43f);
+        
+    
+        var popup_88d9b3f3db0506857c339ed4d63394bd = L.popup({});
+
+        
+            
+                var html_5894351fdf513ae50a50dca2d48116b9 = $(`<div id="html_5894351fdf513ae50a50dca2d48116b9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Chalfont St Giles</h1><div class="nugget-popup"><p>The locality affected by the flood incident was the High Street; internal flooding affected commercial premises there and the event included flooding of the BT telephone exchange associated with the incident. (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 commercial premises; 1 BT telephone exchange (p6)</p></div></div></body></div>`)[0];
+                popup_88d9b3f3db0506857c339ed4d63394bd.setContent(html_5894351fdf513ae50a50dca2d48116b9);
+            
+        
+
+        marker_2ec3a39c050e0904a3735c6738c0849b.bindPopup(popup_88d9b3f3db0506857c339ed4d63394bd)
+        ;
+
+        
+    
+    
+            var marker_2e4289e95468ca6f0b6acc28d8e3b128 = L.marker(
+                [51.6321046, -0.5697912],
+                {}
+            ).addTo(map_646a13cf5a1e169532042f76c826b066);
+        
+    
+            var icon_2820c3e7cc81f5aa9dc7c554bfad9bf1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2e4289e95468ca6f0b6acc28d8e3b128.setIcon(icon_2820c3e7cc81f5aa9dc7c554bfad9bf1);
+        
+    
+        var popup_8b5a499701b5bb880dacb78504c8ec61 = L.popup({});
+
+        
+            
+                var html_9f4f140c1857f21608215617c97d3ea7 = $(`<div id="html_9f4f140c1857f21608215617c97d3ea7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chalfont St Giles</h1><div class="nugget-popup"><p>Exceptionally high groundwater levels in the chalk aquifer caused groundwater flooding in the village, which affected local critical infrastructure including the Affinity Water pumping station, the British Telecom telephone exchange, and the main access road to the village shops. (p4)</p></div><div class="nugget-popup"><p>Surface water and fluvial flooding affected the village centre: commercial and residential properties along the central watercourse and the road corridor (Pheasant Hill / High Street) were shown to be at risk. The valley funnels groundwater, surface water and river flow into the valley bottom, concentrating floodwater into the centre of the village. [IMG,PAG] (p12)</p></div><div class="nugget-popup"><p>Area experienced high river levels in the period; river (Misbourne) was at bank full and in spate with some minor flooding of bankside gardens and farmland in the locality. No reported failures or damage to highway or surface water drainage features within the Chalfont St Giles locality were reported as contributing to the flooding. [PAG,MUL] (p17)</p></div><div class="nugget-popup"><p>High groundwater levels flooded local infrastructure (Affinity Water pumping station and the BT telephone exchange). Over&ndash;pumping from the BT exchange caused flooding of the high street, forced closure of the car park and required the main street to be reduced to one direction of traffic, producing an economic impact on small businesses in the village. [PAG] (p18)</p></div><div class="nugget-popup"><p>Exceptionally high groundwater levels in the chalk aquifer caused groundwater flooding across the village that affected local critical infrastructure: the Affinity Water pumping station and the BT telephone exchange were impacted, and the main access road to the shops in the village centre was flooded, restricting access. (p23)</p></div><div class="nugget-popup"><p>Spring 2014 groundwater flooding affected the village: local critical infrastructure was impacted (Affinity Water pumping station and the BT telephone exchange) and the main access road to the shops in the centre of the village was affected. [TAB,PAG] (p24)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 critical infrastructure assets; 1 main access road (p23)</p></div></div></body></div>`)[0];
+                popup_8b5a499701b5bb880dacb78504c8ec61.setContent(html_9f4f140c1857f21608215617c97d3ea7);
+            
+        
+
+        marker_2e4289e95468ca6f0b6acc28d8e3b128.bindPopup(popup_8b5a499701b5bb880dacb78504c8ec61)
+        ;
+
+        
+    
+    
+            var marker_b0b16d4eb19fdc3799895ab2ef9afe1e = L.marker(
+                [51.681848711830746, -0.6677507653552992],
+                {}
+            ).addTo(map_646a13cf5a1e169532042f76c826b066);
+        
+    
+            var icon_2ff08fc782b9c1d18dc77799136d4533 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b0b16d4eb19fdc3799895ab2ef9afe1e.setIcon(icon_2ff08fc782b9c1d18dc77799136d4533);
+        
+    
+        var popup_13523cd815a3f5839aa65ed6d5b3c463 = L.popup({});
+
+        
+            
+                var html_b6bee35e30f0c0c1ff917b322f6dcfc1 = $(`<div id="html_b6bee35e30f0c0c1ff917b322f6dcfc1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Little Missenden</h1><div class="nugget-popup"><p>The telemetered river level gauge at Little Missenden recorded exceptionally high river levels during the Dec 2013&ndash;Apr 2014 period; the event is listed as number 1 in the gauge's top 10 levels and the peak on 08 March 2014 indicates severe fluvial flooding in the River Misbourne at this location. [PAG,MUL] (p15)</p></div><div class="nugget-popup"><p>The Little Missenden gauge recorded exceptionally high river stages during Dec 2013&ndash;Apr 2014 associated with fluvial flooding of the River Misbourne influenced by exceptionally high groundwater. The period was treated as one event influenced by groundwater, with multiple high peaks providing an early indication of high flows upstream. [IMG,PAG,MUL] (p16)</p></div><div class="nugget-popup"><p>Gauge recorded exceptionally high river levels during the event; provided early warning of high flows upstream of Chalfont St Giles and shows the event&ndash;ranked peak during the three&ndash;month episode. [IMG,PAG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>459 mm peak level on 08 March 2014 (maximum recorded 0.459 mSG); ranked number 1 of top 10 levels at this site for the three&ndash;month event [IMG,PAG] (p17)</p></div></div></body></div>`)[0];
+                popup_13523cd815a3f5839aa65ed6d5b3c463.setContent(html_b6bee35e30f0c0c1ff917b322f6dcfc1);
+            
+        
+
+        marker_b0b16d4eb19fdc3799895ab2ef9afe1e.bindPopup(popup_13523cd815a3f5839aa65ed6d5b3c463)
+        ;
+
+        
+    
+</script>
+</html>
