@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fa668bb940a9ccf1496df2c76f4383b8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fa668bb940a9ccf1496df2c76f4383b8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fa668bb940a9ccf1496df2c76f4383b8 = L.map(
+                "map_fa668bb940a9ccf1496df2c76f4383b8",
+                {
+                    center: [52.34559965, 0.220978225],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c772dcfe059da12301bfb80bf88ffbaf = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_c772dcfe059da12301bfb80bf88ffbaf.addTo(map_fa668bb940a9ccf1496df2c76f4383b8);
+    
+            var marker_96b1c6847fe046be508e8f004bd7c722 = L.marker(
+                [52.3474248, 0.2208462],
+                {}
+            ).addTo(map_fa668bb940a9ccf1496df2c76f4383b8);
+        
+    
+            var icon_00f682cf72e4a4c7074fdc409ea80e3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_96b1c6847fe046be508e8f004bd7c722.setIcon(icon_00f682cf72e4a4c7074fdc409ea80e3c);
+        
+    
+        var popup_f16128e1387a15222c5bd1e1de46e438 = L.popup({});
+
+        
+            
+                var html_f6e77a1486db5570e116ae61eb29f4b0 = $(`<div id="html_f6e77a1486db5570e116ae61eb29f4b0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chapel Lane, Stretham</h1><div class="nugget-popup"><p>Chapel Lane experienced localized flooding as the focus of the reported incident; extent and specific impacts are not quantified in the report. [IMG] (p2)</p></div><div class="nugget-popup"><p>Gullies on Chapel Lane were identified as capacity&ndash;limited and implicated in the surface water flooding incident; the Highways Team cleared the gullies on Chapel Lane as a remedial action. [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_f16128e1387a15222c5bd1e1de46e438.setContent(html_f6e77a1486db5570e116ae61eb29f4b0);
+            
+        
+
+        marker_96b1c6847fe046be508e8f004bd7c722.bindPopup(popup_f16128e1387a15222c5bd1e1de46e438)
+        ;
+
+        
+    
+    
+            var marker_189532b62cb019373edf1ffd5b2e768d = L.marker(
+                [52.3486189, 0.218727],
+                {}
+            ).addTo(map_fa668bb940a9ccf1496df2c76f4383b8);
+        
+    
+            var icon_831621ebb860dec7cb9b4670a258ce4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_189532b62cb019373edf1ffd5b2e768d.setIcon(icon_831621ebb860dec7cb9b4670a258ce4b);
+        
+    
+        var popup_9b988a81e6f58e698dd429bca7df77cd = L.popup({});
+
+        
+            
+                var html_8d0002c2b1993eec4541a0aa2357e1fc = $(`<div id="html_8d0002c2b1993eec4541a0aa2357e1fc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Stretham</h1><div class="nugget-popup"><p>Gullies on High Street were identified as capacity&ndash;limited and implicated in the surface water flooding incident; the Highways Team cleared the gullies on High Street as a remedial action. [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_9b988a81e6f58e698dd429bca7df77cd.setContent(html_8d0002c2b1993eec4541a0aa2357e1fc);
+            
+        
+
+        marker_189532b62cb019373edf1ffd5b2e768d.bindPopup(popup_9b988a81e6f58e698dd429bca7df77cd)
+        ;
+
+        
+    
+    
+            var marker_6fe2ae90b3f5955bf3d980189d879f89 = L.marker(
+                [52.3467902, 0.2211425],
+                {}
+            ).addTo(map_fa668bb940a9ccf1496df2c76f4383b8);
+        
+    
+            var icon_69bf6b45599b52d541d470fff5d72465 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6fe2ae90b3f5955bf3d980189d879f89.setIcon(icon_69bf6b45599b52d541d470fff5d72465);
+        
+    
+        var popup_33dfdaf49f9d6e87281ab5a8b1c1a9f2 = L.popup({});
+
+        
+            
+                var html_9c262f29cfd6a60789a9bd41864809f8 = $(`<div id="html_9c262f29cfd6a60789a9bd41864809f8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Newmarket Road, Stretham</h1><div class="nugget-popup"><p>Sections of Newmarket Road had gullies cleared by the Highways Team; ECDC arranged for the Awarded watercourse along Newmarket Road to be cleared (reported completed October 2014). These works were undertaken in response to a surface water flooding incident believed to be caused by gully capacity issues. [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_33dfdaf49f9d6e87281ab5a8b1c1a9f2.setContent(html_9c262f29cfd6a60789a9bd41864809f8);
+            
+        
+
+        marker_6fe2ae90b3f5955bf3d980189d879f89.bindPopup(popup_33dfdaf49f9d6e87281ab5a8b1c1a9f2)
+        ;
+
+        
+    
+    
+            var marker_88a927bad97ee166fe915acbc26ef0b3 = L.marker(
+                [52.3395647, 0.2231972],
+                {}
+            ).addTo(map_fa668bb940a9ccf1496df2c76f4383b8);
+        
+    
+            var icon_758aaf43bd2df0f8ed5d9145286ca9bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_88a927bad97ee166fe915acbc26ef0b3.setIcon(icon_758aaf43bd2df0f8ed5d9145286ca9bc);
+        
+    
+        var popup_0e6c9d15567257dfe9e14f6c278e7348 = L.popup({});
+
+        
+            
+                var html_9a8fb48a0e83f4c582dded0cdbdaa6f7 = $(`<div id="html_9a8fb48a0e83f4c582dded0cdbdaa6f7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stretham</h1><div class="nugget-popup"><p>Central Stretham &mdash; specifically the area around Chapel Lane &mdash; was affected by a localized flood; the report does not provide quantified extent or damage. [IMG] (p2)</p></div></div></body></div>`)[0];
+                popup_0e6c9d15567257dfe9e14f6c278e7348.setContent(html_9a8fb48a0e83f4c582dded0cdbdaa6f7);
+            
+        
+
+        marker_88a927bad97ee166fe915acbc26ef0b3.bindPopup(popup_0e6c9d15567257dfe9e14f6c278e7348)
+        ;
+
+        
+    
+</script>
+</html>
