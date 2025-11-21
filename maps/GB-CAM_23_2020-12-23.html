@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_feab16e05b4742f4c55bc34083cd42dc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_feab16e05b4742f4c55bc34083cd42dc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_feab16e05b4742f4c55bc34083cd42dc = L.map(
+                "map_feab16e05b4742f4c55bc34083cd42dc",
+                {
+                    center: [52.32621628064516, -0.07765707400709698],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fa30aa3b3348782fabdb8cccabec401d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_fa30aa3b3348782fabdb8cccabec401d.addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+    
+            var marker_e3304f5eb88731a1d6641a98e5ff93fc = L.marker(
+                [52.3397734, -0.0765153],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_1bdc330de299352ac796f9ec8651d958 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e3304f5eb88731a1d6641a98e5ff93fc.setIcon(icon_1bdc330de299352ac796f9ec8651d958);
+        
+    
+        var popup_b23775ef5aecf9b9d8b9151e8fc1ce59 = L.popup({});
+
+        
+            
+                var html_322db05412bcbd7a2706937df02616a3 = $(`<div id="html_322db05412bcbd7a2706937df02616a3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wheatfields</h1><div class="nugget-popup"><p>Internal residential property flooding occurred in Wheatfields. [TAB] (p12)</p></div></div></body></div>`)[0];
+                popup_b23775ef5aecf9b9d8b9151e8fc1ce59.setContent(html_322db05412bcbd7a2706937df02616a3);
+            
+        
+
+        marker_e3304f5eb88731a1d6641a98e5ff93fc.bindPopup(popup_b23775ef5aecf9b9d8b9151e8fc1ce59)
+        ;
+
+        
+    
+    
+            var marker_083aa1058a802c6112a9f3f143f2bf95 = L.marker(
+                [52.3275492, -0.0702756],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_0e7c3b17c94b7a75ea7b9073f6a27213 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_083aa1058a802c6112a9f3f143f2bf95.setIcon(icon_0e7c3b17c94b7a75ea7b9073f6a27213);
+        
+    
+        var popup_e0531b9b05f353692394541b7d09420f = L.popup({});
+
+        
+            
+                var html_a7ec7fc1046cda8d28e8ddf18b8d6367 = $(`<div id="html_a7ec7fc1046cda8d28e8ddf18b8d6367" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Warners Park</h1><div class="nugget-popup"><p>External flooding to garage and outbuildings at Warner's park; occupants did not have to leave premises. [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_e0531b9b05f353692394541b7d09420f.setContent(html_a7ec7fc1046cda8d28e8ddf18b8d6367);
+            
+        
+
+        marker_083aa1058a802c6112a9f3f143f2bf95.bindPopup(popup_e0531b9b05f353692394541b7d09420f)
+        ;
+
+        
+    
+    
+            var marker_b548bdc4d2a05ff77f321582f15754d1 = L.marker(
+                [52.3339194, -0.061815],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_45920c1851cd644ae54a9ff87fa20f7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b548bdc4d2a05ff77f321582f15754d1.setIcon(icon_45920c1851cd644ae54a9ff87fa20f7b);
+        
+    
+        var popup_3c54188b78f7dea0475865a06091df65 = L.popup({});
+
+        
+            
+                var html_2f80458c41197f7403ae928e698a71fe = $(`<div id="html_2f80458c41197f7403ae928e698a71fe" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Marley Gap Brook</h1><div class="nugget-popup"><p>Indicative flooded areas are shown adjacent to Marley Gap Brook on the December 2020 map, with flooding concentrated along and near this watercourse and contributing to local inundation of streets and properties in St Ives. [PAG,IMG] (p11)</p></div><div class="nugget-popup"><p>Flooding associated with Marley Gap Brook prompted maintenance and cleansing works on the relevant watercourse to improve conveyance and reduce future flood risk. [TAB] (p14)</p></div><div class="nugget-popup"><p>Contractors carried out significant maintenance and cleansing works on Marley Gap Brook (relevant sections) to improve conveyance as part of the flood investigation and response. (p15)</p></div><div class="nugget-popup"><p>Marley Gap Brook exceeded channel capacity during the event, contributing to fluvial flooding in the area; the brook is identified with capacity issues, RMA operational issues and riparian maintenance issues in the investigation summary. [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_3c54188b78f7dea0475865a06091df65.setContent(html_2f80458c41197f7403ae928e698a71fe);
+            
+        
+
+        marker_b548bdc4d2a05ff77f321582f15754d1.bindPopup(popup_3c54188b78f7dea0475865a06091df65)
+        ;
+
+        
+    
+    
+            var marker_d8e24240ea9d7aa2bcebbf17ce4b4fe4 = L.marker(
+                [52.3282706, -0.0594201],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_e3013a45603d214035c353ad07abc4e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d8e24240ea9d7aa2bcebbf17ce4b4fe4.setIcon(icon_e3013a45603d214035c353ad07abc4e7);
+        
+    
+        var popup_577231e37ad2bc3bf8e67df384320482 = L.popup({});
+
+        
+            
+                var html_f9cc59fa12bf90b3b4d5358eaf084e29 = $(`<div id="html_f9cc59fa12bf90b3b4d5358eaf084e29" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Harrison Way, St Ives</h1><div class="nugget-popup"><p>Commercial premises on Harrison Way were reported to have internal flooding as part of the December 2020 events. (p10)</p></div><div class="nugget-popup"><p>Issues on the watercourse in the Harrison Way area were identified during inspections (upstream/downstream checks). A fallen tree downstream of Harrison Way led to bank damage for which bank repair work was planned, indicating local flood&ndash;related bank failure and obstruction to flow affecting the immediate area. [TAB] (p14)</p></div><div class="nugget-popup"><p>Used as a reference point for Parsons Drove Drain inspections (upstream vs downstream); a fallen tree downstream of Harrison Way required bank repair works, indicating local channel obstruction and bank damage connected to flooding impacts and subsequent repair actions. (p15)</p></div></div></body></div>`)[0];
+                popup_577231e37ad2bc3bf8e67df384320482.setContent(html_f9cc59fa12bf90b3b4d5358eaf084e29);
+            
+        
+
+        marker_d8e24240ea9d7aa2bcebbf17ce4b4fe4.bindPopup(popup_577231e37ad2bc3bf8e67df384320482)
+        ;
+
+        
+    
+    
+            var marker_e163cb3d295104d69f824cf1a0786f73 = L.marker(
+                [52.3324849, -0.0633574],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_bd7c63b9cf0287d0284fbcfe73d38a8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e163cb3d295104d69f824cf1a0786f73.setIcon(icon_bd7c63b9cf0287d0284fbcfe73d38a8c);
+        
+    
+        var popup_5edf3193186403f33da015f40fa6c221 = L.popup({});
+
+        
+            
+                var html_20270b504e41a9b9ff9727ed0a647505 = $(`<div id="html_20270b504e41a9b9ff9727ed0a647505" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bramley Road, St Ives</h1><div class="nugget-popup"><p>Commercial premises on Bramley Road, Harding Way and Edison Road were reported to have internal flooding during the December 2020 events. (p10)</p></div><div class="nugget-popup"><p>Commercial premises were flooded; occupants had to leave the premises. [TAB] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>15 commercial premises (Bramley Road, Harding Way and Edison Road) (p10)</p></div></div></body></div>`)[0];
+                popup_5edf3193186403f33da015f40fa6c221.setContent(html_20270b504e41a9b9ff9727ed0a647505);
+            
+        
+
+        marker_e163cb3d295104d69f824cf1a0786f73.bindPopup(popup_5edf3193186403f33da015f40fa6c221)
+        ;
+
+        
+    
+    
+            var marker_2e04971828313a4c096fd27874b9bba7 = L.marker(
+                [52.3334476, -0.0623213],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_9ba258ede33370324d7ced9aeac7883d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2e04971828313a4c096fd27874b9bba7.setIcon(icon_9ba258ede33370324d7ced9aeac7883d);
+        
+    
+        var popup_be6489478ed673e051de864da7138f81 = L.popup({});
+
+        
+            
+                var html_84cdd5a927db9e3153bdd57fc2f5c395 = $(`<div id="html_84cdd5a927db9e3153bdd57fc2f5c395" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Harding Way, St Ives</h1><div class="nugget-popup"><p>Commercial premises on Bramley Road, Harding Way and Edison Road were reported to have internal flooding during the December 2020 events. (p10)</p></div><div class="nugget-popup"><p>Commercial premises were flooded; occupants had to leave the premises. [TAB] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>15 commercial premises (Bramley Road, Harding Way and Edison Road) (p10)</p></div></div></body></div>`)[0];
+                popup_be6489478ed673e051de864da7138f81.setContent(html_84cdd5a927db9e3153bdd57fc2f5c395);
+            
+        
+
+        marker_2e04971828313a4c096fd27874b9bba7.bindPopup(popup_be6489478ed673e051de864da7138f81)
+        ;
+
+        
+    
+    
+            var marker_a7ba297b00bd5ccf326eec65736ef20b = L.marker(
+                [52.3390329, -0.0626269],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_fcf49c2ea9e8cfc5713e5af6b0243902 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a7ba297b00bd5ccf326eec65736ef20b.setIcon(icon_fcf49c2ea9e8cfc5713e5af6b0243902);
+        
+    
+        var popup_629aecd6192f3f1b655de1f5accca75a = L.popup({});
+
+        
+            
+                var html_733f6eb776f95dc904aa6eda753caba2 = $(`<div id="html_733f6eb776f95dc904aa6eda753caba2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Edison Road, St Ives</h1><div class="nugget-popup"><p>Commercial premises on Bramley Road, Harding Way and Edison Road were reported to have internal flooding during the December 2020 events. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>15 commercial premises (Bramley Road, Harding Way and Edison Road) (p10)</p></div></div></body></div>`)[0];
+                popup_629aecd6192f3f1b655de1f5accca75a.setContent(html_733f6eb776f95dc904aa6eda753caba2);
+            
+        
+
+        marker_a7ba297b00bd5ccf326eec65736ef20b.bindPopup(popup_629aecd6192f3f1b655de1f5accca75a)
+        ;
+
+        
+    
+    
+            var marker_6e101edecdd925a1807f436b19163723 = L.marker(
+                [52.3335671, -0.0839737],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_99b81c3d3ff0176e508a7ddb332b17a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6e101edecdd925a1807f436b19163723.setIcon(icon_99b81c3d3ff0176e508a7ddb332b17a1);
+        
+    
+        var popup_e0f0c1fe210f50b1129557be668f2f59 = L.popup({});
+
+        
+            
+                var html_05584e4a6073ec590e216fe7abadb2d5 = $(`<div id="html_05584e4a6073ec590e216fe7abadb2d5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Houghton Road, St Ives</h1><div class="nugget-popup"><p>Houghton Road is labelled among major roads on the map and the indicative flooded areas cluster near major roads and watercourse intersections, suggesting Houghton Road experienced local inundation during the December 2020 flooding. [PAG,IMG] (p11)</p></div></div></body></div>`)[0];
+                popup_e0f0c1fe210f50b1129557be668f2f59.setContent(html_05584e4a6073ec590e216fe7abadb2d5);
+            
+        
+
+        marker_6e101edecdd925a1807f436b19163723.bindPopup(popup_e0f0c1fe210f50b1129557be668f2f59)
+        ;
+
+        
+    
+    
+            var marker_40235e95213edc17315575c47590b7cf = L.marker(
+                [52.3306925, -0.0629508],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_ab5c4f5a1edb54aaf3ad71ace57e0c26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_40235e95213edc17315575c47590b7cf.setIcon(icon_ab5c4f5a1edb54aaf3ad71ace57e0c26);
+        
+    
+        var popup_3a1e95003efcd0566117b4a856c8f9b7 = L.popup({});
+
+        
+            
+                var html_f6a81229ccd15e5ec216fff1115a9033 = $(`<div id="html_f6a81229ccd15e5ec216fff1115a9033" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Elsworth Close, St Ives</h1><div class="nugget-popup"><p>Residential properties experienced internal and external flooding; occupants had to leave their homes. [TAB] (p12)</p></div><div class="nugget-popup"><p>Internal residential property flooding and external flooding to garages/outbuildings; some residents reported having to leave their premises. [TAB,PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_3a1e95003efcd0566117b4a856c8f9b7.setContent(html_f6a81229ccd15e5ec216fff1115a9033);
+            
+        
+
+        marker_40235e95213edc17315575c47590b7cf.bindPopup(popup_3a1e95003efcd0566117b4a856c8f9b7)
+        ;
+
+        
+    
+    
+            var marker_9e17f3000c2bf73de3d0cd8f34eb90bf = L.marker(
+                [52.3272886, -0.0640116],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_a97d1417796ac4c66071701fc0459f23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9e17f3000c2bf73de3d0cd8f34eb90bf.setIcon(icon_a97d1417796ac4c66071701fc0459f23);
+        
+    
+        var popup_068e388dd2af5d4a4960dec465783b3c = L.popup({});
+
+        
+            
+                var html_cabfb4d188a591281b15748ed2259b41 = $(`<div id="html_cabfb4d188a591281b15748ed2259b41" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Farthing Lane, St Ives</h1><div class="nugget-popup"><p>Residential properties experienced internal flooding; occupants had to leave their homes. [TAB] (p12)</p></div><div class="nugget-popup"><p>Surface water draining/sewer adjacent to Farthing Lane was confirmed as a flood&ndash;related issue. The surface water sewer next to Farthing Lane was jetted and CCTV'd through to the boating lake as a community&ndash;support action following flooding, indicating that flood&ndash;related blockage/flow issues affected the drainage infrastructure and local external areas (roads/adjacent properties). [TAB,PAG] (p14)</p></div><div class="nugget-popup"><p>A surface water sewer adjacent to Farthing Lane was jetted and CCTV inspected (through to the boating lake) as a gesture of goodwill to support the community following the flood investigation, indicating the local surface water system required cleansing to restore conveyance. (p15)</p></div></div></body></div>`)[0];
+                popup_068e388dd2af5d4a4960dec465783b3c.setContent(html_cabfb4d188a591281b15748ed2259b41);
+            
+        
+
+        marker_9e17f3000c2bf73de3d0cd8f34eb90bf.bindPopup(popup_068e388dd2af5d4a4960dec465783b3c)
+        ;
+
+        
+    
+    
+            var marker_fa21e87390cb5f040b6c45069ba80bcf = L.marker(
+                [52.3295812, -0.0689779],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_4a4d8c822dc4e3ffc32ffa1ca349eeaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fa21e87390cb5f040b6c45069ba80bcf.setIcon(icon_4a4d8c822dc4e3ffc32ffa1ca349eeaf);
+        
+    
+        var popup_bbe57a46dd2d3df879ab8bd77a31bb2d = L.popup({});
+
+        
+            
+                var html_29fabdc95bacdbd91109d18eb7a8700a = $(`<div id="html_29fabdc95bacdbd91109d18eb7a8700a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hazel Way, St Ives</h1><div class="nugget-popup"><p>Residential properties experienced internal and external flooding; occupants had to leave their homes. [TAB] (p12)</p></div><div class="nugget-popup"><p>Internal and external residential property flooding; external flooding to garage/outbuildings was also reported. Some residents reported having to leave their premises. [TAB,PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_bbe57a46dd2d3df879ab8bd77a31bb2d.setContent(html_29fabdc95bacdbd91109d18eb7a8700a);
+            
+        
+
+        marker_fa21e87390cb5f040b6c45069ba80bcf.bindPopup(popup_bbe57a46dd2d3df879ab8bd77a31bb2d)
+        ;
+
+        
+    
+    
+            var marker_7427131716b8abe52762587c8eb797a2 = L.marker(
+                [52.3314786, -0.0637072],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_ee34c9b9dae19885929919c87eed406c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7427131716b8abe52762587c8eb797a2.setIcon(icon_ee34c9b9dae19885929919c87eed406c);
+        
+    
+        var popup_55015ca75d02436405343a607b4357e9 = L.popup({});
+
+        
+            
+                var html_d8376473a12ba4aa2e9a52dd026f42dd = $(`<div id="html_d8376473a12ba4aa2e9a52dd026f42dd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Needingworth Road, St Ives</h1><div class="nugget-popup"><p>Commercial premises flooded; occupants had to leave the premises. [TAB] (p12)</p></div><div class="nugget-popup"><p>Commercial premises experienced internal flooding (reported occupants had to leave); external flooding affected roads, gardens, fields and garage/outbuildings. [TAB,PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_55015ca75d02436405343a607b4357e9.setContent(html_d8376473a12ba4aa2e9a52dd026f42dd);
+            
+        
+
+        marker_7427131716b8abe52762587c8eb797a2.bindPopup(popup_55015ca75d02436405343a607b4357e9)
+        ;
+
+        
+    
+    
+            var marker_d6de1cf4327314c3fb1d00fbc6547a09 = L.marker(
+                [52.3301397, -0.0621521],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_8043ab7087c3c088fc9d05ff06952a00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d6de1cf4327314c3fb1d00fbc6547a09.setIcon(icon_8043ab7087c3c088fc9d05ff06952a00);
+        
+    
+        var popup_acd33d133fdc509b9c10f63edb15d789 = L.popup({});
+
+        
+            
+                var html_8ff6919d99e385e4494e3621e8c1d157 = $(`<div id="html_8ff6919d99e385e4494e3621e8c1d157" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rookery Close, St Ives</h1><div class="nugget-popup"><p>Internal and external residential property flooding occurred; residents did not have to leave their homes. [TAB] (p12)</p></div><div class="nugget-popup"><p>Internal and external residential property flooding; external flooding to roads, gardens and fields. [TAB,PAG] (p13)</p></div><div class="nugget-popup"><p>Flooding at/affecting the watercourse at Rookery Close led the District Council to arrange significant maintenance and cleansing works (some works completed March&ndash;August 2021) on the relevant section to reduce flood risk. [TAB] (p14)</p></div><div class="nugget-popup"><p>Significant maintenance and cleansing works were carried out on the relevant section of watercourse at Rookery Close to improve conveyance following the flood investigation. (p15)</p></div></div></body></div>`)[0];
+                popup_acd33d133fdc509b9c10f63edb15d789.setContent(html_8ff6919d99e385e4494e3621e8c1d157);
+            
+        
+
+        marker_d6de1cf4327314c3fb1d00fbc6547a09.bindPopup(popup_acd33d133fdc509b9c10f63edb15d789)
+        ;
+
+        
+    
+    
+            var marker_ac148f429225b0814d7c9ef31d1b6ebf = L.marker(
+                [52.3325988, -0.0652531],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_2696a7d1e0461cab81ed8500dbe37a14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ac148f429225b0814d7c9ef31d1b6ebf.setIcon(icon_2696a7d1e0461cab81ed8500dbe37a14);
+        
+    
+        var popup_cb72a71843f4eced54b225852fcb4b90 = L.popup({});
+
+        
+            
+                var html_9a6b1a15ee5c15714d72bf4414f0392f = $(`<div id="html_9a6b1a15ee5c15714d72bf4414f0392f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Russet Close, St Ives</h1><div class="nugget-popup"><p>Internal and external residential property flooding occurred; residents had to leave their homes. [TAB] (p12)</p></div><div class="nugget-popup"><p>Internal and external residential property flooding; external flooding to garage/outbuildings. [TAB,PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_cb72a71843f4eced54b225852fcb4b90.setContent(html_9a6b1a15ee5c15714d72bf4414f0392f);
+            
+        
+
+        marker_ac148f429225b0814d7c9ef31d1b6ebf.bindPopup(popup_cb72a71843f4eced54b225852fcb4b90)
+        ;
+
+        
+    
+    
+            var marker_1b8b37ae4891479364d228ba87cee7d6 = L.marker(
+                [52.3306691, -0.0677917],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_c07577f659869f338e181f46e3ba8ae2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1b8b37ae4891479364d228ba87cee7d6.setIcon(icon_c07577f659869f338e181f46e3ba8ae2);
+        
+    
+        var popup_486513e3dcf50e85f091d5d0865c5b2e = L.popup({});
+
+        
+            
+                var html_83874add465b9ea20fc9dce9067cbea6 = $(`<div id="html_83874add465b9ea20fc9dce9067cbea6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Warren Road, St Ives</h1><div class="nugget-popup"><p>Internal residential property flooding was reported. [TAB] (p12)</p></div></div></body></div>`)[0];
+                popup_486513e3dcf50e85f091d5d0865c5b2e.setContent(html_83874add465b9ea20fc9dce9067cbea6);
+            
+        
+
+        marker_1b8b37ae4891479364d228ba87cee7d6.bindPopup(popup_486513e3dcf50e85f091d5d0865c5b2e)
+        ;
+
+        
+    
+    
+            var marker_eeec1e1ad07b1202df276382f3499ab0 = L.marker(
+                [52.3286946, -0.0612914],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_11a1af3854a3e5118f90ec58efa873e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eeec1e1ad07b1202df276382f3499ab0.setIcon(icon_11a1af3854a3e5118f90ec58efa873e5);
+        
+    
+        var popup_3c1700f3c15149424df20bc269d3454b = L.popup({});
+
+        
+            
+                var html_5cf025bbab8c5544cb063c31ba2bca2e = $(`<div id="html_5cf025bbab8c5544cb063c31ba2bca2e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Berkeley Green, St Ives</h1><div class="nugget-popup"><p>External flooding to garage and outbuildings. [TAB] (p13)</p></div><div class="nugget-popup"><p>The Berkley Park mobile home site was affected by flooding risk; meetings were held with residents and site maintenance representatives to discuss issues and develop a plan to reduce flood risk following the event. [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_3c1700f3c15149424df20bc269d3454b.setContent(html_5cf025bbab8c5544cb063c31ba2bca2e);
+            
+        
+
+        marker_eeec1e1ad07b1202df276382f3499ab0.bindPopup(popup_3c1700f3c15149424df20bc269d3454b)
+        ;
+
+        
+    
+    
+            var marker_06a3f89f13c7af6914561bd4d418f674 = L.marker(
+                [52.3272935, -0.0616333],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_d59916ac5bd3a85ae255df2479028d76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_06a3f89f13c7af6914561bd4d418f674.setIcon(icon_d59916ac5bd3a85ae255df2479028d76);
+        
+    
+        var popup_de182b413a77705efbb2ba185b04cce9 = L.popup({});
+
+        
+            
+                var html_cf35fcc53ffdadc436ad670903e4d704 = $(`<div id="html_cf35fcc53ffdadc436ad670903e4d704" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brook Way, St Ives</h1><div class="nugget-popup"><p>External flooding to garage and outbuildings. [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_de182b413a77705efbb2ba185b04cce9.setContent(html_cf35fcc53ffdadc436ad670903e4d704);
+            
+        
+
+        marker_06a3f89f13c7af6914561bd4d418f674.bindPopup(popup_de182b413a77705efbb2ba185b04cce9)
+        ;
+
+        
+    
+    
+            var marker_1150912745c38b77c0b88d337a9c8080 = L.marker(
+                [52.3285884, -0.0644659],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_41d75f29b0eae2e0601e4a04fe827501 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1150912745c38b77c0b88d337a9c8080.setIcon(icon_41d75f29b0eae2e0601e4a04fe827501);
+        
+    
+        var popup_b49ca28d4ce5ec76a0de43b3f9f0d5b1 = L.popup({});
+
+        
+            
+                var html_c1f3697ef157d3087183a93f9efab531 = $(`<div id="html_c1f3697ef157d3087183a93f9efab531" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Great Farthing Close, St Ives</h1><div class="nugget-popup"><p>External flooding to garage/outbuildings. [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_b49ca28d4ce5ec76a0de43b3f9f0d5b1.setContent(html_c1f3697ef157d3087183a93f9efab531);
+            
+        
+
+        marker_1150912745c38b77c0b88d337a9c8080.bindPopup(popup_b49ca28d4ce5ec76a0de43b3f9f0d5b1)
+        ;
+
+        
+    
+    
+            var marker_630b4961cc16c2210580a620bf2a0dea = L.marker(
+                [52.3277658, -0.0643114],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_450d3ea01695711e0dcedea7801e8a11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_630b4961cc16c2210580a620bf2a0dea.setIcon(icon_450d3ea01695711e0dcedea7801e8a11);
+        
+    
+        var popup_a958d46225f4547f027993a43a93e20c = L.popup({});
+
+        
+            
+                var html_b374264a3a489f7c9479117874cafbf5 = $(`<div id="html_b374264a3a489f7c9479117874cafbf5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Little Farthing Close, St Ives</h1><div class="nugget-popup"><p>External flooding to roads, gardens and fields. [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_a958d46225f4547f027993a43a93e20c.setContent(html_b374264a3a489f7c9479117874cafbf5);
+            
+        
+
+        marker_630b4961cc16c2210580a620bf2a0dea.bindPopup(popup_a958d46225f4547f027993a43a93e20c)
+        ;
+
+        
+    
+    
+            var marker_06b5979d6d69075f4fe6d7d561f53137 = L.marker(
+                [52.3305381, -0.071474],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_83a99ba4ab933ed9b53b59122a4c6464 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_06b5979d6d69075f4fe6d7d561f53137.setIcon(icon_83a99ba4ab933ed9b53b59122a4c6464);
+        
+    
+        var popup_87e0df1e8ebd9c6337087385c6aa985c = L.popup({});
+
+        
+            
+                var html_4831690ed59e43b9c918c2af431314e6 = $(`<div id="html_4831690ed59e43b9c918c2af431314e6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pig Lane, St Ives</h1><div class="nugget-popup"><p>External flooding to garage/outbuildings. [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_87e0df1e8ebd9c6337087385c6aa985c.setContent(html_4831690ed59e43b9c918c2af431314e6);
+            
+        
+
+        marker_06b5979d6d69075f4fe6d7d561f53137.bindPopup(popup_87e0df1e8ebd9c6337087385c6aa985c)
+        ;
+
+        
+    
+    
+            var marker_092bfcfdb746ee4054f180c5b2a2b6aa = L.marker(
+                [52.3411645, -0.0615383],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_e89af0bcd72c27f866964a73d020f464 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_092bfcfdb746ee4054f180c5b2a2b6aa.setIcon(icon_e89af0bcd72c27f866964a73d020f464);
+        
+    
+        var popup_c354bfcf34ea4225870a4d5887428e67 = L.popup({});
+
+        
+            
+                var html_364b82f80840452f42be99d3e5d4c984 = $(`<div id="html_364b82f80840452f42be99d3e5d4c984" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Somersham Road, St Ives</h1><div class="nugget-popup"><p>External flooding to roads, gardens and fields (Somersham Road / Colne Long Drove junction noted). [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_c354bfcf34ea4225870a4d5887428e67.setContent(html_364b82f80840452f42be99d3e5d4c984);
+            
+        
+
+        marker_092bfcfdb746ee4054f180c5b2a2b6aa.bindPopup(popup_c354bfcf34ea4225870a4d5887428e67)
+        ;
+
+        
+    
+    
+            var marker_70cf6c3d3cefa74088fecd0882cad39b = L.marker(
+                [52.3283551, -0.0715804],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_537776df901f43ba93646f4504bc0f07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_70cf6c3d3cefa74088fecd0882cad39b.setIcon(icon_537776df901f43ba93646f4504bc0f07);
+        
+    
+        var popup_475be8d88d0a77ffed30d2ad60398ab3 = L.popup({});
+
+        
+            
+                var html_0aa24f5737a8cd242d7e5554fc5c5f17 = $(`<div id="html_0aa24f5737a8cd242d7e5554fc5c5f17" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Warners Grove, St Ives</h1><div class="nugget-popup"><p>External flooding to garage and outbuildings; occupants did not have to leave premises. [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_475be8d88d0a77ffed30d2ad60398ab3.setContent(html_0aa24f5737a8cd242d7e5554fc5c5f17);
+            
+        
+
+        marker_70cf6c3d3cefa74088fecd0882cad39b.bindPopup(popup_475be8d88d0a77ffed30d2ad60398ab3)
+        ;
+
+        
+    
+    
+            var marker_b7c912c8ee5433632b681b70b9edee44 = L.marker(
+                [52.3289426, -0.0613452],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_76c1f32f49cfa8ea917aa11052ae0561 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b7c912c8ee5433632b681b70b9edee44.setIcon(icon_76c1f32f49cfa8ea917aa11052ae0561);
+        
+    
+        var popup_62fb3257a5e65ab52b7639bd4beea969 = L.popup({});
+
+        
+            
+                var html_8ec9bf1ebef3bb61d37d50cb8de53f4d = $(`<div id="html_8ec9bf1ebef3bb61d37d50cb8de53f4d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Willow Way, St Ives</h1><div class="nugget-popup"><p>External flooding to garage and outbuildings; occupants did not have to leave premises. [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_62fb3257a5e65ab52b7639bd4beea969.setContent(html_8ec9bf1ebef3bb61d37d50cb8de53f4d);
+            
+        
+
+        marker_b7c912c8ee5433632b681b70b9edee44.bindPopup(popup_62fb3257a5e65ab52b7639bd4beea969)
+        ;
+
+        
+    
+    
+            var marker_03c8c1374f47e503983fea32218fce0c = L.marker(
+                [52.3277453, -0.0732945],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_4290150040ba7a0389f6f6d1cf862d53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_03c8c1374f47e503983fea32218fce0c.setIcon(icon_4290150040ba7a0389f6f6d1cf862d53);
+        
+    
+        var popup_ed4070de0ff7766e9f3e8c3db1621892 = L.popup({});
+
+        
+            
+                var html_7efdc1bbb732a0bbe92a7d996eb0dc2e = $(`<div id="html_7efdc1bbb732a0bbe92a7d996eb0dc2e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Broad Leas, St Ives</h1><div class="nugget-popup"><p>External flooding to garage and outbuildings; occupants did not have to leave premises. [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_ed4070de0ff7766e9f3e8c3db1621892.setContent(html_7efdc1bbb732a0bbe92a7d996eb0dc2e);
+            
+        
+
+        marker_03c8c1374f47e503983fea32218fce0c.bindPopup(popup_ed4070de0ff7766e9f3e8c3db1621892)
+        ;
+
+        
+    
+    
+            var marker_d977c18894f360734dd9d71d193e8189 = L.marker(
+                [52.3285995, -0.068876],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_c30e59497ac68261a8448385ed89d28a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d977c18894f360734dd9d71d193e8189.setIcon(icon_c30e59497ac68261a8448385ed89d28a);
+        
+    
+        var popup_9047efd9d70c7fcf440a987153f5a6c7 = L.popup({});
+
+        
+            
+                var html_f8f99f237ffec78efcc49bf0f33ef0c6 = $(`<div id="html_f8f99f237ffec78efcc49bf0f33ef0c6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fairfields, St Ives</h1><div class="nugget-popup"><p>External flooding to garage and outbuildings; occupants did not have to leave premises. (p13)</p></div></div></body></div>`)[0];
+                popup_9047efd9d70c7fcf440a987153f5a6c7.setContent(html_f8f99f237ffec78efcc49bf0f33ef0c6);
+            
+        
+
+        marker_d977c18894f360734dd9d71d193e8189.bindPopup(popup_9047efd9d70c7fcf440a987153f5a6c7)
+        ;
+
+        
+    
+    
+            var marker_b275d2265f8e83f8f46d752006cff27a = L.marker(
+                [52.3362419, -0.0761107],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_6b0092ac79a673471a61c0c45f7a1078 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b275d2265f8e83f8f46d752006cff27a.setIcon(icon_6b0092ac79a673471a61c0c45f7a1078);
+        
+    
+        var popup_64e0a6e4d99c3876d6739a695d4d11f5 = L.popup({});
+
+        
+            
+                var html_5cd346024c992b42e3c6e214c1f70928 = $(`<div id="html_5cd346024c992b42e3c6e214c1f70928" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kings Hedges, St Ives</h1><div class="nugget-popup"><p>External flooding to roads, gardens and fields. [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_64e0a6e4d99c3876d6739a695d4d11f5.setContent(html_5cd346024c992b42e3c6e214c1f70928);
+            
+        
+
+        marker_b275d2265f8e83f8f46d752006cff27a.bindPopup(popup_64e0a6e4d99c3876d6739a695d4d11f5)
+        ;
+
+        
+    
+    
+            var marker_e4ac502406060b237d8b83d496c2baa5 = L.marker(
+                [52.3323105, -0.0672663],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_2587c5bbb4fe1281653e2d7538ad2bc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e4ac502406060b237d8b83d496c2baa5.setIcon(icon_2587c5bbb4fe1281653e2d7538ad2bc8);
+        
+    
+        var popup_a05654858fdfd7d63cdf9756a3a09674 = L.popup({});
+
+        
+            
+                var html_028ef6cbae17fa9a5a62022021b95380 = $(`<div id="html_028ef6cbae17fa9a5a62022021b95380" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nursery Gardens, St Ives</h1><div class="nugget-popup"><p>External flooding to roads, gardens and fields and to garage/outbuildings; residents reported they did not have to leave their premises. [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_a05654858fdfd7d63cdf9756a3a09674.setContent(html_028ef6cbae17fa9a5a62022021b95380);
+            
+        
+
+        marker_e4ac502406060b237d8b83d496c2baa5.bindPopup(popup_a05654858fdfd7d63cdf9756a3a09674)
+        ;
+
+        
+    
+    
+            var marker_4c3e18508686da895184b2286982418f = L.marker(
+                [52.3294237, -0.063689],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_75810fff0c127ecb757df4a3dd8fa785 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4c3e18508686da895184b2286982418f.setIcon(icon_75810fff0c127ecb757df4a3dd8fa785);
+        
+    
+        var popup_3483aeed2b3c5d4a6d219b5b35d766e0 = L.popup({});
+
+        
+            
+                var html_07e3b19fe2eaface8b0d4c672f43943c = $(`<div id="html_07e3b19fe2eaface8b0d4c672f43943c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sheepfold, St Ives</h1><div class="nugget-popup"><p>External flooding to garage/outbuildings; residents reported they did not have to leave their premises. [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_3483aeed2b3c5d4a6d219b5b35d766e0.setContent(html_07e3b19fe2eaface8b0d4c672f43943c);
+            
+        
+
+        marker_4c3e18508686da895184b2286982418f.bindPopup(popup_3483aeed2b3c5d4a6d219b5b35d766e0)
+        ;
+
+        
+    
+    
+            var marker_ea0d9aa73defb01b29530d6c0dab2695 = L.marker(
+                [52.3729017, -0.04493599422000649],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_69b53ae3bbaaf5cbdb600310950fa072 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ea0d9aa73defb01b29530d6c0dab2695.setIcon(icon_69b53ae3bbaaf5cbdb600310950fa072);
+        
+    
+        var popup_6568c01638b54274a0f70f49388464b6 = L.popup({});
+
+        
+            
+                var html_1609a9a366bdd653a0cfd79e3255d91a = $(`<div id="html_1609a9a366bdd653a0cfd79e3255d91a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cambridgeshire</h1><div class="nugget-popup"><p>Local flooding reported in St Ives (within Cambridgeshire) with multiple LLFA flood reports; flooding events persisted for short durations on affected properties/areas. [IMG] (p9)</p></div><div class="nugget-popup"><p>Flooding in St Ives (within Cambridgeshire) produced multiple indicative flooded areas concentrated along local watercourses, resulting in internal and external property flooding reported to the LLFA. [PAG,IMG] (p11)</p></div><div class="nugget-popup"><p>Engaged in discussions regarding maintenance of highway gullies and liaised over riparian responsibilities for sections of ordinary watercourse; involved in arranging/removing silt at Stocks Bridge to improve conveyance. [TAB] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>96 flood reports; duration between 5 hours and 2 days [IMG] (p9)</p></div><div class="nugget-popup quant"><p>96 flood reports; 32 properties internally flooded; 64 properties externally flooded; 15 commercial premises internally flooded [PAG,IMG] (p11)</p></div></div></body></div>`)[0];
+                popup_6568c01638b54274a0f70f49388464b6.setContent(html_1609a9a366bdd653a0cfd79e3255d91a);
+            
+        
+
+        marker_ea0d9aa73defb01b29530d6c0dab2695.bindPopup(popup_6568c01638b54274a0f70f49388464b6)
+        ;
+
+        
+    
+    
+            var marker_b1e22107eeea8bfdfb9c1fa02dd6ca6a = L.marker(
+                [52.3358157, -0.0753866],
+                {}
+            ).addTo(map_feab16e05b4742f4c55bc34083cd42dc);
+        
+    
+            var icon_43f66a9643325e99611aefecf52ef5d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b1e22107eeea8bfdfb9c1fa02dd6ca6a.setIcon(icon_43f66a9643325e99611aefecf52ef5d1);
+        
+    
+        var popup_cb871444df459a8afd8bc3ce72f76ac9 = L.popup({});
+
+        
+            
+                var html_bbb2be878ea616c714b189d277708ead = $(`<div id="html_bbb2be878ea616c714b189d277708ead" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Ives</h1><div class="nugget-popup"><p>Flooding began on 23 December 2020 due to intense rainfall and existing ground conditions; rapid runoff led to significant surface water flooding across the town, inundation of foul drainage and overwhelming of Anglian Water pumping stations. As a result foul water backed up into properties and there was a loss of toilet facilities. (p7)</p></div><div class="nugget-popup"><p>96 flood reports were received by the LLFA for December 2020. Flooding duration was reported between 5 hours and 2 days. 32 properties reported internal flooding. 64 further properties reported external flooding of gardens, outbuildings and roads. 15 commercial premises reported internal flooding (in listed St Ives locations). (p10)</p></div><div class="nugget-popup"><p>Flooding across the town led to internal flooding of residential properties and commercial premises, and external flooding of gardens, outbuildings and roads. Commercial premises internally flooded were reported on Harrison Way, Bramley Road, Harding Way, Edison Road, Needingworth Road and Parson's Drove. [PAG,IMG] (p11)</p></div><div class="nugget-popup"><p>Multiple reports of internal residential property flooding within St Ives (for example at Wheatfields), indicating the town experienced property flooding. (p12)</p></div><div class="nugget-popup"><p>External flooding affected roads, gardens and fields in the town; streets and public areas experienced inundation during the event. [TAB] (p14)</p></div><div class="nugget-popup"><p>Intense antecedent and extreme rainfall caused watercourses throughout St Ives to exceed channel capacity, producing significant surface water (fluvial&ndash;related) flooding across the town. Anglian Water assets were overwhelmed by watercourse flooding, which led to foul water systems backing up. (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>96 flood reports; 32 properties; 64 properties; 15 commercial premises (p10)</p></div><div class="nugget-popup quant"><p>96 flood reports; 32 properties internally flooded; 64 properties externally flooded; 15 commercial premises internally flooded [PAG,IMG] (p11)</p></div></div></body></div>`)[0];
+                popup_cb871444df459a8afd8bc3ce72f76ac9.setContent(html_bbb2be878ea616c714b189d277708ead);
+            
+        
+
+        marker_b1e22107eeea8bfdfb9c1fa02dd6ca6a.bindPopup(popup_cb871444df459a8afd8bc3ce72f76ac9)
+        ;
+
+        
+    
+</script>
+</html>
