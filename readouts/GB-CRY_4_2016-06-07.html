@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4167315039bb4be4c74398a66c880b5f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4167315039bb4be4c74398a66c880b5f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4167315039bb4be4c74398a66c880b5f = L.map(
+                "map_4167315039bb4be4c74398a66c880b5f",
+                {
+                    center: [51.33320326165328, -0.11001703206025938],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0870cd7dfa31d56851e3ff7465ee9a25 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_0870cd7dfa31d56851e3ff7465ee9a25.addTo(map_4167315039bb4be4c74398a66c880b5f);
+    
+            var marker_e6bf8b2dcae3fe33ae9013f61f1ddb49 = L.marker(
+                [51.2972301, -0.1061029],
+                {}
+            ).addTo(map_4167315039bb4be4c74398a66c880b5f);
+        
+    
+            var icon_f7d2cfbc12b97648cd75729d55295106 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e6bf8b2dcae3fe33ae9013f61f1ddb49.setIcon(icon_f7d2cfbc12b97648cd75729d55295106);
+        
+    
+        var popup_947d17f9adf558b688145e27195531b4 = L.popup({});
+
+        
+            
+                var html_ed038f9c494f780ee32c4d31b03a78fb = $(`<div id="html_ed038f9c494f780ee32c4d31b03a78fb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Coulsdon Common</h1><div class="nugget-popup"><p>Surface water flow pathways from Coulsdon Common fed into the main flowpath to Caterham Drive and contributed to the surface water flooding seen on 7th June 2016. (p12)</p></div><div class="nugget-popup"><p>Identified on the RoFSW map as part of a major flow pathway on 7 June 2016 conveying surface water northwards toward Caterham Drive; acted as a route for runoff contributing to flooding at Caterham Drive. (p15)</p></div><div class="nugget-popup"><p>The main storm drain from Coulsdon Common terminates in a soakaway on the Common; that soakaway has been observed to surcharge during heavy rainfall, lifting a manhole cover and allowing water to flow down the grass verge onto Stites Hill Road and via a drainage ditch through Rydon's wood onto Caterham Drive. The constraint and surcharging at this soakaway may have contributed to the severity of downstream flooding on Caterham Drive. (p16)</p></div><div class="nugget-popup"><p>A soakaway at Coulsdon Common is identified as being prone to surcharge; the report recommends this be investigated further as part of addressing local surface water drainage problems that contributed to flooding. [TAB] (p20)</p></div><div class="nugget-popup"><p>During the 7 June 2016 event surface water runoff overwhelmed or threatened the capacity of the existing surface water sewer and drainage infrastructure at Coulsdon Common (adjacent to the Tandridge/Croydon boundary). This led to concern about drainage capacity and prompted recommendation to assess sewer capacity and consider upstream SuDS/land interventions to reduce overland flow. [TAB] (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 soakaway surcharged (Soakaway A); 1 manhole cover lifted (p16)</p></div></div></body></div>`)[0];
+                popup_947d17f9adf558b688145e27195531b4.setContent(html_ed038f9c494f780ee32c4d31b03a78fb);
+            
+        
+
+        marker_e6bf8b2dcae3fe33ae9013f61f1ddb49.bindPopup(popup_947d17f9adf558b688145e27195531b4)
+        ;
+
+        
+    
+    
+            var marker_db84da8ea20abcd0ec0c77497f10b6ef = L.marker(
+                [51.3550556, -0.0643103753173489],
+                {}
+            ).addTo(map_4167315039bb4be4c74398a66c880b5f);
+        
+    
+            var icon_57f92be2c2b6e5f8d3634b70a331575e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_db84da8ea20abcd0ec0c77497f10b6ef.setIcon(icon_57f92be2c2b6e5f8d3634b70a331575e);
+        
+    
+        var popup_9f9eda6881269539fafae0ecda2b27b3 = L.popup({});
+
+        
+            
+                var html_8a65d4ca2e71b50c05dc32f656bd9053 = $(`<div id="html_8a65d4ca2e71b50c05dc32f656bd9053" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Croydon</h1><div class="nugget-popup"><p>The London Borough of Croydon was particularly affected on 7 June 2016 by localised deep, fast&ndash;flowing water which submerged/floated vehicles and entered properties at several locations. (p5)</p></div><div class="nugget-popup"><p>Multiple surface water and groundwater flood events impacted areas within the borough: Purley town centre suffered significant property flooding and disruption to the local transport network during the intense flash floods of 20 July 2007; Kenley and Purley experienced extensive groundwater&ndash;related flooding in winter 2013&ndash;14; intense rainfall in 2015 caused deep surface water flooding in areas of Purley; properties in the Caterham Drive area flooded on 7 June 2016, located in a topographic low where surface water flow paths accumulate. [MUL] (p9)</p></div><div class="nugget-popup"><p>Croydon borough experienced flooding on 7 June 2016: residents reported flooding to the council, prompting follow&ndash;up and advice on property&ndash;level protection. The event exposed issues with surface water drainage capacity and unrecorded sewer connections (including a sewer between Stites Hill Road and Caterham Drive), and led to actions to investigate mis&ndash;connections and internal sewer flooding risks. [TAB,PAG] (p22)</p></div></div></body></div>`)[0];
+                popup_9f9eda6881269539fafae0ecda2b27b3.setContent(html_8a65d4ca2e71b50c05dc32f656bd9053);
+            
+        
+
+        marker_db84da8ea20abcd0ec0c77497f10b6ef.bindPopup(popup_9f9eda6881269539fafae0ecda2b27b3)
+        ;
+
+        
+    
+    
+            var marker_17a88aaf6a106245cb8b6aa8ca5d1a9c = L.marker(
+                [51.3008137, -0.1023436],
+                {}
+            ).addTo(map_4167315039bb4be4c74398a66c880b5f);
+        
+    
+            var icon_7eee20697c8080c1ff8594d9588b92c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_17a88aaf6a106245cb8b6aa8ca5d1a9c.setIcon(icon_7eee20697c8080c1ff8594d9588b92c6);
+        
+    
+        var popup_779a5dd2a2fc2a7badda8af1b71361e7 = L.popup({});
+
+        
+            
+                var html_3b33fc24406fda774b9cb874c12c1efb = $(`<div id="html_3b33fc24406fda774b9cb874c12c1efb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Caterham Drive, Croydon</h1><div class="nugget-popup"><p>Properties located in the topographic low along Caterham Drive flooded when surface water runoff accumulated and formed prominent flow paths; local residents provided photographic evidence of flooding in 2007 and 2015. [PAG,MUL] (p9)</p></div><div class="nugget-popup"><p>Surface water runoff accumulates in a topographic low along Caterham Drive, forming prominent flow paths that led to properties being flooded. The local topography directs runoff along the road from southeast to northwest, causing inundation of properties located in the low point. [PAG,IMG,MUL] (p10)</p></div><div class="nugget-popup"><p>Surface water / urban runoff flowed from the vicinity of Caterham&ndash;on&ndash;the&ndash;Hill onto Caterham Drive during the 7 June 2016 event. Properties adjacent to the flow path reported flooding on 7 June 2016 and are located within areas the Environment Agency maps as 'high' risk (annual probability &gt;3.3%). Numerous soakaways along Caterham Drive were identified and several local soakaways were inspected (site visit 05/08/2016; condition assessments by Flowline in Appendix B); soakaway condition (siltation/blocking) affects the ability to drain runoff and is relevant to the flooding experienced on Caterham Drive. [IMG,PAG] (p11)</p></div><div class="nugget-popup"><p>Properties on and adjacent to Caterham Drive reported flooding during the 7th June 2016 event caused by overland surface water flow routed from higher ground and by surcharging foul sewers following heavy rainfall; these properties lie adjacent to RoFSW 'high' risk flow paths. [PAG] (p12)</p></div><div class="nugget-popup"><p>Surface water runoff (likely originating from Rydon's Lane) propagated north down the road, producing fast&ndash;flowing floodwater along Caterham Drive and causing property flooding at both the northern and southern ends of the road. Properties experienced complete ground&ndash;floor and garden inundation, partial ground&ndash;floor flooding/damp creep, and internal flooding; at least one resident had to move out while a house dried. [TAB,PAG] (p13)</p></div><div class="nugget-popup"><p>Caterham Drive experienced flooding from surface water and from sewers during the event on 7 June 2016. The report identifies surface water and sewer sources as the reported causes of flooding at this location. [TAB,PAG] (p14)</p></div><div class="nugget-popup"><p>On 7 June 2016 the surface water drainage and soakaway network failed to drain the intense rainfall, causing rapid onset of surface water flooding across roads and into surrounding properties. Properties A and B experienced the deepest flooding (water reached thresholds and inundated the ground floor). Residents observed the foul sewer surcharging with lifted manhole covers, indicating surface water entry to the combined sewer. A CCTV survey found blocked gullies (9 and 10) opposite the severely flooded properties. (p15)</p></div><div class="nugget-popup"><p>Surface water/overland flow from intense rainfall overwhelmed drainage on Caterham Drive. Gullies were found blocked (gullies 9 and 10) and some gullies had suspected collapsed outlet pipes (gullies 4 and 10), reducing drainage capacity. Two properties (A and B) experienced severe internal flooding. A manhole on the carriageway was surcharging and there was physical damage to the carriageway around the manhole cover; video shows runoff from Rydon's Lane onto Caterham Drive. The drainage network was later inspected/cleaned after the event. [PAG] (p16)</p></div><div class="nugget-popup"><p>Surface water runoff from Rydon's Lane flowed onto Caterham Drive during the 7 June 2016 event, causing damage to the carriageway around a manhole cover and depositing flood debris on a recently tarmacked pathway leading onto Caterham Drive. [IMG] (p17)</p></div><div class="nugget-popup"><p>Road and adjacent properties flooded; surface water entered and hydraulically overloaded the foul sewer causing sewer surcharge and foul sewage to enter properties; standing water and debris on the carriageway; sandbags were delivered to affected residents; remedial works undertaken including gully cleaning, CCTV surveys and repair of identified defects. (p18)</p></div><div class="nugget-popup"><p>Surface water overwhelmed the drainage and entered the foul sewer, hydraulically overloading the sewer network and causing flooding into properties on Caterham Drive. Flood depths exceeded 900mm in places. Residents at the northern end (properties A&ndash;D) used personal property protection; at the southern end properties E&ndash;F were affected and attended by the fire service. A builder removed an earth bund on 7 June which subsequently allowed surface water to flow off the road into woodland in the following days. [TAB,PAG] (p19)</p></div><div class="nugget-popup"><p>On 7th June 2016 Caterham Drive experienced flooding that prompted resident complaints. Lanes for Drains were deployed to pump, suck and sweep floodwater and debris. Subsequent CCTV inspections of drains identified blockages and collapsed pipes that may have been caused by the flooding. The sewer network surcharged during the extreme event as surface water entered the system. [TAB,PAG] (p20)</p></div><div class="nugget-popup"><p>Flooding occurred on Caterham Drive during the event on 7th June 2016; residents reported incidents and provided photographic and video evidence of flooding, and blockages were noted as contributing factors to the flooding. (p21)</p></div><div class="nugget-popup"><p>The report describes overland surface water flooding affecting the northern end of Caterham Drive during the 7 June 2016 event. It recommends enhancing nearby land (Dollypers Hill) and installing a brow ditch or interceptor drain to intercept runoff from steep slopes and reduce the volume of overland flooding reaching Caterham Drive. [TAB,PAG] (p22)</p></div><div class="nugget-popup"><p>Experienced overland / surface&ndash;water flooding on 7th June 2016 when runoff from adjacent steep slopes reached the road; the report identifies this as the Caterham Drive flood event and proposes mitigation (brow ditch/interceptor drain, SuDS upslope) to reduce overland flows into the street. [PAG] (p23)</p></div><div class="nugget-popup"><p>Caterham Drive was the subject of a flood investigation and a Flowline CCTV survey following flood impacts in June 2016; the report headings indicate the road experienced flooding during the June 2016 event. (p26)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties; up to 1m in some areas; two foot of fast&ndash;flowing water reported along the road [TAB,PAG] (p13)</p></div><div class="nugget-popup quant"><p>2 properties (A and B) inundated; water depth approx 900 mm (p15)</p></div><div class="nugget-popup quant"><p>2 properties flooded (A and B); 2 gullies blocked (9 and 10); 2 gullies with suspected collapsed outlet pipes (4 and 10); 1 surcharging manhole; damage to carriageway around 1 manhole [PAG] (p16)</p></div><div class="nugget-popup quant"><p>flooding in excess of 900mm deep; two collapsed gullies (p18)</p></div><div class="nugget-popup quant"><p>flooding in excess of 900mm deep; 4 properties (A&ndash;D); 2 properties (E&ndash;F) [TAB,PAG] (p19)</p></div></div></body></div>`)[0];
+                popup_779a5dd2a2fc2a7badda8af1b71361e7.setContent(html_3b33fc24406fda774b9cb874c12c1efb);
+            
+        
+
+        marker_17a88aaf6a106245cb8b6aa8ca5d1a9c.bindPopup(popup_779a5dd2a2fc2a7badda8af1b71361e7)
+        ;
+
+        
+    
+    
+            var marker_aea8be97fe51e56f2dee1abcf678642b = L.marker(
+                [51.30685412479924, -0.1122607055865419],
+                {}
+            ).addTo(map_4167315039bb4be4c74398a66c880b5f);
+        
+    
+            var icon_e4a52226be34ff8f178d23a2cb324802 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aea8be97fe51e56f2dee1abcf678642b.setIcon(icon_e4a52226be34ff8f178d23a2cb324802);
+        
+    
+        var popup_d00926164415b9d3c0ce863e23c7e6d8 = L.popup({});
+
+        
+            
+                var html_785011bb0111a6eb0e7ea36bcc4f5e79 = $(`<div id="html_785011bb0111a6eb0e7ea36bcc4f5e79" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Glade, Coulsdon</h1><div class="nugget-popup"><p>Smaller flow pathways from The Glade fed into the main RoFSW flowpath to Caterham Drive and contributed to the surface water flooding observed on 7th June 2016. (p12)</p></div></div></body></div>`)[0];
+                popup_d00926164415b9d3c0ce863e23c7e6d8.setContent(html_785011bb0111a6eb0e7ea36bcc4f5e79);
+            
+        
+
+        marker_aea8be97fe51e56f2dee1abcf678642b.bindPopup(popup_d00926164415b9d3c0ce863e23c7e6d8)
+        ;
+
+        
+    
+    
+            var marker_e034536c2f729568d0d13446e1bfe0ae = L.marker(
+                [51.3012613, -0.1045028],
+                {}
+            ).addTo(map_4167315039bb4be4c74398a66c880b5f);
+        
+    
+            var icon_7178350b8d9bb33850220f1b1c8c5c70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e034536c2f729568d0d13446e1bfe0ae.setIcon(icon_7178350b8d9bb33850220f1b1c8c5c70);
+        
+    
+        var popup_c579f61dc1b1d11be65f8b163ae81228 = L.popup({});
+
+        
+            
+                var html_21d555989e1837f07906f0cf5477fdd7 = $(`<div id="html_21d555989e1837f07906f0cf5477fdd7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rydon's Lane, Croydon</h1><div class="nugget-popup"><p>Surface water runoff originating from Rydon's Lane during the intense storm flowed downhill and is reported to have influenced flooding of properties to the south of Caterham Drive. (p13)</p></div><div class="nugget-popup"><p>Surface water runoff flowed from Rydon's Lane onto Caterham Drive during the intense rainfall, forming part of the major flow path and contributing to rapid surface water flooding on 7 June 2016. (p15)</p></div><div class="nugget-popup"><p>Surface water runoff was conveyed through Rydon's wood (and along Rydon's Lane) onto Caterham Drive; video footage shows runoff from Rydon's Lane contributing to flooding downstream. [PAG] (p16)</p></div><div class="nugget-popup"><p>Surface water runoff originated on Rydon's Lane and flowed onto Caterham Drive during the 7 June 2016 event; this runoff is recorded on video. (p17)</p></div><div class="nugget-popup"><p>Flash flooding on 7th June 2016 prompted residents to contact emergency services; calls were received from residents on Caterham Drive and the adjoining Rydon's Lane and the London Fire Brigade were alerted and took action to mitigate floodwater impacts. (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>three calls (from Caterham Drive and adjoining Rydon's Lane) (p19)</p></div></div></body></div>`)[0];
+                popup_c579f61dc1b1d11be65f8b163ae81228.setContent(html_21d555989e1837f07906f0cf5477fdd7);
+            
+        
+
+        marker_e034536c2f729568d0d13446e1bfe0ae.bindPopup(popup_c579f61dc1b1d11be65f8b163ae81228)
+        ;
+
+        
+    
+    
+            var marker_3698363eb035cd8198cd964b8783ddc3 = L.marker(
+                [51.2977529, -0.1100513],
+                {}
+            ).addTo(map_4167315039bb4be4c74398a66c880b5f);
+        
+    
+            var icon_2e8d856fd98fdcc5ea8a5cd6160af143 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3698363eb035cd8198cd964b8783ddc3.setIcon(icon_2e8d856fd98fdcc5ea8a5cd6160af143);
+        
+    
+        var popup_be99d7223834215c987b63401da8c53d = L.popup({});
+
+        
+            
+                var html_8b9c1fe327e8514697397b8b01e36f4f = $(`<div id="html_8b9c1fe327e8514697397b8b01e36f4f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stites Hill Road, Croydon</h1><div class="nugget-popup"><p>Surface water runoff from Stites Hill Road flowed onto Caterham Drive, forming a major flow path that contributed to rapid surface water flooding during the intense rainfall on 7 June 2016. (p15)</p></div><div class="nugget-popup"><p>Water from a surcharging soakaway on Coulsdon Common lifted a manhole cover and flowed down the grass verge onto Stites Hill Road, flooding the carriageway. (p16)</p></div><div class="nugget-popup"><p>Surface water flowed onto Stites Hill Road (adjacent to the park) during the 7 June 2016 event. (p17)</p></div><div class="nugget-popup"><p>Evidence of surface water flowing onto Stites Hill Road adjacent to City of London Park was recorded. A previously unrecorded sewer was identified connecting Stites Hill Road (in Tandridge) to Caterham Drive, which may have carried significant extra flow to Caterham Drive during the event. [PAG] (p18)</p></div><div class="nugget-popup"><p>Soakaways along Stites Hill Road have previously surcharged; the report identifies two soakaways that have surcharged and recommends further investigation as part of addressing the surface&ndash;water drainage failures linked to the event. [TAB] (p20)</p></div><div class="nugget-popup"><p>An unrecorded sewer connection between Stites Hill Road and Caterham Drive is specifically highlighted for further exploration as part of the flood investigation, indicating sewer infrastructure linked to flooding at the time of the event. RMAs were advised to detect unknown pipelines/infrastructure that may have contributed to flooding. [TAB] (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 soakaways [TAB] (p20)</p></div></div></body></div>`)[0];
+                popup_be99d7223834215c987b63401da8c53d.setContent(html_8b9c1fe327e8514697397b8b01e36f4f);
+            
+        
+
+        marker_3698363eb035cd8198cd964b8783ddc3.bindPopup(popup_be99d7223834215c987b63401da8c53d)
+        ;
+
+        
+    
+    
+            var marker_66b22dd3f9c9f61f524fe7083d0b8559 = L.marker(
+                [51.28197, -0.0771032],
+                {}
+            ).addTo(map_4167315039bb4be4c74398a66c880b5f);
+        
+    
+            var icon_0857211393a4d3d0d58e2651bbaa0fac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_66b22dd3f9c9f61f524fe7083d0b8559.setIcon(icon_0857211393a4d3d0d58e2651bbaa0fac);
+        
+    
+        var popup_d4e15f4be6ebfb178410a735022cf3c7 = L.popup({});
+
+        
+            
+                var html_6946a8102d79d437bbcaa42d882f7f27 = $(`<div id="html_6946a8102d79d437bbcaa42d882f7f27" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Caterham</h1><div class="nugget-popup"><p>A surface water flow path is described as originating in the vicinity of Caterham&ndash;on&ndash;the&ndash;Hill and routed northwest onto Caterham Drive, contributing overland runoff that led to surface water flooding downslope during the 7th June 2016 event. [PAG] (p12)</p></div><div class="nugget-popup"><p>Intense local storm on 7 June 2016 caused surface water runoff and overland flow from steep slopes and Rydon's Lane, plus surcharging foul sewers, which propagated down Caterham Drive. Six properties (labelled A&ndash;F) were flooded: complete ground floor and garden flooding at properties A and B (up to 1 m in places), complete garden flooding and partial ground&ndash;floor flooding/damp at properties C and D, and internal flooding at properties E and F (one resident had to move out while the house dried). Bus drivers reported fast&ndash;flowing water (about two foot) along Caterham Drive and traffic diversions were put in place. Over 80 calls relating to flooding in the area were received by Thames Water Utilities on 7&ndash;8 June. [TAB,PAG] (p13)</p></div><div class="nugget-popup"><p>Surface water runoff overloaded the sewer network in Caterham on the Hill, causing hydraulic overload, sewer surcharge and flooding with reports of foul sewage entering properties. (p18)</p></div><div class="nugget-popup"><p>The Caterham area was affected by overland surface water and sewer&ndash;related flooding (event of 7th June 2016). Specific local impacts included flooding on/near Caterham Drive and Stites Hill Road, identification of an unrecorded sewer connection between Stites Hill Road and Caterham Drive, and community&ndash;level response including formation of the Caterham and Old Coulsdon Flood Action Group. Mitigation options were proposed for land at the northern end of Caterham Drive (Dollypers Hill) to reduce overland runoff to the area. [TAB,PAG] (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Over 80 calls; 6 properties (A&ndash;F) flooded (4 properties in the north, 2 in the south); up to 1 m flood depth in some areas; ~2 foot of fast&ndash;flowing water reported by bus drivers. [TAB,PAG] (p13)</p></div><div class="nugget-popup quant"><p>flooding in excess of 900mm deep (p18)</p></div></div></body></div>`)[0];
+                popup_d4e15f4be6ebfb178410a735022cf3c7.setContent(html_6946a8102d79d437bbcaa42d882f7f27);
+            
+        
+
+        marker_66b22dd3f9c9f61f524fe7083d0b8559.bindPopup(popup_d4e15f4be6ebfb178410a735022cf3c7)
+        ;
+
+        
+    
+    
+            var marker_6a93c1af30fa6379787ed296b167bc83 = L.marker(
+                [51.3199716, -0.1393506],
+                {}
+            ).addTo(map_4167315039bb4be4c74398a66c880b5f);
+        
+    
+            var icon_a72594e19a63b14afd29d81b4b942054 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6a93c1af30fa6379787ed296b167bc83.setIcon(icon_a72594e19a63b14afd29d81b4b942054);
+        
+    
+        var popup_3b5cc4b7e078a0d1b9a1010a7aeb1d1c = L.popup({});
+
+        
+            
+                var html_820d8d3f883761aee788ede3fd8be9c9 = $(`<div id="html_820d8d3f883761aee788ede3fd8be9c9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Coulsdon</h1><div class="nugget-popup"><p>Flooding was reported across the Coulsdon area (including Caterham Drive and nearby parkland): standing water on roads, blocked gullies and two collapsed gullies were identified; floodwaters subsided then required sweepers and gully&ndash;suckers to clear debris; foul sewage entered properties where surface water entered the foul sewer system; sandbags were delivered to affected residents. [MUL] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two collapsed gullies; approximately 40 calls on 7 June 2016; approximately 40 calls on 8 June 2016; flooding in excess of 900 mm deep [MUL] (p18)</p></div></div></body></div>`)[0];
+                popup_3b5cc4b7e078a0d1b9a1010a7aeb1d1c.setContent(html_820d8d3f883761aee788ede3fd8be9c9);
+            
+        
+
+        marker_6a93c1af30fa6379787ed296b167bc83.bindPopup(popup_3b5cc4b7e078a0d1b9a1010a7aeb1d1c)
+        ;
+
+        
+    
+    
+            var marker_5d81857388d01a0aa3e4da889f82957a = L.marker(
+                [51.2908971, -0.097909],
+                {}
+            ).addTo(map_4167315039bb4be4c74398a66c880b5f);
+        
+    
+            var icon_8b02a81ca1021352a56f12eb7436da4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5d81857388d01a0aa3e4da889f82957a.setIcon(icon_8b02a81ca1021352a56f12eb7436da4e);
+        
+    
+        var popup_a94ba77da59908bcb8e38815c9a54c5d = L.popup({});
+
+        
+            
+                var html_44852fb70754dd25f6d3a00a7391f6ac = $(`<div id="html_44852fb70754dd25f6d3a00a7391f6ac" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Caterham On the Hill</h1><div class="nugget-popup"><p>Flooding was reported in Caterham on the Hill from both the surface and foul sewer networks; surface water appears to have entered sewer assets and may have contributed additional flows toward Caterham Drive via a previously unrecorded sewer. [PAG] (p18)</p></div></div></body></div>`)[0];
+                popup_a94ba77da59908bcb8e38815c9a54c5d.setContent(html_44852fb70754dd25f6d3a00a7391f6ac);
+            
+        
+
+        marker_5d81857388d01a0aa3e4da889f82957a.bindPopup(popup_a94ba77da59908bcb8e38815c9a54c5d)
+        ;
+
+        
+    
+</script>
+</html>
