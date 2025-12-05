@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cd85f7d3fbdb56f3c5012c8c7d98dead {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cd85f7d3fbdb56f3c5012c8c7d98dead" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cd85f7d3fbdb56f3c5012c8c7d98dead = L.map(
+                "map_cd85f7d3fbdb56f3c5012c8c7d98dead",
+                {
+                    center: [52.94843191347214, -1.4729586054442543],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5cb30c0fc2a0bac98d2606848de92487 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_5cb30c0fc2a0bac98d2606848de92487.addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+    
+            var marker_3405b288b6e8f7cc51e95a3be407a803 = L.marker(
+                [52.94125, -1.4712486],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_49d163e6128bf564c8b9fac9006f9ead = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3405b288b6e8f7cc51e95a3be407a803.setIcon(icon_49d163e6128bf564c8b9fac9006f9ead);
+        
+    
+        var popup_22e4695bc05e7ab684cee044e347e565 = L.popup({});
+
+        
+            
+                var html_1b022bd53087df4c93fd34c285d58ce9 = $(`<div id="html_1b022bd53087df4c93fd34c285d58ce9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Derby Rugby Club</h1><div class="nugget-popup"><p>Floodwaters from the overtopping River Derwent / Folly Brook inundated the rugby club grounds. (p22)</p></div><div class="nugget-popup"><p>On 8 November 2019 the access road, adjacent fences and playing fields at the Derby Rugby Football Grounds were inundated and rendered inaccessible; road surface and surrounding field areas were submerged, indicating significant disruption to site access and use. Nearby Haslams Lane experienced flood depths in excess of 1 m and its flood gate was closed at approximately 14:00 on 8 November and reopened the following morning. [PAG,IMG] (p24)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths in excess of 1 m along Haslams Lane [PAG,IMG] (p24)</p></div></div></body></div>`)[0];
+                popup_22e4695bc05e7ab684cee044e347e565.setContent(html_1b022bd53087df4c93fd34c285d58ce9);
+            
+        
+
+        marker_3405b288b6e8f7cc51e95a3be407a803.bindPopup(popup_22e4695bc05e7ab684cee044e347e565)
+        ;
+
+        
+    
+    
+            var marker_c76bab897091a2cf304d4b2d9faea8b2 = L.marker(
+                [52.9371959, -1.4743197],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_12bd0d9df9dec35af9486474e57c96d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c76bab897091a2cf304d4b2d9faea8b2.setIcon(icon_12bd0d9df9dec35af9486474e57c96d5);
+        
+    
+        var popup_6be0ecf57e2903e894b7626f0b629b09 = L.popup({});
+
+        
+            
+                var html_b91b1a1b7bd6ab4c0468c8859f3cf727 = $(`<div id="html_b91b1a1b7bd6ab4c0468c8859f3cf727" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Darley Fields</h1><div class="nugget-popup"><p>Darley Fields, an area identified as active floodplain and not protected by defences, was inundated as flood flows spread from the River Derwent / Folly Brook. (p22)</p></div></div></body></div>`)[0];
+                popup_6be0ecf57e2903e894b7626f0b629b09.setContent(html_b91b1a1b7bd6ab4c0468c8859f3cf727);
+            
+        
+
+        marker_c76bab897091a2cf304d4b2d9faea8b2.bindPopup(popup_6be0ecf57e2903e894b7626f0b629b09)
+        ;
+
+        
+    
+    
+            var marker_629ef10a61591f5ee696df362a8fd8a3 = L.marker(
+                [52.94355125, -1.4747185395431328],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_442651f7d1aded8b73736765a5b3450f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_629ef10a61591f5ee696df362a8fd8a3.setIcon(icon_442651f7d1aded8b73736765a5b3450f);
+        
+    
+        var popup_31b68ab8ce50cdd0509738e30ba95876 = L.popup({});
+
+        
+            
+                var html_e231c3f7d165afce1fe2af5cc046e5a7 = $(`<div id="html_e231c3f7d165afce1fe2af5cc046e5a7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Darley Abbey Mills</h1><div class="nugget-popup"><p>Site flood defences were not overtopped but experienced seepage; fluvial water seeping through defences (and groundwater seeping up through floors) caused internal flooding in commercial premises and disrupted business access. (p25)</p></div><div class="nugget-popup"><p>Recorded flood outlines surround Abbey Mills; although defences were not overtopped, seepage through defences and through property floors caused internal flooding of commercial premises and business disruption due to loss of access. [PAG,IMG] (p26)</p></div><div class="nugget-popup"><p>Seepage through the flood defences occurred at Darley Abbey Mills during the 8&ndash;9 November flood. (p43)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>at least 1 commercial property internally flooded; internal flood depth approximately 150 mm (p25)</p></div><div class="nugget-popup quant"><p>1 commercial property; internal flooding up to 150 mm [PAG,IMG] (p26)</p></div></div></body></div>`)[0];
+                popup_31b68ab8ce50cdd0509738e30ba95876.setContent(html_e231c3f7d165afce1fe2af5cc046e5a7);
+            
+        
+
+        marker_629ef10a61591f5ee696df362a8fd8a3.bindPopup(popup_31b68ab8ce50cdd0509738e30ba95876)
+        ;
+
+        
+    
+    
+            var marker_063820370302d2e9d23932fc885fd924 = L.marker(
+                [52.92419, -1.4719355],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_d31c6c4d694e2924707544e7b8b321ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_063820370302d2e9d23932fc885fd924.setIcon(icon_d31c6c4d694e2924707544e7b8b321ac);
+        
+    
+        var popup_d5cc775f520bcaf63d1b6c9740923217 = L.popup({});
+
+        
+            
+                var html_d573e0aacf890a5a48074d48a477d7de = $(`<div id="html_d573e0aacf890a5a48074d48a477d7de" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Exeter House</h1><div class="nugget-popup"><p>The flood bank located in front of Exeter House was overtopped as river levels rose; overtopping contributed to flood water flowing onto Exeter Place and Meadow Road. Derby City Council deployed sandbags along the top of the flood bank and at the junction with the flood wall to contain flood waters and prevent further overtopping. [PAG,IMG] (p32)</p></div></div></body></div>`)[0];
+                popup_d5cc775f520bcaf63d1b6c9740923217.setContent(html_d573e0aacf890a5a48074d48a477d7de);
+            
+        
+
+        marker_063820370302d2e9d23932fc885fd924.bindPopup(popup_d5cc775f520bcaf63d1b6c9740923217)
+        ;
+
+        
+    
+    
+            var marker_a021d0085e555a8bb8731e3d8db61e84 = L.marker(
+                [52.925380303065204, -1.4681276674454808],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_0d38bfe823402764089954bd1a12d90a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a021d0085e555a8bb8731e3d8db61e84.setIcon(icon_0d38bfe823402764089954bd1a12d90a);
+        
+    
+        var popup_4e5e83758580277bc228f53550918a05 = L.popup({});
+
+        
+            
+                var html_701098084aa997f3e09a1a7722afe70e = $(`<div id="html_701098084aa997f3e09a1a7722afe70e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cardinal House</h1><div class="nugget-popup"><p>The combined drainage system for Cardinal House has a hydraulic connection into the surface water system; when the surface water system backed up due to high river levels the combined system also backed up. Gullies in Cardinal House flooded as a result, with recorded flood outlines matching the area's surface&ndash;water flood risk. (p36)</p></div><div class="nugget-popup"><p>Backing up of the connected surface water and combined drainage caused water to flood out of the yard gully into the below&ndash;ground Western Power sub&ndash;station at Cardinal House. Flood water rose internally within the sub&ndash;station and caused failure of switchgear; the circuit failed at 21:56 on 8 Nov leading to widespread blackouts across Derby. Power restoration was completed in stages with the final stage at 23:25 on 8 Nov; restoration was delayed by flooded/closed roads elsewhere. [PAG,IMG] (p37)</p></div><div class="nugget-popup"><p>Flooding of the yard gully led to water entering the underground sub&ndash;station and caused switchgear failure; owners subsequently installed a non&ndash;return valve on the yard gully and a pump inside the sub&ndash;station, and Western Power raised the switchgear level. (p38)</p></div><div class="nugget-popup"><p>Surface water flooding affected the area around Cardinal House due to backing up of fluvial flows into the surface water drainage network, prompting consideration of non&ndash;return valves/pumping to allow discharge of flows. [TAB] (p44)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>greater than 130 mm (p36)</p></div><div class="nugget-popup quant"><p>flood depths greater than 130mm [PAG,IMG] (p37)</p></div></div></body></div>`)[0];
+                popup_4e5e83758580277bc228f53550918a05.setContent(html_701098084aa997f3e09a1a7722afe70e);
+            
+        
+
+        marker_a021d0085e555a8bb8731e3d8db61e84.bindPopup(popup_4e5e83758580277bc228f53550918a05)
+        ;
+
+        
+    
+    
+            var marker_02c058a46d9a26eb247a765b975b15fe = L.marker(
+                [52.9529937, -1.4489864],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_3806632ec5873337a6b03fdad0b48143 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_02c058a46d9a26eb247a765b975b15fe.setIcon(icon_3806632ec5873337a6b03fdad0b48143);
+        
+    
+        var popup_4889e453972772f651f52f106e0a8296 = L.popup({});
+
+        
+            
+                var html_6a088de9fd2c9b09ce3b07564022c009 = $(`<div id="html_6a088de9fd2c9b09ce3b07564022c009" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dam Brook</h1><div class="nugget-popup"><p>Dam Brook, an ordinary watercourse in Derby, was part of the local drainage network associated with the flood event of 08 Nov 2019 &ndash; 09 Nov 2019 and is reported alongside other ordinary watercourses and privately owned ditches that were affected. It likely contributed to localised runoff/overland flow and drainage connectivity during the event (some privately owned ditches connecting into the brook were affected). There is insufficient detail to state precise overtopping locations or property&ndash;level inundation. (p9)</p></div></div></body></div>`)[0];
+                popup_4889e453972772f651f52f106e0a8296.setContent(html_6a088de9fd2c9b09ce3b07564022c009);
+            
+        
+
+        marker_02c058a46d9a26eb247a765b975b15fe.bindPopup(popup_4889e453972772f651f52f106e0a8296)
+        ;
+
+        
+    
+    
+            var marker_85dce2106dfdfa109b7e2521025531f9 = L.marker(
+                [52.9212617, -1.4761491],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_17f3a0be30c4ffceab09325f0c6cc901 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_85dce2106dfdfa109b7e2521025531f9.setIcon(icon_17f3a0be30c4ffceab09325f0c6cc901);
+        
+    
+        var popup_2f78e37fdfcd9325ab01e463c63c93d8 = L.popup({});
+
+        
+            
+                var html_2fecf706bec564892a4929aa5f99cd69 = $(`<div id="html_2fecf706bec564892a4929aa5f99cd69" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Derby</h1><div class="nugget-popup"><p>Internal flooding at multiple commercial properties and one residential property near the city border; disruption to critical infrastructure including closure of main roads, failure of a pumping station, and flooding of an electricity sub&ndash;station resulting in blackouts. (p7)</p></div><div class="nugget-popup"><p>Flooding occurred across the city within twelve investigation sites (many located adjacent to the River Derwent), affecting urban areas and infrastructure and prompting this Section 19 investigation. [IMG,PAG] (p9)</p></div><div class="nugget-popup"><p>Flooding affected multiple sites across the city during the investigated event; the majority of the twelve sites considered are located close to the River Derwent and its tributary/ordinary watercourse network. Privately owned ditches connecting to the river were reported as being affected during the flood event. [PAG,IMG,TAB] (p10)</p></div><div class="nugget-popup"><p>Flood events occurred in Derby on 8 November 2019 driven by high river flows from the River Derwent following intense rainfall over the river's headwaters. [PAG,IMG,TAB] (p16)</p></div><div class="nugget-popup"><p>River Derwent peak flows propagated downstream to Derby. The River Derwent at St Mary's Bridge recorded a record high peak flow during the event, producing very high river levels that were associated with the flood incident in Derby on 8 November 2019. [PAG,IMG] (p17)</p></div><div class="nugget-popup"><p>On 8&ndash;9 November 2019 fluvial flooding from the River Derwent propagated downstream into Derby. Exceptionally high river levels overtopped and/or caused seepage through some flood defences, produced groundwater flooding in topographically low areas, and led to the sewer network backing up/surcharging from river water ingress to outfalls. These combined mechanisms produced the recorded flooding across the city; DCiC mapped flood outlines and managed response. [PAG] (p20)</p></div><div class="nugget-popup"><p>Flooding on the A61 at Pektron Island (within the Derby urban area) caused significant highway inundation and required response from Derby City Council. [IMG,PAG] (p21)</p></div><div class="nugget-popup"><p>Parts of Derby (central area) experienced river&ndash;driven flooding impacts during the event: seepage through partially constructed/unsealed sheet pile flood defences at the River Derwent bank led to water being pumped from the construction site back to the river; pump failure allowed floodwater to flow onto adjacent streets (notably City Road) where sandbags were deployed to protect properties. [PAG,IMG] (p28)</p></div><div class="nugget-popup"><p>Widespread impacts across the city including flooded and closed roads that delayed power restoration and blackouts caused by flood&ndash;induced substation failure. (p38)</p></div><div class="nugget-popup"><p>Flooding of the surface water drainage system caused backing&ndash;up at a Western Power underground sub&ndash;station yard gully, resulting in internal flooding of the sub&ndash;station, failure of the switchgear and a circuit failure at 21:56 on 8 Nov that produced blackouts across large areas of Derby. Power was restored in stages, with the final stage completed at 23:25 on 8 Nov; restoration was delayed in places due to flooded/closed roads. [IMG] (p39)</p></div><div class="nugget-popup"><p>Internal flooding of properties across the city; significant flooding on several main highways causing road closures; disruption to the electricity supply network causing a blackout in Derby. (p43)</p></div><div class="nugget-popup"><p>Derby experienced flooding during 8&ndash;9 November 2019 from the River Derwent and from surface water/runoff. Multiple locations were affected: Haslams Lane acted as an active floodplain, Sowter Road functioned as an exceedance channel, and City Road flooded due to incomplete flood defences. Surface water network connectivity and outfalls (including into the River Derwent) contributed to local inundation. [PAG] (p44)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>12 sites; one residential property (p7)</p></div><div class="nugget-popup quant"><p>highest peak on record across an 85&ndash;year period; estimated 75&ndash;95 year return period (ESS analysis); OCOR review estimated 60&ndash;95 year return period (report range 50&ndash;150 years) [PAG] (p20)</p></div><div class="nugget-popup quant"><p>water depths of approximately 500mm [IMG,PAG] (p21)</p></div><div class="nugget-popup quant"><p>depths up to 50mm; two pumps used (4&#8220; and 6"), 6&#8221; pump failed [PAG,IMG] (p28)</p></div><div class="nugget-popup quant"><p>approximately 7 commercial properties; one residential property; five locations (p43)</p></div></div></body></div>`)[0];
+                popup_2f78e37fdfcd9325ab01e463c63c93d8.setContent(html_2fecf706bec564892a4929aa5f99cd69);
+            
+        
+
+        marker_85dce2106dfdfa109b7e2521025531f9.bindPopup(popup_2f78e37fdfcd9325ab01e463c63c93d8)
+        ;
+
+        
+    
+    
+            var marker_f834f4ae06fde4dd6f66a428eb3c4180 = L.marker(
+                [52.9199308, -1.4518518],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_6750a7247cbc702223c5c408f353e2b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f834f4ae06fde4dd6f66a428eb3c4180.setIcon(icon_6750a7247cbc702223c5c408f353e2b7);
+        
+    
+        var popup_7dbba69cce398420b0c543e6e04c1a65 = L.popup({});
+
+        
+            
+                var html_0b695a49e20a8ec03de17fefa523cfb6 = $(`<div id="html_0b695a49e20a8ec03de17fefa523cfb6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chaddesden Sidings</h1><div class="nugget-popup"><p>Surface water drainage outfall behind Chaddesden Sidings and the railway underpass were identified as affected during the 8&ndash;9 November 2019 event. Actions recommended include investigating a non&ndash;return valve or pumping station on the surface water outfall, reinstating a flood defence bund around the railway underpass as a temporary measure, and investigating a former culvert beneath the railway. (p7)</p></div><div class="nugget-popup"><p>Flooding from multiple sources inundated Chaddesden Sidings. The River Derwent overtopped its banks and flooded the flood plain south of the railway; an underpass allowed that floodwater into Chaddesden Sidings. Additional sources included failure of the Downing Road pumping station and the STW surface water sewer backing up. The A52 and Chequers Road were flooded and closed, and commercial properties along Chequers Road experienced internal flooding. (p38)</p></div><div class="nugget-popup"><p>Chaddesden Sidings experienced flooding from multiple sources: fluvial flooding from the River Derwent overtopping the banks and flowing through an underpass, flooding through a missing/eroded flood defence bund, and backflow from the surface water sewer and railway culvert. Flooding affected the A52 and Chequers Road and caused internal flooding to commercial properties (Chequers Road) up to 1.5 m. [PAG,IMG] (p39)</p></div><div class="nugget-popup"><p>Flooding occurred north of the railway when high river levels caused flows to back up through a previously unknown railway culvert connected into the surface water drainage and the STW surface water sewer; water flowed back from the river into the culvert and flooded into Chaddesden Sidings. Foul manholes in the area are known to surcharge and foul water flooding is believed to have occurred. (p40)</p></div><div class="nugget-popup"><p>Flood defences at Chaddesden Siding were overtopped during the 8&ndash;9 November flood event. (p43)</p></div><div class="nugget-popup"><p>Surface water flooding occurred as fluvial flows backed up into the surface water network behind Chaddesden Sidings, causing discharge blockage and inundation; this led to recommended investigation of the railway culvert function and the potential reinstatement of a flood&ndash;defence bund around the underpass. [TAB] (p44)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths up to 1.5 m; A52 closed from 21:45 on 08 Nov 2019 (reopened 09 Nov 2019); Chequers Road closed at 07:41 on 09 Nov 2019 (p38)</p></div><div class="nugget-popup quant"><p>internal flooding depths up to 1.5 m to commercial properties (Chequers Road area) [PAG,IMG] (p39)</p></div></div></body></div>`)[0];
+                popup_7dbba69cce398420b0c543e6e04c1a65.setContent(html_0b695a49e20a8ec03de17fefa523cfb6);
+            
+        
+
+        marker_f834f4ae06fde4dd6f66a428eb3c4180.bindPopup(popup_7dbba69cce398420b0c543e6e04c1a65)
+        ;
+
+        
+    
+    
+            var marker_31bce0b6da58c537b264375e810c1ef7 = L.marker(
+                [53.1395212, -1.5590102],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_27f6cb75d46a517372a726e943493abf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_31bce0b6da58c537b264375e810c1ef7.setIcon(icon_27f6cb75d46a517372a726e943493abf);
+        
+    
+        var popup_9a885a11255a45866645d002b952bb7f = L.popup({});
+
+        
+            
+                var html_a9a07f344466a4b7bc40745be406a0db = $(`<div id="html_a9a07f344466a4b7bc40745be406a0db" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Derwent</h1><div class="nugget-popup"><p>Heavy, persistent rainfall over the Derwent headwaters on 6&ndash;7 Nov 2019 produced high river response in the River Derwent, which contributed to flood events affecting downstream areas including Derby on 8 November 2019. [PAG] (p16)</p></div><div class="nugget-popup"><p>Heavy rainfall over the Derwent catchment generated a strong river response that propagated downstream and contributed to the high river flows observed at downstream gauges and into Derby. [PAG] (p17)</p></div><div class="nugget-popup"><p>High river flows in the River Derwent and its tributary (Folly Brook) overtopped banks. Fluvial water entered a low&ndash;gradient, poorly maintained ditch and then the highway drainage outfall (which lacked a non&ndash;return valve), allowing river water to backflow into gullies and emerge at the A61 Pektron Island roundabout causing highway flooding. Flood flows from the overtopping also followed Folly Brook onto Haslams Lane, then onto the Rugby Club grounds and Darley Fields. The Pektron Island area was submerged and the roundabout required temporary closure. [PAG] (p21)</p></div><div class="nugget-popup"><p>High river flows caused the River Derwent to overtop its banks; fluvial water entered a nearby low&ndash;fall, poorly maintained ditch, forcing ditch levels above the highway drainage outfall and driving floodwater into the highway drainage network. [PAG] (p22)</p></div><div class="nugget-popup"><p>Fluvial flooding from the River Derwent is implicated in seepage through flood defences around Darley Abbey Mills and is represented by the recorded flood outline that follows the river, contributing to internal flooding and groundwater emergence at nearby properties. [PAG,IMG] (p26)</p></div><div class="nugget-popup"><p>High river levels led to seepage through unsealed joints in partially constructed sheet pile flood defences on the riverbank (behind Old Tomlinson Yard). The seepage required pumping of water from the construction site back to the River Derwent and contributed to surface water reaching City Road when a pump failed. [PAG,IMG] (p28)</p></div><div class="nugget-popup"><p>The River Derwent overtopped its banks (south of Causey Bridge) and sent floodwaters into exceedance channels and across adjacent urban areas, contributing to flows that reached Sowter Road and collected in the Sowter Road underpass. [IMG] (p29)</p></div><div class="nugget-popup"><p>Rising levels in the River Derwent caused overtopping of riverbanks and seepage through the riverside flood wall. These failure modes produced substantial flooding in the Exeter Place / Meadow Road area (seepage and overtopping), contributed to flooding along Meadow Lane (overtopping near the footbridge), and prompted local mitigation (sandbags, penstock operation elsewhere). [PAG,IMG] (p32)</p></div><div class="nugget-popup"><p>The River Derwent overtopped its banks at the footbridge, constricting flows and causing fluvial flooding onto Meadow Lane. Overtopping flooded the road and led to internal flooding of nearby commercial properties and the evacuation of one commercial property. [PAG,IMG] (p34)</p></div><div class="nugget-popup"><p>The River Derwent overtopped its banks (starting by the footbridge, which acted as a constriction), causing fluvial flooding of the Meadow Lane industrial area (flooding of the road and internal flooding of commercial properties). High river levels also caused the surface water sewer to back up, which led to manhole/gully flooding and inundation of highway locations away from the river (including Pentagon Island and Eastgate gullies). [PAG] (p35)</p></div><div class="nugget-popup"><p>The River Derwent overtopped its banks during the event, flooding the floodplain to the south of the railway tracks. Overtopping and high river levels contributed to flood water flowing into Chaddesden Sidings (via an underpass and via backing up into connected drainage features). [PAG,IMG] (p39)</p></div><div class="nugget-popup"><p>The River Derwent overtopped its banks and flooded the floodplain south of the railway, allowing water to flow into Chaddesden Sidings via an underpass (the protective flood bund was absent/eroded). High river levels also caused river flows to back up into a railway culvert and the connected surface water sewer, contributing to flooding north of the railway. Elevated river levels prevented outfalls (including a flap&ndash;valved ditch outfall) from discharging: the ditch filled and overtopped, flooding an adjacent commercial car park, and a separate surface water outfall was prevented from discharging causing pluvial flows to back up and flood one commercial property on Raynesway. [PAG] (p40)</p></div><div class="nugget-popup"><p>Elevated river levels in the River Derwent during the event prevented connected outfalls (flap valves) and surface water systems from discharging. This led to ditch filling and overtopping into an adjacent car park, backflow along surface water pipes causing internal flooding of a commercial property, and contributed to flows backing up through a railway culvert and surface water sewer into areas north of the railway (contributing to flooding and pump station inundation reported by STW). [PAG,IMG] (p41)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>20&ndash;25 year return period event recorded at Derwent Reservoir (upper catchment) [PAG] (p17)</p></div><div class="nugget-popup quant"><p>500 mm water depth at Pektron Roundabout; Pektron Island underwater by 21:45 on 8 Nov 2019 [PAG] (p21)</p></div><div class="nugget-popup quant"><p>depths up to 50mm (reported within the construction site and along City Road); two pumps used (4&#8220; and 6"), 6&#8221; pump failure recorded [PAG,IMG] (p28)</p></div><div class="nugget-popup quant"><p>flood depths exceeding 2 m on Meadow Road; seepage&ndash;related flooding in Darwin Place up to 50 mm; approx. 150&ndash;200 mm flood depths near the bridge on Meadow Lane; four commercial properties internally flooded (Meadow Lane) [PAG,IMG] (p32)</p></div><div class="nugget-popup quant"><p>four commercial properties; one commercial property evacuated; 150mm to 200mm flood depth near the bridge (by 14:30 on 8 Nov 2019) [PAG,IMG] (p34)</p></div><div class="nugget-popup quant"><p>flood depths of approximately 150mm to 200mm near the bridge by 14:30 on 08 Nov 2019; internal flooding at four commercial properties; one commercial property evacuated [PAG] (p35)</p></div><div class="nugget-popup quant"><p>internal flooding depths up to 1.5 m (commercial properties on Chequers Road); car park flooding to approx 300 mm [PAG] (p40)</p></div><div class="nugget-popup quant"><p>approximate maximum depth of 300mm (in adjacent car park); one commercial property internally flooded; one pumping station became flooded [PAG,IMG] (p41)</p></div></div></body></div>`)[0];
+                popup_9a885a11255a45866645d002b952bb7f.setContent(html_a9a07f344466a4b7bc40745be406a0db);
+            
+        
+
+        marker_31bce0b6da58c537b264375e810c1ef7.bindPopup(popup_9a885a11255a45866645d002b952bb7f)
+        ;
+
+        
+    
+    
+            var marker_482c54622c6ab90918bfe454e0649126 = L.marker(
+                [52.94819680667783, -1.4595766423594412],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_55ca64822a77d8dfa002fc9e77348973 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_482c54622c6ab90918bfe454e0649126.setIcon(icon_55ca64822a77d8dfa002fc9e77348973);
+        
+    
+        var popup_cde0adf88ce547e960ae79aa192f68b0 = L.popup({});
+
+        
+            
+                var html_30d605b9b6fa7746b8c043b56524c5dd = $(`<div id="html_30d605b9b6fa7746b8c043b56524c5dd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pektron Roundabout</h1><div class="nugget-popup"><p>The Pektron Roundabout was significantly flooded when fluvial water re&ndash;entered the highway drainage from an adjacent ditch (which lacks a non&ndash;return valve), causing gullies to discharge and the roundabout to be closed. (p21)</p></div><div class="nugget-popup"><p>Flooding related to local watercourses affected the A61 at/near Pektron Roundabout during the 8&ndash;9 Nov 2019 event; recommended follow&ndash;up actions include investigation of watercourse connections and inspection/maintenance of flood defences due to observed issues. [TAB] (p44)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>water depths of approximately 500mm (p21)</p></div></div></body></div>`)[0];
+                popup_cde0adf88ce547e960ae79aa192f68b0.setContent(html_30d605b9b6fa7746b8c043b56524c5dd);
+            
+        
+
+        marker_482c54622c6ab90918bfe454e0649126.bindPopup(popup_cde0adf88ce547e960ae79aa192f68b0)
+        ;
+
+        
+    
+    
+            var marker_02f1ff17b36e4450623dd95f571d8f84 = L.marker(
+                [52.9272181, -1.475871],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_dd9c1b0189158c0f48842387a686056f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_02f1ff17b36e4450623dd95f571d8f84.setIcon(icon_dd9c1b0189158c0f48842387a686056f);
+        
+    
+        var popup_25ef3d8f214816d60f46c42d74b4535e = L.popup({});
+
+        
+            
+                var html_dc48ea98af59888c29078ca81d92ae3c = $(`<div id="html_dc48ea98af59888c29078ca81d92ae3c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Mary's Bridge</h1><div class="nugget-popup"><p>St Marys Bridge acted as a constriction on river flow during the event; exceedance channel routing and overtopping were used to bypass the constriction so flows could re&ndash;enter the channel south of the bridge, altering local flow paths and contributing to water collecting in the underpass. [PAG,IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_25ef3d8f214816d60f46c42d74b4535e.setContent(html_dc48ea98af59888c29078ca81d92ae3c);
+            
+        
+
+        marker_02f1ff17b36e4450623dd95f571d8f84.bindPopup(popup_25ef3d8f214816d60f46c42d74b4535e)
+        ;
+
+        
+    
+    
+            var marker_49f5a1bfbae0b484a9930d4ee60f3bc8 = L.marker(
+                [52.9266659, -1.4752046],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_4262b3d2d1e17516fce428d3301b0875 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_49f5a1bfbae0b484a9930d4ee60f3bc8.setIcon(icon_4262b3d2d1e17516fce428d3301b0875);
+        
+    
+        var popup_a4174149623506e9542d785382545241 = L.popup({});
+
+        
+            
+                var html_63b79ac3706a8f51c0818c0ee1486821 = $(`<div id="html_63b79ac3706a8f51c0818c0ee1486821" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Causey Bridge</h1><div class="nugget-popup"><p>The exceedance channel south of Causey Bridge conveyed flood water during the event (photographed at 13:14 on 8 Nov 2019), showing active flow in the channel toward the bridge as part of the flood routing. [PAG,IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_a4174149623506e9542d785382545241.setContent(html_63b79ac3706a8f51c0818c0ee1486821);
+            
+        
+
+        marker_49f5a1bfbae0b484a9930d4ee60f3bc8.bindPopup(popup_a4174149623506e9542d785382545241)
+        ;
+
+        
+    
+    
+            var marker_b6160b0baefc3e810d6a354a19cf75af = L.marker(
+                [52.9248702, -1.4616072],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_611099e1d1210f016dceaafbd9cc5001 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b6160b0baefc3e810d6a354a19cf75af.setIcon(icon_611099e1d1210f016dceaafbd9cc5001);
+        
+    
+        var popup_de4fbadb512fab2eba410624ee577a61 = L.popup({});
+
+        
+            
+                var html_69b13ca0ba61fe7b17758269f1c90606 = $(`<div id="html_69b13ca0ba61fe7b17758269f1c90606" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pentagon Island</h1><div class="nugget-popup"><p>Back&ndash;up of the surface water drainage system caused highway drainage manholes and gullies to flood at low spots, inundating the southern section of Pentagon Island. The A52 slip road (Nottingham&ndash;bound to St Alkmunds Way) was closed from 23:20 on 8 Nov and reopened at 04:26 on 9 Nov after the water had cleared. [PAG,IMG] (p35)</p></div><div class="nugget-popup"><p>Roundabout/roadway closed due to flooding (A52 slip road Nottingham&ndash;bound to St Alkmunds Way). Closed at 23:20 on 08/11/2019 and reopened once clear of water at 04:26 on 09/11/2019. [PAG] (p36)</p></div><div class="nugget-popup"><p>Surface water flooding occurred when fluvial flows backed up into the surface water drainage network, overwhelming the drainage outfalls and causing inundation at/around Pentagon Island; actions recommended (non&ndash;return valves, pumping) to prevent backing up. [TAB] (p44)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>four commercial properties; one commercial property evacuated; flood depths of approximately 150mm to 200mm near the bridge [IMG] (p35)</p></div></div></body></div>`)[0];
+                popup_de4fbadb512fab2eba410624ee577a61.setContent(html_69b13ca0ba61fe7b17758269f1c90606);
+            
+        
+
+        marker_b6160b0baefc3e810d6a354a19cf75af.bindPopup(popup_de4fbadb512fab2eba410624ee577a61)
+        ;
+
+        
+    
+    
+            var marker_74c04230161918bc7f005218f86903dc = L.marker(
+                [52.9582487, -1.4674399],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_1dfa58ebf8e3c320ce7fc7c226a00dc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_74c04230161918bc7f005218f86903dc.setIcon(icon_1dfa58ebf8e3c320ce7fc7c226a00dc2);
+        
+    
+        var popup_20028931a428f59f1aa43599c56c3400 = L.popup({});
+
+        
+            
+                var html_e97d5e29e16e6226b7c154e68d8ccfc4 = $(`<div id="html_e97d5e29e16e6226b7c154e68d8ccfc4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ford Lane, Derby</h1><div class="nugget-popup"><p>River Derwent overtopped its banks causing fluvial flooding on Ford Lane; one residential property was flooded internally over most of the ground floor (resident had to be rescued via an upstairs window), the nearby railway track was closed with trains reversing back to Derby Station, and caravans in an adjacent caravan park were reported flooded. [PAG] (p20)</p></div><div class="nugget-popup"><p>Flooding was experienced on Ford Lane during the event; the area sits within Derbyshire County Council boundaries but response was managed by Derby City Council. [IMG] (p21)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property [PAG] (p20)</p></div></div></body></div>`)[0];
+                popup_20028931a428f59f1aa43599c56c3400.setContent(html_e97d5e29e16e6226b7c154e68d8ccfc4);
+            
+        
+
+        marker_74c04230161918bc7f005218f86903dc.bindPopup(popup_20028931a428f59f1aa43599c56c3400)
+        ;
+
+        
+    
+    
+            var marker_4eaf0cef24d320d17e24c36d6b4700ad = L.marker(
+                [52.943468323030274, -1.475287642972216],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_5c56d71320ef3250e86522c4226ac98f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4eaf0cef24d320d17e24c36d6b4700ad.setIcon(icon_5c56d71320ef3250e86522c4226ac98f);
+        
+    
+        var popup_2e83fa61670ef950361ff00ebc46c1a5 = L.popup({});
+
+        
+            
+                var html_6761ebeecf887f9de2f9c163eee99e69 = $(`<div id="html_6761ebeecf887f9de2f9c163eee99e69" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Haslams Lane, Derby</h1><div class="nugget-popup"><p>Flood flows from overtopping of the River Derwent and its tributary Folly Brook spread onto Haslams Lane; highway drainage also received fluvial backflow from a backed&ndash;up ditch (no non&ndash;return valve) causing gullies to discharge and the highway to flood. [PAG] (p22)</p></div><div class="nugget-popup"><p>River Derwent and its tributary Folly Brook overtopped their banks and flood flows followed the line of Folly Brook onto Haslams Lane, inundating the lane (the area was the unprotected active floodplain) and contributing to flooding of adjacent Rugby Club grounds and Darley Fields. [PAG,IMG] (p23)</p></div><div class="nugget-popup"><p>A flood gate on Haslams Lane was closed during the event to prevent floodwater entering the lane; floodwater was visible beyond the gate and the gate remained closed overnight, reopening the following morning. [IMG] (p25)</p></div><div class="nugget-popup"><p>Haslams Lane, an area designed as an active floodplain, inundated during 8&ndash;9 November 2019 and performed as intended; no specific remedial actions were recommended as a result of the event. (p44)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths in excess of 1 m along Haslams Lane [PAG] (p22)</p></div><div class="nugget-popup quant"><p>flood depths in excess of 1 m along Haslams Lane [PAG,IMG] (p23)</p></div></div></body></div>`)[0];
+                popup_2e83fa61670ef950361ff00ebc46c1a5.setContent(html_6761ebeecf887f9de2f9c163eee99e69);
+            
+        
+
+        marker_4eaf0cef24d320d17e24c36d6b4700ad.bindPopup(popup_2e83fa61670ef950361ff00ebc46c1a5)
+        ;
+
+        
+    
+    
+            var marker_388037fa9ba4433d2f50b1d63732f8ad = L.marker(
+                [52.9440717, -1.4560772],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_471f6bae315ca3c699d5681745874052 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_388037fa9ba4433d2f50b1d63732f8ad.setIcon(icon_471f6bae315ca3c699d5681745874052);
+        
+    
+        var popup_7ace6163716298ac9d704d97c5547b36 = L.popup({});
+
+        
+            
+                var html_f8620a5738e5de0c984f42dd4ea74bab = $(`<div id="html_f8620a5738e5de0c984f42dd4ea74bab" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mansfield Road, Little Chester</h1><div class="nugget-popup"><p>Partially constructed sheet pile walls on the east bank near Mansfield Road had unsealed joints that leaked (seepage) during the event; this seepage was documented and required pumping to manage water at the construction site. [PAG,IMG] (p28)</p></div></div></body></div>`)[0];
+                popup_7ace6163716298ac9d704d97c5547b36.setContent(html_f8620a5738e5de0c984f42dd4ea74bab);
+            
+        
+
+        marker_388037fa9ba4433d2f50b1d63732f8ad.bindPopup(popup_7ace6163716298ac9d704d97c5547b36)
+        ;
+
+        
+    
+    
+            var marker_4a8b2fb0095add210094983fa891693b = L.marker(
+                [52.9321409, -1.4756489],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_8609fc231d338520eec82dd53c49a0df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4a8b2fb0095add210094983fa891693b.setIcon(icon_8609fc231d338520eec82dd53c49a0df);
+        
+    
+        var popup_77f5c24065c130ca031ad47d03c72a16 = L.popup({});
+
+        
+            
+                var html_69be74c212ce5e39938f1aaddaba84a1 = $(`<div id="html_69be74c212ce5e39938f1aaddaba84a1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>City Road, Little Chester</h1><div class="nugget-popup"><p>Seepage through unsealed sheet piles at a nearby construction site (OCOR scheme behind Old Tomlinson Yard) allowed river water into the site. Two pumps (4&#8220; and 6") were used to return water to the River Derwent; failure of the 6&#8221; pump resulted in flood water flowing onto City Road. Sandbags were deployed along City Road to protect residential and commercial properties; no internal flooding was reported. [PAG,IMG] (p28)</p></div><div class="nugget-popup"><p>Floodwater from a failed 6" pump at a construction site flowed onto City Road. Sandbags were deployed along the road to protect residential and commercial properties, and no internal flooding was reported. [IMG] (p29)</p></div><div class="nugget-popup"><p>City Road flooded during 8&ndash;9 November 2019 due to incomplete flood defences. The defences have subsequently been completed to prevent recurrence via the same mechanism. (p44)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4&#8220; pump; 6&#8221; pump (failed); flood depths up to 50 mm [PAG,IMG] (p28)</p></div><div class="nugget-popup quant"><p>flooding depths up to 50 mm on City Road and within the construction site [IMG] (p29)</p></div></div></body></div>`)[0];
+                popup_77f5c24065c130ca031ad47d03c72a16.setContent(html_69be74c212ce5e39938f1aaddaba84a1);
+            
+        
+
+        marker_4a8b2fb0095add210094983fa891693b.bindPopup(popup_77f5c24065c130ca031ad47d03c72a16)
+        ;
+
+        
+    
+    
+            var marker_63a673dd0c7fff92954764e0e5c85670 = L.marker(
+                [52.9272142, -1.4764567],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_36531d8ccfe9dca5f697810040f3bbe1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_63a673dd0c7fff92954764e0e5c85670.setIcon(icon_36531d8ccfe9dca5f697810040f3bbe1);
+        
+    
+        var popup_1529ccfbdcffa7daa2cc2b7cffcbf792 = L.popup({});
+
+        
+            
+                var html_ce344af024fbb09f72b4e3683140ad55 = $(`<div id="html_ce344af024fbb09f72b4e3683140ad55" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sowter Road, Little Chester</h1><div class="nugget-popup"><p>Floodwaters overtopped the River Derwent banks and flowed along the exceedance channel onto Sowter Road; flows collected and were stored at a low spot in the Sowter Road underpass, demonstrating the underpass filled during the event. [IMG] (p29)</p></div><div class="nugget-popup"><p>Flood waters entered the exceedance channel along Sowter Road during high river levels and collected in the underpass area. A manhole under the underpass was connected to a penstock that was shut to prevent flows entering the sewer network, allowing water to attenuate on the road; flood walls and gates functioned and no internal property flooding was reported. After river levels fell the penstock was gradually reopened to drain the attenuated water into the drainage system. [PAG,IMG] (p30)</p></div><div class="nugget-popup"><p>Flood waters entered the Sowter Road exceedance channel (from the south of St Marys Bridge) and collected in the underpass. A manhole penstock under the underpass was shut to prevent flows entering the sewer and to allow water to attenuate on the road; flood walls and gates functioned and no internal property flooding was reported. The exceedance channel levels south of the bridge were later altered to match the design. [PAG,IMG] (p31)</p></div><div class="nugget-popup"><p>Sowter Road, designed to act as an exceedance channel, flooded during November 2019 and conveyed flows as intended; no specific additional actions were recommended for this location. (p44)</p></div></div></body></div>`)[0];
+                popup_1529ccfbdcffa7daa2cc2b7cffcbf792.setContent(html_ce344af024fbb09f72b4e3683140ad55);
+            
+        
+
+        marker_63a673dd0c7fff92954764e0e5c85670.bindPopup(popup_1529ccfbdcffa7daa2cc2b7cffcbf792)
+        ;
+
+        
+    
+    
+            var marker_6aa635f71e3d7749c562d43051166345 = L.marker(
+                [52.9237573, -1.4707932],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_61a2bd0cd17a95d658eb5f664cb0b228 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6aa635f71e3d7749c562d43051166345.setIcon(icon_61a2bd0cd17a95d658eb5f664cb0b228);
+        
+    
+        var popup_b1c35636f4c565b1aef25634ef7afd3c = L.popup({});
+
+        
+            
+                var html_424fa45ccf397260523f422532fe35ed = $(`<div id="html_424fa45ccf397260523f422532fe35ed" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Meadow Road, Little Chester</h1><div class="nugget-popup"><p>Seepage through the flood wall along the riverside footpath resulted in flooding on Meadow Road, with significant inundation in the lowest spot. [PAG] (p31)</p></div><div class="nugget-popup"><p>Seepage through the riverside flood wall and overtopping of the adjacent flood bank resulted in substantial flooding of Meadow Road; water accumulated on the road surface and submerged street signs and poles. Sandbags were used nearby to limit further overtopping; no internal property flooding was reported for properties on Meadow Road. [PAG,IMG] (p32)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths exceeding 2 m in the lowest spot [PAG] (p31)</p></div><div class="nugget-popup quant"><p>flood depths exceeding 2 m in the lowest spot on Meadow Road [PAG,IMG] (p32)</p></div></div></body></div>`)[0];
+                popup_b1c35636f4c565b1aef25634ef7afd3c.setContent(html_424fa45ccf397260523f422532fe35ed);
+            
+        
+
+        marker_6aa635f71e3d7749c562d43051166345.bindPopup(popup_b1c35636f4c565b1aef25634ef7afd3c)
+        ;
+
+        
+    
+    
+            var marker_c28ee6dc3df5796a07e362b782d2746c = L.marker(
+                [52.9243555, -1.4695741],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_1706523bde68c72f48f7b6fbdf33d540 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c28ee6dc3df5796a07e362b782d2746c.setIcon(icon_1706523bde68c72f48f7b6fbdf33d540);
+        
+    
+        var popup_8f121586a44d08ab4fd80eae899cc55f = L.popup({});
+
+        
+            
+                var html_db684cd509e0a48eb3f09c3f9b44c78d = $(`<div id="html_db684cd509e0a48eb3f09c3f9b44c78d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Darwin Place, Little Chester</h1><div class="nugget-popup"><p>Seepage through the flood wall caused flooding in Darwin Place. [PAG] (p31)</p></div><div class="nugget-popup"><p>Seepage through the River Derwent flood wall caused inundation of Darwin Place. [PAG,IMG] (p32)</p></div><div class="nugget-popup"><p>Recorded flood outlines from November 2019 extend south along Darwin Place; the area overlaps with zones identified as at risk from surface water flooding. [PAG,IMG] (p37)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths of up to 50 mm [PAG] (p31)</p></div><div class="nugget-popup quant"><p>flood depths of up to 50 mm [PAG,IMG] (p32)</p></div></div></body></div>`)[0];
+                popup_8f121586a44d08ab4fd80eae899cc55f.setContent(html_db684cd509e0a48eb3f09c3f9b44c78d);
+            
+        
+
+        marker_c28ee6dc3df5796a07e362b782d2746c.bindPopup(popup_8f121586a44d08ab4fd80eae899cc55f)
+        ;
+
+        
+    
+    
+            var marker_69f37263c9db5732ea0c4b9450f5b39e = L.marker(
+                [52.9243097, -1.4727315],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_9c03c29540b61e05231961ea051f0c93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_69f37263c9db5732ea0c4b9450f5b39e.setIcon(icon_9c03c29540b61e05231961ea051f0c93);
+        
+    
+        var popup_600928f5ebb4f268b7479704507ef9a4 = L.popup({});
+
+        
+            
+                var html_f2251e6dc4dc9404f328a21217ac0aab = $(`<div id="html_f2251e6dc4dc9404f328a21217ac0aab" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Exeter Place, Little Chester</h1><div class="nugget-popup"><p>Overtopping of the flood bank in front of Exeter House and seepage through the flood wall resulted in flood water flowing onto Exeter Place. Sandbags were used to contain the overtopping and prevent further ingress. No internal flooding of properties at Exeter Place was reported. [IMG,PAG] (p32)</p></div><div class="nugget-popup"><p>The flood bank in front of Exeter House was overtopped as river levels rose, resulting in flood water flowing onto Exeter Place. Seepage through flood defences was also observed. Derby City Council deployed sandbags along the top of the flood bank and at the junction of the bank and flood wall, which contained the flood waters and prevented further overtopping. No internal flooding was reported at Exeter Place. (Sandbag deployment is shown in an image timestamped 20:41 8 Nov 2019.) [PAG,IMG] (p33)</p></div><div class="nugget-popup"><p>Exeter Place experienced seepage through flood defences and overtopping of flood defences during the 8&ndash;9 November flood. (p43)</p></div><div class="nugget-popup"><p>River flooding during 8&ndash;9 Nov 2019 affected flood defences along the riverbank at Exeter Place; missing coping on the flood wall was identified and reinstalling it was recommended. [TAB] (p44)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths exceeding 2m; flood depths of up to 50mm [PAG,IMG] (p32)</p></div></div></body></div>`)[0];
+                popup_600928f5ebb4f268b7479704507ef9a4.setContent(html_f2251e6dc4dc9404f328a21217ac0aab);
+            
+        
+
+        marker_69f37263c9db5732ea0c4b9450f5b39e.bindPopup(popup_600928f5ebb4f268b7479704507ef9a4)
+        ;
+
+        
+    
+    
+            var marker_4b9f394fbfcb7dd2fdf185fb374873c0 = L.marker(
+                [52.922009433985004, -1.466079099290674],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_ad3564f350737e197e06226d743f0389 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4b9f394fbfcb7dd2fdf185fb374873c0.setIcon(icon_ad3564f350737e197e06226d743f0389);
+        
+    
+        var popup_595dc0e16cd27ba6dc18172b0951f43f = L.popup({});
+
+        
+            
+                var html_0624db2a6f3a124168ceac156af23ad0 = $(`<div id="html_0624db2a6f3a124168ceac156af23ad0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Meadow Lane, Derby</h1><div class="nugget-popup"><p>River overtopped its banks near the footbridge, causing floodwater to flow onto the road and into adjacent commercial properties. The road experienced flooding prior to the peak with flood depths recorded near the bridge. One commercial property was evacuated and four commercial properties experienced internal flooding during the event. [PAG] (p33)</p></div><div class="nugget-popup"><p>River Derwent overtopped its banks (starting by the footbridge), causing flooding of Meadow Lane. The overtopping flooded the road and resulted in internal flooding of commercial premises adjacent to the river. One commercial property was evacuated during the event. [PAG,IMG] (p34)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths of approximately 150mm to 200mm; 1 commercial property evacuated; 4 commercial properties internally flooded [PAG] (p33)</p></div><div class="nugget-popup quant"><p>one commercial property evacuated; four commercial properties internally flooded; flood depths of approximately 150 mm to 200 mm near the bridge [PAG,IMG] (p34)</p></div></div></body></div>`)[0];
+                popup_595dc0e16cd27ba6dc18172b0951f43f.setContent(html_0624db2a6f3a124168ceac156af23ad0);
+            
+        
+
+        marker_4b9f394fbfcb7dd2fdf185fb374873c0.bindPopup(popup_595dc0e16cd27ba6dc18172b0951f43f)
+        ;
+
+        
+    
+    
+            var marker_a30ce3d7054c60f4ca2f936e3f7a0e36 = L.marker(
+                [52.9245935, -1.4611024],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_e97c2c1e0f947036f2876b72036f1e7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a30ce3d7054c60f4ca2f936e3f7a0e36.setIcon(icon_e97c2c1e0f947036f2876b72036f1e7f);
+        
+    
+        var popup_985b5b5a255ac0c2a6e0e4b84ca2c7b8 = L.popup({});
+
+        
+            
+                var html_2e953d6aa6fb9e8f974f21c6feb39c6a = $(`<div id="html_2e953d6aa6fb9e8f974f21c6feb39c6a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Eastgate, Derby</h1><div class="nugget-popup"><p>The Eastgate underpass flooded (underpass reported flooded by 14:40 on 8 November) as highway drainage gullies at low points flooded due to back&ndash;up in the connected surface water drainage network caused by high river levels. [IMG,PAG] (p35)</p></div><div class="nugget-popup"><p>Area around Eastgate (including low points such as the Eastgate underpass and adjacent gullies) flooded as surface water drainage backed up; area identified as high risk and experienced inundation during the event. (p36)</p></div></div></body></div>`)[0];
+                popup_985b5b5a255ac0c2a6e0e4b84ca2c7b8.setContent(html_2e953d6aa6fb9e8f974f21c6feb39c6a);
+            
+        
+
+        marker_a30ce3d7054c60f4ca2f936e3f7a0e36.bindPopup(popup_985b5b5a255ac0c2a6e0e4b84ca2c7b8)
+        ;
+
+        
+    
+    
+            var marker_72cfe1a73b62873be908682e3575bd0b = L.marker(
+                [52.9260717, -1.4507692],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_28de6b41bec2a39233f80ca1080f12e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_72cfe1a73b62873be908682e3575bd0b.setIcon(icon_28de6b41bec2a39233f80ca1080f12e6);
+        
+    
+        var popup_3b13103aa4365a799e18e3484bf3bab6 = L.popup({});
+
+        
+            
+                var html_fffa4beebbf8b484b639dd1189c8066d = $(`<div id="html_fffa4beebbf8b484b639dd1189c8066d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottingham Road, Chaddesden</h1><div class="nugget-popup"><p>Gullies on Nottingham Road flooded as the combined/surface water system backed up due to high river levels; the Nottingham Road underpass is identified as a low point that flooded during the event. (p36)</p></div><div class="nugget-popup"><p>The combined drainage system backed up (via a hydraulic connection to the surface water network) causing gullies along Nottingham Road to flood and the underpass on Nottingham Road to be inundated (photographed flooded at 17:47 on 8 Nov). Recorded flood outlines in the area match surface&ndash;water flood&ndash;prone zones. [PAG,IMG] (p37)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>greater than 130 mm (p36)</p></div><div class="nugget-popup quant"><p>flood depths greater than 130mm [PAG,IMG] (p37)</p></div></div></body></div>`)[0];
+                popup_3b13103aa4365a799e18e3484bf3bab6.setContent(html_fffa4beebbf8b484b639dd1189c8066d);
+            
+        
+
+        marker_72cfe1a73b62873be908682e3575bd0b.bindPopup(popup_3b13103aa4365a799e18e3484bf3bab6)
+        ;
+
+        
+    
+    
+            var marker_bfa118e822461884c59e4bd612d09748 = L.marker(
+                [52.9253714, -1.4680884316105876],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_8698a50a3d3ac990d255a507ddb083db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bfa118e822461884c59e4bd612d09748.setIcon(icon_8698a50a3d3ac990d255a507ddb083db);
+        
+    
+        var popup_e83aad7083a25e386dd6d1fbfbb9b280 = L.popup({});
+
+        
+            
+                var html_5770300f779bcd7569991fd6749de2e5 = $(`<div id="html_5770300f779bcd7569991fd6749de2e5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cardinal Square, Little Chester</h1><div class="nugget-popup"><p>The below&ndash;ground sub&ndash;station in Cardinal Square, a low point in the topography, experienced yard gully flooding when the connected surface water/combined system backed up; recorded flood depths exceeded 130 mm. (p36)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>greater than 130 mm (p36)</p></div></div></body></div>`)[0];
+                popup_e83aad7083a25e386dd6d1fbfbb9b280.setContent(html_5770300f779bcd7569991fd6749de2e5);
+            
+        
+
+        marker_bfa118e822461884c59e4bd612d09748.bindPopup(popup_e83aad7083a25e386dd6d1fbfbb9b280)
+        ;
+
+        
+    
+    
+            var marker_0de53ffe70cb2d58312785a377aa0885 = L.marker(
+                [52.9232053, -1.4538819],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_c8073508911e8be4b1158d0785afc86b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0de53ffe70cb2d58312785a377aa0885.setIcon(icon_c8073508911e8be4b1158d0785afc86b);
+        
+    
+        var popup_3e553f1d71bcb151a1172ad76e863f8f = L.popup({});
+
+        
+            
+                var html_a6a833da988863171637ca94d99df7c7 = $(`<div id="html_a6a833da988863171637ca94d99df7c7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chequers Road, Pride Park</h1><div class="nugget-popup"><p>Flooding inundated the carriageway and caused internal flooding to several commercial properties along Chequers Road, with flood depths up to 1.5 m; the road was closed at 07:41 on 09 Nov 2019 due to flooding within the carriageway. (p38)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1.5 m (maximum internal flood depth) (p38)</p></div></div></body></div>`)[0];
+                popup_3e553f1d71bcb151a1172ad76e863f8f.setContent(html_a6a833da988863171637ca94d99df7c7);
+            
+        
+
+        marker_0de53ffe70cb2d58312785a377aa0885.bindPopup(popup_3e553f1d71bcb151a1172ad76e863f8f)
+        ;
+
+        
+    
+    
+            var marker_10732ed659c8c087b8cf656948a8eb00 = L.marker(
+                [52.921215, -1.4504511],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_55bf0293a89e8951e067f522e40ecd4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_10732ed659c8c087b8cf656948a8eb00.setIcon(icon_55bf0293a89e8951e067f522e40ecd4f);
+        
+    
+        var popup_59310984a27d7c9a566d208b6f23309c = L.popup({});
+
+        
+            
+                var html_4c3a4ca90e2f6ac7dc5a3897f1ffcfe9 = $(`<div id="html_4c3a4ca90e2f6ac7dc5a3897f1ffcfe9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Downing Road, Pride Park</h1><div class="nugget-popup"><p>The Downing Road pumping station failed during the event and is identified as one of three sources of flooding into Chaddesden Sidings, contributing to road closures and internal flooding of nearby properties. (p38)</p></div><div class="nugget-popup"><p>The Downing Road pumping station failed during the event and is identified as one of the three sources contributing to flooding in the Chaddesden Sidings area. The combined effects (pumping station failure, river overtopping and sewer backing) resulted in flooding of the A52 and Chequers Road and internal flooding to commercial properties along Chequers Road. [PAG,IMG] (p39)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>internal flooding depths up to 1.5 m to commercial properties (Chequers Road area) [PAG,IMG] (p39)</p></div></div></body></div>`)[0];
+                popup_59310984a27d7c9a566d208b6f23309c.setContent(html_4c3a4ca90e2f6ac7dc5a3897f1ffcfe9);
+            
+        
+
+        marker_10732ed659c8c087b8cf656948a8eb00.bindPopup(popup_59310984a27d7c9a566d208b6f23309c)
+        ;
+
+        
+    
+    
+            var marker_d4f5658ab399441f6fc38bfa73b217d8 = L.marker(
+                [52.902492, -1.4245402],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_2887198661d624beea367aa028c50ed7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d4f5658ab399441f6fc38bfa73b217d8.setIcon(icon_2887198661d624beea367aa028c50ed7);
+        
+    
+        var popup_7c42d3ff415244d0e561bcc86bcd72fd = L.popup({});
+
+        
+            
+                var html_822385e09779d7ffb83335d1f6e33a5d = $(`<div id="html_822385e09779d7ffb83335d1f6e33a5d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Raynesway, Alvaston</h1><div class="nugget-popup"><p>Flooding adjacent to Raynesway occurred where a drainage ditch and a surface water outfall could not discharge to the River Derwent because of high river levels; this led to overtopping into an adjacent commercial car park (approx. 300mm) and backup of surface water causing internal flooding to one commercial property via a flooded internal drain. [PAG] (p40)</p></div><div class="nugget-popup"><p>High river levels on the River Derwent prevented the ditch outfall flap valve from opening, causing the adjacent ditch to fill and overtop its banks and flood into a commercial property's car park (up to approx. 300 mm). Separately, a surface water outfall north of the ditch was unable to discharge due to high river levels, causing pluvial/surface water to back up the pipe and result in internal flooding of one commercial property via a drain within the property. [PAG,IMG] (p41)</p></div><div class="nugget-popup"><p>Pluvial (surface water) flooding risk affecting the surface water drainage/ditches in the Raynesway area during the 8&ndash;9 November 2019 event; recommended routine inspection and maintenance of ditches and investigation of upstream storage to mitigate pluvial flooding when river levels are high. [TAB] (p44)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one commercial property; car park flooded to approx. 300mm [PAG] (p40)</p></div><div class="nugget-popup quant"><p>approximate maximum depth of 300mm; one commercial property internally flooded [PAG,IMG] (p41)</p></div></div></body></div>`)[0];
+                popup_7c42d3ff415244d0e561bcc86bcd72fd.setContent(html_822385e09779d7ffb83335d1f6e33a5d);
+            
+        
+
+        marker_d4f5658ab399441f6fc38bfa73b217d8.bindPopup(popup_7c42d3ff415244d0e561bcc86bcd72fd)
+        ;
+
+        
+    
+    
+            var marker_49325daa15b81998a94e745df42c5172 = L.marker(
+                [53.118504, -1.556618],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_b9a35dcd0b2b2a8d03ff5d0a0c0cc3fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_49325daa15b81998a94e745df42c5172.setIcon(icon_b9a35dcd0b2b2a8d03ff5d0a0c0cc3fb);
+        
+    
+        var popup_2463011d9d798e91713246655e896333 = L.popup({});
+
+        
+            
+                var html_313470ba6a0b08edff8c21596c1b1727 = $(`<div id="html_313470ba6a0b08edff8c21596c1b1727" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Derbyshire</h1><div class="nugget-popup"><p>Flooding occurred across Derbyshire in November 2019 (investigated as flooding between 7 and 20 November 2019); exceptional rainfall and saturated soils contributed to flooding impacts on communities and infrastructure during this period. [MUL] (p12)</p></div><div class="nugget-popup"><p>Parts of Derbyshire (notably Matlock) were affected by intense rainfall and subsequent surface water and fluvial flooding on 8&ndash;9 November 2019, producing widespread flooding including internal flooding of residential and commercial properties. [PAG] (p20)</p></div></div></body></div>`)[0];
+                popup_2463011d9d798e91713246655e896333.setContent(html_313470ba6a0b08edff8c21596c1b1727);
+            
+        
+
+        marker_49325daa15b81998a94e745df42c5172.bindPopup(popup_2463011d9d798e91713246655e896333)
+        ;
+
+        
+    
+    
+            var marker_f91bfb3e31b2d59f6e0852156e2dd638 = L.marker(
+                [52.9266862278223, -1.4763586564388622],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_645e588a5029873851c27557884234ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f91bfb3e31b2d59f6e0852156e2dd638.setIcon(icon_645e588a5029873851c27557884234ed);
+        
+    
+        var popup_fb0dd8d247d10b386dbc96f4c7a80c42 = L.popup({});
+
+        
+            
+                var html_dd4af7e5de09ad96b1e9af499917875f = $(`<div id="html_dd4af7e5de09ad96b1e9af499917875f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sowter Road Underpass</h1><div class="nugget-popup"><p>The underpass was inundated with river flood water (photo evidence at 22:57 on 8 Nov 2019) with water covering the road and reaching the base of the bridge, rendering the road impassable and storing attenuated flood water beneath the underpass until river levels reduced and the penstock was reopened. [PAG,IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_fb0dd8d247d10b386dbc96f4c7a80c42.setContent(html_dd4af7e5de09ad96b1e9af499917875f);
+            
+        
+
+        marker_f91bfb3e31b2d59f6e0852156e2dd638.bindPopup(popup_fb0dd8d247d10b386dbc96f4c7a80c42)
+        ;
+
+        
+    
+    
+            var marker_3475c08e0ffaac074538c315a61815d3 = L.marker(
+                [53.1374514, -1.5544694],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_c9c89a57015bb27914c9eb958c45038b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3475c08e0ffaac074538c315a61815d3.setIcon(icon_c9c89a57015bb27914c9eb958c45038b);
+        
+    
+        var popup_4fe07385ba7352d833dd0decd9a19aae = L.popup({});
+
+        
+            
+                var html_a1fa9275451f24c8b002f986612496fe = $(`<div id="html_a1fa9275451f24c8b002f986612496fe" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Matlock</h1><div class="nugget-popup"><p>Intense rainfall and catchment runoff caused surface water and fluvial flows that exceeded drainage and river capacities in Matlock, resulting in widespread flooding including internal flooding at both residential and commercial properties. (p20)</p></div></div></body></div>`)[0];
+                popup_4fe07385ba7352d833dd0decd9a19aae.setContent(html_a1fa9275451f24c8b002f986612496fe);
+            
+        
+
+        marker_3475c08e0ffaac074538c315a61815d3.bindPopup(popup_4fe07385ba7352d833dd0decd9a19aae)
+        ;
+
+        
+    
+    
+            var marker_b8f4cb3f6ca7cf8b598cc870f9be0d6d = L.marker(
+                [52.9294476, -1.440326],
+                {}
+            ).addTo(map_cd85f7d3fbdb56f3c5012c8c7d98dead);
+        
+    
+            var icon_71dbd6b622553a6526d5f9ccc7ed92ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b8f4cb3f6ca7cf8b598cc870f9be0d6d.setIcon(icon_71dbd6b622553a6526d5f9ccc7ed92ab);
+        
+    
+        var popup_e08777e79122f6f2d7ce9595cfe93524 = L.popup({});
+
+        
+            
+                var html_50ea060d9546727d50b5467f9d163aa2 = $(`<div id="html_50ea060d9546727d50b5467f9d163aa2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chaddesden</h1><div class="nugget-popup"><p>Floodplain inundation from the River Derwent overtopping affected areas south of the railway and allowed water to pass into the Chaddesden Sidings area via an underpass; this led to local road closures (A52 and Chequers Road) and property flooding in the adjacent Sidings. (p38)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths up to 1.5 m; A52 closed from 21:45 on 08 Nov 2019 (reopened 09 Nov 2019); Chequers Road closed at 07:41 on 09 Nov 2019 (p38)</p></div></div></body></div>`)[0];
+                popup_e08777e79122f6f2d7ce9595cfe93524.setContent(html_50ea060d9546727d50b5467f9d163aa2);
+            
+        
+
+        marker_b8f4cb3f6ca7cf8b598cc870f9be0d6d.bindPopup(popup_e08777e79122f6f2d7ce9595cfe93524)
+        ;
+
+        
+    
+</script>
+</html>
