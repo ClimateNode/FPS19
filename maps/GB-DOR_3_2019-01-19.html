@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b297c40b0d60c6a311e7e7f2d35e8d0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6b297c40b0d60c6a311e7e7f2d35e8d0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6b297c40b0d60c6a311e7e7f2d35e8d0 = L.map(
+                "map_6b297c40b0d60c6a311e7e7f2d35e8d0",
+                {
+                    center: [50.67120578247993, -2.563312300074951],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1512afc6db42a0789a0eeb7895d62ee0 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_1512afc6db42a0789a0eeb7895d62ee0.addTo(map_6b297c40b0d60c6a311e7e7f2d35e8d0);
+    
+            var marker_a68a697dd6c3b777cabb1b53376d22d2 = L.marker(
+                [50.6671337, -2.5690019],
+                {}
+            ).addTo(map_6b297c40b0d60c6a311e7e7f2d35e8d0);
+        
+    
+            var icon_16f86d3e4f6107a569e15ddf538a06e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a68a697dd6c3b777cabb1b53376d22d2.setIcon(icon_16f86d3e4f6107a569e15ddf538a06e7);
+        
+    
+        var popup_67842df16809d7e1d6059d7ff6cd81dd = L.popup({});
+
+        
+            
+                var html_a61804e4279948cdb7aa73c5f9f55c4c = $(`<div id="html_a61804e4279948cdb7aa73c5f9f55c4c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>B3157 at Portesham</h1><div class="nugget-popup"><p>Flows from Front Street and surrounding lanes conveyed onto the B3157 Coast Road, causing significant traffic disruption and closure of the road for an extended period; highway inundated by floodwater. (p8)</p></div><div class="nugget-popup"><p>Mud and debris from the event contributed to blocking highway gullies along the B3157, impairing drainage and leading to surface water issues on the road. (p13)</p></div><div class="nugget-popup"><p>Floodwaters flowed onto and across the B3157; vehicles travelling the road produced bow&ndash;waves that exacerbated property flooding. Residents reported delays in road closure during the event. (p15)</p></div><div class="nugget-popup"><p>Floodwater reached the bottom of Front Street and flowed onto the B3157 Coast Road, causing carriageway inundation and prompting an emergency response. (p26)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths of up to approximately 400mm on the highway (p8)</p></div></div></body></div>`)[0];
+                popup_67842df16809d7e1d6059d7ff6cd81dd.setContent(html_a61804e4279948cdb7aa73c5f9f55c4c);
+            
+        
+
+        marker_a68a697dd6c3b777cabb1b53376d22d2.bindPopup(popup_67842df16809d7e1d6059d7ff6cd81dd)
+        ;
+
+        
+    
+    
+            var marker_0664fa608bd2e5d1bc2fd1c232df8d85 = L.marker(
+                [50.6828918, -2.5657829],
+                {}
+            ).addTo(map_6b297c40b0d60c6a311e7e7f2d35e8d0);
+        
+    
+            var icon_7f2bfb55f8f8ce127fe80f6d2ca1a93d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0664fa608bd2e5d1bc2fd1c232df8d85.setIcon(icon_7f2bfb55f8f8ce127fe80f6d2ca1a93d);
+        
+    
+        var popup_b5c67aa30d9bbddec1b8bf36eb23775a = L.popup({});
+
+        
+            
+                var html_1ff7569f41bf3eed5d2901fcc72761c8 = $(`<div id="html_1ff7569f41bf3eed5d2901fcc72761c8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Portesham Hill, Portesham</h1><div class="nugget-popup"><p>Steep ground on Portesham Hill produced rapid surface runoff that conveyed high&ndash;velocity and high&ndash;volume flows toward Portesham village, contributing to inundation of highway drainage. (p8)</p></div><div class="nugget-popup"><p>Surface runoff and silt deposition from the hillside contributed to local flooding; Natural Flood Management measures (e.g. silt traps, cross drains) were recommended to reduce run&ndash;off and silt deposition. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_b5c67aa30d9bbddec1b8bf36eb23775a.setContent(html_1ff7569f41bf3eed5d2901fcc72761c8);
+            
+        
+
+        marker_0664fa608bd2e5d1bc2fd1c232df8d85.bindPopup(popup_b5c67aa30d9bbddec1b8bf36eb23775a)
+        ;
+
+        
+    
+    
+            var marker_0fc87f4efd9c6c52f2dbd6df77a788b6 = L.marker(
+                [50.6712178, -2.5632486],
+                {}
+            ).addTo(map_6b297c40b0d60c6a311e7e7f2d35e8d0);
+        
+    
+            var icon_4a890314f7a2d078fc01f7332001adf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0fc87f4efd9c6c52f2dbd6df77a788b6.setIcon(icon_4a890314f7a2d078fc01f7332001adf7);
+        
+    
+        var popup_d162b136147c36f0eb1a0e42e47628ac = L.popup({});
+
+        
+            
+                var html_00d58a8cb4f8a423e755812c0ee6f0bb = $(`<div id="html_00d58a8cb4f8a423e755812c0ee6f0bb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Front Street, Portesham</h1><div class="nugget-popup"><p>Front Street experienced surface water flooding when overland flows and out&ndash;of&ndash;bank flows from Portesham Stream inundated the road; flooding then conveyed onto the B3157 Coast Road causing major traffic disruption and closure. (p8)</p></div><div class="nugget-popup"><p>One property experienced internal flooding due to fluvial (river) flooding during the event. [TAB] (p9)</p></div><div class="nugget-popup"><p>Surface water was conveyed downhill towards Front Street, carrying and depositing a large amount of silt and gravel from the surrounding hills, Rocky Lane and the eroding verge beside the C112 road. (p10)</p></div><div class="nugget-popup"><p>High&ndash;velocity surface water and runoff from the surrounding hills and C112 overwhelmed the highway drainage; the highway drain surcharged and flowed along Front Street. A watercourse on the western side overtopped upstream of several culverts and flowed back onto the road. A locked sluice gate prevented additional flows being diverted to the elevated eastern channel. Obstructions within the channel caused one property to flood. [IMG,PAG] (p11)</p></div><div class="nugget-popup"><p>Exceedance flows were conveyed onto Front Street; mud and debris contributed to blocking highway gullies, causing surface water to flow/pond on the carriageway. (p13)</p></div><div class="nugget-popup"><p>Front Street was subject to flooding risk that prompted actions to formalise a management plan and coordinate bodies to manage drainage and reduce future surface water flooding. [TAB] (p18)</p></div><div class="nugget-popup"><p>Floodwater overtopped boundaries and ran from raised garden areas onto the pavement and carriageway, inundating the road outside residential properties; muddy runoff and soil washed over the pavement and across the carriageway. [PAG] (p25)</p></div><div class="nugget-popup"><p>Footpath and adjacent carriageway were inundated; water flowing over the sidewalk beside a stone wall with emergency vehicles on the road responding to the flooding. [PAG] (p26)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths up to approximately 400 mm on the highway (p8)</p></div><div class="nugget-popup quant"><p>1 property [TAB] (p9)</p></div><div class="nugget-popup quant"><p>one property [IMG,PAG] (p11)</p></div></div></body></div>`)[0];
+                popup_d162b136147c36f0eb1a0e42e47628ac.setContent(html_00d58a8cb4f8a423e755812c0ee6f0bb);
+            
+        
+
+        marker_0fc87f4efd9c6c52f2dbd6df77a788b6.bindPopup(popup_d162b136147c36f0eb1a0e42e47628ac)
+        ;
+
+        
+    
+    
+            var marker_76df4f433b16a0a34a749178fe78c1ae = L.marker(
+                [50.672998028614074, -2.56207198441046],
+                {}
+            ).addTo(map_6b297c40b0d60c6a311e7e7f2d35e8d0);
+        
+    
+            var icon_43abde8bce506cacf3302d488880f82c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_76df4f433b16a0a34a749178fe78c1ae.setIcon(icon_43abde8bce506cacf3302d488880f82c);
+        
+    
+        var popup_55cda99e5e0df19b00520c0b9693835b = L.popup({});
+
+        
+            
+                var html_e1884e7e9189ac73254d33d5288db2c7 = $(`<div id="html_e1884e7e9189ac73254d33d5288db2c7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rocky Lane, Portesham</h1><div class="nugget-popup"><p>Experienced surface water flooding from overland flows originating on higher ground after heavy rainfall; runoff from the tarmacked track on Rocky Lane was reported by residents as contributing to surface water issues that reached the village. [PAG] (p8)</p></div><div class="nugget-popup"><p>Surface water flooding impacted Rocky Lane during the 19 January 2019 event; runoff issues from Rocky Lane were reported and one property experienced internal flooding. [TAB] (p9)</p></div><div class="nugget-popup"><p>Erosion of the verge/hills around Rocky Lane mobilised silt and gravel that were conveyed downhill in the flood flows and deposited on Front Street, contributing debris in the flood. (p11)</p></div><div class="nugget-popup"><p>Overland flows from surrounding hills were conveyed via a farm track and the Right of Way onto Rocky Lane, bringing significant silt and gravel which blocked highway gullies and increased silt load in the watercourse. A soakaway at the entrance to the RoW could not cope with the volume of surface water. A recently tarmacked section increased surface water run&ndash;off velocity and changed the camber, directing flow towards properties on the southern side of the lane; one property experienced internal flooding. [IMG] (p12)</p></div><div class="nugget-popup"><p>Surface&ndash;water runoff and silt deposition caused overland flow and flooding affecting Rocky Lane; recommended Natural Flood Management interventions to reduce runoff and silt deposition. [TAB] (p18)</p></div><div class="nugget-popup"><p>Surface water flooding affected the lane; the soakaway was inspected because flows were unable to enter the system and the surface water drainage of the adjacent tarmacked track requires improvements to pass flows. [TAB] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded [TAB] (p9)</p></div><div class="nugget-popup quant"><p>one property [IMG] (p12)</p></div></div></body></div>`)[0];
+                popup_55cda99e5e0df19b00520c0b9693835b.setContent(html_e1884e7e9189ac73254d33d5288db2c7);
+            
+        
+
+        marker_76df4f433b16a0a34a749178fe78c1ae.bindPopup(popup_55cda99e5e0df19b00520c0b9693835b)
+        ;
+
+        
+    
+    
+            var marker_c044a742960ce1298355a094e2ce2f44 = L.marker(
+                [50.6707982, -2.5424092],
+                {}
+            ).addTo(map_6b297c40b0d60c6a311e7e7f2d35e8d0);
+        
+    
+            var icon_129da624e1a99d1c86395cd0c34d0f99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c044a742960ce1298355a094e2ce2f44.setIcon(icon_129da624e1a99d1c86395cd0c34d0f99);
+        
+    
+        var popup_c3f416557e81da593a23f1fb517377f3 = L.popup({});
+
+        
+            
+                var html_2fdff82fcad5e800095692b596946d00 = $(`<div id="html_2fdff82fcad5e800095692b596946d00" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Winters Lane, Portesham</h1><div class="nugget-popup"><p>Experienced surface water flooding during the heavy rainfall event; reported as receiving overland flows from the surrounding hills which inundated the highway drainage. (p8)</p></div><div class="nugget-popup"><p>Mud and debris from the slippage of the farm track, mixed with exceedance flows, resulted in flooding of Winters Lane. Local ditches/culverts were overwhelmed or blocked during the event. (p13)</p></div><div class="nugget-popup"><p>Obstructed ditches and culverts caused runoff to flood the carriageway; actions recommended to inspect and clear obstructions and undertake regular maintenance to reduce flooding onto the highway. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_c3f416557e81da593a23f1fb517377f3.setContent(html_2fdff82fcad5e800095692b596946d00);
+            
+        
+
+        marker_c044a742960ce1298355a094e2ce2f44.bindPopup(popup_c3f416557e81da593a23f1fb517377f3)
+        ;
+
+        
+    
+    
+            var marker_615d97cc1a6b67a6fc7c2dfb27f232f4 = L.marker(
+                [50.6682918, -2.5691121],
+                {}
+            ).addTo(map_6b297c40b0d60c6a311e7e7f2d35e8d0);
+        
+    
+            var icon_eca0625be7412bdc1077de31044daaa4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_615d97cc1a6b67a6fc7c2dfb27f232f4.setIcon(icon_eca0625be7412bdc1077de31044daaa4);
+        
+    
+        var popup_47b625734cdda692ba0a660c1c39e09b = L.popup({});
+
+        
+            
+                var html_395fc7c3f731cc101a8e11aff8157e1b = $(`<div id="html_395fc7c3f731cc101a8e11aff8157e1b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Malthouse Meadows, Portesham</h1><div class="nugget-popup"><p>Fluvial flooding caused internal flooding to properties in Malthouse Meadows during the 19 January 2019 event. [TAB] (p9)</p></div><div class="nugget-popup"><p>Silt build&ndash;up and downstream obstructions caused the watercourse to come out of bank, resulting in property flooding. During the 19 January 2019 event the railway culvert was operating at approximately 75% capacity; the upstream weir was lowered to route more flow into the site attenuation pond (which filled more quickly) and this reduced downstream out&ndash;of&ndash;bank flows. The attenuation pond did not overspill onto the highway on this occasion. The downstream watercourse was de&ndash;silted shortly after the event. [IMG,MUL] (p14)</p></div><div class="nugget-popup"><p>The drainage scheme at Malthouse Meadows was identified for maintenance and compliance with an agreed management plan due to flood/drainage performance issues following the event. [TAB] (p18)</p></div><div class="nugget-popup"><p>Culvert under the railway embankment was discharging muddy, fast&ndash;moving water into the channel, indicating surcharged drainage/runoff that contributed to local flooding and stressed the drainage asset. (p26)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_47b625734cdda692ba0a660c1c39e09b.setContent(html_395fc7c3f731cc101a8e11aff8157e1b);
+            
+        
+
+        marker_615d97cc1a6b67a6fc7c2dfb27f232f4.bindPopup(popup_47b625734cdda692ba0a660c1c39e09b)
+        ;
+
+        
+    
+    
+            var marker_00965d2f0e5c4ba134116461061e5b8a = L.marker(
+                [50.6686206, -2.5664725],
+                {}
+            ).addTo(map_6b297c40b0d60c6a311e7e7f2d35e8d0);
+        
+    
+            var icon_017bc37be0ab6e127e3962007712a0bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_00965d2f0e5c4ba134116461061e5b8a.setIcon(icon_017bc37be0ab6e127e3962007712a0bb);
+        
+    
+        var popup_d8924327611a36f445693e443e8a9870 = L.popup({});
+
+        
+            
+                var html_b82efbf6d36511348d80e72a1c61f5ac = $(`<div id="html_b82efbf6d36511348d80e72a1c61f5ac" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Goose Hill, Portesham</h1><div class="nugget-popup"><p>Internal flooding of residential properties at Goose Hill caused by a combination of surface water runoff and fluvial (river) flooding; highway flooding is also reported in the event narrative for the afternoon rainfall. [TAB] (p9)</p></div><div class="nugget-popup"><p>Floodwaters from exceedance flows were conveyed towards Goose Hill during the event, indicating overland/surface water impacts in that area. (p13)</p></div><div class="nugget-popup"><p>Surface water and fluvial floodwater flowed through the village and onto the B3157, bypassing the upstream open ditch due to topography and road camber. Floodwater collected against properties and across the road; vehicles travelling on the B3157 generated 'bow&ndash;waves' that pushed water above low external thresholds and into properties. [IMG] (p15)</p></div><div class="nugget-popup"><p>Overland flows from Goose Hill contributed to flooding downstream; a flood alleviation scheme was proposed to intercept these flows. [TAB] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties [TAB] (p9)</p></div><div class="nugget-popup quant"><p>six properties [IMG] (p15)</p></div></div></body></div>`)[0];
+                popup_d8924327611a36f445693e443e8a9870.setContent(html_b82efbf6d36511348d80e72a1c61f5ac);
+            
+        
+
+        marker_00965d2f0e5c4ba134116461061e5b8a.bindPopup(popup_d8924327611a36f445693e443e8a9870)
+        ;
+
+        
+    
+    
+            var marker_b3ea1472ed3ea2f6665eb28f73f6dda3 = L.marker(
+                [50.6705575, -2.5620198],
+                {}
+            ).addTo(map_6b297c40b0d60c6a311e7e7f2d35e8d0);
+        
+    
+            var icon_3e7101dfe7ae0296143cb719784422e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b3ea1472ed3ea2f6665eb28f73f6dda3.setIcon(icon_3e7101dfe7ae0296143cb719784422e3);
+        
+    
+        var popup_d9701f6d06b633154792b3a839480395 = L.popup({});
+
+        
+            
+                var html_05222051b2343953d09780a0057176c9 = $(`<div id="html_05222051b2343953d09780a0057176c9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Winters Close, Portesham</h1><div class="nugget-popup"><p>A portion of surface water was discharged into a culvert along the back of properties in Winters Close as part of the exceedance flow path during the event. (p13)</p></div></div></body></div>`)[0];
+                popup_d9701f6d06b633154792b3a839480395.setContent(html_05222051b2343953d09780a0057176c9);
+            
+        
+
+        marker_b3ea1472ed3ea2f6665eb28f73f6dda3.bindPopup(popup_d9701f6d06b633154792b3a839480395)
+        ;
+
+        
+    
+    
+            var marker_6255862dc8023b7ff57937789eda0e8c = L.marker(
+                [50.6708885, -2.566494],
+                {}
+            ).addTo(map_6b297c40b0d60c6a311e7e7f2d35e8d0);
+        
+    
+            var icon_63a5331446b1410bc727d5fc2f4a0c29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6255862dc8023b7ff57937789eda0e8c.setIcon(icon_63a5331446b1410bc727d5fc2f4a0c29);
+        
+    
+        var popup_cd47b534e6c3e84217ad808627c4eebb = L.popup({});
+
+        
+            
+                var html_8aea4a881d226dc76c86aac675d24b78 = $(`<div id="html_8aea4a881d226dc76c86aac675d24b78" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cemetery Road, Portesham</h1><div class="nugget-popup"><p>Surface water overland flows were conveyed along Cemetery Road and diverted into a highway grip, which led to diversion through a residential garden and external flooding. (p16)</p></div></div></body></div>`)[0];
+                popup_cd47b534e6c3e84217ad808627c4eebb.setContent(html_8aea4a881d226dc76c86aac675d24b78);
+            
+        
+
+        marker_6255862dc8023b7ff57937789eda0e8c.bindPopup(popup_cd47b534e6c3e84217ad808627c4eebb)
+        ;
+
+        
+    
+    
+            var marker_3d75d721d0d03b599c32807b801b150b = L.marker(
+                [50.6703176, -2.5651881],
+                {}
+            ).addTo(map_6b297c40b0d60c6a311e7e7f2d35e8d0);
+        
+    
+            var icon_ceff0e74e6c3ddd66f9c9d17ea5b6453 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3d75d721d0d03b599c32807b801b150b.setIcon(icon_ceff0e74e6c3ddd66f9c9d17ea5b6453);
+        
+    
+        var popup_34010bc5777943389a2a93f0f97dec5d = L.popup({});
+
+        
+            
+                var html_774a9a45b7aa960263e00ff46252c0c4 = $(`<div id="html_774a9a45b7aa960263e00ff46252c0c4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>New Road, Portesham</h1><div class="nugget-popup"><p>Floodwater from adjoining areas flowed onto the road surface toward New Road, contributing to inundation of the carriageway and affecting access to nearby residences. (p25)</p></div></div></body></div>`)[0];
+                popup_34010bc5777943389a2a93f0f97dec5d.setContent(html_774a9a45b7aa960263e00ff46252c0c4);
+            
+        
+
+        marker_3d75d721d0d03b599c32807b801b150b.bindPopup(popup_34010bc5777943389a2a93f0f97dec5d)
+        ;
+
+        
+    
+    
+            var marker_ebb297ec322e5f7d7c557703e8259673 = L.marker(
+                [50.66954807866514, -2.5646342164140012],
+                {}
+            ).addTo(map_6b297c40b0d60c6a311e7e7f2d35e8d0);
+        
+    
+            var icon_b3b192f63a016dfcdb3bbbd595bd2e5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ebb297ec322e5f7d7c557703e8259673.setIcon(icon_b3b192f63a016dfcdb3bbbd595bd2e5f);
+        
+    
+        var popup_a4b2ab05931fd858f4805c138dae246c = L.popup({});
+
+        
+            
+                var html_4dd23c5846e65d4c3307f08ec1909b03 = $(`<div id="html_4dd23c5846e65d4c3307f08ec1909b03" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Portesham</h1><div class="nugget-popup"><p>Portesham stream flows southwards through the village and splits into raised channels; the village is the subject of the Flood Investigation Report and the catchment&#8217;s flashy response to storm rainfall is identified as causing flood risk to the settlement. [IMG,PAG] (p6)</p></div><div class="nugget-popup"><p>Overland flows from higher ground converged on the village leading to surface water inundation of streets and properties; local drainage was overwhelmed. [IMG,PAG] (p8)</p></div><div class="nugget-popup"><p>Village&ndash;wide flooding during the 19 January 2019 event: property and highway flooding occurred during a highly localised afternoon rainfall. Drainage issues were reported (blocked/restricted culverts, blocked highway gullies, and non&ndash;operating flow control sluices) which contributed to flood impacts across the village. [TAB,PAG] (p9)</p></div><div class="nugget-popup"><p>Surface water from the saturated catchment (hills to the north and from the C112 road) was conveyed downhill into the village, bringing large amounts of silt and gravel from surrounding hills, Rocky Lane and the eroding verge of the C112 road. [PAG] (p10)</p></div><div class="nugget-popup"><p>Surface water runoff from surrounding hills and C112 and overtopping of the local stream caused flooding on Front Street in Portesham, surcharging highway drains, depositing silt and gravel, and resulting in at least one property being flooded. [IMG,PAG] (p11)</p></div><div class="nugget-popup"><p>Flood&ndash;response and mitigation works implemented after the event: culvert under the track to the Dairy Farm cleared and the upstream watercourse desilted; Malthouse Meadows side weir set to the agreed level and formed in brick; obstructions cleared from the swale on the inlet to the attenuation pond; attenuation pond base level corrected (soil removed and now operating at design capacity); a rain gauge was installed by the LLFA to record storm events. [TAB,PAG] (p17)</p></div><div class="nugget-popup"><p>The village experienced surface&ndash;water runoff and overland flow during the event, causing highway flooding, silt deposition and drainage problems (references to Front Street, Malthouse Meadows and sluice gate operation are made in relation to managing flood risk). [TAB,PAG] (p18)</p></div><div class="nugget-popup"><p>Village experienced surface water flooding associated with intense rainfall on 19 January 2019, prompting a Section 19 flood investigation. [IMG,PAG] (p21)</p></div><div class="nugget-popup"><p>Flood extents from a 1:100&ndash;year surface water event encroached on built&ndash;up areas of Portesham, with infrastructure such as roads and parking areas affected. Appendix photos show flooding in the elevated western channel looking north&ndash;east towards Front Street. [IMG,PAG] (p24)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties [IMG,PAG] (p8)</p></div><div class="nugget-popup quant"><p>9 properties internally flooded (total); includes 6 properties in Goose Hill, 1 in Rocky Lane, 1 in Malthouse Meadows, 1 on Front Street [TAB,PAG] (p9)</p></div><div class="nugget-popup quant"><p>one property [IMG,PAG] (p11)</p></div></div></body></div>`)[0];
+                popup_a4b2ab05931fd858f4805c138dae246c.setContent(html_4dd23c5846e65d4c3307f08ec1909b03);
+            
+        
+
+        marker_ebb297ec322e5f7d7c557703e8259673.bindPopup(popup_a4b2ab05931fd858f4805c138dae246c)
+        ;
+
+        
+    
+</script>
+</html>
