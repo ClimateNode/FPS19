@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_976398fb5e186bb6cc82ef97c88a044f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_976398fb5e186bb6cc82ef97c88a044f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_976398fb5e186bb6cc82ef97c88a044f = L.map(
+                "map_976398fb5e186bb6cc82ef97c88a044f",
+                {
+                    center: [50.676074752464466, -3.81887715345683],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a15e140cdc4fb016bcdd6789fa1832e2 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_a15e140cdc4fb016bcdd6789fa1832e2.addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+    
+            var marker_cc2d588ce487de26413d87c5f50f2b3f = L.marker(
+                [51.1087363, -4.1625124],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_6efcfd8457ce7c057afc373c62b997fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cc2d588ce487de26413d87c5f50f2b3f.setIcon(icon_6efcfd8457ce7c057afc373c62b997fe);
+        
+    
+        var popup_b5b0f5c5bcc5e84fe95d6b130ca12f52 = L.popup({});
+
+        
+            
+                var html_6502a39ea73904d0f21fac47d569abd3 = $(`<div id="html_6502a39ea73904d0f21fac47d569abd3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Caen Street, Braunton</h1><div class="nugget-popup"><p>Street became impassable due to surface water flooding. (p9)</p></div><div class="nugget-popup"><p>On 3 September 2016 the street was inundated by surface water reaching up to and into shop and building entrances; public driving through the water generated bow waves that pushed water into properties, worsening flood impacts. [IMG] (p11)</p></div><div class="nugget-popup"><p>Surface water overwhelmed drains/culverts causing road flooding; vehicle movement created bow waves that exacerbated flooding and made movement along the street a concern; roads were reported impassable with water ponding for extended periods. [TAB] (p14)</p></div><div class="nugget-popup"><p>The street experienced surface water flooding during the event; vehicle movements generated bow waves that exacerbated the flood situation on the road and affected adjacent properties/areas, prompting recommendations to control vehicle movement. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 street (Caen Street) (p9)</p></div></div></body></div>`)[0];
+                popup_b5b0f5c5bcc5e84fe95d6b130ca12f52.setContent(html_6502a39ea73904d0f21fac47d569abd3);
+            
+        
+
+        marker_cc2d588ce487de26413d87c5f50f2b3f.bindPopup(popup_b5b0f5c5bcc5e84fe95d6b130ca12f52)
+        ;
+
+        
+    
+    
+            var marker_76b48e92553182aad6acd2138f9432ca = L.marker(
+                [51.1064438, -4.1617098],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_439d73dd7639873bb950d68b21cec500 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_76b48e92553182aad6acd2138f9432ca.setIcon(icon_439d73dd7639873bb950d68b21cec500);
+        
+    
+        var popup_f51ea7d0b9eeaec6c871f9fd3831da4e = L.popup({});
+
+        
+            
+                var html_13239e190c2a165bc3d68ec8d8836b63 = $(`<div id="html_13239e190c2a165bc3d68ec8d8836b63" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Street, Braunton</h1><div class="nugget-popup"><p>Street became impassable due to surface water flooding. (p9)</p></div><div class="nugget-popup"><p>Listed among streets where surface water overwhelmed drainage and flowed down the road on 3 September 2016, causing localised street and property flooding. (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 street (South Street) (p9)</p></div></div></body></div>`)[0];
+                popup_f51ea7d0b9eeaec6c871f9fd3831da4e.setContent(html_13239e190c2a165bc3d68ec8d8836b63);
+            
+        
+
+        marker_76b48e92553182aad6acd2138f9432ca.bindPopup(popup_f51ea7d0b9eeaec6c871f9fd3831da4e)
+        ;
+
+        
+    
+    
+            var marker_d78889ec018d52d110fe97ea95c8cc57 = L.marker(
+                [50.3516517, -3.5806611],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_2ae28b66d2dd7a4247e5efed197e79f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d78889ec018d52d110fe97ea95c8cc57.setIcon(icon_2ae28b66d2dd7a4247e5efed197e79f3);
+        
+    
+        var popup_e593c1fa5f6e69b4543456267c5e18f0 = L.popup({});
+
+        
+            
+                var html_f4139ef1c19ce78b3e926461cc4ae28b = $(`<div id="html_f4139ef1c19ce78b3e926461cc4ae28b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Charles Street, Dartmouth</h1><div class="nugget-popup"><p>Fire service were called and assisted South West Water to pump away water from affected properties; the Fire Service log records this flooding as external. (p12)</p></div></div></body></div>`)[0];
+                popup_e593c1fa5f6e69b4543456267c5e18f0.setContent(html_f4139ef1c19ce78b3e926461cc4ae28b);
+            
+        
+
+        marker_d78889ec018d52d110fe97ea95c8cc57.bindPopup(popup_e593c1fa5f6e69b4543456267c5e18f0)
+        ;
+
+        
+    
+    
+            var marker_9e690c937af7e7ce38d9c6e9ab5e33ae = L.marker(
+                [50.2313564, -3.7791522],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_3a64e26d9e037de48a089fe959c07550 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9e690c937af7e7ce38d9c6e9ab5e33ae.setIcon(icon_3a64e26d9e037de48a089fe959c07550);
+        
+    
+        var popup_5f54aa982aeb20764da615bfb8a9266f = L.popup({});
+
+        
+            
+                var html_598cd83d9430a22ea763a1c23b0b3b36 = $(`<div id="html_598cd83d9430a22ea763a1c23b0b3b36" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sandhills Road, Salcombe</h1><div class="nugget-popup"><p>Road surface showed water accumulation and pooling consistent with surface&ndash;water/highway flooding, creating a hazard for vehicles and pedestrians and indicating poor drainage during the event. [IMG] (p12)</p></div></div></body></div>`)[0];
+                popup_5f54aa982aeb20764da615bfb8a9266f.setContent(html_598cd83d9430a22ea763a1c23b0b3b36);
+            
+        
+
+        marker_9e690c937af7e7ce38d9c6e9ab5e33ae.bindPopup(popup_5f54aa982aeb20764da615bfb8a9266f)
+        ;
+
+        
+    
+    
+            var marker_485f8c5cb50f54912374393e5a6cf585 = L.marker(
+                [50.724140500000004, -3.6607788161410735],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_9388fc41b8ae6ae9b329f619cd3c9fa4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_485f8c5cb50f54912374393e5a6cf585.setIcon(icon_9388fc41b8ae6ae9b329f619cd3c9fa4);
+        
+    
+        var popup_ee55503a4c52a822b7cc66fa265cf16c = L.popup({});
+
+        
+            
+                var html_b1641b83dfc4ff42ac70c290b525b531 = $(`<div id="html_b1641b83dfc4ff42ac70c290b525b531" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Devon</h1><div class="nugget-popup"><p>Widespread surface&ndash;water / urban flooding across the county between 3 and 5 September 2016. In North Devon this included streets and properties flooded in Braunton and highways flooding elsewhere in the district. [PAG] (p11)</p></div><div class="nugget-popup"><p>Widespread surface water flooding across the county during September 2016, with flooding concentrated in Braunton and other locations; caused highways to be impassable and prompted development of a local flood alleviation scheme in Braunton. (p13)</p></div><div class="nugget-popup"><p>Multiple surface water flood incidents occurred across Devon during 03 Sep 2016 &ndash; 05 Sep 2016, causing roads to be impassable in locations and water to pond for over 24 hours. The report recommends county&ndash;wide actions and specific interventions for affected communities (notably Braunton). [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_ee55503a4c52a822b7cc66fa265cf16c.setContent(html_b1641b83dfc4ff42ac70c290b525b531);
+            
+        
+
+        marker_485f8c5cb50f54912374393e5a6cf585.bindPopup(popup_ee55503a4c52a822b7cc66fa265cf16c)
+        ;
+
+        
+    
+    
+            var marker_dd080649bc9bfe37d698d74175ea04f1 = L.marker(
+                [50.724140500000004, -3.6607788161410735],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_aed440a62ae92fd703e8aabffc2189c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dd080649bc9bfe37d698d74175ea04f1.setIcon(icon_aed440a62ae92fd703e8aabffc2189c6);
+        
+    
+        var popup_3267a27cacc7fc68c6ec36a2fb0a3600 = L.popup({});
+
+        
+            
+                var html_cdfcd1c3d5d23385a3304ab269a75801 = $(`<div id="html_cdfcd1c3d5d23385a3304ab269a75801" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Devon</h1><div class="nugget-popup"><p>Short, intense rainfall between 3&ndash;5 September 2016 caused flooding of numerous roads and properties across the county; highway drainage systems struggled or overflowed, producing highway and external property flooding and prompting investigation and recommended maintenance by Devon County Council Highways. [PAG] (p8)</p></div><div class="nugget-popup"><p>Across Devon (3&ndash;5 Sept 2016) short&ndash;duration, high&ndash;intensity rainfall caused highway drainage and sewer systems in several areas to struggle and sometimes overflow. Roads were closed in parts of South Hams and surface water was reported on roads in South Hams, West Devon, Torridge and Teignbridge; drains became overwhelmed by mud and silt. [IMG,PAG] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties flooded internally [PAG] (p8)</p></div></div></body></div>`)[0];
+                popup_3267a27cacc7fc68c6ec36a2fb0a3600.setContent(html_cdfcd1c3d5d23385a3304ab269a75801);
+            
+        
+
+        marker_dd080649bc9bfe37d698d74175ea04f1.bindPopup(popup_3267a27cacc7fc68c6ec36a2fb0a3600)
+        ;
+
+        
+    
+    
+            var marker_562aa579e3836059b509976827158f76 = L.marker(
+                [51.061456, -3.9239233],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_de53a1fed51fda19975244a7040c1a9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_562aa579e3836059b509976827158f76.setIcon(icon_de53a1fed51fda19975244a7040c1a9f);
+        
+    
+        var popup_864eadd3ce65390d4cf84080ea482376 = L.popup({});
+
+        
+            
+                var html_c19a0137959cdb5ef287d13bc4bdb5ee = $(`<div id="html_c19a0137959cdb5ef287d13bc4bdb5ee" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North Devon</h1><div class="nugget-popup"><p>District was the worst affected within the county &mdash; multiple surface&ndash;water/pluvial flooding incidents in towns (Braunton, Ilfracombe, Barnstaple) with highway drainage overwhelmed and roads/properties affected. [MUL] (p8)</p></div><div class="nugget-popup"><p>On 3rd September 2016 a heavy, intense rainfall event caused flooding to a number of streets and properties in Braunton and led to cases of highways flooding elsewhere in the district as highway drainage systems were overwhelmed. [IMG,PAG] (p10)</p></div><div class="nugget-popup"><p>Affected by the 3 September 2016 intense rainfall event that produced surface water flooding and overwhelmed drains, causing streets and properties to flood in parts of the area. (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties flooded internally (Braunton) [MUL] (p8)</p></div></div></body></div>`)[0];
+                popup_864eadd3ce65390d4cf84080ea482376.setContent(html_c19a0137959cdb5ef287d13bc4bdb5ee);
+            
+        
+
+        marker_562aa579e3836059b509976827158f76.bindPopup(popup_864eadd3ce65390d4cf84080ea482376)
+        ;
+
+        
+    
+    
+            var marker_60fd95eb8bc72457be4fcaa8a86c87b6 = L.marker(
+                [50.3720497, -3.816252],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_ed6caff4d15d27635e870c237e7a3fd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_60fd95eb8bc72457be4fcaa8a86c87b6.setIcon(icon_ed6caff4d15d27635e870c237e7a3fd8);
+        
+    
+        var popup_2f0cc9e1b7ae7507ffb07ee063433fa6 = L.popup({});
+
+        
+            
+                var html_5b5783789106461e84c27cdec3ada95c = $(`<div id="html_5b5783789106461e84c27cdec3ada95c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Hams</h1><div class="nugget-popup"><p>A number of roads were closed due to surface water (3 Sept 2016); further reports of surface water on roads on 5 Sept 2016. Drains were said to have been overwhelmed and overflowed due to an increase in mud and silt. [MUL] (p9)</p></div><div class="nugget-popup"><p>Experienced a number of flooding events in September 2016, mainly external or highways flooding across the district. (p12)</p></div></div></body></div>`)[0];
+                popup_2f0cc9e1b7ae7507ffb07ee063433fa6.setContent(html_5b5783789106461e84c27cdec3ada95c);
+            
+        
+
+        marker_60fd95eb8bc72457be4fcaa8a86c87b6.bindPopup(popup_2f0cc9e1b7ae7507ffb07ee063433fa6)
+        ;
+
+        
+    
+    
+            var marker_606420fdccb84e693ecd5ae1be7a06c4 = L.marker(
+                [50.6519974, -4.0743109],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_ec08591bba7a6903116eaa80599d0001 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_606420fdccb84e693ecd5ae1be7a06c4.setIcon(icon_ec08591bba7a6903116eaa80599d0001);
+        
+    
+        var popup_8606041ee1325646bfe71293caf2eb38 = L.popup({});
+
+        
+            
+                var html_fc1f4af7486722bec3774c7526e41b9f = $(`<div id="html_fc1f4af7486722bec3774c7526e41b9f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Devon</h1><div class="nugget-popup"><p>Reports of surface water on roads (described as resulting from drains becoming overwhelmed by mud and silt), causing highway drainage issues. (p9)</p></div><div class="nugget-popup"><p>On 5th September 2016 there were reports of surface water on roads in West Devon as drains became overwhelmed, partly due to increased mud and silt causing overflow. [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_8606041ee1325646bfe71293caf2eb38.setContent(html_fc1f4af7486722bec3774c7526e41b9f);
+            
+        
+
+        marker_606420fdccb84e693ecd5ae1be7a06c4.bindPopup(popup_8606041ee1325646bfe71293caf2eb38)
+        ;
+
+        
+    
+    
+            var marker_a042eeb785400ce6eca9df7c7e4c3c02 = L.marker(
+                [50.8626014, -4.2612056],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_24e7e7f130d793fe1379b7a79229ae52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a042eeb785400ce6eca9df7c7e4c3c02.setIcon(icon_24e7e7f130d793fe1379b7a79229ae52);
+        
+    
+        var popup_0b9a20f68fc6c61b875693bf57b8dcdc = L.popup({});
+
+        
+            
+                var html_4b17faabcea9bcaf2f7c51df57740a38 = $(`<div id="html_4b17faabcea9bcaf2f7c51df57740a38" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Torridge</h1><div class="nugget-popup"><p>Surface water on roads; highway drains reported overwhelmed and overflowing due to increased mud and silt. (p9)</p></div><div class="nugget-popup"><p>Highway flooding from excess surface water with roads impassable and water ponding for extended periods; additionally two cases of internal flooding reported (internal inundation of properties). (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 cases of internal flooding (p13)</p></div></div></body></div>`)[0];
+                popup_0b9a20f68fc6c61b875693bf57b8dcdc.setContent(html_4b17faabcea9bcaf2f7c51df57740a38);
+            
+        
+
+        marker_a042eeb785400ce6eca9df7c7e4c3c02.bindPopup(popup_0b9a20f68fc6c61b875693bf57b8dcdc)
+        ;
+
+        
+    
+    
+            var marker_de85fac60c13805f2a6eaac5ae15f49f = L.marker(
+                [50.6125551, -3.6559493],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_bab346b89e6b083519d6d516876c4cff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_de85fac60c13805f2a6eaac5ae15f49f.setIcon(icon_bab346b89e6b083519d6d516876c4cff);
+        
+    
+        var popup_93a834e105d014dd420e788f5f008e1b = L.popup({});
+
+        
+            
+                var html_c310b2bfb77e4ddf46e49ea3f7dee3bd = $(`<div id="html_c310b2bfb77e4ddf46e49ea3f7dee3bd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Teignbridge</h1><div class="nugget-popup"><p>Surface water on roads; highway drains reported overwhelmed and overflowing due to increased mud and silt. (p9)</p></div><div class="nugget-popup"><p>Highway flooding from excess surface water; roads reported impassable with water ponding in locations for over 24 hours. (p13)</p></div></div></body></div>`)[0];
+                popup_93a834e105d014dd420e788f5f008e1b.setContent(html_c310b2bfb77e4ddf46e49ea3f7dee3bd);
+            
+        
+
+        marker_de85fac60c13805f2a6eaac5ae15f49f.bindPopup(popup_93a834e105d014dd420e788f5f008e1b)
+        ;
+
+        
+    
+    
+            var marker_ba85add2063aa1ddf2561a28910ac168 = L.marker(
+                [50.7568771, -3.2215643],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_c957d603a1a05b397053d8d31912bcb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ba85add2063aa1ddf2561a28910ac168.setIcon(icon_c957d603a1a05b397053d8d31912bcb2);
+        
+    
+        var popup_8d7a2db3a28e01ba330b725a944dcaa3 = L.popup({});
+
+        
+            
+                var html_f86a27b5bade21e6d6aa20feeadb9ed3 = $(`<div id="html_f86a27b5bade21e6d6aa20feeadb9ed3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Devon</h1><div class="nugget-popup"><p>Highway flooding from excess surface water; roads reported impassable with water ponding in locations for over 24 hours. (p13)</p></div></div></body></div>`)[0];
+                popup_8d7a2db3a28e01ba330b725a944dcaa3.setContent(html_f86a27b5bade21e6d6aa20feeadb9ed3);
+            
+        
+
+        marker_ba85add2063aa1ddf2561a28910ac168.bindPopup(popup_8d7a2db3a28e01ba330b725a944dcaa3)
+        ;
+
+        
+    
+    
+            var marker_7c0eb14a7c2fcde4220aa19615aa0526 = L.marker(
+                [50.8683922, -3.5997],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_6b641dd72f70b21d547b79fb6fb1fca3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7c0eb14a7c2fcde4220aa19615aa0526.setIcon(icon_6b641dd72f70b21d547b79fb6fb1fca3);
+        
+    
+        var popup_61cf5aa720e2395943fbbc2a1efe07c6 = L.popup({});
+
+        
+            
+                var html_7658c035f4abf5c3131d00dac8289c67 = $(`<div id="html_7658c035f4abf5c3131d00dac8289c67" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mid Devon</h1><div class="nugget-popup"><p>Highway flooding from excess surface water; roads reported impassable with water ponding in locations for over 24 hours. (p13)</p></div></div></body></div>`)[0];
+                popup_61cf5aa720e2395943fbbc2a1efe07c6.setContent(html_7658c035f4abf5c3131d00dac8289c67);
+            
+        
+
+        marker_7c0eb14a7c2fcde4220aa19615aa0526.bindPopup(popup_61cf5aa720e2395943fbbc2a1efe07c6)
+        ;
+
+        
+    
+    
+            var marker_48da204ae7d650731d38050169051d94 = L.marker(
+                [51.10745360754878, -4.161236249590053],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_9321c3b312be6fdfb89715981d0860d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_48da204ae7d650731d38050169051d94.setIcon(icon_9321c3b312be6fdfb89715981d0860d4);
+        
+    
+        var popup_f39907778bfb865278b92f2e4fc8f974 = L.popup({});
+
+        
+            
+                var html_c12143bba0419a32fdf48a974313576b = $(`<div id="html_c12143bba0419a32fdf48a974313576b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Braunton</h1><div class="nugget-popup"><p>Surface&ndash;water / pluvial flooding on 03/09/2016 affected several roads and properties; specific roads (Caen Street and South Street) were reported impassable. [TAB,PAG] (p8)</p></div><div class="nugget-popup"><p>Several roads and properties were affected by surface water flooding; roads (including Caen Street and South Street) became impassable. [PAG] (p9)</p></div><div class="nugget-popup"><p>On 3rd September 2016 several roads and properties in Braunton were affected by surface water flooding; Caen Street and South Street were both impassable. Highway drainage was overwhelmed/overflowed due to the intense short&ndash;duration rainfall. [IMG,PAG] (p10)</p></div><div class="nugget-popup"><p>Surface water built up too fast for drains to cope on 3 September 2016, causing water to flow down multiple streets (including Caen Street and South Street) and flood properties and streets within the village. [IMG] (p11)</p></div><div class="nugget-popup"><p>Surface water flooding concentrated in Braunton during 03 Sep 2016 &ndash; 05 Sep 2016. Drains were overwhelmed; roads became impassable and water ponded in places for over 24 hours. A flood alleviation scheme for managing surface water in Braunton is being developed and reviewed for delivery. [TAB] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties flooded internally [TAB,PAG] (p8)</p></div><div class="nugget-popup quant"><p>2 streets (Caen Street; South Street) [PAG] (p9)</p></div><div class="nugget-popup quant"><p>6 properties [IMG,PAG] (p10)</p></div></div></body></div>`)[0];
+                popup_f39907778bfb865278b92f2e4fc8f974.setContent(html_c12143bba0419a32fdf48a974313576b);
+            
+        
+
+        marker_48da204ae7d650731d38050169051d94.bindPopup(popup_f39907778bfb865278b92f2e4fc8f974)
+        ;
+
+        
+    
+    
+            var marker_24c4116fa9ceacee24d41192cf38dfe1 = L.marker(
+                [50.737813450000004, -2.9671407173420046],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_230ae402e06e8e6b8830b576e1bbb30a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_24c4116fa9ceacee24d41192cf38dfe1.setIcon(icon_230ae402e06e8e6b8830b576e1bbb30a);
+        
+    
+        var popup_1e8d127e243a701f812eeffea0b33bf1 = L.popup({});
+
+        
+            
+                var html_f04cd49b74423769a054115d6445880d = $(`<div id="html_f04cd49b74423769a054115d6445880d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Uplyme</h1><div class="nugget-popup"><p>Surface water flooding affected Uplyme; recorded as a surface&ndash;water event on 03/09/2016 (no internal property flooding reported in the table). [TAB] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 properties flooded internally [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_1e8d127e243a701f812eeffea0b33bf1.setContent(html_f04cd49b74423769a054115d6445880d);
+            
+        
+
+        marker_24c4116fa9ceacee24d41192cf38dfe1.bindPopup(popup_1e8d127e243a701f812eeffea0b33bf1)
+        ;
+
+        
+    
+    
+            var marker_8ed2e8992b995d8a6b0f4946e9d648fe = L.marker(
+                [50.4461735, -4.1199338109430155],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_ff7342924df4ec81e7fbd61743ed5e9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8ed2e8992b995d8a6b0f4946e9d648fe.setIcon(icon_ff7342924df4ec81e7fbd61743ed5e9e);
+        
+    
+        var popup_afce0b517e953b2c83bac8c59e253ced = L.popup({});
+
+        
+            
+                var html_95175fc17eccc1c970dcd56efed8b497 = $(`<div id="html_95175fc17eccc1c970dcd56efed8b497" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bickleigh</h1><div class="nugget-popup"><p>Surface water affected Bickleigh on 03/09/2016 (reported as a surface&ndash;water event). [TAB] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 properties flooded internally [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_afce0b517e953b2c83bac8c59e253ced.setContent(html_95175fc17eccc1c970dcd56efed8b497);
+            
+        
+
+        marker_8ed2e8992b995d8a6b0f4946e9d648fe.bindPopup(popup_afce0b517e953b2c83bac8c59e253ced)
+        ;
+
+        
+    
+    
+            var marker_3e03ded6d4f92608416147483382bf1d = L.marker(
+                [51.080406, -4.0600467],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_808b1ed509fde071db320b35c064e3d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3e03ded6d4f92608416147483382bf1d.setIcon(icon_808b1ed509fde071db320b35c064e3d8);
+        
+    
+        var popup_b6e09b2210a179d7608a890c378fc352 = L.popup({});
+
+        
+            
+                var html_8c8748a995752bc24e575fe70b44a4f4 = $(`<div id="html_8c8748a995752bc24e575fe70b44a4f4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barnstaple</h1><div class="nugget-popup"><p>Surface water affected Barnstaple, recorded on 05/09/2016 as a surface&ndash;water event. [TAB] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 properties flooded internally [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_b6e09b2210a179d7608a890c378fc352.setContent(html_8c8748a995752bc24e575fe70b44a4f4);
+            
+        
+
+        marker_3e03ded6d4f92608416147483382bf1d.bindPopup(popup_b6e09b2210a179d7608a890c378fc352)
+        ;
+
+        
+    
+    
+            var marker_505f12504c4891bb9a0448de0c799429 = L.marker(
+                [50.23804072581015, -3.768547555863234],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_b762c773ff27406682291be18cad7a32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_505f12504c4891bb9a0448de0c799429.setIcon(icon_b762c773ff27406682291be18cad7a32);
+        
+    
+        var popup_23ba05e103015272501aaf9410833b53 = L.popup({});
+
+        
+            
+                var html_9e824a52f2d90003af6198f43f6d9507 = $(`<div id="html_9e824a52f2d90003af6198f43f6d9507" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Salcombe</h1><div class="nugget-popup"><p>Surface water affected Salcombe on 03/09/2016 (reported as a surface&ndash;water event). [TAB] (p8)</p></div><div class="nugget-popup"><p>Roads experienced flooding and were reported impassable; photographic evidence (Sandhills Road) shows visible water accumulation on the carriageway indicating poor drainage / surface water pooling. [IMG] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 properties flooded internally [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_23ba05e103015272501aaf9410833b53.setContent(html_9e824a52f2d90003af6198f43f6d9507);
+            
+        
+
+        marker_505f12504c4891bb9a0448de0c799429.bindPopup(popup_23ba05e103015272501aaf9410833b53)
+        ;
+
+        
+    
+    
+            var marker_f25e4f5ae52aabb611e5eed312a3831d = L.marker(
+                [50.2848555, -3.7789738],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_6e71898fd6b459ae2161162414fe46a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f25e4f5ae52aabb611e5eed312a3831d.setIcon(icon_6e71898fd6b459ae2161162414fe46a0);
+        
+    
+        var popup_f86b48176f8c0166b14a200e02ff0479 = L.popup({});
+
+        
+            
+                var html_d22a67831974ff344f2eac2adcb7bcbe = $(`<div id="html_d22a67831974ff344f2eac2adcb7bcbe" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingsbridge</h1><div class="nugget-popup"><p>Surface water affected Kingsbridge on 03/09/2016 (reported as a surface&ndash;water event). [TAB] (p8)</p></div><div class="nugget-popup"><p>Roads experienced flooding and were reported impassable during the September 2016 events; public were advised to avoid travelling these routes. [IMG] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 properties flooded internally [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_f86b48176f8c0166b14a200e02ff0479.setContent(html_d22a67831974ff344f2eac2adcb7bcbe);
+            
+        
+
+        marker_f25e4f5ae52aabb611e5eed312a3831d.bindPopup(popup_f86b48176f8c0166b14a200e02ff0479)
+        ;
+
+        
+    
+    
+            var marker_2cfc6d6c3f932cd395c780f28d4d0b8c = L.marker(
+                [50.3514839, -3.583844],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_05a8fff435d5ed139efbec01fcc0513d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2cfc6d6c3f932cd395c780f28d4d0b8c.setIcon(icon_05a8fff435d5ed139efbec01fcc0513d);
+        
+    
+        var popup_6df7960d9fc5bf53347eb040c166adf5 = L.popup({});
+
+        
+            
+                var html_99dbf86b7c5ff9049265142c986d549b = $(`<div id="html_99dbf86b7c5ff9049265142c986d549b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dartmouth</h1><div class="nugget-popup"><p>Surface water affected the town; no properties reported flooded internally during the event recorded in the investigation. [TAB] (p8)</p></div><div class="nugget-popup"><p>External flooding in the Charles Street area; the Fire Service attended and assisted South West Water to pump water away from affected properties. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 properties flooded internally [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_6df7960d9fc5bf53347eb040c166adf5.setContent(html_99dbf86b7c5ff9049265142c986d549b);
+            
+        
+
+        marker_2cfc6d6c3f932cd395c780f28d4d0b8c.bindPopup(popup_6df7960d9fc5bf53347eb040c166adf5)
+        ;
+
+        
+    
+    
+            var marker_f57eda012e707c9a3e642af1cdd4fd03 = L.marker(
+                [50.366261550000004, -3.54634164096837],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_2139fc75cf7d01d283dc6a776406a520 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f57eda012e707c9a3e642af1cdd4fd03.setIcon(icon_2139fc75cf7d01d283dc6a776406a520);
+        
+    
+        var popup_43adcc1143ddbd21b5428b9044441daf = L.popup({});
+
+        
+            
+                var html_71d40b88e3f7875e77c3a2c8f08d6f52 = $(`<div id="html_71d40b88e3f7875e77c3a2c8f08d6f52" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingswear</h1><div class="nugget-popup"><p>Surface water affected the village; no properties reported flooded internally in the investigation record. [TAB] (p8)</p></div><div class="nugget-popup"><p>A number of roads experienced flooding and were impassable; the public were advised to avoid travelling these routes during the September 2016 events. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 properties flooded internally [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_43adcc1143ddbd21b5428b9044441daf.setContent(html_71d40b88e3f7875e77c3a2c8f08d6f52);
+            
+        
+
+        marker_f57eda012e707c9a3e642af1cdd4fd03.bindPopup(popup_43adcc1143ddbd21b5428b9044441daf)
+        ;
+
+        
+    
+    
+            var marker_62d87ac8e14045621532b096c837a597 = L.marker(
+                [50.32383331165822, -3.7293147974048093],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_2e7e8997cceae22a2941696d577cd01d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_62d87ac8e14045621532b096c837a597.setIcon(icon_2e7e8997cceae22a2941696d577cd01d);
+        
+    
+        var popup_5528f4b43a84616f85b6d1ca74cc7984 = L.popup({});
+
+        
+            
+                var html_51b3e68ffb59275ef2c3995e85e96a24 = $(`<div id="html_51b3e68ffb59275ef2c3995e85e96a24" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Allington</h1><div class="nugget-popup"><p>Surface water flooding affected the village and resulted in internal flooding of a property. [TAB] (p8)</p></div><div class="nugget-popup"><p>One property was internally flooded during the September 2016 events. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property flooded internally [TAB] (p8)</p></div><div class="nugget-popup quant"><p>1 property (p12)</p></div></div></body></div>`)[0];
+                popup_5528f4b43a84616f85b6d1ca74cc7984.setContent(html_51b3e68ffb59275ef2c3995e85e96a24);
+            
+        
+
+        marker_62d87ac8e14045621532b096c837a597.bindPopup(popup_5528f4b43a84616f85b6d1ca74cc7984)
+        ;
+
+        
+    
+    
+            var marker_bcfb0a7886920bb87bdf059b04725217 = L.marker(
+                [51.01892706905887, -4.205718439785937],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_0dcf061b528f6c79ffe4692934648727 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bcfb0a7886920bb87bdf059b04725217.setIcon(icon_0dcf061b528f6c79ffe4692934648727);
+        
+    
+        var popup_7a2ca347b4b470e12c5ff27e1e5d525b = L.popup({});
+
+        
+            
+                var html_f58076537a3bfc1fc1810e636eb50763 = $(`<div id="html_f58076537a3bfc1fc1810e636eb50763" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bideford</h1><div class="nugget-popup"><p>Surface water flooding affected the town and resulted in internal flooding of properties. [TAB] (p8)</p></div><div class="nugget-popup"><p>Flooding affected properties in the Bideford area during the 3&ndash;5 September 2016 event. [IMG] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties flooded internally [TAB] (p8)</p></div><div class="nugget-popup quant"><p>2 properties [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_7a2ca347b4b470e12c5ff27e1e5d525b.setContent(html_f58076537a3bfc1fc1810e636eb50763);
+            
+        
+
+        marker_bcfb0a7886920bb87bdf059b04725217.bindPopup(popup_7a2ca347b4b470e12c5ff27e1e5d525b)
+        ;
+
+        
+    
+    
+            var marker_ee7bf6791bc782e46e25585e7e5ef8d8 = L.marker(
+                [50.55651505, -3.5003257456980137],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_5c4689326e28c1131703f8f3ed3a324f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ee7bf6791bc782e46e25585e7e5ef8d8.setIcon(icon_5c4689326e28c1131703f8f3ed3a324f);
+        
+    
+        var popup_40fa18992b8c5c70b99c2f94a3a233c3 = L.popup({});
+
+        
+            
+                var html_6506da4a7420825afd4773089ead4fd3 = $(`<div id="html_6506da4a7420825afd4773089ead4fd3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Teignmouth</h1><div class="nugget-popup"><p>Surface water was reported on 05/09/2016; no properties were recorded as flooded internally in the investigation. [TAB] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 properties flooded internally [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_40fa18992b8c5c70b99c2f94a3a233c3.setContent(html_6506da4a7420825afd4773089ead4fd3);
+            
+        
+
+        marker_ee7bf6791bc782e46e25585e7e5ef8d8.bindPopup(popup_40fa18992b8c5c70b99c2f94a3a233c3)
+        ;
+
+        
+    
+    
+            var marker_380ab49e14965e6c24cd148624d56abb = L.marker(
+                [50.5496154, -4.1446358],
+                {}
+            ).addTo(map_976398fb5e186bb6cc82ef97c88a044f);
+        
+    
+            var icon_264307c3df7dd613ad1f47df3cf7627a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_380ab49e14965e6c24cd148624d56abb.setIcon(icon_264307c3df7dd613ad1f47df3cf7627a);
+        
+    
+        var popup_69f9ab410d7a66a34a315955b36a2d54 = L.popup({});
+
+        
+            
+                var html_3c2d761282b3cdc3515a74ba2aa2fde3 = $(`<div id="html_3c2d761282b3cdc3515a74ba2aa2fde3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tavistock</h1><div class="nugget-popup"><p>Surface water was reported on 05/09/2016; no properties were recorded as flooded internally in the investigation. [TAB] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 properties flooded internally [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_69f9ab410d7a66a34a315955b36a2d54.setContent(html_3c2d761282b3cdc3515a74ba2aa2fde3);
+            
+        
+
+        marker_380ab49e14965e6c24cd148624d56abb.bindPopup(popup_69f9ab410d7a66a34a315955b36a2d54)
+        ;
+
+        
+    
+</script>
+</html>
