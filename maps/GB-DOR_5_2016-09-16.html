@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_686a580328fdd2145e9c89c27bfd484d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_686a580328fdd2145e9c89c27bfd484d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_686a580328fdd2145e9c89c27bfd484d = L.map(
+                "map_686a580328fdd2145e9c89c27bfd484d",
+                {
+                    center: [50.809395897540085, -1.9878273153671822],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2fd6a801ed3e192b8f0b2e5267e19ce5 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_2fd6a801ed3e192b8f0b2e5267e19ce5.addTo(map_686a580328fdd2145e9c89c27bfd484d);
+    
+            var marker_1ae0a165764f194bcc16472231ebbe2e = L.marker(
+                [50.8003134, -1.987983],
+                {}
+            ).addTo(map_686a580328fdd2145e9c89c27bfd484d);
+        
+    
+            var icon_31c359715869d9ef315660a332ff5682 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1ae0a165764f194bcc16472231ebbe2e.setIcon(icon_31c359715869d9ef315660a332ff5682);
+        
+    
+        var popup_adff32cc3a9a88861338f4fd7deff9df = L.popup({});
+
+        
+            
+                var html_fad8b48fe2564d15a932c79c033cae36 = $(`<div id="html_fad8b48fe2564d15a932c79c033cae36" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Square, Wimborne Minster</h1><div class="nugget-popup"><p>The Square was within the area described as most affected by surface water flooding during the heavy storm on 16 September 2016; it forms the northern boundary of the affected area in the town centre. [IMG,PAG] (p6)</p></div><div class="nugget-popup"><p>Surface water flood risk extends across The Square in the 1 in 100 year event, and a commercial property in The Square was reported as experiencing internal and external flooding following the heavy storm. [PAG] (p8)</p></div><div class="nugget-popup"><p>Internal flooding reported to 1 commercial property; the reporter indicated a further 2 commercial properties were also affected. [TAB] (p9)</p></div><div class="nugget-popup"><p>Surface water run&ndash;off from the public highway collected at a slot highway drainage location immediately in front of a commercial property during the storm and could not drain quickly enough, resulting in surface water entering and causing internal flooding of the commercial property. [IMG,PAG] (p10)</p></div><div class="nugget-popup"><p>Surface water run&ndash;off from the road and pavement collected at the location of slot highway drainage on the eastern side of The Square during the storm in the early hours of 16 September 2016 and entered a commercial property, causing internal flooding. The slot drainage was later found to be blocked and required jetting. Records and proprietor account also identify previous similar occurrences (including an event thought to be in August 2011) where standing water and bow waves from vehicular movement contributed to water entering the same commercial property. [PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>Slot drain jetting was carried out throughout The Square following the storm; the Wimborne Square Enhancement Scheme had installed slot drains and paved footpaths intended to pass excess flows if slot drains surcharged or blocked. [IMG] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>three commercial properties (total across The Square, High Street and East Street) [PAG] (p8)</p></div><div class="nugget-popup quant"><p>1 commercial property internally flooded; 2 additional commercial properties affected [TAB] (p9)</p></div><div class="nugget-popup quant"><p>1 commercial property [IMG,PAG] (p10)</p></div></div></body></div>`)[0];
+                popup_adff32cc3a9a88861338f4fd7deff9df.setContent(html_fad8b48fe2564d15a932c79c033cae36);
+            
+        
+
+        marker_1ae0a165764f194bcc16472231ebbe2e.bindPopup(popup_adff32cc3a9a88861338f4fd7deff9df)
+        ;
+
+        
+    
+    
+            var marker_073f53f4d8c69ad90af46859866aa8de = L.marker(
+                [50.798271, -1.9854442],
+                {}
+            ).addTo(map_686a580328fdd2145e9c89c27bfd484d);
+        
+    
+            var icon_5cc71cd0e30a6f927b27ca680a5fd9fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_073f53f4d8c69ad90af46859866aa8de.setIcon(icon_5cc71cd0e30a6f927b27ca680a5fd9fd);
+        
+    
+        var popup_342801613154fea8f261596729c080d1 = L.popup({});
+
+        
+            
+                var html_9645d8d305e3ef66b0449ef1b5a160d4 = $(`<div id="html_9645d8d305e3ef66b0449ef1b5a160d4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Street, Wimborne Minster</h1><div class="nugget-popup"><p>East Street formed the southern extent of the town&ndash;centre area most affected by surface water flooding during the heavy rainfall event in the early hours of 16 September 2016. (p6)</p></div><div class="nugget-popup"><p>Surface water flooding affected East Street during heavy rainfall; maps show flow/ponding down High Street into East Street (1 in 30 year) and along East Street as part of the 1 in 100 year flood risk corridor. A commercial property in East Street was reported to have both internal and external flooding during the storm. [PAG] (p8)</p></div><div class="nugget-popup"><p>Internal flooding reported to 1 commercial property; the reporter indicated a further 3 commercial properties were also affected. [TAB] (p9)</p></div><div class="nugget-popup"><p>Reports were received of commercial properties on East Street suffering internal flooding during/after the heavy storm in the early hours of 16th September 2016. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>three commercial properties (total across The Square, High Street and East Street) [PAG] (p8)</p></div><div class="nugget-popup quant"><p>1 commercial property internally flooded; 3 additional commercial properties affected [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_342801613154fea8f261596729c080d1.setContent(html_9645d8d305e3ef66b0449ef1b5a160d4);
+            
+        
+
+        marker_073f53f4d8c69ad90af46859866aa8de.bindPopup(popup_342801613154fea8f261596729c080d1)
+        ;
+
+        
+    
+    
+            var marker_f367395bd7d8eefca92e2320e6587cff = L.marker(
+                [50.7991833, -1.9875736],
+                {}
+            ).addTo(map_686a580328fdd2145e9c89c27bfd484d);
+        
+    
+            var icon_d66e7a298f8063e4336ff2f9952fb66d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f367395bd7d8eefca92e2320e6587cff.setIcon(icon_d66e7a298f8063e4336ff2f9952fb66d);
+        
+    
+        var popup_7d997c6160ea275e65aab65a111a1e35 = L.popup({});
+
+        
+            
+                var html_b89efb7972c852667b03a6e68ec8b794 = $(`<div id="html_b89efb7972c852667b03a6e68ec8b794" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Wimborne Minster</h1><div class="nugget-popup"><p>High Street formed the western boundary of the area most affected by surface water flooding in the town centre during the heavy rainfall event on 16 September 2016; the surface water sewer runs southerly along High Street as described in the drainage section. [IMG,PAG] (p6)</p></div><div class="nugget-popup"><p>Surface water flowed along the southern end of High Street during heavy rainfall, with internal and external flooding reported at a commercial property in High Street during the storm. Surface water flood maps show risk at the southern end of High Street in a 1 in 30 year event and across High Street in a 1 in 100 year event. The slot drain along High Street (ending between Nos. 1 and 7) was designed with gullies and pavement profiles to convey excess flow if the slot drain surcharged or blocked. [PAG] (p8)</p></div><div class="nugget-popup"><p>Internal flooding reported to 1 commercial property; the reporter indicated a further 3 commercial properties were also affected. [TAB] (p9)</p></div><div class="nugget-popup"><p>Reports were received of commercial properties on High Street suffering internal flooding during/after the heavy storm in the early hours of 16th September 2016. (p10)</p></div><div class="nugget-popup"><p>A commercial property on the eastern side of High Street reported internal flooding during the storm in the early hours of 16 September 2016. Rainfall run&ndash;off collected immediately in front of the property and entered when it reached sufficient depth; additional surface water run&ndash;off from the car park to the rear collected along the northern wall and entered through the side of the premises. [PAG] (p11)</p></div><div class="nugget-popup"><p>Surface water run&ndash;off collected immediately in front of properties and contributed to internal flooding; the slot highway drainage system to the north of the affected property was found to be in need of jetting and was subsequently jetted throughout High Street. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>three commercial properties (total across The Square, High Street and East Street) [PAG] (p8)</p></div><div class="nugget-popup quant"><p>1 commercial property internally flooded; 3 additional commercial properties affected [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_7d997c6160ea275e65aab65a111a1e35.setContent(html_b89efb7972c852667b03a6e68ec8b794);
+            
+        
+
+        marker_f367395bd7d8eefca92e2320e6587cff.bindPopup(popup_7d997c6160ea275e65aab65a111a1e35)
+        ;
+
+        
+    
+    
+            var marker_68e2f103b13a44fa1dbbfc8b9ab7cb71 = L.marker(
+                [50.8001005, -1.9871878],
+                {}
+            ).addTo(map_686a580328fdd2145e9c89c27bfd484d);
+        
+    
+            var icon_fe7e03cf737e39d627279b647046dd1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_68e2f103b13a44fa1dbbfc8b9ab7cb71.setIcon(icon_fe7e03cf737e39d627279b647046dd1b);
+        
+    
+        var popup_cd940f176e797bf9d4e22966b2806bb0 = L.popup({});
+
+        
+            
+                var html_018577ef9cc9010c6f11094280b8e8c5 = $(`<div id="html_018577ef9cc9010c6f11094280b8e8c5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Lane, Wimborne Minster</h1><div class="nugget-popup"><p>Mill Lane is part of the surface water drainage network with an overflow connection from the High Street surface water sewer and an outfall into the River Allen south of the bridge. During the 16/09/2016 storm the town&ndash;centre surface water system (which includes this overflow route) was implicated in the surface water flooding of the town centre. [IMG,PAG] (p6)</p></div></div></body></div>`)[0];
+                popup_cd940f176e797bf9d4e22966b2806bb0.setContent(html_018577ef9cc9010c6f11094280b8e8c5);
+            
+        
+
+        marker_68e2f103b13a44fa1dbbfc8b9ab7cb71.bindPopup(popup_cd940f176e797bf9d4e22966b2806bb0)
+        ;
+
+        
+    
+    
+            var marker_5f99dd14be458eafae3530de664fd60e = L.marker(
+                [50.79950708278058, -1.9865609075702741],
+                {}
+            ).addTo(map_686a580328fdd2145e9c89c27bfd484d);
+        
+    
+            var icon_b00f03dff95fdb6724b8f10db65beebd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5f99dd14be458eafae3530de664fd60e.setIcon(icon_b00f03dff95fdb6724b8f10db65beebd);
+        
+    
+        var popup_35ea9912e61c83e79f236b1869b8d215 = L.popup({});
+
+        
+            
+                var html_afc4a192e354d1b84c4159feada01cf2 = $(`<div id="html_afc4a192e354d1b84c4159feada01cf2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wimborne Minster</h1><div class="nugget-popup"><p>The town centre experienced a storm with heavy rainfall in the early hours of 16 September 2016; the town centre area suffered surface water flooding (urban/surface water inundation) affecting the area bounded by The Square (north), East Street (south), High Street (west) and the River Allen (east). (p6)</p></div><div class="nugget-popup"><p>Reports of internal and external flooding affecting commercial properties located in The Square, High Street and East Street. [TAB] (p9)</p></div><div class="nugget-popup"><p>A heavy storm in the early hours of 16 September 2016 caused surface water/urban flooding across Wimborne Town Centre. In the following days there were reports of commercial properties suffering internal flooding, specifically in The Square, High Street and East Street. [IMG,MUL] (p10)</p></div><div class="nugget-popup"><p>Highway flooding occurs regularly during intense rainfall, causing surface water flooding in the town centre and affecting highway drainage infrastructure; this flooding is reported likely to have occurred during the events/incidents referenced in the report. [PAG] (p14)</p></div><div class="nugget-popup"><p>The town centre experienced surface water flooding risk and/or reported surface water flooding incidents; this prompted actions to review and clear highway drainage, collect as&ndash;built records for the Wimborne Square Enhancement Scheme, review surface water sewers and historical flooding information, and consider property&ndash;level resilience measures. [TAB,PAG] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 commercial properties reported flooded [TAB] (p9)</p></div><div class="nugget-popup quant"><p>three locations [TAB,PAG] (p15)</p></div></div></body></div>`)[0];
+                popup_35ea9912e61c83e79f236b1869b8d215.setContent(html_afc4a192e354d1b84c4159feada01cf2);
+            
+        
+
+        marker_5f99dd14be458eafae3530de664fd60e.bindPopup(popup_35ea9912e61c83e79f236b1869b8d215)
+        ;
+
+        
+    
+</script>
+</html>
