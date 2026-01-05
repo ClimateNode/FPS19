@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_663a74a756453da4116e362babbe68fa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_663a74a756453da4116e362babbe68fa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_663a74a756453da4116e362babbe68fa = L.map(
+                "map_663a74a756453da4116e362babbe68fa",
+                {
+                    center: [52.15251509757589, -2.75825090982159],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4c1c6c7334c3c1fff12f14a25b26e3b9 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_4c1c6c7334c3c1fff12f14a25b26e3b9.addTo(map_663a74a756453da4116e362babbe68fa);
+    
+            var marker_a36520543062b118b8cf041d049894f8 = L.marker(
+                [52.1310877, -2.7605585],
+                {}
+            ).addTo(map_663a74a756453da4116e362babbe68fa);
+        
+    
+            var icon_e9f5ade84ddb62d96c6c5741a8c8a218 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a36520543062b118b8cf041d049894f8.setIcon(icon_e9f5ade84ddb62d96c6c5741a8c8a218);
+        
+    
+        var popup_b63b2c99cc6533457f8111e564800a26 = L.popup({});
+
+        
+            
+                var html_f10e1fedf5dda3c62c0ee7dbf600a9b8 = $(`<div id="html_f10e1fedf5dda3c62c0ee7dbf600a9b8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wellington Brook</h1><div class="nugget-popup"><p>Wellington Brook is the main watercourse through the settlement and is shown on mapping where Flood Zone 3 follows the river corridor; it is designated an Ordinary Watercourse under Herefordshire Council and is associated with the flood risk in the town. [IMG] (p1)</p></div><div class="nugget-popup"><p>Fluvial flooding from the Wellington Brook was identified as the source of flooding for many properties in the village; almost every flooded property was within the brook's flood zone. There were multiple accounts of the brook or stream overflowing and some reports of blocked bridge/culvert or blocked gullies contributing to runoff and ponding. (p2)</p></div><div class="nugget-popup"><p>Fluvial flood water spilled onto the brook's right&ndash;hand bank where the bank is low; adjacent low&ndash;lying road conveyed floodwater and highway gullies and piped outfalls were submerged. Following the flooding, channel maintenance work was carried out on the length of Wellington Brook downstream of the A49. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>seven accounts of an overflowing river or stream; four accounts of a blocked bridge or culvert; six reports of surface water runoff; six respondents noted a blocked gulley (p2)</p></div></div></body></div>`)[0];
+                popup_b63b2c99cc6533457f8111e564800a26.setContent(html_f10e1fedf5dda3c62c0ee7dbf600a9b8);
+            
+        
+
+        marker_a36520543062b118b8cf041d049894f8.bindPopup(popup_b63b2c99cc6533457f8111e564800a26)
+        ;
+
+        
+    
+    
+            var marker_680f003ecb222725c7495cf3347b9d96 = L.marker(
+                [52.2355219, -2.7449348],
+                {}
+            ).addTo(map_663a74a756453da4116e362babbe68fa);
+        
+    
+            var icon_5281734aee28f431b99482887ac5399a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_680f003ecb222725c7495cf3347b9d96.setIcon(icon_5281734aee28f431b99482887ac5399a);
+        
+    
+        var popup_b17d8c304824237a276c3783e8134819 = L.popup({});
+
+        
+            
+                var html_3da8bd047cc9969c186be0da1468753f = $(`<div id="html_3da8bd047cc9969c186be0da1468753f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Lugg</h1><div class="nugget-popup"><p>A backwater effect from the River Lugg contributed to the flooding in Wellington during the fluvial event. (p2)</p></div></div></body></div>`)[0];
+                popup_b17d8c304824237a276c3783e8134819.setContent(html_3da8bd047cc9969c186be0da1468753f);
+            
+        
+
+        marker_680f003ecb222725c7495cf3347b9d96.bindPopup(popup_b17d8c304824237a276c3783e8134819)
+        ;
+
+        
+    
+    
+            var marker_d3424c785b8c53fecc7987b59509c880 = L.marker(
+                [52.131565, -2.7503213],
+                {}
+            ).addTo(map_663a74a756453da4116e362babbe68fa);
+        
+    
+            var icon_54a67685c83fa87a1f9143fed3dde53c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d3424c785b8c53fecc7987b59509c880.setIcon(icon_54a67685c83fa87a1f9143fed3dde53c);
+        
+    
+        var popup_8f2546d26c7a375886903eeb82638b9f = L.popup({});
+
+        
+            
+                var html_bce1065e90af3c4f9a39b367526fd3ad = $(`<div id="html_bce1065e90af3c4f9a39b367526fd3ad" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Lane, Wellington</h1><div class="nugget-popup"><p>The investigation maps show Mill Lane within the Environment Agency flood zones that follow the main river through Wellington, so the street was exposed to river (main&ndash;river) flooding associated with the key event and therefore at risk of inundation during that event. [IMG] (p1)</p></div></div></body></div>`)[0];
+                popup_8f2546d26c7a375886903eeb82638b9f.setContent(html_bce1065e90af3c4f9a39b367526fd3ad);
+            
+        
+
+        marker_d3424c785b8c53fecc7987b59509c880.bindPopup(popup_8f2546d26c7a375886903eeb82638b9f)
+        ;
+
+        
+    
+    
+            var marker_241d75dfbbed5a5f5a91e584c3f3def8 = L.marker(
+                [52.128436787879465, -2.7480458491079505],
+                {}
+            ).addTo(map_663a74a756453da4116e362babbe68fa);
+        
+    
+            var icon_ee4e5bb8324b7226294bdc49dc253f13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_241d75dfbbed5a5f5a91e584c3f3def8.setIcon(icon_ee4e5bb8324b7226294bdc49dc253f13);
+        
+    
+        var popup_98d96b431abbbf3d7910364dd17c8110 = L.popup({});
+
+        
+            
+                var html_c4daadd5060bec33df0f4a268ec5ba27 = $(`<div id="html_c4daadd5060bec33df0f4a268ec5ba27" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wellington</h1><div class="nugget-popup"><p>Parts of the settlement fall within Environment Agency Flood Zone 3 along the main river corridor; areas adjacent to the river are identified at highest risk and some areas are shown as benefiting from flood defences. Wellington Primary School is shown outside the highest&ndash;risk zone. [IMG] (p1)</p></div><div class="nugget-popup"><p>Internal flooding of domestic properties across the village during the February 2020 fluvial event, caused primarily by Wellington Brook with additional surface water runoff and backwater from the River Lugg. Flood depths at ground floor ranged from under 6 inches up to 2 ft; some basements recorded depths greater than 6 ft. Flood durations ranged from less than 1 day up to 2 days. Two properties are recorded as flooding from surface water due to a bridge deck being higher than the road causing ponding when gullies blocked. (p2)</p></div><div class="nugget-popup"><p>During the February 2020 flood event internal flooding was reported across the village: road drainage and gullies were submerged so roads conveyed floodwater; a highway closure was implemented. Flooding depths reached up to 1 ft at ground&ndash;floor level and up to 6 ft in basements. Historic floods are recorded (one property in 1998; eight properties in 2007). (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>36 properties (questionnaire returns); 51 properties (Parish Council records); two properties (surface water due to bridge deck) (p2)</p></div><div class="nugget-popup quant"><p>36 properties; depths up to 1 ft at ground level; basements up to 6 ft; 1 property (1998); 8 properties (2007) (p3)</p></div></div></body></div>`)[0];
+                popup_98d96b431abbbf3d7910364dd17c8110.setContent(html_c4daadd5060bec33df0f4a268ec5ba27);
+            
+        
+
+        marker_241d75dfbbed5a5f5a91e584c3f3def8.bindPopup(popup_98d96b431abbbf3d7910364dd17c8110)
+        ;
+
+        
+    
+</script>
+</html>
