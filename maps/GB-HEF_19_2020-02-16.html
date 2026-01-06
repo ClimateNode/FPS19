@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4dc412e3079cb05dced3e45d7dd1830a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4dc412e3079cb05dced3e45d7dd1830a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4dc412e3079cb05dced3e45d7dd1830a = L.map(
+                "map_4dc412e3079cb05dced3e45d7dd1830a",
+                {
+                    center: [52.0786626, -2.9392622],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0710f2394f05c41860b528e0b9411eb5 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_0710f2394f05c41860b528e0b9411eb5.addTo(map_4dc412e3079cb05dced3e45d7dd1830a);
+    
+            var marker_5e6e3e361637b7885e37b5b0cfa063f8 = L.marker(
+                [52.0786626, -2.9392622],
+                {}
+            ).addTo(map_4dc412e3079cb05dced3e45d7dd1830a);
+        
+    
+            var icon_a03bf3e26d44abe0082a3cf7e5ed9430 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5e6e3e361637b7885e37b5b0cfa063f8.setIcon(icon_a03bf3e26d44abe0082a3cf7e5ed9430);
+        
+    
+        var popup_32ea8e26e34beebabf4df865817cf421 = L.popup({});
+
+        
+            
+                var html_efeea3c25660ff148d89669ef41d6977 = $(`<div id="html_efeea3c25660ff148d89669ef41d6977" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Moccas</h1><div class="nugget-popup"><p>Overland (surface) flows were identified as the most likely flood mechanism affecting Moccas. A small watercourse located close to one property may have contributed to flooding at that property. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one property (p3)</p></div></div></body></div>`)[0];
+                popup_32ea8e26e34beebabf4df865817cf421.setContent(html_efeea3c25660ff148d89669ef41d6977);
+            
+        
+
+        marker_5e6e3e361637b7885e37b5b0cfa063f8.bindPopup(popup_32ea8e26e34beebabf4df865817cf421)
+        ;
+
+        
+    
+</script>
+</html>
