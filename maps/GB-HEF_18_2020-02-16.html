@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dffe23598ce4c329427b045477d838e8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dffe23598ce4c329427b045477d838e8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dffe23598ce4c329427b045477d838e8 = L.map(
+                "map_dffe23598ce4c329427b045477d838e8",
+                {
+                    center: [52.1204596, -3.0069283],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d6b176f58d1cec9f47cf8da26f59aa78 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_d6b176f58d1cec9f47cf8da26f59aa78.addTo(map_dffe23598ce4c329427b045477d838e8);
+    
+            var marker_5cc4cc9cb70d6e0449daaa80cc908ba3 = L.marker(
+                [52.1204596, -3.0069283],
+                {}
+            ).addTo(map_dffe23598ce4c329427b045477d838e8);
+        
+    
+            var icon_f157034c78f605774ba0c8f641a46628 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5cc4cc9cb70d6e0449daaa80cc908ba3.setIcon(icon_f157034c78f605774ba0c8f641a46628);
+        
+    
+        var popup_dcacf55f511aa16df7b9fbda4a814108 = L.popup({});
+
+        
+            
+                var html_9bf3ec16676c9919c1a256eff3cc8059 = $(`<div id="html_9bf3ec16676c9919c1a256eff3cc8059" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Willersley</h1><div class="nugget-popup"><p>The Environment Agency Flood Map for Planning (Rivers and Sea) shows much of the area around Willersley, particularly to the north and south, is in Flood Zone 3 (high flood risk); some areas are shown as benefiting from flood defences. [IMG] (p1)</p></div><div class="nugget-popup"><p>Five residential properties flooded internally; flood depths recorded internally between 6 inches and 3 ft, and one property experienced 4 ft externally. Respondents described water from a watercourse (River Wye/tributaries) and contributory issues including an overflowing ditch, a blocked gully and a blocked bridge/culvert. A road closure was implemented on the A438 during the flooding. (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties; internal depths 6 inches to 3 ft; one external depth 4 ft (p2)</p></div></div></body></div>`)[0];
+                popup_dcacf55f511aa16df7b9fbda4a814108.setContent(html_9bf3ec16676c9919c1a256eff3cc8059);
+            
+        
+
+        marker_5cc4cc9cb70d6e0449daaa80cc908ba3.bindPopup(popup_dcacf55f511aa16df7b9fbda4a814108)
+        ;
+
+        
+    
+</script>
+</html>
