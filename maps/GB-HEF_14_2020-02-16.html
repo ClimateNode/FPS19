@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_227e9041dc46078a4e5e67585d1e530f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_227e9041dc46078a4e5e67585d1e530f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_227e9041dc46078a4e5e67585d1e530f = L.map(
+                "map_227e9041dc46078a4e5e67585d1e530f",
+                {
+                    center: [52.17144545, -2.73506555],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_57f839804679d9f7402a9f03b11d8f0b = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_57f839804679d9f7402a9f03b11d8f0b.addTo(map_227e9041dc46078a4e5e67585d1e530f);
+    
+            var marker_d4572c9b0088ef411e5309b0e163a51f = L.marker(
+                [52.2355219, -2.7449348],
+                {}
+            ).addTo(map_227e9041dc46078a4e5e67585d1e530f);
+        
+    
+            var icon_19c5523a27948a1641ff581efc34cca7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d4572c9b0088ef411e5309b0e163a51f.setIcon(icon_19c5523a27948a1641ff581efc34cca7);
+        
+    
+        var popup_0c8dd3781de4a59195f360468d5e974e = L.popup({});
+
+        
+            
+                var html_f8a00d5f164bdad8589e550f813e8a80 = $(`<div id="html_f8a00d5f164bdad8589e550f813e8a80" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Lugg</h1><div class="nugget-popup"><p>Backwater effects from the River Lugg likely increased fluvial flood levels in the vicinity of Moreton on Lugg, contributing to internal flooding of nearby properties; at least one property on the east side experienced internal foul (sewage) flooding when drains backed up. Surface&ndash;water from a small tributary close to the east&ndash;side property also likely contributed and was mapped on the Surface Water Flood Map. [TAB] (p2)</p></div><div class="nugget-popup"><p>The River Lugg is identified as the source of fluvial flood risk affecting the area. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Five properties reported internal flooding in Moreton on Lugg during the February 2020 event; the report table records 6 internally flooded properties related to the key flood event. [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_0c8dd3781de4a59195f360468d5e974e.setContent(html_f8a00d5f164bdad8589e550f813e8a80);
+            
+        
+
+        marker_d4572c9b0088ef411e5309b0e163a51f.bindPopup(popup_0c8dd3781de4a59195f360468d5e974e)
+        ;
+
+        
+    
+    
+            var marker_260ab65416faf351f121a64c4d81a169 = L.marker(
+                [52.107369, -2.7251963],
+                {}
+            ).addTo(map_227e9041dc46078a4e5e67585d1e530f);
+        
+    
+            var icon_213495eec36200e37d66dd0bc6a1e23c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_260ab65416faf351f121a64c4d81a169.setIcon(icon_213495eec36200e37d66dd0bc6a1e23c);
+        
+    
+        var popup_94da7acb0b91220a9561ea7e2613ecc4 = L.popup({});
+
+        
+            
+                var html_0d2bbf6ff1e37d6eee1f55818f05a56b = $(`<div id="html_0d2bbf6ff1e37d6eee1f55818f05a56b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Moreton On Lugg</h1><div class="nugget-popup"><p>Internal flooding of domestic properties occurred during the event: internal flood depths recorded between 6 inches and 3 ft. One home on the east side of the village was surrounded by floodwater and experienced internal foul (sewage) flooding when drains backed up into the property and garden. Flood risk from a small local watercourse and surface water may also have contributed. (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Five properties reported internal flooding in Moreton on Lugg during February 2020; report table records 6 internally flooded properties; internal depths recorded between 6 inches and 3 ft; one property had a previous flood in July 2007. (p2)</p></div></div></body></div>`)[0];
+                popup_94da7acb0b91220a9561ea7e2613ecc4.setContent(html_0d2bbf6ff1e37d6eee1f55818f05a56b);
+            
+        
+
+        marker_260ab65416faf351f121a64c4d81a169.bindPopup(popup_94da7acb0b91220a9561ea7e2613ecc4)
+        ;
+
+        
+    
+</script>
+</html>
