@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8a79824310d81dad981cb23dbbe87b00 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8a79824310d81dad981cb23dbbe87b00" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8a79824310d81dad981cb23dbbe87b00 = L.map(
+                "map_8a79824310d81dad981cb23dbbe87b00",
+                {
+                    center: [50.717928417442046, -1.1863779663083656],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8734742f0a87e6e974e809a9929e02c1 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_8734742f0a87e6e974e809a9929e02c1.addTo(map_8a79824310d81dad981cb23dbbe87b00);
+    
+            var marker_97900ae99f0fd86b3d1f96bdad1b1125 = L.marker(
+                [50.7218922, -1.1589552],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_db4f4e5ed1e2056c6edf5fd1f950446a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_97900ae99f0fd86b3d1f96bdad1b1125.setIcon(icon_db4f4e5ed1e2056c6edf5fd1f950446a);
+        
+    
+        var popup_19089637dae6d6da3d7499d60d33f287 = L.popup({});
+
+        
+            
+                var html_04836326d8c0708d8da78824227afc94 = $(`<div id="html_04836326d8c0708d8da78824227afc94" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Monktonmead Brook</h1><div class="nugget-popup"><p>Identified as a source of flooding contributing to the October 25, 2023 event in Ryde that led to internal property flooding. (p7)</p></div><div class="nugget-popup"><p>The Monktonmead Brook is the main river through the study area toward The Solent and is a focus of investigation (including the operation of the Monktonmead Flood Alleviation Scheme) in relation to the causes of the 25 October 2023 flooding in Ryde. (p9)</p></div><div class="nugget-popup"><p>Monktonmead Brook was a primary watercourse considered in the Section 19 addendum for the Ryde flooding of 25 October 2023 (Storm Babet); the report and follow&ndash;up investigation (including review of the Monktonmead Flood Alleviation Scheme) identify the brook as a key source/pathway for flooding that affected Monktonmead/Simeon Street and wider parts of Ryde. [PAG,IMG] (p10)</p></div><div class="nugget-popup"><p>Monktonmead Brook rose to threshold levels, impeding surface water drainage and contributing to flooding: flows pushed out of manholes and gullies towards lower&ndash;lying areas, triggered alarms and led to EA issuing Flood Alert/Warning and directing installation of drop boards at Simeon Recreation Ground. [TAB,MUL] (p18)</p></div><div class="nugget-popup"><p>Rivers in the catchment were rising rapidly and substantial volumes of water flowed down the catchment during the event, contributing to flooding in the area. (p19)</p></div><div class="nugget-popup"><p>Monktonmead Brook is identified on the map as the main watercourse where flood risk is concentrated; flowpaths and Flood Zone shading run along the brook and are associated with internal property flooding nearby. The brook acted as a source/pathway for flooding into adjacent low&ndash;lying areas in the Simeon Street area. [IMG] (p20)</p></div><div class="nugget-popup"><p>Fluvial floodwater exceeded the channel capacity (left bank), contributing to flooding that filled the Monktonmead Flood Alleviation Scheme at Simeon Recreation Ground. (p21)</p></div><div class="nugget-popup"><p>Reported cases of flooding were mostly in the vicinity of Monktonmead Brook; the brook's vicinity (and likely overflow) was a primary location for flooding during the event, contributing to local property flooding around the brook. (p25)</p></div><div class="nugget-popup"><p>On 25 October 2023 fluvial floodwater overtopped Monktonmead Brook and flowed into the Simeon Recreation Ground, contributing to flooding in Ryde. [IMG] (p31)</p></div><div class="nugget-popup"><p>As the main watercourse in the catchment, the brook would have collected runoff from tributaries during the intense 18&ndash;hour rainfall event and conveyed raised flows northward toward downstream areas, increasing flood risk to downstream urban locations. [IMG] (p34)</p></div><div class="nugget-popup"><p>River level reached 1.9mAOD, which impeded surface water drainage into Monktonmead Brook. This contributed to the drainage network overloading and flows emerging from manholes and gullies. (p37)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>107 properties (p7)</p></div></div></body></div>`)[0];
+                popup_19089637dae6d6da3d7499d60d33f287.setContent(html_04836326d8c0708d8da78824227afc94);
+            
+        
+
+        marker_97900ae99f0fd86b3d1f96bdad1b1125.bindPopup(popup_19089637dae6d6da3d7499d60d33f287)
+        ;
+
+        
+    
+    
+            var marker_7ebca03a74ee31988191bc21e8358f16 = L.marker(
+                [50.6855525, -1.1870178],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_9c38226c543f96f513a506027889a875 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7ebca03a74ee31988191bc21e8358f16.setIcon(icon_9c38226c543f96f513a506027889a875);
+        
+    
+        var popup_acd18ae71833b9f03e613fd6b5348b6e = L.popup({});
+
+        
+            
+                var html_b20734e6da08656b957a6394123316a4 = $(`<div id="html_b20734e6da08656b957a6394123316a4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ashey Down</h1><div class="nugget-popup"><p>Location at the brook's source that was within the catchment which received intense rainfall during the 18&ndash;hour event, contributing runoff into Monktonmead Brook. [IMG] (p34)</p></div></div></body></div>`)[0];
+                popup_acd18ae71833b9f03e613fd6b5348b6e.setContent(html_b20734e6da08656b957a6394123316a4);
+            
+        
+
+        marker_7ebca03a74ee31988191bc21e8358f16.bindPopup(popup_acd18ae71833b9f03e613fd6b5348b6e)
+        ;
+
+        
+    
+    
+            var marker_60aec6facf3f04395eddade9f0366542 = L.marker(
+                [50.7298757, -1.1525686],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_6b416266421f28d1f54cb98fb9cedf74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_60aec6facf3f04395eddade9f0366542.setIcon(icon_6b416266421f28d1f54cb98fb9cedf74);
+        
+    
+        var popup_194cee59d8b8dd1f46fcf244f3bdcbcd = L.popup({});
+
+        
+            
+                var html_99a3c92efce8fcb720375131afaa74ad = $(`<div id="html_99a3c92efce8fcb720375131afaa74ad" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Simeon Street, Ryde</h1><div class="nugget-popup"><p>Simeon Street area was disproportionately impacted during the 25 October 2023 flooding in Ryde (Storm Babet) and is the focus of further detail in this addendum. (p9)</p></div><div class="nugget-popup"><p>Simeon Street was disproportionately impacted by flooding during the 25 October 2023 Storm Babet event; the addendum focuses on this area to better understand causes and impacts. [PAG,IMG] (p10)</p></div><div class="nugget-popup"><p>Flowpaths directed water from north and central areas toward low&ndash;lying parts of the Simeon Street area, causing internal property flooding clustered in the central and northern parts of the mapped area; demountable and permanent flood walls provided some local protection. [IMG] (p20)</p></div><div class="nugget-popup"><p>Floodwater flowed from the recreation ground along Simeon Street, contributing to property flooding of roads neighbouring Simeon Recreation Ground. (p21)</p></div><div class="nugget-popup"><p>Majority of the flooding took place in the vicinity of Simeon Street; the street and surrounding properties were inundated, causing inundation of residential properties and disruption to access routes. (p22)</p></div><div class="nugget-popup"><p>Surface water flood risk in the vicinity of Simeon Street was identified in connection with the 25 October 2023 event and recommended for further investigation to understand effects on nearby properties and drainage. (p26)</p></div></div></body></div>`)[0];
+                popup_194cee59d8b8dd1f46fcf244f3bdcbcd.setContent(html_99a3c92efce8fcb720375131afaa74ad);
+            
+        
+
+        marker_60aec6facf3f04395eddade9f0366542.bindPopup(popup_194cee59d8b8dd1f46fcf244f3bdcbcd)
+        ;
+
+        
+    
+    
+            var marker_e4438fc4efc6cdae43c6ed80b589292e = L.marker(
+                [50.7273303, -1.1541469],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_08ba691c2d37790def9c69035f1f5e9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e4438fc4efc6cdae43c6ed80b589292e.setIcon(icon_08ba691c2d37790def9c69035f1f5e9a);
+        
+    
+        var popup_2ec17c6684407141da669e324fd368d1 = L.popup({});
+
+        
+            
+                var html_0342dc57c07739f78d74823b4153699d = $(`<div id="html_0342dc57c07739f78d74823b4153699d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rink Road, Ryde</h1><div class="nugget-popup"><p>Flows emerging from manholes and gullies travelled along Rink Road as surface water drainage became impeded. [TAB] (p18)</p></div><div class="nugget-popup"><p>Isolated internal flooding incidents affected properties on Rink Road (internal property flooding reported). (p21)</p></div><div class="nugget-popup"><p>Surface water flows from the overloaded drainage network travelled along the surface of Rink Road towards the lower&ndash;lying Simeon Recreation Ground. (p37)</p></div></div></body></div>`)[0];
+                popup_2ec17c6684407141da669e324fd368d1.setContent(html_0342dc57c07739f78d74823b4153699d);
+            
+        
+
+        marker_e4438fc4efc6cdae43c6ed80b589292e.bindPopup(popup_2ec17c6684407141da669e324fd368d1)
+        ;
+
+        
+    
+    
+            var marker_8af0d55b5f6b8df862755e33378b0da9 = L.marker(
+                [50.7289255, -1.1503493],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_1f3862cf22a74c4e56ebb3f0d6711bc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8af0d55b5f6b8df862755e33378b0da9.setIcon(icon_1f3862cf22a74c4e56ebb3f0d6711bc4);
+        
+    
+        var popup_6028fc6c486fb53b77bbca1865d50c91 = L.popup({});
+
+        
+            
+                var html_f12389f3fb322997cee8ff5efdf53176 = $(`<div id="html_f12389f3fb322997cee8ff5efdf53176" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Hill Road, Ryde</h1><div class="nugget-popup"><p>The lower section of West Hill Road experienced flows from manholes and gullies travelling towards the lower&ndash;lying Simeon Recreation Ground as drainage became impeded. [TAB] (p18)</p></div><div class="nugget-popup"><p>Surface water flows from West Hill Road were flowing towards the recreation ground during the event and the road is identified among those neighbouring the recreation ground where property flooding occurred. (p21)</p></div><div class="nugget-popup"><p>Surface water flows on the lower part of West Hill Road travelled along the surface towards the lower&ndash;lying Simeon Recreation Ground as the drainage network became overloaded. (p37)</p></div></div></body></div>`)[0];
+                popup_6028fc6c486fb53b77bbca1865d50c91.setContent(html_f12389f3fb322997cee8ff5efdf53176);
+            
+        
+
+        marker_8af0d55b5f6b8df862755e33378b0da9.bindPopup(popup_6028fc6c486fb53b77bbca1865d50c91)
+        ;
+
+        
+    
+    
+            var marker_5fe60f4a6b444848ebdbb3eb5279554c = L.marker(
+                [50.7049171, -1.2983072],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_4ee12d6adee63a7ba8acd034d9643654 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5fe60f4a6b444848ebdbb3eb5279554c.setIcon(icon_4ee12d6adee63a7ba8acd034d9643654);
+        
+    
+        var popup_41705eae354e895f1a5b523ab937502a = L.popup({});
+
+        
+            
+                var html_a6c261fc2821c69cd6d4d3b8c5cd0989 = $(`<div id="html_a6c261fc2821c69cd6d4d3b8c5cd0989" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hunnyhill, Newport</h1><div class="nugget-popup"><p>EA contractors were instructed to attend Hunnyhill to clear the screen due to reports of flooding in Newport (operational response to flooding reports). [TAB,MUL] (p18)</p></div><div class="nugget-popup"><p>A screen at Hunnyhill was obstructed; the EA contractor was instructed to clear the screen to reduce flood risk to residents, indicating the obstruction was contributing to local flooding risk. (p38)</p></div></div></body></div>`)[0];
+                popup_41705eae354e895f1a5b523ab937502a.setContent(html_a6c261fc2821c69cd6d4d3b8c5cd0989);
+            
+        
+
+        marker_5fe60f4a6b444848ebdbb3eb5279554c.bindPopup(popup_41705eae354e895f1a5b523ab937502a)
+        ;
+
+        
+    
+    
+            var marker_64a612b599f234bdb986d6c590d090b8 = L.marker(
+                [50.7264144, -1.1486576],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_3c9544129f11ce7ab474df841924e417 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_64a612b599f234bdb986d6c590d090b8.setIcon(icon_3c9544129f11ce7ab474df841924e417);
+        
+    
+        var popup_73bf3a9c38731d1e2ceb3564a894384d = L.popup({});
+
+        
+            
+                var html_0e088b1cd5d28af10046e580d9821ac1 = $(`<div id="html_0e088b1cd5d28af10046e580d9821ac1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Hill Road, Ryde</h1><div class="nugget-popup"><p>Isolated internal flooding incidents affected properties on East Hill Road (internal property flooding reported). (p21)</p></div></div></body></div>`)[0];
+                popup_73bf3a9c38731d1e2ceb3564a894384d.setContent(html_0e088b1cd5d28af10046e580d9821ac1);
+            
+        
+
+        marker_64a612b599f234bdb986d6c590d090b8.bindPopup(popup_73bf3a9c38731d1e2ceb3564a894384d)
+        ;
+
+        
+    
+    
+            var marker_ed92575f55fdd0fbfdf76eeb5a1c37ec = L.marker(
+                [50.7180476, -1.1702382],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_2bf7452c835c4860d86549642e6f3ec2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ed92575f55fdd0fbfdf76eeb5a1c37ec.setIcon(icon_2bf7452c835c4860d86549642e6f3ec2);
+        
+    
+        var popup_e5657820caa8093cc933d4610dbbc116 = L.popup({});
+
+        
+            
+                var html_add8354aa09049c2b75c3c350b67daf8 = $(`<div id="html_add8354aa09049c2b75c3c350b67daf8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Southfield Gardens, Binstead</h1><div class="nugget-popup"><p>Isolated internal flooding incidents occurred as far south as Southfield Gardens (internal property flooding reported). (p21)</p></div><div class="nugget-popup"><p>Flooding noted that correlates with the 2021 event (predominantly surface water flooding and localised drainage issues). [MUL] (p22)</p></div></div></body></div>`)[0];
+                popup_e5657820caa8093cc933d4610dbbc116.setContent(html_add8354aa09049c2b75c3c350b67daf8);
+            
+        
+
+        marker_ed92575f55fdd0fbfdf76eeb5a1c37ec.bindPopup(popup_e5657820caa8093cc933d4610dbbc116)
+        ;
+
+        
+    
+    
+            var marker_772f0116d04ac8f228075d083303c724 = L.marker(
+                [50.727171, -1.1728976],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_4cf47984e5164cffad15e0768b170841 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_772f0116d04ac8f228075d083303c724.setIcon(icon_4cf47984e5164cffad15e0768b170841);
+        
+    
+        var popup_71dad15b6182f66020fb649f5d58c857 = L.popup({});
+
+        
+            
+                var html_f0ace5811f9fb35e7051c3ad5fbd08bd = $(`<div id="html_f0ace5811f9fb35e7051c3ad5fbd08bd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Queens Road, Binstead</h1><div class="nugget-popup"><p>Named among locations where properties flooded as part of the event. (p22)</p></div></div></body></div>`)[0];
+                popup_71dad15b6182f66020fb649f5d58c857.setContent(html_f0ace5811f9fb35e7051c3ad5fbd08bd);
+            
+        
+
+        marker_772f0116d04ac8f228075d083303c724.bindPopup(popup_71dad15b6182f66020fb649f5d58c857)
+        ;
+
+        
+    
+    
+            var marker_c60e8d8e2e2669a4a627803f4b4d8ce7 = L.marker(
+                [50.7267224, -1.1691224],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_292dcf4ff27e64192059d4f6f5bc50f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c60e8d8e2e2669a4a627803f4b4d8ce7.setIcon(icon_292dcf4ff27e64192059d4f6f5bc50f6);
+        
+    
+        var popup_a7ad7605e7af6a81e1a9d9d3a1bdcc02 = L.popup({});
+
+        
+            
+                var html_82dbf11d4e5288f906e0dad993fa2c94 = $(`<div id="html_82dbf11d4e5288f906e0dad993fa2c94" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Argyll Street, Binstead</h1><div class="nugget-popup"><p>Experienced flooding that correlates with the 2021 flood event, which was predominantly surface water flooding with localised drainage issues and some fluvial flooding. [MUL] (p22)</p></div></div></body></div>`)[0];
+                popup_a7ad7605e7af6a81e1a9d9d3a1bdcc02.setContent(html_82dbf11d4e5288f906e0dad993fa2c94);
+            
+        
+
+        marker_c60e8d8e2e2669a4a627803f4b4d8ce7.bindPopup(popup_a7ad7605e7af6a81e1a9d9d3a1bdcc02)
+        ;
+
+        
+    
+    
+            var marker_eb014c1108a7eb6ca025bcac12e28e23 = L.marker(
+                [50.7214588, -1.1697052],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_11e8ba33ecfcb2e235bf44dfe2ada729 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eb014c1108a7eb6ca025bcac12e28e23.setIcon(icon_11e8ba33ecfcb2e235bf44dfe2ada729);
+        
+    
+        var popup_eb257f22855d620cf2b5ec9c2f23223b = L.popup({});
+
+        
+            
+                var html_b797cb985628912bd80a0a557745922f = $(`<div id="html_b797cb985628912bd80a0a557745922f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Partlands Avenue, Binstead</h1><div class="nugget-popup"><p>Listed among locations where properties flooded as part of the event. (p22)</p></div></div></body></div>`)[0];
+                popup_eb257f22855d620cf2b5ec9c2f23223b.setContent(html_b797cb985628912bd80a0a557745922f);
+            
+        
+
+        marker_eb014c1108a7eb6ca025bcac12e28e23.bindPopup(popup_eb257f22855d620cf2b5ec9c2f23223b)
+        ;
+
+        
+    
+    
+            var marker_63b1ae6ef21df56b15720aa74c66a1e1 = L.marker(
+                [50.7219861, -1.1531732],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_3b28058c0465e18c7ceeb98f00e611be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_63b1ae6ef21df56b15720aa74c66a1e1.setIcon(icon_3b28058c0465e18c7ceeb98f00e611be);
+        
+    
+        var popup_1f838d8d18a0e736c88545f4ea4c14f1 = L.popup({});
+
+        
+            
+                var html_22c10cbc5e2515e97e03327ff94693bc = $(`<div id="html_22c10cbc5e2515e97e03327ff94693bc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lower Highland Road, Ryde</h1><div class="nugget-popup"><p>Properties on Lower Highland Road were flooded as part of the wider Ryde flood event. This location is listed among areas that flooded in the event and correlates with areas that experienced flooding in 2021. (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>At least 14 properties across Ryde (excluding Binstead) flooded (p22)</p></div></div></body></div>`)[0];
+                popup_1f838d8d18a0e736c88545f4ea4c14f1.setContent(html_22c10cbc5e2515e97e03327ff94693bc);
+            
+        
+
+        marker_63b1ae6ef21df56b15720aa74c66a1e1.bindPopup(popup_1f838d8d18a0e736c88545f4ea4c14f1)
+        ;
+
+        
+    
+    
+            var marker_0ce6edc75deff27c37145515a6768a30 = L.marker(
+                [50.7253778, -1.159],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_6cb9c981a19f0806f17290ad8438d4ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0ce6edc75deff27c37145515a6768a30.setIcon(icon_6cb9c981a19f0806f17290ad8438d4ba);
+        
+    
+        var popup_de3a825c5765f005e22df629bd9446e1 = L.popup({});
+
+        
+            
+                var html_19507739f8d31d1bab84aa4d379af83e = $(`<div id="html_19507739f8d31d1bab84aa4d379af83e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St John's Road, Ryde</h1><div class="nugget-popup"><p>Properties on St John's Road were flooded as part of the wider Ryde flood event. The street is listed among locations that flooded and is noted as correlating with areas affected in the 2021 event, when flooding was predominantly surface&ndash;water&ndash;driven with local drainage issues and some fluvial influence. (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>At least 14 properties across Ryde (excluding Binstead) flooded (p22)</p></div></div></body></div>`)[0];
+                popup_de3a825c5765f005e22df629bd9446e1.setContent(html_19507739f8d31d1bab84aa4d379af83e);
+            
+        
+
+        marker_0ce6edc75deff27c37145515a6768a30.bindPopup(popup_de3a825c5765f005e22df629bd9446e1)
+        ;
+
+        
+    
+    
+            var marker_fb11dcb3efaafe7ade4b1f2132a3b730 = L.marker(
+                [50.67108245, -1.3328042802764226],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_fd9157727221a56a1131f801aeffacac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fb11dcb3efaafe7ade4b1f2132a3b730.setIcon(icon_fd9157727221a56a1131f801aeffacac);
+        
+    
+        var popup_4d5196b291a11b3cb2044f241955c990 = L.popup({});
+
+        
+            
+                var html_fbb67dcfcf3af45274b85c79af594a71 = $(`<div id="html_fbb67dcfcf3af45274b85c79af594a71" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Isle of Wight</h1><div class="nugget-popup"><p>Experienced heavy rain and associated flooding during Storm Babet (24&ndash;25 October 2023), causing localised surface water flooding and prompting emergency responses across the island. (p17)</p></div><div class="nugget-popup"><p>The documented flood event affected locations on the Isle of Wight (notably Ryde's Simeon Street area) where flowpaths, flood zones and internal property flooding were mapped; assets such as demountable and Marymead flood walls were present and provided some protection. [IMG] (p20)</p></div><div class="nugget-popup"><p>Parts of the Isle of Wight (notably Ryde) experienced combined fluvial and surface water flooding during the 25 October 2023 event; Ryde recorded over 1001 flooded properties. (p31)</p></div><div class="nugget-popup"><p>Much of the Isle of Wight received very high rainfall during the 18&ndash;hour flood event (up to ~91 mm), producing widespread surface&ndash;water runoff and heightened flood risk across the island. [IMG] (p34)</p></div><div class="nugget-popup"><p>Heavy rainfall across Hampshire and the Isle of Wight on 24&ndash;25 Oct 2023 contributed to surface water flooding and overloaded drainage in parts of the island (for example the Simeon Recreation Ground area). [TAB] (p37)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 1001 properties (p31)</p></div></div></body></div>`)[0];
+                popup_4d5196b291a11b3cb2044f241955c990.setContent(html_fbb67dcfcf3af45274b85c79af594a71);
+            
+        
+
+        marker_fb11dcb3efaafe7ade4b1f2132a3b730.bindPopup(popup_4d5196b291a11b3cb2044f241955c990)
+        ;
+
+        
+    
+    
+            var marker_8eb643289dcf94980b12f3187f4928bf = L.marker(
+                [50.7299865, -1.1603699],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_f20bd8d79e4151e3e59c7cf14918db80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8eb643289dcf94980b12f3187f4928bf.setIcon(icon_f20bd8d79e4151e3e59c7cf14918db80);
+        
+    
+        var popup_0891631ece4865564387715e4956fe9e = L.popup({});
+
+        
+            
+                var html_af26e3babd6479409e2b5ba321136e18 = $(`<div id="html_af26e3babd6479409e2b5ba321136e18" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ryde</h1><div class="nugget-popup"><p>Internal flooding of properties across the town; resident displacement, loss of possessions, negative mental and physical health impacts, road closures and damage to the railway line. (p7)</p></div><div class="nugget-popup"><p>Ryde experienced flooding events referenced in the report: it was affected by flooding in 2021 and by the event of 25 October 2023. Properties in Ryde were affected by the October 2023 flooding and may be eligible for Property Flood Resilience grants; the EA published an initial review (10 Nov 2023) and is undertaking a more detailed review into causes of the 25 Oct 2023 flood. [MUL] (p8)</p></div><div class="nugget-popup"><p>Widespread flooding across the town during Storm Babet; the Simeon Street area was disproportionately impacted during the 25 October 2023 event. (p9)</p></div><div class="nugget-popup"><p>Widespread flooding in the town during Storm Babet (25 October 2023). The Monktonmead study area covers a large proportion of Ryde and Simeon Street within Ryde was disproportionately impacted during the 25 October 2023 event; Monktonmead Brook (a main river running through Ryde) is implicated as a contributing watercourse. [PAG,IMG] (p10)</p></div><div class="nugget-popup"><p>High tide on the event day peaked at approximately 08:45 with a slower drop in tide level compared to other days; the report states this high tide level likely had an impact on flooding in Ryde. (p16)</p></div><div class="nugget-popup"><p>Intense rainfall associated with Storm Babet caused surface&ndash;water/urban flooding in Ryde that affected residents, prompted the Isle of Wight Council to establish an Information Hub (initially at Ryde Castle Hotel, later at Aspire) to provide advice, guidance and support, and triggered recovery activity with Ryde Town Council. The heavy rain/flooding also contributed to emergency service demand (large number of calls to HIWFRS on 25 October). [TAB,MUL] (p17)</p></div><div class="nugget-popup"><p>Heavy rainfall and raised river levels impeded surface water drainage in Ryde: flows emerged from manholes and gullies, travel along local roads, storage boxes containing drop boards were completely submerged, and areas/roads (route between Newport and Ryde) became impassable. Flood Alerts and Warnings were issued for St Johns/Ryde. [TAB,MUL] (p18)</p></div><div class="nugget-popup"><p>Surface water flooding during heavy rainfall: transport disruption (the road between Newport and Ryde became impassible due to floodwater) and on&ndash;site equipment was submerged (locked storage boxes containing drop boards were completely submerged, preventing installation of additional flood boards). (p19)</p></div><div class="nugget-popup"><p>Flood risk concentrated along Monktonmead Brook and adjacent low&ndash;lying areas within the Simeon Street area of Ryde; flowpaths converge toward the brook and Simeon Recreation Ground, with clusters of internal property flooding shown in central/northern parts of the study area. [IMG] (p20)</p></div><div class="nugget-popup"><p>At least 159 residential and commercial properties in Ryde experienced flooding on 25th October; the majority were internal floodings around Simeon Recreation Ground and neighbouring roads. Local businesses were heavily impacted &mdash; many closed for days, basements were swamped and there were reports of knee&ndash;high water causing significant internal damage and socio&ndash;economic impacts (loss of revenue, concern about damage costs and staff hours). (p21)</p></div><div class="nugget-popup"><p>At least 14 properties across Ryde were flooded during the event. (p22)</p></div><div class="nugget-popup"><p>Widespread flooding across the town during Storm Babet (October 2023) caused residents to move out of homes (temporary or permanent), loss of carpets, floorboards, furniture and other belongings from ground floors and basements, financial pressures on households, and loss of business for a number of local businesses. (p25)</p></div><div class="nugget-popup"><p>Flooding occurred in Ryde on 25 October 2023; properties in the town flooded from different sources and the event prompted the EA to publish an initial review and to undertake further investigation. (p26)</p></div><div class="nugget-popup"><p>Surface water runoff caused flooding that affected properties in Ryde. (p27)</p></div><div class="nugget-popup"><p>On 25 October 2023 intense rainfall and overtopping of Monktonmead Brook caused combined fluvial and surface water flooding in Ryde; over 1001 properties were flooded. [IMG] (p31)</p></div><div class="nugget-popup"><p>Floodwater had submerged the locked storage boxes containing additional drop boards in Ryde, preventing their installation; access was delayed because the road between Newport and Ryde became impassible and the contractor could not reach Ryde until 08:30. (p38)</p></div><div class="nugget-popup"><p>Unprecedented heavy rainfall caused rapid river rises and surface water flooding across Ryde; significant disruption to transport links and property flooding risk. EA did not fully install flood boards at 05:45 on 25.10.2023 which was a material decision related to maintaining a flood route through wall access points and influenced local flood response. (p40)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>107 properties (p7)</p></div><div class="nugget-popup quant"><p>at least 159 properties; at least 80 internal; 8 external; 33 unknown (p21)</p></div><div class="nugget-popup quant"><p>14 properties (p22)</p></div><div class="nugget-popup quant"><p>Community Recovery Grant £500 (households); Business Recovery Grant up to £2,500 (eligible small&ndash;to&ndash;medium businesses); 100% council tax discount for a minimum of three months (flooded households); 100% Business Rate Relief for a minimum of three months (affected businesses) (p25)</p></div><div class="nugget-popup quant"><p>over 1001 properties [IMG] (p31)</p></div></div></body></div>`)[0];
+                popup_0891631ece4865564387715e4956fe9e.setContent(html_af26e3babd6479409e2b5ba321136e18);
+            
+        
+
+        marker_8eb643289dcf94980b12f3187f4928bf.bindPopup(popup_0891631ece4865564387715e4956fe9e)
+        ;
+
+        
+    
+    
+            var marker_5d0c8bebb06cd4afcb701632836fc470 = L.marker(
+                [50.72916248139893, -1.1531866817617005],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_d5828235ba2ca9ceb154e69e2edc51ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5d0c8bebb06cd4afcb701632836fc470.setIcon(icon_d5828235ba2ca9ceb154e69e2edc51ef);
+        
+    
+        var popup_c5f5a75d2b5fa7fc3ee1355d61170631 = L.popup({});
+
+        
+            
+                var html_6c0c137ca8bf7bfecd9f56a1a875a76b = $(`<div id="html_6c0c137ca8bf7bfecd9f56a1a875a76b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Monktonmead</h1><div class="nugget-popup"><p>Monktonmead study area was subject of the Section 19 investigation into flooding in Ryde; included in the addendum review of the causes of the 25 October 2023 (Storm Babet) flooding and previous 2022 flooding. [MUL] (p9)</p></div><div class="nugget-popup"><p>The Monktonmead study area experienced flooding during the documented events in 2022 and again during Storm Babet on 25 October 2023; the addendum uses flood zone and RoFSW data to understand impacts and inform recommendations. [PAG,IMG,MUL] (p10)</p></div></div></body></div>`)[0];
+                popup_c5f5a75d2b5fa7fc3ee1355d61170631.setContent(html_6c0c137ca8bf7bfecd9f56a1a875a76b);
+            
+        
+
+        marker_5d0c8bebb06cd4afcb701632836fc470.bindPopup(popup_c5f5a75d2b5fa7fc3ee1355d61170631)
+        ;
+
+        
+    
+    
+            var marker_52068e17626ce21088f8a6900799e9af = L.marker(
+                [50.6913105, -1.3163555978208235],
+                {}
+            ).addTo(map_8a79824310d81dad981cb23dbbe87b00);
+        
+    
+            var icon_8986fa1cd087ac3ea20ac483d1bc9c0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_52068e17626ce21088f8a6900799e9af.setIcon(icon_8986fa1cd087ac3ea20ac483d1bc9c0a);
+        
+    
+        var popup_4bd65bafb794db32aa8590c5a50f5089 = L.popup({});
+
+        
+            
+                var html_a071a1b9053a513827a47fccbcfe25b0 = $(`<div id="html_a071a1b9053a513827a47fccbcfe25b0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Newport</h1><div class="nugget-popup"><p>There were reports of flooding in Newport; floodwater made the road between Newport and Ryde impassible, delaying contractors returning to Ryde and affecting access. [TAB,MUL] (p18)</p></div><div class="nugget-popup"><p>Floodwater made the road between Newport and Ryde impassible, causing transport disruption and delaying contractors returning to Ryde. (p19)</p></div><div class="nugget-popup"><p>There were reports of flooding in Newport; the flood event contributed to roads (the route between Newport and Ryde) becoming impassible, preventing timely movement of the EA contractor. (p38)</p></div></div></body></div>`)[0];
+                popup_4bd65bafb794db32aa8590c5a50f5089.setContent(html_a071a1b9053a513827a47fccbcfe25b0);
+            
+        
+
+        marker_52068e17626ce21088f8a6900799e9af.bindPopup(popup_4bd65bafb794db32aa8590c5a50f5089)
+        ;
+
+        
+    
+</script>
+</html>
