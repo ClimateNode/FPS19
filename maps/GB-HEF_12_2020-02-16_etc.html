@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fd836cb81cf31d9b247bd73267cf3f71 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fd836cb81cf31d9b247bd73267cf3f71" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fd836cb81cf31d9b247bd73267cf3f71 = L.map(
+                "map_fd836cb81cf31d9b247bd73267cf3f71",
+                {
+                    center: [52.1335259, -2.7739763],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_90bc83e7256a73839a9400cd2d77a87b = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_90bc83e7256a73839a9400cd2d77a87b.addTo(map_fd836cb81cf31d9b247bd73267cf3f71);
+    
+            var marker_ae49ef366d873ccc14b27dbdb7c62cd5 = L.marker(
+                [52.1310877, -2.7605585],
+                {}
+            ).addTo(map_fd836cb81cf31d9b247bd73267cf3f71);
+        
+    
+            var icon_14eccbdfd94d06e1471324c47542e221 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ae49ef366d873ccc14b27dbdb7c62cd5.setIcon(icon_14eccbdfd94d06e1471324c47542e221);
+        
+    
+        var popup_20f42b17c6ee144e4559e88fa519bade = L.popup({});
+
+        
+            
+                var html_774f8c1c17c2271c20a9f4789dd1dec6 = $(`<div id="html_774f8c1c17c2271c20a9f4789dd1dec6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wellington Brook</h1><div class="nugget-popup"><p>Wellington Brook (and its tributary) is identified as an ordinary watercourse under Herefordshire Council and is associated with the flood event affecting Canon Pyon on 16 Feb 2020; it is therefore a watercourse relevant to the flooding shown on the map. (p1)</p></div><div class="nugget-popup"><p>The tributary feeding Wellington Brook is identified as the fluvial source for the flooding affecting nearby properties; photographic evidence from October 2019 supports a fluvial mechanism linked to this watercourse. [MUL] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties internally flooded (related to the tributary to Wellington Brook); 3 properties also flooded in October 2019. [MUL] (p2)</p></div></div></body></div>`)[0];
+                popup_20f42b17c6ee144e4559e88fa519bade.setContent(html_774f8c1c17c2271c20a9f4789dd1dec6);
+            
+        
+
+        marker_ae49ef366d873ccc14b27dbdb7c62cd5.bindPopup(popup_20f42b17c6ee144e4559e88fa519bade)
+        ;
+
+        
+    
+    
+            var marker_69935bd99a57cb476b6be73aaee3e158 = L.marker(
+                [52.1359641, -2.7873941],
+                {}
+            ).addTo(map_fd836cb81cf31d9b247bd73267cf3f71);
+        
+    
+            var icon_75a24d043232f0d2ca86a56b7e97fcad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_69935bd99a57cb476b6be73aaee3e158.setIcon(icon_75a24d043232f0d2ca86a56b7e97fcad);
+        
+    
+        var popup_3878bc4bdf54ed694f5df5067197cb7a = L.popup({});
+
+        
+            
+                var html_08b1a6de9cbe9e792918f2cca2ef545c = $(`<div id="html_08b1a6de9cbe9e792918f2cca2ef545c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Canon Pyon</h1><div class="nugget-popup"><p>Flooding concentrated along the main river channel in and immediately adjacent to Canon Pyon during the key event; area mapped as Flood Zone 3 (highest risk) with some areas shown as benefiting from flood defences. [IMG] (p1)</p></div><div class="nugget-popup"><p>Properties in and adjacent to Flood Zone 3, and others in Flood Zone 1, experienced internal flooding attributed to fluvial inundation from a tributary and to surface water runoff/blocked highway drainage. Photographic evidence documents October 2019 flooding. [MUL] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties internally flooded; 3 of these also flooded in October 2019; 3 listed properties located within the Flood Zone. [MUL] (p2)</p></div></div></body></div>`)[0];
+                popup_3878bc4bdf54ed694f5df5067197cb7a.setContent(html_08b1a6de9cbe9e792918f2cca2ef545c);
+            
+        
+
+        marker_69935bd99a57cb476b6be73aaee3e158.bindPopup(popup_3878bc4bdf54ed694f5df5067197cb7a)
+        ;
+
+        
+    
+</script>
+</html>
