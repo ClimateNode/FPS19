@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0dde352b4eccd0a403d17376d0f9643f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0dde352b4eccd0a403d17376d0f9643f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0dde352b4eccd0a403d17376d0f9643f = L.map(
+                "map_0dde352b4eccd0a403d17376d0f9643f",
+                {
+                    center: [51.398520274113494, 0.17538378079124523],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f577a20e6fcc0b39fa31350563b20066 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_f577a20e6fcc0b39fa31350563b20066.addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+    
+            var marker_561a5eaefb928bd250c14b4c7cac569a = L.marker(
+                [51.4004472, 0.1650149],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_20103a236406228b4c5d033aca3f2212 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_561a5eaefb928bd250c14b4c7cac569a.setIcon(icon_20103a236406228b4c5d033aca3f2212);
+        
+    
+        var popup_841a5496b5040d16f9c01b01afe983b2 = L.popup({});
+
+        
+            
+                var html_d9105c419d015126a63f2a3f17354230 = $(`<div id="html_d9105c419d015126a63f2a3f17354230" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Almond Drive, Swanley</h1><div class="nugget-popup"><p>External flooding reported to 1 property. [TAB] (p3)</p></div><div class="nugget-popup"><p>Flood water flowed towards lower topography at Almond Drive where significant flooding was reported; flood flows included depth estimates taken in the nearby alleyway between Oliver Road and Almond Drive. [IMG] (p14)</p></div><div class="nugget-popup"><p>Flood surveys were issued following flooding at this street; responses indicate local flooding impacts were reported. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property reported external flooding. [TAB] (p3)</p></div><div class="nugget-popup quant"><p>75 cm (estimated flood depth in the alleyway between Oliver Road and Almond Drive) [IMG] (p14)</p></div><div class="nugget-popup quant"><p>6 flood surveys sent; 1 flood survey received [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_841a5496b5040d16f9c01b01afe983b2.setContent(html_d9105c419d015126a63f2a3f17354230);
+            
+        
+
+        marker_561a5eaefb928bd250c14b4c7cac569a.bindPopup(popup_841a5496b5040d16f9c01b01afe983b2)
+        ;
+
+        
+    
+    
+            var marker_95851ca290710b3fde3eeee2261e4169 = L.marker(
+                [51.3930628, 0.1644186],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_97a9f784c8570c90b3b792cd282c11f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_95851ca290710b3fde3eeee2261e4169.setIcon(icon_97a9f784c8570c90b3b792cd282c11f9);
+        
+    
+        var popup_a0a00ff98521cf482feb0747fa02a29e = L.popup({});
+
+        
+            
+                var html_fa95bb7d52bb0610675e0c0de0a9ac18 = $(`<div id="html_fa95bb7d52bb0610675e0c0de0a9ac18" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Apple Orchard, St Mary's</h1><div class="nugget-popup"><p>Multiple properties were possibly affected by flooding (details not specified). [TAB] (p3)</p></div><div class="nugget-popup"><p>Intense rainfall caused the surface water drainage infrastructure to surcharge in this low&ndash;lying street, resulting in significant ponding across the roadway and flooding to properties on Apple Orchard. (p13)</p></div><div class="nugget-popup"><p>Surface&ndash;water flows through St Mary's Estate converged along the road corridor at Apple Orchard, causing localized inundation of the road and adjacent low&ndash;lying areas as floodwater routed through the estate. [IMG] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Multiple properties possibly affected. [TAB] (p3)</p></div><div class="nugget-popup quant"><p>75 cm flood depth [IMG] (p14)</p></div></div></body></div>`)[0];
+                popup_a0a00ff98521cf482feb0747fa02a29e.setContent(html_fa95bb7d52bb0610675e0c0de0a9ac18);
+            
+        
+
+        marker_95851ca290710b3fde3eeee2261e4169.bindPopup(popup_a0a00ff98521cf482feb0747fa02a29e)
+        ;
+
+        
+    
+    
+            var marker_dd6ba2774ddf4558fa58ef8d61e8efce = L.marker(
+                [51.3957897, 0.1837917],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_36cd272e64b8501d94ac8ca16a1f5958 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dd6ba2774ddf4558fa58ef8d61e8efce.setIcon(icon_36cd272e64b8501d94ac8ca16a1f5958);
+        
+    
+        var popup_6af189b4759b299aac076c48d5573cf3 = L.popup({});
+
+        
+            
+                var html_75332bf07b8c0fe26f39df8d33cd4a6f = $(`<div id="html_75332bf07b8c0fe26f39df8d33cd4a6f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Beech Avenue, Swanley</h1><div class="nugget-popup"><p>External flooding to 1 property and internal flooding to 1 property. [TAB] (p3)</p></div><div class="nugget-popup"><p>Overland flows from agricultural fields to the north&ndash;east and surface water runoff from Hillside Court and Mountain Hill flowed downhill towards Beech Avenue, which is lower topography; surface water drainage surcharged during the intense rainfall on 20th July 2021. [IMG] (p17)</p></div><div class="nugget-popup"><p>Flood surveys were issued to properties on this street following flooding; no survey responses were recorded despite 49 surveys being sent. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property reported external flooding; 1 property reported internal flooding. [TAB] (p3)</p></div><div class="nugget-popup quant"><p>49 flood surveys sent; 0 flood surveys received [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_6af189b4759b299aac076c48d5573cf3.setContent(html_75332bf07b8c0fe26f39df8d33cd4a6f);
+            
+        
+
+        marker_dd6ba2774ddf4558fa58ef8d61e8efce.bindPopup(popup_6af189b4759b299aac076c48d5573cf3)
+        ;
+
+        
+    
+    
+            var marker_ee3e81ce3ec07e50d95013d7fbdbfd96 = L.marker(
+                [51.3917956, 0.1757464],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_c7817ee8b947923aadfd6efa2bf4acf1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ee3e81ce3ec07e50d95013d7fbdbfd96.setIcon(icon_c7817ee8b947923aadfd6efa2bf4acf1);
+        
+    
+        var popup_0e5bf64e685d2a9a2975c3f8a864b05a = L.popup({});
+
+        
+            
+                var html_ee0b01318fbbeb8357fd16d757da746e = $(`<div id="html_ee0b01318fbbeb8357fd16d757da746e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Court Crescent, High Firs</h1><div class="nugget-popup"><p>Flooding reported affecting 1 property (type not specified). [TAB] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property reported flooding. [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_0e5bf64e685d2a9a2975c3f8a864b05a.setContent(html_ee0b01318fbbeb8357fd16d757da746e);
+            
+        
+
+        marker_ee3e81ce3ec07e50d95013d7fbdbfd96.bindPopup(popup_0e5bf64e685d2a9a2975c3f8a864b05a)
+        ;
+
+        
+    
+    
+            var marker_b5b261ed369a1a51663cc017854ad893 = L.marker(
+                [51.3992118, 0.1800108],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_f7fa35f15c7d2d1963d3dde509585da1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b5b261ed369a1a51663cc017854ad893.setIcon(icon_f7fa35f15c7d2d1963d3dde509585da1);
+        
+    
+        var popup_55d6f4745002aa30d4bdf8b0eb228106 = L.popup({});
+
+        
+            
+                var html_484e17365ea1f7d2396cbb801abdc578 = $(`<div id="html_484e17365ea1f7d2396cbb801abdc578" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Edgar Close, Swanley</h1><div class="nugget-popup"><p>Multiple properties possibly affected by flooding; details unspecified. [TAB] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Multiple properties possibly affected. [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_55d6f4745002aa30d4bdf8b0eb228106.setContent(html_484e17365ea1f7d2396cbb801abdc578);
+            
+        
+
+        marker_b5b261ed369a1a51663cc017854ad893.bindPopup(popup_55d6f4745002aa30d4bdf8b0eb228106)
+        ;
+
+        
+    
+    
+            var marker_bd12c14f19e577d47003d14929429bc8 = L.marker(
+                [51.3910199, 0.1815379],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_0d7b5545bef55eb1873ed2f6361aa999 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bd12c14f19e577d47003d14929429bc8.setIcon(icon_0d7b5545bef55eb1873ed2f6361aa999);
+        
+    
+        var popup_d4485fd2f64a9efddaf0b5cb7b48b9dc = L.popup({});
+
+        
+            
+                var html_3c4dd4213516e2008e98730767768a14 = $(`<div id="html_3c4dd4213516e2008e98730767768a14" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Glendale, Swanley</h1><div class="nugget-popup"><p>External flooding affected residential properties. [TAB] (p3)</p></div><div class="nugget-popup"><p>Glendale experienced surface water flooding driven by estate flow lines during the intense rainfall; Glendale is identified on the map as an affected flooded road (red dot), indicating the carriageway was inundated and access affected. [IMG] (p16)</p></div><div class="nugget-popup"><p>Flood surveys were issued to addresses on Glendale following flooding associated with the event. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties [TAB] (p3)</p></div><div class="nugget-popup quant"><p>40 flood surveys sent; 0 flood surveys received [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_d4485fd2f64a9efddaf0b5cb7b48b9dc.setContent(html_3c4dd4213516e2008e98730767768a14);
+            
+        
+
+        marker_bd12c14f19e577d47003d14929429bc8.bindPopup(popup_d4485fd2f64a9efddaf0b5cb7b48b9dc)
+        ;
+
+        
+    
+    
+            var marker_54fc84a22a976c8e28f62ed19dee4b1d = L.marker(
+                [51.3924385, 0.1753573],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_77cc2f41018ec37462a4e1a62635936f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_54fc84a22a976c8e28f62ed19dee4b1d.setIcon(icon_77cc2f41018ec37462a4e1a62635936f);
+        
+    
+        var popup_851da697e081c3708bb007e9c950b901 = L.popup({});
+
+        
+            
+                var html_87dd690358848614639457fea3aade8e = $(`<div id="html_87dd690358848614639457fea3aade8e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Goldsel Road, Swanley</h1><div class="nugget-popup"><p>Flood water on the road required rescue of a vehicle from flood water. [TAB] (p3)</p></div><div class="nugget-popup"><p>The S&ndash;bend section of Goldsel Road, a lower&ndash;lying area, was affected by surface water flooding during the intense rainfall on 20th July 2021. Flooding on this principal route caused major traffic disruption and flooding to adjacent properties. (p15)</p></div><div class="nugget-popup"><p>Carriageway inundated by surface water, causing road flooding and local transport disruption. (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 vehicle [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_851da697e081c3708bb007e9c950b901.setContent(html_87dd690358848614639457fea3aade8e);
+            
+        
+
+        marker_54fc84a22a976c8e28f62ed19dee4b1d.bindPopup(popup_851da697e081c3708bb007e9c950b901)
+        ;
+
+        
+    
+    
+            var marker_7c669a4960763431344fa66fdb0af7a7 = L.marker(
+                [51.4012727, 0.1651742],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_f1ffe7caa67e5f0b91a6317a7d71844b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7c669a4960763431344fa66fdb0af7a7.setIcon(icon_f1ffe7caa67e5f0b91a6317a7d71844b);
+        
+    
+        var popup_0b900b37471d53180b136fda93b2f73f = L.popup({});
+
+        
+            
+                var html_86df6728511d89b0b969032d369a6780 = $(`<div id="html_86df6728511d89b0b969032d369a6780" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hibbs Close, St Mary's</h1><div class="nugget-popup"><p>Internal flooding of multiple properties with reported flood depths; later survey recorded a further internal flood. [TAB,MUL] (p3)</p></div><div class="nugget-popup"><p>Internal flooding of a residential property; floodwaters entered the property resulting in internal inundation. (p5)</p></div><div class="nugget-popup"><p>Surface water runoff collected and flowed into Hibbs Close, where significant flooding was reported; flows were exacerbated by runoff from higher ground and the local drainage surcharged. [IMG] (p14)</p></div><div class="nugget-popup"><p>Flood surveys were issued and some residents responded, showing local flooding impacts at this street. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>10 properties; 1 property [TAB,MUL] (p3)</p></div><div class="nugget-popup quant"><p>1 property (p5)</p></div><div class="nugget-popup quant"><p>42 flood surveys sent; 2 flood surveys received [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_0b900b37471d53180b136fda93b2f73f.setContent(html_86df6728511d89b0b969032d369a6780);
+            
+        
+
+        marker_7c669a4960763431344fa66fdb0af7a7.bindPopup(popup_0b900b37471d53180b136fda93b2f73f)
+        ;
+
+        
+    
+    
+            var marker_8c7d30508f92fddade0bea79a9a30556 = L.marker(
+                [51.3923034, 0.1664614],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_bbbaa454f83f5d2d05a7b19dac84ff33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8c7d30508f92fddade0bea79a9a30556.setIcon(icon_bbbaa454f83f5d2d05a7b19dac84ff33);
+        
+    
+        var popup_dbe39f019ae35ef013efc71a2e0cc5f2 = L.popup({});
+
+        
+            
+                var html_251510097f6fdde8d7dc1a8b19483637 = $(`<div id="html_251510097f6fdde8d7dc1a8b19483637" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ladds Way, St Mary's</h1><div class="nugget-popup"><p>Internal flooding of a property with reported depth. [TAB] (p3)</p></div><div class="nugget-popup"><p>Surface water runoff ponded in the lower&ndash;lying Ladds Way during intense rainfall on 20th July 2021, causing flooding. Soakaways in the area frequently flood and an installation of fence work damaged drainage pipes, which exacerbated the flooding. (p15)</p></div><div class="nugget-popup"><p>Damage to drainage infrastructure around Ladds Way and disruption to local roads occurred as a result of intense surface water flooding during the events. [MUL] (p22)</p></div><div class="nugget-popup"><p>Flood surveys were sent and at least one response was received, indicating flooding affected properties on this street. [TAB] (p27)</p></div><div class="nugget-popup"><p>Carriageway flooding and external flooding affecting properties (reported explicitly as carriageway flooding and external flooding of 1 property on Ladds Way). (p29)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p3)</p></div><div class="nugget-popup quant"><p>9 flood surveys sent; 1 flood survey received [TAB] (p27)</p></div><div class="nugget-popup quant"><p>1 property (p29)</p></div></div></body></div>`)[0];
+                popup_dbe39f019ae35ef013efc71a2e0cc5f2.setContent(html_251510097f6fdde8d7dc1a8b19483637);
+            
+        
+
+        marker_8c7d30508f92fddade0bea79a9a30556.bindPopup(popup_dbe39f019ae35ef013efc71a2e0cc5f2)
+        ;
+
+        
+    
+    
+            var marker_00a9b37ee6c696acb50a1fa5667b781f = L.marker(
+                [51.4125583, 0.1880945],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_bdf0fcd455996c290b0b3e88de11b46d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_00a9b37ee6c696acb50a1fa5667b781f.setIcon(icon_bdf0fcd455996c290b0b3e88de11b46d);
+        
+    
+        var popup_de214876f92792a489dcc6f99a886190 = L.popup({});
+
+        
+            
+                var html_49676dd0d61055cd944897d16b233e24 = $(`<div id="html_49676dd0d61055cd944897d16b233e24" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Laura Drive, Hextable</h1><div class="nugget-popup"><p>Properties experienced both internal and external flooding; later survey recorded external flooding on the road with depths up to 70 cm. [TAB,MUL] (p3)</p></div><div class="nugget-popup"><p>External flooding affecting the road and adjacent properties; road flood depths reported up to 70 cm. (p5)</p></div><div class="nugget-popup"><p>Surface water runoff from Lower Road and from upland agricultural areas flowed into the lower&ndash;lying Laura Drive, causing flooding along the road; the surface water drainage infrastructure surcharged during the intense rainfall on 20th July 2021. (p20)</p></div><div class="nugget-popup"><p>Flood surveys were issued and responses were received from residents, indicating reported local flooding impacts. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internal; 4 properties external; 3 properties external [TAB,MUL] (p3)</p></div><div class="nugget-popup quant"><p>3 properties (external); 70 cm (road) (p5)</p></div><div class="nugget-popup quant"><p>18 flood surveys sent; 4 flood surveys received [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_de214876f92792a489dcc6f99a886190.setContent(html_49676dd0d61055cd944897d16b233e24);
+            
+        
+
+        marker_00a9b37ee6c696acb50a1fa5667b781f.bindPopup(popup_de214876f92792a489dcc6f99a886190)
+        ;
+
+        
+    
+    
+            var marker_f67f565ccd43a22a525a282e8914fe58 = L.marker(
+                [51.3968395, 0.1831203],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_827da453e921ce9579cda53b4c61634e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f67f565ccd43a22a525a282e8914fe58.setIcon(icon_827da453e921ce9579cda53b4c61634e);
+        
+    
+        var popup_8ec3635d656ef5941931026e6febc6e4 = L.popup({});
+
+        
+            
+                var html_c3a8059f3ed7a0a95cfb5444ace248dd = $(`<div id="html_c3a8059f3ed7a0a95cfb5444ace248dd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Leechcroft Avenue, Swanley</h1><div class="nugget-popup"><p>Residential properties were flooded &mdash; reports include internal and external flooding; flood depths reported up to 60 cm internally during the October event. [TAB,MUL] (p3)</p></div><div class="nugget-popup"><p>Internal flooding to two properties and external flooding to one property; internal flood depths reported up to 60 cm. (p5)</p></div><div class="nugget-popup"><p>During the event surface water runoff flowed from multiple directions (west&ndash;to&ndash;east along Leechcroft Avenue and Kingswood Avenue, and from embankments via the service road) directing floodwater onto Leechcroft Avenue and contributing to local flooding of roads/adjacent areas. (p16)</p></div><div class="nugget-popup"><p>Surface water runoff and overland flows ponded and flowed along the road during the intense July 2021 rainfall. The surface water drainage network surcharged, and Leechcroft Avenue is shown as a reported flooded road on the event map. [IMG] (p17)</p></div><div class="nugget-popup"><p>Flood surveys were sent to addresses on Leechcroft Avenue following flooding on 20 July 2021, indicating the street was affected by surface water flooding. [TAB] (p27)</p></div><div class="nugget-popup"><p>Internal flooding of properties reported with internal depths reported around 50 cm; properties externally flooded as well. (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties affected (20 July 2021); 2 properties internal and 1 property external (20&ndash;21 October 2021); flood depths up to 60 cm internally (Oct 2021) [TAB,MUL] (p3)</p></div><div class="nugget-popup quant"><p>2 properties (internal); 1 property (external); 60 cm (internal) (p5)</p></div><div class="nugget-popup quant"><p>26 flood surveys sent; 3 flood surveys received [TAB] (p27)</p></div><div class="nugget-popup quant"><p>50 cm internal depth (p30)</p></div></div></body></div>`)[0];
+                popup_8ec3635d656ef5941931026e6febc6e4.setContent(html_c3a8059f3ed7a0a95cfb5444ace248dd);
+            
+        
+
+        marker_f67f565ccd43a22a525a282e8914fe58.bindPopup(popup_8ec3635d656ef5941931026e6febc6e4)
+        ;
+
+        
+    
+    
+            var marker_f890b886f54ab59475be3762079b5675 = L.marker(
+                [51.4128434, 0.1902778],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_b3105580be1fc62ae8e0be02f108a285 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f890b886f54ab59475be3762079b5675.setIcon(icon_b3105580be1fc62ae8e0be02f108a285);
+        
+    
+        var popup_1ecd354359a2078dfc9a42575a8b0bd4 = L.popup({});
+
+        
+            
+                var html_dbb6b58bc5c1a77d55d194ab02fa8db7 = $(`<div id="html_dbb6b58bc5c1a77d55d194ab02fa8db7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lower Road, Hextable</h1><div class="nugget-popup"><p>Residential properties experienced internal and external flooding (reported on 20 July 2021). [TAB] (p3)</p></div><div class="nugget-popup"><p>Surface water runoff flowed along Lower Road from west to east toward Laura Drive; the surface water drainage infrastructure surcharged during the intense rainfall and could not accommodate the runoff, contributing to flooding at the lower&ndash;lying Laura Drive. (p20)</p></div><div class="nugget-popup"><p>Flood surveys were sent to addresses on Lower Road following flooding on 20 July 2021, indicating the street was affected by surface water flooding. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internal; 2 properties external [TAB] (p3)</p></div><div class="nugget-popup quant"><p>25 flood surveys sent; 1 flood survey received [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_1ecd354359a2078dfc9a42575a8b0bd4.setContent(html_dbb6b58bc5c1a77d55d194ab02fa8db7);
+            
+        
+
+        marker_f890b886f54ab59475be3762079b5675.bindPopup(popup_1ecd354359a2078dfc9a42575a8b0bd4)
+        ;
+
+        
+    
+    
+            var marker_6398183ad341036a9864d1a0741e1e45 = L.marker(
+                [51.405205, 0.1586072],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_a4a6ca6c7bcba20a2aac574213cd762b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6398183ad341036a9864d1a0741e1e45.setIcon(icon_a4a6ca6c7bcba20a2aac574213cd762b);
+        
+    
+        var popup_8f4c79892ca8282173de9de03c295100 = L.popup({});
+
+        
+            
+                var html_1b2f6f631498f014b57942a66950bb84 = $(`<div id="html_1b2f6f631498f014b57942a66950bb84" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>London Road, Swanley</h1><div class="nugget-popup"><p>At least one residential property experienced internal flooding. [TAB] (p3)</p></div><div class="nugget-popup"><p>Carriageway flooding on London Road; blocked gullies reported along Manse Way to London Road associated with the incident. (p29)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internal [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_8f4c79892ca8282173de9de03c295100.setContent(html_1b2f6f631498f014b57942a66950bb84);
+            
+        
+
+        marker_6398183ad341036a9864d1a0741e1e45.bindPopup(popup_8f4c79892ca8282173de9de03c295100)
+        ;
+
+        
+    
+    
+            var marker_2943cc20fc3d37505e633f42ea614833 = L.marker(
+                [51.3974667, 0.1810049],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_e57e688cb0d23c1188af32f3f82b3a20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2943cc20fc3d37505e633f42ea614833.setIcon(icon_e57e688cb0d23c1188af32f3f82b3a20);
+        
+    
+        var popup_73cde284aec7edaa67c6149329d60108 = L.popup({});
+
+        
+            
+                var html_a244d7a867de01e3639266af51962b6f = $(`<div id="html_a244d7a867de01e3639266af51962b6f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lullingstone Avenue, Swanley</h1><div class="nugget-popup"><p>Properties experienced external flooding. [TAB] (p3)</p></div><div class="nugget-popup"><p>Surface water runoff from the Network Rail embankment and surcharging of surface water drainage (gullies) caused flooding to properties on Lullingstone Avenue during the intense rainfall. Coppicing of nearby land was reported as a possible contributing factor. (p16)</p></div><div class="nugget-popup"><p>Shown on the map with a flooded&ndash;road marker for the July 2021 event; located along flow paths where surface water inundated the road and low&ndash;lying junctions on 20th July 2021. [IMG] (p17)</p></div><div class="nugget-popup"><p>Flood surveys were sent to addresses on Lullingstone Avenue following flooding on 20 July 2021, indicating the street was affected by surface water flooding. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties external [TAB] (p3)</p></div><div class="nugget-popup quant"><p>6 flood surveys sent; 0 flood surveys received [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_73cde284aec7edaa67c6149329d60108.setContent(html_a244d7a867de01e3639266af51962b6f);
+            
+        
+
+        marker_2943cc20fc3d37505e633f42ea614833.bindPopup(popup_73cde284aec7edaa67c6149329d60108)
+        ;
+
+        
+    
+    
+            var marker_0838fbe6b11968a24e6ab7b735eb8887 = L.marker(
+                [51.3911133, 0.1670936],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_d88db3e0f4b25573d3a82db4b0b9b8f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0838fbe6b11968a24e6ab7b735eb8887.setIcon(icon_d88db3e0f4b25573d3a82db4b0b9b8f8);
+        
+    
+        var popup_dda827e04ab7b8cdc8770555f592c700 = L.popup({});
+
+        
+            
+                var html_65bf413fcb3a9aaaa44bb9dbf15baccb = $(`<div id="html_65bf413fcb3a9aaaa44bb9dbf15baccb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Heather End, St Mary's</h1><div class="nugget-popup"><p>One property experienced external flooding. [TAB] (p3)</p></div><div class="nugget-popup"><p>The carriageway of Heather End was inundated by surface water runoff during the intense rainfall event; floodwater was channelled southward within High Firs Estate and Heather End is shown as an affected flooded road on the map (red dot), indicating localised road flooding and likely disruption to access. [IMG] (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property external flooding [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_dda827e04ab7b8cdc8770555f592c700.setContent(html_65bf413fcb3a9aaaa44bb9dbf15baccb);
+            
+        
+
+        marker_0838fbe6b11968a24e6ab7b735eb8887.bindPopup(popup_dda827e04ab7b8cdc8770555f592c700)
+        ;
+
+        
+    
+    
+            var marker_14f8942cfbffa35ea810080bf89895fe = L.marker(
+                [51.3985896, 0.1695457],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_2c286b9693ed1e8a3c93bcb7674150f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_14f8942cfbffa35ea810080bf89895fe.setIcon(icon_2c286b9693ed1e8a3c93bcb7674150f6);
+        
+    
+        var popup_d3d8ecee2f16c16efc76ae0281f42bbb = L.popup({});
+
+        
+            
+                var html_7ed4f864ab963c65ec8097f0916126a3 = $(`<div id="html_7ed4f864ab963c65ec8097f0916126a3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oliver Road, Swanley</h1><div class="nugget-popup"><p>Multiple properties were flooded: on 20th July 2021 the report records three properties with internal flooding and one property also recorded (table text repeats internal flooding) and external flood depths were estimated at knee to waist height; on 20th&ndash;21st October 2021 one property was reported with external flooding. [TAB,MUL] (p3)</p></div><div class="nugget-popup"><p>Multiple properties experienced flooding; external flood depths at properties were estimated at knee&ndash;to&ndash;waist height. (p4)</p></div><div class="nugget-popup"><p>External flooding reported to one property. (p5)</p></div><div class="nugget-popup"><p>Runoff from the higher ground around Oliver Road is described as having exacerbated surface water flows along Hart Dyke Road and into lower areas such as Almond Drive and Hibbs Close; an adjacent alleyway between Oliver Road and Almond Drive had estimated flood depths of approximately 75 cm. It is not explicitly stated whether Oliver Road itself was inundated. [IMG] (p14)</p></div><div class="nugget-popup"><p>Flood surveys were sent to addresses on Oliver Road following flooding on 20 July 2021, indicating the street was affected by surface water flooding. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties internal flooding; 1 property internal flooding; external depths described as knee to waist height; 1 property external flooding (20th&ndash;21st Oct 2021) [TAB,MUL] (p3)</p></div><div class="nugget-popup quant"><p>3 properties; 1 property (p4)</p></div><div class="nugget-popup quant"><p>1 property (external) (p5)</p></div><div class="nugget-popup quant"><p>75 cm (estimated flood depth in the alleyway between Oliver Road and Almond Drive) [IMG] (p14)</p></div><div class="nugget-popup quant"><p>7 flood surveys sent; 1 flood survey received [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_d3d8ecee2f16c16efc76ae0281f42bbb.setContent(html_7ed4f864ab963c65ec8097f0916126a3);
+            
+        
+
+        marker_14f8942cfbffa35ea810080bf89895fe.bindPopup(popup_d3d8ecee2f16c16efc76ae0281f42bbb)
+        ;
+
+        
+    
+    
+            var marker_7cfbef676720fb662b74eb11cd7e61f4 = L.marker(
+                [51.3900606, 0.1722948],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_e958bd8338de4fd0f8c96a6fabe3deaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7cfbef676720fb662b74eb11cd7e61f4.setIcon(icon_e958bd8338de4fd0f8c96a6fabe3deaf);
+        
+    
+        var popup_318db29dbdef33ddbf73c7fa2906ce31 = L.popup({});
+
+        
+            
+                var html_3a75a790e7c66943d8a2334c5a03508a = $(`<div id="html_3a75a790e7c66943d8a2334c5a03508a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Overmead, High Firs</h1><div class="nugget-popup"><p>Two properties experienced internal flooding. [TAB] (p3)</p></div><div class="nugget-popup"><p>Properties experienced internal flooding. (p4)</p></div><div class="nugget-popup"><p>Overland flows from the south of the A20 and from the A20 itself flowed towards Overmead, contributing to the heavy flooding experienced in the area during the intense rainfall on 20th July 2021. (p15)</p></div><div class="nugget-popup"><p>Overmead was inundated by surface water runoff during the intense rainfall, with floodwater following the estate flow routes; Overmead is shown as an affected flooded road on the map (red dot), indicating localised road flooding and likely access disruption. [IMG] (p16)</p></div><div class="nugget-popup"><p>Residents returned flood surveys reporting flooding on the street during the 20 July 2021 event. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties internal flooding [TAB] (p3)</p></div><div class="nugget-popup quant"><p>2 properties (p4)</p></div><div class="nugget-popup quant"><p>1 flood survey received [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_318db29dbdef33ddbf73c7fa2906ce31.setContent(html_3a75a790e7c66943d8a2334c5a03508a);
+            
+        
+
+        marker_7cfbef676720fb662b74eb11cd7e61f4.bindPopup(popup_318db29dbdef33ddbf73c7fa2906ce31)
+        ;
+
+        
+    
+    
+            var marker_4c415d95af8f87c8b15b4646517100b7 = L.marker(
+                [51.3900643, 0.1729661],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_095b96d000dccab01e9ea054a8de7119 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4c415d95af8f87c8b15b4646517100b7.setIcon(icon_095b96d000dccab01e9ea054a8de7119);
+        
+    
+        var popup_d9d4cd10f125594791277594764eb813 = L.popup({});
+
+        
+            
+                var html_2d6afcc25046297c7575d179554c43cb = $(`<div id="html_2d6afcc25046297c7575d179554c43cb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pinks Hill, High Firs</h1><div class="nugget-popup"><p>On 20th July 2021, 17 properties were reported flooded (10 internal, 4 external, 3 unknown) with external depths reported up to 90 cm and internal depths up to 15 cm. On 20th&ndash;21st October 2021, six properties were reported with internal flooding with depths estimated at about 10 cm. [TAB,MUL] (p3)</p></div><div class="nugget-popup"><p>Surface water runoff from Pinks Hill flowed in a south&ndash;westerly to north&ndash;easterly direction toward Waylands. Because Pinks Hill/Waylands is lower topography and highway gullies surcharged during the intense rainfall, there was significant flooding causing flooding to properties on 20th July 2021. (p15)</p></div><div class="nugget-popup"><p>Pinks Hill was affected by surface water flooding driven by the estate's southward flow lines during the intense rainfall; it is marked as an affected flooded road on the map (red dot), indicating road inundation and disruption to movement. [IMG] (p16)</p></div><div class="nugget-popup"><p>Properties on Pinks Hill experienced flooding and required pumping to remove floodwater; local residents were provided with electric pumps to assist with pump&ndash;out. [MUL] (p22)</p></div><div class="nugget-popup"><p>Residents returned flood surveys reporting flooding on the street during the 20 July 2021 event. [TAB] (p27)</p></div><div class="nugget-popup"><p>Internal flooding of properties (required pumping) and carriageway flooding; blocked drain externally flooded properties. (p29)</p></div><div class="nugget-popup"><p>Residential properties experienced internal flooding (water ingress) to depths reported around 50 cm; properties also externally flooded. Carriageway flooding reported on nearby roads. (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>17 properties (10 internal, 4 external, 3 unknown); external depths up to 90 cm; internal depths up to 15 cm; 6 properties internal flooding (Oct 2021 at ~10 cm) [TAB,MUL] (p3)</p></div><div class="nugget-popup quant"><p>11 flood surveys received [TAB] (p27)</p></div><div class="nugget-popup quant"><p>8 properties (p29)</p></div><div class="nugget-popup quant"><p>4 properties; 50 cm internal depth (p30)</p></div></div></body></div>`)[0];
+                popup_d9d4cd10f125594791277594764eb813.setContent(html_2d6afcc25046297c7575d179554c43cb);
+            
+        
+
+        marker_4c415d95af8f87c8b15b4646517100b7.bindPopup(popup_d9d4cd10f125594791277594764eb813)
+        ;
+
+        
+    
+    
+            var marker_62e15e175e15c21c4d6a8d8c3ee49049 = L.marker(
+                [51.3995074, 0.1602016],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_ae618f88b33e1953032f83f9f1201da6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_62e15e175e15c21c4d6a8d8c3ee49049.setIcon(icon_ae618f88b33e1953032f83f9f1201da6);
+        
+    
+        var popup_18ad0e3922ed1006aa58718b815fbd65 = L.popup({});
+
+        
+            
+                var html_68597c46c02b8aa6bf51ea6fe6659032 = $(`<div id="html_68597c46c02b8aa6bf51ea6fe6659032" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sermon Drive, St Mary's</h1><div class="nugget-popup"><p>External flooding at one property. [TAB] (p3)</p></div><div class="nugget-popup"><p>At least one property experienced external flooding. (p4)</p></div><div class="nugget-popup"><p>Runoff from higher ground on Sermon Drive contributed to increased surface water flows that exacerbated surcharging of drains along Hart Dyke Road and led to flooding at lower&ndash;lying areas such as Almond Drive and Hibbs Close. [IMG] (p14)</p></div><div class="nugget-popup"><p>Flood surveys were sent to addresses on Sermon Drive following flooding on 20 July 2021, indicating the street was affected by surface water flooding. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p3)</p></div><div class="nugget-popup quant"><p>1 property (p4)</p></div><div class="nugget-popup quant"><p>3 flood surveys sent; 1 flood survey received [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_18ad0e3922ed1006aa58718b815fbd65.setContent(html_68597c46c02b8aa6bf51ea6fe6659032);
+            
+        
+
+        marker_62e15e175e15c21c4d6a8d8c3ee49049.bindPopup(popup_18ad0e3922ed1006aa58718b815fbd65)
+        ;
+
+        
+    
+    
+            var marker_60e5d8fd6b083669645c8c226e7d63dc = L.marker(
+                [51.3952285, 0.179899],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_7035909733521c6db7f9daae76c24dc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_60e5d8fd6b083669645c8c226e7d63dc.setIcon(icon_7035909733521c6db7f9daae76c24dc9);
+        
+    
+        var popup_0a87518637d642ed331bc01d943db1b4 = L.popup({});
+
+        
+            
+                var html_e168a4847ff36f53c47f7ccc7f738f95 = $(`<div id="html_e168a4847ff36f53c47f7ccc7f738f95" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sheridan Close, Swanley</h1><div class="nugget-popup"><p>Four properties affected by flooding; two properties flooded internally. [TAB] (p3)</p></div><div class="nugget-popup"><p>Multiple properties were flooded, including internal flooding at some properties. (p4)</p></div><div class="nugget-popup"><p>Surface water runoff ponded along the road during the intense rainfall; surface water flowed into Sheridan Close from Park Road and the surface water drainage infrastructure surcharged because it was not designed for the intensity of the 20th July 2021 event. [IMG] (p17)</p></div><div class="nugget-popup"><p>Flood surveys were sent to addresses on Sheridan Close following flooding on 20 July 2021, indicating the street was affected by surface water flooding. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 properties (2 internal, 2 unknown) [TAB] (p3)</p></div><div class="nugget-popup quant"><p>4 properties; 2 internal (p4)</p></div><div class="nugget-popup quant"><p>2 flood surveys sent; 1 flood survey received [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_0a87518637d642ed331bc01d943db1b4.setContent(html_e168a4847ff36f53c47f7ccc7f738f95);
+            
+        
+
+        marker_60e5d8fd6b083669645c8c226e7d63dc.bindPopup(popup_0a87518637d642ed331bc01d943db1b4)
+        ;
+
+        
+    
+    
+            var marker_5e2813c1768bdfa03a23122e71a0da65 = L.marker(
+                [51.3940728, 0.1802599],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_4957dbda6a61cc5d8fe1abff866fd4f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5e2813c1768bdfa03a23122e71a0da65.setIcon(icon_4957dbda6a61cc5d8fe1abff866fd4f5);
+        
+    
+        var popup_49ff35c1c7b0af9af0789e50eda89094 = L.popup({});
+
+        
+            
+                var html_65569a5e2c4d3a000f7ae4d89e67f9ae = $(`<div id="html_65569a5e2c4d3a000f7ae4d89e67f9ae" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Georges Road, Swanley</h1><div class="nugget-popup"><p>Three properties reported to have been affected by flooding (internal status not specified). [TAB] (p3)</p></div><div class="nugget-popup"><p>Properties were affected by flooding. (p4)</p></div><div class="nugget-popup"><p>Segments of St Georges Road were identified on the map as flooded on 21 July 2021, with surface water flowing along estate flow lines into low&ndash;lying intersections and road segments, causing inundation of the carriageway. [IMG] (p16)</p></div><div class="nugget-popup"><p>Marked on the map as an affected flooded road during the July 2021 event; floodwaters followed flow lines causing inundation at low points/intersections along the street on 20th July 2021. [IMG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties [TAB] (p3)</p></div><div class="nugget-popup quant"><p>3 properties (p4)</p></div></div></body></div>`)[0];
+                popup_49ff35c1c7b0af9af0789e50eda89094.setContent(html_65569a5e2c4d3a000f7ae4d89e67f9ae);
+            
+        
+
+        marker_5e2813c1768bdfa03a23122e71a0da65.bindPopup(popup_49ff35c1c7b0af9af0789e50eda89094)
+        ;
+
+        
+    
+    
+            var marker_f9f4e89dd96a4f16823426bcda1878fd = L.marker(
+                [51.3951497, 0.1620682],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_e69205fb70eafc732b740982c5d8eee0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f9f4e89dd96a4f16823426bcda1878fd.setIcon(icon_e69205fb70eafc732b740982c5d8eee0);
+        
+    
+        var popup_2ef176a74db8afb35ea4e6e4f2c3024b = L.popup({});
+
+        
+            
+                var html_67bc0dd0e49940bd3d61ef093b090c99 = $(`<div id="html_67bc0dd0e49940bd3d61ef093b090c99" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Mary's Road, Swanley</h1><div class="nugget-popup"><p>Two properties reported to have experienced internal flooding. [TAB] (p3)</p></div><div class="nugget-popup"><p>Properties experienced internal flooding. (p4)</p></div><div class="nugget-popup"><p>Surface water runoff flowed from St Mary's Road eastwards towards Apple Orchard during the intense rainfall, contributing to surcharge of drainage and downstream ponding. (p13)</p></div><div class="nugget-popup"><p>Surface water runoff flowed along St Mary's Road in a north&ndash;east to south&ndash;west direction and was funnelled through the alleyway between St Mary's Road and Hewitt Place, directing floodwater into lower&ndash;lying parts of the estate. (p14)</p></div><div class="nugget-popup"><p>Internal flooding of one property. (p29)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties internal [TAB] (p3)</p></div><div class="nugget-popup quant"><p>2 properties (p4)</p></div><div class="nugget-popup quant"><p>1 property (p29)</p></div></div></body></div>`)[0];
+                popup_2ef176a74db8afb35ea4e6e4f2c3024b.setContent(html_67bc0dd0e49940bd3d61ef093b090c99);
+            
+        
+
+        marker_f9f4e89dd96a4f16823426bcda1878fd.bindPopup(popup_2ef176a74db8afb35ea4e6e4f2c3024b)
+        ;
+
+        
+    
+    
+            var marker_41dde2fb39d4846018d93d9b272aa05b = L.marker(
+                [51.4088292, 0.184265],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_57729c7936b2ff9fb505ee818af9dc4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_41dde2fb39d4846018d93d9b272aa05b.setIcon(icon_57729c7936b2ff9fb505ee818af9dc4c);
+        
+    
+        var popup_093c285b7aa30b4f32be6b85946d865e = L.popup({});
+
+        
+            
+                var html_d242a8552bdaee2bb85360fdeb60ca7b = $(`<div id="html_d242a8552bdaee2bb85360fdeb60ca7b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stuart Close, Hextable</h1><div class="nugget-popup"><p>One property reported internal flooding. [TAB] (p3)</p></div><div class="nugget-popup"><p>One property experienced internal flooding. (p4)</p></div><div class="nugget-popup"><p>Surface water flowed into the lower&ndash;lying Stuart Close, causing significant flooding along the road and flooding to properties. Blocked/root&ndash;choked gullies (last cleaned in September 2016) were identified as contributing to the inability of the drainage to cope; KCC Highways subsequently cleaned gullies in September 2021 and carried out CCTV in October 2021 to remove roots. (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internal [TAB] (p3)</p></div><div class="nugget-popup quant"><p>1 property (p4)</p></div></div></body></div>`)[0];
+                popup_093c285b7aa30b4f32be6b85946d865e.setContent(html_d242a8552bdaee2bb85360fdeb60ca7b);
+            
+        
+
+        marker_41dde2fb39d4846018d93d9b272aa05b.bindPopup(popup_093c285b7aa30b4f32be6b85946d865e)
+        ;
+
+        
+    
+    
+            var marker_de2fe020132b0804fb269132c2a7e377 = L.marker(
+                [51.4044559, 0.1717395],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_0996daf4571e4f4ed117f0febe8921ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_de2fe020132b0804fb269132c2a7e377.setIcon(icon_0996daf4571e4f4ed117f0febe8921ad);
+        
+    
+        var popup_74ed7c86d686c550b21230c64959b5a5 = L.popup({});
+
+        
+            
+                var html_816d672cbf3adc01065c932c263436d5 = $(`<div id="html_816d672cbf3adc01065c932c263436d5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Strawberry Fields, Swanley</h1><div class="nugget-popup"><p>Reported internal and external flooding: on 20 July 2021 one property flooded internally and one externally (external depths reported between 25 cm and 60 cm); on 20&ndash;21 October 2021 one property reported internal flooding. [TAB,MUL] (p3)</p></div><div class="nugget-popup"><p>Surface water runoff and ponding along the road; drains surcharged and unable to cope with high surface water; property thresholds lower than the road led to internal flooding of properties on Strawberry Fields. [IMG] (p18)</p></div><div class="nugget-popup"><p>Floodwater flowed southward along Strawberry Fields and into the residential street network; road surfaces and junctions on Strawberry Fields were flooded, forming the main upstream flow path feeding The Spinney. [IMG] (p19)</p></div><div class="nugget-popup"><p>Residents returned flood surveys reporting flooding on the street during the 20 July 2021 event. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Table 1 (20 July 2021): 1 property internal, 1 property external; Table 2 (20&ndash;21 October 2021): 1 property internal [TAB,MUL] (p3)</p></div><div class="nugget-popup quant"><p>2 flood surveys received [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_74ed7c86d686c550b21230c64959b5a5.setContent(html_816d672cbf3adc01065c932c263436d5);
+            
+        
+
+        marker_de2fe020132b0804fb269132c2a7e377.bindPopup(popup_74ed7c86d686c550b21230c64959b5a5)
+        ;
+
+        
+    
+    
+            var marker_a2265d9645dbfcd65440f9c9af6946a7 = L.marker(
+                [51.4039909, 0.1996949],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_a91377648c458566c742fea8722c0cb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a2265d9645dbfcd65440f9c9af6946a7.setIcon(icon_a91377648c458566c742fea8722c0cb2);
+        
+    
+        var popup_3e53a87aed378e7b543ebf5cde6d324e = L.popup({});
+
+        
+            
+                var html_fb6f5b44d5051fdbcd70e524b2fb7467 = $(`<div id="html_fb6f5b44d5051fdbcd70e524b2fb7467" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Swanley Village Road, Swanley</h1><div class="nugget-popup"><p>External flooding of one property reported. [TAB] (p3)</p></div><div class="nugget-popup"><p>One property experienced external flooding. (p4)</p></div><div class="nugget-popup"><p>Carriageway flooding affecting the road. (p29)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p3)</p></div><div class="nugget-popup quant"><p>1 property (p4)</p></div></div></body></div>`)[0];
+                popup_3e53a87aed378e7b543ebf5cde6d324e.setContent(html_fb6f5b44d5051fdbcd70e524b2fb7467);
+            
+        
+
+        marker_a2265d9645dbfcd65440f9c9af6946a7.bindPopup(popup_3e53a87aed378e7b543ebf5cde6d324e)
+        ;
+
+        
+    
+    
+            var marker_64a2887111f91eeada3d4640fda5af24 = L.marker(
+                [51.4025549, 0.1739054],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_61ae5a4a0d5eb78eff349e91bef7d6d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_64a2887111f91eeada3d4640fda5af24.setIcon(icon_61ae5a4a0d5eb78eff349e91bef7d6d4);
+        
+    
+        var popup_82b56fb971631d0bc8fd489050bc78a9 = L.popup({});
+
+        
+            
+                var html_a136373ebc7d66e4f2ca36647dd8b582 = $(`<div id="html_a136373ebc7d66e4f2ca36647dd8b582" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Spinney, Swanley</h1><div class="nugget-popup"><p>Two properties reported to have been affected; it is unknown whether they flooded internally. [TAB] (p3)</p></div><div class="nugget-popup"><p>Surface water runoff originated from The Spinney flowing north towards Strawberry Fields; flows were funnelled along an alleyway between The Spinney and Strawberry Fields, contributing to ponding and internal flooding of nearby properties; drains surcharged. [IMG] (p18)</p></div><div class="nugget-popup"><p>Floodwater propagated southward from Strawberry Fields through The Spinney, flooding road surfaces and concentrating at junctions and bends along The Spinney, indicating it formed a primary flow path through the neighbourhood. [IMG] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_82b56fb971631d0bc8fd489050bc78a9.setContent(html_a136373ebc7d66e4f2ca36647dd8b582);
+            
+        
+
+        marker_64a2887111f91eeada3d4640fda5af24.bindPopup(popup_82b56fb971631d0bc8fd489050bc78a9)
+        ;
+
+        
+    
+    
+            var marker_2ffab108461a053d4b2fd788631ea40f = L.marker(
+                [51.3926218, 0.1791545],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_476de2dbe9eb4a0f204092b0dadb24a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2ffab108461a053d4b2fd788631ea40f.setIcon(icon_476de2dbe9eb4a0f204092b0dadb24a5);
+        
+    
+        var popup_4b2fba3f3b2dc2f90b20f11dd144d7ba = L.popup({});
+
+        
+            
+                var html_f9a4f000605c487b1f76c43a493b2f7c = $(`<div id="html_f9a4f000605c487b1f76c43a493b2f7c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Waylands, High Firs</h1><div class="nugget-popup"><p>One property reported to have been affected; it is unknown whether it flooded internally. [TAB] (p3)</p></div><div class="nugget-popup"><p>Surface water runoff flowed toward Waylands (an area of lower topography). Highway gullies surcharged during the intense rainfall on 20th July 2021, resulting in significant flooding that caused flooding to properties. (p15)</p></div><div class="nugget-popup"><p>Waylands was affected by surface water runoff during the intense rainfall, with floodwaters flowing southward along estate flow paths; the map shows Waylands as an affected flooded road (red dot), indicating road inundation and disruption to local movement. [IMG] (p16)</p></div><div class="nugget-popup"><p>Internal flooding of properties reported (with reports of around 50 cm internal depth); external flooding of properties and carriageway flooding reported in the area. (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p3)</p></div><div class="nugget-popup quant"><p>50 cm internal depth (p30)</p></div></div></body></div>`)[0];
+                popup_4b2fba3f3b2dc2f90b20f11dd144d7ba.setContent(html_f9a4f000605c487b1f76c43a493b2f7c);
+            
+        
+
+        marker_2ffab108461a053d4b2fd788631ea40f.bindPopup(popup_4b2fba3f3b2dc2f90b20f11dd144d7ba)
+        ;
+
+        
+    
+    
+            var marker_ef614b003b1eea72944578de34496a6d = L.marker(
+                [51.3990941, 0.1654981],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_312179395c8b408f2e38ae6809483270 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ef614b003b1eea72944578de34496a6d.setIcon(icon_312179395c8b408f2e38ae6809483270);
+        
+    
+        var popup_088357b82f01500543b9f9dade6dad1b = L.popup({});
+
+        
+            
+                var html_fea57fb9cd23c94c232150b7ba838d45 = $(`<div id="html_fea57fb9cd23c94c232150b7ba838d45" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Harold, Swanley</h1><div class="nugget-popup"><p>Internal flooding of one property reported (with external depths reported up to 60 cm). A further internal flooding report for one property was recorded on 20&ndash;21 October 2021. [TAB,MUL] (p3)</p></div><div class="nugget-popup"><p>Internal flooding of a residential property and external flood depths reported up to 60 cm. (p5)</p></div><div class="nugget-popup"><p>Recorded flooding on the road during the event; acted as a source of runoff from higher ground that contributed to overwhelmed surface water drains and downstream flooding in St Marys Estate. (p14)</p></div><div class="nugget-popup"><p>Residents returned a flood survey reporting flooding on the street during the 20 July 2021 event. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property; 1 property [TAB,MUL] (p3)</p></div><div class="nugget-popup quant"><p>1 property (internal); 60 cm (external) (p5)</p></div><div class="nugget-popup quant"><p>1 flood survey received [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_088357b82f01500543b9f9dade6dad1b.setContent(html_fea57fb9cd23c94c232150b7ba838d45);
+            
+        
+
+        marker_ef614b003b1eea72944578de34496a6d.bindPopup(popup_088357b82f01500543b9f9dade6dad1b)
+        ;
+
+        
+    
+    
+            var marker_dba85a5bb5ded74b98747fa97b84f570 = L.marker(
+                [51.3951785, 0.167241],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_f8ff31c5fe88bbf2a8bf9ba0d22602f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dba85a5bb5ded74b98747fa97b84f570.setIcon(icon_f8ff31c5fe88bbf2a8bf9ba0d22602f2);
+        
+    
+        var popup_9d1d200391286b71ddee3ea759fae0d5 = L.popup({});
+
+        
+            
+                var html_4cc11cd6a90306d88b33bcdcd123df02 = $(`<div id="html_4cc11cd6a90306d88b33bcdcd123df02" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hewett Place, Swanley</h1><div class="nugget-popup"><p>An alleyway located between St Mary's Road and Hewitt Place (sic) funnelled surface water runoff, concentrating flows through this connection during the event. (p14)</p></div></div></body></div>`)[0];
+                popup_9d1d200391286b71ddee3ea759fae0d5.setContent(html_4cc11cd6a90306d88b33bcdcd123df02);
+            
+        
+
+        marker_dba85a5bb5ded74b98747fa97b84f570.bindPopup(popup_9d1d200391286b71ddee3ea759fae0d5)
+        ;
+
+        
+    
+    
+            var marker_71783fb9eff5a5d5ee82a2577b3ba222 = L.marker(
+                [51.3990452, 0.164735],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_b92413127cb515d63ee47039cc7d7173 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_71783fb9eff5a5d5ee82a2577b3ba222.setIcon(icon_b92413127cb515d63ee47039cc7d7173);
+        
+    
+        var popup_172df797739878af54a39cc9cd2ae9c2 = L.popup({});
+
+        
+            
+                var html_7d2a48675f7c4e028f207f4f1823151e = $(`<div id="html_7d2a48675f7c4e028f207f4f1823151e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hart Dyke Road, St Mary's</h1><div class="nugget-popup"><p>Surface water runoff continued along Hart Dyke Road in a north&ndash;westerly direction, causing the surface water drains to become overwhelmed and surcharge, contributing to downstream flooding. (p14)</p></div></div></body></div>`)[0];
+                popup_172df797739878af54a39cc9cd2ae9c2.setContent(html_7d2a48675f7c4e028f207f4f1823151e);
+            
+        
+
+        marker_71783fb9eff5a5d5ee82a2577b3ba222.bindPopup(popup_172df797739878af54a39cc9cd2ae9c2)
+        ;
+
+        
+    
+    
+            var marker_544e67008d90ddedc778742f7e2285bc = L.marker(
+                [51.3985129, 0.1643629],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_25d8f8aa70010920358f65b3c2cb3362 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_544e67008d90ddedc778742f7e2285bc.setIcon(icon_25d8f8aa70010920358f65b3c2cb3362);
+        
+    
+        var popup_811c3635b162bdcd3f996119b6ec89bf = L.popup({});
+
+        
+            
+                var html_a7e6da06aa12f00dd33dea4b720276a0 = $(`<div id="html_a7e6da06aa12f00dd33dea4b720276a0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lavender Hill, St Mary's</h1><div class="nugget-popup"><p>Runoff from Lavender Hill (higher ground to the west) increased surface water flow into the estate, contributing to overwhelmed drains and downstream flooding in St Marys Estate. (p14)</p></div></div></body></div>`)[0];
+                popup_811c3635b162bdcd3f996119b6ec89bf.setContent(html_a7e6da06aa12f00dd33dea4b720276a0);
+            
+        
+
+        marker_544e67008d90ddedc778742f7e2285bc.bindPopup(popup_811c3635b162bdcd3f996119b6ec89bf)
+        ;
+
+        
+    
+    
+            var marker_204197743e698a4052f40ccd10e4dde3 = L.marker(
+                [51.3910336, 0.1675775],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_16c8bb3b5e09bc688ae34a316c4e11d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_204197743e698a4052f40ccd10e4dde3.setIcon(icon_16c8bb3b5e09bc688ae34a316c4e11d1);
+        
+    
+        var popup_0fd84d6fe41a915ffc49588ab912f8df = L.popup({});
+
+        
+            
+                var html_5376490b2d9578a0bd8a8f41e452d7c8 = $(`<div id="html_5376490b2d9578a0bd8a8f41e452d7c8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Philip Avenue, St Mary's</h1><div class="nugget-popup"><p>Surface water runoff flowed along Philip Avenue during the intense rainfall on 20th July 2021 toward lower&ndash;lying Ladds Way, contributing to ponding and flooding at Ladds Way. (p15)</p></div></div></body></div>`)[0];
+                popup_0fd84d6fe41a915ffc49588ab912f8df.setContent(html_5376490b2d9578a0bd8a8f41e452d7c8);
+            
+        
+
+        marker_204197743e698a4052f40ccd10e4dde3.bindPopup(popup_0fd84d6fe41a915ffc49588ab912f8df)
+        ;
+
+        
+    
+    
+            var marker_272a1d65f00cea057b55528c7c79107e = L.marker(
+                [51.391583, 0.166034],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_672ace5f7b5f0cc70babb29fd23f3763 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_272a1d65f00cea057b55528c7c79107e.setIcon(icon_672ace5f7b5f0cc70babb29fd23f3763);
+        
+    
+        var popup_c30a0fce44a8f9c2b2d6326dfbbf3196 = L.popup({});
+
+        
+            
+                var html_c412ba59501b9bbdf0f7953231b0e2c7 = $(`<div id="html_c412ba59501b9bbdf0f7953231b0e2c7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cyclamen Road, St Mary's</h1><div class="nugget-popup"><p>Surface water runoff flowed along Cyclamen Road during the intense rainfall on 20th July 2021 toward lower&ndash;lying Ladds Way, contributing to ponding and flooding at Ladds Way. (p15)</p></div></div></body></div>`)[0];
+                popup_c30a0fce44a8f9c2b2d6326dfbbf3196.setContent(html_c412ba59501b9bbdf0f7953231b0e2c7);
+            
+        
+
+        marker_272a1d65f00cea057b55528c7c79107e.bindPopup(popup_c30a0fce44a8f9c2b2d6326dfbbf3196)
+        ;
+
+        
+    
+    
+            var marker_821922bfb9f854a78d1822a7a36967be = L.marker(
+                [51.3930553, 0.1713579],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_f6b43556a2da3368e2b945fa76102441 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_821922bfb9f854a78d1822a7a36967be.setIcon(icon_f6b43556a2da3368e2b945fa76102441);
+        
+    
+        var popup_2eb74791b1acdd99e573b1bb697aaa4b = L.popup({});
+
+        
+            
+                var html_b5a4a593a8542f17716e64353aeb3dfb = $(`<div id="html_b5a4a593a8542f17716e64353aeb3dfb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Azalea Drive, High Firs</h1><div class="nugget-popup"><p>Azalea Drive was inundated by surface water runoff during the intense rainfall, with floodwater routed along estate flow paths toward the southern boundary; the map shows Azalea Drive as an affected flooded road (red dot), indicating local road flooding and likely access impacts. [IMG] (p16)</p></div></div></body></div>`)[0];
+                popup_2eb74791b1acdd99e573b1bb697aaa4b.setContent(html_b5a4a593a8542f17716e64353aeb3dfb);
+            
+        
+
+        marker_821922bfb9f854a78d1822a7a36967be.bindPopup(popup_2eb74791b1acdd99e573b1bb697aaa4b)
+        ;
+
+        
+    
+    
+            var marker_a84c5ac40b2d8961d12dc468f28bc6d2 = L.marker(
+                [51.3954145, 0.1818295],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_c58cf6485e40e397cc741e62437cda0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a84c5ac40b2d8961d12dc468f28bc6d2.setIcon(icon_c58cf6485e40e397cc741e62437cda0a);
+        
+    
+        var popup_b760be2321db63b5042e3abd88143c00 = L.popup({});
+
+        
+            
+                var html_1ab93f683e78ad6f6c58470dbe32eeae = $(`<div id="html_1ab93f683e78ad6f6c58470dbe32eeae" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingswood Avenue, Swanley</h1><div class="nugget-popup"><p>Surface water runoff flowed west&ndash;to&ndash;east along Kingswood Avenue during the intense rainfall on 20th July 2021, causing road flooding as drainage surcharged. (p16)</p></div></div></body></div>`)[0];
+                popup_b760be2321db63b5042e3abd88143c00.setContent(html_1ab93f683e78ad6f6c58470dbe32eeae);
+            
+        
+
+        marker_a84c5ac40b2d8961d12dc468f28bc6d2.bindPopup(popup_b760be2321db63b5042e3abd88143c00)
+        ;
+
+        
+    
+    
+            var marker_14d1995113ce5f11e7c1a71c54e053fb = L.marker(
+                [51.394544, 0.1795693],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_4503faa7f9f2c41f6957181d2d0a7b0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_14d1995113ce5f11e7c1a71c54e053fb.setIcon(icon_4503faa7f9f2c41f6957181d2d0a7b0c);
+        
+    
+        var popup_ef2c861d5e5533e8a77f81fa94e388f0 = L.popup({});
+
+        
+            
+                var html_bb7604edc1fe46f1dec3648dc417f270 = $(`<div id="html_bb7604edc1fe46f1dec3648dc417f270" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Swanley</h1><div class="nugget-popup"><p>Road carriageways and intersections on High Street were affected by surface water runoff during the intense rainfall event; map annotations mark road segments/intersections on High Street as 'Affected Flooded Roads' on 21 July 2021, indicating flooding and flow of water along estate flow paths toward lower ground. [IMG] (p16)</p></div><div class="nugget-popup"><p>Internal flooding of properties on the High Street. (p29)</p></div></div></body></div>`)[0];
+                popup_ef2c861d5e5533e8a77f81fa94e388f0.setContent(html_bb7604edc1fe46f1dec3648dc417f270);
+            
+        
+
+        marker_14d1995113ce5f11e7c1a71c54e053fb.bindPopup(popup_ef2c861d5e5533e8a77f81fa94e388f0)
+        ;
+
+        
+    
+    
+            var marker_9c49539943504a23e2f559ac441aa72a = L.marker(
+                [51.3950762, 0.1791464],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_6b1da87560f4f8b76ad8b2288524fe6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9c49539943504a23e2f559ac441aa72a.setIcon(icon_6b1da87560f4f8b76ad8b2288524fe6e);
+        
+    
+        var popup_1235c11f6c9503353ccb7fbadd284f99 = L.popup({});
+
+        
+            
+                var html_eba4135887a96108149854152d6ae3bf = $(`<div id="html_eba4135887a96108149854152d6ae3bf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Park Road, High Firs</h1><div class="nugget-popup"><p>Surface water runoff occurred along Park Road and flowed from Park Road into lower&ndash;lying Sheridan Close during the intense rainfall; drainage infrastructure surcharged during the 20th July 2021 event. [IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_1235c11f6c9503353ccb7fbadd284f99.setContent(html_eba4135887a96108149854152d6ae3bf);
+            
+        
+
+        marker_9c49539943504a23e2f559ac441aa72a.bindPopup(popup_1235c11f6c9503353ccb7fbadd284f99)
+        ;
+
+        
+    
+    
+            var marker_70048a2cc28f751b820cfceacf20b9a1 = L.marker(
+                [51.3945992, 0.1854873],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_cb9087133af516f7c85a215d63312db6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_70048a2cc28f751b820cfceacf20b9a1.setIcon(icon_cb9087133af516f7c85a215d63312db6);
+        
+    
+        var popup_68a75455815f611b46fbd6e46851dfab = L.popup({});
+
+        
+            
+                var html_348f521614f3169d833f5d97e9272a7e = $(`<div id="html_348f521614f3169d833f5d97e9272a7e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hillside Court, Swanley</h1><div class="nugget-popup"><p>Surface water runoff along road surfaces from Hillside Court flowed towards Beech Avenue during the intense rainfall; drainage infrastructure surcharged during the 20th July 2021 event. (p17)</p></div></div></body></div>`)[0];
+                popup_68a75455815f611b46fbd6e46851dfab.setContent(html_348f521614f3169d833f5d97e9272a7e);
+            
+        
+
+        marker_70048a2cc28f751b820cfceacf20b9a1.bindPopup(popup_68a75455815f611b46fbd6e46851dfab)
+        ;
+
+        
+    
+    
+            var marker_fe4213c803a6a7fc61e84770de56d653 = L.marker(
+                [51.3945531, 0.1873439],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_8dc74479d076f7d9eef6d6ca01fd6762 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fe4213c803a6a7fc61e84770de56d653.setIcon(icon_8dc74479d076f7d9eef6d6ca01fd6762);
+        
+    
+        var popup_f45e8268e165dbf02f0b6ee6d6f42f68 = L.popup({});
+
+        
+            
+                var html_2c67a3def8a2232053865970b3d83626 = $(`<div id="html_2c67a3def8a2232053865970b3d83626" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Moultain Hill, Swanley</h1><div class="nugget-popup"><p>Surface water runoff along road surfaces from Mountain Hill (sic) flowed towards Beech Avenue; the local drainage surcharged during the intense rainfall experienced on 20th July 2021. (p17)</p></div></div></body></div>`)[0];
+                popup_f45e8268e165dbf02f0b6ee6d6f42f68.setContent(html_2c67a3def8a2232053865970b3d83626);
+            
+        
+
+        marker_fe4213c803a6a7fc61e84770de56d653.bindPopup(popup_f45e8268e165dbf02f0b6ee6d6f42f68)
+        ;
+
+        
+    
+    
+            var marker_5d77f5c587518830bf3b3080614fc432 = L.marker(
+                [51.4079662, 0.1722552],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_6f3e1117fca9d5bbeb6cb1c5dab3af8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5d77f5c587518830bf3b3080614fc432.setIcon(icon_6f3e1117fca9d5bbeb6cb1c5dab3af8c);
+        
+    
+        var popup_4d5086dc13ef71d53cbd2efe1a349f80 = L.popup({});
+
+        
+            
+                var html_6a6de02cb36c61f1d4f660dc11623d8d = $(`<div id="html_6a6de02cb36c61f1d4f660dc11623d8d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>College Road, Hextable</h1><div class="nugget-popup"><p>The section of College Road between Egerton Avenue and the Post Office was impassable to local traffic due to carriageway (surface water) flooding. No properties were reported impacted. (p20)</p></div></div></body></div>`)[0];
+                popup_4d5086dc13ef71d53cbd2efe1a349f80.setContent(html_6a6de02cb36c61f1d4f660dc11623d8d);
+            
+        
+
+        marker_5d77f5c587518830bf3b3080614fc432.bindPopup(popup_4d5086dc13ef71d53cbd2efe1a349f80)
+        ;
+
+        
+    
+    
+            var marker_8142f2138d43a7f8290f04f6b8d419ce = L.marker(
+                [51.3987906, 0.2061585],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_df990d06ca1adc6c9946236c5ac7f091 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8142f2138d43a7f8290f04f6b8d419ce.setIcon(icon_df990d06ca1adc6c9946236c5ac7f091);
+        
+    
+        var popup_b652346dc00d1bab51328542fc30ba9f = L.popup({});
+
+        
+            
+                var html_55584c00c5341ed7ab25ff4cd471d1ef = $(`<div id="html_55584c00c5341ed7ab25ff4cd471d1ef" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Button Street, Swanley</h1><div class="nugget-popup"><p>Carriageway flooding affecting the road (reported as carriageway flooding along Button Street and Waylands). (p29)</p></div></div></body></div>`)[0];
+                popup_b652346dc00d1bab51328542fc30ba9f.setContent(html_55584c00c5341ed7ab25ff4cd471d1ef);
+            
+        
+
+        marker_8142f2138d43a7f8290f04f6b8d419ce.bindPopup(popup_b652346dc00d1bab51328542fc30ba9f)
+        ;
+
+        
+    
+    
+            var marker_f24351784d707c0ede3c93e35358c178 = L.marker(
+                [51.3911274, 0.1740535],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_ab33c4c6bc3b92bd5c113c2c63716eac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f24351784d707c0ede3c93e35358c178.setIcon(icon_ab33c4c6bc3b92bd5c113c2c63716eac);
+        
+    
+        var popup_37ce8e38b4b5150715422c290d4dc2c7 = L.popup({});
+
+        
+            
+                var html_f78322c5497f87543f1ed8d62d916022 = $(`<div id="html_f78322c5497f87543f1ed8d62d916022" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cranleigh Drive, High Firs</h1><div class="nugget-popup"><p>External flooding of a property due to blockage of soakaways. (p29)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p29)</p></div></div></body></div>`)[0];
+                popup_37ce8e38b4b5150715422c290d4dc2c7.setContent(html_f78322c5497f87543f1ed8d62d916022);
+            
+        
+
+        marker_f24351784d707c0ede3c93e35358c178.bindPopup(popup_37ce8e38b4b5150715422c290d4dc2c7)
+        ;
+
+        
+    
+    
+            var marker_d58498f43f4c30d09e05b1c3d1669a26 = L.marker(
+                [51.3925927, 0.1679228],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_55076d7c72eacfaf47bb25a82f0e78cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d58498f43f4c30d09e05b1c3d1669a26.setIcon(icon_55076d7c72eacfaf47bb25a82f0e78cd);
+        
+    
+        var popup_f9af9211a3a2362899d9f290cd5452a9 = L.popup({});
+
+        
+            
+                var html_c913298219d090b696e6aec3c71df510 = $(`<div id="html_c913298219d090b696e6aec3c71df510" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Edwards Gardens, Swanley</h1><div class="nugget-popup"><p>External flooding affecting properties/areas along Edwards Gardens (reported as external flooding along Edwards Gardens and Ladds Way). (p29)</p></div></div></body></div>`)[0];
+                popup_f9af9211a3a2362899d9f290cd5452a9.setContent(html_c913298219d090b696e6aec3c71df510);
+            
+        
+
+        marker_d58498f43f4c30d09e05b1c3d1669a26.bindPopup(popup_f9af9211a3a2362899d9f290cd5452a9)
+        ;
+
+        
+    
+    
+            var marker_7e0e845241ebd1519b87489a864ace2e = L.marker(
+                [51.4008819, 0.1705856],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_d051a8043e08d30bae6ff87fdc15593e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7e0e845241ebd1519b87489a864ace2e.setIcon(icon_d051a8043e08d30bae6ff87fdc15593e);
+        
+    
+        var popup_5fdc004f063b7811d7e487c2e70f5d46 = L.popup({});
+
+        
+            
+                var html_b42b3b8fb5c5a96ec56fc7321c8e5d74 = $(`<div id="html_b42b3b8fb5c5a96ec56fc7321c8e5d74" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hilda May Avenue, Swanley</h1><div class="nugget-popup"><p>Carriageway flooding of the road. (p29)</p></div></div></body></div>`)[0];
+                popup_5fdc004f063b7811d7e487c2e70f5d46.setContent(html_b42b3b8fb5c5a96ec56fc7321c8e5d74);
+            
+        
+
+        marker_7e0e845241ebd1519b87489a864ace2e.bindPopup(popup_5fdc004f063b7811d7e487c2e70f5d46)
+        ;
+
+        
+    
+    
+            var marker_f14156678512e6bb9d35244da030112f = L.marker(
+                [51.4013904, 0.1937561],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_bb3ccb60e1199ed8ce1cc35d56f26ae3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f14156678512e6bb9d35244da030112f.setIcon(icon_bb3ccb60e1199ed8ce1cc35d56f26ae3);
+        
+    
+        var popup_cd73228b8f53d676f82101edb2980cbd = L.popup({});
+
+        
+            
+                var html_ee6033eb1aa71d7ec838e254a8ff8d10 = $(`<div id="html_ee6033eb1aa71d7ec838e254a8ff8d10" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Beechenlea Lane, Swanley</h1><div class="nugget-popup"><p>Flooding affecting the carriageway (reported as approximately 8 cm across Beechenlea Lane). (p29)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 8 cm across Beechenlea Lane (p29)</p></div></div></body></div>`)[0];
+                popup_cd73228b8f53d676f82101edb2980cbd.setContent(html_ee6033eb1aa71d7ec838e254a8ff8d10);
+            
+        
+
+        marker_f14156678512e6bb9d35244da030112f.bindPopup(popup_cd73228b8f53d676f82101edb2980cbd)
+        ;
+
+        
+    
+    
+            var marker_59d75e6a5efb222aca84fedd7059547b = L.marker(
+                [51.3986079, 0.1600113],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_3e6518375cf3bb62e9ea0ced1b6856be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_59d75e6a5efb222aca84fedd7059547b.setIcon(icon_3e6518375cf3bb62e9ea0ced1b6856be);
+        
+    
+        var popup_ad88fe141b49f8910bf3245f89eddec0 = L.popup({});
+
+        
+            
+                var html_72966e40b26fd3dab68a8547ef3a1700 = $(`<div id="html_72966e40b26fd3dab68a8547ef3a1700" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Farm Avenue, St Mary's</h1><div class="nugget-popup"><p>Carriageway flooding due to blocked soakaways and external flooding of properties on Farm Avenue (soakaway blockage led to carriageway flooding; external property flooding also reported). (p29)</p></div><div class="nugget-popup"><p>Carriageway flooding reported; at least one property experienced internal flooding. (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p30)</p></div></div></body></div>`)[0];
+                popup_ad88fe141b49f8910bf3245f89eddec0.setContent(html_72966e40b26fd3dab68a8547ef3a1700);
+            
+        
+
+        marker_59d75e6a5efb222aca84fedd7059547b.bindPopup(popup_ad88fe141b49f8910bf3245f89eddec0)
+        ;
+
+        
+    
+    
+            var marker_24e95102ef2cb9c8fe65fe8e3f1756a3 = L.marker(
+                [51.4013706, 0.1796942],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_f6e4b03a1b8e9c65c462a64162531dbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_24e95102ef2cb9c8fe65fe8e3f1756a3.setIcon(icon_f6e4b03a1b8e9c65c462a64162531dbd);
+        
+    
+        var popup_9857eb82c96bc06633b5a431007b9baf = L.popup({});
+
+        
+            
+                var html_c31beb0c881a33fc87a6bbab9f2194ea = $(`<div id="html_c31beb0c881a33fc87a6bbab9f2194ea" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Haven Close, Swanley</h1><div class="nugget-popup"><p>External flooding of properties caused by a blocked drain. (p29)</p></div></div></body></div>`)[0];
+                popup_9857eb82c96bc06633b5a431007b9baf.setContent(html_c31beb0c881a33fc87a6bbab9f2194ea);
+            
+        
+
+        marker_24e95102ef2cb9c8fe65fe8e3f1756a3.bindPopup(popup_9857eb82c96bc06633b5a431007b9baf)
+        ;
+
+        
+    
+    
+            var marker_97a42e02a4a42e20150e7a7d81157b1b = L.marker(
+                [51.4058918, 0.2093663],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_fd78475a055317ea4c63dab1e67caa6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_97a42e02a4a42e20150e7a7d81157b1b.setIcon(icon_fd78475a055317ea4c63dab1e67caa6c);
+        
+    
+        var popup_75d6fbc1d02cdf103268c539ef6e9550 = L.popup({});
+
+        
+            
+                var html_ae90db0359f7750e56fdd5608d58c2a9 = $(`<div id="html_ae90db0359f7750e56fdd5608d58c2a9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Road, Swanley</h1><div class="nugget-popup"><p>Carriageway flooding on the road. (p29)</p></div></div></body></div>`)[0];
+                popup_75d6fbc1d02cdf103268c539ef6e9550.setContent(html_ae90db0359f7750e56fdd5608d58c2a9);
+            
+        
+
+        marker_97a42e02a4a42e20150e7a7d81157b1b.bindPopup(popup_75d6fbc1d02cdf103268c539ef6e9550)
+        ;
+
+        
+    
+    
+            var marker_a13638a70782beaf2e2c5fc8ef241ac7 = L.marker(
+                [51.3980883, 0.1610781],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_83f76dd70011cea0dbc27096dc9b3187 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a13638a70782beaf2e2c5fc8ef241ac7.setIcon(icon_83f76dd70011cea0dbc27096dc9b3187);
+        
+    
+        var popup_a7b97055b947af9c5710615f4aad86b4 = L.popup({});
+
+        
+            
+                var html_96f61977c10349c92b291e6318f12f03 = $(`<div id="html_96f61977c10349c92b291e6318f12f03" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bourne Way, St Mary's</h1><div class="nugget-popup"><p>Properties experienced internal flooding (water ingress) with reports of internal depths around 50 cm; properties externally flooded as well. (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>50 cm internal depth (p30)</p></div></div></body></div>`)[0];
+                popup_a7b97055b947af9c5710615f4aad86b4.setContent(html_96f61977c10349c92b291e6318f12f03);
+            
+        
+
+        marker_a13638a70782beaf2e2c5fc8ef241ac7.bindPopup(popup_a7b97055b947af9c5710615f4aad86b4)
+        ;
+
+        
+    
+    
+            var marker_d503cbc803b60ca0dd5ffd38b4844590 = L.marker(
+                [51.3925241, 0.1882013],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_300e77df8d87c40e22d6739649aeb104 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d503cbc803b60ca0dd5ffd38b4844590.setIcon(icon_300e77df8d87c40e22d6739649aeb104);
+        
+    
+        var popup_c82a8d02b0b884e13abeff3646c98b74 = L.popup({});
+
+        
+            
+                var html_720468e12a5efa49eeb3630c349cf69f = $(`<div id="html_720468e12a5efa49eeb3630c349cf69f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Manse Way, Swanley</h1><div class="nugget-popup"><p>Blocked gullies recorded along Manse Way to London Road (drainage blockage noted during the flooding event). (p29)</p></div><div class="nugget-popup"><p>Carriageway flooding and at least one property experienced internal flooding to a depth of 50 cm. (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>50 cm (internal) (p30)</p></div></div></body></div>`)[0];
+                popup_c82a8d02b0b884e13abeff3646c98b74.setContent(html_720468e12a5efa49eeb3630c349cf69f);
+            
+        
+
+        marker_d503cbc803b60ca0dd5ffd38b4844590.bindPopup(popup_c82a8d02b0b884e13abeff3646c98b74)
+        ;
+
+        
+    
+    
+            var marker_4b39661317d01b3ccb10252a833b10d0 = L.marker(
+                [51.4053776, 0.1593304],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_ab0e3cf18f571f31fbbda6af640a556b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4b39661317d01b3ccb10252a833b10d0.setIcon(icon_ab0e3cf18f571f31fbbda6af640a556b);
+        
+    
+        var popup_76b748d78fb3f356e76d213d85d8b579 = L.popup({});
+
+        
+            
+                var html_67dfe96ab9bc63a95df6ae1991c3e5ff = $(`<div id="html_67dfe96ab9bc63a95df6ae1991c3e5ff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Birchwood Road, Swanley</h1><div class="nugget-popup"><p>Blocked drains led to road flooding; carriageway inundated by surface water. (p30)</p></div></div></body></div>`)[0];
+                popup_76b748d78fb3f356e76d213d85d8b579.setContent(html_67dfe96ab9bc63a95df6ae1991c3e5ff);
+            
+        
+
+        marker_4b39661317d01b3ccb10252a833b10d0.bindPopup(popup_76b748d78fb3f356e76d213d85d8b579)
+        ;
+
+        
+    
+    
+            var marker_b92adfe74f1ed9f53b10528379f8f0bb = L.marker(
+                [51.402112, 0.1625548],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_e8a93347b07cef55a88998e69f788a6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b92adfe74f1ed9f53b10528379f8f0bb.setIcon(icon_e8a93347b07cef55a88998e69f788a6b);
+        
+    
+        var popup_3e16d1b3e7c7d08be57b77bc987ec3db = L.popup({});
+
+        
+            
+                var html_8b34ffcd1411b96a73360630f413e6e1 = $(`<div id="html_8b34ffcd1411b96a73360630f413e6e1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woodview Road, St Mary's</h1><div class="nugget-popup"><p>Carriageway flooding reported; a noted depth of standing water on the carriageway was 20 cm. (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>20 cm (carriageway) (p30)</p></div></div></body></div>`)[0];
+                popup_3e16d1b3e7c7d08be57b77bc987ec3db.setContent(html_8b34ffcd1411b96a73360630f413e6e1);
+            
+        
+
+        marker_b92adfe74f1ed9f53b10528379f8f0bb.bindPopup(popup_3e16d1b3e7c7d08be57b77bc987ec3db)
+        ;
+
+        
+    
+    
+            var marker_f508f7e3341f0b2b13133fd9c46d0827 = L.marker(
+                [51.4042395, 0.1899183],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_df8a31812c35207504dd9e2298b024cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f508f7e3341f0b2b13133fd9c46d0827.setIcon(icon_df8a31812c35207504dd9e2298b024cf);
+        
+    
+        var popup_fac74bf996a378b1e917f44fb0388db0 = L.popup({});
+
+        
+            
+                var html_74edc841966463ead19ff4a8cb411e4b = $(`<div id="html_74edc841966463ead19ff4a8cb411e4b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Highland Hills, Swanley</h1><div class="nugget-popup"><p>Carriageway flooding reported along the road. (p30)</p></div></div></body></div>`)[0];
+                popup_fac74bf996a378b1e917f44fb0388db0.setContent(html_74edc841966463ead19ff4a8cb411e4b);
+            
+        
+
+        marker_f508f7e3341f0b2b13133fd9c46d0827.bindPopup(popup_fac74bf996a378b1e917f44fb0388db0)
+        ;
+
+        
+    
+    
+            var marker_3b80908f26066c659683356c0bbc647b = L.marker(
+                [51.39750895, 0.18022632679075817],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_b054621faedd97dcaf8886db514813d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3b80908f26066c659683356c0bbc647b.setIcon(icon_b054621faedd97dcaf8886db514813d9);
+        
+    
+        var popup_7f5932e68b9761f7897016a36dd1c07b = L.popup({});
+
+        
+            
+                var html_fef2005fa311b73fee7f8e0e0d8244eb = $(`<div id="html_fef2005fa311b73fee7f8e0e0d8244eb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Swanley</h1><div class="nugget-popup"><p>Flooding occurred in the town as a result of intense thunderstorms and heavy rainfall on 20th July 2021. (p1)</p></div><div class="nugget-popup"><p>Intense rainfall caused large volumes of surface water runoff predominantly from the urban network leading to surcharging of gullies; there were also reports of overland flows from surrounding agricultural land to the east of Swanley. As a result, on 20 July 2021 approximately 53 properties (including two schools) were affected and 30 properties flooded internally. A later event on 20&ndash;21 October 2021 (thunderstorms/intense rainfall) produced similar surface water runoff and gully surcharging, with approximately 17 properties affected and 11 properties flooding internally. [MUL] (p2)</p></div><div class="nugget-popup"><p>Multiple streets and properties across the town experienced surface water flooding on 20 July 2021, causing internal and external flooding to residences on named streets. (p5)</p></div><div class="nugget-popup"><p>Two intense periods of rainfall (around 13:00&ndash;14:30 and 16:30&ndash;17:30) produced surface water / flash flooding in Swanley. Resident reports of flooding were concentrated between about 17:00&ndash;18:00; the second intense storm (16:30&ndash;17:30) is consistent with the majority of these reports and radar suggests the storm was focused close to Swanley. Both intense periods are judged likely to have contributed to the flooding. (p7)</p></div><div class="nugget-popup"><p>Intense, highly localised rainfall on 20 July 2021 produced surface water and flash urban flooding across Swanley, inundating properties and streets and prompting the flood investigation response. (p9)</p></div><div class="nugget-popup"><p>Urban / surface&ndash;water flooding affected Swanley during the event referenced in the report; intense convective storm runoff led to short&ndash;duration flooding across the town. [IMG] (p10)</p></div><div class="nugget-popup"><p>Areas of Swanley experienced surface water and urban flooding during the events; the report notes affected parts of Swanley and links the intense rainfall and runoff to flooding impacts in local streets and properties. [IMG,MUL] (p13)</p></div><div class="nugget-popup"><p>Parts of Swanley (notably St. Mary's Estate) experienced surface water runoff and flooding during the event, with drains surcharging and roads/alleyways inundated at low points. [IMG] (p14)</p></div><div class="nugget-popup"><p>Swanley (High Firs area and southern parts) experienced heavy surface water flooding during the intense rainfall on 20th July 2021. Overland flows from and across the A20 and overtopping of a balancing pond between the A20 and Pinks Hill contributed to flooding of nearby properties; principal routes including Goldsel Road experienced major disruption. (p15)</p></div><div class="nugget-popup"><p>The Swanley area (including High Firs Estate and nearby streets) experienced surface water flooding during the intense rainfall on 20th July 2021. Runoff from embankments and surcharged drains produced flooded roads and impacted residential streets and community infrastructure within the town. [IMG] (p16)</p></div><div class="nugget-popup"><p>Intense rainfall on 20th July 2021 caused surface water runoff and surcharge of drainage infrastructure across Swanley, with notable ponding and flow along roads in lower&ndash;lying areas (concentrated in the north&ndash;east of the town). [IMG] (p17)</p></div><div class="nugget-popup"><p>Localised surface water flooding concentrated in the Strawberry Fields/The Spinney area caused ponding on roads, surcharged drainage and internal flooding of properties where property thresholds were lower than the adjacent road. (p18)</p></div><div class="nugget-popup"><p>The Hextable area of Swanley experienced surface water/urban flooding on 20th July 2021: a section of College Road (between Egerton Avenue and the Post Office) was impassable to local traffic due to carriageway flooding; Stuart Close suffered significant flooding to the road and to properties; surface water runoff along Lower Road flowed into Laura Drive, and drainage infrastructure surcharged under the intense rainfall. (p20)</p></div><div class="nugget-popup"><p>Properties in Swanley experienced surface water/urban flooding leading to requests for flood saxs and multiple reported incidents that generated emergency calls and follow&ndash;up gully and drainage clearance. [MUL] (p21)</p></div><div class="nugget-popup"><p>Short, intense rainfall on 20 July 2021 and 20&ndash;21 October 2021 overwhelmed local surface water drainage, causing flooding to properties across the town and disruption to local roads. [MUL] (p22)</p></div><div class="nugget-popup"><p>Multiple reported flood incidents were concentrated in the residential and urban streets of southern Swanley on 20th July 2021, with affected locations marked on the map. The incidents indicate localised inundation in the built&ndash;up area and disruption to streets and properties. [IMG] (p23)</p></div><div class="nugget-popup"><p>Multiple reported flood incidents concentrated in the central and southern parts of Swanley, affecting residential areas and sections of major roads (locations marked as affected on the map). [IMG] (p24)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 53 properties including two schools affected (20 July 2021); 30 properties flooded internally (20 July 2021); approximately 17 properties affected (20&ndash;21 October 2021); 11 properties flooded internally (20&ndash;21 October 2021) [MUL] (p2)</p></div><div class="nugget-popup quant"><p>16 properties (sum of reported affected properties across named streets) (p5)</p></div><div class="nugget-popup quant"><p>68 properties [MUL] (p22)</p></div></div></body></div>`)[0];
+                popup_7f5932e68b9761f7897016a36dd1c07b.setContent(html_fef2005fa311b73fee7f8e0e0d8244eb);
+            
+        
+
+        marker_3b80908f26066c659683356c0bbc647b.bindPopup(popup_7f5932e68b9761f7897016a36dd1c07b)
+        ;
+
+        
+    
+    
+            var marker_5a680129317747653f695d9d17bba9d7 = L.marker(
+                [51.4109307, 0.1779562],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_e04d473bf223e0a7f54074969d5afd6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5a680129317747653f695d9d17bba9d7.setIcon(icon_e04d473bf223e0a7f54074969d5afd6d);
+        
+    
+        var popup_f1f1176e76bd23a5cded1bfcfbea7b35 = L.popup({});
+
+        
+            
+                var html_fa6fd041358f7ed2a50b418b7c97b230 = $(`<div id="html_fa6fd041358f7ed2a50b418b7c97b230" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hextable</h1><div class="nugget-popup"><p>Overland flows from surrounding agricultural land to the south&ndash;east of Hextable were reported as contributing to flooding during the intense rainfall event, indicating local surface water flooding impacts. (p2)</p></div><div class="nugget-popup"><p>Localized surface water flooding affected roads and residential areas; map marks Laura Drive and Stuart Close as flooded, with flow lines showing runoff along Laura Drive and from Stuart Close toward Victoria Hill Road; properties requested flood saxs. [IMG,MUL] (p21)</p></div><div class="nugget-popup"><p>Identified as one of the most affected areas where surface water flooding occurred after intense rainfall overwhelmed drainage; targeted for potential SuDS improvements by KCC Flood Water Management Team to improve flood resilience. [MUL] (p22)</p></div><div class="nugget-popup"><p>Reported flood incidents occurred in outlying areas such as Hextable on 20th July 2021, including incidents located near major road junctions according to the map. [IMG] (p23)</p></div><div class="nugget-popup"><p>Isolated reported flood incidents indicated in the Hextable area (marked as affected on the map). [IMG] (p24)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 roads (Laura Drive; Stuart Close) [IMG,MUL] (p21)</p></div></div></body></div>`)[0];
+                popup_f1f1176e76bd23a5cded1bfcfbea7b35.setContent(html_fa6fd041358f7ed2a50b418b7c97b230);
+            
+        
+
+        marker_5a680129317747653f695d9d17bba9d7.bindPopup(popup_f1f1176e76bd23a5cded1bfcfbea7b35)
+        ;
+
+        
+    
+    
+            var marker_c065603acd50f263f3ef8fa9b9685ae0 = L.marker(
+                [51.399285045036706, 0.1650441822664466],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_98c35c8ad630f852b3e1c5408401c68f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c065603acd50f263f3ef8fa9b9685ae0.setIcon(icon_98c35c8ad630f852b3e1c5408401c68f);
+        
+    
+        var popup_2efabc34676ad045c2d97513987907f8 = L.popup({});
+
+        
+            
+                var html_3df1fa8d62bb91cf137a71f2de7080a4 = $(`<div id="html_3df1fa8d62bb91cf137a71f2de7080a4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Mary's</h1><div class="nugget-popup"><p>Surface water runoff flowed NE&ndash;SW along St Mary's Road, was funnelled through the alleyway between St Mary's Road and Hewitt Place, and continued along Hart Dyke Road causing surface water drains to become overwhelmed and surcharge. Floodwater moved towards lower topography at Almond Drive and Hibbs Close where significant flooding was reported. Runoff from higher ground (Oliver Road, West Harold Drive, Sermon Drive, Lavender Hill) exacerbated flows. Local drainage (gullies and soakaways) could not accommodate the rainfall volume and surcharged. [IMG] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 75 cm flood depth estimated along the alleyway between Oliver Road and Almond Drive [IMG] (p14)</p></div></div></body></div>`)[0];
+                popup_2efabc34676ad045c2d97513987907f8.setContent(html_3df1fa8d62bb91cf137a71f2de7080a4);
+            
+        
+
+        marker_c065603acd50f263f3ef8fa9b9685ae0.bindPopup(popup_2efabc34676ad045c2d97513987907f8)
+        ;
+
+        
+    
+    
+            var marker_8cedf77f5e25f9552c988a85f52215c2 = L.marker(
+                [51.3904772, 0.1769789],
+                {}
+            ).addTo(map_0dde352b4eccd0a403d17376d0f9643f);
+        
+    
+            var icon_c14e456443acb6e72b405d5d955e6aeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8cedf77f5e25f9552c988a85f52215c2.setIcon(icon_c14e456443acb6e72b405d5d955e6aeb);
+        
+    
+        var popup_cb48d7d13c22be04c9a20c4f61a9f788 = L.popup({});
+
+        
+            
+                var html_7c6d31cad761f8ddff0f63e2e6a579c5 = $(`<div id="html_7c6d31cad761f8ddff0f63e2e6a579c5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Firs</h1><div class="nugget-popup"><p>Within High Firs Estate, floodwater flowed generally southward and converged toward the southern boundary during the intense rainfall on 20th July 2021. Multiple estate roads and intersections were flooded (map shows affected roads), with flow lines channeling water toward the A20 and causing road and localised property/amenity impacts. [IMG] (p16)</p></div><div class="nugget-popup"><p>Properties in High Firs were affected by surface water runoff managed by the balancing pond located between the A20 and south Swanley; limited pond capacity contributed to impacts and the pond was later desilted and enlarged to increase capacity. (p21)</p></div></div></body></div>`)[0];
+                popup_cb48d7d13c22be04c9a20c4f61a9f788.setContent(html_7c6d31cad761f8ddff0f63e2e6a579c5);
+            
+        
+
+        marker_8cedf77f5e25f9552c988a85f52215c2.bindPopup(popup_cb48d7d13c22be04c9a20c4f61a9f788)
+        ;
+
+        
+    
+</script>
+</html>
