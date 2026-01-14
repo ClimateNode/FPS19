@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6fe48a23e9faab5cd7a6467f2cf3ca77 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6fe48a23e9faab5cd7a6467f2cf3ca77" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6fe48a23e9faab5cd7a6467f2cf3ca77 = L.map(
+                "map_6fe48a23e9faab5cd7a6467f2cf3ca77",
+                {
+                    center: [51.186291651073375, 0.3713465713150398],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_220e594abfc7381f8ff9889f3de10165 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_220e594abfc7381f8ff9889f3de10165.addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+    
+            var marker_cd12629a5ac3d0f16d5947bfb16bdbe7 = L.marker(
+                [51.170582, 0.3474234],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_e08d7e3dcca11b3d0beba0de2b13a060 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cd12629a5ac3d0f16d5947bfb16bdbe7.setIcon(icon_e08d7e3dcca11b3d0beba0de2b13a060);
+        
+    
+        var popup_05dee45458ae86565f90164ce042bb70 = L.popup({});
+
+        
+            
+                var html_909e91c96281d798f4159a439c2ef9d5 = $(`<div id="html_909e91c96281d798f4159a439c2ef9d5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Alder Stream</h1><div class="nugget-popup"><p>River levels rose quickly and overtopped the riverbanks; this overtopping contributed to overbank and overland flow into Five Oak Green, causing flooding of properties. (p1)</p></div><div class="nugget-popup"><p>Rapid rise in flows in the Alder Stream during intense rainfall on 9 February 2020, causing localised flooding in the Five Oak Green catchment. Peak flow on the Alder Stream was reported earlier (approximately 18:30&ndash;19:30) than peaks recorded on nearby gauged rivers. (p5)</p></div><div class="nugget-popup"><p>The Alder Stream was the locus of fluvial flood risk in Five Oak Green; areas adjacent to the stream (including along Alders Road and through the centre of Five Oak Green) experienced flooding consistent with reported properties affected during Storm Ciara. Flows are noted as being well contained within the watercourse upstream of Capel, but surface water flow paths and local depressions also contributed to flooding in the village. (p8)</p></div><div class="nugget-popup"><p>High flows in the Alder Stream overtopped banks during the flood event and contributed to flooding that affected the nearby settlement of Five Oak Green. [IMG,PAG] (p11)</p></div><div class="nugget-popup"><p>During Storm Ciara (9th February 2020) intense evening rainfall caused flows in Alder Stream to overtop its banks. Overtopping occurred upstream of the culvert under Five Oak Green Road; peak flows overtopped the channel and contributed to floodwater entering the locality while highway drainage and the local sewer network became overwhelmed and could not discharge to the stream. [IMG,PAG] (p12)</p></div><div class="nugget-popup"><p>Alder Stream overtopped its banks upstream of the culvert beneath Five Oak Green Road (overtopping reported at approximately 20:00). The overtopping caused the local surface water drainage system to be unable to discharge to the watercourse, leading to surcharging of drains and surface water flooding of roads and properties in central Five Oak Green. [IMG,PAG] (p13)</p></div><div class="nugget-popup"><p>Overtopped its banks during Storm Ciara (9 Feb 2020), producing high river levels that contributed to local drainage systems surcharging and to flooding in downstream areas. (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 40 properties (p1)</p></div><div class="nugget-popup quant"><p>flood depths up to approximately 30 cm internally (reported in main area of Five Oak Green) [IMG,PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_05dee45458ae86565f90164ce042bb70.setContent(html_909e91c96281d798f4159a439c2ef9d5);
+            
+        
+
+        marker_cd12629a5ac3d0f16d5947bfb16bdbe7.bindPopup(popup_05dee45458ae86565f90164ce042bb70)
+        ;
+
+        
+    
+    
+            var marker_b2aa6165a45b853f419098dd8ac4aa06 = L.marker(
+                [51.2513552, 0.3138054],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_2323cf540bac065d86acae713db223dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b2aa6165a45b853f419098dd8ac4aa06.setIcon(icon_2323cf540bac065d86acae713db223dc);
+        
+    
+        var popup_f34deac605124894cf69233bf10e2565 = L.popup({});
+
+        
+            
+                var html_bee26842c91454838fd889afb3df8d98 = $(`<div id="html_bee26842c91454838fd889afb3df8d98" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Bourne</h1><div class="nugget-popup"><p>River Bourne recorded a steep rise in flows on 9th February 2020 due to heavy rainfall associated with Storm Ciara; the gauge data show a pronounced peak in flow between 22:00 and 22:30. [PAG] (p5)</p></div><div class="nugget-popup"><p>Flow gauges recorded a steep rise in river flows during the storm, with a pronounced hydrological response in the River Bourne: flow rose sharply from the afternoon and reached a peak late in the evening. [IMG,PAG] (p6)</p></div></div></body></div>`)[0];
+                popup_f34deac605124894cf69233bf10e2565.setContent(html_bee26842c91454838fd889afb3df8d98);
+            
+        
+
+        marker_b2aa6165a45b853f419098dd8ac4aa06.bindPopup(popup_f34deac605124894cf69233bf10e2565)
+        ;
+
+        
+    
+    
+            var marker_b8167345e6a1081757330483eb57a71a = L.marker(
+                [51.1955172, 0.0680555],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_0246213a181cdcb83037bc7986e8935e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b8167345e6a1081757330483eb57a71a.setIcon(icon_0246213a181cdcb83037bc7986e8935e);
+        
+    
+        var popup_39d9e3dca8522aebdb11a17f218737b8 = L.popup({});
+
+        
+            
+                var html_28349d38a12df302a55ae40c97600c64 = $(`<div id="html_28349d38a12df302a55ae40c97600c64" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Eden</h1><div class="nugget-popup"><p>Environment Agency gauge data on the River Eden show a steep rise in river flows on 9th February 2020 as a result of the heavy rainfall from Storm Ciara. (p5)</p></div><div class="nugget-popup"><p>Flow gauge data for the River Eden show increased river flows during Storm Ciara on 9 February 2020 (hydrological response to heavy rainfall). [IMG,PAG] (p6)</p></div><div class="nugget-popup"><p>River flow remained low and stable for most of 9 February 2020 then rose sharply in the late afternoon and evening during Storm Ciara, indicating a strong hydrological response to the storm. [IMG] (p7)</p></div></div></body></div>`)[0];
+                popup_39d9e3dca8522aebdb11a17f218737b8.setContent(html_28349d38a12df302a55ae40c97600c64);
+            
+        
+
+        marker_b8167345e6a1081757330483eb57a71a.bindPopup(popup_39d9e3dca8522aebdb11a17f218737b8)
+        ;
+
+        
+    
+    
+            var marker_6e5aa96677498ac9fe09324b2b541ddd = L.marker(
+                [51.1653225, 0.6190017],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_58ae58dc577de5d7e54a1ee72cc98c34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6e5aa96677498ac9fe09324b2b541ddd.setIcon(icon_58ae58dc577de5d7e54a1ee72cc98c34);
+        
+    
+        var popup_34667cd7925645c1b3adbbb6bb9027be = L.popup({});
+
+        
+            
+                var html_9183e731e121928c0c025b8a0113c346 = $(`<div id="html_9183e731e121928c0c025b8a0113c346" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Beult</h1><div class="nugget-popup"><p>Gauge data on the River Beult show a large increase in flows on 9th February 2020 driven by the heavy rainfall during Storm Ciara, reflecting elevated river levels in the area. (p5)</p></div><div class="nugget-popup"><p>River flow was low and steady for most of 9 February 2020 then increased rapidly in the evening during Storm Ciara, showing a significant hydrological response to the storm. [IMG] (p7)</p></div></div></body></div>`)[0];
+                popup_34667cd7925645c1b3adbbb6bb9027be.setContent(html_9183e731e121928c0c025b8a0113c346);
+            
+        
+
+        marker_6e5aa96677498ac9fe09324b2b541ddd.bindPopup(popup_34667cd7925645c1b3adbbb6bb9027be)
+        ;
+
+        
+    
+    
+            var marker_afaf86d98cdf9782ecffeea04700bb31 = L.marker(
+                [51.1762879, 0.3386301],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_266e95ad3e875d5a8d5baa170b41a6db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_afaf86d98cdf9782ecffeea04700bb31.setIcon(icon_266e95ad3e875d5a8d5baa170b41a6db);
+        
+    
+        var popup_54a3100b5c8c16866111e17f877abca6 = L.popup({});
+
+        
+            
+                var html_7ca57c3907b6398817ff7f9ed0a5e8b5 = $(`<div id="html_7ca57c3907b6398817ff7f9ed0a5e8b5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Alders Road, Capel</h1><div class="nugget-popup"><p>9 properties flooded internally, including 1 commercial property; properties reported up to 30 cm of floodwater inside. [TAB] (p3)</p></div><div class="nugget-popup"><p>Areas along Alders Road adjacent to the Alder Stream are within Flood Zone 3 and were part of the high&ndash;risk surface&ndash;water flow paths that experienced flooding during Storm Ciara; a ditch and overland flow to the south&ndash;west contributed to runoff into the Alder Stream, impacting the road corridor and nearby properties. (p8)</p></div><div class="nugget-popup"><p>Properties along Alders Road flooded from fluvial sources; floodwater entered the rear of properties causing internal flooding. [IMG,PAG] (p13)</p></div><div class="nugget-popup"><p>Properties along Alders Road were flooded from fluvial sources when a tributary of the Alder Stream and an adjacent ditch became overwhelmed. Floodwaters entered the rear of properties and reached internal depths of approximately 20 to 30 cm. [IMG,PAG] (p14)</p></div><div class="nugget-popup"><p>Storm Ciara&ndash;induced runoff caused problems in highway drainage on Alders Road; KCC carried out gully cleansing, identified drainage defects and undertook ditch works with further investigation required. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties; 1 commercial property [TAB] (p3)</p></div><div class="nugget-popup quant"><p>20 to 30 cm internal flood depth [IMG,PAG] (p13)</p></div><div class="nugget-popup quant"><p>20 to 30 cm (internal flood depth) [IMG,PAG] (p14)</p></div></div></body></div>`)[0];
+                popup_54a3100b5c8c16866111e17f877abca6.setContent(html_7ca57c3907b6398817ff7f9ed0a5e8b5);
+            
+        
+
+        marker_afaf86d98cdf9782ecffeea04700bb31.bindPopup(popup_54a3100b5c8c16866111e17f877abca6)
+        ;
+
+        
+    
+    
+            var marker_e7be682f68f38041f54710cf291e6262 = L.marker(
+                [51.1837977, 0.3530455],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_98c0ecdbbf698be0ae067c54d1838329 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e7be682f68f38041f54710cf291e6262.setIcon(icon_98c0ecdbbf698be0ae067c54d1838329);
+        
+    
+        var popup_10e1289de58deaa66db4a6348783e45f = L.popup({});
+
+        
+            
+                var html_0f360792f0356e2cdb031224e2bab459 = $(`<div id="html_0f360792f0356e2cdb031224e2bab459" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nortons Way, Five Oak Green</h1><div class="nugget-popup"><p>5 properties flooded internally, with reports of up to 20 cm of floodwater within properties. [TAB] (p3)</p></div><div class="nugget-popup"><p>Surface water ponding occurred as local drainage surcharged, contributing to internal flooding of properties. (p13)</p></div><div class="nugget-popup"><p>Surface water from the Storm Ciara event overwhelmed local drainage causing blocked gullies on Nortons Way; KCC carried out gully cleansing (recorded 17/07/2020). [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties [TAB] (p3)</p></div><div class="nugget-popup quant"><p>approximately 30 cm internal flood depth (p13)</p></div></div></body></div>`)[0];
+                popup_10e1289de58deaa66db4a6348783e45f.setContent(html_0f360792f0356e2cdb031224e2bab459);
+            
+        
+
+        marker_e7be682f68f38041f54710cf291e6262.bindPopup(popup_10e1289de58deaa66db4a6348783e45f)
+        ;
+
+        
+    
+    
+            var marker_ef02b70e062cf46fcbaaea9710bd6a19 = L.marker(
+                [51.1802221, 0.3632885],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_85b35176c181152f01e5b463f31f6bc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ef02b70e062cf46fcbaaea9710bd6a19.setIcon(icon_85b35176c181152f01e5b463f31f6bc7);
+        
+    
+        var popup_51929fa8c013cb8426d15bdf981c5e43 = L.popup({});
+
+        
+            
+                var html_e01f48483b75f36c5e21d83338e3cc82 = $(`<div id="html_e01f48483b75f36c5e21d83338e3cc82" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Badsell Road, Five Oak Green</h1><div class="nugget-popup"><p>5 properties flooded internally, with reports of up to 15 cm of floodwater within properties. [TAB] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_51929fa8c013cb8426d15bdf981c5e43.setContent(html_e01f48483b75f36c5e21d83338e3cc82);
+            
+        
+
+        marker_ef02b70e062cf46fcbaaea9710bd6a19.bindPopup(popup_51929fa8c013cb8426d15bdf981c5e43)
+        ;
+
+        
+    
+    
+            var marker_e25378ff410d86691962c7e502d5acea = L.marker(
+                [51.1834229, 0.3530219],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_42c855e272887df37a30b68fbf89027f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e25378ff410d86691962c7e502d5acea.setIcon(icon_42c855e272887df37a30b68fbf89027f);
+        
+    
+        var popup_d5a24be8171f87b09118a7617665b907 = L.popup({});
+
+        
+            
+                var html_b04ccb0545b8e5584a71dd730a078846 = $(`<div id="html_b04ccb0545b8e5584a71dd730a078846" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oak Road, Five Oak Green</h1><div class="nugget-popup"><p>2 properties experienced external flooding. [TAB] (p3)</p></div><div class="nugget-popup"><p>Surface water drainage was overwhelmed, causing road flooding and internal flooding of properties as drains and gullies surcharged. (p13)</p></div><div class="nugget-popup"><p>During Storm Ciara intense rainfall overwhelmed highway drainage causing surface water ponding and blocked gullies; KCC carried out gully cleansing in response (gully cleansing recorded 24/03/2020). [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [TAB] (p3)</p></div><div class="nugget-popup quant"><p>approximately 30 cm internal flood depth (p13)</p></div></div></body></div>`)[0];
+                popup_d5a24be8171f87b09118a7617665b907.setContent(html_b04ccb0545b8e5584a71dd730a078846);
+            
+        
+
+        marker_e25378ff410d86691962c7e502d5acea.bindPopup(popup_d5a24be8171f87b09118a7617665b907)
+        ;
+
+        
+    
+    
+            var marker_5d77d511c2933c5ae6c043611814518a = L.marker(
+                [51.1844142, 0.3527677],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_c59ff2a402fac428d531f9272c5a2b3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5d77d511c2933c5ae6c043611814518a.setIcon(icon_c59ff2a402fac428d531f9272c5a2b3d);
+        
+    
+        var popup_dca052e16c14d749df4b57011a383ef7 = L.popup({});
+
+        
+            
+                var html_7a2d98db287139738499fc85ac9b3776 = $(`<div id="html_7a2d98db287139738499fc85ac9b3776" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Willow Crescent, Five Oak Green</h1><div class="nugget-popup"><p>3 properties flooded internally (reports of up to 20 cm inside); additionally 2 properties reported external flooding. [TAB] (p3)</p></div><div class="nugget-popup"><p>Local drains and gullies surcharged causing surface water to pond on the road and properties to flood internally. (p13)</p></div><div class="nugget-popup"><p>Surface water from the Storm Ciara rainfall overwhelmed local highway drainage leading to blocked gullies; KCC performed gully cleansing (records show works on 24/03/2020 and 24/07/2020). [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties (internal); 2 properties (external) [TAB] (p3)</p></div><div class="nugget-popup quant"><p>approximately 30 cm internal flood depth (p13)</p></div></div></body></div>`)[0];
+                popup_dca052e16c14d749df4b57011a383ef7.setContent(html_7a2d98db287139738499fc85ac9b3776);
+            
+        
+
+        marker_5d77d511c2933c5ae6c043611814518a.bindPopup(popup_dca052e16c14d749df4b57011a383ef7)
+        ;
+
+        
+    
+    
+            var marker_886454d99a1f00636d02c7b087cd8d37 = L.marker(
+                [51.1809693, 0.3478524],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_e9164feda0f1f493550c3dcd06afb36e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_886454d99a1f00636d02c7b087cd8d37.setIcon(icon_e9164feda0f1f493550c3dcd06afb36e);
+        
+    
+        var popup_acd6a7c0738fdc016b53f4b4b806ff75 = L.popup({});
+
+        
+            
+                var html_89fb19133803df652d25ea016ce479ea = $(`<div id="html_89fb19133803df652d25ea016ce479ea" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sychem Place, Five Oak Green</h1><div class="nugget-popup"><p>Properties experienced internal flooding with water entering buildings. [TAB] (p3)</p></div><div class="nugget-popup"><p>Flood clearance work and gully cleansing were carried out after the event; a CCTV survey later identified and removed a blockage associated with the flooding impacts. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>8 properties; up to 20cm of internal floodwater reported [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_acd6a7c0738fdc016b53f4b4b806ff75.setContent(html_89fb19133803df652d25ea016ce479ea);
+            
+        
+
+        marker_886454d99a1f00636d02c7b087cd8d37.bindPopup(popup_acd6a7c0738fdc016b53f4b4b806ff75)
+        ;
+
+        
+    
+    
+            var marker_24069b874e583d4322b363145cb50699 = L.marker(
+                [51.181698495537916, 0.34515307020293007],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_736b3045f344c53904c79eebce7777ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_24069b874e583d4322b363145cb50699.setIcon(icon_736b3045f344c53904c79eebce7777ef);
+        
+    
+        var popup_d441cab5981b7ede462e27fbc8cc38c7 = L.popup({});
+
+        
+            
+                var html_b16224d224138e6bff402d067a0b3aea = $(`<div id="html_b16224d224138e6bff402d067a0b3aea" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Five Oak Green Road, Five Oak Green</h1><div class="nugget-popup"><p>Commercial properties experienced internal flooding. [TAB] (p3)</p></div><div class="nugget-popup"><p>Alder Stream overtopped its banks upstream of the culvert beneath Five Oak Green Road during the 9th February 2020 event; highway drainage and the local sewer network were overwhelmed, causing flooding in the area around the road and affecting nearby properties. The culvert inlet trash screen was reported free of debris and peak flows gradually subsided. (p12)</p></div><div class="nugget-popup"><p>Local surface water drainage was overwhelmed with ponding on roads and internal flooding of nearby properties; emergency services attended and a road closure was put in place in the locality. [IMG,PAG] (p13)</p></div><div class="nugget-popup"><p>High&ndash;intensity rainfall during Storm Ciara overwhelmed highway drains on Five Oak Green Road leading to gully blockages and drainage defects; KCC undertook gully cleansing and remedial work. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 commercial properties flooded internally [TAB] (p3)</p></div><div class="nugget-popup quant"><p>approximately 30 cm internal flood depth [IMG,PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_d441cab5981b7ede462e27fbc8cc38c7.setContent(html_b16224d224138e6bff402d067a0b3aea);
+            
+        
+
+        marker_24069b874e583d4322b363145cb50699.bindPopup(popup_d441cab5981b7ede462e27fbc8cc38c7)
+        ;
+
+        
+    
+    
+            var marker_b9f68bde514dbcd599c79ba5778c4247 = L.marker(
+                [51.189342, 0.3702966],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_077bb5862772f2ca6d23f8bc755a168e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b9f68bde514dbcd599c79ba5778c4247.setIcon(icon_077bb5862772f2ca6d23f8bc755a168e);
+        
+    
+        var popup_311443f12f63f9b62297763437e66d1e = L.popup({});
+
+        
+            
+                var html_2da56192e5907fe09ec4bda3ec25dec8 = $(`<div id="html_2da56192e5907fe09ec4bda3ec25dec8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Whetsted Road, Whetsted</h1><div class="nugget-popup"><p>Properties experienced internal flooding, affecting both domestic and commercial premises. [TAB] (p3)</p></div><div class="nugget-popup"><p>At the junction of Whetsted Road and Badsell Road surface water overwhelmed the highway drainage and surface water sewer; water ponded at a topographical low on the highway to a depth sufficient to enter property. Failure of the pumping station was reported to have contributed to flooding at this location. (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties flooded internally (1 domestic, 1 commercial) [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_311443f12f63f9b62297763437e66d1e.setContent(html_2da56192e5907fe09ec4bda3ec25dec8);
+            
+        
+
+        marker_b9f68bde514dbcd599c79ba5778c4247.bindPopup(popup_311443f12f63f9b62297763437e66d1e)
+        ;
+
+        
+    
+    
+            var marker_3319129c8c82020f4fc890f606461794 = L.marker(
+                [51.18284487700301, 0.3530497274129059],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_bee3a5ac132659897e270f20464da8f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3319129c8c82020f4fc890f606461794.setIcon(icon_bee3a5ac132659897e270f20464da8f6);
+        
+    
+        var popup_6cde639c38b12ddecd280bed45154b5a = L.popup({});
+
+        
+            
+                var html_e1d4b667856de52a8d71fc51513764a3 = $(`<div id="html_e1d4b667856de52a8d71fc51513764a3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brookdene, Five Oak Green</h1><div class="nugget-popup"><p>Multiple properties were affected by flooding; one confirmed property experienced internal flooding. [TAB] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 confirmed property [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_6cde639c38b12ddecd280bed45154b5a.setContent(html_e1d4b667856de52a8d71fc51513764a3);
+            
+        
+
+        marker_3319129c8c82020f4fc890f606461794.bindPopup(popup_6cde639c38b12ddecd280bed45154b5a)
+        ;
+
+        
+    
+    
+            var marker_cc0109ca8960c0bb3664eccb4801c059 = L.marker(
+                [51.1722938, 0.3591578],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_507ad276c3144b6a16dedc1689d5f23e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cc0109ca8960c0bb3664eccb4801c059.setIcon(icon_507ad276c3144b6a16dedc1689d5f23e);
+        
+    
+        var popup_3bbec8d56c35b59ef9de8adf02e8a0e0 = L.popup({});
+
+        
+            
+                var html_de6c1ccfc297b2560e6188b3edec0709 = $(`<div id="html_de6c1ccfc297b2560e6188b3edec0709" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Colt's Hill, Capel</h1><div class="nugget-popup"><p>Properties along Alders Road (near Colt/Colt's Hill) were internally flooded when a tributary of the Alder Stream and an adjacent ditch became overwhelmed; floodwater entered the rear of properties. Environment Agency site visits support the tributary/ditch (not the main Alder Stream) as the cause. [IMG] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths of approximately 20 to 30 cm internally [IMG] (p14)</p></div></div></body></div>`)[0];
+                popup_3bbec8d56c35b59ef9de8adf02e8a0e0.setContent(html_de6c1ccfc297b2560e6188b3edec0709);
+            
+        
+
+        marker_cc0109ca8960c0bb3664eccb4801c059.bindPopup(popup_3bbec8d56c35b59ef9de8adf02e8a0e0)
+        ;
+
+        
+    
+    
+            var marker_be1c5a5c05b8dedbfcce24877e8f72bb = L.marker(
+                [51.1729253, 0.3812515],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_2b841c4bceef288c41622af75bb5b29a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_be1c5a5c05b8dedbfcce24877e8f72bb.setIcon(icon_2b841c4bceef288c41622af75bb5b29a);
+        
+    
+        var popup_5e3e65d5e108a7c35bbcac50b9ac7f66 = L.popup({});
+
+        
+            
+                var html_974ecb063ab526ab16862882a78dd9a7 = $(`<div id="html_974ecb063ab526ab16862882a78dd9a7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Badsell Road, Paddock Wood</h1><div class="nugget-popup"><p>Properties on Badsell Road were internally flooded with sewage after the nearby Larkfield pumping station stopped operating during power cuts caused by Storm Ciara; the pumping failure caused sewage to back up and flood nearby properties. (p14)</p></div><div class="nugget-popup"><p>Surface water overwhelmed the highway drainage and surface water sewer at the junction with Whetsted Road; water accumulated and ponded at a topographical low point and reached sufficient depth to enter property. Failure of the Larkfield pumping station contributed to the highway flooding at this location. [TAB,PAG] (p15)</p></div></div></body></div>`)[0];
+                popup_5e3e65d5e108a7c35bbcac50b9ac7f66.setContent(html_974ecb063ab526ab16862882a78dd9a7);
+            
+        
+
+        marker_be1c5a5c05b8dedbfcce24877e8f72bb.bindPopup(popup_5e3e65d5e108a7c35bbcac50b9ac7f66)
+        ;
+
+        
+    
+    
+            var marker_60ec43db746d84d30bc4c41aa97045a6 = L.marker(
+                [51.2070749, 0.7210362],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_4e58f16e3c3e91cd1a843e00540c0a6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_60ec43db746d84d30bc4c41aa97045a6.setIcon(icon_4e58f16e3c3e91cd1a843e00540c0a6c);
+        
+    
+        var popup_1ae74d33555b534155d01324a6d9181e = L.popup({});
+
+        
+            
+                var html_322db5f2e5cc2e57371abe8a3413cced = $(`<div id="html_322db5f2e5cc2e57371abe8a3413cced" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kent</h1><div class="nugget-popup"><p>A particularly intense band of rain fell across Kent on 9 February 2020 causing rapid river level rises (Alder Stream overtopping), highway drains, ditches and the combined sewer network to be unable to cope, resulting in flooding to Five Oak Green and surrounding areas. (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 40 properties (p1)</p></div></div></body></div>`)[0];
+                popup_1ae74d33555b534155d01324a6d9181e.setContent(html_322db5f2e5cc2e57371abe8a3413cced);
+            
+        
+
+        marker_60ec43db746d84d30bc4c41aa97045a6.bindPopup(popup_1ae74d33555b534155d01324a6d9181e)
+        ;
+
+        
+    
+    
+            var marker_b32558e0f8d2b5ba7938fdb182a37e1b = L.marker(
+                [51.183888, 0.3568368],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_75e3b3c17bef5357a027dfd1530a6894 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b32558e0f8d2b5ba7938fdb182a37e1b.setIcon(icon_75e3b3c17bef5357a027dfd1530a6894);
+        
+    
+        var popup_8b413f949968952efa746dc5fdb7f799 = L.popup({});
+
+        
+            
+                var html_7886d94d641571ba9a8d4d914efe5ea0 = $(`<div id="html_7886d94d641571ba9a8d4d914efe5ea0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Five Oak Green</h1><div class="nugget-popup"><p>A concentrated cluster of reported flood incidents (map shows majority clustered in and around Five Oak Green) &mdash; residents were surveyed in September 2020 to collate information about the flood extents and impacts in the area. [IMG] (p2)</p></div><div class="nugget-popup"><p>Localised flooding in Five Oak Green caused by rapid response of the Alder Stream to intense, locally exceptional rainfall during Storm Ciara. Flooding of this magnitude was restricted to Five Oak Green within the county. [PAG] (p5)</p></div><div class="nugget-popup"><p>During Storm Ciara the village experienced flooding driven by surface water runoff and fluvial overflow of the Alder Stream. Flood extents in the village matched high&ndash;risk areas on Environment Agency maps and locations of reported properties affected by the Storm Ciara event. (p8)</p></div><div class="nugget-popup"><p>Five Oak Green has experienced fluvial flooding associated with the River Medway. The report records multiple historic flood events affecting the settlement and indicates it was affected by the flood event on 9 February 2020. [IMG,PAG] (p9)</p></div><div class="nugget-popup"><p>The settlement experienced river (fluvial) flooding associated with the Alder Stream during the event; properties in the village were affected by overtopping flows. [IMG] (p11)</p></div><div class="nugget-popup"><p>On 9th February 2020 (Storm Ciara) intense rainfall led to Alder Stream overtopping through the centre of Five Oak Green and, concurrently, highway drainage and the local sewer network were overwhelmed and unable to discharge into the stream. Properties located along Alders Road were affected by the resulting flooding. Local natural flood management measures in the catchment were operating but were limited in extent and not considered likely to have significantly reduced flooding at Five Oak Green. [PAG] (p12)</p></div><div class="nugget-popup"><p>Surface water drainage in the main area of Five Oak Green surcharged and ponded because the watercourse overtopped, resulting in surface water flooding of local roads and internal flooding of properties (water entered properties and ponded around them). Fire and rescue attended multiple streets but could not pump properties because there was nowhere for surplus water to be discharged; the police implemented a road closure on Five Oak Road. [IMG,PAG] (p13)</p></div><div class="nugget-popup"><p>Experienced flooding during Storm Ciara (9 Feb 2020). Highway drains and the local combined sewer network were unable to cope; the culvert beneath Five Oak Green may have contributed to the flooding (potential surcharging of the culvert). (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths up to approximately 30 cm internally [IMG,PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_8b413f949968952efa746dc5fdb7f799.setContent(html_7886d94d641571ba9a8d4d914efe5ea0);
+            
+        
+
+        marker_b32558e0f8d2b5ba7938fdb182a37e1b.bindPopup(popup_8b413f949968952efa746dc5fdb7f799)
+        ;
+
+        
+    
+    
+            var marker_a8ca34e94a3b902e017cfcf5d349f3ce = L.marker(
+                [51.1755296, 0.3411531],
+                {}
+            ).addTo(map_6fe48a23e9faab5cd7a6467f2cf3ca77);
+        
+    
+            var icon_aa9c18760f2982d5a571768f13f444a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a8ca34e94a3b902e017cfcf5d349f3ce.setIcon(icon_aa9c18760f2982d5a571768f13f444a8);
+        
+    
+        var popup_0b446c564f428c34d1370bbb1611e40d = L.popup({});
+
+        
+            
+                var html_cc082de11d9b82523f5904016ab542f5 = $(`<div id="html_cc082de11d9b82523f5904016ab542f5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Capel</h1><div class="nugget-popup"><p>Several outlying reported flood incidents occurred in Capel and along connecting roads associated with the same storm event; these were included in the survey and map of reported incidents. [IMG] (p2)</p></div></div></body></div>`)[0];
+                popup_0b446c564f428c34d1370bbb1611e40d.setContent(html_cc082de11d9b82523f5904016ab542f5);
+            
+        
+
+        marker_a8ca34e94a3b902e017cfcf5d349f3ce.bindPopup(popup_0b446c564f428c34d1370bbb1611e40d)
+        ;
+
+        
+    
+</script>
+</html>
