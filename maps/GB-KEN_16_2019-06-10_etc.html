@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c88ce041c7943cc87cdaac1fffe7579e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c88ce041c7943cc87cdaac1fffe7579e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c88ce041c7943cc87cdaac1fffe7579e = L.map(
+                "map_c88ce041c7943cc87cdaac1fffe7579e",
+                {
+                    center: [51.32998797514501, 0.3643091707399267],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_46f613681151235f0369647302024288 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_46f613681151235f0369647302024288.addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+    
+            var marker_a3f9ee4525724916b4d8294f27e1b3bf = L.marker(
+                [51.3304441, 0.358376],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_c3899f682a0d1c17ffee08a384d8b5cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a3f9ee4525724916b4d8294f27e1b3bf.setIcon(icon_c3899f682a0d1c17ffee08a384d8b5cf);
+        
+    
+        var popup_7fa5915b4552490694afbe33c5616870 = L.popup({});
+
+        
+            
+                var html_fa6b3b0a931b36a43a03b55ea5573082 = $(`<div id="html_fa6b3b0a931b36a43a03b55ea5573082" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Vigo School</h1><div class="nugget-popup"><p>The school experienced both external and internal flooding (no counts given). [TAB] (p3)</p></div><div class="nugget-popup"><p>Surface water collected within the reception area of the school grounds, reached a depth and entered the school building causing internal inundation of the reception area. (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>three feet (p8)</p></div></div></body></div>`)[0];
+                popup_7fa5915b4552490694afbe33c5616870.setContent(html_fa6b3b0a931b36a43a03b55ea5573082);
+            
+        
+
+        marker_a3f9ee4525724916b4d8294f27e1b3bf.bindPopup(popup_7fa5915b4552490694afbe33c5616870)
+        ;
+
+        
+    
+    
+            var marker_cdecdaeddbcd6fe7c09017c947eac9c8 = L.marker(
+                [51.3475368, 0.3531309],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_fcc1b1aa89a38d883ad8fe99182e0bb6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cdecdaeddbcd6fe7c09017c947eac9c8.setIcon(icon_fcc1b1aa89a38d883ad8fe99182e0bb6);
+        
+    
+        var popup_b48dd27f101ae494841ac75d1d409afa = L.popup({});
+
+        
+            
+                var html_9385e1257646a37a02e63bee37a3a032 = $(`<div id="html_9385e1257646a37a02e63bee37a3a032" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Heron Hill Lane, Culverstone Green</h1><div class="nugget-popup"><p>Internal flooding to the cellar of one property. [TAB] (p3)</p></div><div class="nugget-popup"><p>Internal flooding to the cellar of one property. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p3)</p></div><div class="nugget-popup quant"><p>1 property (p4)</p></div></div></body></div>`)[0];
+                popup_b48dd27f101ae494841ac75d1d409afa.setContent(html_9385e1257646a37a02e63bee37a3a032);
+            
+        
+
+        marker_cdecdaeddbcd6fe7c09017c947eac9c8.bindPopup(popup_b48dd27f101ae494841ac75d1d409afa)
+        ;
+
+        
+    
+    
+            var marker_118cd420458a8f28bfe998e47582a6f1 = L.marker(
+                [51.3298141, 0.3611542],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_cc867e1b89b9c62e8ba0a771a6da5fb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_118cd420458a8f28bfe998e47582a6f1.setIcon(icon_cc867e1b89b9c62e8ba0a771a6da5fb1);
+        
+    
+        var popup_b221de7c95d32e0896e70baecb25405e = L.popup({});
+
+        
+            
+                var html_63463b31c57cc5f8c0493c309aaad7a0 = $(`<div id="html_63463b31c57cc5f8c0493c309aaad7a0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Admers Wood, Vigo Village</h1><div class="nugget-popup"><p>Overland flows from surrounding greenspaces affected properties and contributed to flooding on the highway; properties flooded internally and externally. [TAB] (p3)</p></div><div class="nugget-popup"><p>Surface water flooding affected these areas; fire brigade attended to pump flood water. Overland flows from adjacent woodland contributed to significant flooding within these localities. (p8)</p></div><div class="nugget-popup"><p>Admers Wood was cleansed (July 2019) after the flood; 13 gullies were cleaned and one gully (adjacent to No. 37) was identified as not flowing. CCTV survey, investigations and root cutting were scheduled as post&ndash;flood remedial actions. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 properties internal; 4 properties external [TAB] (p3)</p></div><div class="nugget-popup quant"><p>13 gullies; 1 gully not flowing [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_b221de7c95d32e0896e70baecb25405e.setContent(html_63463b31c57cc5f8c0493c309aaad7a0);
+            
+        
+
+        marker_118cd420458a8f28bfe998e47582a6f1.bindPopup(popup_b221de7c95d32e0896e70baecb25405e)
+        ;
+
+        
+    
+    
+            var marker_55e1be78dca5e6d16a88687a8691ceac = L.marker(
+                [51.3314413, 0.3636834],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_1c6ce7d8e990ea5c949485b41f72df59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_55e1be78dca5e6d16a88687a8691ceac.setIcon(icon_1c6ce7d8e990ea5c949485b41f72df59);
+        
+    
+        var popup_96759cc0b99716796497d460f1c19407 = L.popup({});
+
+        
+            
+                var html_d92bdf5150c48d2efe7a874c330bdb80 = $(`<div id="html_d92bdf5150c48d2efe7a874c330bdb80" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Coppice, Vigo Village</h1><div class="nugget-popup"><p>Foul sewer flooding caused internal flooding to properties; external flooding occurred at the lowest point in the road. [TAB] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties reported internal flooding from foul sewer; 2 properties reported external flooding [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_96759cc0b99716796497d460f1c19407.setContent(html_d92bdf5150c48d2efe7a874c330bdb80);
+            
+        
+
+        marker_55e1be78dca5e6d16a88687a8691ceac.bindPopup(popup_96759cc0b99716796497d460f1c19407)
+        ;
+
+        
+    
+    
+            var marker_f77c4e8e5408d9eb7028c178376ab91b = L.marker(
+                [51.3305858, 0.3621576],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_9b79d3dbf7ff72312a3bdee337247219 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f77c4e8e5408d9eb7028c178376ab91b.setIcon(icon_9b79d3dbf7ff72312a3bdee337247219);
+        
+    
+        var popup_a31331324b3f16ed9b777d268842fe50 = L.popup({});
+
+        
+            
+                var html_0cc5747b3c2e4f8a0856a82cfc3a8a01 = $(`<div id="html_0cc5747b3c2e4f8a0856a82cfc3a8a01" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Beech Mast, Vigo Village</h1><div class="nugget-popup"><p>External flooding occurred at the lowest points in the road, affecting properties. [TAB] (p3)</p></div><div class="nugget-popup"><p>Surface water flowed along Beech Mast as part of the flood pathway. Inspections found a damaged drainage pipe leading to a soakaway (tree root ingress identified), which would have reduced local drainage performance during the event. (p8)</p></div><div class="nugget-popup"><p>Beech Mast was surveyed and cleansed following the flood; the highway (11 gullies) had a damaged small silt&ndash;trap on a footpath. A damaged drain (coinciding with a BT trench reinstatement) was repaired with a replacement gully and new piped connection into the soakaway in June 2020 as part of flood recovery works. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties reported external flooding [TAB] (p3)</p></div><div class="nugget-popup quant"><p>11 gullies; 1 damaged silt&ndash;trap [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_a31331324b3f16ed9b777d268842fe50.setContent(html_0cc5747b3c2e4f8a0856a82cfc3a8a01);
+            
+        
+
+        marker_f77c4e8e5408d9eb7028c178376ab91b.bindPopup(popup_a31331324b3f16ed9b777d268842fe50)
+        ;
+
+        
+    
+    
+            var marker_4461d4ed8ad221442288366cdba0110f = L.marker(
+                [51.3305533, 0.3656916],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_b30eb8573990f96e123d44dd0f4675bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4461d4ed8ad221442288366cdba0110f.setIcon(icon_b30eb8573990f96e123d44dd0f4675bb);
+        
+    
+        var popup_4b6fab7265e4c7da18e8cec9999ff55b = L.popup({});
+
+        
+            
+                var html_9b177a0087812bf1d41736f681d9803c = $(`<div id="html_9b177a0087812bf1d41736f681d9803c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chestnut Lane, Vigo Village</h1><div class="nugget-popup"><p>External flooding affected properties on the lane. [TAB] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties experienced external flooding [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_4b6fab7265e4c7da18e8cec9999ff55b.setContent(html_9b177a0087812bf1d41736f681d9803c);
+            
+        
+
+        marker_4461d4ed8ad221442288366cdba0110f.bindPopup(popup_4b6fab7265e4c7da18e8cec9999ff55b)
+        ;
+
+        
+    
+    
+            var marker_03622a1bc89ef58a657324f13cabd58f = L.marker(
+                [51.3292711, 0.3568716],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_90fb56ef826ca1f8f16287d0a5955c76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_03622a1bc89ef58a657324f13cabd58f.setIcon(icon_90fb56ef826ca1f8f16287d0a5955c76);
+        
+    
+        var popup_a961abe7de13637673384fa1e206d92f = L.popup({});
+
+        
+            
+                var html_4d35967c83be3d1e873779399956c1fe = $(`<div id="html_4d35967c83be3d1e873779399956c1fe" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Churchside, Vigo Village</h1><div class="nugget-popup"><p>One property experienced both internal and external flooding caused by overland flow entering from the rear of the property. [TAB] (p3)</p></div><div class="nugget-popup"><p>Post&ndash;event gully cleansing was carried out (June and August 2019) as part of the response to the heavy storm that caused surface water flooding in the area. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_a961abe7de13637673384fa1e206d92f.setContent(html_4d35967c83be3d1e873779399956c1fe);
+            
+        
+
+        marker_03622a1bc89ef58a657324f13cabd58f.bindPopup(popup_a961abe7de13637673384fa1e206d92f)
+        ;
+
+        
+    
+    
+            var marker_fafa4c5246fb239caa042fad6fe4bea4 = L.marker(
+                [51.3300039, 0.3504023],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_cfa1e5fff52b885f5de88b64d11044c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fafa4c5246fb239caa042fad6fe4bea4.setIcon(icon_cfa1e5fff52b885f5de88b64d11044c9);
+        
+    
+        var popup_41af35d819eb14c58bec50bb7b08007c = L.popup({});
+
+        
+            
+                var html_c9266da47b2f053165f00bf571d792d9 = $(`<div id="html_c9266da47b2f053165f00bf571d792d9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Downs Wood, Vigo Village</h1><div class="nugget-popup"><p>External flooding affected three properties and one property also reported internal flooding. Flood water was reported as coming from land to the rear of the properties and foul water from the drain. [TAB] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties external; 1 property internal [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_41af35d819eb14c58bec50bb7b08007c.setContent(html_c9266da47b2f053165f00bf571d792d9);
+            
+        
+
+        marker_fafa4c5246fb239caa042fad6fe4bea4.bindPopup(popup_41af35d819eb14c58bec50bb7b08007c)
+        ;
+
+        
+    
+    
+            var marker_9cf5bb7c0d12dc95bef1cfaf30fdc611 = L.marker(
+                [51.33026923939601, 0.3535819084039486],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_304f7532b8ff6786498a90594583d114 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9cf5bb7c0d12dc95bef1cfaf30fdc611.setIcon(icon_304f7532b8ff6786498a90594583d114);
+        
+    
+        var popup_72e80531ac33d292ccaeda225487f6e1 = L.popup({});
+
+        
+            
+                var html_f9080ec3eec7b42dcffba5c3e254bdbd = $(`<div id="html_f9080ec3eec7b42dcffba5c3e254bdbd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stonecroft, Vigo Village</h1><div class="nugget-popup"><p>Three properties reported flooding: one external only, one internal and external, and one internal only. [TAB] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties (1 external; 1 internal and external; 1 internal) [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_72e80531ac33d292ccaeda225487f6e1.setContent(html_f9080ec3eec7b42dcffba5c3e254bdbd);
+            
+        
+
+        marker_9cf5bb7c0d12dc95bef1cfaf30fdc611.bindPopup(popup_72e80531ac33d292ccaeda225487f6e1)
+        ;
+
+        
+    
+    
+            var marker_c1f8180595875243ab1cbde4ef2431c1 = L.marker(
+                [51.3265944, 0.3448153],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_a2aa64510a0cf554351d3dc5167b6eb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c1f8180595875243ab1cbde4ef2431c1.setIcon(icon_a2aa64510a0cf554351d3dc5167b6eb2);
+        
+    
+        var popup_ba0ce99511463419b322a572425cde48 = L.popup({});
+
+        
+            
+                var html_733c5fbd6c6474272245bc79fb92d82a = $(`<div id="html_733c5fbd6c6474272245bc79fb92d82a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Coach Drive, Vigo Village</h1><div class="nugget-popup"><p>External flooding affected three properties on The Coachdrive. [TAB] (p3)</p></div><div class="nugget-popup"><p>Cleansing of the highway drainage (all 5 gullies) identified connection issues with three gullies at the end of the cul&ndash;de&ndash;sac; CCTV survey was scheduled to confirm the fault prior to repair. These drainage defects were identified as part of the post&ndash;flood response. [TAB,PAG] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties [TAB] (p3)</p></div><div class="nugget-popup quant"><p>5 gullies; three gullies [TAB,PAG] (p9)</p></div></div></body></div>`)[0];
+                popup_ba0ce99511463419b322a572425cde48.setContent(html_733c5fbd6c6474272245bc79fb92d82a);
+            
+        
+
+        marker_c1f8180595875243ab1cbde4ef2431c1.bindPopup(popup_ba0ce99511463419b322a572425cde48)
+        ;
+
+        
+    
+    
+            var marker_f37624c29fc53710a916ebf646dcba7b = L.marker(
+                [51.331962, 0.3611345],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_8e287b7ad263387dddecc82a687e642f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f37624c29fc53710a916ebf646dcba7b.setIcon(icon_8e287b7ad263387dddecc82a687e642f);
+        
+    
+        var popup_3a43e802b4badb4f70abea4631100e8f = L.popup({});
+
+        
+            
+                var html_3de5c66af914b0b592cbf11a9ebbf466 = $(`<div id="html_3de5c66af914b0b592cbf11a9ebbf466" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fern Down, Vigo Village</h1><div class="nugget-popup"><p>Overland flow (from Admers Woodland and Admers Wood Road) and foul sewer flooding affected properties, causing internal flooding. [TAB] (p3)</p></div><div class="nugget-popup"><p>Surface water flows reached and crossed into Ferndown Road (sic) after flowing from woodland and along footpaths. (p8)</p></div><div class="nugget-popup"><p>Cleansing of highway gullies undertaken immediately after the flood; inspections found no issues with the gullies. [TAB,PAG] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties internal [TAB] (p3)</p></div><div class="nugget-popup quant"><p>6 gullies [TAB,PAG] (p9)</p></div></div></body></div>`)[0];
+                popup_3a43e802b4badb4f70abea4631100e8f.setContent(html_3de5c66af914b0b592cbf11a9ebbf466);
+            
+        
+
+        marker_f37624c29fc53710a916ebf646dcba7b.bindPopup(popup_3a43e802b4badb4f70abea4631100e8f)
+        ;
+
+        
+    
+    
+            var marker_972f393c5041d09cdd370d0656f05090 = L.marker(
+                [51.3313408, 0.3602309],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_31bcb61fe08fc856cf009dd05648b777 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_972f393c5041d09cdd370d0656f05090.setIcon(icon_31bcb61fe08fc856cf009dd05648b777);
+        
+    
+        var popup_fdd371334cb421f25491e2653c9c61c8 = L.popup({});
+
+        
+            
+                var html_655b556146567924b964905db37beba5 = $(`<div id="html_655b556146567924b964905db37beba5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ash Keys, Vigo Village</h1><div class="nugget-popup"><p>External flooding affected properties, with two of those properties also reporting internal flooding. [TAB] (p3)</p></div><div class="nugget-popup"><p>After the flood the 3 gullies on Ash Keys were cleansed; one gully was found to be not flowing and a CCTV survey was scheduled to identify the fault and assess the associated soakaway. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties external; 2 properties internal [TAB] (p3)</p></div><div class="nugget-popup quant"><p>3 gullies; 1 gully not flowing [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_fdd371334cb421f25491e2653c9c61c8.setContent(html_655b556146567924b964905db37beba5);
+            
+        
+
+        marker_972f393c5041d09cdd370d0656f05090.bindPopup(popup_fdd371334cb421f25491e2653c9c61c8)
+        ;
+
+        
+    
+    
+            var marker_5316471a72747f2eb12c77cbbdc5249a = L.marker(
+                [51.330412, 0.3507855],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_251d89bc327fb7e60198ed09febaaa10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5316471a72747f2eb12c77cbbdc5249a.setIcon(icon_251d89bc327fb7e60198ed09febaaa10);
+        
+    
+        var popup_5305417b9809d560a537d7b9bc4461d8 = L.popup({});
+
+        
+            
+                var html_e4c24ace10ee1d9e35a44d753c1878b9 = $(`<div id="html_e4c24ace10ee1d9e35a44d753c1878b9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Timber Bank, Vigo Village</h1><div class="nugget-popup"><p>Many properties flooded; foul (sewer) water entered from the rear of properties and external flooding occurred at lowest points in the road. [TAB] (p3)</p></div><div class="nugget-popup"><p>Highway flood water required attendance and a tanker to clear the highway; foul sewers were reported overflowing from manholes into rear gardens of properties. Inspections found defects in drainage (section of pipe, a silt trap and a soakaway connection) that affected drainage. (p8)</p></div><div class="nugget-popup"><p>Highway drainage serving Timber Bank was inspected after the flood; 50 gullies and 16 soakaways were investigated, defects (including tree root ingress, cracking and joint displacement) were identified and cleansing and repairs were scheduled or completed (including replacement of a small silt&ndash;trap with a larger gully pot and repair of a 27m damaged drain linking manholes). [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>36 properties flooded; 19 properties reported foul water flooding from rear; 17 properties external [TAB] (p3)</p></div><div class="nugget-popup quant"><p>one silt trap; one drainage connection into one of the 16 soakaways (p8)</p></div><div class="nugget-popup quant"><p>50 gullies; 16 soakaways; 27m of damaged drain [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_5305417b9809d560a537d7b9bc4461d8.setContent(html_e4c24ace10ee1d9e35a44d753c1878b9);
+            
+        
+
+        marker_5316471a72747f2eb12c77cbbdc5249a.bindPopup(popup_5305417b9809d560a537d7b9bc4461d8)
+        ;
+
+        
+    
+    
+            var marker_8e413a5df373a0fa67830fb20a85eb27 = L.marker(
+                [51.3291594, 0.3534678],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_2a7df4bd28e19dda044ad0d033969605 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8e413a5df373a0fa67830fb20a85eb27.setIcon(icon_2a7df4bd28e19dda044ad0d033969605);
+        
+    
+        var popup_c48a573cf854a53e09f03db536d55572 = L.popup({});
+
+        
+            
+                var html_6eacfcd1a5736f26c145ca41cea38204 = $(`<div id="html_6eacfcd1a5736f26c145ca41cea38204" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Croftside, Vigo Village</h1><div class="nugget-popup"><p>Water entered properties from land to the rear; internal flooding reported. [TAB] (p3)</p></div><div class="nugget-popup"><p>Surface water flows travelled along Beech Mast (and nearby routes) contributing to flooding pathways. Inspections found drainage defects: at Croftside a pipe connection to a soakaway was displaced and at Beech Mast the drainage pipe to a soakaway was damaged (likely from tree&ndash;root ingress), which may have reduced soakaway performance. (p8)</p></div><div class="nugget-popup"><p>Following the 10th June 2019 flood Kent Highways CCTV&ndash;surveyed the highway drainage for Croftside. The connection into the soakaway was found to be damaged (root ingress) and was repaired in June 2020 as part of post&ndash;flood recovery works. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties; 1 property internal [TAB] (p3)</p></div><div class="nugget-popup quant"><p>6 gullies; 1 soakaway [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_c48a573cf854a53e09f03db536d55572.setContent(html_6eacfcd1a5736f26c145ca41cea38204);
+            
+        
+
+        marker_8e413a5df373a0fa67830fb20a85eb27.bindPopup(popup_c48a573cf854a53e09f03db536d55572)
+        ;
+
+        
+    
+    
+            var marker_35422a26336e63c57ce60820f3c53344 = L.marker(
+                [51.3332945, 0.365976],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_9417d19f0ecb141fa5b2265a3dcfe6a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_35422a26336e63c57ce60820f3c53344.setIcon(icon_9417d19f0ecb141fa5b2265a3dcfe6a8);
+        
+    
+        var popup_57bab4947e97470fedd872e65a9e1fa9 = L.popup({});
+
+        
+            
+                var html_79a57b6b83f77ce647ed7b0bb56a52de = $(`<div id="html_79a57b6b83f77ce647ed7b0bb56a52de" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Highview, Vigo Village</h1><div class="nugget-popup"><p>External flooding affected multiple properties; some properties also suffered internal flooding. [TAB] (p3)</p></div><div class="nugget-popup"><p>Highview underwent cleansing in August 2019 as part of the flood response; all 68 gullies were cleansed and some root ingress was identified, with CCTV survey and root cutting scheduled. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>17 properties external; 7 properties internal [TAB] (p3)</p></div><div class="nugget-popup quant"><p>68 gullies [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_57bab4947e97470fedd872e65a9e1fa9.setContent(html_79a57b6b83f77ce647ed7b0bb56a52de);
+            
+        
+
+        marker_35422a26336e63c57ce60820f3c53344.bindPopup(popup_57bab4947e97470fedd872e65a9e1fa9)
+        ;
+
+        
+    
+    
+            var marker_d552277fb3ae420c57118a86c7af0f20 = L.marker(
+                [51.3303168, 0.3637447],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_4f696ba2eb107d8792698a3b4c99ea16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d552277fb3ae420c57118a86c7af0f20.setIcon(icon_4f696ba2eb107d8792698a3b4c99ea16);
+        
+    
+        var popup_f43b264660f783af9ce140e9297a60dc = L.popup({});
+
+        
+            
+                var html_f66ef7faf2a4e08e0af26d1854be047b = $(`<div id="html_f66ef7faf2a4e08e0af26d1854be047b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hornbeams, Vigo Village</h1><div class="nugget-popup"><p>External flooding affected one property. [TAB] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p3)</p></div></div></body></div>`)[0];
+                popup_f43b264660f783af9ce140e9297a60dc.setContent(html_f66ef7faf2a4e08e0af26d1854be047b);
+            
+        
+
+        marker_d552277fb3ae420c57118a86c7af0f20.bindPopup(popup_f43b264660f783af9ce140e9297a60dc)
+        ;
+
+        
+    
+    
+            var marker_2b027ad972c64e4875fa19913807612a = L.marker(
+                [51.3407289, 0.3548746],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_7e6c0a9af7f0969544d5da2bc1273ef7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2b027ad972c64e4875fa19913807612a.setIcon(icon_7e6c0a9af7f0969544d5da2bc1273ef7);
+        
+    
+        var popup_4036415e5f8900f9b009a4b5d533b5ec = L.popup({});
+
+        
+            
+                var html_76e8feedf15a167ac2fc852da975af48 = $(`<div id="html_76e8feedf15a167ac2fc852da975af48" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rhododendron Avenue, Culverstone Green</h1><div class="nugget-popup"><p>Internal flooding at multiple properties; external flooding affected a property and its garage; the road surface was also flooded. [TAB] (p3)</p></div><div class="nugget-popup"><p>Five properties reported flooding: four properties suffered internal flooding; one property reported external flooding and garage flooding. (p4)</p></div><div class="nugget-popup"><p>Surface water flowed along Rhododendron Avenue causing road surface damage; internal flooding occurred to the basement of a property. (p8)</p></div><div class="nugget-popup"><p>Inspected as part of the post&ndash;flood response; the soakaway at the junction with Whitepost Lane was inspected and found to be in good condition and required no further work. [TAB] (p9)</p></div><div class="nugget-popup"><p>Soakaway at the junction of Whitepost Lane and Rhododendron Avenue was inspected after the flood and found to be in good condition; no further work required. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties; 4 properties internal; 1 property external [TAB] (p3)</p></div><div class="nugget-popup quant"><p>5 properties; 4 properties internal; 1 property external (p4)</p></div><div class="nugget-popup quant"><p>one property (p8)</p></div></div></body></div>`)[0];
+                popup_4036415e5f8900f9b009a4b5d533b5ec.setContent(html_76e8feedf15a167ac2fc852da975af48);
+            
+        
+
+        marker_2b027ad972c64e4875fa19913807612a.bindPopup(popup_4036415e5f8900f9b009a4b5d533b5ec)
+        ;
+
+        
+    
+    
+            var marker_476a0f3644eadf679987dd962ea7134e = L.marker(
+                [51.3393319, 0.3601236],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_d33a2f7fa5eb6e48c9eea8a130eae693 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_476a0f3644eadf679987dd962ea7134e.setIcon(icon_d33a2f7fa5eb6e48c9eea8a130eae693);
+        
+    
+        var popup_efc26556565afc7918cbc021d66e140c = L.popup({});
+
+        
+            
+                var html_cead72c65d6f639b79f3d12a02e965dc = $(`<div id="html_cead72c65d6f639b79f3d12a02e965dc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Valley Lane, Culverstone Green</h1><div class="nugget-popup"><p>External flooding affected the road surface; 2 properties experienced external flooding with damage to a retaining wall and a sewage tank; 1 property experienced internal flooding to the basement. [TAB] (p3)</p></div><div class="nugget-popup"><p>Three properties reported flooding: one property had internal basement flooding; two properties had external flooding with damage to a retaining wall and to a sewage tank. External flooding also affected the road surface. (p4)</p></div><div class="nugget-popup"><p>Surface water flowed along the road causing damage to the road surface; emergency repairs (planings) were applied by KCC Highways to make the private unadopted road accessible to emergency services. There is no formal public drainage on the road. (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties; 1 property internal; 2 properties external [TAB] (p3)</p></div><div class="nugget-popup quant"><p>3 properties; 1 property internal; 2 properties external (p4)</p></div></div></body></div>`)[0];
+                popup_efc26556565afc7918cbc021d66e140c.setContent(html_cead72c65d6f639b79f3d12a02e965dc);
+            
+        
+
+        marker_476a0f3644eadf679987dd962ea7134e.bindPopup(popup_efc26556565afc7918cbc021d66e140c)
+        ;
+
+        
+    
+    
+            var marker_1de5ed49bb191d1e403b3220205317ea = L.marker(
+                [51.3429969, 0.34923],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_4302189d11c32d6caf573603b8f9539d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1de5ed49bb191d1e403b3220205317ea.setIcon(icon_4302189d11c32d6caf573603b8f9539d);
+        
+    
+        var popup_111b7224e66a1e56ac9d64ed6be4cc53 = L.popup({});
+
+        
+            
+                var html_87f97afb311c29bee88c0b8a1f2c30ee = $(`<div id="html_87f97afb311c29bee88c0b8a1f2c30ee" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Willow Walk, Culverstone Green</h1><div class="nugget-popup"><p>External flooding affected the road surface. [TAB] (p3)</p></div><div class="nugget-popup"><p>Surface water flowed along the road causing damage to the road surface; KCC Highways carried out emergency repairs (adding planings) to the private unadopted highway to restore access for emergency services. The road lacks formal public drainage. (p8)</p></div></div></body></div>`)[0];
+                popup_111b7224e66a1e56ac9d64ed6be4cc53.setContent(html_87f97afb311c29bee88c0b8a1f2c30ee);
+            
+        
+
+        marker_1de5ed49bb191d1e403b3220205317ea.bindPopup(popup_111b7224e66a1e56ac9d64ed6be4cc53)
+        ;
+
+        
+    
+    
+            var marker_1826b8e5eeedcc44c5052c3ecfcd45c9 = L.marker(
+                [51.3402127, 0.3479138],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_913b568037af4d345cf5d6041a336b3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1826b8e5eeedcc44c5052c3ecfcd45c9.setIcon(icon_913b568037af4d345cf5d6041a336b3d);
+        
+    
+        var popup_14cda45a04812df52a4c65fbc27b9c5b = L.popup({});
+
+        
+            
+                var html_5d75a8225ff8ceb73310b254fe1b756d = $(`<div id="html_5d75a8225ff8ceb73310b254fe1b756d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Whitepost Lane, Culverstone Green</h1><div class="nugget-popup"><p>One property reported internal flooding which entered through the concrete base of the property. [TAB] (p3)</p></div><div class="nugget-popup"><p>One property reported internal flooding which entered through the concrete base of the property. (p4)</p></div><div class="nugget-popup"><p>Soakaways at the junctions with Rhododendron Avenue and Meadow Lane were inspected after the storm and found to be in good condition requiring no further work; nearby (White Post Land & Carters Hill Road, Culverstone) a soakaway was found to be nearing end of life and replacement works were planned. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p3)</p></div><div class="nugget-popup quant"><p>1 property (p4)</p></div><div class="nugget-popup quant"><p>one soakaway (p10)</p></div></div></body></div>`)[0];
+                popup_14cda45a04812df52a4c65fbc27b9c5b.setContent(html_5d75a8225ff8ceb73310b254fe1b756d);
+            
+        
+
+        marker_1826b8e5eeedcc44c5052c3ecfcd45c9.bindPopup(popup_14cda45a04812df52a4c65fbc27b9c5b)
+        ;
+
+        
+    
+    
+            var marker_8d3bb5bbc74bc2c91e830959711dcf7a = L.marker(
+                [51.3358982, 0.3531912],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_c44329fc8dbccc316e6f96f1b33287c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8d3bb5bbc74bc2c91e830959711dcf7a.setIcon(icon_c44329fc8dbccc316e6f96f1b33287c6);
+        
+    
+        var popup_b52fd95a34f215602777e35c8b9b1865 = L.popup({});
+
+        
+            
+                var html_b55255877145589517519fcaa35f0587 = $(`<div id="html_b55255877145589517519fcaa35f0587" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Meadow Lane, Culverstone Green</h1><div class="nugget-popup"><p>One property reported flooding to the garage and external flooding affecting the area. [TAB] (p3)</p></div><div class="nugget-popup"><p>One property reported flooding to the garage and external flooding of the property/curtilage. (p4)</p></div><div class="nugget-popup"><p>Inspected as part of the post&ndash;flood response; the soakaway at the junction with Whitepost Lane was inspected and found to be in good condition and required no further work. [TAB] (p9)</p></div><div class="nugget-popup"><p>Soakaway at the junction with Whitepost Lane was inspected after the flood and reported in good condition; no further work required. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p3)</p></div><div class="nugget-popup quant"><p>1 property (p4)</p></div></div></body></div>`)[0];
+                popup_b52fd95a34f215602777e35c8b9b1865.setContent(html_b55255877145589517519fcaa35f0587);
+            
+        
+
+        marker_8d3bb5bbc74bc2c91e830959711dcf7a.bindPopup(popup_b52fd95a34f215602777e35c8b9b1865)
+        ;
+
+        
+    
+    
+            var marker_cac98df37669243741009610168e8d46 = L.marker(
+                [51.3428422, 0.3472481],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_941c143e21b7a9a397ba50e42c57150a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cac98df37669243741009610168e8d46.setIcon(icon_941c143e21b7a9a397ba50e42c57150a);
+        
+    
+        var popup_0c366afb5b4035437a75ccf49da7079e = L.popup({});
+
+        
+            
+                var html_0c86934a487c6e3332e86aa50d410445 = $(`<div id="html_0c86934a487c6e3332e86aa50d410445" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wrotham Road, Culverstone Green</h1><div class="nugget-popup"><p>One property reported internal flooding. [TAB] (p3)</p></div><div class="nugget-popup"><p>One property reported internal flooding. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p3)</p></div><div class="nugget-popup quant"><p>1 property (p4)</p></div></div></body></div>`)[0];
+                popup_0c366afb5b4035437a75ccf49da7079e.setContent(html_0c86934a487c6e3332e86aa50d410445);
+            
+        
+
+        marker_cac98df37669243741009610168e8d46.bindPopup(popup_0c366afb5b4035437a75ccf49da7079e)
+        ;
+
+        
+    
+    
+            var marker_ca1aa140629554d22e9ca26abda00bc2 = L.marker(
+                [51.3353316, 0.3604755],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_d26941af83a9755e7d8e639af3ad4a53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ca1aa140629554d22e9ca26abda00bc2.setIcon(icon_d26941af83a9755e7d8e639af3ad4a53);
+        
+    
+        var popup_3c3be9ef52aaae4c2bad29a73b7fded4 = L.popup({});
+
+        
+            
+                var html_b2c2064d21d130ec560d4226c4f50a82 = $(`<div id="html_b2c2064d21d130ec560d4226c4f50a82" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Southfield Shaw, Culverstone Green</h1><div class="nugget-popup"><p>Post&ndash;flood inspection identified gully issues at the junction with Harvel Road; further investigation and repairs to gullies/soakaway were scheduled. [TAB,PAG] (p9)</p></div><div class="nugget-popup"><p>The junction with Harvel Road was inspected and gullies cleansed after the storm; cleansing identified non&ndash;flowing and connection issues at multiple gullies and further investigative works (including CCTV) and soakaway checks were scheduled. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>7 gullies; one gully not flowing; 5 gullies; three gullies (p10)</p></div></div></body></div>`)[0];
+                popup_3c3be9ef52aaae4c2bad29a73b7fded4.setContent(html_b2c2064d21d130ec560d4226c4f50a82);
+            
+        
+
+        marker_ca1aa140629554d22e9ca26abda00bc2.bindPopup(popup_3c3be9ef52aaae4c2bad29a73b7fded4)
+        ;
+
+        
+    
+    
+            var marker_9f8e1a0e51b9bd66b0ae0492d3649fac = L.marker(
+                [51.330946, 0.3646925],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_816c4abe7dd52cf02cac31aec384dc0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9f8e1a0e51b9bd66b0ae0492d3649fac.setIcon(icon_816c4abe7dd52cf02cac31aec384dc0e);
+        
+    
+        var popup_0df27951722bdda6368886fc434f6978 = L.popup({});
+
+        
+            
+                var html_6a59dd1e7a04d4d0468c1e022af6182b = $(`<div id="html_6a59dd1e7a04d4d0468c1e022af6182b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Erskine Road, Vigo Village</h1><div class="nugget-popup"><p>Surface water flowed from the woodland, crossed Erskine (sic) and then travelled along Admers Wood and Beech Mast as part of the overland flood pathway. (p8)</p></div><div class="nugget-popup"><p>Post&ndash;flood cleansing and inspection found the highway drained by 49 gullies and identified two gullies not flowing between Commonly Road and Waterlow Road; CCTV surveys were scheduled to locate faults and soakaways near Ash Keys were scheduled for cleansing as part of recovery works. [TAB,PAG] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>49 gullies; two gullies [TAB,PAG] (p9)</p></div></div></body></div>`)[0];
+                popup_0df27951722bdda6368886fc434f6978.setContent(html_6a59dd1e7a04d4d0468c1e022af6182b);
+            
+        
+
+        marker_9f8e1a0e51b9bd66b0ae0492d3649fac.bindPopup(popup_0df27951722bdda6368886fc434f6978)
+        ;
+
+        
+    
+    
+            var marker_fe2616a2dd170a043caf05ed376c6758 = L.marker(
+                [51.3265493, 0.3422759],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_fb6e7f73bd1ba2546dad9003c56b3562 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fe2616a2dd170a043caf05ed376c6758.setIcon(icon_fb6e7f73bd1ba2546dad9003c56b3562);
+        
+    
+        var popup_4d46e18b1208355e60c4511705733748 = L.popup({});
+
+        
+            
+                var html_cff5bd4dd2dc3d29a4d5849ff85dcbfb = $(`<div id="html_cff5bd4dd2dc3d29a4d5849ff85dcbfb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Harvel Road, Vigo Village</h1><div class="nugget-popup"><p>Post&ndash;flood inspection identified issues with gullies at the junction with Southfield Shaw; these gullies and the soakaway at this location require further investigation and scheduled works. [TAB,PAG] (p9)</p></div><div class="nugget-popup"><p>At the junction with Southfield Shaw gullies were cleansed as part of the post&ndash;storm response; inspections found one gully (adjacent to No. 20) not flowing and identified connection issues requiring further investigation; CCTV and further investigative works were scheduled. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>7 gullies; one gully not flowing; 5 gullies; three gullies (p10)</p></div></div></body></div>`)[0];
+                popup_4d46e18b1208355e60c4511705733748.setContent(html_cff5bd4dd2dc3d29a4d5849ff85dcbfb);
+            
+        
+
+        marker_fe2616a2dd170a043caf05ed376c6758.bindPopup(popup_4d46e18b1208355e60c4511705733748)
+        ;
+
+        
+    
+    
+            var marker_23d2c47ef1a6fd6d467f26940c2434a5 = L.marker(
+                [51.3325557, 0.3667306],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_019f718b4aba7153e1ac27205e1e947c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_23d2c47ef1a6fd6d467f26940c2434a5.setIcon(icon_019f718b4aba7153e1ac27205e1e947c);
+        
+    
+        var popup_2ba27ec955101947345996f7aba3e28d = L.popup({});
+
+        
+            
+                var html_fb672219f68de8071bad5515f5305b61 = $(`<div id="html_fb672219f68de8071bad5515f5305b61" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Commority Road, Vigo Village</h1><div class="nugget-popup"><p>Post&ndash;event cleansing identified drainage faults: two gullies not flowing between Commority Road and Waterlow Road (drainage defects discovered as part of the response to the heavy rainfall that caused flooding). (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two gullies not flowing (p10)</p></div></div></body></div>`)[0];
+                popup_2ba27ec955101947345996f7aba3e28d.setContent(html_fb672219f68de8071bad5515f5305b61);
+            
+        
+
+        marker_23d2c47ef1a6fd6d467f26940c2434a5.bindPopup(popup_2ba27ec955101947345996f7aba3e28d)
+        ;
+
+        
+    
+    
+            var marker_e69fb9e0d520883ec5d65335aaa11baf = L.marker(
+                [51.3266164, 0.3437821],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_213e84fa7615992409b19211a4f8a9a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e69fb9e0d520883ec5d65335aaa11baf.setIcon(icon_213e84fa7615992409b19211a4f8a9a2);
+        
+    
+        var popup_aa517759681be2279344a32d4ca6e520 = L.popup({});
+
+        
+            
+                var html_35b819bf68640ded542e9c8417afcf81 = $(`<div id="html_35b819bf68640ded542e9c8417afcf81" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Waterlow Road, Vigo Village</h1><div class="nugget-popup"><p>Post&ndash;event cleansing identified drainage faults: two gullies not flowing between Commority Road and Waterlow Road (defects found during investigations following the heavy rainfall that caused flooding). (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two gullies not flowing (p10)</p></div></div></body></div>`)[0];
+                popup_aa517759681be2279344a32d4ca6e520.setContent(html_35b819bf68640ded542e9c8417afcf81);
+            
+        
+
+        marker_e69fb9e0d520883ec5d65335aaa11baf.bindPopup(popup_aa517759681be2279344a32d4ca6e520)
+        ;
+
+        
+    
+    
+            var marker_d2386f49eb3fc30bb960a4e0fcf9054a = L.marker(
+                [51.3409894, 0.3513995],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_e53c6917e6f8ddd7d117177d8bd52fdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d2386f49eb3fc30bb960a4e0fcf9054a.setIcon(icon_e53c6917e6f8ddd7d117177d8bd52fdd);
+        
+    
+        var popup_befc2107dd7068d1661c3a3db51b6705 = L.popup({});
+
+        
+            
+                var html_542facecd51c31c32dccffbaef74bd22 = $(`<div id="html_542facecd51c31c32dccffbaef74bd22" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Carters Hill Lane, Culverstone Green</h1><div class="nugget-popup"><p>The soakaway at the junction with White Post Land (within Carters Hill Road, sic, junction) was inspected after the storm and found to be functioning but near the end of its useful life; KCC and Gravesham Borough Council are arranging replacement works and junction resurfacing/kerbing. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one soakaway (p10)</p></div></div></body></div>`)[0];
+                popup_befc2107dd7068d1661c3a3db51b6705.setContent(html_542facecd51c31c32dccffbaef74bd22);
+            
+        
+
+        marker_d2386f49eb3fc30bb960a4e0fcf9054a.bindPopup(popup_befc2107dd7068d1661c3a3db51b6705)
+        ;
+
+        
+    
+    
+            var marker_a6942850f92ccbc2ba89037b18d3694d = L.marker(
+                [51.2070749, 0.7210362],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_d932de77495dfa88734b4abc300657e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a6942850f92ccbc2ba89037b18d3694d.setIcon(icon_d932de77495dfa88734b4abc300657e7);
+        
+    
+        var popup_8156a7fde800e25647bcb8c8b14288b3 = L.popup({});
+
+        
+            
+                var html_e7d6cae9eb8cddd13cc3f6f1e29e547e = $(`<div id="html_e7d6cae9eb8cddd13cc3f6f1e29e547e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kent</h1><div class="nugget-popup"><p>Very heavy rainfall across Kent on 10 June 2019 led to surface water flooding; areas including West Kingsdown, Vigo, Snodland and Swanley were particularly badly affected. The Vigo/Culverstone area saw properties flooded internally by surface water. [MUL] (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>around 100 properties [MUL] (p1)</p></div></div></body></div>`)[0];
+                popup_8156a7fde800e25647bcb8c8b14288b3.setContent(html_e7d6cae9eb8cddd13cc3f6f1e29e547e);
+            
+        
+
+        marker_a6942850f92ccbc2ba89037b18d3694d.bindPopup(popup_8156a7fde800e25647bcb8c8b14288b3)
+        ;
+
+        
+    
+    
+            var marker_70bdbeadda7b073355f6de2f5896410c = L.marker(
+                [51.3303854, 0.3590695],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_2569cc48b773de94e24d6f8f8b99e355 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_70bdbeadda7b073355f6de2f5896410c.setIcon(icon_2569cc48b773de94e24d6f8f8b99e355);
+        
+    
+        var popup_a1e33f5c4e79ea5e59cc945ce32c982a = L.popup({});
+
+        
+            
+                var html_de82f612d30d1da356bae82fab8e0bf9 = $(`<div id="html_de82f612d30d1da356bae82fab8e0bf9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Vigo Village</h1><div class="nugget-popup"><p>Vigo was described as particularly badly affected by very heavy rainfall on 10 June 2019; properties in the Vigo area were flooded by surface water and many were affected internally. (p1)</p></div><div class="nugget-popup"><p>Multiple residential properties were affected by flooding with clusters of affected properties in the central and eastern residential zones and some on the western edge of the village. [IMG] (p2)</p></div><div class="nugget-popup"><p>The village experienced both external and internal property flooding during the event (including a report under the heading 'Vigo School' of external and internal flooding). Multiple residential properties on named streets in the village were affected (internal and external), and roads were impacted by surface water. [PAG] (p4)</p></div><div class="nugget-popup"><p>Surface water flooding flowed from the woodland south of Admers Wood, crossed Erskine, travelled along Admers Wood and Beech Mast, then along footpaths into Ferndown Road. Fire Brigade attended and pumped flood water. (p7)</p></div><div class="nugget-popup"><p>Prolonged heavy rainfall and overland flows from surrounding woodland and rural catchment led to significant surface water flooding across the village. Surface water runoff combined with overwhelmed private and highway drainage; foul sewers (foul&ndash;only public sewers) contributed to sewer surcharging and manhole overflows in parts of the village. [PAG] (p8)</p></div><div class="nugget-popup"><p>A heavy rainstorm (reported as a 1&ndash;in&ndash;217&ndash;year event) overwhelmed highway drainage. Overland flows from developed areas, surrounding woodland and rural catchment travelled along dry valleys and collected at local topographical low points, causing flooding to properties in the village. (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>around 100 properties (Vigo and Culverstone combined) (p1)</p></div><div class="nugget-popup quant"><p>5 properties on Rhododendron Avenue; 1 property on White Post Lane; 1 property on Meadow Lane; 1 property on Wrotham Road [PAG] (p4)</p></div></div></body></div>`)[0];
+                popup_a1e33f5c4e79ea5e59cc945ce32c982a.setContent(html_de82f612d30d1da356bae82fab8e0bf9);
+            
+        
+
+        marker_70bdbeadda7b073355f6de2f5896410c.bindPopup(popup_a1e33f5c4e79ea5e59cc945ce32c982a)
+        ;
+
+        
+    
+    
+            var marker_e81bb54b2d15bfc2b982ba819a9b543c = L.marker(
+                [51.3412115, 0.3478821],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_2c404a40ffd3e88e3159479db4eb9ed1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e81bb54b2d15bfc2b982ba819a9b543c.setIcon(icon_2c404a40ffd3e88e3159479db4eb9ed1);
+        
+    
+        var popup_bbf3cee6c28e52608e7f77ffb93cf037 = L.popup({});
+
+        
+            
+                var html_716bf5797002ddfee11006bfa7743790 = $(`<div id="html_716bf5797002ddfee11006bfa7743790" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Culverstone Green</h1><div class="nugget-popup"><p>Properties in Culverstone were flooded by surface water during the 10 June 2019 event; many properties were affected internally. Additional flooding incidents affecting properties in Culverstone occurred on 20 December 2019 and 9 February 2020 following further heavy rain on saturated ground. [MUL] (p1)</p></div><div class="nugget-popup"><p>Properties in Culverstone were affected by flooding; roads in the area received emergency repairs (locations marked on the map). [IMG] (p2)</p></div><div class="nugget-popup"><p>At least one property in Culverstone (Heron Hill Lane) reported internal flooding to the cellar. [PAG] (p4)</p></div><div class="nugget-popup"><p>Surface water flooding affected roads (including Rhododendron Avenue) and caused internal flooding to at least one property in the village. (p8)</p></div><div class="nugget-popup"><p>A heavy rainstorm overwhelmed drainage and caused overland flows from developed areas and surrounding catchments to flow along dry valleys and collect in local topographical lows, causing flooding to properties in the village and vicinity. [PAG] (p10)</p></div><div class="nugget-popup"><p>The same extreme storm overwhelmed drainage causing overland flows to follow dry valleys and collect at local low points, resulting in flooding to properties. Drainage asset issues were identified: the soakaway at the junction of White Post Lane and Carters Hill Road is functioning but nearing end of life; soakaways at Whitepost Lane/Rhododendron Avenue and Meadow Lane were found in good condition; gullies at Harvel Road and Southfield Shaw require further investigation and the soakaway at that location is to be inspected. [PAG] (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>around 100 properties (Vigo and Culverstone combined) [MUL] (p1)</p></div><div class="nugget-popup quant"><p>1 property [PAG] (p4)</p></div><div class="nugget-popup quant"><p>one property (p8)</p></div></div></body></div>`)[0];
+                popup_bbf3cee6c28e52608e7f77ffb93cf037.setContent(html_716bf5797002ddfee11006bfa7743790);
+            
+        
+
+        marker_e81bb54b2d15bfc2b982ba819a9b543c.bindPopup(popup_bbf3cee6c28e52608e7f77ffb93cf037)
+        ;
+
+        
+    
+    
+            var marker_e060e257d6f56a726ca62d3b30930dfd = L.marker(
+                [51.342944665244204, 0.2627640552737047],
+                {}
+            ).addTo(map_c88ce041c7943cc87cdaac1fffe7579e);
+        
+    
+            var icon_9ed3efd561d76dff850ec777a9d8dc76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e060e257d6f56a726ca62d3b30930dfd.setIcon(icon_9ed3efd561d76dff850ec777a9d8dc76);
+        
+    
+        var popup_0f8590abac99767661dbcb2c331e6bc8 = L.popup({});
+
+        
+            
+                var html_7761ce00b5c2efb90cb3e6a2d9a44b65 = $(`<div id="html_7761ce00b5c2efb90cb3e6a2d9a44b65" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Kingsdown</h1><div class="nugget-popup"><p>Identified as being particularly badly affected by the very heavy rainfall and associated surface water flooding on 10 June 2019. (p1)</p></div></div></body></div>`)[0];
+                popup_0f8590abac99767661dbcb2c331e6bc8.setContent(html_7761ce00b5c2efb90cb3e6a2d9a44b65);
+            
+        
+
+        marker_e060e257d6f56a726ca62d3b30930dfd.bindPopup(popup_0f8590abac99767661dbcb2c331e6bc8)
+        ;
+
+        
+    
+</script>
+</html>
