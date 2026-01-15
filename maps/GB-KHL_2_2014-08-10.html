@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_01cbd541d0da8a4d4900e638a9e17f1e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_01cbd541d0da8a4d4900e638a9e17f1e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_01cbd541d0da8a4d4900e638a9e17f1e = L.map(
+                "map_01cbd541d0da8a4d4900e638a9e17f1e",
+                {
+                    center: [53.76374523278446, -0.3771527380342061],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_01d65f34fa7d050752426e627757d6ca = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_01d65f34fa7d050752426e627757d6ca.addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+    
+            var marker_1747b091c4b81d6147d58b918068367f = L.marker(
+                [53.7529978, -0.4101494],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_ebb0d9f057492691defe0235f6fa179b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1747b091c4b81d6147d58b918068367f.setIcon(icon_ebb0d9f057492691defe0235f6fa179b);
+        
+    
+        var popup_92e7be7eb147f6c4442664ac0e29243a = L.popup({});
+
+        
+            
+                var html_ee3cea2af7577c0b61281972bbf3fac6 = $(`<div id="html_ee3cea2af7577c0b61281972bbf3fac6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hanson Electrical</h1><div class="nugget-popup"><p>Flooding from the intense storm on 10 August 2014 affecting Hanson Electrical on Willerby Road (commercial property/road flooding). [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the Yorkshire Water Northern Trunk Sewer overwhelmed smaller YW and highway drainage at this location on Willerby Road, leading to surface water flooding affecting the premises/adjacent highway. [TAB] (p23)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 commercial property [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_92e7be7eb147f6c4442664ac0e29243a.setContent(html_ee3cea2af7577c0b61281972bbf3fac6);
+            
+        
+
+        marker_1747b091c4b81d6147d58b918068367f.bindPopup(popup_92e7be7eb147f6c4442664ac0e29243a)
+        ;
+
+        
+    
+    
+            var marker_d42f94047db5ac4d9d06a887a5b3142e = L.marker(
+                [53.7435722, -0.3394758],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_b71e78b6d14a731cce8622378694cf86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d42f94047db5ac4d9d06a887a5b3142e.setIcon(icon_b71e78b6d14a731cce8622378694cf86);
+        
+    
+        var popup_ccc6ed0f8c21eed237eaf38ede71a272 = L.popup({});
+
+        
+            
+                var html_2601f462dc7d883daa5aa0cbb78097a8 = $(`<div id="html_2601f462dc7d883daa5aa0cbb78097a8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingston Upon Hull</h1><div class="nugget-popup"><p>Urban streets were inundated with standing water after heavy rain; vehicles were forced to drive through flooded roads, producing large splashes and indicating transport disruption and hazards for road users and pedestrians. [PAG] (p1)</p></div><div class="nugget-popup"><p>Widespread highway flooding across the city; two properties flooded during the intense storms; many areas flooded before the receiving drainage infrastructure could convey flows. (p4)</p></div><div class="nugget-popup"><p>As Lead Local Flood Authority, Hull City Council received advance warnings for the 10 August 2014 surface&ndash;water event and carried out pre&ndash;event actions: targeting identified problem gullies and hotspots for gully&ndash;clearing and checking/cleaning council&ndash;owned trash screens on ordinary watercourses to reduce the risk of gully blockage. [PAG] (p24)</p></div><div class="nugget-popup"><p>Surface water (pluvial) flooding across the city on 10th August 2014 caused by intense, localised rainfall and high winds. Multiple areas experienced flooding; residents undertook self&ndash;help measures while others looked to the council for response. The event highlighted lack of warning for this flood source. [TAB,PAG] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (p4)</p></div></div></body></div>`)[0];
+                popup_ccc6ed0f8c21eed237eaf38ede71a272.setContent(html_2601f462dc7d883daa5aa0cbb78097a8);
+            
+        
+
+        marker_d42f94047db5ac4d9d06a887a5b3142e.bindPopup(popup_ccc6ed0f8c21eed237eaf38ede71a272)
+        ;
+
+        
+    
+    
+            var marker_1455c6b2fdf5f51d53a2a9e201370f16 = L.marker(
+                [53.75307012501111, -0.3146710848970039],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_7ce186de42c08a57bd45cecba9cd6ea4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1455c6b2fdf5f51d53a2a9e201370f16.setIcon(icon_7ce186de42c08a57bd45cecba9cd6ea4);
+        
+    
+        var popup_bd6077f9b27d80f29e1bbdd0f8a0af51 = L.popup({});
+
+        
+            
+                var html_0d5121f2c9c8a73ab0af99af3c92ca6a = $(`<div id="html_0d5121f2c9c8a73ab0af99af3c92ca6a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holderness Road Railway Bridge</h1><div class="nugget-popup"><p>Railway underpasses were reported flooded (table entries include Chanterlands Avenue, Holderness Road and Boothferry Road underpasses), resulting in road/underpass inundation. [TAB] (p6)</p></div><div class="nugget-popup"><p>Identified as a location where sewer (YW Newland Branch) overloading overwhelmed highway drainage, resulting in surface water pooling and flooding within the underpass asset. [TAB,PAG] (p23)</p></div></div></body></div>`)[0];
+                popup_bd6077f9b27d80f29e1bbdd0f8a0af51.setContent(html_0d5121f2c9c8a73ab0af99af3c92ca6a);
+            
+        
+
+        marker_1455c6b2fdf5f51d53a2a9e201370f16.bindPopup(popup_bd6077f9b27d80f29e1bbdd0f8a0af51)
+        ;
+
+        
+    
+    
+            var marker_eb479ef08d1d40405039f22f4f108757 = L.marker(
+                [53.74250527014285, -0.38947980368231866],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_8900538feacaf4eea0ef430ea239a123 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eb479ef08d1d40405039f22f4f108757.setIcon(icon_8900538feacaf4eea0ef430ea239a123);
+        
+    
+        var popup_89dea7a4160c46470f2e6a6badb71aa8 = L.popup({});
+
+        
+            
+                var html_662aef7281106d4a520d3af01a34580b = $(`<div id="html_662aef7281106d4a520d3af01a34580b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Boothferry Road Railway Bridge</h1><div class="nugget-popup"><p>Railway underpasses were reported flooded (table entries include Chanterlands Avenue, Holderness Road and Boothferry Road underpasses), resulting in road/underpass inundation. [TAB] (p6)</p></div><div class="nugget-popup"><p>Identified as a location where sewer (YW Newland Branch) overloading overwhelmed highway drainage, resulting in surface water pooling and flooding within the underpass asset. [TAB,PAG] (p23)</p></div></div></body></div>`)[0];
+                popup_89dea7a4160c46470f2e6a6badb71aa8.setContent(html_662aef7281106d4a520d3af01a34580b);
+            
+        
+
+        marker_eb479ef08d1d40405039f22f4f108757.bindPopup(popup_89dea7a4160c46470f2e6a6badb71aa8)
+        ;
+
+        
+    
+    
+            var marker_0cb2d12b0af267dda57bee07ffd52df8 = L.marker(
+                [53.75916965142498, -0.3745750546190859],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_a25b827283370591d47c413823450899 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0cb2d12b0af267dda57bee07ffd52df8.setIcon(icon_a25b827283370591d47c413823450899);
+        
+    
+        var popup_3dd5aa4b14d1b4f13522c726fe49f590 = L.popup({});
+
+        
+            
+                var html_1406d82fb143fbc574216dba0e9e0591 = $(`<div id="html_1406d82fb143fbc574216dba0e9e0591" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chanterlands Avenue Railway Bridge</h1><div class="nugget-popup"><p>Railway underpasses were reported flooded (table entries include Chanterlands Avenue, Holderness Road and Boothferry Road underpasses), resulting in road/underpass inundation. [TAB] (p6)</p></div><div class="nugget-popup"><p>Identified as a location where sewer (YW Newland Branch) overloading overwhelmed highway drainage, resulting in surface water pooling and flooding within the underpass asset. [TAB,PAG] (p23)</p></div></div></body></div>`)[0];
+                popup_3dd5aa4b14d1b4f13522c726fe49f590.setContent(html_1406d82fb143fbc574216dba0e9e0591);
+            
+        
+
+        marker_0cb2d12b0af267dda57bee07ffd52df8.bindPopup(popup_3dd5aa4b14d1b4f13522c726fe49f590)
+        ;
+
+        
+    
+    
+            var marker_1874fcc5048c5c3400b327e6c89717bb = L.marker(
+                [53.7878626, -0.3034458],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_100d0f720647b53d0b03dbe86a858f41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1874fcc5048c5c3400b327e6c89717bb.setIcon(icon_100d0f720647b53d0b03dbe86a858f41);
+        
+    
+        var popup_c559070f3cf6187d120941cf94a48cc2 = L.popup({});
+
+        
+            
+                var html_1dfc81fddc4a1771c96481a097aeb58a = $(`<div id="html_1dfc81fddc4a1771c96481a097aeb58a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kestrel Avenue, Kingston Upon Hull</h1><div class="nugget-popup"><p>Flooding from an intense storm on 10 August 2014 causing road flooding and flooding of properties on Kestrel Avenue. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the Yorkshire Water (YW) Sutton Branch sewer overwhelmed smaller YW and highway drainage at Kestrel Avenue, causing surface water to inundate the carriageway and public realm. [TAB] (p23)</p></div><div class="nugget-popup"><p>Part of the Merlin Close / Kestral Way (sic) area where Yorkshire Water carried out post&ndash;event jetting and cleansing operations and continues involvement to optimise the local sewer system; branch sewer problems were noted that affected effectiveness. (p25)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_c559070f3cf6187d120941cf94a48cc2.setContent(html_1dfc81fddc4a1771c96481a097aeb58a);
+            
+        
+
+        marker_1874fcc5048c5c3400b327e6c89717bb.bindPopup(popup_c559070f3cf6187d120941cf94a48cc2)
+        ;
+
+        
+    
+    
+            var marker_0fc46a1ae28394eae34fb5f1fafb638e = L.marker(
+                [53.7526648, -0.4079527],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_1fe82b03ecb1c49a714ddedcad01e150 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0fc46a1ae28394eae34fb5f1fafb638e.setIcon(icon_1fe82b03ecb1c49a714ddedcad01e150);
+        
+    
+        var popup_332592b3c82e536c300a1ef0e741e4af = L.popup({});
+
+        
+            
+                var html_1b52444b97500de764eaefd8fba68917 = $(`<div id="html_1b52444b97500de764eaefd8fba68917" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Willerby Road, Kingston Upon Hull</h1><div class="nugget-popup"><p>Road and surface water flooding associated with the intense storm on 10 August 2014 affecting Willerby Road. [TAB] (p6)</p></div><div class="nugget-popup"><p>Road carriageway was flooded by surface water following the intense, localised rainfall; receiving sewers were filling so surface water remained on the road and was later observed to draw down as downstream pumping took effect. [PAG,MUL] (p22)</p></div></div></body></div>`)[0];
+                popup_332592b3c82e536c300a1ef0e741e4af.setContent(html_1b52444b97500de764eaefd8fba68917);
+            
+        
+
+        marker_0fc46a1ae28394eae34fb5f1fafb638e.bindPopup(popup_332592b3c82e536c300a1ef0e741e4af)
+        ;
+
+        
+    
+    
+            var marker_ac4dc4b15fe711192b3afc17a869f1e7 = L.marker(
+                [53.7577781, -0.4161457],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_cf5c5c0cb4f74da7f2bb29291ed9dfa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ac4dc4b15fe711192b3afc17a869f1e7.setIcon(icon_cf5c5c0cb4f74da7f2bb29291ed9dfa0);
+        
+    
+        var popup_46e55b9e67e03a530edb6dc044495c91 = L.popup({});
+
+        
+            
+                var html_45120fa73f438089d1e38a207c673d9e = $(`<div id="html_45120fa73f438089d1e38a207c673d9e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wymersley Road, Kingston Upon Hull</h1><div class="nugget-popup"><p>Road flooding at the junction on Wymersley Road during the intense storm; location recorded in the table of flooded locations. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the Yorkshire Water Northern Trunk Sewer led to overwhelming of smaller YW and highway drainage at the Wymersley Road junction, resulting in surface water flooding of the junction and adjacent carriageways. [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_46e55b9e67e03a530edb6dc044495c91.setContent(html_45120fa73f438089d1e38a207c673d9e);
+            
+        
+
+        marker_ac4dc4b15fe711192b3afc17a869f1e7.bindPopup(popup_46e55b9e67e03a530edb6dc044495c91)
+        ;
+
+        
+    
+    
+            var marker_db608f3af9df2905379d6106470c4089 = L.marker(
+                [53.7518452, -0.4177928],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_23d5d05307cbf44730b1305c73947dc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_db608f3af9df2905379d6106470c4089.setIcon(icon_23d5d05307cbf44730b1305c73947dc7);
+        
+    
+        var popup_fd5cfc053ecbedcdc10b1e1153c819a8 = L.popup({});
+
+        
+            
+                var html_376f8347c5174e4937feddf698d697d3 = $(`<div id="html_376f8347c5174e4937feddf698d697d3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Springhead Avenue, Kingston Upon Hull</h1><div class="nugget-popup"><p>Flooding at the Springhead Avenue junction (reported as flooded in the table), causing road inundation during the storm. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the Yorkshire Water Northern Trunk Sewer overwhelmed smaller YW and highway drainage at the Springhead Avenue junction, producing surface water flooding on the junction and nearby highway. [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_fd5cfc053ecbedcdc10b1e1153c819a8.setContent(html_376f8347c5174e4937feddf698d697d3);
+            
+        
+
+        marker_db608f3af9df2905379d6106470c4089.bindPopup(popup_fd5cfc053ecbedcdc10b1e1153c819a8)
+        ;
+
+        
+    
+    
+            var marker_3ea12ab2f4813cabd08e8f367f03c234 = L.marker(
+                [53.7736975, -0.3637414],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_670acc2071d8e1affd5e77e218586665 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3ea12ab2f4813cabd08e8f367f03c234.setIcon(icon_670acc2071d8e1affd5e77e218586665);
+        
+    
+        var popup_b8a8fe7f68b39aae2cf09487e299b822 = L.popup({});
+
+        
+            
+                var html_9cad8752673866bd6375f8934d98c9b9 = $(`<div id="html_9cad8752673866bd6375f8934d98c9b9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cranbrook Avenue, Kingston Upon Hull</h1><div class="nugget-popup"><p>Flooding reported at Kinloss Garth / Cranbrook Avenue (recorded in the table), affecting the street and adjacent area during the storm. (p6)</p></div><div class="nugget-popup"><p>Overloading of the YW Newland Branch Sewer led to overwhelming of smaller Yorkshire Water and highway drainage systems at Cranbrook Avenue, causing sewer&ndash;related surface water flooding and drainage failure. [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_b8a8fe7f68b39aae2cf09487e299b822.setContent(html_9cad8752673866bd6375f8934d98c9b9);
+            
+        
+
+        marker_3ea12ab2f4813cabd08e8f367f03c234.bindPopup(popup_b8a8fe7f68b39aae2cf09487e299b822)
+        ;
+
+        
+    
+    
+            var marker_c89903f49922ad7edcd29ea2dc1e7081 = L.marker(
+                [53.7845589, -0.2972988],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_db9c1bc3cd4724d43f4a9855213171de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c89903f49922ad7edcd29ea2dc1e7081.setIcon(icon_db9c1bc3cd4724d43f4a9855213171de);
+        
+    
+        var popup_32f097fc9a7cde5b8ef8126f73a5e728 = L.popup({});
+
+        
+            
+                var html_ebfc4a011ec7b2eac81edc51ceda3475 = $(`<div id="html_ebfc4a011ec7b2eac81edc51ceda3475" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Howdale Road, Kingston Upon Hull</h1><div class="nugget-popup"><p>Road flooding reported affecting the carriageway. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the YW Sutton Branch Sewer led to overwhelming of smaller Yorkshire Water and highway drainage systems at Howdale Road, causing local sewer&ndash;related surface water flooding and highway drainage failure. [TAB,PAG] (p23)</p></div><div class="nugget-popup"><p>Overloading of the YW Drypool Trunk Sewer and the YW Sutton Branch Sewer led to smaller Yorkshire Water and highway drainage systems being overwhelmed at Howdale Road. (p24)</p></div></div></body></div>`)[0];
+                popup_32f097fc9a7cde5b8ef8126f73a5e728.setContent(html_ebfc4a011ec7b2eac81edc51ceda3475);
+            
+        
+
+        marker_c89903f49922ad7edcd29ea2dc1e7081.bindPopup(popup_32f097fc9a7cde5b8ef8126f73a5e728)
+        ;
+
+        
+    
+    
+            var marker_c53fca4b81e3ea8a0bedb337177877b1 = L.marker(
+                [53.7452261, -0.4097311],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_df52a5465589cdafef169517621a22ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c53fca4b81e3ea8a0bedb337177877b1.setIcon(icon_df52a5465589cdafef169517621a22ee);
+        
+    
+        var popup_624afd237acce6bfcb987f0186952b58 = L.popup({});
+
+        
+            
+                var html_d30634dec2971921893e00abc6c1b32a = $(`<div id="html_d30634dec2971921893e00abc6c1b32a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Trenton Avenue, Anlaby Park</h1><div class="nugget-popup"><p>Road flooding reported affecting the highway. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the YW Newington Trunk Sewer led to the overwhelming of smaller Yorkshire Water and highway drainage systems, causing surface water flooding at Trenton Avenue. [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_624afd237acce6bfcb987f0186952b58.setContent(html_d30634dec2971921893e00abc6c1b32a);
+            
+        
+
+        marker_c53fca4b81e3ea8a0bedb337177877b1.bindPopup(popup_624afd237acce6bfcb987f0186952b58)
+        ;
+
+        
+    
+    
+            var marker_2e45a23e45954f4b8fdc94bc48b04cc4 = L.marker(
+                [53.7515019, -0.3732407],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_686067ee6dd588bc2779883f89b99a6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2e45a23e45954f4b8fdc94bc48b04cc4.setIcon(icon_686067ee6dd588bc2779883f89b99a6f);
+        
+    
+        var popup_5a1923c6b521a7b90b1a7ae27c09ee2f = L.popup({});
+
+        
+            
+                var html_39a378e555d85ee535d95066563ea3ff = $(`<div id="html_39a378e555d85ee535d95066563ea3ff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chanterlands Avenue, Kingston Upon Hull</h1><div class="nugget-popup"><p>Railway underpass at Chanterlands Avenue flooded; location listed in the table of places where properties/commercial properties and roads were flooded during the intense storm. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the Yorkshire Water Newland Branch Sewer overwhelmed smaller YW and highway drainage at the Chanterlands Avenue railway underpass, causing surface water to collect in the underpass and on the carriageway. [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_5a1923c6b521a7b90b1a7ae27c09ee2f.setContent(html_39a378e555d85ee535d95066563ea3ff);
+            
+        
+
+        marker_2e45a23e45954f4b8fdc94bc48b04cc4.bindPopup(popup_5a1923c6b521a7b90b1a7ae27c09ee2f)
+        ;
+
+        
+    
+    
+            var marker_6b63450d9fc5542fa3aeb4e808f3fed4 = L.marker(
+                [53.7538056, -0.3197137],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_13599bb1ad182702d475d9a2f4c01520 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6b63450d9fc5542fa3aeb4e808f3fed4.setIcon(icon_13599bb1ad182702d475d9a2f4c01520);
+        
+    
+        var popup_db7a90c26bd65849a1299e6865f87843 = L.popup({});
+
+        
+            
+                var html_9f0def90d41388e5c27c6bcb13429232 = $(`<div id="html_9f0def90d41388e5c27c6bcb13429232" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mount Pleasant, Kingston Upon Hull</h1><div class="nugget-popup"><p>Location listed in the table of places where properties/commercial properties and roads were flooded during the intense storm. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the Yorkshire Water Drypool Trunk Sewer overwhelmed smaller Yorkshire Water and highway drainage systems, causing surface water flooding on Mount Pleasant and affecting the public realm/roadway. [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_db7a90c26bd65849a1299e6865f87843.setContent(html_9f0def90d41388e5c27c6bcb13429232);
+            
+        
+
+        marker_6b63450d9fc5542fa3aeb4e808f3fed4.bindPopup(popup_db7a90c26bd65849a1299e6865f87843)
+        ;
+
+        
+    
+    
+            var marker_a3de6ada8debe9fe92bb7ba282593bfe = L.marker(
+                [53.7921036, -0.3149628],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_4e08dd34e76b22e9d65febc81943b53e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a3de6ada8debe9fe92bb7ba282593bfe.setIcon(icon_4e08dd34e76b22e9d65febc81943b53e);
+        
+    
+        var popup_60b443dc732c2506c505a396a212e9c5 = L.popup({});
+
+        
+            
+                var html_ba23b73a2787b6976912bb81b80cd199 = $(`<div id="html_ba23b73a2787b6976912bb81b80cd199" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kinloss Garth, Bransholme</h1><div class="nugget-popup"><p>Location listed in the table of places where properties/commercial properties and roads were flooded during the intense storm. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the Yorkshire Water Bransholme Trunk Sewer overwhelmed smaller Yorkshire Water and highway drainage systems, causing surface water flooding affecting Kinloss Garth and its roadside/public realm. [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_60b443dc732c2506c505a396a212e9c5.setContent(html_ba23b73a2787b6976912bb81b80cd199);
+            
+        
+
+        marker_a3de6ada8debe9fe92bb7ba282593bfe.bindPopup(popup_60b443dc732c2506c505a396a212e9c5)
+        ;
+
+        
+    
+    
+            var marker_c67b4cd42c5afd2c25e354dec21e0ca9 = L.marker(
+                [53.7691473, -0.3677761],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_24c0eb9c61acb507291cbee31515b1d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c67b4cd42c5afd2c25e354dec21e0ca9.setIcon(icon_24c0eb9c61acb507291cbee31515b1d6);
+        
+    
+        var popup_54cfcd4690803620c5ab613b2a753772 = L.popup({});
+
+        
+            
+                var html_cc3fda00d3526840212316cd1cc34607 = $(`<div id="html_cc3fda00d3526840212316cd1cc34607" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cottingham Road, Kingston Upon Hull</h1><div class="nugget-popup"><p>Location listed in the table of places where properties/commercial properties and roads were flooded during the intense storm. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the Yorkshire Water Newland Branch Sewer overwhelmed smaller Yorkshire Water and highway drainage systems, causing surface water flooding affecting Cottingham Road and the adjacent public realm/roadway. [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_54cfcd4690803620c5ab613b2a753772.setContent(html_cc3fda00d3526840212316cd1cc34607);
+            
+        
+
+        marker_c67b4cd42c5afd2c25e354dec21e0ca9.bindPopup(popup_54cfcd4690803620c5ab613b2a753772)
+        ;
+
+        
+    
+    
+            var marker_69a6c1397864e64a3614765df59d5c58 = L.marker(
+                [53.7576503, -0.3295044],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_55a248316922df7cb158359b41b31fa6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_69a6c1397864e64a3614765df59d5c58.setIcon(icon_55a248316922df7cb158359b41b31fa6);
+        
+    
+        var popup_f52522e696fcb3ffd4ee78209c409772 = L.popup({});
+
+        
+            
+                var html_fa87415575e083ea9f7b9bd523606e62 = $(`<div id="html_fa87415575e083ea9f7b9bd523606e62" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dalton Street, Kingston Upon Hull</h1><div class="nugget-popup"><p>Roundabout area on Dalton Street listed in the table of places where properties/commercial properties and roads were flooded during the intense storm. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the Yorkshire Water Drypool Trunk Sewer overwhelmed smaller Yorkshire Water and highway drainage systems, causing surface water flooding on Dalton Street and affecting the highway/public realm. [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_f52522e696fcb3ffd4ee78209c409772.setContent(html_fa87415575e083ea9f7b9bd523606e62);
+            
+        
+
+        marker_69a6c1397864e64a3614765df59d5c58.bindPopup(popup_f52522e696fcb3ffd4ee78209c409772)
+        ;
+
+        
+    
+    
+            var marker_a98c3bcdc0e00f1c070f72c40952afcc = L.marker(
+                [53.7310097, -0.3891357],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_ceb2b425489c152b1d51898dc22e04c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a98c3bcdc0e00f1c070f72c40952afcc.setIcon(icon_ceb2b425489c152b1d51898dc22e04c0);
+        
+    
+        var popup_5fe06f668d4ec9ba3dc0b0845b7be237 = L.popup({});
+
+        
+            
+                var html_8f58d3d7bd6951883f6f6ba43f663648 = $(`<div id="html_8f58d3d7bd6951883f6f6ba43f663648" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hampshire Street, Kingston Upon Hull</h1><div class="nugget-popup"><p>Listed in Table 1 as a flooded location during the intense storm on 10 August 2014; road and surface water flooding affected the street. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the Yorkshire Water Western Trunk Sewer overwhelmed smaller Yorkshire Water and highway drainage systems, causing surface water flooding affecting Hampshire Street and its public realm/roadway. [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_5fe06f668d4ec9ba3dc0b0845b7be237.setContent(html_8f58d3d7bd6951883f6f6ba43f663648);
+            
+        
+
+        marker_a98c3bcdc0e00f1c070f72c40952afcc.bindPopup(popup_5fe06f668d4ec9ba3dc0b0845b7be237)
+        ;
+
+        
+    
+    
+            var marker_4720d7152ac80979e6895eba8c6c0043 = L.marker(
+                [53.7451694, -0.4059048],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_bcaf501796730eef02f65ceab4cb7853 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4720d7152ac80979e6895eba8c6c0043.setIcon(icon_bcaf501796730eef02f65ceab4cb7853);
+        
+    
+        var popup_2160424d43bf68aa39b7e14c2798bbe3 = L.popup({});
+
+        
+            
+                var html_04bd4aece995008495d8885390df1552 = $(`<div id="html_04bd4aece995008495d8885390df1552" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Malham Avenue, Kingston Upon Hull</h1><div class="nugget-popup"><p>Listed in Table 1 as a flooded location during the intense storm on 10 August 2014; road and surface water flooding affected the street. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the YW Newington Trunk Sewer overwhelmed smaller Yorkshire Water and highway drainage systems, resulting in local sewer and surface&ndash;water flooding at Malham Avenue. [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_2160424d43bf68aa39b7e14c2798bbe3.setContent(html_04bd4aece995008495d8885390df1552);
+            
+        
+
+        marker_4720d7152ac80979e6895eba8c6c0043.bindPopup(popup_2160424d43bf68aa39b7e14c2798bbe3)
+        ;
+
+        
+    
+    
+            var marker_f5ab4146af81af6dd3ed56127763511a = L.marker(
+                [53.7468632, -0.4062664],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_f14c4aa6a9754c5198d6260a579429d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f5ab4146af81af6dd3ed56127763511a.setIcon(icon_f14c4aa6a9754c5198d6260a579429d5);
+        
+    
+        var popup_5155be9fb71ec8a5d683e4fe31de8511 = L.popup({});
+
+        
+            
+                var html_491da4181f7d66234fdc5f4963561183 = $(`<div id="html_491da4181f7d66234fdc5f4963561183" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kendal Way, Kingston Upon Hull</h1><div class="nugget-popup"><p>Listed in Table 1 as a flooded location during the intense storm on 10 August 2014; road and surface water flooding affected the street. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the YW Newington Trunk Sewer overwhelmed smaller Yorkshire Water and highway drainage systems, resulting in local sewer and surface&ndash;water flooding at Kendal Way. [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_5155be9fb71ec8a5d683e4fe31de8511.setContent(html_491da4181f7d66234fdc5f4963561183);
+            
+        
+
+        marker_f5ab4146af81af6dd3ed56127763511a.bindPopup(popup_5155be9fb71ec8a5d683e4fe31de8511)
+        ;
+
+        
+    
+    
+            var marker_12525b3abd6c62b1f6204bd79ba60dec = L.marker(
+                [53.7464823, -0.4072805],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_a86a62b6e39efbcdf360ccb8ced43771 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_12525b3abd6c62b1f6204bd79ba60dec.setIcon(icon_a86a62b6e39efbcdf360ccb8ced43771);
+        
+    
+        var popup_8091b9d87ca8a096fbfbce743fc35097 = L.popup({});
+
+        
+            
+                var html_b6a99b96838c3bd27b14e29936f48ad3 = $(`<div id="html_b6a99b96838c3bd27b14e29936f48ad3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hawkshead Green, Kingston Upon Hull</h1><div class="nugget-popup"><p>Listed in Table 1 as a flooded location during the intense storm on 10 August 2014; road and surface water flooding affected the street. [TAB] (p6)</p></div><div class="nugget-popup"><p>Named among locations where roads and, in some cases, properties were flooded during the pluvial event; residents in the area also observed drawdown of water levels as pumping commenced during other intense rainfall incidents. [PAG,MUL] (p22)</p></div><div class="nugget-popup"><p>Overloading of the YW Newington Trunk Sewer overwhelmed smaller Yorkshire Water and highway drainage systems, resulting in local sewer and surface&ndash;water flooding at Hawkshead Green. [TAB] (p23)</p></div><div class="nugget-popup"><p>Area where Yorkshire Water has been actively involved after the event; jetting and cleansing operations have been carried out and the local pumped drainage system has been optimised, though branch sewer issues were observed. (p25)</p></div><div class="nugget-popup"><p>Area required resolution of flooding&ndash;related problems (noted specifically for action in cooperation between Yorkshire Water and Hull City Council) following the 10 August 2014 event. [TAB] (p27)</p></div></div></body></div>`)[0];
+                popup_8091b9d87ca8a096fbfbce743fc35097.setContent(html_b6a99b96838c3bd27b14e29936f48ad3);
+            
+        
+
+        marker_12525b3abd6c62b1f6204bd79ba60dec.bindPopup(popup_8091b9d87ca8a096fbfbce743fc35097)
+        ;
+
+        
+    
+    
+            var marker_3a4fb0f35b374a4a6210f90cc1adfe51 = L.marker(
+                [53.7627226, -0.2976269],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_d6b9c40be6dcef611cdf50c91406be9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3a4fb0f35b374a4a6210f90cc1adfe51.setIcon(icon_d6b9c40be6dcef611cdf50c91406be9e);
+        
+    
+        var popup_4e93d9947c37a3e1924531f7833ccb4d = L.popup({});
+
+        
+            
+                var html_13d5fef917d24d2776d024a98eb9fcfc = $(`<div id="html_13d5fef917d24d2776d024a98eb9fcfc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holderness Road, Kingston Upon Hull</h1><div class="nugget-popup"><p>Listed in Table 1 (noted as Railway Underpass) as a flooded location during the intense storm on 10 August 2014; road and surface water flooding affected the underpass/road. [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_4e93d9947c37a3e1924531f7833ccb4d.setContent(html_13d5fef917d24d2776d024a98eb9fcfc);
+            
+        
+
+        marker_3a4fb0f35b374a4a6210f90cc1adfe51.bindPopup(popup_4e93d9947c37a3e1924531f7833ccb4d)
+        ;
+
+        
+    
+    
+            var marker_d5c10c4066be1023112d584c03d63e6d = L.marker(
+                [53.7437027, -0.3680466],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_239ac439f048945f5396ca2a51eaf8d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d5c10c4066be1023112d584c03d63e6d.setIcon(icon_239ac439f048945f5396ca2a51eaf8d2);
+        
+    
+        var popup_1e765a5649784d8ad22f9215534696ed = L.popup({});
+
+        
+            
+                var html_3978a1a8505b43dbf9661edeff300b7d = $(`<div id="html_3978a1a8505b43dbf9661edeff300b7d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Anlaby Road, Kingston Upon Hull</h1><div class="nugget-popup"><p>Road/roundabout area flooded, causing inundation of the carriageway. [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_1e765a5649784d8ad22f9215534696ed.setContent(html_3978a1a8505b43dbf9661edeff300b7d);
+            
+        
+
+        marker_d5c10c4066be1023112d584c03d63e6d.bindPopup(popup_1e765a5649784d8ad22f9215534696ed)
+        ;
+
+        
+    
+    
+            var marker_4256a6246d0f736ca646dbdc70f45898 = L.marker(
+                [53.7453351, -0.408533],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_a64eb6f52bae88af7998fd25b26ca5ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4256a6246d0f736ca646dbdc70f45898.setIcon(icon_a64eb6f52bae88af7998fd25b26ca5ec);
+        
+    
+        var popup_658b2ef6af452b7c478a3bcbc5f525b4 = L.popup({});
+
+        
+            
+                var html_54472caaa9c98883382165e42d580e51 = $(`<div id="html_54472caaa9c98883382165e42d580e51" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Norland Avenue, Kingston Upon Hull</h1><div class="nugget-popup"><p>Road flooding reported affecting the highway. [TAB] (p6)</p></div><div class="nugget-popup"><p>Overloading of the YW Newington Trunk Sewer overwhelmed smaller Yorkshire Water and highway drainage systems, resulting in local sewer and surface&ndash;water flooding at Norland Avenue. [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_658b2ef6af452b7c478a3bcbc5f525b4.setContent(html_54472caaa9c98883382165e42d580e51);
+            
+        
+
+        marker_4256a6246d0f736ca646dbdc70f45898.bindPopup(popup_658b2ef6af452b7c478a3bcbc5f525b4)
+        ;
+
+        
+    
+    
+            var marker_5bbef4b9ceb5e96708bb13f8baa27cb6 = L.marker(
+                [53.7431356, -0.3464102],
+                {}
+            ).addTo(map_01cbd541d0da8a4d4900e638a9e17f1e);
+        
+    
+            var icon_f54b68813498c76505ff0fdd5436bbda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5bbef4b9ceb5e96708bb13f8baa27cb6.setIcon(icon_f54b68813498c76505ff0fdd5436bbda);
+        
+    
+        var popup_31c882c41be2036b39e11a69b9a311cf = L.popup({});
+
+        
+            
+                var html_e85dfc8a4fc94c36f48bcc1486f2dca7 = $(`<div id="html_e85dfc8a4fc94c36f48bcc1486f2dca7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Anlaby Road, Kingston Upon Hull</h1><div class="nugget-popup"><p>Overloading of the YW Newington Trunk Sewer overwhelmed smaller Yorkshire Water and highway drainage systems, resulting in local sewer and surface&ndash;water flooding at Anlaby Road (roundabout area noted in investigation). [TAB] (p23)</p></div></div></body></div>`)[0];
+                popup_31c882c41be2036b39e11a69b9a311cf.setContent(html_e85dfc8a4fc94c36f48bcc1486f2dca7);
+            
+        
+
+        marker_5bbef4b9ceb5e96708bb13f8baa27cb6.bindPopup(popup_31c882c41be2036b39e11a69b9a311cf)
+        ;
+
+        
+    
+</script>
+</html>
