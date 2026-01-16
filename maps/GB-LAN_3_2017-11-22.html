@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a78139a57672dfc0ebaf1c0a8d56039a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a78139a57672dfc0ebaf1c0a8d56039a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a78139a57672dfc0ebaf1c0a8d56039a = L.map(
+                "map_a78139a57672dfc0ebaf1c0a8d56039a",
+                {
+                    center: [53.956974126362276, -2.77277476612777],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_729c1ea6b884ce823b3022c46653e96d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_729c1ea6b884ce823b3022c46653e96d.addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+    
+            var marker_90b726eeaf07633b49a81066d4406da9 = L.marker(
+                [54.0145848, -2.8059849],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_2eff6c6f2ef9ed28d143ea7d9449426a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_90b726eeaf07633b49a81066d4406da9.setIcon(icon_2eff6c6f2ef9ed28d143ea7d9449426a);
+        
+    
+        var popup_68fea8e04f7c4e04ed4e6cbd869934f5 = L.popup({});
+
+        
+            
+                var html_1216a918a28a93869c7cf7066e621baa = $(`<div id="html_1216a918a28a93869c7cf7066e621baa" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burrow Beck</h1><div class="nugget-popup"><p>Flooding from Burrow Beck combined with other overtopping watercourses to produce high volumes of water that encroached into homes and outbuildings and obstructed highways in the Galgate/Ellel area. (p13)</p></div></div></body></div>`)[0];
+                popup_68fea8e04f7c4e04ed4e6cbd869934f5.setContent(html_1216a918a28a93869c7cf7066e621baa);
+            
+        
+
+        marker_90b726eeaf07633b49a81066d4406da9.bindPopup(popup_68fea8e04f7c4e04ed4e6cbd869934f5)
+        ;
+
+        
+    
+    
+            var marker_94814274b02d0ee1eb3b1dd92f2cef1e = L.marker(
+                [54.1044696, -2.9712714],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_3ad0cdae47d7a65baadad49013da0a4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_94814274b02d0ee1eb3b1dd92f2cef1e.setIcon(icon_3ad0cdae47d7a65baadad49013da0a4d);
+        
+    
+        var popup_a4828c091459bb666c806da73aad8f6c = L.popup({});
+
+        
+            
+                var html_d4e07a5bbfe8e2b31b2f5af904fbd495 = $(`<div id="html_d4e07a5bbfe8e2b31b2f5af904fbd495" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Morecambe Bay</h1><div class="nugget-popup"><p>High tide in Morecambe Bay impeded run&ndash;off through westerly surface water drainage systems, restricting drainage outfalls to sea and contributing to surface water flooding that persisted into the daytime on 23 November until low tide allowed drainage to resume. (p12)</p></div></div></body></div>`)[0];
+                popup_a4828c091459bb666c806da73aad8f6c.setContent(html_d4e07a5bbfe8e2b31b2f5af904fbd495);
+            
+        
+
+        marker_94814274b02d0ee1eb3b1dd92f2cef1e.bindPopup(popup_a4828c091459bb666c806da73aad8f6c)
+        ;
+
+        
+    
+    
+            var marker_bef1a882ceb7723b24cf2d43ced48ce0 = L.marker(
+                [53.8179442, -3.0509812],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_1ebfad8cbdaa50f4f41f846cdfe9437d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bef1a882ceb7723b24cf2d43ced48ce0.setIcon(icon_1ebfad8cbdaa50f4f41f846cdfe9437d);
+        
+    
+        var popup_a594640e1fac88a7a161c68a56fe9881 = L.popup({});
+
+        
+            
+                var html_0a7b76219cc8f78736b22f2500429042 = $(`<div id="html_0a7b76219cc8f78736b22f2500429042" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Blackpool Unitary Authority</h1><div class="nugget-popup"><p>Intense rainfall overwhelmed drainage and caused extensive surface water flooding; sewer flooding occurred across the Blackpool area (United Utilities worked through the night to gain control). (p3)</p></div><div class="nugget-popup"><p>Landfall of the extreme rainfall on the Blackpool coast produced localised flooding. Flooding was associated with power outages (reported as a consequence of localised flooding), and interruptions to pumping operations; drainage outfalls to sea were impeded by a high tide so surface water flooding persisted into the daytime of 23 November. (p12)</p></div><div class="nugget-popup"><p>Power supply issues caused intermittent interruptions to pumping operations along the Fylde coast; the effects of those interruptions were felt most significantly in Blackpool, contributing to flooding impacts in the coastal/urban area. [IMG,PAG] (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>500 properties lost power (across Blackpool, Thornton&ndash;Cleveleys and Poulton) (p12)</p></div></div></body></div>`)[0];
+                popup_a594640e1fac88a7a161c68a56fe9881.setContent(html_0a7b76219cc8f78736b22f2500429042);
+            
+        
+
+        marker_bef1a882ceb7723b24cf2d43ced48ce0.bindPopup(popup_a594640e1fac88a7a161c68a56fe9881)
+        ;
+
+        
+    
+    
+            var marker_b922dbca182658efd33bda83fe861336 = L.marker(
+                [54.2230168, -2.6021945],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_504849be6b01178c35487c63a3c89b45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b922dbca182658efd33bda83fe861336.setIcon(icon_504849be6b01178c35487c63a3c89b45);
+        
+    
+        var popup_2475ff8bb6221565e83bad003848924f = L.popup({});
+
+        
+            
+                var html_cc6b43842046569131b336e72883e689 = $(`<div id="html_cc6b43842046569131b336e72883e689" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Lune</h1><div class="nugget-popup"><p>The River Lune overtopped and generated river flooding as the track of the heaviest rainfall reached the River Lune; this contributed to flooding in the Lune Valley impacting locations such as Caton and Halton. (p12)</p></div></div></body></div>`)[0];
+                popup_2475ff8bb6221565e83bad003848924f.setContent(html_cc6b43842046569131b336e72883e689);
+            
+        
+
+        marker_b922dbca182658efd33bda83fe861336.bindPopup(popup_2475ff8bb6221565e83bad003848924f)
+        ;
+
+        
+    
+    
+            var marker_ecb6dcabce177a6a75e3faa59034e708 = L.marker(
+                [54.009267, -2.771252],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_b5f5442f96858d16c2efc4f03834f7ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ecb6dcabce177a6a75e3faa59034e708.setIcon(icon_b5f5442f96858d16c2efc4f03834f7ad);
+        
+    
+        var popup_4e96918b6f2fdd62d50ad44602f0b5dc = L.popup({});
+
+        
+            
+                var html_463185c8b579d4cb5239d91a8baa5ad8 = $(`<div id="html_463185c8b579d4cb5239d91a8baa5ad8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Conder</h1><div class="nugget-popup"><p>Flooding from the River Conder contributed to high volumes of water that encroached into homes and outbuildings and obstructed highways in the nearby Ellel and Galgate area. (p13)</p></div></div></body></div>`)[0];
+                popup_4e96918b6f2fdd62d50ad44602f0b5dc.setContent(html_463185c8b579d4cb5239d91a8baa5ad8);
+            
+        
+
+        marker_ecb6dcabce177a6a75e3faa59034e708.bindPopup(popup_4e96918b6f2fdd62d50ad44602f0b5dc)
+        ;
+
+        
+    
+    
+            var marker_0629ec3f681b962b385d84d05d9d5cd1 = L.marker(
+                [54.04133154198799, -2.7654051465975726],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_7883c2fb5058e00f5112e1699fa2054f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0629ec3f681b962b385d84d05d9d5cd1.setIcon(icon_7883c2fb5058e00f5112e1699fa2054f);
+        
+    
+        var popup_c882f4398b37c7ca690533d4a7096368 = L.popup({});
+
+        
+            
+                var html_d524fe83da840199962d847dbd43c6c5 = $(`<div id="html_d524fe83da840199962d847dbd43c6c5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancaster District</h1><div class="nugget-popup"><p>The intense storm travelled to the north&ndash;easterly extent of Lancaster District; extreme downpours overwhelmed natural and constructed drainage, causing extensive surface water and river flooding. (p3)</p></div><div class="nugget-popup"><p>Particularly damaging flooding affected Lancaster district when the extreme rainfall of 22/23 November 2017 overwhelmed drainage networks. (p18)</p></div></div></body></div>`)[0];
+                popup_c882f4398b37c7ca690533d4a7096368.setContent(html_d524fe83da840199962d847dbd43c6c5);
+            
+        
+
+        marker_0629ec3f681b962b385d84d05d9d5cd1.bindPopup(popup_c882f4398b37c7ca690533d4a7096368)
+        ;
+
+        
+    
+    
+            var marker_33fac6ff20615e7c83702491252088e5 = L.marker(
+                [53.793356, -2.894251],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_26d6f3fc88aabd2ac17964ec372f98ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_33fac6ff20615e7c83702491252088e5.setIcon(icon_26d6f3fc88aabd2ac17964ec372f98ac);
+        
+    
+        var popup_48b48ff3859341c0bd9342621b8b0d1e = L.popup({});
+
+        
+            
+                var html_3877431a7e924f9fbf779a7e470af9af = $(`<div id="html_3877431a7e924f9fbf779a7e470af9af" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fylde</h1><div class="nugget-popup"><p>The Blackpool and Fylde coast received the landfall of the extreme rainfall; runoff into the Irish Sea/Morecambe Bay was impeded by a high tide, contributing to surface water flooding and prolonged drainage issues on the Fylde coast, and interruptions to pumping operations. (p12)</p></div><div class="nugget-popup"><p>Power supply issues during the 22/23 November 2017 event caused intermittent interruptions to pumping operations along the Fylde coast, which affected drainage/pumping capacity and contributed to flooding problems in the coastal area (notably referenced with impacts in neighbouring Thornton&ndash;Cleveleys/Blackpool areas). [IMG,PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_48b48ff3859341c0bd9342621b8b0d1e.setContent(html_3877431a7e924f9fbf779a7e470af9af);
+            
+        
+
+        marker_33fac6ff20615e7c83702491252088e5.bindPopup(popup_48b48ff3859341c0bd9342621b8b0d1e)
+        ;
+
+        
+    
+    
+            var marker_ae903206a946a702a297cfbedc5668ee = L.marker(
+                [53.7271527, -2.7330066],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_43e7d54034186832b2f35eb060825c5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ae903206a946a702a297cfbedc5668ee.setIcon(icon_43e7d54034186832b2f35eb060825c5a);
+        
+    
+        var popup_6f5bf486f7ae8907407cb9c4faacb428 = L.popup({});
+
+        
+            
+                var html_c4cc81071adf32196a4064a400ed4a11 = $(`<div id="html_c4cc81071adf32196a4064a400ed4a11" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Ribble</h1><div class="nugget-popup"><p>The map and report indicate a small number of reported flooding incidents in the southern part of Lancashire, including South Ribble, on 22/23 November 2017. [IMG] (p13)</p></div></div></body></div>`)[0];
+                popup_6f5bf486f7ae8907407cb9c4faacb428.setContent(html_c4cc81071adf32196a4064a400ed4a11);
+            
+        
+
+        marker_ae903206a946a702a297cfbedc5668ee.bindPopup(popup_6f5bf486f7ae8907407cb9c4faacb428)
+        ;
+
+        
+    
+    
+            var marker_e3589a61f68d030b0ac850e3ba7071b7 = L.marker(
+                [53.89728410091331, -2.903724352506046],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_0aab897164f75a845f9421ec2d0cad0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e3589a61f68d030b0ac850e3ba7071b7.setIcon(icon_0aab897164f75a845f9421ec2d0cad0b);
+        
+    
+        var popup_fffc59c97a4ca38b20bedabed4373314 = L.popup({});
+
+        
+            
+                var html_de3c19c37aed326fdf133b10ae28e588 = $(`<div id="html_de3c19c37aed326fdf133b10ae28e588" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wyre</h1><div class="nugget-popup"><p>Significant clustering of reported flooding around Wyre during the event on 22/23 November 2017. Extreme rainfall caused local watercourses to overtop banks (reported nearby in the Ellel/Galgate area and from the River Conder and Burrow Beck), producing high volumes of water that encroached into homes, outbuildings and obstructed highways in the affected area. [IMG] (p13)</p></div><div class="nugget-popup"><p>Particularly damaging flooding occurred across Wyre district when the 22/23 November 2017 extreme rainfall overwhelmed natural and man&ndash;made drainage networks. (p18)</p></div></div></body></div>`)[0];
+                popup_fffc59c97a4ca38b20bedabed4373314.setContent(html_de3c19c37aed326fdf133b10ae28e588);
+            
+        
+
+        marker_e3589a61f68d030b0ac850e3ba7071b7.bindPopup(popup_fffc59c97a4ca38b20bedabed4373314)
+        ;
+
+        
+    
+    
+            var marker_bf01e0031d1f602dabf040eeeebc7509 = L.marker(
+                [53.6109397, -2.8565713],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_314361b91767c9580d47c939db5ab0a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bf01e0031d1f602dabf040eeeebc7509.setIcon(icon_314361b91767c9580d47c939db5ab0a7);
+        
+    
+        var popup_802ff596e6168d24df0930de24029df8 = L.popup({});
+
+        
+            
+                var html_874b48a16c4c29faa8757f9048d89bfc = $(`<div id="html_874b48a16c4c29faa8757f9048d89bfc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Lancashire</h1><div class="nugget-popup"><p>The AI image description indicates some reported flooding presence in West Lancashire during the 22/23 November 2017 event (smaller/fewer reports compared with the northwest cluster). [IMG] (p13)</p></div></div></body></div>`)[0];
+                popup_802ff596e6168d24df0930de24029df8.setContent(html_874b48a16c4c29faa8757f9048d89bfc);
+            
+        
+
+        marker_bf01e0031d1f602dabf040eeeebc7509.bindPopup(popup_802ff596e6168d24df0930de24029df8)
+        ;
+
+        
+    
+    
+            var marker_5f1f07ef4648eeb7acc22dcbee96bd1a = L.marker(
+                [53.9026441, -2.422856],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_3f4649cecd1d16361d2e9cf5840bd691 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5f1f07ef4648eeb7acc22dcbee96bd1a.setIcon(icon_3f4649cecd1d16361d2e9cf5840bd691);
+        
+    
+        var popup_fce68e910db03a382b26056b366b59ee = L.popup({});
+
+        
+            
+                var html_7ae51afe7e4ae676b2ee7235c2565c2f = $(`<div id="html_7ae51afe7e4ae676b2ee7235c2565c2f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ribble Valley</h1><div class="nugget-popup"><p>Indicative locations map for 22 November 2017 shows reported flooding incidents within the Ribble Valley district. [IMG] (p13)</p></div></div></body></div>`)[0];
+                popup_fce68e910db03a382b26056b366b59ee.setContent(html_7ae51afe7e4ae676b2ee7235c2565c2f);
+            
+        
+
+        marker_5f1f07ef4648eeb7acc22dcbee96bd1a.bindPopup(popup_fce68e910db03a382b26056b366b59ee)
+        ;
+
+        
+    
+    
+            var marker_781aa3d04a9ea1d91eb87f7e99c1f3d2 = L.marker(
+                [53.8790402, -2.1717795],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_ef1b618cc29a6c2350e60b8a5db711ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_781aa3d04a9ea1d91eb87f7e99c1f3d2.setIcon(icon_ef1b618cc29a6c2350e60b8a5db711ac);
+        
+    
+        var popup_6e2aafa74f280c4d6e0a966348c793dd = L.popup({});
+
+        
+            
+                var html_530f99da74eda24e91a830d51d6f8b88 = $(`<div id="html_530f99da74eda24e91a830d51d6f8b88" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pendle</h1><div class="nugget-popup"><p>The indicative map of reported incidents on 22 November 2017 shows flooding reports occurring in the Pendle district. [IMG] (p13)</p></div></div></body></div>`)[0];
+                popup_6e2aafa74f280c4d6e0a966348c793dd.setContent(html_530f99da74eda24e91a830d51d6f8b88);
+            
+        
+
+        marker_781aa3d04a9ea1d91eb87f7e99c1f3d2.bindPopup(popup_6e2aafa74f280c4d6e0a966348c793dd)
+        ;
+
+        
+    
+    
+            var marker_16df582a5e20df8f82ac6a763338e99e = L.marker(
+                [53.9945538, -2.7872057],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_81c10083eabea858721261b231a9255c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_16df582a5e20df8f82ac6a763338e99e.setIcon(icon_81c10083eabea858721261b231a9255c);
+        
+    
+        var popup_293c4f47c306acc11e1ab367e1828750 = L.popup({});
+
+        
+            
+                var html_f233bcf2eedf1b5af74db2d5b4af6797 = $(`<div id="html_f233bcf2eedf1b5af74db2d5b4af6797" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Galgate</h1><div class="nugget-popup"><p>The Environment Agency evacuated 70 households from their homes in Galgate overnight due to the flood event. (p3)</p></div><div class="nugget-popup"><p>Watercourses overtopped their banks in the Ellel and Galgate area; combined with flooding from the River Conder and Burrow Beck this generated high volumes of water that encroached into homes and outbuildings and obstructed highways. [PAG] (p12)</p></div><div class="nugget-popup"><p>Overtopping of local watercourses, together with flooding from the River Conder and Burrow Beck, generated high volumes of water that encroached into homes and outbuildings and obstructed highways in Galgate. (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>70 households (p3)</p></div></div></body></div>`)[0];
+                popup_293c4f47c306acc11e1ab367e1828750.setContent(html_f233bcf2eedf1b5af74db2d5b4af6797);
+            
+        
+
+        marker_16df582a5e20df8f82ac6a763338e99e.bindPopup(popup_293c4f47c306acc11e1ab367e1828750)
+        ;
+
+        
+    
+    
+            var marker_d7e2266b79f91face9e9da49a8d3f8c7 = L.marker(
+                [53.8759203, -3.0121987],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_bf5482ac6f76d3751eb48ee446889cb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d7e2266b79f91face9e9da49a8d3f8c7.setIcon(icon_bf5482ac6f76d3751eb48ee446889cb7);
+        
+    
+        var popup_361661341399cc401922ee8a43249a89 = L.popup({});
+
+        
+            
+                var html_90c71e50a79c1d537053836ab9238903 = $(`<div id="html_90c71e50a79c1d537053836ab9238903" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thornton</h1><div class="nugget-popup"><p>The area experienced sewer flooding during the event; United Utilities worked to gain control of sewer flooding in the Thornton&ndash;Cleveleys area. (p3)</p></div><div class="nugget-popup"><p>Localised flooding associated with the extreme rainfall coincided with power outages affecting properties; pumping operations on the Fylde coast were intermittently interrupted by loss of power. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of 500 properties (across Blackpool, Thornton&ndash;Cleveleys and Poulton) (p12)</p></div></div></body></div>`)[0];
+                popup_361661341399cc401922ee8a43249a89.setContent(html_90c71e50a79c1d537053836ab9238903);
+            
+        
+
+        marker_d7e2266b79f91face9e9da49a8d3f8c7.bindPopup(popup_361661341399cc401922ee8a43249a89)
+        ;
+
+        
+    
+    
+            var marker_ecab14fe505ca8f9deed050c9bfc1b8d = L.marker(
+                [53.880250528989194, -3.0383974877221163],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_5ae23d487f583e36cc847163d6e8478c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ecab14fe505ca8f9deed050c9bfc1b8d.setIcon(icon_5ae23d487f583e36cc847163d6e8478c);
+        
+    
+        var popup_cf5aa090641414ef54ea57efe9d6c051 = L.popup({});
+
+        
+            
+                var html_d6ff666e011af49c300f6a639b9abecf = $(`<div id="html_d6ff666e011af49c300f6a639b9abecf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cleveleys</h1><div class="nugget-popup"><p>The area experienced sewer flooding during the event; United Utilities worked to gain control of sewer flooding in the Thornton&ndash;Cleveleys area. (p3)</p></div><div class="nugget-popup"><p>Localised flooding associated with the extreme rainfall coincided with power outages affecting properties; pumping operations on the Fylde coast were intermittently interrupted by loss of power. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of 500 properties (across Blackpool, Thornton&ndash;Cleveleys and Poulton) (p12)</p></div></div></body></div>`)[0];
+                popup_cf5aa090641414ef54ea57efe9d6c051.setContent(html_d6ff666e011af49c300f6a639b9abecf);
+            
+        
+
+        marker_ecab14fe505ca8f9deed050c9bfc1b8d.bindPopup(popup_cf5aa090641414ef54ea57efe9d6c051)
+        ;
+
+        
+    
+    
+            var marker_9b0ef9c4cacaea3e5a7bf4ed6a05545a = L.marker(
+                [53.8461465, -2.9904844],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_f86fe6812cba896e1839c5db4c03583f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9b0ef9c4cacaea3e5a7bf4ed6a05545a.setIcon(icon_f86fe6812cba896e1839c5db4c03583f);
+        
+    
+        var popup_1da9a78f7179ff8228d9cfdf6bb6cdff = L.popup({});
+
+        
+            
+                var html_379bfa24c8b76fb09e562612b908edc0 = $(`<div id="html_379bfa24c8b76fb09e562612b908edc0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Poulton-Le-Fylde</h1><div class="nugget-popup"><p>Localised flooding linked to the weather event coincided with power outages in the area. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of 500 properties (across Blackpool, Thornton&ndash;Cleveleys and Poulton) (p12)</p></div></div></body></div>`)[0];
+                popup_1da9a78f7179ff8228d9cfdf6bb6cdff.setContent(html_379bfa24c8b76fb09e562612b908edc0);
+            
+        
+
+        marker_9b0ef9c4cacaea3e5a7bf4ed6a05545a.bindPopup(popup_1da9a78f7179ff8228d9cfdf6bb6cdff)
+        ;
+
+        
+    
+    
+            var marker_8081f744167da60f67e66c122295f069 = L.marker(
+                [53.75873650867573, -2.7040270676854843],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_b62ac1f85043d96b1ed941b28e5caca9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8081f744167da60f67e66c122295f069.setIcon(icon_b62ac1f85043d96b1ed941b28e5caca9);
+        
+    
+        var popup_da2c2010ad05c231448ba491e01cc904 = L.popup({});
+
+        
+            
+                var html_8f635bebc17a3fefa6366e887fcad4bb = $(`<div id="html_8f635bebc17a3fefa6366e887fcad4bb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Preston</h1><div class="nugget-popup"><p>Intermittent power cuts reported in the Preston area linked to the extreme weather and described as a consequence of localised flooding. (p12)</p></div></div></body></div>`)[0];
+                popup_da2c2010ad05c231448ba491e01cc904.setContent(html_8f635bebc17a3fefa6366e887fcad4bb);
+            
+        
+
+        marker_8081f744167da60f67e66c122295f069.bindPopup(popup_da2c2010ad05c231448ba491e01cc904)
+        ;
+
+        
+    
+    
+            var marker_b0d7d97fe4e07bcaafb3eda30b936bd9 = L.marker(
+                [53.952724, -2.8475857],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_c091572b11c222d40a448d818d81f669 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b0d7d97fe4e07bcaafb3eda30b936bd9.setIcon(icon_c091572b11c222d40a448d818d81f669);
+        
+    
+        var popup_3c82218f97b539d133fe600a4ee0684a = L.popup({});
+
+        
+            
+                var html_96c9a8fdbf749bbdfdeee7fd863aa545 = $(`<div id="html_96c9a8fdbf749bbdfdeee7fd863aa545" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cockerham</h1><div class="nugget-popup"><p>Identified on the track of the heaviest rainfall and therefore part of the area of most intense flooding during the event on 22/23 November 2017. (p12)</p></div></div></body></div>`)[0];
+                popup_3c82218f97b539d133fe600a4ee0684a.setContent(html_96c9a8fdbf749bbdfdeee7fd863aa545);
+            
+        
+
+        marker_b0d7d97fe4e07bcaafb3eda30b936bd9.bindPopup(popup_3c82218f97b539d133fe600a4ee0684a)
+        ;
+
+        
+    
+    
+            var marker_12b7736b5ae3113e6d74e208921ace2e = L.marker(
+                [54.04674035288858, -2.8001777457545383],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_84907dd13e9ae5f54ae76241ac04674c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_12b7736b5ae3113e6d74e208921ace2e.setIcon(icon_84907dd13e9ae5f54ae76241ac04674c);
+        
+    
+        var popup_918e7ef3aec4154c88ad6b925cecdcdf = L.popup({});
+
+        
+            
+                var html_11e956b0160ae162924435e2c925e5b5 = $(`<div id="html_11e956b0160ae162924435e2c925e5b5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancaster</h1><div class="nugget-popup"><p>The extreme rainfall travelled over Lancaster city to the River Lune; overtopping of watercourses in the Ellel and Galgate area (within the district) and flooding from tributaries caused encroachment into homes and outbuildings and obstructed highways. (p12)</p></div><div class="nugget-popup"><p>Extreme rainfall near Lancaster University caused local watercourses to overtop in the Ellel and Galgate area; combined flooding from the River Conder and Burrow Beck led to high volumes of water encroaching into homes and outbuildings and obstructing highways. Similar surface&ndash;water flows affected Caton and Halton with silt washed off fields. [IMG] (p13)</p></div></div></body></div>`)[0];
+                popup_918e7ef3aec4154c88ad6b925cecdcdf.setContent(html_11e956b0160ae162924435e2c925e5b5);
+            
+        
+
+        marker_12b7736b5ae3113e6d74e208921ace2e.bindPopup(popup_918e7ef3aec4154c88ad6b925cecdcdf)
+        ;
+
+        
+    
+    
+            var marker_58d8fa7b76d72b5676cf14ee4f33931f = L.marker(
+                [54.0746926, -2.7189779],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_ff5346bcb30ebeae88b3d8adb63418ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_58d8fa7b76d72b5676cf14ee4f33931f.setIcon(icon_ff5346bcb30ebeae88b3d8adb63418ca);
+        
+    
+        var popup_472bd606406a554b000528a6909f0f42 = L.popup({});
+
+        
+            
+                var html_6f0872ea65b1c889020d0726bed32db1 = $(`<div id="html_6f0872ea65b1c889020d0726bed32db1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Caton</h1><div class="nugget-popup"><p>Caton was affected by river flooding when the heaviest rainfall tracked to the River Lune at Caton, causing the river to contribute to local flooding. (p12)</p></div><div class="nugget-popup"><p>Village was overwhelmed by surface water emerging from local watercourses; floodwaters ran across fields carrying large quantities of silt onto roads and into houses. (p13)</p></div><div class="nugget-popup"><p>Community in Caton experienced flooding during the 22/23 November 2017 rainfall event; local people reported their experiences to RMAs and a recovery/drop&ndash;in meeting was held (at The Victoria Institute) where RMAs collected additional flood reports to inform investigations. (p15)</p></div></div></body></div>`)[0];
+                popup_472bd606406a554b000528a6909f0f42.setContent(html_6f0872ea65b1c889020d0726bed32db1);
+            
+        
+
+        marker_58d8fa7b76d72b5676cf14ee4f33931f.bindPopup(popup_472bd606406a554b000528a6909f0f42)
+        ;
+
+        
+    
+    
+            var marker_05b3ece76acb0d67498679915f7e7177 = L.marker(
+                [54.076850566798264, -2.763947708304904],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_2cb73cd60830f6191e5f743a1e3c0744 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_05b3ece76acb0d67498679915f7e7177.setIcon(icon_2cb73cd60830f6191e5f743a1e3c0744);
+        
+    
+        var popup_9d76255a738755a33fcac5ab97c2225e = L.popup({});
+
+        
+            
+                var html_d69919cf20af6b1706ecb1c139459ea0 = $(`<div id="html_d69919cf20af6b1706ecb1c139459ea0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Halton</h1><div class="nugget-popup"><p>Halton was affected by river flooding when the heavy rainfall tracked to the River Lune at Halton, contributing to local flood impacts. (p12)</p></div><div class="nugget-popup"><p>Village was overwhelmed by surface water coming out of bank in local watercourses, inundating local roads and properties. (p13)</p></div></div></body></div>`)[0];
+                popup_9d76255a738755a33fcac5ab97c2225e.setContent(html_d69919cf20af6b1706ecb1c139459ea0);
+            
+        
+
+        marker_05b3ece76acb0d67498679915f7e7177.bindPopup(popup_9d76255a738755a33fcac5ab97c2225e)
+        ;
+
+        
+    
+    
+            var marker_ef301aadb0bd37a17550cefc5a6e6a9d = L.marker(
+                [54.18106605880378, -2.6123483446235958],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_3327ca2e28217099edd7231666db5c1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ef301aadb0bd37a17550cefc5a6e6a9d.setIcon(icon_3327ca2e28217099edd7231666db5c1e);
+        
+    
+        var popup_5f566fbf36868848e10b503d287a3798 = L.popup({});
+
+        
+            
+                var html_151beb85b7c2cddbb802ac64eae4bb5a = $(`<div id="html_151beb85b7c2cddbb802ac64eae4bb5a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Whittington</h1><div class="nugget-popup"><p>Whittington was one of the isolated villages affected by flooding as the rainfall track moved north&ndash;east up the Lune Valley. (p12)</p></div></div></body></div>`)[0];
+                popup_5f566fbf36868848e10b503d287a3798.setContent(html_151beb85b7c2cddbb802ac64eae4bb5a);
+            
+        
+
+        marker_ef301aadb0bd37a17550cefc5a6e6a9d.bindPopup(popup_5f566fbf36868848e10b503d287a3798)
+        ;
+
+        
+    
+    
+            var marker_b6a3b269c921ca758aa156cf207c8c53 = L.marker(
+                [54.1798867, -2.5182764],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_6d7beca452f9ac4655f13a319ef860a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b6a3b269c921ca758aa156cf207c8c53.setIcon(icon_6d7beca452f9ac4655f13a319ef860a2);
+        
+    
+        var popup_99f7313362dffac9e016036bb123747d = L.popup({});
+
+        
+            
+                var html_cd774a7a07e21ad3b70053ac0189374a = $(`<div id="html_cd774a7a07e21ad3b70053ac0189374a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ireby</h1><div class="nugget-popup"><p>Ireby was reached by the north&ndash;east travelling flood track and was identified among the locations affected. (p12)</p></div></div></body></div>`)[0];
+                popup_99f7313362dffac9e016036bb123747d.setContent(html_cd774a7a07e21ad3b70053ac0189374a);
+            
+        
+
+        marker_b6a3b269c921ca758aa156cf207c8c53.bindPopup(popup_99f7313362dffac9e016036bb123747d)
+        ;
+
+        
+    
+    
+            var marker_96ea091cbc7d80a38b73345b007c1b75 = L.marker(
+                [53.9978592, -2.785093],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_0f082730ca43fec7ed2790e5e50ecdaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_96ea091cbc7d80a38b73345b007c1b75.setIcon(icon_0f082730ca43fec7ed2790e5e50ecdaa);
+        
+    
+        var popup_a9c62eb86d5ea80d6f2d481fc94616e9 = L.popup({});
+
+        
+            
+                var html_cae736ee16871717806c81702b7fe75d = $(`<div id="html_cae736ee16871717806c81702b7fe75d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ellel</h1><div class="nugget-popup"><p>Watercourses overtopped their banks causing high volumes of water to encroach into homes and outbuildings and to obstruct highways in the Ellel area. (p13)</p></div></div></body></div>`)[0];
+                popup_a9c62eb86d5ea80d6f2d481fc94616e9.setContent(html_cae736ee16871717806c81702b7fe75d);
+            
+        
+
+        marker_96ea091cbc7d80a38b73345b007c1b75.bindPopup(popup_a9c62eb86d5ea80d6f2d481fc94616e9)
+        ;
+
+        
+    
+    
+            var marker_a38217561ae3b9bdc8dfe77eb5f50018 = L.marker(
+                [54.0378953, -2.7913711],
+                {}
+            ).addTo(map_a78139a57672dfc0ebaf1c0a8d56039a);
+        
+    
+            var icon_0647e7c3023faa270729559971f04579 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a38217561ae3b9bdc8dfe77eb5f50018.setIcon(icon_0647e7c3023faa270729559971f04579);
+        
+    
+        var popup_d82401c2c321dae941d009bda28f77a7 = L.popup({});
+
+        
+            
+                var html_691963bb34d178367f8d6349a65575fd = $(`<div id="html_691963bb34d178367f8d6349a65575fd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bowerham</h1><div class="nugget-popup"><p>Bowerham (South Lancaster) was identified among the affected localities during the 22/23 November 2017 event; a community meeting was held at the Barton Road community centre and residents provided reports to RMAs for investigation. (p15)</p></div></div></body></div>`)[0];
+                popup_d82401c2c321dae941d009bda28f77a7.setContent(html_691963bb34d178367f8d6349a65575fd);
+            
+        
+
+        marker_a38217561ae3b9bdc8dfe77eb5f50018.bindPopup(popup_d82401c2c321dae941d009bda28f77a7)
+        ;
+
+        
+    
+</script>
+</html>
