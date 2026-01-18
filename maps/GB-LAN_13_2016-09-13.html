@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d12bc68077399966ccc12b6e289f6cfe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d12bc68077399966ccc12b6e289f6cfe" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d12bc68077399966ccc12b6e289f6cfe = L.map(
+                "map_d12bc68077399966ccc12b6e289f6cfe",
+                {
+                    center: [53.84300036186677, -2.409286639895192],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cd4987b08b1d6dcb7e4fc95c7b513ade = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_cd4987b08b1d6dcb7e4fc95c7b513ade.addTo(map_d12bc68077399966ccc12b6e289f6cfe);
+    
+            var marker_adcfde034238914426993213ef8e8d5d = L.marker(
+                [53.9158869, -2.1432568],
+                {}
+            ).addTo(map_d12bc68077399966ccc12b6e289f6cfe);
+        
+    
+            var icon_aa2bdebe333e9a6226f48bc12d5c2125 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_adcfde034238914426993213ef8e8d5d.setIcon(icon_aa2bdebe333e9a6226f48bc12d5c2125);
+        
+    
+        var popup_512e91713a0c8b005d62a012735b503e = L.popup({});
+
+        
+            
+                var html_871b2b3a8e65be1b896dc8bd9a8e8c54 = $(`<div id="html_871b2b3a8e65be1b896dc8bd9a8e8c54" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Earby Beck</h1><div class="nugget-popup"><p>Earby Beck burst its banks, flooding the adjacent road and leaving silt and other debris. (p3)</p></div><div class="nugget-popup"><p>Earby Beck burst its banks due to intense rainfall, causing significant flash flooding in Earby: roads were closed by police, 9 properties were internally flooded and firefighters rescued 10 people stranded in a restaurant. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties; 10 people (p12)</p></div></div></body></div>`)[0];
+                popup_512e91713a0c8b005d62a012735b503e.setContent(html_871b2b3a8e65be1b896dc8bd9a8e8c54);
+            
+        
+
+        marker_adcfde034238914426993213ef8e8d5d.bindPopup(popup_512e91713a0c8b005d62a012735b503e)
+        ;
+
+        
+    
+    
+            var marker_79dce3d8e0c3c71e3984c3e9bb47c89b = L.marker(
+                [53.86117, -2.5650887],
+                {}
+            ).addTo(map_d12bc68077399966ccc12b6e289f6cfe);
+        
+    
+            var icon_04d8b08c9108b963e6c3c67a77f37150 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_79dce3d8e0c3c71e3984c3e9bb47c89b.setIcon(icon_04d8b08c9108b963e6c3c67a77f37150);
+        
+    
+        var popup_4afbb9c5120c36a248c887670e56f101 = L.popup({});
+
+        
+            
+                var html_f68ba81cc6d906280a18ac7246f8ea23 = $(`<div id="html_f68ba81cc6d906280a18ac7246f8ea23" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancashire</h1><div class="nugget-popup"><p>Heavy overnight rainfall on the night of 13 September 2016 caused surface water flooding across the county; local urban drainage networks were overwhelmed and did not have capacity to accommodate the run&ndash;off, resulting in widespread flooding of homes, roads and footways. [PAG] (p3)</p></div><div class="nugget-popup"><p>Across Lancashire 42 properties were reported flooded as a result of the intense rainfall on 13 September 2016; flooding was reported across the listed districts (Burnley, Chorley, Pendle, Rossendale, South Ribble, Wyre). (p12)</p></div><div class="nugget-popup"><p>The 13 September 2016 rainfall event overwhelmed natural and man&ndash;made drainage networks across locations in Lancashire, producing particularly damaging flooding in parts of the county (notably Pendle and Lancaster districts). [PAG] (p14)</p></div><div class="nugget-popup"><p>The extreme rainfall event of 13 September 2016 overwhelmed natural and man&ndash;made drainage networks across locations in Lancashire, producing surface water/flash flooding and particularly damaging flooding in some districts (notably Pendle and Lancaster). Reported effects of the intense rainfall included traffic driving through standing water producing bow waves that washed onto private property, vehicles abandoned in flooded roads impeding access, and water ingress at low&ndash;lying properties. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>33 properties flooded; 11 homes internally flooded [PAG] (p3)</p></div><div class="nugget-popup quant"><p>42 properties (p12)</p></div></div></body></div>`)[0];
+                popup_4afbb9c5120c36a248c887670e56f101.setContent(html_f68ba81cc6d906280a18ac7246f8ea23);
+            
+        
+
+        marker_79dce3d8e0c3c71e3984c3e9bb47c89b.bindPopup(popup_4afbb9c5120c36a248c887670e56f101)
+        ;
+
+        
+    
+    
+            var marker_f7bc7c3a0a0527c4eeca929957205f60 = L.marker(
+                [53.8790402, -2.1717795],
+                {}
+            ).addTo(map_d12bc68077399966ccc12b6e289f6cfe);
+        
+    
+            var icon_493a64f776891a78d9aa4c671333a9ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f7bc7c3a0a0527c4eeca929957205f60.setIcon(icon_493a64f776891a78d9aa4c671333a9ab);
+        
+    
+        var popup_d5c0f63192eb30c6d9ed74c781384e3d = L.popup({});
+
+        
+            
+                var html_791563bc3b5b32c127aaf92cc4117dc9 = $(`<div id="html_791563bc3b5b32c127aaf92cc4117dc9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pendle</h1><div class="nugget-popup"><p>The Earby area of Pendle experienced the most significant impacts of the event and several other locations in the district reported flooding to property during the same period. (p3)</p></div><div class="nugget-popup"><p>Intense rainfall caused Earby Beck to burst its banks, producing significant flash flooding in Earby; police closed roads and firefighters rescued people; properties were internally flooded. (p12)</p></div><div class="nugget-popup"><p>Particularly damaging flooding occurred in Pendle during the extreme rainfall event of 13 September 2016. Impacts associated with the intense rainfall/urban flooding included water ingress at low&ndash;lying properties, vehicles abandoned in flooded roads impeding access, and traffic creating bow waves that washed onto private property. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties internally flooded; ten people rescued (p12)</p></div></div></body></div>`)[0];
+                popup_d5c0f63192eb30c6d9ed74c781384e3d.setContent(html_791563bc3b5b32c127aaf92cc4117dc9);
+            
+        
+
+        marker_f7bc7c3a0a0527c4eeca929957205f60.bindPopup(popup_d5c0f63192eb30c6d9ed74c781384e3d)
+        ;
+
+        
+    
+    
+            var marker_42776869ec67dbf0b1d71378f6a3b462 = L.marker(
+                [53.7764241058126, -2.2199993399289806],
+                {}
+            ).addTo(map_d12bc68077399966ccc12b6e289f6cfe);
+        
+    
+            var icon_4df9799ab788b6763d52c30fa689eebd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_42776869ec67dbf0b1d71378f6a3b462.setIcon(icon_4df9799ab788b6763d52c30fa689eebd);
+        
+    
+        var popup_a9fbef277c7432e4c22e8f46937f5bbb = L.popup({});
+
+        
+            
+                var html_f469faceb4fe981e9e097d3727e62c4d = $(`<div id="html_f469faceb4fe981e9e097d3727e62c4d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burnley District</h1><div class="nugget-popup"><p>Properties in the district were reported flooded during the intense thundery downpours on 13 September 2016 (part of the 42 properties reported across Lancashire). (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of 42 properties reported across Lancashire (p12)</p></div></div></body></div>`)[0];
+                popup_a9fbef277c7432e4c22e8f46937f5bbb.setContent(html_f469faceb4fe981e9e097d3727e62c4d);
+            
+        
+
+        marker_42776869ec67dbf0b1d71378f6a3b462.bindPopup(popup_a9fbef277c7432e4c22e8f46937f5bbb)
+        ;
+
+        
+    
+    
+            var marker_4f639934a29d4657531f181aaef72771 = L.marker(
+                [53.64704799368739, -2.6735276397097056],
+                {}
+            ).addTo(map_d12bc68077399966ccc12b6e289f6cfe);
+        
+    
+            var icon_157f2921ce8ede48023c82d72bce1c75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4f639934a29d4657531f181aaef72771.setIcon(icon_157f2921ce8ede48023c82d72bce1c75);
+        
+    
+        var popup_7215d4ff9d69034aaceb877383295f32 = L.popup({});
+
+        
+            
+                var html_1827b1c3c932dcd828894b9447c6e0a1 = $(`<div id="html_1827b1c3c932dcd828894b9447c6e0a1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chorley District</h1><div class="nugget-popup"><p>Properties in the district were reported flooded during the intense thundery downpours on 13 September 2016 (part of the 42 properties reported across Lancashire). (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of 42 properties reported across Lancashire (p12)</p></div></div></body></div>`)[0];
+                popup_7215d4ff9d69034aaceb877383295f32.setContent(html_1827b1c3c932dcd828894b9447c6e0a1);
+            
+        
+
+        marker_4f639934a29d4657531f181aaef72771.bindPopup(popup_7215d4ff9d69034aaceb877383295f32)
+        ;
+
+        
+    
+    
+            var marker_d7626d994a1ec4f391e837de82dde633 = L.marker(
+                [53.70249, -2.201046],
+                {}
+            ).addTo(map_d12bc68077399966ccc12b6e289f6cfe);
+        
+    
+            var icon_ab1accef5aab0d709bb0ad131b8c51d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d7626d994a1ec4f391e837de82dde633.setIcon(icon_ab1accef5aab0d709bb0ad131b8c51d6);
+        
+    
+        var popup_fa4caf3da5856a94aaa4d16de7e4b3bb = L.popup({});
+
+        
+            
+                var html_1d042529130dfab287abbbec3e063a65 = $(`<div id="html_1d042529130dfab287abbbec3e063a65" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rossendale</h1><div class="nugget-popup"><p>Properties in the district were reported flooded during the intense thundery downpours on 13 September 2016 (part of the 42 properties reported across Lancashire). (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of 42 properties reported across Lancashire (p12)</p></div></div></body></div>`)[0];
+                popup_fa4caf3da5856a94aaa4d16de7e4b3bb.setContent(html_1d042529130dfab287abbbec3e063a65);
+            
+        
+
+        marker_d7626d994a1ec4f391e837de82dde633.bindPopup(popup_fa4caf3da5856a94aaa4d16de7e4b3bb)
+        ;
+
+        
+    
+    
+            var marker_78403a5e549335c55948324d62483562 = L.marker(
+                [53.7271527, -2.7330066],
+                {}
+            ).addTo(map_d12bc68077399966ccc12b6e289f6cfe);
+        
+    
+            var icon_43c4565e444db3a3c4521d6d16e15300 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_78403a5e549335c55948324d62483562.setIcon(icon_43c4565e444db3a3c4521d6d16e15300);
+        
+    
+        var popup_993a6ffba64f6756e1e291a5cd20d531 = L.popup({});
+
+        
+            
+                var html_9b272b5faf0895cd8005cd2bc383d7b1 = $(`<div id="html_9b272b5faf0895cd8005cd2bc383d7b1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Ribble</h1><div class="nugget-popup"><p>Properties in the district were reported flooded during the intense thundery downpours on 13 September 2016 (part of the 42 properties reported across Lancashire). (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of 42 properties reported across Lancashire (p12)</p></div></div></body></div>`)[0];
+                popup_993a6ffba64f6756e1e291a5cd20d531.setContent(html_9b272b5faf0895cd8005cd2bc383d7b1);
+            
+        
+
+        marker_78403a5e549335c55948324d62483562.bindPopup(popup_993a6ffba64f6756e1e291a5cd20d531)
+        ;
+
+        
+    
+    
+            var marker_4d9dc3f7d64bf3a7a8189d9334abcf23 = L.marker(
+                [53.89728410091331, -2.903724352506046],
+                {}
+            ).addTo(map_d12bc68077399966ccc12b6e289f6cfe);
+        
+    
+            var icon_be1240922e4be8345542ecb71431dc5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4d9dc3f7d64bf3a7a8189d9334abcf23.setIcon(icon_be1240922e4be8345542ecb71431dc5f);
+        
+    
+        var popup_bd9b11d6bda937ea6445d89519577d7e = L.popup({});
+
+        
+            
+                var html_fc2f1df40f921f7d533c372c9b60275e = $(`<div id="html_fc2f1df40f921f7d533c372c9b60275e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wyre</h1><div class="nugget-popup"><p>Properties in the district were reported flooded during the intense thundery downpours on 13 September 2016 (part of the 42 properties reported across Lancashire). (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of 42 properties reported across Lancashire (p12)</p></div></div></body></div>`)[0];
+                popup_bd9b11d6bda937ea6445d89519577d7e.setContent(html_fc2f1df40f921f7d533c372c9b60275e);
+            
+        
+
+        marker_4d9dc3f7d64bf3a7a8189d9334abcf23.bindPopup(popup_bd9b11d6bda937ea6445d89519577d7e)
+        ;
+
+        
+    
+    
+            var marker_3f164eeb9b1d011532b603488fdd5825 = L.marker(
+                [54.04133154198799, -2.7654051465975726],
+                {}
+            ).addTo(map_d12bc68077399966ccc12b6e289f6cfe);
+        
+    
+            var icon_21869e8e956e9aad0f8e0177c880bb98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3f164eeb9b1d011532b603488fdd5825.setIcon(icon_21869e8e956e9aad0f8e0177c880bb98);
+        
+    
+        var popup_379bdba4be780271ab2fb64ab58ad2bd = L.popup({});
+
+        
+            
+                var html_ba59dac74a906eeb27a5818d61c88653 = $(`<div id="html_ba59dac74a906eeb27a5818d61c88653" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancaster District</h1><div class="nugget-popup"><p>Particularly damaging flooding occurred in Lancaster during the extreme rainfall event of 13 September 2016. Impacts associated with the intense rainfall/urban flooding included water ingress at low&ndash;lying properties, vehicles abandoned in flooded roads impeding access, and traffic creating bow waves that washed onto private property. (p15)</p></div></div></body></div>`)[0];
+                popup_379bdba4be780271ab2fb64ab58ad2bd.setContent(html_ba59dac74a906eeb27a5818d61c88653);
+            
+        
+
+        marker_3f164eeb9b1d011532b603488fdd5825.bindPopup(popup_379bdba4be780271ab2fb64ab58ad2bd)
+        ;
+
+        
+    
+    
+            var marker_dd55f50ff81a59975969213057574de5 = L.marker(
+                [53.914757, -2.1356368],
+                {}
+            ).addTo(map_d12bc68077399966ccc12b6e289f6cfe);
+        
+    
+            var icon_d9e7cc39140f49e503c6b298d877f4bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dd55f50ff81a59975969213057574de5.setIcon(icon_d9e7cc39140f49e503c6b298d877f4bc);
+        
+    
+        var popup_e7d59ec27aaf6d9fa408ca1ef588a091 = L.popup({});
+
+        
+            
+                var html_6defb286c76b1019e5ac47b1f4e18103 = $(`<div id="html_6defb286c76b1019e5ac47b1f4e18103" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Earby</h1><div class="nugget-popup"><p>Earby experienced the most significant impacts. Earby Beck burst its banks, flooding the road and leaving silt and debris; blocked gullies and drains led to residents' properties being inundated; roads and footways were inundated and police closed roads. (p3)</p></div><div class="nugget-popup"><p>Intense rainfall caused Earby Beck to burst its banks, producing significant flash flooding in the town. Roads were closed by police. Firefighters rescued people stranded in a restaurant. Local highways crews attended to surcharging gullies, conducted jetting and cleaned roads to enable reopening. [PAG] (p12)</p></div><div class="nugget-popup"><p>Urban flash&ndash;flooding occurred in Earby village with gullies surcharging; response crews cleared gullies and jetting/clean&ndash;up was required to make the road passable. Firefighters were mobilised to evacuate members of the public and to clear floodwater from affected areas. (p13)</p></div><div class="nugget-popup"><p>Reported flooding affected homes and public highways in the locality during the event; the LLFA intends to contact Earby to establish a more complete picture of extent and impact. (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>up to 150mm (6 inches) of water (inundation reported in properties) (p3)</p></div><div class="nugget-popup quant"><p>9 properties; 10 people [PAG] (p12)</p></div></div></body></div>`)[0];
+                popup_e7d59ec27aaf6d9fa408ca1ef588a091.setContent(html_6defb286c76b1019e5ac47b1f4e18103);
+            
+        
+
+        marker_dd55f50ff81a59975969213057574de5.bindPopup(popup_e7d59ec27aaf6d9fa408ca1ef588a091)
+        ;
+
+        
+    
+    
+            var marker_f98fcf948e9139f43bb5a762072523ff = L.marker(
+                [53.9170798, -2.187322],
+                {}
+            ).addTo(map_d12bc68077399966ccc12b6e289f6cfe);
+        
+    
+            var icon_a65ceec3d272c504f92b3c1c9c8f1593 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f98fcf948e9139f43bb5a762072523ff.setIcon(icon_a65ceec3d272c504f92b3c1c9c8f1593);
+        
+    
+        var popup_d6fbf2c0232b120dce7d99b869a3383f = L.popup({});
+
+        
+            
+                var html_291ae078fbab6e0fc2f97e8fabc14424 = $(`<div id="html_291ae078fbab6e0fc2f97e8fabc14424" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barnoldswick</h1><div class="nugget-popup"><p>Firefighters from Barnoldswick were mobilised to evacuate the public and to clear floodwater from affected areas. (p13)</p></div></div></body></div>`)[0];
+                popup_d6fbf2c0232b120dce7d99b869a3383f.setContent(html_291ae078fbab6e0fc2f97e8fabc14424);
+            
+        
+
+        marker_f98fcf948e9139f43bb5a762072523ff.bindPopup(popup_d6fbf2c0232b120dce7d99b869a3383f)
+        ;
+
+        
+    
+    
+            var marker_f96ecf574e26b72aa387764f219edd94 = L.marker(
+                [53.83634, -2.2116468],
+                {}
+            ).addTo(map_d12bc68077399966ccc12b6e289f6cfe);
+        
+    
+            var icon_4138f62763c6cbdecee7d65455e7cc1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f96ecf574e26b72aa387764f219edd94.setIcon(icon_4138f62763c6cbdecee7d65455e7cc1e);
+        
+    
+        var popup_0cdf65b83ec900e1af98497fe6dcd663 = L.popup({});
+
+        
+            
+                var html_f4be7e754776ba2e03b04ce76ad90a27 = $(`<div id="html_f4be7e754776ba2e03b04ce76ad90a27" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nelson</h1><div class="nugget-popup"><p>Firefighters from Nelson were mobilised to evacuate the public and to clear floodwater from affected areas. [PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_0cdf65b83ec900e1af98497fe6dcd663.setContent(html_f4be7e754776ba2e03b04ce76ad90a27);
+            
+        
+
+        marker_f96ecf574e26b72aa387764f219edd94.bindPopup(popup_0cdf65b83ec900e1af98497fe6dcd663)
+        ;
+
+        
+    
+</script>
+</html>
