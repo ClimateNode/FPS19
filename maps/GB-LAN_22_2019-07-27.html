@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_27420883981bd6ce23c4a6304d316e6c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_27420883981bd6ce23c4a6304d316e6c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_27420883981bd6ce23c4a6304d316e6c = L.map(
+                "map_27420883981bd6ce23c4a6304d316e6c",
+                {
+                    center: [53.75731967830771, -2.466823242807773],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_926a11c69636357c9f8ea6507aa57603 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_926a11c69636357c9f8ea6507aa57603.addTo(map_27420883981bd6ce23c4a6304d316e6c);
+    
+            var marker_7f8b7df6726120a31cf204574dca9d4c = L.marker(
+                [53.7496026, -3.0178175],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_6def9dcd8f29408a1537f6fce764d976 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7f8b7df6726120a31cf204574dca9d4c.setIcon(icon_6def9dcd8f29408a1537f6fce764d976);
+        
+    
+        var popup_1e963d5c92a2897302ed6abb977d69c9 = L.popup({});
+
+        
+            
+                var html_a2e866fcbe0b18b0d63b1181c34bc330 = $(`<div id="html_a2e866fcbe0b18b0d63b1181c34bc330" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Royal Lytham and St Annes Golf Club</h1><div class="nugget-popup"><p>Heavy rain on 28 July 2019 led to delays to play at the course (event disruption). (p17)</p></div></div></body></div>`)[0];
+                popup_1e963d5c92a2897302ed6abb977d69c9.setContent(html_a2e866fcbe0b18b0d63b1181c34bc330);
+            
+        
+
+        marker_7f8b7df6726120a31cf204574dca9d4c.bindPopup(popup_1e963d5c92a2897302ed6abb977d69c9)
+        ;
+
+        
+    
+    
+            var marker_43c502f1b1c95828136610cb0100c53e = L.marker(
+                [53.615364, -2.155756],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_3178122ebecc8ba3a05427629cc84a05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_43c502f1b1c95828136610cb0100c53e.setIcon(icon_3178122ebecc8ba3a05427629cc84a05);
+        
+    
+        var popup_036bd2a5f8071eaef841c8e6607287cf = L.popup({});
+
+        
+            
+                var html_a8a5224e3d876c3e4a26ba4374a3eebc = $(`<div id="html_a8a5224e3d876c3e4a26ba4374a3eebc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rochdale Metropolitan District</h1><div class="nugget-popup"><p>Multiple properties across Lancashire were flooded as a result of intense, persistent rainfall; heavy rain affected Rochdale and nearby areas which contributed to flooding in neighbouring towns. [PAG] (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>25 properties [PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_036bd2a5f8071eaef841c8e6607287cf.setContent(html_a8a5224e3d876c3e4a26ba4374a3eebc);
+            
+        
+
+        marker_43c502f1b1c95828136610cb0100c53e.bindPopup(popup_036bd2a5f8071eaef841c8e6607287cf)
+        ;
+
+        
+    
+    
+            var marker_9fdf1871bb2f9f3ef3fe7a0eb2c94a26 = L.marker(
+                [53.6421615, -2.1814641],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_73f406dfcad40a0f86a032091081629e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9fdf1871bb2f9f3ef3fe7a0eb2c94a26.setIcon(icon_73f406dfcad40a0f86a032091081629e);
+        
+    
+        var popup_8d0b70424303a7be5e488b71f400b4c0 = L.popup({});
+
+        
+            
+                var html_54eaab6a5410d424204e50f8735d7f58 = $(`<div id="html_54eaab6a5410d424204e50f8735d7f58" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Station Road, Whitworth</h1><div class="nugget-popup"><p>Properties in the area around Station Road were reported as affected by flooding associated with the flood warning for Whitworth on 28 July 2019. [MUL] (p16)</p></div></div></body></div>`)[0];
+                popup_8d0b70424303a7be5e488b71f400b4c0.setContent(html_54eaab6a5410d424204e50f8735d7f58);
+            
+        
+
+        marker_9fdf1871bb2f9f3ef3fe7a0eb2c94a26.bindPopup(popup_8d0b70424303a7be5e488b71f400b4c0)
+        ;
+
+        
+    
+    
+            var marker_c4f1f6f78900da48d90b57dfdfcbe32e = L.marker(
+                [53.6668765, -2.1711264],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_f293484967ac02154f1e5b18a8f58415 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c4f1f6f78900da48d90b57dfdfcbe32e.setIcon(icon_f293484967ac02154f1e5b18a8f58415);
+        
+    
+        var popup_60199682bef3b0def5b63da30f4551ec = L.popup({});
+
+        
+            
+                var html_ab5863ccdaec128a606edfb195726e41 = $(`<div id="html_ab5863ccdaec128a606edfb195726e41" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Millfold, Whitworth</h1><div class="nugget-popup"><p>Properties in the Millfold area were reported as affected by flooding during the Whitworth incident associated with the flood warning on 28 July 2019. [MUL] (p16)</p></div></div></body></div>`)[0];
+                popup_60199682bef3b0def5b63da30f4551ec.setContent(html_ab5863ccdaec128a606edfb195726e41);
+            
+        
+
+        marker_c4f1f6f78900da48d90b57dfdfcbe32e.bindPopup(popup_60199682bef3b0def5b63da30f4551ec)
+        ;
+
+        
+    
+    
+            var marker_221e3fed6ea4ad589f5d8f0f0c440d60 = L.marker(
+                [53.6648413, -2.1737183],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_106b853ec1c57a3196a094ed5341977d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_221e3fed6ea4ad589f5d8f0f0c440d60.setIcon(icon_106b853ec1c57a3196a094ed5341977d);
+        
+    
+        var popup_571ad55acb959745aad2d2f957a3d804 = L.popup({});
+
+        
+            
+                var html_2ffe749dc51b6c57f407a21de087423a = $(`<div id="html_2ffe749dc51b6c57f407a21de087423a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>John Street, Whitworth</h1><div class="nugget-popup"><p>John Street was affected by flooding on 28 July 2019; a flood warning sign was placed and photographs document wet/flooded road conditions and warnings to road users. [IMG,MUL] (p16)</p></div></div></body></div>`)[0];
+                popup_571ad55acb959745aad2d2f957a3d804.setContent(html_2ffe749dc51b6c57f407a21de087423a);
+            
+        
+
+        marker_221e3fed6ea4ad589f5d8f0f0c440d60.bindPopup(popup_571ad55acb959745aad2d2f957a3d804)
+        ;
+
+        
+    
+    
+            var marker_37feb5e3b2b982d80202979a003ba7e9 = L.marker(
+                [53.6634793, -2.1728506],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_d7ad42cd8cdb11c5078c9c4b0561580b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_37feb5e3b2b982d80202979a003ba7e9.setIcon(icon_d7ad42cd8cdb11c5078c9c4b0561580b);
+        
+    
+        var popup_b9ae33367e472e0eaf17a4bd12fee2e3 = L.popup({});
+
+        
+            
+                var html_69269192023cdc60d9ddc6051a4251ec = $(`<div id="html_69269192023cdc60d9ddc6051a4251ec" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Daniel Street, Whitworth</h1><div class="nugget-popup"><p>Properties in the area around Daniel Street were reported as affected by flooding associated with the Whitworth flood warning on 28 July 2019. [MUL] (p16)</p></div></div></body></div>`)[0];
+                popup_b9ae33367e472e0eaf17a4bd12fee2e3.setContent(html_69269192023cdc60d9ddc6051a4251ec);
+            
+        
+
+        marker_37feb5e3b2b982d80202979a003ba7e9.bindPopup(popup_b9ae33367e472e0eaf17a4bd12fee2e3)
+        ;
+
+        
+    
+    
+            var marker_c6cf1fe8e1dec38839623380f9016538 = L.marker(
+                [53.86117, -2.5650887],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_c60846036f767cfbb3d6f7b13d3098e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c6cf1fe8e1dec38839623380f9016538.setIcon(icon_c60846036f767cfbb3d6f7b13d3098e5);
+        
+    
+        var popup_bb6c402aa9cf1e7faf3c8edd39935fbf = L.popup({});
+
+        
+            
+                var html_9c546a9b1c70bb582ef6872a2a01f87d = $(`<div id="html_9c546a9b1c70bb582ef6872a2a01f87d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancashire</h1><div class="nugget-popup"><p>Lancashire experienced flooding during the event spanning 27 July to 1 August 2019. (p1)</p></div><div class="nugget-popup"><p>Summer storms (27&ndash;29 July 2019) and further rainfall on 1 August 2019 temporarily overwhelmed local drainage systems across Lancashire, causing extensive flooding of properties and highways. Records show 102 properties flooded (91 homes and 11 commercial/agricultural properties), with 14 homes flooded internally to at least one habitable room; there is a report of one further property potentially flooded (possible total 103 properties). [MUL] (p3)</p></div><div class="nugget-popup"><p>Part of Lancashire experienced flooding during the event; the area covered by the Earby and Salterforth Internal Drainage Board was affected by floodwater. (p10)</p></div><div class="nugget-popup"><p>Widespread flooding occurred across large areas of the county as a series of intense rainfall events between 27 July 2019 and 1 August 2019, affecting multiple communities and prompting localised site inspections by risk management authorities. [PAG] (p12)</p></div><div class="nugget-popup"><p>Heavy rainfall across the county resulted in property flooding: one property in Fylde flooded on 27 July 2019; on 28 July 2019 a total of 25 properties were reported flooded within Lancashire (4 in western Lancashire across Fylde, Chorley and Preston; 1 in Pendle; 20 in Rossendale &mdash; all 20 in the town of Whitworth). [IMG] (p13)</p></div><div class="nugget-popup"><p>Widespread external flooding to residential properties across multiple districts within the county and standing surface water on main and residential roads, causing travel disruptions. [PAG] (p15)</p></div><div class="nugget-popup"><p>External flooding affected properties across multiple districts within the county and widespread standing water and travel disruption on the local road network. [PAG] (p16)</p></div><div class="nugget-popup"><p>Repeated bands of heavy rain across the county between 27 July and 1 August 2019 caused flooding; county council Highway Service inspected affected highway locations, removed silt from gullies and drainage systems, and flood waters subsided the following morning. [PAG] (p17)</p></div><div class="nugget-popup"><p>Extreme rainfall between 27 July and 1 August 2019 overwhelmed many drainage networks in parts of Lancashire, causing flooding that damaged homes and belongings and raised serious concerns for personal safety among affected people. [PAG] (p19)</p></div><div class="nugget-popup"><p>Extreme rainfall between 27 July and 1 August 2019 overwhelmed local drainage networks across the county, causing flooding of homes and business premises and damage to people's homes and belongings; significant concern for personal safety was reported. [PAG] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>102 properties; 91 homes; 11 commercial/agricultural properties; 14 homes flooded internally; possible total of 103 properties [MUL] (p3)</p></div><div class="nugget-popup quant"><p>1 property (27 Jul 2019); 25 properties (28 Jul 2019); 20 properties (in Whitworth, Rossendale) [IMG] (p13)</p></div><div class="nugget-popup quant"><p>75 properties across the county (29 Jul 2019: 21 properties; 30&ndash;31 Jul 2019: 34 properties; 1 Aug 2019: 20 properties) [PAG] (p15)</p></div><div class="nugget-popup quant"><p>5 properties (Chorley); 1 property (Hyndburn); 1 property (Preston); 2 properties (Ribble Valley); 1 property (Rossendale); 10 properties (West Lancashire); 8 properties (Whitworth) [PAG] (p16)</p></div><div class="nugget-popup quant"><p>103 individual homes and business premises [PAG] (p20)</p></div></div></body></div>`)[0];
+                popup_bb6c402aa9cf1e7faf3c8edd39935fbf.setContent(html_9c546a9b1c70bb582ef6872a2a01f87d);
+            
+        
+
+        marker_c6cf1fe8e1dec38839623380f9016538.bindPopup(popup_bb6c402aa9cf1e7faf3c8edd39935fbf)
+        ;
+
+        
+    
+    
+            var marker_2c1ecff9e2a509f027359bac7d39c7c9 = L.marker(
+                [53.6109397, -2.8565713],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_76c2c4cf6756a85756b79e71afb17b92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2c1ecff9e2a509f027359bac7d39c7c9.setIcon(icon_76c2c4cf6756a85756b79e71afb17b92);
+        
+    
+        var popup_6ca6a20c805e0c924dd08676d18b21f3 = L.popup({});
+
+        
+            
+                var html_79467d564fb479eb734dbf469b5a4d26 = $(`<div id="html_79467d564fb479eb734dbf469b5a4d26" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Lancashire</h1><div class="nugget-popup"><p>Heavy, persistent rainfall caused surface water flooding affecting properties in western Lancashire (including Fylde district). One property in Fylde was reported flooded on 27 July 2019, and on 28 July 2019 four properties across the western Lancashire districts (Fylde, Chorley and Preston) were among those reported flooded. (p13)</p></div><div class="nugget-popup"><p>Properties flooded following heavy rainfall. (p14)</p></div><div class="nugget-popup"><p>External flooding to properties reported across the event: 3 properties flooded on 29 July 2019; 10 properties flooded on 30&ndash;31 July 2019; and a further 10 properties flooded on 1 August 2019. [PAG] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (27 Jul 2019); 4 properties (28 Jul 2019 across Fylde, Chorley and Preston) (p13)</p></div><div class="nugget-popup quant"><p>3 properties on 29 July 2019 (p14)</p></div><div class="nugget-popup quant"><p>3 properties (29 Jul 2019); 10 properties (30&ndash;31 Jul 2019); 10 properties (1 Aug 2019) [PAG] (p15)</p></div></div></body></div>`)[0];
+                popup_6ca6a20c805e0c924dd08676d18b21f3.setContent(html_79467d564fb479eb734dbf469b5a4d26);
+            
+        
+
+        marker_2c1ecff9e2a509f027359bac7d39c7c9.bindPopup(popup_6ca6a20c805e0c924dd08676d18b21f3)
+        ;
+
+        
+    
+    
+            var marker_b74a4f0ed236e02053b620e7708c6148 = L.marker(
+                [53.793356, -2.894251],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_2aa5fd02c30b6fa7208c2d4312f9d654 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b74a4f0ed236e02053b620e7708c6148.setIcon(icon_2aa5fd02c30b6fa7208c2d4312f9d654);
+        
+    
+        var popup_5eaeffb84670b59267c74b5261146017 = L.popup({});
+
+        
+            
+                var html_891d275a764cb41d4ed1b9c39f3a52d6 = $(`<div id="html_891d275a764cb41d4ed1b9c39f3a52d6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fylde</h1><div class="nugget-popup"><p>Properties were flooded by heavy rainfall causing surface&ndash;water/urban flooding in western Fylde during the late July 2019 event. (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (27 Jul 2019); part of 4 properties (across Fylde, Chorley and Preston) on 28 Jul 2019 (p13)</p></div></div></body></div>`)[0];
+                popup_5eaeffb84670b59267c74b5261146017.setContent(html_891d275a764cb41d4ed1b9c39f3a52d6);
+            
+        
+
+        marker_b74a4f0ed236e02053b620e7708c6148.bindPopup(popup_5eaeffb84670b59267c74b5261146017)
+        ;
+
+        
+    
+    
+            var marker_2d8ae77b0acf7d9531df7411aa240dd9 = L.marker(
+                [53.64704799368739, -2.6735276397097056],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_a87925fc17c31180e4964e43e21b5b15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2d8ae77b0acf7d9531df7411aa240dd9.setIcon(icon_a87925fc17c31180e4964e43e21b5b15);
+        
+    
+        var popup_ce42ce7807c4b4736687302a0e3cafdf = L.popup({});
+
+        
+            
+                var html_3e58bedde173fc836d5621ec8aacd717 = $(`<div id="html_3e58bedde173fc836d5621ec8aacd717" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chorley District</h1><div class="nugget-popup"><p>Property flooding occurred in Chorley district as part of the western Lancashire impacts from heavy rainfall during the late July 2019 event. (p13)</p></div><div class="nugget-popup"><p>External flooding of residential properties and localised surface water on roads, causing unsafe travel in the locality. [PAG] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of 4 properties (across Fylde, Chorley and Preston) on 28 Jul 2019 (p13)</p></div><div class="nugget-popup quant"><p>3 properties (29 Jul 2019); 5 properties (30 Jul 2019); 5 properties (1 Aug 2019); total 13 properties [PAG] (p15)</p></div></div></body></div>`)[0];
+                popup_ce42ce7807c4b4736687302a0e3cafdf.setContent(html_3e58bedde173fc836d5621ec8aacd717);
+            
+        
+
+        marker_2d8ae77b0acf7d9531df7411aa240dd9.bindPopup(popup_ce42ce7807c4b4736687302a0e3cafdf)
+        ;
+
+        
+    
+    
+            var marker_998ba5be2b223cc821c1c8af22a72f56 = L.marker(
+                [53.79702699843082, -2.6691747940333093],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_32ae4e3fbb61c8194c45d715e09d6d53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_998ba5be2b223cc821c1c8af22a72f56.setIcon(icon_32ae4e3fbb61c8194c45d715e09d6d53);
+        
+    
+        var popup_ca817b7db040b913aadb0c0276a272d9 = L.popup({});
+
+        
+            
+                var html_66d928738e86b3b70dbcb51e7f174b0b = $(`<div id="html_66d928738e86b3b70dbcb51e7f174b0b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Preston District</h1><div class="nugget-popup"><p>Property flooding occurred in Preston district as part of the western Lancashire impacts from heavy rainfall during the late July 2019 event. (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of 4 properties (across Fylde, Chorley and Preston) on 28 Jul 2019 (p13)</p></div></div></body></div>`)[0];
+                popup_ca817b7db040b913aadb0c0276a272d9.setContent(html_66d928738e86b3b70dbcb51e7f174b0b);
+            
+        
+
+        marker_998ba5be2b223cc821c1c8af22a72f56.bindPopup(popup_ca817b7db040b913aadb0c0276a272d9)
+        ;
+
+        
+    
+    
+            var marker_ddfc4277ff0b9b51d907d50616caa92a = L.marker(
+                [53.8790402, -2.1717795],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_349606759595ae20ff89d8253a99f7fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ddfc4277ff0b9b51d907d50616caa92a.setIcon(icon_349606759595ae20ff89d8253a99f7fa);
+        
+    
+        var popup_f755a830112b743e0d6c7926894ed1cf = L.popup({});
+
+        
+            
+                var html_69e9c99bf482b1d303c5b29f61a31ce1 = $(`<div id="html_69e9c99bf482b1d303c5b29f61a31ce1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pendle</h1><div class="nugget-popup"><p>One property in Pendle district flooded due to the heavy rain band affecting Lancashire during the late July 2019 event. (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (28 Jul 2019) (p13)</p></div></div></body></div>`)[0];
+                popup_f755a830112b743e0d6c7926894ed1cf.setContent(html_69e9c99bf482b1d303c5b29f61a31ce1);
+            
+        
+
+        marker_ddfc4277ff0b9b51d907d50616caa92a.bindPopup(popup_f755a830112b743e0d6c7926894ed1cf)
+        ;
+
+        
+    
+    
+            var marker_46d23319fa0aa35aed5cc4c610aa8747 = L.marker(
+                [53.70249, -2.201046],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_0b1e2fdb15a575eb603fe8172b8e73cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_46d23319fa0aa35aed5cc4c610aa8747.setIcon(icon_0b1e2fdb15a575eb603fe8172b8e73cd);
+        
+    
+        var popup_a355ce5385cdb7ed00ee4189b61f2a4c = L.popup({});
+
+        
+            
+                var html_8ab3a6db7db75423b9c85fd1aa3fd135 = $(`<div id="html_8ab3a6db7db75423b9c85fd1aa3fd135" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rossendale</h1><div class="nugget-popup"><p>Significant property flooding occurred in Rossendale as a result of the heavy rainfall; the majority of affected properties were at the south&ndash;easterly extent of the district. (p13)</p></div><div class="nugget-popup"><p>Residential properties in the district flooded due to heavy rainfall, with the majority of affected properties located in Whitworth. [PAG] (p14)</p></div><div class="nugget-popup"><p>External flooding to properties across Rossendale, concentrated in Whitworth: 8 properties (7 in Whitworth) flooded on 29 July 2019; 3 properties (all in Whitworth) flooded on 30&ndash;31 July 2019; and 1 property flooded on 1 August 2019. [PAG] (p15)</p></div><div class="nugget-popup"><p>The district included Whitworth, which experienced severe runoff&ndash;driven flooding (28 July 2019) as part of the wider late&ndash;July/early&ndash;August 2019 surface water flooding event affecting the county. (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>20 properties (all in Whitworth) on 28 Jul 2019 (p13)</p></div><div class="nugget-popup quant"><p>20 properties on 28 July 2019; 8 properties on 29 July 2019; total 28 properties [PAG] (p14)</p></div><div class="nugget-popup quant"><p>8 properties (29 Jul 2019; 7 in Whitworth); 3 properties (30&ndash;31 Jul 2019; all in Whitworth); 1 property (1 Aug 2019) [PAG] (p15)</p></div></div></body></div>`)[0];
+                popup_a355ce5385cdb7ed00ee4189b61f2a4c.setContent(html_8ab3a6db7db75423b9c85fd1aa3fd135);
+            
+        
+
+        marker_46d23319fa0aa35aed5cc4c610aa8747.bindPopup(popup_a355ce5385cdb7ed00ee4189b61f2a4c)
+        ;
+
+        
+    
+    
+            var marker_47f0442fc4e281124acb1bc5ac772160 = L.marker(
+                [53.7607317, -2.3900549],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_b47d7c1b038d242ffa017d51ccbade1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_47f0442fc4e281124acb1bc5ac772160.setIcon(icon_b47d7c1b038d242ffa017d51ccbade1a);
+        
+    
+        var popup_431b84860dd23a23d2bea5e6f8168a24 = L.popup({});
+
+        
+            
+                var html_0656cc3645b9c92ded4f8d2cafbd76af = $(`<div id="html_0656cc3645b9c92ded4f8d2cafbd76af" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hyndburn</h1><div class="nugget-popup"><p>Properties flooded following heavy rainfall. (p14)</p></div><div class="nugget-popup"><p>External flooding to residential properties reported across the district during the late&ndash;July 2019 episodes of heavy showers. [PAG] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties on 29 July 2019 (p14)</p></div><div class="nugget-popup quant"><p>4 properties (3 properties on 29 Jul 2019; 1 property on 1 Aug 2019) [PAG] (p15)</p></div></div></body></div>`)[0];
+                popup_431b84860dd23a23d2bea5e6f8168a24.setContent(html_0656cc3645b9c92ded4f8d2cafbd76af);
+            
+        
+
+        marker_47f0442fc4e281124acb1bc5ac772160.bindPopup(popup_431b84860dd23a23d2bea5e6f8168a24)
+        ;
+
+        
+    
+    
+            var marker_1adeb57e42bb66362af7a9cf2ed3ac3f = L.marker(
+                [53.7271527, -2.7330066],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_001a1cc03edab7c6163ca6ea2da5a43a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1adeb57e42bb66362af7a9cf2ed3ac3f.setIcon(icon_001a1cc03edab7c6163ca6ea2da5a43a);
+        
+    
+        var popup_98b2c6a5da0228b75ce31f6ef58def10 = L.popup({});
+
+        
+            
+                var html_fd621389cf1f0eb118d772a3ad0ab703 = $(`<div id="html_fd621389cf1f0eb118d772a3ad0ab703" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Ribble</h1><div class="nugget-popup"><p>Residential properties flooded following heavy rainfall. (p14)</p></div><div class="nugget-popup"><p>External flooding to properties reported: 2 properties flooded on 29 July 2019 and 1 property flooded on 30&ndash;31 July 2019. [PAG] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties on 29 July 2019 (p14)</p></div><div class="nugget-popup quant"><p>2 properties (29 Jul 2019); 1 property (30&ndash;31 Jul 2019) [PAG] (p15)</p></div></div></body></div>`)[0];
+                popup_98b2c6a5da0228b75ce31f6ef58def10.setContent(html_fd621389cf1f0eb118d772a3ad0ab703);
+            
+        
+
+        marker_1adeb57e42bb66362af7a9cf2ed3ac3f.bindPopup(popup_98b2c6a5da0228b75ce31f6ef58def10)
+        ;
+
+        
+    
+    
+            var marker_ae77f41e9e22066509b092bbef56f197 = L.marker(
+                [53.89728410091331, -2.903724352506046],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_2d33ac2971ca72b33ea8f72cb6630a35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ae77f41e9e22066509b092bbef56f197.setIcon(icon_2d33ac2971ca72b33ea8f72cb6630a35);
+        
+    
+        var popup_fe3027d5d5d2c3dc44b597203794eaee = L.popup({});
+
+        
+            
+                var html_556b1e1c4c33cc5f3c07072d42a10183 = $(`<div id="html_556b1e1c4c33cc5f3c07072d42a10183" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wyre</h1><div class="nugget-popup"><p>Residential property flooded in the district. (p14)</p></div><div class="nugget-popup"><p>Residential properties experienced external flooding caused by heavy showers during the period; properties flooded on 29 and 30&ndash;31 July 2019. [PAG] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (29 Jul 2019) (p14)</p></div><div class="nugget-popup quant"><p>4 properties [PAG] (p15)</p></div></div></body></div>`)[0];
+                popup_fe3027d5d5d2c3dc44b597203794eaee.setContent(html_556b1e1c4c33cc5f3c07072d42a10183);
+            
+        
+
+        marker_ae77f41e9e22066509b092bbef56f197.bindPopup(popup_fe3027d5d5d2c3dc44b597203794eaee)
+        ;
+
+        
+    
+    
+            var marker_f8628a9d6c9bfe523b70ff9ae0b15e43 = L.marker(
+                [53.9026441, -2.422856],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_a57a3f95e9ea280e9bbbcd1755c27e50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f8628a9d6c9bfe523b70ff9ae0b15e43.setIcon(icon_a57a3f95e9ea280e9bbbcd1755c27e50);
+        
+    
+        var popup_035df64ad510e3ce1ae3e6f51b68ea5b = L.popup({});
+
+        
+            
+                var html_00632eedf66a871fbb96e14a97664a2d = $(`<div id="html_00632eedf66a871fbb96e14a97664a2d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ribble Valley</h1><div class="nugget-popup"><p>External flooding to properties reported: 2 properties flooded on 30&ndash;31 July 2019 and 2 properties flooded on 1 August 2019. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (30&ndash;31 Jul 2019); 2 properties (1 Aug 2019) (p15)</p></div></div></body></div>`)[0];
+                popup_035df64ad510e3ce1ae3e6f51b68ea5b.setContent(html_00632eedf66a871fbb96e14a97664a2d);
+            
+        
+
+        marker_f8628a9d6c9bfe523b70ff9ae0b15e43.bindPopup(popup_035df64ad510e3ce1ae3e6f51b68ea5b)
+        ;
+
+        
+    
+    
+            var marker_aa6e81e192af06cb124b23dca9243b99 = L.marker(
+                [53.914757, -2.1356368],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_3e13168f0be9f49f287c0284edd9ac65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aa6e81e192af06cb124b23dca9243b99.setIcon(icon_3e13168f0be9f49f287c0284edd9ac65);
+        
+    
+        var popup_395364699512e5c7f4b42eecf310fba8 = L.popup({});
+
+        
+            
+                var html_105138ae5429f9e47b2bf1ed5455f2fb = $(`<div id="html_105138ae5429f9e47b2bf1ed5455f2fb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Earby</h1><div class="nugget-popup"><p>Part of the area covered by the Earby and Salterforth internal drainage board was affected by flooding during the event. (p10)</p></div></div></body></div>`)[0];
+                popup_395364699512e5c7f4b42eecf310fba8.setContent(html_105138ae5429f9e47b2bf1ed5455f2fb);
+            
+        
+
+        marker_aa6e81e192af06cb124b23dca9243b99.bindPopup(popup_395364699512e5c7f4b42eecf310fba8)
+        ;
+
+        
+    
+    
+            var marker_142c4ad9ad85ec74cd110645b522480c = L.marker(
+                [53.9053347, -2.1714623],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_db2cd22c3b7fd85f0f8387103b56b03e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_142c4ad9ad85ec74cd110645b522480c.setIcon(icon_db2cd22c3b7fd85f0f8387103b56b03e);
+        
+    
+        var popup_ecb472bb919cc2cbfa04d139889aa8f5 = L.popup({});
+
+        
+            
+                var html_5b9d2eaa1c8d10d97d1f6d501038272d = $(`<div id="html_5b9d2eaa1c8d10d97d1f6d501038272d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Salterforth</h1><div class="nugget-popup"><p>Part of the area covered by the Earby and Salterforth internal drainage board was affected by flooding during the event. (p10)</p></div></div></body></div>`)[0];
+                popup_ecb472bb919cc2cbfa04d139889aa8f5.setContent(html_5b9d2eaa1c8d10d97d1f6d501038272d);
+            
+        
+
+        marker_142c4ad9ad85ec74cd110645b522480c.bindPopup(popup_ecb472bb919cc2cbfa04d139889aa8f5)
+        ;
+
+        
+    
+    
+            var marker_c7fe963262502462b195c0c2925b4c67 = L.marker(
+                [53.66924745, -2.1852538962618415],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_40f9aae83bdf3e7f499d31155e5efc82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c7fe963262502462b195c0c2925b4c67.setIcon(icon_40f9aae83bdf3e7f499d31155e5efc82);
+        
+    
+        var popup_b95eabcbe8b0e205d14177f2edb7aca6 = L.popup({});
+
+        
+            
+                var html_cd8933fc6272251452ce4ec5c59ffd0e = $(`<div id="html_cd8933fc6272251452ce4ec5c59ffd0e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Whitworth</h1><div class="nugget-popup"><p>Concentrated property flooding in the town of Whitworth (southern/SE Rossendale) caused by the heavy, persistent rainfall on 28 July 2019. [PAG] (p13)</p></div><div class="nugget-popup"><p>Residential properties in the town flooded following heavy, localised rainfall. [PAG] (p14)</p></div><div class="nugget-popup"><p>External flooding to properties in Whitworth: 7 properties flooded on 29 July 2019 and 3 properties flooded on 30&ndash;31 July 2019 (these counts are reported as Whitworth&ndash;specific within the Rossendale totals). [PAG] (p15)</p></div><div class="nugget-popup"><p>At least 8 properties in Whitworth flooded during the event; a rest centre was opened for affected residents (it was later closed unused). Properties around Station Road, Millfold, John Street and Daniel Street and the football ground were affected and a flood warning was issued. [IMG,MUL] (p16)</p></div><div class="nugget-popup"><p>Homes and gardens in Whitworth were flooded by surface water during the event; affected residents engaged with investigations and local response efforts (including the Whitworth Flood Action Group). (p18)</p></div><div class="nugget-popup"><p>Intense rainfall on 28 July 2019 produced rapid runoff from open fields and moorland which was funnelled by estate roads and footpaths into a deep flow, causing particularly devastating flood damage in Whitworth. (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>20 properties (28 Jul 2019) [PAG] (p13)</p></div><div class="nugget-popup quant"><p>20 properties on 28 July 2019; 7 properties on 29 July 2019; total 27 properties [PAG] (p14)</p></div><div class="nugget-popup quant"><p>7 properties (29 Jul 2019); 3 properties (30&ndash;31 Jul 2019) [PAG] (p15)</p></div><div class="nugget-popup quant"><p>8 properties [IMG,MUL] (p16)</p></div></div></body></div>`)[0];
+                popup_b95eabcbe8b0e205d14177f2edb7aca6.setContent(html_cd8933fc6272251452ce4ec5c59ffd0e);
+            
+        
+
+        marker_c7fe963262502462b195c0c2925b4c67.bindPopup(popup_b95eabcbe8b0e205d14177f2edb7aca6)
+        ;
+
+        
+    
+    
+            var marker_260a57c1a5f72ab6a6a190dcce35b268 = L.marker(
+                [53.75873650867573, -2.7040270676854843],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_ac75a0bb1a67d7ddb7caa5d1430117be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_260a57c1a5f72ab6a6a190dcce35b268.setIcon(icon_ac75a0bb1a67d7ddb7caa5d1430117be);
+        
+    
+        var popup_4ee7a5d2d1b2dcb361d8667b8d13ec39 = L.popup({});
+
+        
+            
+                var html_a0225e3c0904d21aed3495bc67ae3404 = $(`<div id="html_a0225e3c0904d21aed3495bc67ae3404" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Preston</h1><div class="nugget-popup"><p>External flooding to residential properties reported during the intense showers: 2 properties flooded on 30&ndash;31 July 2019 and a further 1 property flooded on 1 August 2019. [PAG] (p15)</p></div><div class="nugget-popup"><p>Standing water on main and residential roads (illustrated by Riversway, Preston) disrupted travel; external flooding affected at least one property. [PAG] (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (30&ndash;31 Jul 2019); 1 property (1 Aug 2019) [PAG] (p15)</p></div><div class="nugget-popup quant"><p>1 property [PAG] (p16)</p></div></div></body></div>`)[0];
+                popup_4ee7a5d2d1b2dcb361d8667b8d13ec39.setContent(html_a0225e3c0904d21aed3495bc67ae3404);
+            
+        
+
+        marker_260a57c1a5f72ab6a6a190dcce35b268.bindPopup(popup_4ee7a5d2d1b2dcb361d8667b8d13ec39)
+        ;
+
+        
+    
+    
+            var marker_a5e119b694b12c3eb96b595b3abd579e = L.marker(
+                [53.8509186, -2.2208391405389625],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_5c0b96e6c2061555676f8886497178a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a5e119b694b12c3eb96b595b3abd579e.setIcon(icon_5c0b96e6c2061555676f8886497178a8);
+        
+    
+        var popup_4f4f524793a43c5480eba3a86a591ab1 = L.popup({});
+
+        
+            
+                var html_d97c2a61149aa0f72dcd7d4b90a363df = $(`<div id="html_d97c2a61149aa0f72dcd7d4b90a363df" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barrowford</h1><div class="nugget-popup"><p>Storm and flood problems impacted safe travel, with standing water on roads reported and a tree blown across the road contributing to unsafe travel conditions. (p16)</p></div></div></body></div>`)[0];
+                popup_4f4f524793a43c5480eba3a86a591ab1.setContent(html_d97c2a61149aa0f72dcd7d4b90a363df);
+            
+        
+
+        marker_a5e119b694b12c3eb96b595b3abd579e.bindPopup(popup_4f4f524793a43c5480eba3a86a591ab1)
+        ;
+
+        
+    
+    
+            var marker_7ef423f2e19c5dde8d50a69d84ca7a4a = L.marker(
+                [53.73814964937003, -2.965901693843432],
+                {}
+            ).addTo(map_27420883981bd6ce23c4a6304d316e6c);
+        
+    
+            var icon_27d80d75c5d2197473e66df8ae2a9b4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7ef423f2e19c5dde8d50a69d84ca7a4a.setIcon(icon_27d80d75c5d2197473e66df8ae2a9b4e);
+        
+    
+        var popup_bdc2f6faeab45bfdd153e957a58d7d33 = L.popup({});
+
+        
+            
+                var html_9edaf597ffb54efc298417d01b4fd806 = $(`<div id="html_9edaf597ffb54efc298417d01b4fd806" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lytham</h1><div class="nugget-popup"><p>Heavy rainfall on 28 July 2019 affected the Royal Lytham area, causing delays to the Senior Open Championship. (p17)</p></div></div></body></div>`)[0];
+                popup_bdc2f6faeab45bfdd153e957a58d7d33.setContent(html_9edaf597ffb54efc298417d01b4fd806);
+            
+        
+
+        marker_7ef423f2e19c5dde8d50a69d84ca7a4a.bindPopup(popup_bdc2f6faeab45bfdd153e957a58d7d33)
+        ;
+
+        
+    
+</script>
+</html>
