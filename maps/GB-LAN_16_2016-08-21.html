@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b675f2387ed8750a5b76b4569e37c242 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b675f2387ed8750a5b76b4569e37c242" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b675f2387ed8750a5b76b4569e37c242 = L.map(
+                "map_b675f2387ed8750a5b76b4569e37c242",
+                {
+                    center: [53.874527512316476, -2.7719072826948037],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_69a2f3c1fc1563817b133b3b3e7b3cc2 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_69a2f3c1fc1563817b133b3b3e7b3cc2.addTo(map_b675f2387ed8750a5b76b4569e37c242);
+    
+            var marker_f85f06d993e5a905ae2af46584fb3a19 = L.marker(
+                [53.90612885897809, -2.768732898475416],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_8f8005351b0e697c7be4b32d92e317b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f85f06d993e5a905ae2af46584fb3a19.setIcon(icon_8f8005351b0e697c7be4b32d92e317b0);
+        
+    
+        var popup_9d91b775eab05731e321eb52ea1427ea = L.popup({});
+
+        
+            
+                var html_f693861d1a7a2111d0c4265984dc8d1e = $(`<div id="html_f693861d1a7a2111d0c4265984dc8d1e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Garstang Flood Basin</h1><div class="nugget-popup"><p>Activated by the Environment Agency at 05:30 on 22 Aug 2016 to manage runoff; reached full capacity at 15:30 on 22 Aug 2016 but River Wyre levels continued rising until 16:30 so flows exceeded the basin's capacity. (p14)</p></div></div></body></div>`)[0];
+                popup_9d91b775eab05731e321eb52ea1427ea.setContent(html_f693861d1a7a2111d0c4265984dc8d1e);
+            
+        
+
+        marker_f85f06d993e5a905ae2af46584fb3a19.bindPopup(popup_9d91b775eab05731e321eb52ea1427ea)
+        ;
+
+        
+    
+    
+            var marker_0c22037ee36f2ccf35932e5fd8abbc4c = L.marker(
+                [53.9309171, -2.7685312],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_6fa0b3e83a6baeeaa16c7a709ba86c93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0c22037ee36f2ccf35932e5fd8abbc4c.setIcon(icon_6fa0b3e83a6baeeaa16c7a709ba86c93);
+        
+    
+        var popup_dc8db97d2757eaff6385c12cf6745c5b = L.popup({});
+
+        
+            
+                var html_e1523f133724b4a157530973479e69c1 = $(`<div id="html_e1523f133724b4a157530973479e69c1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Wyre</h1><div class="nugget-popup"><p>Overtopped its banks upstream of Kirkland Bridge causing flooding at Churchtown; banks also overtopped at Scorton and Catterall; river flows from the rainfall event exceeded the capacity of the Garstang attenuation basin. [PAG] (p14)</p></div><div class="nugget-popup"><p>River Wyre flows rose and overtopped banks upstream of Kirkland Bridge, causing flooding at Churchtown; river banks were also overtopped at Scorton and Catterall. River flows exceeded the capacity of the Garstang flood basin despite its activation. [PAG] (p15)</p></div><div class="nugget-popup"><p>Overflow at its confluence with the Brock produced excess flows that contributed to flooding in Churchtown by passing the pinch&ndash;point under Kirkland Bridge and threatening/affecting homes on The Avenue and The Green. (p16)</p></div></div></body></div>`)[0];
+                popup_dc8db97d2757eaff6385c12cf6745c5b.setContent(html_e1523f133724b4a157530973479e69c1);
+            
+        
+
+        marker_0c22037ee36f2ccf35932e5fd8abbc4c.bindPopup(popup_dc8db97d2757eaff6385c12cf6745c5b)
+        ;
+
+        
+    
+    
+            var marker_c82688cecef9996071ef34ee9bbb61e2 = L.marker(
+                [53.8809286, -2.7797007],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_39c905616660427cf8143a8a07ffc4f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c82688cecef9996071ef34ee9bbb61e2.setIcon(icon_39c905616660427cf8143a8a07ffc4f7);
+        
+    
+        var popup_a93d107666657a58edd285deeb2bf555 = L.popup({});
+
+        
+            
+                var html_c277e2ded0458951dc8d54814faf5996 = $(`<div id="html_c277e2ded0458951dc8d54814faf5996" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kirkland Bridge</h1><div class="nugget-popup"><p>River Wyre overtopped its banks upstream of Kirkland Bridge causing excess water on the A6 at the bridge; road surface was waterlogged and traffic was forced to drive through standing water. [IMG] (p15)</p></div><div class="nugget-popup"><p>The bridge location forms a pinch&ndash;point under the A6 where river flows backed up and overflowed, contributing to flooding in Churchtown; this issue led to construction of an upstream bund to divert excess water. (p16)</p></div></div></body></div>`)[0];
+                popup_a93d107666657a58edd285deeb2bf555.setContent(html_c277e2ded0458951dc8d54814faf5996);
+            
+        
+
+        marker_c82688cecef9996071ef34ee9bbb61e2.bindPopup(popup_a93d107666657a58edd285deeb2bf555)
+        ;
+
+        
+    
+    
+            var marker_1ff7a178bd0e59eb54fb771044b7e57c = L.marker(
+                [53.881172, -2.7814734],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_79636b50d3ee9cb9da7e9c174396870c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1ff7a178bd0e59eb54fb771044b7e57c.setIcon(icon_79636b50d3ee9cb9da7e9c174396870c);
+        
+    
+        var popup_68c998a578d3e87f50c72e1846b3fd94 = L.popup({});
+
+        
+            
+                var html_eb34eaa6c1801dee3fbf7a987b082045 = $(`<div id="html_eb34eaa6c1801dee3fbf7a987b082045" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Avenue, Churchtown</h1><div class="nugget-popup"><p>Homes on The Avenue were directly in the line of excess flows from the rivers and were affected by flooding (notably in December 2015 and during the August 2016 event); an upstream bund was later built to provide additional protection. [MUL] (p16)</p></div></div></body></div>`)[0];
+                popup_68c998a578d3e87f50c72e1846b3fd94.setContent(html_eb34eaa6c1801dee3fbf7a987b082045);
+            
+        
+
+        marker_1ff7a178bd0e59eb54fb771044b7e57c.bindPopup(popup_68c998a578d3e87f50c72e1846b3fd94)
+        ;
+
+        
+    
+    
+            var marker_090d834db0b442e0af5d07a315d1c69a = L.marker(
+                [53.880542608911206, -2.7889670687823953],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_a054afd872f42c58e8607f1f6d14dc67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_090d834db0b442e0af5d07a315d1c69a.setIcon(icon_a054afd872f42c58e8607f1f6d14dc67);
+        
+    
+        var popup_7d8537627702c365c0247d89dc1c80dc = L.popup({});
+
+        
+            
+                var html_38d883da5629772981bdb92117ae4ab6 = $(`<div id="html_38d883da5629772981bdb92117ae4ab6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Green, Churchtown</h1><div class="nugget-popup"><p>Homes on The Green were directly in the path of excess river flows and were affected by flooding (including December 2015 and the August 2016 event); protection was later provided by an upstream bund. [MUL] (p16)</p></div></div></body></div>`)[0];
+                popup_7d8537627702c365c0247d89dc1c80dc.setContent(html_38d883da5629772981bdb92117ae4ab6);
+            
+        
+
+        marker_090d834db0b442e0af5d07a315d1c69a.bindPopup(popup_7d8537627702c365c0247d89dc1c80dc)
+        ;
+
+        
+    
+    
+            var marker_52ab79478785bce9a2392888904d63ae = L.marker(
+                [53.86117, -2.5650887],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_39f09397eb9b9c4c4a4f33ead4b6b8fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_52ab79478785bce9a2392888904d63ae.setIcon(icon_39f09397eb9b9c4c4a4f33ead4b6b8fc);
+        
+    
+        var popup_e4320f4ce2f59fcf23fa5d00c123a2c2 = L.popup({});
+
+        
+            
+                var html_a7a787a5ada215c54481faab8dd6882a = $(`<div id="html_a7a787a5ada215c54481faab8dd6882a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancashire</h1><div class="nugget-popup"><p>Western areas experienced intense summer storms that temporarily overwhelmed local drainage systems, causing extensive flooding of properties and highways: 98 properties flooded (85 homes and 13 non&ndash;residential properties); 25 homes flooded internally to at least one habitable room; multiple highways flooded. (p3)</p></div><div class="nugget-popup"><p>Parts of the county were affected by flooding related to the event described in this report. (p10)</p></div><div class="nugget-popup"><p>Widespread heavy rainfall across the county triggered flood alerts and warnings, prompted the Environment Agency Preston Incident Room to open, and generated multiple highway flooding incidents attended by county council emergency teams between 21 and 23 August 2016. [PAG] (p14)</p></div><div class="nugget-popup"><p>The extreme rainfall of 21&ndash;23 August 2016 overwhelmed local drainage networks in some locations, causing flooding that damaged homes and household belongings and caused significant concern for residents' safety. [PAG] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>98 properties; 85 homes; 13 other properties; 25 homes internally flooded (p3)</p></div></div></body></div>`)[0];
+                popup_e4320f4ce2f59fcf23fa5d00c123a2c2.setContent(html_a7a787a5ada215c54481faab8dd6882a);
+            
+        
+
+        marker_52ab79478785bce9a2392888904d63ae.bindPopup(popup_e4320f4ce2f59fcf23fa5d00c123a2c2)
+        ;
+
+        
+    
+    
+            var marker_5a88dfd8e7faf191c57f84cc9fe796a3 = L.marker(
+                [53.8611712, -2.5650945],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_bc82b408a9c20f80d9089a5f614f26c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5a88dfd8e7faf191c57f84cc9fe796a3.setIcon(icon_bc82b408a9c20f80d9089a5f614f26c7);
+        
+    
+        var popup_4f175d80912019fe2c862795233ee30b = L.popup({});
+
+        
+            
+                var html_a38d4fbd7af2ea8bee146abf0f695c0e = $(`<div id="html_a38d4fbd7af2ea8bee146abf0f695c0e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancashire</h1><div class="nugget-popup"><p>Flooding was the most demanding highway defect attended by the county council's emergency call&ndash;out teams between Sunday 21 and Tuesday 23 August 2016. Incidents were recorded at Scorton and Churchtown (both in Wyre district) and at various other individual locations around the county; county teams responded to these highway flooding incidents. [PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_4f175d80912019fe2c862795233ee30b.setContent(html_a38d4fbd7af2ea8bee146abf0f695c0e);
+            
+        
+
+        marker_5a88dfd8e7faf191c57f84cc9fe796a3.bindPopup(popup_4f175d80912019fe2c862795233ee30b)
+        ;
+
+        
+    
+    
+            var marker_01e2664e7840aaa81e632f3595f62bb4 = L.marker(
+                [53.89728410091331, -2.903724352506046],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_00f8b89cd03ed1600a506c0144951f49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_01e2664e7840aaa81e632f3595f62bb4.setIcon(icon_00f8b89cd03ed1600a506c0144951f49);
+        
+    
+        var popup_634fb8e7f4a7291988b77bee3af987a8 = L.popup({});
+
+        
+            
+                var html_2166e90b60a0ab83f525705f21a4b8a2 = $(`<div id="html_2166e90b60a0ab83f525705f21a4b8a2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wyre</h1><div class="nugget-popup"><p>Within Wyre district the River Wyre overtopped banks at multiple locations (including Scorton, Catterall and Churchtown). The Environment Agency activated the Garstang flood basin (0530 on 22 Aug) and the Catterall flood basin (0945 on 22 Aug); Garstang basin reached full capacity while River Wyre levels continued rising (peaking after 1530 on 22 Aug), and the Catterall basin reached full capacity at 2200 on 22 Aug. Flooding and mud on carriageways required substantial local highway response. [IMG,PAG] (p14)</p></div><div class="nugget-popup"><p>River Wyre overtopped its banks causing flooding at Churchtown and overtopping at Scorton and Catterall; Garstang and Catterall flood basins were activated but reached full capacity (Garstang reached capacity at 15:30 on 22 Aug; Catterall at 22:00) and river levels continued to rise, contributing to local flooding. Surface water sewers also failed to operate in parts of the district (Hambleton/Stalmine) due to excessive water levels. [PAG] (p15)</p></div></div></body></div>`)[0];
+                popup_634fb8e7f4a7291988b77bee3af987a8.setContent(html_2166e90b60a0ab83f525705f21a4b8a2);
+            
+        
+
+        marker_01e2664e7840aaa81e632f3595f62bb4.bindPopup(popup_634fb8e7f4a7291988b77bee3af987a8)
+        ;
+
+        
+    
+    
+            var marker_ad1a822f381052b9c571d669f8a21b35 = L.marker(
+                [53.64704799368739, -2.6735276397097056],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_5d7bc182681e5366af2317222df3f0ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ad1a822f381052b9c571d669f8a21b35.setIcon(icon_5d7bc182681e5366af2317222df3f0ac);
+        
+    
+        var popup_68b3f5f5e411973ddd158e34ae625934 = L.popup({});
+
+        
+            
+                var html_63c3f4a9a5a7aa688b2e80a353a37198 = $(`<div id="html_63c3f4a9a5a7aa688b2e80a353a37198" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chorley District</h1><div class="nugget-popup"><p>Local flood response attended by county council out&ndash;of&ndash;hours teams; time spent on flood incidents in Chorley is shown in the event summary chart. [IMG] (p14)</p></div></div></body></div>`)[0];
+                popup_68b3f5f5e411973ddd158e34ae625934.setContent(html_63c3f4a9a5a7aa688b2e80a353a37198);
+            
+        
+
+        marker_ad1a822f381052b9c571d669f8a21b35.bindPopup(popup_68b3f5f5e411973ddd158e34ae625934)
+        ;
+
+        
+    
+    
+            var marker_80a76f70f39f87f36de4fbe7fcb9f8eb = L.marker(
+                [53.9325293, -2.7595152],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_ea1f3e904f08eb1e8567779e9dc7c8e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_80a76f70f39f87f36de4fbe7fcb9f8eb.setIcon(icon_ea1f3e904f08eb1e8567779e9dc7c8e9);
+        
+    
+        var popup_84b326ca70d8fa8322b2c9fe3f9c25e3 = L.popup({});
+
+        
+            
+                var html_2a7d209f92e1f59ec29bcbb4a409df19 = $(`<div id="html_2a7d209f92e1f59ec29bcbb4a409df19" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Scorton</h1><div class="nugget-popup"><p>River banks were overtopped at Scorton during the event, causing localised river flooding and prompting emergency response between 21 and 23 August 2016. [PAG] (p14)</p></div><div class="nugget-popup"><p>River banks were overtopped at Scorton and Catterall, causing flooding in those localities. (p15)</p></div></div></body></div>`)[0];
+                popup_84b326ca70d8fa8322b2c9fe3f9c25e3.setContent(html_2a7d209f92e1f59ec29bcbb4a409df19);
+            
+        
+
+        marker_80a76f70f39f87f36de4fbe7fcb9f8eb.bindPopup(popup_84b326ca70d8fa8322b2c9fe3f9c25e3)
+        ;
+
+        
+    
+    
+            var marker_20d918199f7cbb1e1b7318af49418b93 = L.marker(
+                [53.880574034573634, -2.788316134707634],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_18264c3d8909cc57566429d6eca34775 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_20d918199f7cbb1e1b7318af49418b93.setIcon(icon_18264c3d8909cc57566429d6eca34775);
+        
+    
+        var popup_51b127823915b8e1ba97e4db12919fca = L.popup({});
+
+        
+            
+                var html_3f4a46271c2d4d9233895cfb34cc2ba6 = $(`<div id="html_3f4a46271c2d4d9233895cfb34cc2ba6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Churchtown</h1><div class="nugget-popup"><p>Flooding at Churchtown was caused primarily by the River Wyre overtopping its banks upstream of Kirkland Bridge (A6), producing excess water on the A6 at Kirkland Bridge and local river flooding during 21&ndash;23 August 2016. [PAG] (p14)</p></div><div class="nugget-popup"><p>Flooding in Churchtown was caused primarily by the River Wyre overtopping its banks upstream of Kirkland Bridge. (p15)</p></div></div></body></div>`)[0];
+                popup_51b127823915b8e1ba97e4db12919fca.setContent(html_3f4a46271c2d4d9233895cfb34cc2ba6);
+            
+        
+
+        marker_20d918199f7cbb1e1b7318af49418b93.bindPopup(popup_51b127823915b8e1ba97e4db12919fca)
+        ;
+
+        
+    
+    
+            var marker_866de40106c3f32ea794026cb4f25e83 = L.marker(
+                [53.877117, -2.7638138],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_5ca3cb62ea5d0d5c7735263975bcb371 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_866de40106c3f32ea794026cb4f25e83.setIcon(icon_5ca3cb62ea5d0d5c7735263975bcb371);
+        
+    
+        var popup_c8e09d371d5ac3bfa9ea97c6e396a83a = L.popup({});
+
+        
+            
+                var html_21c4144578b0af919a9e27f97d8d8b61 = $(`<div id="html_21c4144578b0af919a9e27f97d8d8b61" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Catterall</h1><div class="nugget-popup"><p>River banks overtopped at Catterall causing local flooding; the nearby Catterall flood basin was activated in response to the heavy downpours. [PAG] (p14)</p></div><div class="nugget-popup"><p>River banks were overtopped at Scorton and Catterall, causing flooding in those localities. (p15)</p></div></div></body></div>`)[0];
+                popup_c8e09d371d5ac3bfa9ea97c6e396a83a.setContent(html_21c4144578b0af919a9e27f97d8d8b61);
+            
+        
+
+        marker_866de40106c3f32ea794026cb4f25e83.bindPopup(popup_c8e09d371d5ac3bfa9ea97c6e396a83a)
+        ;
+
+        
+    
+    
+            var marker_fb2a90c9188fe24fd74cb9a5158f654c = L.marker(
+                [53.873855500000005, -2.950319910579624],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_c046df1dfa12ed6eac585187780d982e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fb2a90c9188fe24fd74cb9a5158f654c.setIcon(icon_c046df1dfa12ed6eac585187780d982e);
+        
+    
+        var popup_e5ef187c7a06d0420a744bf3449f7068 = L.popup({});
+
+        
+            
+                var html_cb06e01fa7058b43ba1232622893fb80 = $(`<div id="html_cb06e01fa7058b43ba1232622893fb80" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hambleton</h1><div class="nugget-popup"><p>Surface water sewers in the Hambleton/Stalmine area failed to operate as normal because of excessive water levels linked to high river and watercourse levels, leading to local drainage/sewering impacts. (p15)</p></div></div></body></div>`)[0];
+                popup_e5ef187c7a06d0420a744bf3449f7068.setContent(html_cb06e01fa7058b43ba1232622893fb80);
+            
+        
+
+        marker_fb2a90c9188fe24fd74cb9a5158f654c.bindPopup(popup_e5ef187c7a06d0420a744bf3449f7068)
+        ;
+
+        
+    
+    
+            var marker_d5c46a8dc03259da089e59787b9e00fe = L.marker(
+                [53.901688, -2.9536934],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_3018d2d2e9aa005b9410a82c8dc097b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d5c46a8dc03259da089e59787b9e00fe.setIcon(icon_3018d2d2e9aa005b9410a82c8dc097b3);
+        
+    
+        var popup_e7d8dbd3f1989a3477b0e708928193a1 = L.popup({});
+
+        
+            
+                var html_7df964a277e01a0d676b327f9721f2a5 = $(`<div id="html_7df964a277e01a0d676b327f9721f2a5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stalmine</h1><div class="nugget-popup"><p>Surface water sewers failed to operate normally in the Hambleton/Stalmine area due to excessive water levels associated with high river and watercourse levels. (p15)</p></div></div></body></div>`)[0];
+                popup_e7d8dbd3f1989a3477b0e708928193a1.setContent(html_7df964a277e01a0d676b327f9721f2a5);
+            
+        
+
+        marker_d5c46a8dc03259da089e59787b9e00fe.bindPopup(popup_e7d8dbd3f1989a3477b0e708928193a1)
+        ;
+
+        
+    
+    
+            var marker_a7d680f763784c54f26d63f7d59fae39 = L.marker(
+                [53.877117, -2.7638138],
+                {}
+            ).addTo(map_b675f2387ed8750a5b76b4569e37c242);
+        
+    
+            var icon_7ad2e095da876f3cdcfeb2998d78b378 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a7d680f763784c54f26d63f7d59fae39.setIcon(icon_7ad2e095da876f3cdcfeb2998d78b378);
+        
+    
+        var popup_4206f06f00c15617b50198508ce75250 = L.popup({});
+
+        
+            
+                var html_d136e4cc502e20c5c3f767f52c7d5f1f = $(`<div id="html_d136e4cc502e20c5c3f767f52c7d5f1f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Catterall Basin</h1><div class="nugget-popup"><p>Activated by the Environment Agency at 09:45 on 22 Aug 2016 in response to heavy downpours; reached full capacity at 22:00 on 22 Aug 2016. (p14)</p></div></div></body></div>`)[0];
+                popup_4206f06f00c15617b50198508ce75250.setContent(html_d136e4cc502e20c5c3f767f52c7d5f1f);
+            
+        
+
+        marker_a7d680f763784c54f26d63f7d59fae39.bindPopup(popup_4206f06f00c15617b50198508ce75250)
+        ;
+
+        
+    
+</script>
+</html>
