@@ -1,0 +1,2879 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2c9092b1bcc9264f5903d91b0a4f9a04 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2c9092b1bcc9264f5903d91b0a4f9a04" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2c9092b1bcc9264f5903d91b0a4f9a04 = L.map(
+                "map_2c9092b1bcc9264f5903d91b0a4f9a04",
+                {
+                    center: [52.63120464404483, -1.1009947835077323],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2f3eabb1d1b60b290064969cac797bc7 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_2f3eabb1d1b60b290064969cac797bc7.addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+    
+            var marker_23f2a0e483bea8e6a45437cb929e718c = L.marker(
+                [52.6332453, -1.106592],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_b8de9345ff52a7fe9879579b3945e1c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_23f2a0e483bea8e6a45437cb929e718c.setIcon(icon_b8de9345ff52a7fe9879579b3945e1c7);
+        
+    
+        var popup_3e34d120074b744103b88d9eb1008713 = L.popup({});
+
+        
+            
+                var html_cab53c88e44925f10e9ed15bd1d1f75a = $(`<div id="html_cab53c88e44925f10e9ed15bd1d1f75a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Spinney Hill Park</h1><div class="nugget-popup"><p>The Evington Brook gauge located in Spinney Hills Park recorded a rapid rise to a peak around 17:15 on 22/06/2023, indicating the park area experienced elevated brook levels during the event. [IMG] (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>peak ≈ 1.2 m river level (gauge at park) [IMG] (p33)</p></div></div></body></div>`)[0];
+                popup_3e34d120074b744103b88d9eb1008713.setContent(html_cab53c88e44925f10e9ed15bd1d1f75a);
+            
+        
+
+        marker_23f2a0e483bea8e6a45437cb929e718c.bindPopup(popup_3e34d120074b744103b88d9eb1008713)
+        ;
+
+        
+    
+    
+            var marker_cf1af02cde0294525ad19231be6fe6c8 = L.marker(
+                [52.634773649573084, -1.1296059467547577],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_aaccdf0659ec5bb6f23f2558ddaeb57a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cf1af02cde0294525ad19231be6fe6c8.setIcon(icon_aaccdf0659ec5bb6f23f2558ddaeb57a);
+        
+    
+        var popup_b0f4f90b60e0b3e9b6a6f8fa39848d82 = L.popup({});
+
+        
+            
+                var html_d64bfb7b6e871b5a921f73a25e8a3132 = $(`<div id="html_d64bfb7b6e871b5a921f73a25e8a3132" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Castle Ward</h1><div class="nugget-popup"><p>Internal property flooding reported at multiple locations in Castle Ward (Lorne Road, Oxford Road, and the junction of Kingsley Street/Wordsworth Road). Surface water flow routes converge at the Kingsley/Wordsworth corner; Lorne Road is a low point receiving runoff from Victoria Park Road and has previous reports of flooding with possible sewer capacity exceedance; Oxford Road properties were flooded by surface water flowing from Montague Road and Edward Road into the rear of properties. [TAB] (p12)</p></div><div class="nugget-popup"><p>Multiple streets within the Castle ward experienced surface water flooding: Lorne Road (low point of surface water flow from Victoria Park Road), Oxford Road (surface water flows from Montague Road and Edward Road), and the corner of Kingsley Street/Wordsworth Road where two surface water flow routes meet. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_b0f4f90b60e0b3e9b6a6f8fa39848d82.setContent(html_d64bfb7b6e871b5a921f73a25e8a3132);
+            
+        
+
+        marker_cf1af02cde0294525ad19231be6fe6c8.bindPopup(popup_b0f4f90b60e0b3e9b6a6f8fa39848d82)
+        ;
+
+        
+    
+    
+            var marker_8f3f66a2b8b50de6f2879012b9e00ed2 = L.marker(
+                [52.650109939447134, -1.070736468053334],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_12caad562c262351fc648f6c73c3f5e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8f3f66a2b8b50de6f2879012b9e00ed2.setIcon(icon_12caad562c262351fc648f6c73c3f5e7);
+        
+    
+        var popup_fd653a9061dbb7fd345dce8ce691d0a5 = L.popup({});
+
+        
+            
+                var html_32710315f9b5e3f60f4a3cda69301a90 = $(`<div id="html_32710315f9b5e3f60f4a3cda69301a90" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Humberstone and Hamilton</h1><div class="nugget-popup"><p>Internal property flooding was reported within the ward during the event; multiple locations in the ward reported internal flooding associated with surface water routes and local watercourses. [TAB] (p13)</p></div><div class="nugget-popup"><p>Surface water flooding affected multiple streets in the ward (St Marys Avenue, Abbots Road South, Tennis Court Drive, West Drive). Flood routes included flows along garage accesses adjacent to the Scraptoft Brook, overland flows following the public sewer line from Tennis Court Drive, and ponding in low spots before Humberstone Drive, causing flooding of garages, low&ndash;lying properties and surrounding areas. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_fd653a9061dbb7fd345dce8ce691d0a5.setContent(html_32710315f9b5e3f60f4a3cda69301a90);
+            
+        
+
+        marker_8f3f66a2b8b50de6f2879012b9e00ed2.bindPopup(popup_fd653a9061dbb7fd345dce8ce691d0a5)
+        ;
+
+        
+    
+    
+            var marker_eab86a2c4852865a5625ed2cfdb6176a = L.marker(
+                [52.6383633273538, -1.0577319587922767],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_06903cecc5349531db6fe1ed871e0d42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eab86a2c4852865a5625ed2cfdb6176a.setIcon(icon_06903cecc5349531db6fe1ed871e0d42);
+        
+    
+        var popup_ae5aff0473cb002c8a695ed7969abfc2 = L.popup({});
+
+        
+            
+                var html_bc7246271b73e6485dcb758a02f5ae63 = $(`<div id="html_bc7246271b73e6485dcb758a02f5ae63" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thurncourt Ward</h1><div class="nugget-popup"><p>Internal property flooding reported in the ward (tables list multiple affected addresses). Flood sources recorded in the ward include surface water flow routes, combined/foul sewer discharge to rear gardens, and proximity to Bushby Brook. [TAB] (p17)</p></div><div class="nugget-popup"><p>Multiple streets in the Thurncourt ward were affected by flooding on 22 June 2023: overland/surface water flow routes and nearby watercourses (e.g., Bushby Brook) impacted properties, and a combined sewer caused flooding into rear gardens on Uppingham Road. [TAB,PAG] (p34)</p></div></div></body></div>`)[0];
+                popup_ae5aff0473cb002c8a695ed7969abfc2.setContent(html_bc7246271b73e6485dcb758a02f5ae63);
+            
+        
+
+        marker_eab86a2c4852865a5625ed2cfdb6176a.bindPopup(popup_ae5aff0473cb002c8a695ed7969abfc2)
+        ;
+
+        
+    
+    
+            var marker_3ca747da85f8bf3ed840eb9c5a8b6220 = L.marker(
+                [52.667312552853495, -1.087155610526802],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_bd4deaf994d80482ce2e2eea7cc16ff2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3ca747da85f8bf3ed840eb9c5a8b6220.setIcon(icon_bd4deaf994d80482ce2e2eea7cc16ff2);
+        
+    
+        var popup_c189424ef07a5b0bcb663346e153ab63 = L.popup({});
+
+        
+            
+                var html_a1ddb019b1b558eaa13d60b9c6903cdd = $(`<div id="html_a1ddb019b1b558eaa13d60b9c6903cdd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Troon Ward</h1><div class="nugget-popup"><p>Internal property flooding reported within the ward: Wenlock Way (low area collecting surface water from a large carriageway area) and Barkby Road (surface water flows from the north and reported sewer operational issues contributing to flooding). [TAB] (p17)</p></div><div class="nugget-popup"><p>Ward contained flooded streets (Wenlock Way, Barkby Road) where surface water collected in low areas and flooded carriageways and adjacent properties during the event. [TAB,PAG] (p34)</p></div></div></body></div>`)[0];
+                popup_c189424ef07a5b0bcb663346e153ab63.setContent(html_a1ddb019b1b558eaa13d60b9c6903cdd);
+            
+        
+
+        marker_3ca747da85f8bf3ed840eb9c5a8b6220.bindPopup(popup_c189424ef07a5b0bcb663346e153ab63)
+        ;
+
+        
+    
+    
+            var marker_ec995ccd69d4bd4eeb3bf31cd44c9699 = L.marker(
+                [52.635822805479144, -1.1157143755900987],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_9d49984ca252a198ee5268ed70a5adcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ec995ccd69d4bd4eeb3bf31cd44c9699.setIcon(icon_9d49984ca252a198ee5268ed70a5adcf);
+        
+    
+        var popup_c2e154c2113c079066e2b33bc188ba28 = L.popup({});
+
+        
+            
+                var html_b80611935640e95e8651aacd814b0975 = $(`<div id="html_b80611935640e95e8651aacd814b0975" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wycliffe Ward</h1><div class="nugget-popup"><p>Internal property flooding reported across the ward during the event (multiple properties experienced internal flooding). [TAB] (p18)</p></div><div class="nugget-popup"><p>Surface water flowed down connecting roads (Melbourne Road, Hasting Road, Cecil Road) towards Nedham Street and Humberstone Road, causing flooding within the Wycliffe area. [TAB,PAG] (p34)</p></div></div></body></div>`)[0];
+                popup_c2e154c2113c079066e2b33bc188ba28.setContent(html_b80611935640e95e8651aacd814b0975);
+            
+        
+
+        marker_ec995ccd69d4bd4eeb3bf31cd44c9699.bindPopup(popup_c2e154c2113c079066e2b33bc188ba28)
+        ;
+
+        
+    
+    
+            var marker_73b09e40594024511ed068812538f56e = L.marker(
+                [52.6383331, -1.0937954],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_9134bfff8899de6af0d02c561c2a5325 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_73b09e40594024511ed068812538f56e.setIcon(icon_9134bfff8899de6af0d02c561c2a5325);
+        
+    
+        var popup_55adb68e72aa700af88c625210eb5a8a = L.popup({});
+
+        
+            
+                var html_2abf25a48b6f8650d25ee80e1aa0e21b = $(`<div id="html_2abf25a48b6f8650d25ee80e1aa0e21b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bushby Brook</h1><div class="nugget-popup"><p>Flooding was reported along the Bushby Brook (a tributary of the River Soar). (p4)</p></div><div class="nugget-popup"><p>Flows immediately to the rear of properties on Uppingham Road and Scraptoft Lane and is the main river adjacent to areas of surface water flood risk; acted as the receptor/adjacent watercourse in the reported flooding. During the event the brook level was reported to be within flood walls and at a relatively low level. [TAB] (p17)</p></div><div class="nugget-popup"><p>Bushby Brook is shown as the main watercourse generating surface&ndash;water flooding in the Scraptoft Lane cluster; highest flood&ndash;risk areas are concentrated along and adjacent to the brook, with red&ndash;outlined Flood Impact Areas extending into neighbouring residential streets. [IMG] (p29)</p></div><div class="nugget-popup"><p>Bushby Brook flows behind properties on Scraptoft Lane and forms the flood flow destination for overland surface water routes; its proximity caused flooding risk/impacts to rear gardens and properties adjacent to the brook. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Bushby Brook flows immediately to the rear of odd&ndash;numbered properties on Scraptoft Lane and formed a flood flow route behind those properties, contributing to surface water/flood flow into rear gardens and properties. (p35)</p></div></div></body></div>`)[0];
+                popup_55adb68e72aa700af88c625210eb5a8a.setContent(html_2abf25a48b6f8650d25ee80e1aa0e21b);
+            
+        
+
+        marker_73b09e40594024511ed068812538f56e.bindPopup(popup_55adb68e72aa700af88c625210eb5a8a)
+        ;
+
+        
+    
+    
+            var marker_25ef81ab2bc1e7c09e70840fc024341b = L.marker(
+                [52.6195362, -1.0647282],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_25a651626233ef95e23ac372badc0fa7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_25ef81ab2bc1e7c09e70840fc024341b.setIcon(icon_25a651626233ef95e23ac372badc0fa7);
+        
+    
+        var popup_855c4f2bf060008e748c4e898cfb7f93 = L.popup({});
+
+        
+            
+                var html_0435d8220b0fdd46121830c550fddd2c = $(`<div id="html_0435d8220b0fdd46121830c550fddd2c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Evington Brook</h1><div class="nugget-popup"><p>Flooding was reported along the Evington Brooks (tributaries of the River Soar). (p4)</p></div><div class="nugget-popup"><p>Identified as the main river contributing to fluvial flooding and surface water flow routes; associated with internal property flooding on adjacent streets (e.g. Gwendolen Road, Mervyn Road, Evington Road) and provided flow paths along roads. [TAB] (p16)</p></div><div class="nugget-popup"><p>Evington Brook is shown as the watercourse along which surface water flowed and caused flood impact areas in the Staveley Road area; flow along the brook routed surface water north&ndash;to&ndash;south and spread into adjacent streets (notably near Hazelwood Road, Osmaston Road and Merlyn Road). [IMG] (p30)</p></div><div class="nugget-popup"><p>Evington Brook at Spinney Hills Park showed a rapid rise in water level in the late afternoon of 22/06/2023, peaking around 17:15 and then declining through the evening, consistent with a transient river&ndash;flood/flash response. [IMG] (p33)</p></div><div class="nugget-popup"><p>Surface&ndash;water flow along Evington Brook produced low spots and flow routes that caused localised road and property flooding (noted adjacent to Gwendolen Road, Mervyn Road, Evington Drive, Linton Street and Evington Road), with road levels and nearby low spots exacerbating inundation. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Surface water flowed along the flow path of the brook and contributed to flooding adjacent to the road and nearby properties; road level at nearby carriageway is a low spot relative to the brook, promoting inundation along the brook corridor. (p35)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>peak ≈ 1.2 m river level [IMG] (p33)</p></div></div></body></div>`)[0];
+                popup_855c4f2bf060008e748c4e898cfb7f93.setContent(html_0435d8220b0fdd46121830c550fddd2c);
+            
+        
+
+        marker_25ef81ab2bc1e7c09e70840fc024341b.bindPopup(popup_855c4f2bf060008e748c4e898cfb7f93)
+        ;
+
+        
+    
+    
+            var marker_7699a60e835d58f72d43429438908b94 = L.marker(
+                [52.6063713, -1.0959464],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_66b19225c950ccd4309e09407221f433 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7699a60e835d58f72d43429438908b94.setIcon(icon_66b19225c950ccd4309e09407221f433);
+        
+    
+        var popup_bfc86fb59daa960077a4eff446d3aebc = L.popup({});
+
+        
+            
+                var html_e96e7184d386cac8abeb13fac045e06e = $(`<div id="html_e96e7184d386cac8abeb13fac045e06e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hol Brook</h1><div class="nugget-popup"><p>Hol Brook flooding (and its flood extent) generated surface water flow routes along nearby streets, contributing to internal property flooding in the area. [TAB] (p14)</p></div><div class="nugget-popup"><p>The culverted channel of Hol Brook conveyed surface flows through housing (notably through Arreton Close), contributing to flooding where watercourse levels restricted the ability of public sewers and highway drainage to outfall effectively. (p19)</p></div><div class="nugget-popup"><p>Hol Brook is shown as the primary watercourse producing surface&ndash;water flooding; high and medium risk zones follow its path and Flood Impact Areas are outlined at several points along the brook where flooding affects adjacent residential streets and properties. [IMG] (p29)</p></div><div class="nugget-popup"><p>Hol Brook acted as an ordinary watercourse and flow line that contributed to surface water flow routes and associated flooding to adjacent streets (notably Arreton Close and Knighton Church Road). [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_bfc86fb59daa960077a4eff446d3aebc.setContent(html_e96e7184d386cac8abeb13fac045e06e);
+            
+        
+
+        marker_7699a60e835d58f72d43429438908b94.bindPopup(popup_bfc86fb59daa960077a4eff446d3aebc)
+        ;
+
+        
+    
+    
+            var marker_08f1cca3d0b2fd4a61992036b3424a7d = L.marker(
+                [52.643649, -1.1185519],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_19df539e6a1337c38af98268b1400000 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_08f1cca3d0b2fd4a61992036b3424a7d.setIcon(icon_19df539e6a1337c38af98268b1400000);
+        
+    
+        var popup_2c2430868fbf96b1f67e1e294c732dec = L.popup({});
+
+        
+            
+                var html_5062acd4d75cf9bca54947d307f19df6 = $(`<div id="html_5062acd4d75cf9bca54947d307f19df6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Willow Brook</h1><div class="nugget-popup"><p>Willow Brook experienced a sudden, short&ndash;lived surge in river level on the afternoon of 22/06/2023: a rapid rise to a peak then a gradual fall over the evening, indicating a transient river&ndash;flooding/flash response at Ash Street. [IMG] (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>peak ≈ 1.6 m river level [IMG] (p33)</p></div></div></body></div>`)[0];
+                popup_2c2430868fbf96b1f67e1e294c732dec.setContent(html_5062acd4d75cf9bca54947d307f19df6);
+            
+        
+
+        marker_08f1cca3d0b2fd4a61992036b3424a7d.bindPopup(popup_2c2430868fbf96b1f67e1e294c732dec)
+        ;
+
+        
+    
+    
+            var marker_d6dea99d365ba0ee70a5819c0f57c86f = L.marker(
+                [52.6141085, -1.1398049],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_c9728954537a8d2c64fa4a8a6c5e1bd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d6dea99d365ba0ee70a5819c0f57c86f.setIcon(icon_c9728954537a8d2c64fa4a8a6c5e1bd5);
+        
+    
+        var popup_a7ea432e2e8cbcc88b5e9be685a283b7 = L.popup({});
+
+        
+            
+                var html_50094bdbf9db6dc4fd773ad6a6f9a674 = $(`<div id="html_50094bdbf9db6dc4fd773ad6a6f9a674" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Saffron Brook</h1><div class="nugget-popup"><p>A pluvial low spot above Saffron Brook led to surface water flooding in the adjacent Welford Road area on 22nd June 2023. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_a7ea432e2e8cbcc88b5e9be685a283b7.setContent(html_50094bdbf9db6dc4fd773ad6a6f9a674);
+            
+        
+
+        marker_d6dea99d365ba0ee70a5819c0f57c86f.bindPopup(popup_a7ea432e2e8cbcc88b5e9be685a283b7)
+        ;
+
+        
+    
+    
+            var marker_ca62fcc45b989e1fbee7ff032d42e173 = L.marker(
+                [52.6362, -1.1331969],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_dd1e53ee7bc35751fd5aa5f17f289608 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ca62fcc45b989e1fbee7ff032d42e173.setIcon(icon_dd1e53ee7bc35751fd5aa5f17f289608);
+        
+    
+        var popup_9b8c1d30c5022877a20b5906834719ad = L.popup({});
+
+        
+            
+                var html_104323c000fd355cec7798637277f1ce = $(`<div id="html_104323c000fd355cec7798637277f1ce" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Leicester Unitary Authority</h1><div class="nugget-popup"><p>Intense rainfall on 22 June 2023 caused surface water to flow across the ground and overwhelm drains and sewers, resulting in internal flooding of domestic properties. (p4)</p></div><div class="nugget-popup"><p>Properties across a large area of the city were recorded as flooded during the storm covered by this report. (p6)</p></div><div class="nugget-popup"><p>On 22 June 2023 intense rainfall caused many sewers to surcharge in the south and east of the city. Evidence included displaced manhole/inspection covers. The event caused rapid overland flow to low areas, overwhelmed highway gullies and outfalls, and resulted in damage to roads, paving and significant damage to highway surfacing. [IMG,PAG] (p7)</p></div><div class="nugget-popup"><p>Widespread surface water and sewer surcharging across the city (particularly south and east) caused displaced manhole/inspection covers, roads and paving damage, flooded roads, and internal property flooding. Overland flows moved rapidly to low areas; emergency response and highway repairs were required. [PAG] (p8)</p></div><div class="nugget-popup"><p>A map of reported internal property flooding incidents shows distributions across the city with the highest concentration of reports in central and northeastern Leicester; several locations on the map are indicated as having affected more than six properties. [IMG,PAG] (p11)</p></div><div class="nugget-popup"><p>Public highways across the city experienced flooding related to the interaction between highway drainage and the public sewer network, prompting reporting to the water company and targeted maintenance actions. [TAB] (p21)</p></div><div class="nugget-popup"><p>South and east areas of Leicester experienced flooding on 22nd June 2023: public highways were flooded and properties were flooded where rainfall exceeded the capacity of public sewer systems. [TAB] (p23)</p></div><div class="nugget-popup"><p>Flooding of public highways across Leicester occurred on 22nd June 2023 when public sewers and highway drainage interacted, causing transport disruption and prompting investigations. [PAG] (p24)</p></div><div class="nugget-popup"><p>Roads in Leicester experienced flooding on 22nd June 2023; this led to requests for sewer condition reports and localised modelling to identify capacity issues in drainage and sewer networks. (p25)</p></div><div class="nugget-popup"><p>Areas in the South Knighton area along the Hol Brook were affected by flooding; flooding occurred along the watercourse and affected the local area. (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 80 domestic properties (p4)</p></div><div class="nugget-popup quant"><p>18 flooding incidents; 95 personnel; 7 pumps (at 6 locations); over 60 properties visited [PAG] (p8)</p></div><div class="nugget-popup quant"><p>more than 6 properties at multiple locations [IMG,PAG] (p11)</p></div></div></body></div>`)[0];
+                popup_9b8c1d30c5022877a20b5906834719ad.setContent(html_104323c000fd355cec7798637277f1ce);
+            
+        
+
+        marker_ca62fcc45b989e1fbee7ff032d42e173.bindPopup(popup_9b8c1d30c5022877a20b5906834719ad)
+        ;
+
+        
+    
+    
+            var marker_a930b1200bb719fbc2cda3c0237a6531 = L.marker(
+                [52.6444581, -1.0698117],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_6ff72bfdc8ea66a4b6b09df960e38231 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a930b1200bb719fbc2cda3c0237a6531.setIcon(icon_6ff72bfdc8ea66a4b6b09df960e38231);
+        
+    
+        var popup_aad1a7dc7402ccc2d30b33b2fb863604 = L.popup({});
+
+        
+            
+                var html_26dc3c6980187791691c362c73be2653 = $(`<div id="html_26dc3c6980187791691c362c73be2653" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Abbots Road South, Humberstone</h1><div class="nugget-popup"><p>Location (Abbots Road South) listed with combination pluvial and fluvial flooding from Scraptoft Brook and reported internal property flooding. [TAB,MUL] (p13)</p></div><div class="nugget-popup"><p>Area adjacent to Scraptoft Brook experienced surface water inundation during the event; flood impact zones (red&ndash;outlined on the map) lie directly alongside the brook and extend into Abbots Road South properties and nearby streets. [IMG] (p31)</p></div><div class="nugget-popup"><p>Surface&ndash;water flow route along garage access adjacent to the Scraptoft Brook affected Abbots Road South / St Marys Avenue, causing flooding to properties. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_aad1a7dc7402ccc2d30b33b2fb863604.setContent(html_26dc3c6980187791691c362c73be2653);
+            
+        
+
+        marker_a930b1200bb719fbc2cda3c0237a6531.bindPopup(popup_aad1a7dc7402ccc2d30b33b2fb863604)
+        ;
+
+        
+    
+    
+            var marker_277ce3e29ec0955a31e59c20a2c4a396 = L.marker(
+                [52.6160059, -1.122893],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_3353fc518136154611e2f0baf59a347a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_277ce3e29ec0955a31e59c20a2c4a396.setIcon(icon_3353fc518136154611e2f0baf59a347a);
+        
+    
+        var popup_7b831f69c5ad5cbb179b95ae878771a5 = L.popup({});
+
+        
+            
+                var html_630814b00d6161f7402114c728e7ca69 = $(`<div id="html_630814b00d6161f7402114c728e7ca69" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lorne Road, Clarendon Park</h1><div class="nugget-popup"><p>Internal property flooding at Lorne Road (LE2) due to surface water runoff collecting at a low point of the flow route from Victoria Park Road; previous flood reports at this location and a possible sewer capacity exceedance are noted. [TAB] (p12)</p></div><div class="nugget-popup"><p>Surface water collected at a low point on the road (low point of surface water flood route) causing flooding of properties on Lorne Road. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_7b831f69c5ad5cbb179b95ae878771a5.setContent(html_630814b00d6161f7402114c728e7ca69);
+            
+        
+
+        marker_277ce3e29ec0955a31e59c20a2c4a396.bindPopup(popup_7b831f69c5ad5cbb179b95ae878771a5)
+        ;
+
+        
+    
+    
+            var marker_bc0c261295ccffa6de36268e2dbcb4bb = L.marker(
+                [52.6050539, -1.1105014],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_b2d1a43b2d7104ba43ac682e7ca2faf3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bc0c261295ccffa6de36268e2dbcb4bb.setIcon(icon_b2d1a43b2d7104ba43ac682e7ca2faf3);
+        
+    
+        var popup_d8c238e979274ca9cf55ed4e8d835412 = L.popup({});
+
+        
+            
+                var html_4ee89d03974b4cfd9bf833ff3bece1c9 = $(`<div id="html_4ee89d03974b4cfd9bf833ff3bece1c9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Arreton Close, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Internal property flooding reported; surface water flow route from east to west following the line of the culverted Hol Brook, with the road being a local low point concentrating flow. [TAB] (p14)</p></div><div class="nugget-popup"><p>Surface flows from a culverted watercourse (Hol Brook) passed through housing in Arreton Close, contributing to flooding of properties (garden, road and cellar/basement/internal flooding reported in affected streets). (p19)</p></div><div class="nugget-popup"><p>Surface water flow route across Arreton Close from east to west following the line of the Hol Brook, causing surface water flooding along the street. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_d8c238e979274ca9cf55ed4e8d835412.setContent(html_4ee89d03974b4cfd9bf833ff3bece1c9);
+            
+        
+
+        marker_bc0c261295ccffa6de36268e2dbcb4bb.bindPopup(popup_d8c238e979274ca9cf55ed4e8d835412)
+        ;
+
+        
+    
+    
+            var marker_ba270b6cce83ad655e85fbe5e0e01738 = L.marker(
+                [52.6332869, -1.0630295],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_d1c6708dad59e3b5a6006673a2a77425 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ba270b6cce83ad655e85fbe5e0e01738.setIcon(icon_d1c6708dad59e3b5a6006673a2a77425);
+        
+    
+        var popup_289b617db2649e56bb8dd52c7477872a = L.popup({});
+
+        
+            
+                var html_613c04a005535f30ca48b5e7b738fcce = $(`<div id="html_613c04a005535f30ca48b5e7b738fcce" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Uppingham Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Site of flooding incidents attended by the Fire and Rescue Service during the storm on 22 June. (p8)</p></div><div class="nugget-popup"><p>Internal property flooding from combined/foul sewer in rear gardens (photographic evidence of discharge from a raised inspection access). Bushby Brook flows to the rear of the even&ndash;numbered properties; brook level was within flood walls and relatively low during the event. [TAB] (p17)</p></div><div class="nugget-popup"><p>Flooding occurred from a combined sewer, resulting in flooding into a rear garden (reported as flooding from combined sewer in rear garden). [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_289b617db2649e56bb8dd52c7477872a.setContent(html_613c04a005535f30ca48b5e7b738fcce);
+            
+        
+
+        marker_ba270b6cce83ad655e85fbe5e0e01738.bindPopup(popup_289b617db2649e56bb8dd52c7477872a)
+        ;
+
+        
+    
+    
+            var marker_482b49bde28fcad465709650ece300ed = L.marker(
+                [52.6176978, -1.1187407],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_4c857c3b9346218ebc8d4f7bf20b4617 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_482b49bde28fcad465709650ece300ed.setIcon(icon_4c857c3b9346218ebc8d4f7bf20b4617);
+        
+    
+        var popup_d41a87de92e565956342f67fd1ced72f = L.popup({});
+
+        
+            
+                var html_bc3fead73afb7a8a1e8665ce152ad57e = $(`<div id="html_bc3fead73afb7a8a1e8665ce152ad57e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oxford Road, Clarendon Park</h1><div class="nugget-popup"><p>Internal property flooding at Oxford Road (LE2) caused by surface water flows originating on Montague Road and Edward Road entering the rear of properties. [TAB] (p12)</p></div><div class="nugget-popup"><p>Surface water inundation of properties on Oxford Road caused by surface water flows arriving from Montague Road and Edward Road. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_d41a87de92e565956342f67fd1ced72f.setContent(html_bc3fead73afb7a8a1e8665ce152ad57e);
+            
+        
+
+        marker_482b49bde28fcad465709650ece300ed.bindPopup(popup_d41a87de92e565956342f67fd1ced72f)
+        ;
+
+        
+    
+    
+            var marker_af7fa31103ea51265b09a8554dd3e9f9 = L.marker(
+                [52.6123023, -1.1281247],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_f1d31017bde709e8d91675951224bdfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_af7fa31103ea51265b09a8554dd3e9f9.setIcon(icon_f1d31017bde709e8d91675951224bdfa);
+        
+    
+        var popup_d01f4a3f26a5d545b1ff8be41bcd9bee = L.popup({});
+
+        
+            
+                var html_34a0a624cccdb87ad9080c7aa97b9e39 = $(`<div id="html_34a0a624cccdb87ad9080c7aa97b9e39" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingsley Street, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Internal property flooding reported at the corner where Kingsley Street and Wordsworth Road meet, caused by converging surface water flow routes. [TAB] (p12)</p></div><div class="nugget-popup"><p>Two surface&ndash;water flow routes met at the corner of Kingsley Street and Wordsworth Road, causing surface&ndash;water inundation at the junction and flooding of properties on Kingsley Street. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_d01f4a3f26a5d545b1ff8be41bcd9bee.setContent(html_34a0a624cccdb87ad9080c7aa97b9e39);
+            
+        
+
+        marker_af7fa31103ea51265b09a8554dd3e9f9.bindPopup(popup_d01f4a3f26a5d545b1ff8be41bcd9bee)
+        ;
+
+        
+    
+    
+            var marker_cab9408b4803b8de85cbd3222d332874 = L.marker(
+                [52.6124086, -1.1262369],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_5837d0bb14bc382162bc43bf69fc44ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cab9408b4803b8de85cbd3222d332874.setIcon(icon_5837d0bb14bc382162bc43bf69fc44ae);
+        
+    
+        var popup_f4c371a7e2385229754e5753e8aab2d3 = L.popup({});
+
+        
+            
+                var html_754689f456b315c192a7dae5919f63b8 = $(`<div id="html_754689f456b315c192a7dae5919f63b8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wordsworth Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Internal property flooding reported at the corner with Kingsley Street where two surface water flow routes meet. [TAB] (p12)</p></div><div class="nugget-popup"><p>Two surface&ndash;water flow routes met at the corner of Kingsley Street and Wordsworth Road, causing surface&ndash;water inundation at the junction and flooding of properties on Wordsworth Road. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_f4c371a7e2385229754e5753e8aab2d3.setContent(html_754689f456b315c192a7dae5919f63b8);
+            
+        
+
+        marker_cab9408b4803b8de85cbd3222d332874.bindPopup(popup_f4c371a7e2385229754e5753e8aab2d3)
+        ;
+
+        
+    
+    
+            var marker_48fdf61b4dacf938eae759ba2ada35af = L.marker(
+                [52.6375469, -1.0878512],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_ce82e287735018368b77cb5af34e4c9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_48fdf61b4dacf938eae759ba2ada35af.setIcon(icon_ce82e287735018368b77cb5af34e4c9c);
+        
+    
+        var popup_f9c1c6da6f7e2a96c3421595140f1aeb = L.popup({});
+
+        
+            
+                var html_3bd31d3a84ee571000693c3c0dde1652 = $(`<div id="html_3bd31d3a84ee571000693c3c0dde1652" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Deepdale, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Internal property flooding reported along Deepdale; surface water flow route conveyed north along Deepdale toward Green Lane Road. [TAB] (p12)</p></div><div class="nugget-popup"><p>Surface&ndash;water flow route along Deepdale caused inundation and flooding of properties on Deepdale. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_f9c1c6da6f7e2a96c3421595140f1aeb.setContent(html_3bd31d3a84ee571000693c3c0dde1652);
+            
+        
+
+        marker_48fdf61b4dacf938eae759ba2ada35af.bindPopup(popup_f9c1c6da6f7e2a96c3421595140f1aeb)
+        ;
+
+        
+    
+    
+            var marker_f71066be4b1208af5fefafedb848b941 = L.marker(
+                [52.6359228, -1.0768435],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_105505bb191d444745dc7a47ba45dd3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f71066be4b1208af5fefafedb848b941.setIcon(icon_105505bb191d444745dc7a47ba45dd3e);
+        
+    
+        var popup_e4aed9ada3f4485a1b8c7be2cce50809 = L.popup({});
+
+        
+            
+                var html_c5a719008d38ca196c3d55bec58d67af = $(`<div id="html_c5a719008d38ca196c3d55bec58d67af" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rockingham Close, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Internal property flooding caused by surface water collecting at a low spot within a large private housing area. [TAB] (p12)</p></div><div class="nugget-popup"><p>Rockingham Close is a low spot in a large private housing area where surface water accumulated, leading to inundation and flooding of properties. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_e4aed9ada3f4485a1b8c7be2cce50809.setContent(html_c5a719008d38ca196c3d55bec58d67af);
+            
+        
+
+        marker_f71066be4b1208af5fefafedb848b941.bindPopup(popup_e4aed9ada3f4485a1b8c7be2cce50809)
+        ;
+
+        
+    
+    
+            var marker_32bdd31bd00d12f835e1b7a660e5dc3f = L.marker(
+                [52.59534, -1.1443226],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_6239d74d9198943dbb182ad1aa5a2422 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_32bdd31bd00d12f835e1b7a660e5dc3f.setIcon(icon_6239d74d9198943dbb182ad1aa5a2422);
+        
+    
+        var popup_8b86a554bdfdd79b6eab1f2864ead71c = L.popup({});
+
+        
+            
+                var html_304513c90e4941bb1abeb834152c126d = $(`<div id="html_304513c90e4941bb1abeb834152c126d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tamerton Road, Eyres Monsell</h1><div class="nugget-popup"><p>Internal property flooding when surface water flow routes joined together (one from the south and one from the south&ndash;east), causing runoff to enter properties. [TAB] (p12)</p></div><div class="nugget-popup"><p>Surface&ndash;water flow routes joined together on Tamerton Road, producing high surface&ndash;water flooding and inundation of properties on the road. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_8b86a554bdfdd79b6eab1f2864ead71c.setContent(html_304513c90e4941bb1abeb834152c126d);
+            
+        
+
+        marker_32bdd31bd00d12f835e1b7a660e5dc3f.bindPopup(popup_8b86a554bdfdd79b6eab1f2864ead71c)
+        ;
+
+        
+    
+    
+            var marker_6d7c5b8f8dede36db22f827e037640d9 = L.marker(
+                [52.6455106, -1.0681381],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_120cda27cfa22bab28f530bd5488ffde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6d7c5b8f8dede36db22f827e037640d9.setIcon(icon_120cda27cfa22bab28f530bd5488ffde);
+        
+    
+        var popup_4224cccc4f79c378d2a7eb45b43f4569 = L.popup({});
+
+        
+            
+                var html_059d27cc8ac5c93213e5b8e41f585695 = $(`<div id="html_059d27cc8ac5c93213e5b8e41f585695" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Marys Avenue, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Surface water flow route along garage access adjacent to the brook flood walls; internal property flooding reported at St Marys Avenue/Abbots Road South. [TAB,MUL] (p13)</p></div><div class="nugget-popup"><p>Surface water flowed along the garage access adjacent to the Scraptoft Brook, resulting in flooding of garage areas and nearby properties on St Marys Avenue. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_4224cccc4f79c378d2a7eb45b43f4569.setContent(html_059d27cc8ac5c93213e5b8e41f585695);
+            
+        
+
+        marker_6d7c5b8f8dede36db22f827e037640d9.bindPopup(popup_4224cccc4f79c378d2a7eb45b43f4569)
+        ;
+
+        
+    
+    
+            var marker_56aee5f4f982e7ab7faa971f0192de00 = L.marker(
+                [52.6461835, -1.0834866],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_f354f789c3cdb0506d74a7bfe13eae4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_56aee5f4f982e7ab7faa971f0192de00.setIcon(icon_f354f789c3cdb0506d74a7bfe13eae4e);
+        
+    
+        var popup_d840a54801e97a1907baf10ef7e50011 = L.popup({});
+
+        
+            
+                var html_478d4e465a4f70f2037f493056df3063 = $(`<div id="html_478d4e465a4f70f2037f493056df3063" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Humberstone Drive, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Surface water flow route from Tennis Court Drive, behind properties on South Drive and towards Humberstone Drive (following public sewer line); internal property flooding reported in the ward affecting properties along this route. [TAB] (p13)</p></div><div class="nugget-popup"><p>Surface water flood route affecting Humberstone Drive originating from Tennis Court Drive and following the line of the public sewer, causing surface water to flow along the road. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_d840a54801e97a1907baf10ef7e50011.setContent(html_478d4e465a4f70f2037f493056df3063);
+            
+        
+
+        marker_56aee5f4f982e7ab7faa971f0192de00.bindPopup(popup_d840a54801e97a1907baf10ef7e50011)
+        ;
+
+        
+    
+    
+            var marker_a3bbd96b0f122b5595508830b5c081d3 = L.marker(
+                [52.6422514, -1.0841094],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_f4f967820b21c072e5c450e7a86046c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a3bbd96b0f122b5595508830b5c081d3.setIcon(icon_f4f967820b21c072e5c450e7a86046c4);
+        
+    
+        var popup_2b3f373528dd73f8e1e34de9d719c1f0 = L.popup({});
+
+        
+            
+                var html_b6cfcd642d988ade3c4981ff9212e78b = $(`<div id="html_b6cfcd642d988ade3c4981ff9212e78b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tennis Court Drive, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Internal property flooding reported; surface water flow route from Tennis Court Drive ran behind properties on South Drive following the public sewer line, contributing to flooding. [TAB] (p13)</p></div><div class="nugget-popup"><p>Surface water flow route from Tennis Court Drive followed the route of the public sewer line, conveying surface water towards Humberstone Drive and contributing to flooding of adjacent properties/areas. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_2b3f373528dd73f8e1e34de9d719c1f0.setContent(html_b6cfcd642d988ade3c4981ff9212e78b);
+            
+        
+
+        marker_a3bbd96b0f122b5595508830b5c081d3.bindPopup(popup_2b3f373528dd73f8e1e34de9d719c1f0)
+        ;
+
+        
+    
+    
+            var marker_abfa82fbf4cc061a695ef8b8d4c93e46 = L.marker(
+                [52.6438864, -1.083571],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_892becc9075116616cb91d367568a716 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_abfa82fbf4cc061a695ef8b8d4c93e46.setIcon(icon_892becc9075116616cb91d367568a716);
+        
+    
+        var popup_d99ec769e8e651029fe96db3e0c373c0 = L.popup({});
+
+        
+            
+                var html_c8c44800b1f02e38218cba0cebf72d12 = $(`<div id="html_c8c44800b1f02e38218cba0cebf72d12" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Drive, Humberstone</h1><div class="nugget-popup"><p>Internal property flooding reported to properties on South Drive caused by surface water flow routed from Tennis Court Drive along the public sewer line. [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_d99ec769e8e651029fe96db3e0c373c0.setContent(html_c8c44800b1f02e38218cba0cebf72d12);
+            
+        
+
+        marker_abfa82fbf4cc061a695ef8b8d4c93e46.bindPopup(popup_d99ec769e8e651029fe96db3e0c373c0)
+        ;
+
+        
+    
+    
+            var marker_e8b2957af6f3b8e05a5f310cf1a3691a = L.marker(
+                [52.6442785, -1.0838801],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_9d592a826e036228832ba882a964023a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e8b2957af6f3b8e05a5f310cf1a3691a.setIcon(icon_9d592a826e036228832ba882a964023a);
+        
+    
+        var popup_26240e4f011d502b0f9a204839d7afa6 = L.popup({});
+
+        
+            
+                var html_03a9833886330f10f0559873a6c2ca95 = $(`<div id="html_03a9833886330f10f0559873a6c2ca95" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Drive, Humberstone</h1><div class="nugget-popup"><p>Internal property flooding reported at the Tennis Court Drive / West Drive location; surface water flow routed from Tennis Court Drive behind South Drive properties and along the sewer line affected West Drive area. [TAB] (p13)</p></div><div class="nugget-popup"><p>Surface water flow route occurring before Humberstone Drive led to ponding in a low area on/around West Drive, causing local flooding of properties/areas. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_26240e4f011d502b0f9a204839d7afa6.setContent(html_03a9833886330f10f0559873a6c2ca95);
+            
+        
+
+        marker_e8b2957af6f3b8e05a5f310cf1a3691a.bindPopup(popup_26240e4f011d502b0f9a204839d7afa6)
+        ;
+
+        
+    
+    
+            var marker_f7ae78e86142dfb0823bca1e1945f744 = L.marker(
+                [52.6479826, -1.0709473],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_4d490a13969ad112f74906c5be3d5d4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f7ae78e86142dfb0823bca1e1945f744.setIcon(icon_4d490a13969ad112f74906c5be3d5d4c);
+        
+    
+        var popup_3628129fb482e1c7dbb99520bcd9a944 = L.popup({});
+
+        
+            
+                var html_7306f05094b43b54de5dcb02de685222 = $(`<div id="html_7306f05094b43b54de5dcb02de685222" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Steins Lane, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Internal property flooding reported; Steins Lane is on a surface&ndash;water flow route and a large area of highway drains towards the property, contributing to flooding. [TAB] (p13)</p></div><div class="nugget-popup"><p>Surface water flow route through Steins Lane, with flow from north to south causing surface water flooding along the lane. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_3628129fb482e1c7dbb99520bcd9a944.setContent(html_7306f05094b43b54de5dcb02de685222);
+            
+        
+
+        marker_f7ae78e86142dfb0823bca1e1945f744.bindPopup(popup_3628129fb482e1c7dbb99520bcd9a944)
+        ;
+
+        
+    
+    
+            var marker_5c31794fa5a22924b1cc3153f712e85c = L.marker(
+                [52.6064813, -1.1018374],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_b43dcef3018d8e421f078b38bf1e8ab1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5c31794fa5a22924b1cc3153f712e85c.setIcon(icon_b43dcef3018d8e421f078b38bf1e8ab1);
+        
+    
+        var popup_e83374ea75922e002375950ac1e35acc = L.popup({});
+
+        
+            
+                var html_671e88b9dea8b1e6a2832370384f5d56 = $(`<div id="html_671e88b9dea8b1e6a2832370384f5d56" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Knighton Church Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Internal property flooding reported; surface water flow route along Knighton Church Road associated with the Hol Brook flood extent. [TAB] (p14)</p></div><div class="nugget-popup"><p>Surface water flow route along Knighton Church Road (connected to Hol Brook) causing surface water to affect the road and adjacent properties. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_e83374ea75922e002375950ac1e35acc.setContent(html_671e88b9dea8b1e6a2832370384f5d56);
+            
+        
+
+        marker_5c31794fa5a22924b1cc3153f712e85c.bindPopup(popup_e83374ea75922e002375950ac1e35acc)
+        ;
+
+        
+    
+    
+            var marker_29e08702be32c8ec07dc319e2153338d = L.marker(
+                [52.6088935, -1.1167004],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_ea28740225eb2c35e1f5bf110f07bbfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_29e08702be32c8ec07dc319e2153338d.setIcon(icon_ea28740225eb2c35e1f5bf110f07bbfc);
+        
+    
+        var popup_a436079ab5c7f072af2545350cbc545e = L.popup({});
+
+        
+            
+                var html_743a9f4ccef87199fe61520fa5627986 = $(`<div id="html_743a9f4ccef87199fe61520fa5627986" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Knighton Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Surface water flow route shown to come from the junction of Stoneygate Avenue and Knighton Road towards Westernhay Road, causing surface water to run along the road and contributing to internal property flooding reported in the ward. [TAB] (p14)</p></div><div class="nugget-popup"><p>Surface water flow route shown to originate at the junction with Stoneygate Avenue and flow along Knighton Road towards Westernhay Road, creating a low&ndash;to&ndash;medium surface water flood risk and localised road inundation. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_a436079ab5c7f072af2545350cbc545e.setContent(html_743a9f4ccef87199fe61520fa5627986);
+            
+        
+
+        marker_29e08702be32c8ec07dc319e2153338d.bindPopup(popup_a436079ab5c7f072af2545350cbc545e)
+        ;
+
+        
+    
+    
+            var marker_dd1fdc8beec12e801228c6eb42ae1f55 = L.marker(
+                [52.6140866, -1.1092725],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_d218d84d9e682e7bdd8364b00eaccd5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dd1fdc8beec12e801228c6eb42ae1f55.setIcon(icon_d218d84d9e682e7bdd8364b00eaccd5a);
+        
+    
+        var popup_f59757036be126e2e4e00fef9a9ee082 = L.popup({});
+
+        
+            
+                var html_6cffbebc1d2c6f971d3e69dd178bc123 = $(`<div id="html_6cffbebc1d2c6f971d3e69dd178bc123" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stoneygate Avenue, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Identified as the junction where surface water flow originated that contributed to flooding along Knighton Road; part of the surface water flow route associated with internal property flooding. [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_f59757036be126e2e4e00fef9a9ee082.setContent(html_6cffbebc1d2c6f971d3e69dd178bc123);
+            
+        
+
+        marker_dd1fdc8beec12e801228c6eb42ae1f55.bindPopup(popup_f59757036be126e2e4e00fef9a9ee082)
+        ;
+
+        
+    
+    
+            var marker_31dc72090f978b547ef3f54df59fc5b2 = L.marker(
+                [52.6158164, -1.1012005],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_338490bbe2b5ec313fbcc7339720fb16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_31dc72090f978b547ef3f54df59fc5b2.setIcon(icon_338490bbe2b5ec313fbcc7339720fb16);
+        
+    
+        var popup_00356f452d2824c27ed56285c85db434 = L.popup({});
+
+        
+            
+                var html_e0153c133a543e391449c52619bd3d36 = $(`<div id="html_e0153c133a543e391449c52619bd3d36" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stoughton Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Surface water flow route along Gartree Road and proximity to Evington Brook, reported in Table 5 as affected by surface water and fluvial (main river) flooding linked to internal property flooding in the ward. [TAB] (p14)</p></div><div class="nugget-popup"><p>Surface&ndash;water flow route along Gartree Road, close to Evington Brook, caused flooding affecting Stoughton Road properties. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_00356f452d2824c27ed56285c85db434.setContent(html_e0153c133a543e391449c52619bd3d36);
+            
+        
+
+        marker_31dc72090f978b547ef3f54df59fc5b2.bindPopup(popup_00356f452d2824c27ed56285c85db434)
+        ;
+
+        
+    
+    
+            var marker_0ad34871cb5f29ade1993c2aed9b78d8 = L.marker(
+                [52.6025791, -1.1179229],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_b5f0681f7487929ba6fe1040f42d72a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0ad34871cb5f29ade1993c2aed9b78d8.setIcon(icon_b5f0681f7487929ba6fe1040f42d72a2);
+        
+    
+        var popup_a13dada2301013ff8fcdb99414b6cb25 = L.popup({});
+
+        
+            
+                var html_bf8c86de4621cad44b93fa4adfbb0962 = $(`<div id="html_bf8c86de4621cad44b93fa4adfbb0962" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Welford Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Pluvial low spot above Saffron Brook identified as a high&ndash;risk surface water location, contributing to internal property flooding reported in Knighton ward. [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_a13dada2301013ff8fcdb99414b6cb25.setContent(html_bf8c86de4621cad44b93fa4adfbb0962);
+            
+        
+
+        marker_0ad34871cb5f29ade1993c2aed9b78d8.bindPopup(popup_a13dada2301013ff8fcdb99414b6cb25)
+        ;
+
+        
+    
+    
+            var marker_008cede1384c152e9735a7a8bd90cf0e = L.marker(
+                [52.6363559, -1.0923195],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_8495923c3efeb8a351b0a4733455f846 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_008cede1384c152e9735a7a8bd90cf0e.setIcon(icon_8495923c3efeb8a351b0a4733455f846);
+        
+    
+        var popup_614c1832e2d6bda79e2d11627d072867 = L.popup({});
+
+        
+            
+                var html_f69a7eae6ca46f719cf35b71b0628326 = $(`<div id="html_f69a7eae6ca46f719cf35b71b0628326" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Littleway, North Evington</h1><div class="nugget-popup"><p>Surface water flooding on a flow route; a long block of linked houses at the end of the road was blocking the surface water flow route, contributing to flooding. [TAB] (p15)</p></div><div class="nugget-popup"><p>Surface&ndash;water flooding concentrated along The Littleway with Flood Impact Areas outlined in red; the map shows high and medium risk zones and surface&ndash;water flow routes passing through the street. [IMG] (p32)</p></div><div class="nugget-popup"><p>Surface water flooding caused by a long block of linked houses at the end of the road blocking the surface water flow route, leading to flooding on The Littleway. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_614c1832e2d6bda79e2d11627d072867.setContent(html_f69a7eae6ca46f719cf35b71b0628326);
+            
+        
+
+        marker_008cede1384c152e9735a7a8bd90cf0e.bindPopup(popup_614c1832e2d6bda79e2d11627d072867)
+        ;
+
+        
+    
+    
+            var marker_6ccb4c746a97b818acd527e7244f2f5c = L.marker(
+                [52.6445671, -1.0899933],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_9cc206b95fb973d993b2da9c7e5b85f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6ccb4c746a97b818acd527e7244f2f5c.setIcon(icon_9cc206b95fb973d993b2da9c7e5b85f6);
+        
+    
+        var popup_bf7c3b1bb260c442c2f0c4de8fa3e7e0 = L.popup({});
+
+        
+            
+                var html_545d4c9a03e8f0409dd534470cab3f5d = $(`<div id="html_545d4c9a03e8f0409dd534470cab3f5d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lotus Road, North Evington</h1><div class="nugget-popup"><p>Area affected by both pluvial and fluvial processes: runoff from hard surfacing drains to a surface water pumping station discharging to the Portwey Brook; west end of development is a low spot on an east&ndash;west flow route, contributing to internal property flooding. [TAB] (p15)</p></div><div class="nugget-popup"><p>Pluvial and fluvial flooding where a surface water pumping station discharges into the Portway Brook; the west end of the Lotus Road development sits in a low spot and was affected by surface water flowing into the brook. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_bf7c3b1bb260c442c2f0c4de8fa3e7e0.setContent(html_545d4c9a03e8f0409dd534470cab3f5d);
+            
+        
+
+        marker_6ccb4c746a97b818acd527e7244f2f5c.bindPopup(popup_bf7c3b1bb260c442c2f0c4de8fa3e7e0)
+        ;
+
+        
+    
+    
+            var marker_266690d0906f2e65fed62ea63d5aadf8 = L.marker(
+                [52.6349691, -1.0956202],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_84d7f802ee510b86ff535c7c7c1a524d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_266690d0906f2e65fed62ea63d5aadf8.setIcon(icon_84d7f802ee510b86ff535c7c7c1a524d);
+        
+    
+        var popup_3303a482a06a0666dfca2b7dd9bf6472 = L.popup({});
+
+        
+            
+                var html_6107f8baead0419d02868acdcd237bd1 = $(`<div id="html_6107f8baead0419d02868acdcd237bd1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Clumber Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Surface water flow route from the south&ndash;west caused flooding; properties have thresholds lower than road level leading to internal property flooding risk. [TAB] (p15)</p></div><div class="nugget-popup"><p>Surface&ndash;water flooding concentrated along Clumber Road with Flood Impact Areas outlined in red on the map; high and medium risk zones identified and surface water flow directed northwest&ndash;to&ndash;southeast along the street. [IMG] (p32)</p></div><div class="nugget-popup"><p>Surface water flow route from the south&ndash;west caused surface water to inundate Clumber Road and affect properties on the road. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_3303a482a06a0666dfca2b7dd9bf6472.setContent(html_6107f8baead0419d02868acdcd237bd1);
+            
+        
+
+        marker_266690d0906f2e65fed62ea63d5aadf8.bindPopup(popup_3303a482a06a0666dfca2b7dd9bf6472)
+        ;
+
+        
+    
+    
+            var marker_deb4dcb81e4e653483e22f88ef99fb63 = L.marker(
+                [52.6371829, -1.0931581],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_a682c5748f7535adc28dc8112019ecea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_deb4dcb81e4e653483e22f88ef99fb63.setIcon(icon_a682c5748f7535adc28dc8112019ecea);
+        
+    
+        var popup_c02efcbdb0d3a9e324677a6fac884f3b = L.popup({});
+
+        
+            
+                var html_a571d46f6f629aa4a2c467c747bc37d7 = $(`<div id="html_a571d46f6f629aa4a2c467c747bc37d7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Green Lane Road, North Evington</h1><div class="nugget-popup"><p>Located on a surface water flow route originating from the Littleway; identified as high risk for surface water flooding and linked to internal property flooding. [TAB] (p15)</p></div><div class="nugget-popup"><p>On a surface water flow route from The Littleway; flood flows travelled along this route causing inundation of the road and adjacent properties. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_c02efcbdb0d3a9e324677a6fac884f3b.setContent(html_a571d46f6f629aa4a2c467c747bc37d7);
+            
+        
+
+        marker_deb4dcb81e4e653483e22f88ef99fb63.bindPopup(popup_c02efcbdb0d3a9e324677a6fac884f3b)
+        ;
+
+        
+    
+    
+            var marker_bd25379978419d7ad6a8387bbcd7da44 = L.marker(
+                [52.6443361, -1.0895778],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_58a0bb143a266d218d0498620891174f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bd25379978419d7ad6a8387bbcd7da44.setIcon(icon_58a0bb143a266d218d0498620891174f);
+        
+    
+        var popup_1cf61663a9a1ffd50cb490b14f876bd8 = L.popup({});
+
+        
+            
+                var html_ee0908ec617dbcc15dd4ed88756e2d6b = $(`<div id="html_ee0908ec617dbcc15dd4ed88756e2d6b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lily Road, North Evington</h1><div class="nugget-popup"><p>Part of the Lotus Road / Hallaton Road / Lily Road area impacted by combined surface water and fluvial flooding that caused internal property flooding; situated on a flow route with low&ndash;lying sections. [TAB] (p15)</p></div><div class="nugget-popup"><p>Part of the Lotus Road / Lily Road development identified as a low spot where pluvial and fluvial&ndash;related surface water collects; pumping station discharges to Portway Brook and the west end of the development sits in a low spot leading to localised flooding. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_1cf61663a9a1ffd50cb490b14f876bd8.setContent(html_ee0908ec617dbcc15dd4ed88756e2d6b);
+            
+        
+
+        marker_bd25379978419d7ad6a8387bbcd7da44.bindPopup(popup_1cf61663a9a1ffd50cb490b14f876bd8)
+        ;
+
+        
+    
+    
+            var marker_d8d6cc56f6c023ea5bae809fc26ce1a3 = L.marker(
+                [52.6509935, -1.1119699],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_abd7709a2f3726d4d9c842d4b0b77a7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d8d6cc56f6c023ea5bae809fc26ce1a3.setIcon(icon_abd7709a2f3726d4d9c842d4b0b77a7b);
+        
+    
+        var popup_eeea64eece8e7bdc19b5490b4ee99b52 = L.popup({});
+
+        
+            
+                var html_5cb0c7862fb294bf0e985393070ee942 = $(`<div id="html_5cb0c7862fb294bf0e985393070ee942" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Canon Street, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Internal property flooding reported on Canon Street; location described as a low spot and isolated (not on a surface water flow route). [TAB] (p16)</p></div><div class="nugget-popup"><p>Pluvial low spot leading to surface water flooding at Canon Street (isolated location), contributing to properties flooding. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_eeea64eece8e7bdc19b5490b4ee99b52.setContent(html_5cb0c7862fb294bf0e985393070ee942);
+            
+        
+
+        marker_d8d6cc56f6c023ea5bae809fc26ce1a3.bindPopup(popup_eeea64eece8e7bdc19b5490b4ee99b52)
+        ;
+
+        
+    
+    
+            var marker_f9a29b732572bd72293d3d095ddb13ea = L.marker(
+                [52.6297346, -1.0951732],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_6137cf4b6523d04dae7eeb439ffe8b9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f9a29b732572bd72293d3d095ddb13ea.setIcon(icon_6137cf4b6523d04dae7eeb439ffe8b9e);
+        
+    
+        var popup_54823ac857a814a3693b4cc84c279844 = L.popup({});
+
+        
+            
+                var html_26166cded5431d0fc7d96819a56c9e11 = $(`<div id="html_26166cded5431d0fc7d96819a56c9e11" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gwendolen Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Internal property flooding reported; surface water flow route along the Evington Brook and along the road, with fluvial (main river) influence. [TAB] (p16)</p></div><div class="nugget-popup"><p>Surface water flowed along the Evington Brook and along the road, causing flooding at properties on Gwendolen Road. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Long terrace at the road end blocked the surface&ndash;water flow route; a surface&ndash;water low spot formed behind the flats. Surface water entered from the east (allotments/Lotus Road development) and from the south&ndash;west/Littleway, causing local ponding and overland flow into properties/grounds. (p35)</p></div></div></body></div>`)[0];
+                popup_54823ac857a814a3693b4cc84c279844.setContent(html_26166cded5431d0fc7d96819a56c9e11);
+            
+        
+
+        marker_f9a29b732572bd72293d3d095ddb13ea.bindPopup(popup_54823ac857a814a3693b4cc84c279844)
+        ;
+
+        
+    
+    
+            var marker_6d2bca7ae121b0315028158db002e3af = L.marker(
+                [52.6256372, -1.0920837],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_1981020c2e37fdb574eb1916970dd5ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6d2bca7ae121b0315028158db002e3af.setIcon(icon_1981020c2e37fdb574eb1916970dd5ef);
+        
+    
+        var popup_6261d87ce61a59caafe55a641096e5b7 = L.popup({});
+
+        
+            
+                var html_4e9e64d3cf0b5d1b0ec46d71b6e7ff10 = $(`<div id="html_4e9e64d3cf0b5d1b0ec46d71b6e7ff10" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Evington Drive, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Internal property flooding reported; Evington Drive is a surface&ndash;water low spot on a flow route originating from Norwood Road. [TAB] (p16)</p></div><div class="nugget-popup"><p>Surface water low spot and on a surface water flow route from Norwood Road; surface water flooding affected the road and properties on Evington Drive. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Identified as having a low spot and being on a surface&ndash;water flow route from Evington Road, resulting in accumulation and flow towards properties. (p35)</p></div></div></body></div>`)[0];
+                popup_6261d87ce61a59caafe55a641096e5b7.setContent(html_4e9e64d3cf0b5d1b0ec46d71b6e7ff10);
+            
+        
+
+        marker_6d2bca7ae121b0315028158db002e3af.bindPopup(popup_6261d87ce61a59caafe55a641096e5b7)
+        ;
+
+        
+    
+    
+            var marker_23ef9338528c9f97ccad879571d964b0 = L.marker(
+                [52.6262382, -1.1084258],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_5fa590cb9c3fd9c81f43bef432062c01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_23ef9338528c9f97ccad879571d964b0.setIcon(icon_5fa590cb9c3fd9c81f43bef432062c01);
+        
+    
+        var popup_c6cd137eb0da3ee0df439bb0a991fa86 = L.popup({});
+
+        
+            
+                var html_fa931d900e2e977cd99124dadf26b4a2 = $(`<div id="html_fa931d900e2e977cd99124dadf26b4a2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Linton Street, Stoneygate</h1><div class="nugget-popup"><p>Internal property flooding reported; location is a low spot and on a surface water flow route from Evington Road. [TAB] (p16)</p></div><div class="nugget-popup"><p>Identified as a low spot on a surface water flow route from Evington Road; surface water flooding affected the street and adjacent properties. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Identified as having a low spot and being on a surface&ndash;water flow route from Evington Road, resulting in accumulation and flow towards properties. (p35)</p></div></div></body></div>`)[0];
+                popup_c6cd137eb0da3ee0df439bb0a991fa86.setContent(html_fa931d900e2e977cd99124dadf26b4a2);
+            
+        
+
+        marker_23ef9338528c9f97ccad879571d964b0.bindPopup(popup_c6cd137eb0da3ee0df439bb0a991fa86)
+        ;
+
+        
+    
+    
+            var marker_c7c1f5ed36c0c86c6aee2268acc3f9a1 = L.marker(
+                [52.6264546, -1.1146172],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_22e039d39d7166a35311573eb8c3a36a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c7c1f5ed36c0c86c6aee2268acc3f9a1.setIcon(icon_22e039d39d7166a35311573eb8c3a36a);
+        
+    
+        var popup_4713c59d75e0d3e55c5de503a518c66c = L.popup({});
+
+        
+            
+                var html_1fa2b8eeb56e8d56e09705ae21847eed = $(`<div id="html_1fa2b8eeb56e8d56e09705ae21847eed" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Evington Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Fluvial flooding from the Evington Brook (Main River) and surface water caused internal property flooding; road level is low relative to the Brook (Flood Zone 3b), contributing to flow onto the road. [TAB] (p16)</p></div><div class="nugget-popup"><p>Road level identified as a low spot relative to the nearby Evington Brook; surface water flooding affected the road and nearby properties. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Road is a low spot relative to the nearby Evington Brook. Surface water flows from Norwood Road and along the brook's flow path, causing surface&ndash;water flooding and ponding on the road and adjacent low areas. (p35)</p></div></div></body></div>`)[0];
+                popup_4713c59d75e0d3e55c5de503a518c66c.setContent(html_1fa2b8eeb56e8d56e09705ae21847eed);
+            
+        
+
+        marker_c7c1f5ed36c0c86c6aee2268acc3f9a1.bindPopup(popup_4713c59d75e0d3e55c5de503a518c66c)
+        ;
+
+        
+    
+    
+            var marker_8776f3de4a70dd06027424dc87c11b61 = L.marker(
+                [52.6260369, -1.1021705],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_bb6c38fa9f3eb89024da1d2adc24e2e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8776f3de4a70dd06027424dc87c11b61.setIcon(icon_bb6c38fa9f3eb89024da1d2adc24e2e2);
+        
+    
+        var popup_91c41db67bff9b9da02a37e493737ecf = L.popup({});
+
+        
+            
+                var html_6d60bf536df9147f47509788033e43a4 = $(`<div id="html_6d60bf536df9147f47509788033e43a4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mervyn Road, Stoneygate</h1><div class="nugget-popup"><p>Internal property flooding reported; location is adjacent to the Evington Brook with surface water flow route along the brook's flow path. [TAB] (p16)</p></div><div class="nugget-popup"><p>Garden and outbuilding flooding reported. [TAB] (p18)</p></div><div class="nugget-popup"><p>Next to the Evington Brook and on a surface water flow route along the brook's path; surface water flooding affected the road and adjacent properties. [TAB,PAG] (p34)</p></div></div></body></div>`)[0];
+                popup_91c41db67bff9b9da02a37e493737ecf.setContent(html_6d60bf536df9147f47509788033e43a4);
+            
+        
+
+        marker_8776f3de4a70dd06027424dc87c11b61.bindPopup(popup_91c41db67bff9b9da02a37e493737ecf)
+        ;
+
+        
+    
+    
+            var marker_a7b4f5be2c8b3091f0935a786e1fc421 = L.marker(
+                [52.6405015, -1.0705066],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_22e95002b616b74d949d0eb84ed9ad31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a7b4f5be2c8b3091f0935a786e1fc421.setIcon(icon_22e95002b616b74d949d0eb84ed9ad31);
+        
+    
+        var popup_64c1ac9cbc32814d1e4f46f271c1a29a = L.popup({});
+
+        
+            
+                var html_76ef04c1fd91c6ab801a97e8215437e6 = $(`<div id="html_76ef04c1fd91c6ab801a97e8215437e6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Elmcroft Avenue, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Surface water flow route from Elmcroft Avenue south towards properties; Elmcroft Avenue lies in a low spot and internal property flooding was reported associated with this surface water flow route. [TAB] (p17)</p></div><div class="nugget-popup"><p>Surface water flowed from Elmcroft Avenue south into a low spot, entering properties on the surface water flow route and causing property flooding. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Elmcroft Avenue is identified as a low spot and a source on the surface water flow route; surface water flowed south from Elmcroft Avenue towards properties, and the carriageway acted as a surface&ndash;water destination for a large area. (p35)</p></div></div></body></div>`)[0];
+                popup_64c1ac9cbc32814d1e4f46f271c1a29a.setContent(html_76ef04c1fd91c6ab801a97e8215437e6);
+            
+        
+
+        marker_a7b4f5be2c8b3091f0935a786e1fc421.bindPopup(popup_64c1ac9cbc32814d1e4f46f271c1a29a)
+        ;
+
+        
+    
+    
+            var marker_7c7bac13b49798f3e3d01cbc01ccb5cc = L.marker(
+                [52.6425221, -1.0765128],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_4cadea14bea0d2a7203d4dac268b9c04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7c7bac13b49798f3e3d01cbc01ccb5cc.setIcon(icon_4cadea14bea0d2a7203d4dac268b9c04);
+        
+    
+        var popup_e9d55c388510d8071d326efcfee3126c = L.popup({});
+
+        
+            
+                var html_ace88f25a6bebf765c6bb4aa464c3abc = $(`<div id="html_ace88f25a6bebf765c6bb4aa464c3abc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barbara Avenue, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Area of surface water flood risk adjacent to Bushby Brook; road slopes down from Scraptoft Lane toward this area and internal property flooding in this locality was reported. [TAB] (p17)</p></div><div class="nugget-popup"><p>Barbara Avenue falls within the mapped footprint of Flood Impact Areas and medium/low surface&ndash;water risk radiating from Bushby Brook, indicating the avenue and nearby properties are vulnerable to overland flooding tied to the brook. [IMG] (p29)</p></div></div></body></div>`)[0];
+                popup_e9d55c388510d8071d326efcfee3126c.setContent(html_ace88f25a6bebf765c6bb4aa464c3abc);
+            
+        
+
+        marker_7c7bac13b49798f3e3d01cbc01ccb5cc.bindPopup(popup_e9d55c388510d8071d326efcfee3126c)
+        ;
+
+        
+    
+    
+            var marker_b2aa5ade8f6a099ef86c7c24439a8fe3 = L.marker(
+                [52.6420038, -1.0842591],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_feef3f55cf651faacf6e5606fb9740cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b2aa5ade8f6a099ef86c7c24439a8fe3.setIcon(icon_feef3f55cf651faacf6e5606fb9740cf);
+        
+    
+        var popup_b99ab078e41d5b5c2a8b0bc5bb49b202 = L.popup({});
+
+        
+            
+                var html_ae27a9bcdada29fc69bc3f1b1a823008 = $(`<div id="html_ae27a9bcdada29fc69bc3f1b1a823008" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Scraptoft Lane, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Bushby Brook flows behind the odd&ndash;numbered properties on Scraptoft Lane; the location is reported as susceptible to surface water and fluvial (main river) related internal property flooding. [TAB] (p17)</p></div><div class="nugget-popup"><p>Surface&ndash;water flooding is shown along the Bushby Brook corridor affecting the Scraptoft Lane area; Flood Impact Areas (red outlines) are marked adjacent to the brook and extend into residential streets around Scraptoft Lane, indicating inundation risk to the road and nearby properties. [IMG] (p29)</p></div><div class="nugget-popup"><p>Bushby Brook flows behind odd&ndash;numbered properties on Scraptoft Lane; the brook and overland flow routes contributed to flood risk and affected properties at the rear of the lane. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Bushby Brook flows behind the odd&ndash;numbered properties on Scraptoft Lane; properties lie on a flood flow route to the brook, resulting in surface&ndash;water/runoff flooding at the rear of properties and along the flow path. (p35)</p></div></div></body></div>`)[0];
+                popup_b99ab078e41d5b5c2a8b0bc5bb49b202.setContent(html_ae27a9bcdada29fc69bc3f1b1a823008);
+            
+        
+
+        marker_b2aa5ade8f6a099ef86c7c24439a8fe3.bindPopup(popup_b99ab078e41d5b5c2a8b0bc5bb49b202)
+        ;
+
+        
+    
+    
+            var marker_eb8d656a1f1eead31bf06711bb97e18b = L.marker(
+                [52.6411196, -1.0653241],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_e3a1bf7a0dba1b80c9c6fff3a34a5dbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eb8d656a1f1eead31bf06711bb97e18b.setIcon(icon_e3a1bf7a0dba1b80c9c6fff3a34a5dbc);
+        
+    
+        var popup_14e8120b6c9875f90a798c3f3072e304 = L.popup({});
+
+        
+            
+                var html_73770e4a79dcf939e7a625072d8e11be = $(`<div id="html_73770e4a79dcf939e7a625072d8e11be" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Vale Close, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Properties lie on a flood flow route to Bushby Brook immediately to the rear; internal property flooding was reported associated with surface water flow towards the brook. [TAB] (p17)</p></div><div class="nugget-popup"><p>Properties on Vale Close are located on a flood flow route to Bushby Brook, with surface water flow towards the brook affecting the rear of the properties. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_14e8120b6c9875f90a798c3f3072e304.setContent(html_73770e4a79dcf939e7a625072d8e11be);
+            
+        
+
+        marker_eb8d656a1f1eead31bf06711bb97e18b.bindPopup(popup_14e8120b6c9875f90a798c3f3072e304)
+        ;
+
+        
+    
+    
+            var marker_0edce15dc9a7a2abd754f8498d9420a5 = L.marker(
+                [52.6614589, -1.0816946],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_c3d84213a623a988e4bbcb77513e8fd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0edce15dc9a7a2abd754f8498d9420a5.setIcon(icon_c3d84213a623a988e4bbcb77513e8fd2);
+        
+    
+        var popup_26ff3908e6f7f51b84f3e6a718a38780 = L.popup({});
+
+        
+            
+                var html_11a97150bfd6ee6f0717e74ae493ea1a = $(`<div id="html_11a97150bfd6ee6f0717e74ae493ea1a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wenlock Way, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Internal property flooding reported; location identified as a low area and surface water destination for a large area of carriageway, causing inundation of properties. [TAB] (p17)</p></div><div class="nugget-popup"><p>Low area acted as a surface water destination for a large area of carriageway, resulting in flooding of the highway and nearby properties. [TAB,PAG] (p34)</p></div></div></body></div>`)[0];
+                popup_26ff3908e6f7f51b84f3e6a718a38780.setContent(html_11a97150bfd6ee6f0717e74ae493ea1a);
+            
+        
+
+        marker_0edce15dc9a7a2abd754f8498d9420a5.bindPopup(popup_26ff3908e6f7f51b84f3e6a718a38780)
+        ;
+
+        
+    
+    
+            var marker_ecc1add3981a847563d40842d80d6cb4 = L.marker(
+                [52.6619322, -1.0887479],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_e7c2972e35e8f0e602d67eb77c3a93d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ecc1add3981a847563d40842d80d6cb4.setIcon(icon_e7c2972e35e8f0e602d67eb77c3a93d2);
+        
+    
+        var popup_b51bde5ea03e5da88f7a370a3400326b = L.popup({});
+
+        
+            
+                var html_1893db02728d1c7b8ba9624df67f0e82 = $(`<div id="html_1893db02728d1c7b8ba9624df67f0e82" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barkby Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Internal property flooding reported; surface water flowed from the north and there were reported issues with sewer operation at this location. [TAB] (p17)</p></div><div class="nugget-popup"><p>Surface water flows from the north concentrated along Barkby Road, causing flooding of the road and affecting adjacent properties. [TAB,PAG] (p34)</p></div></div></body></div>`)[0];
+                popup_b51bde5ea03e5da88f7a370a3400326b.setContent(html_1893db02728d1c7b8ba9624df67f0e82);
+            
+        
+
+        marker_ecc1add3981a847563d40842d80d6cb4.bindPopup(popup_b51bde5ea03e5da88f7a370a3400326b)
+        ;
+
+        
+    
+    
+            var marker_5449d7d67aa7284c6d75b9b0b8e355dc = L.marker(
+                [52.6392837, -1.1173571],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_8a3a9a6aca9f2d890ee5ea6487f1c8ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5449d7d67aa7284c6d75b9b0b8e355dc.setIcon(icon_8a3a9a6aca9f2d890ee5ea6487f1c8ee);
+        
+    
+        var popup_a312b1724a85615cb53dfe50a23f2634 = L.popup({});
+
+        
+            
+                var html_695d497ea9f3142ed82890bb87098803 = $(`<div id="html_695d497ea9f3142ed82890bb87098803" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nedham Street, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Surface water entered from the road onto shop floors; surface water flows from Melbourne Road, Hasting Road and Cecil Road routed towards Nedham Street; one residential property experienced basement flooding. [TAB] (p18)</p></div><div class="nugget-popup"><p>Surface&ndash;water flooding affecting Nedham Street and adjacent roads (including marked Flood Impact Areas along Nedham Street, Maynard Road and nearby streets); flow routes shown northwest&ndash;to&ndash;southeast through the area. [IMG] (p32)</p></div><div class="nugget-popup"><p>Runoff from surrounding roads concentrated at Nedham Street, leading to surface water inundation of the street and flooding of adjacent properties. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Surface water flowed down Melbourne Road, Hasting Road and Cecil Road towards Nedham Street and then on to Humberstone Road, resulting in surface water inundation on Nedham Street and acting as a conduit for flows to Humberstone Road. (p35)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one residential property [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_a312b1724a85615cb53dfe50a23f2634.setContent(html_695d497ea9f3142ed82890bb87098803);
+            
+        
+
+        marker_5449d7d67aa7284c6d75b9b0b8e355dc.bindPopup(popup_a312b1724a85615cb53dfe50a23f2634)
+        ;
+
+        
+    
+    
+            var marker_efebbf24d1eaaa043752f96369c725f1 = L.marker(
+                [52.6319882, -1.1134827],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_de9c7866a5ab768d7353ee0406e9a066 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_efebbf24d1eaaa043752f96369c725f1.setIcon(icon_de9c7866a5ab768d7353ee0406e9a066);
+        
+    
+        var popup_5deb115dcfd483db170657d07e20539f = L.popup({});
+
+        
+            
+                var html_99b522e833a248b6f1c8c5a66740f0f1 = $(`<div id="html_99b522e833a248b6f1c8c5a66740f0f1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Melbourne Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Surface water flowed down Melbourne Road towards Nedham Street, contributing to street and property flooding in the area. [TAB] (p18)</p></div><div class="nugget-popup"><p>Surface water flowed down Melbourne Road towards Nedham Street and then to Humberstone Road, contributing to local surface water flooding. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Surface water flowed down Melbourne Road toward Nedham Street and then to Humberstone Road, indicating surface&ndash;water flooding along the road's flow route. (p35)</p></div></div></body></div>`)[0];
+                popup_5deb115dcfd483db170657d07e20539f.setContent(html_99b522e833a248b6f1c8c5a66740f0f1);
+            
+        
+
+        marker_efebbf24d1eaaa043752f96369c725f1.bindPopup(popup_5deb115dcfd483db170657d07e20539f)
+        ;
+
+        
+    
+    
+            var marker_2c6ed27c96ec393ab9fff4419c97c9b3 = L.marker(
+                [52.6458649, -1.1038009],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_39e2acef811f1ef299b69e833f84080a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2c6ed27c96ec393ab9fff4419c97c9b3.setIcon(icon_39e2acef811f1ef299b69e833f84080a);
+        
+    
+        var popup_38b777762faea3d70bf8ab0a42bb0739 = L.popup({});
+
+        
+            
+                var html_d566a01fe64b2a586113be38f222cdc4 = $(`<div id="html_d566a01fe64b2a586113be38f222cdc4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hastings Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Surface water flowed down Hasting Road (sic) towards Nedham Street, forming part of the runoff path that led to local flooding. [TAB] (p18)</p></div><div class="nugget-popup"><p>Surface water flowed down Hasting Road (sic) towards Nedham Street and then to Humberstone Road, forming part of the surface water flow path that caused local flooding. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Surface water flowed down Hasting Road (sic) toward Nedham Street and then Humberstone Road, indicating surface&ndash;water flooding along the road's flow route. (p35)</p></div></div></body></div>`)[0];
+                popup_38b777762faea3d70bf8ab0a42bb0739.setContent(html_d566a01fe64b2a586113be38f222cdc4);
+            
+        
+
+        marker_2c6ed27c96ec393ab9fff4419c97c9b3.bindPopup(popup_38b777762faea3d70bf8ab0a42bb0739)
+        ;
+
+        
+    
+    
+            var marker_0a04543e5c65c9098be6c59727a27d50 = L.marker(
+                [52.6368525, -1.1149843],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_ae5ad00e1aeffa63dae4529be79ce612 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0a04543e5c65c9098be6c59727a27d50.setIcon(icon_ae5ad00e1aeffa63dae4529be79ce612);
+        
+    
+        var popup_056f285a1b5a19d17fda164eee98805f = L.popup({});
+
+        
+            
+                var html_e8400036d6423b227827844ed120ed93 = $(`<div id="html_e8400036d6423b227827844ed120ed93" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cecil Road, Spinney Hills</h1><div class="nugget-popup"><p>Surface water flowed down Cecil Road towards Nedham Street, contributing to the surface&ndash;water runoff that caused local road and property flooding. [TAB] (p18)</p></div><div class="nugget-popup"><p>Surface water flowed down Cecil Road towards Nedham Street and then to Humberstone Road, contributing to surface water flooding in the area. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Surface water flowed down Cecil Road toward Nedham Street and then Humberstone Road, indicating surface&ndash;water flooding along the road's flow route. (p35)</p></div></div></body></div>`)[0];
+                popup_056f285a1b5a19d17fda164eee98805f.setContent(html_e8400036d6423b227827844ed120ed93);
+            
+        
+
+        marker_0a04543e5c65c9098be6c59727a27d50.bindPopup(popup_056f285a1b5a19d17fda164eee98805f)
+        ;
+
+        
+    
+    
+            var marker_bf8475f3d1df561e7dcabf87f7f967dd = L.marker(
+                [52.6378737, -1.1217471],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_63096020ce8d1fae288b17bcf9002284 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bf8475f3d1df561e7dcabf87f7f967dd.setIcon(icon_63096020ce8d1fae288b17bcf9002284);
+        
+    
+        var popup_2a8acb17e909e07d2be0601bf968edf3 = L.popup({});
+
+        
+            
+                var html_b0d75b1f566b492f4fe87b80f8e61dbe = $(`<div id="html_b0d75b1f566b492f4fe87b80f8e61dbe" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Humberstone Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Surface water routed via local streets (including Nedham Street) flowed towards Humberstone Road as the downstream route during the flooding event. [TAB] (p18)</p></div><div class="nugget-popup"><p>Received surface water flows routed via Nedham Street from Melbourne Road, Hasting Road and Cecil Road, contributing to surface water flooding along Humberstone Road. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Received surface water flow routed down Melbourne, Hasting and Cecil Roads via Nedham Street; acted as downstream receptor on the surface&ndash;water flow route causing surface&ndash;water inundation risk. (p35)</p></div></div></body></div>`)[0];
+                popup_2a8acb17e909e07d2be0601bf968edf3.setContent(html_b0d75b1f566b492f4fe87b80f8e61dbe);
+            
+        
+
+        marker_bf8475f3d1df561e7dcabf87f7f967dd.bindPopup(popup_2a8acb17e909e07d2be0601bf968edf3)
+        ;
+
+        
+    
+    
+            var marker_b2cb2456332512885e10ab357ca1f4f9 = L.marker(
+                [52.6185131, -1.1142789],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_bf7d56b034a2d920c8ea871cf88685fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b2cb2456332512885e10ab357ca1f4f9.setIcon(icon_bf7d56b034a2d920c8ea871cf88685fe);
+        
+    
+        var popup_23983044d3e67d9931ba9c37c84221d7 = L.popup({});
+
+        
+            
+                var html_7c5b42a1a2062dab627a2e1fbb30b4ec = $(`<div id="html_7c5b42a1a2062dab627a2e1fbb30b4ec" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Central Avenue, Clarendon Park</h1><div class="nugget-popup"><p>Road flooding and internal flooding to cellar/basement reported on properties on Central Avenue. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_23983044d3e67d9931ba9c37c84221d7.setContent(html_7c5b42a1a2062dab627a2e1fbb30b4ec);
+            
+        
+
+        marker_b2cb2456332512885e10ab357ca1f4f9.bindPopup(popup_23983044d3e67d9931ba9c37c84221d7)
+        ;
+
+        
+    
+    
+            var marker_ce89fe0f4fc3525a199c1e0a24be2f45 = L.marker(
+                [52.6153816, -1.1202171],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_efcab9ff7b2a42238004c1530de89cd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ce89fe0f4fc3525a199c1e0a24be2f45.setIcon(icon_efcab9ff7b2a42238004c1530de89cd6);
+        
+    
+        var popup_f3d62577a65e456d882ee6f49419d40c = L.popup({});
+
+        
+            
+                var html_a9a07015240214635ae736a21aa19a41 = $(`<div id="html_a9a07015240214635ae736a21aa19a41" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Clarendon Park Road, Clarendon Park</h1><div class="nugget-popup"><p>Cellar/basement internal flooding reported in properties on Clarendon Park Road. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_f3d62577a65e456d882ee6f49419d40c.setContent(html_a9a07015240214635ae736a21aa19a41);
+            
+        
+
+        marker_ce89fe0f4fc3525a199c1e0a24be2f45.bindPopup(popup_f3d62577a65e456d882ee6f49419d40c)
+        ;
+
+        
+    
+    
+            var marker_86c5a921f2d32eca8143e34ef7ec9bdf = L.marker(
+                [52.6204483, -1.1061302],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_a2031aa609b8be55a0587c7fab91b7d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_86c5a921f2d32eca8143e34ef7ec9bdf.setIcon(icon_a2031aa609b8be55a0587c7fab91b7d6);
+        
+    
+        var popup_4bb27973994908293ef5e7c4fd4c12de = L.popup({});
+
+        
+            
+                var html_48c5cdcde8cac22781a2ea481bf98f96 = $(`<div id="html_48c5cdcde8cac22781a2ea481bf98f96" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holmfield Road, Stoneygate</h1><div class="nugget-popup"><p>Cellar/basement internal flooding reported in properties on Holmfield Road. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_4bb27973994908293ef5e7c4fd4c12de.setContent(html_48c5cdcde8cac22781a2ea481bf98f96);
+            
+        
+
+        marker_86c5a921f2d32eca8143e34ef7ec9bdf.bindPopup(popup_4bb27973994908293ef5e7c4fd4c12de)
+        ;
+
+        
+    
+    
+            var marker_3dd2088d6f516874553d910c527f2dd9 = L.marker(
+                [52.6109609, -1.1160648],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_5b28bfcff4d49b76134225e13acd9b93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3dd2088d6f516874553d910c527f2dd9.setIcon(icon_5b28bfcff4d49b76134225e13acd9b93);
+        
+    
+        var popup_f37dc6097469d0badc39bf7f51bd2201 = L.popup({});
+
+        
+            
+                var html_d001fded3db73ff210ecb5f277387276 = $(`<div id="html_d001fded3db73ff210ecb5f277387276" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northcote Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Garden flooding reported for properties on Northcote Road. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_f37dc6097469d0badc39bf7f51bd2201.setContent(html_d001fded3db73ff210ecb5f277387276);
+            
+        
+
+        marker_3dd2088d6f516874553d910c527f2dd9.bindPopup(popup_f37dc6097469d0badc39bf7f51bd2201)
+        ;
+
+        
+    
+    
+            var marker_499ca99ccbf52c38e86e351204d1bbc6 = L.marker(
+                [52.6098086, -1.1037732],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_a22fdaed66c3230f3175802ca3915c6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_499ca99ccbf52c38e86e351204d1bbc6.setIcon(icon_a22fdaed66c3230f3175802ca3915c6e);
+        
+    
+        var popup_82cbedae934067f70e8e2e667aacd49a = L.popup({});
+
+        
+            
+                var html_5bb2ccfb39164a1de5a65c4c642fa181 = $(`<div id="html_5bb2ccfb39164a1de5a65c4c642fa181" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Shirley Road, Knighton</h1><div class="nugget-popup"><p>Garden flooding reported for properties on Shirley Road. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_82cbedae934067f70e8e2e667aacd49a.setContent(html_5bb2ccfb39164a1de5a65c4c642fa181);
+            
+        
+
+        marker_499ca99ccbf52c38e86e351204d1bbc6.bindPopup(popup_82cbedae934067f70e8e2e667aacd49a)
+        ;
+
+        
+    
+    
+            var marker_db59a3db3387e18aa787cb0517df6dfb = L.marker(
+                [52.6074874, -1.1026468],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_198b59b78a30d6bb15fa9356d28f553b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_db59a3db3387e18aa787cb0517df6dfb.setIcon(icon_198b59b78a30d6bb15fa9356d28f553b);
+        
+    
+        var popup_aff6f932ce824367caf1c406a3611c21 = L.popup({});
+
+        
+            
+                var html_e296560d26e1fe253770b92074fdda63 = $(`<div id="html_e296560d26e1fe253770b92074fdda63" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Knighton Road, Knighton</h1><div class="nugget-popup"><p>Garden and cellar/basement flooding reported for properties on South Knighton Road. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_aff6f932ce824367caf1c406a3611c21.setContent(html_e296560d26e1fe253770b92074fdda63);
+            
+        
+
+        marker_db59a3db3387e18aa787cb0517df6dfb.bindPopup(popup_aff6f932ce824367caf1c406a3611c21)
+        ;
+
+        
+    
+    
+            var marker_91fb12389596bf0432982a1ee76fab63 = L.marker(
+                [52.6174043, -1.126167],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_99d2560b75dc010889ec16729b46c5fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_91fb12389596bf0432982a1ee76fab63.setIcon(icon_99d2560b75dc010889ec16729b46c5fb);
+        
+    
+        var popup_0af6383af5a8ec601790c4fad9b380ef = L.popup({});
+
+        
+            
+                var html_4b57c1761f8b7ec9bc2622002e935a07 = $(`<div id="html_4b57c1761f8b7ec9bc2622002e935a07" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Victoria Park Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Road and garden flooding reported on Victoria Park Road. [TAB] (p18)</p></div><div class="nugget-popup"><p>Victoria Park Road is shown as an area of high flood risk adjacent to the Education Facility, with surface&ndash;water flow routes directing water toward the road and increasing the likelihood of surface&ndash;water accumulation and impacts to the road and nearby properties. [IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_0af6383af5a8ec601790c4fad9b380ef.setContent(html_4b57c1761f8b7ec9bc2622002e935a07);
+            
+        
+
+        marker_91fb12389596bf0432982a1ee76fab63.bindPopup(popup_0af6383af5a8ec601790c4fad9b380ef)
+        ;
+
+        
+    
+    
+            var marker_9fda53ef0e0e25a0ab6562f35ee9927d = L.marker(
+                [52.6424678, -1.0710998],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_26c27289b7d7e3bcd6d6b4039bb32521 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9fda53ef0e0e25a0ab6562f35ee9927d.setIcon(icon_26c27289b7d7e3bcd6d6b4039bb32521);
+        
+    
+        var popup_c2d1780d99ccc2cf059a7b7c018a6de0 = L.popup({});
+
+        
+            
+                var html_994002ce2fbfb7ec0c89f28844d64a3e = $(`<div id="html_994002ce2fbfb7ec0c89f28844d64a3e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Averil Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Garden and road flooding reported on Averil Road (LE5). [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_c2d1780d99ccc2cf059a7b7c018a6de0.setContent(html_994002ce2fbfb7ec0c89f28844d64a3e);
+            
+        
+
+        marker_9fda53ef0e0e25a0ab6562f35ee9927d.bindPopup(popup_c2d1780d99ccc2cf059a7b7c018a6de0)
+        ;
+
+        
+    
+    
+            var marker_c075af076f5049621a0c923ce606d0b3 = L.marker(
+                [52.6392036, -1.1188809],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_18162b1c6bafddaa264fceff72699a6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c075af076f5049621a0c923ce606d0b3.setIcon(icon_18162b1c6bafddaa264fceff72699a6c);
+        
+    
+        var popup_4468757ee6387034ee90a7c319f8b2e3 = L.popup({});
+
+        
+            
+                var html_d29f2ca22edf028a6069b73de5d10824 = $(`<div id="html_d29f2ca22edf028a6069b73de5d10824" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cradock Street, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Cellar/basement and road flooding reported on Cradock Street (LE5). [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_4468757ee6387034ee90a7c319f8b2e3.setContent(html_d29f2ca22edf028a6069b73de5d10824);
+            
+        
+
+        marker_c075af076f5049621a0c923ce606d0b3.bindPopup(popup_4468757ee6387034ee90a7c319f8b2e3)
+        ;
+
+        
+    
+    
+            var marker_a55fac494cc12fd0ad64eab4527f52b0 = L.marker(
+                [52.6420165, -1.1110138],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_e336e6baabdd3b9c676a6a2636cf6966 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a55fac494cc12fd0ad64eab4527f52b0.setIcon(icon_e336e6baabdd3b9c676a6a2636cf6966);
+        
+    
+        var popup_0d01438fbc594a49009849cf54a7f322 = L.popup({});
+
+        
+            
+                var html_84ab9f760a37fb018a84f6f546972e9f = $(`<div id="html_84ab9f760a37fb018a84f6f546972e9f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Farringdon Street, Spinney Hills</h1><div class="nugget-popup"><p>Flooding affected the road (surface water reported on&ndash;street). [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_0d01438fbc594a49009849cf54a7f322.setContent(html_84ab9f760a37fb018a84f6f546972e9f);
+            
+        
+
+        marker_a55fac494cc12fd0ad64eab4527f52b0.bindPopup(popup_0d01438fbc594a49009849cf54a7f322)
+        ;
+
+        
+    
+    
+            var marker_2eab64d09bb7a2053fb358f1dd1583d3 = L.marker(
+                [52.6166062, -1.101464],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_f44f22cd9c0d40e93218929e4607095c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2eab64d09bb7a2053fb358f1dd1583d3.setIcon(icon_f44f22cd9c0d40e93218929e4607095c);
+        
+    
+        var popup_77a916736c4f92e052afd91d0ed98747 = L.popup({});
+
+        
+            
+                var html_db773ac00d9bfe2eeac29771e9c33b0d = $(`<div id="html_db773ac00d9bfe2eeac29771e9c33b0d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Francis Street, Stoneygate</h1><div class="nugget-popup"><p>Road flooding reported (surface water affected the street). [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_77a916736c4f92e052afd91d0ed98747.setContent(html_db773ac00d9bfe2eeac29771e9c33b0d);
+            
+        
+
+        marker_2eab64d09bb7a2053fb358f1dd1583d3.bindPopup(popup_77a916736c4f92e052afd91d0ed98747)
+        ;
+
+        
+    
+    
+            var marker_6bfbcfe54879114a046c6c6c24b5e71e = L.marker(
+                [52.6465417, -1.0642069],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_1a7e35f87edcf2278a5fd475efcac86c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6bfbcfe54879114a046c6c6c24b5e71e.setIcon(icon_1a7e35f87edcf2278a5fd475efcac86c);
+        
+    
+        var popup_05d8a45b5c5e09570f78fb5f762123a2 = L.popup({});
+
+        
+            
+                var html_b5a99d96aed70250786feb7baadb36d6 = $(`<div id="html_b5a99d96aed70250786feb7baadb36d6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Grantham Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Garden and driveway flooding reported (surface water affected private outdoor areas and driveway). [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_05d8a45b5c5e09570f78fb5f762123a2.setContent(html_b5a99d96aed70250786feb7baadb36d6);
+            
+        
+
+        marker_6bfbcfe54879114a046c6c6c24b5e71e.bindPopup(popup_05d8a45b5c5e09570f78fb5f762123a2)
+        ;
+
+        
+    
+    
+            var marker_2b727a036bc6b4689d8b678783b8368f = L.marker(
+                [52.6364486, -1.1067282],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_fcd4d6223dbcbf0e408ab8d2286bc8dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2b727a036bc6b4689d8b678783b8368f.setIcon(icon_fcd4d6223dbcbf0e408ab8d2286bc8dc);
+        
+    
+        var popup_a123c8da950ba473088b7800176f2791 = L.popup({});
+
+        
+            
+                var html_b9e64580c42bee563e76bb6cff6973c7 = $(`<div id="html_b9e64580c42bee563e76bb6cff6973c7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Halstead Street, Spinney Hills</h1><div class="nugget-popup"><p>Cellar/basement flooding reported (internal flooding to basement areas from surface water). [TAB] (p18)</p></div><div class="nugget-popup"><p>Properties on Halstead Street were flooded as the street forms a low area compared to St Saviours Road, allowing surface water to collect and inundate properties. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_a123c8da950ba473088b7800176f2791.setContent(html_b9e64580c42bee563e76bb6cff6973c7);
+            
+        
+
+        marker_2b727a036bc6b4689d8b678783b8368f.bindPopup(popup_a123c8da950ba473088b7800176f2791)
+        ;
+
+        
+    
+    
+            var marker_89e5a6512be464cf47e3ad67a4765905 = L.marker(
+                [52.6264921, -1.1043401],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_22dc6bba8c8bd33166bf6cd70fd1da0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_89e5a6512be464cf47e3ad67a4765905.setIcon(icon_22dc6bba8c8bd33166bf6cd70fd1da0f);
+        
+    
+        var popup_e32dcb57afd014a894a73f00499dca05 = L.popup({});
+
+        
+            
+                var html_9aaeffe97ff7dd75e5e678cf9dc4457e = $(`<div id="html_9aaeffe97ff7dd75e5e678cf9dc4457e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hollington Road, Stoneygate</h1><div class="nugget-popup"><p>Garden and outbuilding flooding reported (surface water affected private gardens and outbuildings). [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_e32dcb57afd014a894a73f00499dca05.setContent(html_9aaeffe97ff7dd75e5e678cf9dc4457e);
+            
+        
+
+        marker_89e5a6512be464cf47e3ad67a4765905.bindPopup(popup_e32dcb57afd014a894a73f00499dca05)
+        ;
+
+        
+    
+    
+            var marker_d0a3f3257e17adc79e4e46fc7c04b1e0 = L.marker(
+                [52.6500749, -1.0680429],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_7b8ae41ccab0d95a67bbd7fcb513e6a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d0a3f3257e17adc79e4e46fc7c04b1e0.setIcon(icon_7b8ae41ccab0d95a67bbd7fcb513e6a0);
+        
+    
+        var popup_5359eeb5d4f544de815a8fa267f98d23 = L.popup({});
+
+        
+            
+                var html_215ddf347e47891316a1841e167a03b8 = $(`<div id="html_215ddf347e47891316a1841e167a03b8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Keyham Lane, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Road flooding reported (surface water affected the street). [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_5359eeb5d4f544de815a8fa267f98d23.setContent(html_215ddf347e47891316a1841e167a03b8);
+            
+        
+
+        marker_d0a3f3257e17adc79e4e46fc7c04b1e0.bindPopup(popup_5359eeb5d4f544de815a8fa267f98d23)
+        ;
+
+        
+    
+    
+            var marker_bcae4ff5df7a42421144c21d4391b5da = L.marker(
+                [52.6411819, -1.0896811],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_2ecbfbc828f3959e5909bcc3be69c0ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bcae4ff5df7a42421144c21d4391b5da.setIcon(icon_2ecbfbc828f3959e5909bcc3be69c0ca);
+        
+    
+        var popup_539d47b54967820c2c74726b80eeaba0 = L.popup({});
+
+        
+            
+                var html_0d31f6687b0bd321c13e751a12644962 = $(`<div id="html_0d31f6687b0bd321c13e751a12644962" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>King Edward Road, North Evington</h1><div class="nugget-popup"><p>Road flooding reported (surface water entered the road). [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_539d47b54967820c2c74726b80eeaba0.setContent(html_0d31f6687b0bd321c13e751a12644962);
+            
+        
+
+        marker_bcae4ff5df7a42421144c21d4391b5da.bindPopup(popup_539d47b54967820c2c74726b80eeaba0)
+        ;
+
+        
+    
+    
+            var marker_835da76ed5e0ae31173bf7aac243c13e = L.marker(
+                [52.6364851, -1.1253417],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_eebadb552d9176e1992a3f2a0256b6a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_835da76ed5e0ae31173bf7aac243c13e.setIcon(icon_eebadb552d9176e1992a3f2a0256b6a6);
+        
+    
+        var popup_823b065c31912bfd78cc61b39617ba32 = L.popup({});
+
+        
+            
+                var html_97e74709bbfe1f6b99c9df3cf00edff9 = $(`<div id="html_97e74709bbfe1f6b99c9df3cf00edff9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Morledge Street, Leeds Metropolitan District</h1><div class="nugget-popup"><p>Cellar/basement flooding reported. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_823b065c31912bfd78cc61b39617ba32.setContent(html_97e74709bbfe1f6b99c9df3cf00edff9);
+            
+        
+
+        marker_835da76ed5e0ae31173bf7aac243c13e.bindPopup(popup_823b065c31912bfd78cc61b39617ba32)
+        ;
+
+        
+    
+    
+            var marker_35f4d2ed10aa4f092d42ae793895760a = L.marker(
+                [52.6402564, -1.0897488],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_5db4de6e807c70ea2df0c0f951d6bd65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_35f4d2ed10aa4f092d42ae793895760a.setIcon(icon_5db4de6e807c70ea2df0c0f951d6bd65);
+        
+    
+        var popup_9c797167a090ae699213a608a0264300 = L.popup({});
+
+        
+            
+                var html_188cf18225b12e7db4c111de081d5094 = $(`<div id="html_188cf18225b12e7db4c111de081d5094" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Saltersford Road, North Evington</h1><div class="nugget-popup"><p>Road flooding reported. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_9c797167a090ae699213a608a0264300.setContent(html_188cf18225b12e7db4c111de081d5094);
+            
+        
+
+        marker_35f4d2ed10aa4f092d42ae793895760a.bindPopup(popup_9c797167a090ae699213a608a0264300)
+        ;
+
+        
+    
+    
+            var marker_8159d06c2c93b00b8d57c5fa7a63c365 = L.marker(
+                [52.6388586, -1.1147558],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_f67b81a2f012efeab614a0e66d03f1f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8159d06c2c93b00b8d57c5fa7a63c365.setIcon(icon_f67b81a2f012efeab614a0e66d03f1f5);
+        
+    
+        var popup_b4a3f3c9a267c51cf732e1a027996ef4 = L.popup({});
+
+        
+            
+                var html_f8e93ef8210dec4361bc6d8be1aab7e6 = $(`<div id="html_f8e93ef8210dec4361bc6d8be1aab7e6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Vulcan Road, Spinney Hills</h1><div class="nugget-popup"><p>Cellar/basement flooding reported. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_b4a3f3c9a267c51cf732e1a027996ef4.setContent(html_f8e93ef8210dec4361bc6d8be1aab7e6);
+            
+        
+
+        marker_8159d06c2c93b00b8d57c5fa7a63c365.bindPopup(popup_b4a3f3c9a267c51cf732e1a027996ef4)
+        ;
+
+        
+    
+    
+            var marker_93cc1a5ff7433b99e614b66874592bc6 = L.marker(
+                [52.6039573, -1.1045223],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_a938bbbc4db2453d65e1287ef33f11f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_93cc1a5ff7433b99e614b66874592bc6.setIcon(icon_a938bbbc4db2453d65e1287ef33f11f2);
+        
+    
+        var popup_bfcfa5b1b3d18a732921d64f655be600 = L.popup({});
+
+        
+            
+                var html_c81d410383b701d03cf2f27ec6e6d9e3 = $(`<div id="html_c81d410383b701d03cf2f27ec6e6d9e3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holbrook Spinney, Knighton</h1><div class="nugget-popup"><p>Holbrook Spinney lies alongside the Hol Brook within zones of medium to high surface&ndash;water flood risk; Flood Impact Areas on the map indicate localised inundation risk and likely impacts to properties/land adjacent to the spinney during the event. [IMG] (p29)</p></div></div></body></div>`)[0];
+                popup_bfcfa5b1b3d18a732921d64f655be600.setContent(html_c81d410383b701d03cf2f27ec6e6d9e3);
+            
+        
+
+        marker_93cc1a5ff7433b99e614b66874592bc6.bindPopup(popup_bfcfa5b1b3d18a732921d64f655be600)
+        ;
+
+        
+    
+    
+            var marker_19a864491582a77a001ed3b57f4381a8 = L.marker(
+                [52.6423031, -1.0777868],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_5b9622b2785469cbfb74d62348977ca4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_19a864491582a77a001ed3b57f4381a8.setIcon(icon_5b9622b2785469cbfb74d62348977ca4);
+        
+    
+        var popup_2e701bc56a50c7f55d2f4ff8e8b9c362 = L.popup({});
+
+        
+            
+                var html_51c49a00a39d838aa43acbad82a9c5ec = $(`<div id="html_51c49a00a39d838aa43acbad82a9c5ec" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Peters Drive, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Peters Drive is shown adjacent to red&ndash;outlined Flood Impact Areas and medium/low surface&ndash;water risk zones from Bushby Brook, indicating potential inundation of the street and nearby properties from overland flow. [IMG] (p29)</p></div></div></body></div>`)[0];
+                popup_2e701bc56a50c7f55d2f4ff8e8b9c362.setContent(html_51c49a00a39d838aa43acbad82a9c5ec);
+            
+        
+
+        marker_19a864491582a77a001ed3b57f4381a8.bindPopup(popup_2e701bc56a50c7f55d2f4ff8e8b9c362)
+        ;
+
+        
+    
+    
+            var marker_542f6cc064bbb09c79cb20dcc260ce72 = L.marker(
+                [52.625335, -1.1051287],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_707783394246743191c8de5f23de71e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_542f6cc064bbb09c79cb20dcc260ce72.setIcon(icon_707783394246743191c8de5f23de71e0);
+        
+    
+        var popup_87851b701269167be9253045f04f754a = L.popup({});
+
+        
+            
+                var html_d5b9b7dd264359cbc60c21761d00ca4a = $(`<div id="html_d5b9b7dd264359cbc60c21761d00ca4a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hazelwood Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Surface water flooding associated with the Evington Brook affected Hazelwood Road; flood impact areas are marked adjacent to the brook and surface water flow routes indicate water spread into Hazelwood Road, threatening or impacting properties and local infrastructure close to the watercourse. [IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_87851b701269167be9253045f04f754a.setContent(html_d5b9b7dd264359cbc60c21761d00ca4a);
+            
+        
+
+        marker_542f6cc064bbb09c79cb20dcc260ce72.bindPopup(popup_87851b701269167be9253045f04f754a)
+        ;
+
+        
+    
+    
+            var marker_b94ef1a63c9aa4ea408cc5011c4e2396 = L.marker(
+                [52.6263406, -1.1063608],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_57abe0c58aca61216f158cb940ead935 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b94ef1a63c9aa4ea408cc5011c4e2396.setIcon(icon_57abe0c58aca61216f158cb940ead935);
+        
+    
+        var popup_b236b94d2555a9a6da570cc261bff85d = L.popup({});
+
+        
+            
+                var html_3230fb99dd11c7268f27de9f630e6327 = $(`<div id="html_3230fb99dd11c7268f27de9f630e6327" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Osmaston Road, Stoneygate</h1><div class="nugget-popup"><p>Surface water flooding associated with the Evington Brook affected Osmaston Road; flood impact areas and flow routes are shown adjacent to the brook and indicate water ingress and accumulation on Osmaston Road, putting nearby properties and infrastructure at risk or impacted. [IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_b236b94d2555a9a6da570cc261bff85d.setContent(html_3230fb99dd11c7268f27de9f630e6327);
+            
+        
+
+        marker_b94ef1a63c9aa4ea408cc5011c4e2396.bindPopup(popup_b236b94d2555a9a6da570cc261bff85d)
+        ;
+
+        
+    
+    
+            var marker_39b5e9dd68816d3ec39dc78d7748d42d = L.marker(
+                [52.6289751, -1.1028365],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_068051630e51348007e1c1c775e70c92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_39b5e9dd68816d3ec39dc78d7748d42d.setIcon(icon_068051630e51348007e1c1c775e70c92);
+        
+    
+        var popup_1a8a04282d40e8a247997019520fc034 = L.popup({});
+
+        
+            
+                var html_dbf2895d51f8125cecc2e4e8b665df36 = $(`<div id="html_dbf2895d51f8125cecc2e4e8b665df36" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Staveley Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Surface&ndash;water flooding concentrated along and adjacent to the Evington Brook in the Staveley Road area. Flood Impact Areas are outlined near Hazelwood Road, Osmaston Road and Merlyn Road, with surface water following the brook north&ndash;to&ndash;south and spreading into adjacent streets. [IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_1a8a04282d40e8a247997019520fc034.setContent(html_dbf2895d51f8125cecc2e4e8b665df36);
+            
+        
+
+        marker_39b5e9dd68816d3ec39dc78d7748d42d.bindPopup(popup_1a8a04282d40e8a247997019520fc034)
+        ;
+
+        
+    
+    
+            var marker_2cf49965a05ce31195ca04b1c7deefcd = L.marker(
+                [52.615953, -1.1241993],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_e7b318179b9b194b3f8926c9aebda145 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2cf49965a05ce31195ca04b1c7deefcd.setIcon(icon_e7b318179b9b194b3f8926c9aebda145);
+        
+    
+        var popup_008cc59a5142616086ec27c2a2663870 = L.popup({});
+
+        
+            
+                var html_c848d7cf1d391e90f11c33d47e4e095c = $(`<div id="html_c848d7cf1d391e90f11c33d47e4e095c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thurlow Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>A Flood Impact Area is marked near the intersection of Queens Road and Thurlow Road, with surface&ndash;water flow directed into this area causing accumulation on Thurlow Road and nearby residential streets. [IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_008cc59a5142616086ec27c2a2663870.setContent(html_c848d7cf1d391e90f11c33d47e4e095c);
+            
+        
+
+        marker_2cf49965a05ce31195ca04b1c7deefcd.bindPopup(popup_008cc59a5142616086ec27c2a2663870)
+        ;
+
+        
+    
+    
+            var marker_b69ee8d763ad905ef382f533b3753c4b = L.marker(
+                [52.6173997, -1.1201744],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_3938c9d9dca648b798a9aa8af7f2e4f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b69ee8d763ad905ef382f533b3753c4b.setIcon(icon_3938c9d9dca648b798a9aa8af7f2e4f8);
+        
+    
+        var popup_1ebffbec6edb4def8c8b224d87dec5ba = L.popup({});
+
+        
+            
+                var html_53ecca9672f6a4605a200f9357a663ad = $(`<div id="html_53ecca9672f6a4605a200f9357a663ad" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Leonards Road, Clarendon Park</h1><div class="nugget-popup"><p>A Flood Impact Area is marked on St. Leonards Road, indicating surface&ndash;water accumulation and flooding of the street and nearby properties. [IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_1ebffbec6edb4def8c8b224d87dec5ba.setContent(html_53ecca9672f6a4605a200f9357a663ad);
+            
+        
+
+        marker_b69ee8d763ad905ef382f533b3753c4b.bindPopup(popup_1ebffbec6edb4def8c8b224d87dec5ba)
+        ;
+
+        
+    
+    
+            var marker_ce03764b568a6b1a7b30aec80dc50c5f = L.marker(
+                [52.6174526, -1.1193639],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_1311e17ee07696beb087d7ea8240c179 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ce03764b568a6b1a7b30aec80dc50c5f.setIcon(icon_1311e17ee07696beb087d7ea8240c179);
+        
+    
+        var popup_64473b29bbafef83f3b09f745a0255af = L.popup({});
+
+        
+            
+                var html_cb0021caf9e667c48688a89fe7d9056e = $(`<div id="html_cb0021caf9e667c48688a89fe7d9056e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cradock Road, Clarendon Park</h1><div class="nugget-popup"><p>A Flood Impact Area is marked on Cradock Road, indicating surface&ndash;water accumulation and flooding of the street and adjacent properties. [IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_64473b29bbafef83f3b09f745a0255af.setContent(html_cb0021caf9e667c48688a89fe7d9056e);
+            
+        
+
+        marker_ce03764b568a6b1a7b30aec80dc50c5f.bindPopup(popup_64473b29bbafef83f3b09f745a0255af)
+        ;
+
+        
+    
+    
+            var marker_756b9849becbf23983b03b4324ef9722 = L.marker(
+                [52.6201344, -1.1176495],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_f962c6cbe91c17454592403bd48ab4e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_756b9849becbf23983b03b4324ef9722.setIcon(icon_f962c6cbe91c17454592403bd48ab4e8);
+        
+    
+        var popup_4832e882157dbb1011ad38c01785a831 = L.popup({});
+
+        
+            
+                var html_f51643d4d4b586af7ac7fce380a63c6a = $(`<div id="html_f51643d4d4b586af7ac7fce380a63c6a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Queens Road, Clarendon Park</h1><div class="nugget-popup"><p>Map shows a Flood Impact Area outlined at or near the intersection of Queens Road and Thurlow Road indicating surface water accumulation on Queens Road and increased flood risk to adjacent properties and streets. [IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_4832e882157dbb1011ad38c01785a831.setContent(html_f51643d4d4b586af7ac7fce380a63c6a);
+            
+        
+
+        marker_756b9849becbf23983b03b4324ef9722.bindPopup(popup_4832e882157dbb1011ad38c01785a831)
+        ;
+
+        
+    
+    
+            var marker_89bc9f1e4b936d477b729aae05b0ce90 = L.marker(
+                [52.6466974, -1.0680222],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_6a13339236d23664fd8d14dd83d2b178 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_89bc9f1e4b936d477b729aae05b0ce90.setIcon(icon_6a13339236d23664fd8d14dd83d2b178);
+        
+    
+        var popup_e55124796d924a3273ba4d24b23326c2 = L.popup({});
+
+        
+            
+                var html_67836bd9de7a425f6a50bbdbe6b1a7c8 = $(`<div id="html_67836bd9de7a425f6a50bbdbe6b1a7c8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Arncliffe Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Marked on the Abbots Road South map as a key location within the surface&ndash;water flood risk zones adjacent to Scraptoft Brook; medium/low risk zones extend into Arncliffe Road, indicating potential surface water inundation of the street and nearby properties during the event. [IMG] (p31)</p></div></div></body></div>`)[0];
+                popup_e55124796d924a3273ba4d24b23326c2.setContent(html_67836bd9de7a425f6a50bbdbe6b1a7c8);
+            
+        
+
+        marker_89bc9f1e4b936d477b729aae05b0ce90.bindPopup(popup_e55124796d924a3273ba4d24b23326c2)
+        ;
+
+        
+    
+    
+            var marker_7988cacbed2d47e390bd63c5b523f9e0 = L.marker(
+                [52.6363439, -1.1150616],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_fbc39a9cfc6f4e2c67ac030da96e86dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7988cacbed2d47e390bd63c5b523f9e0.setIcon(icon_fbc39a9cfc6f4e2c67ac030da96e86dc);
+        
+    
+        var popup_09bd99f7cc368ed7c44f34d9c18c4e27 = L.popup({});
+
+        
+            
+                var html_e934dc9c7488e5e365e5136b29f2bf53 = $(`<div id="html_e934dc9c7488e5e365e5136b29f2bf53" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Melbourne Street, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Included among streets shown with Flood Impact Areas on the Nedham Street map; within medium/high surface water flood risk and subject to overland flow and inundation during the event. [IMG] (p32)</p></div></div></body></div>`)[0];
+                popup_09bd99f7cc368ed7c44f34d9c18c4e27.setContent(html_e934dc9c7488e5e365e5136b29f2bf53);
+            
+        
+
+        marker_7988cacbed2d47e390bd63c5b523f9e0.bindPopup(popup_09bd99f7cc368ed7c44f34d9c18c4e27)
+        ;
+
+        
+    
+    
+            var marker_c2f9c082015544936adc62784815d722 = L.marker(
+                [52.637638, -1.1147177],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_e431415ce41b62441ab3e1ba95a864d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c2f9c082015544936adc62784815d722.setIcon(icon_e431415ce41b62441ab3e1ba95a864d7);
+        
+    
+        var popup_1e9e517765fbc92b04ffa526395cb8f6 = L.popup({});
+
+        
+            
+                var html_fe0ee11e80d3328d77507d1ce0941919 = $(`<div id="html_fe0ee11e80d3328d77507d1ce0941919" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Maynard Road, Spinney Hills</h1><div class="nugget-popup"><p>Marked with Flood Impact Areas on the Nedham Street map. Maynard Road lies in medium/high surface water flood risk zones and was exposed to overland flow and inundation during the event. [IMG] (p32)</p></div></div></body></div>`)[0];
+                popup_1e9e517765fbc92b04ffa526395cb8f6.setContent(html_fe0ee11e80d3328d77507d1ce0941919);
+            
+        
+
+        marker_c2f9c082015544936adc62784815d722.bindPopup(popup_1e9e517765fbc92b04ffa526395cb8f6)
+        ;
+
+        
+    
+    
+            var marker_96954cf598751d3ed9626150b7f6ba7e = L.marker(
+                [52.6439687, -1.1094811],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_b7e417fc097bb46956f034e91216ebc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_96954cf598751d3ed9626150b7f6ba7e.setIcon(icon_b7e417fc097bb46956f034e91216ebc5);
+        
+    
+        var popup_d754767173c4c665252f7e0791708490 = L.popup({});
+
+        
+            
+                var html_fa6eda7f5c442e7c726e0e649ebf0074 = $(`<div id="html_fa6eda7f5c442e7c726e0e649ebf0074" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ash Street, Spinney Hills</h1><div class="nugget-popup"><p>Willow Brook experienced a sudden, short&ndash;lived surge in river level on the afternoon of 22/06/2023: a rapid rise to a peak then a gradual fall over the evening, indicating a transient river&ndash;flooding/flash response at Ash Street. [IMG] (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>peak ≈ 1.6 m river level [IMG] (p33)</p></div></div></body></div>`)[0];
+                popup_d754767173c4c665252f7e0791708490.setContent(html_fa6eda7f5c442e7c726e0e649ebf0074);
+            
+        
+
+        marker_96954cf598751d3ed9626150b7f6ba7e.bindPopup(popup_d754767173c4c665252f7e0791708490)
+        ;
+
+        
+    
+    
+            var marker_8d3c6ffa738f562db6a0fa96ef194fd6 = L.marker(
+                [52.6555589, -1.0595296],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_0fb57e564b3b2947c92928a8e3886db2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8d3c6ffa738f562db6a0fa96ef194fd6.setIcon(icon_0fb57e564b3b2947c92928a8e3886db2);
+        
+    
+        var popup_114fc11a581786c6c69844b6475de6fa = L.popup({});
+
+        
+            
+                var html_5bffcdd5658a3326977a02632d17328e = $(`<div id="html_5bffcdd5658a3326977a02632d17328e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burdock Close, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Start of an overland surface water flow route from open land at the rear of properties, causing surface water to affect Burdock Close. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_114fc11a581786c6c69844b6475de6fa.setContent(html_5bffcdd5658a3326977a02632d17328e);
+            
+        
+
+        marker_8d3c6ffa738f562db6a0fa96ef194fd6.bindPopup(popup_114fc11a581786c6c69844b6475de6fa)
+        ;
+
+        
+    
+    
+            var marker_a512c3c5585aeb0b77956c936076090c = L.marker(
+                [52.6447467, -1.087856],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_b04711bd1c5a6730434dd4bcbbb3abb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a512c3c5585aeb0b77956c936076090c.setIcon(icon_b04711bd1c5a6730434dd4bcbbb3abb0);
+        
+    
+        var popup_7e8fe99afe2ece5bce94bea716ad0cee = L.popup({});
+
+        
+            
+                var html_55b4de3496df51d29cfffa2680565e6a = $(`<div id="html_55b4de3496df51d29cfffa2680565e6a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hallaton Road, Humberstone</h1><div class="nugget-popup"><p>Included in the Lotus Road/Lily Road/Halation (Hallaton) Road grouping where the west end of the development is a low spot; pluvial/overland flows and a pumping&ndash;station discharge into Portway Brook contribute to localised surface&ndash;water flooding risk. (p34)</p></div></div></body></div>`)[0];
+                popup_7e8fe99afe2ece5bce94bea716ad0cee.setContent(html_55b4de3496df51d29cfffa2680565e6a);
+            
+        
+
+        marker_a512c3c5585aeb0b77956c936076090c.bindPopup(popup_7e8fe99afe2ece5bce94bea716ad0cee)
+        ;
+
+        
+    
+    
+            var marker_0db875d0438d3de7465817c0ec4bdab0 = L.marker(
+                [52.6383219, -1.105206],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_4708ef88261a931ee1d868227470631f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0db875d0438d3de7465817c0ec4bdab0.setIcon(icon_4708ef88261a931ee1d868227470631f);
+        
+    
+        var popup_f215f8bf1b6459df0f8330a8097c9f1b = L.popup({});
+
+        
+            
+                var html_30c91a19946ab5db98cbc52d6638a6b8 = $(`<div id="html_30c91a19946ab5db98cbc52d6638a6b8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Asfordby Street, Spinney Hills</h1><div class="nugget-popup"><p>Surface water collected in a low spot behind the flats, causing surface water flooding that affected properties on 22nd June 2023. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_f215f8bf1b6459df0f8330a8097c9f1b.setContent(html_30c91a19946ab5db98cbc52d6638a6b8);
+            
+        
+
+        marker_0db875d0438d3de7465817c0ec4bdab0.bindPopup(popup_f215f8bf1b6459df0f8330a8097c9f1b)
+        ;
+
+        
+    
+    
+            var marker_c1fe77a39d3f35786a3d3bbc5f8733d2 = L.marker(
+                [52.6439651, -1.0921023],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_d0829249f1b0cdc315e069d34c7f69e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c1fe77a39d3f35786a3d3bbc5f8733d2.setIcon(icon_d0829249f1b0cdc315e069d34c7f69e7);
+        
+    
+        var popup_1479117f3c2c051e4606f78d67779c9b = L.popup({});
+
+        
+            
+                var html_34271d206ccb3b30fb0d700a2343a8ec = $(`<div id="html_34271d206ccb3b30fb0d700a2343a8ec" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Portwey, North Evington</h1><div class="nugget-popup"><p>Surface water flows from the east (allotments site and Lotus Road development) along The Portway (sic); pumping/storm flows into the Portway Brook and low&ndash;lying sections led to flooding of The Portway and adjoining properties. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_1479117f3c2c051e4606f78d67779c9b.setContent(html_34271d206ccb3b30fb0d700a2343a8ec);
+            
+        
+
+        marker_c1fe77a39d3f35786a3d3bbc5f8733d2.bindPopup(popup_1479117f3c2c051e4606f78d67779c9b)
+        ;
+
+        
+    
+    
+            var marker_fda47c14825b94fdfcce6d4c2cad1321 = L.marker(
+                [52.6035925, -1.1193522],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_5a4163a9b0f2b4329471a723733a6b9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fda47c14825b94fdfcce6d4c2cad1321.setIcon(icon_5a4163a9b0f2b4329471a723733a6b9e);
+        
+    
+        var popup_e41ce4c40fb262914ea966aba559a245 = L.popup({});
+
+        
+            
+                var html_e97eee237337e659ad64e3b73257604c = $(`<div id="html_e97eee237337e659ad64e3b73257604c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Welford Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Pluvial low&ndash;spot above Saffron Brook led to surface&ndash;water flooding that affected properties on Welford Road. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_e41ce4c40fb262914ea966aba559a245.setContent(html_e97eee237337e659ad64e3b73257604c);
+            
+        
+
+        marker_fda47c14825b94fdfcce6d4c2cad1321.bindPopup(popup_e41ce4c40fb262914ea966aba559a245)
+        ;
+
+        
+    
+    
+            var marker_5dbca659e09436112409168577fb675f = L.marker(
+                [52.6242705, -1.0956914],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_a43fc6d861cdb3b461d483c84bcf6858 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5dbca659e09436112409168577fb675f.setIcon(icon_a43fc6d861cdb3b461d483c84bcf6858);
+        
+    
+        var popup_982d38eec08a465514fb033991262645 = L.popup({});
+
+        
+            
+                var html_979ceec88c07fa744a7ac05ccf7bf1d0 = $(`<div id="html_979ceec88c07fa744a7ac05ccf7bf1d0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Norwood Road, Leicester Unitary Authority</h1><div class="nugget-popup"><p>Identified as a source/flow route for surface water; surface water low spot and flows originating or routing from Norwood Road contributed to flooding along the downstream flow path. (p35)</p></div></div></body></div>`)[0];
+                popup_982d38eec08a465514fb033991262645.setContent(html_979ceec88c07fa744a7ac05ccf7bf1d0);
+            
+        
+
+        marker_5dbca659e09436112409168577fb675f.bindPopup(popup_982d38eec08a465514fb033991262645)
+        ;
+
+        
+    
+    
+            var marker_1d7db3975ff8197fda0ce257577ec372 = L.marker(
+                [52.587067, -1.0997802],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_49a06cd06d02e9a86dfb3d5d47e50f9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1d7db3975ff8197fda0ce257577ec372.setIcon(icon_49a06cd06d02e9a86dfb3d5d47e50f9e);
+        
+    
+        var popup_87ab3184b45c8dd952a0c1ff8897801d = L.popup({});
+
+        
+            
+                var html_085d41f4726256e06a31139473cfb1b6 = $(`<div id="html_085d41f4726256e06a31139473cfb1b6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oadby and Wigston</h1><div class="nugget-popup"><p>An intense thunderstorm on 22 June 2023 produced very high short&ndash;duration rainfall over Oadby and Wigston. The rainfall rates were reported as exceeding the design capacity of conventional drainage systems, so sewers in the area were likely to have surcharged and generated rapid overland flow toward low&ndash;lying areas. (p7)</p></div></div></body></div>`)[0];
+                popup_87ab3184b45c8dd952a0c1ff8897801d.setContent(html_085d41f4726256e06a31139473cfb1b6);
+            
+        
+
+        marker_1d7db3975ff8197fda0ce257577ec372.bindPopup(popup_87ab3184b45c8dd952a0c1ff8897801d)
+        ;
+
+        
+    
+    
+            var marker_687e1035728867712e3f0499a0c1692a = L.marker(
+                [52.68491375, -1.1847653085946246],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_1a7766363098a6b1ea31523e1a1429d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_687e1035728867712e3f0499a0c1692a.setIcon(icon_1a7766363098a6b1ea31523e1a1429d7);
+        
+    
+        var popup_a14da71687531dd0caef343db36c0c1e = L.popup({});
+
+        
+            
+                var html_007145e9694c55ca33e3ef534e134cc0 = $(`<div id="html_007145e9694c55ca33e3ef534e134cc0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Leicestershire</h1><div class="nugget-popup"><p>The 22 June 2023 storm produced localized very high rainfall totals across parts of Leicestershire (central and southern band shown on the rainfall map). These totals exceeded typical drainage design capacities in affected areas, leading to likely sewer surcharge and rapid overland flows in low&ndash;lying locations outside the city boundary. [IMG] (p7)</p></div></div></body></div>`)[0];
+                popup_a14da71687531dd0caef343db36c0c1e.setContent(html_007145e9694c55ca33e3ef534e134cc0);
+            
+        
+
+        marker_687e1035728867712e3f0499a0c1692a.bindPopup(popup_a14da71687531dd0caef343db36c0c1e)
+        ;
+
+        
+    
+    
+            var marker_79bfa450b21e4bc4b0598bb3d97f6da1 = L.marker(
+                [52.6152364, -1.1172746],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_b5fed3a2204fd3d06fb27decd03dd85d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_79bfa450b21e4bc4b0598bb3d97f6da1.setIcon(icon_b5fed3a2204fd3d06fb27decd03dd85d);
+        
+    
+        var popup_150ae188016e34a18d9d79a15842f3f5 = L.popup({});
+
+        
+            
+                var html_82c8b640ee0dc7df981a4890dd56d7d4 = $(`<div id="html_82c8b640ee0dc7df981a4890dd56d7d4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Clarendon Park</h1><div class="nugget-popup"><p>Area was affected by the flooding; parking suspensions were put in place in September and October 2023 to enable highway drainage crews to access and clean gullies and repair drainage infrastructure following the flood. (p10)</p></div><div class="nugget-popup"><p>Surface&ndash;water flooding affected the northern and western edges of Clarendon Park on the map. Flood Impact Areas are marked on St. Leonards Road, Cradock Road and near the Queens Road / Thurlow Road intersection; high flood risk is shown adjacent to the Education Facility and along Victoria Park Road. Surface water flow is shown moving from the north and west toward the centre/south&ndash;east, causing accumulation in residential streets and flood impact zones. [IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_150ae188016e34a18d9d79a15842f3f5.setContent(html_82c8b640ee0dc7df981a4890dd56d7d4);
+            
+        
+
+        marker_79bfa450b21e4bc4b0598bb3d97f6da1.bindPopup(popup_150ae188016e34a18d9d79a15842f3f5)
+        ;
+
+        
+    
+    
+            var marker_31c2fb00d2471560a2605e63ecaa5e82 = L.marker(
+                [52.6385926, -1.1087713],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_4e51b195312e19187cc8b6b5a516d240 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_31c2fb00d2471560a2605e63ecaa5e82.setIcon(icon_4e51b195312e19187cc8b6b5a516d240);
+        
+    
+        var popup_1857efd450677aa2631b3651a44014cb = L.popup({});
+
+        
+            
+                var html_ab37a9e50b779ee1dc78113314778393 = $(`<div id="html_ab37a9e50b779ee1dc78113314778393" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Spinney Hills</h1><div class="nugget-popup"><p>Area was affected by the flooding; parking suspensions were put in place in September and October 2023 to allow highway drainage maintenance crews to clean gullies and repair drainage infrastructure following the flood. (p10)</p></div><div class="nugget-popup"><p>Internal property flooding reported within the ward (Gwendolen Road, Evington Drive); flow routes cited along Evington Brook and from Norwood Road, with fluvial influence at Gwendolen Road. [TAB] (p16)</p></div><div class="nugget-popup"><p>Evington Brook at Spinney Hills Park recorded a rapid rise in river level on 22/06/2023, peaking at about 1.2 m around 17:15 and then declining through the evening. [IMG] (p33)</p></div><div class="nugget-popup"><p>The Spinney Hills ward experienced surface water flooding on multiple streets (including Gwendolen Road, Evington Drive and Linton Street), with low spots and flow routes producing inundation of streets and properties. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Ward contains streets described as having surface water low spots and being on surface&ndash;water flow routes (e.g. Gwendolen Road). Local topography and blocked flow routes caused surface water ponding and flow into residential areas. (p35)</p></div></div></body></div>`)[0];
+                popup_1857efd450677aa2631b3651a44014cb.setContent(html_ab37a9e50b779ee1dc78113314778393);
+            
+        
+
+        marker_31c2fb00d2471560a2605e63ecaa5e82.bindPopup(popup_1857efd450677aa2631b3651a44014cb)
+        ;
+
+        
+    
+    
+            var marker_918f94ac949447452e767476d347e47d = L.marker(
+                [52.6215407, -1.0722846],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_db3ab66b20a211c2b44656336a21063f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_918f94ac949447452e767476d347e47d.setIcon(icon_db3ab66b20a211c2b44656336a21063f);
+        
+    
+        var popup_216ee4039d21ee1ef9158ed4825e62c0 = L.popup({});
+
+        
+            
+                var html_5616858e0afdb7b56bff89e32b653d08 = $(`<div id="html_5616858e0afdb7b56bff89e32b653d08" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Evington</h1><div class="nugget-popup"><p>Internal property flooding reported in Evington ward (locations reported include Deepdale and Rockingham Close). Surface water flow route along Deepdale directed runoff north towards Green Lane Road and low spots in the area led to internal property flooding. [TAB] (p12)</p></div><div class="nugget-popup"><p>Evington Brook at Spinney Hills Park experienced a rapid rise in river level on the afternoon of 22/06/2023, peaking around 17:15 before gradually receding through the evening. [IMG] (p33)</p></div><div class="nugget-popup"><p>Overland surface&ndash;water / pluvial flows along Deepdale and low spots (e.g. Rockingham Close) caused flooding to properties in the Evington ward. [TAB,PAG] (p34)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>peak ≈ 1.2 m [IMG] (p33)</p></div></div></body></div>`)[0];
+                popup_216ee4039d21ee1ef9158ed4825e62c0.setContent(html_5616858e0afdb7b56bff89e32b653d08);
+            
+        
+
+        marker_918f94ac949447452e767476d347e47d.bindPopup(popup_216ee4039d21ee1ef9158ed4825e62c0)
+        ;
+
+        
+    
+    
+            var marker_9b768625923bd87dc16a9b7f0e3e3dc4 = L.marker(
+                [52.591011, -1.1454317],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_756dbcc2707a1b31e6cad994211c3adc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9b768625923bd87dc16a9b7f0e3e3dc4.setIcon(icon_756dbcc2707a1b31e6cad994211c3adc);
+        
+    
+        var popup_9021062c85797d143a0b741c1222ec0a = L.popup({});
+
+        
+            
+                var html_a7f6c875cf2d0ac211953d057e857315 = $(`<div id="html_a7f6c875cf2d0ac211953d057e857315" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Eyres Monsell</h1><div class="nugget-popup"><p>Internal property flooding reported at Tamerton Road where surface water flow routes join (two routes from the south and south&ndash;east), causing internal flooding of properties. [TAB] (p12)</p></div><div class="nugget-popup"><p>In the Eyres Monsell ward, surface&ndash;water flow routes joined on Tamerton Road causing high surface&ndash;water flooding and inundation of properties on Tamerton Road. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_9021062c85797d143a0b741c1222ec0a.setContent(html_a7f6c875cf2d0ac211953d057e857315);
+            
+        
+
+        marker_9b768625923bd87dc16a9b7f0e3e3dc4.bindPopup(popup_9021062c85797d143a0b741c1222ec0a)
+        ;
+
+        
+    
+    
+            var marker_41b0775e9d4da559f0840c427728e87c = L.marker(
+                [52.6072376, -1.1098891],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_5e02e1e12fe20ec76e84d532f47d22dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_41b0775e9d4da559f0840c427728e87c.setIcon(icon_5e02e1e12fe20ec76e84d532f47d22dc);
+        
+    
+        var popup_63ad75a19857284c5dbb23acb0cc70cc = L.popup({});
+
+        
+            
+                var html_ab2d7d624e1a2c7f1f5a082b4cea31ea = $(`<div id="html_ab2d7d624e1a2c7f1f5a082b4cea31ea" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Knighton</h1><div class="nugget-popup"><p>Internal property flooding reported in the ward; surface water flow routes following Hol Brook and pluvial low spots caused inundation of properties on roads listed in the ward. [TAB] (p14)</p></div><div class="nugget-popup"><p>Surface water flow routes followed the line of Hol Brook and along Knighton Church Road/Knighton Road, producing low&ndash;to&ndash;medium surface&ndash;water flood risk with overland flows toward Westernhay Road and localised roadway/property inundation in the Knighton area. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_63ad75a19857284c5dbb23acb0cc70cc.setContent(html_ab2d7d624e1a2c7f1f5a082b4cea31ea);
+            
+        
+
+        marker_41b0775e9d4da559f0840c427728e87c.bindPopup(popup_63ad75a19857284c5dbb23acb0cc70cc)
+        ;
+
+        
+    
+    
+            var marker_a4e05547a7be6dd5d3bdcbc62988b5e1 = L.marker(
+                [52.6404528, -1.0969686],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_204ce3791f68bc5f0f04e9ef04b254c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a4e05547a7be6dd5d3bdcbc62988b5e1.setIcon(icon_204ce3791f68bc5f0f04e9ef04b254c7);
+        
+    
+        var popup_8f9155a8a646a07f4c4e9cf980b210c6 = L.popup({});
+
+        
+            
+                var html_d9c0e75e062823869cb022626e2b6316 = $(`<div id="html_d9c0e75e062823869cb022626e2b6316" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North Evington</h1><div class="nugget-popup"><p>Internal property flooding reported within the ward associated with surface water runoff and local low spots/flow routes. [TAB] (p15)</p></div><div class="nugget-popup"><p>Area&ndash;level surface&ndash;water flooding in North Evington, with concentrated flood risk along The Littleway, Clumber Road and surrounding streets; Flood Impact Areas outlined on the map indicate parts of the neighbourhood were affected. [IMG] (p32)</p></div><div class="nugget-popup"><p>Pluvial and surface&ndash;water flooding across multiple streets (Welford Road; Lotus/Lily/Halation Road area; The Littleway; Asfordby Street; The Portway; Clumber Road; Green Lane Road) &mdash; low spots, blocked flow routes and a pumping&ndash;station discharge to the Portway Brook contributed to properties being flooded. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_8f9155a8a646a07f4c4e9cf980b210c6.setContent(html_d9c0e75e062823869cb022626e2b6316);
+            
+        
+
+        marker_a4e05547a7be6dd5d3bdcbc62988b5e1.bindPopup(popup_8f9155a8a646a07f4c4e9cf980b210c6)
+        ;
+
+        
+    
+    
+            var marker_bc05fe79fa0bfde49b001c5e255b91ee = L.marker(
+                [52.6196528, -1.1038861],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_4db858ebf54984f740b08965794cb4fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bc05fe79fa0bfde49b001c5e255b91ee.setIcon(icon_4db858ebf54984f740b08965794cb4fd);
+        
+    
+        var popup_916c33e317b070b846e1d95589d747f1 = L.popup({});
+
+        
+            
+                var html_d197e39297250bfdc060c7e3be601305 = $(`<div id="html_d197e39297250bfdc060c7e3be601305" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stoneygate</h1><div class="nugget-popup"><p>Area adjacent to Evington Brook experienced surface water flooding; roads (including Evington Road and Mervyn Road) were low spots/flow routes causing flooding of the local road network and properties. [TAB,PAG] (p34)</p></div></div></body></div>`)[0];
+                popup_916c33e317b070b846e1d95589d747f1.setContent(html_d197e39297250bfdc060c7e3be601305);
+            
+        
+
+        marker_bc05fe79fa0bfde49b001c5e255b91ee.bindPopup(popup_916c33e317b070b846e1d95589d747f1)
+        ;
+
+        
+    
+    
+            var marker_eed781c5c3b2242d0b755b39a3ec335a = L.marker(
+                [52.6647556, -1.1049633],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_1c10fbae0a983b0024e07c901b75a89b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eed781c5c3b2242d0b755b39a3ec335a.setIcon(icon_1c10fbae0a983b0024e07c901b75a89b);
+        
+    
+        var popup_155048ce5cc46fbac16de1babd7b875b = L.popup({});
+
+        
+            
+                var html_f6db1f994f0f65c99e5baa95b9417351 = $(`<div id="html_f6db1f994f0f65c99e5baa95b9417351" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rushey Mead</h1><div class="nugget-popup"><p>Internal property flooding reported in the ward (Canon Street), at a low spot location. [TAB] (p16)</p></div><div class="nugget-popup"><p>Low&ndash;lying areas (e.g. Halstead Street and Canon Street) formed pluvial/ surface water low spots leading to inundation of properties and localized flooding. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_155048ce5cc46fbac16de1babd7b875b.setContent(html_f6db1f994f0f65c99e5baa95b9417351);
+            
+        
+
+        marker_eed781c5c3b2242d0b755b39a3ec335a.bindPopup(popup_155048ce5cc46fbac16de1babd7b875b)
+        ;
+
+        
+    
+    
+            var marker_cd15c483798ad6651ab054e7ef9f256b = L.marker(
+                [52.6463523, -1.0799397],
+                {}
+            ).addTo(map_2c9092b1bcc9264f5903d91b0a4f9a04);
+        
+    
+            var icon_3b78720caf6c83cdfaca698c7e7ba134 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cd15c483798ad6651ab054e7ef9f256b.setIcon(icon_3b78720caf6c83cdfaca698c7e7ba134);
+        
+    
+        var popup_5ec84f4f0d1f168174f79d78bf669cd9 = L.popup({});
+
+        
+            
+                var html_92cd1838fd4c5312b587ce4deda2f626 = $(`<div id="html_92cd1838fd4c5312b587ce4deda2f626" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Humberstone</h1><div class="nugget-popup"><p>Residential parts of Humberstone adjacent to Portwey Brook were within high, medium and low surface&ndash;water flood risk zones; two main red&ndash;outlined flood impact areas are clustered beside the brook, with surface water flowing through streets into the brook and concentrating in those zones. [IMG] (p31)</p></div></div></body></div>`)[0];
+                popup_5ec84f4f0d1f168174f79d78bf669cd9.setContent(html_92cd1838fd4c5312b587ce4deda2f626);
+            
+        
+
+        marker_cd15c483798ad6651ab054e7ef9f256b.bindPopup(popup_5ec84f4f0d1f168174f79d78bf669cd9)
+        ;
+
+        
+    
+</script>
+</html>
