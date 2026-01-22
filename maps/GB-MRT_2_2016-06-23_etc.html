@@ -1,0 +1,1988 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5edaa01ab0bdf0f77019ebbe4ff9c9d9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5edaa01ab0bdf0f77019ebbe4ff9c9d9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5edaa01ab0bdf0f77019ebbe4ff9c9d9 = L.map(
+                "map_5edaa01ab0bdf0f77019ebbe4ff9c9d9",
+                {
+                    center: [51.41243349877962, -0.21662826810125038],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_850435ef6b02705ff5c6a6241be964ae = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_850435ef6b02705ff5c6a6241be964ae.addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+    
+            var marker_1a830257363925a1956b9224f08ce06f = L.marker(
+                [51.4106161, -0.2221013],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_b0af3595a890df752084cfa9444690c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1a830257363925a1956b9224f08ce06f.setIcon(icon_b0af3595a890df752084cfa9444690c7);
+        
+    
+        var popup_6d3bb6b5df7a2e53223e89d11f4aa0c4 = L.popup({});
+
+        
+            
+                var html_4df461e662af4b6c491e3db0d980595a = $(`<div id="html_4df461e662af4b6c491e3db0d980595a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dundonald Church</h1><div class="nugget-popup"><p>Included within the Abbott Avenue / Cottenham Park area affected by flooding caused by foul and surface water sewer network issues; the location was identified for review and incorporation into drainage modelling and Thames Water asset records. (p4)</p></div><div class="nugget-popup"><p>Location (Abbott Avenue including Dundonald Church) experienced sewer flooding that met the Section 19 investigation threshold. Flooding occurred during the June 2016 and July 2017 events (recorded sewer return periods 1 in 24 yr for June 2016 and 1 in 3 yr for July 2017). [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>Internal flooding occurred in June 2016 caused by a surcharging manhole during the event. (p42)</p></div><div class="nugget-popup"><p>Recorded episodes of intense short&ndash;duration rainfall on 23 June 2016 led to localised surface water flooding affecting the church grounds and access routes. [TAB] (p88)</p></div></div></body></div>`)[0];
+                popup_6d3bb6b5df7a2e53223e89d11f4aa0c4.setContent(html_4df461e662af4b6c491e3db0d980595a);
+            
+        
+
+        marker_1a830257363925a1956b9224f08ce06f.bindPopup(popup_6d3bb6b5df7a2e53223e89d11f4aa0c4)
+        ;
+
+        
+    
+    
+            var marker_00a418e50eac694106cc4880197fd3a1 = L.marker(
+                [51.15344, -0.181805],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_a7ba9a337b1209ed05fd88b8928fa319 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_00a418e50eac694106cc4880197fd3a1.setIcon(icon_a7ba9a337b1209ed05fd88b8928fa319);
+        
+    
+        var popup_eba06952cd074be556cce4d29e50d0ba = L.popup({});
+
+        
+            
+                var html_e5c635e38c8ce4bd8f436c94d20f7f02 = $(`<div id="html_e5c635e38c8ce4bd8f436c94d20f7f02" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gatwick</h1><div class="nugget-popup"><p>Heavy showers on 29&ndash;30 July 2017 led to delayed flights at Gatwick Airport due to flooding&ndash;related disruption to operations. (p16)</p></div></div></body></div>`)[0];
+                popup_eba06952cd074be556cce4d29e50d0ba.setContent(html_e5c635e38c8ce4bd8f436c94d20f7f02);
+            
+        
+
+        marker_00a418e50eac694106cc4880197fd3a1.bindPopup(popup_eba06952cd074be556cce4d29e50d0ba)
+        ;
+
+        
+    
+    
+            var marker_ab7d697f77264d80e5a5996d61609672 = L.marker(
+                [51.4382776, -0.2066459],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_7c588c9de036d4856b5f474cebb57ffb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ab7d697f77264d80e5a5996d61609672.setIcon(icon_7c588c9de036d4856b5f474cebb57ffb);
+        
+    
+        var popup_59cf23a69d908b290230e9d0181f62ba = L.popup({});
+
+        
+            
+                var html_655a45141c1f49335dcbdb66aaf063ff = $(`<div id="html_655a45141c1f49335dcbdb66aaf063ff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wimbledon Park</h1><div class="nugget-popup"><p>The Wimbledon Park ward experienced flooding in June 2016 affecting Mount Road, Acuba Road and Brooklands Avenue, as recorded on TWUL sewer gauges. [TAB] (p21)</p></div><div class="nugget-popup"><p>The Wimbledon Park ward location experienced a surface water/sewer flooding incident on 23 June 2016 that lasted about 12 hours and caused internal flooding (including basement flooding) and reports of foul sewage on the road. (p65)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>more than two properties (p65)</p></div></div></body></div>`)[0];
+                popup_59cf23a69d908b290230e9d0181f62ba.setContent(html_655a45141c1f49335dcbdb66aaf063ff);
+            
+        
+
+        marker_ab7d697f77264d80e5a5996d61609672.bindPopup(popup_59cf23a69d908b290230e9d0181f62ba)
+        ;
+
+        
+    
+    
+            var marker_a9752cc1f621d5e86f9dc1faefd6ddbc = L.marker(
+                [51.4038921, -0.2181221],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_c813858bd583ab968380b8a062bc543b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a9752cc1f621d5e86f9dc1faefd6ddbc.setIcon(icon_c813858bd583ab968380b8a062bc543b);
+        
+    
+        var popup_a1c8fb76ad6e51b29ceaa63132ad78cb = L.popup({});
+
+        
+            
+                var html_9b7de456c176dc561d8b7c325cc5de0e = $(`<div id="html_9b7de456c176dc561d8b7c325cc5de0e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Joseph Hood Recreation Ground</h1><div class="nugget-popup"><p>Runoff from Joseph Hood Recreation Ground slopes down to Whatley Avenue and increased flows into the local drainage network, contributing to the sewer surcharge and flooding at the junction with Martin Way. (p27)</p></div></div></body></div>`)[0];
+                popup_a1c8fb76ad6e51b29ceaa63132ad78cb.setContent(html_9b7de456c176dc561d8b7c325cc5de0e);
+            
+        
+
+        marker_a9752cc1f621d5e86f9dc1faefd6ddbc.bindPopup(popup_a1c8fb76ad6e51b29ceaa63132ad78cb)
+        ;
+
+        
+    
+    
+            var marker_1153dcc40d9c6c8e585cb2c3a757fa9f = L.marker(
+                [51.4007176, -0.2213205],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_996b1fe7a0a48c41c7f34e350bd12827 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1153dcc40d9c6c8e585cb2c3a757fa9f.setIcon(icon_996b1fe7a0a48c41c7f34e350bd12827);
+        
+    
+        var popup_5e887d4bced4259b89f7dfc3ebf76f41 = L.popup({});
+
+        
+            
+                var html_a650a119ca3ec11ca5496f78e948217e = $(`<div id="html_a650a119ca3ec11ca5496f78e948217e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cannon Hill Common</h1><div class="nugget-popup"><p>Surface runoff from Cannon Hill Common slopes down towards Whatley Avenue, contributing additional flow into the local drainage network and exacerbating the sewer surcharge and flooding at the Martin Way/Whatley Avenue junction. (p27)</p></div></div></body></div>`)[0];
+                popup_5e887d4bced4259b89f7dfc3ebf76f41.setContent(html_a650a119ca3ec11ca5496f78e948217e);
+            
+        
+
+        marker_1153dcc40d9c6c8e585cb2c3a757fa9f.bindPopup(popup_5e887d4bced4259b89f7dfc3ebf76f41)
+        ;
+
+        
+    
+    
+            var marker_2ef411b48bdcd59f16d2ebc5ba9b0196 = L.marker(
+                [51.39991886030812, -0.21253423147239492],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_e82fed17936fb1ca2fc7ac2cb4f52f78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2ef411b48bdcd59f16d2ebc5ba9b0196.setIcon(icon_e82fed17936fb1ca2fc7ac2cb4f52f78);
+        
+    
+        var popup_d229a7955268933c8ea111e0bfd60996 = L.popup({});
+
+        
+            
+                var html_50b20c718a5dd136376a0399e9b2b632 = $(`<div id="html_50b20c718a5dd136376a0399e9b2b632" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cannon Hill Ward</h1><div class="nugget-popup"><p>The Cannon Hill ward contained locations (Whatley Avenue and Martin Way) that flooded during the June 2016 event. [TAB] (p21)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 flooded location (Whatley Avenue and Martin Way listed as Flooding Location 1) [TAB] (p21)</p></div></div></body></div>`)[0];
+                popup_d229a7955268933c8ea111e0bfd60996.setContent(html_50b20c718a5dd136376a0399e9b2b632);
+            
+        
+
+        marker_2ef411b48bdcd59f16d2ebc5ba9b0196.bindPopup(popup_d229a7955268933c8ea111e0bfd60996)
+        ;
+
+        
+    
+    
+            var marker_6644cd5393a180ce317ce9ebc35965dc = L.marker(
+                [51.41498080896432, -0.19117607564863762],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_83ca8d7848483849e0f81af2e34e9d6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6644cd5393a180ce317ce9ebc35965dc.setIcon(icon_83ca8d7848483849e0f81af2e34e9d6b);
+        
+    
+        var popup_f9ac06985d0b29027294ced8dc36807d = L.popup({});
+
+        
+            
+                var html_b3e4ee4c67c3680c9117597a783464e5 = $(`<div id="html_b3e4ee4c67c3680c9117597a783464e5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Abbey Ward</h1><div class="nugget-popup"><p>The Abbey ward experienced flooding (notably at Merantun Way and Morden Road) during the reported storm events. [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>The junction of Merantun Way and Morden Road, located in Abbey ward, experienced repeated surface water flooding leading to closure of this critical highway within the ward. [MUL] (p70)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>three occasions (one in 2016 and two in 2017); 300 to 600 mm and 600 to 1000 mm depth ranges as recorded at the junction [MUL] (p70)</p></div></div></body></div>`)[0];
+                popup_f9ac06985d0b29027294ced8dc36807d.setContent(html_b3e4ee4c67c3680c9117597a783464e5);
+            
+        
+
+        marker_6644cd5393a180ce317ce9ebc35965dc.bindPopup(popup_f9ac06985d0b29027294ced8dc36807d)
+        ;
+
+        
+    
+    
+            var marker_bf1e9fc54d3b58f221f68ebf38a602c4 = L.marker(
+                [51.424159566202334, -0.194406632473065],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_fcf4eb2ad3f93e3e1a6ebd7d7eed9d2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bf1e9fc54d3b58f221f68ebf38a602c4.setIcon(icon_fcf4eb2ad3f93e3e1a6ebd7d7eed9d2b);
+        
+    
+        var popup_8b533401a58f79a09eab08ba7fab6dc1 = L.popup({});
+
+        
+            
+                var html_33e11b96521f222de91d6576218dc69b = $(`<div id="html_33e11b96521f222de91d6576218dc69b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Trinity Ward</h1><div class="nugget-popup"><p>The ward experienced flooding at Effra Road on 23 June 2016 (recorded sewer return period 1 in 21 years). [TAB] (p21)</p></div><div class="nugget-popup"><p>Contains Effra Road where the June 2016 surface water / sewer flooding event occurred; the incident reached the council's Section 19 investigation threshold and caused internal flooding to residential properties within the ward. (p55)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two residential properties (p55)</p></div></div></body></div>`)[0];
+                popup_8b533401a58f79a09eab08ba7fab6dc1.setContent(html_33e11b96521f222de91d6576218dc69b);
+            
+        
+
+        marker_bf1e9fc54d3b58f221f68ebf38a602c4.bindPopup(popup_8b533401a58f79a09eab08ba7fab6dc1)
+        ;
+
+        
+    
+    
+            var marker_8ac8d1fae7a6d4b31099ab0ff4ca22fc = L.marker(
+                [51.41499274173446, -0.21041370263625875],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_a7d0493e95cc348d42b29c48498d25ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8ac8d1fae7a6d4b31099ab0ff4ca22fc.setIcon(icon_a7d0493e95cc348d42b29c48498d25ea);
+        
+    
+        var popup_261f0d4d10950961e3b9345394d7da5d = L.popup({});
+
+        
+            
+                var html_82b8a42e379183a645fdd410de397dda = $(`<div id="html_82b8a42e379183a645fdd410de397dda" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dundonald Ward</h1><div class="nugget-popup"><p>The ward contains Abbott Avenue and a significant pumping station; foul sewers surcharged in the ward during the June 2016 and July 2017 events, producing internal flooding at low points. [MUL] (p42)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 incidents reached Section 19 threshold [MUL] (p42)</p></div></div></body></div>`)[0];
+                popup_261f0d4d10950961e3b9345394d7da5d.setContent(html_82b8a42e379183a645fdd410de397dda);
+            
+        
+
+        marker_8ac8d1fae7a6d4b31099ab0ff4ca22fc.bindPopup(popup_261f0d4d10950961e3b9345394d7da5d)
+        ;
+
+        
+    
+    
+            var marker_52207e16ac371ff3943ee0f3e27c7b08 = L.marker(
+                [51.4037983, -0.2433798],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_35ca9910040f88af680fc6ebaed6c249 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_52207e16ac371ff3943ee0f3e27c7b08.setIcon(icon_35ca9910040f88af680fc6ebaed6c249);
+        
+    
+        var popup_388e4b3259d86ebf45b492c7c9664b0f = L.popup({});
+
+        
+            
+                var html_93e3ff98955f6e36cdbd024ca3e1e886 = $(`<div id="html_93e3ff98955f6e36cdbd024ca3e1e886" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pyl Brook</h1><div class="nugget-popup"><p>The culverted Pyl Brook runs behind properties on West Barnes Lane (and behind properties on the Westway) and received/transported surface water runoff during the incidents. The culvert and associated surface water sewer connections formed part of the flow path that contributed to flooding of rear gardens and properties on the eastern side of West Barnes Lane and adjacent private access land. [PAG,MUL] (p59)</p></div><div class="nugget-popup"><p>The culverted Pyl Brook (650 m culverted length in this location) runs behind properties and is the local low point; limited capacity/flow within the culvert and connections from surface water sewers led to ponding and inundation of adjacent properties and private land during the 2016 and 2017 incidents. Flows progress northwest towards the A3 and into the Beverley Brook at the borough boundary. [PAG,MUL] (p60)</p></div><div class="nugget-popup"><p>The culverted Pyl Brook is identified as the local low point where surface&ndash;water runoff would collect; this contributed to surface&ndash;water flooding of adjacent streets/properties during the 2016 and 2017 events. [PAG,MUL] (p61)</p></div><div class="nugget-popup"><p>Surface water sewers that discharge to the Pyl Brook contributed to surcharges and backflows in the local sewer network, which in turn contributed to flooding at the Burlington Road / Shannon Corner underpass. [MUL] (p79)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 in 30 year; 1 in 2 year; 1 in 4 year return periods (TWUL&ndash;estimated incidents at Shannon Corner) [MUL] (p79)</p></div></div></body></div>`)[0];
+                popup_388e4b3259d86ebf45b492c7c9664b0f.setContent(html_93e3ff98955f6e36cdbd024ca3e1e886);
+            
+        
+
+        marker_52207e16ac371ff3943ee0f3e27c7b08.bindPopup(popup_388e4b3259d86ebf45b492c7c9664b0f)
+        ;
+
+        
+    
+    
+            var marker_636d61e5f43ad8f878faad40aea40bd0 = L.marker(
+                [51.3900424, -0.2087805],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_e3db49718d47e5aaf12718c891fd05a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_636d61e5f43ad8f878faad40aea40bd0.setIcon(icon_e3db49718d47e5aaf12718c891fd05a6);
+        
+    
+        var popup_635efc29d6f337f86996d92e2f1b785d = L.popup({});
+
+        
+            
+                var html_11af63b65c65d91893a689d3c0e9a748 = $(`<div id="html_11af63b65c65d91893a689d3c0e9a748" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Pyl Brook</h1><div class="nugget-popup"><p>A blocked TWUL surface water sewer adjacent to Hatfeild Primary School prevented runoff discharging into the East Pyl Brook, contributing to surface&ndash;water/sewer&ndash;related flooding at Lower Morden Lane that was constrained to the highway (no properties affected). [MUL] (p78)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>three events; no properties affected [MUL] (p78)</p></div></div></body></div>`)[0];
+                popup_635efc29d6f337f86996d92e2f1b785d.setContent(html_11af63b65c65d91893a689d3c0e9a748);
+            
+        
+
+        marker_636d61e5f43ad8f878faad40aea40bd0.bindPopup(popup_635efc29d6f337f86996d92e2f1b785d)
+        ;
+
+        
+    
+    
+            var marker_47ef3f11aa20805ceb2bf1f19663e10e = L.marker(
+                [51.4096275, -0.3062621],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_210dacc863a105c30d8b42645654edb5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_47ef3f11aa20805ceb2bf1f19663e10e.setIcon(icon_210dacc863a105c30d8b42645654edb5);
+        
+    
+        var popup_5876b6457c02ab1a8d896a0ea2884e67 = L.popup({});
+
+        
+            
+                var html_eb45f448fb9ff295016705d246166db0 = $(`<div id="html_eb45f448fb9ff295016705d246166db0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>London Borough of Kingston Upon Thames</h1><div class="nugget-popup"><p>Flooding affected polling stations in the Royal Borough of Kingston upon Thames, causing disruption and impacting polling locations on 23 June 2016. (p16)</p></div></div></body></div>`)[0];
+                popup_5876b6457c02ab1a8d896a0ea2884e67.setContent(html_eb45f448fb9ff295016705d246166db0);
+            
+        
+
+        marker_47ef3f11aa20805ceb2bf1f19663e10e.bindPopup(popup_5876b6457c02ab1a8d896a0ea2884e67)
+        ;
+
+        
+    
+    
+            var marker_72bc31d03ba9f9497c660964af63ec82 = L.marker(
+                [51.5073219, -0.1276474],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_a181b44c77c1aa8be2934e8516f9e8fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_72bc31d03ba9f9497c660964af63ec82.setIcon(icon_a181b44c77c1aa8be2934e8516f9e8fa);
+        
+    
+        var popup_9172c07e7683378148af5a9055f911da = L.popup({});
+
+        
+            
+                var html_68e22adf418a7d60d7c350e484665ad8 = $(`<div id="html_68e22adf418a7d60d7c350e484665ad8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>London Region</h1><div class="nugget-popup"><p>Widespread surface&ndash;water/flash flooding during the three rainfall events caused disruption to roads and railway lines across south London, led to station closures and flight/highway delays, and resulted in multiple locations in the London Borough of Merton meeting the Section 19 investigation threshold. [PAG,MUL] (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 locations; 5 locations; 3 locations [PAG,MUL] (p16)</p></div></div></body></div>`)[0];
+                popup_9172c07e7683378148af5a9055f911da.setContent(html_68e22adf418a7d60d7c350e484665ad8);
+            
+        
+
+        marker_72bc31d03ba9f9497c660964af63ec82.bindPopup(popup_9172c07e7683378148af5a9055f911da)
+        ;
+
+        
+    
+    
+            var marker_08a251ba8fc12b8ef57c7a81110b9fda = L.marker(
+                [51.4570271, -0.1932607],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_c8c4d417a8b0ab1d1ff3bcbf7d7bbe62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_08a251ba8fc12b8ef57c7a81110b9fda.setIcon(icon_c8c4d417a8b0ab1d1ff3bcbf7d7bbe62);
+        
+    
+        var popup_e66334073a75a1239c37278204139a9e = L.popup({});
+
+        
+            
+                var html_9da756d7170a86d40ce62b33750394e7 = $(`<div id="html_9da756d7170a86d40ce62b33750394e7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>London Borough of Wandsworth</h1><div class="nugget-popup"><p>The London Borough of Wandsworth experienced rail disruption including the closure of Balham Station during heavy showers on 29&ndash;30 July 2017 related to flooding. (p16)</p></div><div class="nugget-popup"><p>Flooding from the intense rainfall event crossed the borough boundary and affected areas within the London Borough of Wandsworth. (p65)</p></div><div class="nugget-popup"><p>Gullies on Acuba Road are maintained annually by the borough; the authority recorded no actions during or after the incident despite sewer surcharging at the location contributing to local flooding. [TAB,MUL] (p69)</p></div></div></body></div>`)[0];
+                popup_e66334073a75a1239c37278204139a9e.setContent(html_9da756d7170a86d40ce62b33750394e7);
+            
+        
+
+        marker_08a251ba8fc12b8ef57c7a81110b9fda.bindPopup(popup_e66334073a75a1239c37278204139a9e)
+        ;
+
+        
+    
+    
+            var marker_68e7c0184c5e811fff318365fb20d841 = L.marker(
+                [51.443024376747985, -0.15202507304724897],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_7554ef28eeabfb2e35f8b71306b1934f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_68e7c0184c5e811fff318365fb20d841.setIcon(icon_7554ef28eeabfb2e35f8b71306b1934f);
+        
+    
+        var popup_d84b82bfdf7ce12fe7683f276e627a23 = L.popup({});
+
+        
+            
+                var html_1132223dadea96f1f73ac6ef5ca135d9 = $(`<div id="html_1132223dadea96f1f73ac6ef5ca135d9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Balham Station</h1><div class="nugget-popup"><p>Closure of Balham Station on 29&ndash;30 July 2017 caused by heavy showers / flooding, disrupting rail services. (p16)</p></div></div></body></div>`)[0];
+                popup_d84b82bfdf7ce12fe7683f276e627a23.setContent(html_1132223dadea96f1f73ac6ef5ca135d9);
+            
+        
+
+        marker_68e7c0184c5e811fff318365fb20d841.bindPopup(popup_d84b82bfdf7ce12fe7683f276e627a23)
+        ;
+
+        
+    
+    
+            var marker_536be388ba225b4c230ce9a38c7720ce = L.marker(
+                [51.4181385, -0.17784],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_254796bf0dcd7926c101aff611c8cf1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_536be388ba225b4c230ce9a38c7720ce.setIcon(icon_254796bf0dcd7926c101aff611c8cf1f);
+        
+    
+        var popup_7d426b1d46f6a1c37706ea2528b0b320 = L.popup({});
+
+        
+            
+                var html_d39c5787f35437839f83d8b896f8d620 = $(`<div id="html_d39c5787f35437839f83d8b896f8d620" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Colliers Wood Station</h1><div class="nugget-popup"><p>The area around Colliers Wood Station is recorded as having experienced flooding in the report (return period recorded for the June 2016 event). [TAB] (p21)</p></div></div></body></div>`)[0];
+                popup_7d426b1d46f6a1c37706ea2528b0b320.setContent(html_d39c5787f35437839f83d8b896f8d620);
+            
+        
+
+        marker_536be388ba225b4c230ce9a38c7720ce.bindPopup(popup_7d426b1d46f6a1c37706ea2528b0b320)
+        ;
+
+        
+    
+    
+            var marker_bed472ef4d7a1f36e275115d86d54a7b = L.marker(
+                [51.408966, -0.23054],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_71ef1ada5247a4a47f0fa5aa30832dc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bed472ef4d7a1f36e275115d86d54a7b.setIcon(icon_71ef1ada5247a4a47f0fa5aa30832dc5);
+        
+    
+        var popup_928e16871d9f6b470c5dedf205512248 = L.popup({});
+
+        
+            
+                var html_67a330c826af1a141d813810d541cabe = $(`<div id="html_67a330c826af1a141d813810d541cabe" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Raynes Park Station</h1><div class="nugget-popup"><p>Adjacent to the station the main surface water sewers and highway gullies around the Raynes Park railway bridge were associated with flood incidents; four gullies directly underneath the railway bridge (adjacent to the station) were not accessible for cleaning prior to being addressed in April 2017, and these gullies were implicated in local surface&ndash;water drainage failures that contributed to transport risk during flood events. (p37)</p></div></div></body></div>`)[0];
+                popup_928e16871d9f6b470c5dedf205512248.setContent(html_67a330c826af1a141d813810d541cabe);
+            
+        
+
+        marker_bed472ef4d7a1f36e275115d86d54a7b.bindPopup(popup_928e16871d9f6b470c5dedf205512248)
+        ;
+
+        
+    
+    
+            var marker_01f40550f1633fc54721a150226c6aad = L.marker(
+                [51.4050242, -0.2977428],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_33cc13dc221a5840a59a83353a7bf213 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_01f40550f1633fc54721a150226c6aad.setIcon(icon_33cc13dc221a5840a59a83353a7bf213);
+        
+    
+        var popup_4b73ff68e3b9a24d2b2e7377bcad5bcf = L.popup({});
+
+        
+            
+                var html_bf17b6f4ea2f9bfa2ad62a3d53112f9a = $(`<div id="html_bf17b6f4ea2f9bfa2ad62a3d53112f9a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Hogsmill</h1><div class="nugget-popup"><p>Recorded one of the largest short&ndash;duration rainfall peaks during the 29/30 July 2017 event; this intense, concentrated rainfall was associated with localised surface water flooding at the monitored Hogsmill location and contributed to local flood impacts. [IMG,MUL] (p19)</p></div></div></body></div>`)[0];
+                popup_4b73ff68e3b9a24d2b2e7377bcad5bcf.setContent(html_bf17b6f4ea2f9bfa2ad62a3d53112f9a);
+            
+        
+
+        marker_01f40550f1633fc54721a150226c6aad.bindPopup(popup_4b73ff68e3b9a24d2b2e7377bcad5bcf)
+        ;
+
+        
+    
+    
+            var marker_aae7f9da5026b40db35ed132f9b6092d = L.marker(
+                [51.5254987, -0.4985196],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_45493e5044bf5dd9642fcacd9dae4cb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aae7f9da5026b40db35ed132f9b6092d.setIcon(icon_45493e5044bf5dd9642fcacd9dae4cb8);
+        
+    
+        var popup_3576d4f90c62e59c8b9e2503772e650b = L.popup({});
+
+        
+            
+                var html_25424ebfd86f4df2e1ba9b74615630b4 = $(`<div id="html_25424ebfd86f4df2e1ba9b74615630b4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>M25</h1><div class="nugget-popup"><p>On 09 Aug 2017 heavy thunderstorms caused significant problems on major highways including the M25, with flooding&ndash;related disruption to traffic. (p16)</p></div></div></body></div>`)[0];
+                popup_3576d4f90c62e59c8b9e2503772e650b.setContent(html_25424ebfd86f4df2e1ba9b74615630b4);
+            
+        
+
+        marker_aae7f9da5026b40db35ed132f9b6092d.bindPopup(popup_3576d4f90c62e59c8b9e2503772e650b)
+        ;
+
+        
+    
+    
+            var marker_9254fc7e16058d3e272cc7898944edce = L.marker(
+                [51.4051686, -0.2195869],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_bc0d407ca4be40571e1a808adf10d0f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9254fc7e16058d3e272cc7898944edce.setIcon(icon_bc0d407ca4be40571e1a808adf10d0f4);
+        
+    
+        var popup_2ffe338b3d8d024e5401be5b1c1be5b3 = L.popup({});
+
+        
+            
+                var html_eceeb117ff73fbf8d3018416283b36f8 = $(`<div id="html_eceeb117ff73fbf8d3018416283b36f8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Whatley Avenue, Raynes Park</h1><div class="nugget-popup"><p>Foul sewer at the junction and the combined sewer network adjacent to Bushey Road experienced hydraulic overflow / capacity issues likely caused by misconnections or private drainage, contributing to flooding at Whatley Avenue. (p4)</p></div><div class="nugget-popup"><p>Street experienced sewer&ndash;related flooding during the June 2016 event; recorded sewer gauge indicated a 1&ndash;in&ndash;24&ndash;year return period for that storm. [TAB] (p21)</p></div><div class="nugget-popup"><p>Flooding concentrated at the local low point at the junction with Martin Way: internal flooding of properties where flows were channelled down Whatley Avenue towards the junction. Flooding started at about 09:00 on 23 June 2016 and lasted about 12 hours. [PAG] (p23)</p></div><div class="nugget-popup"><p>Surface water ponding/channelled to a local low point at the junction with Martin Way causing flooding at that junction; nearby properties set lower than the highway were affected. Highway gullies on Whatley Avenue (excluding the eastern part) were on Merton's high priority cleansing programme and had last been cleaned in January&ndash;February 2016 prior to the incident. [PAG,MUL] (p24)</p></div><div class="nugget-popup"><p>Properties on/near Whatley Avenue experienced internal flooding (confirmed by contractors on 23 June 2016); the main trunk sewer serving the area was running at full capacity during the event; as part of the response the foul sewer on Whatley Avenue (either side of the junction with Martin Way) was cleaned on 28 July 2016. [TAB,MUL] (p26)</p></div><div class="nugget-popup"><p>Runoff from higher ground (Cannon Hill Common and Joseph Hood Recreation Ground) and surcharge of local surface water and foul sewers caused flooding at low&ndash;level locations near the junction with Martin Way; gullies were overwhelmed and properties flooded. [PAG] (p27)</p></div><div class="nugget-popup"><p>A 750 mm surface water sewer and the foul sewer were running full upstream of the junction with Martin Way; additional flow backed up into gullies and caused flooding of low&ndash;level properties at the junction with Martin Way. Runoff from Cannon Hill Common and Joseph Hood Recreation Ground slopes down to Whatley Avenue, increasing flows into the local drainage. [PAG,MUL] (p28)</p></div><div class="nugget-popup"><p>Intense rainfall during the 22&ndash;24 June 2016 period associated with the June 2016 flood investigation produced surface water flooding at Whatley Avenue as part of the event. [TAB] (p87)</p></div><div class="nugget-popup"><p>Recorded extreme short&ndash;duration (5&ndash;minute) rainfall during 23 June 2016, associated with surface&ndash;water / flash&ndash;flooding conditions in the locality. [TAB] (p88)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 in 24 yr (recorded sewer return period) [TAB] (p21)</p></div><div class="nugget-popup quant"><p>approximately ten properties; peak depth between 300 and 450 mm [PAG] (p23)</p></div></div></body></div>`)[0];
+                popup_2ffe338b3d8d024e5401be5b1c1be5b3.setContent(html_eceeb117ff73fbf8d3018416283b36f8);
+            
+        
+
+        marker_9254fc7e16058d3e272cc7898944edce.bindPopup(popup_2ffe338b3d8d024e5401be5b1c1be5b3)
+        ;
+
+        
+    
+    
+            var marker_7bca04589d8c2e047de98a854d0d77c5 = L.marker(
+                [51.40455199463844, -0.21529058460816144],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_24304ca77c46a41a6c98777583d6a387 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7bca04589d8c2e047de98a854d0d77c5.setIcon(icon_24304ca77c46a41a6c98777583d6a387);
+        
+    
+        var popup_53edc27a2d3b77bf3130e7d0f9666bef = L.popup({});
+
+        
+            
+                var html_10a5dea607005db7f2e526ccb767facb = $(`<div id="html_10a5dea607005db7f2e526ccb767facb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Martin Way, Raynes Park</h1><div class="nugget-popup"><p>Flooding linked to hydraulic overflow / capacity issues in the foul and combined sewer network at the junction with Whatley Avenue and adjacent to Bushey Road, potentially due to misconnections from the surface water network or private drainage. (p4)</p></div><div class="nugget-popup"><p>Martin Way experienced flooding during the June 2016 event as recorded in the report. [TAB] (p21)</p></div><div class="nugget-popup"><p>Flooding concentrated at the local low point at the junction with Whatley Avenue: internal flooding of properties where surface water and sewer flows accumulated. Flooding started at about 09:00 on 23 June 2016 and lasted about 12 hours. [PAG] (p23)</p></div><div class="nugget-popup"><p>Surface water flooding occurred at the junction with Whatley Avenue where a local low point ponded flows; properties close to the junction (set lower than the highway) were affected. Much of Martin Way is identified as being at medium risk of surface water flooding. [MUL] (p24)</p></div><div class="nugget-popup"><p>Junction area with Whatley Avenue was affected during the 23 June 2016 flood &mdash; flows could not drain due to sewer capacity issues; the council later implemented carriageway level changes and installed two SuDS tree pits near the junction as post&ndash;event mitigation. [TAB] (p26)</p></div><div class="nugget-popup"><p>At the junction with Whatley Avenue the 750 mm surface water sewer and the foul sewer were running full, causing backup into gullies and flooding of nearby low&ndash;level properties. (p27)</p></div><div class="nugget-popup"><p>Intense rainfall during the 22&ndash;24 June 2016 period associated with the June 2016 flood investigation produced surface water flooding at Martin Way as part of the event. [TAB] (p87)</p></div><div class="nugget-popup"><p>Recorded extreme short&ndash;duration (5&ndash;minute) rainfall during 23 June 2016, associated with surface&ndash;water / flash&ndash;flooding conditions in the locality. [TAB] (p88)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 in 24 yr (recorded sewer return period) (p21)</p></div><div class="nugget-popup quant"><p>approximately ten properties; peak depth between 300 and 450 mm [PAG] (p23)</p></div></div></body></div>`)[0];
+                popup_53edc27a2d3b77bf3130e7d0f9666bef.setContent(html_10a5dea607005db7f2e526ccb767facb);
+            
+        
+
+        marker_7bca04589d8c2e047de98a854d0d77c5.bindPopup(popup_53edc27a2d3b77bf3130e7d0f9666bef)
+        ;
+
+        
+    
+    
+            var marker_91c8f75033df3ad4d16a117a7d3f1b25 = L.marker(
+                [51.4048687, -0.2375022],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_15b38573160f5e5d3bf57a260536f007 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_91c8f75033df3ad4d16a117a7d3f1b25.setIcon(icon_15b38573160f5e5d3bf57a260536f007);
+        
+    
+        var popup_30d57c6e950d4534ba7d13ff7e1e5585 = L.popup({});
+
+        
+            
+                var html_b3fb10af212b6321210766e3421d4169 = $(`<div id="html_b3fb10af212b6321210766e3421d4169" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bushey Road, London Borough of Merton</h1><div class="nugget-popup"><p>The combined sewer/trunk main adjacent to Bushey Road receives multiple flows from north and south; capacity and hydraulic overflow issues in this network contributed to flooding in the surrounding area (Apostles area experienced significant flooding in the 2016 event and lesser flooding during 2017 events). CCTV of the combined sewer near Bushey Road was recommended to identify misconnections. [PAG,MUL] (p28)</p></div><div class="nugget-popup"><p>Surface water flooding in the Apostles area drained toward and into the Bushey Road trunk sewer; the local roads (north&ndash;south roads between Kingston Road, Grand Drive and Bushey Road) became inaccessible to vehicular traffic during the event. The worst affected road, Dupont Road, experienced internal property flooding and widespread inundation visible to wheel&ndash;rim height on parked vehicles. [PAG] (p29)</p></div><div class="nugget-popup"><p>Flows from the blocked Dupont Road passed across Bushey Road and there was highway ponding at the junction with Grand Drive. The 2000 by 1524 mm trunk surface&ndash;water sewer on Bushey Road acted as a hydraulic throttle, contributing to the ponding. TWUL inspected this trunk sewer and found it running clear on 26 June 2016. [TAB] (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately ten properties; 36 hours; maximum depth 300&ndash;450 mm [PAG] (p29)</p></div></div></body></div>`)[0];
+                popup_30d57c6e950d4534ba7d13ff7e1e5585.setContent(html_b3fb10af212b6321210766e3421d4169);
+            
+        
+
+        marker_91c8f75033df3ad4d16a117a7d3f1b25.bindPopup(popup_30d57c6e950d4534ba7d13ff7e1e5585)
+        ;
+
+        
+    
+    
+            var marker_8c91cce5f2dc4b9bb50da9f66efee1c6 = L.marker(
+                [51.408999, -0.2213303],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_7e91c92d907633dcbe9d1688faa9a4ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8c91cce5f2dc4b9bb50da9f66efee1c6.setIcon(icon_7e91c92d907633dcbe9d1688faa9a4ea);
+        
+    
+        var popup_26c95c104ab37142a712604c4b222961 = L.popup({});
+
+        
+            
+                var html_31a8c24bcbfcf58775b3138699b9057f = $(`<div id="html_31a8c24bcbfcf58775b3138699b9057f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dupont Road, London Borough of Merton</h1><div class="nugget-popup"><p>Part of the 'Apostles' area that experienced flooding driven by interactions between surface water runoff and the sewer network; flooding was linked to a hydraulic 'throttle' effect in the main surface water sewer and its connections, contributing to surface water/sewer overflow onto side roads including Dupont Road. CCTV investigation of the main surface water sewer and connections was recommended. (p4)</p></div><div class="nugget-popup"><p>Dupont Road (included within the Apostles area) experienced sewer&ndash;related flooding during the June 2016 event with a recorded sewer return period of 1&ndash;in&ndash;24 years. [TAB] (p21)</p></div><div class="nugget-popup"><p>Dupont Road was the worst&ndash;affected road in the Apostles area during the June 2016 event: the street was inundated, vehicles partially submerged and pedestrian/vehicular access disrupted; flooding contributed to internal flooding of properties in the affected area. [IMG,PAG] (p29)</p></div><div class="nugget-popup"><p>Dupont Road was the worst&ndash;affected road in the event: flooding reached internal parts of properties. The report links the mapped extent in Dupont Road to the June 2016 event and notes it as the worst affected road in the area. [PAG] (p30)</p></div><div class="nugget-popup"><p>Flooding occurred as a result of a blockage identified in the surface water sewer. Non&ndash;scheduled gully cleansing on 22 Jun 2016 identified the issue; on 23 Jun 2016 a Merton jetting tanker cleared the blockage and resolved the flooding. Thames Water attended subsequently to check the sewer. [TAB] (p32)</p></div><div class="nugget-popup"><p>Blockage of a 225 mm surface water sewer at the junction with Dorien Road caused water to back up and flood the low point of Dupont Road, producing internal flooding of properties at lower levels. The blockage was cleared by Merton using a jetting tanker. [TAB,PAG] (p33)</p></div><div class="nugget-popup"><p>Dupont Road (within the Apostles area) recorded intense rainfall during 22&ndash;24 June 2016 associated with the June 2016 event and was affected by surface water flooding during that event. [TAB] (p87)</p></div><div class="nugget-popup"><p>Recorded extreme short&ndash;duration (5&ndash;minute) rainfall during 23 June 2016 (listed as part of the Apostles area), associated with surface&ndash;water / flash&ndash;flooding conditions in the locality. [TAB] (p88)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 in 24 yr (recorded sewer return period) [TAB] (p21)</p></div><div class="nugget-popup quant"><p>approximately ten properties; 300&ndash;450 mm [IMG,PAG] (p29)</p></div><div class="nugget-popup quant"><p>approximately 10 properties; maximum flood depth between 300 and 450 mm; incident duration about 36 hours [PAG] (p30)</p></div></div></body></div>`)[0];
+                popup_26c95c104ab37142a712604c4b222961.setContent(html_31a8c24bcbfcf58775b3138699b9057f);
+            
+        
+
+        marker_8c91cce5f2dc4b9bb50da9f66efee1c6.bindPopup(popup_26c95c104ab37142a712604c4b222961)
+        ;
+
+        
+    
+    
+            var marker_35230ee8409b33ddc619d8de23b5dd12 = L.marker(
+                [51.4095154, -0.2329622],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_ad2619f390fcc50617765a30ee87bfd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_35230ee8409b33ddc619d8de23b5dd12.setIcon(icon_ad2619f390fcc50617765a30ee87bfd1);
+        
+    
+        var popup_662edde514a89e0bb0ffb3c20e461f6a = L.popup({});
+
+        
+            
+                var html_a5129deea6cdd182900f5cf4b462d015 = $(`<div id="html_a5129deea6cdd182900f5cf4b462d015" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Coombe Lane, London Borough of Merton</h1><div class="nugget-popup"><p>Area by Raynes Park railway bridge experienced flooding concerns related to the condition and operation of pumps beneath the bridge; pump issues were identified as contributing to surface water/sewer flood behaviour and recommended for investigation and inclusion in flood modelling. (p4)</p></div><div class="nugget-popup"><p>Coombe Lane (by Raynes Park railway bridge) experienced sewer&ndash;related flooding on all three reported events: June 2016, July 2017 and August 2017; recorded sewer return periods were 1&ndash;in&ndash;24 yr (June 2016), 1&ndash;in&ndash;3 yr (July 2017) and 1&ndash;in&ndash;6 yr (Aug 2017). [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>Location&ndash;wide flooding on Coombe Lane caused internal flooding of commercial premises and disruption to local transport; the area (a low point beneath Raynes Park railway bridge) reached Merton's Section 19 threshold in the reported events. [MUL] (p35)</p></div><div class="nugget-popup"><p>Local low point for the local drainage catchment; multiple surface water and foul sewers discharge towards Coombe Lane and the local highway gullies in Coombe Lane were part of the high&ndash;priority cleansing programme and subject to reactive clearing before and after the recorded flooding incidents, indicating the location was implicated in surface&ndash;water sewer surcharge and highway flooding during the area incidents. [PAG] (p37)</p></div><div class="nugget-popup"><p>Surface water flooding occurred at the local low point around Coombe Lane, causing road drainage/gully issues. Highway gullies on Coombe Lane were part of the council's high&ndash;priority cleansing programme (cleaned December 2015 and via reactive call&ndash;outs before and after the incidents) in response to the flooding incidents. [PAG,MUL] (p38)</p></div><div class="nugget-popup"><p>Coombe Lane (by Raynes Park railway bridge) recorded intense rainfall during 22&ndash;24 June 2016 associated with the June 2016 event and experienced surface water flooding as part of the investigated event. [TAB] (p87)</p></div><div class="nugget-popup"><p>Recorded extreme short&ndash;duration (5&ndash;minute) rainfall during 23 June 2016 (noted at location by Raynes Park Railway Bridge), associated with surface&ndash;water / flash&ndash;flooding conditions in the locality. [TAB] (p88)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 commercial properties [MUL] (p35)</p></div></div></body></div>`)[0];
+                popup_662edde514a89e0bb0ffb3c20e461f6a.setContent(html_a5129deea6cdd182900f5cf4b462d015);
+            
+        
+
+        marker_35230ee8409b33ddc619d8de23b5dd12.bindPopup(popup_662edde514a89e0bb0ffb3c20e461f6a)
+        ;
+
+        
+    
+    
+            var marker_3c25cd22cb982fc3833dace787fcb653 = L.marker(
+                [51.414624, -0.2202144],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_f2d59384382d5880f38f2a11c200de71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3c25cd22cb982fc3833dace787fcb653.setIcon(icon_f2d59384382d5880f38f2a11c200de71);
+        
+    
+        var popup_80f151e0bff965a87fdd924aef035208 = L.popup({});
+
+        
+            
+                var html_94647b32040ffe7b14443b8f6b24c965 = $(`<div id="html_94647b32040ffe7b14443b8f6b24c965" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Worple Road, Raynes Park</h1><div class="nugget-popup"><p>Worple Road experienced flooding linked to surface water runoff and sewers reaching hydraulic capacity; Thames Water were recommended to carry out CCTV investigation of the surface water sewer network to establish sewer condition and identify blockages or defects contributing to the flooding. (p4)</p></div><div class="nugget-popup"><p>Worple Road (part of the 'Worple Road and Wimbledon Hill Road' location) experienced sewer flooding reaching the Section 19 threshold across the listed events. Flooding was recorded in June 2016, July 2017 and August 2017 (recorded sewer return periods 1 in 21 yr, 1 in 2 yr and 1 in 5 yr respectively). [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>Following the 2016 flooding incident, gullies along Worple Road were added to the high&ndash;priority cleansing programme, showing Worple Road was affected by the 2016 flood and associated sewer/highway drainage failures. (p37)</p></div><div class="nugget-popup"><p>Highway flooding and inundation of basements. Runoff entered basements of retail units (The Pavement) via basement skylights; flooding extended onto Worple Road Mews. Two residential properties were affected internally. [MUL] (p49)</p></div><div class="nugget-popup"><p>Highway inundated; basements of some retail units on The Pavement flooded by runoff entering through basement skylights at the footway; flooding extended onto Worple Road Mews; two residential properties affected internally; commercial units recorded internal flooding (30 July 2017 event). [PAG,MUL] (p50)</p></div><div class="nugget-popup"><p>Recorded historic flooding incidents in the vicinity (2007 and 2011) believed to be a combination of surface water and sewer flooding. The SFRA and RoFSW mapping indicate medium risk along Worple Road in front of commercial units; report notes similar consequences occurred in the 2016 and 2017 events. [PAG,MUL] (p52)</p></div><div class="nugget-popup"><p>Gullies on the road were cleansed between November 2016 and April 2017 as a response following flooding that affected the road and nearby commercial units. [TAB] (p53)</p></div><div class="nugget-popup"><p>Because Worple Road is relatively flat and perpendicular to local slopes, rapid surface water flow ponds on Worple Road and flows downhill toward the town centre; runoff from Worple Road and Worple Road Mews runs towards The Pavement shopping parade causing flooding to some shop units and surcharging of local surface water sewers. (p54)</p></div><div class="nugget-popup"><p>Short&ndash;duration extreme rainfall during 23 June 2016 resulted in localised surface water flooding of the road and surrounding areas, affecting carriageway drainage and access. [TAB] (p88)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 residential properties; flood depths 300&ndash;600 mm (recorded for the July 2017 incident) [MUL] (p49)</p></div><div class="nugget-popup quant"><p>2 residential properties [PAG,MUL] (p50)</p></div></div></body></div>`)[0];
+                popup_80f151e0bff965a87fdd924aef035208.setContent(html_94647b32040ffe7b14443b8f6b24c965);
+            
+        
+
+        marker_3c25cd22cb982fc3833dace787fcb653.bindPopup(popup_80f151e0bff965a87fdd924aef035208)
+        ;
+
+        
+    
+    
+            var marker_a094561a8f5cb543c1bdb2a1c9008436 = L.marker(
+                [51.4239224, -0.2119785],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_1e859d22067b7cfbc42f065053c7bfa2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a094561a8f5cb543c1bdb2a1c9008436.setIcon(icon_1e859d22067b7cfbc42f065053c7bfa2);
+        
+    
+        var popup_c0b57535c2aa207cb7c2e03e853dc711 = L.popup({});
+
+        
+            
+                var html_e7b36eadf139d694d8f0a52707985196 = $(`<div id="html_e7b36eadf139d694d8f0a52707985196" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wimbledon Hill Road, London Borough of Merton</h1><div class="nugget-popup"><p>Wimbledon Hill Road was included among streets where surface water sewer condition is suspected to have contributed to flooding; the report recommends CCTV of surface water sewers to establish condition and potential causes of blockages or failures. (p4)</p></div><div class="nugget-popup"><p>The street was inundated by sewer&ndash;related flooding recorded at the local Thames Water sewer gauge. Flooding occurred on 23 June 2016, 29&ndash;30 July 2017 and 09 August 2017 with recorded sewer return periods of 1 in 21 years (June 2016), 1 in 2 years (July 2017) and 1 in 5 years (August 2017). [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>Part of the town&ndash;centre area that experienced flooding during the events; contributed to highway and basement inundation affecting commercial and residential premises in the local area. [MUL] (p49)</p></div><div class="nugget-popup"><p>The steep slope of Wimbledon Hill Road channels surface water runoff down towards the local low point at the junction with Alexandra Road and St George's Road, contributing to increased surface water flooding extents and channelling water that causes ponding on adjacent roads during the flooding incidents. [MUL] (p51)</p></div><div class="nugget-popup"><p>Historic flooding incidents recorded (2007 and 2011). Mapping and report text identify increased surface water flooding extents predicted on Wimbledon Hill Road and a high&ndash;risk junction with St George's Road/Alexandra Road; records indicate similar impacts in the 2016 and 2017 events. [PAG,MUL] (p52)</p></div><div class="nugget-popup"><p>Responders attended Wimbledon Hill Road (26 June 2016) and checked the lateral sewer; attended again on 28&ndash;29 June 2016 and pumped out the basement of a property. A CCTV sewer survey was later carried out (12 July 2016). [TAB,PAG] (p53)</p></div><div class="nugget-popup"><p>Basement flooding at a property was pumped out following the June 2016 incident; surface water runoff from Wimbledon Hill Road contributed to overland flow towards The Pavement shopping parade during the Aug 2017 event, increasing flood risk to nearby shops; lateral sewer was inspected and found clear in June 2016. [TAB,MUL] (p54)</p></div><div class="nugget-popup"><p>Short&ndash;duration extreme rainfall during 23 June 2016 produced localised surface water flooding on the road and adjacent areas, impacting drainage and access. [TAB] (p88)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one basement [TAB,PAG] (p53)</p></div><div class="nugget-popup quant"><p>1 property (basement pumped out) [TAB,MUL] (p54)</p></div></div></body></div>`)[0];
+                popup_c0b57535c2aa207cb7c2e03e853dc711.setContent(html_e7b36eadf139d694d8f0a52707985196);
+            
+        
+
+        marker_a094561a8f5cb543c1bdb2a1c9008436.bindPopup(popup_c0b57535c2aa207cb7c2e03e853dc711)
+        ;
+
+        
+    
+    
+            var marker_87075e017f7a41fb86773ab9a3263b9b = L.marker(
+                [51.421968, -0.2093775],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_6eae445daf6cecb37f6834675fef2de3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_87075e017f7a41fb86773ab9a3263b9b.setIcon(icon_6eae445daf6cecb37f6834675fef2de3);
+        
+    
+        var popup_70a2df23e7f61e4c9ee7f42fe844411b = L.popup({});
+
+        
+            
+                var html_12038705f5ae6f4ae3df3d93a8723940 = $(`<div id="html_12038705f5ae6f4ae3df3d93a8723940" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Worple Road Mews, London Borough of Merton</h1><div class="nugget-popup"><p>Floodwater extended onto Worple Road Mews causing highway inundation and inundation of basements and commercial premises. On 23 June 2016 runoff entered basements of The Pavement retail units through basement skylights on the footway and two residential properties were internally flooded. On 30 July 2017 commercial units were internally flooded with flood depths estimated between 300 and 600 mm. [MUL] (p49)</p></div><div class="nugget-popup"><p>Surface water runoff flowed downhill from adjacent roads (including Wimbledon Hill Road) toward The Pavement shopping parade; surcharging of the smaller surface water sewers at Worple Road Mews caused ponding and contributed to internal flooding of some commercial units. Debris in a nearby gully reduced flow into the sewer and worsened the flooding. [MUL] (p54)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 residential properties; flood depth 300&ndash;600 mm [MUL] (p49)</p></div></div></body></div>`)[0];
+                popup_70a2df23e7f61e4c9ee7f42fe844411b.setContent(html_12038705f5ae6f4ae3df3d93a8723940);
+            
+        
+
+        marker_87075e017f7a41fb86773ab9a3263b9b.bindPopup(popup_70a2df23e7f61e4c9ee7f42fe844411b)
+        ;
+
+        
+    
+    
+            var marker_b83b70b53afa93355d9b19e3d8403b94 = L.marker(
+                [51.4206698, -0.2087736],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_aff6fecedfcbb874cd951e6c2f865439 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b83b70b53afa93355d9b19e3d8403b94.setIcon(icon_aff6fecedfcbb874cd951e6c2f865439);
+        
+    
+        var popup_14d37c0121166dd366c04fdd35e50f6b = L.popup({});
+
+        
+            
+                var html_d988de75138bd9e5b7a6040f739ca130 = $(`<div id="html_d988de75138bd9e5b7a6040f739ca130" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St George's Road, London Borough of Merton</h1><div class="nugget-popup"><p>Surface water ponding occurred on St George's Road during the reported flooding incidents; runoff was channelled and ponded on this road contributing to local highway flooding. [PAG,MUL] (p50)</p></div><div class="nugget-popup"><p>Relatively flat; described as receiving channelled runoff that causes water to pond on the road during the flooding incidents. The south&ndash;eastern parts are highlighted as high risk of surface water flooding and predicted to experience increased flood extents. [MUL] (p51)</p></div><div class="nugget-popup"><p>Historic incident records list flooding on St George's Road (2007) believed to be a combination of surface water and sewer flooding; records indicate similar consequences occurred during the June 2016 and July/August 2017 events, i.e. local surface water/sewer flooding affecting the street. [IMG,PAG,MUL] (p52)</p></div><div class="nugget-popup"><p>St. George's Road floods first during surface water events and floods internally into commercial units; surface water sewers on the road become overwhelmed and required jetting/cleaning (silt present) as part of the response. [TAB] (p54)</p></div></div></body></div>`)[0];
+                popup_14d37c0121166dd366c04fdd35e50f6b.setContent(html_d988de75138bd9e5b7a6040f739ca130);
+            
+        
+
+        marker_b83b70b53afa93355d9b19e3d8403b94.bindPopup(popup_14d37c0121166dd366c04fdd35e50f6b)
+        ;
+
+        
+    
+    
+            var marker_bae505a2d057cae25c53d466001d4ee4 = L.marker(
+                [51.4229404, -0.1907155],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_3816ee31d5b027d970d1ccd599f3c9aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bae505a2d057cae25c53d466001d4ee4.setIcon(icon_3816ee31d5b027d970d1ccd599f3c9aa);
+        
+    
+        var popup_e8c15dbd5ab654797177ff841fe98eed = L.popup({});
+
+        
+            
+                var html_951a4d4a53c6c5ac1262dc7033232588 = $(`<div id="html_951a4d4a53c6c5ac1262dc7033232588" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Effra Road, Merton</h1><div class="nugget-popup"><p>Surface water accumulated at a local low point affecting the carriageway of Effra Road; Merton recommended a topographical survey and potentially raising kerb levels to keep surface water on the carriageway. (p4)</p></div><div class="nugget-popup"><p>Effra Road experienced sewer&ndash;related flooding on 23 June 2016, recorded at the local TWUL sewer gauge with a recorded sewer return period of 1 in 21 years. [TAB] (p21)</p></div><div class="nugget-popup"><p>Surface water / surcharged surface water sewer flooding that caused internal flooding to residential properties. Flooding reportedly entered properties from the rear; one resident reported damage to kitchen and flooring. Highway gullies were noted as part of the local drainage system and gully cleaning history is recorded. [PAG] (p55)</p></div><div class="nugget-popup"><p>The junction of Effra Road with Haydon's Road is the local low point where surface water runoff accumulated during the recorded flooding incident; Effra Road was subsequently added to the council's high priority gully cleansing programme. [PAG] (p56)</p></div><div class="nugget-popup"><p>Following the June 2016 incident, Thames Water attended and jetted the foul sewer, clearing an identified blockage; subsequently they jet&ndash;cleaned 60 m of foul sewer and lateral connections in Effra Road. The assessment records both sewer and surface&ndash;water sources for the flooding, noting water entered properties from rear gardens rather than from highway surface water. [TAB] (p58)</p></div><div class="nugget-popup"><p>Short&ndash;duration intense rainfall on 23 June 2016 produced localised surface water flooding of the road and adjacent areas, causing rapid inundation of the carriageway and nearby land. [TAB] (p88)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two residential properties; one property with damage to kitchen and flooring [PAG] (p55)</p></div></div></body></div>`)[0];
+                popup_e8c15dbd5ab654797177ff841fe98eed.setContent(html_951a4d4a53c6c5ac1262dc7033232588);
+            
+        
+
+        marker_bae505a2d057cae25c53d466001d4ee4.bindPopup(popup_e8c15dbd5ab654797177ff841fe98eed)
+        ;
+
+        
+    
+    
+            var marker_4f965dccc36b1e622d0d087541b85b52 = L.marker(
+                [51.4224908, -0.1896058],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_56e65cfd5eab72ccab59a06ae52a1aef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4f965dccc36b1e622d0d087541b85b52.setIcon(icon_56e65cfd5eab72ccab59a06ae52a1aef);
+        
+    
+        var popup_a60754c6fea366f0fc6666c1489f92cc = L.popup({});
+
+        
+            
+                var html_8895177f62183a69071820228573eab4 = $(`<div id="html_8895177f62183a69071820228573eab4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Edith Road, London Borough of Merton</h1><div class="nugget-popup"><p>Identified as a potential cause of the flooding due to a possible low point on Edith Road that could allow surface water to flow toward affected properties; a topographical survey was recommended and raising kerb levels at the low point was suggested to keep surface water on the carriageway. (p58)</p></div></div></body></div>`)[0];
+                popup_a60754c6fea366f0fc6666c1489f92cc.setContent(html_8895177f62183a69071820228573eab4);
+            
+        
+
+        marker_4f965dccc36b1e622d0d087541b85b52.bindPopup(popup_a60754c6fea366f0fc6666c1489f92cc)
+        ;
+
+        
+    
+    
+            var marker_14bd5aaf76908a15d62039be0f9a4698 = L.marker(
+                [51.4040355, -0.2361652],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_fbf39e46f2d4eb8c6d026ee9a006fbf1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_14bd5aaf76908a15d62039be0f9a4698.setIcon(icon_fbf39e46f2d4eb8c6d026ee9a006fbf1);
+        
+    
+        var popup_ae12abc82534c78dfe772fe4d8abe93a = L.popup({});
+
+        
+            
+                var html_40aa929d0112b842935268017ff00fa5 = $(`<div id="html_40aa929d0112b842935268017ff00fa5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Barnes Lane, London Borough of Merton</h1><div class="nugget-popup"><p>Properties adjacent to West Barnes Lane were affected by preferential surface water flows and issues in the local surface water sewer network (including blockages), with flows directed from West Barnes Lane toward neighbouring streets contributing to flooding. (p5)</p></div><div class="nugget-popup"><p>West Barnes Lane experienced sewer&ndash;related flooding on 23 June 2016 and 29&ndash;30 July 2017; recorded sewer return periods were 1 in 30 years (June 2016) and 1 in 2 years (July 2017). [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>Surface water runoff overtopped the raised table at the junction with Adela Avenue and flowed along West Barnes Lane toward properties on the eastern side and the adjacent access gate to private land behind those properties. The flooding at this location reached Merton's Section 19 investigation threshold during the incidents listed. [PAG,MUL] (p59)</p></div><div class="nugget-popup"><p>Surface water and surface&ndash;water sewer surcharge led to flooding affecting properties on the eastern side of West Barnes Lane. Runoff that could not enter the sewer network drained towards the culverted Pyl Brook behind properties, causing inundation of rear gardens/driveways and increasing flood risk to adjacent homes. [IMG,PAG,MUL] (p60)</p></div><div class="nugget-popup"><p>Surface water runoff and surcharge towards the low point at the culverted Pyl Brook caused flooding along West Barnes Lane; eastern&ndash;side properties and driveways back&ndash;slope toward the highway and were within the flood&ndash;prone area. Gullies on West Barnes Lane were on the council's high&ndash;priority cleansing programme and had last been cleaned in December 2015/January 2016 prior to the flooding incidents. [PAG,MUL] (p61)</p></div><div class="nugget-popup"><p>Flooding recorded between junctions with Estella Avenue and Seaforth Avenue on 20 July 2007; attended on 23 June 2016 when a gully&ndash;cleansing tanker removed surface water but the surface water sewer was found not to be flowing. Subsequent gully cleans and highway/gully improvements were implemented to reduce runoff to properties. [TAB,PAG,MUL] (p62)</p></div><div class="nugget-popup"><p>Properties on West Barnes Lane were flooded because they sit slightly lower than the raised table at the Adela Avenue junction and runoff that could not enter gullies was channelled toward back&ndash;sloping driveways. Highway gullies at the junction were cleaned as part of the response. [TAB,MUL] (p63)</p></div><div class="nugget-popup"><p>Properties and the junction near the raised table experienced flooding during 2016 and 2017. Highway gullies around the junction may have surcharged, runoff was observed to be poorly draining, and debris suggests blockages remain in the surface water sewer. There is potential interaction with the culverted Pyl Brook if that culvert is at capacity. [MUL] (p64)</p></div><div class="nugget-popup"><p>Short&ndash;duration intense rainfall on 23 June 2016 produced localised surface water flooding of the lane and adjacent areas, affecting drainage and access. [TAB] (p88)</p></div></div></body></div>`)[0];
+                popup_ae12abc82534c78dfe772fe4d8abe93a.setContent(html_40aa929d0112b842935268017ff00fa5);
+            
+        
+
+        marker_14bd5aaf76908a15d62039be0f9a4698.bindPopup(popup_ae12abc82534c78dfe772fe4d8abe93a)
+        ;
+
+        
+    
+    
+            var marker_25f3ff30f590eb7ddd848c4b16b5afd7 = L.marker(
+                [51.3980177, -0.2357391],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_6668e235884741d73ae521d9b9f8c462 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_25f3ff30f590eb7ddd848c4b16b5afd7.setIcon(icon_6668e235884741d73ae521d9b9f8c462);
+        
+    
+        var popup_20eb4316f1154635861ac1cd8385d0dd = L.popup({});
+
+        
+            
+                var html_9f96fc1d70bc9277127ee1a18ec49dd6 = $(`<div id="html_9f96fc1d70bc9277127ee1a18ec49dd6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Adela Avenue, London Borough of Merton</h1><div class="nugget-popup"><p>Surface water runoff flowed north&ndash;eastwards along Adela Avenue and ponded either side of the carriageway before overtopping the raised table on West Barnes Lane, contributing to overland flow toward properties at the eastern side of West Barnes Lane. [PAG,MUL] (p59)</p></div><div class="nugget-popup"><p>Surface water collected by a 225 mm surface water sewer on Adela Avenue drained to a manhole and discharged into the culverted Pyl Brook immediately north&ndash;west of affected properties; this runoff contributed to the surface water/sewer flooding of properties adjacent to West Barnes Lane during the 2016 and 2017 incidents. [PAG,MUL] (p60)</p></div><div class="nugget-popup"><p>Properties on the south side of the Adela Avenue junction lie within Flood Zone 3 and Flood Zone 2 extends approximately 50 m southwest up Adela Avenue; gullies on Adela Avenue were on the council's high&ndash;priority cleansing programme and had last been cleaned in December 2015/January 2016 prior to the flooding incidents. [PAG,MUL] (p61)</p></div><div class="nugget-popup"><p>Surface&ndash;water flooding/ponding on the highway was attended on 23 June 2016; a gully&ndash;cleansing tanker removed as much surface water as possible but the surface water sewer was not flowing. Subsequent mitigation works included jetting of main sewers and connections, and installation of two additional highway gullies on Adela Avenue; kerb and footway/raised&ndash;table level adjustments and an additional gully were installed nearby in 2018 to reduce runoff toward properties. [TAB,PAG] (p62)</p></div><div class="nugget-popup"><p>Surface water runoff could not enter the highway gullies and the local 225 mm surface water sewer had insufficient capacity, causing runoff to back up and surcharge out of gullies at the raised table. Remedial works were carried out: footway and raised table levels adjusted and an additional highway gully installed outside property 168 in 2018; two additional gullies were installed on Adela Avenue and the main sewers and connections were jetted when this work occurred. [TAB,PAG,MUL] (p63)</p></div><div class="nugget-popup"><p>Flooding incidents in 2016 and 2017 are believed to have been caused by the Adela Avenue 225 mm surface water sewer; gullies at Adela Avenue drain into that sewer and evidence of poor drainage and potential sewer blockage was observed. [PAG,MUL] (p64)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one highway gully outside property 168; two additional gullies on Adela Avenue [TAB,PAG,MUL] (p63)</p></div></div></body></div>`)[0];
+                popup_20eb4316f1154635861ac1cd8385d0dd.setContent(html_9f96fc1d70bc9277127ee1a18ec49dd6);
+            
+        
+
+        marker_25f3ff30f590eb7ddd848c4b16b5afd7.bindPopup(popup_20eb4316f1154635861ac1cd8385d0dd)
+        ;
+
+        
+    
+    
+            var marker_a44cfeb34dad59e22b6d53d028b8216d = L.marker(
+                [51.3986174, -0.2362487],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_dd2eead64f71ca9bcf49f701c15db8c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a44cfeb34dad59e22b6d53d028b8216d.setIcon(icon_dd2eead64f71ca9bcf49f701c15db8c7);
+        
+    
+        var popup_1e2c195baf109b0ecf4bb26c57ec83ad = L.popup({});
+
+        
+            
+                var html_3a64a441fce9adf13f649b6be707045e = $(`<div id="html_3a64a441fce9adf13f649b6be707045e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Douglas Avenue, London Borough of Merton</h1><div class="nugget-popup"><p>Surface water from Douglas Avenue drains into the same sewer network/manhole that discharges into the culverted Pyl Brook; this runoff contributed to the surface water/sewer flooding affecting properties on the eastern side of West Barnes Lane in the 2016 and 2017 events. [PAG,MUL] (p60)</p></div></div></body></div>`)[0];
+                popup_1e2c195baf109b0ecf4bb26c57ec83ad.setContent(html_3a64a441fce9adf13f649b6be707045e);
+            
+        
+
+        marker_a44cfeb34dad59e22b6d53d028b8216d.bindPopup(popup_1e2c195baf109b0ecf4bb26c57ec83ad)
+        ;
+
+        
+    
+    
+            var marker_633e1a34b4cbdb3bc62c84ec4355ad3f = L.marker(
+                [51.4103076, -0.1731577],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_3d96e1965b6600408703dd6230e4eb8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_633e1a34b4cbdb3bc62c84ec4355ad3f.setIcon(icon_3d96e1965b6600408703dd6230e4eb8c);
+        
+    
+        var popup_15f921c47f92fea0c30949538f2eae20 = L.popup({});
+
+        
+            
+                var html_5ca360d9be4622309271497ac795ded7 = $(`<div id="html_5ca360d9be4622309271497ac795ded7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mount Road, Colliers Wood</h1><div class="nugget-popup"><p>Flooding occurred as a result of interactions between surface water runoff and the sewer network; Thames Water and Merton recommended re&ndash;benching of the sewer on Acuba Road / Mount Road to address hydraulic capacity / flow issues. (p5)</p></div><div class="nugget-popup"><p>Flooding occurred on Mount Road (Wimbledon Park) during the June 2016 event as recorded by TWUL sewer gauges. [TAB] (p21)</p></div><div class="nugget-popup"><p>Part of the location where the surface water/sewer flooding event occurred on 23 June 2016; contributed to internal property flooding within the location. [PAG] (p65)</p></div><div class="nugget-popup"><p>High point/low point topology at the junction with Acuba Road and Brooklands Avenue led to surface water flooding at Mount Road; highway gullies on Mount Road were part of the cleansing programme and were noted in relation to the flooding incident (last cleaned March 2016 prior to the incident). (p66)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>more than two properties [PAG] (p65)</p></div></div></body></div>`)[0];
+                popup_15f921c47f92fea0c30949538f2eae20.setContent(html_5ca360d9be4622309271497ac795ded7);
+            
+        
+
+        marker_633e1a34b4cbdb3bc62c84ec4355ad3f.bindPopup(popup_15f921c47f92fea0c30949538f2eae20)
+        ;
+
+        
+    
+    
+            var marker_4ee067135cefbc828cedbf9c9404b722 = L.marker(
+                [51.4404999, -0.1943572],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_f8eb76a601f010006cca132929827ca0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4ee067135cefbc828cedbf9c9404b722.setIcon(icon_f8eb76a601f010006cca132929827ca0);
+        
+    
+        var popup_ec27f23ed9c14c810cab0278a83f12e9 = L.popup({});
+
+        
+            
+                var html_feb6f28fdbbbd2cf20f49b7dd5b3d0d6 = $(`<div id="html_feb6f28fdbbbd2cf20f49b7dd5b3d0d6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Acuba Road, London Borough of Merton</h1><div class="nugget-popup"><p>Flooding linked to sewers at hydraulic capacity and sewer configuration; recommendation to re&ndash;bench the sewer on Acuba Road / Mount Road to address the hydraulic issues contributing to flooding. (p5)</p></div><div class="nugget-popup"><p>Flooding occurred on Acuba Road (Wimbledon Park) during the June 2016 event as recorded by TWUL sewer gauges. [TAB] (p21)</p></div><div class="nugget-popup"><p>Surface water/sewer flooding affected the location on 23 June 2016; foul sewage was reported on the road at the junction of Acuba Road and Ravensbury Road during the incident. [PAG] (p65)</p></div><div class="nugget-popup"><p>The junction of Acuba Road, Mount Road and Brooklands Avenue is a topographic low where surface water accumulated; the junction and Acuba Road are identified as locations at high risk of surface water flooding and were implicated in the flooding incident (gullies at the Acuba/ Mount Road junction were added to high priority cleansing afterwards). [PAG] (p66)</p></div><div class="nugget-popup"><p>Thames Water attended the location (25 June 2016) and inspected foul sewer manholes on Acuba Road (no blockages found); attended again on 10 July 2016 to clean up and disinfect the road. Gullies at the junction of Mount Road and Acuba Road were cleansed (March 2017). Thames Water have proposed rebenching a sewer on Acuba Road to improve discharge into a larger sewer. [TAB,PAG] (p68)</p></div><div class="nugget-popup"><p>Foul sewer surcharging occurred at the junction with Ravensbury Road. Thames Water (TWUL) identified the 300 mm diameter sewer from Mount Road as a potential constraint and proposed re&ndash;benching to allow easier discharge into a larger sewer. [TAB,PAG,MUL] (p69)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>more than two properties [PAG] (p65)</p></div></div></body></div>`)[0];
+                popup_ec27f23ed9c14c810cab0278a83f12e9.setContent(html_feb6f28fdbbbd2cf20f49b7dd5b3d0d6);
+            
+        
+
+        marker_4ee067135cefbc828cedbf9c9404b722.bindPopup(popup_ec27f23ed9c14c810cab0278a83f12e9)
+        ;
+
+        
+    
+    
+            var marker_78feccee52eed1fa215624c429ec9753 = L.marker(
+                [51.4395847, -0.1940455],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_c79d5804b4e1addc7e70699b8a908f6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_78feccee52eed1fa215624c429ec9753.setIcon(icon_c79d5804b4e1addc7e70699b8a908f6d);
+        
+    
+        var popup_f808299ee8be31f8058d03a3e6f996a5 = L.popup({});
+
+        
+            
+                var html_f1ad5f2fc1c568c073b5cc70c22e9e3f = $(`<div id="html_f1ad5f2fc1c568c073b5cc70c22e9e3f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brooklands Avenue, London Borough of Merton</h1><div class="nugget-popup"><p>Included among local roads where sewer condition and configuration contributed to flooding; recommended continued dialogue between Merton and Thames Water regarding sewer works to reduce future flooding risk. (p5)</p></div><div class="nugget-popup"><p>Flooding occurred on Brooklands Avenue (Wimbledon Park) during the June 2016 event as recorded by TWUL sewer gauges. [TAB] (p21)</p></div><div class="nugget-popup"><p>Residential basements on Brooklands Avenue were flooded as part of the surface water/sewer flooding event that began on 23 June 2016; the location experienced internal flooding of properties. (p65)</p></div><div class="nugget-popup"><p>The junction of Brooklands Avenue with Acuba Road and Mount Road is the local topographic low where surface water ponding/flooding occurred; the junction is described as impacted by the flooding incident and identified as high risk in mapping. (p66)</p></div><div class="nugget-popup"><p>Basements of properties flooded where a local topographic low point collects water. The flooding is likely to have been caused by surface&ndash;water sewer surcharging with water finding its way to the natural low point. [MUL] (p69)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>more than two properties (p65)</p></div></div></body></div>`)[0];
+                popup_f808299ee8be31f8058d03a3e6f996a5.setContent(html_f1ad5f2fc1c568c073b5cc70c22e9e3f);
+            
+        
+
+        marker_78feccee52eed1fa215624c429ec9753.bindPopup(popup_f808299ee8be31f8058d03a3e6f996a5)
+        ;
+
+        
+    
+    
+            var marker_6e6dcf6c7a49ed1e0059fb935881462b = L.marker(
+                [51.4135373, -0.1864805],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_1bf0e967d7ac72cc14280a16d032d7b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6e6dcf6c7a49ed1e0059fb935881462b.setIcon(icon_1bf0e967d7ac72cc14280a16d032d7b5);
+        
+    
+        var popup_100b56a98bec09d701d5661bca9f3bd6 = L.popup({});
+
+        
+            
+                var html_35f5b72ffcc19e298093be2c1529f731 = $(`<div id="html_35f5b72ffcc19e298093be2c1529f731" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Merantun Way, Merton</h1><div class="nugget-popup"><p>Flooding occurred on Merantun Way (and adjacent Morden Road) during the June 2016, late July 2017 and early August 2017 events as recorded by TWUL sewer gauges. [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>The junction with Morden Road was inundated by surface water runoff and flooding. The highway was closed during each event due to deep floodwater; no internal property flooding was reported at this location. [PAG,MUL] (p70)</p></div><div class="nugget-popup"><p>Concerns raised about functionality of the combined sewer system in Merantun Way due to siltation, which may have contributed to flooding at the junction with Morden Road. [TAB,PAG,MUL] (p73)</p></div><div class="nugget-popup"><p>Merantun Way was one of the locations examined for the 23 June 2016 event; intense, short&ndash;duration rainfall produced very high rainfall intensity that contributed to surface water runoff and sewer interactions, overwhelming drainage capacity and causing flooding at this location. (p82)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one location (included among the nine locations examined that reached Merton's Section 19 threshold) (p82)</p></div></div></body></div>`)[0];
+                popup_100b56a98bec09d701d5661bca9f3bd6.setContent(html_35f5b72ffcc19e298093be2c1529f731);
+            
+        
+
+        marker_6e6dcf6c7a49ed1e0059fb935881462b.bindPopup(popup_100b56a98bec09d701d5661bca9f3bd6)
+        ;
+
+        
+    
+    
+            var marker_a9be92652fc14900557391d0caebf2eb = L.marker(
+                [51.4089702, -0.1931478],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_a76ad705e2eb4e01df29784caf06f0c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a9be92652fc14900557391d0caebf2eb.setIcon(icon_a76ad705e2eb4e01df29784caf06f0c4);
+        
+    
+        var popup_d040ee409c67ad5a0a1582be5ad48cab = L.popup({});
+
+        
+            
+                var html_9991c41eebfeefcb6d6936e3779bf8de = $(`<div id="html_9991c41eebfeefcb6d6936e3779bf8de" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Morden Road, Merton</h1><div class="nugget-popup"><p>The Merantun Way / Morden Road area was flooded during the reported storm events; flooding was recorded on sewer gauges and associated with recorded sewer return periods at the location. [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>Morden Road (the low point at the junction with Merantun Way) received runoff and was flooded to depths that caused the road to be closed; the topography of Morden Road was identified as the main reason for flooding at this location. No internal flooding of properties was reported here. [PAG,MUL] (p70)</p></div><div class="nugget-popup"><p>Experienced significant surface water flooding at the junction with Merantun Way which led to the road being closed (closure reported from the South Wimbledon station). Runoff from surcharging gullies on Morden Road contributed to the flooding. [TAB,PAG,MUL] (p73)</p></div><div class="nugget-popup"><p>Morden Road, paired with Merantun Way in the report, experienced intense short&ndash;duration rainfall during the 23 June 2016 event that led to surface water runoff overwhelming drainage and sewer systems, contributing to flooding at this location. (p82)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depth 300 to 600 mm (23rd June 2016); depth 600 to 1000 mm (30th July 2017 and 9th August 2017); durations ~12 hours (23rd June 2016) and ~6 hours (30th July 2017 and 9th August 2017) [MUL] (p70)</p></div><div class="nugget-popup quant"><p>one location (included among the nine locations examined that reached Merton's Section 19 threshold) (p82)</p></div></div></body></div>`)[0];
+                popup_d040ee409c67ad5a0a1582be5ad48cab.setContent(html_9991c41eebfeefcb6d6936e3779bf8de);
+            
+        
+
+        marker_a9be92652fc14900557391d0caebf2eb.bindPopup(popup_d040ee409c67ad5a0a1582be5ad48cab)
+        ;
+
+        
+    
+    
+            var marker_e796b253004a0eaf000eb9769d428656 = L.marker(
+                [51.3901736, -0.2263873],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_d2535f4625ad4cd9df78b3a29215ddcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e796b253004a0eaf000eb9769d428656.setIcon(icon_d2535f4625ad4cd9df78b3a29215ddcc);
+        
+    
+        var popup_feacdd8190630ec40305815343351993 = L.popup({});
+
+        
+            
+                var html_144f987b3e417259abebaf1edeaed6f2 = $(`<div id="html_144f987b3e417259abebaf1edeaed6f2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lower Morden Lane, Lower Morden</h1><div class="nugget-popup"><p>Sewer flooding recorded on Lower Malden Lane (sic) as measured by the nearest TWUL sewer gauge. Estimated maximum storm return periods recorded: 1 in 30 year (June 2016), 1 in 2 year (July 2017), 1 in 4 year (August 2017). [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>Flooding was constrained to the highway only; no properties were affected. TWUL reported the adjacent surface water sewer network was completely blocked with silt and tree root ingress, preventing runoff discharging to the East Pyl Brook and increasing local runoff. [MUL] (p78)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 properties affected [MUL] (p78)</p></div></div></body></div>`)[0];
+                popup_feacdd8190630ec40305815343351993.setContent(html_144f987b3e417259abebaf1edeaed6f2);
+            
+        
+
+        marker_e796b253004a0eaf000eb9769d428656.bindPopup(popup_feacdd8190630ec40305815343351993)
+        ;
+
+        
+    
+    
+            var marker_fb2a5eaf9f132a9afad84b1fa5e0e084 = L.marker(
+                [51.403813, -0.1914687],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_a34ffc58d2a427fd1b42dd66a5081be9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fb2a5eaf9f132a9afad84b1fa5e0e084.setIcon(icon_a34ffc58d2a427fd1b42dd66a5081be9);
+        
+    
+        var popup_b20512f2b0795045418afb5bb1ccca9e = L.popup({});
+
+        
+            
+                var html_9eae3021372fa01882f42da4f74b9a64 = $(`<div id="html_9eae3021372fa01882f42da4f74b9a64" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kenley Road, Morden</h1><div class="nugget-popup"><p>Flooding recorded at Kenley Road car park as indicated by the nearest TWUL sewer gauge. Estimated maximum storm return periods: 1 in 21 year (June 2016), 1 in 2 year (July 2017), 1 in 5 year (August 2017). [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>The car park experienced flooding during all three reported events; limited information is available so the precise impacts to the car park (extent, depth, damage) are not determined in the record. [MUL] (p78)</p></div></div></body></div>`)[0];
+                popup_b20512f2b0795045418afb5bb1ccca9e.setContent(html_9eae3021372fa01882f42da4f74b9a64);
+            
+        
+
+        marker_fb2a5eaf9f132a9afad84b1fa5e0e084.bindPopup(popup_b20512f2b0795045418afb5bb1ccca9e)
+        ;
+
+        
+    
+    
+            var marker_35f04576fbeb7a8059026337e7a1c1c9 = L.marker(
+                [51.4199878, -0.2199647],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_73d864330b4ca2db69a75a4060333f11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_35f04576fbeb7a8059026337e7a1c1c9.setIcon(icon_73d864330b4ca2db69a75a4060333f11);
+        
+    
+        var popup_8d9e13de6ff6926af263463903062562 = L.popup({});
+
+        
+            
+                var html_26913efec99d9daea512369538c3b512 = $(`<div id="html_26913efec99d9daea512369538c3b512" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hillside, Raynes Park</h1><div class="nugget-popup"><p>Flooding occurred within the ward associated with Worple Road and Wimbledon Hill Road on 23 June 2016, 29&ndash;30 July 2017 and 09 August 2017 (recorded sewer return periods: 1 in 21 yr; 1 in 2 yr; 1 in 5 yr respectively). [TAB,MUL] (p21)</p></div></div></body></div>`)[0];
+                popup_8d9e13de6ff6926af263463903062562.setContent(html_26913efec99d9daea512369538c3b512);
+            
+        
+
+        marker_35f04576fbeb7a8059026337e7a1c1c9.bindPopup(popup_8d9e13de6ff6926af263463903062562)
+        ;
+
+        
+    
+    
+            var marker_2077564448cbe93add66eccd19a81c87 = L.marker(
+                [51.4116812, -0.2000799],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_d1b064aeda9c2a0c76312fc4f9c93ada = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2077564448cbe93add66eccd19a81c87.setIcon(icon_d1b064aeda9c2a0c76312fc4f9c93ada);
+        
+    
+        var popup_e3d3338240c9f438932b5acb7dbd3922 = L.popup({});
+
+        
+            
+                var html_cee0f7e2dcf3aa2535bb21fabf8bb22d = $(`<div id="html_cee0f7e2dcf3aa2535bb21fabf8bb22d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dorset Road, Merton Park</h1><div class="nugget-popup"><p>Dorset Road experienced flooding as recorded in the report (sewer gauge&ndash;derived return periods are reported for the relevant storm events). [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>Surface water ponding across the carriageway on the section between Kingston Road and Erridge Road, with greatest depths adjacent to several dropped&ndash;kerb crossovers. Flooding occurred during each of the three reported rainfall events; sewer and highway drainage issues (including tree root ingress and broken pipes) are believed to have contributed. Local gullies were targeted for priority cleansing (southern section added after 2016) and CCTV surveys have been recommended. [MUL] (p75)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>three rainfall events; TWUL&ndash;estimated return periods of 1 in 21 year, 1 in 2 year and 1 in 5 year for the incidents [MUL] (p75)</p></div></div></body></div>`)[0];
+                popup_e3d3338240c9f438932b5acb7dbd3922.setContent(html_cee0f7e2dcf3aa2535bb21fabf8bb22d);
+            
+        
+
+        marker_2077564448cbe93add66eccd19a81c87.bindPopup(popup_e3d3338240c9f438932b5acb7dbd3922)
+        ;
+
+        
+    
+    
+            var marker_2c3645a65d644696a3318509218070c3 = L.marker(
+                [51.4181341, -0.178677],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_4f40884f116e602759d992329888d489 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2c3645a65d644696a3318509218070c3.setIcon(icon_4f40884f116e602759d992329888d489);
+        
+    
+        var popup_2525d69993587fe34f9f7bad80437e46 = L.popup({});
+
+        
+            
+                var html_2eca8487a76d3d977d3f04397a507d9b = $(`<div id="html_2eca8487a76d3d977d3f04397a507d9b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Baltic Close, Colliers Wood</h1><div class="nugget-popup"><p>Baltic Close is recorded in the report as a flooded location (recorded sewer return period shown for the June 2016 event). [TAB] (p21)</p></div><div class="nugget-popup"><p>Flooding occurred at Baltic Close during the June 2016 incident; the location flooded once but did not meet Merton's Section 19 threshold. (p75)</p></div><div class="nugget-popup"><p>Significant flooding of the basement of a commercial property caused by combined sewer surcharge following increased surface water runoff from High Street Colliers Wood. Flooding began ~09:00 on 23 Jun 2016 and lasted about 12 hours. [PAG] (p76)</p></div><div class="nugget-popup"><p>Combined sewer network back&ndash;flow and surface water/runoff diverted from the highway entered the basement of a private/commercial property on Baltic Close, causing basement flooding. [PAG] (p77)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 incident (p75)</p></div><div class="nugget-popup quant"><p>one commercial property; maximum depth approximately 600 mm; lasted about 12 hours [PAG] (p76)</p></div></div></body></div>`)[0];
+                popup_2525d69993587fe34f9f7bad80437e46.setContent(html_2eca8487a76d3d977d3f04397a507d9b);
+            
+        
+
+        marker_2c3645a65d644696a3318509218070c3.bindPopup(popup_2525d69993587fe34f9f7bad80437e46)
+        ;
+
+        
+    
+    
+            var marker_6a307c5967e4e89c525815cfb72e041b = L.marker(
+                [51.41139, -0.2206129],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_1d96e1ec0011fbacba158eb6da66378a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6a307c5967e4e89c525815cfb72e041b.setIcon(icon_1d96e1ec0011fbacba158eb6da66378a);
+        
+    
+        var popup_0d5a4326ae69f090f7e6f1f2ae54c555 = L.popup({});
+
+        
+            
+                var html_96b43fa92a200d728711e59219279a29 = $(`<div id="html_96b43fa92a200d728711e59219279a29" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Abbott Avenue, Raynes Park</h1><div class="nugget-popup"><p>Abbott Avenue (including Dundonald Church) experienced sewer&ndash;related flooding on 23 Jun 2016 and 29&ndash;30 Jul 2017; recorded sewer return periods were 1&ndash;in&ndash;24 yr (Jun 2016) and 1&ndash;in&ndash;3 yr (Jul 2017). [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>Foul sewer surcharged at the lowest point of the catchment causing internal flooding of properties at the western end adjacent to the pumping station; during the July 2017 incident the pump failed, prolonging flooding and resulting in internal property damage. [MUL] (p42)</p></div><div class="nugget-popup"><p>A manhole surcharged causing internal flooding to properties at the western end of Abbott Avenue adjacent to the pumping station; Dundonald Church experienced internal flooding. Post&ndash;event imagery (approx. one week after June 2016) shows residual foul water, mud and debris on the carriageway. [IMG,PAG,MUL] (p43)</p></div><div class="nugget-popup"><p>Local surface water and foul sewer network routed significant flows along Abbott Avenue during the recorded incidents. A 225 mm surface water sewer and a storage tank (500 mm x 1250 mm) convey flow north&ndash;east along Abbott Avenue before being diverted south into Kingston Road via an existing footpath. Two foul sewers (each 450 mm) join at Abbott Avenue and connect into a rectangular sewer (660 mm x 1015 mm); there is an approximately 30 m section adjacent to the Dundonald Church with dimensions 991 mm x 661 mm. Following a flooding incident in 2016, gullies on Abbott Avenue were added to the higher&ndash;priority cleansing programme and cleaned at least once per year for 2016/17 and 2017/18; gullies had last been cleaned in February 2017 prior to the 2017 incident. [PAG,MUL] (p44)</p></div><div class="nugget-popup"><p>Abbott Avenue experienced flooding incidents as part of local surface&ndash;water / urban flooding. The area slopes toward Abbott Avenue and parts of the south side are shown at high/medium surface&ndash;water flood risk. LLFA discussions confirmed flooding incidents in the area in three consecutive years (2016&ndash;2018), the most significant in 2016. Gullies on Abbott Avenue were not on the high&ndash;priority cleansing programme prior to the 2016 incident (cleaned at least once every two years under the standard contract) and were added to annual cleansing programmes for 2016/17 and 2017/18; gullies were last cleaned in February 2017 prior to the 2017 incident. [PAG,MUL] (p45)</p></div><div class="nugget-popup"><p>Subject to surface water/sewer flooding incidents: contractor clean&ndash;up works and confirmation the pumping station was operational (attended 28 Jun 2016); added to high&ndash;priority gully cleansing programme; gullies cleaned (Jan/Feb 2017); post&ndash;July 2017 network investigations including CCTV survey, manhole inspections ('lift and look') and sewer cleaning; pump station arrangement reviewed and network modelling undertaken. [TAB,MUL] (p46)</p></div><div class="nugget-popup"><p>Foul sewer network backed up and surcharged at the lowest point of the catchment at Abbott Avenue, with surcharging discharging out of a foul manhole where flows from under the railway converge with those from the pumping station. Debris (including ladders and bricks) was found in the foul sewer between the pumping station and Abbott Avenue causing blockages. The local sewage pumping station experienced an electrical failure and was out of service for 12 hours during the July 2017 incident. [TAB] (p47)</p></div><div class="nugget-popup"><p>Intense short&ndash;duration rainfall on 23 June 2016 caused localised surface water flooding on Abbott Avenue, affecting the roadway and immediate surroundings. [TAB] (p88)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 incidents reached Section 19 threshold (2016 and 2017); pump failure for 12 hours; flooding lasted about six hours (July 2017) [MUL] (p42)</p></div></div></body></div>`)[0];
+                popup_0d5a4326ae69f090f7e6f1f2ae54c555.setContent(html_96b43fa92a200d728711e59219279a29);
+            
+        
+
+        marker_6a307c5967e4e89c525815cfb72e041b.bindPopup(popup_0d5a4326ae69f090f7e6f1f2ae54c555)
+        ;
+
+        
+    
+    
+            var marker_90b5731c527220278ce3643db14d8af2 = L.marker(
+                [51.3995208, -0.2424677],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_bfd9364883619324a47e9a01fe86de7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_90b5731c527220278ce3643db14d8af2.setIcon(icon_bfd9364883619324a47e9a01fe86de7b);
+        
+    
+        var popup_fad4e6c10b85b1e8714a964a1bd85375 = L.popup({});
+
+        
+            
+                var html_4607d795904708202fb05a2afffb98da = $(`<div id="html_4607d795904708202fb05a2afffb98da" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burlington Road, West Barnes</h1><div class="nugget-popup"><p>The Burlington Road / Shannon Corner underpass was flooded during all three rainfall events due to heavily silted surface&ndash;water sewers and a limited sewer gradient that caused sewer surcharge and backflow. Location is known to flood regularly; Merton recorded no properties as affected. [PAG,MUL] (p79)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>No properties affected; TWUL estimated the three incidents as having return periods of 1 in 30, 1 in 2 and 1 in 4 years. [PAG,MUL] (p79)</p></div></div></body></div>`)[0];
+                popup_fad4e6c10b85b1e8714a964a1bd85375.setContent(html_4607d795904708202fb05a2afffb98da);
+            
+        
+
+        marker_90b5731c527220278ce3643db14d8af2.bindPopup(popup_fad4e6c10b85b1e8714a964a1bd85375)
+        ;
+
+        
+    
+    
+            var marker_7d4e73e8d4085d7ad65d8bcf601d6129 = L.marker(
+                [51.3994765, -0.2437999],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_0db788fcb493694420980e411eada708 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7d4e73e8d4085d7ad65d8bcf601d6129.setIcon(icon_0db788fcb493694420980e411eada708);
+        
+    
+        var popup_90b1625f96a0515ac4e2ae0cc90d373c = L.popup({});
+
+        
+            
+                var html_562cf6a7c06a041853b6aba4baaff760 = $(`<div id="html_562cf6a7c06a041853b6aba4baaff760" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Shannon Corner, London Borough of Merton</h1><div class="nugget-popup"><p>The junction beneath the A3 flyover at Shannon Corner flooded during all three events as surface&ndash;water sewers there were heavily silted (notably under the central island), producing surcharge and backflow issues. Cleansing and further sewer investigation were recommended. [PAG,MUL] (p79)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>No properties affected. [PAG,MUL] (p79)</p></div></div></body></div>`)[0];
+                popup_90b1625f96a0515ac4e2ae0cc90d373c.setContent(html_562cf6a7c06a041853b6aba4baaff760);
+            
+        
+
+        marker_7d4e73e8d4085d7ad65d8bcf601d6129.bindPopup(popup_90b1625f96a0515ac4e2ae0cc90d373c)
+        ;
+
+        
+    
+    
+            var marker_191578d1cf87e1b3f4d7fb91fa3a2b86 = L.marker(
+                [51.391338, -0.2227162],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_aba868af0576ae50c68ad3a78ace1d3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_191578d1cf87e1b3f4d7fb91fa3a2b86.setIcon(icon_aba868af0576ae50c68ad3a78ace1d3a);
+        
+    
+        var popup_25d6f6ec978613be7de21c333876a617 = L.popup({});
+
+        
+            
+                var html_a8f0257c4c5ad4d4b8e9a33a95ebce32 = $(`<div id="html_a8f0257c4c5ad4d4b8e9a33a95ebce32" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Grand Drive, London Borough of Merton</h1><div class="nugget-popup"><p>Highway ponding was observed on Bushey Road at the junction with Grand Drive during the event, indicating local surface&ndash;water flooding and a potential network capacity or hydraulic overload at that junction. (p33)</p></div></div></body></div>`)[0];
+                popup_25d6f6ec978613be7de21c333876a617.setContent(html_a8f0257c4c5ad4d4b8e9a33a95ebce32);
+            
+        
+
+        marker_191578d1cf87e1b3f4d7fb91fa3a2b86.bindPopup(popup_25d6f6ec978613be7de21c333876a617)
+        ;
+
+        
+    
+    
+            var marker_0efa2188045a1829fc77fce12fd358d2 = L.marker(
+                [51.4159021, -0.2331404],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_a36c5e8a186ec648051291d8bdf99072 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0efa2188045a1829fc77fce12fd358d2.setIcon(icon_a36c5e8a186ec648051291d8bdf99072);
+        
+    
+        var popup_39c29c6b6b572b3620607e19c09ab317 = L.popup({});
+
+        
+            
+                var html_c14f1ac84dc3438318ebaa8eb2a5650e = $(`<div id="html_c14f1ac84dc3438318ebaa8eb2a5650e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pepys Road, London Borough of Merton</h1><div class="nugget-popup"><p>Sewers flow north&ndash;south through Pepys Road and converge with other pipes at the Worple Road junction; gullies on Pepys Road were included in the high&ndash;priority cleansing programme following previous flooding. The road was within the area affected by the 2016 and 2017 incidents which caused transport risk and flooding of commercial properties. [MUL] (p37)</p></div><div class="nugget-popup"><p>Following the 23 June 2016 surface water flooding incident, gullies along Pepys Road were added to Merton's high&ndash;priority gully cleansing programme. Gullies had last been cleaned in December 2015 and were subsequently cleaned in January 2017 (with reactive call&ndash;outs before and after the incidents). [IMG,PAG] (p38)</p></div></div></body></div>`)[0];
+                popup_39c29c6b6b572b3620607e19c09ab317.setContent(html_c14f1ac84dc3438318ebaa8eb2a5650e);
+            
+        
+
+        marker_0efa2188045a1829fc77fce12fd358d2.bindPopup(popup_39c29c6b6b572b3620607e19c09ab317)
+        ;
+
+        
+    
+    
+            var marker_c6238709c87d352d927701665bb10b1f = L.marker(
+                [51.4102003, -0.2266002],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_d4a401cb25e56bf17722d2bcad97f6da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c6238709c87d352d927701665bb10b1f.setIcon(icon_d4a401cb25e56bf17722d2bcad97f6da);
+        
+    
+        var popup_87a14d00fccb72ab5a755aeb0f81124a = L.popup({});
+
+        
+            
+                var html_c6a2c481d2358f41c0bb3c57f8eb03c6 = $(`<div id="html_c6a2c481d2358f41c0bb3c57f8eb03c6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wyke Road, Cottenham Park</h1><div class="nugget-popup"><p>A surface water sewer from Wyke Road discharges into the main 1050 mm sewer near Raynes Park railway bridge; gullies along Wyke Road were added to the cleansing programme after the 2016 incident. Wyke Road lay within the drainage catchment affected by the 2016 and 2017 flooding incidents. [MUL] (p37)</p></div></div></body></div>`)[0];
+                popup_87a14d00fccb72ab5a755aeb0f81124a.setContent(html_c6a2c481d2358f41c0bb3c57f8eb03c6);
+            
+        
+
+        marker_c6238709c87d352d927701665bb10b1f.bindPopup(popup_87a14d00fccb72ab5a755aeb0f81124a)
+        ;
+
+        
+    
+    
+            var marker_adb1726b4d1633a7bf74f72629cb6263 = L.marker(
+                [51.4126591, -0.2271848],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_956b18f2b6fcde58cf2cf6637f548862 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_adb1726b4d1633a7bf74f72629cb6263.setIcon(icon_956b18f2b6fcde58cf2cf6637f548862);
+        
+    
+        var popup_a88998e0724ff18d422da867cceee1e0 = L.popup({});
+
+        
+            
+                var html_655ebda70da1313abfe4c223c537e484 = $(`<div id="html_655ebda70da1313abfe4c223c537e484" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Langham Road, Cottenham Park</h1><div class="nugget-popup"><p>Experienced flooding during the 2016 incident; gullies on Langham Road were subsequently added to Merton's high&ndash;priority cleansing programme and were cleaned in January 2017 in advance of the 2017 incidents. [MUL] (p37)</p></div></div></body></div>`)[0];
+                popup_a88998e0724ff18d422da867cceee1e0.setContent(html_655ebda70da1313abfe4c223c537e484);
+            
+        
+
+        marker_adb1726b4d1633a7bf74f72629cb6263.bindPopup(popup_a88998e0724ff18d422da867cceee1e0)
+        ;
+
+        
+    
+    
+            var marker_59ffd116b8ce52313e51581f76683500 = L.marker(
+                [51.414066, -0.2208575],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_6f388d47805f1f639e72c93fb083808d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_59ffd116b8ce52313e51581f76683500.setIcon(icon_6f388d47805f1f639e72c93fb083808d);
+        
+    
+        var popup_63d5d19acfee283a15fa30fdddab53cf = L.popup({});
+
+        
+            
+                var html_a3fab641c6dbd6366c1cf923a3578d1a = $(`<div id="html_a3fab641c6dbd6366c1cf923a3578d1a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lower Downs Road, Raynes Park</h1><div class="nugget-popup"><p>Included in gully cleaning actions carried out in Jan/Feb 2017 as part of the response to the June 2016 flooding; cleaned gullies to reduce surface water runoff and mitigate future flooding. [TAB] (p46)</p></div></div></body></div>`)[0];
+                popup_63d5d19acfee283a15fa30fdddab53cf.setContent(html_a3fab641c6dbd6366c1cf923a3578d1a);
+            
+        
+
+        marker_59ffd116b8ce52313e51581f76683500.bindPopup(popup_63d5d19acfee283a15fa30fdddab53cf)
+        ;
+
+        
+    
+    
+            var marker_2f78ffa1af85652e477b6ce0fa724057 = L.marker(
+                [51.4145072, -0.2251223],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_82ece21b7a570be385a482d8ad86d365 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2f78ffa1af85652e477b6ce0fa724057.setIcon(icon_82ece21b7a570be385a482d8ad86d365);
+        
+    
+        var popup_c8890d36b53cab96d8edda11b5a394aa = L.popup({});
+
+        
+            
+                var html_e1a07ce7345d56370bafcf1e65c2a2bc = $(`<div id="html_e1a07ce7345d56370bafcf1e65c2a2bc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Arterberry Road, Cottenham Park</h1><div class="nugget-popup"><p>Upstream sewer surveys and cleaning works were carried out (October 2018) as remedial action following the sewer surcharging and flooding associated with the July 2017 incident. [TAB] (p47)</p></div></div></body></div>`)[0];
+                popup_c8890d36b53cab96d8edda11b5a394aa.setContent(html_e1a07ce7345d56370bafcf1e65c2a2bc);
+            
+        
+
+        marker_2f78ffa1af85652e477b6ce0fa724057.bindPopup(popup_c8890d36b53cab96d8edda11b5a394aa)
+        ;
+
+        
+    
+    
+            var marker_dc1f2d02d222eafceb35c868b79de1f3 = L.marker(
+                [51.4143137, -0.2233892],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_98dba6bc5a2b59fca925d3ded212d8a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dc1f2d02d222eafceb35c868b79de1f3.setIcon(icon_98dba6bc5a2b59fca925d3ded212d8a7);
+        
+    
+        var popup_c89c4bc6ffda06fcc297b685894ad5cf = L.popup({});
+
+        
+            
+                var html_843b0b92acb44f5d2248a2e035ab7cff = $(`<div id="html_843b0b92acb44f5d2248a2e035ab7cff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Crescent Road, Raynes Park</h1><div class="nugget-popup"><p>Upstream sewer surveys and cleaning works were carried out (October 2018) as remedial action following the sewer surcharging and flooding associated with the July 2017 incident. [TAB] (p47)</p></div></div></body></div>`)[0];
+                popup_c89c4bc6ffda06fcc297b685894ad5cf.setContent(html_843b0b92acb44f5d2248a2e035ab7cff);
+            
+        
+
+        marker_dc1f2d02d222eafceb35c868b79de1f3.bindPopup(popup_c89c4bc6ffda06fcc297b685894ad5cf)
+        ;
+
+        
+    
+    
+            var marker_d4ab030ff5edb0130acdabbbdca3d7df = L.marker(
+                [51.4258196, -0.2014429],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_ded8286da949004854dd6d38a80d5d76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d4ab030ff5edb0130acdabbbdca3d7df.setIcon(icon_ded8286da949004854dd6d38a80d5d76);
+        
+    
+        var popup_4b81bba2d810db5b6fef21ab56b24e51 = L.popup({});
+
+        
+            
+                var html_3b28e43889bf62283b7d9860f467f1c4 = $(`<div id="html_3b28e43889bf62283b7d9860f467f1c4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Alexandra Road, Merton</h1><div class="nugget-popup"><p>Forms the local low point at the junction with St George's Road and Wimbledon Hill Road and is identified as part of a high&ndash;risk area where surface water runoff collects, contributing to ponding during flooding incidents. [MUL] (p51)</p></div></div></body></div>`)[0];
+                popup_4b81bba2d810db5b6fef21ab56b24e51.setContent(html_3b28e43889bf62283b7d9860f467f1c4);
+            
+        
+
+        marker_d4ab030ff5edb0130acdabbbdca3d7df.bindPopup(popup_4b81bba2d810db5b6fef21ab56b24e51)
+        ;
+
+        
+    
+    
+            var marker_0f7169d4ceee6b19c5f5fd6b07f88cfc = L.marker(
+                [51.4227608, -0.2098911],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_5feb735bcdb198c333f9da50de6960a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0f7169d4ceee6b19c5f5fd6b07f88cfc.setIcon(icon_5feb735bcdb198c333f9da50de6960a7);
+        
+    
+        var popup_153c7e2f45d371be69a2f819b6ef0db2 = L.popup({});
+
+        
+            
+                var html_44023b4a08b33d654b0e2df85726f426 = $(`<div id="html_44023b4a08b33d654b0e2df85726f426" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mansel Road, London Borough of Merton</h1><div class="nugget-popup"><p>A historic flooding incident is recorded (1981) believed to be a combination of surface water and sewer flooding. The report notes that records suggest similar consequences occurred in the 2016 and 2017 events (implying Mansel Road was affected in those episodes). [MUL] (p52)</p></div></div></body></div>`)[0];
+                popup_153c7e2f45d371be69a2f819b6ef0db2.setContent(html_44023b4a08b33d654b0e2df85726f426);
+            
+        
+
+        marker_0f7169d4ceee6b19c5f5fd6b07f88cfc.bindPopup(popup_153c7e2f45d371be69a2f819b6ef0db2)
+        ;
+
+        
+    
+    
+            var marker_c5147132b7ac9387a063dd0d03c24999 = L.marker(
+                [51.4190503, -0.1873187],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_8ed07e4c5789553e627c40d735a0b420 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c5147132b7ac9387a063dd0d03c24999.setIcon(icon_8ed07e4c5789553e627c40d735a0b420);
+        
+    
+        var popup_18e85e71ab775f294b6f0461a1237ef1 = L.popup({});
+
+        
+            
+                var html_2eba5f78a222fff88354834e44a4e6a4 = $(`<div id="html_2eba5f78a222fff88354834e44a4e6a4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Haydon's Road, London Borough of Merton</h1><div class="nugget-popup"><p>Haydon's Road gullies were part of the council's high priority cleansing programme and were last cleaned in March 2016 prior to the flooding incident; surface water runoff collected toward the Effra Road/Haydon's Road low point during the incident. [PAG] (p56)</p></div></div></body></div>`)[0];
+                popup_18e85e71ab775f294b6f0461a1237ef1.setContent(html_2eba5f78a222fff88354834e44a4e6a4);
+            
+        
+
+        marker_c5147132b7ac9387a063dd0d03c24999.bindPopup(popup_18e85e71ab775f294b6f0461a1237ef1)
+        ;
+
+        
+    
+    
+            var marker_738a2a8dd6fa92699273b307a22ee950 = L.marker(
+                [51.3995497, -0.2354986],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_63b410befb778a6df0dba05e1b7540fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_738a2a8dd6fa92699273b307a22ee950.setIcon(icon_63b410befb778a6df0dba05e1b7540fc);
+        
+    
+        var popup_473d796134dde305f227a2415b2050a0 = L.popup({});
+
+        
+            
+                var html_f1fdc3b48638a9874e77fbbd7649eef3 = $(`<div id="html_f1fdc3b48638a9874e77fbbd7649eef3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Estella Avenue, West Barnes</h1><div class="nugget-popup"><p>A 225 mm sewer under Estella Avenue connected into the local surface water sewer network and discharged into the Pyl Brook culvert immediately northwest of the properties that flooded; these connections contributed to surcharge/backflow into the culverted watercourse during the 2016 and 2017 flooding incidents. [PAG,MUL] (p60)</p></div></div></body></div>`)[0];
+                popup_473d796134dde305f227a2415b2050a0.setContent(html_f1fdc3b48638a9874e77fbbd7649eef3);
+            
+        
+
+        marker_738a2a8dd6fa92699273b307a22ee950.bindPopup(popup_473d796134dde305f227a2415b2050a0)
+        ;
+
+        
+    
+    
+            var marker_cc5856545e0f337bc48493b1a22d4ff2 = L.marker(
+                [51.400709, -0.233575],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_1c5586def67609ef7b2136525af55c57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cc5856545e0f337bc48493b1a22d4ff2.setIcon(icon_1c5586def67609ef7b2136525af55c57);
+        
+    
+        var popup_44ce153ec7e42c2bf38f5debe2ab8109 = L.popup({});
+
+        
+            
+                var html_2a4bf530808f84c5a3a77ea71a5b3ada = $(`<div id="html_2a4bf530808f84c5a3a77ea71a5b3ada" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Westway, London Borough of Merton</h1><div class="nugget-popup"><p>Properties adjacent to the Westway were identified as being at risk from, and potentially affected by, capacity issues in the culverted Pyl Brook behind the properties. If the culvert was at capacity it may have been interconnected with the surface water sewer network and contributed to flooding during the 2016 and 2017 incidents. The EA were recommended to survey the culvert (dimensions and invert levels) to establish its condition and capacity. [MUL] (p64)</p></div></div></body></div>`)[0];
+                popup_44ce153ec7e42c2bf38f5debe2ab8109.setContent(html_2a4bf530808f84c5a3a77ea71a5b3ada);
+            
+        
+
+        marker_cc5856545e0f337bc48493b1a22d4ff2.bindPopup(popup_44ce153ec7e42c2bf38f5debe2ab8109)
+        ;
+
+        
+    
+    
+            var marker_fe6e213c74cfe847fa919bfca267ae76 = L.marker(
+                [51.4406227, -0.1955395],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_e0d81454f45a58f4e95944adf794849c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fe6e213c74cfe847fa919bfca267ae76.setIcon(icon_e0d81454f45a58f4e95944adf794849c);
+        
+    
+        var popup_2577915fe6867ae5ae180965dd325f28 = L.popup({});
+
+        
+            
+                var html_30b86d7c9715f5e1d05e69924f454d61 = $(`<div id="html_30b86d7c9715f5e1d05e69924f454d61" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ravensbury Road, London Borough of Merton</h1><div class="nugget-popup"><p>Reports of foul sewage on the carriageway at the junction with Acuba Road (indicative of sewer&ndash;related flooding/contamination on the road). (p65)</p></div><div class="nugget-popup"><p>Foul sewer surcharging occurred at the junction with Acuba Road, causing local flooding at that junction. [MUL] (p69)</p></div></div></body></div>`)[0];
+                popup_2577915fe6867ae5ae180965dd325f28.setContent(html_30b86d7c9715f5e1d05e69924f454d61);
+            
+        
+
+        marker_fe6e213c74cfe847fa919bfca267ae76.bindPopup(popup_2577915fe6867ae5ae180965dd325f28)
+        ;
+
+        
+    
+    
+            var marker_eac3f7a241ca8a4a833d44dc8abd69af = L.marker(
+                [51.4113547, -0.1897518],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_47a5a3b1a9c2390115a9c1d95437d53a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eac3f7a241ca8a4a833d44dc8abd69af.setIcon(icon_47a5a3b1a9c2390115a9c1d95437d53a);
+        
+    
+        var popup_8cc4128b19b35dcf6567d7953df7afd9 = L.popup({});
+
+        
+            
+                var html_a5c38ddc2b4ce66beb684db3abbf914a = $(`<div id="html_a5c38ddc2b4ce66beb684db3abbf914a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Jubilee Way, Merton</h1><div class="nugget-popup"><p>Surface water flooding associated with overcapacity highway gullies at the Morden Road junction with Jubilee Way (runoff and surcharge from gullies contributing to flooding); prompted consideration of a SuDS retrofit to reduce surface water impact. [TAB] (p73)</p></div></div></body></div>`)[0];
+                popup_8cc4128b19b35dcf6567d7953df7afd9.setContent(html_a5c38ddc2b4ce66beb684db3abbf914a);
+            
+        
+
+        marker_eac3f7a241ca8a4a833d44dc8abd69af.bindPopup(popup_8cc4128b19b35dcf6567d7953df7afd9)
+        ;
+
+        
+    
+    
+            var marker_51ba4efeac7203ed88f8b7748314382a = L.marker(
+                [51.4177698, -0.1785501],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_5556d41d328055ce9066a03f39375c00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_51ba4efeac7203ed88f8b7748314382a.setIcon(icon_5556d41d328055ce9066a03f39375c00);
+        
+    
+        var popup_4827b39ec390db00d6d1cc226a056730 = L.popup({});
+
+        
+            
+                var html_6125463d0748e56d0ffc96f0e6a61836 = $(`<div id="html_6125463d0748e56d0ffc96f0e6a61836" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street Colliers Wood, London Borough of Merton</h1><div class="nugget-popup"><p>Increased surface water runoff and combined sewer surcharge in this street contributed to the combined sewer flooding incident that affected Baltic Close on 23 Jun 2016. Historic flooding incidents along High Street Colliers Wood occurred in 2000 and 2007; the 2007 event led to closure of Colliers Wood London Underground station and internal damage to a nearby library. [MUL] (p76)</p></div><div class="nugget-popup"><p>Existing highway flow path and carriageway levels on High Street Colliers Wood diverted surface water runoff toward a private property (junction with Baltic Close), contributing to the basement flooding incident. [PAG] (p77)</p></div></div></body></div>`)[0];
+                popup_4827b39ec390db00d6d1cc226a056730.setContent(html_6125463d0748e56d0ffc96f0e6a61836);
+            
+        
+
+        marker_51ba4efeac7203ed88f8b7748314382a.bindPopup(popup_4827b39ec390db00d6d1cc226a056730)
+        ;
+
+        
+    
+    
+            var marker_347603aaeb991e791a5bd27dce5c98b1 = L.marker(
+                [51.41086985, -0.18809708858824303],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_83cccf8a304c98f97cbb1cc4ac858137 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_347603aaeb991e791a5bd27dce5c98b1.setIcon(icon_83cccf8a304c98f97cbb1cc4ac858137);
+        
+    
+        var popup_5ba616ea46536df78fb9e4af2927a0c4 = L.popup({});
+
+        
+            
+                var html_c8656f9835ec058c7034c9691e5d9744 = $(`<div id="html_c8656f9835ec058c7034c9691e5d9744" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>London Borough of Merton</h1><div class="nugget-popup"><p>Multiple locations across the borough experienced flooding during three intense rainfall events; the LLFA investigated threshold&ndash;reaching sites and analysed additional flooded locations across the borough. [IMG,PAG,MUL] (p3)</p></div><div class="nugget-popup"><p>Multiple locations within the borough were heavily affected by intense rainfall leading to localised surface&ndash;water / urban flooding, causing disruption to local roads, rail and properties. These incidents triggered a Section 19 investigation. [PAG,MUL] (p16)</p></div><div class="nugget-popup"><p>Three locations within the borough were heavily affected by intense thunderstorms and associated surface water/flash flooding, reaching the Section 19 investigation threshold. [IMG,PAG] (p17)</p></div><div class="nugget-popup"><p>Intense, short&ndash;duration rainfall produced peak hourly depths across local gauges and led to surface&ndash;water / urban flooding across parts of the borough, causing localized flooding of streets and properties. [PAG,MUL] (p18)</p></div><div class="nugget-popup"><p>During the three rainfall events nine locations within the borough reached the council's flood investigation threshold; multiple localities experienced localised inundation and investigations/actions were recorded by responsible managing authorities. [PAG,MUL] (p19)</p></div><div class="nugget-popup"><p>Across the borough there were multiple flood incidents during the three rainfall events: nine locations reached Merton's Section 19 investigation threshold on at least one occasion; additional locations also flooded. The events triggered investigations, chaptered analysis of flood mechanisms and collaborative recommendations between risk management authorities. [IMG,PAG,MUL] (p20)</p></div><div class="nugget-popup"><p>Multiple locations across the borough experienced flooding during the reported events; sewer gauge data was used to estimate storm return periods for fourteen flooded locations. [TAB,PAG,MUL] (p21)</p></div><div class="nugget-popup"><p>The area around the junction of Whatley Avenue and Martin Way within the borough experienced surface water flooding, with ponding at a local low point and properties near the junction affected; highway gullies on the roads were on a high priority cleansing programme and had been last cleaned in January&ndash;February 2016 prior to the incident. [IMG,PAG,MUL] (p24)</p></div><div class="nugget-popup"><p>Flooding occurred at the junction of Martin Way and Whatley Avenue caused by a 750 mm surface water sewer running full and the local foul sewer network running full; additional flow backed up into gullies and low&ndash;level properties. Runoff from Cannon Hill Common and Joseph Hood Recreation Ground slopes down to Whatley Avenue, exacerbating the local drainage surcharge. [PAG] (p27)</p></div><div class="nugget-popup"><p>The council is responsible for implementing recommended actions (detention basin, SuDS, new gullies, increased street cleansing and planting features) to reduce runoff and local sewer overload that caused flooding of properties and roads. [PAG,MUL] (p28)</p></div><div class="nugget-popup"><p>The borough experienced significant surface water and sewer&ndash;related flooding in the Apostles area (Raynes Park ward) during the June 2016 event: local drainage and trunk sewers were overwhelmed, contributing to prolonged inundation and internal property flooding within the affected neighbourhood. [PAG] (p29)</p></div><div class="nugget-popup"><p>Multiple locations within the borough reached the council's Section 19 threshold for flooding, indicating localised surface&ndash;water/sewer&ndash;related flooding across the area. [IMG,PAG] (p30)</p></div><div class="nugget-popup"><p>Area of Merton (Bushey Mead/Dupont Road area) experienced surface water/highway flooding associated with the June 2016 event; the council undertook gully cleansing as part of its response. [IMG,PAG] (p31)</p></div><div class="nugget-popup"><p>Surface water flooding occurred in the borough (notably Dupont Road) due to a blockage in the surface water sewer; response actions included gully cleansing and jetting to clear the blockage and resolve the flooding. Thames Water attended multiple times to check the sewer. [TAB,PAG] (p32)</p></div><div class="nugget-popup"><p>The borough contained a flooding hotspot at Coombe Lane by Raynes Park railway bridge that reached the investigation (Section 19) threshold in all three events. Local topography, a large contributing sewer catchment draining down to Coombe Lane and low levels beneath the railway bridge contributed to repeated inundation. The council carried out/led CCTV investigations, collaborative drainage modelling with TWUL, and identification of SuDS and storm&ndash;relief/bypass options to reduce inflows to the main surface water sewer and provide overflow safety. [PAG,MUL] (p34)</p></div><div class="nugget-popup"><p>Multiple flood incidents across the borough reached the Section 19 threshold: internal flooding of commercial properties and transport disruption (including closure of the Raynes Park railway bridge underpass). [PAG,MUL] (p36)</p></div><div class="nugget-popup"><p>The borough experienced localised surface&ndash;water and sewer&ndash;related flooding during the incidents. Highway gullies in Coombe Lane and the south part of Pepys Road were a focus for cleansing before and after the incidents; four gullies directly beneath Raynes Park railway bridge were initially inaccessible and were not cleaned prior to the 2016/2017 incidents but were cleaned in April 2017. Flooding incidents caused risk to transport and flooding of commercial properties within the borough. [PAG,MUL] (p37)</p></div><div class="nugget-popup"><p>Surface water flooding in the Cottenham Park critical drainage area prompted gully cleansing, council liaison with TWUL and subsequent sewer cleaning and CCTV inspections by Thames Water after the July 2017 event. [TAB,PAG] (p40)</p></div><div class="nugget-popup"><p>The local sewer network in the borough received rainfall that probably exceeded its design capacity. The foul sewer surcharged at the lowest point of the catchment at Abbott Avenue (Dundonald ward) during the 2016 and 2017 events; during the 2017 incident an existing pump at Abbott Avenue failed for 12 hours, leading to local flooding. The borough is recommended to investigate pumps and sewer capacities in the affected catchment. [TAB,PAG,MUL] (p41)</p></div><div class="nugget-popup"><p>Multiple locations across the borough experienced sewer surcharge and surface water runoff that exceeded the sewer network capacity during the reported events, leading to internal flooding of properties and several locations reaching Merton's Section 19 threshold. [PAG,MUL] (p42)</p></div><div class="nugget-popup"><p>Flooding at multiple locations in the borough reached the council's Section 19 reporting threshold; Abbott Avenue was one of the affected locations where sewer surcharge caused internal property flooding. [PAG,MUL] (p43)</p></div><div class="nugget-popup"><p>The local authority (Merton) changed the gully cleansing priority for Abbott Avenue after the 2016 flooding incident: gullies that had previously been on a standard (at least once every two years) cleansing regime were moved to an at&ndash;least&ndash;annual cleansing programme for 2016/17 and 2017/18. [IMG,PAG,MUL] (p44)</p></div><div class="nugget-popup"><p>The Merton area (drainage catchment DC27) experienced surface&ndash;water flooding incidents in consecutive years (2016&ndash;2018), with the most significant incident in 2016. Flood&ndash;risk mapping (Figure 7.3) identifies parts of the local area, including Abbott Avenue and parts of Lower Downs Road, as high/medium risk of surface&ndash;water flooding. [IMG,PAG,MUL] (p45)</p></div><div class="nugget-popup"><p>Experienced surface water and sewer flooding affecting streets including Abbott Avenue and Lower Downs Road, prompting gully cleansing, pump station checks and sewer investigations and cleaning. [TAB,PAG,MUL] (p46)</p></div><div class="nugget-popup"><p>Parts of the borough (the Hillside/Wimbledon town centre area including Worple Road and Wimbledon Hill Road and adjacent streets) were affected by flooding during multiple events, reaching Merton's Section 19 investigation threshold. [PAG,MUL] (p48)</p></div><div class="nugget-popup"><p>Parts of the borough (central Wimbledon area) experienced surface water and associated sewer flooding; mapping shows predominant local risk from surface water runoff and predicted increased extents on key streets. [IMG,PAG,MUL] (p52)</p></div><div class="nugget-popup"><p>Town&ndash;centre surface water flooding occurred during prolonged rainfall (Aug 2017), with rapid overland flow down steep adjacent roads causing ponding on Worple Road and St. George's Road, runoff from a multi&ndash;storey car park reaching pavements and entering shops, and surface water sewers becoming overwhelmed/surcharging. [PAG,MUL] (p54)</p></div><div class="nugget-popup"><p>The local area experienced a surface&ndash;water flooding incident driven by topography that routes runoff to the Effra Road/Haydon's Road low point; parts of Merton (Effra Road, Haydon's Road and nearby properties) were affected or identified in connection with the incident. [IMG,PAG] (p56)</p></div><div class="nugget-popup"><p>Flooding at West Barnes Lane and adjoining streets reached the threshold for a Section 19 investigation for the June 2016 and July 2017 incidents; flooding was focused around the north&ndash;eastern end of Adela Avenue and across the highway junction with West Barnes Lane. [TAB,PAG,MUL] (p58)</p></div><div class="nugget-popup"><p>The London Borough of Merton carried out a high&ndash;priority highway gully cleansing programme for Adela Avenue and West Barnes Lane (gullies cleaned Dec 2015/Jan 2016); despite this, surface water/sewer flooding occurred in the locality during the 2016 and 2017 incidents and is the subject of the Section 19 investigation. [IMG,PAG,MUL] (p60)</p></div><div class="nugget-popup"><p>The borough's historic incident records include surface&ndash;water and fluvial&ndash;interaction flooding at local streets (for example Seaforth Avenue and West Barnes Lane on 20 July 2007) and records a response to surface&ndash;water flooding on 23 June 2016. [TAB,PAG,MUL] (p62)</p></div><div class="nugget-popup"><p>The local authority carried out cleansing of highway gullies at the affected junction (Adela Avenue and West Barnes Lane) between December 2016 and March 2017 and again in February&ndash;March 2018 as part of the response to local surface water flooding. [TAB,PAG,MUL] (p63)</p></div><div class="nugget-popup"><p>Areas within the borough reached the Section 19 threshold (e.g. Mount Road / Acuba Road / Brooklands Avenue in June 2016). The council carried out kerb and highway drainage improvement works (including adding gullies and carriageway resurfacing) which have reduced local flood risk. [PAG,MUL] (p64)</p></div><div class="nugget-popup"><p>Flooding in the Wimbledon Park ward (covering Mount Road, Acuba Road and Brooklands Avenue) reached the council's Section 19 threshold. The event started at approximately 09:00 BST and lasted about 12 hours; internal flooding affected properties (including residential basements) and foul sewage was reported on the road at the junction of Acuba Road and Ravensbury Road. [PAG] (p65)</p></div><div class="nugget-popup"><p>The council's highway gullies in the area were implicated in a local flooding incident; gullies were part of the high&ndash;priority cleansing programme and, after the flooding incident, gullies at the junction of Mount Road and Acuba Road were added to the high priority cleansing programme for 2016/17 and 2017/18. [IMG,PAG] (p66)</p></div><div class="nugget-popup"><p>The borough experienced multiple incidents of sewer and surface&ndash;water flooding (including foul sewer surcharging at Acuba/Ravensbury junction and basement flooding on Brooklands Avenue). Merton carried out assessment and made recommendations including engaging with TWUL on sewer re&ndash;benching and advising property&ndash;level resilience for affected basements. [PAG,MUL] (p69)</p></div><div class="nugget-popup"><p>The Merantun Way / Morden Road location in the borough reached the Council's Section 19 threshold on three occasions (one event on 23 Jun 2016 and two events in 2017), producing highway inundation and closures at a critical TfL&ndash;managed junction. [PAG,MUL] (p70)</p></div><div class="nugget-popup"><p>Reported the flooding to TfL and Thames Water during the incidents; significant flooding in the area led to a closure of Morden Road (from South Wimbledon station). [TAB,PAG,MUL] (p73)</p></div><div class="nugget-popup"><p>The borough experienced surface water flooding across multiple locations: Morden Road was closed due to significant flooding; Dorset Road (between Kingston Road and Erridge Road in Merton Park ward) experienced surface water ponding across the carriageway during the events, with greatest depths adjacent to dropped kerb crossovers. The council raised concerns about sewer functionality and asset maintenance contributing to flooding. [PAG,MUL] (p74)</p></div><div class="nugget-popup"><p>On 23 June 2016 combined sewer flooding following increased surface water runoff from High Street, Colliers Wood led to significant flooding of the basement of a commercial property within the borough. [PAG] (p75)</p></div><div class="nugget-popup"><p>The borough experienced a combined sewer surcharge / surface water flooding incident on 23 Jun 2016 that produced basement flooding of a commercial property in Baltic Close (max depth ~600 mm). The borough also records historic flooding incidents in 2000 and 2007 (the 2007 event disrupted Colliers Wood London Underground station). [PAG,MUL] (p76)</p></div><div class="nugget-popup"><p>Parts of the borough experienced combined sewer backflow and surface water runoff incidents that caused property basement flooding (for example the Baltic Close property) and prompted sewer inspections. [PAG] (p77)</p></div><div class="nugget-popup"><p>Numerous flooding incidents occurred across the borough during the reported events &mdash; affecting communities and infrastructure across multiple locations. Nine locations experienced incidents that met Merton's Section 19 investigation threshold and a further five locations flooded without reaching that threshold; incidents prompted actions by Risk Management Authorities before, during and after the events and led to recommendations for drainage improvements and communication. [PAG,MUL] (p81)</p></div><div class="nugget-popup"><p>Merton (the borough) experienced numerous surface water and sewer&ndash;related flooding incidents in the three events. Sewers reached hydraulic capacity and were overwhelmed by the extreme rainfall; misconnections and blockages aggravated flooding in local drainage networks and resulted in multiple locations meeting the Section 19 threshold. [PAG,MUL] (p82)</p></div><div class="nugget-popup"><p>The borough's sewer/drainage network was unable to handle the extreme rainfall and was overwhelmed, resulting in sewer and surface&ndash;water flooding across the borough. [PAG] (p83)</p></div><div class="nugget-popup"><p>Local sewer/drainage capacity was exceeded during the June 2016 extreme rainfall, with the sewer network unable to handle the flows and thus being overwhelmed; this prompted recommendations to re&ndash;evaluate the drainage network on a catchment basis. (p84)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>nine locations reached Section 19 threshold on 23 June 2016; five locations reached Section 19 threshold on 29&ndash;30 July 2017; three locations reached Section 19 threshold on 9 August 2017; five additional locations flooded but did not reach Section 19 thresholds [IMG,PAG,MUL] (p3)</p></div><div class="nugget-popup quant"><p>9 locations reached Section 19 threshold (23 Jun 2016); 5 locations (29 Jul 2017 &ndash; 30 Jul 2017); 3 locations (09 Aug 2017) [PAG,MUL] (p16)</p></div><div class="nugget-popup quant"><p>3 locations [IMG,PAG] (p17)</p></div><div class="nugget-popup quant"><p>9 locations [PAG,MUL] (p19)</p></div><div class="nugget-popup quant"><p>9 locations; 5 locations; 4 TWUL sewer gauges [IMG,PAG,MUL] (p20)</p></div><div class="nugget-popup quant"><p>14 flooding locations [TAB,PAG,MUL] (p21)</p></div><div class="nugget-popup quant"><p>approximately ten properties; 36 hours; 300&ndash;450 mm [PAG] (p29)</p></div><div class="nugget-popup quant"><p>nine locations reached Section 19 threshold (including Dupont Road) [IMG,PAG] (p30)</p></div><div class="nugget-popup quant"><p>approximately four commercial properties; flood depth 600&ndash;1000 mm (at Raynes Park); June event duration approximately 12 hours [PAG,MUL] (p36)</p></div><div class="nugget-popup quant"><p>9 locations reached Section 19 threshold across the borough; 3 distinct reported incidents [PAG,MUL] (p42)</p></div><div class="nugget-popup quant"><p>9 locations reached Section 19 threshold [PAG,MUL] (p43)</p></div><div class="nugget-popup quant"><p>more than two properties [PAG] (p65)</p></div><div class="nugget-popup quant"><p>1 commercial property (basement) flooded; maximum flood depth approximately 600 mm [PAG] (p75)</p></div><div class="nugget-popup quant"><p>one commercial property; maximum depth approximately 600 mm; closure of a tube station for nine hours [PAG,MUL] (p76)</p></div><div class="nugget-popup quant"><p>14 locations; 9 locations; 5 locations [PAG,MUL] (p81)</p></div><div class="nugget-popup quant"><p>fourteen locations; nine locations reached Merton's Section 19 threshold; five additional locations flooded but did not reach the threshold [PAG,MUL] (p82)</p></div><div class="nugget-popup quant"><p>designed for up to 1 in 30 year rainfall events; June 2016 was reported as a 1 in 60 year event (p84)</p></div></div></body></div>`)[0];
+                popup_5ba616ea46536df78fb9e4af2927a0c4.setContent(html_c8656f9835ec058c7034c9691e5d9744);
+            
+        
+
+        marker_347603aaeb991e791a5bd27dce5c98b1.bindPopup(popup_5ba616ea46536df78fb9e4af2927a0c4)
+        ;
+
+        
+    
+    
+            var marker_b581d662b1e70b1087751edb09b1f6dc = L.marker(
+                [51.40819685319756, -0.22832760780359473],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_c604db81ea1748c04dc9bdf7eef49f02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b581d662b1e70b1087751edb09b1f6dc.setIcon(icon_c604db81ea1748c04dc9bdf7eef49f02);
+        
+    
+        var popup_7d077ac25ccc29efd1572f13bd856744 = L.popup({});
+
+        
+            
+                var html_779e68e0015482051953248d19947d9f = $(`<div id="html_779e68e0015482051953248d19947d9f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Raynes Park</h1><div class="nugget-popup"><p>The area around Raynes Park railway bridge was implicated in flooding linked to pump condition/operation beneath the bridge, affecting local drainage behaviour and requiring investigation to inform surface water and sewer flood modelling. (p4)</p></div><div class="nugget-popup"><p>The Raynes Park ward experienced sewer&ndash;related flooding associated with the Coombe Lane location on 23 Jun 2016, 29&ndash;30 Jul 2017 and 09 Aug 2017 (see Coombe Lane entries and recorded sewer return periods). [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>The Apostles area within Raynes Park (twelve roads between Kingston Road, Grand Drive and Bushey Road) experienced significant flooding in the June 2016 event, resulting in internal flooding of properties and prolonged street inundation. (p29)</p></div><div class="nugget-popup"><p>The location within Raynes Park ward reached Merton's Section 19 threshold in the reported events; impacts in the area included internal flooding of commercial properties and transport disruption (including closure of the railway&ndash;bridge underpass). [PAG,MUL] (p35)</p></div><div class="nugget-popup"><p>The underpass beneath the Raynes Park railway bridge was inundated, causing Metropolitan Police to close the highway and making the road impassable; local transport was disrupted and commercial properties were flooded as part of the same incident. [IMG,PAG] (p36)</p></div><div class="nugget-popup"><p>The sewer network converges near Raynes Park railway bridge (major diameters discharging there) and gullies beneath the railway bridge were implicated in previous flooding incidents; the local sewer configuration and blocked/uncleared gullies contributed to surface&ndash;water surcharge and transport risk in the Raynes Park area during the recorded incidents. (p37)</p></div><div class="nugget-popup"><p>Four highway gullies directly underneath the Raynes Park railway bridge were not cleaned prior to the 2016 flooding incidents due to lack of access; these four gullies were subsequently cleaned in April 2017. The railway bridge also forms the catchment boundary and the area immediately south was identified as high risk of surface water flooding in the report. [PAG] (p38)</p></div><div class="nugget-popup"><p>The road slopes down beneath the Raynes Park railway bridge created a man&ndash;made low spot where significant flooding occurred; the railway bridge underpass became impassable and was closed to pedestrians and vehicles. Pumps beneath the railway bridge were identified for further investigation. [PAG,MUL] (p41)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately ten properties; 36 hours; 300&ndash;450 mm (p29)</p></div><div class="nugget-popup quant"><p>4 commercial properties; 1 underpass closure [PAG,MUL] (p35)</p></div><div class="nugget-popup quant"><p>approximately four commercial properties; flood depth 600&ndash;1000 mm; June event duration approximately 12 hours [IMG,PAG] (p36)</p></div><div class="nugget-popup quant"><p>3 incidents [PAG,MUL] (p41)</p></div></div></body></div>`)[0];
+                popup_7d077ac25ccc29efd1572f13bd856744.setContent(html_779e68e0015482051953248d19947d9f);
+            
+        
+
+        marker_b581d662b1e70b1087751edb09b1f6dc.bindPopup(popup_7d077ac25ccc29efd1572f13bd856744)
+        ;
+
+        
+    
+    
+            var marker_e941a49c2ec477ed700df4ae34efb5f2 = L.marker(
+                [51.4143002, -0.2360857],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_a4aaf20a280500d185f4a21024ebc89b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e941a49c2ec477ed700df4ae34efb5f2.setIcon(icon_a4aaf20a280500d185f4a21024ebc89b);
+        
+    
+        var popup_b88718f4ed5f2469ea338baa6ba1676c = L.popup({});
+
+        
+            
+                var html_0ea1c19876effefc14b2974b18084e62 = $(`<div id="html_0ea1c19876effefc14b2974b18084e62" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cottenham Park</h1><div class="nugget-popup"><p>Higher ground in and around Cottenham Park contributed a large proportion of surface water runoff that flowed downhill towards Coombe Lane and the low spot beneath Raynes Park railway bridge, increasing flows that contributed to sewer surcharge and underpass flooding. [MUL] (p41)</p></div></div></body></div>`)[0];
+                popup_b88718f4ed5f2469ea338baa6ba1676c.setContent(html_0ea1c19876effefc14b2974b18084e62);
+            
+        
+
+        marker_e941a49c2ec477ed700df4ae34efb5f2.bindPopup(popup_b88718f4ed5f2469ea338baa6ba1676c)
+        ;
+
+        
+    
+    
+            var marker_597ee27061939d1bc5783faca4ac2537 = L.marker(
+                [51.4079938, -0.2019654],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_0d4589eda52802be138bdf2ed75b52e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_597ee27061939d1bc5783faca4ac2537.setIcon(icon_0d4589eda52802be138bdf2ed75b52e1);
+        
+    
+        var popup_e562e6f8620fd8cc1e07ef9d7450a508 = L.popup({});
+
+        
+            
+                var html_0acb7e9f11e209c9a92901b10fdbaa1d = $(`<div id="html_0acb7e9f11e209c9a92901b10fdbaa1d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Merton Park</h1><div class="nugget-popup"><p>Merton Park ward experienced flooding at locations listed in the report (including Dorset Road and Kenley Road car park). [TAB,MUL] (p21)</p></div></div></body></div>`)[0];
+                popup_e562e6f8620fd8cc1e07ef9d7450a508.setContent(html_0acb7e9f11e209c9a92901b10fdbaa1d);
+            
+        
+
+        marker_597ee27061939d1bc5783faca4ac2537.bindPopup(popup_e562e6f8620fd8cc1e07ef9d7450a508)
+        ;
+
+        
+    
+    
+            var marker_fa886779d90906eb1954d21bf7609991 = L.marker(
+                [51.3977576, -0.2383655],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_c15b864be500f713b9afeb6f9439cd9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fa886779d90906eb1954d21bf7609991.setIcon(icon_c15b864be500f713b9afeb6f9439cd9c);
+        
+    
+        var popup_3b8535ae3230cc356c01f3472ab34101 = L.popup({});
+
+        
+            
+                var html_a662ba8ba4104cc4926e23283473e359 = $(`<div id="html_a662ba8ba4104cc4926e23283473e359" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Barnes</h1><div class="nugget-popup"><p>Flooding occurred at the Burlington Road / Shannon Corner junction and along West Barnes Lane; sewer gauges record sewer surcharge events at these locations. [TAB,PAG,MUL] (p21)</p></div><div class="nugget-popup"><p>Properties within West Barnes (notably those backing onto the culverted Pyl Brook along West Barnes Lane) experienced inundation during the 2016 and 2017 incidents; the area is also mapped as Flood Zone 3, covering most of West Barnes Lane and some properties around the Adela Avenue junction. [IMG,PAG,MUL] (p60)</p></div><div class="nugget-popup"><p>Area experienced surface&ndash;water flooding during the events in 2016 and 2017; runoff collected toward low&ndash;lying parts of the neighbourhood (notably along West Barnes Lane) contributing to inundation of the local study area. [IMG,PAG,MUL] (p61)</p></div><div class="nugget-popup"><p>The Burlington Road / Shannon Corner junction (under the A3 flyover) in West Barnes was affected during all three reported rainfall events. Flooding at this location is recurrent and during the events was attributable to heavily silted surface water sewers and a limited sewer gradient that produced surcharges and backflows. Network investigations confirmed siltation issues beneath the central island of the roundabout; no properties were recorded by the council as affected. [MUL] (p79)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 properties recorded as affected [MUL] (p79)</p></div></div></body></div>`)[0];
+                popup_3b8535ae3230cc356c01f3472ab34101.setContent(html_a662ba8ba4104cc4926e23283473e359);
+            
+        
+
+        marker_fa886779d90906eb1954d21bf7609991.bindPopup(popup_3b8535ae3230cc356c01f3472ab34101)
+        ;
+
+        
+    
+    
+            var marker_0158fe24a94bf99d335d10f7735e5b6f = L.marker(
+                [51.4182747, -0.1778626],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_04c5431b695615ef7e3ea3743e852438 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0158fe24a94bf99d335d10f7735e5b6f.setIcon(icon_04c5431b695615ef7e3ea3743e852438);
+        
+    
+        var popup_9a1c6b71282c401a92b13c8d79e2c2b0 = L.popup({});
+
+        
+            
+                var html_30757816c464590f96281d208ac1a1d3 = $(`<div id="html_30757816c464590f96281d208ac1a1d3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Colliers Wood</h1><div class="nugget-popup"><p>Sewer flooding recorded in the Baltic Close / Colliers Wood Station area as measured by TWUL sewer gauges. Estimated maximum storm return periods recorded at the nearest sewer gauge: 1 in 21 year (June 2016), 1 in 2 year (July 2017), 1 in 5 year (August 2017). Section 19 investigation threshold was not reached for these events. [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>Significant flooding affected Colliers Wood on 23 June 2016: a commercial property's basement was flooded, caused primarily by combined sewer flooding following increased surface water runoff from High Street Colliers Wood. Flooding started at about 09:00 BST and lasted about 12 hours. [PAG] (p75)</p></div></div></body></div>`)[0];
+                popup_9a1c6b71282c401a92b13c8d79e2c2b0.setContent(html_30757816c464590f96281d208ac1a1d3);
+            
+        
+
+        marker_0158fe24a94bf99d335d10f7735e5b6f.bindPopup(popup_9a1c6b71282c401a92b13c8d79e2c2b0)
+        ;
+
+        
+    
+    
+            var marker_6536a2a9b7399a10df160f35ba68c771 = L.marker(
+                [51.3897736, -0.2163635],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_4c50adb0bcc34afcf6000aa0baa2bc85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6536a2a9b7399a10df160f35ba68c771.setIcon(icon_4c50adb0bcc34afcf6000aa0baa2bc85);
+        
+    
+        var popup_0c5d324a1f067a10415952ab34c8ab82 = L.popup({});
+
+        
+            
+                var html_a3c7c7efac2391b9b5e0793e99857275 = $(`<div id="html_a3c7c7efac2391b9b5e0793e99857275" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lower Morden</h1><div class="nugget-popup"><p>The Lower Morden ward experienced flooding at Lower Malden Lane (recorded by TWUL sewer gauges). Estimated maximum storm return periods associated with the location: 1 in 30 year (June 2016), 1 in 2 year (July 2017), 1 in 4 year (August 2017). [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>The ward contained Lower Morden Lane which experienced surface water flooding constrained to the highway with no properties affected; nearby TWUL surface water sewer blockage prevented discharge to East Pyl Brook, contributing to local runoff issues. [MUL] (p78)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 properties affected [MUL] (p78)</p></div></div></body></div>`)[0];
+                popup_0c5d324a1f067a10415952ab34c8ab82.setContent(html_a3c7c7efac2391b9b5e0793e99857275);
+            
+        
+
+        marker_6536a2a9b7399a10df160f35ba68c771.bindPopup(popup_0c5d324a1f067a10415952ab34c8ab82)
+        ;
+
+        
+    
+    
+            var marker_677c268aec01dbfd95f69dd1f01b43fb = L.marker(
+                [51.4187233, -0.2420669],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_a0240059875babc2e0071e0e604a172d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_677c268aec01dbfd95f69dd1f01b43fb.setIcon(icon_a0240059875babc2e0071e0e604a172d);
+        
+    
+        var popup_659885e5f7a3004ff51ae6dcf992f7bf = L.popup({});
+
+        
+            
+                var html_3629964be186f5ce85e2bbf9564c2096 = $(`<div id="html_3629964be186f5ce85e2bbf9564c2096" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Copse Hill</h1><div class="nugget-popup"><p>Higher ground in and around Copse Hill contributed surface water runoff that fed flows toward Coombe Lane and the Raynes Park underpass, increasing runoff volumes that contributed to sewer surcharge and local flooding. [MUL] (p41)</p></div></div></body></div>`)[0];
+                popup_659885e5f7a3004ff51ae6dcf992f7bf.setContent(html_3629964be186f5ce85e2bbf9564c2096);
+            
+        
+
+        marker_677c268aec01dbfd95f69dd1f01b43fb.bindPopup(popup_659885e5f7a3004ff51ae6dcf992f7bf)
+        ;
+
+        
+    
+    
+            var marker_fd9a5cf96fd0d1c9aaa9a741e32a9e40 = L.marker(
+                [51.41902299447477, -0.2175629037404358],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_05863d6ae940fca83fb96edb54ee2ee7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fd9a5cf96fd0d1c9aaa9a741e32a9e40.setIcon(icon_05863d6ae940fca83fb96edb54ee2ee7);
+        
+    
+        var popup_ca20c95ad35fa46cf5298c0c1881b571 = L.popup({});
+
+        
+            
+                var html_edfd357362921f18a796230f27133ccf = $(`<div id="html_edfd357362921f18a796230f27133ccf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wimbledon</h1><div class="nugget-popup"><p>Wimbledon town centre area experienced repeated flooding across the events, including highway inundation and internal flooding of commercial and residential premises in the affected locality. [MUL] (p49)</p></div><div class="nugget-popup"><p>Surface&ndash;water (urban) flooding affected central Wimbledon during the reported events; incidents in adjacent streets (Worple Road, Wimbledon Hill Road, St George's Road) are recorded and report text states similar consequences occurred in the 2016 and 2017 events. Transport and commercial hubs in central Wimbledon were identified as vulnerable to surface&ndash;water inundation. [IMG,PAG,MUL] (p52)</p></div></div></body></div>`)[0];
+                popup_ca20c95ad35fa46cf5298c0c1881b571.setContent(html_edfd357362921f18a796230f27133ccf);
+            
+        
+
+        marker_fd9a5cf96fd0d1c9aaa9a741e32a9e40.bindPopup(popup_ca20c95ad35fa46cf5298c0c1881b571)
+        ;
+
+        
+    
+    
+            var marker_94c887cf2af8403dd03512278f94a232 = L.marker(
+                [51.4089922, -0.2226123],
+                {}
+            ).addTo(map_5edaa01ab0bdf0f77019ebbe4ff9c9d9);
+        
+    
+            var icon_ea9610646928fc0170684523f43bec5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_94c887cf2af8403dd03512278f94a232.setIcon(icon_ea9610646928fc0170684523f43bec5e);
+        
+    
+        var popup_e68f8e112f4554202faf1ff16efb135f = L.popup({});
+
+        
+            
+                var html_dc5316fbf63639312c6ad494be71d2b6 = $(`<div id="html_dc5316fbf63639312c6ad494be71d2b6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Apostles</h1><div class="nugget-popup"><p>The Apostles area recorded intense rainfall during 22&ndash;24 June 2016 associated with the June 2016 event; this produced surface water flooding in the Apostles area as part of the investigated event. [TAB] (p87)</p></div><div class="nugget-popup"><p>Recorded extreme short&ndash;duration (5&ndash;minute) rainfall during 23 June 2016 (table lists Apostles area, including Dupont Road), associated with surface&ndash;water / flash&ndash;flooding conditions in the locality. [TAB] (p88)</p></div></div></body></div>`)[0];
+                popup_e68f8e112f4554202faf1ff16efb135f.setContent(html_dc5316fbf63639312c6ad494be71d2b6);
+            
+        
+
+        marker_94c887cf2af8403dd03512278f94a232.bindPopup(popup_e68f8e112f4554202faf1ff16efb135f)
+        ;
+
+        
+    
+</script>
+</html>
