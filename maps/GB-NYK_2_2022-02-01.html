@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d3e3094b63b8fd1c19f1bbb96867ebca {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d3e3094b63b8fd1c19f1bbb96867ebca" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d3e3094b63b8fd1c19f1bbb96867ebca = L.map(
+                "map_d3e3094b63b8fd1c19f1bbb96867ebca",
+                {
+                    center: [53.89422929709629, -1.423299907542063],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_87dd34fcfda7afd7cb3ec9508b6d1de4 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_87dd34fcfda7afd7cb3ec9508b6d1de4.addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+    
+            var marker_92c98e0c4851095432fed2f36eaf3362 = L.marker(
+                [53.8855754, -1.2582267],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_b44d69671a69684c4c3ada6ccfd90dbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_92c98e0c4851095432fed2f36eaf3362.setIcon(icon_b44d69671a69684c4c3ada6ccfd90dbd);
+        
+    
+        var popup_074c98ff863fccbb3cc6490b35a24e7f = L.popup({});
+
+        
+            
+                var html_88a9ca63aa26d9a63b2c194c537868fa = $(`<div id="html_88a9ca63aa26d9a63b2c194c537868fa" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tadcaster Medical Centre</h1><div class="nugget-popup"><p>Severe flooding in February 2022 with floodwater reaching the entrance ramp and encroaching on the building; vehicles were partially submerged and access to the facility was impeded, threatening property and likely disrupting services. [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_074c98ff863fccbb3cc6490b35a24e7f.setContent(html_88a9ca63aa26d9a63b2c194c537868fa);
+            
+        
+
+        marker_92c98e0c4851095432fed2f36eaf3362.bindPopup(popup_074c98ff863fccbb3cc6490b35a24e7f)
+        ;
+
+        
+    
+    
+            var marker_aa15d981088a5c6a016eb1a309183e99 = L.marker(
+                [53.88634248415339, -1.2604922306472186],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_d2b7bf2dd4d6dfe1200aaea360ff50df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aa15d981088a5c6a016eb1a309183e99.setIcon(icon_d2b7bf2dd4d6dfe1200aaea360ff50df);
+        
+    
+        var popup_0f0f52d8dfa0c7a5b4db897d92b3ed83 = L.popup({});
+
+        
+            
+                var html_d2ccf17d68ab8b514923b00a82a6d73e = $(`<div id="html_d2ccf17d68ab8b514923b00a82a6d73e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sainsbury's</h1><div class="nugget-popup"><p>River Wharfe overtopped/breached its banks on the left bank immediately adjacent to the Sainsbury's site, allowing floodwater to escape the channel at that location. [IMG] (p12)</p></div></div></body></div>`)[0];
+                popup_0f0f52d8dfa0c7a5b4db897d92b3ed83.setContent(html_d2ccf17d68ab8b514923b00a82a6d73e);
+            
+        
+
+        marker_aa15d981088a5c6a016eb1a309183e99.bindPopup(popup_0f0f52d8dfa0c7a5b4db897d92b3ed83)
+        ;
+
+        
+    
+    
+            var marker_a39852b51eee2239d83ddec29a9c2d1b = L.marker(
+                [54.7023545, -3.2765753],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_0947468f7dad9988175d6019774d7189 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a39852b51eee2239d83ddec29a9c2d1b.setIcon(icon_0947468f7dad9988175d6019774d7189);
+        
+    
+        var popup_3976728bb86be3d44d91cdcb02f3e759 = L.popup({});
+
+        
+            
+                var html_d0d249c9d3be36df85ba831330389526 = $(`<div id="html_d0d249c9d3be36df85ba831330389526" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>UK</h1><div class="nugget-popup"><p>A series of storms moved across the UK between 16 and 21 February 2022, including Storm Franklin on 20 February, producing prolonged rainfall that saturated catchments and led to high river levels and flooding in affected parts of the UK (notably North Yorkshire). (p8)</p></div></div></body></div>`)[0];
+                popup_3976728bb86be3d44d91cdcb02f3e759.setContent(html_d0d249c9d3be36df85ba831330389526);
+            
+        
+
+        marker_a39852b51eee2239d83ddec29a9c2d1b.bindPopup(popup_3976728bb86be3d44d91cdcb02f3e759)
+        ;
+
+        
+    
+    
+            var marker_2068713b94a2eb5ffcca72c5da9e6512 = L.marker(
+                [53.7213972, -1.1705201],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_e26c920b762ce944f68726072417345a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2068713b94a2eb5ffcca72c5da9e6512.setIcon(icon_e26c920b762ce944f68726072417345a);
+        
+    
+        var popup_be208db90704ae1c56f5dcbffb2d1ef8 = L.popup({});
+
+        
+            
+                var html_41d40dcee28d596bbebe4cbbe7a82275 = $(`<div id="html_41d40dcee28d596bbebe4cbbe7a82275" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Marsh Drain</h1><div class="nugget-popup"><p>The ordinary watercourse (Marsh Drain) surcharged and backed up into the sewer system, causing the foul sewer to surcharge and resulting in internal flooding of properties and loss of toilet facilities. (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties internally flooded; 18 properties left without toilet facilities (p13)</p></div></div></body></div>`)[0];
+                popup_be208db90704ae1c56f5dcbffb2d1ef8.setContent(html_41d40dcee28d596bbebe4cbbe7a82275);
+            
+        
+
+        marker_2068713b94a2eb5ffcca72c5da9e6512.bindPopup(popup_be208db90704ae1c56f5dcbffb2d1ef8)
+        ;
+
+        
+    
+    
+            var marker_1de080d2920ac8da83db826dde60e200 = L.marker(
+                [53.910881, -1.6910531],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_2f115fa59ffc0b3de546e13e62b6f4b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1de080d2920ac8da83db826dde60e200.setIcon(icon_2f115fa59ffc0b3de546e13e62b6f4b5);
+        
+    
+        var popup_6dd889f28708e53a8ebb52da8b62b800 = L.popup({});
+
+        
+            
+                var html_e71294d926f4924ecc8d8f1a435506cd = $(`<div id="html_e71294d926f4924ecc8d8f1a435506cd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Wharfe</h1><div class="nugget-popup"><p>Identified as the most significant mechanism causing flooding within Tadcaster (i.e. river overflow leading to town flooding). (p2)</p></div><div class="nugget-popup"><p>Very high river levels in the River Wharfe (reported as the second&ndash;highest in 30 years at Tadcaster) contributed to widespread flooding locally &mdash; most notably the major flood impact at Tadcaster &mdash; and to internally flooded properties elsewhere in the catchment. (p8)</p></div><div class="nugget-popup"><p>The lower River Wharfe experienced very high river levels (recorded as the second highest in 30 years at Tadcaster) and was a cause of flooding to communities in the Selby District (notably Tadcaster). (p10)</p></div><div class="nugget-popup"><p>River Wharfe overtopped and/or breached its banks at multiple specific locations through Tadcaster: near the Old Mill property adjacent to the weir (left bank); adjacent to Sainsbury's (left bank); a small site upstream where the defence takes a 90&deg; turn and the footpath crosses (right bank); and downstream of the bridge near the plinth for the temporary footbridge (right bank). [IMG,PAG] (p12)</p></div><div class="nugget-popup"><p>High flows during the February 2022 flood event prompted additional EA surveys and changes to flood warning/alert triggers at Tadcaster; the river's high water levels contributed to the breach/circumvention of the defence embankment at Ulleskelf and to flooding/surcharging of Ulleskelf Ings. (p13)</p></div><div class="nugget-popup"><p>High water levels on the River Wharfe caused the breach/circumvention of the flood defence embankment behind West End properties in Ulleskelf, contributed to surcharging of the Ulleskelf Ings and triggered widespread flood warnings across the catchment. [PAG] (p14)</p></div><div class="nugget-popup"><p>Properties within the Wharfe catchment were internally flooded; at Kirkby Wharfe (on the Wharfe) one property was internally flooded and both approach roads were cut off by flooding. Community HESCO bank initially held floodwater but was overtopped and the Aquadam then came into play; pumps could not match percolation beneath the Aquadam leading to the property flood. [TAB,PAG] (p15)</p></div><div class="nugget-popup"><p>EA reprofiling of low spots within the River Wharfe to reduce the risk of the river breaching; the river is linked in the report to flooding in Tadcaster (including the 2015 event) and the February 2022 event. [TAB,MUL] (p16)</p></div><div class="nugget-popup"><p>Experienced significant flooding as part of the February 2022 catchment flood events; subject of a formal flood investigation by NYCC. (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>63 properties internally flooded in Tadcaster; 6 properties internally flooded in Ulleskelf; an additional 15 internally flooded properties across the Nidd, Wharfe and Aire catchments. (p8)</p></div><div class="nugget-popup quant"><p>Second highest in 30 years at Tadcaster; linked to 63 internally flooded properties in Tadcaster (flooding from the River Wharfe listed among causes) (p10)</p></div><div class="nugget-popup quant"><p>4 locations [IMG,PAG] (p12)</p></div><div class="nugget-popup quant"><p>1 property (Kirkby Wharfe); 15 properties (combined across Nidd and Wharfe catchments) [TAB,PAG] (p15)</p></div></div></body></div>`)[0];
+                popup_6dd889f28708e53a8ebb52da8b62b800.setContent(html_e71294d926f4924ecc8d8f1a435506cd);
+            
+        
+
+        marker_1de080d2920ac8da83db826dde60e200.bindPopup(popup_6dd889f28708e53a8ebb52da8b62b800)
+        ;
+
+        
+    
+    
+            var marker_9eb8b9f0ffc061f19c9a7782fc2bedef = L.marker(
+                [54.0322022, -1.5638727],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_71952fe4d76f8307f7a6f90c32ef9b1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9eb8b9f0ffc061f19c9a7782fc2bedef.setIcon(icon_71952fe4d76f8307f7a6f90c32ef9b1c);
+        
+    
+        var popup_48ca239521e34bc8d41b9f5890d1d0ae = L.popup({});
+
+        
+            
+                var html_a47c1812a5478f288467e841d08cb47a = $(`<div id="html_a47c1812a5478f288467e841d08cb47a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Nidd</h1><div class="nugget-popup"><p>Properties within the Nidd catchment were internally flooded as part of the wider event affecting the Nidd, Wharfe and Aire catchments. [IMG] (p8)</p></div><div class="nugget-popup"><p>Subject to post&ndash;February 2022 visual inspections by the EA to re&ndash;assess asset condition and identify localised low spots following the flood event; results used to inform the recovery programme. (p12)</p></div><div class="nugget-popup"><p>Properties within the Nidd catchment were internally flooded as part of the February 2022 event. [TAB] (p15)</p></div><div class="nugget-popup"><p>Experienced significant flooding as part of the February 2022 catchment flood events; subject of a formal flood investigation by NYCC. (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>15 properties (collectively across the Nidd, Wharfe and Aire catchments) [IMG] (p8)</p></div><div class="nugget-popup quant"><p>15 properties (combined across Nidd and Wharfe catchments) [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_48ca239521e34bc8d41b9f5890d1d0ae.setContent(html_a47c1812a5478f288467e841d08cb47a);
+            
+        
+
+        marker_9eb8b9f0ffc061f19c9a7782fc2bedef.bindPopup(popup_48ca239521e34bc8d41b9f5890d1d0ae)
+        ;
+
+        
+    
+    
+            var marker_8bf4df2648c47446eeca82c6b3ba92d7 = L.marker(
+                [53.8034294, -1.5829169],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_7ef16769a0b2439406314d943273d28d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8bf4df2648c47446eeca82c6b3ba92d7.setIcon(icon_7ef16769a0b2439406314d943273d28d);
+        
+    
+        var popup_b1b58d7d3462deda0af48cf23568f976 = L.popup({});
+
+        
+            
+                var html_7824636195de5326484f5500bcb27dcc = $(`<div id="html_7824636195de5326484f5500bcb27dcc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Aire</h1><div class="nugget-popup"><p>Properties within the Aire catchment were internally flooded as part of the wider event affecting the Nidd, Wharfe and Aire catchments. [IMG] (p8)</p></div><div class="nugget-popup"><p>High river levels on the River Aire (recorded as the second highest in 27 years at Castleford near Brotherton) contributed to flooding that affected communities in the area, including Brotherton/Castleford. (p10)</p></div><div class="nugget-popup"><p>Experienced significant flooding as part of the February 2022 catchment flood events; subject of a formal flood investigation by NYCC. (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>15 properties (collectively across the Nidd, Wharfe and Aire catchments) [IMG] (p8)</p></div><div class="nugget-popup quant"><p>Second highest in 27 years at Castleford; associated with flooded properties in nearby communities (report lists Brotherton among locations affected) (p10)</p></div></div></body></div>`)[0];
+                popup_b1b58d7d3462deda0af48cf23568f976.setContent(html_7824636195de5326484f5500bcb27dcc);
+            
+        
+
+        marker_8bf4df2648c47446eeca82c6b3ba92d7.bindPopup(popup_b1b58d7d3462deda0af48cf23568f976)
+        ;
+
+        
+    
+    
+            var marker_0c5249a8f943eea1adb6a4301dcbd3f1 = L.marker(
+                [53.8103182, -1.0426146],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_9d930cb48e23a315de2b2119ac872510 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0c5249a8f943eea1adb6a4301dcbd3f1.setIcon(icon_9d930cb48e23a315de2b2119ac872510);
+        
+    
+        var popup_9faa94fa68c8b3131402c55911cb0981 = L.popup({});
+
+        
+            
+                var html_3bdda22c451f29a37e38a4bff3602e3b = $(`<div id="html_3bdda22c451f29a37e38a4bff3602e3b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Ouse</h1><div class="nugget-popup"><p>Flooding of the River Ouse affected Acaster Selby, resulting in two properties on Back Lane being internally flooded. (p10)</p></div><div class="nugget-popup"><p>Subject to post&ndash;February 2022 visual inspections by the EA to re&ndash;assess asset condition and identify localised low spots following the flood event; results used to inform the recovery programme. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (p10)</p></div></div></body></div>`)[0];
+                popup_9faa94fa68c8b3131402c55911cb0981.setContent(html_3bdda22c451f29a37e38a4bff3602e3b);
+            
+        
+
+        marker_0c5249a8f943eea1adb6a4301dcbd3f1.bindPopup(popup_9faa94fa68c8b3131402c55911cb0981)
+        ;
+
+        
+    
+    
+            var marker_0a5ebe38042a8d6ab6a7248ce14f4a3d = L.marker(
+                [53.7219767, -1.2680297],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_cc18b668854ba02d440eaf32e00b3cae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0a5ebe38042a8d6ab6a7248ce14f4a3d.setIcon(icon_cc18b668854ba02d440eaf32e00b3cae);
+        
+    
+        var popup_9c01197c39f4dec12d6e2203f5f42ed0 = L.popup({});
+
+        
+            
+                var html_ad871d96bdc87e6ec6cc954cd9a0a099 = $(`<div id="html_ad871d96bdc87e6ec6cc954cd9a0a099" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Marsh Croft, Brotherton</h1><div class="nugget-popup"><p>Three properties at Marsh Croft were internally flooded. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties (p10)</p></div></div></body></div>`)[0];
+                popup_9c01197c39f4dec12d6e2203f5f42ed0.setContent(html_ad871d96bdc87e6ec6cc954cd9a0a099);
+            
+        
+
+        marker_0a5ebe38042a8d6ab6a7248ce14f4a3d.bindPopup(popup_9c01197c39f4dec12d6e2203f5f42ed0)
+        ;
+
+        
+    
+    
+            var marker_f530717ff35522b685f4832cd7fa868c = L.marker(
+                [53.8624757, -1.1297603],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_7001fdfe2aa1a4a0ebed3700934f0403 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f530717ff35522b685f4832cd7fa868c.setIcon(icon_7001fdfe2aa1a4a0ebed3700934f0403);
+        
+    
+        var popup_447d8515cc9ea769d2190162021c1e6c = L.popup({});
+
+        
+            
+                var html_7a9021610f8eb168a63fbacafc00b8b5 = $(`<div id="html_7a9021610f8eb168a63fbacafc00b8b5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Back Lane, Acaster Selby</h1><div class="nugget-popup"><p>Two properties on Back Lane were internally flooded. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (p10)</p></div></div></body></div>`)[0];
+                popup_447d8515cc9ea769d2190162021c1e6c.setContent(html_7a9021610f8eb168a63fbacafc00b8b5);
+            
+        
+
+        marker_f530717ff35522b685f4832cd7fa868c.bindPopup(popup_447d8515cc9ea769d2190162021c1e6c)
+        ;
+
+        
+    
+    
+            var marker_2546f5b455fed2eac84df8159affd3b7 = L.marker(
+                [53.88450063328629, -1.2605782988212546],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_1c4dd371128beb66aebc2d6186d4ebdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2546f5b455fed2eac84df8159affd3b7.setIcon(icon_1c4dd371128beb66aebc2d6186d4ebdc);
+        
+    
+        var popup_9cfc575978d88c91fb4e514ef2f63c5c = L.popup({});
+
+        
+            
+                var html_bf541324478c9975a03cdd7f40889a38 = $(`<div id="html_bf541324478c9975a03cdd7f40889a38" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bridge Street, Tadcaster</h1><div class="nugget-popup"><p>Properties around Bridge Street were internally flooded as part of the Tadcaster flooding; many flooded premises were businesses and contributed to the overall estimated £400,000 of damages in Tadcaster. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>63 properties internally flooded in Tadcaster (majority located around Bridge Street and Commercial Street) (p10)</p></div></div></body></div>`)[0];
+                popup_9cfc575978d88c91fb4e514ef2f63c5c.setContent(html_bf541324478c9975a03cdd7f40889a38);
+            
+        
+
+        marker_2546f5b455fed2eac84df8159affd3b7.bindPopup(popup_9cfc575978d88c91fb4e514ef2f63c5c)
+        ;
+
+        
+    
+    
+            var marker_d16acd75d587dc0f7ef826ee564f6e9b = L.marker(
+                [53.88584674673925, -1.258822906813994],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_4f853ecec2f48a7953c11c74b608afb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d16acd75d587dc0f7ef826ee564f6e9b.setIcon(icon_4f853ecec2f48a7953c11c74b608afb0);
+        
+    
+        var popup_5613ed17482858b6464f4deb20d8f173 = L.popup({});
+
+        
+            
+                var html_d6727353660560f8a9746d7e2ea72dc0 = $(`<div id="html_d6727353660560f8a9746d7e2ea72dc0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Commercial Street, Tadcaster</h1><div class="nugget-popup"><p>Properties on Commercial Street were internally flooded as part of the Tadcaster event; many flooded premises were businesses and contributed to the estimated £400,000 of damages. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>63 properties internally flooded in Tadcaster (majority located around Bridge Street and Commercial Street) (p10)</p></div></div></body></div>`)[0];
+                popup_5613ed17482858b6464f4deb20d8f173.setContent(html_d6727353660560f8a9746d7e2ea72dc0);
+            
+        
+
+        marker_d16acd75d587dc0f7ef826ee564f6e9b.bindPopup(popup_5613ed17482858b6464f4deb20d8f173)
+        ;
+
+        
+    
+    
+            var marker_3934dcb29638993b1a9ccb0920ab325f = L.marker(
+                [53.85526066346393, -1.2149722086632646],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_9042fb4450f06e4bcb18641b4eea8b09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3934dcb29638993b1a9ccb0920ab325f.setIcon(icon_9042fb4450f06e4bcb18641b4eea8b09);
+        
+    
+        var popup_5907fd078b727ea3cece45143e10185c = L.popup({});
+
+        
+            
+                var html_439dd4cefa96e93b29ff06b4094ff861 = $(`<div id="html_439dd4cefa96e93b29ff06b4094ff861" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West End, Ulleskelf</h1><div class="nugget-popup"><p>Six properties at West End were internally flooded. (p10)</p></div><div class="nugget-popup"><p>The flood defence embankment to the rear of properties in the West End was breached/circumvented by high River Wharfe levels, allowing floodwater to enter to the rear of properties; flood extents mirrored approximately Flood Zone 2. (p13)</p></div><div class="nugget-popup"><p>The flood defence embankment to the rear of properties in West End was breached/circumvented by high River Wharfe levels; Ulleskelf Ings (EA&ndash;managed water storage area) surcharged and pushed water up through drains onto Main Street (drains surcharged but defences were not breached there). Pumps were deployed to prevent internal property flooding. Residents reported flood warnings with short lead time. [IMG,PAG] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties internally flooded (p10)</p></div></div></body></div>`)[0];
+                popup_5907fd078b727ea3cece45143e10185c.setContent(html_439dd4cefa96e93b29ff06b4094ff861);
+            
+        
+
+        marker_3934dcb29638993b1a9ccb0920ab325f.bindPopup(popup_5907fd078b727ea3cece45143e10185c)
+        ;
+
+        
+    
+    
+            var marker_a885dec14623afb1d0ec0a8212faf3d4 = L.marker(
+                [53.8547503, -1.2097681],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_ed8b1e88b9d42a8255e507d044b5d307 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a885dec14623afb1d0ec0a8212faf3d4.setIcon(icon_ed8b1e88b9d42a8255e507d044b5d307);
+        
+    
+        var popup_6d011260bf3bafaeb1e9b81bb6123dca = L.popup({});
+
+        
+            
+                var html_75ab9a12bf632b42b8a22d543ff648bb = $(`<div id="html_75ab9a12bf632b42b8a22d543ff648bb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Main Street, Ulleskelf</h1><div class="nugget-popup"><p>Water from the Ings surcharged up through the drains on Main Street; defences did not breach and pumps were deployed to prevent internal flooding of properties. (p13)</p></div><div class="nugget-popup"><p>Water from the Ulleskelf Ings surcharged up through the drains onto Main Street; defences were not breached and pumps were deployed to prevent internal property flooding. [IMG,PAG] (p14)</p></div></div></body></div>`)[0];
+                popup_6d011260bf3bafaeb1e9b81bb6123dca.setContent(html_75ab9a12bf632b42b8a22d543ff648bb);
+            
+        
+
+        marker_a885dec14623afb1d0ec0a8212faf3d4.bindPopup(popup_6d011260bf3bafaeb1e9b81bb6123dca)
+        ;
+
+        
+    
+    
+            var marker_ebd3337e77b13eb8e3bf67db580ac02c = L.marker(
+                [53.785097, -1.0990407],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_d2e814df890d3dcdb4bd8d3e0b08de31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ebd3337e77b13eb8e3bf67db580ac02c.setIcon(icon_d2e814df890d3dcdb4bd8d3e0b08de31);
+        
+    
+        var popup_78b6393553f8c81ae3aa93185a4f4bde = L.popup({});
+
+        
+            
+                var html_40101d184c5b6e0a0770f51de057b823 = $(`<div id="html_40101d184c5b6e0a0770f51de057b823" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Selby District</h1><div class="nugget-popup"><p>Affected by significant flood events in February 2022; the flooding prompted a formal Section 19 Flood Investigation under the Flood and Water Management Act 2010. (p1)</p></div><div class="nugget-popup"><p>Significant internal property flooding across the district: main area Tadcaster with the majority around Bridge Street and Commercial Street (many flooded properties were businesses) and additional internally flooded properties in Ulleskelf, Brotherton, Acaster Selby and Kirkby Wharfe. Flooding was from the River Wharfe, River Ouse (Acaster Selby) and the Aire. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>63 properties internally flooded in Tadcaster; 12 internally flooded properties elsewhere in Selby District; estimated £400k of damages (p10)</p></div></div></body></div>`)[0];
+                popup_78b6393553f8c81ae3aa93185a4f4bde.setContent(html_40101d184c5b6e0a0770f51de057b823);
+            
+        
+
+        marker_ebd3337e77b13eb8e3bf67db580ac02c.bindPopup(popup_78b6393553f8c81ae3aa93185a4f4bde)
+        ;
+
+        
+    
+    
+            var marker_0f961bed7a4c6d81f83818434c43eb97 = L.marker(
+                [54.006741961160174, -1.5144704578826116],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_1e0463808975ede925ece506cb918482 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0f961bed7a4c6d81f83818434c43eb97.setIcon(icon_1e0463808975ede925ece506cb918482);
+        
+    
+        var popup_b10cfc511cea202f7a0e4e2f8b62e4bf = L.popup({});
+
+        
+            
+                var html_864200d7bc385a4f9f1cb02bf68cb2d2 = $(`<div id="html_864200d7bc385a4f9f1cb02bf68cb2d2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Harrogate District</h1><div class="nugget-popup"><p>Affected by significant flood events in February 2022; the flooding prompted a formal Section 19 Flood Investigation under the Flood and Water Management Act 2010. (p1)</p></div><div class="nugget-popup"><p>Internally flooded properties across communities in the borough: Pateley Bridge (surface water), Summerbridge (from a nearby watercourse), Knaresborough and Ramsgill (flooding from the River Nidd affected properties and led to evacuations). (p10)</p></div><div class="nugget-popup"><p>Following flood warnings on 19&ndash;21 February 2022, a number of properties within the district were put on standby for evacuation; Pateley Bridge experienced surface water flooding and Summerbridge had properties internally flooded from a nearby watercourse. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>12 internally flooded properties in the Harrogate Borough Council area; 4 in Pateley Bridge; 3 in Summerbridge; 2 in Knaresborough (p10)</p></div></div></body></div>`)[0];
+                popup_b10cfc511cea202f7a0e4e2f8b62e4bf.setContent(html_864200d7bc385a4f9f1cb02bf68cb2d2);
+            
+        
+
+        marker_0f961bed7a4c6d81f83818434c43eb97.bindPopup(popup_b10cfc511cea202f7a0e4e2f8b62e4bf)
+        ;
+
+        
+    
+    
+            var marker_be1e022a1b8ca0f02cea8f542d624f21 = L.marker(
+                [54.1345328, -1.4986285],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_6c12c0bacc92ca4d0d61b4bb949f889f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_be1e022a1b8ca0f02cea8f542d624f21.setIcon(icon_6c12c0bacc92ca4d0d61b4bb949f889f);
+        
+    
+        var popup_ea266f0a2da172b7e5ac0861a9f7b871 = L.popup({});
+
+        
+            
+                var html_5a8685c660e942b5cd52abcad5a28eb4 = $(`<div id="html_5a8685c660e942b5cd52abcad5a28eb4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North Yorkshire</h1><div class="nugget-popup"><p>Multiple communities across the county experienced internal flooding during the event; incidents were recorded in over nine separate communities with concentrated impacts in Tadcaster and Ulleskelf. [PAG] (p8)</p></div><div class="nugget-popup"><p>Communities in North Yorkshire were affected by prolonged and widespread rainfall (including Storm Franklin) that saturated catchments and gave rise to incidents of flooding. (p9)</p></div><div class="nugget-popup"><p>Flooding incidents were recorded across over nine communities in North Yorkshire on 20&ndash;21 February 2022. The majority of the flooding occurred in Tadcaster (63 properties internally flooded) alongside six properties in Ulleskelf, with a further 15 internally flooded properties spread across the Nidd and Wharfe catchments. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>84 properties internally flooded across the county (63 in Tadcaster + 6 in Ulleskelf + 15 across Nidd/Wharfe/Aire) [PAG] (p8)</p></div><div class="nugget-popup quant"><p>63 properties; 6 properties; 15 properties (p15)</p></div></div></body></div>`)[0];
+                popup_ea266f0a2da172b7e5ac0861a9f7b871.setContent(html_5a8685c660e942b5cd52abcad5a28eb4);
+            
+        
+
+        marker_be1e022a1b8ca0f02cea8f542d624f21.bindPopup(popup_ea266f0a2da172b7e5ac0861a9f7b871)
+        ;
+
+        
+    
+    
+            var marker_76c591067c612a01c7a36de353fb9361 = L.marker(
+                [53.9825271, -1.3852499932684972],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_05ccbcf7ed89fb8cb97d3a4973b32d72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_76c591067c612a01c7a36de353fb9361.setIcon(icon_05ccbcf7ed89fb8cb97d3a4973b32d72);
+        
+    
+        var popup_862681c9414f222909433a750c8c3b9b = L.popup({});
+
+        
+            
+                var html_d11eb0bce17ba9408441e9ed54905705 = $(`<div id="html_d11eb0bce17ba9408441e9ed54905705" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Yorkshire</h1><div class="nugget-popup"><p>Flooding incidents were recorded across multiple communities in Yorkshire (North Yorkshire), with the majority of the event impacts concentrated in Tadcaster; catchments across the region were saturated leading to very high river levels and internal property flooding. [IMG,PAG] (p8)</p></div><div class="nugget-popup"><p>Widespread and prolonged rainfall across Yorkshire produced some of the highest ranking river levels on record at many locations; catchment saturation contributed to river flooding across the region. [PAG] (p10)</p></div><div class="nugget-popup"><p>Catchments across Yorkshire saw elevated river levels during the incident, producing a large volume of flood warnings triggered at similar times and straining EA duty officers. (p14)</p></div><div class="nugget-popup"><p>Widespread flooding across Yorkshire during the 20&ndash;21 February 2022 event: very high river levels (driven by Storm Franklin) led to river flooding and breaches in locations such as Tadcaster and Ulleskelf; surface&ndash;water and pluvial flooding affected other communities. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Over nine separate communities recorded flooding; 63 properties internally flooded in Tadcaster; 6 properties in Ulleskelf; an additional 15 internally flooded properties across the Nidd, Wharfe and Aire catchments. [IMG,PAG] (p8)</p></div><div class="nugget-popup quant"><p>63 properties; 6 properties; 15 internally flooded properties [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_862681c9414f222909433a750c8c3b9b.setContent(html_d11eb0bce17ba9408441e9ed54905705);
+            
+        
+
+        marker_76c591067c612a01c7a36de353fb9361.bindPopup(popup_862681c9414f222909433a750c8c3b9b)
+        ;
+
+        
+    
+    
+            var marker_0a1fbf7d7dd3962cfaaaeba4e43dc343 = L.marker(
+                [52.53102, -1.2649062],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_8f17a0aba76219dcea4535134c24219a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0a1fbf7d7dd3962cfaaaeba4e43dc343.setIcon(icon_8f17a0aba76219dcea4535134c24219a);
+        
+    
+        var popup_8774794cb1366ffbd9d6d0d6da2e55c5 = L.popup({});
+
+        
+            
+                var html_c8dfa7fa7b6de707828765549f71b18b = $(`<div id="html_c8dfa7fa7b6de707828765549f71b18b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>England</h1><div class="nugget-popup"><p>The February 2022 storm sequence (including Storm Franklin) affected communities in England, producing prolonged rainfall that saturated catchments and resulted in river flooding in parts of England such as North Yorkshire. [IMG] (p8)</p></div></div></body></div>`)[0];
+                popup_8774794cb1366ffbd9d6d0d6da2e55c5.setContent(html_c8dfa7fa7b6de707828765549f71b18b);
+            
+        
+
+        marker_0a1fbf7d7dd3962cfaaaeba4e43dc343.bindPopup(popup_8774794cb1366ffbd9d6d0d6da2e55c5)
+        ;
+
+        
+    
+    
+            var marker_938cf706fa4c3b84837cc07e218aca2f = L.marker(
+                [53.8852975, -1.2595975],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_dd31c15e60c936e00d517b761986e768 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_938cf706fa4c3b84837cc07e218aca2f.setIcon(icon_dd31c15e60c936e00d517b761986e768);
+        
+    
+        var popup_f96c385e21d9e7eed1ebc4f6f1241a66 = L.popup({});
+
+        
+            
+                var html_b238b26384e83c665093838e3136db9b = $(`<div id="html_b238b26384e83c665093838e3136db9b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tadcaster</h1><div class="nugget-popup"><p>The town experienced flooding caused principally by the River Wharfe; this flood event prompted Section 19 investigations and local meetings with affected communities. [PAG] (p2)</p></div><div class="nugget-popup"><p>Community experienced flooding requiring a Flood Alleviation Scheme; surface water systems serving the location were implicated and must be accounted for in the FAS design. [PAG] (p3)</p></div><div class="nugget-popup"><p>Widespread internal flooding of residential properties in the town caused by very high river levels (River Wharfe). (p8)</p></div><div class="nugget-popup"><p>Flooding from the River Wharfe inundated the town, with the majority of internal flooding concentrated around Bridge Street and Commercial Street; many flooded properties were businesses. (p10)</p></div><div class="nugget-popup"><p>The River Wharfe overtopped and breached its banks at multiple locations through Tadcaster (both left and right banks), including points near the main bridge, a 90&deg; turn in the defence where a footpath crosses, the footbridge plinth downstream of the bridge, adjacent to Sainsbury's and near the Old Mill property; defences were overtopped/breached allowing floodwater to pass over the defences and reach adjacent areas and infrastructure. [IMG,PAG] (p12)</p></div><div class="nugget-popup"><p>The February 2022 flood event led to EA action on warnings at Tadcaster; properties (for example on Bridge Street) experienced internal flooding despite some property flood resilience measures, and some residents/businesses used warnings to reduce losses by moving furniture/equipment enabling quicker re&ndash;opening of a number of businesses. (p13)</p></div><div class="nugget-popup"><p>River levels breached defences in Tadcaster causing internal flooding of properties; overtopping of flood defences on the west bank contributed to flooding in the town. [TAB,PAG] (p15)</p></div><div class="nugget-popup"><p>Tadcaster experienced major flooding (notably the 2015 event and flooding in February 2022) that led to internal property flooding, installation of property flood resilience measures, and programme&ndash;level responses including development of the Tadcaster Flood Alleviation Scheme and re&ndash;profiling of low spots on the River Wharfe to reduce breach risk. [TAB,MUL] (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>63 properties internally flooded (p8)</p></div><div class="nugget-popup quant"><p>63 properties internally flooded; estimated £400,000 of damages (p10)</p></div><div class="nugget-popup quant"><p>63 properties [TAB,PAG] (p15)</p></div><div class="nugget-popup quant"><p>£11.5 million of funding [TAB,MUL] (p16)</p></div></div></body></div>`)[0];
+                popup_f96c385e21d9e7eed1ebc4f6f1241a66.setContent(html_b238b26384e83c665093838e3136db9b);
+            
+        
+
+        marker_938cf706fa4c3b84837cc07e218aca2f.bindPopup(popup_f96c385e21d9e7eed1ebc4f6f1241a66)
+        ;
+
+        
+    
+    
+            var marker_3c8d4847e1d172dd8538e9dbc0979011 = L.marker(
+                [53.853333, -1.2143782],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_5b711ecdadb2b8e31e542a2575128e73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3c8d4847e1d172dd8538e9dbc0979011.setIcon(icon_5b711ecdadb2b8e31e542a2575128e73);
+        
+    
+        var popup_4dfaa7eb74c6360c414db3a7d8bdbf6b = L.popup({});
+
+        
+            
+                var html_caab5dc031ee2269185a5941c82f87eb = $(`<div id="html_caab5dc031ee2269185a5941c82f87eb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ulleskelf</h1><div class="nugget-popup"><p>Properties in Ulleskelf have flooded internally; Environment Agency to review flood&ndash;risk assets and model, communicate with affected residents to investigate options for managing flood risk, review flood alert/warning timing, and recommend property&ndash;level resilience if funding or collective solutions are not available. (p3)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties in the village recorded during the event. (p8)</p></div><div class="nugget-popup"><p>Internal flooding occurred at properties in Ulleskelf; specifically six properties were internally flooded at the location called West End. (p10)</p></div><div class="nugget-popup"><p>Flood defence embankment to the rear of West End properties was breached/circumvented by high River Wharfe levels; Ulleskelf Ings (EA&ndash;managed water storage area) filled and flood extents mirrored Flood Zone 2; on Main Street water from the Ings surcharged up through drains (did not breach defences) and pumps were deployed to prevent internal property flooding. (p13)</p></div><div class="nugget-popup"><p>High River Wharfe levels breached/circumvented the flood defence embankment to the rear of properties in West End, leading to property flooding; flood extents matched approximately Flood Zone 2. Water from the Ings surcharged through drains onto Main Street; pumps were deployed to stop internal flooding of properties. [IMG,PAG] (p14)</p></div><div class="nugget-popup"><p>High river levels breached the river in Ulleskelf causing internal flooding of properties. (p15)</p></div><div class="nugget-popup"><p>Properties in Ulleskelf are reported to have flooded internally. [TAB,PAG] (p16)</p></div><div class="nugget-popup"><p>Properties in Ulleskelf have flooded internally; recommendation for the Environment Agency to review flood risk assets and models and to communicate with residents about options and potential contribution to solutions; advice to consider property flood resilience measures. (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties internally flooded (p8)</p></div><div class="nugget-popup quant"><p>6 properties internally flooded (p10)</p></div><div class="nugget-popup quant"><p>6 properties (p15)</p></div></div></body></div>`)[0];
+                popup_4dfaa7eb74c6360c414db3a7d8bdbf6b.setContent(html_caab5dc031ee2269185a5941c82f87eb);
+            
+        
+
+        marker_3c8d4847e1d172dd8538e9dbc0979011.bindPopup(popup_4dfaa7eb74c6360c414db3a7d8bdbf6b)
+        ;
+
+        
+    
+    
+            var marker_69e627e7ca08f0286d00dcc41d11134a = L.marker(
+                [53.8621704, -1.2310273],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_4bcfaf452361dda86a4b86315abfaa5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_69e627e7ca08f0286d00dcc41d11134a.setIcon(icon_4bcfaf452361dda86a4b86315abfaa5e);
+        
+    
+        var popup_7e64eb20e7b40529b1a26f6990e147db = L.popup({});
+
+        
+            
+                var html_18b0a11456a8e8f5c421ce6d37bad5ff = $(`<div id="html_18b0a11456a8e8f5c421ce6d37bad5ff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kirkby Wharfe</h1><div class="nugget-popup"><p>The village flood defences (Phase 2) are to be completed (funded by the Environment Agency) to manage flood risk in the village. (p3)</p></div><div class="nugget-popup"><p>One property in Kirkby Wharfe was internally flooded. (p10)</p></div><div class="nugget-popup"><p>One property was internally flooded after community defences (HESCO bags) were overtopped and the second line (Aquadam) allowed percolation beneath it; approach roads to the village were cut off by flooding. Community pumps (and fire brigade pumps) were used but could not match the rate of percolation beneath the Aquadam. Bank stabilisation using HESCO bags initially held back water with slow percolation. (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p10)</p></div><div class="nugget-popup quant"><p>one property (p14)</p></div></div></body></div>`)[0];
+                popup_7e64eb20e7b40529b1a26f6990e147db.setContent(html_18b0a11456a8e8f5c421ce6d37bad5ff);
+            
+        
+
+        marker_69e627e7ca08f0286d00dcc41d11134a.bindPopup(popup_7e64eb20e7b40529b1a26f6990e147db)
+        ;
+
+        
+    
+    
+            var marker_79fd3b8ccc5863dae00ebdd669630447 = L.marker(
+                [53.7281813, -1.2713416],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_c3955a7dd7d800314fd452abcd9a1c9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_79fd3b8ccc5863dae00ebdd669630447.setIcon(icon_c3955a7dd7d800314fd452abcd9a1c9f);
+        
+    
+        var popup_cf462910ea2aa7801ca0982834df4e00 = L.popup({});
+
+        
+            
+                var html_e8ff719d2a2d88afd7ef401233713696 = $(`<div id="html_e8ff719d2a2d88afd7ef401233713696" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brotherton</h1><div class="nugget-popup"><p>NYCC (as LLFA) and Yorkshire Water to install non&ndash;return valves within the surface water system to reduce the risk of surcharging and so reduce flood risk in Brotherton. (p3)</p></div><div class="nugget-popup"><p>Internal flooding occurred in the community &mdash; three properties were internally flooded at Marsh Croft; the community was reported among those affected by flooding associated with the local rivers (including the Aire). (p10)</p></div><div class="nugget-popup"><p>Properties were internally flooded due to the sewer system surcharging as water from the Brotherton Marsh/Marsh Drain backed up into the foul sewer; surface water flooding also caused foul sewer surcharge. The sewer flooding led to loss of toilet facilities and emergency interventions (pumping and portaloos). (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Three properties internally flooded (Marsh Croft) (p10)</p></div><div class="nugget-popup quant"><p>3 properties internally flooded; 18 properties left without toilet facilities (p13)</p></div></div></body></div>`)[0];
+                popup_cf462910ea2aa7801ca0982834df4e00.setContent(html_e8ff719d2a2d88afd7ef401233713696);
+            
+        
+
+        marker_79fd3b8ccc5863dae00ebdd669630447.bindPopup(popup_cf462910ea2aa7801ca0982834df4e00)
+        ;
+
+        
+    
+    
+            var marker_e8c2980fe992c2aae8a55f564e01fba5 = L.marker(
+                [54.08647706778406, -1.760107260368611],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_f81a60da93bfd73a86eaae00b35b6144 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e8c2980fe992c2aae8a55f564e01fba5.setIcon(icon_f81a60da93bfd73a86eaae00b35b6144);
+        
+    
+        var popup_dcce9b64c2d4101eb8a742bea91f88bb = L.popup({});
+
+        
+            
+                var html_5f7033b678f698be2d854cd9d643fb0e = $(`<div id="html_5f7033b678f698be2d854cd9d643fb0e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pateley Bridge</h1><div class="nugget-popup"><p>Incidents of flooding occurred within the Pateley Bridge catchment. (p9)</p></div><div class="nugget-popup"><p>Internal flooding of properties caused by surface water; flood levels on the River Nidd at Pateley Bridge were recorded as high (but below the February and November 2020 peaks). (p10)</p></div><div class="nugget-popup"><p>Surface&ndash;water flooding occurred in Pateley Bridge, affecting properties in the settlement. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 internally flooded properties (p10)</p></div></div></body></div>`)[0];
+                popup_dcce9b64c2d4101eb8a742bea91f88bb.setContent(html_5f7033b678f698be2d854cd9d643fb0e);
+            
+        
+
+        marker_e8c2980fe992c2aae8a55f564e01fba5.bindPopup(popup_dcce9b64c2d4101eb8a742bea91f88bb)
+        ;
+
+        
+    
+    
+            var marker_262ecf34ba04a6ee71fa6d4d13f9487e = L.marker(
+                [53.8660881, -1.1277294],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_9661ff47205183b7645e174f31f8c8a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_262ecf34ba04a6ee71fa6d4d13f9487e.setIcon(icon_9661ff47205183b7645e174f31f8c8a8);
+        
+    
+        var popup_582c9321825b5cb1f3e7720c7eeef806 = L.popup({});
+
+        
+            
+                var html_072ed0f7b920e68db80a660272c63a7b = $(`<div id="html_072ed0f7b920e68db80a660272c63a7b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Acaster Selby</h1><div class="nugget-popup"><p>Incidents of flooding occurred in the Acaster Selby catchment; there were no rain gauges within 2.5 km of the locations of those flooding incidents. (p9)</p></div><div class="nugget-popup"><p>Two properties in Acaster Selby (in Back Lane) were internally flooded due to flooding associated with the River Ouse. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (p10)</p></div></div></body></div>`)[0];
+                popup_582c9321825b5cb1f3e7720c7eeef806.setContent(html_072ed0f7b920e68db80a660272c63a7b);
+            
+        
+
+        marker_262ecf34ba04a6ee71fa6d4d13f9487e.bindPopup(popup_582c9321825b5cb1f3e7720c7eeef806)
+        ;
+
+        
+    
+    
+            var marker_43db239d9dac6e25b99cf764173bc3c2 = L.marker(
+                [53.722353, -1.3512543],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_66593219e44b74e38d7dd40eb00ddbe0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_43db239d9dac6e25b99cf764173bc3c2.setIcon(icon_66593219e44b74e38d7dd40eb00ddbe0);
+        
+    
+        var popup_191f1d88ef4918ac5d7ef81d37acc1bc = L.popup({});
+
+        
+            
+                var html_1230442dc7f53b15bdc2c49bdccfe260 = $(`<div id="html_1230442dc7f53b15bdc2c49bdccfe260" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Castleford</h1><div class="nugget-popup"><p>The River Aire at Castleford reached very high levels (recorded as the second highest in 27 years), indicating significant river flood risk/impact at that location during the event. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Second highest in 27 years at Castleford (p10)</p></div></div></body></div>`)[0];
+                popup_191f1d88ef4918ac5d7ef81d37acc1bc.setContent(html_1230442dc7f53b15bdc2c49bdccfe260);
+            
+        
+
+        marker_43db239d9dac6e25b99cf764173bc3c2.bindPopup(popup_191f1d88ef4918ac5d7ef81d37acc1bc)
+        ;
+
+        
+    
+    
+            var marker_31e363d1471268b3e9e4b9a84a4672fd = L.marker(
+                [54.0573493, -1.6929373],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_7578004027900ccdc01eb79a2be4e878 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_31e363d1471268b3e9e4b9a84a4672fd.setIcon(icon_7578004027900ccdc01eb79a2be4e878);
+        
+    
+        var popup_e15d7437f4d7ddefb39fab2e97612829 = L.popup({});
+
+        
+            
+                var html_f515a771811e97bd9b8004e68d15b16f = $(`<div id="html_f515a771811e97bd9b8004e68d15b16f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Summerbridge</h1><div class="nugget-popup"><p>Three properties were internally flooded from a nearby watercourse. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties internally flooded (p10)</p></div></div></body></div>`)[0];
+                popup_e15d7437f4d7ddefb39fab2e97612829.setContent(html_f515a771811e97bd9b8004e68d15b16f);
+            
+        
+
+        marker_31e363d1471268b3e9e4b9a84a4672fd.bindPopup(popup_e15d7437f4d7ddefb39fab2e97612829)
+        ;
+
+        
+    
+    
+            var marker_8daf9bccba072119bae84d0640e3d9c9 = L.marker(
+                [54.0101765, -1.4651279311880052],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_389e8586b2e42d94a3e8ef2657dd95e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8daf9bccba072119bae84d0640e3d9c9.setIcon(icon_389e8586b2e42d94a3e8ef2657dd95e3);
+        
+    
+        var popup_dd96b8b326d27fc55cb481fc3bc2ed24 = L.popup({});
+
+        
+            
+                var html_25ab6f11b9db1ecf5c13655c1a794594 = $(`<div id="html_25ab6f11b9db1ecf5c13655c1a794594" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Knaresborough</h1><div class="nugget-popup"><p>Two properties internally flooded; additional properties were advised to evacuate (some evacuations were reported but those properties were not internally flooded). [PAG] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [PAG] (p10)</p></div></div></body></div>`)[0];
+                popup_dd96b8b326d27fc55cb481fc3bc2ed24.setContent(html_25ab6f11b9db1ecf5c13655c1a794594);
+            
+        
+
+        marker_8daf9bccba072119bae84d0640e3d9c9.bindPopup(popup_dd96b8b326d27fc55cb481fc3bc2ed24)
+        ;
+
+        
+    
+    
+            var marker_087af3fddadf1d934095e7a9391109ad = L.marker(
+                [54.1350145, -1.8191884],
+                {}
+            ).addTo(map_d3e3094b63b8fd1c19f1bbb96867ebca);
+        
+    
+            var icon_ab5f4be17704aed24f43340d73df40f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_087af3fddadf1d934095e7a9391109ad.setIcon(icon_ab5f4be17704aed24f43340d73df40f9);
+        
+    
+        var popup_343e6c2c921843b41f61c44e29a9195b = L.popup({});
+
+        
+            
+                var html_d83f47c8da7e46875b7c34bd8f4535b5 = $(`<div id="html_d83f47c8da7e46875b7c34bd8f4535b5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ramsgill</h1><div class="nugget-popup"><p>Reported as one of the communities affected by flooding during the February 2022 event (part of the grouping of communities in Harrogate Borough with a total of 12 internally flooded properties). (p10)</p></div></div></body></div>`)[0];
+                popup_343e6c2c921843b41f61c44e29a9195b.setContent(html_d83f47c8da7e46875b7c34bd8f4535b5);
+            
+        
+
+        marker_087af3fddadf1d934095e7a9391109ad.bindPopup(popup_343e6c2c921843b41f61c44e29a9195b)
+        ;
+
+        
+    
+</script>
+</html>
