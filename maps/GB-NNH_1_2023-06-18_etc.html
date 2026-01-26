@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ecdff6ffd37621c18b4f8d4127846db {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4ecdff6ffd37621c18b4f8d4127846db" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4ecdff6ffd37621c18b4f8d4127846db = L.map(
+                "map_4ecdff6ffd37621c18b4f8d4127846db",
+                {
+                    center: [52.409458257766836, -0.6987666455836626],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b1c8494f33ea34fa70e8737ad8d1b74b = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_b1c8494f33ea34fa70e8737ad8d1b74b.addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+    
+            var marker_578ab46308c4ee885619f9ce1e912307 = L.marker(
+                [52.405964, -0.7142638],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_09537f8c65a907fe34865704d21d76b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_578ab46308c4ee885619f9ce1e912307.setIcon(icon_09537f8c65a907fe34865704d21d76b2);
+        
+    
+        var popup_d620c480a11f5359001e7933ee65451f = L.popup({});
+
+        
+            
+                var html_a65f5c3d4916484a29ba6d45730bad8d = $(`<div id="html_a65f5c3d4916484a29ba6d45730bad8d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Avondale Road, Kettering</h1><div class="nugget-popup"><p>Flood incidents affected properties on the street; properties reported as flooded according to the investigation table. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_d620c480a11f5359001e7933ee65451f.setContent(html_a65f5c3d4916484a29ba6d45730bad8d);
+            
+        
+
+        marker_578ab46308c4ee885619f9ce1e912307.bindPopup(popup_d620c480a11f5359001e7933ee65451f)
+        ;
+
+        
+    
+    
+            var marker_3057615077d8c8f821daf1ebae4b9be8 = L.marker(
+                [52.389349, -0.7184626],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_e3c224d84c58d086f817524cd94f5127 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3057615077d8c8f821daf1ebae4b9be8.setIcon(icon_e3c224d84c58d086f817524cd94f5127);
+        
+    
+        var popup_b9c59082033a5c1edb744e0c277029e6 = L.popup({});
+
+        
+            
+                var html_a398d973cae28f019abad00bcb8e9875 = $(`<div id="html_a398d973cae28f019abad00bcb8e9875" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Boddington Road, Kettering</h1><div class="nugget-popup"><p>Flood incidents affected properties on the street; properties reported as flooded according to the investigation table. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_b9c59082033a5c1edb744e0c277029e6.setContent(html_a398d973cae28f019abad00bcb8e9875);
+            
+        
+
+        marker_3057615077d8c8f821daf1ebae4b9be8.bindPopup(popup_b9c59082033a5c1edb744e0c277029e6)
+        ;
+
+        
+    
+    
+            var marker_1679411983fd22c5704ae9f5ca12edec = L.marker(
+                [52.4150529, -0.7174684],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_e277bc904292985805b6ad196d730456 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1679411983fd22c5704ae9f5ca12edec.setIcon(icon_e277bc904292985805b6ad196d730456);
+        
+    
+        var popup_7437f1c8120295ca1ef3f8db8f316d8a = L.popup({});
+
+        
+            
+                var html_a8970489fd05f52ee91a242956c06c26 = $(`<div id="html_a8970489fd05f52ee91a242956c06c26" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Browning Avenue, Kettering</h1><div class="nugget-popup"><p>Flood incidents affected properties on the street; properties reported as flooded according to the investigation table. The area around Browning Avenue (with Kipling Road) was identified as Location 1 at the head of the culvert in the north of Kettering and contributed to a cluster of incidents. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 properties [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_7437f1c8120295ca1ef3f8db8f316d8a.setContent(html_a8970489fd05f52ee91a242956c06c26);
+            
+        
+
+        marker_1679411983fd22c5704ae9f5ca12edec.bindPopup(popup_7437f1c8120295ca1ef3f8db8f316d8a)
+        ;
+
+        
+    
+    
+            var marker_9f3d55913ce2382ae6002f9d41cfa159 = L.marker(
+                [52.4124178, -0.717462],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_478fd5b4d7136ce18bdcb3dcbf747070 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9f3d55913ce2382ae6002f9d41cfa159.setIcon(icon_478fd5b4d7136ce18bdcb3dcbf747070);
+        
+    
+        var popup_bd79ad235c7b730f61bdff4187f08d71 = L.popup({});
+
+        
+            
+                var html_99142790ddfc998d4009e5ff02bd6590 = $(`<div id="html_99142790ddfc998d4009e5ff02bd6590" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Byron Road, Kettering</h1><div class="nugget-popup"><p>Flood incidents affected properties on the street; properties reported as flooded according to the investigation table. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 properties [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_bd79ad235c7b730f61bdff4187f08d71.setContent(html_99142790ddfc998d4009e5ff02bd6590);
+            
+        
+
+        marker_9f3d55913ce2382ae6002f9d41cfa159.bindPopup(popup_bd79ad235c7b730f61bdff4187f08d71)
+        ;
+
+        
+    
+    
+            var marker_64fa30405530d33092cd0cc7438415f0 = L.marker(
+                [52.4060179, -0.7163257],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_4d85217d37794c6c04653b2be513b906 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_64fa30405530d33092cd0cc7438415f0.setIcon(icon_4d85217d37794c6c04653b2be513b906);
+        
+    
+        var popup_fbd0bc1e628b0ad80405d506ccba9649 = L.popup({});
+
+        
+            
+                var html_a9b36709f879cd574f045284f308bdcc = $(`<div id="html_a9b36709f879cd574f045284f308bdcc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cambridge Street, Kettering</h1><div class="nugget-popup"><p>Flood incidents affected properties on the street; properties reported as flooded according to the investigation table. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 properties [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_fbd0bc1e628b0ad80405d506ccba9649.setContent(html_a9b36709f879cd574f045284f308bdcc);
+            
+        
+
+        marker_64fa30405530d33092cd0cc7438415f0.bindPopup(popup_fbd0bc1e628b0ad80405d506ccba9649)
+        ;
+
+        
+    
+    
+            var marker_6fd6d15d3f25148d33e1f612d3e7e162 = L.marker(
+                [52.40305, -0.7184119],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_ebcaefcbe6f7244981417a6c0c3e989c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6fd6d15d3f25148d33e1f612d3e7e162.setIcon(icon_ebcaefcbe6f7244981417a6c0c3e989c);
+        
+    
+        var popup_a668539a424a671c19eed9e019989e13 = L.popup({});
+
+        
+            
+                var html_0f4b0fa07743239d8bcab167125978cb = $(`<div id="html_0f4b0fa07743239d8bcab167125978cb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Catesby Street, Kettering</h1><div class="nugget-popup"><p>Flood incidents affected properties on the street; properties reported as flooded according to the investigation table. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 properties [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_a668539a424a671c19eed9e019989e13.setContent(html_0f4b0fa07743239d8bcab167125978cb);
+            
+        
+
+        marker_6fd6d15d3f25148d33e1f612d3e7e162.bindPopup(popup_a668539a424a671c19eed9e019989e13)
+        ;
+
+        
+    
+    
+            var marker_195600009eae9aa10b0198bafa0e72bf = L.marker(
+                [52.403639, -0.7187178],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_fdd11e5c08be973b4856ab15353ff7c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_195600009eae9aa10b0198bafa0e72bf.setIcon(icon_fdd11e5c08be973b4856ab15353ff7c1);
+        
+    
+        var popup_32d051c60f3631c99364d14a167a7495 = L.popup({});
+
+        
+            
+                var html_3484b27dacfd5b0c9cbf7fad21f71e69 = $(`<div id="html_3484b27dacfd5b0c9cbf7fad21f71e69" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Digby Street, Kettering</h1><div class="nugget-popup"><p>Residential property on Digby Street was flooded. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_32d051c60f3631c99364d14a167a7495.setContent(html_3484b27dacfd5b0c9cbf7fad21f71e69);
+            
+        
+
+        marker_195600009eae9aa10b0198bafa0e72bf.bindPopup(popup_32d051c60f3631c99364d14a167a7495)
+        ;
+
+        
+    
+    
+            var marker_c084ee8c3d60d7e95bf9693320ab1f11 = L.marker(
+                [52.3949516, -0.7161818],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_f01fbe022be44a7af7924c37c6ecbee7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c084ee8c3d60d7e95bf9693320ab1f11.setIcon(icon_f01fbe022be44a7af7924c37c6ecbee7);
+        
+    
+        var popup_28b653e905b80ab0986c27eae6af1370 = L.popup({});
+
+        
+            
+                var html_5cf664fd517ccc465b94c96b16d153d4 = $(`<div id="html_5cf664fd517ccc465b94c96b16d153d4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hazel Road, Kettering</h1><div class="nugget-popup"><p>Residential properties on Hazel Road were flooded. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_28b653e905b80ab0986c27eae6af1370.setContent(html_5cf664fd517ccc465b94c96b16d153d4);
+            
+        
+
+        marker_c084ee8c3d60d7e95bf9693320ab1f11.bindPopup(popup_28b653e905b80ab0986c27eae6af1370)
+        ;
+
+        
+    
+    
+            var marker_28821cb03db3bbafcd293096ad896d34 = L.marker(
+                [52.4097486, -0.7150919],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_22a05958c68e97e80dd38bef42085225 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_28821cb03db3bbafcd293096ad896d34.setIcon(icon_22a05958c68e97e80dd38bef42085225);
+        
+    
+        var popup_0c476c054c43d4a4ff74f9e5a0de19ac = L.popup({});
+
+        
+            
+                var html_ce992ffdaa93569a65d717f2e88d2d9a = $(`<div id="html_ce992ffdaa93569a65d717f2e88d2d9a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holly Road, Kettering</h1><div class="nugget-popup"><p>A residential property on Holly Road was flooded. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_0c476c054c43d4a4ff74f9e5a0de19ac.setContent(html_ce992ffdaa93569a65d717f2e88d2d9a);
+            
+        
+
+        marker_28821cb03db3bbafcd293096ad896d34.bindPopup(popup_0c476c054c43d4a4ff74f9e5a0de19ac)
+        ;
+
+        
+    
+    
+            var marker_098227098c4859f209c20244003b931b = L.marker(
+                [52.4136215, -0.7177003],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_4f86f19e467d9bc42b3935e13fe4c62b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_098227098c4859f209c20244003b931b.setIcon(icon_4f86f19e467d9bc42b3935e13fe4c62b);
+        
+    
+        var popup_c8ffb503aff9dc60685b4f5310cdd5e9 = L.popup({});
+
+        
+            
+                var html_1c9684c846e84066e118499cd192629d = $(`<div id="html_1c9684c846e84066e118499cd192629d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kipling Road, Kettering</h1><div class="nugget-popup"><p>A residential property on Kipling Road was flooded. Kipling Road (with Browning Avenue) is identified as at the head of a culvert in the north of Kettering and is part of an area that reported 17 flood incidents (38% of returned responses). [TAB,PAG] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property; part of area reporting 17 flood incidents (38% of responses) [TAB,PAG] (p6)</p></div></div></body></div>`)[0];
+                popup_c8ffb503aff9dc60685b4f5310cdd5e9.setContent(html_1c9684c846e84066e118499cd192629d);
+            
+        
+
+        marker_098227098c4859f209c20244003b931b.bindPopup(popup_c8ffb503aff9dc60685b4f5310cdd5e9)
+        ;
+
+        
+    
+    
+            var marker_a73fa041c3350bc69879338cc18508a9 = L.marker(
+                [52.4056084, -0.7169853],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_c08cd00f49d1ffec65291ba8379b5233 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a73fa041c3350bc69879338cc18508a9.setIcon(icon_c08cd00f49d1ffec65291ba8379b5233);
+        
+    
+        var popup_cddc0dceb9c170413171280fdbb8440d = L.popup({});
+
+        
+            
+                var html_f5c0d8ab9c244d780eca2182af413fbf = $(`<div id="html_f5c0d8ab9c244d780eca2182af413fbf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancaster Road, Kettering</h1><div class="nugget-popup"><p>Multiple residential properties on Lancaster Road were flooded. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_cddc0dceb9c170413171280fdbb8440d.setContent(html_f5c0d8ab9c244d780eca2182af413fbf);
+            
+        
+
+        marker_a73fa041c3350bc69879338cc18508a9.bindPopup(popup_cddc0dceb9c170413171280fdbb8440d)
+        ;
+
+        
+    
+    
+            var marker_f535e052ef54770ef43eb1f1caf438b3 = L.marker(
+                [52.407684, -0.716084],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_99b7c4b27436b58d2e3ae73ca7ac8553 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f535e052ef54770ef43eb1f1caf438b3.setIcon(icon_99b7c4b27436b58d2e3ae73ca7ac8553);
+        
+    
+        var popup_bc011dfd2b47a5a7469d3cc0bf862b66 = L.popup({});
+
+        
+            
+                var html_c1ade9f76788988b2ff4d8cb32d16496 = $(`<div id="html_c1ade9f76788988b2ff4d8cb32d16496" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Laurel Road, Kettering</h1><div class="nugget-popup"><p>Residential properties on Laurel Road were flooded. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_bc011dfd2b47a5a7469d3cc0bf862b66.setContent(html_c1ade9f76788988b2ff4d8cb32d16496);
+            
+        
+
+        marker_f535e052ef54770ef43eb1f1caf438b3.bindPopup(popup_bc011dfd2b47a5a7469d3cc0bf862b66)
+        ;
+
+        
+    
+    
+            var marker_bea161c671952261f56cb52c9e7fb04c = L.marker(
+                [52.39946, -0.7155856],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_c444a157dcf099b899dd1a8661db2ecd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bea161c671952261f56cb52c9e7fb04c.setIcon(icon_c444a157dcf099b899dd1a8661db2ecd);
+        
+    
+        var popup_36735ca880fcaf6d26644dfe51ed834b = L.popup({});
+
+        
+            
+                var html_c40c1a1e516ff4d57cc467629670bc7c = $(`<div id="html_c40c1a1e516ff4d57cc467629670bc7c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Linden Avenue, Kettering</h1><div class="nugget-popup"><p>Residential properties were flooded on Linden Avenue. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_36735ca880fcaf6d26644dfe51ed834b.setContent(html_c40c1a1e516ff4d57cc467629670bc7c);
+            
+        
+
+        marker_bea161c671952261f56cb52c9e7fb04c.bindPopup(popup_36735ca880fcaf6d26644dfe51ed834b)
+        ;
+
+        
+    
+    
+            var marker_43b4ccebb38dd72e657a25bfc659a3a7 = L.marker(
+                [52.4087387, -0.7147047],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_48cacd1a8d85be2667ae8f4f4dc154b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_43b4ccebb38dd72e657a25bfc659a3a7.setIcon(icon_48cacd1a8d85be2667ae8f4f4dc154b8);
+        
+    
+        var popup_973314f0243f2833780ea420e77de3d0 = L.popup({});
+
+        
+            
+                var html_8dad1d628a2a91b811f2a93d072182b7 = $(`<div id="html_8dad1d628a2a91b811f2a93d072182b7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Orchard Crescent, Kettering</h1><div class="nugget-popup"><p>A residential property was flooded on Orchard Crescent. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_973314f0243f2833780ea420e77de3d0.setContent(html_8dad1d628a2a91b811f2a93d072182b7);
+            
+        
+
+        marker_43b4ccebb38dd72e657a25bfc659a3a7.bindPopup(popup_973314f0243f2833780ea420e77de3d0)
+        ;
+
+        
+    
+    
+            var marker_b90854eab81d5d85816a6e0320bc222a = L.marker(
+                [52.38973, -0.7194098],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_cf62004a6eb6554023fa1b1ccf05e6dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b90854eab81d5d85816a6e0320bc222a.setIcon(icon_cf62004a6eb6554023fa1b1ccf05e6dd);
+        
+    
+        var popup_1b275238908da4d243a1bd92698b7e26 = L.popup({});
+
+        
+            
+                var html_842c4ff5ed36a325ea991f367a52f6f3 = $(`<div id="html_842c4ff5ed36a325ea991f367a52f6f3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Silverwood Road, Kettering</h1><div class="nugget-popup"><p>Residential properties were flooded on Silverwood Road. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 properties [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_1b275238908da4d243a1bd92698b7e26.setContent(html_842c4ff5ed36a325ea991f367a52f6f3);
+            
+        
+
+        marker_b90854eab81d5d85816a6e0320bc222a.bindPopup(popup_1b275238908da4d243a1bd92698b7e26)
+        ;
+
+        
+    
+    
+            var marker_7abe92a7adffc8b23c47849d2f6b501f = L.marker(
+                [52.3978936, -0.718018],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_77bfda34a8deeae34ec0545d73c82ac1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7abe92a7adffc8b23c47849d2f6b501f.setIcon(icon_77bfda34a8deeae34ec0545d73c82ac1);
+        
+    
+        var popup_ef83c4816d372797b6af3e99e51c18c4 = L.popup({});
+
+        
+            
+                var html_e943558395ad2d0b00143479d7a35708 = $(`<div id="html_e943558395ad2d0b00143479d7a35708" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Peters Avenue, Kettering</h1><div class="nugget-popup"><p>A residential property was flooded on St Peters Avenue. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_ef83c4816d372797b6af3e99e51c18c4.setContent(html_e943558395ad2d0b00143479d7a35708);
+            
+        
+
+        marker_7abe92a7adffc8b23c47849d2f6b501f.bindPopup(popup_ef83c4816d372797b6af3e99e51c18c4)
+        ;
+
+        
+    
+    
+            var marker_3297c034a809a8426f99ff31ba1d47bb = L.marker(
+                [52.3914945, -0.7166333],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_662b58d6f24659ae5f08a1d2bc6ce09b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3297c034a809a8426f99ff31ba1d47bb.setIcon(icon_662b58d6f24659ae5f08a1d2bc6ce09b);
+        
+    
+        var popup_329d7ad790f521942f6a4d3df43881eb = L.popup({});
+
+        
+            
+                var html_7902d618ef66b90bb8ccf4c6ff7a0b06 = $(`<div id="html_7902d618ef66b90bb8ccf4c6ff7a0b06" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wallis Road, Kettering</h1><div class="nugget-popup"><p>Residential properties were flooded on Wallis Road. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 properties [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_329d7ad790f521942f6a4d3df43881eb.setContent(html_7902d618ef66b90bb8ccf4c6ff7a0b06);
+            
+        
+
+        marker_3297c034a809a8426f99ff31ba1d47bb.bindPopup(popup_329d7ad790f521942f6a4d3df43881eb)
+        ;
+
+        
+    
+    
+            var marker_ac47c3fb029a8bdb460a7b18cf603665 = L.marker(
+                [52.4185781, -0.7278625],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_dfe6160b019890a9635852559d02414e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ac47c3fb029a8bdb460a7b18cf603665.setIcon(icon_dfe6160b019890a9635852559d02414e);
+        
+    
+        var popup_0e5c7f8c83769e0a3313f25deed434bc = L.popup({});
+
+        
+            
+                var html_e391b920a5d4c0403077012c1509053c = $(`<div id="html_e391b920a5d4c0403077012c1509053c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rockingham Paddocks, Kettering</h1><div class="nugget-popup"><p>Internal flooding of residential properties served off a shared driveway; carriageway slopes toward Rockingham Road and runoff reached properties downstream/north of Rockingham Paddocks. Two upstream road gullies were observed partially blocked and contributed to runoff not being drained, leading to repeated internal property flooding and triggering a Section 19 investigation. [PAG,MUL] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [PAG,MUL] (p20)</p></div></div></body></div>`)[0];
+                popup_0e5c7f8c83769e0a3313f25deed434bc.setContent(html_e391b920a5d4c0403077012c1509053c);
+            
+        
+
+        marker_ac47c3fb029a8bdb460a7b18cf603665.bindPopup(popup_0e5c7f8c83769e0a3313f25deed434bc)
+        ;
+
+        
+    
+    
+            var marker_274b2a322760c7645e774d88735826a3 = L.marker(
+                [52.4822863, -0.4956477],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_ba5f2deec32a813ce9277bf28189e41f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_274b2a322760c7645e774d88735826a3.setIcon(icon_ba5f2deec32a813ce9277bf28189e41f);
+        
+    
+        var popup_c83f80ba3793a4b57b40f36a1dd3066f = L.popup({});
+
+        
+            
+                var html_f37f49da2236db2f9a5316971315b1f4 = $(`<div id="html_f37f49da2236db2f9a5316971315b1f4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Benefield Road, Oundle</h1><div class="nugget-popup"><p>Internal flooding of a property on two occasions within a two&ndash;year period; the repeated internal flooding prompted a Section 19 flood investigation to be commissioned. [PAG] (p22)</p></div><div class="nugget-popup"><p>During intense rainfall, rainwater ponded on Benefield Road in front of a dwelling, overtopped a retaining wall upstand (or was splashed over by vehicles), ponded on the lower footway and entered the affected property through the door and wall, causing internal flooding. A similar event occurred in July 2020 with more extensive damage. [MUL] (p23)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two internal flooding incidents at the property [PAG] (p22)</p></div><div class="nugget-popup quant"><p>2 flood incidents (July 2020; 18/06/2023) [MUL] (p23)</p></div></div></body></div>`)[0];
+                popup_c83f80ba3793a4b57b40f36a1dd3066f.setContent(html_f37f49da2236db2f9a5316971315b1f4);
+            
+        
+
+        marker_274b2a322760c7645e774d88735826a3.bindPopup(popup_c83f80ba3793a4b57b40f36a1dd3066f)
+        ;
+
+        
+    
+    
+            var marker_df27266c8f1f4e395b110f9651ac74e9 = L.marker(
+                [52.3994233, -0.728004],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_50f945efe96475584eca5ee95e296992 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_df27266c8f1f4e395b110f9651ac74e9.setIcon(icon_50f945efe96475584eca5ee95e296992);
+        
+    
+        var popup_e454f03088950242518e052b5ef46608 = L.popup({});
+
+        
+            
+                var html_aa8eab7e2dd01fd3e82b03822a0069e3 = $(`<div id="html_aa8eab7e2dd01fd3e82b03822a0069e3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kettering</h1><div class="nugget-popup"><p>Residential properties in the Rockingham Paddocks area of Kettering experienced internal flooding on multiple occasions, prompting a formal Section 19 flood investigation. [MUL] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [MUL] (p20)</p></div></div></body></div>`)[0];
+                popup_e454f03088950242518e052b5ef46608.setContent(html_aa8eab7e2dd01fd3e82b03822a0069e3);
+            
+        
+
+        marker_df27266c8f1f4e395b110f9651ac74e9.bindPopup(popup_e454f03088950242518e052b5ef46608)
+        ;
+
+        
+    
+    
+            var marker_6240f671bae902ed9ede09501e99ecf5 = L.marker(
+                [52.480678744170966, -0.46597423959156464],
+                {}
+            ).addTo(map_4ecdff6ffd37621c18b4f8d4127846db);
+        
+    
+            var icon_69b5de9575a4247aa5c0c91943c7634b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6240f671bae902ed9ede09501e99ecf5.setIcon(icon_69b5de9575a4247aa5c0c91943c7634b);
+        
+    
+        var popup_ffe456abb58ce125f368206742ec255c = L.popup({});
+
+        
+            
+                var html_142f73ac7f3918ec1e3d6a40491608df = $(`<div id="html_142f73ac7f3918ec1e3d6a40491608df" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oundle</h1><div class="nugget-popup"><p>Localised surface&ndash;water flooding on Benefield Road resulted in ponding and overtopping of a wall upstand, leading to internal flooding of at least one dwelling; the same mechanism produced a similar, larger&ndash;impact event in July 2020. [MUL] (p23)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 flood incidents (July 2020; 18/06/2023) [MUL] (p23)</p></div></div></body></div>`)[0];
+                popup_ffe456abb58ce125f368206742ec255c.setContent(html_142f73ac7f3918ec1e3d6a40491608df);
+            
+        
+
+        marker_6240f671bae902ed9ede09501e99ecf5.bindPopup(popup_ffe456abb58ce125f368206742ec255c)
+        ;
+
+        
+    
+</script>
+</html>
