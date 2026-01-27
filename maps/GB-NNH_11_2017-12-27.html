@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7f69cfad03813c248eef2272eaf404b5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7f69cfad03813c248eef2272eaf404b5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7f69cfad03813c248eef2272eaf404b5 = L.map(
+                "map_7f69cfad03813c248eef2272eaf404b5",
+                {
+                    center: [52.34560619937719, -0.4142796212550316],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_54fbcb17928e6b73f72df694161e1616 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_54fbcb17928e6b73f72df694161e1616.addTo(map_7f69cfad03813c248eef2272eaf404b5);
+    
+            var marker_d8347b7a7e48c6a2aeb80d386f07dfef = L.marker(
+                [52.32362159750876, -0.47958390760853803],
+                {}
+            ).addTo(map_7f69cfad03813c248eef2272eaf404b5);
+        
+    
+            var icon_6ddcb868a6d27f51ca37d80f9fd90af9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d8347b7a7e48c6a2aeb80d386f07dfef.setIcon(icon_6ddcb868a6d27f51ca37d80f9fd90af9);
+        
+    
+        var popup_defcc5639130c1ce14bbb811c474d65b = L.popup({});
+
+        
+            
+                var html_78ec96c8e50603d350b9f8f49eb84792 = $(`<div id="html_78ec96c8e50603d350b9f8f49eb84792" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hargrave</h1><div class="nugget-popup"><p>Flood incident on 27 December 2017 at the B645 east of Hargrave where surface water drainage systems were unable to convey rainwater, causing excess surface water to flow to low points around private property. Internal flooding of one dwelling has occurred (on more than one occasion within the last five years). (p7)</p></div><div class="nugget-popup"><p>Internal flooding of a property located adjacent to the B645 east of Hargrave; internal flooding has been experienced on more than one occasion in the last five years, triggering a formal investigation. [PAG] (p9)</p></div><div class="nugget-popup"><p>Recommendations are made to undertake regular highway drainage cleansing throughout Hargrave to manage highway runoff and reduce flood risk to properties and the highway network. (p16)</p></div><div class="nugget-popup"><p>Heavy sleety snow and rainfall on a saturated catchment caused drainage systems to be unable to collect and convey rainwater. Excess surface water flowed over ground following localised topography to low points around private properties; an affected private property was located in a high risk area for surface water flooding. (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one dwelling (p7)</p></div><div class="nugget-popup quant"><p>one property [PAG] (p9)</p></div></div></body></div>`)[0];
+                popup_defcc5639130c1ce14bbb811c474d65b.setContent(html_78ec96c8e50603d350b9f8f49eb84792);
+            
+        
+
+        marker_d8347b7a7e48c6a2aeb80d386f07dfef.bindPopup(popup_defcc5639130c1ce14bbb811c474d65b)
+        ;
+
+        
+    
+</script>
+</html>
