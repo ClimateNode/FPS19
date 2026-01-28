@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b20cc299fde4a251414518a62cec9a7d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b20cc299fde4a251414518a62cec9a7d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b20cc299fde4a251414518a62cec9a7d = L.map(
+                "map_b20cc299fde4a251414518a62cec9a7d",
+                {
+                    center: [52.47922626144684, -0.5330975791979392],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c52e830ea79ebeba551c407061ec2114 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_c52e830ea79ebeba551c407061ec2114.addTo(map_b20cc299fde4a251414518a62cec9a7d);
+    
+            var marker_4e854081389e67fbe84dbbb85bca3f3f = L.marker(
+                [52.5104138, -0.5180799],
+                {}
+            ).addTo(map_b20cc299fde4a251414518a62cec9a7d);
+        
+    
+            var icon_84a4539ad6dc325380ef4d5f76a47d4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4e854081389e67fbe84dbbb85bca3f3f.setIcon(icon_84a4539ad6dc325380ef4d5f76a47d4f);
+        
+    
+        var popup_059b701f735e2effcfd0d4e34336efe4 = L.popup({});
+
+        
+            
+                var html_7b5fdbdcd71a36f93d02a438350fbd95 = $(`<div id="html_7b5fdbdcd71a36f93d02a438350fbd95" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Southwick Brook</h1><div class="nugget-popup"><p>Southwick Brook exceeded its capacity upstream of a floodwall, contributing to overflow and the subsequent surface water reaching properties. (p7)</p></div><div class="nugget-popup"><p>Brook capacity was exceeded and the channel overtopped about 100m upstream of Main Street bridge; water levels deepened upstream of the bridge and high downstream levels contributed to overland flows that combined with other surface water to flood properties on Main Street. (p15)</p></div><div class="nugget-popup"><p>Brook overtopped before the start of the concrete flood wall and excess water flowed over local ground to low points around properties. Outfall pipes were covered by high water, restricting discharge and exacerbating surface water ponding and flows onto Main Street. Pipes beneath Main Street and at the ditch northwest of Main Street Bridge and at Millennium Cottage were exceeded, contributing to surface water flowing onto Main Street. (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 properties (p15)</p></div><div class="nugget-popup quant"><p>depth of water in Main Street exceeded 1 metre in places; external property areas ~300 mm; internal depths between 20 mm and 150 mm (p18)</p></div></div></body></div>`)[0];
+                popup_059b701f735e2effcfd0d4e34336efe4.setContent(html_7b5fdbdcd71a36f93d02a438350fbd95);
+            
+        
+
+        marker_4e854081389e67fbe84dbbb85bca3f3f.bindPopup(popup_059b701f735e2effcfd0d4e34336efe4)
+        ;
+
+        
+    
+    
+            var marker_4838b9e247676ef39dcffea93d0b2653 = L.marker(
+                [52.56628789856925, -0.2027211766370756],
+                {}
+            ).addTo(map_b20cc299fde4a251414518a62cec9a7d);
+        
+    
+            var icon_78e9481e6eb6a662daffba2aa0f089da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4838b9e247676ef39dcffea93d0b2653.setIcon(icon_78e9481e6eb6a662daffba2aa0f089da);
+        
+    
+        var popup_525a163e3c8c3b12e4327433d072dfcd = L.popup({});
+
+        
+            
+                var html_19c91bb5fde0472cb84312377d2697b1 = $(`<div id="html_19c91bb5fde0472cb84312377d2697b1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Nene</h1><div class="nugget-popup"><p>Minor tributaries of the Nene triggered a Flood Alert (055WAF133MTN) issued on 23 December 2020; rivers in the Northamptonshire/Lincolnshire area (including Nene tributaries) were the subject of numerous Environment Agency warnings as heavy rainfall produced high surface runoff and elevated river flows. [MUL] (p10)</p></div></div></body></div>`)[0];
+                popup_525a163e3c8c3b12e4327433d072dfcd.setContent(html_19c91bb5fde0472cb84312377d2697b1);
+            
+        
+
+        marker_4838b9e247676ef39dcffea93d0b2653.bindPopup(popup_525a163e3c8c3b12e4327433d072dfcd)
+        ;
+
+        
+    
+    
+            var marker_4e3bbb4795175f84a575334557939414 = L.marker(
+                [52.516540389409656, -0.5026549657144336],
+                {}
+            ).addTo(map_b20cc299fde4a251414518a62cec9a7d);
+        
+    
+            var icon_f296e1355e74c69beaab08e164d58274 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4e3bbb4795175f84a575334557939414.setIcon(icon_f296e1355e74c69beaab08e164d58274);
+        
+    
+        var popup_f704fb24ddcd06947f509abe0962a54f = L.popup({});
+
+        
+            
+                var html_cba7fbd99b55e53968bf7c2b9590a807 = $(`<div id="html_cba7fbd99b55e53968bf7c2b9590a807" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Main Street Bridge</h1><div class="nugget-popup"><p>The bridge did not have capacity for the volume of brook flow; this caused water to deepen on the upstream side and contributed to overtopping and subsequent internal flooding of properties on Main Street. [PAG] (p15)</p></div><div class="nugget-popup"><p>The bridge lacked capacity for the volume of water in the brook during the event, causing water to deepen upstream and contributing to overtopping upstream of the bridge. This led to flows onto Main Street and contributed to internal flooding of adjacent properties. The existing bypass pipe and bifurcation arrangement influenced how high flows passed the structure. [PAG] (p16)</p></div><div class="nugget-popup"><p>The bridge lacked capacity for the volume of water in the brook, causing water to deepen upstream. This contributed to the brook overtopping upstream and flow from the brook onto Townsend Farm access track and Main Street, which was part of the chain of flooding that led to internal flooding of at least one property upstream. (p17)</p></div><div class="nugget-popup"><p>Downstream abutment and adjacent waterway were partially submerged; sediment accumulation and debris collected at the base of the abutment, indicating floodwater reached the structure and deposited material against it. This condition indicates potential local scour/erosion and need for maintenance at the water&ndash;structure interface. [IMG,PAG] (p41)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 properties [PAG] (p15)</p></div><div class="nugget-popup quant"><p>water depth in Main Street exceeded one metre in places [PAG] (p16)</p></div><div class="nugget-popup quant"><p>brook overtopped approximately 100m upstream; one property flooded internally at that upstream location (p17)</p></div></div></body></div>`)[0];
+                popup_f704fb24ddcd06947f509abe0962a54f.setContent(html_cba7fbd99b55e53968bf7c2b9590a807);
+            
+        
+
+        marker_4e3bbb4795175f84a575334557939414.bindPopup(popup_f704fb24ddcd06947f509abe0962a54f)
+        ;
+
+        
+    
+    
+            var marker_2c094a6fc3f23efc2f5ba54c0c3d8726 = L.marker(
+                [52.5165938, -0.5001212],
+                {}
+            ).addTo(map_b20cc299fde4a251414518a62cec9a7d);
+        
+    
+            var icon_91d6fb37abb44f8121263aa15c8b0f19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2c094a6fc3f23efc2f5ba54c0c3d8726.setIcon(icon_91d6fb37abb44f8121263aa15c8b0f19);
+        
+    
+        var popup_cb802c4ac8207f6acdcf2a0580f8a66e = L.popup({});
+
+        
+            
+                var html_7ee1339b982faa33d2c6263972c189fe = $(`<div id="html_7ee1339b982faa33d2c6263972c189fe" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Main Street, Southwick</h1><div class="nugget-popup"><p>Internal flooding of buildings on Main Street when excess surface water flowed over ground into low points around properties; drainage systems and watercourses could not convey the rainfall leading to water entering properties. (p7)</p></div><div class="nugget-popup"><p>Internal flooding of buildings on Main Street: floodwater crossed building thresholds and entered premises in the immediate street area. (p9)</p></div><div class="nugget-popup"><p>Flooding from Southwick Brook caused internal flooding to properties on Main Street. [TAB] (p11)</p></div><div class="nugget-popup"><p>Surface water from a blocked/exceeded ditch flowed onto Main Street and east over the bridge; combined with brook overbanking this produced deep water on the street that entered doorways and airbricks, causing internal flooding of residential properties. [PAG] (p15)</p></div><div class="nugget-popup"><p>Surface water from the ditch/headwall northwest of Main Street bridge and from an exceeded piped minor watercourse, combined with brook flows and brook overtopping upstream of the bridge, led to deep flows along Main Street. Water flowed east over the bridge and into doorways and airbricks of properties on the north side of the street. Highway drainage was overwhelmed and outfall pipes were submerged, restricting discharge. [PAG] (p16)</p></div><div class="nugget-popup"><p>Surface water from an exceeded ditch/pipe and overtopping from the brook flowed onto and along Main Street (east and north). Drainage was overwhelmed; water entered doorways and airbricks and caused internal flooding of properties along the street. [PAG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>more than five buildings (p7)</p></div><div class="nugget-popup quant"><p>more than five buildings (p9)</p></div><div class="nugget-popup quant"><p>11 properties [TAB] (p11)</p></div><div class="nugget-popup quant"><p>11 properties [PAG] (p15)</p></div><div class="nugget-popup quant"><p>Depth in Main Street exceeded one metre in places; external areas around 300 mm; internal depths between 20 mm and 150 mm; 11 properties flooded [PAG] (p16)</p></div><div class="nugget-popup quant"><p>11 properties flooded; depth in Main Street exceeded one metre in places; external areas ~300mm; internal depths 20mm to 150mm. [PAG] (p17)</p></div></div></body></div>`)[0];
+                popup_cb802c4ac8207f6acdcf2a0580f8a66e.setContent(html_7ee1339b982faa33d2c6263972c189fe);
+            
+        
+
+        marker_2c094a6fc3f23efc2f5ba54c0c3d8726.bindPopup(popup_cb802c4ac8207f6acdcf2a0580f8a66e)
+        ;
+
+        
+    
+    
+            var marker_31ff6140d96c8e0e7803afff65038d95 = L.marker(
+                [52.3106138, -0.8659129831915817],
+                {}
+            ).addTo(map_b20cc299fde4a251414518a62cec9a7d);
+        
+    
+            var icon_68c9e205aaae28ed4dc65db9988a4849 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_31ff6140d96c8e0e7803afff65038d95.setIcon(icon_68c9e205aaae28ed4dc65db9988a4849);
+        
+    
+        var popup_7fc00f725ab8bae8ba21d0f575b6ae5c = L.popup({});
+
+        
+            
+                var html_e0dfa251c8319778c28fe9a71d6ede90 = $(`<div id="html_e0dfa251c8319778c28fe9a71d6ede90" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northamptonshire</h1><div class="nugget-popup"><p>Heavy rainfall on 23 December 2020 caused catchment saturation and high levels of surface water runoff, resulting in internal flooding of properties on Main Street, Southwick. The Environment Agency issued multiple flood warnings/alerts covering rivers in Northamptonshire during 23&ndash;25 December 2020. [PAG] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>internal flooding of more than five buildings [PAG] (p9)</p></div></div></body></div>`)[0];
+                popup_7fc00f725ab8bae8ba21d0f575b6ae5c.setContent(html_e0dfa251c8319778c28fe9a71d6ede90);
+            
+        
+
+        marker_31ff6140d96c8e0e7803afff65038d95.bindPopup(popup_7fc00f725ab8bae8ba21d0f575b6ae5c)
+        ;
+
+        
+    
+    
+            var marker_58d6e31ca3ccb3bd869f046bac0a9c92 = L.marker(
+                [52.4175503, -0.6431175],
+                {}
+            ).addTo(map_b20cc299fde4a251414518a62cec9a7d);
+        
+    
+            var icon_ca2917ad80d2163ffbafc9f5e6bd3e32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_58d6e31ca3ccb3bd869f046bac0a9c92.setIcon(icon_ca2917ad80d2163ffbafc9f5e6bd3e32);
+        
+    
+        var popup_de618c1d014324d11bc89acff4c9cec5 = L.popup({});
+
+        
+            
+                var html_fa36f978f834e0bb820b70767d7776d5 = $(`<div id="html_fa36f978f834e0bb820b70767d7776d5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North Northamptonshire</h1><div class="nugget-popup"><p>Properties within North Northamptonshire were affected by surface water flooding during the event; incidents were identified for investigation and recording by the Lead Local Flood Authority. [PAG] (p25)</p></div></div></body></div>`)[0];
+                popup_de618c1d014324d11bc89acff4c9cec5.setContent(html_fa36f978f834e0bb820b70767d7776d5);
+            
+        
+
+        marker_58d6e31ca3ccb3bd869f046bac0a9c92.bindPopup(popup_de618c1d014324d11bc89acff4c9cec5)
+        ;
+
+        
+    
+    
+            var marker_a3bcc058da3b368a1e2195e0d16592b3 = L.marker(
+                [52.51658384214896, -0.4990753288424832],
+                {}
+            ).addTo(map_b20cc299fde4a251414518a62cec9a7d);
+        
+    
+            var icon_a69dec794d26165943cc3c52898c5196 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a3bcc058da3b368a1e2195e0d16592b3.setIcon(icon_a69dec794d26165943cc3c52898c5196);
+        
+    
+        var popup_9cad5ba72a08748b7f264f98a871f92a = L.popup({});
+
+        
+            
+                var html_e4c64aff84330a479e472bc6262bec2c = $(`<div id="html_e4c64aff84330a479e472bc6262bec2c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Southwick</h1><div class="nugget-popup"><p>Main Street in Southwick was the subject of a flood investigation (report title indicates a flooding incident occurred there and was investigated by the Lead Local Flood Authority). (p3)</p></div><div class="nugget-popup"><p>Internal flooding of more than five buildings in close proximity during the single flood event; excess surface water followed local ground levels to low points in and around properties. (p7)</p></div><div class="nugget-popup"><p>Concentrated internal flooding in the Main Street area of Southwick, with floodwater entering multiple nearby properties. [PAG] (p9)</p></div><div class="nugget-popup"><p>A small area of Southwick (including one property) was included within a Flood Alert for the minor tributaries of the Nene. The Flood Alert was issued on 23 December 2020 and there was no local Flood Warning coverage or telemetry in the area. (p10)</p></div><div class="nugget-popup"><p>Southwick Brook overtopped approximately 100 m upstream of Main Street bridge and, together with surface water from a blocked/exceeded ditch northwest of the bridge and an exceeded piped minor watercourse from Millennium Cottage, flowed onto Main Street and into properties. Water followed ground levels through rear gardens back to the brook. Streets, gardens and properties were inundated; one property reported water entering from both Main Street (front) and the brook (rear). [PAG] (p16)</p></div><div class="nugget-popup"><p>Southwick Brook overtopped and conduits (Main Street bridge and buried pipes) were exceeded, producing overland flows into Main Street and around properties; floodwater followed local ground levels to low points near properties. (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>more than five buildings (p7)</p></div><div class="nugget-popup quant"><p>more than five buildings [PAG] (p9)</p></div><div class="nugget-popup quant"><p>1 property (p10)</p></div><div class="nugget-popup quant"><p>11 properties; depth in Main Street exceeded one metre in places; external areas ~300 mm; internal depths between 20 mm and 150 mm [PAG] (p16)</p></div><div class="nugget-popup quant"><p>depth of water in Main Street exceeded one metre; external areas of affected properties ~300mm; internal depths between 20mm and 150mm (p18)</p></div></div></body></div>`)[0];
+                popup_9cad5ba72a08748b7f264f98a871f92a.setContent(html_e4c64aff84330a479e472bc6262bec2c);
+            
+        
+
+        marker_a3bcc058da3b368a1e2195e0d16592b3.bindPopup(popup_9cad5ba72a08748b7f264f98a871f92a)
+        ;
+
+        
+    
+</script>
+</html>
