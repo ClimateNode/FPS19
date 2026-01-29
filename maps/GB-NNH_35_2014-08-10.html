@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1582d2706bb87e1eca41f7bc193b4b3e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1582d2706bb87e1eca41f7bc193b4b3e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1582d2706bb87e1eca41f7bc193b4b3e = L.map(
+                "map_1582d2706bb87e1eca41f7bc193b4b3e",
+                {
+                    center: [52.53613065555555, -0.5613266647990647],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3c1595a34b0f397f3d0d0af0bc38cfcd = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_3c1595a34b0f397f3d0d0af0bc38cfcd.addTo(map_1582d2706bb87e1eca41f7bc193b4b3e);
+    
+            var marker_d125271ded9ce5a1d6c42131d6f7f5b8 = L.marker(
+                [52.5641762, -0.5180115],
+                {}
+            ).addTo(map_1582d2706bb87e1eca41f7bc193b4b3e);
+        
+    
+            var icon_5067ffc335c20c4c373f5014bfda76f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d125271ded9ce5a1d6c42131d6f7f5b8.setIcon(icon_5067ffc335c20c4c373f5014bfda76f5);
+        
+    
+        var popup_7d1f9880871214b8865e4bf4aef2a206 = L.popup({});
+
+        
+            
+                var html_35adb5b0a4913199a6ea3500fe5b0708 = $(`<div id="html_35adb5b0a4913199a6ea3500fe5b0708" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wood Road, King's Cliffe</h1><div class="nugget-popup"><p>Water and soil flowed out of the drainage system from the Sovereign Grange estate onto Wood Road; the flow was mixed with soil (light brown) and passed southeast across Wood Road into rear gardens of properties on West Street, leaving deposits of fine silt. [PAG] (p14)</p></div><div class="nugget-popup"><p>Residual risk of surface water flooding from the Sovereign Grange development can flow along Wood Road to other properties; the report recommends carrying out works on Wood Road to contain this surface water risk without causing flooding elsewhere or compromising drainage. (p23)</p></div><div class="nugget-popup"><p>Surface water pooled at the Oak Lane / Wood Road junction during heavy rain on 10th August 2014, resulting in visible road flooding at the junction and indications of drainage overflow or blockage. [IMG,PAG] (p63)</p></div><div class="nugget-popup"><p>Surface water inundated the carriageway at the Oak Lane / Wood Road junction on Wood Road, with water pooling across most of the road surface and extending toward the junction and adjacent properties/parked vehicles (photographed). [IMG,PAG] (p64)</p></div></div></body></div>`)[0];
+                popup_7d1f9880871214b8865e4bf4aef2a206.setContent(html_35adb5b0a4913199a6ea3500fe5b0708);
+            
+        
+
+        marker_d125271ded9ce5a1d6c42131d6f7f5b8.bindPopup(popup_7d1f9880871214b8865e4bf4aef2a206)
+        ;
+
+        
+    
+    
+            var marker_d182d0998e5d1c2dae2183b3826bbbd7 = L.marker(
+                [52.5635316, -0.5197143],
+                {}
+            ).addTo(map_1582d2706bb87e1eca41f7bc193b4b3e);
+        
+    
+            var icon_a8fbf0157fb2da5136b5aa82eb7ea41f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d182d0998e5d1c2dae2183b3826bbbd7.setIcon(icon_a8fbf0157fb2da5136b5aa82eb7ea41f);
+        
+    
+        var popup_9361593fbd8ac5e5863ad8f3c9f1ad68 = L.popup({});
+
+        
+            
+                var html_a753d3eb42c84839354e371bba32d55c = $(`<div id="html_a753d3eb42c84839354e371bba32d55c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Street, King's Cliffe</h1><div class="nugget-popup"><p>Floodwater from Wood Road flowed through private property to areas around two properties on West Street; internal flooding occurred in one property on West Street (reported incidents). [TAB,MUL] (p11)</p></div><div class="nugget-popup"><p>Floodwater from Sovereign Grange, travelling across Wood Road, entered rear gardens of two properties on West Street. At one property water built up against the building walls, infiltrated through the walls and entered internal areas (internal flooding). At a second property areas of the rear garden were submerged. Fine silt deposits were left by the flow; water later flowed around the internally flooded property into the carriageway of West Street and into highway drainage. (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two properties; one property [TAB,MUL] (p11)</p></div><div class="nugget-popup quant"><p>2 properties (1 internally flooded; 1 with rear garden submerged) (p14)</p></div></div></body></div>`)[0];
+                popup_9361593fbd8ac5e5863ad8f3c9f1ad68.setContent(html_a753d3eb42c84839354e371bba32d55c);
+            
+        
+
+        marker_d182d0998e5d1c2dae2183b3826bbbd7.bindPopup(popup_9361593fbd8ac5e5863ad8f3c9f1ad68)
+        ;
+
+        
+    
+    
+            var marker_1bc44baadd13eef0eddc742e15c9b1f0 = L.marker(
+                [52.5656255, -0.5188416],
+                {}
+            ).addTo(map_1582d2706bb87e1eca41f7bc193b4b3e);
+        
+    
+            var icon_a248934e64b8cb3b68776bf831dce162 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1bc44baadd13eef0eddc742e15c9b1f0.setIcon(icon_a248934e64b8cb3b68776bf831dce162);
+        
+    
+        var popup_5dcc4d380bc46b9f62a86f14dc2e7c9a = L.popup({});
+
+        
+            
+                var html_41f1278ab96f1d2d2a2d486eb0422e80 = $(`<div id="html_41f1278ab96f1d2d2a2d486eb0422e80" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Willow Lane, King's Cliffe</h1><div class="nugget-popup"><p>Planning documents for the development on this site (between Willow Lane and Fineshade Close Wood Road) indicate soakaways appear to fail in certain storm durations and drainage calculations omit impermeable areas contributing to soakaways; these drainage shortcomings contributed to surface water drainage failure during the flood event. (p15)</p></div><div class="nugget-popup"><p>Associated with highway drainage and road&ndash;gully drainage concerns; identified for investigation of main drainage arrangements due to risk of surface water runoff overwhelming highway drainage and creating flood risk to the road and nearby properties. (p26)</p></div></div></body></div>`)[0];
+                popup_5dcc4d380bc46b9f62a86f14dc2e7c9a.setContent(html_41f1278ab96f1d2d2a2d486eb0422e80);
+            
+        
+
+        marker_1bc44baadd13eef0eddc742e15c9b1f0.bindPopup(popup_5dcc4d380bc46b9f62a86f14dc2e7c9a)
+        ;
+
+        
+    
+    
+            var marker_95b5170d82a23f67bdd7fff0f5194978 = L.marker(
+                [52.5645484, -0.5244362],
+                {}
+            ).addTo(map_1582d2706bb87e1eca41f7bc193b4b3e);
+        
+    
+            var icon_d9e786a7d0ebf64a1e90ccd7c3844db7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_95b5170d82a23f67bdd7fff0f5194978.setIcon(icon_d9e786a7d0ebf64a1e90ccd7c3844db7);
+        
+    
+        var popup_d7863858ee9041ee00d60f2a0a7904e8 = L.popup({});
+
+        
+            
+                var html_f8c52af24a9f508a35f14d7d4a58b411 = $(`<div id="html_f8c52af24a9f508a35f14d7d4a58b411" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fineshade Close, King's Cliffe</h1><div class="nugget-popup"><p>Planning documents for the development on this site (between Willow Lane and Fineshade Close Wood Road) indicate soakaways appear to fail in certain storm durations and drainage calculations omit impermeable areas contributing to soakaways; these drainage shortcomings contributed to surface water drainage failure during the flood event. (p15)</p></div></div></body></div>`)[0];
+                popup_d7863858ee9041ee00d60f2a0a7904e8.setContent(html_f8c52af24a9f508a35f14d7d4a58b411);
+            
+        
+
+        marker_95b5170d82a23f67bdd7fff0f5194978.bindPopup(popup_d7863858ee9041ee00d60f2a0a7904e8)
+        ;
+
+        
+    
+    
+            var marker_37996157b549a60bab15ff03c6ad1900 = L.marker(
+                [52.5656473, -0.5171617],
+                {}
+            ).addTo(map_1582d2706bb87e1eca41f7bc193b4b3e);
+        
+    
+            var icon_29051b13996d2e43291839a7644df2d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_37996157b549a60bab15ff03c6ad1900.setIcon(icon_29051b13996d2e43291839a7644df2d9);
+        
+    
+        var popup_b87270cea5d0d80d1bbe6038cfe2133c = L.popup({});
+
+        
+            
+                var html_e263a708ef3fc3a2eb08315544f32e99 = $(`<div id="html_e263a708ef3fc3a2eb08315544f32e99" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>King's Forest, King's Cliffe</h1><div class="nugget-popup"><p>Included in the area for investigation of existing main drainage arrangements and road gully serving Wood Road and adjacent streets, implying exposure to surface water/highway runoff issues and potential flooding of roads/properties; recommended remedial actions include drainage investigation and improvements. (p26)</p></div></div></body></div>`)[0];
+                popup_b87270cea5d0d80d1bbe6038cfe2133c.setContent(html_e263a708ef3fc3a2eb08315544f32e99);
+            
+        
+
+        marker_37996157b549a60bab15ff03c6ad1900.bindPopup(popup_b87270cea5d0d80d1bbe6038cfe2133c)
+        ;
+
+        
+    
+    
+            var marker_e69f6d2006dcf33ef46ad4d739757f44 = L.marker(
+                [52.5655182, -0.5201139],
+                {}
+            ).addTo(map_1582d2706bb87e1eca41f7bc193b4b3e);
+        
+    
+            var icon_ff2285b9b8444512a627433d30bb005a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e69f6d2006dcf33ef46ad4d739757f44.setIcon(icon_ff2285b9b8444512a627433d30bb005a);
+        
+    
+        var popup_89e0ddb683bb2b74f275a23d63002807 = L.popup({});
+
+        
+            
+                var html_0550117848545d780c9ecd648b2a55b4 = $(`<div id="html_0550117848545d780c9ecd648b2a55b4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oak Lane, King's Cliffe</h1><div class="nugget-popup"><p>Surface water accumulated at the Oak Lane / Wood Road junction during heavy rainfall on 10th August 2014, causing localised flooding of the road surface and water flowing from the pavement onto the carriageway; photographic evidence suggests drainage overflow or a possible blocked drain. [IMG,PAG] (p63)</p></div><div class="nugget-popup"><p>Surface water covered much of the carriageway at the Oak Lane / Wood Road junction on Oak Lane, with visible pooling and flowing water across the road and water extending toward the junction and nearby properties/parked vehicles (photographed). [IMG,PAG] (p64)</p></div></div></body></div>`)[0];
+                popup_89e0ddb683bb2b74f275a23d63002807.setContent(html_0550117848545d780c9ecd648b2a55b4);
+            
+        
+
+        marker_e69f6d2006dcf33ef46ad4d739757f44.bindPopup(popup_89e0ddb683bb2b74f275a23d63002807)
+        ;
+
+        
+    
+    
+            var marker_22dfecc5c9942bc74a22fd835a0ea95c = L.marker(
+                [52.3106138, -0.8659129831915817],
+                {}
+            ).addTo(map_1582d2706bb87e1eca41f7bc193b4b3e);
+        
+    
+            var icon_e5bb683e670cbc7615661f08b2b38964 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_22dfecc5c9942bc74a22fd835a0ea95c.setIcon(icon_e5bb683e670cbc7615661f08b2b38964);
+        
+    
+        var popup_ec1761ad4c9af13986242885c3633cdf = L.popup({});
+
+        
+            
+                var html_1719fc777dd0ce0ed3eb6dc99600dd53 = $(`<div id="html_1719fc777dd0ce0ed3eb6dc99600dd53" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northamptonshire</h1><div class="nugget-popup"><p>Internal flooding of a residential property in Kings Cliffe: water crossed the threshold and caused internal flooding of one property; the property has experienced internal flooding on more than one occasion in the last five years. [MUL] (p9)</p></div><div class="nugget-popup"><p>Surface water flooding affected the Oak Lane / Wood Road junction on 10 August 2014, impacting the highway at that junction. (p65)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one property [MUL] (p9)</p></div></div></body></div>`)[0];
+                popup_ec1761ad4c9af13986242885c3633cdf.setContent(html_1719fc777dd0ce0ed3eb6dc99600dd53);
+            
+        
+
+        marker_22dfecc5c9942bc74a22fd835a0ea95c.bindPopup(popup_ec1761ad4c9af13986242885c3633cdf)
+        ;
+
+        
+    
+    
+            var marker_599d5e5a79250bd9149205ceb050ef8c = L.marker(
+                [52.5657117, -0.5208584],
+                {}
+            ).addTo(map_1582d2706bb87e1eca41f7bc193b4b3e);
+        
+    
+            var icon_3e102b6399886826f22dca847cf36def = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_599d5e5a79250bd9149205ceb050ef8c.setIcon(icon_3e102b6399886826f22dca847cf36def);
+        
+    
+        var popup_cc3ca43beb7d6c925feb0fd15052c589 = L.popup({});
+
+        
+            
+                var html_8ef40ac5f997caa8cb4560435ce6081f = $(`<div id="html_8ef40ac5f997caa8cb4560435ce6081f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>King's Cliffe</h1><div class="nugget-popup"><p>Drainage systems were unable to collect and dispose of rainwater, so excess surface water flowed over ground following natural contours to low points in the village, causing internal flooding of a property. [PAG,MUL] (p6)</p></div><div class="nugget-popup"><p>Excess surface water flowed over ground to low points in the village; internal flooding occurred in at least one property. [PAG,MUL] (p7)</p></div><div class="nugget-popup"><p>Internal flooding of a residential property (water crossed the internal threshold). The property experienced internal flooding on the main event of 10th August 2014 and has experienced internal flooding on more than one occasion in the previous five years. [MUL] (p9)</p></div><div class="nugget-popup"><p>Flooding occurred in Kings Cliffe driven by prolonged/continuous rainfall and by additional flood water sourced from the failure of on&ndash;site drainage at the Sovereign Grange Housing Development; local drainage was overwhelmed. (p16)</p></div><div class="nugget-popup"><p>Surface water flooding in Kings Cliffe is attributed in the report to runoff from the Sovereign Grange housing development; this flood risk includes surface water reaching roads and properties and requires mitigation. (p23)</p></div><div class="nugget-popup"><p>Flooding prompted review of the village drainage system and community actions: identification of vulnerable properties, exploration of property&ndash;level protection, reinstatement/clearing of historic ditches and culverts, and consideration of community&ndash;wide solutions (attenuation areas, tree planting) to manage surface water. (p25)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [PAG,MUL] (p6)</p></div><div class="nugget-popup quant"><p>one property [PAG,MUL] (p7)</p></div><div class="nugget-popup quant"><p>one property [MUL] (p9)</p></div></div></body></div>`)[0];
+                popup_cc3ca43beb7d6c925feb0fd15052c589.setContent(html_8ef40ac5f997caa8cb4560435ce6081f);
+            
+        
+
+        marker_599d5e5a79250bd9149205ceb050ef8c.bindPopup(popup_cc3ca43beb7d6c925feb0fd15052c589)
+        ;
+
+        
+    
+</script>
+</html>
