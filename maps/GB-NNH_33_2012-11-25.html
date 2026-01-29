@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cb86da07636a56a683c367285a3b8893 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cb86da07636a56a683c367285a3b8893" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cb86da07636a56a683c367285a3b8893 = L.map(
+                "map_cb86da07636a56a683c367285a3b8893",
+                {
+                    center: [52.39004948875672, -0.7030076898219969],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e7a6982ce727681767e97d858b085e1e = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_e7a6982ce727681767e97d858b085e1e.addTo(map_cb86da07636a56a683c367285a3b8893);
+    
+            var marker_fd4cee2b1cd1e2a397999ac25449d1d4 = L.marker(
+                [52.4214163, -0.6588565],
+                {}
+            ).addTo(map_cb86da07636a56a683c367285a3b8893);
+        
+    
+            var icon_a1c40de080a09fe248c854e0113c0d12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fd4cee2b1cd1e2a397999ac25449d1d4.setIcon(icon_a1c40de080a09fe248c854e0113c0d12);
+        
+    
+        var popup_485f2762a9bcad5f8f7009ad5fb48db3 = L.popup({});
+
+        
+            
+                var html_4bd725c58a5d145c4760e7b62f96343a = $(`<div id="html_4bd725c58a5d145c4760e7b62f96343a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Grafton Road, Grafton Underwood</h1><div class="nugget-popup"><p>Flooding occurred at the junctions on Grafton Road (south at Warkton Road and north at Geddington Road). Water backed up at the junction with Geddington Road, causing road junction flooding; reverse flow flooded the rear garden and patio of a property (did not reach dwelling threshold); culvert blockages and inability of run&ndash;off to enter Alledge Brook led to manhole cover overtopping on the highway. (p10)</p></div><div class="nugget-popup"><p>Highway sections on Grafton Road were flooded at junctions with Geddington Road and with Warkton Road (junction with Geddington Road flooded to an unspecified depth; junction with Warkton Road flooded to an unknown depth). (p11)</p></div><div class="nugget-popup"><p>The highway drainage system and the culverts beneath the highway serving Alledge Brook at the junction of Grafton Road and Geddington Road did not operate satisfactorily, causing the road junction to flood. (p15)</p></div></div></body></div>`)[0];
+                popup_485f2762a9bcad5f8f7009ad5fb48db3.setContent(html_4bd725c58a5d145c4760e7b62f96343a);
+            
+        
+
+        marker_fd4cee2b1cd1e2a397999ac25449d1d4.bindPopup(popup_485f2762a9bcad5f8f7009ad5fb48db3)
+        ;
+
+        
+    
+    
+            var marker_98474246274a5afa960865fd1ea4daf3 = L.marker(
+                [52.41484467421323, -0.6439122699742177],
+                {}
+            ).addTo(map_cb86da07636a56a683c367285a3b8893);
+        
+    
+            var icon_6d23d132119ba2eb8d42a66125ad667b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_98474246274a5afa960865fd1ea4daf3.setIcon(icon_6d23d132119ba2eb8d42a66125ad667b);
+        
+    
+        var popup_ae9f53f629aa54de279045586e751aca = L.popup({});
+
+        
+            
+                var html_591cd6960f215765c6da1d9fdb8f3060 = $(`<div id="html_591cd6960f215765c6da1d9fdb8f3060" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Geddington Road, Grafton Underwood</h1><div class="nugget-popup"><p>Water backed up at the junction of Geddington Road and Grafton Road causing flooding of the road junction and observed failures to the tarmac footway. (p10)</p></div><div class="nugget-popup"><p>The highway at the junction of Geddington Road and Grafton Road flooded (depth not provided in the text). (p11)</p></div><div class="nugget-popup"><p>The highway drainage system and culverts beneath the highway serving Alledge Brook at the junction of Grafton Road and Geddington Road did not operate satisfactorily, causing the road junction to flood. (p15)</p></div></div></body></div>`)[0];
+                popup_ae9f53f629aa54de279045586e751aca.setContent(html_591cd6960f215765c6da1d9fdb8f3060);
+            
+        
+
+        marker_98474246274a5afa960865fd1ea4daf3.bindPopup(popup_ae9f53f629aa54de279045586e751aca)
+        ;
+
+        
+    
+    
+            var marker_adf70e9b78ac683239f984b21939f023 = L.marker(
+                [52.3106138, -0.8659129831915817],
+                {}
+            ).addTo(map_cb86da07636a56a683c367285a3b8893);
+        
+    
+            var icon_051c97a8bde869368175a616f4695e23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_adf70e9b78ac683239f984b21939f023.setIcon(icon_051c97a8bde869368175a616f4695e23);
+        
+    
+        var popup_af8879ecb87f01ba10f370151894ace9 = L.popup({});
+
+        
+            
+                var html_689530a11391aa3bf691bfcd844f3fbe = $(`<div id="html_689530a11391aa3bf691bfcd844f3fbe" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northamptonshire</h1><div class="nugget-popup"><p>Internal flooding of properties where water crossed the threshold of buildings (internal flooding reported for three properties in the village). (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>three properties (p7)</p></div></div></body></div>`)[0];
+                popup_af8879ecb87f01ba10f370151894ace9.setContent(html_689530a11391aa3bf691bfcd844f3fbe);
+            
+        
+
+        marker_adf70e9b78ac683239f984b21939f023.bindPopup(popup_af8879ecb87f01ba10f370151894ace9)
+        ;
+
+        
+    
+    
+            var marker_c29f1aed4f13dc3ba5855c11d32c6792 = L.marker(
+                [52.41332318081368, -0.6433490061221884],
+                {}
+            ).addTo(map_cb86da07636a56a683c367285a3b8893);
+        
+    
+            var icon_adaa49da521a1991f39b02cc1caf54dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c29f1aed4f13dc3ba5855c11d32c6792.setIcon(icon_adaa49da521a1991f39b02cc1caf54dd);
+        
+    
+        var popup_3b7110f112c38defeb6b22705b44d959 = L.popup({});
+
+        
+            
+                var html_a3c60c48e7e613947965512708fd5115 = $(`<div id="html_a3c60c48e7e613947965512708fd5115" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Grafton Underwood</h1><div class="nugget-popup"><p>Internal flooding of residential properties caused by overland flow of excess surface water following intense rainfall on a saturated catchment; drainage systems ineffective so water flowed over ground following natural contours into properties. [PAG,MUL] (p5)</p></div><div class="nugget-popup"><p>Intense, short&ndash;duration rainfall on a saturated catchment caused excess surface water to flow overland following natural contours into properties, resulting in internal flooding. Flooding was reported to have caused internal flooding of properties and had occurred on more than one occasion in the previous five years. [PAG] (p6)</p></div><div class="nugget-popup"><p>Internal flooding of properties: two properties had ground&ndash;floor internal living areas flooded by surface water overland flows; one property experienced a back&ndash;up of effluent into a ground&ndash;floor toilet (sewer/back&ndash;up). [MUL] (p8)</p></div><div class="nugget-popup"><p>Surface water run&ndash;off from agricultural land to the east flowed into rear gardens and into properties. Run&ndash;off from fields overtopped drainage ditches and flowed onto the highway at the junction of Warkton Road and Grafton Road. Water backed up at the junction of Grafton Road and Geddington Road causing flooding of the road junction and failure/damage to the tarmac footway. Reverse flow flooded the rear garden and patio of a property at the northeast of the village (did not reach the dwelling threshold). Culvert blockages in the highway at the junction were evidenced and culverts beneath Geddington Road operated unsatisfactorily, allowing water onto the highway. A property at the east had its conservatory flooded to a shallow depth and water flowed to the kitchen; works (trench, driveway reshaping) were carried out to divert flows. A property at the southeast experienced approximately 50mm of water in the kitchen (groundwater emergence) and temporary rear patio inundation; another southeast property had a ground&ndash;floor toilet flooded. [PAG] (p10)</p></div><div class="nugget-popup"><p>Residential properties in the southeast of the village were flooded: one property had groundwater emerge through weaknesses in the floor slab causing approximately 50mm of water in the kitchen and surface water runoff from fields to the east temporarily flooded the rear patio; another property experienced water backing up and flooding a ground floor toilet; the garden and patio of the property referenced in 3.3.2 flooded to a depth of approximately 4. [PAG] (p11)</p></div><div class="nugget-popup"><p>Properties in Grafton Underwood were flooded after intense, short&ndash;duration rainfall on a saturated catchment. Existing drainage systems and watercourses were unable to cope, causing water to flow into other areas and overwhelm local drainage infrastructure, resulting in flooding of properties. [PAG] (p14)</p></div><div class="nugget-popup"><p>Properties in the village were flooded after intense short&ndash;duration rainfall on a saturated catchment. Existing drainage systems and watercourses were unable to cope, causing water to flow into other areas and into properties; surface water and emergence of groundwater occurred within dwellings. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties [PAG,MUL] (p5)</p></div><div class="nugget-popup quant"><p>3 properties [PAG] (p6)</p></div><div class="nugget-popup quant"><p>three properties; two properties; one property [MUL] (p8)</p></div><div class="nugget-popup quant"><p>at least two residential properties; approximately 50mm of water in the kitchen of one property [PAG] (p10)</p></div><div class="nugget-popup quant"><p>approximately 50mm of water in the kitchen; approximately 4 (depth) for garden and patio [PAG] (p11)</p></div></div></body></div>`)[0];
+                popup_3b7110f112c38defeb6b22705b44d959.setContent(html_a3c60c48e7e613947965512708fd5115);
+            
+        
+
+        marker_c29f1aed4f13dc3ba5855c11d32c6792.bindPopup(popup_3b7110f112c38defeb6b22705b44d959)
+        ;
+
+        
+    
+</script>
+</html>
