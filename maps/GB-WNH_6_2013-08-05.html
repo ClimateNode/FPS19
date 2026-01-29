@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_50e9d38bbe18a6dfa2eaebaed11ec4f8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_50e9d38bbe18a6dfa2eaebaed11ec4f8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_50e9d38bbe18a6dfa2eaebaed11ec4f8 = L.map(
+                "map_50e9d38bbe18a6dfa2eaebaed11ec4f8",
+                {
+                    center: [52.31667205971385, -0.7457973519657315],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4a59a6b375daa04f658153c61b77188b = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_4a59a6b375daa04f658153c61b77188b.addTo(map_50e9d38bbe18a6dfa2eaebaed11ec4f8);
+    
+            var marker_a6e251a570a8f1dc855f3f79db8c1543 = L.marker(
+                [52.56628789856925, -0.2027211766370756],
+                {}
+            ).addTo(map_50e9d38bbe18a6dfa2eaebaed11ec4f8);
+        
+    
+            var icon_5e50a49929be6e5ded879336d856ff78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a6e251a570a8f1dc855f3f79db8c1543.setIcon(icon_5e50a49929be6e5ded879336d856ff78);
+        
+    
+        var popup_30254bf7454d0d9450dfdbb6d2dcc09b = L.popup({});
+
+        
+            
+                var html_8e3d83a0ac803d33b04e36726f0543ed = $(`<div id="html_8e3d83a0ac803d33b04e36726f0543ed" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Nene</h1><div class="nugget-popup"><p>The River Nene sits within Flood Zone 3 adjacent to Bedford Road; the flood hazard associated with the river area encompassed Bedford Road on 5th August 2013, during which the A428 Bedford Road was temporarily closed because of the depth of flood water and manhole covers being lifted. (p9)</p></div><div class="nugget-popup"><p>Elevated water levels in the River Nene in the vicinity of the incident during the 5th August 2013 event may have prevented discharge from drainage systems and contributed to local flooding impacts. (p20)</p></div><div class="nugget-popup"><p>A surface water outfall discharging into the River Nene was heavily clogged with debris (metal grate and organic/plastic material), partially blocking flow. The blockage would have impeded drainage into the Nene and increased the risk of upstream surface&ndash;water flooding during the flood investigation (documented following the 5 August 2013 event). [IMG] (p43)</p></div></div></body></div>`)[0];
+                popup_30254bf7454d0d9450dfdbb6d2dcc09b.setContent(html_8e3d83a0ac803d33b04e36726f0543ed);
+            
+        
+
+        marker_a6e251a570a8f1dc855f3f79db8c1543.bindPopup(popup_30254bf7454d0d9450dfdbb6d2dcc09b)
+        ;
+
+        
+    
+    
+            var marker_ab613493d0605928a137432710dc0ce2 = L.marker(
+                [52.2329997, -0.8848447],
+                {}
+            ).addTo(map_50e9d38bbe18a6dfa2eaebaed11ec4f8);
+        
+    
+            var icon_ecf0a7b0bc906cfddf9c314484b84e18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ab613493d0605928a137432710dc0ce2.setIcon(icon_ecf0a7b0bc906cfddf9c314484b84e18);
+        
+    
+        var popup_5e40f59cbe611cff4dc5e0fe430cbfda = L.popup({});
+
+        
+            
+                var html_d9de3869480e72112ec542ca79aa3a4a = $(`<div id="html_d9de3869480e72112ec542ca79aa3a4a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bedford Road, Northampton</h1><div class="nugget-popup"><p>Intense short&ndash;duration rainfall caused existing drainage to back up and overtop at ground level, resulting in surface water flooding of Bedford Road; the flood affected Bedford Road, a critical arterial route for Northampton. [PAG] (p6)</p></div><div class="nugget-popup"><p>Intense short&ndash;duration rainfall overwhelmed local drainage; drainage systems backed up and overtopped at ground level, causing flooding of the carriageway on Bedford Road, disrupting this critical arterial route and prompting a formal Section 19 investigation. [PAG] (p7)</p></div><div class="nugget-popup"><p>The A428 Bedford Road was temporarily closed to traffic due to the depth of flood water and manhole covers being lifted; the closure affected a critical arterial route connecting Northampton town centre to the A45. [PAG] (p9)</p></div><div class="nugget-popup"><p>Standing water ponded in the carriageway (reaching a depth higher than the kerb lines so verges and footways were flooded), manhole covers were lifted by excessive volumes in the sewerage system, and the road was closed to through traffic causing delays, congestion and traffic diversions. (p12)</p></div><div class="nugget-popup"><p>Bedford Road was flooded by intense short&ndash;duration rainfall; existing drainage systems were unable to cope, became surcharged and ejected water back to the surface, causing surface water to flow into areas and drainage systems that could not manage the volume. (p17)</p></div><div class="nugget-popup"><p>Carriageway and road gullies on Bedford Road were liable to overflow during extreme rainfall, contributing to surface water flooding and increasing flood risk to lower&ndash;lying ground and properties; recommendation to allow controlled overflow routes to lower ground (e.g. grip drains, lowered verges). (p19)</p></div><div class="nugget-popup"><p>During the extreme rainfall on 5th August 2013 the carriageway and road gullies on Bedford Road overtopped, causing surface water to flow across the road. Measures were recommended to allow overflow of road gullies to lower ground (e.g. grip drains, lowering verges/footways) to reduce repeat overtopping. [PAG] (p20)</p></div><div class="nugget-popup"><p>Flooding occurred at the junction of Bedford Road and Cliftonville Road; Main River Nene overflowed into the adjacent flood channel south of Bedford Road. Flood pressures caused manhole covers to be lifted at the junction. [IMG,PAG] (p44)</p></div><div class="nugget-popup"><p>Flooding occurred at the junction of Bedford Road and Cliftonville Road; manhole covers were lifted (surcharging) and the junction was inundated. (p45)</p></div><div class="nugget-popup"><p>Flooding occurred at the west end of Bedford Road and at the junction with Cliftonville Road; surface water outfall to the River Nene is located at the west end south of the car park. Manhole covers were lifted, indicating sewer surcharge and local surface&ndash;water inundation. Low spots in the vertical alignment of Bedford Road contributed to ponding. [IMG,PAG] (p46)</p></div></div></body></div>`)[0];
+                popup_5e40f59cbe611cff4dc5e0fe430cbfda.setContent(html_d9de3869480e72112ec542ca79aa3a4a);
+            
+        
+
+        marker_ab613493d0605928a137432710dc0ce2.bindPopup(popup_5e40f59cbe611cff4dc5e0fe430cbfda)
+        ;
+
+        
+    
+    
+            var marker_847cb78952ea027f4bd7c5cde1812223 = L.marker(
+                [52.2353234, -0.8791172],
+                {}
+            ).addTo(map_50e9d38bbe18a6dfa2eaebaed11ec4f8);
+        
+    
+            var icon_7a3928da165e3f1909392731d107ce0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_847cb78952ea027f4bd7c5cde1812223.setIcon(icon_7a3928da165e3f1909392731d107ce0a);
+        
+    
+        var popup_9f9982f7cb0a51e98b692dfcae61914e = L.popup({});
+
+        
+            
+                var html_0154e7727c1a88a72602df28196e4144 = $(`<div id="html_0154e7727c1a88a72602df28196e4144" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cliftonville Road, Northampton</h1><div class="nugget-popup"><p>Surface water inundation affected Cliftonville Road and the adjacent verge/footpath area; nearby lower&ndash;lying land adjacent to the skate park formed part of the flow pathway toward Bedford Road. [IMG] (p45)</p></div><div class="nugget-popup"><p>Flooding at the junction with Bedford Road with lifted manhole covers reported; photograph views from Cliftonville Road show the area affected by surface&ndash;water/ponding and sewer surcharge at the junction. [PAG] (p46)</p></div></div></body></div>`)[0];
+                popup_9f9982f7cb0a51e98b692dfcae61914e.setContent(html_0154e7727c1a88a72602df28196e4144);
+            
+        
+
+        marker_847cb78952ea027f4bd7c5cde1812223.bindPopup(popup_9f9982f7cb0a51e98b692dfcae61914e)
+        ;
+
+        
+    
+    
+            var marker_cad6370b2f60875748b1f9ace7a18a42 = L.marker(
+                [52.3106138, -0.8659129831915817],
+                {}
+            ).addTo(map_50e9d38bbe18a6dfa2eaebaed11ec4f8);
+        
+    
+            var icon_b80d85bdf4ef79cfe4bec55b14bc8302 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cad6370b2f60875748b1f9ace7a18a42.setIcon(icon_b80d85bdf4ef79cfe4bec55b14bc8302);
+        
+    
+        var popup_5adff54df6b42c12e1e7891b253688c1 = L.popup({});
+
+        
+            
+                var html_5f56a285c1c2cb830e6fdce2b9206bc4 = $(`<div id="html_5f56a285c1c2cb830e6fdce2b9206bc4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northamptonshire</h1><div class="nugget-popup"><p>Intense, short&ndash;duration rainfall overwhelmed existing drainage on Bedford Road, Northampton. Water flowed onto the road and into local drainage systems that were unable to manage the volume, causing flooding of the highway and surrounding drainage assets. (p16)</p></div></div></body></div>`)[0];
+                popup_5adff54df6b42c12e1e7891b253688c1.setContent(html_5f56a285c1c2cb830e6fdce2b9206bc4);
+            
+        
+
+        marker_cad6370b2f60875748b1f9ace7a18a42.bindPopup(popup_5adff54df6b42c12e1e7891b253688c1)
+        ;
+
+        
+    
+    
+            var marker_9741ab23f2b9af1587cf078d60793f00 = L.marker(
+                [52.2381355, -0.8963907],
+                {}
+            ).addTo(map_50e9d38bbe18a6dfa2eaebaed11ec4f8);
+        
+    
+            var icon_a9167f3395585d761a710541728efede = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9741ab23f2b9af1587cf078d60793f00.setIcon(icon_a9167f3395585d761a710541728efede);
+        
+    
+        var popup_1adbe6ee9b60a6ddce0a85fe066afaae = L.popup({});
+
+        
+            
+                var html_a80796923352fa1e60c0f8d1abcb73b2 = $(`<div id="html_a80796923352fa1e60c0f8d1abcb73b2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northampton</h1><div class="nugget-popup"><p>Flooding from intense rainfall caused drainage systems to back up and overtop at ground level on Bedford Road, which is a critical arterial route for the town. [PAG] (p6)</p></div><div class="nugget-popup"><p>The flood incident on Bedford Road within Northampton, caused by intense short&ndash;duration rainfall and overwhelmed drainage, affected a key arterial route in the town and led to a formal investigation. [PAG] (p7)</p></div><div class="nugget-popup"><p>A primary arterial route within Northampton (Bedford Road) was temporarily closed due to flood water depth and lifted manhole covers, disrupting traffic circulation in the town. (p9)</p></div><div class="nugget-popup"><p>Intense short&ndash;duration rainfall across Northampton caused existing drainage systems to be unable to cope; systems were surcharged and ejected water to the surface. High levels in the receiving watercourse may have restricted discharge rates from drainage systems, exacerbating urban/surface water flooding. (p17)</p></div></div></body></div>`)[0];
+                popup_1adbe6ee9b60a6ddce0a85fe066afaae.setContent(html_a80796923352fa1e60c0f8d1abcb73b2);
+            
+        
+
+        marker_9741ab23f2b9af1587cf078d60793f00.bindPopup(popup_1adbe6ee9b60a6ddce0a85fe066afaae)
+        ;
+
+        
+    
+</script>
+</html>
