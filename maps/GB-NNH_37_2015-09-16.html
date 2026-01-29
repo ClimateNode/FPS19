@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c3a59ea1af915470b1685c6ff9466c2c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c3a59ea1af915470b1685c6ff9466c2c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c3a59ea1af915470b1685c6ff9466c2c = L.map(
+                "map_c3a59ea1af915470b1685c6ff9466c2c",
+                {
+                    center: [52.26727314776606, -0.7591674699701104],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8b78d2eebff6fe82bf58ba5899c09ce7 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_8b78d2eebff6fe82bf58ba5899c09ce7.addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+    
+            var marker_4b6c1788a9faeb50402a750eadcfb88e = L.marker(
+                [52.265402, -0.7534214],
+                {}
+            ).addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+        
+    
+            var icon_7909c14615359b9f8c637193d2711450 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4b6c1788a9faeb50402a750eadcfb88e.setIcon(icon_7909c14615359b9f8c637193d2711450);
+        
+    
+        var popup_af33b4529b2805185ff59a696b812de7 = L.popup({});
+
+        
+            
+                var html_2f15224a8d42c961cc22796194022263 = $(`<div id="html_2f15224a8d42c961cc22796194022263" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Square, Earls Barton</h1><div class="nugget-popup"><p>Moderate rainfall overwhelmed local drainage so excess surface water flowed over ground and along the public highway and around private property; carriageway, kerbs and footways directed surface water toward vulnerable properties, causing internal flooding of property(ies) in The Square. [PAG] (p6)</p></div><div class="nugget-popup"><p>Moderate rainfall and ineffective drainage caused excess surface water to flow over ground and along the public highway and around private property; local carriageway/kerb/footway levels directed surface water toward vulnerable properties, resulting in internal flooding of one property. [PAG,MUL] (p7)</p></div><div class="nugget-popup"><p>Water crossed the threshold of a building at The Square causing internal flooding of a property; the property has experienced internal flooding on more than one occasion in the last five years. [PAG] (p9)</p></div><div class="nugget-popup"><p>The Square is a focal point for surface water flow and was affected by surface water flooding. Surface water sewers drain to The Square from High Street and West Street; blocked road gullies on approaches were seen during the Flood Incident Investigation. The carriageway is higher than the south footway and some building thresholds, leading to water reaching doorways; frontage channel drains have been installed to try to protect thresholds. [PAG] (p10)</p></div><div class="nugget-popup"><p>On 16/09/15 surface water from High Street and West Way overtopped kerbs at the corner of Station Road and The Square; surface water entered the doorway of a property on The Square and flowed into several rooms, nearly reaching the electrical cupboard. The Square has also experienced external flooding of private property and repeated near&ndash;miss internal flooding requiring temporary barriers. [TAB,PAG] (p11)</p></div><div class="nugget-popup"><p>Surface water built up at the corner of Station Road and The Square, overtopped lowered kerbs and flowed into the doorway of a property at The Square, causing internal flooding that reached close to an electrical cupboard and required cleaning; the business was temporarily affected. (p12)</p></div><div class="nugget-popup"><p>The arrangement of kerbs and levels meant surface water flowing off the carriageway could enter The Square, flow onto the footway and into doorways of properties during the 16th September 2015 event. (p13)</p></div><div class="nugget-popup"><p>The street was flooded with muddy water overtopping the kerbs and flowing across the pavement. Debris (wooden planks, fencing) and a partially submerged construction cone were present; buildings adjacent to the square had sandbags and planks placed at entrances to reduce water ingress. [PAG] (p34)</p></div><div class="nugget-popup"><p>Kerb and footway arrangement at The Square with observed gully blockages and leaf accumulation recorded during the flood investigation, indicating reduced drainage capacity and association with surface water flooding at the Square and its junctions. [IMG,PAG] (p40)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one property [PAG] (p6)</p></div><div class="nugget-popup quant"><p>one property [PAG,MUL] (p7)</p></div><div class="nugget-popup quant"><p>one property [PAG] (p9)</p></div><div class="nugget-popup quant"><p>approximately six times every year for the last five years (repeated kerb overtopping/near&ndash;miss at The Square) [TAB,PAG] (p11)</p></div><div class="nugget-popup quant"><p>1 property; 25 mm depth of water (p12)</p></div></div></body></div>`)[0];
+                popup_af33b4529b2805185ff59a696b812de7.setContent(html_2f15224a8d42c961cc22796194022263);
+            
+        
+
+        marker_4b6c1788a9faeb50402a750eadcfb88e.bindPopup(popup_af33b4529b2805185ff59a696b812de7)
+        ;
+
+        
+    
+    
+            var marker_1b50f2fc97c617144ad8f2bbd6931039 = L.marker(
+                [52.2683739, -0.7489795],
+                {}
+            ).addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+        
+    
+            var icon_37843289cca3e8c4ad9909405f062e9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1b50f2fc97c617144ad8f2bbd6931039.setIcon(icon_37843289cca3e8c4ad9909405f062e9e);
+        
+    
+        var popup_ae75d8d90f8f971d1430f3aec3b2b823 = L.popup({});
+
+        
+            
+                var html_71226471b58fa6b10a1119e161912968 = $(`<div id="html_71226471b58fa6b10a1119e161912968" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North Road, Earls Barton</h1><div class="nugget-popup"><p>Runoff from the residential area of North Street (sic) forms part of the catchment flowing to The Square and contributed to the surface water flow that led to internal flooding of a property at The Square. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one property (p9)</p></div></div></body></div>`)[0];
+                popup_ae75d8d90f8f971d1430f3aec3b2b823.setContent(html_71226471b58fa6b10a1119e161912968);
+            
+        
+
+        marker_1b50f2fc97c617144ad8f2bbd6931039.bindPopup(popup_ae75d8d90f8f971d1430f3aec3b2b823)
+        ;
+
+        
+    
+    
+            var marker_4a614133191d2611553d9078b7645db3 = L.marker(
+                [52.2691538, -0.7531519],
+                {}
+            ).addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+        
+    
+            var icon_1d4340a9ef81c14dcfdeff71aeca777e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4a614133191d2611553d9078b7645db3.setIcon(icon_1d4340a9ef81c14dcfdeff71aeca777e);
+        
+    
+        var popup_d97ec1aa1e90ad4ef5d0ab14429407cc = L.popup({});
+
+        
+            
+                var html_969592eb8b22ec6de043f13e10cbf49b = $(`<div id="html_969592eb8b22ec6de043f13e10cbf49b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Manor Road, Earls Barton</h1><div class="nugget-popup"><p>Runoff from Manor Road, as part of the catchment feeding The Square, contributed to the surface water flow that resulted in internal flooding of a property at The Square. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one property (p9)</p></div></div></body></div>`)[0];
+                popup_d97ec1aa1e90ad4ef5d0ab14429407cc.setContent(html_969592eb8b22ec6de043f13e10cbf49b);
+            
+        
+
+        marker_4a614133191d2611553d9078b7645db3.bindPopup(popup_d97ec1aa1e90ad4ef5d0ab14429407cc)
+        ;
+
+        
+    
+    
+            var marker_1f40e26294aa340da3f08f486fc3af59 = L.marker(
+                [52.2667899, -0.7554185],
+                {}
+            ).addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+        
+    
+            var icon_2cfffb1f06665484b908b7647168858b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1f40e26294aa340da3f08f486fc3af59.setIcon(icon_2cfffb1f06665484b908b7647168858b);
+        
+    
+        var popup_7a21cdc18c354f8b2e0f0d5a964dbce0 = L.popup({});
+
+        
+            
+                var html_d69b3b04fa6db2080e929f635a1a1dd2 = $(`<div id="html_d69b3b04fa6db2080e929f635a1a1dd2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Harrowick Lane, Earls Barton</h1><div class="nugget-popup"><p>Contribution of runoff from Hardwick Lane (sic) (and West Street) helped create the flow meeting at The Square that led to internal flooding of a property at The Square. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one property (p9)</p></div></div></body></div>`)[0];
+                popup_7a21cdc18c354f8b2e0f0d5a964dbce0.setContent(html_d69b3b04fa6db2080e929f635a1a1dd2);
+            
+        
+
+        marker_1f40e26294aa340da3f08f486fc3af59.bindPopup(popup_7a21cdc18c354f8b2e0f0d5a964dbce0)
+        ;
+
+        
+    
+    
+            var marker_a2fadca3ff5688080403abdda6181c5c = L.marker(
+                [52.2646634, -0.7511289],
+                {}
+            ).addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+        
+    
+            var icon_72c68e0e5c50a5958b13562c9c3b845c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a2fadca3ff5688080403abdda6181c5c.setIcon(icon_72c68e0e5c50a5958b13562c9c3b845c);
+        
+    
+        var popup_361e54345b8edd2205e123981f7a4988 = L.popup({});
+
+        
+            
+                var html_fef234da9ad0c1df294daea901cb6433 = $(`<div id="html_fef234da9ad0c1df294daea901cb6433" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Broad Street, Earls Barton</h1><div class="nugget-popup"><p>Broad Street was identified as a low point receiving surface water flows and is shown on mapping as high risk. Several road gullies on Broad Street were observed blocked with leaves and silt during the Flood Incident Investigation, contributing to surface water ponding on the carriageway and the potential for water to reach lower footways and building thresholds. [PAG] (p10)</p></div><div class="nugget-popup"><p>Surface water flowed east along Broad Street to the low point opposite Churchill Road; water was reported flowing out of road gullies and overtopping kerbs at the low point, flooding the road and footways. (p12)</p></div><div class="nugget-popup"><p>Areas of Broad Street were vulnerable to surface water flowing off the carriageway; during the 16th September 2015 event this water could flow onto the footway and into property doorways, causing flooding impacts. (p13)</p></div><div class="nugget-popup"><p>Water discharged from a kerb offlet gully and spread onto the pavement and road, causing surface water flooding on the south and north sides of Broad Street; pooling and flow across the carriageway and footway with muddy/discoloured runoff indicating drainage overflow and potential contamination and hazards to pedestrians and vehicles. [IMG,PAG] (p38)</p></div><div class="nugget-popup"><p>Footway flooding on the south side of Broad Street (opposite Churchill Road): multiple damp patches and pooling of water, with a visible puddle concentrated around a metal drain cover on the pavement. [IMG,PAG] (p42)</p></div><div class="nugget-popup"><p>Footway flooding occurred on the south side of Broad Street (opposite Churchill Road). Roof drainage discharges onto a gully in the pavement which is blocked, causing water to accumulate on the footway and verge and contributing to flooding of the pedestrian area and adjacent carriageway. [IMG,PAG] (p43)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one visible puddle [IMG,PAG] (p42)</p></div></div></body></div>`)[0];
+                popup_361e54345b8edd2205e123981f7a4988.setContent(html_fef234da9ad0c1df294daea901cb6433);
+            
+        
+
+        marker_a2fadca3ff5688080403abdda6181c5c.bindPopup(popup_361e54345b8edd2205e123981f7a4988)
+        ;
+
+        
+    
+    
+            var marker_fc7dcc5b245b5385175a6a68fd33a7c6 = L.marker(
+                [52.2670253, -0.7502767],
+                {}
+            ).addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+        
+    
+            var icon_1dfe1ad79e0b3902067fe6568721b503 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fc7dcc5b245b5385175a6a68fd33a7c6.setIcon(icon_1dfe1ad79e0b3902067fe6568721b503);
+        
+    
+        var popup_a66779deadf05e87f900726ad21d1f84 = L.popup({});
+
+        
+            
+                var html_4e8946dace03f3584e567b3f65f5df3b = $(`<div id="html_4e8946dace03f3584e567b3f65f5df3b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Earls Barton</h1><div class="nugget-popup"><p>Surface water sewers from High Street flow towards The Square. Several road gullies on High Street were seen to be blocked with leaves and silt during the Flood Incident Investigation. Limited local drainage on private car parks and hardstandings allowed runoff to reach the public highway, increasing surface water flow toward the town centre. (p10)</p></div><div class="nugget-popup"><p>Surface water runoff flowed from High Street from north to south across the crossroads junction toward the corner of Station Road and Broad Street, contributing to accumulation at the low point. (p12)</p></div><div class="nugget-popup"><p>Blocked road gully adjacent to the kerb (partially blocked by fallen leaves) was documented during the flood incident investigation, reducing drainage capacity on the downhill approach to The Square and linked to surface water flooding impacting the roadway and junction. [IMG,PAG] (p40)</p></div><div class="nugget-popup"><p>Blocked road gully reduced drainage capacity, causing surface water to pond on the carriageway and contributing to highway flooding/run&ndash;off during the flood event. [PAG] (p45)</p></div></div></body></div>`)[0];
+                popup_a66779deadf05e87f900726ad21d1f84.setContent(html_4e8946dace03f3584e567b3f65f5df3b);
+            
+        
+
+        marker_fc7dcc5b245b5385175a6a68fd33a7c6.bindPopup(popup_a66779deadf05e87f900726ad21d1f84)
+        ;
+
+        
+    
+    
+            var marker_c6c9ebbf499d1598e43a085a0d3f1fa7 = L.marker(
+                [52.2657751, -0.7550298],
+                {}
+            ).addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+        
+    
+            var icon_e7f4a4fff704bf35f3d68b0e25548e67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c6c9ebbf499d1598e43a085a0d3f1fa7.setIcon(icon_e7f4a4fff704bf35f3d68b0e25548e67);
+        
+    
+        var popup_d0c0a85c89d8590cba81034867cad728 = L.popup({});
+
+        
+            
+                var html_33b74bcba7eeb06f7b7ba6d75224a9ae = $(`<div id="html_33b74bcba7eeb06f7b7ba6d75224a9ae" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Street, Earls Barton</h1><div class="nugget-popup"><p>Surface water from West Street flows into the centre of Earls Barton and towards The Square. Some sewers direct surface water from outside the catchment into the centre via West Street. Limited inspected areas showed private hardstandings and car parks runoff onto the highway, contributing to surface water conveyance into the town centre during the incident. (p10)</p></div><div class="nugget-popup"><p>Leaf fall accumulation at the kerb offlet gully was observed from West Street toward The Square, blocking the offlet and reducing drainage capacity; this condition was recorded as part of the flood incident investigation and is associated with localised surface water flooding on the street. [IMG] (p40)</p></div><div class="nugget-popup"><p>Leaf build&ndash;up blocking a kerb offlet gully and private paved areas with limited or unmaintained drainage led to surface water run&ndash;off onto the public highway, exacerbating highway flooding/run&ndash;off during the flood event. [IMG,PAG] (p45)</p></div></div></body></div>`)[0];
+                popup_d0c0a85c89d8590cba81034867cad728.setContent(html_33b74bcba7eeb06f7b7ba6d75224a9ae);
+            
+        
+
+        marker_c6c9ebbf499d1598e43a085a0d3f1fa7.bindPopup(popup_d0c0a85c89d8590cba81034867cad728)
+        ;
+
+        
+    
+    
+            var marker_f5a7708d396bb8fa442e3e9e87d14c06 = L.marker(
+                [52.2562302, -0.759913],
+                {}
+            ).addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+        
+    
+            var icon_fc95ad993130e0f2b7272a347aaf0a60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f5a7708d396bb8fa442e3e9e87d14c06.setIcon(icon_fc95ad993130e0f2b7272a347aaf0a60);
+        
+    
+        var popup_bcdeb798298568cfd65d07392f4fb7ae = L.popup({});
+
+        
+            
+                var html_32131f5e318845eb8d414f212676b1ad = $(`<div id="html_32131f5e318845eb8d414f212676b1ad" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northampton Road, Earls Barton</h1><div class="nugget-popup"><p>Surface water sewers from Northampton Road were reported to direct flow into the centre of Earls Barton, contributing to surface water entering the town centre drainage system during the incident. (p10)</p></div></div></body></div>`)[0];
+                popup_bcdeb798298568cfd65d07392f4fb7ae.setContent(html_32131f5e318845eb8d414f212676b1ad);
+            
+        
+
+        marker_f5a7708d396bb8fa442e3e9e87d14c06.bindPopup(popup_bcdeb798298568cfd65d07392f4fb7ae)
+        ;
+
+        
+    
+    
+            var marker_badf1bf98c60b22f08863366bab5db59 = L.marker(
+                [52.2524261, -0.7470122],
+                {}
+            ).addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+        
+    
+            var icon_cbc9130d829ce1d2a951c038d796b5a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_badf1bf98c60b22f08863366bab5db59.setIcon(icon_cbc9130d829ce1d2a951c038d796b5a6);
+        
+    
+        var popup_ae46e14428e206020e51656ac4b3db94 = L.popup({});
+
+        
+            
+                var html_b89a0faa7420186cd4ff16ea53cb6f56 = $(`<div id="html_b89a0faa7420186cd4ff16ea53cb6f56" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Station Road, Earls Barton</h1><div class="nugget-popup"><p>Surface water flooding closed Station Road for 48 hours (09/04/98). Kerb overtopping at the corner of Station Road and The Square led to highway flooding and contributed to surface water entering nearby properties during later events. [TAB,PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>Surface water overtopped lowered kerbs at the pedestrian crossing at the corner with The Square, flooding the footway on the south side of the crossroads and contributing to water entering an adjacent property. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>road closed for 48 hours [TAB,PAG,MUL] (p11)</p></div></div></body></div>`)[0];
+                popup_ae46e14428e206020e51656ac4b3db94.setContent(html_b89a0faa7420186cd4ff16ea53cb6f56);
+            
+        
+
+        marker_badf1bf98c60b22f08863366bab5db59.bindPopup(popup_ae46e14428e206020e51656ac4b3db94)
+        ;
+
+        
+    
+    
+            var marker_060536e7f0c257a889904e11e5975e09 = L.marker(
+                [52.2677619, -0.7563716],
+                {}
+            ).addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+        
+    
+            var icon_023356439dff2a46cb547260ff79d214 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_060536e7f0c257a889904e11e5975e09.setIcon(icon_023356439dff2a46cb547260ff79d214);
+        
+    
+        var popup_eca9a8d2481c273fb297899f92e7e3be = L.popup({});
+
+        
+            
+                var html_61c9d4bb0282efacd36b62cab37e9acd = $(`<div id="html_61c9d4bb0282efacd36b62cab37e9acd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Way, Earls Barton</h1><div class="nugget-popup"><p>Surface water runoff from higher ground on West Way flowed along carriageways, overtopped kerbs at the corner of Station Road and The Square on 16/09/2015 and contributed to surface water entering a property at The Square (flowing to several rooms and nearly reaching the electrical cupboard). [TAB,PAG] (p11)</p></div><div class="nugget-popup"><p>Surface water runoff flowed from higher ground on West Way along the carriageway and over road gullies toward The Square and the crossroads at Station Road/Broad Street, contributing to flooding at downstream low points. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 times per year for 5 years; 1 property internally flooded [TAB,PAG] (p11)</p></div></div></body></div>`)[0];
+                popup_eca9a8d2481c273fb297899f92e7e3be.setContent(html_61c9d4bb0282efacd36b62cab37e9acd);
+            
+        
+
+        marker_060536e7f0c257a889904e11e5975e09.bindPopup(popup_eca9a8d2481c273fb297899f92e7e3be)
+        ;
+
+        
+    
+    
+            var marker_e1d08df96f3e72ee9cf2ef8ce2f5dac1 = L.marker(
+                [52.2665922, -0.7474644],
+                {}
+            ).addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+        
+    
+            var icon_a2a94d4ca03cbe9fe49ea5f540a2b932 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e1d08df96f3e72ee9cf2ef8ce2f5dac1.setIcon(icon_a2a94d4ca03cbe9fe49ea5f540a2b932);
+        
+    
+        var popup_f92d914aac5e7f94bb5f3dda178efff4 = L.popup({});
+
+        
+            
+                var html_adc6a20d42a3e8892f3dc01cd38854ff = $(`<div id="html_adc6a20d42a3e8892f3dc01cd38854ff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Churchill Road, Earls Barton</h1><div class="nugget-popup"><p>Surface water runoff from Churchill Road joined flows on Broad Street and contributed to accumulation at the low point opposite Churchill Road where gullies discharged and footways/road were flooded. (p12)</p></div></div></body></div>`)[0];
+                popup_f92d914aac5e7f94bb5f3dda178efff4.setContent(html_adc6a20d42a3e8892f3dc01cd38854ff);
+            
+        
+
+        marker_e1d08df96f3e72ee9cf2ef8ce2f5dac1.bindPopup(popup_f92d914aac5e7f94bb5f3dda178efff4)
+        ;
+
+        
+    
+    
+            var marker_87a14e5d1544b952468e8f28b6be36da = L.marker(
+                [52.3106138, -0.8659129831915817],
+                {}
+            ).addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+        
+    
+            var icon_d30f8d459455382f7d574a947bec46fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_87a14e5d1544b952468e8f28b6be36da.setIcon(icon_d30f8d459455382f7d574a947bec46fd);
+        
+    
+        var popup_207bb19296bbdd7323f73a1ef462ffb1 = L.popup({});
+
+        
+            
+                var html_418b062e553e3ca39f7f6ede80e27c8b = $(`<div id="html_418b062e553e3ca39f7f6ede80e27c8b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northamptonshire</h1><div class="nugget-popup"><p>A formal Section 19 investigation was carried out by the Lead Local Flood Authority into a flood incident at The Square, Earls Barton. The incident involved internal flooding of property(ies) and met the County LLFA threshold for investigation. (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one property (p8)</p></div></div></body></div>`)[0];
+                popup_207bb19296bbdd7323f73a1ef462ffb1.setContent(html_418b062e553e3ca39f7f6ede80e27c8b);
+            
+        
+
+        marker_87a14e5d1544b952468e8f28b6be36da.bindPopup(popup_207bb19296bbdd7323f73a1ef462ffb1)
+        ;
+
+        
+    
+    
+            var marker_37a498406c8195f8bca0e6f3c10021f9 = L.marker(
+                [52.263397, -0.7455269],
+                {}
+            ).addTo(map_c3a59ea1af915470b1685c6ff9466c2c);
+        
+    
+            var icon_348df54e3761876454f642d2076cc0a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_37a498406c8195f8bca0e6f3c10021f9.setIcon(icon_348df54e3761876454f642d2076cc0a4);
+        
+    
+        var popup_7ad3059da8874b4848325dac4a9604b1 = L.popup({});
+
+        
+            
+                var html_b27150b4f45a803df027527e41887734 = $(`<div id="html_b27150b4f45a803df027527e41887734" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Earls Barton</h1><div class="nugget-popup"><p>Named as the subject of a Northamptonshire County Council flood investigation report (The Square, Earls Barton). No specific flood impacts are described in the provided excerpt. (p2)</p></div><div class="nugget-popup"><p>Moderate rainfall and ineffective drainage produced excess surface water that flowed to low points on the public highway and around private properties in Earls Barton (The Square), resulting in internal flooding of at least one property and repeated internal flooding incidents noted. [PAG] (p6)</p></div><div class="nugget-popup"><p>Surface water from moderate rainfall collected and flowed along natural contours to low points on the public highway at The Square, causing internal flooding of at least one property within Earls Barton. [PAG] (p7)</p></div><div class="nugget-popup"><p>The village contained the flood incident at The Square where internal flooding of one property occurred. [PAG] (p9)</p></div><div class="nugget-popup"><p>The town centre experienced surface water flooding during the investigated event. Blocked road gullies were observed during the Flood Incident Investigation which contributed to poor highway drainage. Runoff from private car parks and hardstandings on West Street and High Street flowed onto the public highway, increasing surface water conveyance into the centre. (p10)</p></div><div class="nugget-popup"><p>Moderate rainfall on 16th September 2015 produced surface water that could not be collected or conveyed by drainage. Surface water flowed from higher ground (private property and highway) following natural contours into low points of the village, causing flooding of low&ndash;lying areas and temporary impacts to properties and businesses. Highway drainage systems and public sewers were vulnerable to blockage and exceedance during the event. [PAG] (p13)</p></div><div class="nugget-popup"><p>Settlement experienced flooding and was the subject of a Section 19 flood investigation by NCC following the event on 16th September 2015. (p16)</p></div><div class="nugget-popup"><p>The town experienced surface water flooding on 16th September 2015: highway drainage and runoff led to overtopping of kerbs and flow towards private properties, prompting reporting of incidents, community response planning and recommended drainage/asset improvements. (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one property [PAG] (p6)</p></div><div class="nugget-popup quant"><p>one property [PAG] (p7)</p></div><div class="nugget-popup quant"><p>one property [PAG] (p9)</p></div></div></body></div>`)[0];
+                popup_7ad3059da8874b4848325dac4a9604b1.setContent(html_b27150b4f45a803df027527e41887734);
+            
+        
+
+        marker_37a498406c8195f8bca0e6f3c10021f9.bindPopup(popup_7ad3059da8874b4848325dac4a9604b1)
+        ;
+
+        
+    
+</script>
+</html>
