@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9a035036958b67d2179a7576d25c54e8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9a035036958b67d2179a7576d25c54e8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9a035036958b67d2179a7576d25c54e8 = L.map(
+                "map_9a035036958b67d2179a7576d25c54e8",
+                {
+                    center: [52.48366272857143, -0.7048217085714286],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_355e9c994a3e2f4400e6b71b79642024 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_355e9c994a3e2f4400e6b71b79642024.addTo(map_9a035036958b67d2179a7576d25c54e8);
+    
+            var marker_49fdd4419a9634fa1f05608d83141748 = L.marker(
+                [52.483585, -0.70039636],
+                {}
+            ).addTo(map_9a035036958b67d2179a7576d25c54e8);
+        
+    
+            var icon_54ba1f1be4564df668885c570ca2478b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_49fdd4419a9634fa1f05608d83141748.setIcon(icon_54ba1f1be4564df668885c570ca2478b);
+        
+    
+        var popup_106c2b7612c6b261df1ed9d721b7e8be = L.popup({});
+
+        
+            
+                var html_6844439effb1d79dafb2c4aac84947a0 = $(`<div id="html_6844439effb1d79dafb2c4aac84947a0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lidl</h1><div class="nugget-popup"><p>The supermarket car park on Oakley Road was heavily flooded; parking spaces and areas of the car park were submerged and rendered inaccessible to vehicles. (p65)</p></div><div class="nugget-popup"><p>Supermarket car park and delivery area were submerged by flood water, with water extending into parking and delivery zones and partially submerging vehicles, preventing use of the car park. [IMG] (p66)</p></div><div class="nugget-popup"><p>Car park and delivery area at the Oakley Road / Gainsborough Road junction were submerged by floodwater. Water covered paved surfaces, reached up to the base of the supermarket building and delivery door, and partially submerged utility equipment and the delivery bay, impeding access and hindering delivery operations. (p67)</p></div></div></body></div>`)[0];
+                popup_106c2b7612c6b261df1ed9d721b7e8be.setContent(html_6844439effb1d79dafb2c4aac84947a0);
+            
+        
+
+        marker_49fdd4419a9634fa1f05608d83141748.bindPopup(popup_106c2b7612c6b261df1ed9d721b7e8be)
+        ;
+
+        
+    
+    
+            var marker_5cd09002b478208108d1e0c6186949d4 = L.marker(
+                [52.4805725, -0.7254265],
+                {}
+            ).addTo(map_9a035036958b67d2179a7576d25c54e8);
+        
+    
+            var icon_9536df33cebc9ef982583e164c020b23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5cd09002b478208108d1e0c6186949d4.setIcon(icon_9536df33cebc9ef982583e164c020b23);
+        
+    
+        var popup_acde606fba26ebb8c6efa43d0f182687 = L.popup({});
+
+        
+            
+                var html_8c5dcf9aaccf70a36071da833c4159ec = $(`<div id="html_8c5dcf9aaccf70a36071da833c4159ec" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gainsborough Road, Corby</h1><div class="nugget-popup"><p>Overflow from a part&ndash;culverted Ordinary Watercourse led to banks overtopping and the public highway being affected; the road (a critical arterial route for Corby) was flooded and private property and commercial premises were also affected by the overflow. [PAG] (p6)</p></div><div class="nugget-popup"><p>An ordinary watercourse (part&ndash;culverted) experienced high flows and overtopped its banks, causing overflow onto the public highway at Gainsborough Road; private property and commercial premises were also affected. Debris build&ndash;up at culvert grilles exacerbated the flooding. The road is identified as a critical arterial route for the town, so the flooding had significant transport impact. [PAG] (p7)</p></div><div class="nugget-popup"><p>An ordinary watercourse overtopped and caused flooding across Gainsborough Road. The depth and velocity of flow affected the community and placed residential properties at high risk of internal flooding; the road (a critical arterial route) was affected. [PAG] (p9)</p></div><div class="nugget-popup"><p>Carriageway and footways became impassable to pedestrians and vehicles; adjacent public highway and private gardens were flooded when the local watercourse became full to capacity and overtopped its banks. [PAG] (p12)</p></div><div class="nugget-popup"><p>Public highway and adjacent private gardens flooded; flood water reached approximately three metres away from residential thresholds and an estimated depth at the area outside residences exceeded 500 mm. Bow waves from vehicles driving through the flood presented a danger of internal flooding to dwellings. (p13)</p></div><div class="nugget-popup"><p>A residential section of the road was submerged, preventing vehicle access. Traffic cones were placed to block the flooded section; floodwater reached up to the sidewalk and affected access to nearby terraced houses. [IMG,PAG] (p54)</p></div><div class="nugget-popup"><p>Surface water and sewer water encroached from a nearby grassy area and drainage points onto the road at the junction with Lowry Close, causing flow across the carriageway and creating hazards for road users. [IMG,PAG] (p60)</p></div><div class="nugget-popup"><p>Water pooling at the junction with Lowry Close with water bubbling from a manhole cover and road gullies; the adjacent open watercourse (south of Gainsborough Road) was muddy and at high levels, contributing to local flood risk. [IMG,PAG] (p61)</p></div><div class="nugget-popup"><p>Flooding along Gainsborough Road between Lowry Close and Blake Road with water covering the road and partially onto the sidewalk, leading to temporary traffic control measures. [IMG,PAG] (p62)</p></div><div class="nugget-popup"><p>The carriageway and adjacent verges between Lowry Close and Blake Road were inundated, rendering the road impassable to vehicles and pedestrians. Street furniture and traffic islands were partially submerged and pedestrian entrances to properties were affected by residual floodwater. [IMG,PAG] (p63)</p></div><div class="nugget-popup"><p>Floodwater covered the road and encroached on pedestrian entrances and front yards of properties; access to properties was partially obstructed as water remained at doorstep level after recession. [IMG,PAG] (p64)</p></div><div class="nugget-popup"><p>Pedestrian entrances to properties between Lowry Close and Blake Road were inundated; flood waters receded to a shallow depth at entrances. [IMG,PAG] (p65)</p></div><div class="nugget-popup"><p>The junction of Gainsborough Road with Oakley Road (adjacent to the supermarket) was associated with flooding: the supermarket car park and delivery area at this intersection were inundated, with water covering a significant portion of the paved area and restricting access. [IMG,PAG] (p67)</p></div><div class="nugget-popup"><p>The junction with Oakley Road was submerged by standing floodwater covering the carriageway and surrounding land; traffic signs and a lamp post were partially submerged and the junction was impassable. Flooding also affected the nearby supermarket car park/delivery area. [IMG,PAG] (p68)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 3 metres from residential thresholds; approximately 75 mm in other recent incidents; depth exceeded 500 mm (p13)</p></div><div class="nugget-popup quant"><p>approximately 150 mm depth at pedestrian entrances [IMG,PAG] (p63)</p></div><div class="nugget-popup quant"><p>150 mm depth (receded) [IMG,PAG] (p64)</p></div><div class="nugget-popup quant"><p>150mm depth [IMG,PAG] (p65)</p></div></div></body></div>`)[0];
+                popup_acde606fba26ebb8c6efa43d0f182687.setContent(html_8c5dcf9aaccf70a36071da833c4159ec);
+            
+        
+
+        marker_5cd09002b478208108d1e0c6186949d4.bindPopup(popup_acde606fba26ebb8c6efa43d0f182687)
+        ;
+
+        
+    
+    
+            var marker_03a4b21a8078d323346b03fa6ea9f914 = L.marker(
+                [52.4860273, -0.6917463],
+                {}
+            ).addTo(map_9a035036958b67d2179a7576d25c54e8);
+        
+    
+            var icon_f927581e90112bc7555c09344c010c8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_03a4b21a8078d323346b03fa6ea9f914.setIcon(icon_f927581e90112bc7555c09344c010c8a);
+        
+    
+        var popup_029a0bde49479f19bcdf272f7c83ae42 = L.popup({});
+
+        
+            
+                var html_3f3befed111916766bdeeccc14f38b3a = $(`<div id="html_3f3befed111916766bdeeccc14f38b3a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oakley Road, Corby</h1><div class="nugget-popup"><p>Affected by overflow from the Ordinary Watercourse when its banks overtopped; the public highway (an arterial route) was flooded and private property and commercial premises were impacted by the overflow. (p6)</p></div><div class="nugget-popup"><p>Flooding from the ordinary watercourses (which combine near Oakley Road) caused depth and velocity of flow affecting Oakley Road; residential properties were at high risk of internal flooding and the road (a critical arterial route) was impacted. [PAG] (p9)</p></div><div class="nugget-popup"><p>Carriageway and footways were impassable; surface water flowed out of the watercourse over the supermarket car park at the Gainsborough/Oakley junction at high velocity and into Oakley Road; drainage systems were unable to discharge and backed up, causing flooding at the supermarket area. (p12)</p></div><div class="nugget-popup"><p>An open section of watercourse immediately west of the supermarket junction overtopped, producing overland surface water flow that collected on Oakley Road; floodwater also collected in the supermarket car park and delivery bay. Flooding on Oakley Road overspilled to adjacent open space. (p13)</p></div><div class="nugget-popup"><p>The entrance to the supermarket car park on Oakley Road experienced flooding where surface water overland flow met standing flood water, creating waves and standing water at the entrance. [IMG,PAG] (p65)</p></div><div class="nugget-popup"><p>Entrance to supermarket car park and adjacent carriageway were heavily flooded, rendering vehicle and pedestrian access difficult and impassable; standing flood water covered the full width of the road at the car park entrance and interacted with moving overland flow. [IMG,PAG] (p66)</p></div><div class="nugget-popup"><p>Surface water overland flow met standing floodwater at the entrance to the supermarket car park on Oakley Road; flooding reached the car park entrance and extended along the road toward the south, impeding vehicular and pedestrian access to the supermarket entrance. [IMG,PAG] (p67)</p></div><div class="nugget-popup"><p>Standing floodwater covered the carriageway and adjacent areas at the Oakley Road / Gainsborough Road junction and extended into the supermarket car park and delivery area; water reached up to and over kerbs and the bases of traffic signs, rendering the road impassable to vehicles and pedestrians. [IMG,PAG] (p68)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depth exceeded 200 mm (p13)</p></div></div></body></div>`)[0];
+                popup_029a0bde49479f19bcdf272f7c83ae42.setContent(html_3f3befed111916766bdeeccc14f38b3a);
+            
+        
+
+        marker_03a4b21a8078d323346b03fa6ea9f914.bindPopup(popup_029a0bde49479f19bcdf272f7c83ae42)
+        ;
+
+        
+    
+    
+            var marker_67dbe5f7910750737dd5a1711c730c89 = L.marker(
+                [52.4819309, -0.7110852],
+                {}
+            ).addTo(map_9a035036958b67d2179a7576d25c54e8);
+        
+    
+            var icon_908596837b07526f1f8042ebc471d3aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_67dbe5f7910750737dd5a1711c730c89.setIcon(icon_908596837b07526f1f8042ebc471d3aa);
+        
+    
+        var popup_2a7ec902439abfe654659098973e9ab6 = L.popup({});
+
+        
+            
+                var html_c127b8f9dbe8e9a31b4dfddbd6aeab9d = $(`<div id="html_c127b8f9dbe8e9a31b4dfddbd6aeab9d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lowry Close, Corby</h1><div class="nugget-popup"><p>The single vehicular access point became blocked by flood water, preventing entry/exit; flooding occurred adjacent to the area due to drainage systems backing up into the locality. (p12)</p></div><div class="nugget-popup"><p>Flood water covered the front garden of a residential property; debris accumulated on the garden (possibly from foul water sources). (p13)</p></div><div class="nugget-popup"><p>Floodwater and water emerging from drainage (manhole/gullies) affected the area around Lowry Close at its junction with Gainsborough Road, with water flowing onto pavements and the carriageway. [IMG,PAG] (p60)</p></div><div class="nugget-popup"><p>Surface water pooling at the junction with Gainsborough Road with water bubbling up from a manhole cover and road gullies; nearby open watercourse north of Lowry Close was at high, muddy levels and at or near capacity, increasing the risk of overflow onto adjacent land. [IMG,PAG] (p61)</p></div><div class="nugget-popup"><p>Floodwater at the junction extended into Lowry Close; manhole bubbling and gully discharge indicate sewer surcharge and surface water affecting the street. [IMG,PAG] (p62)</p></div><div class="nugget-popup"><p>The junction of Lowry Close with Gainsborough Road was submerged, making the junction impassable and affecting access for pedestrians and vehicles. [IMG,PAG] (p63)</p></div></div></body></div>`)[0];
+                popup_2a7ec902439abfe654659098973e9ab6.setContent(html_c127b8f9dbe8e9a31b4dfddbd6aeab9d);
+            
+        
+
+        marker_67dbe5f7910750737dd5a1711c730c89.bindPopup(popup_2a7ec902439abfe654659098973e9ab6)
+        ;
+
+        
+    
+    
+            var marker_457eed5d3c34e7cad79cdda91791dd71 = L.marker(
+                [52.4820175, -0.7062197],
+                {}
+            ).addTo(map_9a035036958b67d2179a7576d25c54e8);
+        
+    
+            var icon_8271c6790dbd5cdbd7a838e5865c1be8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_457eed5d3c34e7cad79cdda91791dd71.setIcon(icon_8271c6790dbd5cdbd7a838e5865c1be8);
+        
+    
+        var popup_d83bdf68e59e145af83c4da7b6959f43 = L.popup({});
+
+        
+            
+                var html_bc61185faf5b4ad88a3696c00c6fd1a5 = $(`<div id="html_bc61185faf5b4ad88a3696c00c6fd1a5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Blake Road, Corby</h1><div class="nugget-popup"><p>Area adjacent to Blake Road experienced flooding when drainage systems backed up because they could not discharge to the high watercourse levels, resulting in inundation of highway and nearby private land. (p12)</p></div><div class="nugget-popup"><p>A culverted watercourse running from Blake Road to the supermarket was implicated in the flooding; a partial CCTV survey has confirmed its route and condition over much of its length and a full survey and likely repair/replacement/clearance works are recommended to address its role in causing/propagating flooding to the highway and nearby properties. (p20)</p></div><div class="nugget-popup"><p>Entrance to the culvert at Blake Road was submerged, indicating local inundation affecting drainage infrastructure and contributing to road/area inundation. [IMG,PAG] (p64)</p></div><div class="nugget-popup"><p>Entrance to the culvert at Blake Road was submerged; floodwater overflowed onto adjacent pavement and field, submerging fences and vegetation. [IMG,PAG] (p65)</p></div></div></body></div>`)[0];
+                popup_d83bdf68e59e145af83c4da7b6959f43.setContent(html_bc61185faf5b4ad88a3696c00c6fd1a5);
+            
+        
+
+        marker_457eed5d3c34e7cad79cdda91791dd71.bindPopup(popup_d83bdf68e59e145af83c4da7b6959f43)
+        ;
+
+        
+    
+    
+            var marker_2123c9ee6753f2bc4d58a09239b4a575 = L.marker(
+                [52.487736, -0.7032713],
+                {}
+            ).addTo(map_9a035036958b67d2179a7576d25c54e8);
+        
+    
+            var icon_44ab0daf5685fc20a813a16e550700dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2123c9ee6753f2bc4d58a09239b4a575.setIcon(icon_44ab0daf5685fc20a813a16e550700dc);
+        
+    
+        var popup_dff9609d0b7a2cd3204d2f371f981ea4 = L.popup({});
+
+        
+            
+                var html_7666971eb3216cb3e27679231446de4c = $(`<div id="html_7666971eb3216cb3e27679231446de4c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Corby</h1><div class="nugget-popup"><p>Corby is the town in which Gainsborough Road was the subject of a Northamptonshire County Council flood investigation (report title references Gainsborough Road, Corby). (p2)</p></div><div class="nugget-popup"><p>High water levels and strong flows in a part&ndash;culverted Ordinary Watercourse caused banks to overtop, resulting in flooding that affected public highways (notably Gainsborough Road and Oakley Road), private properties and commercial premises in the town. [PAG] (p6)</p></div><div class="nugget-popup"><p>Flooding of a part&ndash;culverted ordinary watercourse led to overtopping and overflow that affected key roads (Gainsborough Road and Oakley Road) in the town, and caused property and commercial premises to be affected. The flooding disrupted critical arterial routes for the town; an increased frequency of flooding is also noted. [PAG] (p7)</p></div><div class="nugget-popup"><p>Parts of Corby (notably Gainsborough Road and Oakley Road) experienced flooding on 7th February 2014 due to overtopping of ordinary watercourses, placing residential properties at high risk of internal flooding and affecting critical arterial routes. [PAG] (p9)</p></div><div class="nugget-popup"><p>Flooding affected open space and highways. (p11)</p></div><div class="nugget-popup"><p>Floodwater on Oakley Road reached a depth in excess of 200 mm, causing road flooding in Corby. [PAG] (p14)</p></div><div class="nugget-popup"><p>Heavy rainfall caused excessive flows in ordinary watercourses which raised water levels and overtopped banks, affecting adjoining property across Corby. Local drainage systems were unable to discharge to the watercourse, exacerbating flooding. Culverted sections of the watercourse were reported as possibly partially blocked or damaged, and debris grilles at culvert entrances became easily blocked, contributing to reduced conveyance and overtopping. (p18)</p></div><div class="nugget-popup"><p>Localised surface&ndash;water and sewer&ndash;related flooding associated with blocked culvert grilles and runoff/groundwater emergence. Culvert protection grilles required inspection and clearing during heavy rainfall and were a factor in local drainage performance; the event prompted a borough&ndash;wide flood risk management study. (p21)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depth exceeded 200 mm on Oakley Road [PAG] (p14)</p></div></div></body></div>`)[0];
+                popup_dff9609d0b7a2cd3204d2f371f981ea4.setContent(html_7666971eb3216cb3e27679231446de4c);
+            
+        
+
+        marker_2123c9ee6753f2bc4d58a09239b4a575.bindPopup(popup_dff9609d0b7a2cd3204d2f371f981ea4)
+        ;
+
+        
+    
+</script>
+</html>
