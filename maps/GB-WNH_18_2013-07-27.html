@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_427031b0a129de05c910d6a05d297e80 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_427031b0a129de05c910d6a05d297e80" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_427031b0a129de05c910d6a05d297e80 = L.map(
+                "map_427031b0a129de05c910d6a05d297e80",
+                {
+                    center: [52.3375717125, -0.9732964853989476],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a2924e069b0d7b4d98fa7d7595efd6e3 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_a2924e069b0d7b4d98fa7d7595efd6e3.addTo(map_427031b0a129de05c910d6a05d297e80);
+    
+            var marker_1950024ae2c0cdac8dc3b294a4c5535a = L.marker(
+                [52.3423184, -0.9908613],
+                {}
+            ).addTo(map_427031b0a129de05c910d6a05d297e80);
+        
+    
+            var icon_1ad1265d7e7e4bac7c5cec0bc35265b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1950024ae2c0cdac8dc3b294a4c5535a.setIcon(icon_1ad1265d7e7e4bac7c5cec0bc35265b1);
+        
+    
+        var popup_a7f23b01c8838870f69f303c10225b6c = L.popup({});
+
+        
+            
+                var html_f5781d2ed749cf34a5f99e2993b3ee88 = $(`<div id="html_f5781d2ed749cf34a5f99e2993b3ee88" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Guilsborough Hill, Hollowell</h1><div class="nugget-popup"><p>Runoff from the North catchment is allowed to run off onto the public highway of Guilsborough Hill and into the road gullies; during the intense rainfall event of 27 July 2013 the village drainage capacity was exceeded and runoff flowed onto the highway. (p9)</p></div><div class="nugget-popup"><p>A heavy flow of surface water came from higher areas along the carriageway and footway, flowing off farmland and private driveways onto the public highway and contributing to downstream ponding and flow around The Green onto Creaton Road and into properties. (p12)</p></div><div class="nugget-popup"><p>Carriageway and road gullies on Guilsborough Hill were heavily silted by runoff, indicating deposition of sediment during the flood event and likely impairment of drainage capacity contributing to localised flooding. [IMG] (p41)</p></div><div class="nugget-popup"><p>Surface water run&ndash;off from adjacent sloping fields flows down a worn channel onto the road (Guilsborough Hill), creating a surface&ndash;water flooding hazard and potential water accumulation on the road during heavy rainfall. [IMG] (p43)</p></div></div></body></div>`)[0];
+                popup_a7f23b01c8838870f69f303c10225b6c.setContent(html_f5781d2ed749cf34a5f99e2993b3ee88);
+            
+        
+
+        marker_1950024ae2c0cdac8dc3b294a4c5535a.bindPopup(popup_a7f23b01c8838870f69f303c10225b6c)
+        ;
+
+        
+    
+    
+            var marker_ccf7f6a76286cb5256401822682b4748 = L.marker(
+                [52.3421366, -0.9896174],
+                {}
+            ).addTo(map_427031b0a129de05c910d6a05d297e80);
+        
+    
+            var icon_b5f9e8e73e791333d0a3383214aad5b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ccf7f6a76286cb5256401822682b4748.setIcon(icon_b5f9e8e73e791333d0a3383214aad5b4);
+        
+    
+        var popup_26386b535e2339637e3a028cb8eee8e6 = L.popup({});
+
+        
+            
+                var html_af0fbf25a946dbd4eff10b30ff7f65ba = $(`<div id="html_af0fbf25a946dbd4eff10b30ff7f65ba" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Orchard Close, Hollowell</h1><div class="nugget-popup"><p>The local watercourse sinks into a culvert at the rear of Orchard Close; this culvert conveyed runoff during the intense rainfall event of 27 July 2013 when drainage capacity was exceeded and was part of the flow route associated with the flooding. (p9)</p></div></div></body></div>`)[0];
+                popup_26386b535e2339637e3a028cb8eee8e6.setContent(html_af0fbf25a946dbd4eff10b30ff7f65ba);
+            
+        
+
+        marker_ccf7f6a76286cb5256401822682b4748.bindPopup(popup_26386b535e2339637e3a028cb8eee8e6)
+        ;
+
+        
+    
+    
+            var marker_631742fe1cf53dbd6aa0d38310dfa85e = L.marker(
+                [52.3425068, -0.9889589],
+                {}
+            ).addTo(map_427031b0a129de05c910d6a05d297e80);
+        
+    
+            var icon_10318ae2fa390608f68185e57183ec63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_631742fe1cf53dbd6aa0d38310dfa85e.setIcon(icon_10318ae2fa390608f68185e57183ec63);
+        
+    
+        var popup_ac98150c8fda601d69a44e05b6229de1 = L.popup({});
+
+        
+            
+                var html_ddb82530d722214fcda9076ec5718ee7 = $(`<div id="html_ddb82530d722214fcda9076ec5718ee7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Home Farm Yard, Hollowell</h1><div class="nugget-popup"><p>The culvert flows underground to Home Farm Yard and continues east as open watercourse and culvert sections to Stowe Brook; during the intense rainfall on 27 July 2013 this route conveyed runoff when drainage was exceeded and was part of the flooding pathway. (p9)</p></div></div></body></div>`)[0];
+                popup_ac98150c8fda601d69a44e05b6229de1.setContent(html_ddb82530d722214fcda9076ec5718ee7);
+            
+        
+
+        marker_631742fe1cf53dbd6aa0d38310dfa85e.bindPopup(popup_ac98150c8fda601d69a44e05b6229de1)
+        ;
+
+        
+    
+    
+            var marker_24a67db5c5278c03e0415d0665bfbd84 = L.marker(
+                [52.3382843, -0.9940641],
+                {}
+            ).addTo(map_427031b0a129de05c910d6a05d297e80);
+        
+    
+            var icon_7bfbd020ad84745d19e51cc212fee00a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_24a67db5c5278c03e0415d0665bfbd84.setIcon(icon_7bfbd020ad84745d19e51cc212fee00a);
+        
+    
+        var popup_30a154420f1b4426bb01ed100cfc9e32 = L.popup({});
+
+        
+            
+                var html_f4ef6674b21902d9eb4d75860317d5b1 = $(`<div id="html_f4ef6674b21902d9eb4d75860317d5b1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Hill, Hollowell</h1><div class="nugget-popup"><p>Heavy surface water flowed along the carriageway and footway from higher areas, contributing to downstream surface water routing around The Green and onto Creaton Road and into properties. (p12)</p></div></div></body></div>`)[0];
+                popup_30a154420f1b4426bb01ed100cfc9e32.setContent(html_f4ef6674b21902d9eb4d75860317d5b1);
+            
+        
+
+        marker_24a67db5c5278c03e0415d0665bfbd84.bindPopup(popup_30a154420f1b4426bb01ed100cfc9e32)
+        ;
+
+        
+    
+    
+            var marker_58c2db0ab3a235dc2d88410a1851e820 = L.marker(
+                [52.3412537, -0.9785491],
+                {}
+            ).addTo(map_427031b0a129de05c910d6a05d297e80);
+        
+    
+            var icon_cbf5a5860d2ac0897be44e925c84231c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_58c2db0ab3a235dc2d88410a1851e820.setIcon(icon_cbf5a5860d2ac0897be44e925c84231c);
+        
+    
+        var popup_949476ade7fd1f779060af3f178a3c57 = L.popup({});
+
+        
+            
+                var html_525189a6c907718c097053dc6a7e5428 = $(`<div id="html_525189a6c907718c097053dc6a7e5428" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Creaton Road, Hollowell</h1><div class="nugget-popup"><p>Internal flooding to properties on Creaton Road; ponding in the highway of Creaton Road; on 27/07/13 surface water was manually prevented from entering two further properties on Creaton Road. [TAB,PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>Surface water from higher ground settled as a large area of ponding at low points on Creaton Road, spanning the entire carriageway and unable to drain sufficiently to Stowe Brook; road gullies surcharged and ponded water entered properties (including flowing through doorways and air bricks). Residents undertook actions (sweeping water to gullies, re&ndash;excavating a verge grip drain) to allow partial drainage to Stowe Brook. (p12)</p></div><div class="nugget-popup"><p>Drainage systems became fully surcharged and water began to flow out of road gullies and manhole chambers. The area of Creaton Road immediately west of Stowe Brook formed a large, deep pond that was unable to drain down sufficiently into road gullies and drainage systems. (p13)</p></div><div class="nugget-popup"><p>Surface water overtopped the kerbs and caused local ponding/flooding on the carriageway and verges. [IMG,PAG] (p40)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (internal flooding) on 06/06/10; 2 properties (internal flooding) on 27/07/13; 2 properties (surface water prevented) on 27/07/13 [TAB,PAG,MUL] (p11)</p></div><div class="nugget-popup quant"><p>1 property had surface water flow at over 300mm to low points and internal ground floor flooding to a depth of 25mm; kitchen of 1 second property was flooded; residents of 2 further properties took action to prevent ingress. (p12)</p></div></div></body></div>`)[0];
+                popup_949476ade7fd1f779060af3f178a3c57.setContent(html_525189a6c907718c097053dc6a7e5428);
+            
+        
+
+        marker_58c2db0ab3a235dc2d88410a1851e820.bindPopup(popup_949476ade7fd1f779060af3f178a3c57)
+        ;
+
+        
+    
+    
+            var marker_e9aed71bc2261d1fd2a5d3226474156d = L.marker(
+                [52.3415732, -0.9888512],
+                {}
+            ).addTo(map_427031b0a129de05c910d6a05d297e80);
+        
+    
+            var icon_8b04ba21bd0f0e981da01148b6cd073f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e9aed71bc2261d1fd2a5d3226474156d.setIcon(icon_8b04ba21bd0f0e981da01148b6cd073f);
+        
+    
+        var popup_5e093c86e6db31cdff9f7309e6e8de58 = L.popup({});
+
+        
+            
+                var html_f7d413730e5877928f7d24b41fc7761d = $(`<div id="html_f7d413730e5877928f7d24b41fc7761d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Green, Hollowell</h1><div class="nugget-popup"><p>Sewage overtopped a manhole cover at The Green (reported as part of the 27/07/13 incident). [TAB] (p11)</p></div><div class="nugget-popup"><p>Surface water flowed around The Green and onto Creaton Road; sewage flowed out of a manhole cover at The Green. (p12)</p></div><div class="nugget-popup"><p>Foul water effluent flowed from a manhole on The Green during the flood incident; visible staining/residue around the manhole indicates overflow of wastewater onto the carriageway. (p41)</p></div></div></body></div>`)[0];
+                popup_5e093c86e6db31cdff9f7309e6e8de58.setContent(html_f7d413730e5877928f7d24b41fc7761d);
+            
+        
+
+        marker_e9aed71bc2261d1fd2a5d3226474156d.bindPopup(popup_5e093c86e6db31cdff9f7309e6e8de58)
+        ;
+
+        
+    
+    
+            var marker_bcbe36bfabb195c4a7bb3ef01fd71b3d = L.marker(
+                [52.3106138, -0.8659129831915817],
+                {}
+            ).addTo(map_427031b0a129de05c910d6a05d297e80);
+        
+    
+            var icon_6ccdadac549364ffa0b41af6df3fa53a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bcbe36bfabb195c4a7bb3ef01fd71b3d.setIcon(icon_6ccdadac549364ffa0b41af6df3fa53a);
+        
+    
+        var popup_1d441866e767f024339497ef2b5e9d80 = L.popup({});
+
+        
+            
+                var html_124c409b32bbf1a18e72fd3dd686fcee = $(`<div id="html_124c409b32bbf1a18e72fd3dd686fcee" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northamptonshire</h1><div class="nugget-popup"><p>Formal investigation was required because flood incidents occurred in Hollowell (within Northamptonshire). Internal flooding affected properties: at least two properties experienced internal flooding, and internal flooding has occurred on more than one occasion in the last five years. The incident on 27 July 2013 in Hollowell triggered the formal investigation. [MUL] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>at least two properties (internal flooding); internal flooding occurred on more than one occasion in the last 5 years [MUL] (p8)</p></div></div></body></div>`)[0];
+                popup_1d441866e767f024339497ef2b5e9d80.setContent(html_124c409b32bbf1a18e72fd3dd686fcee);
+            
+        
+
+        marker_bcbe36bfabb195c4a7bb3ef01fd71b3d.bindPopup(popup_1d441866e767f024339497ef2b5e9d80)
+        ;
+
+        
+    
+    
+            var marker_ab0ad11db9dccd5b1b41c13485bf0b8a = L.marker(
+                [52.3418869, -0.9895569],
+                {}
+            ).addTo(map_427031b0a129de05c910d6a05d297e80);
+        
+    
+            var icon_4df1b2eb0ee0afc3e1726e2cf13589ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ab0ad11db9dccd5b1b41c13485bf0b8a.setIcon(icon_4df1b2eb0ee0afc3e1726e2cf13589ae);
+        
+    
+        var popup_601406c7d5866a534cb5d21d85d7ac68 = L.popup({});
+
+        
+            
+                var html_4849113bb51aa2a9468968c138b2c7d1 = $(`<div id="html_4849113bb51aa2a9468968c138b2c7d1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hollowell</h1><div class="nugget-popup"><p>Intense short&ndash;duration rainfall caused existing drainage to be unable to cope; excess surface water flowed along natural contours into low points in the village, resulting in internal flooding of properties. [PAG] (p6)</p></div><div class="nugget-popup"><p>Intense short&ndash;duration rainfall exceeded drainage capacity causing excess surface water to flow overland to low points in the village, resulting in internal flooding of properties. [PAG,MUL] (p7)</p></div><div class="nugget-popup"><p>Intense rainfall on 27 July 2013 exceeded drainage capacity causing flooding. Internal flooding of residential properties occurred; at least two properties experienced internal flooding and at least two other properties were at high risk and residents manually prevented ingress. (p9)</p></div><div class="nugget-popup"><p>An intense rainfall event on the evening of 27/07/13 led to various incidents of flooding that affected people and property in the locality. (p11)</p></div><div class="nugget-popup"><p>Flood incidents occurred in the village associated with surface runoff, groundwater and/or ordinary (non&ndash;Main River) watercourses; NCC can investigate, suggest causes and make recommendations to mitigate risk but cannot compel or fund all actions. (p14)</p></div><div class="nugget-popup"><p>Intense short&ndash;duration rainfall produced surface water flooding across the village. Drainage systems were unable to cope, causing surface water run&ndash;off from private areas to flow onto the public highway and vice versa; surface water from higher parts of the village reached the lowest points (up to 700 metres). Physical barriers (kerbs) were compromised and ponding and high velocity flows occurred at low points, causing overtopping towards properties. (p18)</p></div><div class="nugget-popup"><p>Anglian Water Services is to assess sources of water entering the public sewerage system; excess surface water or inappropriate inflows to the sewer network are identified as contributing to flood risk (risk of sewer surcharge/flooding), so assessment and reduction of these inflows is recommended. (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>at least two properties [PAG] (p6)</p></div><div class="nugget-popup quant"><p>internal flooding of at least two properties; more than one occasion in the last 5 years [PAG,MUL] (p7)</p></div><div class="nugget-popup quant"><p>at least two properties; at least two other properties (p9)</p></div></div></body></div>`)[0];
+                popup_601406c7d5866a534cb5d21d85d7ac68.setContent(html_4849113bb51aa2a9468968c138b2c7d1);
+            
+        
+
+        marker_ab0ad11db9dccd5b1b41c13485bf0b8a.bindPopup(popup_601406c7d5866a534cb5d21d85d7ac68)
+        ;
+
+        
+    
+</script>
+</html>
