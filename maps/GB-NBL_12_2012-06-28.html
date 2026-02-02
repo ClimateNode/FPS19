@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5f5b4f9cd969282a9d449d78b9cf2fb9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5f5b4f9cd969282a9d449d78b9cf2fb9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5f5b4f9cd969282a9d449d78b9cf2fb9 = L.map(
+                "map_5f5b4f9cd969282a9d449d78b9cf2fb9",
+                {
+                    center: [54.86891275, -2.501124],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9b4124195960ef0a4d894cb61c84985b = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_9b4124195960ef0a4d894cb61c84985b.addTo(map_5f5b4f9cd969282a9d449d78b9cf2fb9);
+    
+            var marker_b0c2fb3e0271ec18a98cd791423a8e56 = L.marker(
+                [54.8827141, -2.5087934],
+                {}
+            ).addTo(map_5f5b4f9cd969282a9d449d78b9cf2fb9);
+        
+    
+            var icon_9737e24855d2435e0915d47d754fb967 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b0c2fb3e0271ec18a98cd791423a8e56.setIcon(icon_9737e24855d2435e0915d47d754fb967);
+        
+    
+        var popup_d63f8fddef1843da4ba429a6eec0a8bf = L.popup({});
+
+        
+            
+                var html_9275baa815b275a25d25aa5870cd5c16 = $(`<div id="html_9275baa815b275a25d25aa5870cd5c16" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burnstones</h1><div class="nugget-popup"><p>Residential flooding: four properties in Burnstones were flooded. Flooding was caused by ordinary watercourse levels rising and going out of bank behind properties (water flowed around to the front and entered via front doors) with surface water from the A689 also contributing; standing water on the A689 and vehicle&ndash;generated waves worsened flooding. [IMG] (p1)</p></div><div class="nugget-popup"><p>Annotated flow routes show water/runoff moving south and southeast across fields and roads within Burnstones, converging toward lower&ndash;lying areas; imagery also documents a culvert at Merit Hall in bank&ndash;full condition, indicating high flow within the Burnstones area. [IMG] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 properties [IMG] (p1)</p></div></div></body></div>`)[0];
+                popup_d63f8fddef1843da4ba429a6eec0a8bf.setContent(html_9275baa815b275a25d25aa5870cd5c16);
+            
+        
+
+        marker_b0c2fb3e0271ec18a98cd791423a8e56.bindPopup(popup_d63f8fddef1843da4ba429a6eec0a8bf)
+        ;
+
+        
+    
+</script>
+</html>
