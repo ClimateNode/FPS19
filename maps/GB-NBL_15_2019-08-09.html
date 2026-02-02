@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7dcb8bf267a3ab9c59391b537a3ddf4c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7dcb8bf267a3ab9c59391b537a3ddf4c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7dcb8bf267a3ab9c59391b537a3ddf4c = L.map(
+                "map_7dcb8bf267a3ab9c59391b537a3ddf4c",
+                {
+                    center: [55.19994011126246, -1.8898007439219304],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_618a42b8685f2091f5fd9a1d04798a72 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_618a42b8685f2091f5fd9a1d04798a72.addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+    
+            var marker_02316d9b43fc8ae53480ff191b9d8062 = L.marker(
+                [54.9737403, -1.8799429],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_3b337992262d0dda44eac350347c3b55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_02316d9b43fc8ae53480ff191b9d8062.setIcon(icon_3b337992262d0dda44eac350347c3b55);
+        
+    
+        var popup_d727c1441ad14c1f4572482805989b98 = L.popup({});
+
+        
+            
+                var html_c5cec9ecb8ba8a73fe100ae31d70a531 = $(`<div id="html_c5cec9ecb8ba8a73fe100ae31d70a531" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Whittle Burn</h1><div class="nugget-popup"><p>Overtopped onto the C254 road due to debris caught in the culvert; caused flooding that affected nearby properties. Increased flows later in the weekend were caused by an overflow from Northumbrian Water's Whittle Dene Reservoir. (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties (2 with property&ndash;level protection) (p6)</p></div></div></body></div>`)[0];
+                popup_d727c1441ad14c1f4572482805989b98.setContent(html_c5cec9ecb8ba8a73fe100ae31d70a531);
+            
+        
+
+        marker_02316d9b43fc8ae53480ff191b9d8062.bindPopup(popup_d727c1441ad14c1f4572482805989b98)
+        ;
+
+        
+    
+    
+            var marker_365401dcda4718448e48805a8b748705 = L.marker(
+                [55.1550294, -1.8408528],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_2f78c12919355d4e408b4dbdd9ac436e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_365401dcda4718448e48805a8b748705.setIcon(icon_2f78c12919355d4e408b4dbdd9ac436e);
+        
+    
+        var popup_f90c49f55011612c4aabb232e02231a3 = L.popup({});
+
+        
+            
+                var html_45f1bfe9ffb0d11590ff3a510ea245b4 = $(`<div id="html_45f1bfe9ffb0d11590ff3a510ea245b4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Wansbeck</h1><div class="nugget-popup"><p>Footbridges over the Wansbeck were closed to the public due to flooding. (p5)</p></div></div></body></div>`)[0];
+                popup_f90c49f55011612c4aabb232e02231a3.setContent(html_45f1bfe9ffb0d11590ff3a510ea245b4);
+            
+        
+
+        marker_365401dcda4718448e48805a8b748705.bindPopup(popup_f90c49f55011612c4aabb232e02231a3)
+        ;
+
+        
+    
+    
+            var marker_5dcd34b89f96ee80956a493e59dc880c = L.marker(
+                [55.2675296, -2.2646012],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_8bfde336615e7f1ee9a8b388bcc9db0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5dcd34b89f96ee80956a493e59dc880c.setIcon(icon_8bfde336615e7f1ee9a8b388bcc9db0d);
+        
+    
+        var popup_28f78fb85774542adc1c11d93fb340f4 = L.popup({});
+
+        
+            
+                var html_f9595242f3e587a350fe17ec024452e3 = $(`<div id="html_f9595242f3e587a350fe17ec024452e3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Rede</h1><div class="nugget-popup"><p>The River Rede broke its banks. At Otterburn it reached its highest recorded level (10th August) causing internal flooding; combined with its tributary the Otter Burn it caused further internal flooding. Through West Woodburn the Rede broke its banks and properties around West Woodburn Bridge suffered internal flooding; surface&ndash;water runoff from the road also affected properties. (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties (Otterburn); 3 properties (combined with Otter Burn); 6 properties (West Woodburn) (p6)</p></div></div></body></div>`)[0];
+                popup_28f78fb85774542adc1c11d93fb340f4.setContent(html_f9595242f3e587a350fe17ec024452e3);
+            
+        
+
+        marker_5dcd34b89f96ee80956a493e59dc880c.bindPopup(popup_28f78fb85774542adc1c11d93fb340f4)
+        ;
+
+        
+    
+    
+            var marker_42ffbd4504eda76939aa5bc1ad198bda = L.marker(
+                [55.175213, -2.1695283],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_8d2c906e92ae5a2f6491052234f6f02f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_42ffbd4504eda76939aa5bc1ad198bda.setIcon(icon_8d2c906e92ae5a2f6491052234f6f02f);
+        
+    
+        var popup_a241444ab2171d2d299cc6605b6e3f95 = L.popup({});
+
+        
+            
+                var html_4e15eda5f4a1a8320c078d15cedfca4b = $(`<div id="html_4e15eda5f4a1a8320c078d15cedfca4b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Woodburn Bridge</h1><div class="nugget-popup"><p>Six properties around West Woodburn Bridge suffered internal flooding when the River Rede broke its banks; properties were also affected by surface water runoff from the road. (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties (p6)</p></div></div></body></div>`)[0];
+                popup_a241444ab2171d2d299cc6605b6e3f95.setContent(html_4e15eda5f4a1a8320c078d15cedfca4b);
+            
+        
+
+        marker_42ffbd4504eda76939aa5bc1ad198bda.bindPopup(popup_a241444ab2171d2d299cc6605b6e3f95)
+        ;
+
+        
+    
+    
+            var marker_1e26895f65ed254622f1b8440e838fba = L.marker(
+                [55.1668511, -1.6820755],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_7ed8273b2e32d45722d01a74cf173e33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1e26895f65ed254622f1b8440e838fba.setIcon(icon_7ed8273b2e32d45722d01a74cf173e33);
+        
+    
+        var popup_9f5fb472a24aa06dce6fa1464d6cd01b = L.popup({});
+
+        
+            
+                var html_392728ef066264464413fda046e817ae = $(`<div id="html_392728ef066264464413fda046e817ae" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bennett's Walk, Morpeth</h1><div class="nugget-popup"><p>Northumberland Fire and Rescue Service operated a pump at Bennet's Walk to remove surface water. (p5)</p></div></div></body></div>`)[0];
+                popup_9f5fb472a24aa06dce6fa1464d6cd01b.setContent(html_392728ef066264464413fda046e817ae);
+            
+        
+
+        marker_1e26895f65ed254622f1b8440e838fba.bindPopup(popup_9f5fb472a24aa06dce6fa1464d6cd01b)
+        ;
+
+        
+    
+    
+            var marker_99fd4005807b30a35ceec3c9be1fc462 = L.marker(
+                [55.4104089, -1.6989976],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_89dda07f785ead86326bca3c40ac78ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_99fd4005807b30a35ceec3c9be1fc462.setIcon(icon_89dda07f785ead86326bca3c40ac78ae);
+        
+    
+        var popup_87dcc9e98e0ef79fec75b1a9025db8d0 = L.popup({});
+
+        
+            
+                var html_66367cd44fc6f006491af99805c0ee86 = $(`<div id="html_66367cd44fc6f006491af99805c0ee86" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bondgate Without, Alnwick</h1><div class="nugget-popup"><p>Water ponded around the war memorial at Bongate Without, making it difficult for vehicles to pass. (p5)</p></div></div></body></div>`)[0];
+                popup_87dcc9e98e0ef79fec75b1a9025db8d0.setContent(html_66367cd44fc6f006491af99805c0ee86);
+            
+        
+
+        marker_99fd4005807b30a35ceec3c9be1fc462.bindPopup(popup_87dcc9e98e0ef79fec75b1a9025db8d0)
+        ;
+
+        
+    
+    
+            var marker_bcb941a1b4ed4d8684258e1510f3de28 = L.marker(
+                [55.25, -2.000559],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_d8929eb2b802ade7805093b6de0af1b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bcb941a1b4ed4d8684258e1510f3de28.setIcon(icon_d8929eb2b802ade7805093b6de0af1b9);
+        
+    
+        var popup_5770728d302be6e9d3dfc26d4893f79e = L.popup({});
+
+        
+            
+                var html_9da892c94842bb3c48bf7d8ac3ad657a = $(`<div id="html_9da892c94842bb3c48bf7d8ac3ad657a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northumberland</h1><div class="nugget-popup"><p>Heavy persistent rain caused flash flooding across the county (9&ndash;11 Aug 2019), resulting in road closures, overwhelmed surface&ndash;water and sewer systems, closures of footbridges over the River Wansbeck and operation of flood gates; localized property and street flooding occurred in multiple localities (examples described elsewhere in the report). (p5)</p></div></div></body></div>`)[0];
+                popup_5770728d302be6e9d3dfc26d4893f79e.setContent(html_9da892c94842bb3c48bf7d8ac3ad657a);
+            
+        
+
+        marker_bcb941a1b4ed4d8684258e1510f3de28.bindPopup(popup_5770728d302be6e9d3dfc26d4893f79e)
+        ;
+
+        
+    
+    
+            var marker_a8a3f5cf3f28ce0518a5e3b458e28234 = L.marker(
+                [55.1675437, -1.6907444],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_f3c1dd12076820086cb64b9ead50eaaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a8a3f5cf3f28ce0518a5e3b458e28234.setIcon(icon_f3c1dd12076820086cb64b9ead50eaaa);
+        
+    
+        var popup_70de6f360d1ec96e09e7fa904172f546 = L.popup({});
+
+        
+            
+                var html_3cdb6f7365c5d2c99e5bce3fd37c5d59 = $(`<div id="html_3cdb6f7365c5d2c99e5bce3fd37c5d59" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Morpeth</h1><div class="nugget-popup"><p>Flood gates were shut by the Environment Agency; footbridges over the Wansbeck were closed to the public as a response to high river/flash flooding. (p5)</p></div></div></body></div>`)[0];
+                popup_70de6f360d1ec96e09e7fa904172f546.setContent(html_3cdb6f7365c5d2c99e5bce3fd37c5d59);
+            
+        
+
+        marker_a8a3f5cf3f28ce0518a5e3b458e28234.bindPopup(popup_70de6f360d1ec96e09e7fa904172f546)
+        ;
+
+        
+    
+    
+            var marker_b765863a3dc3082743644a214a63f1f3 = L.marker(
+                [55.309632, -1.9117293],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_116077c98e3df2bf2565d8b177374ac6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b765863a3dc3082743644a214a63f1f3.setIcon(icon_116077c98e3df2bf2565d8b177374ac6);
+        
+    
+        var popup_bde2ef339d5006476f68cdc583249560 = L.popup({});
+
+        
+            
+                var html_3269178ae0616a93a8b1b3325f0096d8 = $(`<div id="html_3269178ae0616a93a8b1b3325f0096d8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rothbury</h1><div class="nugget-popup"><p>Flood gates were shut by the Environment Agency; footbridges over the Wansbeck were closed to the public in response to high river/flash flooding. (p5)</p></div></div></body></div>`)[0];
+                popup_bde2ef339d5006476f68cdc583249560.setContent(html_3269178ae0616a93a8b1b3325f0096d8);
+            
+        
+
+        marker_b765863a3dc3082743644a214a63f1f3.bindPopup(popup_bde2ef339d5006476f68cdc583249560)
+        ;
+
+        
+    
+    
+            var marker_8399c5aa9d4df8601e6768035dac79a5 = L.marker(
+                [55.3477629, -1.6103256],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_7ef408a470afba4ea8a00e7cf01cec04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8399c5aa9d4df8601e6768035dac79a5.setIcon(icon_7ef408a470afba4ea8a00e7cf01cec04);
+        
+    
+        var popup_9685583325e0e108070a79cc4991d499 = L.popup({});
+
+        
+            
+                var html_60b1636126d22f81e87dcb994dbc09ac = $(`<div id="html_60b1636126d22f81e87dcb994dbc09ac" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Warkworth</h1><div class="nugget-popup"><p>High&ndash;intensity rainfall overwhelmed surface water sewers in the Amble area, causing flooding to the A1068 between Amble and Warkworth (road flooding and travel disruption). (p5)</p></div></div></body></div>`)[0];
+                popup_9685583325e0e108070a79cc4991d499.setContent(html_60b1636126d22f81e87dcb994dbc09ac);
+            
+        
+
+        marker_8399c5aa9d4df8601e6768035dac79a5.bindPopup(popup_9685583325e0e108070a79cc4991d499)
+        ;
+
+        
+    
+    
+            var marker_6904bcc946fac51658bde8b702b0a8a5 = L.marker(
+                [55.413486, -1.7073106],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_c1f8b060bf1cc5c7ff140f4adbf872bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6904bcc946fac51658bde8b702b0a8a5.setIcon(icon_c1f8b060bf1cc5c7ff140f4adbf872bb);
+        
+    
+        var popup_eeb6d963ddccd19f05ac20edc5bd7e9f = L.popup({});
+
+        
+            
+                var html_2da47ad5eb6d604ac41a93834e3823eb = $(`<div id="html_2da47ad5eb6d604ac41a93834e3823eb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Alnwick</h1><div class="nugget-popup"><p>Rain overwhelmed gullies and the surface water system causing water to pond around the war memorial, impeding vehicle movement. (p5)</p></div></div></body></div>`)[0];
+                popup_eeb6d963ddccd19f05ac20edc5bd7e9f.setContent(html_2da47ad5eb6d604ac41a93834e3823eb);
+            
+        
+
+        marker_6904bcc946fac51658bde8b702b0a8a5.bindPopup(popup_eeb6d963ddccd19f05ac20edc5bd7e9f)
+        ;
+
+        
+    
+    
+            var marker_fe757bf015188b1b4b3ca22fa3eae3b4 = L.marker(
+                [55.5012672, -1.6615302],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_90df7766fba6ea682d862a55ba1c838c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fe757bf015188b1b4b3ca22fa3eae3b4.setIcon(icon_90df7766fba6ea682d862a55ba1c838c);
+        
+    
+        var popup_1c02fd7368747927273aea282b771531 = L.popup({});
+
+        
+            
+                var html_7d57e64d317866d1d13fd727b0070f07 = $(`<div id="html_7d57e64d317866d1d13fd727b0070f07" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Christon Bank</h1><div class="nugget-popup"><p>The T&ndash;junction at Christon Bank became inundated with surface water runoff, ponding in a low spot in the road. (p5)</p></div></div></body></div>`)[0];
+                popup_1c02fd7368747927273aea282b771531.setContent(html_7d57e64d317866d1d13fd727b0070f07);
+            
+        
+
+        marker_fe757bf015188b1b4b3ca22fa3eae3b4.bindPopup(popup_1c02fd7368747927273aea282b771531)
+        ;
+
+        
+    
+    
+            var marker_69bb9cbe6e7be9751ffb5134ccbc98c8 = L.marker(
+                [55.32166291503643, -1.56194109898712],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_1bacd73aaf586aaf9954bd0ab74ff634 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_69bb9cbe6e7be9751ffb5134ccbc98c8.setIcon(icon_1bacd73aaf586aaf9954bd0ab74ff634);
+        
+    
+        var popup_505011e7c22a02980c9450893d87c015 = L.popup({});
+
+        
+            
+                var html_ec8ffdedbcfee6b370c3c4ae7ff21109 = $(`<div id="html_ec8ffdedbcfee6b370c3c4ae7ff21109" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Hauxley</h1><div class="nugget-popup"><p>A watercourse broke its banks and flooded around properties; the fire service supplied sandbags to adjacent properties to deflect flood water. (p5)</p></div></div></body></div>`)[0];
+                popup_505011e7c22a02980c9450893d87c015.setContent(html_ec8ffdedbcfee6b370c3c4ae7ff21109);
+            
+        
+
+        marker_69bb9cbe6e7be9751ffb5134ccbc98c8.bindPopup(popup_505011e7c22a02980c9450893d87c015)
+        ;
+
+        
+    
+    
+            var marker_89cae7b8a1467bf4c639606f4d68ef29 = L.marker(
+                [55.3181496, -2.0719374],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_63ff8e2841fa1b1b49baedcf24f9cb3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_89cae7b8a1467bf4c639606f4d68ef29.setIcon(icon_63ff8e2841fa1b1b49baedcf24f9cb3c);
+        
+    
+        var popup_b0047a96e70a234dcdbabff4cf795256 = L.popup({});
+
+        
+            
+                var html_5e9eebfce0313a18954a7b25e0f65356 = $(`<div id="html_5e9eebfce0313a18954a7b25e0f65356" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holystone</h1><div class="nugget-popup"><p>Road closures caused by fluvial (river) and surface water runoff issues. (p5)</p></div></div></body></div>`)[0];
+                popup_b0047a96e70a234dcdbabff4cf795256.setContent(html_5e9eebfce0313a18954a7b25e0f65356);
+            
+        
+
+        marker_89cae7b8a1467bf4c639606f4d68ef29.bindPopup(popup_b0047a96e70a234dcdbabff4cf795256)
+        ;
+
+        
+    
+    
+            var marker_e8831aaf34036150002331e78320d1fd = L.marker(
+                [55.3791064, -1.9165251],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_57e5c8b8c3b14a01c09806540418bedb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e8831aaf34036150002331e78320d1fd.setIcon(icon_57e5c8b8c3b14a01c09806540418bedb);
+        
+    
+        var popup_0a978acea249732fccca0e3da9af2475 = L.popup({});
+
+        
+            
+                var html_807b19ade8599f62ee0240f81f2c3bfb = $(`<div id="html_807b19ade8599f62ee0240f81f2c3bfb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Callaly</h1><div class="nugget-popup"><p>Road closures caused by fluvial (river) and surface water runoff issues. (p5)</p></div></div></body></div>`)[0];
+                popup_0a978acea249732fccca0e3da9af2475.setContent(html_807b19ade8599f62ee0240f81f2c3bfb);
+            
+        
+
+        marker_e8831aaf34036150002331e78320d1fd.bindPopup(popup_0a978acea249732fccca0e3da9af2475)
+        ;
+
+        
+    
+    
+            var marker_34972f401b931869e2fcfa5014904567 = L.marker(
+                [55.2080448, -1.8420601],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_10df4c6c270712dec0259a541e232358 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_34972f401b931869e2fcfa5014904567.setIcon(icon_10df4c6c270712dec0259a541e232358);
+        
+    
+        var popup_f8b67cf491395b99ee52d7bcfc805f1b = L.popup({});
+
+        
+            
+                var html_c888a1acbad314a38e5a2e0b179721b8 = $(`<div id="html_c888a1acbad314a38e5a2e0b179721b8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Netherwitton</h1><div class="nugget-popup"><p>Road closures caused by fluvial (river) and surface water runoff issues. (p5)</p></div></div></body></div>`)[0];
+                popup_f8b67cf491395b99ee52d7bcfc805f1b.setContent(html_c888a1acbad314a38e5a2e0b179721b8);
+            
+        
+
+        marker_34972f401b931869e2fcfa5014904567.bindPopup(popup_f8b67cf491395b99ee52d7bcfc805f1b)
+        ;
+
+        
+    
+    
+            var marker_e5c714258c3113debd6e110df32cddcb = L.marker(
+                [55.0489468, -2.2348583],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_d37f6c5b7980103492c6209486d7885d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e5c714258c3113debd6e110df32cddcb.setIcon(icon_d37f6c5b7980103492c6209486d7885d);
+        
+    
+        var popup_ebbf94f447ed74650117434e171fa4cc = L.popup({});
+
+        
+            
+                var html_e40d4387b70a8f9b43f5fc8cfd7af405 = $(`<div id="html_e40d4387b70a8f9b43f5fc8cfd7af405" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Greenhaugh</h1><div class="nugget-popup"><p>Road closures caused by fluvial (river) and surface water runoff issues. (p5)</p></div></div></body></div>`)[0];
+                popup_ebbf94f447ed74650117434e171fa4cc.setContent(html_e40d4387b70a8f9b43f5fc8cfd7af405);
+            
+        
+
+        marker_e5c714258c3113debd6e110df32cddcb.bindPopup(popup_ebbf94f447ed74650117434e171fa4cc)
+        ;
+
+        
+    
+    
+            var marker_25db99e53d91e114c3ddd1c9726298ad = L.marker(
+                [55.1443709, -2.2549272],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_c7090162af03c4b4caede743ccc6e434 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_25db99e53d91e114c3ddd1c9726298ad.setIcon(icon_c7090162af03c4b4caede743ccc6e434);
+        
+    
+        var popup_c28538b58108c49e85983563b430e6a8 = L.popup({});
+
+        
+            
+                var html_8c999f8ef84e3ce4ba3452e6ab995018 = $(`<div id="html_8c999f8ef84e3ce4ba3452e6ab995018" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bellingham</h1><div class="nugget-popup"><p>Road closures caused by fluvial (river) and surface water runoff issues. (p5)</p></div></div></body></div>`)[0];
+                popup_c28538b58108c49e85983563b430e6a8.setContent(html_8c999f8ef84e3ce4ba3452e6ab995018);
+            
+        
+
+        marker_25db99e53d91e114c3ddd1c9726298ad.bindPopup(popup_c28538b58108c49e85983563b430e6a8)
+        ;
+
+        
+    
+    
+            var marker_89c25efec2e6fd1ee3fa3228d6a89a0d = L.marker(
+                [55.3337748, -1.5839378],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_64591c1b981df76d3a85efd899a561a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_89c25efec2e6fd1ee3fa3228d6a89a0d.setIcon(icon_64591c1b981df76d3a85efd899a561a5);
+        
+    
+        var popup_48964f21b9b448ebb4ef7dafce2430f9 = L.popup({});
+
+        
+            
+                var html_ff1cf016d0f918732441c6075f7a8bf4 = $(`<div id="html_ff1cf016d0f918732441c6075f7a8bf4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Amble</h1><div class="nugget-popup"><p>High intensity rainfall overwhelmed the surface water sewer systems causing flooding to the A1068 between Amble and Warkworth. (p5)</p></div></div></body></div>`)[0];
+                popup_48964f21b9b448ebb4ef7dafce2430f9.setContent(html_ff1cf016d0f918732441c6075f7a8bf4);
+            
+        
+
+        marker_89c25efec2e6fd1ee3fa3228d6a89a0d.bindPopup(popup_48964f21b9b448ebb4ef7dafce2430f9)
+        ;
+
+        
+    
+    
+            var marker_3cffb2fafab1208c0038e069f4fcab3a = L.marker(
+                [55.2319953, -2.1809191],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_51bc3eab93194e1251a739dd53b8b418 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3cffb2fafab1208c0038e069f4fcab3a.setIcon(icon_51bc3eab93194e1251a739dd53b8b418);
+        
+    
+        var popup_09b247fdae3b22c8c38fef2c9ef18628 = L.popup({});
+
+        
+            
+                var html_424209d8e4d7aeb920a0cb02dfa951bf = $(`<div id="html_424209d8e4d7aeb920a0cb02dfa951bf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Otterburn</h1><div class="nugget-popup"><p>The River Rede at Otterburn reached its highest recorded level, causing internal flooding of properties. A combination of the River Rede and its tributary the Otter Burn caused internal flooding of additional properties. To the west of the village, properties were internally flooded due to surface water runoff and overwhelmed Northumbrian Water systems; other properties were protected by interventions. (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties; 3 properties (p6)</p></div></div></body></div>`)[0];
+                popup_09b247fdae3b22c8c38fef2c9ef18628.setContent(html_424209d8e4d7aeb920a0cb02dfa951bf);
+            
+        
+
+        marker_3cffb2fafab1208c0038e069f4fcab3a.bindPopup(popup_09b247fdae3b22c8c38fef2c9ef18628)
+        ;
+
+        
+    
+    
+            var marker_d21a7973c2f98e435d8c0322c5608896 = L.marker(
+                [54.96760507778747, -1.8677755429830711],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_c1dc5aa35b69c9880d948d72fdafdd2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d21a7973c2f98e435d8c0322c5608896.setIcon(icon_c1dc5aa35b69c9880d948d72fdafdd2c);
+        
+    
+        var popup_7b0d07149d0983a6938a0b759f9fca29 = L.popup({});
+
+        
+            
+                var html_a28d518342308c5908028379515ea030 = $(`<div id="html_a28d518342308c5908028379515ea030" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ovingham</h1><div class="nugget-popup"><p>The Whittle Burn overtopped onto the C254 road due to debris in a culvert, and increased flows (later in the weekend) were caused by overflow from the Northumbrian Water Whittle Dene Reservoir. Three properties were affected in the early hours of 12th August (two of which had property&ndash;level protection). Additional local overflows (from the cemetery and a watercourse adjacent to Horsley Road) flowed onto roads/footpaths but did not cause internal property flooding at those locations. (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties affected; 2 properties had PLP (p6)</p></div></div></body></div>`)[0];
+                popup_7b0d07149d0983a6938a0b759f9fca29.setContent(html_a28d518342308c5908028379515ea030);
+            
+        
+
+        marker_d21a7973c2f98e435d8c0322c5608896.bindPopup(popup_7b0d07149d0983a6938a0b759f9fca29)
+        ;
+
+        
+    
+    
+            var marker_fc6eab915f8e29da5dec6f1d96ad7853 = L.marker(
+                [55.1758997, -2.16997],
+                {}
+            ).addTo(map_7dcb8bf267a3ab9c59391b537a3ddf4c);
+        
+    
+            var icon_2d708b6ba7930beec3fe32d0e4769ba7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fc6eab915f8e29da5dec6f1d96ad7853.setIcon(icon_2d708b6ba7930beec3fe32d0e4769ba7);
+        
+    
+        var popup_949f048e413a0862076c2e68a564e3b3 = L.popup({});
+
+        
+            
+                var html_200426e339f39b5f92c2c88c3601b817 = $(`<div id="html_200426e339f39b5f92c2c88c3601b817" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Woodburn</h1><div class="nugget-popup"><p>The River Rede broke its banks through West Woodburn, causing internal flooding of properties. Surface water runoff from the road also affected properties. (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties (p6)</p></div></div></body></div>`)[0];
+                popup_949f048e413a0862076c2e68a564e3b3.setContent(html_200426e339f39b5f92c2c88c3601b817);
+            
+        
+
+        marker_fc6eab915f8e29da5dec6f1d96ad7853.bindPopup(popup_949f048e413a0862076c2e68a564e3b3)
+        ;
+
+        
+    
+</script>
+</html>
