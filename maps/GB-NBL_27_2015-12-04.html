@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fc8ec7b6ee16e7832cd6b86aaf2c0d2e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fc8ec7b6ee16e7832cd6b86aaf2c0d2e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fc8ec7b6ee16e7832cd6b86aaf2c0d2e = L.map(
+                "map_fc8ec7b6ee16e7832cd6b86aaf2c0d2e",
+                {
+                    center: [55.04559510997836, -2.056232055612253],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6a9c60e1f9dcdc7a4d3518c7bf748ebe = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_6a9c60e1f9dcdc7a4d3518c7bf748ebe.addTo(map_fc8ec7b6ee16e7832cd6b86aaf2c0d2e);
+    
+            var marker_84c6543758105c96db99ca16258d995e = L.marker(
+                [54.9817308, -1.7758702],
+                {}
+            ).addTo(map_fc8ec7b6ee16e7832cd6b86aaf2c0d2e);
+        
+    
+            var icon_c2ce35aef9f42ddbb6d78027299faf41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_84c6543758105c96db99ca16258d995e.setIcon(icon_c2ce35aef9f42ddbb6d78027299faf41);
+        
+    
+        var popup_764f2174bb20fec3ea55891414effcb4 = L.popup({});
+
+        
+            
+                var html_ad97f20f5fb7e8aa7f9b3f18d9d16e48 = $(`<div id="html_ad97f20f5fb7e8aa7f9b3f18d9d16e48" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Tyne</h1><div class="nugget-popup"><p>The River Tyne swelled during Storm Desmond and overtopped defences at Low Prudhoe. Floodwater from the Tyne backed up into an ordinary watercourse at the eastern end of the business estate and was conveyed by roads, flooding several businesses and other buildings. (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>21 businesses; 1 residential property; 3 Council buildings (p1)</p></div></div></body></div>`)[0];
+                popup_764f2174bb20fec3ea55891414effcb4.setContent(html_ad97f20f5fb7e8aa7f9b3f18d9d16e48);
+            
+        
+
+        marker_84c6543758105c96db99ca16258d995e.bindPopup(popup_764f2174bb20fec3ea55891414effcb4)
+        ;
+
+        
+    
+    
+            var marker_0dae7e81ba50614a658e576ebd507d63 = L.marker(
+                [54.965626429935064, -1.8648960668367593],
+                {}
+            ).addTo(map_fc8ec7b6ee16e7832cd6b86aaf2c0d2e);
+        
+    
+            var icon_8aa58f9e7e50f01735dfa01f718915c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0dae7e81ba50614a658e576ebd507d63.setIcon(icon_8aa58f9e7e50f01735dfa01f718915c2);
+        
+    
+        var popup_911aa22baaa23ce517c12842484fcaab = L.popup({});
+
+        
+            
+                var html_50543b35fc570ced7f914d099bbf6bdd = $(`<div id="html_50543b35fc570ced7f914d099bbf6bdd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Low Prudhoe</h1><div class="nugget-popup"><p>Defences at Low Prudhoe overtopped as the River Tyne and tributaries swelled during Storm Desmond. Floodwater from the Tyne backed up into an ordinary watercourse flooding the eastern end of the business estate; floodwater was also conveyed by roads in and around the estate. Overall local impacts recorded for the area: businesses, a residential property and council buildings were flooded. [IMG] (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>21 businesses; 1 residential property; 3 Council buildings [IMG] (p1)</p></div></div></body></div>`)[0];
+                popup_911aa22baaa23ce517c12842484fcaab.setContent(html_50543b35fc570ced7f914d099bbf6bdd);
+            
+        
+
+        marker_0dae7e81ba50614a658e576ebd507d63.bindPopup(popup_911aa22baaa23ce517c12842484fcaab)
+        ;
+
+        
+    
+</script>
+</html>
