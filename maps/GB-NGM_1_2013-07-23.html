@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0a71bd34d8933ce743f394f95bcb6eac {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0a71bd34d8933ce743f394f95bcb6eac" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0a71bd34d8933ce743f394f95bcb6eac = L.map(
+                "map_0a71bd34d8933ce743f394f95bcb6eac",
+                {
+                    center: [52.98978166161097, -1.1734860427668352],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5e1ec0b194856eed6f64e56a9dc34e5c = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_5e1ec0b194856eed6f64e56a9dc34e5c.addTo(map_0a71bd34d8933ce743f394f95bcb6eac);
+    
+            var marker_78eb11282d984ac5eb0b275ef0acad84 = L.marker(
+                [52.95342, -1.149646],
+                {}
+            ).addTo(map_0a71bd34d8933ce743f394f95bcb6eac);
+        
+    
+            var icon_7f0d36b371535643731dbae96576d592 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_78eb11282d984ac5eb0b275ef0acad84.setIcon(icon_7f0d36b371535643731dbae96576d592);
+        
+    
+        var popup_46e4f92e447ea5e33e6739441c652782 = L.popup({});
+
+        
+            
+                var html_611f1fc5e5666d016a35bd4f075368f6 = $(`<div id="html_611f1fc5e5666d016a35bd4f075368f6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottingham Unitary Authority</h1><div class="nugget-popup"><p>Nottingham (administrative area containing Bulwell and Bestwood Road) included the location of the 23 July 2013 flooding; the report maps the affected local streets within the city boundary. (p1)</p></div><div class="nugget-popup"><p>An intense thunderstorm on the evening of 23 July 2013 caused flooding across the city, resulting in residential properties being flooded. (p3)</p></div><div class="nugget-popup"><p>Residential properties within Nottingham (specifically on Bestwood Road) experienced external flooding during the rainfall event on 23rd July 2013; a resident reported external flooding in 2011 at the same location. [PAG,MUL] (p7)</p></div><div class="nugget-popup"><p>A series of heavy rainfall events saturated the ground and overwhelmed available storage in underground drainage networks across the city, resulting in internal flooding of properties (notably 6 properties on Bestwood Road). [PAG] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 100 residential properties (p3)</p></div><div class="nugget-popup quant"><p>6 properties [PAG] (p18)</p></div></div></body></div>`)[0];
+                popup_46e4f92e447ea5e33e6739441c652782.setContent(html_611f1fc5e5666d016a35bd4f075368f6);
+            
+        
+
+        marker_78eb11282d984ac5eb0b275ef0acad84.bindPopup(popup_46e4f92e447ea5e33e6739441c652782)
+        ;
+
+        
+    
+    
+            var marker_9f4a3066cccb64e1a45686c283252822 = L.marker(
+                [53.0065179, -1.1694804],
+                {}
+            ).addTo(map_0a71bd34d8933ce743f394f95bcb6eac);
+        
+    
+            var icon_e070f9c609b9e81605e9527a4b6088d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9f4a3066cccb64e1a45686c283252822.setIcon(icon_e070f9c609b9e81605e9527a4b6088d4);
+        
+    
+        var popup_e66439d654a25f74932d8f3f270b6f00 = L.popup({});
+
+        
+            
+                var html_25ca5617e6ce69c7d745b82152a5bff6 = $(`<div id="html_25ca5617e6ce69c7d745b82152a5bff6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Top Valley</h1><div class="nugget-popup"><p>Road network in the Top Valley area falls towards Hucknall Road and acted as conduits for surface water during the storm on 23 July 2013, contributing to flows that were directed into Bestwood Road low points. (p10)</p></div></div></body></div>`)[0];
+                popup_e66439d654a25f74932d8f3f270b6f00.setContent(html_25ca5617e6ce69c7d745b82152a5bff6);
+            
+        
+
+        marker_9f4a3066cccb64e1a45686c283252822.bindPopup(popup_e66439d654a25f74932d8f3f270b6f00)
+        ;
+
+        
+    
+    
+            var marker_f4f7295e02ae723e7a774aa4eef3d075 = L.marker(
+                [52.9473823, -1.1841569],
+                {}
+            ).addTo(map_0a71bd34d8933ce743f394f95bcb6eac);
+        
+    
+            var icon_76c8d9e9f1cfe214d70a531a10e90aee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f4f7295e02ae723e7a774aa4eef3d075.setIcon(icon_76c8d9e9f1cfe214d70a531a10e90aee);
+        
+    
+        var popup_0f574f5a26dfb74917115cd2301d0aa4 = L.popup({});
+
+        
+            
+                var html_123244e11d23306c2bd54578f01bb376 = $(`<div id="html_123244e11d23306c2bd54578f01bb376" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Leen</h1><div class="nugget-popup"><p>River water levels were raised during and after the storm, which likely tide&ndash;locked surface water outfalls and reduced the ability of surface water to drain to the river, contributing to surface water flooding in the area. (p11)</p></div><div class="nugget-popup"><p>The River Leen's interaction with public surface water sewer outfalls was identified as potentially influencing sewer capacity and contributing to flooding; an analysis of the outfalls into the River Leen is planned. (p15)</p></div></div></body></div>`)[0];
+                popup_0f574f5a26dfb74917115cd2301d0aa4.setContent(html_123244e11d23306c2bd54578f01bb376);
+            
+        
+
+        marker_f4f7295e02ae723e7a774aa4eef3d075.bindPopup(popup_0f574f5a26dfb74917115cd2301d0aa4)
+        ;
+
+        
+    
+    
+            var marker_0f90be30cba348c913ce037b7ebea8a9 = L.marker(
+                [53.0076824, -1.1887981],
+                {}
+            ).addTo(map_0a71bd34d8933ce743f394f95bcb6eac);
+        
+    
+            var icon_b87ddf070e8c61b2e1d1eb45aae997a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0f90be30cba348c913ce037b7ebea8a9.setIcon(icon_b87ddf070e8c61b2e1d1eb45aae997a4);
+        
+    
+        var popup_c8bbf07654e62df72bd9031525a81022 = L.popup({});
+
+        
+            
+                var html_7f8f6f14b5b463c67306651a748ab0c2 = $(`<div id="html_7f8f6f14b5b463c67306651a748ab0c2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bestwood Road, Bulwell</h1><div class="nugget-popup"><p>Flooding occurred on the Bestwood Road corridor during the 23 July 2013 event; the Section 19 report map identifies water features adjacent to the road and surrounding residential streets that were relevant to the event. [IMG] (p1)</p></div><div class="nugget-popup"><p>Internal flooding occurred to residential properties on Bestwood Road during the same storm event. (p3)</p></div><div class="nugget-popup"><p>Internal (over the doorstep) flooding of residential properties on Bestwood Road. [PAG] (p5)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties on Bestwood Road. [IMG,PAG] (p6)</p></div><div class="nugget-popup"><p>Residential properties on Bestwood Road experienced external flooding caused by rainfall; sewer and surface water drainage were implicated in the event. A resident also reported external flooding at properties on Bestwood Road in 2011. [PAG,MUL] (p7)</p></div><div class="nugget-popup"><p>Properties on Bestwood Road were externally flooded during the event on 23rd July 2013. Anecdotal evidence indicates the flooding on 23 July was more widespread than predicted by the Flood Map for Surface Water. A resident also reported that properties on Bestwood Road flooded externally in 2011. [PAG,MUL] (p8)</p></div><div class="nugget-popup"><p>Properties on Bestwood Road were flooded during the intense storm on 23 July 2013; the flood event started during the storm at 17:00 on 23rd July 2013. (p9)</p></div><div class="nugget-popup"><p>Properties on Bestwood Road were flooded during and after the intense rainfall on 23rd July 2013 with water reported entering from both the front and rear of properties. Roadways acted as conduits channeling rapid overland flow to the low point in the landscape. Highway gullies and private rear surface water drains were unable to drain, contributing to ponding and flood volumes; raised levels in the River Leen likely restricted outfall and may have tide&ndash;locked outfalls during/after the storm. (p10)</p></div><div class="nugget-popup"><p>Surface water rapidly flowed along road surfaces and pooled at the lowest point on Bestwood Road. Water entered properties (front and rear) and pooled because highway gullies and private rear drains were unable to drain; the adjacent railway embankment prevented water from continuing to the River Leen, increasing local flood depths. [IMG,PAG] (p11)</p></div><div class="nugget-popup"><p>Rapid surface water flow along road surfaces pooled at the lowest point on Bestwood Road because the railway embankment prevented flow to the River Leen. Highway gullies were overwhelmed, water breached kerbs and entered properties through front and back doors; vehicles driving through floodwater generated bow waves that pushed water into properties. [PAG] (p12)</p></div><div class="nugget-popup"><p>High flows overwhelmed highway gullies and breached the kerb, allowing surface water to pool (aided by local topography and an adjacent railway embankment) and enter properties via low front and rear thresholds. Vehicles driving through the flood created bow waves that pushed water into buildings. This resulted in downstairs internal and external flooding and damage to stairs, floorboards, doors, walls and furniture. A resident reported sewage&ndash;contaminated floodwater, indicating the public foul sewer was at capacity during the storm. [IMG,TAB] (p13)</p></div><div class="nugget-popup"><p>Intense rainfall produced large volumes of surface water that flowed down Bestwood Road, overwhelming highway drainage that connects to the public sewer. Surface water ponded on the road and was unable to drain into the sewer network (which was at capacity), causing road flooding and external flooding to adjacent properties. Reported damage included external damage to stairs, floorboards, doors, walls and furniture. (p14)</p></div><div class="nugget-popup"><p>Surface water was unable to drain into the highway drainage system at Bestwood Road, increasing surface water volumes; the public sewer network near Bestwood Road was identified for CCTV investigation and the road gullies were placed on a Targeted Gully Cleansing Regime for more frequent cleaning to reduce future flood risk. [PAG] (p15)</p></div><div class="nugget-popup"><p>Properties on Bestwood Road experienced internal flooding (including during the 23 July 2013 event); gullies on the road were placed on a Targeted Gully Cleansing Regime for more frequent maintenance. [TAB] (p16)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties located predominantly in low&ndash;lying areas; flooding resulted from heavy rainfall that saturated the ground and filled underground drainage networks. (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties (p3)</p></div><div class="nugget-popup quant"><p>6 properties [PAG] (p5)</p></div><div class="nugget-popup quant"><p>6 properties [IMG,PAG] (p6)</p></div><div class="nugget-popup quant"><p>6 properties (of which 6 are private); internal flood depths up to 250 mm; external flood depths up to 900 mm. [IMG,TAB] (p13)</p></div><div class="nugget-popup quant"><p>6 properties (p18)</p></div></div></body></div>`)[0];
+                popup_c8bbf07654e62df72bd9031525a81022.setContent(html_7f8f6f14b5b463c67306651a748ab0c2);
+            
+        
+
+        marker_0f90be30cba348c913ce037b7ebea8a9.bindPopup(popup_c8bbf07654e62df72bd9031525a81022)
+        ;
+
+        
+    
+    
+            var marker_73accdfe6cda0940a101602cca6deb15 = L.marker(
+                [52.9784995, -1.156837],
+                {}
+            ).addTo(map_0a71bd34d8933ce743f394f95bcb6eac);
+        
+    
+            var icon_c495ead8ccfc4b5c8739eb96fb50bfdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_73accdfe6cda0940a101602cca6deb15.setIcon(icon_c495ead8ccfc4b5c8739eb96fb50bfdb);
+        
+    
+        var popup_76cbf85877b08184edf1f61d8c556a55 = L.popup({});
+
+        
+            
+                var html_bd4fa755b253e4e766c0e153a8bb9439 = $(`<div id="html_bd4fa755b253e4e766c0e153a8bb9439" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hucknall Road, Bulwell</h1><div class="nugget-popup"><p>Surface water flowed down Hucknall Road during the intense rainfall and was likely channelled into Bestwood Road, increasing flood volumes at the low point; highway gullies were unable to drain, exacerbating surface water accumulation. (p10)</p></div><div class="nugget-popup"><p>Surface water was conveyed along the main trunk of Hucknall Road during the storm and was channelled into Bestwood Road at the junction, acting as a flow route that contributed to the flooding on Bestwood Road. (p11)</p></div></div></body></div>`)[0];
+                popup_76cbf85877b08184edf1f61d8c556a55.setContent(html_bd4fa755b253e4e766c0e153a8bb9439);
+            
+        
+
+        marker_73accdfe6cda0940a101602cca6deb15.bindPopup(popup_76cbf85877b08184edf1f61d8c556a55)
+        ;
+
+        
+    
+    
+            var marker_87f88b130a42d2aba72731eab4ed2293 = L.marker(
+                [53.0010853, -1.1971813],
+                {}
+            ).addTo(map_0a71bd34d8933ce743f394f95bcb6eac);
+        
+    
+            var icon_b1854ce9a9faabf439b67d83e8339c96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_87f88b130a42d2aba72731eab4ed2293.setIcon(icon_b1854ce9a9faabf439b67d83e8339c96);
+        
+    
+        var popup_318630008fdace8e20ba708518525c7d = L.popup({});
+
+        
+            
+                var html_647b964a726e866f05b5e04283a09a31 = $(`<div id="html_647b964a726e866f05b5e04283a09a31" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bulwell</h1><div class="nugget-popup"><p>Bulwell (the locality containing Bestwood Road) was the area impacted by the 23 July 2013 flood event; the report map and descriptions focus on water features and residential areas in this locality. (p1)</p></div><div class="nugget-popup"><p>Part of the north of the city affected by the intense storm; Bestwood Road in Bulwell experienced internal flooding to residential properties. (p3)</p></div><div class="nugget-popup"><p>Areas of green open space in the wider Bulwell area were saturated in the 24 hours before and during the intense rainfall, contributing to rapid overland flow and surface water ponding that fed runoff toward Bestwood Road. (p10)</p></div><div class="nugget-popup"><p>Road gullies and highway drains in the Bulwell area were likely overwhelmed by high volumes and flow of surface water (flowing down Bestwood Road), contributing to ponding and inability of surface water to drain into the public sewer network. (p14)</p></div><div class="nugget-popup"><p>Areas adjacent to the river corridor in Bulwell lie within mapped flood zones; the river corridor floodplain runs through residential areas and alongside River Park, placing those parts of Bulwell at risk and recorded as flood&ndash;affected in the report for the 23 July 2013 event. [IMG] (p23)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties (p3)</p></div></div></body></div>`)[0];
+                popup_318630008fdace8e20ba708518525c7d.setContent(html_647b964a726e866f05b5e04283a09a31);
+            
+        
+
+        marker_87f88b130a42d2aba72731eab4ed2293.bindPopup(popup_318630008fdace8e20ba708518525c7d)
+        ;
+
+        
+    
+    
+            var marker_0aebd1da6bddd9e42532409eb8963104 = L.marker(
+                [52.99888028356392, -1.1605110390051416],
+                {}
+            ).addTo(map_0a71bd34d8933ce743f394f95bcb6eac);
+        
+    
+            var icon_1fba909e6082c0118683b5d249db7bad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0aebd1da6bddd9e42532409eb8963104.setIcon(icon_1fba909e6082c0118683b5d249db7bad);
+        
+    
+        var popup_be36b0630803e1b0eabffa66e73aa3ca = L.popup({});
+
+        
+            
+                var html_441015200b50115d19ff5f793c387c6e = $(`<div id="html_441015200b50115d19ff5f793c387c6e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bestwood</h1><div class="nugget-popup"><p>External flooding of residential properties on Bestwood Road; external areas of properties (gardens/grounds) were inundated during the flood event. [PAG,MUL] (p7)</p></div><div class="nugget-popup"><p>Intense rainfall generated large volumes of surface&ndash;water runoff that overwhelmed drainage, causing water to pond in low&ndash;lying areas. External flooding affected properties and the road; property damage reported (external damage to stairs, floorboards, doors, walls and furniture). (p14)</p></div></div></body></div>`)[0];
+                popup_be36b0630803e1b0eabffa66e73aa3ca.setContent(html_441015200b50115d19ff5f793c387c6e);
+            
+        
+
+        marker_0aebd1da6bddd9e42532409eb8963104.bindPopup(popup_be36b0630803e1b0eabffa66e73aa3ca)
+        ;
+
+        
+    
+    
+            var marker_ac0477006d6a0f3be01a8f4bb5d62d49 = L.marker(
+                [53.0120954, -1.1749306],
+                {}
+            ).addTo(map_0a71bd34d8933ce743f394f95bcb6eac);
+        
+    
+            var icon_f9a2d5680e3033cc30cfc6b0d196dca7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ac0477006d6a0f3be01a8f4bb5d62d49.setIcon(icon_f9a2d5680e3033cc30cfc6b0d196dca7);
+        
+    
+        var popup_b704d801989f689fc7fb28055d3c6866 = L.popup({});
+
+        
+            
+                var html_1b169d3ecd87daf1ee7f185fd0da1da7 = $(`<div id="html_1b169d3ecd87daf1ee7f185fd0da1da7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rise Park</h1><div class="nugget-popup"><p>Local areas of Rise Park were saturated prior to and during the storm, producing rapid overland flow and ponding; surface water from surrounding higher ground flowed down towards Bestwood Road, with roadways conveying runoff. (p10)</p></div></div></body></div>`)[0];
+                popup_b704d801989f689fc7fb28055d3c6866.setContent(html_1b169d3ecd87daf1ee7f185fd0da1da7);
+            
+        
+
+        marker_ac0477006d6a0f3be01a8f4bb5d62d49.bindPopup(popup_b704d801989f689fc7fb28055d3c6866)
+        ;
+
+        
+    
+</script>
+</html>
