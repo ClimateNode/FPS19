@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_689a6f8cb7eda7b5610d806e812c2a8f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_689a6f8cb7eda7b5610d806e812c2a8f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_689a6f8cb7eda7b5610d806e812c2a8f = L.map(
+                "map_689a6f8cb7eda7b5610d806e812c2a8f",
+                {
+                    center: [52.94849931428571, -1.1923326142857142],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e120ef538d587666d02940ba288e8e7b = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_e120ef538d587666d02940ba288e8e7b.addTo(map_689a6f8cb7eda7b5610d806e812c2a8f);
+    
+            var marker_92a4cba07fc685eeab60daf6f0188b3b = L.marker(
+                [52.95342, -1.149646],
+                {}
+            ).addTo(map_689a6f8cb7eda7b5610d806e812c2a8f);
+        
+    
+            var icon_ef9735281d7e460b66f9acf6b34bed9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_92a4cba07fc685eeab60daf6f0188b3b.setIcon(icon_ef9735281d7e460b66f9acf6b34bed9c);
+        
+    
+        var popup_700fc08ea7b55f423fd787dc091f1dbd = L.popup({});
+
+        
+            
+                var html_0bd32b804e7467ea63209e5766e58c6f = $(`<div id="html_0bd32b804e7467ea63209e5766e58c6f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottingham Unitary Authority</h1><div class="nugget-popup"><p>The event on 17 June 2020 caused internal flooding of properties within the Nottingham City administrative area (specifically in Wollaton West). (p7)</p></div><div class="nugget-popup"><p>Properties in the city experienced internal and external flooding during the event. Residents were displaced as properties were uninhabitable while repairs were undertaken; damage included unrepairable furniture, furnishings, floorboards, carpets and items stored in garages. Impacts were amplified by the COVID&ndash;19 pandemic. [PAG] (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 properties (p7)</p></div><div class="nugget-popup quant"><p>11 properties flooded internally (across Sydney Road, Kingswood Road and Hollinwell Avenue); at least 3 properties affected externally [PAG] (p11)</p></div></div></body></div>`)[0];
+                popup_700fc08ea7b55f423fd787dc091f1dbd.setContent(html_0bd32b804e7467ea63209e5766e58c6f);
+            
+        
+
+        marker_92a4cba07fc685eeab60daf6f0188b3b.bindPopup(popup_700fc08ea7b55f423fd787dc091f1dbd)
+        ;
+
+        
+    
+    
+            var marker_42e6b681c504efb26528126f89809421 = L.marker(
+                [52.9572521, -1.1994438],
+                {}
+            ).addTo(map_689a6f8cb7eda7b5610d806e812c2a8f);
+        
+    
+            var icon_40dfc98a66ec2b86f99a35a2e3360221 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_42e6b681c504efb26528126f89809421.setIcon(icon_40dfc98a66ec2b86f99a35a2e3360221);
+        
+    
+        var popup_30d5495e18a42e1559973bbf2b41a28b = L.popup({});
+
+        
+            
+                var html_01de1e8ef1eaecdf91cb2f1c0c4fb05e = $(`<div id="html_01de1e8ef1eaecdf91cb2f1c0c4fb05e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sydney Road, Wollaton</h1><div class="nugget-popup"><p>Intense storm produced overland flows across the road and the sewer system surcharged, causing highway and property flooding on Sydney Road. (p4)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties during the flood event; part of the event on 17 June 2020 that caused internal flooding to properties across Sydney Road, Kingswood Road and Hollinwell Avenue. [PAG] (p6)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties (water entered internal living spaces) associated with the local surface water sewer system. [PAG] (p7)</p></div><div class="nugget-popup"><p>Properties at the lowest points on Sydney Road were flooded when intense, localised thunderstorm&ndash;generated overland flows ran across the highway and gardens; floodwater breached the carriageway thresholds and entered properties. Surcharging of the surface water sewer and manholes contributed to the volume of floodwater and road gullies were unable to discharge when the sewer was at capacity. (p10)</p></div><div class="nugget-popup"><p>Properties on Sydney Road flooded internally during the event; residents were displaced from uninhabitable properties while repairs were carried out. Damage included unrepairable furniture, furnishings, floorboards, carpets and items stored in garages. (p11)</p></div><div class="nugget-popup"><p>Residential properties were flooded internally as a result of an overland flow route generated by a short, high&ndash;intensity rainfall event that exceeded drainage capacity. (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 properties (total across Sydney Road, Kingswood Road and Hollinwell Avenue) [PAG] (p6)</p></div><div class="nugget-popup quant"><p>Part of 11 properties that experienced internal flooding on 17 June 2020. [PAG] (p7)</p></div><div class="nugget-popup quant"><p>11 properties flooded internally (across Sydney Road, Kingswood Road and Hollinwell Avenue) (p11)</p></div><div class="nugget-popup quant"><p>11 residential properties (across Sydney Road, Kingswood Road and Hollinwell Avenue) (p14)</p></div></div></body></div>`)[0];
+                popup_30d5495e18a42e1559973bbf2b41a28b.setContent(html_01de1e8ef1eaecdf91cb2f1c0c4fb05e);
+            
+        
+
+        marker_42e6b681c504efb26528126f89809421.bindPopup(popup_30d5495e18a42e1559973bbf2b41a28b)
+        ;
+
+        
+    
+    
+            var marker_f06f01d1e26d6a76ec4d86f3520c19bf = L.marker(
+                [52.9566708, -1.1983438],
+                {}
+            ).addTo(map_689a6f8cb7eda7b5610d806e812c2a8f);
+        
+    
+            var icon_c584219a36ab9aa1d5c2102bc7fb566b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f06f01d1e26d6a76ec4d86f3520c19bf.setIcon(icon_c584219a36ab9aa1d5c2102bc7fb566b);
+        
+    
+        var popup_c02e3c197cf9e3b3c5050265631cc681 = L.popup({});
+
+        
+            
+                var html_1d207100c275291265132d49087c750b = $(`<div id="html_1d207100c275291265132d49087c750b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingswood Road, Wollaton</h1><div class="nugget-popup"><p>Intense storm produced overland flows across the road and the sewer system surcharged, causing highway and property flooding on Kingswood Road. [PAG] (p4)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties during the flood event; part of the event on 17 June 2020 that caused internal flooding to properties across Sydney Road, Kingswood Road and Hollinwell Avenue. [PAG] (p6)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties (water entered internal living spaces) associated with the local surface water sewer system. [PAG] (p7)</p></div><div class="nugget-popup"><p>Kingswood Road was the focus of the Section 19 flood investigation; the thunderstorm on 17 June 2020 produced intense, localised rainfall over this location and contributed to the flood event being investigated (MapRain estimate provided for the location). [PAG] (p9)</p></div><div class="nugget-popup"><p>Overland flow and overwhelmed drainage caused flood water to breach the carriageway threshold and enter properties at the low points on Kingswood Road. [PAG] (p10)</p></div><div class="nugget-popup"><p>Properties on Kingswood Road flooded internally during the event; residents were displaced from uninhabitable properties while repairs were carried out. Damage included unrepairable furniture, furnishings, floorboards, carpets and items stored in garages. [PAG] (p11)</p></div><div class="nugget-popup"><p>Residential properties on Kingswood Road were flooded internally as part of an overland flow event caused by a short high&ndash;intensity rainfall that exceeded drainage system capacity. [PAG] (p13)</p></div><div class="nugget-popup"><p>Residential properties were flooded internally due to overland flow from a short, high&ndash;intensity rainfall event that exceeded drainage capacity; highway drainage ponding at Kingswood Road was identified for investigation. [TAB,PAG] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 properties (total across Sydney Road, Kingswood Road and Hollinwell Avenue) [PAG] (p6)</p></div><div class="nugget-popup quant"><p>Part of 11 properties that experienced internal flooding on 17 June 2020. [PAG] (p7)</p></div><div class="nugget-popup quant"><p>MapRain UK estimate of 47 mm of rain between 16:30 and 18:15 at Kingswood Road; flooding occurred within ~30 minutes of the storm [PAG] (p10)</p></div><div class="nugget-popup quant"><p>11 properties flooded internally (across Sydney Road, Kingswood Road and Hollinwell Avenue) [PAG] (p11)</p></div><div class="nugget-popup quant"><p>11 residential properties (across Sydney Road, Kingswood Road and Hollinwell Avenue) [PAG] (p13)</p></div><div class="nugget-popup quant"><p>11 residential properties (across Sydney Road, Kingswood Road and Hollinwell Avenue) [TAB,PAG] (p14)</p></div></div></body></div>`)[0];
+                popup_c02e3c197cf9e3b3c5050265631cc681.setContent(html_1d207100c275291265132d49087c750b);
+            
+        
+
+        marker_f06f01d1e26d6a76ec4d86f3520c19bf.bindPopup(popup_c02e3c197cf9e3b3c5050265631cc681)
+        ;
+
+        
+    
+    
+            var marker_1397121e08ce2f86a8799cd09f4a29db = L.marker(
+                [52.9553985, -1.1990124],
+                {}
+            ).addTo(map_689a6f8cb7eda7b5610d806e812c2a8f);
+        
+    
+            var icon_9e78d1603d556c0c01669b5282f27ec0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1397121e08ce2f86a8799cd09f4a29db.setIcon(icon_9e78d1603d556c0c01669b5282f27ec0);
+        
+    
+        var popup_19ef1a0af05eefd1e9c15606b8721909 = L.popup({});
+
+        
+            
+                var html_0cad982444e66811c45672b0180fb574 = $(`<div id="html_0cad982444e66811c45672b0180fb574" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hollinwell Avenue, Wollaton</h1><div class="nugget-popup"><p>Intense storm produced overland flows across the road and the sewer system surcharged, causing highway and property flooding on Hollinwell Avenue. (p4)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties during the flood event; part of the event that caused internal flooding of 11 properties across Sydney Road, Kingswood Road and Hollinwell Avenue. [PAG] (p6)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties (water entered internal living spaces) associated with the local surface water sewer system. [PAG] (p7)</p></div><div class="nugget-popup"><p>Properties at the lowest points on Hollinwell Avenue were flooded by rapid overland flow from the intense storm; floodwater ran across the highway and gardens and breached carriageway thresholds into properties. The surface water sewer was exceeded, causing surcharging flows (manholes lifting) that added to flooding in this location. (p10)</p></div><div class="nugget-popup"><p>Properties on Hollinwell Avenue flooded internally during the event; residents were displaced from uninhabitable properties while repairs were carried out. Damage included unrepairable furniture, furnishings, floorboards, carpets and items stored in garages. (p11)</p></div><div class="nugget-popup"><p>Residential properties were flooded internally as a result of an overland flow route from a short, high&ndash;intensity rainfall event that exceeded drainage capacity. (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 properties (collective across Sydney Road, Kingswood Road and Hollinwell Avenue) [PAG] (p6)</p></div><div class="nugget-popup quant"><p>Part of 11 properties that experienced internal flooding on 17 June 2020. [PAG] (p7)</p></div><div class="nugget-popup quant"><p>11 properties flooded internally (across Sydney Road, Kingswood Road and Hollinwell Avenue) (p11)</p></div><div class="nugget-popup quant"><p>11 residential properties (across Sydney Road, Kingswood Road and Hollinwell Avenue) (p14)</p></div></div></body></div>`)[0];
+                popup_19ef1a0af05eefd1e9c15606b8721909.setContent(html_0cad982444e66811c45672b0180fb574);
+            
+        
+
+        marker_1397121e08ce2f86a8799cd09f4a29db.bindPopup(popup_19ef1a0af05eefd1e9c15606b8721909)
+        ;
+
+        
+    
+    
+            var marker_c8bd202602eec93e8a757585c6a4f352 = L.marker(
+                [52.958239, -1.1980389],
+                {}
+            ).addTo(map_689a6f8cb7eda7b5610d806e812c2a8f);
+        
+    
+            var icon_e6265fb6c64b848d942696c3908e9080 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c8bd202602eec93e8a757585c6a4f352.setIcon(icon_e6265fb6c64b848d942696c3908e9080);
+        
+    
+        var popup_f0ee8274f0ea7acdd56c2beceb0fd274 = L.popup({});
+
+        
+            
+                var html_d22a385c1fe6af7fa595acc4122c2478 = $(`<div id="html_d22a385c1fe6af7fa595acc4122c2478" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Seaford Avenue, Wollaton</h1><div class="nugget-popup"><p>Intense storm produced overland flows across the road and the sewer system surcharged, causing highway and property flooding on Seaford Avenue. (p4)</p></div><div class="nugget-popup"><p>Flooding was reported later in Seaford Avenue in connection with the same flood event (report does not specify whether this was internal flooding). [PAG] (p6)</p></div><div class="nugget-popup"><p>Flooding was reported on Seaford Avenue during the same short, high&ndash;intensity rainfall event that produced overland flow and exceeded drainage capacity. (p14)</p></div></div></body></div>`)[0];
+                popup_f0ee8274f0ea7acdd56c2beceb0fd274.setContent(html_d22a385c1fe6af7fa595acc4122c2478);
+            
+        
+
+        marker_c8bd202602eec93e8a757585c6a4f352.bindPopup(popup_f0ee8274f0ea7acdd56c2beceb0fd274)
+        ;
+
+        
+    
+    
+            var marker_004202c722e5ac951028465e26c8bb2e = L.marker(
+                [52.9531492, -1.22043],
+                {}
+            ).addTo(map_689a6f8cb7eda7b5610d806e812c2a8f);
+        
+    
+            var icon_0cfe7d8d196107fba8200cdf5e14b327 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_004202c722e5ac951028465e26c8bb2e.setIcon(icon_0cfe7d8d196107fba8200cdf5e14b327);
+        
+    
+        var popup_08ce3b650eae0b2f4e13d16fd4eb73e9 = L.popup({});
+
+        
+            
+                var html_925db82d1246c482d9571bb26314c46d = $(`<div id="html_925db82d1246c482d9571bb26314c46d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wollaton</h1><div class="nugget-popup"><p>An intense summer storm on 17 June 2020 produced a significant volume of rain across Wollaton that overwhelmed local drainage, causing overland flows, sewer surcharging, highway flooding and property flooding across the area. (p4)</p></div><div class="nugget-popup"><p>The Wollaton area was within the extremely localised thunderstorm that moved from Clifton to Wollaton on 17 June 2020; this produced intense, rapid rainfall that caused the flood event affecting this catchment investigated in the report. [PAG] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>more than 5 properties reported internal flooding (p4)</p></div></div></body></div>`)[0];
+                popup_08ce3b650eae0b2f4e13d16fd4eb73e9.setContent(html_925db82d1246c482d9571bb26314c46d);
+            
+        
+
+        marker_004202c722e5ac951028465e26c8bb2e.bindPopup(popup_08ce3b650eae0b2f4e13d16fd4eb73e9)
+        ;
+
+        
+    
+</script>
+</html>
