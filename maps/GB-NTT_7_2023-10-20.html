@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5dcae761a5283f372c7e62fe9df1d20b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5dcae761a5283f372c7e62fe9df1d20b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5dcae761a5283f372c7e62fe9df1d20b = L.map(
+                "map_5dcae761a5283f372c7e62fe9df1d20b",
+                {
+                    center: [53.0239599875, -1.1114298875],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c4f819d8ad80c17f35750768d7fd4f10 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_c4f819d8ad80c17f35750768d7fd4f10.addTo(map_5dcae761a5283f372c7e62fe9df1d20b);
+    
+            var marker_fa7c89abfbb9f0eb1c63511e45699247 = L.marker(
+                [52.9868649, -1.1419374],
+                {}
+            ).addTo(map_5dcae761a5283f372c7e62fe9df1d20b);
+        
+    
+            var icon_d565dffcd089b44941d47bb9ffd58835 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fa7c89abfbb9f0eb1c63511e45699247.setIcon(icon_d565dffcd089b44941d47bb9ffd58835);
+        
+    
+        var popup_32eefb5173b3555a6974a31b8a9a3681 = L.popup({});
+
+        
+            
+                var html_282f626824f48781d2a849d0c0e6017c = $(`<div id="html_282f626824f48781d2a849d0c0e6017c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mansfield Road, Arnold</h1><div class="nugget-popup"><p>Residential properties on Mansfield Road were affected by flooding. [PAG] (p2)</p></div><div class="nugget-popup"><p>Surface water flow from the east ran north along Mansfield Road; adjacent watercourses were overwhelmed during Storm Babet, causing water to flood onto the highway and enter properties. Mansfield Road was submerged to a significant depth, causing significant disruption to traffic. [IMG,PAG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties [PAG] (p2)</p></div><div class="nugget-popup quant"><p>2 residential properties; 1 business [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_32eefb5173b3555a6974a31b8a9a3681.setContent(html_282f626824f48781d2a849d0c0e6017c);
+            
+        
+
+        marker_fa7c89abfbb9f0eb1c63511e45699247.bindPopup(popup_32eefb5173b3555a6974a31b8a9a3681)
+        ;
+
+        
+    
+    
+            var marker_98b1c36846290f6adabc5d26fc66d0ac = L.marker(
+                [53.0031033, -1.1224348],
+                {}
+            ).addTo(map_5dcae761a5283f372c7e62fe9df1d20b);
+        
+    
+            var icon_1aa12a64eb02b6e367c1eb4be2d11bee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_98b1c36846290f6adabc5d26fc66d0ac.setIcon(icon_1aa12a64eb02b6e367c1eb4be2d11bee);
+        
+    
+        var popup_1b5f535ef5b42b189aa4fa0cd8502e25 = L.popup({});
+
+        
+            
+                var html_7b94c5a23cf745da25706ce7d72cc277 = $(`<div id="html_7b94c5a23cf745da25706ce7d72cc277" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bonington Drive, Arnold</h1><div class="nugget-popup"><p>Residential properties on Bonington Drive were affected by flooding. [PAG] (p2)</p></div><div class="nugget-popup"><p>Properties on Bonington Drive were affected by flooding (details on cause and exact impacts not provided in the section). [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Two residential properties experienced internal flooding after water flowed from the Coppice Road flood storage/attenuation basin through Bentwell Avenue back gardens and onto Bonington Drive. Significant damage was reported to gardens and outbuildings. [IMG] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [PAG] (p2)</p></div><div class="nugget-popup quant"><p>2 properties [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>2 residential properties [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_1b5f535ef5b42b189aa4fa0cd8502e25.setContent(html_7b94c5a23cf745da25706ce7d72cc277);
+            
+        
+
+        marker_98b1c36846290f6adabc5d26fc66d0ac.bindPopup(popup_1b5f535ef5b42b189aa4fa0cd8502e25)
+        ;
+
+        
+    
+    
+            var marker_deba06f11d32b44b35ab2f878f48dc8f = L.marker(
+                [53.0143348, -1.129693],
+                {}
+            ).addTo(map_5dcae761a5283f372c7e62fe9df1d20b);
+        
+    
+            var icon_cb53542dbc2343715d3bfb32d67bfc18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_deba06f11d32b44b35ab2f878f48dc8f.setIcon(icon_cb53542dbc2343715d3bfb32d67bfc18);
+        
+    
+        var popup_c34147f709abdd0d48b2b6c5862765bb = L.popup({});
+
+        
+            
+                var html_7eb1ede86832e6f59282a838f744c5e7 = $(`<div id="html_7eb1ede86832e6f59282a838f744c5e7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Georgia Drive, Arnold</h1><div class="nugget-popup"><p>Residential property on Georgia Drive was flooded. [PAG] (p2)</p></div><div class="nugget-popup"><p>A property on Georgia Drive was affected by flooding (specific cause and detailed impacts not described in the provided text). [IMG,PAG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [PAG] (p2)</p></div><div class="nugget-popup quant"><p>1 property [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_c34147f709abdd0d48b2b6c5862765bb.setContent(html_7eb1ede86832e6f59282a838f744c5e7);
+            
+        
+
+        marker_deba06f11d32b44b35ab2f878f48dc8f.bindPopup(popup_c34147f709abdd0d48b2b6c5862765bb)
+        ;
+
+        
+    
+    
+            var marker_fc0fd0f498d7e0bf32b4f85361b93a5f = L.marker(
+                [53.0067661, -1.1235167],
+                {}
+            ).addTo(map_5dcae761a5283f372c7e62fe9df1d20b);
+        
+    
+            var icon_3f185e531e7e61c024ae30c152f46bb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fc0fd0f498d7e0bf32b4f85361b93a5f.setIcon(icon_3f185e531e7e61c024ae30c152f46bb2);
+        
+    
+        var popup_8a75d0b4d3dcbbbd374f5c3bc34f558d = L.popup({});
+
+        
+            
+                var html_868bb3e19619c49172e05ab65430bf83 = $(`<div id="html_868bb3e19619c49172e05ab65430bf83" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Coppice Road, Arnold</h1><div class="nugget-popup"><p>The flood storage/attenuation basin at Coppice Road overtopped during the event, releasing water that flowed through back gardens on Bentwell Avenue and into properties on Bonington Drive. (p5)</p></div></div></body></div>`)[0];
+                popup_8a75d0b4d3dcbbbd374f5c3bc34f558d.setContent(html_868bb3e19619c49172e05ab65430bf83);
+            
+        
+
+        marker_fc0fd0f498d7e0bf32b4f85361b93a5f.bindPopup(popup_8a75d0b4d3dcbbbd374f5c3bc34f558d)
+        ;
+
+        
+    
+    
+            var marker_a42f1bac4dbd40404c70dbc0ae4eeeff = L.marker(
+                [53.0033699, -1.1196899],
+                {}
+            ).addTo(map_5dcae761a5283f372c7e62fe9df1d20b);
+        
+    
+            var icon_a4f6bdb8a97ea9036bee762feb8ef261 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a42f1bac4dbd40404c70dbc0ae4eeeff.setIcon(icon_a4f6bdb8a97ea9036bee762feb8ef261);
+        
+    
+        var popup_e8258fd1e4eafd1ae1d77587c6a12e0e = L.popup({});
+
+        
+            
+                var html_7245091521653831fc15faeefa72d2de = $(`<div id="html_7245091521653831fc15faeefa72d2de" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bentwell Avenue, Arnold</h1><div class="nugget-popup"><p>Back gardens of properties on Bentwell Avenue were flooded as water from the Coppice Road basin flowed through them en route to Bonington Drive. (p5)</p></div></div></body></div>`)[0];
+                popup_e8258fd1e4eafd1ae1d77587c6a12e0e.setContent(html_7245091521653831fc15faeefa72d2de);
+            
+        
+
+        marker_a42f1bac4dbd40404c70dbc0ae4eeeff.bindPopup(popup_e8258fd1e4eafd1ae1d77587c6a12e0e)
+        ;
+
+        
+    
+    
+            var marker_094441fcbd96f5693c2e0a0b279c4b80 = L.marker(
+                [53.0260539, -1.1071169],
+                {}
+            ).addTo(map_5dcae761a5283f372c7e62fe9df1d20b);
+        
+    
+            var icon_711f49a310a835556a0945003204f2d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_094441fcbd96f5693c2e0a0b279c4b80.setIcon(icon_711f49a310a835556a0945003204f2d5);
+        
+    
+        var popup_8d9461d59869572a0f0f908de65a5138 = L.popup({});
+
+        
+            
+                var html_0e4fc53dbd5c5da43ef68086dd5fed6c = $(`<div id="html_0e4fc53dbd5c5da43ef68086dd5fed6c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gedling</h1><div class="nugget-popup"><p>Parts of the borough (notably Arnold) experienced flooding during Storm Babet: internal flooding affected residential properties and a business, and gardens, outbuildings and roads were flooded. (p1)</p></div><div class="nugget-popup"><p>Garden flooding observed downstream of the overtopped Coppice Road Attenuation Basin; limited impact on properties such that evacuation was not required. [PAG] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 residential properties; 1 business (p1)</p></div></div></body></div>`)[0];
+                popup_8d9461d59869572a0f0f908de65a5138.setContent(html_0e4fc53dbd5c5da43ef68086dd5fed6c);
+            
+        
+
+        marker_094441fcbd96f5693c2e0a0b279c4b80.bindPopup(popup_8d9461d59869572a0f0f908de65a5138)
+        ;
+
+        
+    
+    
+            var marker_4c9c707aaa3acdee64365b1a7792ebdc = L.marker(
+                [53.145927, -1.0214971],
+                {}
+            ).addTo(map_5dcae761a5283f372c7e62fe9df1d20b);
+        
+    
+            var icon_93cd9040248d84d2345a74f4d9463bb2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4c9c707aaa3acdee64365b1a7792ebdc.setIcon(icon_93cd9040248d84d2345a74f4d9463bb2);
+        
+    
+        var popup_e97131eb27ed956b5e136b235706419d = L.popup({});
+
+        
+            
+                var html_6e79ef1d0e86b287982d499ae2a78400 = $(`<div id="html_6e79ef1d0e86b287982d499ae2a78400" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottinghamshire</h1><div class="nugget-popup"><p>Major flood event affected the county: internal flooding of properties was verified; council staff attended sites to assess internal flooding, fed verified flood impact data to partners, delivered sandbags and closed roads to reduce additional flood damage. [PAG] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>77 roads [PAG] (p7)</p></div></div></body></div>`)[0];
+                popup_e97131eb27ed956b5e136b235706419d.setContent(html_6e79ef1d0e86b287982d499ae2a78400);
+            
+        
+
+        marker_4c9c707aaa3acdee64365b1a7792ebdc.bindPopup(popup_e97131eb27ed956b5e136b235706419d)
+        ;
+
+        
+    
+    
+            var marker_6a07c3f75ab5d8b347f9f94771858094 = L.marker(
+                [53.00526, -1.1255533],
+                {}
+            ).addTo(map_5dcae761a5283f372c7e62fe9df1d20b);
+        
+    
+            var icon_7b3a523a4aa71fb877c39051b4b3ec4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6a07c3f75ab5d8b347f9f94771858094.setIcon(icon_7b3a523a4aa71fb877c39051b4b3ec4b);
+        
+    
+        var popup_cbccbe5a47e672eee9ff3fb653ea904f = L.popup({});
+
+        
+            
+                var html_4ec375fdfacaa5d4761c13c3382598cb = $(`<div id="html_4ec375fdfacaa5d4761c13c3382598cb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Arnold</h1><div class="nugget-popup"><p>Areas of Arnold suffered internal flooding from sustained heavy rainfall during Storm Babet. Five residential properties and one business experienced internal flooding; additional gardens, outbuildings and roads were flooded. Flooding was exacerbated by previously saturated ground. (p1)</p></div><div class="nugget-popup"><p>Flooding affected areas within the town, specifically the streets Mansfield Road, Bonington Drive and Georgia Drive; residential properties on these streets were impacted. [PAG] (p2)</p></div><div class="nugget-popup"><p>Flooding affected multiple streets in Arnold (Mansfield Road, Bonington Drive, Georgia Drive), with floodwater entering properties and roads being submerged, causing disruption to traffic and property flooding. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Two residential properties on Bonington Drive experienced internal (internal) flooding; significant damage to gardens and outbuildings. Flooding was caused by water flowing from the Coppice Road flood storage basin after the attenuation basin overtopped, with flows travelling through back gardens on Bentwell Avenue before entering properties on Bonington Drive. Separately, one residential property on Georgia Drive was flooded when overland flows from the agricultural field to the north entered the property. [IMG,MUL] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 residential properties; 1 business (p1)</p></div><div class="nugget-popup quant"><p>3 properties (Mansfield Road); 2 properties (Bonington Drive); 1 property (Georgia Drive) [PAG] (p2)</p></div><div class="nugget-popup quant"><p>6 properties [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>2 residential properties on Bonington Drive; 1 residential property on Georgia Drive [IMG,MUL] (p5)</p></div></div></body></div>`)[0];
+                popup_cbccbe5a47e672eee9ff3fb653ea904f.setContent(html_4ec375fdfacaa5d4761c13c3382598cb);
+            
+        
+
+        marker_6a07c3f75ab5d8b347f9f94771858094.bindPopup(popup_cbccbe5a47e672eee9ff3fb653ea904f)
+        ;
+
+        
+    
+</script>
+</html>
