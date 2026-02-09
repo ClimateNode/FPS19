@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_da648ec3b653c2dd83db1617e8fbd3c8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_da648ec3b653c2dd83db1617e8fbd3c8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_da648ec3b653c2dd83db1617e8fbd3c8 = L.map(
+                "map_da648ec3b653c2dd83db1617e8fbd3c8",
+                {
+                    center: [53.0110624, -1.22742188],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_55a54d3c13d98bd1c1c8ad389943574a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_55a54d3c13d98bd1c1c8ad389943574a.addTo(map_da648ec3b653c2dd83db1617e8fbd3c8);
+    
+            var marker_66ec33da4d53005e7c0c9f6cc7bba990 = L.marker(
+                [52.9838898, -1.2847459],
+                {}
+            ).addTo(map_da648ec3b653c2dd83db1617e8fbd3c8);
+        
+    
+            var icon_5a05e008c9312494987f5cf8e52f9410 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_66ec33da4d53005e7c0c9f6cc7bba990.setIcon(icon_5a05e008c9312494987f5cf8e52f9410);
+        
+    
+        var popup_ad1875531f964883c0e902d82240c25c = L.popup({});
+
+        
+            
+                var html_55753c7b245ba0a089fae1d1b7188646 = $(`<div id="html_55753c7b245ba0a089fae1d1b7188646" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Awsworth Lane, Cossall</h1><div class="nugget-popup"><p>Manholes surcharged within Awsworth Lane, filling the highway and allowing floodwater to flow into adjacent land and into properties, resulting in internal property flooding. [IMG,PAG] (p2)</p></div><div class="nugget-popup"><p>Manholes surcharged, filling the highway and flowing into adjacent land and properties resulting in localised internal property flooding. [PAG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [IMG,PAG] (p2)</p></div><div class="nugget-popup quant"><p>2 properties [PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_ad1875531f964883c0e902d82240c25c.setContent(html_55753c7b245ba0a089fae1d1b7188646);
+            
+        
+
+        marker_66ec33da4d53005e7c0c9f6cc7bba990.bindPopup(popup_ad1875531f964883c0e902d82240c25c)
+        ;
+
+        
+    
+    
+            var marker_f96c1d07937fbcf54dc3e60d29d12583 = L.marker(
+                [52.9767354, -1.2839147],
+                {}
+            ).addTo(map_da648ec3b653c2dd83db1617e8fbd3c8);
+        
+    
+            var icon_12c99a6a66f38b8c357bcecee7c14953 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f96c1d07937fbcf54dc3e60d29d12583.setIcon(icon_12c99a6a66f38b8c357bcecee7c14953);
+        
+    
+        var popup_268c02c8a0493541df57545f3304a00d = L.popup({});
+
+        
+            
+                var html_18ea17ed5b6b92145d48f778005f8eb0 = $(`<div id="html_18ea17ed5b6b92145d48f778005f8eb0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Lane, Cossall</h1><div class="nugget-popup"><p>Manholes within Church Lane surcharged, filling the highway and allowing floodwater to flow into adjacent land and properties causing internal property flooding; additionally an ordinary watercourse at the rear of properties was at capacity so highway gulleys could not operate, producing localised highway flooding. [IMG,PAG] (p2)</p></div><div class="nugget-popup"><p>Manholes surcharged, filling the highway and flowing into adjacent land and properties causing localised internal property flooding; the ordinary watercourse at the rear of properties was at capacity so highway gullies could not operate effectively, producing localised highway flooding. [PAG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties [IMG,PAG] (p2)</p></div><div class="nugget-popup quant"><p>3 properties [PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_268c02c8a0493541df57545f3304a00d.setContent(html_18ea17ed5b6b92145d48f778005f8eb0);
+            
+        
+
+        marker_f96c1d07937fbcf54dc3e60d29d12583.bindPopup(popup_268c02c8a0493541df57545f3304a00d)
+        ;
+
+        
+    
+    
+            var marker_284844406e7c0e843090d376f8f097f9 = L.marker(
+                [53.145927, -1.0214971],
+                {}
+            ).addTo(map_da648ec3b653c2dd83db1617e8fbd3c8);
+        
+    
+            var icon_c735b9ca494983ddcdac65119b1df195 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_284844406e7c0e843090d376f8f097f9.setIcon(icon_c735b9ca494983ddcdac65119b1df195);
+        
+    
+        var popup_3c6c32a6381db54e143b739deeec50a0 = L.popup({});
+
+        
+            
+                var html_d2776a3e48fd17688481cce3bb3281ea = $(`<div id="html_d2776a3e48fd17688481cce3bb3281ea" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottinghamshire</h1><div class="nugget-popup"><p>Significant flooding impacts occurred across the county: roads were closed to promote safety and avoid further flood damage, sandbags were delivered to affected areas, and internal flooding of properties was verified and assessed as part of the response and short&ndash;term recovery. [PAG] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>77 roads [PAG] (p5)</p></div></div></body></div>`)[0];
+                popup_3c6c32a6381db54e143b739deeec50a0.setContent(html_d2776a3e48fd17688481cce3bb3281ea);
+            
+        
+
+        marker_284844406e7c0e843090d376f8f097f9.bindPopup(popup_3c6c32a6381db54e143b739deeec50a0)
+        ;
+
+        
+    
+    
+            var marker_dd0c69d1722698deccdf9029b955d7ae = L.marker(
+                [52.973462, -1.2648721],
+                {}
+            ).addTo(map_da648ec3b653c2dd83db1617e8fbd3c8);
+        
+    
+            var icon_26b0b70581a62219c229a295b029e484 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dd0c69d1722698deccdf9029b955d7ae.setIcon(icon_26b0b70581a62219c229a295b029e484);
+        
+    
+        var popup_b62e565d9c4e50ef53a328f07d8c92be = L.popup({});
+
+        
+            
+                var html_5771a9e266000819c9c47fd053e49a51 = $(`<div id="html_5771a9e266000819c9c47fd053e49a51" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Broxtowe</h1><div class="nugget-popup"><p>Communities in Broxtowe were affected by flooding; local recovery is being managed by the borough council and support (sandbags, hardship funds and relief grants) has been provided to affected residents and businesses. (p5)</p></div></div></body></div>`)[0];
+                popup_b62e565d9c4e50ef53a328f07d8c92be.setContent(html_5771a9e266000819c9c47fd053e49a51);
+            
+        
+
+        marker_dd0c69d1722698deccdf9029b955d7ae.bindPopup(popup_b62e565d9c4e50ef53a328f07d8c92be)
+        ;
+
+        
+    
+    
+            var marker_60814a97fe476ed589d620ac9486e9f9 = L.marker(
+                [52.9752978, -1.2820796],
+                {}
+            ).addTo(map_da648ec3b653c2dd83db1617e8fbd3c8);
+        
+    
+            var icon_797a739dbd4228c67e39519633d36c90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_60814a97fe476ed589d620ac9486e9f9.setIcon(icon_797a739dbd4228c67e39519633d36c90);
+        
+    
+        var popup_314f037dea05338b8f0486ac358cac35 = L.popup({});
+
+        
+            
+                var html_0f33d824de5558fecbe78ab6450f5a91 = $(`<div id="html_0f33d824de5558fecbe78ab6450f5a91" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cossall</h1><div class="nugget-popup"><p>Sustained heavy rainfall during Storm Babet on 20 October 2023, on already saturated ground, caused surface water flooding in the village; roads and properties in Cossall were flooded. (p1)</p></div><div class="nugget-popup"><p>Localised internal property flooding occurred in the village. Flooding was caused by surcharging manholes that filled the highway and flowed into adjacent land and properties, and by an ordinary watercourse at capacity which prevented highway gulleys from operating, producing localised highway flooding. [IMG] (p2)</p></div><div class="nugget-popup"><p>Localised internal property flooding within the village (specifically on Awsworth Lane and Church Lane) and localised highway flooding where gullies were overwhelmed; manhole surcharging contributed to flow into properties and adjacent land. [IMG,PAG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties; 3 properties [IMG] (p2)</p></div><div class="nugget-popup quant"><p>5 properties (2 on Awsworth Lane, 3 on Church Lane) [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_314f037dea05338b8f0486ac358cac35.setContent(html_0f33d824de5558fecbe78ab6450f5a91);
+            
+        
+
+        marker_60814a97fe476ed589d620ac9486e9f9.bindPopup(popup_314f037dea05338b8f0486ac358cac35)
+        ;
+
+        
+    
+</script>
+</html>
