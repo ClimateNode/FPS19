@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8a2980ae57f1f7ffcc05cf780a346936 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8a2980ae57f1f7ffcc05cf780a346936" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8a2980ae57f1f7ffcc05cf780a346936 = L.map(
+                "map_8a2980ae57f1f7ffcc05cf780a346936",
+                {
+                    center: [53.066564945749086, -0.8723239664605353],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3a6731cbe7b8fe1f4aa36c5ac479aa27 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_3a6731cbe7b8fe1f4aa36c5ac479aa27.addTo(map_8a2980ae57f1f7ffcc05cf780a346936);
+    
+            var marker_54c4f90dc79ea5d54108f2ca6d76d7e5 = L.marker(
+                [52.8770582, -1.3062493],
+                {}
+            ).addTo(map_8a2980ae57f1f7ffcc05cf780a346936);
+        
+    
+            var icon_dd733878dceb4e040253da19430805bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_54c4f90dc79ea5d54108f2ca6d76d7e5.setIcon(icon_dd733878dceb4e040253da19430805bf);
+        
+    
+        var popup_3e84bbe68fe7f37da25db0cd858c02de = L.popup({});
+
+        
+            
+                var html_41acd346d07510a35f2b832bfd7b9fe1 = $(`<div id="html_41acd346d07510a35f2b832bfd7b9fe1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Trent</h1><div class="nugget-popup"><p>Surcharged and flooded out of bank due to heavy persistent rainfall in upper catchments; this river flooding caused internal flooding in Collingham and meant surface&ndash;water outfalls were unusable, worsening flooding to surrounding areas and the highway network. [IMG] (p3)</p></div><div class="nugget-popup"><p>The River Trent is the main river running along the western edge of the map and is described as the corridor along which the flooding mechanism operated; it caused fluvial flooding that placed adjacent areas into Flood Zone 3 and drove the local river&ndash;flood impacts shown on the planning map. [IMG,PAG] (p4)</p></div><div class="nugget-popup"><p>Predicted extreme levels of the River Trent prompted the council to coordinate in&ndash;person visits to communities at high risk and indicated a continued risk of river flooding after the initial surface&ndash;water flooding. (p7)</p></div></div></body></div>`)[0];
+                popup_3e84bbe68fe7f37da25db0cd858c02de.setContent(html_41acd346d07510a35f2b832bfd7b9fe1);
+            
+        
+
+        marker_54c4f90dc79ea5d54108f2ca6d76d7e5.bindPopup(popup_3e84bbe68fe7f37da25db0cd858c02de)
+        ;
+
+        
+    
+    
+            var marker_c7760e8ce39ce2eb95ce5da385d461fc = L.marker(
+                [53.1516899, -0.7597277],
+                {}
+            ).addTo(map_8a2980ae57f1f7ffcc05cf780a346936);
+        
+    
+            var icon_c27d277a4c1b7fdbad819a5532f3bcb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c7760e8ce39ce2eb95ce5da385d461fc.setIcon(icon_c27d277a4c1b7fdbad819a5532f3bcb7);
+        
+    
+        var popup_d15b2974bfd30f1be5c0a6d53c8dac4d = L.popup({});
+
+        
+            
+                var html_106a02b38f686127ba7c323fb6e31af0 = $(`<div id="html_106a02b38f686127ba7c323fb6e31af0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Low Street, Collingham</h1><div class="nugget-popup"><p>Internal flooding affected the area; buildings on Low Street experienced internal flooding during the event. [PAG] (p2)</p></div><div class="nugget-popup"><p>Residential area highlighted as affected by internal flooding as part of the Collingham event. Surface&ndash;water outfalls were unusable due to river surcharging, exacerbating flooding in the built&ndash;up area and impacting the local highway network. [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_d15b2974bfd30f1be5c0a6d53c8dac4d.setContent(html_106a02b38f686127ba7c323fb6e31af0);
+            
+        
+
+        marker_c7760e8ce39ce2eb95ce5da385d461fc.bindPopup(popup_d15b2974bfd30f1be5c0a6d53c8dac4d)
+        ;
+
+        
+    
+    
+            var marker_89c7443c9bf7b844252b6a9517940d51 = L.marker(
+                [53.1507431, -0.7745346],
+                {}
+            ).addTo(map_8a2980ae57f1f7ffcc05cf780a346936);
+        
+    
+            var icon_463cfd3d91f20a24e3ddc9145fb15b96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_89c7443c9bf7b844252b6a9517940d51.setIcon(icon_463cfd3d91f20a24e3ddc9145fb15b96);
+        
+    
+        var popup_1cd167d3c16ca5bf15fa79690da627ed = L.popup({});
+
+        
+            
+                var html_4899673e1ebe428b67f31f741d0fe587 = $(`<div id="html_4899673e1ebe428b67f31f741d0fe587" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Carlton Ferry Lane, Collingham</h1><div class="nugget-popup"><p>Internal flooding affected the area; buildings on Carlton Ferry Lane experienced internal flooding during the event. [PAG] (p2)</p></div><div class="nugget-popup"><p>Area highlighted as affected by internal flooding. Flooding was driven by surcharging of nearby rivers (River Trent / The Fleet) and a lack of usable surface&ndash;water outfalls, which exacerbated flooding of the surrounding area and highway network. [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_1cd167d3c16ca5bf15fa79690da627ed.setContent(html_4899673e1ebe428b67f31f741d0fe587);
+            
+        
+
+        marker_89c7443c9bf7b844252b6a9517940d51.bindPopup(popup_1cd167d3c16ca5bf15fa79690da627ed)
+        ;
+
+        
+    
+    
+            var marker_912eab87ddef120c6fda03bdb75b418e = L.marker(
+                [53.1444187, -0.7694747],
+                {}
+            ).addTo(map_8a2980ae57f1f7ffcc05cf780a346936);
+        
+    
+            var icon_a5305366200f63f1b0f84cdf05530f8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_912eab87ddef120c6fda03bdb75b418e.setIcon(icon_a5305366200f63f1b0f84cdf05530f8b);
+        
+    
+        var popup_42a780a391af0e6b45eaa987aa7a4df0 = L.popup({});
+
+        
+            
+                var html_c4caa577115648fae46cb646786e03ba = $(`<div id="html_c4caa577115648fae46cb646786e03ba" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Westfield Lane, Collingham</h1><div class="nugget-popup"><p>Shown on the planning map as being within the high&ndash;risk floodplain (Flood Zone 3 area to the west of Collingham). This indicates Westfield Lane is at high risk of fluvial (river) flooding from the nearby River Trent and would be affected by the same Trent&ndash;corridor flood mechanism described in the report. [IMG] (p4)</p></div></div></body></div>`)[0];
+                popup_42a780a391af0e6b45eaa987aa7a4df0.setContent(html_c4caa577115648fae46cb646786e03ba);
+            
+        
+
+        marker_912eab87ddef120c6fda03bdb75b418e.bindPopup(popup_42a780a391af0e6b45eaa987aa7a4df0)
+        ;
+
+        
+    
+    
+            var marker_3b3bf63c5c976da0bbb10341e2408fe3 = L.marker(
+                [53.145927, -1.0214971],
+                {}
+            ).addTo(map_8a2980ae57f1f7ffcc05cf780a346936);
+        
+    
+            var icon_8c247c3d4785d9c4f26a0bc7e529ddc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3b3bf63c5c976da0bbb10341e2408fe3.setIcon(icon_8c247c3d4785d9c4f26a0bc7e529ddc8);
+        
+    
+        var popup_2e8a581bb92af0dfb3500826244874b2 = L.popup({});
+
+        
+            
+                var html_4243db894a819c2cb81d7eebc1784092 = $(`<div id="html_4243db894a819c2cb81d7eebc1784092" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottinghamshire</h1><div class="nugget-popup"><p>Experienced widespread flooding caused by heavy rain from Storm Henk. (p2)</p></div><div class="nugget-popup"><p>Flooding across the county resulted in internal flooding incidents affecting residents and businesses; county&ndash;wide response included delivery of sandbags, closure of roads for safety and resource&ndash;sharing with district/borough partners; county led recovery actions including a Community Flood Recovery Grant and Section 19 investigation. [PAG] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>69 roads [PAG] (p6)</p></div></div></body></div>`)[0];
+                popup_2e8a581bb92af0dfb3500826244874b2.setContent(html_4243db894a819c2cb81d7eebc1784092);
+            
+        
+
+        marker_3b3bf63c5c976da0bbb10341e2408fe3.bindPopup(popup_2e8a581bb92af0dfb3500826244874b2)
+        ;
+
+        
+    
+    
+            var marker_454f3bf7e7a39068dee38eff9ec1de32 = L.marker(
+                [53.1467973, -0.7579823],
+                {}
+            ).addTo(map_8a2980ae57f1f7ffcc05cf780a346936);
+        
+    
+            var icon_a532b49d78fee8a78825f22d836b98d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_454f3bf7e7a39068dee38eff9ec1de32.setIcon(icon_a532b49d78fee8a78825f22d836b98d8);
+        
+    
+        var popup_2c874bca117c7c7437249502cd2a2485 = L.popup({});
+
+        
+            
+                var html_e6f672f49c5502497b927fae689a5660 = $(`<div id="html_e6f672f49c5502497b927fae689a5660" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Collingham</h1><div class="nugget-popup"><p>Subject of a Section 19 flood investigation after Storm Henk brought heavy rain that resulted in widespread flooding across Nottinghamshire. [PAG] (p1)</p></div><div class="nugget-popup"><p>Parts of the village experienced internal flooding &mdash; specifically the two areas Low Street and Carlton Ferry Lane were affected. [IMG] (p2)</p></div><div class="nugget-popup"><p>Heavy, persistent rainfall caused the River Trent and The Fleet to surcharge and flood out of bank, resulting in internal flooding in the village. Surface&ndash;water outfalls were rendered unusable, exacerbating flooding to surrounding areas including the highway network. [IMG] (p3)</p></div><div class="nugget-popup"><p>Volunteers and community actions were required to limit flooding impacts: roads were closed to limit bow wave flooding on properties; properties in the village were at risk from bow wave/surface water flooding during the event. (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two areas (Low Street and Carlton Ferry Lane) [IMG] (p2)</p></div><div class="nugget-popup quant"><p>12 properties [IMG] (p3)</p></div></div></body></div>`)[0];
+                popup_2c874bca117c7c7437249502cd2a2485.setContent(html_e6f672f49c5502497b927fae689a5660);
+            
+        
+
+        marker_454f3bf7e7a39068dee38eff9ec1de32.bindPopup(popup_2c874bca117c7c7437249502cd2a2485)
+        ;
+
+        
+    
+</script>
+</html>
