@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d3e7d1451a57a78e1c8627c33eae8492 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d3e7d1451a57a78e1c8627c33eae8492" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d3e7d1451a57a78e1c8627c33eae8492 = L.map(
+                "map_d3e7d1451a57a78e1c8627c33eae8492",
+                {
+                    center: [52.902071750000005, -1.193892775],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b037bbb2a9f6e69b922eed96b4c67d4d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_b037bbb2a9f6e69b922eed96b4c67d4d.addTo(map_d3e7d1451a57a78e1c8627c33eae8492);
+    
+            var marker_754694b5667b645b6beb7d801fdf9a0b = L.marker(
+                [52.8202781, -1.2515304],
+                {}
+            ).addTo(map_d3e7d1451a57a78e1c8627c33eae8492);
+        
+    
+            var icon_6cfaac397a6d44431e5b69187bfece2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_754694b5667b645b6beb7d801fdf9a0b.setIcon(icon_6cfaac397a6d44431e5b69187bfece2a);
+        
+    
+        var popup_b13ff65b8c7b14aadca4a890e524acd3 = L.popup({});
+
+        
+            
+                var html_c3bd75efce75bcbcff4f396ec10e28f3 = $(`<div id="html_c3bd75efce75bcbcff4f396ec10e28f3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pasture Lane Stores</h1><div class="nugget-popup"><p>Internal flooding of properties on Pasture Lane caused by surface water runoff overwhelming the local ditch network; prolonged rainfall and a surface water flow path from agricultural fields contributed to accumulation at the village low spot. [IMG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties [IMG] (p3)</p></div></div></body></div>`)[0];
+                popup_b13ff65b8c7b14aadca4a890e524acd3.setContent(html_c3bd75efce75bcbcff4f396ec10e28f3);
+            
+        
+
+        marker_754694b5667b645b6beb7d801fdf9a0b.bindPopup(popup_b13ff65b8c7b14aadca4a890e524acd3)
+        ;
+
+        
+    
+    
+            var marker_d18bcd5260b895492375114720dfe9c8 = L.marker(
+                [52.8199941, -1.2520125],
+                {}
+            ).addTo(map_d3e7d1451a57a78e1c8627c33eae8492);
+        
+    
+            var icon_497159dd0ee6fc4d095960ffaa59c54c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d18bcd5260b895492375114720dfe9c8.setIcon(icon_497159dd0ee6fc4d095960ffaa59c54c);
+        
+    
+        var popup_0a8358068dbd10f3a0a924e2719c6106 = L.popup({});
+
+        
+            
+                var html_2dc79370ebc935a26c263d43ad5d454b = $(`<div id="html_2dc79370ebc935a26c263d43ad5d454b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pasture Lane, Sutton Bonington</h1><div class="nugget-popup"><p>Internal flooding of properties on Pasture Lane due to overwhelmed surface water drainage and ditch network following prolonged heavy rainfall. (p2)</p></div><div class="nugget-popup"><p>Internal flooding of properties on Pasture Lane due to surface water routed from fields north of the railway and an overwhelmed ditch drainage network, resulting in internal flood damage to properties. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Residents on Pasture Lane were affected by the flood; an Environment Agency pump was deployed to support resident safety; an EA asset on Pasture Lane is scheduled for maintenance; local ditch conveyance investigations relate to flows affecting the area. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties (p2)</p></div><div class="nugget-popup quant"><p>5 properties [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_0a8358068dbd10f3a0a924e2719c6106.setContent(html_2dc79370ebc935a26c263d43ad5d454b);
+            
+        
+
+        marker_d18bcd5260b895492375114720dfe9c8.bindPopup(popup_0a8358068dbd10f3a0a924e2719c6106)
+        ;
+
+        
+    
+    
+            var marker_bdfe5124909eb270f30e371713cb3a2a = L.marker(
+                [53.145927, -1.0214971],
+                {}
+            ).addTo(map_d3e7d1451a57a78e1c8627c33eae8492);
+        
+    
+            var icon_f1b55c5701de513f20f5e80a5e9e8eb5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bdfe5124909eb270f30e371713cb3a2a.setIcon(icon_f1b55c5701de513f20f5e80a5e9e8eb5);
+        
+    
+        var popup_7e64b5494ed088db0974ae45d172f88d = L.popup({});
+
+        
+            
+                var html_18c808f1d94883086e35244bae5c368f = $(`<div id="html_18c808f1d94883086e35244bae5c368f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottinghamshire</h1><div class="nugget-popup"><p>Extensive flooding across the area on 16 February 2020 driven by saturated ground and prolonged rainfall; surface water route flows from agricultural fields and an overwhelmed network of ditches led to internal flooding of properties in parts of the county. (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties (p2)</p></div></div></body></div>`)[0];
+                popup_7e64b5494ed088db0974ae45d172f88d.setContent(html_18c808f1d94883086e35244bae5c368f);
+            
+        
+
+        marker_bdfe5124909eb270f30e371713cb3a2a.bindPopup(popup_7e64b5494ed088db0974ae45d172f88d)
+        ;
+
+        
+    
+    
+            var marker_0b43211ce2a357a6350cd73b10f16b7c = L.marker(
+                [52.8220878, -1.2505311],
+                {}
+            ).addTo(map_d3e7d1451a57a78e1c8627c33eae8492);
+        
+    
+            var icon_ec29b0d6502198fc71412457116294dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0b43211ce2a357a6350cd73b10f16b7c.setIcon(icon_ec29b0d6502198fc71412457116294dd);
+        
+    
+        var popup_aef3fc2996223e7e90c38194430ad5d0 = L.popup({});
+
+        
+            
+                var html_48fa22a870d79dfb7c726e6bf95dc06e = $(`<div id="html_48fa22a870d79dfb7c726e6bf95dc06e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sutton Bonington</h1><div class="nugget-popup"><p>Surface water collected at a topographical low in the village (south&ndash;west area), with drainage ditches overwhelmed by prolonged rainfall causing internal flooding of properties. [IMG,PAG] (p2)</p></div><div class="nugget-popup"><p>Prolonged heavy rainfall and a significant surface water flow from agricultural fields accumulated at a topographic low in the south&ndash;west of the village. The village surface water drainage and ditch network became overwhelmed, contributing to internally flooded properties in the village (notably on Pasture Lane). [IMG,PAG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties [IMG,PAG] (p2)</p></div><div class="nugget-popup quant"><p>5 properties (on Pasture Lane) [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_aef3fc2996223e7e90c38194430ad5d0.setContent(html_48fa22a870d79dfb7c726e6bf95dc06e);
+            
+        
+
+        marker_0b43211ce2a357a6350cd73b10f16b7c.bindPopup(popup_aef3fc2996223e7e90c38194430ad5d0)
+        ;
+
+        
+    
+</script>
+</html>
