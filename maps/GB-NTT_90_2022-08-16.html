@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3bcbff63e8c96139857a26078e6857fa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3bcbff63e8c96139857a26078e6857fa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3bcbff63e8c96139857a26078e6857fa = L.map(
+                "map_3bcbff63e8c96139857a26078e6857fa",
+                {
+                    center: [53.306958103846156, -1.1113812692307692],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3fabc4cdee94a58e9ae62ee341676993 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_3fabc4cdee94a58e9ae62ee341676993.addTo(map_3bcbff63e8c96139857a26078e6857fa);
+    
+            var marker_b426973a2b86b3649dbe2da17b2fd93f = L.marker(
+                [53.3282526, -1.1235221],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_0997fc33cb35c84f230e1353d1528278 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b426973a2b86b3649dbe2da17b2fd93f.setIcon(icon_0997fc33cb35c84f230e1353d1528278);
+        
+    
+        var popup_cf610442460e3699e4ae02170558fed9 = L.popup({});
+
+        
+            
+                var html_1d1d5be1a07dbe62330c3fff1755ce32 = $(`<div id="html_1d1d5be1a07dbe62330c3fff1755ce32" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rydal Drive, Gateford</h1><div class="nugget-popup"><p>Identified as one of the main areas affected by flooding during the intense rainfall on 16th August 2022; experienced localised flooding. (p2)</p></div><div class="nugget-popup"><p>Identified on the report's flood&ndash;affected heatmap (Figure 3), indicating surface&ndash;water / urban flooding affected the street and adjacent properties during the event; heatmap intensity suggests a concentration of affected properties in this area. [IMG] (p3)</p></div><div class="nugget-popup"><p>A low spot at the corner of Rydal Drive flooded during intense rainfall, causing highway flooding and internal flooding of nearby homes; vehicle movements through the water were reported to have exacerbated potential flood damage. [IMG] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>7 residential properties [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_cf610442460e3699e4ae02170558fed9.setContent(html_1d1d5be1a07dbe62330c3fff1755ce32);
+            
+        
+
+        marker_b426973a2b86b3649dbe2da17b2fd93f.bindPopup(popup_cf610442460e3699e4ae02170558fed9)
+        ;
+
+        
+    
+    
+            var marker_7bf35810cc16c4c27a9be52cf0184f8f = L.marker(
+                [53.3222402, -1.1421078],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_0cc452337d440d2108a8c161fa007bc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7bf35810cc16c4c27a9be52cf0184f8f.setIcon(icon_0cc452337d440d2108a8c161fa007bc1);
+        
+    
+        var popup_110154f31589a537b17d016a6cf9e77c = L.popup({});
+
+        
+            
+                var html_9ec223feba0d6df023518a0a301b0339 = $(`<div id="html_9ec223feba0d6df023518a0a301b0339" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Redwing Close, Gateford</h1><div class="nugget-popup"><p>Named among the main areas affected by flooding during the intense rainfall on 16th August 2022; experienced localised flooding. (p2)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties occurred following the intense rainfall; trash lines indicate highway flooding on the street. [IMG] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>7 residential properties [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_110154f31589a537b17d016a6cf9e77c.setContent(html_9ec223feba0d6df023518a0a301b0339);
+            
+        
+
+        marker_7bf35810cc16c4c27a9be52cf0184f8f.bindPopup(popup_110154f31589a537b17d016a6cf9e77c)
+        ;
+
+        
+    
+    
+            var marker_1d03d6596e2afbfa5900d54c28da8107 = L.marker(
+                [53.3234142, -1.1411178],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_9c30aa1da0ebec2761c95903e9a48bf5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1d03d6596e2afbfa5900d54c28da8107.setIcon(icon_9c30aa1da0ebec2761c95903e9a48bf5);
+        
+    
+        var popup_7dd6d6da71a2ddce553a033bb7f3c87e = L.popup({});
+
+        
+            
+                var html_ce3f837b141aab56b60ce25a86f09c86 = $(`<div id="html_ce3f837b141aab56b60ce25a86f09c86" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fulmar Way, Gateford</h1><div class="nugget-popup"><p>Named among the main areas affected by flooding during the intense rainfall on 16th August 2022; experienced localised flooding. (p2)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties occurred following the intense rainfall; highway flooding was indicated by observed trash lines. [IMG] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 residential properties [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_7dd6d6da71a2ddce553a033bb7f3c87e.setContent(html_ce3f837b141aab56b60ce25a86f09c86);
+            
+        
+
+        marker_1d03d6596e2afbfa5900d54c28da8107.bindPopup(popup_7dd6d6da71a2ddce553a033bb7f3c87e)
+        ;
+
+        
+    
+    
+            var marker_d191af07022d13169f9563f8b59bce40 = L.marker(
+                [53.3185335, -1.1075737],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_0f95e1472c3bb4a09d69d5295a34846c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d191af07022d13169f9563f8b59bce40.setIcon(icon_0f95e1472c3bb4a09d69d5295a34846c);
+        
+    
+        var popup_420282b40e99bf393b49ea1b79a4e1c0 = L.popup({});
+
+        
+            
+                var html_4462211c713000e3a6211672dc54713d = $(`<div id="html_4462211c713000e3a6211672dc54713d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Jardine, Kilton</h1><div class="nugget-popup"><p>Included in the report list of main areas affected by flooding during the intense rainfall on 16th August 2022; experienced localised flooding. (p2)</p></div><div class="nugget-popup"><p>Surface water/urban floodwater flowed from the west and north of the catchment directly towards Jardine, resulting in internal flooding of residential properties. [IMG] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 residential properties [IMG] (p6)</p></div></div></body></div>`)[0];
+                popup_420282b40e99bf393b49ea1b79a4e1c0.setContent(html_4462211c713000e3a6211672dc54713d);
+            
+        
+
+        marker_d191af07022d13169f9563f8b59bce40.bindPopup(popup_420282b40e99bf393b49ea1b79a4e1c0)
+        ;
+
+        
+    
+    
+            var marker_ae199eda38565c3eed3e58f686035caa = L.marker(
+                [53.3190034, -1.1066728],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_7349f2d046d628ff228b0f778b48309e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ae199eda38565c3eed3e58f686035caa.setIcon(icon_7349f2d046d628ff228b0f778b48309e);
+        
+    
+        var popup_32043b5aca6da284acb9391ca4c3c4dd = L.popup({});
+
+        
+            
+                var html_0efec35d309b7f8a69d7a4ca127c5df7 = $(`<div id="html_0efec35d309b7f8a69d7a4ca127c5df7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Voce Court, Kilton</h1><div class="nugget-popup"><p>Named among the main areas affected by flooding during the intense rainfall on 16th August 2022; experienced localised flooding. (p2)</p></div><div class="nugget-popup"><p>Surface water/urban floodwater flowed from the west and north of the catchment towards Voce Court, causing internal flooding of a residential property. [IMG] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property [IMG] (p6)</p></div></div></body></div>`)[0];
+                popup_32043b5aca6da284acb9391ca4c3c4dd.setContent(html_0efec35d309b7f8a69d7a4ca127c5df7);
+            
+        
+
+        marker_ae199eda38565c3eed3e58f686035caa.bindPopup(popup_32043b5aca6da284acb9391ca4c3c4dd)
+        ;
+
+        
+    
+    
+            var marker_ce6c759f49636764a398afc88fa85975 = L.marker(
+                [53.3134991, -1.128361],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_b0e177b398f8fa2f66889c873c80343b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ce6c759f49636764a398afc88fa85975.setIcon(icon_b0e177b398f8fa2f66889c873c80343b);
+        
+    
+        var popup_bb0e2cc388b994f1a640f71a0f4713aa = L.popup({});
+
+        
+            
+                var html_4ce5f3443c6a9b8bc66e2d723b733e5f = $(`<div id="html_4ce5f3443c6a9b8bc66e2d723b733e5f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gateford Road, Kilton</h1><div class="nugget-popup"><p>Identified as one of the main areas affected by flooding during the intense rainfall on 16th August 2022; experienced localised flooding. (p2)</p></div><div class="nugget-popup"><p>Marked on the flood&ndash;affected areas heatmap (Figure 3), indicating surface&ndash;water / urban flooding affected Gateford Road and nearby properties during the event; the heatmap suggests a notable concentration of affected properties in the area. [IMG] (p3)</p></div><div class="nugget-popup"><p>Internal flooding of properties due to surface water flow through the catchment; water moved from the north of the catchment through Gateford Road towards Sandy Lane and Godfrey's Court. [PAG] (p7)</p></div><div class="nugget-popup"><p>Internal flooding of properties; water flowed from the north of the catchment down Gateford Road toward Sandy Lane and Godfrey's Court. Affected properties were mainly ground&ndash;floor/single&ndash;storey dwellings. [IMG,PAG] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>10 residential properties; 1 commercial property [PAG] (p7)</p></div><div class="nugget-popup quant"><p>10 residential properties; 1 commercial property [IMG,PAG] (p8)</p></div></div></body></div>`)[0];
+                popup_bb0e2cc388b994f1a640f71a0f4713aa.setContent(html_4ce5f3443c6a9b8bc66e2d723b733e5f);
+            
+        
+
+        marker_ce6c759f49636764a398afc88fa85975.bindPopup(popup_bb0e2cc388b994f1a640f71a0f4713aa)
+        ;
+
+        
+    
+    
+            var marker_479c0c2ca3b2bb41af03e358c0c9e387 = L.marker(
+                [53.31193, -1.140364],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_66f9e558c56a5e6d66befa6f07770ab8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_479c0c2ca3b2bb41af03e358c0c9e387.setIcon(icon_66f9e558c56a5e6d66befa6f07770ab8);
+        
+    
+        var popup_8e62c837f9aea195eaf5481997fbd19e = L.popup({});
+
+        
+            
+                var html_aedd630eb8b169fedf0adccababc1164 = $(`<div id="html_aedd630eb8b169fedf0adccababc1164" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sandy Lane, Worksop</h1><div class="nugget-popup"><p>Sandy Lane was reported as affected by flooding during the intense rainfall on 16th August 2022. (p2)</p></div><div class="nugget-popup"><p>Shown on the report's flood&ndash;affected heatmap (Figure 3), indicating Sandy Lane and adjacent properties experienced surface&ndash;water / urban flooding during the event; heatmap shading denotes an increased number of impacted properties in this vicinity. [IMG] (p3)</p></div><div class="nugget-popup"><p>Surface water flowed into the area from the north of the catchment causing internal flooding of residential properties (majority ground&ndash;floor, single&ndash;storey dwellings). [PAG] (p7)</p></div><div class="nugget-popup"><p>Internal flooding of residential flats; properties affected were predominantly ground&ndash;floor/single&ndash;storey dwellings. [IMG,PAG] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>13 residential properties (Sandy Lane Flats) [PAG] (p7)</p></div><div class="nugget-popup quant"><p>13 residential properties [IMG,PAG] (p8)</p></div></div></body></div>`)[0];
+                popup_8e62c837f9aea195eaf5481997fbd19e.setContent(html_aedd630eb8b169fedf0adccababc1164);
+            
+        
+
+        marker_479c0c2ca3b2bb41af03e358c0c9e387.bindPopup(popup_8e62c837f9aea195eaf5481997fbd19e)
+        ;
+
+        
+    
+    
+            var marker_57a8c1bb284f76318451c17b00cfe084 = L.marker(
+                [53.3050242, -1.1289202],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_a7e2175d881ef855748f242a058f5f9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_57a8c1bb284f76318451c17b00cfe084.setIcon(icon_a7e2175d881ef855748f242a058f5f9c);
+        
+    
+        var popup_3b8acfb19f93bdba03523dfceed4a573 = L.popup({});
+
+        
+            
+                var html_811b17811e7215bbac74179cb34860e5 = $(`<div id="html_811b17811e7215bbac74179cb34860e5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Central Avenue, Kilton</h1><div class="nugget-popup"><p>Central Avenue was reported as affected by flooding during the intense rainfall on 16th August 2022. (p2)</p></div><div class="nugget-popup"><p>Some properties experienced minor ingress of floodwater despite property flood resilience (PFR) barriers being fitted and largely deployed; ingress sources included brickwork seepage, bow waves from overtopping by vehicles, and ingress before barrier deployment. [PAG] (p8)</p></div><div class="nugget-popup"><p>Area received an out&ndash;of&ndash;hours delivery of sandbags during the 16th August 2022 event and was targeted by subsequent gully&ndash;cleansing and highway drainage investigations because properties and/or the highway in the area had flooded. (p13)</p></div></div></body></div>`)[0];
+                popup_3b8acfb19f93bdba03523dfceed4a573.setContent(html_811b17811e7215bbac74179cb34860e5);
+            
+        
+
+        marker_57a8c1bb284f76318451c17b00cfe084.bindPopup(popup_3b8acfb19f93bdba03523dfceed4a573)
+        ;
+
+        
+    
+    
+            var marker_02d1cd00bf0ea24e8ad13926ca3b6aba = L.marker(
+                [53.3046974, -1.126518],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_b71be81f75a7c726f3e47a325252683b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_02d1cd00bf0ea24e8ad13926ca3b6aba.setIcon(icon_b71be81f75a7c726f3e47a325252683b);
+        
+    
+        var popup_e4f4dacdb8dcac70022885ec3e6b2896 = L.popup({});
+
+        
+            
+                var html_b102402f3a4e5e64e71b4de1aa34f2ff = $(`<div id="html_b102402f3a4e5e64e71b4de1aa34f2ff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Allen Street, Kilton</h1><div class="nugget-popup"><p>Allen Street was reported as affected by flooding during the intense rainfall on 16th August 2022. (p2)</p></div><div class="nugget-popup"><p>Some properties experienced minor ingress of floodwater despite PFR barriers; ingress occurred via brickwork, bow waves overtopping barriers from vehicles, or prior to barriers being deployed. [PAG] (p8)</p></div></div></body></div>`)[0];
+                popup_e4f4dacdb8dcac70022885ec3e6b2896.setContent(html_b102402f3a4e5e64e71b4de1aa34f2ff);
+            
+        
+
+        marker_02d1cd00bf0ea24e8ad13926ca3b6aba.bindPopup(popup_e4f4dacdb8dcac70022885ec3e6b2896)
+        ;
+
+        
+    
+    
+            var marker_60f65c77bca7b7907a16acb3ec8f3c45 = L.marker(
+                [53.3046289, -1.1257049],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_9a5b5beeb28c15a04c32a95eebafc86a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_60f65c77bca7b7907a16acb3ec8f3c45.setIcon(icon_9a5b5beeb28c15a04c32a95eebafc86a);
+        
+    
+        var popup_f9e91ea3dcf9317a870ce17c64dd7a87 = L.popup({});
+
+        
+            
+                var html_e7f89388cb7e7a0b2449fa50cc5b9aa5 = $(`<div id="html_e7f89388cb7e7a0b2449fa50cc5b9aa5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hardy Street, Kilton</h1><div class="nugget-popup"><p>Hardy Street was reported as affected by flooding during the intense rainfall on 16th August 2022. (p2)</p></div><div class="nugget-popup"><p>Properties experienced minor internal ingress of floodwater despite PFR barriers; ingress occurred via brickwork penetration, bow waves from vehicles overtopping barriers, or prior to barrier deployment. The majority of PFR barriers had been deployed successfully and were effective or not required at the property level. [PAG] (p8)</p></div></div></body></div>`)[0];
+                popup_f9e91ea3dcf9317a870ce17c64dd7a87.setContent(html_e7f89388cb7e7a0b2449fa50cc5b9aa5);
+            
+        
+
+        marker_60f65c77bca7b7907a16acb3ec8f3c45.bindPopup(popup_f9e91ea3dcf9317a870ce17c64dd7a87)
+        ;
+
+        
+    
+    
+            var marker_077ea622b03e79c6781defe046cb1465 = L.marker(
+                [53.3005366, -1.0963492],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_67a696c007a4b5d7229a0a0cec01ea9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_077ea622b03e79c6781defe046cb1465.setIcon(icon_67a696c007a4b5d7229a0a0cec01ea9b);
+        
+    
+        var popup_37e573271d4988b4787877ce063d5fa4 = L.popup({});
+
+        
+            
+                var html_614684d24f8c960584f2f8ccf17d902c = $(`<div id="html_614684d24f8c960584f2f8ccf17d902c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Manton Villas, Worksop</h1><div class="nugget-popup"><p>Manton Villas was reported as affected by flooding during the intense rainfall on 16th August 2022. (p2)</p></div><div class="nugget-popup"><p>Surface water flowed down the highway of Manton Villas following local topography toward Retford Road; one property on Manton Villas was internally flooded. [IMG,PAG] (p9)</p></div><div class="nugget-popup"><p>Surface water flowed down the highway following the topography towards Retford Road and continued along the flow path, flooding a business property. [IMG,PAG] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one property [IMG,PAG] (p9)</p></div><div class="nugget-popup quant"><p>1 business property [IMG,PAG] (p10)</p></div></div></body></div>`)[0];
+                popup_37e573271d4988b4787877ce063d5fa4.setContent(html_614684d24f8c960584f2f8ccf17d902c);
+            
+        
+
+        marker_077ea622b03e79c6781defe046cb1465.bindPopup(popup_37e573271d4988b4787877ce063d5fa4)
+        ;
+
+        
+    
+    
+            var marker_d9ce9df9291ec8d87e7b6885fcc068b8 = L.marker(
+                [53.3148406, -1.1271735],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_5a72e60d01848453ca2b40877b293fb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d9ce9df9291ec8d87e7b6885fcc068b8.setIcon(icon_5a72e60d01848453ca2b40877b293fb1);
+        
+    
+        var popup_81f21d2a01046b806dc65041a52eb0d8 = L.popup({});
+
+        
+            
+                var html_3649e48f19c4f1cfc4ef1a295ee9db3a = $(`<div id="html_3649e48f19c4f1cfc4ef1a295ee9db3a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stanley Street, Gateford</h1><div class="nugget-popup"><p>Stanley Street was reported as affected by flooding during the intense rainfall on 16th August 2022. (p2)</p></div><div class="nugget-popup"><p>Appears on the report's flood&ndash;affected heatmap (Figure 3), implying surface&ndash;water / urban flooding impacted the street and surrounding properties during the event; heatmap colouring indicates an elevated number of affected properties nearby. [IMG] (p3)</p></div><div class="nugget-popup"><p>Surface water flows travelled along Stanley Street causing internal flooding of residential and commercial properties; at the south end flood depths overtopped installed PFR measures on commercial properties. [IMG] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties; 2 commercial properties [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_81f21d2a01046b806dc65041a52eb0d8.setContent(html_3649e48f19c4f1cfc4ef1a295ee9db3a);
+            
+        
+
+        marker_d9ce9df9291ec8d87e7b6885fcc068b8.bindPopup(popup_81f21d2a01046b806dc65041a52eb0d8)
+        ;
+
+        
+    
+    
+            var marker_40addf7ac566514a9bc9b0448c3e80d1 = L.marker(
+                [53.3156261, -1.1239254],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_4f867039ee40f2db953b946b33c55513 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_40addf7ac566514a9bc9b0448c3e80d1.setIcon(icon_4f867039ee40f2db953b946b33c55513);
+        
+    
+        var popup_d61fd4331c1d81b3e8289cec4216c56a = L.popup({});
+
+        
+            
+                var html_8c1376b5314691a78ec8c220cfbe3ea2 = $(`<div id="html_8c1376b5314691a78ec8c220cfbe3ea2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mount Avenue, Kilton</h1><div class="nugget-popup"><p>Surface water flooding affected Mount Avenue during the intense rainfall on 16th August 2022; the street is listed in the report as one of the main areas affected by flooding. (p2)</p></div><div class="nugget-popup"><p>Shown on the flood&ndash;affected areas heatmap (Figure 3), indicating the street and nearby properties experienced surface&ndash;water / urban flooding during the event; map shading indicates multiple properties were affected in this vicinity. [IMG] (p3)</p></div><div class="nugget-popup"><p>Overland flow became impounded by Mount Avenue (together with Valley Road), which contributed to internal flooding of nearby residential properties. [IMG] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties (p10)</p></div></div></body></div>`)[0];
+                popup_d61fd4331c1d81b3e8289cec4216c56a.setContent(html_8c1376b5314691a78ec8c220cfbe3ea2);
+            
+        
+
+        marker_40addf7ac566514a9bc9b0448c3e80d1.bindPopup(popup_d61fd4331c1d81b3e8289cec4216c56a)
+        ;
+
+        
+    
+    
+            var marker_34dcdd9857124f9aacf2a87024337ef8 = L.marker(
+                [53.303126, -1.1198383],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_fa4a39c66530d5900df85bc3523fff0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_34dcdd9857124f9aacf2a87024337ef8.setIcon(icon_fa4a39c66530d5900df85bc3523fff0a);
+        
+    
+        var popup_f4a14940bac4e2691f7772807d0c13a1 = L.popup({});
+
+        
+            
+                var html_092f988116ead61d254c3a1e37c32afc = $(`<div id="html_092f988116ead61d254c3a1e37c32afc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Boundary Row, Kilton</h1><div class="nugget-popup"><p>Surface water flooding affected Boundary Row during the intense rainfall on 16th August 2022; the street is identified in the report as one of the main areas impacted. (p2)</p></div><div class="nugget-popup"><p>Surface water flowed down Boundary Row from Potter Street and accumulated at the low point at the end of the road. [IMG] (p11)</p></div></div></body></div>`)[0];
+                popup_f4a14940bac4e2691f7772807d0c13a1.setContent(html_092f988116ead61d254c3a1e37c32afc);
+            
+        
+
+        marker_34dcdd9857124f9aacf2a87024337ef8.bindPopup(popup_f4a14940bac4e2691f7772807d0c13a1)
+        ;
+
+        
+    
+    
+            var marker_39935722518577358a336ab726e961d0 = L.marker(
+                [53.3245811, -1.1425699],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_05075a4f2a198239e5592e88cf7e892f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_39935722518577358a336ab726e961d0.setIcon(icon_05075a4f2a198239e5592e88cf7e892f);
+        
+    
+        var popup_f45df1025997210c35d19ece38706883 = L.popup({});
+
+        
+            
+                var html_154c4ddafcc09ada315c9f5f37d52636 = $(`<div id="html_154c4ddafcc09ada315c9f5f37d52636" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lady Walk, Gateford</h1><div class="nugget-popup"><p>Marked on the report's flood&ndash;affected heatmap (Figure 3), indicating that surface&ndash;water / urban flooding affected the street and nearby properties during the event; heatmap shading implies an increased number of properties were impacted in this area. [IMG] (p3)</p></div><div class="nugget-popup"><p>Internal flooding occurred to residences despite Property Flood Resilience measures being deployed; trash lines indicate highway flooding along the road. [IMG] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>7 residential properties [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_f45df1025997210c35d19ece38706883.setContent(html_154c4ddafcc09ada315c9f5f37d52636);
+            
+        
+
+        marker_39935722518577358a336ab726e961d0.bindPopup(popup_f45df1025997210c35d19ece38706883)
+        ;
+
+        
+    
+    
+            var marker_b34c16cb4a366f3293ab78a1018c78bb = L.marker(
+                [53.3118221, -1.1172507],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_18c8ad10fe8d7ecd03a29121883aeb7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b34c16cb4a366f3293ab78a1018c78bb.setIcon(icon_18c8ad10fe8d7ecd03a29121883aeb7f);
+        
+    
+        var popup_9e59f6ba305af3476b296d44e7591968 = L.popup({});
+
+        
+            
+                var html_b01ff35def79c7c629323b9a33c9adad = $(`<div id="html_b01ff35def79c7c629323b9a33c9adad" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Queensway, Kilton</h1><div class="nugget-popup"><p>Queensway is shown on the Worksop flood&ndash;affected areas heatmap, indicating properties on or near Queensway were affected by surface water/urban flooding during the 16th August 2022 event. [IMG] (p3)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties following surface water flowing from the north of the catchment and being impounded by higher railway topography, resulting in water entering properties. [IMG] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 residential properties [IMG] (p7)</p></div></div></body></div>`)[0];
+                popup_9e59f6ba305af3476b296d44e7591968.setContent(html_b01ff35def79c7c629323b9a33c9adad);
+            
+        
+
+        marker_b34c16cb4a366f3293ab78a1018c78bb.bindPopup(popup_9e59f6ba305af3476b296d44e7591968)
+        ;
+
+        
+    
+    
+            var marker_865d0aced37ea6e51a6c80219d257290 = L.marker(
+                [53.3178782, -1.1039549],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_571414873a2c2030e838d69ea8cf5f66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_865d0aced37ea6e51a6c80219d257290.setIcon(icon_571414873a2c2030e838d69ea8cf5f66);
+        
+    
+        var popup_f2982830b2ce35ec5f853cca7004dfe2 = L.popup({});
+
+        
+            
+                var html_f9dd8c26ecacac0ba49e170b1f74f059 = $(`<div id="html_f9dd8c26ecacac0ba49e170b1f74f059" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Longhurst, Kilton</h1><div class="nugget-popup"><p>Water routed towards a topographic low at Longhurst, causing highway flooding and internal flooding of properties, including both residential and commercial premises. [IMG] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties; 1 commercial property [IMG] (p6)</p></div></div></body></div>`)[0];
+                popup_f2982830b2ce35ec5f853cca7004dfe2.setContent(html_f9dd8c26ecacac0ba49e170b1f74f059);
+            
+        
+
+        marker_865d0aced37ea6e51a6c80219d257290.bindPopup(popup_f2982830b2ce35ec5f853cca7004dfe2)
+        ;
+
+        
+    
+    
+            var marker_3dee8ae8538b42d3cc44df5fda1efe6d = L.marker(
+                [53.3075612, -1.1266781],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_d98c7ad2aee953a1cb0f8f6164fc205d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3dee8ae8538b42d3cc44df5fda1efe6d.setIcon(icon_d98c7ad2aee953a1cb0f8f6164fc205d);
+        
+    
+        var popup_4cae2e58afb5c56be1f141feb31164b7 = L.popup({});
+
+        
+            
+                var html_409126f8d9a71e9fe842ee33ac251ede = $(`<div id="html_409126f8d9a71e9fe842ee33ac251ede" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Godfrey's Court, Kilton</h1><div class="nugget-popup"><p>Internal flooding of residential properties caused by surface water flowing through the catchment towards the south. [PAG] (p7)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties; affected properties were predominantly ground&ndash;floor/single&ndash;storey dwellings. [IMG,PAG] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 residential properties [PAG] (p7)</p></div><div class="nugget-popup quant"><p>5 residential properties [IMG,PAG] (p8)</p></div></div></body></div>`)[0];
+                popup_4cae2e58afb5c56be1f141feb31164b7.setContent(html_409126f8d9a71e9fe842ee33ac251ede);
+            
+        
+
+        marker_3dee8ae8538b42d3cc44df5fda1efe6d.bindPopup(popup_4cae2e58afb5c56be1f141feb31164b7)
+        ;
+
+        
+    
+    
+            var marker_d8de41b2b249fbe3141f9f5484c0e04c = L.marker(
+                [53.3013444, -1.0852274],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_f134cf8e42e557ab6019cc10fb1cbf20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d8de41b2b249fbe3141f9f5484c0e04c.setIcon(icon_f134cf8e42e557ab6019cc10fb1cbf20);
+        
+    
+        var popup_8ef385f9887b43356c4e89533020788f = L.popup({});
+
+        
+            
+                var html_de75d9133266913cef8c996c9ddad960 = $(`<div id="html_de75d9133266913cef8c996c9ddad960" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Retford Road, Worksop</h1><div class="nugget-popup"><p>Surface water flow from Manton Villas continued towards Retford Road and caused internal flooding of a business property on Retford Road. [IMG] (p9)</p></div><div class="nugget-popup"><p>Overland surface water flowed down from Manton Villas following topography towards Retford Road and entered/flooded a business property located on/adjacent to Retford Road. [IMG,PAG] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one business [IMG] (p9)</p></div><div class="nugget-popup quant"><p>1 business property [IMG,PAG] (p10)</p></div></div></body></div>`)[0];
+                popup_8ef385f9887b43356c4e89533020788f.setContent(html_de75d9133266913cef8c996c9ddad960);
+            
+        
+
+        marker_d8de41b2b249fbe3141f9f5484c0e04c.bindPopup(popup_8ef385f9887b43356c4e89533020788f)
+        ;
+
+        
+    
+    
+            var marker_5126375efe41e75799a5907883597fab = L.marker(
+                [53.3206527, -1.1272105],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_1a5d77471e6cef5a9d97f23d93dfd043 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5126375efe41e75799a5907883597fab.setIcon(icon_1a5d77471e6cef5a9d97f23d93dfd043);
+        
+    
+        var popup_26cae96ae77a79751a3fbb5897dac4a6 = L.popup({});
+
+        
+            
+                var html_12d615a84fbf3bc19717c2311768599e = $(`<div id="html_12d615a84fbf3bc19717c2311768599e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Valley Road, Gateford</h1><div class="nugget-popup"><p>Overland flow onto playing fields became impounded by Valley Road (with Mount Avenue), which led to internal flooding of residential properties downslope. [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_26cae96ae77a79751a3fbb5897dac4a6.setContent(html_12d615a84fbf3bc19717c2311768599e);
+            
+        
+
+        marker_5126375efe41e75799a5907883597fab.bindPopup(popup_26cae96ae77a79751a3fbb5897dac4a6)
+        ;
+
+        
+    
+    
+            var marker_08ec0131a81bf8a6a9884368c1f923e7 = L.marker(
+                [53.3027673, -1.1187683],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_9792b76a790813b4c7738f58a9fae0cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_08ec0131a81bf8a6a9884368c1f923e7.setIcon(icon_9792b76a790813b4c7738f58a9fae0cf);
+        
+    
+        var popup_943c4bb6b0b656277b028935d61f5b20 = L.popup({});
+
+        
+            
+                var html_a1ca6ca6fe74fe9bc909515df5882e59 = $(`<div id="html_a1ca6ca6fe74fe9bc909515df5882e59" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Potter Street, Kilton</h1><div class="nugget-popup"><p>Surface water flows reached the topographic low point of Potter Street at the junction with Boundary Row; water then flowed from this low point into Boundary Row. [IMG] (p11)</p></div></div></body></div>`)[0];
+                popup_943c4bb6b0b656277b028935d61f5b20.setContent(html_a1ca6ca6fe74fe9bc909515df5882e59);
+            
+        
+
+        marker_08ec0131a81bf8a6a9884368c1f923e7.bindPopup(popup_943c4bb6b0b656277b028935d61f5b20)
+        ;
+
+        
+    
+    
+            var marker_cbe2c1c03731f97945dad8f5a94e0103 = L.marker(
+                [53.3046514, -1.116095],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_5ed4a55c9cc222b6ade24e5ed738ba70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cbe2c1c03731f97945dad8f5a94e0103.setIcon(icon_5ed4a55c9cc222b6ade24e5ed738ba70);
+        
+    
+        var popup_d7e70f6a11d96effd6bcfb240b72a6f9 = L.popup({});
+
+        
+            
+                var html_5ecc3a1b324cdf88d16fa0ef7bcaf9ac = $(`<div id="html_5ecc3a1b324cdf88d16fa0ef7bcaf9ac" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Priorswell Road, Kilton</h1><div class="nugget-popup"><p>Properties and the highway were flooded; Highway Authority supplied sandbags to the area and carried out gully cleansing and investigations/cleansing of highway drainage assets where properties or highway had been flooded. (p13)</p></div></div></body></div>`)[0];
+                popup_d7e70f6a11d96effd6bcfb240b72a6f9.setContent(html_5ecc3a1b324cdf88d16fa0ef7bcaf9ac);
+            
+        
+
+        marker_cbe2c1c03731f97945dad8f5a94e0103.bindPopup(popup_d7e70f6a11d96effd6bcfb240b72a6f9)
+        ;
+
+        
+    
+    
+            var marker_6540e33e69145ee881473598a1146133 = L.marker(
+                [53.349452, -0.9616604],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_719a03bc84b521ec262c546ede526373 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6540e33e69145ee881473598a1146133.setIcon(icon_719a03bc84b521ec262c546ede526373);
+        
+    
+        var popup_30e2b74ef9061089c5d25f004eb202d2 = L.popup({});
+
+        
+            
+                var html_0aa09e824946446aaa04027b5cb9ae69 = $(`<div id="html_0aa09e824946446aaa04027b5cb9ae69" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bassetlaw</h1><div class="nugget-popup"><p>The flood event in Worksop (within the district) caused internal flooding to properties and businesses and affected critical infrastructure during the event. (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>87 residential properties; 20 businesses; 1 critical infrastructure property (a hospital) (p1)</p></div></div></body></div>`)[0];
+                popup_30e2b74ef9061089c5d25f004eb202d2.setContent(html_0aa09e824946446aaa04027b5cb9ae69);
+            
+        
+
+        marker_6540e33e69145ee881473598a1146133.bindPopup(popup_30e2b74ef9061089c5d25f004eb202d2)
+        ;
+
+        
+    
+    
+            var marker_628f88b613abe23b8071a36d0f3c4e33 = L.marker(
+                [53.145927, -1.0214971],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_445da90b66bae50871fd636ce1be240d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_628f88b613abe23b8071a36d0f3c4e33.setIcon(icon_445da90b66bae50871fd636ce1be240d);
+        
+    
+        var popup_8eea352337d7f15eb03fd9bf03247c63 = L.popup({});
+
+        
+            
+                var html_76296196281e752d496d77e8e293aeb2 = $(`<div id="html_76296196281e752d496d77e8e293aeb2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottinghamshire</h1><div class="nugget-popup"><p>The intense short&ndash;duration rainfall event affected Worksop within Nottinghamshire, causing internal flooding to residences, businesses and a hospital. (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>87 residential properties; 20 businesses; 1 critical infrastructure property (a hospital) (p1)</p></div></div></body></div>`)[0];
+                popup_8eea352337d7f15eb03fd9bf03247c63.setContent(html_76296196281e752d496d77e8e293aeb2);
+            
+        
+
+        marker_628f88b613abe23b8071a36d0f3c4e33.bindPopup(popup_8eea352337d7f15eb03fd9bf03247c63)
+        ;
+
+        
+    
+    
+            var marker_f3ddb057d4c3b68b5261d76a0b8e12eb = L.marker(
+                [53.304237, -1.1246167],
+                {}
+            ).addTo(map_3bcbff63e8c96139857a26078e6857fa);
+        
+    
+            var icon_296e223fbe558a08befdc329bd836c51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f3ddb057d4c3b68b5261d76a0b8e12eb.setIcon(icon_296e223fbe558a08befdc329bd836c51);
+        
+    
+        var popup_1474acd57352ae79fc312ad39cb0e9b1 = L.popup({});
+
+        
+            
+                var html_4630b0269e852cafaccdc2f1b5f8b1e0 = $(`<div id="html_4630b0269e852cafaccdc2f1b5f8b1e0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Worksop</h1><div class="nugget-popup"><p>Short&ndash;duration, intense rainfall caused significant flooding across Worksop leading to internal flooding of residential and commercial properties and flooding of gardens and outbuildings. [PAG] (p1)</p></div><div class="nugget-popup"><p>Multiple neighbourhoods across Worksop experienced surface water / urban flooding during the intense short&ndash;duration rainfall on 16th August 2022; flooding was reported in the listed residential streets and estate areas. [IMG,PAG] (p2)</p></div><div class="nugget-popup"><p>Widespread flooding across the town during the event, with multiple streets and properties affected and additional isolated incidents reported; heatmap (Figure 3) shows clusters of affected properties. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Experienced flooding on 16th August 2022 that affected residents and businesses, prompting emergency response actions including a public drop&ndash;in, administration of the Flooding Hardship Fund, recruitment of Flood Signage Wardens, and vulnerable&ndash;people checks/evacuation planning. (p12)</p></div><div class="nugget-popup"><p>Flooding occurred across the town, prompting emergency response and investigations (including STW attendance and tankering) and follow&ndash;up actions such as recruitment for local community flood signage. (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>87 residential properties; 20 businesses; 1 critical infrastructure property (a hospital) [PAG] (p1)</p></div></div></body></div>`)[0];
+                popup_1474acd57352ae79fc312ad39cb0e9b1.setContent(html_4630b0269e852cafaccdc2f1b5f8b1e0);
+            
+        
+
+        marker_f3ddb057d4c3b68b5261d76a0b8e12eb.bindPopup(popup_1474acd57352ae79fc312ad39cb0e9b1)
+        ;
+
+        
+    
+</script>
+</html>
