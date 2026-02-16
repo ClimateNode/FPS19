@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b56fd6c94ceff0a1ad03c29f3fb45508 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b56fd6c94ceff0a1ad03c29f3fb45508" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b56fd6c94ceff0a1ad03c29f3fb45508 = L.map(
+                "map_b56fd6c94ceff0a1ad03c29f3fb45508",
+                {
+                    center: [53.302928129166666, -1.1266518875],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e793bcdee3f210cbe5d7c2c21f6ee7f3 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_e793bcdee3f210cbe5d7c2c21f6ee7f3.addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+    
+            var marker_f1b02c17e6fa74ccef5ba99e824c607d = L.marker(
+                [53.3046835, -1.1122353],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_4b67f4b87af0a080e0e579d7942c5ba9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f1b02c17e6fa74ccef5ba99e824c607d.setIcon(icon_4b67f4b87af0a080e0e579d7942c5ba9);
+        
+    
+        var popup_69f2ae3c004f38d14066263d910ffe31 = L.popup({});
+
+        
+            
+                var html_db2cfc1411629e11e88810cb2e07c683 = $(`<div id="html_db2cfc1411629e11e88810cb2e07c683" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Ryton</h1><div class="nugget-popup"><p>The River Ryton rose rapidly on 20 October 2023 due to sustained heavy rainfall and contributed to flooding in Worksop. The Ryton peaked at 2.11 m at the Worksop gauge on Stubbing Lane, coincident with flooding of adjacent streets and properties. (p3)</p></div><div class="nugget-popup"><p>Due to sustained heavy rainfall the River Ryton rose rapidly on 20 October, peaking at the Worksop gauge and contributing to flooding in adjacent areas of Worksop. The river rise is cited as a primary cause contributing to floodwater affecting streets and properties on the river&#8217;s south side. [IMG,PAG] (p4)</p></div><div class="nugget-popup"><p>Overtopping of banks during sustained heavy rainfall (Storm Babet) caused floodwater to flow over a bridge at Watson Road and contributed to pooling and internal flooding of a business property. (p6)</p></div><div class="nugget-popup"><p>Flooding from the River Ryton (including through the town centre and downstream) required proposed desilting and conveyance works; the report also proposes exploring Natural Flood Management in the upper Ryton catchment to reduce peak flows into the river. (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>peaked at 2.11 m (Worksop gauge) (p3)</p></div><div class="nugget-popup quant"><p>Peaked at 2.11 m at the Worksop gauge on Stubbing Lane [IMG,PAG] (p4)</p></div><div class="nugget-popup quant"><p>1 business property (p6)</p></div></div></body></div>`)[0];
+                popup_69f2ae3c004f38d14066263d910ffe31.setContent(html_db2cfc1411629e11e88810cb2e07c683);
+            
+        
+
+        marker_f1b02c17e6fa74ccef5ba99e824c607d.bindPopup(popup_69f2ae3c004f38d14066263d910ffe31)
+        ;
+
+        
+    
+    
+            var marker_1ffcfc8bac60ce5c8910e2dbed70499a = L.marker(
+                [53.3046974, -1.126518],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_7545423ca234a929b23effaa990892ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1ffcfc8bac60ce5c8910e2dbed70499a.setIcon(icon_7545423ca234a929b23effaa990892ea);
+        
+    
+        var popup_430b92425adbf06a4a76be0357838fbf = L.popup({});
+
+        
+            
+                var html_b2e1bd4e0ddee9d67f1762e8aa5dac6f = $(`<div id="html_b2e1bd4e0ddee9d67f1762e8aa5dac6f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Allen Street, Kilton</h1><div class="nugget-popup"><p>Properties on Allen Street were internally flooded as a result of surface water/urban flooding following intense rainfall and saturated ground. [PAG] (p2)</p></div><div class="nugget-popup"><p>Internal flooding of properties on the street associated with the town flood event. [IMG,PAG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>19 properties [PAG] (p2)</p></div><div class="nugget-popup quant"><p>19 properties internally flooded [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_430b92425adbf06a4a76be0357838fbf.setContent(html_b2e1bd4e0ddee9d67f1762e8aa5dac6f);
+            
+        
+
+        marker_1ffcfc8bac60ce5c8910e2dbed70499a.bindPopup(popup_430b92425adbf06a4a76be0357838fbf)
+        ;
+
+        
+    
+    
+            var marker_cb59a41d6a92c442dea44c1b9cdb4651 = L.marker(
+                [53.3125853, -1.1211717],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_739c577be2cf65117d9361f4f1007d24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cb59a41d6a92c442dea44c1b9cdb4651.setIcon(icon_739c577be2cf65117d9361f4f1007d24);
+        
+    
+        var popup_a2ef640f621c5098e72392a4a41b65f8 = L.popup({});
+
+        
+            
+                var html_d5fecace43a52ae186ff5b9ded28f06e = $(`<div id="html_d5fecace43a52ae186ff5b9ded28f06e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Carlton Road, Kilton</h1><div class="nugget-popup"><p>Properties on Carlton Road experienced internal flooding from surface water during the intense rainfall event. [PAG] (p2)</p></div><div class="nugget-popup"><p>At least one residential property experienced internal flooding during the event. [IMG,PAG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [PAG] (p2)</p></div><div class="nugget-popup quant"><p>1 property [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_a2ef640f621c5098e72392a4a41b65f8.setContent(html_d5fecace43a52ae186ff5b9ded28f06e);
+            
+        
+
+        marker_cb59a41d6a92c442dea44c1b9cdb4651.bindPopup(popup_a2ef640f621c5098e72392a4a41b65f8)
+        ;
+
+        
+    
+    
+            var marker_614e80bce767dedb9cff260d82e2d667 = L.marker(
+                [53.3050242, -1.1289202],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_1f1fda0b7dc74493ff909807292285a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_614e80bce767dedb9cff260d82e2d667.setIcon(icon_1f1fda0b7dc74493ff909807292285a3);
+        
+    
+        var popup_54c904ec97cf42b014baf3d1119012fe = L.popup({});
+
+        
+            
+                var html_57c85ca6e4997fc453a23facd5afb272 = $(`<div id="html_57c85ca6e4997fc453a23facd5afb272" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Central Avenue, Kilton</h1><div class="nugget-popup"><p>Central Avenue experienced internal flooding of properties due to surface water/urban flooding associated with the intense rainfall on saturated ground. [PAG] (p2)</p></div><div class="nugget-popup"><p>Internal flooding of properties on the street associated with the town flood event. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Identified in the report as an area that experienced multi&ndash;source flooding; the Lead Local Flood Authority will liaise with Risk Management Authorities to further understand the flooding mechanisms and actions required. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>32 properties [PAG] (p2)</p></div><div class="nugget-popup quant"><p>32 properties internally flooded [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_54c904ec97cf42b014baf3d1119012fe.setContent(html_57c85ca6e4997fc453a23facd5afb272);
+            
+        
+
+        marker_614e80bce767dedb9cff260d82e2d667.bindPopup(popup_54c904ec97cf42b014baf3d1119012fe)
+        ;
+
+        
+    
+    
+            var marker_a621cb541d8d153fa2fabef2729daa0e = L.marker(
+                [53.3226404, -1.1400956],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_809cde8b124cdda22d6e127462b3e896 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a621cb541d8d153fa2fabef2729daa0e.setIcon(icon_809cde8b124cdda22d6e127462b3e896);
+        
+    
+        var popup_26475d5b136a575c931b6e7d9a15c3a1 = L.popup({});
+
+        
+            
+                var html_30360b981f3ad27686dd502adb7cdf1a = $(`<div id="html_30360b981f3ad27686dd502adb7cdf1a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dunlin Court, Gateford</h1><div class="nugget-popup"><p>Internal flooding of residential property on Dunlin Court. [PAG] (p2)</p></div><div class="nugget-popup"><p>Internal flooding of property/properties in the cul&ndash;de&ndash;sac. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Sustained heavy rainfall during Storm Babet overwhelmed drainage and caused highway flooding; surface water flowed off the highway into properties, resulting in internal flooding. [PAG] (p5)</p></div><div class="nugget-popup"><p>Sustained heavy rainfall (Storm Babet) overwhelmed drainage and caused highway flooding; surface water then flowed off the highway into properties, causing internal flooding in the local area. [IMG,PAG] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded [PAG] (p2)</p></div><div class="nugget-popup quant"><p>1 property [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>6 properties (total across Dunlin Court, Lady Walk and Redwing Close) [PAG] (p5)</p></div><div class="nugget-popup quant"><p>6 properties (across Dunlin Court, Lady Walk and Redwing Close) [IMG,PAG] (p6)</p></div></div></body></div>`)[0];
+                popup_26475d5b136a575c931b6e7d9a15c3a1.setContent(html_30360b981f3ad27686dd502adb7cdf1a);
+            
+        
+
+        marker_a621cb541d8d153fa2fabef2729daa0e.bindPopup(popup_26475d5b136a575c931b6e7d9a15c3a1)
+        ;
+
+        
+    
+    
+            var marker_07ee6ea2098d8072300527989b5a0275 = L.marker(
+                [53.3046289, -1.1257049],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_f8a98ce309017d1ab8ae121641ff4a22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_07ee6ea2098d8072300527989b5a0275.setIcon(icon_f8a98ce309017d1ab8ae121641ff4a22);
+        
+    
+        var popup_ffc4bc79cc1e7830559cbcdee76d1511 = L.popup({});
+
+        
+            
+                var html_6963de5e34470d9b896b43e16b50c5f7 = $(`<div id="html_6963de5e34470d9b896b43e16b50c5f7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hardy Street, Kilton</h1><div class="nugget-popup"><p>Internal flooding of residential properties on Hardy Street. [PAG] (p2)</p></div><div class="nugget-popup"><p>Internal flooding of properties on the street associated with the event. [IMG,PAG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>8 properties internally flooded [PAG] (p2)</p></div><div class="nugget-popup quant"><p>8 properties internally flooded [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_ffc4bc79cc1e7830559cbcdee76d1511.setContent(html_6963de5e34470d9b896b43e16b50c5f7);
+            
+        
+
+        marker_07ee6ea2098d8072300527989b5a0275.bindPopup(popup_ffc4bc79cc1e7830559cbcdee76d1511)
+        ;
+
+        
+    
+    
+            var marker_e812c2fd803ffefd9482b2bb12872e81 = L.marker(
+                [53.3045597, -1.1272494],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_4d5edcc3355f6b95aa8fcf112944f2fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e812c2fd803ffefd9482b2bb12872e81.setIcon(icon_4d5edcc3355f6b95aa8fcf112944f2fd);
+        
+    
+        var popup_4148eb2a36caa59fdac9a20bb585e839 = L.popup({});
+
+        
+            
+                var html_8655333266c2bfca0d8b6f8e4661a288 = $(`<div id="html_8655333266c2bfca0d8b6f8e4661a288" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>King Street, Kilton</h1><div class="nugget-popup"><p>Internal flooding of properties on King Street. [PAG] (p2)</p></div><div class="nugget-popup"><p>Internal flooding of properties; report notes flows down Brook Terrace contributed to internal flooding on King Street. [IMG,PAG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>20 properties internally flooded [PAG] (p2)</p></div><div class="nugget-popup quant"><p>20 properties internally flooded [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_4148eb2a36caa59fdac9a20bb585e839.setContent(html_8655333266c2bfca0d8b6f8e4661a288);
+            
+        
+
+        marker_e812c2fd803ffefd9482b2bb12872e81.bindPopup(popup_4148eb2a36caa59fdac9a20bb585e839)
+        ;
+
+        
+    
+    
+            var marker_b68569a941b79abdbadde46e62eb4e96 = L.marker(
+                [53.3031091, -1.1332851],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_88a7d95d6650d7317624f0ae3fd45f0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b68569a941b79abdbadde46e62eb4e96.setIcon(icon_88a7d95d6650d7317624f0ae3fd45f0f);
+        
+    
+        var popup_ee3b78319499f9b26a39f9a174b28e4c = L.popup({});
+
+        
+            
+                var html_56ad31c070339102ebecca1117127e70 = $(`<div id="html_56ad31c070339102ebecca1117127e70" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Newcastle Avenue, Worksop</h1><div class="nugget-popup"><p>Internal flooding of properties on Newcastle Avenue. [PAG] (p2)</p></div><div class="nugget-popup"><p>Internal flooding of properties caused by overland flows down Brook Terrace (flows from Farr Park) which entered Newcastle Avenue. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Identified in the report as an area that experienced multi&ndash;source flooding; the Lead Local Flood Authority will liaise with Risk Management Authorities to further understand the flooding mechanisms and actions required. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>20 properties internally flooded [PAG] (p2)</p></div><div class="nugget-popup quant"><p>20 properties [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_ee3b78319499f9b26a39f9a174b28e4c.setContent(html_56ad31c070339102ebecca1117127e70);
+            
+        
+
+        marker_b68569a941b79abdbadde46e62eb4e96.bindPopup(popup_ee3b78319499f9b26a39f9a174b28e4c)
+        ;
+
+        
+    
+    
+            var marker_a816425e1bb0c2866c71d484a476cd87 = L.marker(
+                [53.2983311, -1.131373],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_262501e1c8ee4aeb9c18eddd1565a6b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a816425e1bb0c2866c71d484a476cd87.setIcon(icon_262501e1c8ee4aeb9c18eddd1565a6b5);
+        
+    
+        var popup_738df3ee852468e5c8ac27dc5e52b4bc = L.popup({});
+
+        
+            
+                var html_5be45c02db233a9cf27eeb11df453ef4 = $(`<div id="html_5be45c02db233a9cf27eeb11df453ef4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Poplar Close, Worksop</h1><div class="nugget-popup"><p>Internal flooding of residential properties on Poplar Close. [PAG] (p2)</p></div><div class="nugget-popup"><p>Residential properties experienced internal flooding during the event; properties on the street were internally flooded. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Surface water flowing down Poplar Close could not outfall into the drainage system (which would usually convey it to Bull Brook), causing water to build up and flow off the highway, internally flooding residential properties. [PAG] (p7)</p></div><div class="nugget-popup"><p>During Storm Babet (20 October 2023) surface water flowing down Poplar Close could not outfall into the drainage system to Bull Brook. Water built up, flowed off the highway and internally flooded two residential properties. [IMG,PAG] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties internally flooded [PAG] (p2)</p></div><div class="nugget-popup quant"><p>2 properties [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>2 residential properties [PAG] (p7)</p></div><div class="nugget-popup quant"><p>2 residential properties; ~1 foot flood depth observed in adjacent Farr Park [IMG,PAG] (p8)</p></div></div></body></div>`)[0];
+                popup_738df3ee852468e5c8ac27dc5e52b4bc.setContent(html_5be45c02db233a9cf27eeb11df453ef4);
+            
+        
+
+        marker_a816425e1bb0c2866c71d484a476cd87.bindPopup(popup_738df3ee852468e5c8ac27dc5e52b4bc)
+        ;
+
+        
+    
+    
+            var marker_99a66fcc72b7327b8647a5ef63d3504f = L.marker(
+                [53.3222402, -1.1421078],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_9321e96a94ba99201e91d073b019652d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_99a66fcc72b7327b8647a5ef63d3504f.setIcon(icon_9321e96a94ba99201e91d073b019652d);
+        
+    
+        var popup_c544187ccc456ad94180123554eed2d7 = L.popup({});
+
+        
+            
+                var html_e18521f7c158a2d058fc4d48559b127a = $(`<div id="html_e18521f7c158a2d058fc4d48559b127a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Redwing Close, Gateford</h1><div class="nugget-popup"><p>Internal flooding of residential properties on Redwing Close. [PAG] (p2)</p></div><div class="nugget-popup"><p>Internal flooding of properties. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Sustained heavy rainfall during Storm Babet overwhelmed drainage and caused highway flooding; surface water flowed off the highway into properties, resulting in internal flooding. [PAG] (p5)</p></div><div class="nugget-popup"><p>Sustained heavy rainfall (Storm Babet) overwhelmed drainage and caused highway flooding; surface water then flowed off the highway into properties, causing internal flooding in the local area. [IMG,PAG] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties internally flooded [PAG] (p2)</p></div><div class="nugget-popup quant"><p>3 properties [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>6 properties (total across Dunlin Court, Lady Walk and Redwing Close) [PAG] (p5)</p></div><div class="nugget-popup quant"><p>6 properties (across Dunlin Court, Lady Walk and Redwing Close) [IMG,PAG] (p6)</p></div></div></body></div>`)[0];
+                popup_c544187ccc456ad94180123554eed2d7.setContent(html_e18521f7c158a2d058fc4d48559b127a);
+            
+        
+
+        marker_99a66fcc72b7327b8647a5ef63d3504f.bindPopup(popup_c544187ccc456ad94180123554eed2d7)
+        ;
+
+        
+    
+    
+            var marker_fd015f08e664f7a8e0cd029ce4e61d42 = L.marker(
+                [53.3031762, -1.1296762],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_d245e65aa28f3162b114d6e4bd59d08c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fd015f08e664f7a8e0cd029ce4e61d42.setIcon(icon_d245e65aa28f3162b114d6e4bd59d08c);
+        
+    
+        var popup_6ffc2c808d49745193cfffb129645e3c = L.popup({});
+
+        
+            
+                var html_587faafb1691be5c214007743a30d42a = $(`<div id="html_587faafb1691be5c214007743a30d42a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brook Terrace, Kilton</h1><div class="nugget-popup"><p>Flows of floodwater down Brook Terrace routed floodwater into neighbouring streets and directly caused internal flooding on Newcastle Avenue and King Street. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>20 properties on Newcastle Avenue; 20 properties on King Street (p3)</p></div></div></body></div>`)[0];
+                popup_6ffc2c808d49745193cfffb129645e3c.setContent(html_587faafb1691be5c214007743a30d42a);
+            
+        
+
+        marker_fd015f08e664f7a8e0cd029ce4e61d42.bindPopup(popup_6ffc2c808d49745193cfffb129645e3c)
+        ;
+
+        
+    
+    
+            var marker_5f53b67ea4120766eff501ce1efc6302 = L.marker(
+                [53.3024355, -1.1289125],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_69a03bb1515961f2ea12bcf1b60f46d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5f53b67ea4120766eff501ce1efc6302.setIcon(icon_69a03bb1515961f2ea12bcf1b60f46d6);
+        
+    
+        var popup_3aaf6e28fc6a23fe9c0bf9e74e442ee1 = L.popup({});
+
+        
+            
+                var html_1d4b1d53a21c6b82deb5095951cfdbc1 = $(`<div id="html_1d4b1d53a21c6b82deb5095951cfdbc1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chapel Walk, Kilton</h1><div class="nugget-popup"><p>Internal flooding of at least one property on the street during the flood event. [IMG,PAG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_3aaf6e28fc6a23fe9c0bf9e74e442ee1.setContent(html_1d4b1d53a21c6b82deb5095951cfdbc1);
+            
+        
+
+        marker_5f53b67ea4120766eff501ce1efc6302.bindPopup(popup_3aaf6e28fc6a23fe9c0bf9e74e442ee1)
+        ;
+
+        
+    
+    
+            var marker_ca017fd35b2aba2d68f75cd8804778dc = L.marker(
+                [53.3055472, -1.1336954],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_14081cd247ba49f8c61e24839eb5d88a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ca017fd35b2aba2d68f75cd8804778dc.setIcon(icon_14081cd247ba49f8c61e24839eb5d88a);
+        
+    
+        var popup_f8f9fc1a69aea7ba8effabb93a36b4c0 = L.popup({});
+
+        
+            
+                var html_6b862e96eccc017939ee706a3ae928ee = $(`<div id="html_6b862e96eccc017939ee706a3ae928ee" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stubbing Lane, Worksop</h1><div class="nugget-popup"><p>The River Ryton rose rapidly and peaked at the Worksop gauge on Stubbing Lane (peak recorded), indicating river flooding at this location that contributed to flooding in the town. [IMG] (p3)</p></div></div></body></div>`)[0];
+                popup_f8f9fc1a69aea7ba8effabb93a36b4c0.setContent(html_6b862e96eccc017939ee706a3ae928ee);
+            
+        
+
+        marker_ca017fd35b2aba2d68f75cd8804778dc.bindPopup(popup_f8f9fc1a69aea7ba8effabb93a36b4c0)
+        ;
+
+        
+    
+    
+            var marker_390b773650d3ccb9ca4cabbb57092bb6 = L.marker(
+                [53.3245811, -1.1425699],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_685a3e3d9cfa9fe434397ed0604eda86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_390b773650d3ccb9ca4cabbb57092bb6.setIcon(icon_685a3e3d9cfa9fe434397ed0604eda86);
+        
+    
+        var popup_adaba449d634d77746a3468d62033c7e = L.popup({});
+
+        
+            
+                var html_96aac176b60e5b38cc69aff5b6d994ad = $(`<div id="html_96aac176b60e5b38cc69aff5b6d994ad" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lady Walk, Gateford</h1><div class="nugget-popup"><p>Internal flooding of properties. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Sustained heavy rainfall during Storm Babet overwhelmed drainage and caused highway flooding; surface water flowed off the highway into properties, resulting in internal flooding. [PAG] (p5)</p></div><div class="nugget-popup"><p>Sustained heavy rainfall (Storm Babet) overwhelmed drainage and caused highway flooding; surface water then flowed off the highway into properties, causing internal flooding in the local area. [IMG,PAG] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>6 properties (total across Dunlin Court, Lady Walk and Redwing Close) [PAG] (p5)</p></div><div class="nugget-popup quant"><p>6 properties (across Dunlin Court, Lady Walk and Redwing Close) [IMG,PAG] (p6)</p></div></div></body></div>`)[0];
+                popup_adaba449d634d77746a3468d62033c7e.setContent(html_96aac176b60e5b38cc69aff5b6d994ad);
+            
+        
+
+        marker_390b773650d3ccb9ca4cabbb57092bb6.bindPopup(popup_adaba449d634d77746a3468d62033c7e)
+        ;
+
+        
+    
+    
+            var marker_ec69cbdc6b38e21929c7d9b289036645 = L.marker(
+                [53.3031663, -1.1212376],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_fd3f731545d5ae8e49fece566678118a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ec69cbdc6b38e21929c7d9b289036645.setIcon(icon_fd3f731545d5ae8e49fece566678118a);
+        
+    
+        var popup_82b323c2857c90e6a9c65a7c679b51aa = L.popup({});
+
+        
+            
+                var html_849b95ea1b47329d839783249235f4b0 = $(`<div id="html_849b95ea1b47329d839783249235f4b0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Watson Road, Kilton</h1><div class="nugget-popup"><p>Mapped as a flood&ndash;affected area in Figure 2; the report does not provide specific details or property counts for Watson Road. [IMG] (p3)</p></div><div class="nugget-popup"><p>The River Ryton overtopped its banks following sustained heavy rainfall; floodwater followed topography and pooled at a low spot on Watson Road, causing internal flooding of a business property. [PAG] (p6)</p></div><div class="nugget-popup"><p>The River Ryton overtopped its banks due to sustained heavy rainfall; floodwater followed local topography and pooled in the low spot, causing internal flooding to a business property located on Watson Road. [IMG,PAG] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 business property [PAG] (p6)</p></div><div class="nugget-popup quant"><p>1 business property [IMG,PAG] (p7)</p></div></div></body></div>`)[0];
+                popup_82b323c2857c90e6a9c65a7c679b51aa.setContent(html_849b95ea1b47329d839783249235f4b0);
+            
+        
+
+        marker_ec69cbdc6b38e21929c7d9b289036645.bindPopup(popup_82b323c2857c90e6a9c65a7c679b51aa)
+        ;
+
+        
+    
+    
+            var marker_8db8e5c31bd1ace2aeb54ee06134337a = L.marker(
+                [53.3134991, -1.128361],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_0def9908d465a40a2b8b427ccf91f62d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8db8e5c31bd1ace2aeb54ee06134337a.setIcon(icon_0def9908d465a40a2b8b427ccf91f62d);
+        
+    
+        var popup_4f9650acac6f4e578c1845b630754c88 = L.popup({});
+
+        
+            
+                var html_f073bf3640a8902c9785cddfc1ad5eb2 = $(`<div id="html_f073bf3640a8902c9785cddfc1ad5eb2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gateford Road, Kilton</h1><div class="nugget-popup"><p>Surface&ndash;water flood extent from Environment Agency mapping overlaps Gateford Road. The EA surface&ndash;water mapping correlates with the localised surface&ndash;water flooding observed in the Gateford area during Storm Babet, indicating highway&ndash;level surface&ndash;water flooding and risk of water flowing off the highway into adjacent low spots and properties. [IMG] (p6)</p></div></div></body></div>`)[0];
+                popup_4f9650acac6f4e578c1845b630754c88.setContent(html_f073bf3640a8902c9785cddfc1ad5eb2);
+            
+        
+
+        marker_8db8e5c31bd1ace2aeb54ee06134337a.bindPopup(popup_4f9650acac6f4e578c1845b630754c88)
+        ;
+
+        
+    
+    
+            var marker_5d4c6fc4ca0970e76e5fce3b89d57a65 = L.marker(
+                [53.3238765, -1.1538797],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_d0cfecc5140fbfdd1333c5c8c3db147b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5d4c6fc4ca0970e76e5fce3b89d57a65.setIcon(icon_d0cfecc5140fbfdd1333c5c8c3db147b);
+        
+    
+        var popup_0673c6d828f440b6f4c79814323fbe44 = L.popup({});
+
+        
+            
+                var html_81d356229d9ce63c40e85aed2fdcfb08 = $(`<div id="html_81d356229d9ce63c40e85aed2fdcfb08" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Claylands Avenue, Gateford</h1><div class="nugget-popup"><p>Environment Agency surface&ndash;water flood mapping shows medium/ high risk overlapping Claylands Avenue; this mapping is presented as correlating with observed localised surface&ndash;water flooding in the Gateford area during Storm Babet, indicating Claylands Avenue was exposed to surface&ndash;water inundation and highway flooding. [IMG] (p6)</p></div></div></body></div>`)[0];
+                popup_0673c6d828f440b6f4c79814323fbe44.setContent(html_81d356229d9ce63c40e85aed2fdcfb08);
+            
+        
+
+        marker_5d4c6fc4ca0970e76e5fce3b89d57a65.bindPopup(popup_0673c6d828f440b6f4c79814323fbe44)
+        ;
+
+        
+    
+    
+            var marker_e798cf2baeac0ef0b718d8f05b68f13a = L.marker(
+                [53.305538, -1.1147548],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_cd1f21b3f01bc0b02a359dfcdf4f42ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e798cf2baeac0ef0b718d8f05b68f13a.setIcon(icon_cd1f21b3f01bc0b02a359dfcdf4f42ec);
+        
+    
+        var popup_0726b3da4fb99b8049472065c7df1045 = L.popup({});
+
+        
+            
+                var html_f1a5ef266d064fe4b3a780626d98e0d8 = $(`<div id="html_f1a5ef266d064fe4b3a780626d98e0d8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Shelley Street, Kilton</h1><div class="nugget-popup"><p>Included in Environment Agency Flood Warnings for the River Ryton on 20/10/2023; EA carried out patrols and cleared blockages in the area before and after peak flows. (p12)</p></div></div></body></div>`)[0];
+                popup_0726b3da4fb99b8049472065c7df1045.setContent(html_f1a5ef266d064fe4b3a780626d98e0d8);
+            
+        
+
+        marker_e798cf2baeac0ef0b718d8f05b68f13a.bindPopup(popup_0726b3da4fb99b8049472065c7df1045)
+        ;
+
+        
+    
+    
+            var marker_83cac455b0b1810e1c8da3ac27e06267 = L.marker(
+                [53.3051143, -1.1173136],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_998ced0b71c14e70ce50b4d952d8a810 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_83cac455b0b1810e1c8da3ac27e06267.setIcon(icon_998ced0b71c14e70ce50b4d952d8a810);
+        
+    
+        var popup_a5c6828e7cf67efbaf5b59601471b78a = L.popup({});
+
+        
+            
+                var html_afa233aa7d094227601a50dab1e841a9 = $(`<div id="html_afa233aa7d094227601a50dab1e841a9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Canch, Kilton</h1><div class="nugget-popup"><p>The Canch penstocks were proactively opened by the Environment Agency a day in advance of the rainfall to lower levels and increase capacity; Canal and Rivers Trust were instructed to open their penstocks at the same location as part of flood management. [MUL] (p12)</p></div><div class="nugget-popup"><p>Desilting works and canal/conveyance repairs were proposed for the Canch after the flood; options for the Canch Canal feeder and spillway (including works downstream of Canal and River Trust penstocks) will be explored to restore flow and reduce future risk. (p13)</p></div></div></body></div>`)[0];
+                popup_a5c6828e7cf67efbaf5b59601471b78a.setContent(html_afa233aa7d094227601a50dab1e841a9);
+            
+        
+
+        marker_83cac455b0b1810e1c8da3ac27e06267.bindPopup(popup_a5c6828e7cf67efbaf5b59601471b78a)
+        ;
+
+        
+    
+    
+            var marker_f80c64c06507f71c408267ab756b443f = L.marker(
+                [53.145927, -1.0214971],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_9277f0626ccacc0fc8207e0c0d8e4098 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f80c64c06507f71c408267ab756b443f.setIcon(icon_9277f0626ccacc0fc8207e0c0d8e4098);
+        
+    
+        var popup_4337d8eb0276deb5d7b36c35021e8092 = L.popup({});
+
+        
+            
+                var html_d181bb6870cc0f5a182cc4722af265c7 = $(`<div id="html_d181bb6870cc0f5a182cc4722af265c7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottinghamshire</h1><div class="nugget-popup"><p>Verified and recorded internal property flooding across the county; provided on&ndash;site support, guidance and advice to affected residents and businesses; delivered sandbags to affected areas; closed roads to promote safety and avoid further flood damage; collated and published verified flood impact data; initiated and led the Section 19 Flood Investigation; led procurement and delivery of DEFRA Property Flood Resilience Repair Grant Scheme and initiated a Community Flood Recovery Grant. (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>77 roads (p11)</p></div></div></body></div>`)[0];
+                popup_4337d8eb0276deb5d7b36c35021e8092.setContent(html_d181bb6870cc0f5a182cc4722af265c7);
+            
+        
+
+        marker_f80c64c06507f71c408267ab756b443f.bindPopup(popup_4337d8eb0276deb5d7b36c35021e8092)
+        ;
+
+        
+    
+    
+            var marker_b6d385bae2379b749472c8628c74b7c3 = L.marker(
+                [53.304237, -1.1246167],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_6967c831d2508ed12f0cf41fd8a9a7d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b6d385bae2379b749472c8628c74b7c3.setIcon(icon_6967c831d2508ed12f0cf41fd8a9a7d4);
+        
+    
+        var popup_f44029f60450e925129d2aeead120823 = L.popup({});
+
+        
+            
+                var html_12f1eb1cd80f8e36cd2f6dbbe303f1fc = $(`<div id="html_12f1eb1cd80f8e36cd2f6dbbe303f1fc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Worksop</h1><div class="nugget-popup"><p>Sustained heavy rainfall during Storm Babet caused flooding of roads and residential properties in Worksop; flooding occurred faster than normal because the ground was already saturated. (p1)</p></div><div class="nugget-popup"><p>Multiple streets across Worksop experienced surface water and urban flooding during the intense rainfall event; numerous properties were internally flooded across the town. [PAG] (p2)</p></div><div class="nugget-popup"><p>Multiple streets and residential properties across Worksop experienced internal flooding on 20 October 2023 as a result of the rapid rise of the River Ryton and associated surface water flows. Affected streets listed in the report include Allen Street, Central Avenue, Chapel Walk, Dunlin Court, Hardy Street, King Street, Newcastle Avenue, Old Bakery Yard, Poplar Close, Redwing Close, Redwood Avenue and Carlton Road. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Multiple areas of Worksop were flooded on 20 October. Streets listed as flood&ndash;affected on the south side of the River Ryton include Allen Street, Central Avenue, Chapel Walk, Hardy Street, King Street, Newcastle Avenue, Stubbing Lane and The Willows. Residents reported significant flows off Farr Park and down Brook Terrace that caused internal flooding on Newcastle Avenue and King Street. In the Gateford area (Dunlin Court, Lady Walk and Redwing Close) overwhelmed drainage during Storm Babet caused highway flooding that progressed into properties. [IMG,PAG] (p4)</p></div><div class="nugget-popup"><p>Parts of Worksop (notably the Gateford area) were affected by sustained heavy rainfall during Storm Babet which overwhelmed drainage systems, producing highway flooding and surface water that entered properties. [PAG] (p5)</p></div><div class="nugget-popup"><p>Experienced flooding associated with the River Ryton event on 20/10/2023; local authorities cleansed significant detritus from roads, car parks and paths, rehoused affected council tenants, undertook repairs to affected council housing properties, and promoted/administered business recovery grants and business rates relief. [PAG] (p12)</p></div><div class="nugget-popup"><p>Multi&ndash;source flooding affected the communities of Worksop and Shireoaks, prompting multi&ndash;agency recovery and engagement (drop&ndash;in events), and the planning of river/canal desilting and conveyance works to reduce future flood risk. (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>93 residential properties (p1)</p></div><div class="nugget-popup quant"><p>121 properties [PAG] (p2)</p></div><div class="nugget-popup quant"><p>Allen Street (19 properties); Central Avenue (32 properties); Hardy Street (8 properties); King Street (20 properties); Newcastle Avenue (20 properties); Old Bakery Yard (11 properties); Chapel Walk (1 property); Dunlin Court (1 property); Lady Walk (2 properties); Poplar Close (2 properties); Redwing Close (3 properties); Redwood Avenue (1 property); Carlton Road (1 property) [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>6 properties internally flooded in Dunlin Court / Lady Walk / Redwing Close (Gateford area) [IMG,PAG] (p4)</p></div><div class="nugget-popup quant"><p>6 properties (internal flooding in Gateford area: Dunlin Court, Lady Walk and Redwing Close) [PAG] (p5)</p></div></div></body></div>`)[0];
+                popup_f44029f60450e925129d2aeead120823.setContent(html_12f1eb1cd80f8e36cd2f6dbbe303f1fc);
+            
+        
+
+        marker_b6d385bae2379b749472c8628c74b7c3.bindPopup(popup_f44029f60450e925129d2aeead120823)
+        ;
+
+        
+    
+    
+            var marker_fc2bfebf2ef412c8e6442a336f380213 = L.marker(
+                [53.3271391, -1.1380156],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_2af800be58446bca691e2899bc1c56b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fc2bfebf2ef412c8e6442a336f380213.setIcon(icon_2af800be58446bca691e2899bc1c56b1);
+        
+    
+        var popup_3201a36e7fb6fc5f00d414f80dc1db99 = L.popup({});
+
+        
+            
+                var html_20216183e6dc99fd6f17dc81a20084c8 = $(`<div id="html_20216183e6dc99fd6f17dc81a20084c8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gateford</h1><div class="nugget-popup"><p>Gateford area experienced sustained heavy rainfall during Storm Babet which overwhelmed drainage; initial highway flooding progressed to surface water entering properties in the local area (including Dunlin Court, Lady Walk and Redwing Close). (p5)</p></div><div class="nugget-popup"><p>The local Severn Trent tank in Gateford filled during the storm event, indicating the sewer/storm system reached capacity during the flood; Severn Trent attended and deployed resources in the area to manage water levels. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties (internal flooding in the local area covering Dunlin Court, Lady Walk and Redwing Close) (p5)</p></div></div></body></div>`)[0];
+                popup_3201a36e7fb6fc5f00d414f80dc1db99.setContent(html_20216183e6dc99fd6f17dc81a20084c8);
+            
+        
+
+        marker_fc2bfebf2ef412c8e6442a336f380213.bindPopup(popup_3201a36e7fb6fc5f00d414f80dc1db99)
+        ;
+
+        
+    
+    
+            var marker_988a58b77c386eafe5e7c81fe6e39ee2 = L.marker(
+                [53.3248638, -1.1683224],
+                {}
+            ).addTo(map_b56fd6c94ceff0a1ad03c29f3fb45508);
+        
+    
+            var icon_30c44c7590837575fa703930f2e340c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_988a58b77c386eafe5e7c81fe6e39ee2.setIcon(icon_30c44c7590837575fa703930f2e340c3);
+        
+    
+        var popup_da8799a0ade5ab2ad8aae92989415f4a = L.popup({});
+
+        
+            
+                var html_8d6ba42d104f0ad3dd768979c9e5558d = $(`<div id="html_8d6ba42d104f0ad3dd768979c9e5558d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Shireoaks</h1><div class="nugget-popup"><p>Multi&ndash;source flooding affected the communities of Worksop and Shireoaks, prompting multi&ndash;agency recovery and engagement (drop&ndash;in events), and the planning of river/canal desilting and conveyance works to reduce future flood risk. (p13)</p></div></div></body></div>`)[0];
+                popup_da8799a0ade5ab2ad8aae92989415f4a.setContent(html_8d6ba42d104f0ad3dd768979c9e5558d);
+            
+        
+
+        marker_988a58b77c386eafe5e7c81fe6e39ee2.bindPopup(popup_da8799a0ade5ab2ad8aae92989415f4a)
+        ;
+
+        
+    
+</script>
+</html>
