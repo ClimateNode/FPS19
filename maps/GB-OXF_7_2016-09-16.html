@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fbc51db5b887131a7b381b9870b94d30 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fbc51db5b887131a7b381b9870b94d30" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fbc51db5b887131a7b381b9870b94d30 = L.map(
+                "map_fbc51db5b887131a7b381b9870b94d30",
+                {
+                    center: [51.60814991440926, -1.2488202084030282],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f05ad073d254307d95b3dd5d24624e4f = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_f05ad073d254307d95b3dd5d24624e4f.addTo(map_fbc51db5b887131a7b381b9870b94d30);
+    
+            var marker_1edb462b5ad2b5f6ab39957b43174e10 = L.marker(
+                [51.6076614, -1.2507956],
+                {}
+            ).addTo(map_fbc51db5b887131a7b381b9870b94d30);
+        
+    
+            var icon_c45eaadc72edb796c63ecaa667c10b0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1edb462b5ad2b5f6ab39957b43174e10.setIcon(icon_c45eaadc72edb796c63ecaa667c10b0c);
+        
+    
+        var popup_33e803d6ee1303fc71c147e89975d435 = L.popup({});
+
+        
+            
+                var html_8004b8cc48ae52c0eab80c14f1d1d5e1 = $(`<div id="html_8004b8cc48ae52c0eab80c14f1d1d5e1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Manor School</h1><div class="nugget-popup"><p>Internal flooding of the school with flood flows entering via the ramp to the school hall and affecting the playground/drainage areas; soakaways require cleaning/desilting indicating they were not functioning as intended. [PAG] (p5)</p></div><div class="nugget-popup"><p>Surface water entered the school premises during an extreme rainfall event; water affected the school hall and the computer room. Oxfordshire Fire and Rescue Service attended and attempted to pump out water. The school commissioned a contractor to refurbish the school hall floor. There had been some prior minor flooding to the school property which did not result in internal flooding. (p7)</p></div><div class="nugget-popup"><p>Flood flows entered the school hall via the ramp and affected the playground; on&ndash;site drainage (soakaways and drainage channels) were ineffective/silted and require cleaning/desilting and installation of barriers/diversions to prevent flow entering the building. [PAG] (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 school [PAG] (p5)</p></div><div class="nugget-popup quant"><p>2 rooms (school hall and computer room) (p7)</p></div></div></body></div>`)[0];
+                popup_33e803d6ee1303fc71c147e89975d435.setContent(html_8004b8cc48ae52c0eab80c14f1d1d5e1);
+            
+        
+
+        marker_1edb462b5ad2b5f6ab39957b43174e10.bindPopup(popup_33e803d6ee1303fc71c147e89975d435)
+        ;
+
+        
+    
+    
+            var marker_a96749d9452e7ff7798d19d870835fb0 = L.marker(
+                [51.6083113, -1.2515025],
+                {}
+            ).addTo(map_fbc51db5b887131a7b381b9870b94d30);
+        
+    
+            var icon_ca9b29e3b730e2f0018e26746eecf788 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a96749d9452e7ff7798d19d870835fb0.setIcon(icon_ca9b29e3b730e2f0018e26746eecf788);
+        
+    
+        var popup_82737f328b1f047b5778065d4348784f = L.popup({});
+
+        
+            
+                var html_a9fa9a1116d8a4384471783d2967e592 = $(`<div id="html_a9fa9a1116d8a4384471783d2967e592" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lydalls Close, Didcot</h1><div class="nugget-popup"><p>Flood caused a transport link to be impassable at Lydalls Close. [PAG] (p4)</p></div><div class="nugget-popup"><p>Lydalls Close is the subject of the Flood Incident Investigation and was impacted by surface water flooding during the reported event. [PAG] (p13)</p></div><div class="nugget-popup"><p>Site of the flood incident prompting recommendations for inspection and maintenance of surface water drainage, development of a detailed drainage asset plan to share with the LLFA and community, and potential enforcement under the Land Drainage Act where riparian owners fail to maintain ordinary watercourses. [PAG] (p14)</p></div><div class="nugget-popup"><p>Lydalls Close is named in the 'Flood Incident Investigation', indicating it was affected by a flooding incident; no specific flood impact details are provided in the supplied text. [PAG] (p17)</p></div><div class="nugget-popup"><p>Location of Manor School which is the subject of a Flood Incident Investigation &mdash; indicates the street/site experienced a flood incident. [PAG] (p18)</p></div></div></body></div>`)[0];
+                popup_82737f328b1f047b5778065d4348784f.setContent(html_a9fa9a1116d8a4384471783d2967e592);
+            
+        
+
+        marker_a96749d9452e7ff7798d19d870835fb0.bindPopup(popup_82737f328b1f047b5778065d4348784f)
+        ;
+
+        
+    
+    
+            var marker_83b07fee0b8e6035a565d6ca2e027fed = L.marker(
+                [51.608477043227786, -1.2441625252090849],
+                {}
+            ).addTo(map_fbc51db5b887131a7b381b9870b94d30);
+        
+    
+            var icon_09e6532a9ad5cd2a416a26e44fb6d15c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_83b07fee0b8e6035a565d6ca2e027fed.setIcon(icon_09e6532a9ad5cd2a416a26e44fb6d15c);
+        
+    
+        var popup_883d27bc1ce7d8d2377add2a85aef386 = L.popup({});
+
+        
+            
+                var html_36339774cbe98c406bdba761897e22d4 = $(`<div id="html_36339774cbe98c406bdba761897e22d4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Didcot</h1><div class="nugget-popup"><p>Flood event in Didcot caused a transport link to be impassable. [PAG] (p4)</p></div><div class="nugget-popup"><p>Severe surface&ndash;water flooding occurred across areas of Didcot during the extreme rainfall event; surface water inundated premises in the town (including Manor School) and led to emergency response actions such as pumping out the school hall and computer room. (p7)</p></div><div class="nugget-popup"><p>The flood incident occurred at Manor School on Lydalls Close in Didcot: surface water/drainage flows entered the school hall via the ramp and affected the playground; on&ndash;site soakaways and drainage channels were compromised and recommended for cleaning/desilting and barrier/diversion installation. [PAG] (p11)</p></div><div class="nugget-popup"><p>A flood incident occurred at Manor School and nearby Lydalls Close in Didcot; a Flood Incident Investigation was carried out. [PAG] (p13)</p></div><div class="nugget-popup"><p>The flood incident affecting Manor School / Lydalls Close in Didcot led to town&ndash;scale recommendations: coordinating developer compliance with approved drainage designs, landowner inspection and maintenance regimes, preparation of drainage asset plans to share with the LLFA and community, and promoting community flood warden support. [PAG] (p14)</p></div><div class="nugget-popup"><p>Didcot is the location referenced by the Flood Incident Investigation (Manor School, Lydalls Close); the document indicates a flooding incident affected this area but no specific impacts are described in the supplied text. [PAG] (p17)</p></div><div class="nugget-popup"><p>Town containing Manor School on Lydalls Close which was the subject of a Flood Incident Investigation; therefore the town location was affected by the reported flood incident. [IMG,PAG] (p18)</p></div></div></body></div>`)[0];
+                popup_883d27bc1ce7d8d2377add2a85aef386.setContent(html_36339774cbe98c406bdba761897e22d4);
+            
+        
+
+        marker_83b07fee0b8e6035a565d6ca2e027fed.bindPopup(popup_883d27bc1ce7d8d2377add2a85aef386)
+        ;
+
+        
+    
+</script>
+</html>
