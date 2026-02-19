@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_24b9dcb6c56c673172cba289e6140ff7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_24b9dcb6c56c673172cba289e6140ff7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_24b9dcb6c56c673172cba289e6140ff7 = L.map(
+                "map_24b9dcb6c56c673172cba289e6140ff7",
+                {
+                    center: [51.46877487300609, -1.0135351918063888],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6551d982c5cb17dc639d9442a071c40e = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_6551d982c5cb17dc639d9442a071c40e.addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+    
+            var marker_d89d3e0c40284c76416073edc5eaeac1 = L.marker(
+                [51.4636866, -0.9687060854131557],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_2224c6dddd5ebe60873d2b8dd5b0cb97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d89d3e0c40284c76416073edc5eaeac1.setIcon(icon_2224c6dddd5ebe60873d2b8dd5b0cb97);
+        
+    
+        var popup_c4981cc018b714c597745e68679defd9 = L.popup({});
+
+        
+            
+                var html_81a23ba3b72b15049abb5bdd50b8778f = $(`<div id="html_81a23ba3b72b15049abb5bdd50b8778f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Christchurch Meadows</h1><div class="nugget-popup"><p>Identified as part of the floodplain; subject to inundation during flood events and functions as part of the area drained by Christchurch Ditch following flood events. (p7)</p></div></div></body></div>`)[0];
+                popup_c4981cc018b714c597745e68679defd9.setContent(html_81a23ba3b72b15049abb5bdd50b8778f);
+            
+        
+
+        marker_d89d3e0c40284c76416073edc5eaeac1.bindPopup(popup_c4981cc018b714c597745e68679defd9)
+        ;
+
+        
+    
+    
+            var marker_33d9b5a34371037d89e39e498aecadbf = L.marker(
+                [51.4626702, -0.9649874],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_269b3454bf6c86ae524a3634dde7c4b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_33d9b5a34371037d89e39e498aecadbf.setIcon(icon_269b3454bf6c86ae524a3634dde7c4b2);
+        
+    
+        var popup_3a14eca1f55e0b3187c1e49bfaf9dd5f = L.popup({});
+
+        
+            
+                var html_6ef20e3235e0a883ad97cbf58e79b1fc = $(`<div id="html_6ef20e3235e0a883ad97cbf58e79b1fc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hills Meadow</h1><div class="nugget-popup"><p>Identified as part of the floodplain; subject to inundation during flood events and drained by Christchurch Ditch as part of the floodplain drainage network. (p7)</p></div><div class="nugget-popup"><p>Culvert at the eastern end of Hills Meadow was heavily blocked by a dense accumulation of woody debris and other materials, preventing normal outflow. Water pooled behind the blockage, restricting drainage and contributing to local flooding/ponding within the meadow and raising downstream flood risk until the obstruction was cleared. [IMG] (p36)</p></div><div class="nugget-popup"><p>Eastern end of Hills Meadow experienced flood&ndash;related issues: partial culvert blockage by woody debris and a tree growing into the footbridge, discarded/failed sandbags on the southern bank and muddy, waterlogged ground indicating recent inundation and erosion. [IMG,PAG] (p39)</p></div><div class="nugget-popup"><p>Christchurch Ditch within Hills Meadow contained woody debris, litter and vegetation that obstructed flow; a tree was growing against and deforming a brick wall/footbridge, causing visible structural damage. These obstructions and damaged structure were recorded after the flood and would have reduced conveyance and contributed to local flooding/flow restrictions. [PAG] (p40)</p></div><div class="nugget-popup"><p>Partial blockage of a culvert by woody debris and a tree growing into a footbridge at the eastern end of Hills Meadow (Lower Caversham), restricting channel conveyance and contributing to localised flooding/backwater during the 05 Jan 2024 &ndash; 07 Jan 2024 event. [PAG] (p41)</p></div><div class="nugget-popup"><p>Tree debris, vegetation and accumulated litter were present in Christchurch Ditch as it flows through Hills Meadow, with banks covered by weed and debris that obstruct the channel. [PAG] (p42)</p></div><div class="nugget-popup"><p>Identified on the Lower Caversham model and indicated as being within the modelled inundation and flow path area for the 1&ndash;in&ndash;30&ndash;year event, implying predicted inundation of the meadow area by overland/flow&ndash;path flooding. [IMG] (p48)</p></div></div></body></div>`)[0];
+                popup_3a14eca1f55e0b3187c1e49bfaf9dd5f.setContent(html_6ef20e3235e0a883ad97cbf58e79b1fc);
+            
+        
+
+        marker_33d9b5a34371037d89e39e498aecadbf.bindPopup(popup_3a14eca1f55e0b3187c1e49bfaf9dd5f)
+        ;
+
+        
+    
+    
+            var marker_41c124f025050ea0991a83e40c0be25d = L.marker(
+                [51.437355, -1.0478582],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_d7381b819dc2db4fc50e5916629584fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_41c124f025050ea0991a83e40c0be25d.setIcon(icon_d7381b819dc2db4fc50e5916629584fd);
+        
+    
+        var popup_1ec7ee9553e59ef5fb87e3f760802b41 = L.popup({});
+
+        
+            
+                var html_261dc96431eefab3eb185bbecb9d8248 = $(`<div id="html_261dc96431eefab3eb185bbecb9d8248" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Linear Park</h1><div class="nugget-popup"><p>Culverted and open channels within Linear Park (on land owned by RBC) were implicated in the flooding: a ditch immediately south of Circuit Lane was blocked by woody debris and a culvert at the northern end was found blocked by sheet piling/partially collapsed, significantly reducing flows and contributing to local backflow and property flooding. (p16)</p></div></div></body></div>`)[0];
+                popup_1ec7ee9553e59ef5fb87e3f760802b41.setContent(html_261dc96431eefab3eb185bbecb9d8248);
+            
+        
+
+        marker_41c124f025050ea0991a83e40c0be25d.bindPopup(popup_1ec7ee9553e59ef5fb87e3f760802b41)
+        ;
+
+        
+    
+    
+            var marker_d3699da912e349f6321cb519d29c6ecc = L.marker(
+                [51.462722, -0.961782],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_95d326b029b3c18292efe42dbc432942 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d3699da912e349f6321cb519d29c6ecc.setIcon(icon_95d326b029b3c18292efe42dbc432942);
+        
+    
+        var popup_746af3c108f717b1e9a0cda81eac5bb6 = L.popup({});
+
+        
+            
+                var html_2be01c7f9fe7b4e93a281e9f8aa39d2b = $(`<div id="html_2be01c7f9fe7b4e93a281e9f8aa39d2b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Heron Island</h1><div class="nugget-popup"><p>The outfall location at Heron Island was blocked by thick vegetation, preventing access to the ditch outfall during the flood investigation on 7 Jan 2024 and likely hindering inspection or maintenance actions during the flood period. [IMG] (p31)</p></div><div class="nugget-popup"><p>A closed section of culvert at Heron Island and accumulation of excessive woody debris along the channel leading to the culvert entry were observed; these obstructions contributed to restricted flow and localised flooding issues. (p43)</p></div></div></body></div>`)[0];
+                popup_746af3c108f717b1e9a0cda81eac5bb6.setContent(html_2be01c7f9fe7b4e93a281e9f8aa39d2b);
+            
+        
+
+        marker_d3699da912e349f6321cb519d29c6ecc.bindPopup(popup_746af3c108f717b1e9a0cda81eac5bb6)
+        ;
+
+        
+    
+    
+            var marker_58874c2a3957e3f89a4527ae07562bb9 = L.marker(
+                [51.4384984, -1.0129825],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_4cdf364c1f123b05bdb4793e9a5d15dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_58874c2a3957e3f89a4527ae07562bb9.setIcon(icon_4cdf364c1f123b05bdb4793e9a5d15dd);
+        
+    
+        var popup_bc7862c64970f1500e388215ac643817 = L.popup({});
+
+        
+            
+                var html_1fd23b4f90102c7e3ff7464b0e3ebec9 = $(`<div id="html_1fd23b4f90102c7e3ff7464b0e3ebec9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holy Brook</h1><div class="nugget-popup"><p>Exceedance of the capacity of the local network of ditches connected to Holy Brook contributed to flooding of nearby properties through backflow and reduced conveyance capacity. (p16)</p></div><div class="nugget-popup"><p>Holy Brook and its associated culverts had debris and blockages (including near Briscoe's Bridge and the Network Rail culvert), reducing conveyance and contributing to localised flooding and drainage failure observed around 05 Jan 2024. [IMG] (p27)</p></div><div class="nugget-popup"><p>Flooding damaged the river banks west of Briscoe's Bridge; temporary repairs were carried out to the damaged banks as post&ndash;flood works. (p45)</p></div></div></body></div>`)[0];
+                popup_bc7862c64970f1500e388215ac643817.setContent(html_1fd23b4f90102c7e3ff7464b0e3ebec9);
+            
+        
+
+        marker_58874c2a3957e3f89a4527ae07562bb9.bindPopup(popup_bc7862c64970f1500e388215ac643817)
+        ;
+
+        
+    
+    
+            var marker_4e87b5c1fd60068045f3f214bb39301b = L.marker(
+                [51.45345723164064, -0.9745046760864504],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_52706cb289aa2491a5930e3a4ce9254a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4e87b5c1fd60068045f3f214bb39301b.setIcon(icon_52706cb289aa2491a5930e3a4ce9254a);
+        
+    
+        var popup_8f7c2832ad28e44f5b218a397ef424c2 = L.popup({});
+
+        
+            
+                var html_b1351dc44c4b97c70c0fb4b62b022af5 = $(`<div id="html_b1351dc44c4b97c70c0fb4b62b022af5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Reading Unitary Authority</h1><div class="nugget-popup"><p>Properties within Reading were affected by flooding. Flooding was exacerbated by localised surface water drainage problems and potentially raised groundwater within the river gravels; nearby brooks (including Dannalls Brook) and reaches of the River Thames and River Kennet within the borough are referenced as relevant watercourses. [PAG] (p6)</p></div><div class="nugget-popup"><p>River levels in Reading reached their highest level since 1947 in early January 2024, indicating significant river flooding of the borough during the event. (p10)</p></div><div class="nugget-popup"><p>River flooding from the River Thames (and high flows on the River Kennet) caused inundation of low&ndash;lying land in Reading and created conditions for property flooding; elevated river levels exceeded established thresholds and produced an extended period of above&ndash;normal river levels through January 2024. [PAG,IMG] (p12)</p></div><div class="nugget-popup"><p>Modelled fluvial inundation affected low&ndash;lying riverbanks and meadows in Lower Caversham (notably Christchurch Meadows and King's Meadow) and extends into adjacent urban areas. The modelled extents indicate schools and urban infrastructure in parts of Reading lie within the inundation envelopes for 1 in 20 to 1 in 1000 year events; the map suggests these areas were at risk during the reported flood event. It is unclear from this page alone which specific properties were observed flooded during 05&ndash;07 Jan 2024, as the figure shows modelled extents rather than confirmed property&ndash;level observations. [IMG,PAG] (p49)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>River Thames at Reading: exceeded property&ndash;flood threshold of 7.25m AD on 5 Jan 2024 (recorded 7.26m AD) and peaked at 7.54m AD on 7 Jan 2024; returned to consistently below 7.00m AD on 11 Jan 2024. River Kennet at Theale: exceeded normal range (1.05m AD) on 1 Jan 2024 and peaked at 1.78m AD on 6 Jan 2024; Kennet remained above normal from 1&ndash;27 Jan 2024. Event estimated at between a 1 in 30 and 1 in 50 year (2%&ndash;3.3% annual probability). [PAG,IMG] (p12)</p></div><div class="nugget-popup quant"><p>1 in 20 to 1 in 1000 year flood extents (including a 1 in 30 year medium&ndash;blue extent shown) [IMG,PAG] (p49)</p></div></div></body></div>`)[0];
+                popup_8f7c2832ad28e44f5b218a397ef424c2.setContent(html_b1351dc44c4b97c70c0fb4b62b022af5);
+            
+        
+
+        marker_4e87b5c1fd60068045f3f214bb39301b.bindPopup(popup_8f7c2832ad28e44f5b218a397ef424c2)
+        ;
+
+        
+    
+    
+            var marker_967733ac29d220aec74897948c7130d5 = L.marker(
+                [51.5575525, -0.781404],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_bbbde33d1b386b0cde575f347c0c394d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_967733ac29d220aec74897948c7130d5.setIcon(icon_bbbde33d1b386b0cde575f347c0c394d);
+        
+    
+        var popup_3312497011dc6cf7d74c70ff38c1732a = L.popup({});
+
+        
+            
+                var html_402007b048d3eb5a740e47e688dabe88 = $(`<div id="html_402007b048d3eb5a740e47e688dabe88" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Thames</h1><div class="nugget-popup"><p>River levels in Reading exceeded the property&ndash;flooding threshold and reached their highest measured levels since 1947, causing flooding of low&ndash;lying land and creating conditions for property flooding in the borough. [IMG] (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>7.26m AD (threshold exceeded on 05 Jan 2024); 7.54m AD peak on 07 Jan 2024; property&ndash;flooding threshold 7.25m AD [IMG] (p11)</p></div></div></body></div>`)[0];
+                popup_3312497011dc6cf7d74c70ff38c1732a.setContent(html_402007b048d3eb5a740e47e688dabe88);
+            
+        
+
+        marker_967733ac29d220aec74897948c7130d5.bindPopup(popup_3312497011dc6cf7d74c70ff38c1732a)
+        ;
+
+        
+    
+    
+            var marker_dbe47c8c37ddafbca38a7e6abcf7877c = L.marker(
+                [51.4080003, -1.4104717],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_296eb66235e8ad181f66f41e05ef916f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dbe47c8c37ddafbca38a7e6abcf7877c.setIcon(icon_296eb66235e8ad181f66f41e05ef916f);
+        
+    
+        var popup_43eba26709e6bde7005b544e6bab44da = L.popup({});
+
+        
+            
+                var html_113c5a024d25e6168d7dacc41086440f = $(`<div id="html_113c5a024d25e6168d7dacc41086440f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Kennet</h1><div class="nugget-popup"><p>River Kennet levels rose above the normal range and produced sustained high flows through January, contributing to elevated river levels upstream of Reading. [PAG] (p11)</p></div><div class="nugget-popup"><p>River levels at the Theale gauge exceeded the normal range and rose to a notable peak, indicating the Kennet was in flood and contributed to elevated river levels and mapped flood extents through Reading. [PAG,IMG] (p12)</p></div><div class="nugget-popup"><p>Water accumulating in the River Kennet floodplain flowed back northwards towards Circuit Lane (via under the railway bridge), causing backflows that contributed to internal property flooding; the River Kennet area was also the subject of Flood Alerts/Warnings during the period. [PAG] (p16)</p></div><div class="nugget-popup"><p>Flooding from the River Kennet inundated its floodplain and flowed northwards beneath Briscoe's Bridge. (p29)</p></div><div class="nugget-popup"><p>Backflow floodwater was present on the River Kennet floodplain north of Briscoe&#8217;s Bridge, inundating wooded floodplain areas with standing/backwater and causing saturated ground and fallen tree debris. [IMG] (p39)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1.78m AD peak on 06 Jan 2024; normal range top 1.05m AD; levels remained above normal from 01 Jan &ndash; 27 Jan 2024 [PAG] (p11)</p></div><div class="nugget-popup quant"><p>Maximum recorded level 1.78m AD on 6th January 2024; levels remained above the normal range from 1st &ndash; 27th January 2024. [PAG,IMG] (p12)</p></div></div></body></div>`)[0];
+                popup_43eba26709e6bde7005b544e6bab44da.setContent(html_113c5a024d25e6168d7dacc41086440f);
+            
+        
+
+        marker_dbe47c8c37ddafbca38a7e6abcf7877c.bindPopup(popup_43eba26709e6bde7005b544e6bab44da)
+        ;
+
+        
+    
+    
+            var marker_5863ffcb626d4c185803e1f6f7fdcf2a = L.marker(
+                [51.444324, -1.0076283],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_e86c89ce181ea0f83a78d4f39f730718 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5863ffcb626d4c185803e1f6f7fdcf2a.setIcon(icon_e86c89ce181ea0f83a78d4f39f730718);
+        
+    
+        var popup_58aa57394fae4596c46e20c4f066794e = L.popup({});
+
+        
+            
+                var html_e7f9f6024db85443f192f600993950c2 = $(`<div id="html_e7f9f6024db85443f192f600993950c2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Circuit Lane, Reading Unitary Authority</h1><div class="nugget-popup"><p>Internal flooding of residential properties caused by backflow from the River Kennet floodplain via the area under the railway bridge and exceedance/blockage of the local ditch network (including a blocked culvert and woody debris). Duration of internal flooding is unknown. [PAG] (p16)</p></div><div class="nugget-popup"><p>Resident reports describe ditches and watercourses to the south of Circuit Lane being impacted by recent and previous flood events; blocked culverts and debris in the downstream channel impaired drainage and contributed to local flooding during the 05&ndash;07 Jan 2024 event. (p27)</p></div><div class="nugget-popup"><p>Roadway at the southern end was flooded across its full width, covering the road and adjacent grassy verge and rendering it impassable. [IMG,PAG] (p28)</p></div><div class="nugget-popup"><p>Ditch immediately south of Circuit Lane was recently cleared and contains standing water; excavation debris and a cleared channel were documented, indicating recent channel flow and maintenance to restore conveyance and reduce waterlogging/flooding risk to the adjacent road. [IMG] (p47)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties (combined total for Circuit Lane and Sylvan Walk) [PAG] (p16)</p></div></div></body></div>`)[0];
+                popup_58aa57394fae4596c46e20c4f066794e.setContent(html_e7f9f6024db85443f192f600993950c2);
+            
+        
+
+        marker_5863ffcb626d4c185803e1f6f7fdcf2a.bindPopup(popup_58aa57394fae4596c46e20c4f066794e)
+        ;
+
+        
+    
+    
+            var marker_3315a80945aab83cc4f0a81127e70e96 = L.marker(
+                [51.4406201, -1.0040191],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_4bffb48fa675c4d3faa140bfb161b502 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3315a80945aab83cc4f0a81127e70e96.setIcon(icon_4bffb48fa675c4d3faa140bfb161b502);
+        
+    
+        var popup_708cdc57c9f8aa748210930f43b8527f = L.popup({});
+
+        
+            
+                var html_0faf546eb1e0afd8dfcb3c1ab31c6354 = $(`<div id="html_0faf546eb1e0afd8dfcb3c1ab31c6354" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sylvan Walk, Reading Unitary Authority</h1><div class="nugget-popup"><p>Internal flooding of residential properties due to backflow from the River Kennet floodplain and exceedance/blocked capacity of the local ditch and culverted channel network north of the railway. [PAG] (p16)</p></div><div class="nugget-popup"><p>A culvert near Sylvan Walk is annotated as 'Culvert Blocked ?' on the map, indicating a blockage that affected drainage and contributed to local flooding risk during the 05&ndash;07 Jan 2024 event. [IMG] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties (combined total for Circuit Lane and Sylvan Walk) [PAG] (p16)</p></div></div></body></div>`)[0];
+                popup_708cdc57c9f8aa748210930f43b8527f.setContent(html_0faf546eb1e0afd8dfcb3c1ab31c6354);
+            
+        
+
+        marker_3315a80945aab83cc4f0a81127e70e96.bindPopup(popup_708cdc57c9f8aa748210930f43b8527f)
+        ;
+
+        
+    
+    
+            var marker_7cdfd800a774e01bc61bd1008e58efe8 = L.marker(
+                [51.4641992, -0.9619388],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_7daf749b596cb4367ce7c499da7134d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7cdfd800a774e01bc61bd1008e58efe8.setIcon(icon_7daf749b596cb4367ce7c499da7134d3);
+        
+    
+        var popup_380f680f063d8d04bc5c14fc242f5637 = L.popup({});
+
+        
+            
+                var html_faaf0fdfa67b5311cf1836ecfadc4207 = $(`<div id="html_faaf0fdfa67b5311cf1836ecfadc4207" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Queens Road, Caversham</h1><div class="nugget-popup"><p>A Queen's Road resident reported observed flow of floodwater from Christchurch Ditch northwards into Lower Caversham. The resident recorded water levels in and around their property and provided a timeline of flooding that affected their property and adjacent properties between 5th and 15th January 2024. [IMG] (p22)</p></div><div class="nugget-popup"><p>Floodwater at the eastern end of Queens Road flooded in front of properties. Basement flood levels rose then began to drop; clearance under ground floor later recorded at approximately 1 cm. Front&ndash;of&ndash;property water reached the gutter; back garden floodwater came within about 3 m of houses. Garden areas were passable with wellies as levels receded. (p26)</p></div><div class="nugget-popup"><p>Floodwater overflowed onto the road and pavement at the entrance to Queens Road (opposite Coldicutt Street), partially submerging the carriageway and making passage difficult or impossible for vehicles and pedestrians. [IMG,PAG] (p32)</p></div><div class="nugget-popup"><p>Pavement and part of the carriageway were flooded, blocking pedestrian access and partially encroaching onto the road. The flooding made the street impassable for pedestrians and reduced vehicle access; water was observed reflecting houses and reaching close to property entrances. [IMG,PAG] (p33)</p></div><div class="nugget-popup"><p>Floodwater covered part of the carriageway and pavement at the eastern end of Queens Road (opposite Coldicutt Street), inundating the road and pedestrian areas and affecting parked vehicles and access to properties. [IMG,PAG] (p34)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approx 1cm clearance under ground floor; back garden approx 3m away; garden areas passable (p26)</p></div></div></body></div>`)[0];
+                popup_380f680f063d8d04bc5c14fc242f5637.setContent(html_faaf0fdfa67b5311cf1836ecfadc4207);
+            
+        
+
+        marker_7cdfd800a774e01bc61bd1008e58efe8.bindPopup(popup_380f680f063d8d04bc5c14fc242f5637)
+        ;
+
+        
+    
+    
+            var marker_59341ce41554d6644c19c351c6a948af = L.marker(
+                [51.4656031, -1.0139857],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_050aa0bab13cf3be37589fcdc466beb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_59341ce41554d6644c19c351c6a948af.setIcon(icon_050aa0bab13cf3be37589fcdc466beb1);
+        
+    
+        var popup_fd75d51957b637dd4aca56a4939cb2ce = L.popup({});
+
+        
+            
+                var html_d0e28d018ff78c8e9aea10a8a26a2ffa = $(`<div id="html_d0e28d018ff78c8e9aea10a8a26a2ffa" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Scours Lane, Reading Unitary Authority</h1><div class="nugget-popup"><p>Floodwater covered the road at the junction with Stadium Way, rendering the junction impassable to vehicles and pedestrians; signage and traffic cones were partially submerged and a parked vehicle was close to/partially in the water. [IMG] (p32)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 vehicle [IMG] (p32)</p></div></div></body></div>`)[0];
+                popup_fd75d51957b637dd4aca56a4939cb2ce.setContent(html_d0e28d018ff78c8e9aea10a8a26a2ffa);
+            
+        
+
+        marker_59341ce41554d6644c19c351c6a948af.bindPopup(popup_fd75d51957b637dd4aca56a4939cb2ce)
+        ;
+
+        
+    
+    
+            var marker_5bea1a86cd2e8dfad2e632f289d8db31 = L.marker(
+                [51.4638216, -1.0108123],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_83e37a79766a4ebd8e076d5848d55228 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5bea1a86cd2e8dfad2e632f289d8db31.setIcon(icon_83e37a79766a4ebd8e076d5848d55228);
+        
+    
+        var popup_225db7c52c0da179390aac8675810048 = L.popup({});
+
+        
+            
+                var html_907e541f6c0add52a3b793c50e998ed2 = $(`<div id="html_907e541f6c0add52a3b793c50e998ed2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stadium Way, Reading Unitary Authority</h1><div class="nugget-popup"><p>Flooding at the junction with Scours Lane extended across the carriageway and pavement, blocking access under the nearby railway bridge and preventing passage. [IMG] (p32)</p></div></div></body></div>`)[0];
+                popup_225db7c52c0da179390aac8675810048.setContent(html_907e541f6c0add52a3b793c50e998ed2);
+            
+        
+
+        marker_5bea1a86cd2e8dfad2e632f289d8db31.bindPopup(popup_225db7c52c0da179390aac8675810048)
+        ;
+
+        
+    
+    
+            var marker_dce0986e952c0361895ac3816b2ae139 = L.marker(
+                [51.4645263, -0.9616049],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_a5919bf15070b1bc8a034a9aa6990521 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dce0986e952c0361895ac3816b2ae139.setIcon(icon_a5919bf15070b1bc8a034a9aa6990521);
+        
+    
+        var popup_9df641a520f21a6f7dc22750f485f5f7 = L.popup({});
+
+        
+            
+                var html_39e0d6a2f853a2e8bf409a5a4a00905a = $(`<div id="html_39e0d6a2f853a2e8bf409a5a4a00905a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Road, Caversham</h1><div class="nugget-popup"><p>Floodwater covered the Queens Road / Mill Road junction and the road surface, reaching front gardens of terraced houses and making the junction impassable to pedestrians and vehicles. [IMG] (p33)</p></div></div></body></div>`)[0];
+                popup_9df641a520f21a6f7dc22750f485f5f7.setContent(html_39e0d6a2f853a2e8bf409a5a4a00905a);
+            
+        
+
+        marker_dce0986e952c0361895ac3816b2ae139.bindPopup(popup_9df641a520f21a6f7dc22750f485f5f7)
+        ;
+
+        
+    
+    
+            var marker_85d015b4ce14a80e8608ad240632285e = L.marker(
+                [51.4636659, -0.957804],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_2dc5336992e7d1e8a5a6bdc3660146ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_85d015b4ce14a80e8608ad240632285e.setIcon(icon_2dc5336992e7d1e8a5a6bdc3660146ef);
+        
+    
+        var popup_de20a19203aede94ea7814eb938d6767 = L.popup({});
+
+        
+            
+                var html_dadffe7c27201d30c1e398e7961fec00 = $(`<div id="html_dadffe7c27201d30c1e398e7961fec00" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Green, Reading Unitary Authority</h1><div class="nugget-popup"><p>Road surface and parked vehicles were inundated; water covered much of the street, partially submerging parked vans and restricting vehicle and pedestrian access. [IMG] (p34)</p></div></div></body></div>`)[0];
+                popup_de20a19203aede94ea7814eb938d6767.setContent(html_dadffe7c27201d30c1e398e7961fec00);
+            
+        
+
+        marker_85d015b4ce14a80e8608ad240632285e.bindPopup(popup_de20a19203aede94ea7814eb938d6767)
+        ;
+
+        
+    
+    
+            var marker_a28cf8c6708304c86e32e5ed20de9240 = L.marker(
+                [51.4395207, -1.0105029],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_f2d52e832a1e60c049a437ac15533337 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a28cf8c6708304c86e32e5ed20de9240.setIcon(icon_f2d52e832a1e60c049a437ac15533337);
+        
+    
+        var popup_f6ee87f98c23db09a938ce38f1ebd30d = L.popup({});
+
+        
+            
+                var html_77bded2e49d5fe73602228c202a85ba2 = $(`<div id="html_77bded2e49d5fe73602228c202a85ba2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hatford Road, Southcote</h1><div class="nugget-popup"><p>Shown on the Southcote flood flow direction modelling where the 1&ndash;in&ndash;30&ndash;year extent (light blue) covers the largest area; the model indicates flow across Southcote generally from southwest to northeast and identifies flow paths and extents that include streets such as Hatford Road, indicating predicted inundation or flow across that corridor. [IMG] (p48)</p></div></div></body></div>`)[0];
+                popup_f6ee87f98c23db09a938ce38f1ebd30d.setContent(html_77bded2e49d5fe73602228c202a85ba2);
+            
+        
+
+        marker_a28cf8c6708304c86e32e5ed20de9240.bindPopup(popup_f6ee87f98c23db09a938ce38f1ebd30d)
+        ;
+
+        
+    
+    
+            var marker_fd37070314bb2d9454fa7aee21d15117 = L.marker(
+                [51.46481437387808, -0.959987034614763],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_13fbb4b956e627cd4737c5284aaffb3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fd37070314bb2d9454fa7aee21d15117.setIcon(icon_13fbb4b956e627cd4737c5284aaffb3a);
+        
+    
+        var popup_25a267237a0f71a1d896bcb2a986f699 = L.popup({});
+
+        
+            
+                var html_7ba9af5d91d53919c13df21089fcf92a = $(`<div id="html_7ba9af5d91d53919c13df21089fcf92a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lower Caversham</h1><div class="nugget-popup"><p>Mapped flood extents show inundation of low&ndash;lying areas adjacent to the river in Lower Caversham during the January 2024 event; public consultation was held for affected residents indicating the area experienced flood impacts. [IMG,PAG] (p12)</p></div><div class="nugget-popup"><p>Lower Caversham received floodwater flowing northwards from Christchurch Ditch, resulting in inundation of the low&ndash;lying area and impacts to nearby properties as reported by residents. (p22)</p></div><div class="nugget-popup"><p>Surface water flooding affected roads and pavements in Lower Caversham (notably Queens Road at the entrance opposite Coldicutt Street), impeding vehicular and pedestrian movement in the residential area. [IMG,PAG] (p32)</p></div><div class="nugget-popup"><p>Residential streets in the area were inundated: roads and pavements (notably Queens Road and the Queens Road/Mill Road junction) were submerged, front gardens were reached by floodwater and routes were rendered impassable for pedestrians and vehicles. [IMG,PAG] (p33)</p></div><div class="nugget-popup"><p>Residential streets in Lower Caversham (including Queens Road and Mill Green) experienced flooding. Inundation extended into Caversham Meadow and Christchurch Ditch (photo from Reading Bridge documents extent), impacting roads, pavements, parked vehicles and local access. [IMG,PAG] (p34)</p></div><div class="nugget-popup"><p>Modelled 1&ndash;in&ndash;30&ndash;year flood flow paths and present&ndash;day modelled 1&ndash;in&ndash;20 to 1&ndash;in&ndash;1000 year extents indicate predicted inundation across central and southern Lower Caversham, with flow converging from northwest, west and northeast and multiple flow paths affecting a broad area; community infrastructure (schools, churches) is shown within the modelled flood zone. [IMG,PAG] (p48)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Event estimated between a 1 in 30 and 1 in 50 year (2% &ndash; 3.3% annual probability) flood event. [IMG,PAG] (p12)</p></div></div></body></div>`)[0];
+                popup_25a267237a0f71a1d896bcb2a986f699.setContent(html_7ba9af5d91d53919c13df21089fcf92a);
+            
+        
+
+        marker_fd37070314bb2d9454fa7aee21d15117.bindPopup(popup_25a267237a0f71a1d896bcb2a986f699)
+        ;
+
+        
+    
+    
+            var marker_7a8f1d577d8181113ac8873a0f5685fd = L.marker(
+                [51.4432485, -1.0028029],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_70ed4aaee4b28ae09100cfc12f89c8eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7a8f1d577d8181113ac8873a0f5685fd.setIcon(icon_70ed4aaee4b28ae09100cfc12f89c8eb);
+        
+    
+        var popup_89123df0b7524a116136665bdc220ab4 = L.popup({});
+
+        
+            
+                var html_991cef36e36c95fbe78c913e3842a69f = $(`<div id="html_991cef36e36c95fbe78c913e3842a69f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Southcote</h1><div class="nugget-popup"><p>Backflow of water from the River Kennet floodplain and exceedance of local ditch/channel capacity (including culverted and open channels in Linear Park) caused floodwater to flow northwards under the railway towards residential areas. Blocked ditches (woody debris) and a blocked/partially collapsed culvert reduced conveyance, contributing to internal flooding of houses on Circuit Lane and Sylvan Walk. [IMG,PAG] (p16)</p></div><div class="nugget-popup"><p>Debris build&ndash;up was observed north of the railway bridge (Briscoe's Bridge) in Southcote on 05 Jan 2024; debris and bridge/culvert issues impeded flow and contributed to localised flooding risk. [PAG] (p27)</p></div><div class="nugget-popup"><p>Areas in Southcote experienced flooding: debris and water accumulation north of Briscoe's Bridge (river overbank flow from the River Kennet floodplain) and surface water flooding at the southern end of Circuit Lane making the lane impassable. [IMG,PAG] (p28)</p></div><div class="nugget-popup"><p>Damage to post&ndash;2014 bank works and path repairs near Holybrook overbridge was reported; a muddy, partially flooded path with standing water leading to a brick&ndash;arch underpass was photographed. [PAG] (p29)</p></div><div class="nugget-popup"><p>Local flooding eroded a repaired river bank and damaged an adjacent footpath near Holybrook Overbridge; damage was recorded by a resident and photographed. [PAG] (p30)</p></div><div class="nugget-popup"><p>An allotment site south of Brunel Road was flooded: standing water covered plots and adjacent areas, with sheds and greenhouses partially submerged. Flooding was concentrated on the northern and western plots and inundated paths within the site. [IMG] (p35)</p></div><div class="nugget-popup"><p>Photograph and caption show a temporary bund under Briscoe's Bridge holding back water from the floodplain, demonstrating that floodwater reached the floodplain and was being retained by the bund to prevent further encroachment onto adjacent land. [IMG] (p47)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties [IMG,PAG] (p16)</p></div></div></body></div>`)[0];
+                popup_89123df0b7524a116136665bdc220ab4.setContent(html_991cef36e36c95fbe78c913e3842a69f);
+            
+        
+
+        marker_7a8f1d577d8181113ac8873a0f5685fd.bindPopup(popup_89123df0b7524a116136665bdc220ab4)
+        ;
+
+        
+    
+    
+            var marker_cf5a52aeaf02d84ff8677cf5e1b92257 = L.marker(
+                [51.4579839, -1.0409218],
+                {}
+            ).addTo(map_24b9dcb6c56c673172cba289e6140ff7);
+        
+    
+            var icon_124872670a40be578d229f4d60895747 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cf5a52aeaf02d84ff8677cf5e1b92257.setIcon(icon_124872670a40be578d229f4d60895747);
+        
+    
+        var popup_ab0a9fd7f7ae453a5f242f287ae3dd6e = L.popup({});
+
+        
+            
+                var html_293487ae952041db5059bbfc71a0ad83 = $(`<div id="html_293487ae952041db5059bbfc71a0ad83" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tilehurst</h1><div class="nugget-popup"><p>Localized surface water flooding affected the Scours Lane / Stadium Way junction within Tilehurst, making the junction impassable and impacting local transport access. [IMG] (p32)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 junction [IMG] (p32)</p></div></div></body></div>`)[0];
+                popup_ab0a9fd7f7ae453a5f242f287ae3dd6e.setContent(html_293487ae952041db5059bbfc71a0ad83);
+            
+        
+
+        marker_cf5a52aeaf02d84ff8677cf5e1b92257.bindPopup(popup_ab0a9fd7f7ae453a5f242f287ae3dd6e)
+        ;
+
+        
+    
+</script>
+</html>
