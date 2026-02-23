@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7a62d85e9e226add316e5de6299c4621 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7a62d85e9e226add316e5de6299c4621" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7a62d85e9e226add316e5de6299c4621 = L.map(
+                "map_7a62d85e9e226add316e5de6299c4621",
+                {
+                    center: [51.6281773475568, -2.56092699526435],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c46adddaf0dcd46c2791b760770306b6 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_c46adddaf0dcd46c2791b760770306b6.addTo(map_7a62d85e9e226add316e5de6299c4621);
+    
+            var marker_926899af153bba9aad43b1fb59bf956a = L.marker(
+                [51.6289101, -2.5662538],
+                {}
+            ).addTo(map_7a62d85e9e226add316e5de6299c4621);
+        
+    
+            var icon_6fa38f5cdd44dd04e3e80a86d66eaaa7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_926899af153bba9aad43b1fb59bf956a.setIcon(icon_6fa38f5cdd44dd04e3e80a86d66eaaa7);
+        
+    
+        var popup_3d9bd935e8cb2b5b587620356b91f775 = L.popup({});
+
+        
+            
+                var html_0a4cbc55859f6d2f48f034ff91e947be = $(`<div id="html_0a4cbc55859f6d2f48f034ff91e947be" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Anchor Inn</h1><div class="nugget-popup"><p>Survey points and annotated photographs south of Anchor Inn recorded as part of the 9 March 2016 survey show nearby high water exposure (e.g. an artificial gas vent at 5.93m). These elevations and the clustering of high&ndash;water survey points indicate the Anchor Inn area was exposed to the high tide/peak water during the event. [IMG] (p9)</p></div><div class="nugget-popup"><p>Property inundated by overland runoff from surrounding area; flooding was exacerbated by blocked drainage in the Anchor Inn garden (drainage improvements have since been undertaken). (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p12)</p></div></div></body></div>`)[0];
+                popup_3d9bd935e8cb2b5b587620356b91f775.setContent(html_0a4cbc55859f6d2f48f034ff91e947be);
+            
+        
+
+        marker_926899af153bba9aad43b1fb59bf956a.bindPopup(popup_3d9bd935e8cb2b5b587620356b91f775)
+        ;
+
+        
+    
+    
+            var marker_3a6853e1cb8399879928f536efe5cec0 = L.marker(
+                [51.6292972, -2.5660492],
+                {}
+            ).addTo(map_7a62d85e9e226add316e5de6299c4621);
+        
+    
+            var icon_23c63f4a673244a567cc2de2604a64c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3a6853e1cb8399879928f536efe5cec0.setIcon(icon_23c63f4a673244a567cc2de2604a64c0);
+        
+    
+        var popup_5d2dc56894598d177d87b215db9cfc75 = L.popup({});
+
+        
+            
+                var html_3813da1ebb01f582bfee42ec5ed801e2 = $(`<div id="html_3813da1ebb01f582bfee42ec5ed801e2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pill Cottages</h1><div class="nugget-popup"><p>Surveyed high water levels and photographs recorded at locations immediately west of and adjacent to Pill Cottages during the 9 March 2016 event show a nearby high water level of 6.10m and a beam underside level of 6.01m. These survey values document that tidal/high water reached elevations close to structural elements beside Pill Cottages during the event. [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_5d2dc56894598d177d87b215db9cfc75.setContent(html_3813da1ebb01f582bfee42ec5ed801e2);
+            
+        
+
+        marker_3a6853e1cb8399879928f536efe5cec0.bindPopup(popup_5d2dc56894598d177d87b215db9cfc75)
+        ;
+
+        
+    
+    
+            var marker_6e4cc021b9bedc10d70ff12fc7b7c7bc = L.marker(
+                [51.6179217, -2.5222912],
+                {}
+            ).addTo(map_7a62d85e9e226add316e5de6299c4621);
+        
+    
+            var icon_4c36330dd8e4921446c41f17ec0eb672 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6e4cc021b9bedc10d70ff12fc7b7c7bc.setIcon(icon_4c36330dd8e4921446c41f17ec0eb672);
+        
+    
+        var popup_985d8588324756a0d8df193e209226f1 = L.popup({});
+
+        
+            
+                var html_146e179e84f355e85018c371907d8e4f = $(`<div id="html_146e179e84f355e85018c371907d8e4f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pickedmoor Brook</h1><div class="nugget-popup"><p>The Pickedmoor Brook / Oldbury Naite rhine catchment drained toward Oldbury&ndash;on&ndash;Severn during the 9 March 2016 event; modelling/assessment indicates the catchment produced the flows that reached the village and caused the flood. [IMG] (p5)</p></div><div class="nugget-popup"><p>Pickedmoor Brook contributed to the flooding risk in the area; the report recommends installing flow and water level gauges to monitor high flows during extreme events. (p18)</p></div></div></body></div>`)[0];
+                popup_985d8588324756a0d8df193e209226f1.setContent(html_146e179e84f355e85018c371907d8e4f);
+            
+        
+
+        marker_6e4cc021b9bedc10d70ff12fc7b7c7bc.bindPopup(popup_985d8588324756a0d8df193e209226f1)
+        ;
+
+        
+    
+    
+            var marker_dff3ab2689049ca1233036ad4d3218d8 = L.marker(
+                [51.63355092312479, -2.5536810479078462],
+                {}
+            ).addTo(map_7a62d85e9e226add316e5de6299c4621);
+        
+    
+            var icon_abfaba75d8525660adcfa048b6f5519d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dff3ab2689049ca1233036ad4d3218d8.setIcon(icon_abfaba75d8525660adcfa048b6f5519d);
+        
+    
+        var popup_0ea35894ada5efcdb2d85481b1473926 = L.popup({});
+
+        
+            
+                var html_8a58fe510377b1182abf8e17b89b6a5a = $(`<div id="html_8a58fe510377b1182abf8e17b89b6a5a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oldbury Nate Rhine</h1><div class="nugget-popup"><p>Peak water levels were recorded in the Naite rhine during the 9th March 2016 event; these high levels may have been a contributing factor to flooding of nearby properties (for example Anchor Inn and Christmas Cottage). The report also flagged capacity concerns in the Upper Oldbury Naite/Rockhampton rhine area and recommended a hydraulic&ndash;model review and potential longer&ndash;term alleviation measures. [PAG] (p11)</p></div><div class="nugget-popup"><p>During the 9th March 2016 event the Rhine experienced tide&ndash;locking and high fluvial flows. Closure of the tidal flaps during the rising tide meant fluvial water could not escape for a period (~just under 3 hours), requiring storage within the Rhine and adjacent low&ndash;lying ground and raising water levels to the observed peak (~6.1mAOD at Church Road). This raised peak levels contributed to flooding of adjacent low&ndash;lying areas and properties. [PAG,IMG] (p13)</p></div><div class="nugget-popup"><p>Fluvial flows in the upper Oldbury Naite rhine transferred water into the low&ndash;lying upstream moor storage during the March 2016 flood, influencing downstream Rhine network levels and contributing to elevated flood levels in Oldbury&ndash;on&ndash;Severn. The availability of upstream moor storage reduced peak flows from the Oldbury Naite. (p15)</p></div><div class="nugget-popup"><p>The Oldbury/Naite rhine acted as a primary channel for floodwater during the March 2016 event; its capacity and connections to surrounding fields influenced peak water levels and routing of flows away from the moors. (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Peak level ~6.1mAOD; ~110,000m3 of water required to be stored during the main tide&ndash;locking period; available volume between 4.5 and 6.1mAOD calculated at ~60,000m3; alternative storage estimate ~80,000m3 if tide timing differed. [PAG,IMG] (p13)</p></div></div></body></div>`)[0];
+                popup_0ea35894ada5efcdb2d85481b1473926.setContent(html_8a58fe510377b1182abf8e17b89b6a5a);
+            
+        
+
+        marker_dff3ab2689049ca1233036ad4d3218d8.bindPopup(popup_0ea35894ada5efcdb2d85481b1473926)
+        ;
+
+        
+    
+    
+            var marker_b7d420c9004a5dcca3c8132d7476a433 = L.marker(
+                [51.6294452, -2.5658302],
+                {}
+            ).addTo(map_7a62d85e9e226add316e5de6299c4621);
+        
+    
+            var icon_ab88c63bea43be5891c555ce193ab59f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b7d420c9004a5dcca3c8132d7476a433.setIcon(icon_ab88c63bea43be5891c555ce193ab59f);
+        
+    
+        var popup_50f50d4cbf55e5b6b224239428b0b3a1 = L.popup({});
+
+        
+            
+                var html_058cc7fcf7b486bc9325197d7a7ef696 = $(`<div id="html_058cc7fcf7b486bc9325197d7a7ef696" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Greenwood House</h1><div class="nugget-popup"><p>Surveyed elevations and survey photographs taken at and immediately east of Greenwood House show nearby culvert inverts (5.10m and 4.68m) and a local low point (5.56m). These survey points were recorded as part of the 9 March 2016 event and document high water exposure adjacent to the property; they indicate the property was in the area of peak tidal/ponded water during the event (peak regional high water elsewhere recorded at 6.10m AOD, below formal defence crests). [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_50f50d4cbf55e5b6b224239428b0b3a1.setContent(html_058cc7fcf7b486bc9325197d7a7ef696);
+            
+        
+
+        marker_b7d420c9004a5dcca3c8132d7476a433.bindPopup(popup_50f50d4cbf55e5b6b224239428b0b3a1)
+        ;
+
+        
+    
+    
+            var marker_6ee2b868808c77eef6f5025ce3149c9f = L.marker(
+                [51.6297617, -2.5656308],
+                {}
+            ).addTo(map_7a62d85e9e226add316e5de6299c4621);
+        
+    
+            var icon_2ed4fcaa6308b670896a875e1bd535c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6ee2b868808c77eef6f5025ce3149c9f.setIcon(icon_2ed4fcaa6308b670896a875e1bd535c5);
+        
+    
+        var popup_f6eb1edd1895c7dec7c55154e0893f30 = L.popup({});
+
+        
+            
+                var html_c2452cc98b2c8cfeba363c97509e7df7 = $(`<div id="html_c2452cc98b2c8cfeba363c97509e7df7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Roseland</h1><div class="nugget-popup"><p>Survey measurements north of Roseland recorded during the 9 March 2016 event include culvert invert levels (5.29m) and a road centre level (5.80m), documenting elevated water levels and drainage structure elevations in the immediate vicinity and showing the property/road were within the zone of high water exposure during the event. [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_f6eb1edd1895c7dec7c55154e0893f30.setContent(html_c2452cc98b2c8cfeba363c97509e7df7);
+            
+        
+
+        marker_6ee2b868808c77eef6f5025ce3149c9f.bindPopup(popup_f6eb1edd1895c7dec7c55154e0893f30)
+        ;
+
+        
+    
+    
+            var marker_4a0ca1f588b483e6b0cb3486a0340132 = L.marker(
+                [51.6287785, -2.5666541],
+                {}
+            ).addTo(map_7a62d85e9e226add316e5de6299c4621);
+        
+    
+            var icon_f6442ede0a252686d0d6415eb963a4a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4a0ca1f588b483e6b0cb3486a0340132.setIcon(icon_f6442ede0a252686d0d6415eb963a4a3);
+        
+    
+        var popup_eab2e0c583b23b54835ccdbcef663277 = L.popup({});
+
+        
+            
+                var html_8e348bc3a5540d7c527c8953f6efdc54 = $(`<div id="html_8e348bc3a5540d7c527c8953f6efdc54" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Road, Oldbury-On-Severn</h1><div class="nugget-popup"><p>Surveyed points and photographs around Church Road show elevated water levels during the 9 March 2016 event, documenting water reaching surveyed points on and adjacent to the road and nearby properties. [IMG,PAG] (p9)</p></div><div class="nugget-popup"><p>Flood water inundated locations along Church Road during the 9 March 2016 event. A Parish Council survey mapped and photographed high water at points on the road, showing localized inundation adjacent to properties (e.g., 'Cherry Trees' and 'Dean House'). [IMG] (p10)</p></div><div class="nugget-popup"><p>Area around the main watercourse experienced high water levels (peak flood level in the rhine recorded at Church Road) and overland runoff contributed to property/road flooding in the vicinity. (p12)</p></div></div></body></div>`)[0];
+                popup_eab2e0c583b23b54835ccdbcef663277.setContent(html_8e348bc3a5540d7c527c8953f6efdc54);
+            
+        
+
+        marker_4a0ca1f588b483e6b0cb3486a0340132.bindPopup(popup_eab2e0c583b23b54835ccdbcef663277)
+        ;
+
+        
+    
+    
+            var marker_93efc597c34d6642c8afc7253f0e4518 = L.marker(
+                [51.6286041, -2.5612195],
+                {}
+            ).addTo(map_7a62d85e9e226add316e5de6299c4621);
+        
+    
+            var icon_3edbab3c36590a78684f5b8fb3e7fba0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_93efc597c34d6642c8afc7253f0e4518.setIcon(icon_3edbab3c36590a78684f5b8fb3e7fba0);
+        
+    
+        var popup_7de31dca219d4f03375c18466a591c71 = L.popup({});
+
+        
+            
+                var html_3420e3b415468fb2cd52195b4ab6b941 = $(`<div id="html_3420e3b415468fb2cd52195b4ab6b941" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chapel Road, Oldbury-On-Severn</h1><div class="nugget-popup"><p>The Parish Council produced a dedicated flood survey (Figure 9) for Chapel Road documenting that the road was affected by flooding during the event. (p10)</p></div><div class="nugget-popup"><p>Chapel Road experienced elevated water levels during the March 2016 flood; the peak water level in Chapel Road was approximately 6.0mAOD. (p15)</p></div><div class="nugget-popup"><p>Flood water passed onto the road via drainage connections prior to the flood wall overtopping, causing roadway inundation. (p18)</p></div></div></body></div>`)[0];
+                popup_7de31dca219d4f03375c18466a591c71.setContent(html_3420e3b415468fb2cd52195b4ab6b941);
+            
+        
+
+        marker_93efc597c34d6642c8afc7253f0e4518.bindPopup(popup_7de31dca219d4f03375c18466a591c71)
+        ;
+
+        
+    
+    
+            var marker_a494471ed6c4221dc57dd6a35c3c7493 = L.marker(
+                [51.6266241, -2.5664299],
+                {}
+            ).addTo(map_7a62d85e9e226add316e5de6299c4621);
+        
+    
+            var icon_96120886a098ab62bea6f47dab9b3599 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a494471ed6c4221dc57dd6a35c3c7493.setIcon(icon_96120886a098ab62bea6f47dab9b3599);
+        
+    
+        var popup_691c70c43439a8cf99ead7be72ef211b = L.popup({});
+
+        
+            
+                var html_3cef77e4f66445fd69e53a589f1977cc = $(`<div id="html_3cef77e4f66445fd69e53a589f1977cc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Hill, Oldbury-On-Severn</h1><div class="nugget-popup"><p>Runoff down Church Hill exacerbated flooding to nearby properties during the event; drainage in this area has been identified as a factor and subject to improvement works or further investigation. (p12)</p></div><div class="nugget-popup"><p>Runoff from the Church Hill area contributed to flooding; the report recommends investigating highway drainage at the Church Hill/Westmarsh Lane junction and restoring the former Cowhill Wharf rhine route to convey runoff from this area. (p18)</p></div></div></body></div>`)[0];
+                popup_691c70c43439a8cf99ead7be72ef211b.setContent(html_3cef77e4f66445fd69e53a589f1977cc);
+            
+        
+
+        marker_a494471ed6c4221dc57dd6a35c3c7493.bindPopup(popup_691c70c43439a8cf99ead7be72ef211b)
+        ;
+
+        
+    
+    
+            var marker_a3d2f823347d698f470207cf56eb3a8c = L.marker(
+                [51.6272873, -2.570712],
+                {}
+            ).addTo(map_7a62d85e9e226add316e5de6299c4621);
+        
+    
+            var icon_9854fe7c98ce137c7363586d9e1cb910 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a3d2f823347d698f470207cf56eb3a8c.setIcon(icon_9854fe7c98ce137c7363586d9e1cb910);
+        
+    
+        var popup_055688fa33802875d790b34d0abf788a = L.popup({});
+
+        
+            
+                var html_fe4653c3bf62245465d3282fd75af8cd = $(`<div id="html_fe4653c3bf62245465d3282fd75af8cd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Westmarsh Lane, Oldbury-On-Severn</h1><div class="nugget-popup"><p>Runoff down Westmarsh Lane exacerbated flooding to nearby properties during the event; the highway drainage here has been noted for improvement. (p12)</p></div><div class="nugget-popup"><p>The Church Hill/Westmarsh Lane junction suffered from inadequate highway drainage during the event; investigation and potential improvements are recommended to reduce road flooding. (p18)</p></div></div></body></div>`)[0];
+                popup_055688fa33802875d790b34d0abf788a.setContent(html_fe4653c3bf62245465d3282fd75af8cd);
+            
+        
+
+        marker_a3d2f823347d698f470207cf56eb3a8c.bindPopup(popup_055688fa33802875d790b34d0abf788a)
+        ;
+
+        
+    
+    
+            var marker_75db1ff2eaf522062b21c73b806bd003 = L.marker(
+                [51.62977, -2.5654452],
+                {}
+            ).addTo(map_7a62d85e9e226add316e5de6299c4621);
+        
+    
+            var icon_7707d45a74d12f5645278436c7aa4178 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_75db1ff2eaf522062b21c73b806bd003.setIcon(icon_7707d45a74d12f5645278436c7aa4178);
+        
+    
+        var popup_34011b7f18361c72167bfe14018f14b4 = L.popup({});
+
+        
+            
+                var html_4c7752764e78febe2d735296387463e4 = $(`<div id="html_4c7752764e78febe2d735296387463e4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oldbury-On-Severn</h1><div class="nugget-popup"><p>Local flooding occurred in Oldbury&ndash;on&ndash;Severn; the report specifically investigates the flood incident affecting the village on 9 March 2016 and examines tidal influence (tide locking) using tide gauge data from Avonmouth and Sharpness to understand sources of the local flooding. [PAG] (p2)</p></div><div class="nugget-popup"><p>Oldbury&ndash;on&ndash;Severn was impacted by flood flows routed through the Oldbury Naite rhine during the event on 9 March 2016; assessment indicates these flows reached the village and produced the reported flooding. [IMG] (p5)</p></div><div class="nugget-popup"><p>The centre of Oldbury&ndash;on&ndash;Severn experienced elevated water levels on 9 March 2016 when high river flows coincided with a high tide. Surveyed high water and photographic evidence show peak levels in the village, with peak levels recorded below the crest of formal defences. [PAG] (p9)</p></div><div class="nugget-popup"><p>Oldbury&ndash;on&ndash;Severn experienced inundation during the 9 March 2016 event. Parish Council survey points in the village recorded high water levels (around 6.1&ndash;6.4 m) that were below the approximate crest of formal defences (~6.5 mAOD). The survey and photographic evidence document localized flooding of roads and properties within the village. [IMG,PAG] (p10)</p></div><div class="nugget-popup"><p>During the 9th March 2016 event there were instances of property and road flooding in Oldbury&ndash;on&ndash;Severn caused by high rainfall and overland flow routes. Specific properties (the Anchor Inn and Christmas Cottage on Church Road) were flooded; blocked drainage in the Anchor Inn garden was identified as a main cause, with high rhine levels potentially a contributing factor. [PAG] (p11)</p></div><div class="nugget-popup"><p>Property and road flooding occurred during the 9 March 2016 event. Properties at the Anchor Inn and Christmas Cottage, immediately south of the main watercourse on Church Road, experienced flooding driven mainly by overland runoff and a blocked drainage feature in the Anchor Inn garden (thresholds were above peak rhine levels so runoff rather than direct rhine overtopping was the primary cause). Runoff down Church Hill and Westmarsh Lane exacerbated flooding of this and adjacent areas; highway drainage condition and capacity contributed to impacts. [PAG] (p12)</p></div><div class="nugget-popup"><p>The village area is below the local Highest Astronomical Tide (~8.5mAOD) and experienced elevated water levels during the March 2016 flood, with fluvial&ndash;tidal interaction raising levels in the Rhine network and contributing to flooding in Oldbury&ndash;on&ndash;Severn. Upstream moor storage reduced peak levels. [PAG] (p15)</p></div><div class="nugget-popup"><p>Significant parts of Oldbury&ndash;on&ndash;Severn were vulnerable to elevated water levels when fluvial flows combined with spring tides. The Rhine network experienced raised water levels during the March 2016 event; Chapel Road reached around 6.0mAOD. Existing tidal flaps normally convey flows at low/intermediate tides but offer limited benefit when higher fluvial flows coincide with spring tides. Report notes pumping would need to move several cubic metres per second to materially reduce levels. [IMG,PAG] (p16)</p></div><div class="nugget-popup"><p>During the 9 March 2016 event floodwater produced raised water levels through Oldbury&ndash;on&ndash;Severn (around 6.0 mAOD). Peak flows during the event constrained levels in the village and determined the extent/duration of flooding; modelling of upstream storage and field attenuation was identified as relevant to reducing peak levels at Oldbury. (p17)</p></div><div class="nugget-popup"><p>Oldbury&ndash;on&ndash;Severn experienced elevated flood levels during the event; recommendations refer to flood wall overtopping, flood water passing onto roads, and options to reduce flood levels within the village (including using other rhine systems and increasing tidal gate capacity when high fluvial flows combine with spring tides). (p18)</p></div></div></body></div>`)[0];
+                popup_34011b7f18361c72167bfe14018f14b4.setContent(html_4c7752764e78febe2d735296387463e4);
+            
+        
+
+        marker_75db1ff2eaf522062b21c73b806bd003.bindPopup(popup_34011b7f18361c72167bfe14018f14b4)
+        ;
+
+        
+    
+</script>
+</html>
