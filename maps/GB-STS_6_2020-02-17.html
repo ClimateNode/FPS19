@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_914e087573f126a8662ba10c92c756ff {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_914e087573f126a8662ba10c92c756ff" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_914e087573f126a8662ba10c92c756ff = L.map(
+                "map_914e087573f126a8662ba10c92c756ff",
+                {
+                    center: [52.8092988541708, -1.764910844464299],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dfc9d59e0df757f216022373d72d8068 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_dfc9d59e0df757f216022373d72d8068.addTo(map_914e087573f126a8662ba10c92c756ff);
+    
+            var marker_e3925ae7944d7c594429add6f4585a42 = L.marker(
+                [52.784260950000004, -1.6830911723358457],
+                {}
+            ).addTo(map_914e087573f126a8662ba10c92c756ff);
+        
+    
+            var icon_8c74b6a0152ac8996736e811f9fcb4f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e3925ae7944d7c594429add6f4585a42.setIcon(icon_8c74b6a0152ac8996736e811f9fcb4f3);
+        
+    
+        var popup_a2eae932d468000ff9374b739fb040e8 = L.popup({});
+
+        
+            
+                var html_c254ac9f94ff76e73924886adb1f6fa7 = $(`<div id="html_c254ac9f94ff76e73924886adb1f6fa7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Branston Water Park</h1><div class="nugget-popup"><p>Backed&ndash;up flow that remained in&ndash;channel passed under the Lichfield Road culvert toward the Branston Water Park area, where the channel overtopped and flooded the rear of properties, exacerbating property inundation. [MUL] (p32)</p></div><div class="nugget-popup"><p>Flows backed up from the River Trent overtopped channels east of the Lichfield Road around Branston Water Park, contributing to inundation of the carriageway and flooding of nearby residential and business properties during the 17 February 2020 event. (p35)</p></div><div class="nugget-popup"><p>Backed&ndash;up flows from the River Trent exiting the Tatenhill Brook and ordinary watercourse occurred around Branston Water Park, contributing to local flooding of the surrounding area and highway (Lichfield Road). (p36)</p></div></div></body></div>`)[0];
+                popup_a2eae932d468000ff9374b739fb040e8.setContent(html_c254ac9f94ff76e73924886adb1f6fa7);
+            
+        
+
+        marker_e3925ae7944d7c594429add6f4585a42.bindPopup(popup_a2eae932d468000ff9374b739fb040e8)
+        ;
+
+        
+    
+    
+            var marker_d8ac6c2fed2feff3cce02b790d862599 = L.marker(
+                [52.7616627, -1.7187565],
+                {}
+            ).addTo(map_914e087573f126a8662ba10c92c756ff);
+        
+    
+            var icon_26a9f007d580e7246f77e235932e0896 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d8ac6c2fed2feff3cce02b790d862599.setIcon(icon_26a9f007d580e7246f77e235932e0896);
+        
+    
+        var popup_1a5570f5e75dfacef5e3a291d8e94d7b = L.popup({});
+
+        
+            
+                var html_55979836f5036a9bf67a0f2aa946dc84 = $(`<div id="html_55979836f5036a9bf67a0f2aa946dc84" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barton Brook</h1><div class="nugget-popup"><p>Barton Brook's floodplain is identified on mapping and may have contributed to the local flooding and surface&ndash;water inundation associated with the internal property flooding on Lichfield Road on 17 February 2020 (contribution inferred from map and event description). [PAG,IMG] (p24)</p></div></div></body></div>`)[0];
+                popup_1a5570f5e75dfacef5e3a291d8e94d7b.setContent(html_55979836f5036a9bf67a0f2aa946dc84);
+            
+        
+
+        marker_d8ac6c2fed2feff3cce02b790d862599.bindPopup(popup_1a5570f5e75dfacef5e3a291d8e94d7b)
+        ;
+
+        
+    
+    
+            var marker_5431f82ec7ee47a254e3b5dc149ff6f3 = L.marker(
+                [52.78601689280551, -1.6762428141819363],
+                {}
+            ).addTo(map_914e087573f126a8662ba10c92c756ff);
+        
+    
+            var icon_9280188fb73e3577c2fb0c8ceafcd1b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5431f82ec7ee47a254e3b5dc149ff6f3.setIcon(icon_9280188fb73e3577c2fb0c8ceafcd1b2);
+        
+    
+        var popup_d00105eb50cebbb51f1407b8e96d5c36 = L.popup({});
+
+        
+            
+                var html_c2b00eb2d947e46a5e71a514e19f0c80 = $(`<div id="html_c2b00eb2d947e46a5e71a514e19f0c80" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>A38 at Branston</h1><div class="nugget-popup"><p>Dual carriageway flooded with water covering both lanes on one side and partially encroaching on the other, making the road impassable and indicating likely closure. [IMG] (p1)</p></div><div class="nugget-popup"><p>The Lichfield Road section of the A38 was closed by police during the flooding and required cleansing of the drainage system and road sweeping by National Highways crews before reopening. (p25)</p></div><div class="nugget-popup"><p>The Lichfield Road/A38 carriageway was flooded and closed as a result of the flooding associated with the 17 February 2020 event; the closure persisted while floodwater remained (questionnaire responses indicate flooding remained in properties until 19 February). (p26)</p></div><div class="nugget-popup"><p>High river flows caused surcharging of highway drainage assets along the A38 carriageway, resulting in rising watercourse flows onto the carriageway and reduced capacity for surface water drainage, affecting the travelling public and adjacent properties. (p34)</p></div><div class="nugget-popup"><p>The Lichfield Road section of the A38 was inundated by flows that overtopped watercourses and overwhelmed highway drainage, resulting in carriageway flooding and inundation of residential and business properties. [PAG] (p35)</p></div><div class="nugget-popup"><p>The February 2020 incident highlighted flood risk to the A38 (Lichfield Road section) from high River Trent levels and associated backing up of flows; the scheme was amended to reduce the potential for river&ndash;driven and surcharge flooding to the road. (p36)</p></div><div class="nugget-popup"><p>Flooding affected the area alongside the A38 corridor, prompting construction of a parallel linear flood defence to protect the road corridor and adjacent land; construction includes sheet piling and earthworks adjacent to the carriageways. [IMG] (p38)</p></div><div class="nugget-popup"><p>The A38 (Lichfield Road section) experienced flooding driven by high Tatenhill Brook levels and surface&ndash;water not discharging from the carriageway. This led to the development and delivery of an A38 flood alleviation scheme to reduce future flood risk (scheme completed June 2022). [TAB] (p39)</p></div><div class="nugget-popup"><p>Flood waters backed up and overtopped the carriageway on the Lichfield Road section of the A38, filling a low&ndash;lying area on the east side of the road and discharging across the highway. The carriageway flooding resulted in closure of this section of the A38, affecting residents and the travelling public. (p43)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 days road closure (p25)</p></div><div class="nugget-popup quant"><p>300 properties (p36)</p></div><div class="nugget-popup quant"><p>18 residential properties; 5 business properties; closed for three days (p43)</p></div></div></body></div>`)[0];
+                popup_d00105eb50cebbb51f1407b8e96d5c36.setContent(html_c2b00eb2d947e46a5e71a514e19f0c80);
+            
+        
+
+        marker_5431f82ec7ee47a254e3b5dc149ff6f3.bindPopup(popup_d00105eb50cebbb51f1407b8e96d5c36)
+        ;
+
+        
+    
+    
+            var marker_937be09b5305e0b56f38fb669a4c5f7b = L.marker(
+                [52.8770582, -1.3062493],
+                {}
+            ).addTo(map_914e087573f126a8662ba10c92c756ff);
+        
+    
+            var icon_798a03d0fe04d225420baa9fdea7940b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_937be09b5305e0b56f38fb669a4c5f7b.setIcon(icon_798a03d0fe04d225420baa9fdea7940b);
+        
+    
+        var popup_de5724ffdbb64ef462410b59a92d8ce2 = L.popup({});
+
+        
+            
+                var html_5f5d79e753fef2ec7d06cb18170d88d3 = $(`<div id="html_5f5d79e753fef2ec7d06cb18170d88d3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Trent</h1><div class="nugget-popup"><p>River flooding is cited as a source of the 17 February 2020 event; the River Trent and its floodplain are shown on maps as adjacent to the affected area and likely contributed to inundation that led to internal property flooding on Lichfield Road (contribution inferred from report and map). [PAG,IMG] (p24)</p></div><div class="nugget-popup"><p>River Trent and its floodplain (area around Branston Water Park) contributed to flooding affecting the Lichfield Road/A38 on 17 February 2020; the vicinity is in Flood Zone 3 and river levels triggered flood alerts and warnings that related to the incident and road closure. (p25)</p></div><div class="nugget-popup"><p>River levels across the catchment remained high after Storm Ciara and the subsequent heavy rainfall, with local watercourses (including tributaries feeding the Trent) contributing to flooding in the Burton/Branston area. [IMG] (p28)</p></div><div class="nugget-popup"><p>Extremely high river levels recorded at the Drakelow Park gauge: a joint highest recorded level indicating extreme Trent levels affecting areas adjacent to the river near Branston. (p29)</p></div><div class="nugget-popup"><p>The River Trent experienced exceptionally high flows during the event: the Drakelow Park gauge recorded a river level of 3.8 m and discharge of 384.2 m3/s on 17th February 2020, the joint highest recorded level at that gauge since records began, contributing to flood conditions in the Branston/Lichfield Road area. [PAG,IMG] (p31)</p></div><div class="nugget-popup"><p>Extremely high, joint highest recorded River Trent levels on 17th February 2020 reduced the ability of Tatenhill Brook to discharge into the Trent, causing back&ndash;up of flows along Tatenhill Brook that led to flooding of Lichfield Road, properties and areas around Branston Water Park. [PAG] (p32)</p></div><div class="nugget-popup"><p>Extremely high River Trent levels (recorded as joint highest on 17th February 2020) reduced the ability of Tatenhill Brook to discharge, causing backwater that led to flooding of Lichfield Road, nearby properties and industrial units and enabling river flows to enter sewer and drainage systems. [PAG,IMG] (p33)</p></div><div class="nugget-popup"><p>Extremely high River Trent levels backed up flows, contributing to surcharge of local watercourses and highway drainage. This backup was identified as a main cause of river flows appearing on the Lichfield Road carriageway and into the low&ndash;lying area between the development site and the road. (p34)</p></div><div class="nugget-popup"><p>High River Trent levels backed up into tributaries (including Tatenhill Brook and an unnamed watercourse), driving overtopping and ingress of river flows into highway drainage and sewer systems that led to inundation of the carriageway, pumping station and properties. (p35)</p></div><div class="nugget-popup"><p>High River Trent levels caused flood flows that backed up Tatenhill Brook and ordinary watercourses, leading to surcharging of drainage assets and flooding impacts on Lichfield Road and flood risk to the A38 and nearby properties. [PAG] (p36)</p></div><div class="nugget-popup"><p>High flows in the River Trent (recorded at elevated levels on 17 February 2020) caused flows to back up into the Tatenhill Brook, contributing to overtopping of the brook, highway inundation and subsequent property flooding. (p43)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>river level 3.8 m; discharge 384.2 m3/s; joint highest recorded since 1959 [PAG,IMG] (p31)</p></div><div class="nugget-popup quant"><p>18 properties; 300 properties [PAG] (p36)</p></div></div></body></div>`)[0];
+                popup_de5724ffdbb64ef462410b59a92d8ce2.setContent(html_5f5d79e753fef2ec7d06cb18170d88d3);
+            
+        
+
+        marker_937be09b5305e0b56f38fb669a4c5f7b.bindPopup(popup_de5724ffdbb64ef462410b59a92d8ce2)
+        ;
+
+        
+    
+    
+            var marker_3cba6a6abb32358d7749d14f777d7169 = L.marker(
+                [52.7802836, -1.681865],
+                {}
+            ).addTo(map_914e087573f126a8662ba10c92c756ff);
+        
+    
+            var icon_9480a7354b8fdd0b287e31325907df46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3cba6a6abb32358d7749d14f777d7169.setIcon(icon_9480a7354b8fdd0b287e31325907df46);
+        
+    
+        var popup_3a2e8aadd14fb7a40bc6e8fea90ffebd = L.popup({});
+
+        
+            
+                var html_b8049b69b4a068abab2f29cc3e22e172 = $(`<div id="html_b8049b69b4a068abab2f29cc3e22e172" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lichfield Road, Branston</h1><div class="nugget-popup"><p>Significant flooding of the roadway: water covered much of the road surface and rendered the road impassable; floodwater encroached onto the grass verge. [IMG] (p1)</p></div><div class="nugget-popup"><p>Internal property flooding occurred on Lichfield Road, with several properties internally affected. (p5)</p></div><div class="nugget-popup"><p>Flooding occurred on Lichfield Road (a section of the A38 south of Branston) associated with Storm Dennis; the report investigates extent, reported flow routes and potential causes. (p6)</p></div><div class="nugget-popup"><p>Flooding occurred on the carriageway of Lichfield Road (a section of the A38 south of the village of Branston) on 17 February 2020. (p16)</p></div><div class="nugget-popup"><p>A section of the A38 (Lichfield Road) was flooded on 17th February 2020 as described in the report, affecting the highway corridor between Barton Turn Marina, Branston and Burton&ndash;on&ndash;Trent and impacting adjacent roadside/residential areas. [PAG,IMG] (p18)</p></div><div class="nugget-popup"><p>On 17 February 2020 multiple properties on Lichfield Road experienced internal flooding; floodwater entered properties. Reported sources were river flooding, surface water flooding and overwhelmed highway drainage. [PAG,IMG] (p24)</p></div><div class="nugget-popup"><p>Multiple properties on the west side of Lichfield Road experienced internal flooding: floodwater entered through the front of properties, inundating entire ground floors and rear gardens. Floodwater remained within properties until 19 February 2020, requiring some residents to leave and stay in temporary accommodation for more than three months. The adjacent section of the A38 (Lichfield Road) was closed by police and required cleanup and drainage cleansing before reopening. (p25)</p></div><div class="nugget-popup"><p>Flooding occurred on and across the Lichfield Road carriageway during the event; the Lichfield Road/A38 carriageway was closed and water remained in properties in the area until 19th February 2020. [PAG] (p26)</p></div><div class="nugget-popup"><p>Surface water flooding occurred at Lichfield Road associated with the intense rainfall on 15&ndash;16 February and resulted in a flood event on 17th February 2020; saturated soils and high river levels increased flood severity at this location. [IMG,PAG] (p27)</p></div><div class="nugget-popup"><p>Figure and map identify an affected area along Lichfield Road (outlined in orange) associated with the high River Trent levels and nearby Tatenhill Brook overtopping during mid&ndash;February 2020; the area was delineated as impacted by flooding on the report's maps. [PAG,IMG] (p31)</p></div><div class="nugget-popup"><p>Flows from the River Trent backed up along Tatenhill Brook and overtopped/redirected into a low spot across Lichfield Road, inundating the highway and adjacent properties; backup also continued under the Lichfield Road culvert toward Branston Water Park, contributing to flooding of rear of properties and nearby industrial units. [PAG,MUL] (p32)</p></div><div class="nugget-popup"><p>High river flows and backing up of the Tatenhill Brook caused surcharging of highway drainage on Lichfield Road; water rose onto the carriageway and in front of driveways, and residents reported flood water coming up through drains on the west side of the road. Blocked gullies and silt exacerbated the highway flooding. (p34)</p></div><div class="nugget-popup"><p>Flows backed up from main rivers discharged across Lichfield Road, pooling on the carriageway and inundating the pumping station and surrounding industrial units; pooled flood flows on the carriageway reduced the ability for sewage to drain to the pumping station. (p35)</p></div><div class="nugget-popup"><p>A flood incident in February 2020 caused inundation and drainage surcharging on Lichfield Road; this prompted investigation and incorporation of measures into the Burton scheme to reduce river&ndash;backed and surcharge&ndash;driven flooding to the highway, properties and businesses. (p36)</p></div><div class="nugget-popup"><p>Flooding of the corridor adjacent to Lichfield Road led to construction of a linear flood defence along the east side of the road; a small watercourse runs alongside the construction zone and the defence works are being installed to reduce future flood impacts on the road corridor and adjacent land. [IMG] (p38)</p></div><div class="nugget-popup"><p>The Lichfield Road (A38 section through Branston) was affected by river flooding from Tatenhill Brook and by surface&ndash;water on the carriageway when highway drains could not discharge due to high brook levels. The incident prompted the A38 flood alleviation works to reduce flood risk at this location. [TAB] (p39)</p></div><div class="nugget-popup"><p>Flows backing up from the River Trent along the Tatenhill Brook overtopped the A38 carriageway at Lichfield Road, filled a low&ndash;lying area on the east side of the road and discharged across the highway into adjacent properties; internal flooding of properties occurred and the highway was impassable. (p43)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 residential properties (reported to SCC); 18 residential and 5 business properties (Environment Agency); approximately 300 mm depth; 3 days road closure; temporary accommodation for more than 3 months (p25)</p></div><div class="nugget-popup quant"><p>18 properties; 300 properties (p36)</p></div><div class="nugget-popup quant"><p>18 residential properties; 5 business properties; 3&ndash;day closure of the A38 (p43)</p></div></div></body></div>`)[0];
+                popup_3a2e8aadd14fb7a40bc6e8fea90ffebd.setContent(html_b8049b69b4a068abab2f29cc3e22e172);
+            
+        
+
+        marker_3cba6a6abb32358d7749d14f777d7169.bindPopup(popup_3a2e8aadd14fb7a40bc6e8fea90ffebd)
+        ;
+
+        
+    
+    
+            var marker_19a1321cfcaad2e8459e247a82e123e8 = L.marker(
+                [52.8246942, -2.0074547],
+                {}
+            ).addTo(map_914e087573f126a8662ba10c92c756ff);
+        
+    
+            var icon_5fa78ebe37b44644d2cee7e725996a65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_19a1321cfcaad2e8459e247a82e123e8.setIcon(icon_5fa78ebe37b44644d2cee7e725996a65);
+        
+    
+        var popup_a88b70ce9f881882927b6b16976b4e91 = L.popup({});
+
+        
+            
+                var html_cd848abec1503e0b38e7396e6d53008e = $(`<div id="html_cd848abec1503e0b38e7396e6d53008e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Staffordshire</h1><div class="nugget-popup"><p>Exceptional rainfall, saturated soils and very high river flows led to associated flooding across Staffordshire, affecting local roads and places including the Lichfield Road/A38 area. (p16)</p></div><div class="nugget-popup"><p>Staffordshire experienced exceptional rainfall and saturated soils during Storm Dennis, producing very high river flows and associated flooding across the county that contributed to the local flooding on Lichfield Road. [PAG] (p18)</p></div><div class="nugget-popup"><p>Parts of Staffordshire (notably Barton) experienced internal property flooding on Lichfield Road on 17 February 2020, driven by river flooding, surface&ndash;water flooding and overwhelmed highway drainage. [PAG,IMG] (p24)</p></div><div class="nugget-popup"><p>Intense, widespread rainfall across the Staffordshire catchment on 15&ndash;16 February contributed to a flood event on 17th February 2020; soils were saturated and river levels were already high from Storm Ciara, exacerbating flooding across the county. [PAG] (p27)</p></div><div class="nugget-popup"><p>A significant number of flooding incidents to properties and highways were recorded across Staffordshire during the Storm Dennis event, including internal property flooding and highway closures (example: Lichfield Road/A38). (p43)</p></div></div></body></div>`)[0];
+                popup_a88b70ce9f881882927b6b16976b4e91.setContent(html_cd848abec1503e0b38e7396e6d53008e);
+            
+        
+
+        marker_19a1321cfcaad2e8459e247a82e123e8.bindPopup(popup_a88b70ce9f881882927b6b16976b4e91)
+        ;
+
+        
+    
+    
+            var marker_7762cb88295d934de58a1adf2a90fa80 = L.marker(
+                [52.8878642, -1.9030802],
+                {}
+            ).addTo(map_914e087573f126a8662ba10c92c756ff);
+        
+    
+            var icon_76f502c7a14b8702abaf5b18baca8359 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7762cb88295d934de58a1adf2a90fa80.setIcon(icon_76f502c7a14b8702abaf5b18baca8359);
+        
+    
+        var popup_95d914e791c3a3e4df97f57107d69d56 = L.popup({});
+
+        
+            
+                var html_633cc53da164adb318b09c1f2428a27a = $(`<div id="html_633cc53da164adb318b09c1f2428a27a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Staffordshire</h1><div class="nugget-popup"><p>Flooding associated with Storm Dennis led to requests for financial support from affected properties and internal flooding incidents reaching the threshold for Section 19 investigation. (p6)</p></div><div class="nugget-popup"><p>Areas across East Staffordshire experienced flooding during the 17 February 2020 event, generating over 130 grant applications from residential and business properties and requiring inclusion of local flood alleviation measures in scheme planning. (p26)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>130 applications for grant support; incidents in which five or more properties were internally flooded (p6)</p></div><div class="nugget-popup quant"><p>more than 130 applications for grant support; approximately 86 properties received grants (p26)</p></div></div></body></div>`)[0];
+                popup_95d914e791c3a3e4df97f57107d69d56.setContent(html_633cc53da164adb318b09c1f2428a27a);
+            
+        
+
+        marker_7762cb88295d934de58a1adf2a90fa80.bindPopup(popup_95d914e791c3a3e4df97f57107d69d56)
+        ;
+
+        
+    
+    
+            var marker_10e7f44bc67b09c1bed35f2396483ce5 = L.marker(
+                [52.82241274160339, -2.1680340810152843],
+                {}
+            ).addTo(map_914e087573f126a8662ba10c92c756ff);
+        
+    
+            var icon_de4d56354faaf12ba2335e526c3d68e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_10e7f44bc67b09c1bed35f2396483ce5.setIcon(icon_de4d56354faaf12ba2335e526c3d68e5);
+        
+    
+        var popup_eb17c20f5f9847e4eac63ee81772a01f = L.popup({});
+
+        
+            
+                var html_0da7ff38a9552d4d1ce6bd7ce83432b4 = $(`<div id="html_0da7ff38a9552d4d1ce6bd7ce83432b4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stafford District</h1><div class="nugget-popup"><p>The rainfall distribution map and report note that central and northern districts (including Stafford) received heavier cumulative rainfall (40&ndash;100 mm range) and that catchments were saturated, contributing to elevated river levels and surface&ndash;water flooding during the mid&ndash;February event. [IMG] (p28)</p></div></div></body></div>`)[0];
+                popup_eb17c20f5f9847e4eac63ee81772a01f.setContent(html_0da7ff38a9552d4d1ce6bd7ce83432b4);
+            
+        
+
+        marker_10e7f44bc67b09c1bed35f2396483ce5.bindPopup(popup_eb17c20f5f9847e4eac63ee81772a01f)
+        ;
+
+        
+    
+    
+            var marker_6633960a27069b4d10a3bb7fd7a85721 = L.marker(
+                [52.78867905, -1.660668380523432],
+                {}
+            ).addTo(map_914e087573f126a8662ba10c92c756ff);
+        
+    
+            var icon_8f18b556f2a985924b6c4b24286ebf84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6633960a27069b4d10a3bb7fd7a85721.setIcon(icon_8f18b556f2a985924b6c4b24286ebf84);
+        
+    
+        var popup_41af2cecfab6f6514581fa16c86e6a18 = L.popup({});
+
+        
+            
+                var html_9751daa457820852166820af1aa288b2 = $(`<div id="html_9751daa457820852166820af1aa288b2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Branston</h1><div class="nugget-popup"><p>Flooding occurred on and across Lichfield Road (Branston) during the 17 February 2020 event; floodwater remained in properties until 19 February and the Lichfield Road/A38 carriageway was closed during this period. (p26)</p></div><div class="nugget-popup"><p>Tatenhill Brook in the surrounding Branston area responded rapidly to intense rainfall (Storm Ciara and Storm Dennis). Modelled and observed hydrographs show an overtopping event around 17th February 2020 following Storm Dennis, contributing to flooding in the surrounding Branston area. [PAG,IMG,MUL] (p31)</p></div><div class="nugget-popup"><p>The Lichfield Road section of the A38 in Branston was inundated on 17 February 2020 when high River Trent levels backed up into the Tatenhill Brook and an unnamed watercourse. Flows overtopped the Tatenhill Brook channel and discharged across the highway, pooling on the carriageway and inundating the road, residential and business properties. Highway drainage and sewer systems surcharged as river flows entered these systems, causing further rise of flows on and across the carriageway and reducing drainage capacity. [PAG] (p35)</p></div><div class="nugget-popup"><p>High River Trent levels (with flows backing up via Tatenhill Brook and connected drainage) caused flooding around Lichfield Road and into Branston, inundating properties and creating a risk to the A38 highway. (p36)</p></div><div class="nugget-popup"><p>The flood investigation identified flood risk on the Lichfield Road / A38 section adjacent to Branston (risk arising from Tatenhill Brook river flooding on 17th February 2020) and recommended the A38 alleviation works and future planning discussions to manage flood risk associated with development in Branston village. [TAB] (p39)</p></div><div class="nugget-popup"><p>Properties on Lichfield Road in Branston were internally flooded due to flows backing up via Tatenhill Brook and the A38 south of the village was closed, disrupting residents and travel. (p43)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>18 properties flooded; 300 properties identified at risk (p36)</p></div><div class="nugget-popup quant"><p>18 residential properties; 5 business properties; 3&ndash;day closure (p43)</p></div></div></body></div>`)[0];
+                popup_41af2cecfab6f6514581fa16c86e6a18.setContent(html_9751daa457820852166820af1aa288b2);
+            
+        
+
+        marker_6633960a27069b4d10a3bb7fd7a85721.bindPopup(popup_41af2cecfab6f6514581fa16c86e6a18)
+        ;
+
+        
+    
+    
+            var marker_4c6a479f3f295c3b453c3ffa4347f452 = L.marker(
+                [52.76246231806559, -1.7235877897985983],
+                {}
+            ).addTo(map_914e087573f126a8662ba10c92c756ff);
+        
+    
+            var icon_4477cebb0f6dd28be4fa69a38002d6b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4c6a479f3f295c3b453c3ffa4347f452.setIcon(icon_4477cebb0f6dd28be4fa69a38002d6b7);
+        
+    
+        var popup_c5a1210ffd45490552f13c1fee462af0 = L.popup({});
+
+        
+            
+                var html_64876116a490ea95fbb315ebd396068f = $(`<div id="html_64876116a490ea95fbb315ebd396068f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barton-Under-Needwood</h1><div class="nugget-popup"><p>Multiple residential properties on Lichfield Road reported internal flooding with floodwater entering properties; residents reported the flooding on 17 February 2020. Sources cited were river flooding, surface&ndash;water runoff and overwhelmed highway drainage. [PAG,IMG] (p24)</p></div></div></body></div>`)[0];
+                popup_c5a1210ffd45490552f13c1fee462af0.setContent(html_64876116a490ea95fbb315ebd396068f);
+            
+        
+
+        marker_4c6a479f3f295c3b453c3ffa4347f452.bindPopup(popup_c5a1210ffd45490552f13c1fee462af0)
+        ;
+
+        
+    
+    
+            var marker_d98db26419d84473c14ba5b3f8abfa53 = L.marker(
+                [52.81149719757507, -1.642445495716492],
+                {}
+            ).addTo(map_914e087573f126a8662ba10c92c756ff);
+        
+    
+            var icon_1dd4073439e6cbb74f3fac65ae3bb062 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d98db26419d84473c14ba5b3f8abfa53.setIcon(icon_1dd4073439e6cbb74f3fac65ae3bb062);
+        
+    
+        var popup_7e6f3f4e35b7c549ad7d9759fde58a63 = L.popup({});
+
+        
+            
+                var html_d474e30af38fec9352ff5980b5740e00 = $(`<div id="html_d474e30af38fec9352ff5980b5740e00" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burton Upon Trent</h1><div class="nugget-popup"><p>Multiple properties on Lichfield Road in Burton experienced internal flooding on 17 February 2020. Floodwater entered properties through the front, inundating entire ground floors and rear gardens; water reportedly remained inside properties until 19 February and some residents required temporary accommodation for in excess of three months. The Lichfield Road section of the A38 was closed by police for three days (17&ndash;19 February) and National Highways crews assisted with drainage cleansing, road sweeping and cleanup. [PAG] (p25)</p></div><div class="nugget-popup"><p>The Lichfield Road flooding incident has been incorporated into phase two of the Burton&ndash;upon&ndash;Trent Flood Management Scheme as an alleviation measure following the 17 February 2020 river/highway flooding. The borough&ndash;wide response to the February 2020 event included grant support processing and awarded property flood resilience grants. (p26)</p></div><div class="nugget-popup"><p>Heavy rainfall on 15&ndash;16 February (and saturated catchments following Storm Ciara) led to elevated water levels and localised flooding affecting the Branston area around Lichfield Road. The event is described in the report as part of the flood investigation for the area. [IMG] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>18 residential and 5 business properties (Environment Agency); 11 residential properties (reports to SCC); approximate flood depth 300mm; A38 closed for three days; temporary accommodation for in excess of three months [PAG] (p25)</p></div><div class="nugget-popup quant"><p>more than 130 applications for grant support across East Staffordshire; approximately 86 properties received grants (borough&ndash;wide); approximate value of £370,840 (p26)</p></div></div></body></div>`)[0];
+                popup_7e6f3f4e35b7c549ad7d9759fde58a63.setContent(html_d474e30af38fec9352ff5980b5740e00);
+            
+        
+
+        marker_d98db26419d84473c14ba5b3f8abfa53.bindPopup(popup_7e6f3f4e35b7c549ad7d9759fde58a63)
+        ;
+
+        
+    
+</script>
+</html>
