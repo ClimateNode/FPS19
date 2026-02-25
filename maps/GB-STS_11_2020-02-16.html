@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_acd60696c183b86aff2e6af0952e6ece {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_acd60696c183b86aff2e6af0952e6ece" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_acd60696c183b86aff2e6af0952e6ece = L.map(
+                "map_acd60696c183b86aff2e6af0952e6ece",
+                {
+                    center: [52.87028208280497, -1.8277532256550746],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_238aaf770adb609064515aa1407dc76c = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_238aaf770adb609064515aa1407dc76c.addTo(map_acd60696c183b86aff2e6af0952e6ece);
+    
+            var marker_f80675901fd7ac30c7784fcf76307d3e = L.marker(
+                [52.874080650907835, -1.799035915865956],
+                {}
+            ).addTo(map_acd60696c183b86aff2e6af0952e6ece);
+        
+    
+            var icon_23e9955cf7bd209dd3bab5b45dfd2c21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f80675901fd7ac30c7784fcf76307d3e.setIcon(icon_23e9955cf7bd209dd3bab5b45dfd2c21);
+        
+    
+        var popup_89e0ae9ae3a1b59ec82993bf9e0acfef = L.popup({});
+
+        
+            
+                var html_53df2dac77986d3e7749318c84e10c6d = $(`<div id="html_53df2dac77986d3e7749318c84e10c6d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dog and Partridge</h1><div class="nugget-popup"><p>The Dog and Partridge public house experienced internal flooding and associated damage as one of the commercial properties affected during the event. (p25)</p></div><div class="nugget-popup"><p>Floodwater from Marchington Brook was observed flowing across fields toward the Dog and Partridge (Partridge), directing floodwater toward the gardens and properties on Church Lane. (p31)</p></div><div class="nugget-popup"><p>Internal flooding of the Dog and Partridge public house was recorded on 16th February 2020. (p39)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 commercial property (Dog and Partridge pub) affected; part of 2 commercial properties flooded (p25)</p></div><div class="nugget-popup quant"><p>1 commercial property (Dog and Partridge public house) (p39)</p></div></div></body></div>`)[0];
+                popup_89e0ae9ae3a1b59ec82993bf9e0acfef.setContent(html_53df2dac77986d3e7749318c84e10c6d);
+            
+        
+
+        marker_f80675901fd7ac30c7784fcf76307d3e.bindPopup(popup_89e0ae9ae3a1b59ec82993bf9e0acfef)
+        ;
+
+        
+    
+    
+            var marker_a98f77f867bead9611c9acfb7daec661 = L.marker(
+                [52.8739144, -1.7963722],
+                {}
+            ).addTo(map_acd60696c183b86aff2e6af0952e6ece);
+        
+    
+            var icon_09c7462fa1151ea7a819313e341e65a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a98f77f867bead9611c9acfb7daec661.setIcon(icon_09c7462fa1151ea7a819313e341e65a5);
+        
+    
+        var popup_aa71cc67aafe23e7fc655a6d1b4bf4e0 = L.popup({});
+
+        
+            
+                var html_ae33ecc017834e1c03b577685415842c = $(`<div id="html_ae33ecc017834e1c03b577685415842c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Peter</h1><div class="nugget-popup"><p>Observed flow routes during the February 2020 event passed close to St Peter's Church, with flow directions and local accumulation noted near the church that contributed to local inundation of adjacent roads and nearby areas. [IMG] (p29)</p></div></div></body></div>`)[0];
+                popup_aa71cc67aafe23e7fc655a6d1b4bf4e0.setContent(html_ae33ecc017834e1c03b577685415842c);
+            
+        
+
+        marker_a98f77f867bead9611c9acfb7daec661.bindPopup(popup_aa71cc67aafe23e7fc655a6d1b4bf4e0)
+        ;
+
+        
+    
+    
+            var marker_8dc207bdd3a56afe0f3a9e472e531e98 = L.marker(
+                [52.8738008, -1.7977776],
+                {}
+            ).addTo(map_acd60696c183b86aff2e6af0952e6ece);
+        
+    
+            var icon_98acee68c6c793fd74836da57342795b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8dc207bdd3a56afe0f3a9e472e531e98.setIcon(icon_98acee68c6c793fd74836da57342795b);
+        
+    
+        var popup_dbfa268170ae4705eb927742be6f50fe = L.popup({});
+
+        
+            
+                var html_e1c01de409ea25f3969c6641cc73ff48 = $(`<div id="html_e1c01de409ea25f3969c6641cc73ff48" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Lane, Marchington</h1><div class="nugget-popup"><p>Surface water covered the road and adjacent pavements/grass near the location of the Church Lane road bridge, with water encroaching onto garden and paved areas. (p1)</p></div><div class="nugget-popup"><p>Internal property flooding was reported on Church Lane; the report focuses on the extent of flooding and investigation into causes. (p6)</p></div><div class="nugget-popup"><p>Church Lane in Marchington experienced flooding associated with Storm Dennis and is the focus of this Section 19 flood investigation report. (p7)</p></div><div class="nugget-popup"><p>Localised flooding occurred at Church Lane in Marchington; the event was assessed using anecdotal evidence from local residents and consultation with Risk Management Authorities. (p16)</p></div><div class="nugget-popup"><p>Church Lane was identified as the flooding location in the report and map. Flooding occurred adjacent to the south&ndash;eastern edge of Marchington where several residential properties, a public house and a village store are located, indicating inundation of the local street and immediate vicinity due to heavy/persistent rainfall and proximity to Marchington Brook and Silver Lane Drainage Ditch. [PAG,IMG] (p19)</p></div><div class="nugget-popup"><p>Marchington Brook is culverted beneath Church Lane opposite the Dog and Partridge public house; the culvert is identified as an asset owned and maintained by Staffordshire County Council Highways and forms part of the watercourse conveyance through the village toward the River Dove. [IMG,PAG] (p20)</p></div><div class="nugget-popup"><p>Properties along Church Lane experienced internal flooding as a result of the brook exceeding capacity combined with accumulated surface water; some residents reported water coming up through their floors. (p25)</p></div><div class="nugget-popup"><p>A flood warning was issued for Church Lane/Church Close on 16th February; Church Lane was closed to vehicles to reduce the risk of bow waves; properties experienced internal flooding and Environment Agency officers visited to record flood levels and offer advice. [PAG] (p26)</p></div><div class="nugget-popup"><p>Church Lane experienced flooding during the February 2020 event; the flood prompted investigations by SCC LLFA and partner Risk Management Authorities to understand flooding mechanisms and identify potential solutions to reduce future risk. (p27)</p></div><div class="nugget-popup"><p>Church Lane experienced flooding in February 2020 identified as river, surface water, highway and sewer flooding. The area is low lying and multiple flow paths caused inundation of the highway/low&ndash;lying area during the event. [PAG] (p28)</p></div><div class="nugget-popup"><p>Low&ndash;lying section of road became surrounded by flood water during the February 2020 event. When Marchington Brook exceeded culvert capacity water spilled onto Church Lane; flood water could surround properties from multiple directions, and bow waves from passing vehicles forced water into properties with thresholds lower than the road. Drainage struggled to remove water while river levels remained high and the catchment was saturated. [IMG] (p29)</p></div><div class="nugget-popup"><p>Flood water from the Marchington Brook combined with accumulated surface water resulted in flooding to properties along Church Lane. High river levels prevented the local surface water drainage from discharging, causing surcharging of drains and surface water flooding to the highway. Bow waves from passing vehicles could push water into properties with thresholds lower than the road. [PAG,IMG] (p30)</p></div><div class="nugget-popup"><p>Floodwater driven from Marchington Brook and overflowing highway drainage caused water to flow across Church Lane and into gardens of properties on Church Lane. Highway gullies and sewer/highway pipes running down Church Lane could not discharge when brook levels were high, causing the drainage system to become overwhelmed and road inundation; bow waves from passing vehicles have pushed water into lower&ndash;threshold properties. [PAG] (p31)</p></div><div class="nugget-popup"><p>Culverts on Church Lane were identified for clearing to improve flow and reduce flood risk from Marchington Brook, indicating Church Lane experienced flood&ndash;related flow/blockage issues. (p33)</p></div><div class="nugget-popup"><p>Church Lane was affected by flooding associated with the February 2020 event. Response and remedial works recorded include sewer cleansing and sealing of manholes, planned culvert clearance, and a proposed 'closing the gap' option as part of the capital scheme to reduce flood passage and road inundation. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Sewer&ndash;related flooding along Church Lane prompted sewer cleansing and sealing of manholes; a community&ndash;led road scheme was developed to prevent vehicles driving along Church Lane during flood events. (p35)</p></div><div class="nugget-popup"><p>Significant community impacts: internal flooding of properties (residential and commercial), flooding to outbuildings, gardens, garages, sheds and driveways, and roads leading into the village flooded causing some residents to be cut off and unable to leave their properties. (p39)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths of 1 to 9 inches reported inside properties (p25)</p></div><div class="nugget-popup quant"><p>11 residential properties; 2 commercial properties (p39)</p></div></div></body></div>`)[0];
+                popup_dbfa268170ae4705eb927742be6f50fe.setContent(html_e1c01de409ea25f3969c6641cc73ff48);
+            
+        
+
+        marker_8dc207bdd3a56afe0f3a9e472e531e98.bindPopup(popup_dbfa268170ae4705eb927742be6f50fe)
+        ;
+
+        
+    
+    
+            var marker_be29559ebf198a29c13f77aae44101b3 = L.marker(
+                [52.8711724, -1.7998375],
+                {}
+            ).addTo(map_acd60696c183b86aff2e6af0952e6ece);
+        
+    
+            var icon_1e40feb54b7c40b50051d11f6f185374 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_be29559ebf198a29c13f77aae44101b3.setIcon(icon_1e40feb54b7c40b50051d11f6f185374);
+        
+    
+        var popup_1611cf0dfa5d69e85cafa78225a4ec33 = L.popup({});
+
+        
+            
+                var html_ffabb68964e9ea1beae113f398e662ab = $(`<div id="html_ffabb68964e9ea1beae113f398e662ab" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Silver Lane, Marchington</h1><div class="nugget-popup"><p>Residents reported issues with the pumping station on Silver Lane during the 16th February 2020 flood event; investigation found a local power outage &mdash; Western Power and Severn Trent re&ndash;set the power and the pumping station was confirmed working. (p26)</p></div><div class="nugget-popup"><p>Observed flow routes show water moving from Church Lane/Church Close southeast towards Silver Lane Ditch (and Silver Lane). The route indicates Silver Lane and its ditch received runoff/flow accumulation during the event, contributing to local drainage overwhelm and water movement along that corridor. [IMG] (p29)</p></div><div class="nugget-popup"><p>Flood water routed across the field toward the drainage ditch at Silver Lane as a primary flow route during the event, receiving overspill flows from the brook and adjacent fields. [PAG] (p30)</p></div><div class="nugget-popup"><p>Floodwater from the Silver Lane ditch spilled from the left bank onto Silver Lane, flowing down the road towards the village. High channel volumes backed up behind culverts beneath Silver Lane/Church Lane, contributing to flooding onto adjacent land and into properties at the eastern edge of the village. (p31)</p></div><div class="nugget-popup"><p>Sewer network/pumping capacity at Silver Lane was identified as compromised by the February 2020 flood; Severn Trent Water commenced assessments and feasibility investigations for upgrades to the Silver Lane pumping station to improve performance and resilience. [TAB] (p34)</p></div></div></body></div>`)[0];
+                popup_1611cf0dfa5d69e85cafa78225a4ec33.setContent(html_ffabb68964e9ea1beae113f398e662ab);
+            
+        
+
+        marker_be29559ebf198a29c13f77aae44101b3.bindPopup(popup_1611cf0dfa5d69e85cafa78225a4ec33)
+        ;
+
+        
+    
+    
+            var marker_14b21bba988c90ed5156ed4147815505 = L.marker(
+                [52.8735501, -1.7982472],
+                {}
+            ).addTo(map_acd60696c183b86aff2e6af0952e6ece);
+        
+    
+            var icon_c952504261b595c70bd03aade3341d32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_14b21bba988c90ed5156ed4147815505.setIcon(icon_c952504261b595c70bd03aade3341d32);
+        
+    
+        var popup_d9fe57f905b82a2dbead3992da21a95c = L.popup({});
+
+        
+            
+                var html_f38a64df20183d69f8fedf0601e9ecdc = $(`<div id="html_f38a64df20183d69f8fedf0601e9ecdc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Close, Marchington</h1><div class="nugget-popup"><p>A flood warning was issued affecting Church Close on 16th February; properties experienced internal flooding and Environment Agency officers visited affected properties to obtain information on flow routes, depths, extents and timings and to offer support. (p26)</p></div><div class="nugget-popup"><p>The main observed flow route crossed Church Close during the February 2020 event; Church Close was inundated as water moved from Marchington Brook across Church Lane and through Church Close en route to Silver Lane Ditch, contributing to local road inundation and water surrounding nearby properties. [IMG] (p29)</p></div><div class="nugget-popup"><p>The bund behind Church Close was overtopped and bypassed during the 16/02/2020 event, creating an additional flow route down Church Close towards Church Lane and increasing flood depths along Church Lane. [PAG] (p30)</p></div><div class="nugget-popup"><p>The Church Close embankment required repairs/enhancements as a consequence of flooding from Marchington Brook, indicating flood damage or risk to the embankment and adjacent area. (p33)</p></div></div></body></div>`)[0];
+                popup_d9fe57f905b82a2dbead3992da21a95c.setContent(html_f38a64df20183d69f8fedf0601e9ecdc);
+            
+        
+
+        marker_14b21bba988c90ed5156ed4147815505.bindPopup(popup_d9fe57f905b82a2dbead3992da21a95c)
+        ;
+
+        
+    
+    
+            var marker_3bb8a6fe86024d6aeba0261863f2ffaa = L.marker(
+                [52.87267835994683, -1.805491366339865],
+                {}
+            ).addTo(map_acd60696c183b86aff2e6af0952e6ece);
+        
+    
+            var icon_b76316eba61d4fc629a0cbb848141524 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3bb8a6fe86024d6aeba0261863f2ffaa.setIcon(icon_b76316eba61d4fc629a0cbb848141524);
+        
+    
+        var popup_ba40ba50515585b0ad19af21b4ec29b8 = L.popup({});
+
+        
+            
+                var html_5042f7842d951071c6a49f737c913a91 = $(`<div id="html_5042f7842d951071c6a49f737c913a91" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Jack's Lane, Marchington</h1><div class="nugget-popup"><p>Jack's Lane was described as being flooded during the event; flooding on surrounding roads (including Jack's Lane) forced more traffic through Church Lane, which increased bow&ndash;wave risk and the likelihood of water being pushed into lower&ndash;threshold properties. (p29)</p></div></div></body></div>`)[0];
+                popup_ba40ba50515585b0ad19af21b4ec29b8.setContent(html_5042f7842d951071c6a49f737c913a91);
+            
+        
+
+        marker_3bb8a6fe86024d6aeba0261863f2ffaa.bindPopup(popup_ba40ba50515585b0ad19af21b4ec29b8)
+        ;
+
+        
+    
+    
+            var marker_f1b6e409abba773f711b12114ee99545 = L.marker(
+                [52.8776934, -1.7937058],
+                {}
+            ).addTo(map_acd60696c183b86aff2e6af0952e6ece);
+        
+    
+            var icon_f1f7003fe93fc9ddd4079d4eb6087032 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f1b6e409abba773f711b12114ee99545.setIcon(icon_f1f7003fe93fc9ddd4079d4eb6087032);
+        
+    
+        var popup_bbdde768e4ae13fbf55cada8df14712f = L.popup({});
+
+        
+            
+                var html_61e3e45399bf8df54ac4e1a658df2e92 = $(`<div id="html_61e3e45399bf8df54ac4e1a658df2e92" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Green Lane, Marchington</h1><div class="nugget-popup"><p>Green Lane was reported flooded during the February 2020 event; its inundation contributed to increased traffic routing through Church Lane and exacerbated flow volumes and bow&ndash;wave risks to lower&ndash;threshold properties on Church Lane. (p29)</p></div></div></body></div>`)[0];
+                popup_bbdde768e4ae13fbf55cada8df14712f.setContent(html_61e3e45399bf8df54ac4e1a658df2e92);
+            
+        
+
+        marker_f1b6e409abba773f711b12114ee99545.bindPopup(popup_bbdde768e4ae13fbf55cada8df14712f)
+        ;
+
+        
+    
+    
+            var marker_f5f5b80ecfa56f5cc2acac2ce0ff5f8a = L.marker(
+                [52.8246942, -2.0074547],
+                {}
+            ).addTo(map_acd60696c183b86aff2e6af0952e6ece);
+        
+    
+            var icon_9b173d3ba61758d82791470fa229ad7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f5f5b80ecfa56f5cc2acac2ce0ff5f8a.setIcon(icon_9b173d3ba61758d82791470fa229ad7b);
+        
+    
+        var popup_2bef6a89b5b1dcf58dda0e5a4bc62072 = L.popup({});
+
+        
+            
+                var html_76d48804d5197b7fa005c964b15ecf55 = $(`<div id="html_76d48804d5197b7fa005c964b15ecf55" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Staffordshire</h1><div class="nugget-popup"><p>Storm Dennis caused widespread flooding to highways and properties across Staffordshire; SCC undertook investigations into flooding in the county. (p7)</p></div><div class="nugget-popup"><p>Experienced exceptionally high rainfall in the months leading up to and including February 2020; soils were saturated and river flows were very high, contributing to flooding in the county on and around 16th February 2020. (p16)</p></div><div class="nugget-popup"><p>Experienced sustained heavy rainfall from mid&ndash;afternoon 15 February into early afternoon 16 February 2020 as Storm Dennis&#8217; fronts moved over the county; these conditions are associated with the flooding investigated in the report. [PAG] (p18)</p></div><div class="nugget-popup"><p>Sustained heavy rainfall from Storm Dennis (15&ndash;16 February 2020) remained over Staffordshire into the early afternoon of 16 February, producing persistent runoff and contributing to flooding in the county, including flooding affecting Marchington (Church Lane area) adjacent to Marchington Brook. [PAG,IMG] (p19)</p></div><div class="nugget-popup"><p>Many watercourses across Staffordshire were impacted by the Storm Dennis rainfall in February 2020, with elevated river levels and increased flows contributing to local flooding incidents such as those affecting Marchington and Church Lane. (p29)</p></div><div class="nugget-popup"><p>The surrounding catchment and water levels rose to exceptionally high levels on 16 February 2020, causing flooding of surrounding land and inundation of residential and commercial properties in Marchington within Staffordshire. (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>more than 130 applications for grant support across East Staffordshire; five or more properties internally flooded in many areas (p7)</p></div></div></body></div>`)[0];
+                popup_2bef6a89b5b1dcf58dda0e5a4bc62072.setContent(html_76d48804d5197b7fa005c964b15ecf55);
+            
+        
+
+        marker_f5f5b80ecfa56f5cc2acac2ce0ff5f8a.bindPopup(popup_2bef6a89b5b1dcf58dda0e5a4bc62072)
+        ;
+
+        
+    
+    
+            var marker_eb680389a6d7f8c3628ebeae63baabf6 = L.marker(
+                [52.8878642, -1.9030802],
+                {}
+            ).addTo(map_acd60696c183b86aff2e6af0952e6ece);
+        
+    
+            var icon_dff62ace98e229c96f19b335f1759a67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eb680389a6d7f8c3628ebeae63baabf6.setIcon(icon_dff62ace98e229c96f19b335f1759a67);
+        
+    
+        var popup_9dbd811afe9cb53e7d83f0597d8e94b3 = L.popup({});
+
+        
+            
+                var html_5a97a9dd9bf97bb1e095391fb6a5c0af = $(`<div id="html_5a97a9dd9bf97bb1e095391fb6a5c0af" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Staffordshire</h1><div class="nugget-popup"><p>Storm Dennis caused widespread flooding across East Staffordshire leading to many residential and business impacts; properties were internally flooded and grant support was sought. (p7)</p></div><div class="nugget-popup"><p>Marchington experienced road and internal property flooding on Church Lane / Church Close and Green Lane. Church Lane was closed to vehicles to reduce bow waves risking further property flooding. Environment Agency officers recorded flood levels in the village (visit 18 Feb) and visited properties that experienced internal flooding to collect depths, extents and timings (visit 21 Feb). Residents reported issues with the pumping station on Silver Lane (power&ndash;related) which was investigated and power/reset actions carried out by Western Power and Severn Trent. [MUL] (p26)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>more than 130 applications for grant support; five or more properties internally flooded (p7)</p></div><div class="nugget-popup quant"><p>130 applications; 86 properties; £370,840 [MUL] (p26)</p></div></div></body></div>`)[0];
+                popup_9dbd811afe9cb53e7d83f0597d8e94b3.setContent(html_5a97a9dd9bf97bb1e095391fb6a5c0af);
+            
+        
+
+        marker_eb680389a6d7f8c3628ebeae63baabf6.bindPopup(popup_9dbd811afe9cb53e7d83f0597d8e94b3)
+        ;
+
+        
+    
+    
+            var marker_18460cad76940703c8a8020d5fd21f1b = L.marker(
+                [52.8757147, -1.8031941],
+                {}
+            ).addTo(map_acd60696c183b86aff2e6af0952e6ece);
+        
+    
+            var icon_c492e6fae1b89964f13973dad3ea2044 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_18460cad76940703c8a8020d5fd21f1b.setIcon(icon_c492e6fae1b89964f13973dad3ea2044);
+        
+    
+        var popup_51c179fe403ce1ea8894aeae6440025c = L.popup({});
+
+        
+            
+                var html_ae3c38c1400dc7a3b20a9fd4f5e7525e = $(`<div id="html_ae3c38c1400dc7a3b20a9fd4f5e7525e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Marchington</h1><div class="nugget-popup"><p>Internal property flooding was reported at Church Lane; the event prompted an investigation into the causes and actions to address the flooding. [PAG] (p6)</p></div><div class="nugget-popup"><p>Marchington was impacted by Storm Dennis (arrived 16 February 2020); the report focuses on flooding at Church Lane in Marchington resulting from that event. (p7)</p></div><div class="nugget-popup"><p>Marchington experienced localised flooding at Church Lane on 16 February 2020; impacts were assessed from resident accounts and RMA consultation. (p16)</p></div><div class="nugget-popup"><p>The area of the village around Church Lane was affected by flooding during the event; the mapped flood location is centred on Church Lane at the south&ndash;eastern edge of Marchington. [PAG,IMG] (p19)</p></div><div class="nugget-popup"><p>Residents reported floodwater entering properties in the early hours of 16 February 2020; flooding was attributed at least in part to river flooding contributing to water entering properties. [IMG,PAG] (p24)</p></div><div class="nugget-popup"><p>Multiple properties experienced internal flooding; damage to interior decoration, carpets, flooring, furniture and irreplaceable personal items beyond salvage. Flooding to outbuildings, gardens, garages, sheds and driveways. Several roads into the village were flooded, leaving some residents cut off and unable to leave their properties for several hours. (p25)</p></div><div class="nugget-popup"><p>On 16th February 2020 the village experienced flooding: Environment Agency officers liaised with the Parish Council, recorded flood water levels at multiple locations, and visited properties that had internal flooding to gather information and offer advice; Church Lane was closed to vehicles and residents reported a pumping&ndash;station power fault on Silver Lane which was investigated and reset. [PAG] (p26)</p></div><div class="nugget-popup"><p>Marchington experienced flooding associated with the Storm Dennis rainfall in mid&ndash;February 2020; local authorities collected HydroMaster rainfall data for Marchington following the event and investigations were undertaken to understand the causes of flooding in the village. (p27)</p></div><div class="nugget-popup"><p>The village experienced complex flooding during the 15&ndash;16 February 2020 event from multiple sources (river, surface water, sewer and highway flows). Multiple flow paths were identified carrying water into the low&ndash;lying village, prompting EA investigation and response works. (p28)</p></div><div class="nugget-popup"><p>The village experienced complex, multi&ndash;directional flood flows during the February 2020 event. Elevated Marchington Brook and River Dove levels, a saturated catchment and overwhelmed local drainage caused watercourses and the drainage network to be exceeded; floodwater surrounded properties (notably around Church Lane), roads were inundated, and properties were exposed to water entering from multiple directions and from bow&ndash;waves when the culvert beneath Church Lane exceeded capacity. [IMG] (p29)</p></div><div class="nugget-popup"><p>During the February 2020 Storm Dennis exceedance event, prolonged rainfall saturated the catchment and Marchington Brook was unable to convey flows. Flood water rose to exceptionally high levels, flooding surrounding land and affecting several residential and commercial properties in Marchington. Local drainage and sewers were overwhelmed. [PAG] (p32)</p></div><div class="nugget-popup"><p>Flooding of the surrounding land and of residential and commercial properties in the village after catchment and water levels rose to exceptionally high levels. [PAG] (p33)</p></div><div class="nugget-popup"><p>The village was impacted by flooding during Storm Dennis (February 2020), which triggered a Section 19 investigation and a programme of follow&ndash;up actions: development of the Marchington Brook Flood Alleviation Scheme, property flood resilience surveys and measures, natural flood management work and sewer/highway investigations to reduce future flood risk. [TAB] (p34)</p></div><div class="nugget-popup"><p>Flooding in the village led to sewer network issues and highway flooding: sewer cleansing and manhole sealing were carried out along Church Lane; a community&ndash;led road scheme was developed to prevent vehicles using Church Lane during flood events; investigations into sewer network capacity and upgrades to Silver Lane pumping station were progressed. (p35)</p></div><div class="nugget-popup"><p>Flooding affected the village area on 16th February 2020: roads leading into the village were flooded, leaving some residents cut off and properties in the Church Lane area experienced internal flooding. (p39)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 residential properties; 2 commercial properties (p25)</p></div><div class="nugget-popup quant"><p>11 residential properties; 2 commercial properties (p39)</p></div></div></body></div>`)[0];
+                popup_51c179fe403ce1ea8894aeae6440025c.setContent(html_ae3c38c1400dc7a3b20a9fd4f5e7525e);
+            
+        
+
+        marker_18460cad76940703c8a8020d5fd21f1b.bindPopup(popup_51c179fe403ce1ea8894aeae6440025c)
+        ;
+
+        
+    
+</script>
+</html>
