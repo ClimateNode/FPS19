@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_756b580cb6aea0f98101634f2eff6804 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_756b580cb6aea0f98101634f2eff6804" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_756b580cb6aea0f98101634f2eff6804 = L.map(
+                "map_756b580cb6aea0f98101634f2eff6804",
+                {
+                    center: [52.77453390600234, -1.7325714989400725],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cfe7021dde1e9f3ca579f844c5377a84 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_cfe7021dde1e9f3ca579f844c5377a84.addTo(map_756b580cb6aea0f98101634f2eff6804);
+    
+            var marker_b1683886786f2f033f8496d5767c53b6 = L.marker(
+                [52.712633, -1.8198224],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_8ce8904ba2ee846197285e485404cb5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b1683886786f2f033f8496d5767c53b6.setIcon(icon_8ce8904ba2ee846197285e485404cb5a);
+        
+    
+        var popup_b464e11c2217f488b5421f1ee8396df0 = L.popup({});
+
+        
+            
+                var html_610e482a05ab21ce518648feb53e3dd9 = $(`<div id="html_610e482a05ab21ce518648feb53e3dd9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Full Brook</h1><div class="nugget-popup"><p>Overtopping and overland flows associated with the brook were reported: first reported overtopping at a footbridge; accumulation of flows behind a culvert (Wales Lane) that discharged as overland flow across Wales Lane; overland flow reaching Church Lane and Potters Way; flows accumulating at St James' Road culvert entrance and south of Church Lane; open channel overtopping of the left bank; impact noted at Efflinch Lane. (p4)</p></div><div class="nugget-popup"><p>Flooding from the Full Brook contributed to internal flooding of residential properties in Barton&ndash;under&ndash;Needwood on 16th February 2020; it is named among the brooks responsible for the approximately 69 internally flooded homes and for flooding of external garages, sheds and driveways. (p24)</p></div><div class="nugget-popup"><p>Flows rising and overtopping from Full Brook were identified as a primary driver of the flooding in Barton&ndash;under&ndash;Needwood on 16th February 2020, contributing to ingress into highway drainage and to property and highway flooding. (p25)</p></div><div class="nugget-popup"><p>Overtopping of the Full Brook resulted in flows overwhelming local culverts and producing flooding on Mill Lane and Mill Crescent on 16/02/2020, with runoff collecting in open land to the east of Mill Crescent. [PAG,IMG] (p32)</p></div><div class="nugget-popup"><p>Full Brook overtopped on 16 February 2020 following Storm Dennis rainfall. In&ndash;bank flows were unable to pass through the culvert beneath Efflinch Lane/Mill Lane (partially blocked), causing the brook to overtop its banks, flow across Efflinch Lane and drives of properties on Mill Lane, and direct flows southeast along Mill Lane toward Mill Crescent and adjacent open land. Overtopping and in&ndash;channel blockages contributed to surface water entering the local sewer network. [PAG,IMG] (p33)</p></div><div class="nugget-popup"><p>The Full Brook experienced out&ndash;of&ndash;bank flows that overtopped the channel and footpath, joined with out&ndash;of&ndash;bank flows from an unnamed tributary, and contributed to collection of floodwater behind Mill Crescent and to property flooding. Limited conveyance (including a 400mm siphonic culvert under the canal) caused water to back up into open space between Mill Crescent and the canal and contributed to property flooding at Lichfield Road where back&ndash;up occurred beneath the A38. (p34)</p></div><div class="nugget-popup"><p>Full Brook exceeded channel capacity and flowed out of bank, causing highway inundation, increasing surface water extent around Mill Lane/Mill Crescent and contributing to sewer system surcharge and internal property flooding. (p35)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>69 residential properties (collective across the three brooks) (p24)</p></div><div class="nugget-popup quant"><p>2&ndash;year to 5&ndash;year peak flow (modelled); 2 culvert locations overwhelmed [PAG,IMG] (p33)</p></div></div></body></div>`)[0];
+                popup_b464e11c2217f488b5421f1ee8396df0.setContent(html_610e482a05ab21ce518648feb53e3dd9);
+            
+        
+
+        marker_b1683886786f2f033f8496d5767c53b6.bindPopup(popup_b464e11c2217f488b5421f1ee8396df0)
+        ;
+
+        
+    
+    
+            var marker_adcee58ed9d66ad1f2c12670f1766c85 = L.marker(
+                [52.7616627, -1.7187565],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_d65e60cb77d9c9d44ccb3dee2d12df21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_adcee58ed9d66ad1f2c12670f1766c85.setIcon(icon_d65e60cb77d9c9d44ccb3dee2d12df21);
+        
+    
+        var popup_d6d0ed805da64ba469b8f0c4e1c303d8 = L.popup({});
+
+        
+            
+                var html_950cd2071a0f7cc15344a3515c56437f = $(`<div id="html_950cd2071a0f7cc15344a3515c56437f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barton Brook</h1><div class="nugget-popup"><p>Flooding from Barton Brook contributed to internal flooding of residential properties in Barton&ndash;under&ndash;Needwood on 16th February 2020; it was one of the watercourses cited as causing the approximately 69 internally flooded homes and also led to flooding of external garages, sheds and driveways. (p24)</p></div><div class="nugget-popup"><p>Flows in the Barton Brook rose and overtopped, acting as a primary driver of flooding; culvert sections by the A38 required clearing to address the blockage/flow issues. (p25)</p></div><div class="nugget-popup"><p>Modelled rapid rise in Barton Brook flows during Storm Dennis (14&ndash;19 Feb 2020) with levels responding quickly then receding. Event magnitude was likely under&ndash;represented in the model because the catchment was already extremely saturated and baseflows were high. (p27)</p></div><div class="nugget-popup"><p>High flows in Barton Brook overtopped the channel as it entered Barton&ndash;under&ndash;Needwood around Park Road on 16/02/2020. Once out of bank, flows moved eastward through gardens, accumulated behind the Wales Lane culvert entrance and contributed to damage to garden fences and a front gate and to internal flooding of properties on Brookside Road. [IMG] (p28)</p></div><div class="nugget-popup"><p>Barton Brook overtopped at a footbridge on 16 February 2020 following Storm Dennis; out&ndash;of&ndash;bank flows moved eastward through gardens and across roads, caused internal flooding of properties (first reported at the footbridge between Fallowfield Drive and Brookside Road), knocked over fence panels, accumulated behind culvert entrances (notably Wales Lane) and discharged as overland flow across roads and into gardens. High Barton Brook levels were reported where it discharges into Barton&ndash;under&ndash;Needwood around Park Road. [PAG,IMG] (p29)</p></div><div class="nugget-popup"><p>Barton Brook flows exceeded channel and culvert capacity at multiple locations (including under Efflinch Lane, St James' Road, Wales Lane and Collinson Road), causing bank overtopping, overland flow across highways and accumulation of surface water at culvert entrances leading to local flooding. [IMG] (p30)</p></div><div class="nugget-popup"><p>Culvert geometry (two ~90&deg; bends) and restricted outlet reduced conveyance; losses at bends and restricted outlet forced floodwaters to mount banks at the culvert entrance, causing overtopping and directing flows toward nearby properties (including observed internal flooding of surrounding properties). Channel constrictions and potential blockages of multiple culverts contributed to impaired discharge. [PAG] (p31)</p></div><div class="nugget-popup"><p>Barton Brook overtopped and/or exceeded culvert capacity on 16/02/2020. Flows exceeded the culvert under Efflinch Lane (levels above the crown), caused overland flow across the highway, internally inundated properties on Efflinch Lane and to the south of Meadow Rise, knocked over a dwarf garage wall, caused floodwater on Potters Way and adjacent sports fields, and led to overflowing of the local fishing pond. Flows also overflowed the channel at the footbridge between Brookside Road and Fallowfield Drive and accumulated at St James' Road culvert entrance and south of Church Lane; culverts at Wales Lane, Collinson Road, St James' Road and Efflinch Lane may have been blocked or exceeded capacity. [PAG] (p32)</p></div><div class="nugget-popup"><p>Out&ndash;of&ndash;bank Barton Brook flows exceeded channel capacity, flowed across highways, reduced capacity for drainage discharge, and likely entered sewer assets causing surcharges that contributed to internal property flooding. (p35)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>69 residential properties (collective across the three brooks) (p24)</p></div><div class="nugget-popup quant"><p>0.93 m3/s peak discharge on 16/02/2020 at 14:55 (p27)</p></div><div class="nugget-popup quant"><p>approximately 450mm floodwater depth observed at the Wales Lane culvert entrance [PAG] (p31)</p></div></div></body></div>`)[0];
+                popup_d6d0ed805da64ba469b8f0c4e1c303d8.setContent(html_950cd2071a0f7cc15344a3515c56437f);
+            
+        
+
+        marker_adcee58ed9d66ad1f2c12670f1766c85.bindPopup(popup_d6d0ed805da64ba469b8f0c4e1c303d8)
+        ;
+
+        
+    
+    
+            var marker_cc7ca5d9d55374f8e1bb5b41bb3d6535 = L.marker(
+                [52.8770582, -1.3062493],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_8d9335776b1dbdbdfca1a14526b8f57c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cc7ca5d9d55374f8e1bb5b41bb3d6535.setIcon(icon_8d9335776b1dbdbdfca1a14526b8f57c);
+        
+    
+        var popup_5bc3f581ae6fb245609a086880d5483e = L.popup({});
+
+        
+            
+                var html_539e0cd45c8a2ee8a7f163de85315649 = $(`<div id="html_539e0cd45c8a2ee8a7f163de85315649" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Trent</h1><div class="nugget-popup"><p>Very high River Trent levels likely increased levels in Barton Brook by reducing its ability to discharge, exacerbating upstream flooding and contributing to flows being directed into properties. [PAG] (p31)</p></div><div class="nugget-popup"><p>Very high River Trent levels around 16/02/2020 restricted Barton Brook from outfalling to the Trent (backwater effect), contributing to elevated upstream water levels and local flooding around the Barton Turns area. [PAG] (p32)</p></div></div></body></div>`)[0];
+                popup_5bc3f581ae6fb245609a086880d5483e.setContent(html_539e0cd45c8a2ee8a7f163de85315649);
+            
+        
+
+        marker_cc7ca5d9d55374f8e1bb5b41bb3d6535.bindPopup(popup_5bc3f581ae6fb245609a086880d5483e)
+        ;
+
+        
+    
+    
+            var marker_dc23ad6cdc9d4010026413a6df707fc5 = L.marker(
+                [52.7626353, -1.7234317],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_32ccc050438fdca749a5265237e80375 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dc23ad6cdc9d4010026413a6df707fc5.setIcon(icon_32ccc050438fdca749a5265237e80375);
+        
+    
+        var popup_5fcd125d3e4b5f466f3e45583410fb08 = L.popup({});
+
+        
+            
+                var html_5b90d349f010749b8c2e42f322a59c32 = $(`<div id="html_5b90d349f010749b8c2e42f322a59c32" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Lane, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Overland flow reached up to Church Lane (and Potters Way); flows accumulated south of Church Lane and at the St James' Road culvert entrance. The DRN record also notes a discrepancy involving Church Lane. (p4)</p></div><div class="nugget-popup"><p>Map and image description indicate observed surface water flow routes and reported sewer flooding concentrated near Church Lane during the same event, marking it as an area affected by surface water and reported sewer flooding. [PAG,IMG] (p29)</p></div><div class="nugget-popup"><p>Flows accumulated south of Church Lane at the culvert entrance and the adjacent open channel experienced left&ndash;bank overtopping, producing out&ndash;of&ndash;bank/overland flows into the area south of Church Lane. [IMG] (p30)</p></div><div class="nugget-popup"><p>Flood flows from Barton Brook overtopped/left the channel and were directed into gardens and properties on Church Lane, causing internal flooding of properties (some properties recorded internal flooding for the first time since 1961). (p31)</p></div></div></body></div>`)[0];
+                popup_5fcd125d3e4b5f466f3e45583410fb08.setContent(html_5b90d349f010749b8c2e42f322a59c32);
+            
+        
+
+        marker_dc23ad6cdc9d4010026413a6df707fc5.bindPopup(popup_5fcd125d3e4b5f466f3e45583410fb08)
+        ;
+
+        
+    
+    
+            var marker_9b016d739a2c86ab155b43175ca26631 = L.marker(
+                [52.7634937, -1.7266868],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_a3a2363a360cd5f6e11496a596ea4998 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9b016d739a2c86ab155b43175ca26631.setIcon(icon_a3a2363a360cd5f6e11496a596ea4998);
+        
+    
+        var popup_41e9e8f500309643aac2592c41b14ae7 = L.popup({});
+
+        
+            
+                var html_9b8f2927d2911c64c7d16a9203e99d71 = $(`<div id="html_9b8f2927d2911c64c7d16a9203e99d71" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wales Lane, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Flows accumulated behind the Wales Lane culvert and discharged as overland flow across Wales Lane. (p4)</p></div><div class="nugget-popup"><p>Highway drainage on Wales Lane was overwhelmed by ingress of flows from Barton Brook and Full Brook and associated river flooding, resulting in flooded highway on 16th February 2020. (p25)</p></div><div class="nugget-popup"><p>Out&ndash;of&ndash;bank flows accumulated behind the Wales Lane culvert entrance, damaging garden fence panels and a front gate before discharging. (p28)</p></div><div class="nugget-popup"><p>Flows accumulated behind the Wales Lane culvert entrance and discharged as overland flow across Wales Lane, damaging garden fence panels and a front gate and causing internal flooding to properties on Wales Lane (depths described but specific values not given in the text). [PAG,IMG] (p29)</p></div><div class="nugget-popup"><p>The box culvert under Wales Lane is noted as a location that may have experienced blockage or exceeded capacity (it turns ~90&deg; twice), which could have restricted flow, caused backing up and contributed to spill/out&ndash;of&ndash;bank flows during the event &mdash; this is reported as a possible impact rather than a confirmed blockage. (p30)</p></div><div class="nugget-popup"><p>Box culvert geometry (two 90&deg; bends) and restricted outlet caused losses and banks to be mounted at the culvert entrance; observed floodwater depths of approximately 450 mm at the Wales Lane culvert entrance that internally affected surrounding properties. [PAG] (p31)</p></div><div class="nugget-popup"><p>Reported internal property flooding due to sewer surcharge, potentially caused by ingress from nearby watercourses. (p35)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>450 mm floodwater depth at the culvert entrance [PAG] (p31)</p></div></div></body></div>`)[0];
+                popup_41e9e8f500309643aac2592c41b14ae7.setContent(html_9b8f2927d2911c64c7d16a9203e99d71);
+            
+        
+
+        marker_9b016d739a2c86ab155b43175ca26631.bindPopup(popup_41e9e8f500309643aac2592c41b14ae7)
+        ;
+
+        
+    
+    
+            var marker_861e19afb29aa4e7fa51a6ef82f69884 = L.marker(
+                [52.7617614, -1.7162881],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_dce63c0e31f751a21588a3b34ffe29c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_861e19afb29aa4e7fa51a6ef82f69884.setIcon(icon_dce63c0e31f751a21588a3b34ffe29c7);
+        
+    
+        var popup_dc5aad8f53bafff63fa25ab6b26749af = L.popup({});
+
+        
+            
+                var html_6557599a3904c53001978666b52beef3 = $(`<div id="html_6557599a3904c53001978666b52beef3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Potters Way, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Overland flow progressed up to Potters Way (noted alongside Church Lane). (p4)</p></div><div class="nugget-popup"><p>Floodwater affected Potters Way and adjacent sports fields; flows caused the local fishing pond to overflow. [IMG] (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 fishing pond [IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_dc5aad8f53bafff63fa25ab6b26749af.setContent(html_6557599a3904c53001978666b52beef3);
+            
+        
+
+        marker_861e19afb29aa4e7fa51a6ef82f69884.bindPopup(popup_dc5aad8f53bafff63fa25ab6b26749af)
+        ;
+
+        
+    
+    
+            var marker_fe23a6595b4168426cdeca0fc2257885 = L.marker(
+                [52.7625395, -1.7224253],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_48ed6491f5fea86a82d95b4e6edb0122 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fe23a6595b4168426cdeca0fc2257885.setIcon(icon_48ed6491f5fea86a82d95b4e6edb0122);
+        
+    
+        var popup_a4b046f17f3781490fd2bdca89182e35 = L.popup({});
+
+        
+            
+                var html_1e43fe7034b146828add5ce92464c3b9 = $(`<div id="html_1e43fe7034b146828add5ce92464c3b9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St James Road, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Flows accumulated at the St James' Road culvert entrance (and to the south of Church Lane), indicating localized inundation/flow accumulation at the culvert entrance. (p4)</p></div><div class="nugget-popup"><p>James Road in Barton was affected by flooding on 16 February 2020, with surface water inundation of the road as part of the town&ndash;centre flood event. (p16)</p></div><div class="nugget-popup"><p>Flows that would normally discharge under the St James' Road culvert pooled at properties, then discharged as overland flow across St James' Road and through allotment gardens; overtopping of the channel in the open section between St James' Road and Efflinch Lane inundated properties on St James' Road. [PAG] (p29)</p></div><div class="nugget-popup"><p>Flows accumulated at the St James' Road culvert entrance; the culvert under/at St James' Road may have been blocked or exceeded capacity, causing backing up, overtopping and reported sewer flooding/overland flow at the site. [IMG] (p30)</p></div><div class="nugget-popup"><p>Overbank/overland flows and limited culvert discharge directed river flood and overland flows into gardens and properties on St James' Road during the event. [PAG] (p31)</p></div><div class="nugget-popup"><p>Reported internal property flooding due to sewer surcharge, potentially linked to ingress from out&ndash;of&ndash;bank river flows. (p35)</p></div></div></body></div>`)[0];
+                popup_a4b046f17f3781490fd2bdca89182e35.setContent(html_1e43fe7034b146828add5ce92464c3b9);
+            
+        
+
+        marker_fe23a6595b4168426cdeca0fc2257885.bindPopup(popup_a4b046f17f3781490fd2bdca89182e35)
+        ;
+
+        
+    
+    
+            var marker_7540a58395426fc7ed031a8a61c39f4c = L.marker(
+                [52.7504288, -1.7185832],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_b830b3ccff4a32cce57e204987e322a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7540a58395426fc7ed031a8a61c39f4c.setIcon(icon_b830b3ccff4a32cce57e204987e322a9);
+        
+    
+        var popup_99e6351d513bab9bb8880ba0260711ab = L.popup({});
+
+        
+            
+                var html_2aac975ba29f7aa307e485ad42901229 = $(`<div id="html_2aac975ba29f7aa307e485ad42901229" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Efflinch Lane, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Listed in the Table of Figures as a location associated with the event (identified item 3), indicating it was impacted by the flooding described. (p4)</p></div><div class="nugget-popup"><p>Efflinch Lane in Barton was impacted by flooding on 16 February 2020, experiencing road and local area inundation during the storm&ndash;related event. (p16)</p></div><div class="nugget-popup"><p>Highway drainage on Efflinch Lane was overwhelmed by ingress of flows from Barton Brook and Full Brook and associated river flooding, resulting in flooded highway on 16th February 2020. (p25)</p></div><div class="nugget-popup"><p>During the open channel section between St James' Road and Efflinch Lane flows overtopped the left bank at several places, inundating properties on Efflinch Lane. [PAG] (p29)</p></div><div class="nugget-popup"><p>Culvert under Efflinch Lane was exceeded by Barton Brook flows, producing overland flow across the highway and continuing to internally inundate properties on Efflinch Lane; flood flows in this area also knocked over a dwarf garage wall. [IMG] (p30)</p></div><div class="nugget-popup"><p>Flows that could not be contained by the channel and culverts discharged toward properties on Efflinch Lane; steep 90&deg; bends, potential fallen vegetation and constrictions likely impeded high flows and contributed to overtopping and discharge onto properties. [PAG] (p31)</p></div><div class="nugget-popup"><p>The Full Brook overtopped at Efflinch Lane where the culvert beneath Efflinch Lane/Mill Lane was partially blocked or overwhelmed; overbank flows passed across Efflinch Lane and contributed to directing floodwaters onto Mill Lane and adjacent properties. [PAG,IMG] (p33)</p></div><div class="nugget-popup"><p>Possible groundwater flooding from a raised water table may have contributed to the incident on Efflinch Lane; residents also reported potential internal sewer flooding (surcharge) affecting properties on Efflinch Lane. (p35)</p></div><div class="nugget-popup"><p>Combined sewer network surcharge caused a manhole to 'fountain' and discharge onto property drives on the east side of Efflinch Lane; additional sewer flooding further south potentially impacted properties. (p36)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 dwarf garage wall [IMG] (p30)</p></div><div class="nugget-popup quant"><p>1 culvert overwhelmed/partially blocked [PAG,IMG] (p33)</p></div><div class="nugget-popup quant"><p>manhole fountaining to 600mm (>23 inches) (p36)</p></div></div></body></div>`)[0];
+                popup_99e6351d513bab9bb8880ba0260711ab.setContent(html_2aac975ba29f7aa307e485ad42901229);
+            
+        
+
+        marker_7540a58395426fc7ed031a8a61c39f4c.bindPopup(popup_99e6351d513bab9bb8880ba0260711ab)
+        ;
+
+        
+    
+    
+            var marker_01a3b0964cc24aa55f54baf3ce1eb3e4 = L.marker(
+                [52.7802836, -1.681865],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_cbd14c31a97504e637a7d722330db255 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_01a3b0964cc24aa55f54baf3ce1eb3e4.setIcon(icon_cbd14c31a97504e637a7d722330db255);
+        
+    
+        var popup_04291b6f5680fdaec6fdd89718532389 = L.popup({});
+
+        
+            
+                var html_1aa35ca38d9633cd152945205fe1f1a3 = $(`<div id="html_1aa35ca38d9633cd152945205fe1f1a3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lichfield Road, Branston</h1><div class="nugget-popup"><p>Flooding occurred on Lichfield Road on 16th February 2020; this incident has been investigated in a separate Section 19 report. (p16)</p></div></div></body></div>`)[0];
+                popup_04291b6f5680fdaec6fdd89718532389.setContent(html_1aa35ca38d9633cd152945205fe1f1a3);
+            
+        
+
+        marker_01a3b0964cc24aa55f54baf3ce1eb3e4.bindPopup(popup_04291b6f5680fdaec6fdd89718532389)
+        ;
+
+        
+    
+    
+            var marker_6ccb6ed33f92e9aea54d82728a64d28e = L.marker(
+                [52.7623, -1.7190431],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_ba8a28d2a6c5c76942670f0a9ef8a896 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6ccb6ed33f92e9aea54d82728a64d28e.setIcon(icon_ba8a28d2a6c5c76942670f0a9ef8a896);
+        
+    
+        var popup_0d263d1df049ea44aed981d4902c3fe9 = L.popup({});
+
+        
+            
+                var html_91b5b5cabe7c8b2954fba9c2386b4f6a = $(`<div id="html_91b5b5cabe7c8b2954fba9c2386b4f6a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Meadow Rise, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Meadow Rise in Barton was affected by flooding on 16 February 2020 as part of the town&ndash;centre inundation caused by persistent rainfall. (p16)</p></div><div class="nugget-popup"><p>Floodwaters from Barton Brook/Culvert exceedance continued to internally inundate properties on the south of Meadow Rise. [IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_0d263d1df049ea44aed981d4902c3fe9.setContent(html_91b5b5cabe7c8b2954fba9c2386b4f6a);
+            
+        
+
+        marker_6ccb6ed33f92e9aea54d82728a64d28e.bindPopup(popup_0d263d1df049ea44aed981d4902c3fe9)
+        ;
+
+        
+    
+    
+            var marker_c9b387bf1c1db7e117d835eace1f2386 = L.marker(
+                [52.7551584, -1.7158076],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_3014a1d65e2ce04a3ce9f6a8ec75c800 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c9b387bf1c1db7e117d835eace1f2386.setIcon(icon_3014a1d65e2ce04a3ce9f6a8ec75c800);
+        
+    
+        var popup_46eeb369a7e957581aefc1195127eaf2 = L.popup({});
+
+        
+            
+                var html_41432733c180182f53ef983e726efdff = $(`<div id="html_41432733c180182f53ef983e726efdff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Lane, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Mill Lane in Barton experienced flooding on 16 February 2020, with surface water inundation of the road during the storm event. (p16)</p></div><div class="nugget-popup"><p>Highway drainage on Mill Lane was overwhelmed by ingress of flows from Barton Brook and Full Brook associated with river flooding, causing flooding of the highway during the 16th February 2020 event. (p25)</p></div><div class="nugget-popup"><p>Overtopped flows (from Full Brook and an unnamed watercourse) overwhelmed culverts beneath Mill Lane and Efflinch Lane, causing flows to pass along Mill Lane, inundate drives and properties (internal and external flooding reported), and may have entered the sewer network causing sewer flooding to rear gardens. [PAG,IMG] (p33)</p></div><div class="nugget-popup"><p>Ingress of watercourse flows into the sewer network resulted in sewer flooding that impacted rear gardens. Out&ndash;of&ndash;bank flows from the Full Brook and an unnamed tributary, together with in&ndash;channel blockages at the Mill Lane culvert, contributed to flooding affecting properties and gardens. (p34)</p></div><div class="nugget-popup"><p>Surface water runoff followed prevailing topography into Mill Lane and Mill Crescent and may have contributed to the flood extent there by exacerbating flooding from out&ndash;of&ndash;bank Full Brook flows; highway drainage was unable to fully capture these flows. (p35)</p></div><div class="nugget-popup"><p>Foul sewer flooding affected rear gardens, likely caused by ingress from watercourse flows into the sewer system. (p36)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 culvert locations overwhelmed [PAG,IMG] (p33)</p></div></div></body></div>`)[0];
+                popup_46eeb369a7e957581aefc1195127eaf2.setContent(html_41432733c180182f53ef983e726efdff);
+            
+        
+
+        marker_c9b387bf1c1db7e117d835eace1f2386.bindPopup(popup_46eeb369a7e957581aefc1195127eaf2)
+        ;
+
+        
+    
+    
+            var marker_286b66083971302e20b90b239e1c7b0f = L.marker(
+                [52.7557151, -1.7148438],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_e5bee2f4b0b2c8b3ac3417bbeef7c464 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_286b66083971302e20b90b239e1c7b0f.setIcon(icon_e5bee2f4b0b2c8b3ac3417bbeef7c464);
+        
+    
+        var popup_769bb0f0601347563ff1c391f6ee7160 = L.popup({});
+
+        
+            
+                var html_6fd12eb384edb4b6da6d51cdddbbfae3 = $(`<div id="html_6fd12eb384edb4b6da6d51cdddbbfae3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Crescent, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Mill Crescent in Barton was impacted by flooding on 16 February 2020 as part of the wider town&ndash;centre flooding during Storm Dennis. (p16)</p></div><div class="nugget-popup"><p>Flood flows from the Full Brook and the unnamed watercourse converged and collected in open land east of Mill Crescent; flooding along Mill Crescent is reported as part of the flow route and local inundation. [PAG,IMG] (p33)</p></div><div class="nugget-popup"><p>Out&ndash;of&ndash;bank flows from the Full Brook and an unnamed watercourse collected in low&ndash;lying open land behind Mill Crescent, causing flooding of properties. The Full Brook overtopped its channel along the footpath and contributed to flooding in Mill Crescent; volunteers redirected floodwaters away from properties. (p34)</p></div><div class="nugget-popup"><p>Surface water runoff and out&ndash;of&ndash;bank flows from Full Brook increased the flood extent at Mill Crescent; sewer system surcharge led to internal property flooding. (p35)</p></div><div class="nugget-popup"><p>Foul sewer flooding occurred to rear gardens, likely due to ingress from nearby watercourse flows into the sewer system. (p36)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Flows from 2 watercourses converged [PAG,IMG] (p33)</p></div></div></body></div>`)[0];
+                popup_769bb0f0601347563ff1c391f6ee7160.setContent(html_6fd12eb384edb4b6da6d51cdddbbfae3);
+            
+        
+
+        marker_286b66083971302e20b90b239e1c7b0f.bindPopup(popup_769bb0f0601347563ff1c391f6ee7160)
+        ;
+
+        
+    
+    
+            var marker_4b9bb1919932385f3f45bed319818eb5 = L.marker(
+                [52.7617865, -1.7239056],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_6abc4ab0767afa20207247086674cf82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4b9bb1919932385f3f45bed319818eb5.setIcon(icon_6abc4ab0767afa20207247086674cf82);
+        
+    
+        var popup_d9bdd9686bd6a982d106020bd852ccb6 = L.popup({});
+
+        
+            
+                var html_eef1789302b6655bde423a719aca00a4 = $(`<div id="html_eef1789302b6655bde423a719aca00a4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Luke's Road, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Map and image description show observed surface water flow routes and reported sewer flooding concentrated near Church Lane and St Luke's Road during the event, indicating local surface water and sewer flood impacts. [PAG,IMG] (p29)</p></div></div></body></div>`)[0];
+                popup_d9bdd9686bd6a982d106020bd852ccb6.setContent(html_eef1789302b6655bde423a719aca00a4);
+            
+        
+
+        marker_4b9bb1919932385f3f45bed319818eb5.bindPopup(popup_d9bdd9686bd6a982d106020bd852ccb6)
+        ;
+
+        
+    
+    
+            var marker_e2677d509a7f04d73ccd9307401df535 = L.marker(
+                [52.7657204, -1.7276588],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_090dba5995a6c9287530f6b1840dfe7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e2677d509a7f04d73ccd9307401df535.setIcon(icon_090dba5995a6c9287530f6b1840dfe7f);
+        
+    
+        var popup_ad11e087f1fb4c6ce6c30b167ac36aca = L.popup({});
+
+        
+            
+                var html_52143df8bc79f54f8e12601a9cff177a = $(`<div id="html_52143df8bc79f54f8e12601a9cff177a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Main Street, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Properties along Main Street were flooded due to Knoll Brook during the flood incident; the subsequent Knoll Brook mitigation scheme had not been fully operational at the time of the flood. (p22)</p></div><div class="nugget-popup"><p>Properties along Main Street have been impacted by flooding associated with local watercourses (Knoll Brook is cited as having historically impacted properties on Main Street). Staffordshire County Council completed a Knoll Brook mitigation scheme in 2020 to reduce flood risk to Main Street (upgraded trash screens and grill, repaired pipework, reinstated ditch storage, constructed an earth bund, improved highway storage), but the scheme was not completely operational at the time of the 16 February 2020 flood event. [PAG,IMG] (p23)</p></div><div class="nugget-popup"><p>Internal flooding of properties on Main Street from out&ndash;of&ndash;bank Knoll Brook flows; additionally one property experienced internal flooding due to overland surface water runoff from nearby agricultural land. (p35)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties; one property (p35)</p></div></div></body></div>`)[0];
+                popup_ad11e087f1fb4c6ce6c30b167ac36aca.setContent(html_52143df8bc79f54f8e12601a9cff177a);
+            
+        
+
+        marker_e2677d509a7f04d73ccd9307401df535.bindPopup(popup_ad11e087f1fb4c6ce6c30b167ac36aca)
+        ;
+
+        
+    
+    
+            var marker_9c268a421c1529ec93d95f709f3e99dc = L.marker(
+                [52.7651247, -1.7302292],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_bddeca9340ebbc99a1a111593ffa2869 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9c268a421c1529ec93d95f709f3e99dc.setIcon(icon_bddeca9340ebbc99a1a111593ffa2869);
+        
+    
+        var popup_293aed90ae4ca3c617b5fd9eeb7b426d = L.popup({});
+
+        
+            
+                var html_12d0851bd9149c1cbf7996e3827679c8 = $(`<div id="html_12d0851bd9149c1cbf7996e3827679c8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Park Road, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Location where Barton Brook first discharged into Barton&ndash;under&ndash;Needwood and where high brook levels were reported on 16/02/2020, associated with the subsequent overtopping and downstream flooding. (p28)</p></div><div class="nugget-popup"><p>Surface water flows were observed along Park Road following prevailing topography; highway drainage was unable to fully capture these flows and they may have exacerbated internal property flooding by following the same flow paths as out&ndash;of&ndash;bank Barton Brook flows. (p35)</p></div></div></body></div>`)[0];
+                popup_293aed90ae4ca3c617b5fd9eeb7b426d.setContent(html_12d0851bd9149c1cbf7996e3827679c8);
+            
+        
+
+        marker_9c268a421c1529ec93d95f709f3e99dc.bindPopup(popup_293aed90ae4ca3c617b5fd9eeb7b426d)
+        ;
+
+        
+    
+    
+            var marker_d7058b50671d69b00619ae60b936ae3c = L.marker(
+                [52.7642553, -1.7290491],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_b7b0ddf7a0f9ce9e34d517a48513a042 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d7058b50671d69b00619ae60b936ae3c.setIcon(icon_b7b0ddf7a0f9ce9e34d517a48513a042);
+        
+    
+        var popup_584bfa0f228ea491a381a14f8c00f9ac = L.popup({});
+
+        
+            
+                var html_4446efdb8070dfdfb07992a514b7707d = $(`<div id="html_4446efdb8070dfdfb07992a514b7707d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fallowfield Drive, Barton-Under-Needwood</h1><div class="nugget-popup"><p>The footbridge between Fallowfield Drive and Brookside Road was the first observed location of overtopping on 16/02/2020; this overtopping initiated out&ndash;of&ndash;bank flows that led to internal flooding of Brookside Road properties and damage to gardens and fences. (p28)</p></div><div class="nugget-popup"><p>The channel overflowed at the footbridge between Brookside Road and Fallowfield Drive, indicating overbank/channel overflow affecting the Fallowfield Drive vicinity. (p30)</p></div></div></body></div>`)[0];
+                popup_584bfa0f228ea491a381a14f8c00f9ac.setContent(html_4446efdb8070dfdfb07992a514b7707d);
+            
+        
+
+        marker_d7058b50671d69b00619ae60b936ae3c.bindPopup(popup_584bfa0f228ea491a381a14f8c00f9ac)
+        ;
+
+        
+    
+    
+            var marker_126b9591c8f98d101ce1896f1d798a49 = L.marker(
+                [52.7634795, -1.7293734],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_ee573d68c45dff85cce7903273cff1ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_126b9591c8f98d101ce1896f1d798a49.setIcon(icon_ee573d68c45dff85cce7903273cff1ce);
+        
+    
+        var popup_f9883fa067510417f29358c5c6955d37 = L.popup({});
+
+        
+            
+                var html_8bc43a5193466aa4a93010b0255efaed = $(`<div id="html_8bc43a5193466aa4a93010b0255efaed" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brookside Road, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Overtopping at the footbridge caused internal flooding to properties on Brookside Road; flows ran through gardens, knocked over fence panels, inundated further properties and damaged garden fence panels and a front gate as flows accumulated behind the Wales Lane culvert entrance on 16/02/2020. (p28)</p></div><div class="nugget-popup"><p>The first observed overtopping at the footbridge between Fallowfield Drive and Brookside Road caused internal flooding to several properties on Brookside Road; out&ndash;of&ndash;bank flows continued eastward through Brookside Road gardens, knocking over fence panels and inundating additional Brookside Road properties. [PAG,IMG] (p29)</p></div><div class="nugget-popup"><p>Flood flows were first reported to have overflowed the channel at the footbridge between Brookside Road and Fallowfield Drive, indicating channel overflow/overbank flooding at the Brookside Road footbridge location. (p30)</p></div><div class="nugget-popup"><p>Out&ndash;of&ndash;bank flows and prevailing topography directed river/brook flood flows into gardens and properties on Brookside Road, causing property flooding (including internal flooding in some properties). (p31)</p></div><div class="nugget-popup"><p>Surface water flows were observed along Brookside following prevailing topography; these flows followed the same direction as out&ndash;of&ndash;bank Barton Brook flows and may have further exacerbated internal property flooding, with highway drainage unable to fully capture the flows. (p35)</p></div></div></body></div>`)[0];
+                popup_f9883fa067510417f29358c5c6955d37.setContent(html_8bc43a5193466aa4a93010b0255efaed);
+            
+        
+
+        marker_126b9591c8f98d101ce1896f1d798a49.bindPopup(popup_f9883fa067510417f29358c5c6955d37)
+        ;
+
+        
+    
+    
+            var marker_e56493441108b10ec9b4f523b1239e92 = L.marker(
+                [52.7631585, -1.7256467],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_924a77bfdc4de5ad1ce94e225711ad36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e56493441108b10ec9b4f523b1239e92.setIcon(icon_924a77bfdc4de5ad1ce94e225711ad36);
+        
+    
+        var popup_0fd5532d90ec5ead4dd0d581ec88553b = L.popup({});
+
+        
+            
+                var html_9ecd76917763bb2afdbab9acf36510a8 = $(`<div id="html_9ecd76917763bb2afdbab9acf36510a8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Collinson Road, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Out&ndash;of&ndash;bank flows around the footbridge between Wales Lane and Collinson Road potentially overtopped the southern bank and discharged across Collinson Road rather than through the culvert, resulting in internal flooding to properties and recorded flow marks of flood depths (specific depth values not provided). [PAG,IMG] (p29)</p></div><div class="nugget-popup"><p>The culvert section under Collinson Road may have experienced blockage or been exceeded during the event, contributing to restricted flows and localised out&ndash;of&ndash;channel flooding. (p30)</p></div><div class="nugget-popup"><p>Overland flow routes indicated inability to discharge through culverts at Collinson Road, with floodwater levels observed above the culvert crown; flows were directed toward properties, contributing to flooding impacts. [PAG] (p31)</p></div><div class="nugget-popup"><p>Reported internal property flooding due to sewer surcharge, potentially from ingress of Barton Brook and Full Brook flows. (p35)</p></div></div></body></div>`)[0];
+                popup_0fd5532d90ec5ead4dd0d581ec88553b.setContent(html_9ecd76917763bb2afdbab9acf36510a8);
+            
+        
+
+        marker_e56493441108b10ec9b4f523b1239e92.bindPopup(popup_0fd5532d90ec5ead4dd0d581ec88553b)
+        ;
+
+        
+    
+    
+            var marker_c567e8a30fbc8d0871872f92e7f9e4ee = L.marker(
+                [52.7612596, -1.7214445],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_7f5d916b7973b2266ee129d3d26e9831 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c567e8a30fbc8d0871872f92e7f9e4ee.setIcon(icon_7f5d916b7973b2266ee129d3d26e9831);
+        
+    
+        var popup_695c9c5b6a71c69449c66b28e840714f = L.popup({});
+
+        
+            
+                var html_7b5caa4745b30bb5ecfe797cb952f9eb = $(`<div id="html_7b5caa4745b30bb5ecfe797cb952f9eb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Short Lane, Barton-Under-Needwood</h1><div class="nugget-popup"><p>A blockage by building debris at the east end of Short Lane (adjacent to the open channel) was reported during the event; this obstruction was cleared before the Environment Agency field team arrived but may have disrupted flows and contributed to discharge towards properties on Efflinch Lane. (p31)</p></div></div></body></div>`)[0];
+                popup_695c9c5b6a71c69449c66b28e840714f.setContent(html_7b5caa4745b30bb5ecfe797cb952f9eb);
+            
+        
+
+        marker_c567e8a30fbc8d0871872f92e7f9e4ee.bindPopup(popup_695c9c5b6a71c69449c66b28e840714f)
+        ;
+
+        
+    
+    
+            var marker_4ec575fc1cf7873f13f11f0fe4d44fd4 = L.marker(
+                [52.7612413, -1.7024196],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_5aa730bd53b8f27b54028f98ff3564fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4ec575fc1cf7873f13f11f0fe4d44fd4.setIcon(icon_5aa730bd53b8f27b54028f98ff3564fa);
+        
+    
+        var popup_4bd584b8075c8ab5e51ba4c9e47cafc8 = L.popup({});
+
+        
+            
+                var html_88fe99d62ccfddfa18f0cd0d5bcbb820 = $(`<div id="html_88fe99d62ccfddfa18f0cd0d5bcbb820" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barton Turns, Barton-Under-Needwood</h1><div class="nugget-popup"><p>High River Trent levels around Barton Turns prevented Barton Brook from discharging to the Trent, producing a backwater effect that raised Barton Brook levels and contributed to local flooding on 16/02/2020. (p32)</p></div></div></body></div>`)[0];
+                popup_4bd584b8075c8ab5e51ba4c9e47cafc8.setContent(html_88fe99d62ccfddfa18f0cd0d5bcbb820);
+            
+        
+
+        marker_4ec575fc1cf7873f13f11f0fe4d44fd4.bindPopup(popup_4bd584b8075c8ab5e51ba4c9e47cafc8)
+        ;
+
+        
+    
+    
+            var marker_87ad59f572f03de2a487972bbc7d0ee9 = L.marker(
+                [52.7543557, -1.7165623],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_979632a62a8acd20fea0be35ae52fc8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_87ad59f572f03de2a487972bbc7d0ee9.setIcon(icon_979632a62a8acd20fea0be35ae52fc8d);
+        
+    
+        var popup_dca1f1d1b6f036954293864540dbf9cc = L.popup({});
+
+        
+            
+                var html_861c2301597cb19f09ff8115b8778667 = $(`<div id="html_861c2301597cb19f09ff8115b8778667" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hardy Close, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Predominant topography directed overtopped flows south from Mill Lane toward Hardy Close and adjacent agricultural land, resulting in inundation of the Hardy Close area from bypassing flows. [PAG] (p33)</p></div></div></body></div>`)[0];
+                popup_dca1f1d1b6f036954293864540dbf9cc.setContent(html_861c2301597cb19f09ff8115b8778667);
+            
+        
+
+        marker_87ad59f572f03de2a487972bbc7d0ee9.bindPopup(popup_dca1f1d1b6f036954293864540dbf9cc)
+        ;
+
+        
+    
+    
+            var marker_944faba71dcab488220587e548918e0c = L.marker(
+                [52.7698028, -1.6916784],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_53081ccf1934700ebe94261d403b7961 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_944faba71dcab488220587e548918e0c.setIcon(icon_53081ccf1934700ebe94261d403b7961);
+        
+    
+        var popup_8d539d0bb477797290447ccaa5de4dbb = L.popup({});
+
+        
+            
+                var html_4d10fdda1fd24c061dba76780ed7dcfd = $(`<div id="html_4d10fdda1fd24c061dba76780ed7dcfd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lichfield Road, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Property flooding reported due to floodwater backing up from the Full Brook culvert beneath the A38. (p34)</p></div></div></body></div>`)[0];
+                popup_8d539d0bb477797290447ccaa5de4dbb.setContent(html_4d10fdda1fd24c061dba76780ed7dcfd);
+            
+        
+
+        marker_944faba71dcab488220587e548918e0c.bindPopup(popup_8d539d0bb477797290447ccaa5de4dbb)
+        ;
+
+        
+    
+    
+            var marker_c6330eba96ee538957862e61398fa5b6 = L.marker(
+                [52.7627014, -1.7279858],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_533a712edbbcef9cf8b38fdb58fd407f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c6330eba96ee538957862e61398fa5b6.setIcon(icon_533a712edbbcef9cf8b38fdb58fd407f);
+        
+    
+        var popup_6667758bb847fbbce525578fa44ac196 = L.popup({});
+
+        
+            
+                var html_61a93f67e0ebcd499cb939f5b9edcd13 = $(`<div id="html_61a93f67e0ebcd499cb939f5b9edcd13" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Westmead Road, Barton-Under-Needwood</h1><div class="nugget-popup"><p>Surface water flows were observed along Westmead Road following prevailing topography; highway drainage was unable to fully capture these flows and they may have exacerbated internal property flooding. (p35)</p></div></div></body></div>`)[0];
+                popup_6667758bb847fbbce525578fa44ac196.setContent(html_61a93f67e0ebcd499cb939f5b9edcd13);
+            
+        
+
+        marker_c6330eba96ee538957862e61398fa5b6.bindPopup(popup_6667758bb847fbbce525578fa44ac196)
+        ;
+
+        
+    
+    
+            var marker_3229ae2505057b0a98206045ea9d8453 = L.marker(
+                [52.8246942, -2.0074547],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_0fa46b83428898315c34fe36a2b78699 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3229ae2505057b0a98206045ea9d8453.setIcon(icon_0fa46b83428898315c34fe36a2b78699);
+        
+    
+        var popup_6af7497528ca52c0c178b358b1b6f84d = L.popup({});
+
+        
+            
+                var html_e76726ca3d16a27db8f2ce39c8c15652 = $(`<div id="html_e76726ca3d16a27db8f2ce39c8c15652" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Staffordshire</h1><div class="nugget-popup"><p>Highway drainage (gullies, channels and underground sewers/culverts) can be overwhelmed during heavy or prolonged rainfall or when blocked. When the carriageway cannot contain flows water can pond on the highway, overtop kerbs and spill onto adjacent land, entering properties that are at or below road level. Historic variations in sewer design and capacity mean some parts of the drainage network surcharge or are unable to accept highway runoff, contributing to property and highway flooding. [PAG] (p12)</p></div><div class="nugget-popup"><p>Widespread intense rainfall across the catchment on 15&ndash;16 February 2020 caused elevated river levels and contributed to flooding across the county, with soils already saturated and rivers high from Storm Ciara. [PAG] (p26)</p></div></div></body></div>`)[0];
+                popup_6af7497528ca52c0c178b358b1b6f84d.setContent(html_e76726ca3d16a27db8f2ce39c8c15652);
+            
+        
+
+        marker_3229ae2505057b0a98206045ea9d8453.bindPopup(popup_6af7497528ca52c0c178b358b1b6f84d)
+        ;
+
+        
+    
+    
+            var marker_25e23cfd9802a95f7ecd086de4e2688f = L.marker(
+                [52.8246942, -2.0074547],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_e329c02a6e5c3eb5e44c7d900ec4be5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_25e23cfd9802a95f7ecd086de4e2688f.setIcon(icon_e329c02a6e5c3eb5e44c7d900ec4be5d);
+        
+    
+        var popup_ae0ceb481a6923fdd215fa7e516f81dd = L.popup({});
+
+        
+            
+                var html_dcd411cd6d26b5ccc6e632cdb6b01a6d = $(`<div id="html_dcd411cd6d26b5ccc6e632cdb6b01a6d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Staffordshire</h1><div class="nugget-popup"><p>Across Staffordshire the existing public sewer and highway drainage networks (including combined, surface water and foul sewers) may be overwhelmed during large or prolonged storm events. Older sewers built to earlier, lower design standards can be unable to cope, leading to restricted flows or backing&ndash;up, surcharging to surface via manholes or drainage points, and surface water flooding affecting highways and properties. (p11)</p></div></div></body></div>`)[0];
+                popup_ae0ceb481a6923fdd215fa7e516f81dd.setContent(html_dcd411cd6d26b5ccc6e632cdb6b01a6d);
+            
+        
+
+        marker_25e23cfd9802a95f7ecd086de4e2688f.bindPopup(popup_ae0ceb481a6923fdd215fa7e516f81dd)
+        ;
+
+        
+    
+    
+            var marker_bd123a83e4379270585447755fa2fc07 = L.marker(
+                [52.8878642, -1.9030802],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_df73319ff9ecdadf31ef61a4fb1c2fa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bd123a83e4379270585447755fa2fc07.setIcon(icon_df73319ff9ecdadf31ef61a4fb1c2fa3);
+        
+    
+        var popup_0ca9ca91707ad7e58fd2258199d3e1ca = L.popup({});
+
+        
+            
+                var html_4eb8b137f0fa225c7cd4a796f2289c68 = $(`<div id="html_4eb8b137f0fa225c7cd4a796f2289c68" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Staffordshire</h1><div class="nugget-popup"><p>Storm Dennis (16 February 2020) caused widespread flooding to properties and highways across East Staffordshire. The flooding generated 130 applications for grant support from residential and business properties and multiple areas experienced incidents in which five or more properties were internally flooded, meeting the criteria for a Section 19 investigation. (p6)</p></div><div class="nugget-popup"><p>Flooding across the borough on 16th February 2020: ESBC collected information from flooded residents to process Flooded Property Claims and administer grants. The DEFRA Property Flood Resilience grant scheme and ESBC provided grants to support property repairs following the February 2020 event. (p25)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>130 applications for grant support; five or more properties internally flooded (in multiple areas) (p6)</p></div><div class="nugget-popup quant"><p>130 applications; 86 properties; £370,840 (p25)</p></div></div></body></div>`)[0];
+                popup_0ca9ca91707ad7e58fd2258199d3e1ca.setContent(html_4eb8b137f0fa225c7cd4a796f2289c68);
+            
+        
+
+        marker_bd123a83e4379270585447755fa2fc07.bindPopup(popup_0ca9ca91707ad7e58fd2258199d3e1ca)
+        ;
+
+        
+    
+    
+            var marker_16ceac7f1e5514360b8433ff68dc04c5 = L.marker(
+                [52.76246231806559, -1.7235877897985983],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_4ac0622333347c46d23601b88fb1ea29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_16ceac7f1e5514360b8433ff68dc04c5.setIcon(icon_4ac0622333347c46d23601b88fb1ea29);
+        
+    
+        var popup_a1f965e7d20944aded8a44fc33bf50a4 = L.popup({});
+
+        
+            
+                var html_f6df9922128f2734ba586140ca913637 = $(`<div id="html_f6df9922128f2734ba586140ca913637" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barton-Under-Needwood</h1><div class="nugget-popup"><p>Properties in Barton&ndash;under&ndash;Needwood experienced internal (property) flooding associated with Storm Dennis; the investigation focuses on flood extent, flow routes and causes for these internal flooding incidents. (p5)</p></div><div class="nugget-popup"><p>Flooding occurred in Barton&ndash;under&ndash;Needwood as a result of Storm Dennis; Staffordshire County Council investigated the identified extent, reported flow routes and potential causes of the event. (p6)</p></div><div class="nugget-popup"><p>The town centre of Barton experienced flooding on 16 February 2020; the event inundated the centre of Barton following heavy, persistent rainfall associated with Storm Dennis. (p16)</p></div><div class="nugget-popup"><p>The village experienced a flood incident referenced in the report (the February 2020 flood). [PAG] (p21)</p></div><div class="nugget-popup"><p>The village experienced multiple flood events: 50 properties flooded in August 1987; properties on Main Street were flooded by Knoll Brook (flood incident when the local mitigation was not fully operational); Barton Brook flooding in January 2013 and February 2014 impacted St Luke's Road; Full Brook overtopped in 2013 flooding gardens and drives; foul sewer flooding in the 2013 incident affected rear gardens on Mill Lane and Mill Crescent and entered properties via airbricks. [PAG,MUL] (p22)</p></div><div class="nugget-popup"><p>Multiple properties in Barton&ndash;under&ndash;Needwood reported internal flooding on 16 February 2020. The village has a history of notable flooding, including an event affecting 50 properties in August 1987. [PAG,IMG,MUL] (p23)</p></div><div class="nugget-popup"><p>Multiple properties in the village experienced internal flooding on 16th February 2020 from a combination of river flooding, surface water and overwhelmed sewer infrastructure. Garages, sheds and driveways were also flooded; floodwater reached just below the thresholds of additional properties. Some households had to move out because of flood damage and loss of electricity to ground floors. No commercial properties or critical infrastructure were inundated. [PAG] (p24)</p></div><div class="nugget-popup"><p>Included within the Barton&ndash;under&ndash;Needwood area that experienced river flooding from Barton Brook and Full Brook, surface water flooding and sewer&ndash;related flooding during the event. (p25)</p></div><div class="nugget-popup"><p>Intense, concentrated rainfall on 15&ndash;16 February 2020 (following saturated soils and high river levels from Storm Ciara) contributed to a flood event affecting Barton&ndash;under&ndash;Needwood, producing flood conditions in the village on/around 16 February 2020. [IMG,PAG] (p26)</p></div><div class="nugget-popup"><p>In Barton&ndash;under&ndash;Needwood rainfall from Storm Dennis increased Barton Brook watercourse levels and flows during 14&ndash;19 Feb 2020; modelled peak flow for the catchment occurred on 16 Feb and the event was exacerbated by an already saturated catchment and high baseflows. [IMG,PAG] (p27)</p></div><div class="nugget-popup"><p>High Barton Brook levels were reported where the brook first discharged into Barton&ndash;under&ndash;Needwood around Park Road on 16/02/2020; the brook overtopped and flows progressed downstream, contributing to internal flooding of Brookside Road properties. [IMG] (p28)</p></div><div class="nugget-popup"><p>Once Barton Brook went out of bank, prevailing topography directed flows into gardens and properties in the town; some properties experienced recorded internal flooding (noted as first time since 1961). [PAG] (p31)</p></div><div class="nugget-popup"><p>Areas of Barton (including Mill Lane, Mill Crescent and Lichfield Road) were affected by flooding associated with the Full Brook and an unnamed tributary, resulting in property flooding, overtopping of channels and remedial/ volunteer response actions. (p34)</p></div><div class="nugget-popup"><p>Multiple flood mechanisms affected Barton. Knoll Brook caused flooding along Main Street resulting in internal flooding of properties. Overland runoff from agricultural land northwest of Barton&ndash;under&ndash;Needwood caused internal flooding to one property on Main Street. Out&ndash;of&ndash;bank flows from Barton Brook and Full Brook exceeded channel capacity, flowed across highways and reduced the ability of drainage systems to discharge; this contributed to surface water and highway drainage impacts. Groundwater from a raised water table may also have contributed to flooding on Efflinch Lane. Ingress of brook flows into sewer systems is reported to have caused surcharging and internal sewer flooding in parts of the area. (p35)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>50 properties [PAG,MUL] (p22)</p></div><div class="nugget-popup quant"><p>50 properties (August 1987) [PAG,IMG,MUL] (p23)</p></div><div class="nugget-popup quant"><p>69 residential properties (internally flooded, collective figure for the village) [PAG] (p24)</p></div><div class="nugget-popup quant"><p>0.93 m3/s peak discharge on 16/02/2020 at 14:55 [IMG,PAG] (p27)</p></div><div class="nugget-popup quant"><p>5 properties; 1 property (p35)</p></div></div></body></div>`)[0];
+                popup_a1f965e7d20944aded8a44fc33bf50a4.setContent(html_f6df9922128f2734ba586140ca913637);
+            
+        
+
+        marker_16ceac7f1e5514360b8433ff68dc04c5.bindPopup(popup_a1f965e7d20944aded8a44fc33bf50a4)
+        ;
+
+        
+    
+    
+            var marker_b3ae31c72603c68a80f810a6b659adef = L.marker(
+                [52.78867905, -1.660668380523432],
+                {}
+            ).addTo(map_756b580cb6aea0f98101634f2eff6804);
+        
+    
+            var icon_1a74cfc25794aeb14c15a236d52c3ad5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b3ae31c72603c68a80f810a6b659adef.setIcon(icon_1a74cfc25794aeb14c15a236d52c3ad5);
+        
+    
+        var popup_7a83b87ffe1c5dbd75fc70aee959ae68 = L.popup({});
+
+        
+            
+                var html_5b7b6b58af9560c1dac6c3e4884a8d46 = $(`<div id="html_5b7b6b58af9560c1dac6c3e4884a8d46" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Branston</h1><div class="nugget-popup"><p>Flooding occurred on Lichfield Road near Branston as part of the 15&ndash;16 February 2020 event; the incident on Lichfield Road was investigated in a separate Section 19 report. (p16)</p></div></div></body></div>`)[0];
+                popup_7a83b87ffe1c5dbd75fc70aee959ae68.setContent(html_5b7b6b58af9560c1dac6c3e4884a8d46);
+            
+        
+
+        marker_b3ae31c72603c68a80f810a6b659adef.bindPopup(popup_7a83b87ffe1c5dbd75fc70aee959ae68)
+        ;
+
+        
+    
+</script>
+</html>
