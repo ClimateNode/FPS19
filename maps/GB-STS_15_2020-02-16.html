@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_701e5d648aee7f9d34d3e62397d7e2d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_701e5d648aee7f9d34d3e62397d7e2d6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_701e5d648aee7f9d34d3e62397d7e2d6 = L.map(
+                "map_701e5d648aee7f9d34d3e62397d7e2d6",
+                {
+                    center: [52.79293637, -1.71389075],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1a7b2999a69ff648459c9236a1157a5a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_1a7b2999a69ff648459c9236a1157a5a.addTo(map_701e5d648aee7f9d34d3e62397d7e2d6);
+    
+            var marker_9b2370d84ce158e73adb39456c691f72 = L.marker(
+                [52.779982, -1.7926314],
+                {}
+            ).addTo(map_701e5d648aee7f9d34d3e62397d7e2d6);
+        
+    
+            var icon_a3f0f4164797a87f9642daa891c11813 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9b2370d84ce158e73adb39456c691f72.setIcon(icon_a3f0f4164797a87f9642daa891c11813);
+        
+    
+        var popup_f0ba0bf2897c6ad90d3720065ee2136f = L.popup({});
+
+        
+            
+                var html_ece324b3f3dfa1e93ed30e4758d2fead = $(`<div id="html_ece324b3f3dfa1e93ed30e4758d2fead" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Swarbourn</h1><div class="nugget-popup"><p>During Storm Dennis on 16th February 2020 the River Swarbourn rose and was implicated in flooding of Yoxall; bank overtopping and high flows contributed to inundation of the village centre (affecting Main Street and Bond End). [PAG] (p18)</p></div><div class="nugget-popup"><p>The River Swarbourn has produced notable flood events that inundated Yoxall (historic events listed include July 1922, 1953, August 1987 and November 2000). The 1987 and 2000 events caused extensive flooding to the centre of Yoxall and damage to properties and transport routes. On 16 February 2020 peak river levels corresponded with resident reports of internal property flooding in Yoxall. [PAG,MUL] (p22)</p></div><div class="nugget-popup"><p>The River Swarbourn rose and overtopped/escaped its channel onto the floodplain west of the channel, backing up at the Town Hill Bridge and causing floodwater to spill into gardens and contribute to internal flooding of properties on Main Street. [PAG] (p23)</p></div><div class="nugget-popup"><p>The River Swarbourn rose and topped its banks and was identified as the main driver of the flooding in Yoxall, contributing to internal property flooding and surcharge of the local drainage system. (p25)</p></div><div class="nugget-popup"><p>The Swarbourn catchment experienced high flows during the event; the 1.91 m stage corresponds to roughly 15&ndash;16 m3/s and produced flood conditions that affected downstream communities including Yoxall. [PAG] (p27)</p></div><div class="nugget-popup"><p>The River Swarbourn recorded its highest level on record at the Hoar Cross monitoring station during the event, with rapid rise and fall of river levels indicating a river&ndash;flood incident affecting the catchment upstream of Yoxall. [IMG,PAG] (p28)</p></div><div class="nugget-popup"><p>Recorded the highest river level since records began (1.91 m) at the Hoar Cross monitoring station on 16 February 2020; river stage and flows indicate a large flood event in the catchment and contributed to elevated river levels through Yoxall upstream/downstream influence. Modelling and rating&ndash;curve analysis give mixed estimates of event severity but document unusually high river levels on that date. [IMG] (p29)</p></div><div class="nugget-popup"><p>High River Swarbourn levels in February 2020 backed up against structures (Town Hill Bridge and Bond End Footbridge), reduced conveyance capacity and contributed to flooding in Yoxall; upstream weir likely increased upstream water levels and worsened the event. [PAG] (p30)</p></div><div class="nugget-popup"><p>Record high flows in the River Swarbourn during February 2020 caused water levels to rise and flood surrounding land, contributing to internal flooding of properties in Yoxall (including Bond End) by backing up against structures in the channel. [IMG] (p32)</p></div><div class="nugget-popup"><p>River Swarbourn was identified as the main source of flooding in Yoxall; flows larger than local drainage capacity contributed to ingress into the highway system and river flood waters were directed into gardens and properties. (p33)</p></div><div class="nugget-popup"><p>The River Swarbourn caused flooding in Yoxall on 16 February 2020. Flow was constricted by Town Hill Bridge and Bond End Footbridge which increased local flood levels and backwater; water also backed up against an upstream weir, contributing to flooding and channel issues. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Identified as a source of river flooding in Yoxall; water backed up against channel structures contributing to flooding of the village. River levels during the February 2020 event were approximately a 5% AEP (1 in 20&ndash;year) event and the channel at key structures was identified as having insufficient capacity to convey flows. (p38)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1.91 m; approximately 15&ndash;16 m3/s [PAG] (p27)</p></div><div class="nugget-popup quant"><p>1.91 m river level; flow approximately 15&ndash;16 m3/s (rating curve); modelled peak discharge 8.1 m3/s at 16:15 on 16th February 2020; rating&ndash;curve equivalent 16.1 m3/s (5% AEP / 20&ndash;year) [IMG,PAG] (p28)</p></div><div class="nugget-popup quant"><p>1.91 m river level; flow approximately between 15 and 16 m3/s (rating&ndash;curve estimate); peak discharge modelled at 8.1 m3/s at 16:15 hrs on 16 February 2020; 5% AEP (20&ndash;year) reference of 16.1 m3/s [IMG] (p29)</p></div></div></body></div>`)[0];
+                popup_f0ba0bf2897c6ad90d3720065ee2136f.setContent(html_ece324b3f3dfa1e93ed30e4758d2fead);
+            
+        
+
+        marker_9b2370d84ce158e73adb39456c691f72.bindPopup(popup_f0ba0bf2897c6ad90d3720065ee2136f)
+        ;
+
+        
+    
+    
+            var marker_be588a175612781320ba310c20799b2c = L.marker(
+                [52.7680083, -1.79099],
+                {}
+            ).addTo(map_701e5d648aee7f9d34d3e62397d7e2d6);
+        
+    
+            var icon_4578e8a3c22c3548c69af047fdfd5874 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_be588a175612781320ba310c20799b2c.setIcon(icon_4578e8a3c22c3548c69af047fdfd5874);
+        
+    
+        var popup_8ee5c2e63d7e9f9b33527d67a01f886e = L.popup({});
+
+        
+            
+                var html_e0aa7c980a4c29b3617f5beef3fe80a5 = $(`<div id="html_e0aa7c980a4c29b3617f5beef3fe80a5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Main Street, Yoxall</h1><div class="nugget-popup"><p>Internal property flooding occurred on Main Street associated with the Storm Dennis event. (p5)</p></div><div class="nugget-popup"><p>Flooding occurred on Main Street in Yoxall on 16th February 2020. (p16)</p></div><div class="nugget-popup"><p>Main Street in Yoxall was flooded on 16th February 2020. Floodwaters inundated the road through the village, affecting residential properties, convenience stores and a public house located on the street. (p18)</p></div><div class="nugget-popup"><p>Floodwater spilled from the River Swarbourn and pooled/backed up against structures, inundating gardens and ultimately causing internal ground&ndash;floor flooding to several properties on Main Street. Flood flows travelled down Main Street before discharging back to the river downstream. [PAG] (p23)</p></div><div class="nugget-popup"><p>Floodwater flowed from the River Swarbourn into properties on Main Street where flow was constricted by Town Hill Bridge, causing internal inundation and damage to carpets, flooring, furniture and personal items. [PAG,IMG] (p24)</p></div><div class="nugget-popup"><p>Properties on Main Street were internally flooded during the event; sandbags were placed outside several properties; internal property damage reported (carpets, flooring, furniture and irreplaceable personal items). (p25)</p></div><div class="nugget-popup"><p>Properties on Main Street flooded as a result of floodwater backing up against Town Hill Bridge during the February 2020 event. (p30)</p></div><div class="nugget-popup"><p>Surface water pooled at the junction with Bond End (A515) and highway drainage on Main Street became overwhelmed, causing potential surcharging; main roads became unpassable to some residents and properties nearby were affected by flood water. (p33)</p></div><div class="nugget-popup"><p>Main Street was affected by flooding from the River Swarbourn during the 16 February 2020 event, prompting recommendations to assess and maintain highway drainage (gullies) and increase maintenance frequency to improve network capacity. [TAB] (p34)</p></div><div class="nugget-popup"><p>Highway drainage on Main Street was implicated in flood impacts; the condition and capacity of gullies and the highway drainage network should be assessed and maintenance increased to reduce future flooding. (p35)</p></div><div class="nugget-popup"><p>Main Street in Yoxall experienced internal flooding to properties, flooding of gardens, garages, summer houses and driveways, and main roads through the village became unpassable leaving residents cut off. (p38)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>8 residential properties and 1 commercial property (across Yoxall) (p38)</p></div></div></body></div>`)[0];
+                popup_8ee5c2e63d7e9f9b33527d67a01f886e.setContent(html_e0aa7c980a4c29b3617f5beef3fe80a5);
+            
+        
+
+        marker_be588a175612781320ba310c20799b2c.bindPopup(popup_8ee5c2e63d7e9f9b33527d67a01f886e)
+        ;
+
+        
+    
+    
+            var marker_74773308f1a0fc18ce73fcc40d8ce8c8 = L.marker(
+                [52.7636684, -1.7917386],
+                {}
+            ).addTo(map_701e5d648aee7f9d34d3e62397d7e2d6);
+        
+    
+            var icon_6f3ecc959d7d0d0f251574e4dde488d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_74773308f1a0fc18ce73fcc40d8ce8c8.setIcon(icon_6f3ecc959d7d0d0f251574e4dde488d1);
+        
+    
+        var popup_fa3604a7e5afece9c6ae9e2bc3492219 = L.popup({});
+
+        
+            
+                var html_1e2248f2f99175de058f5724a5a8ed42 = $(`<div id="html_1e2248f2f99175de058f5724a5a8ed42" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bond End, Yoxall</h1><div class="nugget-popup"><p>Internal property flooding reported on Bond End; properties were internally affected during the event. (p5)</p></div><div class="nugget-popup"><p>Flooding occurred on Bond End in Yoxall on 16th February 2020. (p16)</p></div><div class="nugget-popup"><p>Bond End (A515 through Yoxall) was flooded on 16th February 2020, with floodwaters affecting the road corridor through the village and causing disruption to the route. (p18)</p></div><div class="nugget-popup"><p>Properties at Bond End were internally inundated during the early hours of 16 February 2020; impacts included subsequent damp and mould growth and internal property damage (carpets, flooring, furniture and some irreplaceable personal items). [IMG] (p24)</p></div><div class="nugget-popup"><p>Floodwater backed up against the Bond End Footbridge and spilled out to affect properties at Bond End during the February 2020 flood incident. (p30)</p></div><div class="nugget-popup"><p>Several properties in Bond End flooded internally during the early hours of 16 February 2020 as a result of record river flows and backing&ndash;up of water against channel structures. [IMG] (p32)</p></div><div class="nugget-popup"><p>Surface water pooled at the Bond End and Mainstreet junction and flows (including those from Savey Lane) were directed into this junction, contributing to flooding of adjacent properties and making main roads impassable. Local highway drainage became overwhelmed and potentially surcharged near this location. (p33)</p></div><div class="nugget-popup"><p>Bond End was affected by flooding from the River Swarbourn on 16 February 2020; actions were recommended to inspect and maintain highway drainage and address blockage risks at nearby structures. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Bond End in Yoxall was affected by the same flooding incident: internal flooding to properties, flooding of gardens/garages/summer houses/driveways, and roads becoming impassable; river flows backed up against structures such as Bond End footbridge. (p38)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 to 24 inches (approximately 12&ndash;60 cm) internal flood depths [PAG,IMG] (p24)</p></div><div class="nugget-popup quant"><p>8 residential properties and 1 commercial property (across Yoxall) (p38)</p></div></div></body></div>`)[0];
+                popup_fa3604a7e5afece9c6ae9e2bc3492219.setContent(html_1e2248f2f99175de058f5724a5a8ed42);
+            
+        
+
+        marker_74773308f1a0fc18ce73fcc40d8ce8c8.bindPopup(popup_fa3604a7e5afece9c6ae9e2bc3492219)
+        ;
+
+        
+    
+    
+            var marker_ddd49443cbd3b4b9d7a9f3a04a112060 = L.marker(
+                [52.7665517, -1.790549],
+                {}
+            ).addTo(map_701e5d648aee7f9d34d3e62397d7e2d6);
+        
+    
+            var icon_82f0b54608fa447631d15497f8f7528d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ddd49443cbd3b4b9d7a9f3a04a112060.setIcon(icon_82f0b54608fa447631d15497f8f7528d);
+        
+    
+        var popup_57aa944ea63fc80902c828e11eae6389 = L.popup({});
+
+        
+            
+                var html_5e19a70c00d361255127197e67d3c186 = $(`<div id="html_5e19a70c00d361255127197e67d3c186" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Town Hill, Yoxall</h1><div class="nugget-popup"><p>Surface water pooled at Town Hill (B5016), following local topography; pooling may have exacerbated river flood waters directed into nearby gardens and properties in Yoxall. (p33)</p></div></div></body></div>`)[0];
+                popup_57aa944ea63fc80902c828e11eae6389.setContent(html_5e19a70c00d361255127197e67d3c186);
+            
+        
+
+        marker_ddd49443cbd3b4b9d7a9f3a04a112060.bindPopup(popup_57aa944ea63fc80902c828e11eae6389)
+        ;
+
+        
+    
+    
+            var marker_0759f4e9c236815567c2682b7176454c = L.marker(
+                [52.7682503, -1.7952982],
+                {}
+            ).addTo(map_701e5d648aee7f9d34d3e62397d7e2d6);
+        
+    
+            var icon_ffe636c8dc8d2adeb05d6aed7539f1e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0759f4e9c236815567c2682b7176454c.setIcon(icon_ffe636c8dc8d2adeb05d6aed7539f1e4);
+        
+    
+        var popup_f72de11d99ea822eb5fff2de4de2eaf6 = L.popup({});
+
+        
+            
+                var html_51027b29fc87ed981ad1f5fd2cd1db0e = $(`<div id="html_51027b29fc87ed981ad1f5fd2cd1db0e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Savey Lane, Yoxall</h1><div class="nugget-popup"><p>Surface water flowed down Savey Lane toward the Bond End/Main Street junction; potentially&ndash;blocked gullies on Savey Lane may have conveyed additional surface water into the junction area. (p33)</p></div></div></body></div>`)[0];
+                popup_f72de11d99ea822eb5fff2de4de2eaf6.setContent(html_51027b29fc87ed981ad1f5fd2cd1db0e);
+            
+        
+
+        marker_0759f4e9c236815567c2682b7176454c.bindPopup(popup_f72de11d99ea822eb5fff2de4de2eaf6)
+        ;
+
+        
+    
+    
+            var marker_0874ea6cb68dbe0914b460a4faaa1cd2 = L.marker(
+                [52.8246942, -2.0074547],
+                {}
+            ).addTo(map_701e5d648aee7f9d34d3e62397d7e2d6);
+        
+    
+            var icon_110b993139b430ac9f339ba7c94c50e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0874ea6cb68dbe0914b460a4faaa1cd2.setIcon(icon_110b993139b430ac9f339ba7c94c50e7);
+        
+    
+        var popup_ce999734921a9bcfdb6510b932db8f29 = L.popup({});
+
+        
+            
+                var html_86596e74c4a45400fe265f6aa074323d = $(`<div id="html_86596e74c4a45400fe265f6aa074323d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Staffordshire</h1><div class="nugget-popup"><p>Weeks of sustained rainfall caused the River Swarbourn to swell and overtop its banks, identified as the main driver of flooding in Yoxall; local drainage became overwhelmed in areas leading to internal property flooding. (p25)</p></div><div class="nugget-popup"><p>Across Staffordshire, intense rainfall produced exceptionally high river levels on many watercourses during the mid&ndash;February 2020 period, contributing to flood incidents in the county (including East Staffordshire and the Swarbourn catchment). (p27)</p></div><div class="nugget-popup"><p>In February 2020 a significant number of flooding incidents to properties and highways were recorded across Staffordshire and reported to the county council. (p38)</p></div></div></body></div>`)[0];
+                popup_ce999734921a9bcfdb6510b932db8f29.setContent(html_86596e74c4a45400fe265f6aa074323d);
+            
+        
+
+        marker_0874ea6cb68dbe0914b460a4faaa1cd2.bindPopup(popup_ce999734921a9bcfdb6510b932db8f29)
+        ;
+
+        
+    
+    
+            var marker_343dedfb667207f639a64eba0a8cff9c = L.marker(
+                [52.8878642, -1.9030802],
+                {}
+            ).addTo(map_701e5d648aee7f9d34d3e62397d7e2d6);
+        
+    
+            var icon_4de937d609ce279af259a1b42a8665fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_343dedfb667207f639a64eba0a8cff9c.setIcon(icon_4de937d609ce279af259a1b42a8665fa);
+        
+    
+        var popup_4c0a52ddf9d44a915e77d1ea60ae168a = L.popup({});
+
+        
+            
+                var html_e1176412a6cd5693c0f15857b7f9d5c0 = $(`<div id="html_e1176412a6cd5693c0f15857b7f9d5c0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Staffordshire</h1><div class="nugget-popup"><p>Storm Dennis (February 2020) caused flooding to properties and highways across East Staffordshire; resulted in requests for grant support and multiple incidents of internal property flooding. (p6)</p></div><div class="nugget-popup"><p>East Staffordshire Borough Council received reports and processed Flooded Property Claims arising from the event; grant funding (DEFRA Property Flood Resilience and ESBC) was provided to support repairs for affected properties across the borough. (p25)</p></div><div class="nugget-popup"><p>Yoxall, within East Staffordshire, experienced flooding on 16 February 2020 (affecting areas including Main Street and Bond End), prompting investigation and recommended actions by RMAs. [TAB] (p34)</p></div><div class="nugget-popup"><p>River Swarbourn flooded and contributed to flooding in Yoxall village. Flooding led to channel condition concerns, debris blocking structures (e.g. bridges/footbridges), and pressure on highway drainage (Main Street / Bond End); the catchment was noted as saturated due to antecedent rainfall. (p35)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>more than 130 applications for grant support; incidents in many areas where five or more properties were internally flooded (p6)</p></div><div class="nugget-popup quant"><p>more than 130 applications; approximately 86 properties received grants; approximately                                                                                                                                                                                                                                                                                                  (p25)</p></div></div></body></div>`)[0];
+                popup_4c0a52ddf9d44a915e77d1ea60ae168a.setContent(html_e1176412a6cd5693c0f15857b7f9d5c0);
+            
+        
+
+        marker_343dedfb667207f639a64eba0a8cff9c.bindPopup(popup_4c0a52ddf9d44a915e77d1ea60ae168a)
+        ;
+
+        
+    
+    
+            var marker_4fe0b7c18bd247f7e60fe57af422a73c = L.marker(
+                [52.796562, -0.6717948],
+                {}
+            ).addTo(map_701e5d648aee7f9d34d3e62397d7e2d6);
+        
+    
+            var icon_d6844f2e99c2e8ff5ceca4dcc26bf314 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4fe0b7c18bd247f7e60fe57af422a73c.setIcon(icon_d6844f2e99c2e8ff5ceca4dcc26bf314);
+        
+    
+        var popup_7e6c56c4639d1a5d3f051ad639c6df78 = L.popup({});
+
+        
+            
+                var html_b177fff24b221340c1160389dbeea30c = $(`<div id="html_b177fff24b221340c1160389dbeea30c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Midlands</h1><div class="nugget-popup"><p>The Storm Dennis event produced prolonged rainfall across the East Midlands leading to numerous flooding incidents in the region; the scale of incidents affected the Environment Agency's ability to collect comprehensive reports in Yoxall during the event. (p25)</p></div></div></body></div>`)[0];
+                popup_7e6c56c4639d1a5d3f051ad639c6df78.setContent(html_b177fff24b221340c1160389dbeea30c);
+            
+        
+
+        marker_4fe0b7c18bd247f7e60fe57af422a73c.bindPopup(popup_7e6c56c4639d1a5d3f051ad639c6df78)
+        ;
+
+        
+    
+    
+            var marker_5a5919a339f82d15270f002305826bf7 = L.marker(
+                [52.7677162, -1.7917165],
+                {}
+            ).addTo(map_701e5d648aee7f9d34d3e62397d7e2d6);
+        
+    
+            var icon_a0c3e9d40aef64b0d676b9b73bc2d436 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5a5919a339f82d15270f002305826bf7.setIcon(icon_a0c3e9d40aef64b0d676b9b73bc2d436);
+        
+    
+        var popup_38402d33bb8d025e55c65da8c7e4a3ae = L.popup({});
+
+        
+            
+                var html_bc74459eef413c4b64ad2a9e9ae7893e = $(`<div id="html_bc74459eef413c4b64ad2a9e9ae7893e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Yoxall</h1><div class="nugget-popup"><p>Properties in Yoxall (specifically on Main Street and Bond End) suffered internal flooding associated with Storm Dennis. (p5)</p></div><div class="nugget-popup"><p>Properties on Main Street and Bond End in Yoxall were internally flooded as a result of the Storm Dennis event. [PAG] (p6)</p></div><div class="nugget-popup"><p>On 16 February 2020 multiple properties in Yoxall reported internal flooding; anecdotal accounts describe floodwaters entering properties in the early hours corresponding with a peak River Swarbourn level at 04:00. Flood sources reported included surface water, surcharging/drainage flooding and predominantly river flooding from the River Swarbourn. Historical impacts: the centre of Yoxall suffered extensive flooding with property damage and disrupted local transport during August 1987 and November 2000; Main Street experienced flooding in June 2007 and summer 2012 (in 2012 one commercial property at the junction of Main Street and the B5016 was flooded, with no internal property flooding reported). [PAG,MUL] (p22)</p></div><div class="nugget-popup"><p>Multiple properties experienced internal flooding; gardens, garages, summer houses and driveways were flooded. Main roads through the village became unpassable until floodwater receded, leaving some residents unable to leave their homes. [PAG,IMG] (p23)</p></div><div class="nugget-popup"><p>Multiple properties across Yoxall experienced internal flooding during the event on 16 February 2020; property owners reported flood depths within dwellings of approximately 12&ndash;60 cm and subsequent damp, mould and internal damage to carpets, flooring, furniture and personal items. [PAG] (p24)</p></div><div class="nugget-popup"><p>Flood Warning for the River Swarbourn was in force during the event; properties in Yoxall were internally flooded with reported internal damage to carpets, flooring, furniture and irreplaceable personal items; Environment Agency collected reports of flooded properties and sandbags were observed outside properties on Main Street. [PAG] (p25)</p></div><div class="nugget-popup"><p>Floodwaters from the River Swarbourn overtopped its banks and spilled onto the floodplain west of the channel, back&ndash;up at the Town Hill Bridge caused constriction and led to inundation of gardens and flow into properties on Main Street. Internal ground&ndash;floor flooding occurred in properties; gardens, garages, summer houses and driveways were flooded; main roads through the village were impassable, leaving some residents unable to leave their homes. Sandbags were observed outside several properties. A Flood Warning for the River Swarbourn at Yoxall was in force during the event. [IMG,PAG] (p26)</p></div><div class="nugget-popup"><p>Yoxall was affected by the Swarbourn catchment flood incident on 16 February 2020: intense rainfall in the preceding period and raised river levels in the catchment (River Swarbourn peak 1.91 m upstream) contributed to local flooding. (p27)</p></div><div class="nugget-popup"><p>Flooding on 16th February 2020 affected the village when River Swarbourn backed up at structures (Town Hill Bridge and Bond End Footbridge), causing water to spill out and affect properties in the settlement. (p30)</p></div><div class="nugget-popup"><p>River flood waters (from the River Swarbourn) entered gardens and properties in the village; surface water pooled at key junctions and flowed into residential areas. Main roads became unpassable and some residents were unable to leave their properties until flood water receded. [PAG] (p33)</p></div><div class="nugget-popup"><p>The village of Yoxall experienced flooding from the River Swarbourn on 16 February 2020. Flood levels in the village were influenced by local structures (Town Hill Bridge, Bond End Footbridge) and an upstream weir, prompting consideration of measures such as NFM, PFR, channel maintenance and modelling updates. [TAB] (p34)</p></div><div class="nugget-popup"><p>Flooding from the River Swarbourn affected the village; debris became trapped against local bridges (Bond End footbridge and Town Hill Bridge) and water was observed to back up against an upstream weir, contributing to local inundation. [PAG] (p35)</p></div><div class="nugget-popup"><p>Floodwater from increased runoff/river flow entered the village during extended periods of rainfall, prompting recommendations for natural flood management measures and community engagement; residents were asked to provide flood levels/photographs to the EA to help check warning triggers. [PAG] (p36)</p></div><div class="nugget-popup"><p>Internal flooding of residential and commercial properties; flooding of gardens, garages, summer houses and driveways; main roads through the village became unpassable leaving some residents on Main Street and Bond End cut off and unable to leave their homes for a period. (p38)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 arches of Town Hill Bridge; 1 commercial property flooded (summer 2012) [PAG,MUL] (p22)</p></div><div class="nugget-popup quant"><p>8 residential properties; 1 commercial property [PAG,IMG] (p23)</p></div><div class="nugget-popup quant"><p>flood depths 12&ndash;60 cm reported in dwellings [PAG] (p24)</p></div><div class="nugget-popup quant"><p>8 residential properties; 1 commercial property [IMG,PAG] (p26)</p></div><div class="nugget-popup quant"><p>8 residential properties; 1 commercial property (p38)</p></div></div></body></div>`)[0];
+                popup_38402d33bb8d025e55c65da8c7e4a3ae.setContent(html_bc74459eef413c4b64ad2a9e9ae7893e);
+            
+        
+
+        marker_5a5919a339f82d15270f002305826bf7.bindPopup(popup_38402d33bb8d025e55c65da8c7e4a3ae)
+        ;
+
+        
+    
+    
+            var marker_dfe829e9240c1dc3157f5414e16d9283 = L.marker(
+                [52.8060664, -1.8036541],
+                {}
+            ).addTo(map_701e5d648aee7f9d34d3e62397d7e2d6);
+        
+    
+            var icon_711625bac5461b7271642d2a7c1f587b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dfe829e9240c1dc3157f5414e16d9283.setIcon(icon_711625bac5461b7271642d2a7c1f587b);
+        
+    
+        var popup_f213378dfe84585668d2dd89624f486c = L.popup({});
+
+        
+            
+                var html_6e8c9a322d8309b1ae4824100a967948 = $(`<div id="html_6e8c9a322d8309b1ae4824100a967948" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hoar Cross</h1><div class="nugget-popup"><p>The Hoar Cross monitoring station recorded the highest River Swarbourn level on record: 1.91 m at 05:00 on 16 February 2020, indicating the location experienced the peak river stage for the event. [PAG] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1.91 m [PAG] (p27)</p></div></div></body></div>`)[0];
+                popup_f213378dfe84585668d2dd89624f486c.setContent(html_6e8c9a322d8309b1ae4824100a967948);
+            
+        
+
+        marker_dfe829e9240c1dc3157f5414e16d9283.bindPopup(popup_f213378dfe84585668d2dd89624f486c)
+        ;
+
+        
+    
+</script>
+</html>
