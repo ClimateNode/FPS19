@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6c638cb6bcca0469c23fa4febb078615 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6c638cb6bcca0469c23fa4febb078615" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6c638cb6bcca0469c23fa4febb078615 = L.map(
+                "map_6c638cb6bcca0469c23fa4febb078615",
+                {
+                    center: [52.220907935054086, 0.8022765868210323],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2afe122df04e8575e9ebd9fe7b15d3ad = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_2afe122df04e8575e9ebd9fe7b15d3ad.addTo(map_6c638cb6bcca0469c23fa4febb078615);
+    
+            var marker_73878566f675c0c1f19478fc50ff305d = L.marker(
+                [52.20739122527044, 0.7507447028486378],
+                {}
+            ).addTo(map_6c638cb6bcca0469c23fa4febb078615);
+        
+    
+            var icon_0cd9335f1672e5daa43a3b86bd42de71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_73878566f675c0c1f19478fc50ff305d.setIcon(icon_0cd9335f1672e5daa43a3b86bd42de71);
+        
+    
+        var popup_bf56dd5ce808043da91e97123fe5e1fa = L.popup({});
+
+        
+            
+                var html_9b7a394fcab40fff925220bf90419a39 = $(`<div id="html_9b7a394fcab40fff925220bf90419a39" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Thomas's Way, Sicklesmere</h1><div class="nugget-popup"><p>Location of the flood event investigated under Section 19 by the Lead Local Flood Authority (Suffolk County Council). (p1)</p></div><div class="nugget-popup"><p>Properties and local assets on St Thomas's Way experienced flooding: nine properties flooded internally and two properties experienced external flooding. The main private forecourt and garages were flooded. The total affected area was approximately 0.18 ha (1,800 m2). (p2)</p></div><div class="nugget-popup"><p>Highway drainage is inadequate or blocked, allowing upslope runoff to travel down the slope and contribute to surface water flooding risk to the residential blocks; recommended actions include investigating and upsizing highway drainage, adding larger/more gully lids and sump pits, installing double lids toward the bottom of the slope, and providing drains for footways currently without them. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties internally flooded; 2 properties externally flooded; 0.18Ha (1800m2) affected (p2)</p></div></div></body></div>`)[0];
+                popup_bf56dd5ce808043da91e97123fe5e1fa.setContent(html_9b7a394fcab40fff925220bf90419a39);
+            
+        
+
+        marker_73878566f675c0c1f19478fc50ff305d.bindPopup(popup_bf56dd5ce808043da91e97123fe5e1fa)
+        ;
+
+        
+    
+    
+            var marker_64ce55e71afeecf1a915abdb4f0929a1 = L.marker(
+                [52.241001350000005, 1.0466830312565236],
+                {}
+            ).addTo(map_6c638cb6bcca0469c23fa4febb078615);
+        
+    
+            var icon_2be728e2721e9fe279fcb66bca867c7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_64ce55e71afeecf1a915abdb4f0929a1.setIcon(icon_2be728e2721e9fe279fcb66bca867c7a);
+        
+    
+        var popup_0f31350f02b13239779b2f7f6b7ffbea = L.popup({});
+
+        
+            
+                var html_4a2bcf3d1d239a849fabeb54534e61f1 = $(`<div id="html_4a2bcf3d1d239a849fabeb54534e61f1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Suffolk</h1><div class="nugget-popup"><p>A flood event on 17 June 2020 in Suffolk affected properties in Great Whelnetham/Bury St Edmunds: nine properties flooded internally, two properties flooded externally; main private forecourt and garages flooded. Total affected area ~0.18 ha (1,800 m2). [TAB] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties internally flooded; 2 properties externally flooded; 0.18Ha (1800m2) affected [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_0f31350f02b13239779b2f7f6b7ffbea.setContent(html_4a2bcf3d1d239a849fabeb54534e61f1);
+            
+        
+
+        marker_64ce55e71afeecf1a915abdb4f0929a1.bindPopup(popup_0f31350f02b13239779b2f7f6b7ffbea)
+        ;
+
+        
+    
+    
+            var marker_1c55ca76654a8fc5df0ea64a5cc0571a = L.marker(
+                [52.200386, 0.7542191],
+                {}
+            ).addTo(map_6c638cb6bcca0469c23fa4febb078615);
+        
+    
+            var icon_bdb0e8692829b9ad22d532789142c897 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1c55ca76654a8fc5df0ea64a5cc0571a.setIcon(icon_bdb0e8692829b9ad22d532789142c897);
+        
+    
+        var popup_5f9ef122f3d599abca4e491a2afb39ad = L.popup({});
+
+        
+            
+                var html_e1f0791c5e32b96cbb59b3a543355cc5 = $(`<div id="html_e1f0791c5e32b96cbb59b3a543355cc5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Great Whelnetham</h1><div class="nugget-popup"><p>Village/area within which St Thomas's Way was the location of a flood event investigated under Section 19 by the Lead Local Flood Authority. (p1)</p></div></div></body></div>`)[0];
+                popup_5f9ef122f3d599abca4e491a2afb39ad.setContent(html_e1f0791c5e32b96cbb59b3a543355cc5);
+            
+        
+
+        marker_1c55ca76654a8fc5df0ea64a5cc0571a.bindPopup(popup_5f9ef122f3d599abca4e491a2afb39ad)
+        ;
+
+        
+    
+    
+            var marker_ec4515482a71d219f08c8e9a3ff161d7 = L.marker(
+                [52.2460367, 0.7125173],
+                {}
+            ).addTo(map_6c638cb6bcca0469c23fa4febb078615);
+        
+    
+            var icon_f9ff062a0e498dcd656350d23eb24d69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ec4515482a71d219f08c8e9a3ff161d7.setIcon(icon_f9ff062a0e498dcd656350d23eb24d69);
+        
+    
+        var popup_a91e85687f341c4628acc4ad68b9c8ae = L.popup({});
+
+        
+            
+                var html_e7e0d6fb6fcb7f29c1d1b45366ff1489 = $(`<div id="html_e7e0d6fb6fcb7f29c1d1b45366ff1489" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bury St Edmunds</h1><div class="nugget-popup"><p>Flooding occurred in the Great Whelnetham area of Bury St Edmunds: nine properties flooded internally and two properties flooded externally; the main private forecourt and garages were flooded. Total affected area ~0.18 ha (1,800 m2). (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties internally flooded; 2 properties externally flooded; 0.18Ha (1800m2) affected (p2)</p></div></div></body></div>`)[0];
+                popup_a91e85687f341c4628acc4ad68b9c8ae.setContent(html_e7e0d6fb6fcb7f29c1d1b45366ff1489);
+            
+        
+
+        marker_ec4515482a71d219f08c8e9a3ff161d7.bindPopup(popup_a91e85687f341c4628acc4ad68b9c8ae)
+        ;
+
+        
+    
+    
+            var marker_96e21fe8b836e09148fb91dd25e29265 = L.marker(
+                [52.2097244, 0.7472188],
+                {}
+            ).addTo(map_6c638cb6bcca0469c23fa4febb078615);
+        
+    
+            var icon_aeb497b815d0ba7038beb02eb20d0368 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_96e21fe8b836e09148fb91dd25e29265.setIcon(icon_aeb497b815d0ba7038beb02eb20d0368);
+        
+    
+        var popup_139253b96e30dc0aa53cab5e55470d34 = L.popup({});
+
+        
+            
+                var html_0f30187a6d011655234e684e6b67830f = $(`<div id="html_0f30187a6d011655234e684e6b67830f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sicklesmere</h1><div class="nugget-popup"><p>Residential area experienced surface water flooding when local surface water drainage capacity was exceeded during an intense storm. A total of 9 properties were internally flooded (up to 400 mm depth), a further 2 properties had external flooding; the main private forecourt and garages were flooded. Total affected area approx. 0.18 ha. [IMG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties internally flooded; 2 properties externally flooded; 0.18Ha; depth up to 400mm [IMG] (p3)</p></div></div></body></div>`)[0];
+                popup_139253b96e30dc0aa53cab5e55470d34.setContent(html_0f30187a6d011655234e684e6b67830f);
+            
+        
+
+        marker_96e21fe8b836e09148fb91dd25e29265.bindPopup(popup_139253b96e30dc0aa53cab5e55470d34)
+        ;
+
+        
+    
+</script>
+</html>
