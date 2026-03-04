@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9221346f522c67e3505e508e9544f9ef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9221346f522c67e3505e508e9544f9ef" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9221346f522c67e3505e508e9544f9ef = L.map(
+                "map_9221346f522c67e3505e508e9544f9ef",
+                {
+                    center: [52.3453415, 1.50321725],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_289b7c7246fd18d98bdcd9ddcd072dc4 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_289b7c7246fd18d98bdcd9ddcd072dc4.addTo(map_9221346f522c67e3505e508e9544f9ef);
+    
+            var marker_d83433d4638cbda56c1915fba97ae62c = L.marker(
+                [52.3488683, 1.5062696],
+                {}
+            ).addTo(map_9221346f522c67e3505e508e9544f9ef);
+        
+    
+            var icon_b1e148b4a459ba971e05e3ae5c124914 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d83433d4638cbda56c1915fba97ae62c.setIcon(icon_b1e148b4a459ba971e05e3ae5c124914);
+        
+    
+        var popup_ba90b975ad554e78cfc8a9f4a6bba07a = L.popup({});
+
+        
+            
+                var html_4a042837a9c60e28d3845ef515555d97 = $(`<div id="html_4a042837a9c60e28d3845ef515555d97" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Norwich Road, Halesworth</h1><div class="nugget-popup"><p>Shallow surface water (approximately 0.15 m) entered one property at the roadside edge of Norwich Road. The road experienced deeper flooding with depths of approximately 0.15&ndash;0.3 m. (p2)</p></div><div class="nugget-popup"><p>Runoff accumulates at the lowest elevation of Norwich Rd (A144) causing ponding that overtops the highway drop kerb and enters adjacent residential buildings, producing localised internal and external flooding. Highway interception measures can be overwhelmed during high&ndash;intensity storms and the system is sensitive to maintenance levels. [MUL] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property; road flooding depth 0.15&ndash;0.3 m; shallow internal flood depth 0.15 m (p2)</p></div><div class="nugget-popup quant"><p>1 property internally affected [MUL] (p3)</p></div></div></body></div>`)[0];
+                popup_ba90b975ad554e78cfc8a9f4a6bba07a.setContent(html_4a042837a9c60e28d3845ef515555d97);
+            
+        
+
+        marker_d83433d4638cbda56c1915fba97ae62c.bindPopup(popup_ba90b975ad554e78cfc8a9f4a6bba07a)
+        ;
+
+        
+    
+    
+            var marker_758b39f9490cb1978f291298ee19c8ae = L.marker(
+                [52.3418147, 1.5001649],
+                {}
+            ).addTo(map_9221346f522c67e3505e508e9544f9ef);
+        
+    
+            var icon_223e315715f6d19c716a3f03f3a3cd41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_758b39f9490cb1978f291298ee19c8ae.setIcon(icon_223e315715f6d19c716a3f03f3a3cd41);
+        
+    
+        var popup_4d2e5cbdf166ea836d98a30705f09914 = L.popup({});
+
+        
+            
+                var html_295ea7e2a761ea09bffaf2fc9ae7efeb = $(`<div id="html_295ea7e2a761ea09bffaf2fc9ae7efeb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Halesworth</h1><div class="nugget-popup"><p>Localized surface water ponding and internal/external flooding occurred on Norwich Rd within Halesworth, driven by runoff accumulation at the low point of the road and overtopping into adjacent properties. [IMG,MUL] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally affected [IMG,MUL] (p3)</p></div></div></body></div>`)[0];
+                popup_4d2e5cbdf166ea836d98a30705f09914.setContent(html_295ea7e2a761ea09bffaf2fc9ae7efeb);
+            
+        
+
+        marker_758b39f9490cb1978f291298ee19c8ae.bindPopup(popup_4d2e5cbdf166ea836d98a30705f09914)
+        ;
+
+        
+    
+</script>
+</html>
