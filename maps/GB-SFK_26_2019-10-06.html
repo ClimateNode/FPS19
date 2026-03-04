@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ec9ff1d5aed00b0eef2b82c8bab28d28 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ec9ff1d5aed00b0eef2b82c8bab28d28" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ec9ff1d5aed00b0eef2b82c8bab28d28 = L.map(
+                "map_ec9ff1d5aed00b0eef2b82c8bab28d28",
+                {
+                    center: [52.15536125, 1.598928],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c030e027215369129a390e6a7a449914 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_c030e027215369129a390e6a7a449914.addTo(map_ec9ff1d5aed00b0eef2b82c8bab28d28);
+    
+            var marker_f41c758a5f9982f5d1bc8daa041066ae = L.marker(
+                [52.1583608, 1.5963084],
+                {}
+            ).addTo(map_ec9ff1d5aed00b0eef2b82c8bab28d28);
+        
+    
+            var icon_c294d96874e43e8f2ff694d27f69569a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f41c758a5f9982f5d1bc8daa041066ae.setIcon(icon_c294d96874e43e8f2ff694d27f69569a);
+        
+    
+        var popup_a44b66c4869a95fb5fcd04e4fe50d45b = L.popup({});
+
+        
+            
+                var html_4d2323d005b4d5965cb52cca8856254a = $(`<div id="html_4d2323d005b4d5965cb52cca8856254a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Moverley Way, Aldeburgh</h1><div class="nugget-popup"><p>Internal flooding of a property on Moverley Way occurred on multiple occasions; the incident is recorded as a single property suffering internal flooding during the reported flood event. (p2)</p></div><div class="nugget-popup"><p>High&ndash;intensity runoff over the road catchment caused the existing road drainage in Moverely Way to exceed capacity, contributing to surface water runoff and the subsequent internal/external flooding of the nearby property. [MUL] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p2)</p></div><div class="nugget-popup quant"><p>one property; two flood incidents (10 July 2017; 6 October 2019); ground floor flooded by approximately 125&ndash;150 mm [IMG,MUL] (p3)</p></div></div></body></div>`)[0];
+                popup_a44b66c4869a95fb5fcd04e4fe50d45b.setContent(html_4d2323d005b4d5965cb52cca8856254a);
+            
+        
+
+        marker_f41c758a5f9982f5d1bc8daa041066ae.bindPopup(popup_a44b66c4869a95fb5fcd04e4fe50d45b)
+        ;
+
+        
+    
+    
+            var marker_6e2d6fb3fcf43eecc8f70b17affd5913 = L.marker(
+                [52.1523617, 1.6015476],
+                {}
+            ).addTo(map_ec9ff1d5aed00b0eef2b82c8bab28d28);
+        
+    
+            var icon_973cd206c7df5a97c903032761aff9de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6e2d6fb3fcf43eecc8f70b17affd5913.setIcon(icon_973cd206c7df5a97c903032761aff9de);
+        
+    
+        var popup_12b91ae59051c78fa383c19387748299 = L.popup({});
+
+        
+            
+                var html_360c87c1f3a9f697edea37e76dfa436c = $(`<div id="html_360c87c1f3a9f697edea37e76dfa436c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Aldeburgh</h1><div class="nugget-popup"><p>At least one property in Aldeburgh (on Moverley Way) experienced internal flooding on multiple occasions during the reported event. (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p2)</p></div></div></body></div>`)[0];
+                popup_12b91ae59051c78fa383c19387748299.setContent(html_360c87c1f3a9f697edea37e76dfa436c);
+            
+        
+
+        marker_6e2d6fb3fcf43eecc8f70b17affd5913.bindPopup(popup_12b91ae59051c78fa383c19387748299)
+        ;
+
+        
+    
+</script>
+</html>
