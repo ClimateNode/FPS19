@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_811119f00641007d7b9bfcf2ca0e8692 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_811119f00641007d7b9bfcf2ca0e8692" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_811119f00641007d7b9bfcf2ca0e8692 = L.map(
+                "map_811119f00641007d7b9bfcf2ca0e8692",
+                {
+                    center: [52.2700262, 0.770888],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5d03b3d04466813ced0a53561b6ec340 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_5d03b3d04466813ced0a53561b6ec340.addTo(map_811119f00641007d7b9bfcf2ca0e8692);
+    
+            var marker_2a0480c52d79683f72e2baefa02d4cbd = L.marker(
+                [52.2691245, 0.771775],
+                {}
+            ).addTo(map_811119f00641007d7b9bfcf2ca0e8692);
+        
+    
+            var icon_3e89f4eab40364ad258496929f2d779b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2a0480c52d79683f72e2baefa02d4cbd.setIcon(icon_3e89f4eab40364ad258496929f2d779b);
+        
+    
+        var popup_9a951052cd4713a3ecda17e1703cdfe5 = L.popup({});
+
+        
+            
+                var html_22a4cadf46f74238a0c2ee376f6bfc38 = $(`<div id="html_22a4cadf46f74238a0c2ee376f6bfc38" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Street, Great Barton</h1><div class="nugget-popup"><p>Multiple incidents of flooding affected a single property on The Street: May 2017 internal flooding with foul effluent and surface water (encroached on garden, driveway and private access road); December 2020 internal surface water flooding causing electrical safety issues and toilets to be unusable, with the occupant rehoused in temporary accommodation over the festive period. [IMG,MUL] (p3)</p></div><div class="nugget-popup"><p>Highway gullies surcharged during the storm, resulting in flowing surface water in The Street that accumulated in areas; highway flooding incidents in the adjacent highway have been recorded since 2017. [MUL] (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property; internal flood depths approximately 100 mm (May 2017) and 150&ndash;225 mm (December 2020) [IMG,MUL] (p3)</p></div></div></body></div>`)[0];
+                popup_9a951052cd4713a3ecda17e1703cdfe5.setContent(html_22a4cadf46f74238a0c2ee376f6bfc38);
+            
+        
+
+        marker_2a0480c52d79683f72e2baefa02d4cbd.bindPopup(popup_9a951052cd4713a3ecda17e1703cdfe5)
+        ;
+
+        
+    
+    
+            var marker_8197739bfbeecedc2ae1f8aa058138e5 = L.marker(
+                [52.2709279, 0.770001],
+                {}
+            ).addTo(map_811119f00641007d7b9bfcf2ca0e8692);
+        
+    
+            var icon_40dfebdedc5f6ff0fbedaafac71c0dbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8197739bfbeecedc2ae1f8aa058138e5.setIcon(icon_40dfebdedc5f6ff0fbedaafac71c0dbf);
+        
+    
+        var popup_b8422f97fb49b06229735a35cd64a935 = L.popup({});
+
+        
+            
+                var html_c5ace87f6d670d325e0fdd3ed79d5f58 = $(`<div id="html_c5ace87f6d670d325e0fdd3ed79d5f58" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Great Barton</h1><div class="nugget-popup"><p>At least one property in Great Barton (on The Street) experienced internal flooding: May 2017 with foul effluent and surface water (~100 mm) and December 2020 surface water internally (150&ndash;225 mm), causing electrical safety issues and temporary rehousing. Several highway flooding incidents in adjacent roads have also been recorded since 2017. [IMG,MUL] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property; internal flood depths approximately 100 mm (May 2017) and 150&ndash;225 mm (December 2020); at least 2 properties received retro&ndash;fitted non&ndash;return valves [IMG,MUL] (p3)</p></div></div></body></div>`)[0];
+                popup_b8422f97fb49b06229735a35cd64a935.setContent(html_c5ace87f6d670d325e0fdd3ed79d5f58);
+            
+        
+
+        marker_8197739bfbeecedc2ae1f8aa058138e5.bindPopup(popup_b8422f97fb49b06229735a35cd64a935)
+        ;
+
+        
+    
+</script>
+</html>
