@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a3f873765f11a9fd27447b7347a3a9ff {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a3f873765f11a9fd27447b7347a3a9ff" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a3f873765f11a9fd27447b7347a3a9ff = L.map(
+                "map_a3f873765f11a9fd27447b7347a3a9ff",
+                {
+                    center: [52.28348236059774, 1.1972861830519608],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8203dd02c95a55880c686258f073b7dc = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_8203dd02c95a55880c686258f073b7dc.addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+    
+            var marker_f96a2d6abe9aa51a57c79458783fb406 = L.marker(
+                [52.267590437770565, 1.256788848418966],
+                {}
+            ).addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+        
+    
+            var icon_0b5969c7e6e3f04d6fe2154677f8f202 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f96a2d6abe9aa51a57c79458783fb406.setIcon(icon_0b5969c7e6e3f04d6fe2154677f8f202);
+        
+    
+        var popup_41c66ae61516404f283b46623c496f68 = L.popup({});
+
+        
+            
+                var html_10ca631f6fdfcb3537ac835071e041e8 = $(`<div id="html_10ca631f6fdfcb3537ac835071e041e8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Willow Tree Yard</h1><div class="nugget-popup"><p>Internal flooding of properties in Willow Tree Yard resulting from surface water runoff, overtopping of local watercourses and overwhelmed drainage/sewer systems during the October 2023 event. (p7)</p></div><div class="nugget-popup"><p>Floodwater cascaded down towards Willow Green/Willow Tree Yard area, contributing to inundation of properties and flows from the highway into residential areas. (p16)</p></div><div class="nugget-popup"><p>An ordinary watercourse located behind Willow Tree Yard conveyed large volumes into the larger watercourse between the recreation ground and Willow Tree Yard; the first significant flooding event of the day occurred in this area when flows overwhelmed conveyance, contributing to local flooding. [IMG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of the &gt;30 properties in Worlingworth reporting internal flooding (p7)</p></div></div></body></div>`)[0];
+                popup_41c66ae61516404f283b46623c496f68.setContent(html_10ca631f6fdfcb3537ac835071e041e8);
+            
+        
+
+        marker_f96a2d6abe9aa51a57c79458783fb406.bindPopup(popup_41c66ae61516404f283b46623c496f68)
+        ;
+
+        
+    
+    
+            var marker_e3f0c4bef9081045e084b428f20a1d76 = L.marker(
+                [52.2689892, 1.2402643],
+                {}
+            ).addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+        
+    
+            var icon_603c3be28e6b2653d48e9bb8b80bf822 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e3f0c4bef9081045e084b428f20a1d76.setIcon(icon_603c3be28e6b2653d48e9bb8b80bf822);
+        
+    
+        var popup_d1233bff5f145f0f0a0d692393cb13a2 = L.popup({});
+
+        
+            
+                var html_f9f0f3a2b1b968542665d694a20b973d = $(`<div id="html_f9f0f3a2b1b968542665d694a20b973d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Road, Worlingworth</h1><div class="nugget-popup"><p>Mill Road (within the West zone) was within an area identified as affected by floodwater during the October 2023 event. Floodwater sources in the area included pluvial runoff, overtopping watercourses and overwhelmed sewer/drainage systems, and properties on/near the road experienced internal flooding. (p7)</p></div><div class="nugget-popup"><p>Reports of flooding were received from the Mill Lane / Mill Road area; specific severity and detailed impacts were not provided in the text. (p14)</p></div><div class="nugget-popup"><p>Mill Road lies on mapped flow routes for overland water movement; during the event significant surface water flows and ponding affected highways, causing damage and debris on road verges and adjacent hedgerows/gardens. [IMG] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 30 properties across Worlingworth (total for the village) (p7)</p></div></div></body></div>`)[0];
+                popup_d1233bff5f145f0f0a0d692393cb13a2.setContent(html_f9f0f3a2b1b968542665d694a20b973d);
+            
+        
+
+        marker_e3f0c4bef9081045e084b428f20a1d76.bindPopup(popup_d1233bff5f145f0f0a0d692393cb13a2)
+        ;
+
+        
+    
+    
+            var marker_830e29939a1c7baf85ed81b54c696248 = L.marker(
+                [52.2688477, 1.2625573],
+                {}
+            ).addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+        
+    
+            var icon_a45a2f498b9427c1ccb158223367f01b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_830e29939a1c7baf85ed81b54c696248.setIcon(icon_a45a2f498b9427c1ccb158223367f01b);
+        
+    
+        var popup_6d6900c3662e93355ab72fec94bb2f59 = L.popup({});
+
+        
+            
+                var html_00b57d686a71d60dfa96eae9587e04a2 = $(`<div id="html_00b57d686a71d60dfa96eae9587e04a2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Road, Worlingworth</h1><div class="nugget-popup"><p>Church Road (listed in both Central and East groupings) was identified within the investigation as experiencing floodwater during the October 2023 event. Floodwater entered the area from pluvial runoff, overtopping watercourses and overwhelmed sewers/drains, resulting in internal flooding to properties on or adjacent to the road. (p7)</p></div><div class="nugget-popup"><p>Homes on either side of Church Road were affected by floodwater as drainage networks became overwhelmed; floodwater cascaded down the street contributing to inundation of lower&ndash;lying areas and properties. (p16)</p></div><div class="nugget-popup"><p>Homes on either side of Church Road were affected by floodwater that entered from an overwhelmed drainage network and from overtopping watercourses that run around the rear of buildings and through gardens. A culverted section at the highway was quickly overwhelmed, causing overtopping that added to flood depths on the road and into properties. [IMG,PAG] (p17)</p></div><div class="nugget-popup"><p>A watercourse running along the south side of Church Road was quickly overwhelmed; water overtopped the banks and added to surface water on the road. Highway low spots pooled and water flowed into properties off the highway. Highway grips were unable to discharge effectively into the overwhelmed watercourse, indicating an overwhelmed drainage system rather than a local blockage. (p21)</p></div><div class="nugget-popup"><p>High volumes of surface water overwhelmed highway drainage. A piped section on the south side of Church Road (between the river and the AW pumping station) was identified as a possible contributor to poor conveyance during the event; LLFA recommended the landowner investigate reinstating an open channel to improve flow. [IMG] (p22)</p></div><div class="nugget-popup"><p>Areas around Church Road (including a piped/open watercourse south of Church Road and land north of Church Road east of Willow Green) were implicated in flow routes; investigation and potential reinstatement of watercourse/channel and other measures were recommended to reduce flooding. [TAB] (p31)</p></div><div class="nugget-popup"><p>Surface water flooding affected the area around Church Road during the 18 Oct 2023 &ndash; 21 Oct 2023 event. Land north of Church Road was identified for possible attenuation and investigations were recommended to reinstate an open channel between the AW pumping station and the watercourse to the east to manage flows. [PAG] (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 30 properties across Worlingworth (total for the village) (p7)</p></div></div></body></div>`)[0];
+                popup_6d6900c3662e93355ab72fec94bb2f59.setContent(html_00b57d686a71d60dfa96eae9587e04a2);
+            
+        
+
+        marker_830e29939a1c7baf85ed81b54c696248.bindPopup(popup_6d6900c3662e93355ab72fec94bb2f59)
+        ;
+
+        
+    
+    
+            var marker_590d702e83376107dd1eb7aabc9d25de = L.marker(
+                [52.2701219, 1.2510041],
+                {}
+            ).addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+        
+    
+            var icon_0f0130841a87cb5b8463cc77d90a8eb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_590d702e83376107dd1eb7aabc9d25de.setIcon(icon_0f0130841a87cb5b8463cc77d90a8eb7);
+        
+    
+        var popup_dd07dd736507a057cbf7b10b08f334fb = L.popup({});
+
+        
+            
+                var html_c9dc43119746190855e58a6e7535429c = $(`<div id="html_c9dc43119746190855e58a6e7535429c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Shop Street, Worlingworth</h1><div class="nugget-popup"><p>Shop Street (within the Central zone) experienced floodwater during the October 2023 event. Flood sources reported in the investigation include pluvial runoff from fields, overtopping of local watercourses and overwhelmed sewer/drainage systems, and properties on Shop Street suffered internal flooding. (p7)</p></div><div class="nugget-popup"><p>Shop Street experienced manhole surcharging and reported manhole flooding during high rainfall; surcharging on Shop Street is noted and may be related to surface water infiltration or a sewer leak. Anglian Water investigations into the sewer issue are ongoing. These issues occurred during the storm event. [PAG] (p8)</p></div><div class="nugget-popup"><p>Shop Street is shown on the flow&ndash;route map around Newtown and was affected by overland surface water flows and ponding, with consequent damage and debris on the highway and adjacent gardens/hedgerows. [IMG] (p15)</p></div><div class="nugget-popup"><p>During Storm Babet Shop Street experienced flooding from both overwhelmed drainage infrastructure and overtopping watercourses; continuous rain caused rapid overflow of the drainage network, with floodwater deepening and affecting homes and the highway (including manhole surcharging). [PAG] (p16)</p></div><div class="nugget-popup"><p>Prolonged rain and overwhelmed drainage caused floodwater to rise on Shop Street. Floodwater cascaded downhill from Shop Street and Church Road, entered homes set along Shop Street, and contributed to downstream flooding toward Willow Green. [PAG] (p17)</p></div><div class="nugget-popup"><p>Suspected blocked piped section of an ordinary watercourse under the highway; investigation recommended to check blockage and confirm outfall after flooding affected the highway area. [TAB] (p31)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 30 properties across Worlingworth (total for the village) (p7)</p></div></div></body></div>`)[0];
+                popup_dd07dd736507a057cbf7b10b08f334fb.setContent(html_c9dc43119746190855e58a6e7535429c);
+            
+        
+
+        marker_590d702e83376107dd1eb7aabc9d25de.bindPopup(popup_dd07dd736507a057cbf7b10b08f334fb)
+        ;
+
+        
+    
+    
+            var marker_741b5333efb8915c1fb78886c0f147e9 = L.marker(
+                [52.2681067, 1.255595],
+                {}
+            ).addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+        
+    
+            var icon_65bafd90f9765a815c322ec509a17551 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_741b5333efb8915c1fb78886c0f147e9.setIcon(icon_65bafd90f9765a815c322ec509a17551);
+        
+    
+        var popup_35635a61b2b1bb8d8a35d33b918dcdca = L.popup({});
+
+        
+            
+                var html_018444d7628fcc03a89bf313c884d3e8 = $(`<div id="html_018444d7628fcc03a89bf313c884d3e8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Old Stores Close, Worlingworth</h1><div class="nugget-popup"><p>Internal flooding of residential properties on Old Stores Close caused by a combination of surface water runoff from surrounding fields, overtopping of local watercourses and overwhelmed sewerage/drainage systems during the October 2023 event. (p7)</p></div><div class="nugget-popup"><p>Properties in Old Stores Close were significantly affected as floodwater cascaded down from higher streets and flowed in off the highway, contributing to property inundation and damage to gardens and boundaries. (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of the &gt;30 properties in Worlingworth reporting internal flooding (p7)</p></div></div></body></div>`)[0];
+                popup_35635a61b2b1bb8d8a35d33b918dcdca.setContent(html_018444d7628fcc03a89bf313c884d3e8);
+            
+        
+
+        marker_741b5333efb8915c1fb78886c0f147e9.bindPopup(popup_35635a61b2b1bb8d8a35d33b918dcdca)
+        ;
+
+        
+    
+    
+            var marker_8df4103714c2825afd193440dacf5bf2 = L.marker(
+                [52.2683782, 1.257314],
+                {}
+            ).addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+        
+    
+            var icon_d6673f44f93615d2be7a460d79f1841b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8df4103714c2825afd193440dacf5bf2.setIcon(icon_d6673f44f93615d2be7a460d79f1841b);
+        
+    
+        var popup_45cc8ebe7964deee5ff5afe82c3f4118 = L.popup({});
+
+        
+            
+                var html_a424337b413478c5071de996421171b2 = $(`<div id="html_a424337b413478c5071de996421171b2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Willow Green, Worlingworth</h1><div class="nugget-popup"><p>Properties and immediate areas at Willow Green experienced internal flooding from surface water runoff, overtopping watercourses and overwhelmed sewers/drainage during the October 2023 event. (p7)</p></div><div class="nugget-popup"><p>Floodwater cascaded down to Willow Green (the village green), with overland flow coming off the highway into adjacent gardens and properties; contributed to internal flooding of nearby homes and deposited debris and damage to hedgerows and gardens. [PAG] (p16)</p></div><div class="nugget-popup"><p>Floodwater flowed onto the highway and into Willow Green; properties in the Close were significantly affected as floodwater flowed in off the highway. A west&ndash;east watercourse behind Willow Green overtopped and contributed to local flooding; culverted sections towards Willow Green were overwhelmed, causing overtopping onto the highway. [IMG] (p17)</p></div><div class="nugget-popup"><p>Land north of Church Road east of Willow Green was identified as part of the local flow/attenuation area and recommended for investigation as a potential attenuation site to reduce flood flows into the village. [TAB] (p31)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of the &gt;30 properties in Worlingworth reporting internal flooding (p7)</p></div></div></body></div>`)[0];
+                popup_45cc8ebe7964deee5ff5afe82c3f4118.setContent(html_a424337b413478c5071de996421171b2);
+            
+        
+
+        marker_8df4103714c2825afd193440dacf5bf2.bindPopup(popup_45cc8ebe7964deee5ff5afe82c3f4118)
+        ;
+
+        
+    
+    
+            var marker_99fc089d5817eb8cd56d826d7bdb5e88 = L.marker(
+                [52.269068, 1.2643874],
+                {}
+            ).addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+        
+    
+            var icon_c96907b9f57214073144557e81f89070 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_99fc089d5817eb8cd56d826d7bdb5e88.setIcon(icon_c96907b9f57214073144557e81f89070);
+        
+    
+        var popup_e622a52d0f9ee06cc0c013d302799492 = L.popup({});
+
+        
+            
+                var html_9a0fafcc0ce390a748788eec0748f83a = $(`<div id="html_9a0fafcc0ce390a748788eec0748f83a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Street, Worlingworth</h1><div class="nugget-popup"><p>Properties on Church Street (East zone) reported flooding from surface water runoff and overtopping watercourses, with drainage/sewer systems overwhelmed leading to internal property flooding. (p7)</p></div><div class="nugget-popup"><p>Church Street is identified in the eastern zone as being affected by surface water flooding during the event as flood flows moved east through the settlement. [IMG,PAG] (p8)</p></div><div class="nugget-popup"><p>Surface water runoff from surrounding fields flowed down a watercourse that pooled, overtopped and then flowed south through gardens and outbuildings; runoff pooled at the lowest point of the highway (Church Street) and then entered properties off the highway. Local highway drainage assets were inspected and found working, so they were likely overwhelmed by rainfall. (p20)</p></div><div class="nugget-popup"><p>Properties on the north side were predominantly affected by water flowing off the highway due to overland surface water flow and overtopping watercourses. Some residential properties experienced internal flooding to significant depths (some residents had to move out for several months); other properties had flooding across gardens and outbuildings without internal inundation. (p21)</p></div><div class="nugget-popup"><p>Surface water runoff was routed through the area; LLFA suggested a potential NFM feature on land south of Church Street to reduce surface water runoff, indicating the area experienced problematic runoff and contributed to localised flows during the event. (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of the &gt;30 properties in Worlingworth reporting internal flooding (p7)</p></div></div></body></div>`)[0];
+                popup_e622a52d0f9ee06cc0c013d302799492.setContent(html_9a0fafcc0ce390a748788eec0748f83a);
+            
+        
+
+        marker_99fc089d5817eb8cd56d826d7bdb5e88.bindPopup(popup_e622a52d0f9ee06cc0c013d302799492)
+        ;
+
+        
+    
+    
+            var marker_a8db687b1a66c0f1b5eec787b30faf44 = L.marker(
+                [52.2807588, 1.2407142],
+                {}
+            ).addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+        
+    
+            var icon_8c74dd2ddf3a40383ed79bbf54fb1629 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a8db687b1a66c0f1b5eec787b30faf44.setIcon(icon_8c74dd2ddf3a40383ed79bbf54fb1629);
+        
+    
+        var popup_8740ab4c05cd26db686230183af3f1e2 = L.popup({});
+
+        
+            
+                var html_00d7045750ee7b2bac8bc623e9fc3ffb = $(`<div id="html_00d7045750ee7b2bac8bc623e9fc3ffb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Water Lane, Worlingworth</h1><div class="nugget-popup"><p>A highways gully at the junction with Water Lane and Newtown was recorded as ineffective and slow draining; this slowed local drainage and could have contributed to elevated surface water levels during the event. (p15)</p></div><div class="nugget-popup"><p>A slow&ndash;draining gully at the junction with Newtown was identified by the highway authority as requiring resolution after overland surface water flows caused ponding and runoff that damaged hedgerows, gardens and the highway and contributed to water entering nearby properties. (p16)</p></div></div></body></div>`)[0];
+                popup_8740ab4c05cd26db686230183af3f1e2.setContent(html_00d7045750ee7b2bac8bc623e9fc3ffb);
+            
+        
+
+        marker_a8db687b1a66c0f1b5eec787b30faf44.bindPopup(popup_8740ab4c05cd26db686230183af3f1e2)
+        ;
+
+        
+    
+    
+            var marker_f58e20b0979f204e2313dc9be4ef155a = L.marker(
+                [52.2640916, 1.2591044],
+                {}
+            ).addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+        
+    
+            var icon_d6a1d7318601a12083498b8e6a8427ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f58e20b0979f204e2313dc9be4ef155a.setIcon(icon_d6a1d7318601a12083498b8e6a8427ba);
+        
+    
+        var popup_a35fbc2780910ab5cf4331cdc5f44903 = L.popup({});
+
+        
+            
+                var html_892a498a5df363a2a2c5c5a55f30e15f = $(`<div id="html_892a498a5df363a2a2c5c5a55f30e15f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Swan Road, Worlingworth</h1><div class="nugget-popup"><p>A south&ndash;north watercourse runs roughly along Swan Road and joined the west&ndash;east watercourse on the north side of Church Road; overtopping and high flows in this watercourse contributed to the local flood cascade and increased volumes reaching the culverted highway crossings. [IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_a35fbc2780910ab5cf4331cdc5f44903.setContent(html_892a498a5df363a2a2c5c5a55f30e15f);
+            
+        
+
+        marker_f58e20b0979f204e2313dc9be4ef155a.bindPopup(popup_a35fbc2780910ab5cf4331cdc5f44903)
+        ;
+
+        
+    
+    
+            var marker_950de06f50b732b92ac49e4b80c14c36 = L.marker(
+                [52.2853458, 1.2617548],
+                {}
+            ).addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+        
+    
+            var icon_5aeee2d0ce65d3eb720e673c9a1b7a5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_950de06f50b732b92ac49e4b80c14c36.setIcon(icon_5aeee2d0ce65d3eb720e673c9a1b7a5b);
+        
+    
+        var popup_94bfd21078347cd3ebd2e6466dfbeacb = L.popup({});
+
+        
+            
+                var html_c86182bec4587d091cecb8d95677179d = $(`<div id="html_c86182bec4587d091cecb8d95677179d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>New Road, Worlingworth</h1><div class="nugget-popup"><p>Residents reported a newly formed culvert alongside the watercourse bordering New Road that has caused more frequent backing up of water. This restriction may have prevented water egress at a suitable rate during the event and contributed to upstream water backing and overtopping. (p21)</p></div><div class="nugget-popup"><p>A new culvert adjacent to New Road was identified as requiring LLFA investigation because it may have affected flows during the event; highways drainage was overwhelmed by the volume of runoff. [IMG] (p22)</p></div></div></body></div>`)[0];
+                popup_94bfd21078347cd3ebd2e6466dfbeacb.setContent(html_c86182bec4587d091cecb8d95677179d);
+            
+        
+
+        marker_950de06f50b732b92ac49e4b80c14c36.bindPopup(popup_94bfd21078347cd3ebd2e6466dfbeacb)
+        ;
+
+        
+    
+    
+            var marker_47dbf66d48132d0be32fb0e16db15ed1 = L.marker(
+                [52.241001350000005, 1.0466830312565236],
+                {}
+            ).addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+        
+    
+            var icon_f5840196ae9886ed58d4a23a3308d25c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_47dbf66d48132d0be32fb0e16db15ed1.setIcon(icon_f5840196ae9886ed58d4a23a3308d25c);
+        
+    
+        var popup_4e193ec117b23b6e343766d644130d55 = L.popup({});
+
+        
+            
+                var html_11b89b3c81117275b0a37232fe9fad02 = $(`<div id="html_11b89b3c81117275b0a37232fe9fad02" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Suffolk</h1><div class="nugget-popup"><p>Storm Babet caused significant disruption to communities across Suffolk between 18th&ndash;21st October 2023. Intense rainfall led to widespread pluvial flooding and some fluvial impacts as flow routes and drainage were overwhelmed. [PAG] (p4)</p></div><div class="nugget-popup"><p>Experienced the heaviest rainfall in East Anglia during the event, producing saturated land and rivers rising close to or exceeding record levels; significant and rapid flooding affected roads and properties and caused disruption to road and rail networks; a major incident was declared on 20 Oct 2023. (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 30 properties (in Worlingworth) [PAG] (p4)</p></div></div></body></div>`)[0];
+                popup_4e193ec117b23b6e343766d644130d55.setContent(html_11b89b3c81117275b0a37232fe9fad02);
+            
+        
+
+        marker_47dbf66d48132d0be32fb0e16db15ed1.bindPopup(popup_4e193ec117b23b6e343766d644130d55)
+        ;
+
+        
+    
+    
+            var marker_7e5cf03d4a3e2dc31eb0a06a14301fad = L.marker(
+                [52.4617238, 0.6975642],
+                {}
+            ).addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+        
+    
+            var icon_6a994f9ea6c4baf5b3699623e168759d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7e5cf03d4a3e2dc31eb0a06a14301fad.setIcon(icon_6a994f9ea6c4baf5b3699623e168759d);
+        
+    
+        var popup_498e42640a941e7b5a008990fc28bb98 = L.popup({});
+
+        
+            
+                var html_f94ef8afd724b3a8d5e176fb8abcb3cb = $(`<div id="html_f94ef8afd724b3a8d5e176fb8abcb3cb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Anglia</h1><div class="nugget-popup"><p>During Storm Babet (18&ndash;21 Oct 2023) East Anglia experienced extreme rainfall that produced rapid river rises and widespread, fast&ndash;developing flooding. Roads and properties were significantly flooded, river systems rose across whole catchments with several gauging stations recording flows close to or exceeding highest on record, and there was major disruption to road and rail networks. [IMG] (p6)</p></div></div></body></div>`)[0];
+                popup_498e42640a941e7b5a008990fc28bb98.setContent(html_f94ef8afd724b3a8d5e176fb8abcb3cb);
+            
+        
+
+        marker_7e5cf03d4a3e2dc31eb0a06a14301fad.bindPopup(popup_498e42640a941e7b5a008990fc28bb98)
+        ;
+
+        
+    
+    
+            var marker_80924c1f7fab4b4985d23f071c21d19f = L.marker(
+                [52.2712472, 1.2709888],
+                {}
+            ).addTo(map_a3f873765f11a9fd27447b7347a3a9ff);
+        
+    
+            var icon_345728ad8e2c65a2f21141020d8ed749 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_80924c1f7fab4b4985d23f071c21d19f.setIcon(icon_345728ad8e2c65a2f21141020d8ed749);
+        
+    
+        var popup_8505a612728b0feed97ab625a388df30 = L.popup({});
+
+        
+            
+                var html_2bc03d9536e77d8a93d38465ad9735a8 = $(`<div id="html_2bc03d9536e77d8a93d38465ad9735a8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Worlingworth</h1><div class="nugget-popup"><p>Severely impacted by intense rainfall from Storm Babet: natural flow routes and watercourse/drainage capacity were overwhelmed. Overland flow paths converged through the village, causing internal flooding of properties and disruption to infrastructure and services. (p4)</p></div><div class="nugget-popup"><p>Internal flooding of residential and commercial properties caused by multiple sources: surface water runoff from surrounding fields (pluvial), overtopping of local watercourses (fluvial) and overwhelmed sewerage/drainage systems. Flow paths affected multiple streets and zones within the village (West, Central and East). [IMG,PAG] (p7)</p></div><div class="nugget-popup"><p>Central Worlingworth experienced surface water flooding during the event (flood flows follow a west&ndash;to&ndash;east surface water flow path through the village). Highway drainage was overwhelmed in the village centre causing highway flooding; the foul sewer network has a history of manhole surcharging during heavy rainfall. A previous internal property flood is recorded in 2012. [IMG,PAG,MUL] (p8)</p></div><div class="nugget-popup"><p>Significant surface&ndash;water flow path runs west&ndash;east through the village; most of the properties affected in central Worlingworth lie within high&ndash;risk surface&ndash;water zones. Localised high&ndash; and medium&ndash;risk surface&ndash;water areas to the west of the catchment concurred with flooding experienced during Storm Babet. Fluvial risk is present but less significant and largely isolated to the east of the catchment (adjacent floodplain). [IMG,PAG] (p9)</p></div><div class="nugget-popup"><p>Saturated, clayey soils and low infiltration led to extensive overland runoff during the storm period, resulting in surface water flooding/overland runoff affecting the village as reported in relation to Storm Babet. [IMG] (p12)</p></div><div class="nugget-popup"><p>Western part of the village experienced overland runoff and local watercourse/pond overtopping. Newtown suffered internal flooding to properties; blocked/poorly maintained channels, debris and fallen trees caused backups and overtopping that routed water to lowest points (houses). Ponds with reduced capacity due to siltation likely exacerbated impacts. (p14)</p></div><div class="nugget-popup"><p>Significant rainfall onto already&ndash;saturated ground produced high levels of overland surface&ndash;water flow across west Worlingworth (around Newtown), causing ponding in low spots and internal flooding of residential properties. Several houses experienced internal flooding with damage to furniture, flooring and personal effects; overland flows also damaged hedgerows, gardens and highways and deposited debris. [IMG] (p15)</p></div><div class="nugget-popup"><p>Central Worlingworth experienced widespread flooding: at least 23 properties suffered internal flooding with damage to furniture, flooring and personal effects; overland surface water flows caused ponding in low spots and damaged/deposited debris in hedgerows, gardens and adjacent highways. Manholes surcharged and overtopped watercourses spilled into properties and onto the highway. (p16)</p></div><div class="nugget-popup"><p>The village experienced significant flooding concentrated around Shop Street and Willow Green. Heavy, continuous rain caused the drainage network and a culverted watercourse to be overwhelmed; ordinary watercourses between the recreation ground and Willow Tree Yard overtopped, producing the first significant flooding. Floodwater cascaded down Shop Street into Willow Green and properties in the Close, with highway flooding from both surface water and overtopping channels. [IMG] (p17)</p></div><div class="nugget-popup"><p>Significant overland flow from surrounding fields and from local watercourses overwhelmed channels, ponds and drainage at pinch points in the village centre. Watercourses exceeded bank, causing pooling near the community centre and flow around the backs of properties on Church Road and Willow Green. Highways and Anglian Water assets were overwhelmed (water forced back up manhole covers). Internal flooding affected residential homes and businesses (internal depths reached 37 cm); some properties remained uninhabitable for an extended period after the event. [PAG] (p18)</p></div><div class="nugget-popup"><p>Significant rainfall and saturated ground generated high levels of overland flow toward the village centre, overwhelming water management features and spilling out at pinch points near the community centre. Local watercourses exceeded capacity and overtopped their banks, contributing to overland flows that converged around the Recreation Ground and The White Cottage. Highway drainage and foul sewer networks were overwhelmed, with water forced back up manhole covers and adding foul/surcharged sewer water to the surface flooding. [IMG,PAG] (p19)</p></div><div class="nugget-popup"><p>The eastern end of the village experienced overland runoff and watercourse&ndash;related flooding: a small number of properties were flooded internally and several properties had gardens and outbuildings flooded as runoff and watercourse flows pooled and overtopped. [IMG] (p20)</p></div><div class="nugget-popup"><p>Residential properties experienced internal flooding to significant depths; some residents were forced to move out of their properties for several months. Other properties had water flowing across gardens and into outbuildings but without internal property flooding. Watercourses overtopped and local low spots rapidly filled due to intense rainfall and overland flow; highways drainage assets were overwhelmed. [IMG] (p22)</p></div><div class="nugget-popup"><p>Residential yard and adjacent agricultural field were inundated by floodwater during the event in East Worlingworth; water levels in the yard reached nearly to the top of a garden gate and breached property boundaries. Residents were identified for property flood resilience measures (grant&ndash;funded PFR). [IMG,PAG] (p23)</p></div><div class="nugget-popup"><p>A residential backyard in East Worlingworth was inundated by muddy floodwater during the event. Floodwater covered the garden area, submerging garden features and reaching the bases of the garden shed and hedges. Water encroached onto a wooden deck and threatened outdoor belongings. [IMG,PAG] (p24)</p></div><div class="nugget-popup"><p>Floodwater breached the threshold of a residential property in East Worlingworth and entered the interior, covering floors; outdoor furniture and garden items were partially submerged in muddy water, indicating contamination and likely property damage and internal clean&ndash;up/repairs. [IMG,PAG] (p25)</p></div><div class="nugget-popup"><p>Severe surface&ndash;water/urban flooding inundated a residential area in central Worlingworth, with water covering streets, reaching up onto front lawns and threatening houses; vehicles were partially submerged and access along the street was impeded. [PAG] (p27)</p></div><div class="nugget-popup"><p>Surface water and watercourse flooding affected the eastern area of Worlingworth during the investigation. Blocked/insufficient highway drainage (gully at junction with Newtown) and suspected blocked piped sections under Shop Street contributed to flows across roads and into low&ndash;lying areas (near the church and AW pumping station). Areas were identified for attenuation and maintenance to reduce future flood risk. [TAB] (p31)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 30 properties suffering internal flooding (p4)</p></div><div class="nugget-popup quant"><p>over 30 properties [IMG,PAG] (p7)</p></div><div class="nugget-popup quant"><p>at least 23 properties (p16)</p></div><div class="nugget-popup quant"><p>internal flooding reached 37 cm; residents displaced for 6 months [PAG] (p18)</p></div><div class="nugget-popup quant"><p>2 wheelie bins at risk; 1 garden shed with water at its base [IMG,PAG] (p24)</p></div><div class="nugget-popup quant"><p>2 vehicles [PAG] (p27)</p></div></div></body></div>`)[0];
+                popup_8505a612728b0feed97ab625a388df30.setContent(html_2bc03d9536e77d8a93d38465ad9735a8);
+            
+        
+
+        marker_80924c1f7fab4b4985d23f071c21d19f.bindPopup(popup_8505a612728b0feed97ab625a388df30)
+        ;
+
+        
+    
+</script>
+</html>
