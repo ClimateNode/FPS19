@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f71684284e22cb2089ba702041ec85c1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f71684284e22cb2089ba702041ec85c1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f71684284e22cb2089ba702041ec85c1 = L.map(
+                "map_f71684284e22cb2089ba702041ec85c1",
+                {
+                    center: [52.20162938062657, 1.1792723533240776],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f007d55880bf8b36703f6fa332985064 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_f007d55880bf8b36703f6fa332985064.addTo(map_f71684284e22cb2089ba702041ec85c1);
+    
+            var marker_f716e931b9cc807e0942ab98a5c9cdda = L.marker(
+                [52.1579659, 1.2801241],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_992d6ee88edec2cbf8a9d120fc928638 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f716e931b9cc807e0942ab98a5c9cdda.setIcon(icon_992d6ee88edec2cbf8a9d120fc928638);
+        
+    
+        var popup_5e48c9b570e6871c80a91cee574189b2 = L.popup({});
+
+        
+            
+                var html_6cb4ce3db92a7598cbaf64b7b3ce0963 = $(`<div id="html_6cb4ce3db92a7598cbaf64b7b3ce0963" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Potsford Brook</h1><div class="nugget-popup"><p>Potsford Brook (the watercourse running west&ndash;east through the investigation area) is implicated as a fluvial source that contributed to flooding in the Charsfield area during the event. [IMG] (p8)</p></div><div class="nugget-popup"><p>Potsford Brook exceeded capacity and overtopped its banks, contributing fluvial floodwater to properties on Church Road and The Street. [IMG] (p9)</p></div><div class="nugget-popup"><p>Potsford Brook is the local watercourse shown on the investigation map and lies within/adjacent to the map's highlighted investigation zones; it is indicated as the likely waterbody contributing to flooding in Charsfield during the 18 Oct 2023 &ndash; 21 Oct 2023 event (stream/ditch overflow and local inundation). [IMG] (p10)</p></div><div class="nugget-popup"><p>Identified as the main fluvial influence for Charsfield; high flows from Potsford Brook are implicated in the fluvial flooding that affected nearby roads and parts of the village during Storm Babet (October 2023). (p12)</p></div><div class="nugget-popup"><p>Identified as the main fluvial influence for Charsfield; the brook received discharge from the valley and contributed to fluvial flooding in the village during the event. [PAG] (p13)</p></div><div class="nugget-popup"><p>A rapid spike and sharp increase in water level between about 12:00 and 13:00 on the day of heavy rain, contributing to a rapid rise in local water levels and providing little forewarning of flooding in Charsfield. (p16)</p></div><div class="nugget-popup"><p>Potsford Brook&#8217;s capacity was completely overwhelmed by large volumes of runoff from fields to the north, south and the wider catchment; the brook and adjacent fields were totally inundated, the brook spilled onto Church Road, submerged highway outfalls and caused backing up that led to internal flooding of properties. (p20)</p></div><div class="nugget-popup"><p>Potsford Brook was completely overwhelmed; fields upstream of the road bridge were inundated. The brook overtopped at the road bridge when the capacity underneath was exceeded, contributing to flooding of the adjacent highway and surrounding land. Debris and damaged drainage may have exacerbated the situation. [IMG] (p21)</p></div><div class="nugget-popup"><p>Potsford Brook overtopped its banks after channel capacity was exceeded by rapid runoff; fluvial floodwater filled rear gardens and entered houses as water levels rose and overtopped into properties downstream along The Street. [PAG] (p22)</p></div><div class="nugget-popup"><p>Potsford Brook was overwhelmed by high runoff from surrounding fields, came out of bank at Church Road, and overtopped around the B1078 road bridge. The overtopping and backed&ndash;up channel merged with surface&ndash;water flows on the highway, contributed to inundation of properties and gardens (flooding from the rear) and caused widespread road inundation and overwhelmed drainage assets. [PAG] (p24)</p></div><div class="nugget-popup"><p>Potsford Brook backed up and overtopped around the B1078 road bridge; a build&ndash;up of silt and debris on the upstream side of the bridge may have reduced channel capacity, contributing to overtopping and causing fluvial flows to merge with surface water on the highway. (p25)</p></div><div class="nugget-popup"><p>Potsford Brook was assessed by the Environment Agency after Storm Babet as a source of flow contributing to local flooding and overland/pluvial flows through Charsfield; three sites along the brook were visited to consider water&ndash;level instrumentation but were deemed not to meet EA requirements for installation. [TAB] (p33)</p></div><div class="nugget-popup"><p>High flows and observed blockages in the ordinary watercourse/main river (Potsford Brook) contributed to local flooding in Charsfield during the event; blockages were reported for removal by riparian owners or the relevant authority to reduce flooding impacts on nearby roads and properties. [TAB] (p36)</p></div></div></body></div>`)[0];
+                popup_5e48c9b570e6871c80a91cee574189b2.setContent(html_6cb4ce3db92a7598cbaf64b7b3ce0963);
+            
+        
+
+        marker_f716e931b9cc807e0942ab98a5c9cdda.bindPopup(popup_5e48c9b570e6871c80a91cee574189b2)
+        ;
+
+        
+    
+    
+            var marker_2306cf19bbbc010a67985af88ff5fff1 = L.marker(
+                [52.3256663, 0.5791531],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_dcf644141b1a7c6c92f7180f0b489435 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2306cf19bbbc010a67985af88ff5fff1.setIcon(icon_dcf644141b1a7c6c92f7180f0b489435);
+        
+    
+        var popup_af2c3a116ea1fb43761222fc315c3a7a = L.popup({});
+
+        
+            
+                var html_9d95136360e8d71daf116e6ecfc1bdc7 = $(`<div id="html_9d95136360e8d71daf116e6ecfc1bdc7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Lark</h1><div class="nugget-popup"><p>Rising levels on the River Lark (as monitored at the Clopton gauge) contributed to the Flood Alert covering the Lark from Clopton to Martlesham, indicating fluvial flood risk during the period. (p9)</p></div></div></body></div>`)[0];
+                popup_af2c3a116ea1fb43761222fc315c3a7a.setContent(html_9d95136360e8d71daf116e6ecfc1bdc7);
+            
+        
+
+        marker_2306cf19bbbc010a67985af88ff5fff1.bindPopup(popup_af2c3a116ea1fb43761222fc315c3a7a)
+        ;
+
+        
+    
+    
+            var marker_ef8c8efe93acdab76eaa570a0e215e28 = L.marker(
+                [52.2269942, 1.1481653],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_2d9ddc459499adddcec5e91933951f7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ef8c8efe93acdab76eaa570a0e215e28.setIcon(icon_2d9ddc459499adddcec5e91933951f7d);
+        
+    
+        var popup_b6748f9970f6cbe5d6eec77fa62e3238 = L.popup({});
+
+        
+            
+                var html_afbd4ad1c50b785f225e35621c896a99 = $(`<div id="html_afbd4ad1c50b785f225e35621c896a99" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Deben</h1><div class="nugget-popup"><p>Part of the catchment receiving flows from Potsford Brook; river corridor flood risk zones are shown near Charsfield and surrounding areas, contributing to the area's fluvial flood risk during the October 2023 event. [PAG] (p12)</p></div><div class="nugget-popup"><p>Serves as the downstream catchment receiving discharge from Potsford Brook and the Charsfield valley during intense rainfall, forming part of the river catchment dynamics associated with the flooding during the event. [PAG] (p13)</p></div><div class="nugget-popup"><p>The River Deben and its tributaries were identified as sources of flooding in the catchment; the EA initiated a long&ndash;term programme to map flooding extents and plan hydraulic modelling and intermittent maintenance. [TAB,PAG] (p33)</p></div></div></body></div>`)[0];
+                popup_b6748f9970f6cbe5d6eec77fa62e3238.setContent(html_afbd4ad1c50b785f225e35621c896a99);
+            
+        
+
+        marker_ef8c8efe93acdab76eaa570a0e215e28.bindPopup(popup_b6748f9970f6cbe5d6eec77fa62e3238)
+        ;
+
+        
+    
+    
+            var marker_d65f161aa6c0890038318fbdc813e04a = L.marker(
+                [52.157641059398586, 1.2924813686046406],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_238b98ada0350ccac46ea8f568f58140 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d65f161aa6c0890038318fbdc813e04a.setIcon(icon_238b98ada0350ccac46ea8f568f58140);
+        
+    
+        var popup_e5b43055b586750f5675149292504180 = L.popup({});
+
+        
+            
+                var html_89396c4cddcb183d53c8456d1a32aed3 = $(`<div id="html_89396c4cddcb183d53c8456d1a32aed3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Road, Charsfield</h1><div class="nugget-popup"><p>Properties on Church Road experienced flooding that included a fluvial element caused by Potsford Brook exceeding capacity and overtopping its banks; the designated main river section begins at the road bridge on Church Road. (p9)</p></div><div class="nugget-popup"><p>Mapped as part of Zone 3 (Church Road and Hall Road) &mdash; identified in the investigation as affected by flooding during the 18 Oct 2023 to 21 Oct 2023 event; flooding impacted the road corridor within the zone. (p10)</p></div><div class="nugget-popup"><p>Blocked highway drain was reported at the junction with The Street (Jan 2016); flooded road/pavement reported on three occasions in 2022 (Apr, Aug, Nov). [PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>Identified as at risk from pluvial and fluvial flooding and reported to have been affected during Storm Babet (October 2023); overland flow paths from higher ground route into Church Road during intense rainfall events. [PAG] (p12)</p></div><div class="nugget-popup"><p>Properties on Church Road were internally flooded (from about 10:00 on 20 Oct) when Potsford Brook overtopped and large volumes of run&ndash;off from surrounding fields flowed along and behind the road. Flood debris snagged at the road bridge, the bridge capacity was exceeded, and Church Road acted as a secondary channel conveying water downstream into The Street. (p20)</p></div><div class="nugget-popup"><p>Acted as a secondary river channel carrying floodwater downstream; floodwater overtopped at the road bridge and overflowed into The Street. Highway drainage outfalls were submerged (fell below the peak water level in the Brook) and were unable to discharge fully, causing water to back up further. Accumulated debris and pre&ndash;existing damaged highways drainage may have worsened the overtopping at the bridge. [IMG,PAG] (p21)</p></div><div class="nugget-popup"><p>Floodwater from Potsford Brook and surface runoff flowed across Church Road, contributing to surface water on The Street. The road bridge was noted as a location where blockages should be reported to highways and where known highway drainage issues require investigation and maintenance. [PAG] (p22)</p></div><div class="nugget-popup"><p>Potsford Brook came out of bank at Church Road; floodwater flowed from this location down The Street and across the full width of the road, inundating the highway. (p24)</p></div><div class="nugget-popup"><p>Road surface at the Church Road junction was inundated with standing floodwater covering the entire carriageway and obscuring road markings, impeding normal traffic movement and access at the junction. [IMG,PAG] (p26)</p></div><div class="nugget-popup"><p>Flooding impacted Church Road during the event, affecting the bridge on Church Road and contributing to highway drainage / asset issues that were reported for inspection and remediation. [TAB,PAG] (p36)</p></div><div class="nugget-popup"><p>Flooding around the bridge and highway drainage on Church Road caused blockages and reduced drainage capacity; prompted reporting of blockages and requirements for cyclic highway drainage maintenance and investigation of drainage capacity. (p37)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Flooded road/pavement reported on three occasions in 2022 [PAG,MUL] (p11)</p></div></div></body></div>`)[0];
+                popup_e5b43055b586750f5675149292504180.setContent(html_89396c4cddcb183d53c8456d1a32aed3);
+            
+        
+
+        marker_d65f161aa6c0890038318fbdc813e04a.bindPopup(popup_e5b43055b586750f5675149292504180)
+        ;
+
+        
+    
+    
+            var marker_54ecb9598ab2a615f0bf18e11f160024 = L.marker(
+                [52.1587537, 1.2998888],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_553fe7442dcf748419d737fce67eb53b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_54ecb9598ab2a615f0bf18e11f160024.setIcon(icon_553fe7442dcf748419d737fce67eb53b);
+        
+    
+        var popup_5a19456b88df9f6252d572d35e4a17fa = L.popup({});
+
+        
+            
+                var html_f8d383e8bdb6e778072e6159ba32b9be = $(`<div id="html_f8d383e8bdb6e778072e6159ba32b9be" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Street, Charsfield</h1><div class="nugget-popup"><p>Properties on The Street experienced flooding that included a fluvial element due to Potsford Brook exceeding capacity and overtopping its banks. (p9)</p></div><div class="nugget-popup"><p>Mapped as Zone 4 &mdash; identified in the investigation as an area affected by flooding during the 18 Oct 2023 to 21 Oct 2023 event; flooding affected the main street through the village. (p10)</p></div><div class="nugget-popup"><p>Flooded road and pavement reported at/on The Street (including junctions with Chapel Lane and Church Road); junction with Chapel Lane associated with properties flooded on 9 May 2023. [PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>Shown as at risk from both surface&ndash;water and fluvial flooding and reported affected during Storm Babet (October 2023). Properties surrounding the junction of Chapel Lane and The Street were reported flooded on 9 May 2023. [PAG,MUL] (p12)</p></div><div class="nugget-popup"><p>Reported as one of the lowest&ndash;lying and among the worst&ndash;affected locations in Charsfield during Storm Babet; experienced surface water runoff and flooding of the road due to runoff from the wider catchment and saturated ground. [PAG] (p14)</p></div><div class="nugget-popup"><p>High volumes of surface water overwhelmed highway drainage assets as floodwater accumulated at the bottom of St Peters Close and on The Street. [PAG] (p19)</p></div><div class="nugget-popup"><p>The Street, one of the lowest points in Charsfield, acted as the central basin where floodwater accumulated as roadside drainage assets were overwhelmed and outfalls became submerged, causing water to collect and back up. [PAG] (p20)</p></div><div class="nugget-popup"><p>Extensive fluvial and surface water flooding of The Street; properties experienced internal flooding (front and rear) as Potsford Brook overtopped and surface water from fields and highways flowed onto the road. Surface water entered properties from the front and rising brook levels caused rear&ndash;garden and internal flooding, leaving properties surrounded by water. [PAG] (p22)</p></div><div class="nugget-popup"><p>Extensive flooding of residential and commercial properties: floodwater entered properties from the front (flows from Chapel Lane and St Peters Close) and later from the rear as Potsford Brook overtopped. Roads and highway drainage were overwhelmed, creating broad areas of standing water that surrounded houses and prevented road runoff discharging to the river. [PAG,IMG] (p23)</p></div><div class="nugget-popup"><p>Floodwater from Potsford Brook overtopping and large volumes of surface&ndash;water runoff (including flows from St Peters Close and Chapel Lane) flowed down The Street across its width. Floodwater accumulated along the road, overtopped into the rear of properties and resulted in a number of houses being surrounded; highway drainage assets were overwhelmed. [PAG] (p24)</p></div><div class="nugget-popup"><p>The Street (B1078) carried converging surface water and fluvial flows eastward; highway drains were overwhelmed, and floodwater flowed along the road impacting properties from the front. (p25)</p></div><div class="nugget-popup"><p>Floodwater covered the roadway at the Church Road junction looking toward The Street, indicating inundation affecting the junction and approaches to The Street and likely impeding access and traffic. [IMG,PAG] (p26)</p></div><div class="nugget-popup"><p>Floodwater covered the full width of the road and extended onto verges toward The Street, rendering the route impassable and presenting a hazard to vehicles and nearby infrastructure. [IMG,PAG] (p28)</p></div><div class="nugget-popup"><p>Section of The Street was covered by floodwater extending to adjacent properties and affecting the roadway, impeding movement and access. [IMG,PAG] (p29)</p></div><div class="nugget-popup"><p>Roadway covered by floodwater, making the road impassable; floodwater encroached onto surrounding verges and nearby residential frontage was visible. [PAG] (p30)</p></div><div class="nugget-popup"><p>Residential road fully inundated with muddy floodwater covering the full carriageway and reaching up to houses&#8217; frontages, impeding traffic and posing risk to properties. [PAG] (p31)</p></div><div class="nugget-popup"><p>Surface water / highway drainage flooding affected The Street; it is listed among the worst&ndash;affected locations requiring investigation and maintenance of drainage assets. [TAB,PAG] (p36)</p></div><div class="nugget-popup"><p>Highway drainage insufficiency led to surface water flooding along The Street; recommended investigation of drainage capacity and cyclic maintenance. (p37)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Flooding reported on three occasions in 2022; part of the 4 properties reported flooded on 9 May 2023 [PAG,MUL] (p11)</p></div><div class="nugget-popup quant"><p>internal flooding depths 15 &ndash; 50 cm [PAG] (p22)</p></div><div class="nugget-popup quant"><p>internal depths between 15 &ndash; 50 cm [PAG,IMG] (p23)</p></div></div></body></div>`)[0];
+                popup_5a19456b88df9f6252d572d35e4a17fa.setContent(html_f8d383e8bdb6e778072e6159ba32b9be);
+            
+        
+
+        marker_54ecb9598ab2a615f0bf18e11f160024.bindPopup(popup_5a19456b88df9f6252d572d35e4a17fa)
+        ;
+
+        
+    
+    
+            var marker_c619a6a75b7d49fff295c9e2a20e09f1 = L.marker(
+                [52.1640447, 1.2870777],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_72e185b9a15b529a58777074a463fb0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c619a6a75b7d49fff295c9e2a20e09f1.setIcon(icon_72e185b9a15b529a58777074a463fb0b);
+        
+    
+        var popup_8186143ed479f2e6d421aa21d1ae5483 = L.popup({});
+
+        
+            
+                var html_c146a3472987a623663e5597ff58e0b4 = $(`<div id="html_c146a3472987a623663e5597ff58e0b4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Monewden Road, Charsfield</h1><div class="nugget-popup"><p>Flooding on Monewden Road was driven primarily by surface water run&ndash;off (pluvial sources), causing flooding to the road and properties. (p9)</p></div><div class="nugget-popup"><p>Mapped as Zone 1 &mdash; identified in the investigation as an area affected by flooding during the 18 Oct 2023 to 21 Oct 2023 event; flooding impacted the road and adjacent parts of the zone. (p10)</p></div><div class="nugget-popup"><p>Large volumes of surface water run&ndash;off from adjacent fields to the north, combined with surface water flowing down Davey Lane, overwhelmed the limited highway drainage and gullies. Several properties with downward&ndash;sloping driveways experienced internal flooding before midday; flood water had receded by early evening. [PAG] (p16)</p></div><div class="nugget-popup"><p>Surface water run&ndash;off from fields to the north and flow down Davey Lane inundated the highway; existing gullies and limited highway drainage were overwhelmed. Several properties with downward&ndash;sloping driveways experienced internal flooding (reported before midday) and the flooding had receded by early evening. [PAG,IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_8186143ed479f2e6d421aa21d1ae5483.setContent(html_c146a3472987a623663e5597ff58e0b4);
+            
+        
+
+        marker_c619a6a75b7d49fff295c9e2a20e09f1.bindPopup(popup_8186143ed479f2e6d421aa21d1ae5483)
+        ;
+
+        
+    
+    
+            var marker_f9b0e81c0099f410c8d9a0988fc94962 = L.marker(
+                [52.1614797, 1.2994589],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_b4828406177c0563a7915fe9ec197e21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f9b0e81c0099f410c8d9a0988fc94962.setIcon(icon_b4828406177c0563a7915fe9ec197e21);
+        
+    
+        var popup_eb153d8068a04d34658eadaf6e25d7b6 = L.popup({});
+
+        
+            
+                var html_b5910d5ddc185f8bb56e4db27d16e893 = $(`<div id="html_b5910d5ddc185f8bb56e4db27d16e893" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chapel Lane, Charsfield</h1><div class="nugget-popup"><p>Chapel Lane experienced flooding primarily from surface water run&ndash;off (pluvial sources), affecting the lane and nearby properties. (p9)</p></div><div class="nugget-popup"><p>Blocked/overflowing highway drain and flooded road/pavement reported at the junction with The Street (Jan 2021); properties surrounding the junction with The Street were flooded on 9 May 2023. [PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>Properties surrounding the junction of Chapel Lane and The Street flooded on 9 May 2023 (one of two locations where four properties flooded in total). The location was also affected by surface&ndash;water flooding during Storm Babet (Oct 18&ndash;21, 2023). [PAG,MUL] (p12)</p></div><div class="nugget-popup"><p>Intense rainfall caused surface water run&ndash;off from adjoining fields to flow across ditches and onto Chapel Lane, leading to internal flooding of properties situated lower than the road from about 08:00 on 20 October; highway drainage was unable to remove the floodwater. [PAG] (p17)</p></div><div class="nugget-popup"><p>Internal flooding at the front of properties on the western end of the lane from 08:00 on 20 October due to overland surface water run&ndash;off from fields to the north. Run&ndash;off crossed field boundary ditches and a field access, flowed onto the highway; existing highway drainage could not cope. Some properties are lower than the road with downward&ndash;sloping driveways that directed floodwater toward houses. [IMG,PAG,MUL] (p18)</p></div><div class="nugget-popup"><p>High rainfall produced overland surface water run&ndash;off from fields to the north which flowed across a ditch onto the road. Existing highway drainage assets at Chapel Lane were unable to drain the floodwater; some properties on the western end, being lower than the road with downward sloping driveways, had floodwater flow toward them. The same source and pathway were observed during the earlier 9 May 2023 event and during Storm Babet. [PAG,IMG,MUL] (p19)</p></div><div class="nugget-popup"><p>Surface water run&ndash;off from fields to the north overwhelmed existing field ditches and a piped watercourse; floodwater followed the downhill flowpath and impacted properties on Chapel Lane from the front. Highway drainage at the western end was overwhelmed. [PAG] (p20)</p></div><div class="nugget-popup"><p>Steep highway conveyed large volumes of surface water down Chapel Lane into the junction with The Street. Highway drainage grips were silted (last inspected 2019) so water flowed down the carriageway; a short piped section at the southern end (approximately 300 mm diameter) had insufficient capacity compared with the original open channel and could not convey the highway flows into Potsford Brook, contributing to flooding on The Street. (p22)</p></div><div class="nugget-popup"><p>Significant surface water flow path down the relatively steep highway: silted roadside grips and a short piped section at the bottom (approx. 300 mm diameter) meant the highway conveyed most runoff, which accumulated at the junction with The Street and contributed large volumes of floodwater onto The Street and into properties. [PAG] (p23)</p></div><div class="nugget-popup"><p>Chapel Lane, which has pre&ndash;existing drainage issues (surcharging inspection chambers and frequent pooling), conveyed surface&ndash;water flows into The Street during the event, adding to floodwater accumulation. Highway drainage assets on Chapel Lane were overwhelmed and contributed to property and road flooding. [PAG] (p24)</p></div><div class="nugget-popup"><p>Roadway covered by a wide, fast&ndash;moving sheet of muddy water making the road impassable; water extended onto verges and lapped at adjacent fences and walls, creating a risk to vehicles and infrastructure. [IMG] (p28)</p></div><div class="nugget-popup"><p>Surface water / overland flow affected Chapel Lane: grips need re&ndash;cutting and grips/roadside drainage require clearing due to runoff and drainage blockage experienced during the flood event. [TAB,PAG] (p36)</p></div><div class="nugget-popup"><p>Surface water and overland flow affected Chapel Lane during the event; actions include clearing and re&ndash;cutting grips and investigating reduced field run&ndash;off and drainage capacity at the western end. (p37)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of the 4 properties reported flooded on 9 May 2023 [PAG,MUL] (p11)</p></div><div class="nugget-popup quant"><p>4 properties (combined between Chapel Lane/The Street junction and St Peters Close) [PAG,MUL] (p12)</p></div></div></body></div>`)[0];
+                popup_eb153d8068a04d34658eadaf6e25d7b6.setContent(html_b5910d5ddc185f8bb56e4db27d16e893);
+            
+        
+
+        marker_f9b0e81c0099f410c8d9a0988fc94962.bindPopup(popup_eb153d8068a04d34658eadaf6e25d7b6)
+        ;
+
+        
+    
+    
+            var marker_11683badb7cc2420dab6b888ecec20e3 = L.marker(
+                [52.1607677, 1.295503],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_68e3f782ff233271cc98fd47431801ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_11683badb7cc2420dab6b888ecec20e3.setIcon(icon_68e3f782ff233271cc98fd47431801ec);
+        
+    
+        var popup_583ea35a867e0174aa1543adfd31dac9 = L.popup({});
+
+        
+            
+                var html_babf5e988da5edbc7fd9028e4579262f = $(`<div id="html_babf5e988da5edbc7fd9028e4579262f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Peters Close, Charsfield</h1><div class="nugget-popup"><p>St Peters Close experienced flooding primarily from surface water run&ndash;off (pluvial sources), affecting properties on the close. (p9)</p></div><div class="nugget-popup"><p>Mapped as Zone 2 &mdash; identified in the investigation as an area affected by flooding during the 18 Oct 2023 to 21 Oct 2023 event; flooding impacted the street and surrounding properties within the zone. (p10)</p></div><div class="nugget-popup"><p>Properties on St Peters Close flooded (reported as one of two main locations for property flooding in Charsfield). [MUL] (p11)</p></div><div class="nugget-popup"><p>Properties on St Peters Close flooded on 9 May 2023 (one of two locations where four properties flooded in total). The location was also affected by surface&ndash;water flooding during Storm Babet (Oct 18&ndash;21, 2023). [PAG,MUL] (p12)</p></div><div class="nugget-popup"><p>Properties at the western end of Chapel Lane/St Peters Close experienced internal flooding from the front due to surface water run&ndash;off from fields to the north; field ditches and a field access enabled flow onto the road and existing highway drainage could not cope (flooding observed from 08:00 on 20 October). [PAG] (p17)</p></div><div class="nugget-popup"><p>Surface water from fields fed into a ditch and pipe behind properties which were rapidly overwhelmed and overtopped; water came through and around gardens and flowed down St Peters Close like a torrent. Floodwater accumulated at the bottom from 07:00 and internal flooding of properties was reported from 08:00 on 20 October, continuing into late afternoon. [PAG,MUL] (p18)</p></div><div class="nugget-popup"><p>Surface water run&ndash;off entered via a ditch behind houses which fed into a pipe that could not cope with the volume. The ditch and pipe were quickly overwhelmed and overtopped, allowing water to come through and around gardens and then flow down the length of St Peters Close like a torrent. Floodwater accumulated at the bottom of St Peters Close from about 07:00; internal flooding was reported from around 08:00 and persisted until late afternoon. [PAG,MUL] (p19)</p></div><div class="nugget-popup"><p>Run&ndash;off from fields and an overwhelmed piped watercourse caused floodwater to accumulate at the bottom of St Peters Close, impacting properties from the rear; highway drainage assets were overwhelmed. [PAG] (p20)</p></div><div class="nugget-popup"><p>Surface water flowed down St Peters Close onto The Street and merged with flows from Church Road and Chapel Lane, contributing to the pluvial flooding of properties on The Street. (p22)</p></div><div class="nugget-popup"><p>Surface&ndash;water flows came down St Peters Close and contributed to the extensive accumulation of floodwater along The Street, increasing road inundation. (p24)</p></div><div class="nugget-popup"><p>Residential road was inundated with muddy water covering the carriageway and encroaching onto adjacent front gardens and properties, disrupting local access and transport. [IMG] (p29)</p></div><div class="nugget-popup"><p>Flooding affected St Peters Close; the piped watercourse above St Peters Close was identified as potentially capacity&ndash;limited and linked to flooding/drainage issues in the area. [TAB,PAG] (p36)</p></div><div class="nugget-popup"><p>Flooding associated with a piped watercourse above St Peters Close led to recommendations to investigate increasing the pipe capacity to reduce local flooding impacts. (p37)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of the 4 properties reported flooded on 9 May 2023 [MUL] (p11)</p></div><div class="nugget-popup quant"><p>4 properties (combined between Chapel Lane/The Street junction and St Peters Close) [PAG,MUL] (p12)</p></div></div></body></div>`)[0];
+                popup_583ea35a867e0174aa1543adfd31dac9.setContent(html_babf5e988da5edbc7fd9028e4579262f);
+            
+        
+
+        marker_11683badb7cc2420dab6b888ecec20e3.bindPopup(popup_583ea35a867e0174aa1543adfd31dac9)
+        ;
+
+        
+    
+    
+            var marker_c9a875ba7be772e6948a075634449ff4 = L.marker(
+                [52.1573124, 1.2758226],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_01f7e9122497b988e82c03e57bd25376 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c9a875ba7be772e6948a075634449ff4.setIcon(icon_01f7e9122497b988e82c03e57bd25376);
+        
+    
+        var popup_57c2b2b036d43dcab9d315aafc6548b8 = L.popup({});
+
+        
+            
+                var html_800c447c154016ae4453d47bc60d2863 = $(`<div id="html_800c447c154016ae4453d47bc60d2863" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hall Road, Charsfield</h1><div class="nugget-popup"><p>Mapped as part of Zone 3 (Church Road and Hall Road) &mdash; identified in the investigation as affected by flooding during the 18 Oct 2023 to 21 Oct 2023 event; flooding impacted the road corridor within the zone. (p10)</p></div><div class="nugget-popup"><p>Hall Road in Charsfield was affected by flooding during Storm Babet (surface water/pluvial flooding of the area). (p11)</p></div><div class="nugget-popup"><p>Surface water runoff from surrounding fields and overflowing small streams/ditches inundated low points on Hall Road, causing internal flooding of properties. Flooding occurred in the morning of 20 October and had largely dispersed by the next afternoon. [PAG] (p20)</p></div><div class="nugget-popup"><p>Internal flooding occurred when surface water runoff from fields to the south merged with floodwater on the road at low points. Small streams and drainage ditches overflowed as large volumes of water descended from the fields. Flooding was reported in the morning of 20 October and had dispersed by the next afternoon. [IMG,PAG] (p21)</p></div><div class="nugget-popup"><p>Road surface submerged by floodwater and rendered impassable; floodwater extended onto verges. (p30)</p></div></div></body></div>`)[0];
+                popup_57c2b2b036d43dcab9d315aafc6548b8.setContent(html_800c447c154016ae4453d47bc60d2863);
+            
+        
+
+        marker_c9a875ba7be772e6948a075634449ff4.bindPopup(popup_57c2b2b036d43dcab9d315aafc6548b8)
+        ;
+
+        
+    
+    
+            var marker_079bb23f37a227318010223ab6aae043 = L.marker(
+                [52.1665281, 1.294292],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_88c12a5e67ea56749fbc1bf0e6870724 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_079bb23f37a227318010223ab6aae043.setIcon(icon_88c12a5e67ea56749fbc1bf0e6870724);
+        
+    
+        var popup_8eeffe250210e4412f16ee20d69ef4a2 = L.popup({});
+
+        
+            
+                var html_732790d80df496da18666c7f90ea40f5 = $(`<div id="html_732790d80df496da18666c7f90ea40f5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Davey Lane, Charsfield</h1><div class="nugget-popup"><p>Surface water flowed down Davey Lane onto Monewden Road, delivering flow onto property frontages and contributing to the overwhelming of limited highway drainage during the intense morning rainfall. (p16)</p></div></div></body></div>`)[0];
+                popup_8eeffe250210e4412f16ee20d69ef4a2.setContent(html_732790d80df496da18666c7f90ea40f5);
+            
+        
+
+        marker_079bb23f37a227318010223ab6aae043.bindPopup(popup_8eeffe250210e4412f16ee20d69ef4a2)
+        ;
+
+        
+    
+    
+            var marker_14afb46de113a5d8a931ca5e6c0bf33d = L.marker(
+                [52.1647855, 1.2948632],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_197f5a3d71321d920352679e90dfeba1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_14afb46de113a5d8a931ca5e6c0bf33d.setIcon(icon_197f5a3d71321d920352679e90dfeba1);
+        
+    
+        var popup_0ce270c5ea3a87e941698cc5a1e61074 = L.popup({});
+
+        
+            
+                var html_093ecd79eb7de4d079bdfd7a0e8b2ecc = $(`<div id="html_093ecd79eb7de4d079bdfd7a0e8b2ecc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Magpie Street, Charsfield</h1><div class="nugget-popup"><p>Flood water from higher ground and adjacent drainage channels flowed southeast along road corridors, converging near Magpie Street and affecting properties there (surface water flowing along roads and toward lower&ndash;lying properties). [PAG,IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_0ce270c5ea3a87e941698cc5a1e61074.setContent(html_093ecd79eb7de4d079bdfd7a0e8b2ecc);
+            
+        
+
+        marker_14afb46de113a5d8a931ca5e6c0bf33d.bindPopup(popup_0ce270c5ea3a87e941698cc5a1e61074)
+        ;
+
+        
+    
+    
+            var marker_8ef1233d2705b00541d0af187c575e41 = L.marker(
+                [52.1586803, 1.3056794],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_01f4cc16450a57341cacced4102cecf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8ef1233d2705b00541d0af187c575e41.setIcon(icon_01f4cc16450a57341cacced4102cecf8);
+        
+    
+        var popup_f2218e12cb8af31ae5f171aa1fa4ece9 = L.popup({});
+
+        
+            
+                var html_d7761e7194b374e91b2bf6ceb163b29a = $(`<div id="html_d7761e7194b374e91b2bf6ceb163b29a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Park Lane, Charsfield</h1><div class="nugget-popup"><p>Flows from fields to the north ran down Park Lane and contributed additional flows that merged with fluvial and pluvial floodwater on the B1078/Wickham Market Road, increasing impacts to the highway and adjacent properties. [PAG] (p24)</p></div><div class="nugget-popup"><p>High rainfall generated large pluvial flows from Park Lane (and fields south of the B1078) that flowed onto the highway, contributing volumes of surface water that converged on the main road and exacerbated flooding. (p25)</p></div></div></body></div>`)[0];
+                popup_f2218e12cb8af31ae5f171aa1fa4ece9.setContent(html_d7761e7194b374e91b2bf6ceb163b29a);
+            
+        
+
+        marker_8ef1233d2705b00541d0af187c575e41.bindPopup(popup_f2218e12cb8af31ae5f171aa1fa4ece9)
+        ;
+
+        
+    
+    
+            var marker_49e7187113117e700ce9332f06b143b7 = L.marker(
+                [52.241001350000005, 1.0466830312565236],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_c293ff94ba47e6e8e491a88fdbdc6c56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_49e7187113117e700ce9332f06b143b7.setIcon(icon_c293ff94ba47e6e8e491a88fdbdc6c56);
+        
+    
+        var popup_861fa7c0e4dd15a7091238837f5f01de = L.popup({});
+
+        
+            
+                var html_8eba51b961d18aeab99d18f9f84ad9a5 = $(`<div id="html_8eba51b961d18aeab99d18f9f84ad9a5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Suffolk</h1><div class="nugget-popup"><p>Storm Babet caused significant disruption to communities across Suffolk due to flooding between 18 and 21 October 2023. (p4)</p></div><div class="nugget-popup"><p>During October 2023 (particularly 18&ndash;21 October during Storm Babet) Suffolk experienced the heaviest rainfall in East Anglia. Rivers rose rapidly across whole catchments and there was significant flooding of roads and properties, with widespread disruption to communities and to road and rail networks; a major incident was declared by the Suffolk Resilience Forum on 20 October. [PAG,MUL] (p7)</p></div><div class="nugget-popup"><p>Significant rainfall on already saturated ground during Storm Babet (20 Oct 2023) caused internal flooding to residential and commercial properties across the county from various flooding sources. (p8)</p></div><div class="nugget-popup"><p>The village of Charsfield experienced combined surface water and fluvial flooding: field run&ndash;off overwhelmed ditches and piped channels, Potsford Brook overtopped and floodwater accumulated in low&ndash;lying areas (The Street), and multiple properties were internally flooded. (p20)</p></div></div></body></div>`)[0];
+                popup_861fa7c0e4dd15a7091238837f5f01de.setContent(html_8eba51b961d18aeab99d18f9f84ad9a5);
+            
+        
+
+        marker_49e7187113117e700ce9332f06b143b7.bindPopup(popup_861fa7c0e4dd15a7091238837f5f01de)
+        ;
+
+        
+    
+    
+            var marker_2edc3c448c630ada45f031bc264e163a = L.marker(
+                [52.4617238, 0.6975642],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_4cf7e6e20b603b71631436db9111fd81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2edc3c448c630ada45f031bc264e163a.setIcon(icon_4cf7e6e20b603b71631436db9111fd81);
+        
+    
+        var popup_7a98b9c48427f798ee9b36b8b4211b8a = L.popup({});
+
+        
+            
+                var html_07c75735f3455a344b834bb8088fa26d = $(`<div id="html_07c75735f3455a344b834bb8088fa26d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Anglia</h1><div class="nugget-popup"><p>During Storm Babet (Oct 18&ndash;21, 2023) East Anglia experienced very heavy rainfall causing rapid river rises and significant flooding of roads and properties across the region; many river gauging stations recorded flows close to or exceeding their highest on record. [IMG] (p7)</p></div></div></body></div>`)[0];
+                popup_7a98b9c48427f798ee9b36b8b4211b8a.setContent(html_07c75735f3455a344b834bb8088fa26d);
+            
+        
+
+        marker_2edc3c448c630ada45f031bc264e163a.bindPopup(popup_7a98b9c48427f798ee9b36b8b4211b8a)
+        ;
+
+        
+    
+    
+            var marker_b35b53d24cd989ba337d581221b9faf1 = L.marker(
+                [52.161096, 1.2923286],
+                {}
+            ).addTo(map_f71684284e22cb2089ba702041ec85c1);
+        
+    
+            var icon_61caa430003925ac202ebc5a98895bc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b35b53d24cd989ba337d581221b9faf1.setIcon(icon_61caa430003925ac202ebc5a98895bc8);
+        
+    
+        var popup_a2e5a4c86e0fa579e599fbc24ed14e7c = L.popup({});
+
+        
+            
+                var html_4b5c79ab9fdf1078bfea21afac4745e5 = $(`<div id="html_4b5c79ab9fdf1078bfea21afac4745e5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Charsfield</h1><div class="nugget-popup"><p>Charsfield was severely impacted when intense rainfall from Storm Babet overwhelmed natural flow routes, watercourses and drainage infrastructure; converging overland flow paths led to internal flooding of properties and disruption to infrastructure and services. (p4)</p></div><div class="nugget-popup"><p>Major flooding on 20 October 2023 from both fluvial (ordinary watercourse / river) and pluvial (surface water run&ndash;off) sources that produced flow paths through the community and caused internal flooding to residential and commercial properties. [IMG] (p8)</p></div><div class="nugget-popup"><p>Major flooding on 20 October 2023 from both fluvial (Potsford Brook overtopping its banks) and pluvial (surface water runoff) sources. Floodwater entered properties on multiple streets: Church Road and The Street flooding included a fluvial element from Potsford Brook; Monewden Road, Chapel Lane and St Peters Close were mainly affected by surface water runoff. [IMG,PAG] (p9)</p></div><div class="nugget-popup"><p>Flooding occurred across five investigation zones within the village (Monewden Road; St. Peters Close; Church Road and Hall Road; The Street; Wickham Market Road), affecting roads and the village centre and prompting an investigation of transport and residential nodes. [IMG] (p10)</p></div><div class="nugget-popup"><p>Multiple roads, pavements and properties in the village were flooded; blocked or overflowing highway drains were reported and two clusters of property flooding were recorded (around the junction of Chapel Lane & The Street, and on St Peters Close). Several streets (Chapel Lane, St Peters Close, Church Road, Hall Road and The Street) are identified as at&ndash;risk and were affected during the October 2023 storm. [IMG,MUL] (p11)</p></div><div class="nugget-popup"><p>Parts of the village experienced both surface&ndash;water (pluvial) and fluvial flooding during Storm Babet (October 2023). Properties surrounding the junction of Chapel Lane and The Street, and properties on St Peters Close, were reported flooded on 9 May 2023. Flooded road/pavement was also reported on three occasions in 2022 (April, August and November). The village's valley topography concentrates overland flows into the settlement, contributing to these impacts. [PAG,IMG,MUL] (p12)</p></div><div class="nugget-popup"><p>Low&ndash;lying parts of the village experienced converging overland pluvial flow and fluvial flooding. The valley setting retained excess runoff which slowly discharged to Potsford Brook, leading to inundation of streets and overwhelmed drainage/watercourse capacity. Church Road, The Street and Wickham Market Road were identified as being at risk and were among the worst affected during the event. [PAG,IMG] (p13)</p></div><div class="nugget-popup"><p>Charsfield sits in the Potsford Brook valley where surface water from the wider catchment drains; during Storm Babet this led to increased surface water runoff into the valley and contributed to flooding of low&ndash;lying areas and roads. [PAG,IMG] (p14)</p></div><div class="nugget-popup"><p>Localised surface water and flash flooding on the village's lowest&ndash;lying roads. The Street and Wickham Market Road were identified as some of the worst&ndash;affected locations; high runoff from low&ndash;permeability soils and existing flow&ndash;paths, together with saturated ground, increased inundation during the event. [PAG,IMG] (p15)</p></div><div class="nugget-popup"><p>Intense rainfall and saturated ground produced large surface&ndash;water runoff from adjacent fields and flow down Davey Lane onto Monewden Road, overwhelming limited highway drainage. Properties with downward&ndash;sloping drives were internally flooded before midday; floodwater had receded by early evening. [PAG] (p16)</p></div><div class="nugget-popup"><p>Localized surface water flooding across the village driven by intense, localised rainfall and overland run&ndash;off from higher ground to the north and northeast funnelled through ditches and across roads (notably Chapel Lane and St Peters Close). Some residential streets experienced internal flooding; flow paths were consistent with predicted Medium&ndash;High surface water flood risk in the area. [IMG,MUL] (p18)</p></div><div class="nugget-popup"><p>High rainfall produced large amounts of surface water run&ndash;off from fields north of Chapel Lane and St Peters Close. Field ditches and a piped watercourse were overwhelmed, allowing water to follow predicted downhill flowpaths and impact properties from the front (Chapel Lane) and rear (St Peters Close) and to overwhelm highway drainage on The Street. [PAG,IMG,MUL] (p19)</p></div><div class="nugget-popup"><p>Large areas of the village experienced internal and highway flooding due to a combination of Potsford Brook overtopping and large volumes of surface water run&ndash;off from surrounding fields. Roadside drainage was overwhelmed and low points (notably The Street) accumulated floodwater. [PAG] (p20)</p></div><div class="nugget-popup"><p>The Street (one of the lowest points in Charsfield) acted as the central basin where floodwater accumulated. Roadside highway drainage assets were completely overwhelmed and outfalls submerged, leading to accumulation of floodwater in low&ndash;lying parts of the village. [PAG] (p21)</p></div><div class="nugget-popup"><p>The village experienced combined fluvial and pluvial flooding: early accumulation at St Peters Close and widespread inundation along The Street, internal flooding of homes and businesses, and properties surrounded by floodwater where surface runoff and brook overtopping converged. [PAG,IMG] (p23)</p></div><div class="nugget-popup"><p>Potsford Brook was overwhelmed by runoff from fields west of the village and came out of bank at Church Road. Floodwater flowed down The Street (across the full width of the road), surface water from St Peters Close and Chapel Lane added to accumulations, drainage assets on the highway were overwhelmed, properties and rear gardens were overtopped and a number of houses were surrounded by floodwater. (p24)</p></div><div class="nugget-popup"><p>Pluvial (surface water) flows from fields south of the B1078, Park Lane and The Street converged on the B1078 (Wickham Market Road). Potsford Brook backed up and overtopped at the B1078 road bridge (possibly worsened by silt/debris), and fluvial flows merged with large volumes of water across the highway. Highway drainage assets were overwhelmed and floodwater flowed along the road, impacting properties by flooding their frontages from the road. [IMG] (p25)</p></div><div class="nugget-popup"><p>The village experienced flooding driven by flows in local watercourses and contributions from surface water/pluvial and overland flows. This led to community actions (Charsfield Flood Group), investigations into in&ndash;channel maintenance, and clearance of debris affecting the B1078 road bridge upstream end. [TAB,PAG] (p33)</p></div><div class="nugget-popup"><p>Charsfield experienced flooding driven by the main river and by surface&ndash;water/pluvial/overland flows; this prompted an Environment Agency site visit to assess maintenance of the main river, a funding bid for intermittent maintenance, and plans for hydraulic modelling and exploration of additional monitoring upstream and community&ndash;installed instrumentation. [PAG] (p34)</p></div><div class="nugget-popup"><p>The village experienced fluvial and surface&ndash;water flooding during the event. Road and highway drainage in multiple locations were overwhelmed/affected, contributing to overland flow through the village and prompting recommended actions for maintenance, upstream attenuation and improved modelling. [TAB,PAG] (p36)</p></div><div class="nugget-popup"><p>The village experienced surface water (pluvial) and local fluvial flooding and overland flow paths (north, south and west of the village) during the event, leading to highway flooding, blocked bridges/structures and recommendations for natural flood management, watercourse restoration and improvements to highway drainage. (p37)</p></div><div class="nugget-popup"><p>The village experienced fluvial and pluvial flooding during the event, prompting recommendations to update hydraulic modelling, investigate an upstream community river gauge, and consider upstream attenuation, storage ponds, wetlands and drainage improvements to improve village flood resilience. (p38)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 20 properties (p4)</p></div><div class="nugget-popup quant"><p>over twenty properties [IMG] (p8)</p></div><div class="nugget-popup quant"><p>over 20 properties reporting internal flooding [IMG,PAG] (p9)</p></div><div class="nugget-popup quant"><p>4 properties flooded on 9 May 2023; flooded roads/pavements reported on three occasions in 2022 [IMG,MUL] (p11)</p></div><div class="nugget-popup quant"><p>4 properties; 3 occasions [PAG,IMG,MUL] (p12)</p></div><div class="nugget-popup quant"><p>internal depths between 15 &ndash; 50 cm (reported on The Street) [PAG,IMG] (p23)</p></div></div></body></div>`)[0];
+                popup_a2e5a4c86e0fa579e599fbc24ed14e7c.setContent(html_4b5c79ab9fdf1078bfea21afac4745e5);
+            
+        
+
+        marker_b35b53d24cd989ba337d581221b9faf1.bindPopup(popup_a2e5a4c86e0fa579e599fbc24ed14e7c)
+        ;
+
+        
+    
+</script>
+</html>
