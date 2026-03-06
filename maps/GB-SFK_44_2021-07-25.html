@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b659af7bd8ae69cecb8f958f2980d9b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9b659af7bd8ae69cecb8f958f2980d9b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9b659af7bd8ae69cecb8f958f2980d9b = L.map(
+                "map_9b659af7bd8ae69cecb8f958f2980d9b",
+                {
+                    center: [52.08323245454545, 0.43625404545454544],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_39ded322a6131b10a2ab1c6be8a23a00 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_39ded322a6131b10a2ab1c6be8a23a00.addTo(map_9b659af7bd8ae69cecb8f958f2980d9b);
+    
+            var marker_97c78bfec809f229c227b57c9a7293f9 = L.marker(
+                [52.0808395, 0.4436727],
+                {}
+            ).addTo(map_9b659af7bd8ae69cecb8f958f2980d9b);
+        
+    
+            var icon_fbab45ddbe803d11d2fe755f0ff469fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_97c78bfec809f229c227b57c9a7293f9.setIcon(icon_fbab45ddbe803d11d2fe755f0ff469fc);
+        
+    
+        var popup_f3228fb231a1698d4542bd299675e5dc = L.popup({});
+
+        
+            
+                var html_89cd8ccae50a98ac8019a4e711939a9c = $(`<div id="html_89cd8ccae50a98ac8019a4e711939a9c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Stour Brook</h1><div class="nugget-popup"><p>Received overland surface water flows from the road and properties as flows travelled down the side of a property in a northerly direction towards the embankment and Stour Brook beyond. (p5)</p></div><div class="nugget-popup"><p>Fluvial flooding from Stour Brook led to accumulations of floodwater in the recreation ground to the west that flowed through rear gardens, adding to flood volumes impacting nearby properties and contributing flows toward Sturmer Road. (p8)</p></div><div class="nugget-popup"><p>Fluvial flooding from Stour Brook contributed floodwater that accumulated in the adjacent recreation ground and then travelled through rear gardens, increasing the flood volumes affecting properties. [IMG,PAG] (p9)</p></div><div class="nugget-popup"><p>Stour Brook, culverted under an embankment at Motts Field, produced excess flows that combined with surface water overland flows and travelled eastwards through rear gardens. [TAB,PAG] (p10)</p></div></div></body></div>`)[0];
+                popup_f3228fb231a1698d4542bd299675e5dc.setContent(html_89cd8ccae50a98ac8019a4e711939a9c);
+            
+        
+
+        marker_97c78bfec809f229c227b57c9a7293f9.bindPopup(popup_f3228fb231a1698d4542bd299675e5dc)
+        ;
+
+        
+    
+    
+            var marker_7e68f55304a61decefd7f64d8ca2801e = L.marker(
+                [52.0738707, 0.4566761],
+                {}
+            ).addTo(map_9b659af7bd8ae69cecb8f958f2980d9b);
+        
+    
+            var icon_ddbd0e610a8f1257c6bdb92a177ece37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7e68f55304a61decefd7f64d8ca2801e.setIcon(icon_ddbd0e610a8f1257c6bdb92a177ece37);
+        
+    
+        var popup_23ebfa17dfeb30af5215856332f0f90e = L.popup({});
+
+        
+            
+                var html_2a46eda5956591a8095ec7ba8ee202ed = $(`<div id="html_2a46eda5956591a8095ec7ba8ee202ed" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sturmer Road, Haverhill</h1><div class="nugget-popup"><p>Map and analysis show flood extents and the highest flood risk concentrated along the river and its immediate floodplain; Sturmer Road is shown within or immediately adjacent to those flood risk zones, indicating it was vulnerable to river flooding and likely at risk of inundation and impacts to adjacent buildings/transport access. [IMG] (p1)</p></div><div class="nugget-popup"><p>Surface water accumulated in the low spot on/adjacent to Sturmer Road in front of the affected properties after highway drainage was overwhelmed; the inundation contributed to water entering properties and increased flow velocities when disturbed by passing vehicles. [PAG] (p4)</p></div><div class="nugget-popup"><p>Surface water (pluvial) flows follow main flow paths that cross Sturmer Road into the urban area; these flows (dark blue areas) can exceed 0.25 m/s. Rear gardens behind properties were inundated by fluvial floodwater, which may have reduced local storage capacity and contributed to internal flooding experienced within properties (internal flooding occurred but was not directly attributable to fluvial flooding). [IMG] (p6)</p></div><div class="nugget-popup"><p>Large volumes of surface water accumulated in the highway on Sturmer Road as drainage/gullies were overwhelmed; these highway flows contributed to inundation of nearby low&ndash;lying properties. (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Surface water depths on the highway approximately 400&ndash;500mm in places; internal flooding in properties reached 15&ndash;20mm. [PAG] (p4)</p></div><div class="nugget-popup quant"><p>Medium to High pluvial risk: 1 - 3.3% annual chance; properties located in Flood Zone 1 (<0.1% annual chance) while adjacent playing field/rear gardens lie largely in Flood Zone 2 (between 1% and 0.1% annual chance); flow velocities shown >0.25 m/s in darker blue areas. [IMG] (p6)</p></div></div></body></div>`)[0];
+                popup_23ebfa17dfeb30af5215856332f0f90e.setContent(html_2a46eda5956591a8095ec7ba8ee202ed);
+            
+        
+
+        marker_7e68f55304a61decefd7f64d8ca2801e.bindPopup(popup_23ebfa17dfeb30af5215856332f0f90e)
+        ;
+
+        
+    
+    
+            var marker_0d99492dcd971e665b03b4a544478860 = L.marker(
+                [52.0931113, 0.4516026],
+                {}
+            ).addTo(map_9b659af7bd8ae69cecb8f958f2980d9b);
+        
+    
+            var icon_35e19575f6c3be90f15ed53760c84749 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0d99492dcd971e665b03b4a544478860.setIcon(icon_35e19575f6c3be90f15ed53760c84749);
+        
+    
+        var popup_2d7888c435a85f6c6dccc42d0ba7e07d = L.popup({});
+
+        
+            
+                var html_fe3fcad3d3430d3f0f5b8f9fc5c7a2c9 = $(`<div id="html_fe3fcad3d3430d3f0f5b8f9fc5c7a2c9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Falconer Road, Haverhill</h1><div class="nugget-popup"><p>Excess runoff from the industrial estate flowed down Falconer Road once highway drainage was overwhelmed, acting as a conveyance path for surface water toward the low&ndash;lying properties north of Sturmer Road. (p3)</p></div><div class="nugget-popup"><p>Surface water runoff from a nearby industrial estate travelled down Falconer Road once highway drainage was overwhelmed, inundating the carriageway and contributing to flooding of the low spot immediately in front of properties north of Sturmer Road; vehicle movements through the flood increased depths and velocities, creating wash that further affected adjacent properties. [PAG] (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Road surface water depths approximately 400&ndash;500mm in places; contributed to at least three properties being internally flooded (see properties) with internal depths of 15&ndash;20mm. [PAG] (p4)</p></div></div></body></div>`)[0];
+                popup_2d7888c435a85f6c6dccc42d0ba7e07d.setContent(html_fe3fcad3d3430d3f0f5b8f9fc5c7a2c9);
+            
+        
+
+        marker_0d99492dcd971e665b03b4a544478860.bindPopup(popup_2d7888c435a85f6c6dccc42d0ba7e07d)
+        ;
+
+        
+    
+    
+            var marker_4c902f1a0f63d08e87423dd1a0ff523e = L.marker(
+                [52.0821419, 0.426756],
+                {}
+            ).addTo(map_9b659af7bd8ae69cecb8f958f2980d9b);
+        
+    
+            var icon_343ddece8c4ab5c5efde50351d09e814 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4c902f1a0f63d08e87423dd1a0ff523e.setIcon(icon_343ddece8c4ab5c5efde50351d09e814);
+        
+    
+        var popup_c0f6436e4d1a71272f8450a03ce9176d = L.popup({});
+
+        
+            
+                var html_9f3a7fba043648b7850c280b43dfddd8 = $(`<div id="html_9f3a7fba043648b7850c280b43dfddd8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hazel Close, Haverhill</h1><div class="nugget-popup"><p>Flooding was reported to Suffolk County Council following an intense localised rainfall event on 25.07.2021. The event overwhelmed drainage networks causing surface water/urban flooding in Hazel Close. (p3)</p></div></div></body></div>`)[0];
+                popup_c0f6436e4d1a71272f8450a03ce9176d.setContent(html_9f3a7fba043648b7850c280b43dfddd8);
+            
+        
+
+        marker_4c902f1a0f63d08e87423dd1a0ff523e.bindPopup(popup_c0f6436e4d1a71272f8450a03ce9176d)
+        ;
+
+        
+    
+    
+            var marker_78bbd9f58fd0760d8273a7553d8f2b3e = L.marker(
+                [52.081245, 0.4404204],
+                {}
+            ).addTo(map_9b659af7bd8ae69cecb8f958f2980d9b);
+        
+    
+            var icon_45797430b3fed09cc49a11a363f6c7da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_78bbd9f58fd0760d8273a7553d8f2b3e.setIcon(icon_45797430b3fed09cc49a11a363f6c7da);
+        
+    
+        var popup_67cdb82ef12694fb4ab84545da5064aa = L.popup({});
+
+        
+            
+                var html_30a8522f1ac8be06b37f1f3a53235bad = $(`<div id="html_30a8522f1ac8be06b37f1f3a53235bad" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Haverhill</h1><div class="nugget-popup"><p>Flooding was reported to Suffolk County Council following the intense localised rainfall on 25.07.2021. The report attributes impacts to overwhelmed drainage and surface water/urban flooding. (p3)</p></div></div></body></div>`)[0];
+                popup_67cdb82ef12694fb4ab84545da5064aa.setContent(html_30a8522f1ac8be06b37f1f3a53235bad);
+            
+        
+
+        marker_78bbd9f58fd0760d8273a7553d8f2b3e.bindPopup(popup_67cdb82ef12694fb4ab84545da5064aa)
+        ;
+
+        
+    
+    
+            var marker_f61fa611612142385d2984bef48fca34 = L.marker(
+                [52.0786896, 0.4275966],
+                {}
+            ).addTo(map_9b659af7bd8ae69cecb8f958f2980d9b);
+        
+    
+            var icon_6c2232103b5a960fa3ff36b8e94d4280 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f61fa611612142385d2984bef48fca34.setIcon(icon_6c2232103b5a960fa3ff36b8e94d4280);
+        
+    
+        var popup_0d2986b15b705a4af06830f2c3e76f2a = L.popup({});
+
+        
+            
+                var html_65da2c02cb8fdb9b217dff6d7db98bd2 = $(`<div id="html_65da2c02cb8fdb9b217dff6d7db98bd2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Harewood Terrace, Haverhill</h1><div class="nugget-popup"><p>Flooding was reported to Suffolk County Council as part of the 25.07.2021 intense localised rainfall event. The event caused surface water/urban flooding when drainage capacity was exceeded. (p3)</p></div></div></body></div>`)[0];
+                popup_0d2986b15b705a4af06830f2c3e76f2a.setContent(html_65da2c02cb8fdb9b217dff6d7db98bd2);
+            
+        
+
+        marker_f61fa611612142385d2984bef48fca34.bindPopup(popup_0d2986b15b705a4af06830f2c3e76f2a)
+        ;
+
+        
+    
+    
+            var marker_d7bf693e4681902f4ea481b8e74d21ea = L.marker(
+                [52.082787, 0.426056],
+                {}
+            ).addTo(map_9b659af7bd8ae69cecb8f958f2980d9b);
+        
+    
+            var icon_6007d27f3d0af02aae8ea02396e611bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d7bf693e4681902f4ea481b8e74d21ea.setIcon(icon_6007d27f3d0af02aae8ea02396e611bd);
+        
+    
+        var popup_babfbdd287ea23a68ca3b40950807e8b = L.popup({});
+
+        
+            
+                var html_0063cf8d78e8d70bc532cbeff1841cd9 = $(`<div id="html_0063cf8d78e8d70bc532cbeff1841cd9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Greenwood Close, Haverhill</h1><div class="nugget-popup"><p>Flooding was reported to Suffolk County Council after the 25.07.2021 intense localised rainfall. The description attributes impacts to overwhelmed highway drainage and resulting surface water/urban flooding. (p3)</p></div></div></body></div>`)[0];
+                popup_babfbdd287ea23a68ca3b40950807e8b.setContent(html_0063cf8d78e8d70bc532cbeff1841cd9);
+            
+        
+
+        marker_d7bf693e4681902f4ea481b8e74d21ea.bindPopup(popup_babfbdd287ea23a68ca3b40950807e8b)
+        ;
+
+        
+    
+    
+            var marker_9d8ca5c6389cb8f6354435ba2c33c854 = L.marker(
+                [52.0862959, 0.430529],
+                {}
+            ).addTo(map_9b659af7bd8ae69cecb8f958f2980d9b);
+        
+    
+            var icon_4053061b99de0bd7f55e74342174fb0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9d8ca5c6389cb8f6354435ba2c33c854.setIcon(icon_4053061b99de0bd7f55e74342174fb0b);
+        
+    
+        var popup_3cbc0cc9f909bbe593cc4fe8e5f53903 = L.popup({});
+
+        
+            
+                var html_1d67dab43ff6401380fb867bb85b118e = $(`<div id="html_1d67dab43ff6401380fb867bb85b118e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Elm Close, Haverhill</h1><div class="nugget-popup"><p>Flooding was reported to Suffolk County Council on 25.07.2021 linked to an intense localised rainfall event that overwhelmed drainage, producing surface water/urban flooding affecting Elm Close. (p3)</p></div></div></body></div>`)[0];
+                popup_3cbc0cc9f909bbe593cc4fe8e5f53903.setContent(html_1d67dab43ff6401380fb867bb85b118e);
+            
+        
+
+        marker_9d8ca5c6389cb8f6354435ba2c33c854.bindPopup(popup_3cbc0cc9f909bbe593cc4fe8e5f53903)
+        ;
+
+        
+    
+    
+            var marker_851ee5b1a3dea33594e06d7bb8b4c6c7 = L.marker(
+                [52.0819389, 0.4354679],
+                {}
+            ).addTo(map_9b659af7bd8ae69cecb8f958f2980d9b);
+        
+    
+            var icon_3c375f9c25fe4310a9a69f75abbe9a20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_851ee5b1a3dea33594e06d7bb8b4c6c7.setIcon(icon_3c375f9c25fe4310a9a69f75abbe9a20);
+        
+    
+        var popup_5bddf20bd6f773b65a5c1e9089c741e9 = L.popup({});
+
+        
+            
+                var html_a5a8a239b175e2ca0ebf7b38e8bbbe2e = $(`<div id="html_a5a8a239b175e2ca0ebf7b38e8bbbe2e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chauntry Road, Haverhill</h1><div class="nugget-popup"><p>Properties on Chauntry Road were reported flooded during the intense localised rainfall on 25.07.2021. The properties lie at a low point north of Sturmer Road; surface water runoff from higher ground and from the nearby industrial estate (via Falconer Road) overwhelmed highway drainage and inundated gardens/properties. An embankment between gardens and Stour Brook prevented rapid discharge to the watercourse, contributing to water pooling. (p3)</p></div></div></body></div>`)[0];
+                popup_5bddf20bd6f773b65a5c1e9089c741e9.setContent(html_a5a8a239b175e2ca0ebf7b38e8bbbe2e);
+            
+        
+
+        marker_851ee5b1a3dea33594e06d7bb8b4c6c7.bindPopup(popup_5bddf20bd6f773b65a5c1e9089c741e9)
+        ;
+
+        
+    
+    
+            var marker_c53e5b794f22b1b80c4d47164828f14c = L.marker(
+                [52.0913672, 0.424624],
+                {}
+            ).addTo(map_9b659af7bd8ae69cecb8f958f2980d9b);
+        
+    
+            var icon_b98e22514a0cbe8efd6903272e14a91f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c53e5b794f22b1b80c4d47164828f14c.setIcon(icon_b98e22514a0cbe8efd6903272e14a91f);
+        
+    
+        var popup_f756af5b8549cbbd00dffcbe0cb049e5 = L.popup({});
+
+        
+            
+                var html_3060e878ce194e3bb247c692f621d234 = $(`<div id="html_3060e878ce194e3bb247c692f621d234" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Withersfield Road, Haverhill</h1><div class="nugget-popup"><p>Withersfield Road was reported flooded during the intense localised rainfall on 25.07.2021. Surface water flows from surrounding higher ground and from the nearby industrial estate overwhelmed drainage capacity, leading to inundation of properties and surrounding low&ndash;lying areas north of Sturmer Road. The embankment adjacent to Stour Brook limited discharge to the river, resulting in runoff ponding. (p3)</p></div></div></body></div>`)[0];
+                popup_f756af5b8549cbbd00dffcbe0cb049e5.setContent(html_3060e878ce194e3bb247c692f621d234);
+            
+        
+
+        marker_c53e5b794f22b1b80c4d47164828f14c.bindPopup(popup_f756af5b8549cbbd00dffcbe0cb049e5)
+        ;
+
+        
+    
+    
+            var marker_7e4218487684d65eeabab80dd7f13b34 = L.marker(
+                [52.08327, 0.4353932],
+                {}
+            ).addTo(map_9b659af7bd8ae69cecb8f958f2980d9b);
+        
+    
+            var icon_66da8eb09153db3d706676dc9db4e8cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7e4218487684d65eeabab80dd7f13b34.setIcon(icon_66da8eb09153db3d706676dc9db4e8cd);
+        
+    
+        var popup_87d9da7942e8ae3415fd0a4990d61ae9 = L.popup({});
+
+        
+            
+                var html_1f6a26245ba947913ee1e83f14f3cadc = $(`<div id="html_1f6a26245ba947913ee1e83f14f3cadc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Haverhill</h1><div class="nugget-popup"><p>An intense localised rainfall event on 25.07.2021 overwhelmed drainage across much of the town. Flooding was reported in multiple streets and properties were inundated north of Sturmer Road (postcode CO9 4BB). Runoff from a nearby industrial estate contributed to flows along Falconer Road once highway drainage was overwhelmed; an embankment prevented Stour Brook overtopping but also impeded flows into the watercourse. (p3)</p></div><div class="nugget-popup"><p>Rear gardens and the playing field to the west were inundated. Surface water accumulated in Sturmer Road (highway) and flowed through rear gardens, adding to volumes from the Stour Brook; this reduced local overland storage capacity and contributed to internal flooding of properties (internal flooding not directly attributable to fluvial flooding). Floodwaters mixed with sewage from private septic tanks on at least one occasion, increasing contamination risk. Highway gullies were overwhelmed and potential surcharge from a surface water sewer serving the industrial estate contributed to flows. [PAG] (p7)</p></div></div></body></div>`)[0];
+                popup_87d9da7942e8ae3415fd0a4990d61ae9.setContent(html_1f6a26245ba947913ee1e83f14f3cadc);
+            
+        
+
+        marker_7e4218487684d65eeabab80dd7f13b34.bindPopup(popup_87d9da7942e8ae3415fd0a4990d61ae9)
+        ;
+
+        
+    
+</script>
+</html>
