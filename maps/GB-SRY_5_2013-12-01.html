@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5a33e45dab92385ef439482cb997b79a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5a33e45dab92385ef439482cb997b79a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5a33e45dab92385ef439482cb997b79a = L.map(
+                "map_5a33e45dab92385ef439482cb997b79a",
+                {
+                    center: [51.323886816666665, -0.6589970122849494],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2f6e1f609409e17e8c2ec7a84a2767f2 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_2f6e1f609409e17e8c2ec7a84a2767f2.addTo(map_5a33e45dab92385ef439482cb997b79a);
+    
+            var marker_56ddfec442a08c6e9769b4cee159a256 = L.marker(
+                [51.3607598, -0.6806951],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_857a558a4bce340b98e143aaaf8555aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_56ddfec442a08c6e9769b4cee159a256.setIcon(icon_857a558a4bce340b98e143aaaf8555aa);
+        
+    
+        var popup_7e6037417bdce081d513989a94a6b255 = L.popup({});
+
+        
+            
+                var html_7605b14ad154f6765c8fd80e3423fdd9 = $(`<div id="html_7605b14ad154f6765c8fd80e3423fdd9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Windle Brook</h1><div class="nugget-popup"><p>Windle Brook (the Mill Bourne / Hale Bourne) is part of the Mill Bourne catchment draining the eastern part of Surrey Heath. During winter 2013/14 the catchment became saturated after repeated storm events (notably the 23 December 2013 event), reducing its capacity to absorb further rainfall and contributing to river&ndash;level rises and flooding in the eastern parts of the borough. [MUL] (p10)</p></div><div class="nugget-popup"><p>Windle Brook (named as part of the Mill Bourne system) was part of the Main River network and main surface water flow routes through the sub area during the winter 2013/14 events, contributing to surface water and fluvial flooding that led to road closures in Lightwater. (p20)</p></div><div class="nugget-popup"><p>The Environment Agency issued Flood Alerts for Windle Brook (with Hale, Mill and Addlestone Bournes), indicating elevated river levels and flood risk in the Lightwater sub area. [TAB,MUL] (p21)</p></div></div></body></div>`)[0];
+                popup_7e6037417bdce081d513989a94a6b255.setContent(html_7605b14ad154f6765c8fd80e3423fdd9);
+            
+        
+
+        marker_56ddfec442a08c6e9769b4cee159a256.bindPopup(popup_7e6037417bdce081d513989a94a6b255)
+        ;
+
+        
+    
+    
+            var marker_c24a64a3150a1a138ea4b1f5c9f48746 = L.marker(
+                [51.3485204, -0.6311526],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_1b23f1d6970d3279456b73b5802e8c3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c24a64a3150a1a138ea4b1f5c9f48746.setIcon(icon_1b23f1d6970d3279456b73b5802e8c3c);
+        
+    
+        var popup_7bfb1fa88f75a3036798344cf229d50b = L.popup({});
+
+        
+            
+                var html_a8245ae469170cfabcdc89afd2449e48 = $(`<div id="html_a8245ae469170cfabcdc89afd2449e48" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hale Bourne</h1><div class="nugget-popup"><p>The Hale Bourne (alternative name for the Mill Bourne) formed part of the main river network through Lightwater that acted as a surface water and fluvial flow route during the winter 2013/14 floods; this contributed to flooding in the sub area and associated road closures. (p20)</p></div></div></body></div>`)[0];
+                popup_7bfb1fa88f75a3036798344cf229d50b.setContent(html_a8245ae469170cfabcdc89afd2449e48);
+            
+        
+
+        marker_c24a64a3150a1a138ea4b1f5c9f48746.bindPopup(popup_7bfb1fa88f75a3036798344cf229d50b)
+        ;
+
+        
+    
+    
+            var marker_069fd208803a7d6733423f84826bd9fc = L.marker(
+                [51.157855, -0.8068839],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_c7f5465b5446c0928910fa226258ca28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_069fd208803a7d6733423f84826bd9fc.setIcon(icon_c7f5465b5446c0928910fa226258ca28);
+        
+    
+        var popup_832df5572bc0eed3ae325791986390ee = L.popup({});
+
+        
+            
+                var html_8ee17eaebaf8d30b0501606fabee0bd1 = $(`<div id="html_8ee17eaebaf8d30b0501606fabee0bd1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Wey</h1><div class="nugget-popup"><p>After heavy rainfall the River Wey experienced peak flows that caused flooding along its course. The lower reaches (Byfleet, Old Woking and Weybridge) reached their highest levels on Boxing Day and river levels remained high thereafter, reducing catchment capacity and contributing to further flooding after subsequent rain. [PAG,MUL] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2.5m rise above normal winter levels (recorded at Guildford) [PAG,MUL] (p10)</p></div></div></body></div>`)[0];
+                popup_832df5572bc0eed3ae325791986390ee.setContent(html_8ee17eaebaf8d30b0501606fabee0bd1);
+            
+        
+
+        marker_069fd208803a7d6733423f84826bd9fc.bindPopup(popup_832df5572bc0eed3ae325791986390ee)
+        ;
+
+        
+    
+    
+            var marker_d2ce1a87ddb95d43569df0816b00b3a0 = L.marker(
+                [51.3410388, -0.8094844],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_4a22b0d64ad2da71511b5c4ceb0414bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d2ce1a87ddb95d43569df0816b00b3a0.setIcon(icon_4a22b0d64ad2da71511b5c4ceb0414bf);
+        
+    
+        var popup_f7dff3fff225999275a20bb2560a0c68 = L.popup({});
+
+        
+            
+                var html_69e20cde2cc98ee312e20644f3ce5111 = $(`<div id="html_69e20cde2cc98ee312e20644f3ce5111" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Blackwater</h1><div class="nugget-popup"><p>River levels on the Blackwater rose during the late&ndash;December/early&ndash;January period of winter 2013/14 (water levels rose again on New Year&#8217;s Day), contributing to flooding in the borough&#8217;s western catchment and reducing the catchment&#8217;s capacity to absorb further rainfall so that subsequent smaller events also caused flooding. [PAG,MUL] (p10)</p></div><div class="nugget-popup"><p>Water levels along the Blackwater River rose on New Year's day (following the intense rainfall and earlier peaks over the Christmas period), contributing to high river levels and reduced catchment capacity that increased likelihood of flooding after subsequent small rainfall events. (p11)</p></div></div></body></div>`)[0];
+                popup_f7dff3fff225999275a20bb2560a0c68.setContent(html_69e20cde2cc98ee312e20644f3ce5111);
+            
+        
+
+        marker_d2ce1a87ddb95d43569df0816b00b3a0.bindPopup(popup_f7dff3fff225999275a20bb2560a0c68)
+        ;
+
+        
+    
+    
+            var marker_1d3bc97f98bb4d80e3364e0125f22b06 = L.marker(
+                [51.3319592, -0.7536116],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_8511b853b101a0bca099aaed5a1ca49c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1d3bc97f98bb4d80e3364e0125f22b06.setIcon(icon_8511b853b101a0bca099aaed5a1ca49c);
+        
+    
+        var popup_ed0145bc065cb17b3bbd86d951be66fb = L.popup({});
+
+        
+            
+                var html_e07d403dae7edcd1a83470a2cdefeac5 = $(`<div id="html_e07d403dae7edcd1a83470a2cdefeac5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Robins Bow, Camberley</h1><div class="nugget-popup"><p>Robins Bow is specifically listed in flooding incident reports for winter 2013/14 with internal property flooding; parts are also identified on EA surface water maps as vulnerable to low surface water flood risk. (p18)</p></div></div></body></div>`)[0];
+                popup_ed0145bc065cb17b3bbd86d951be66fb.setContent(html_e07d403dae7edcd1a83470a2cdefeac5);
+            
+        
+
+        marker_1d3bc97f98bb4d80e3364e0125f22b06.bindPopup(popup_ed0145bc065cb17b3bbd86d951be66fb)
+        ;
+
+        
+    
+    
+            var marker_58273b0e52dbee5f8a0c57d4c1ba8775 = L.marker(
+                [51.3425018, -0.7290144],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_04cf43881c93247b4e5f75d5d3c9cbb6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_58273b0e52dbee5f8a0c57d4c1ba8775.setIcon(icon_04cf43881c93247b4e5f75d5d3c9cbb6);
+        
+    
+        var popup_678f8b5a2cd0ef717430f9f01f456a8f = L.popup({});
+
+        
+            
+                var html_8d2e77daff9ad63ef968c4d8b2624fe0 = $(`<div id="html_8d2e77daff9ad63ef968c4d8b2624fe0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Middleton Road, Camberley</h1><div class="nugget-popup"><p>Middleton Road is identified on EA surface water flood maps as lying in a surface water flow route with a high risk of surface water flooding and is included in the winter 2013/14 internal property flooding incident reports for Camberley. (p18)</p></div></div></body></div>`)[0];
+                popup_678f8b5a2cd0ef717430f9f01f456a8f.setContent(html_8d2e77daff9ad63ef968c4d8b2624fe0);
+            
+        
+
+        marker_58273b0e52dbee5f8a0c57d4c1ba8775.bindPopup(popup_678f8b5a2cd0ef717430f9f01f456a8f)
+        ;
+
+        
+    
+    
+            var marker_6bdb500a3e1182967af0ce6d1d77c57a = L.marker(
+                [51.3489485, -0.7129675],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_db62650961b64d75355b4cd6ae723fa2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6bdb500a3e1182967af0ce6d1d77c57a.setIcon(icon_db62650961b64d75355b4cd6ae723fa2);
+        
+    
+        var popup_883ee33ac295762eb0dc60a61a268222 = L.popup({});
+
+        
+            
+                var html_c1ad1f0fa72b5cd43501e9875f6464d4 = $(`<div id="html_c1ad1f0fa72b5cd43501e9875f6464d4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Maultway, Camberley</h1><div class="nugget-popup"><p>The Maultway is included among the locations for which flooding incident reports were recorded in Camberley during winter 2013/14, with internal property flooding reported. (p18)</p></div></div></body></div>`)[0];
+                popup_883ee33ac295762eb0dc60a61a268222.setContent(html_c1ad1f0fa72b5cd43501e9875f6464d4);
+            
+        
+
+        marker_6bdb500a3e1182967af0ce6d1d77c57a.bindPopup(popup_883ee33ac295762eb0dc60a61a268222)
+        ;
+
+        
+    
+    
+            var marker_93e75f35fa01cecc68f9ab0ba61ad897 = L.marker(
+                [51.3397285, -0.7464439],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_3c86c6bc5818958467d031b8668c4583 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_93e75f35fa01cecc68f9ab0ba61ad897.setIcon(icon_3c86c6bc5818958467d031b8668c4583);
+        
+    
+        var popup_d90e5c58ede48fcd2cf59934c4483aeb = L.popup({});
+
+        
+            
+                var html_79e330c9d22436e82ea3061f51274da2 = $(`<div id="html_79e330c9d22436e82ea3061f51274da2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>London Road, Camberley</h1><div class="nugget-popup"><p>A short section of London Road is included in the Camberley flooding incident reports for winter 2013/14; parts of London Road are identified on EA surface water flood maps as lying in a surface water flow route with a high risk of surface water flooding. (p18)</p></div></div></body></div>`)[0];
+                popup_d90e5c58ede48fcd2cf59934c4483aeb.setContent(html_79e330c9d22436e82ea3061f51274da2);
+            
+        
+
+        marker_93e75f35fa01cecc68f9ab0ba61ad897.bindPopup(popup_d90e5c58ede48fcd2cf59934c4483aeb)
+        ;
+
+        
+    
+    
+            var marker_01900c606a5300bcac1b7287928496f7 = L.marker(
+                [51.3494618, -0.6516276],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_3e37e27b255fd69eb256ed871177b09d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_01900c606a5300bcac1b7287928496f7.setIcon(icon_3e37e27b255fd69eb256ed871177b09d);
+        
+    
+        var popup_afa5263aa102e55b70811ad9aeae0862 = L.popup({});
+
+        
+            
+                var html_d8efc28ff4b1a7102b672615eb8c47ff = $(`<div id="html_d8efc28ff4b1a7102b672615eb8c47ff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Blackstroud Lane, Lightwater</h1><div class="nugget-popup"><p>Temporarily closed by Surrey County Council during the winter 2013/14 flooding. (p21)</p></div></div></body></div>`)[0];
+                popup_afa5263aa102e55b70811ad9aeae0862.setContent(html_d8efc28ff4b1a7102b672615eb8c47ff);
+            
+        
+
+        marker_01900c606a5300bcac1b7287928496f7.bindPopup(popup_afa5263aa102e55b70811ad9aeae0862)
+        ;
+
+        
+    
+    
+            var marker_fefbf7b4f13a1a4be1810ddba8eeeab6 = L.marker(
+                [51.3505069, -0.6482364],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_24ad515d8bc5c7c73f242ac882fadc7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fefbf7b4f13a1a4be1810ddba8eeeab6.setIcon(icon_24ad515d8bc5c7c73f242ac882fadc7d);
+        
+    
+        var popup_841c9753757277b5e693d2e044c4d495 = L.popup({});
+
+        
+            
+                var html_9acd165237e4d72fb207dbe7e0bf72d7 = $(`<div id="html_9acd165237e4d72fb207dbe7e0bf72d7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burnt Pollard Lane, Lightwater</h1><div class="nugget-popup"><p>Temporarily closed by Surrey County Council during the winter 2013/14 flooding. (p21)</p></div></div></body></div>`)[0];
+                popup_841c9753757277b5e693d2e044c4d495.setContent(html_9acd165237e4d72fb207dbe7e0bf72d7);
+            
+        
+
+        marker_fefbf7b4f13a1a4be1810ddba8eeeab6.bindPopup(popup_841c9753757277b5e693d2e044c4d495)
+        ;
+
+        
+    
+    
+            var marker_830a95b6a810bd542a945f57854a41ce = L.marker(
+                [51.3512324, -0.6695771],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_65f2b77265c51663fbcbd1a277a7a685 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_830a95b6a810bd542a945f57854a41ce.setIcon(icon_65f2b77265c51663fbcbd1a277a7a685);
+        
+    
+        var popup_7ee763c49bba431ebbe929f960d74b39 = L.popup({});
+
+        
+            
+                var html_a65dd265af79b6cd32511f3c4ff171cb = $(`<div id="html_a65dd265af79b6cd32511f3c4ff171cb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Grasmere Road, Lightwater</h1><div class="nugget-popup"><p>Temporarily closed by Surrey County Council during the winter 2013/14 flooding. (p21)</p></div></div></body></div>`)[0];
+                popup_7ee763c49bba431ebbe929f960d74b39.setContent(html_a65dd265af79b6cd32511f3c4ff171cb);
+            
+        
+
+        marker_830a95b6a810bd542a945f57854a41ce.bindPopup(popup_7ee763c49bba431ebbe929f960d74b39)
+        ;
+
+        
+    
+    
+            var marker_10189ab051eaea1dc64e2913d60977c4 = L.marker(
+                [51.335889, -0.6916534],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_6b5423c94858928fc2976ea43228512d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_10189ab051eaea1dc64e2913d60977c4.setIcon(icon_6b5423c94858928fc2976ea43228512d);
+        
+    
+        var popup_6855a7d449bf0b50b53b5bc270d8a82c = L.popup({});
+
+        
+            
+                var html_cec52b5db935c099d7904b6075a59bca = $(`<div id="html_cec52b5db935c099d7904b6075a59bca" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Surrey Heath</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses across the area and road closures associated with the winter 2013/14 flood incidents. [TAB] (p2)</p></div><div class="nugget-popup"><p>Surrey Heath experienced flooding during the winter 2013/14 event, with internal property flooding incidents and multiple investigation sites recorded. [IMG] (p8)</p></div><div class="nugget-popup"><p>River levels (notably the River Wey and the Blackwater) remained high through the Christmas period and New Year's Day 2014; cumulative rainfall left catchments saturated so that flooding occurred in the borough after relatively small subsequent rainfall events. [MUL] (p12)</p></div><div class="nugget-popup"><p>The district was particularly affected by the winter 2013/14 flooding; the investigation focuses on impacts and response in Surrey Heath. (p14)</p></div><div class="nugget-popup"><p>Area experienced a flooding incident during winter 2013/14 (the subject of this report). (p16)</p></div><div class="nugget-popup"><p>Flooding incident reports in the Camberley sub&ndash;area affecting multiple streets, specifically Robins Bow, Middleton Road, the Maultway and a short section of London Road. (p17)</p></div><div class="nugget-popup"><p>Approximately six incidents of property flooding across the borough; surface water flooding affected the Camberley sub area and a combination of surface water and fluvial (river) flooding affected the Lightwater sub area. Lack of maintenance of some riparian ditches contributed to the scale of impacts. (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 10 incidents of internal property flooding; seven S19 sites [IMG] (p8)</p></div><div class="nugget-popup quant"><p>6 incidents of property flooding (p22)</p></div></div></body></div>`)[0];
+                popup_6855a7d449bf0b50b53b5bc270d8a82c.setContent(html_cec52b5db935c099d7904b6075a59bca);
+            
+        
+
+        marker_10189ab051eaea1dc64e2913d60977c4.bindPopup(popup_6855a7d449bf0b50b53b5bc270d8a82c)
+        ;
+
+        
+    
+    
+            var marker_492decbeed154c819accec6126bb6b70 = L.marker(
+                [51.2715316, -0.3414523511290909],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_60bcb3fbdb7b0e26ba831acf0de2c323 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_492decbeed154c819accec6126bb6b70.setIcon(icon_60bcb3fbdb7b0e26ba831acf0de2c323);
+        
+    
+        var popup_d40fc739267bc5a5803c604b980ad332 = L.popup({});
+
+        
+            
+                var html_96141b2b9e61ce5737d2fec6fd3eb378 = $(`<div id="html_96141b2b9e61ce5737d2fec6fd3eb378" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Surrey</h1><div class="nugget-popup"><p>Widespread flooding across the county in winter 2013/14 included impacts within the Surrey Heath Borough area: seven sites across two sub&ndash;areas flooded, resulting in internal property flooding incidents. [PAG] (p7)</p></div><div class="nugget-popup"><p>Widespread flooding occurred across the county in winter 2013/14 from multiple sources including groundwater and surface&ndash;water runoff; prolonged rain on saturated ground led to widespread inundation and disruption. [TAB,PAG] (p9)</p></div><div class="nugget-popup"><p>Widespread flooding across Surrey resulted from a sequence of Atlantic storm events and prolonged rain on saturated ground. Peak flows from the 23 December storm caused River Wey flooding; lower reaches (Byfleet, Old Woking, Weybridge) reached their highest levels on Boxing Day. River levels in Guildford rose about 2.5m above normal winter levels. River levels rose again on New Year's Day and the saturated catchments led to flooding after subsequent smaller rainfall events. [PAG,MUL] (p10)</p></div><div class="nugget-popup"><p>Widespread flooding occurred across the county during winter 2013/14; strategic response and asset operation were carried out by the Environment Agency and other RMAs. [PAG] (p14)</p></div><div class="nugget-popup"><p>The county experienced flooding during Winter 2013/14 (Section 19 reports were produced for flooding across the county); roads, properties and drainage systems were affected, prompting inspections, repairs and clearance works. [PAG] (p15)</p></div><div class="nugget-popup"><p>Experienced raised river levels (including the River Thames and its tributaries) during prolonged heavy rainfall in autumn and winter 2013/14. (p21)</p></div><div class="nugget-popup"><p>Exceptional and unprecedented rainfall over Dec&ndash;Feb 2013/14 caused widespread flooding across Surrey; many districts and boroughs within the county were impacted to a greater extent than Surrey Heath. [PAG] (p22)</p></div><div class="nugget-popup"><p>Surrey experienced widespread historic flooding during the winter 2013/14 event. The report records that lack of maintenance of some riparian&ndash;owned ditches and watercourses contributed to the impact of the winter 2013/14 floods and that data from that event was used to identify areas most at risk and to prioritise drainage maintenance and flood defence bids. [PAG] (p23)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>7 sites; 10 incidents of internal property flooding [PAG] (p7)</p></div><div class="nugget-popup quant"><p>2.5m above normal winter levels in Guildford [PAG,MUL] (p10)</p></div><div class="nugget-popup quant"><p>860 blockages and storm damage incidents cleared; 1087 pollution incidents reported; 125 Flood Ambassadors visits involved; 70 flood data recorders deployed to more than 100 locations. [PAG] (p14)</p></div></div></body></div>`)[0];
+                popup_d40fc739267bc5a5803c604b980ad332.setContent(html_96141b2b9e61ce5737d2fec6fd3eb378);
+            
+        
+
+        marker_492decbeed154c819accec6126bb6b70.bindPopup(popup_d40fc739267bc5a5803c604b980ad332)
+        ;
+
+        
+    
+    
+            var marker_3ee1d35977fb3c73367a4742993c43d9 = L.marker(
+                [51.3392845, -0.7460981],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_af894a76b6f9abd117e3e8faedb5c324 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3ee1d35977fb3c73367a4742993c43d9.setIcon(icon_af894a76b6f9abd117e3e8faedb5c324);
+        
+    
+        var popup_0c526ce56765b9d675639e69d955ec2e = L.popup({});
+
+        
+            
+                var html_5fbc605602a59e8499e1da61cf018eb6 = $(`<div id="html_5fbc605602a59e8499e1da61cf018eb6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Camberley</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses; road closures reported in the area. [TAB] (p2)</p></div><div class="nugget-popup"><p>Camberley is identified as one of the two sub&ndash;areas within Surrey Heath where investigation sites flooded and were addressed in the report following the winter 2013/14 floods. [IMG] (p8)</p></div><div class="nugget-popup"><p>The Camberley sub area experienced a number of instances of internal property flooding during the winter 2013/14 event. (p18)</p></div><div class="nugget-popup"><p>Surface water flooding occurred in the Camberley sub area during winter 2013/14, contributing to the property flooding incidents recorded in the borough. (p22)</p></div></div></body></div>`)[0];
+                popup_0c526ce56765b9d675639e69d955ec2e.setContent(html_5fbc605602a59e8499e1da61cf018eb6);
+            
+        
+
+        marker_3ee1d35977fb3c73367a4742993c43d9.bindPopup(popup_0c526ce56765b9d675639e69d955ec2e)
+        ;
+
+        
+    
+    
+            var marker_23d30df1b9ac12f8738e600d1236ec71 = L.marker(
+                [51.349476, -0.6701098],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_b16a77810ef0451433e3b6543e6675cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_23d30df1b9ac12f8738e600d1236ec71.setIcon(icon_b16a77810ef0451433e3b6543e6675cb);
+        
+    
+        var popup_36a8fec9d94673740c1b5171529fef17 = L.popup({});
+
+        
+            
+                var html_745d55e75e365735f794cc6ba564853c = $(`<div id="html_745d55e75e365735f794cc6ba564853c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lightwater</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses; road closures reported in the area. [TAB] (p2)</p></div><div class="nugget-popup"><p>Lightwater is identified as the other sub&ndash;area within Surrey Heath where investigation sites flooded and were addressed in the report following the winter 2013/14 floods. [IMG] (p8)</p></div><div class="nugget-popup"><p>During winter 2013/14 flooding in the Lightwater sub area caused a number of road closures. The area was within EA Flood Alert/Flood Warning areas and the EA issued Flood Alerts for the sub area during the incident (no EA Flood Warnings were issued within the sub area). [PAG] (p20)</p></div></div></body></div>`)[0];
+                popup_36a8fec9d94673740c1b5171529fef17.setContent(html_745d55e75e365735f794cc6ba564853c);
+            
+        
+
+        marker_23d30df1b9ac12f8738e600d1236ec71.bindPopup(popup_36a8fec9d94673740c1b5171529fef17)
+        ;
+
+        
+    
+    
+            var marker_3e398b6801b519a4d37213209c6282c9 = L.marker(
+                [51.235607, -0.5732063],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_b2fc60d3dfd7a7c964e23c8888b248a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3e398b6801b519a4d37213209c6282c9.setIcon(icon_b2fc60d3dfd7a7c964e23c8888b248a6);
+        
+    
+        var popup_ce13e7d383f315d2c0f22a933dae50ff = L.popup({});
+
+        
+            
+                var html_8963c583a0e8132616585e505229dcf3 = $(`<div id="html_8963c583a0e8132616585e505229dcf3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Guildford</h1><div class="nugget-popup"><p>Peak flows in the River Wey caused flooding in Guildford; river levels rose substantially, inundating riverside areas and reaching about 2.5 m above normal winter levels. [IMG,MUL] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2.5m rise above normal winter levels [IMG,MUL] (p10)</p></div></div></body></div>`)[0];
+                popup_ce13e7d383f315d2c0f22a933dae50ff.setContent(html_8963c583a0e8132616585e505229dcf3);
+            
+        
+
+        marker_3e398b6801b519a4d37213209c6282c9.bindPopup(popup_ce13e7d383f315d2c0f22a933dae50ff)
+        ;
+
+        
+    
+    
+            var marker_5dc694013b1c4d26164b16984eb8be05 = L.marker(
+                [51.3727175, -0.4549297],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_4390519ad6d40b7ca58bb01fdd5daa35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5dc694013b1c4d26164b16984eb8be05.setIcon(icon_4390519ad6d40b7ca58bb01fdd5daa35);
+        
+    
+        var popup_9be6192f39db8dd9ecc33afdf0f5a416 = L.popup({});
+
+        
+            
+                var html_7de46d2a9783a45b94f844d8559535dd = $(`<div id="html_7de46d2a9783a45b94f844d8559535dd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Weybridge</h1><div class="nugget-popup"><p>The lower reaches of the River Wey reached their highest levels on Boxing Day, causing flooding in Weybridge and surrounding riverside areas. [MUL] (p10)</p></div></div></body></div>`)[0];
+                popup_9be6192f39db8dd9ecc33afdf0f5a416.setContent(html_7de46d2a9783a45b94f844d8559535dd);
+            
+        
+
+        marker_5dc694013b1c4d26164b16984eb8be05.bindPopup(popup_9be6192f39db8dd9ecc33afdf0f5a416)
+        ;
+
+        
+    
+    
+            var marker_a6fa7b9fb5de2b4f1b56b7ea02b8020d = L.marker(
+                [51.302944, -0.54480207],
+                {}
+            ).addTo(map_5a33e45dab92385ef439482cb997b79a);
+        
+    
+            var icon_2e2b646f327af15c73ba403abbb9057b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a6fa7b9fb5de2b4f1b56b7ea02b8020d.setIcon(icon_2e2b646f327af15c73ba403abbb9057b);
+        
+    
+        var popup_07211e306bb9cbbf022394bbefa8e909 = L.popup({});
+
+        
+            
+                var html_b72c8036183ee4d34987a7281a641cd0 = $(`<div id="html_b72c8036183ee4d34987a7281a641cd0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Old Woking</h1><div class="nugget-popup"><p>Peak flows in the River Wey reached their highest on Boxing Day, causing river flooding on the River Wey's lower reaches including Old Woking. [IMG,MUL] (p10)</p></div></div></body></div>`)[0];
+                popup_07211e306bb9cbbf022394bbefa8e909.setContent(html_b72c8036183ee4d34987a7281a641cd0);
+            
+        
+
+        marker_a6fa7b9fb5de2b4f1b56b7ea02b8020d.bindPopup(popup_07211e306bb9cbbf022394bbefa8e909)
+        ;
+
+        
+    
+</script>
+</html>
