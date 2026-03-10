@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e1a46849dc176236f8fef05f95a20497 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e1a46849dc176236f8fef05f95a20497" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e1a46849dc176236f8fef05f95a20497 = L.map(
+                "map_e1a46849dc176236f8fef05f95a20497",
+                {
+                    center: [51.34295675193422, -0.45620150792646214],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_75713240266bbb31bff22d3bdcda670d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_75713240266bbb31bff22d3bdcda670d.addTo(map_e1a46849dc176236f8fef05f95a20497);
+    
+            var marker_617c8c4287ccb0b857686470af642f2a = L.marker(
+                [51.5575525, -0.781404],
+                {}
+            ).addTo(map_e1a46849dc176236f8fef05f95a20497);
+        
+    
+            var icon_a0aa336f177c5cca1b17eb60eefb49ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_617c8c4287ccb0b857686470af642f2a.setIcon(icon_a0aa336f177c5cca1b17eb60eefb49ed);
+        
+    
+        var popup_ebeedeb7836381611d8424b0f6ac51c3 = L.popup({});
+
+        
+            
+                var html_2befe2adb1777dc2eab9ffd144fc5140 = $(`<div id="html_2befe2adb1777dc2eab9ffd144fc5140" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Thames</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses and road closures reported in Cobham during the winter 2013/14 event. [TAB] (p2)</p></div><div class="nugget-popup"><p>Identified as a main river source for the fluvial flooding in winter 2013/14 that contributed to internal property flooding across Elmbridge. (p7)</p></div><div class="nugget-popup"><p>River Thames levels rose in the February 2014 event to the highest recorded since 1947, causing back&ndash;up into the River Wey and contributing to flooding that affected properties in the Weybridge/Walton sub area. (p24)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 100 incidents of internal property flooding in Elmbridge (p7)</p></div><div class="nugget-popup quant"><p>33 properties (affected by flooding from either river or a combination) (p24)</p></div></div></body></div>`)[0];
+                popup_ebeedeb7836381611d8424b0f6ac51c3.setContent(html_2befe2adb1777dc2eab9ffd144fc5140);
+            
+        
+
+        marker_617c8c4287ccb0b857686470af642f2a.bindPopup(popup_ebeedeb7836381611d8424b0f6ac51c3)
+        ;
+
+        
+    
+    
+            var marker_6b9271857f28c332e931d568fba63c4e = L.marker(
+                [51.2398086, -0.3019955],
+                {}
+            ).addTo(map_e1a46849dc176236f8fef05f95a20497);
+        
+    
+            var icon_2297fba73ca4e6de4cf16655d99f580c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6b9271857f28c332e931d568fba63c4e.setIcon(icon_2297fba73ca4e6de4cf16655d99f580c);
+        
+    
+        var popup_50200c1489be2cd45757b622a1aa9712 = L.popup({});
+
+        
+            
+                var html_6583e69564987d07d05e148ca2499a5f = $(`<div id="html_6583e69564987d07d05e148ca2499a5f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Mole</h1><div class="nugget-popup"><p>Fluvial flooding from the River Mole caused inundation across floodplains in the lower Mole catchment (including Elmbridge), contributing to internal property flooding in the borough and forming one of the main flood sources considered in the investigation. [PAG,MUL] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>47 sites; approximately 100 incidents of internal property flooding in Elmbridge [PAG,MUL] (p10)</p></div></div></body></div>`)[0];
+                popup_50200c1489be2cd45757b622a1aa9712.setContent(html_6583e69564987d07d05e148ca2499a5f);
+            
+        
+
+        marker_6b9271857f28c332e931d568fba63c4e.bindPopup(popup_50200c1489be2cd45757b622a1aa9712)
+        ;
+
+        
+    
+    
+            var marker_e80501cb5e1892b8ba7e57cfb1995ff6 = L.marker(
+                [51.157855, -0.8068839],
+                {}
+            ).addTo(map_e1a46849dc176236f8fef05f95a20497);
+        
+    
+            var icon_50b93f44d32cd3433355a66c7d7e043a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e80501cb5e1892b8ba7e57cfb1995ff6.setIcon(icon_50b93f44d32cd3433355a66c7d7e043a);
+        
+    
+        var popup_e27a20da678ba6993e7ecb73a613f695 = L.popup({});
+
+        
+            
+                var html_5b6d88d69e2fd8e950c10602f4c4b71c = $(`<div id="html_5b6d88d69e2fd8e950c10602f4c4b71c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Wey</h1><div class="nugget-popup"><p>River Wey levels rose on 25 December 2013, peaked on 26 December 2013; property flooding began on the afternoon of 25 December 2013 with three properties in the vicinity of Wey Road worst affected. The February 2014 high Thames levels also backed up into the Wey and contributed to further flooding. [MUL] (p24)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties; 33 properties (combined impact attributed to either river or both) [MUL] (p24)</p></div></div></body></div>`)[0];
+                popup_e27a20da678ba6993e7ecb73a613f695.setContent(html_5b6d88d69e2fd8e950c10602f4c4b71c);
+            
+        
+
+        marker_e80501cb5e1892b8ba7e57cfb1995ff6.bindPopup(popup_e27a20da678ba6993e7ecb73a613f695)
+        ;
+
+        
+    
+    
+            var marker_74947441e7e54833adec32b1766da6bd = L.marker(
+                [51.3230239, -0.3471833],
+                {}
+            ).addTo(map_e1a46849dc176236f8fef05f95a20497);
+        
+    
+            var icon_2fd2a9a083aed7f8bce25f45c26973cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_74947441e7e54833adec32b1766da6bd.setIcon(icon_2fd2a9a083aed7f8bce25f45c26973cb);
+        
+    
+        var popup_64ee9edb5496b70e47bae11bed29ca97 = L.popup({});
+
+        
+            
+                var html_5a90bea73435b05c237c4e654b3e618d = $(`<div id="html_5a90bea73435b05c237c4e654b3e618d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Leatherhead Road, Oxshott</h1><div class="nugget-popup"><p>A culvert on Leatherhead Road (A224) was identified and added to the Flooding Asset Register (reference made in the Local Flood Risk Management Strategy following the winter 2013/14 flooding). (p16)</p></div></div></body></div>`)[0];
+                popup_64ee9edb5496b70e47bae11bed29ca97.setContent(html_5a90bea73435b05c237c4e654b3e618d);
+            
+        
+
+        marker_74947441e7e54833adec32b1766da6bd.bindPopup(popup_64ee9edb5496b70e47bae11bed29ca97)
+        ;
+
+        
+    
+    
+            var marker_79e92a486b2c9218b2264f9a0d7d2b33 = L.marker(
+                [51.3746565, -0.4659278],
+                {}
+            ).addTo(map_e1a46849dc176236f8fef05f95a20497);
+        
+    
+            var icon_4daf9dce79a937df97a88508d266fe20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_79e92a486b2c9218b2264f9a0d7d2b33.setIcon(icon_4daf9dce79a937df97a88508d266fe20);
+        
+    
+        var popup_84d5fdd73c548b5125f9f116045580f9 = L.popup({});
+
+        
+            
+                var html_961e86bee5c1a0a850cf8c3c65b18a98 = $(`<div id="html_961e86bee5c1a0a850cf8c3c65b18a98" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wey Road, Weybridge</h1><div class="nugget-popup"><p>Internal property flooding occurred in the vicinity of Wey Road beginning the afternoon of 25 December 2013 (peaking 26 December 2013); three properties were worst affected. [MUL] (p24)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties [MUL] (p24)</p></div></div></body></div>`)[0];
+                popup_84d5fdd73c548b5125f9f116045580f9.setContent(html_961e86bee5c1a0a850cf8c3c65b18a98);
+            
+        
+
+        marker_79e92a486b2c9218b2264f9a0d7d2b33.bindPopup(popup_84d5fdd73c548b5125f9f116045580f9)
+        ;
+
+        
+    
+    
+            var marker_c45b47e870ded57aa473b1f5a25d2a89 = L.marker(
+                [51.3534577, -0.3992718],
+                {}
+            ).addTo(map_e1a46849dc176236f8fef05f95a20497);
+        
+    
+            var icon_288d59415699cb4eff45c4680b228d32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c45b47e870ded57aa473b1f5a25d2a89.setIcon(icon_288d59415699cb4eff45c4680b228d32);
+        
+    
+        var popup_209b2b45ab9ba25ea5df8753fc6651c5 = L.popup({});
+
+        
+            
+                var html_3f81e313e1d6807b05c1107a655dfb34 = $(`<div id="html_3f81e313e1d6807b05c1107a655dfb34" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Elmbridge</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses across the borough; road closures reported. [TAB] (p2)</p></div><div class="nugget-popup"><p>Predominantly fluvial flooding across the borough during winter 2013/14, resulting in internal property flooding incidents. (p7)</p></div><div class="nugget-popup"><p>Sites across the borough experienced flooding during the winter 2013/14 event; internal property flooding occurred and 47 investigation sites were identified within the borough. [IMG] (p9)</p></div><div class="nugget-popup"><p>Elmbridge (within the lower River Mole catchment) experienced fluvial inundation from the River Mole across flood plains; saturated soils produced local pluvial (surface water) flooding; elevated groundwater levels across the period contributed to groundwater flooding impacts in the borough. [PAG] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 100 incidents of internal property flooding (p7)</p></div><div class="nugget-popup quant"><p>47 sites; approximately 100 incidents of internal property flooding [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_209b2b45ab9ba25ea5df8753fc6651c5.setContent(html_3f81e313e1d6807b05c1107a655dfb34);
+            
+        
+
+        marker_c45b47e870ded57aa473b1f5a25d2a89.bindPopup(popup_209b2b45ab9ba25ea5df8753fc6651c5)
+        ;
+
+        
+    
+    
+            var marker_3e8c43a55173ee226bc5a62d33ea73e3 = L.marker(
+                [51.2715316, -0.3414523511290909],
+                {}
+            ).addTo(map_e1a46849dc176236f8fef05f95a20497);
+        
+    
+            var icon_72c1cbb1cc171fb264a2d717b7ec9cd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3e8c43a55173ee226bc5a62d33ea73e3.setIcon(icon_72c1cbb1cc171fb264a2d717b7ec9cd7);
+        
+    
+        var popup_e9bd75fd306f6c157dcfe2ef0b702b94 = L.popup({});
+
+        
+            
+                var html_2a696d25d0290a1bf6b98d0dcc686494 = $(`<div id="html_2a696d25d0290a1bf6b98d0dcc686494" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Surrey</h1><div class="nugget-popup"><p>Operated the Flood Alert and Flood Warning service for the affected area; deployed flood ambassadors and flood data recorders to areas affected by flooding; carried out maintenance along the River Thames in locations including parts of Spelthorne as part of the response to the winter 2013/14 floods. [PAG] (p8)</p></div><div class="nugget-popup"><p>Widespread flooding across the county during winter 2013/14 from a range of sources; groundwater levels rose very high and caused groundwater flooding in parts of the county. [IMG,PAG] (p9)</p></div><div class="nugget-popup"><p>Widespread flooding across Surrey during winter 2013&ndash;14 from multiple sources (high groundwater, fluvial flooding and local pluvial/surface water). In the Elmbridge area this led to inundation across flood plains from the River Mole and internal property flooding reported to the council. [IMG] (p10)</p></div><div class="nugget-popup"><p>County&ndash;wide impacts from the winter 2013/14 storms and flooding: roads and carriageways were damaged and assessed for repair (Project 400), roads were cleansed and re&ndash;opened, trees and debris were cleared and ditching carried out to restore drainage, Surrey Fire and Rescue Service pumped flood waters to protect residents and infrastructure, and coordination groups were convened to manage the response. [PAG] (p16)</p></div><div class="nugget-popup"><p>Historic flooding occurred across Surrey during the winter 2013/14 event; a large amount of information on property and historic flooding was gathered as a result of the winter 2013/14 floods to help identify areas most at risk. [PAG] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>47 sites; approximately 100 incidents of internal property flooding [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_e9bd75fd306f6c157dcfe2ef0b702b94.setContent(html_2a696d25d0290a1bf6b98d0dcc686494);
+            
+        
+
+        marker_3e8c43a55173ee226bc5a62d33ea73e3.bindPopup(popup_e9bd75fd306f6c157dcfe2ef0b702b94)
+        ;
+
+        
+    
+    
+            var marker_c1fc507825bac2e25d1c7633220bcadd = L.marker(
+                [51.33001, -0.4120821],
+                {}
+            ).addTo(map_e1a46849dc176236f8fef05f95a20497);
+        
+    
+            var icon_1ae7929b11fb68424de234d1ab235263 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c1fc507825bac2e25d1c7633220bcadd.setIcon(icon_1ae7929b11fb68424de234d1ab235263);
+        
+    
+        var popup_be0af757e07c90cf2b323ed86c47c9c6 = L.popup({});
+
+        
+            
+                var html_f742f8a36b34fce1e9de375648bae708 = $(`<div id="html_f742f8a36b34fce1e9de375648bae708" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cobham</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses; road closures reported in the area. [TAB] (p2)</p></div><div class="nugget-popup"><p>Cobham was one of the three sub&ndash;areas in Elmbridge containing sites that flooded during the winter 2013/14 event. Flooding in the borough was driven by multiple sources, including elevated groundwater levels, and formed part of the wider borough&ndash;wide internal property flooding recorded in Elmbridge. [IMG] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>47 S19 sites in Elmbridge; approximately 100 incidents of internal property flooding in Elmbridge (across the three sub areas including Cobham) [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_be0af757e07c90cf2b323ed86c47c9c6.setContent(html_f742f8a36b34fce1e9de375648bae708);
+            
+        
+
+        marker_c1fc507825bac2e25d1c7633220bcadd.bindPopup(popup_be0af757e07c90cf2b323ed86c47c9c6)
+        ;
+
+        
+    
+    
+            var marker_cd04f47850022b614e61b00bf473a564 = L.marker(
+                [51.3693929, -0.3654406],
+                {}
+            ).addTo(map_e1a46849dc176236f8fef05f95a20497);
+        
+    
+            var icon_12ef16c45e938d0ddac845f4c70aa9ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cd04f47850022b614e61b00bf473a564.setIcon(icon_12ef16c45e938d0ddac845f4c70aa9ce);
+        
+    
+        var popup_42df8f5ef91814dcc84914cb1186ffb7 = L.popup({});
+
+        
+            
+                var html_2bc643963d3f5e8327c994b930416e47 = $(`<div id="html_2bc643963d3f5e8327c994b930416e47" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Esher</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses; road closures reported in the area. [TAB] (p2)</p></div><div class="nugget-popup"><p>Part of the 'Esher & East Molesey' sub&ndash;area investigated in this report; S19 investigation sites and property flooding occurred in this sub&ndash;area during winter 2013/14. [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_42df8f5ef91814dcc84914cb1186ffb7.setContent(html_2bc643963d3f5e8327c994b930416e47);
+            
+        
+
+        marker_cd04f47850022b614e61b00bf473a564.bindPopup(popup_42df8f5ef91814dcc84914cb1186ffb7)
+        ;
+
+        
+    
+    
+            var marker_5a5ae475fdc3a41577fe96a77b9661f8 = L.marker(
+                [51.3991, -0.3571356],
+                {}
+            ).addTo(map_e1a46849dc176236f8fef05f95a20497);
+        
+    
+            var icon_d9d26433df5ceb281c5428bbfeb514ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5a5ae475fdc3a41577fe96a77b9661f8.setIcon(icon_d9d26433df5ceb281c5428bbfeb514ae);
+        
+    
+        var popup_5e4e24aac90f349ea3c4d73b5bc5e5c1 = L.popup({});
+
+        
+            
+                var html_de6f01e2a32fb4980ccd87f6b5a1b587 = $(`<div id="html_de6f01e2a32fb4980ccd87f6b5a1b587" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Molesey</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses; road closures reported in the area. [TAB] (p2)</p></div><div class="nugget-popup"><p>Part of the 'Esher & East Molesey' sub&ndash;area investigated in this report; S19 investigation sites and internal property flooding occurred in this sub&ndash;area during winter 2013/14. [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_5e4e24aac90f349ea3c4d73b5bc5e5c1.setContent(html_de6f01e2a32fb4980ccd87f6b5a1b587);
+            
+        
+
+        marker_5a5ae475fdc3a41577fe96a77b9661f8.bindPopup(popup_5e4e24aac90f349ea3c4d73b5bc5e5c1)
+        ;
+
+        
+    
+    
+            var marker_1874569455c45de0cb01ecfa4d16fab5 = L.marker(
+                [51.3727175, -0.4549297],
+                {}
+            ).addTo(map_e1a46849dc176236f8fef05f95a20497);
+        
+    
+            var icon_c444e52322d13abb72b2bd3c53e87827 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1874569455c45de0cb01ecfa4d16fab5.setIcon(icon_c444e52322d13abb72b2bd3c53e87827);
+        
+    
+        var popup_5b7526346b414813694088229003ba04 = L.popup({});
+
+        
+            
+                var html_78425ec900e0fd4f4a927bc0046ec922 = $(`<div id="html_78425ec900e0fd4f4a927bc0046ec922" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Weybridge</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses; road closures reported in the area. [TAB] (p2)</p></div><div class="nugget-popup"><p>Part of the 'Weybridge & Walton&ndash;on&ndash;Thames' sub&ndash;area investigated in this report; S19 investigation sites and property flooding occurred in this sub&ndash;area during winter 2013/14. [IMG] (p9)</p></div><div class="nugget-popup"><p>During winter 2013/14 river levels rose causing road closures and internal property flooding in the sub&ndash;area. Levels in the River Wey rose on 25 December 2013, peaking on 26 December 2013. Property flooding started on the afternoon of 25 December 2013; three properties in the vicinity of Wey Road were worst affected. A later February 2014 Thames high&ndash;flow event caused backing up in the River Wey and contributed to wider property flooding in the sub&ndash;area. [MUL] (p24)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties; 33 properties [MUL] (p24)</p></div></div></body></div>`)[0];
+                popup_5b7526346b414813694088229003ba04.setContent(html_78425ec900e0fd4f4a927bc0046ec922);
+            
+        
+
+        marker_1874569455c45de0cb01ecfa4d16fab5.bindPopup(popup_5b7526346b414813694088229003ba04)
+        ;
+
+        
+    
+    
+            var marker_79854813978018fd5caedd03788f1542 = L.marker(
+                [51.385685, -0.419814],
+                {}
+            ).addTo(map_e1a46849dc176236f8fef05f95a20497);
+        
+    
+            var icon_6d4b1a89c40071d2c8ead0588576ebfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_79854813978018fd5caedd03788f1542.setIcon(icon_6d4b1a89c40071d2c8ead0588576ebfd);
+        
+    
+        var popup_4e670a3a5303d808001878004e87c326 = L.popup({});
+
+        
+            
+                var html_872a4b23fde74dc3bd86453b06102387 = $(`<div id="html_872a4b23fde74dc3bd86453b06102387" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Walton-On-Thames</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses and road closures reported in Walton&ndash;on&ndash;Thames during the winter 2013/14 event. [TAB] (p2)</p></div><div class="nugget-popup"><p>Part of the 'Weybridge & Walton&ndash;on&ndash;Thames' sub&ndash;area investigated in this report; S19 investigation sites and internal property flooding occurred in this sub&ndash;area during winter 2013/14. [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_4e670a3a5303d808001878004e87c326.setContent(html_872a4b23fde74dc3bd86453b06102387);
+            
+        
+
+        marker_79854813978018fd5caedd03788f1542.bindPopup(popup_4e670a3a5303d808001878004e87c326)
+        ;
+
+        
+    
+</script>
+</html>
