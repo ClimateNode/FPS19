@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e92f317cec668e441b16e5d77d44629c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e92f317cec668e441b16e5d77d44629c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e92f317cec668e441b16e5d77d44629c = L.map(
+                "map_e92f317cec668e441b16e5d77d44629c",
+                {
+                    center: [51.450952469565216, -0.49981236309256916],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3a72c5730b0407b5b9aff214ddb7504d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_3a72c5730b0407b5b9aff214ddb7504d.addTo(map_e92f317cec668e441b16e5d77d44629c);
+    
+            var marker_42144defce1e6d177f82ca719dbe0f80 = L.marker(
+                [51.5385835, -0.4967758],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_59156edd0471383310b5ec19c9a0484d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_42144defce1e6d177f82ca719dbe0f80.setIcon(icon_59156edd0471383310b5ec19c9a0484d);
+        
+    
+        var popup_393625a80b9c6aae74f819afc2ab05c8 = L.popup({});
+
+        
+            
+                var html_29e26098db4abd0662927ca700880ee8 = $(`<div id="html_29e26098db4abd0662927ca700880ee8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Colne Brook</h1><div class="nugget-popup"><p>Flows on the Colne Brook were managed during the event (partial closure of Moor Lane sluice gate) as part of efforts to control flood levels; the brook was referenced as a watercourse where flow control actions occurred. (p2)</p></div><div class="nugget-popup"><p>Experienced elevated flood flows that later receded; flows on the Colne Brook began to recede on the afternoon of 12 February after the Moor Lane sluice gate was 50% closed as part of flood management operations. (p10)</p></div><div class="nugget-popup"><p>Subject of a flood alert (31 January 2014) covering Iver and Colnbrook and a flood warning for Colnbrook on 31 January 2014, indicating river flooding threat from the Colne Brook in that area. [PAG] (p11)</p></div></div></body></div>`)[0];
+                popup_393625a80b9c6aae74f819afc2ab05c8.setContent(html_29e26098db4abd0662927ca700880ee8);
+            
+        
+
+        marker_42144defce1e6d177f82ca719dbe0f80.bindPopup(popup_393625a80b9c6aae74f819afc2ab05c8)
+        ;
+
+        
+    
+    
+            var marker_f5fbb4a5c840a6e70bec1f76988d7c87 = L.marker(
+                [51.4361701, -0.5248516],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_3c2b4fc4285cd2aeddcbf3225d824828 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f5fbb4a5c840a6e70bec1f76988d7c87.setIcon(icon_3c2b4fc4285cd2aeddcbf3225d824828);
+        
+    
+        var popup_7f6a9b2c5de4cda08f4e23fef26a6cb7 = L.popup({});
+
+        
+            
+                var html_4e0999aae0a19c026fbcfac1dbf12720 = $(`<div id="html_4e0999aae0a19c026fbcfac1dbf12720" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>County Ditch</h1><div class="nugget-popup"><p>Floodwater from the County Ditch fed the Aqueduct during the event, contributing to elevated flows that required increased pumping and sluice gate management on the Aqueduct. (p10)</p></div></div></body></div>`)[0];
+                popup_7f6a9b2c5de4cda08f4e23fef26a6cb7.setContent(html_4e0999aae0a19c026fbcfac1dbf12720);
+            
+        
+
+        marker_f5fbb4a5c840a6e70bec1f76988d7c87.bindPopup(popup_7f6a9b2c5de4cda08f4e23fef26a6cb7)
+        ;
+
+        
+    
+    
+            var marker_78f4d71ded6a074e973d35aabcc630de = L.marker(
+                [51.4210954, -0.4719809],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_df7f153356c36b3d73b1e7fccd740d21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_78f4d71ded6a074e973d35aabcc630de.setIcon(icon_df7f153356c36b3d73b1e7fccd740d21);
+        
+    
+        var popup_ccde18c492a32bb2e9e8776c7fe61708 = L.popup({});
+
+        
+            
+                var html_aea12019035b61cf2148a50e06294b1b = $(`<div id="html_aea12019035b61cf2148a50e06294b1b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Ash</h1><div class="nugget-popup"><p>Unprecedented winter 2013/14 rainfall caused fluvial flooding from the River Ash that affected the upstream section in the vicinity of Leacroft and Priory Green; prompted operational interventions (EA overrode sluice gate; Thames Water adjusted pumping and sluice settings) to control flows. (p2)</p></div><div class="nugget-popup"><p>Upstream section rose dramatically and overtopped its banks; high river levels persisted for a number of days and caused fluvial flooding into nearby areas, including overflow into lakes, a county ditch and the Staines Reservoir Aqueduct. [PAG] (p3)</p></div><div class="nugget-popup"><p>Flows in the River Ash were increased due to overtopping from the Staines Reservoir Aqueduct (including at the Crooked Billet side weir), contributing to flooding in nearby areas. [IMG] (p6)</p></div><div class="nugget-popup"><p>Flow into the River Ash was actively controlled by an EA&ndash;owned sluice gate during the February event. The gate was closed manually on 9 February to minimise flood flows entering the Ash (downstream levels were low so it later automatically re&ndash;opened to restore base flow). The gate was closed again on 11 February and prevented from automatically re&ndash;opening (reducing base flow), then reopened on 13 February to allow a small flow to prevent damage from a dry riverbed. Flows on the Ash began to recede on the afternoon of 12 February. [PAG,MUL] (p10)</p></div><div class="nugget-popup"><p>Flood alert and flood warning issued (10 February 2014) for the River Ash covering the Borough of Spelthorne, including Ashford and Staines (and named areas Birch Green, Knowle Green, Littleton and Shepperton). River level thresholds on the River Ash were reduced after the February 2014 event so that flood warnings will be issued at an earlier stage. [PAG] (p12)</p></div><div class="nugget-popup"><p>A sharp rise in water levels on the River Ash led to property flooding in the Birch Green area; opening of a sluice gate and water from other watercourses entering the aqueduct contributed to rising levels and spillover into the River Ash. [PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_ccde18c492a32bb2e9e8776c7fe61708.setContent(html_aea12019035b61cf2148a50e06294b1b);
+            
+        
+
+        marker_78f4d71ded6a074e973d35aabcc630de.bindPopup(popup_ccde18c492a32bb2e9e8776c7fe61708)
+        ;
+
+        
+    
+    
+            var marker_0693b43111640daefa20cf81eaf940b4 = L.marker(
+                [51.4701674, -0.5097022],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_5fbb9afda653f1779a421aaf5df4cf38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0693b43111640daefa20cf81eaf940b4.setIcon(icon_5fbb9afda653f1779a421aaf5df4cf38);
+        
+    
+        var popup_89936c9377ff2c1f75ced599e09b9a65 = L.popup({});
+
+        
+            
+                var html_11e3d955dc103b026e78484105e838c5 = $(`<div id="html_11e3d955dc103b026e78484105e838c5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wraysbury River</h1><div class="nugget-popup"><p>High levels in the River Wraysbury (together with the River Thames) were identified as a source of the February 2014 flooding. These high river levels contributed to the River Ash overtopping its banks, which led to road flooding and internal property flooding in nearby streets (Leacroft, Leacroft Close, Raleigh Court, Manor Place, Chestnut Manor Close, Priory Green) and overflow into Heron Lake, a county ditch and the Staines Reservoir Aqueduct. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Floodwater from the Wraysbury River fed the Aqueduct during the event, contributing to elevated flows that required increased pumping and sluice gate management on the Aqueduct. (p10)</p></div></div></body></div>`)[0];
+                popup_89936c9377ff2c1f75ced599e09b9a65.setContent(html_11e3d955dc103b026e78484105e838c5);
+            
+        
+
+        marker_0693b43111640daefa20cf81eaf940b4.bindPopup(popup_89936c9377ff2c1f75ced599e09b9a65)
+        ;
+
+        
+    
+    
+            var marker_b61d868368bbd8fbdeb0313e105ca768 = L.marker(
+                [51.5575525, -0.781404],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_c98e2e6bf4b04ab4d3e47931784ac23f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b61d868368bbd8fbdeb0313e105ca768.setIcon(icon_c98e2e6bf4b04ab4d3e47931784ac23f);
+        
+    
+        var popup_ada3d2f01225edcf92a65c8ec577c70a = L.popup({});
+
+        
+            
+                var html_97a6840e9eca7bf8d0f7c191995c1f9e = $(`<div id="html_97a6840e9eca7bf8d0f7c191995c1f9e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Thames</h1><div class="nugget-popup"><p>High levels in the River Thames were identified as a source of the flooding that propagated into the River Ash, Staines Reservoir Aqueduct and surrounding areas, contributing to overtopping and subsequent road and property flooding. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Very high River Thames levels prevented tributaries from discharging to it, causing those tributaries to back up and contribute to flooding in the Staines&ndash;upon&ndash;Thames area. [PAG] (p6)</p></div><div class="nugget-popup"><p>High river flows prompted EA flood notices including a flood alert (24 December 2013) and flood warnings (7 February 2014) and a severe flood warning for the reach at Staines and Egham on 9 February 2014. Thames Water closed its River Thames intake during the high flows and only reopened it after EA agreement on 17 February 2014. [MUL] (p11)</p></div><div class="nugget-popup"><p>High river levels on the Thames triggered EA flood alerts and warnings covering Staines&ndash;upon&ndash;Thames (including a 24 Dec 2013 flood alert for River Thames from Datchet to Shepperton Green, a 7 Feb 2014 flood warning for Staines and Egham and a 9 Feb 2014 severe flood warning), indicating the Thames contributed to flood risk in the Staines area. [PAG,MUL] (p12)</p></div><div class="nugget-popup"><p>The River Thames was included in updated modelling and is described as influencing flood risk to communities between Datchet and Teddington (including Spelthorne / Staines); the River Thames Scheme is intended to reduce that flood risk. (p13)</p></div></div></body></div>`)[0];
+                popup_ada3d2f01225edcf92a65c8ec577c70a.setContent(html_97a6840e9eca7bf8d0f7c191995c1f9e);
+            
+        
+
+        marker_b61d868368bbd8fbdeb0313e105ca768.bindPopup(popup_ada3d2f01225edcf92a65c8ec577c70a)
+        ;
+
+        
+    
+    
+            var marker_060aac00147e70677128db2375d84b1f = L.marker(
+                [51.6341785, -0.4172156],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_b64cda87908702cdd50f7a7d0623c4d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_060aac00147e70677128db2375d84b1f.setIcon(icon_b64cda87908702cdd50f7a7d0623c4d0);
+        
+    
+        var popup_30e53d5fcec39d6ef2851d8ca16e9f54 = L.popup({});
+
+        
+            
+                var html_6ae3924a56dc81cd39c79fb796108fa7 = $(`<div id="html_6ae3924a56dc81cd39c79fb796108fa7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Colne</h1><div class="nugget-popup"><p>The EA&ndash;operated sluice gate controlling flow from the River Colne to the River Ash was manipulated to minimise flood flows from the Colne entering the Ash: closed on 9 February and closed again on 11 February (later reopened on 13 February to restore base flow to the Ash). [PAG,MUL] (p10)</p></div></div></body></div>`)[0];
+                popup_30e53d5fcec39d6ef2851d8ca16e9f54.setContent(html_6ae3924a56dc81cd39c79fb796108fa7);
+            
+        
+
+        marker_060aac00147e70677128db2375d84b1f.bindPopup(popup_30e53d5fcec39d6ef2851d8ca16e9f54)
+        ;
+
+        
+    
+    
+            var marker_4e87b9582f158bde5f35d5bf8ceed4bc = L.marker(
+                [51.53265, -0.4843582],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_a97cafba477538123408ec4c6723a117 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4e87b9582f158bde5f35d5bf8ceed4bc.setIcon(icon_a97cafba477538123408ec4c6723a117);
+        
+    
+        var popup_045a54fe2c94665b99beec1424726048 = L.popup({});
+
+        
+            
+                var html_5fd6ad42a734892bd56a5d13d773ace0 = $(`<div id="html_5fd6ad42a734892bd56a5d13d773ace0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Frays River</h1><div class="nugget-popup"><p>The Frays River (lower River Colne system) was included in EA flood alerts/warnings (29 January 2014 alert for Lower River Colne and Frays River and a 7 February 2014 flood warning for the River Colne). These warnings identify the river as a source of flooding in the area. [MUL] (p11)</p></div></div></body></div>`)[0];
+                popup_045a54fe2c94665b99beec1424726048.setContent(html_5fd6ad42a734892bd56a5d13d773ace0);
+            
+        
+
+        marker_4e87b9582f158bde5f35d5bf8ceed4bc.bindPopup(popup_045a54fe2c94665b99beec1424726048)
+        ;
+
+        
+    
+    
+            var marker_aa9737c484827c3fe2af3184a0d2d35c = L.marker(
+                [51.4329072, -0.4977576],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_8b09985256e1a10f0215d1ae1245ce71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aa9737c484827c3fe2af3184a0d2d35c.setIcon(icon_8b09985256e1a10f0215d1ae1245ce71);
+        
+    
+        var popup_458c5bd18b1354f7c77b39319b4e219c = L.popup({});
+
+        
+            
+                var html_733f8f98af0b25db8b18dc303a1e6ffa = $(`<div id="html_733f8f98af0b25db8b18dc303a1e6ffa" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Leacroft, Knowle Green</h1><div class="nugget-popup"><p>The Leacroft area experienced fluvial flooding associated with the River Ash during the event; flood warnings were issued to the affected area and on&ndash;site data were collected regarding extent, source and depth. (p2)</p></div><div class="nugget-popup"><p>Fluvial flooding affected Leacroft, causing road flooding and internal flooding to some properties. [PAG] (p3)</p></div><div class="nugget-popup"><p>Flooding occurred in the vicinity of Leacroft during the upstream River Ash event and this area was part of the investigation into property flooding. (p13)</p></div></div></body></div>`)[0];
+                popup_458c5bd18b1354f7c77b39319b4e219c.setContent(html_733f8f98af0b25db8b18dc303a1e6ffa);
+            
+        
+
+        marker_aa9737c484827c3fe2af3184a0d2d35c.bindPopup(popup_458c5bd18b1354f7c77b39319b4e219c)
+        ;
+
+        
+    
+    
+            var marker_cb86e29cc23101e75713a053dbbb7fd0 = L.marker(
+                [51.4436372, -0.5226535],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_3acb56c11ae2e6203389178bc3e0d86a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cb86e29cc23101e75713a053dbbb7fd0.setIcon(icon_3acb56c11ae2e6203389178bc3e0d86a);
+        
+    
+        var popup_d64cfce4609d211618f21130d3fed5d4 = L.popup({});
+
+        
+            
+                var html_1ed3ecb331c293cf201574b84e8225ff = $(`<div id="html_1ed3ecb331c293cf201574b84e8225ff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Moor Lane, Staines-Upon-Thames</h1><div class="nugget-popup"><p>The Moor Lane sluice gate was partially closed following an instruction from the Environment Agency to control flow levels on the River Ash and Colne Brook during the flood. (p2)</p></div><div class="nugget-popup"><p>Operational control of the sluice gate on the aqueduct to manage flood flows: EA requested closure to reduce floodwater entering the Aqueduct; initially no record of closure so gate remained open; later instructed to be 50% closed which was completed by 00:30 on 12 February, contributing to flows receding on the River Ash and Colne Brook; gate later raised on 14 February to allow pumping. [PAG,MUL] (p10)</p></div><div class="nugget-popup"><p>The Moor Lane sluice gate was operated as part of flood management: it was 50% closed by 00:30 on 12 February, and was raised on 14 February to allow pumping to take place. [MUL] (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>50% closure [PAG,MUL] (p10)</p></div><div class="nugget-popup quant"><p>50% closed [MUL] (p11)</p></div></div></body></div>`)[0];
+                popup_d64cfce4609d211618f21130d3fed5d4.setContent(html_1ed3ecb331c293cf201574b84e8225ff);
+            
+        
+
+        marker_cb86e29cc23101e75713a053dbbb7fd0.bindPopup(popup_d64cfce4609d211618f21130d3fed5d4)
+        ;
+
+        
+    
+    
+            var marker_f8c339b9ae78dd4583681a4c95881c40 = L.marker(
+                [51.4340252, -0.4966557],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_10b2a2f1fd995e41ca33661cdb2173e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f8c339b9ae78dd4583681a4c95881c40.setIcon(icon_10b2a2f1fd995e41ca33661cdb2173e5);
+        
+    
+        var popup_5bfc7a27965b6660b8f28fffa4af438e = L.popup({});
+
+        
+            
+                var html_4e74fdae2d0362bbd62c317d7518fd58 = $(`<div id="html_4e74fdae2d0362bbd62c317d7518fd58" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Leacroft Close, Knowle Green</h1><div class="nugget-popup"><p>Fluvial flooding affected Leacroft Close, with internal flooding reported to some properties. (p3)</p></div></div></body></div>`)[0];
+                popup_5bfc7a27965b6660b8f28fffa4af438e.setContent(html_4e74fdae2d0362bbd62c317d7518fd58);
+            
+        
+
+        marker_f8c339b9ae78dd4583681a4c95881c40.bindPopup(popup_5bfc7a27965b6660b8f28fffa4af438e)
+        ;
+
+        
+    
+    
+            var marker_31c0d54ed765f2f846fa0aba2d742bf6 = L.marker(
+                [51.4337761, -0.4987379],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_8c0abdb64ff4d17d30a0a202ff76c50d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_31c0d54ed765f2f846fa0aba2d742bf6.setIcon(icon_8c0abdb64ff4d17d30a0a202ff76c50d);
+        
+    
+        var popup_fc7ac08b0d090f17db99c9eeaf710132 = L.popup({});
+
+        
+            
+                var html_9a69455950e5ab8f70017dc66d6eecf7 = $(`<div id="html_9a69455950e5ab8f70017dc66d6eecf7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Raleigh Court, Knowle Green</h1><div class="nugget-popup"><p>Fluvial flooding affected Raleigh Court, including internal flooding to some properties. (p3)</p></div></div></body></div>`)[0];
+                popup_fc7ac08b0d090f17db99c9eeaf710132.setContent(html_9a69455950e5ab8f70017dc66d6eecf7);
+            
+        
+
+        marker_31c0d54ed765f2f846fa0aba2d742bf6.bindPopup(popup_fc7ac08b0d090f17db99c9eeaf710132)
+        ;
+
+        
+    
+    
+            var marker_059cd05ed5bd5b74df93abb3e80c7b46 = L.marker(
+                [51.4322914, -0.4964764],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_1ba0e5d218c494fd59a0c5659ac66f37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_059cd05ed5bd5b74df93abb3e80c7b46.setIcon(icon_1ba0e5d218c494fd59a0c5659ac66f37);
+        
+    
+        var popup_5e55a6a51a027361c88a820f7a16b034 = L.popup({});
+
+        
+            
+                var html_2b9353aacd02d069cb084d1c1c6452b6 = $(`<div id="html_2b9353aacd02d069cb084d1c1c6452b6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Manor Place, Knowle Green</h1><div class="nugget-popup"><p>Manor Place was flooded and this affected some properties internally. (p3)</p></div></div></body></div>`)[0];
+                popup_5e55a6a51a027361c88a820f7a16b034.setContent(html_2b9353aacd02d069cb084d1c1c6452b6);
+            
+        
+
+        marker_059cd05ed5bd5b74df93abb3e80c7b46.bindPopup(popup_5e55a6a51a027361c88a820f7a16b034)
+        ;
+
+        
+    
+    
+            var marker_93d275c06f1db9bdd6bc5dde722677a6 = L.marker(
+                [51.4317474, -0.4958158],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_f8f9c4a3ec36de41be2073b9bc4f0444 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_93d275c06f1db9bdd6bc5dde722677a6.setIcon(icon_f8f9c4a3ec36de41be2073b9bc4f0444);
+        
+    
+        var popup_3b337e076322b2c5819b7d3dcf748d70 = L.popup({});
+
+        
+            
+                var html_dd9f02de2084b940a8e52cbc90028be4 = $(`<div id="html_dd9f02de2084b940a8e52cbc90028be4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chestnut Manor Close, Knowle Green</h1><div class="nugget-popup"><p>Chestnut Manor Close was flooded and this affected some properties internally. (p3)</p></div></div></body></div>`)[0];
+                popup_3b337e076322b2c5819b7d3dcf748d70.setContent(html_dd9f02de2084b940a8e52cbc90028be4);
+            
+        
+
+        marker_93d275c06f1db9bdd6bc5dde722677a6.bindPopup(popup_3b337e076322b2c5819b7d3dcf748d70)
+        ;
+
+        
+    
+    
+            var marker_969c7743287627b63fa42b487f459d78 = L.marker(
+                [51.4309012, -0.4966111],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_ba52c227ff27e4373a7994cc10903d55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_969c7743287627b63fa42b487f459d78.setIcon(icon_ba52c227ff27e4373a7994cc10903d55);
+        
+    
+        var popup_c3cd88b0cdab0abadc34a832d69ad355 = L.popup({});
+
+        
+            
+                var html_c1799ad3fd35b0e49c19c17057f08380 = $(`<div id="html_c1799ad3fd35b0e49c19c17057f08380" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Priory Green, Knowle Green</h1><div class="nugget-popup"><p>Properties were flooded, with some properties experiencing internal (internal property) flooding due to the River Ash overtopping its banks. [PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_c3cd88b0cdab0abadc34a832d69ad355.setContent(html_c1799ad3fd35b0e49c19c17057f08380);
+            
+        
+
+        marker_969c7743287627b63fa42b487f459d78.bindPopup(popup_c3cd88b0cdab0abadc34a832d69ad355)
+        ;
+
+        
+    
+    
+            var marker_82e0b8e830beda2d634ba2e6e4cb7cd7 = L.marker(
+                [51.4295852, -0.4879834],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_bd72116b69db33d1f28d1aab1e540f42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_82e0b8e830beda2d634ba2e6e4cb7cd7.setIcon(icon_bd72116b69db33d1f28d1aab1e540f42);
+        
+    
+        var popup_b22b4558192ba51f7d83ae74e9ee701d = L.popup({});
+
+        
+            
+                var html_a2ee37631a4d6c5d8b4eccbd7628cc9a = $(`<div id="html_a2ee37631a4d6c5d8b4eccbd7628cc9a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Strodes Crescent, Staines-Upon-Thames</h1><div class="nugget-popup"><p>Properties experienced garden flooding (surface/garden flooding) as a result of elevated River Ash levels overtopping banks. (p3)</p></div></div></body></div>`)[0];
+                popup_b22b4558192ba51f7d83ae74e9ee701d.setContent(html_a2ee37631a4d6c5d8b4eccbd7628cc9a);
+            
+        
+
+        marker_82e0b8e830beda2d634ba2e6e4cb7cd7.bindPopup(popup_b22b4558192ba51f7d83ae74e9ee701d)
+        ;
+
+        
+    
+    
+            var marker_1700018b24f0432c5c822ef68c04f1c4 = L.marker(
+                [51.4250347, -0.4592861],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_3ee4e8148ea0ff68414812d091f0be4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1700018b24f0432c5c822ef68c04f1c4.setIcon(icon_3ee4e8148ea0ff68414812d091f0be4d);
+        
+    
+        var popup_036bf58fd282a6d0a5f26062b75598e3 = L.popup({});
+
+        
+            
+                var html_188f6cc52557f29e5342e668bcfbe4a2 = $(`<div id="html_188f6cc52557f29e5342e668bcfbe4a2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Spelthorne</h1><div class="nugget-popup"><p>Communities in Spelthorne (including Staines and areas such as Birch Green) were affected by flood risk and property flooding associated with the River Ash rising; the River Thames Scheme is described as reducing flood risk to communities including Spelthorne. (p13)</p></div></div></body></div>`)[0];
+                popup_036bf58fd282a6d0a5f26062b75598e3.setContent(html_188f6cc52557f29e5342e668bcfbe4a2);
+            
+        
+
+        marker_1700018b24f0432c5c822ef68c04f1c4.bindPopup(popup_036bf58fd282a6d0a5f26062b75598e3)
+        ;
+
+        
+    
+    
+            var marker_df6412b05707ab3d8282a4eb2397ae80 = L.marker(
+                [51.434012, -0.511044],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_0a825c0c1caa626849fc164d6c9572f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_df6412b05707ab3d8282a4eb2397ae80.setIcon(icon_0a825c0c1caa626849fc164d6c9572f9);
+        
+    
+        var popup_b28b1f5cfdf86b1a94f3458edd02a302 = L.popup({});
+
+        
+            
+                var html_11d39b007056d80a565aaf23c09fd1b6 = $(`<div id="html_11d39b007056d80a565aaf23c09fd1b6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Staines-Upon-Thames</h1><div class="nugget-popup"><p>The Staines&ndash;upon&ndash;Thames area experienced flooding caused by a combination of saturated ground, high rainfall and high River Thames levels that forced tributaries to back up and spill, producing local flooding. [IMG] (p6)</p></div><div class="nugget-popup"><p>Staines was within the area covered by River Thames and River Ash flood alerts/warnings (including a severe flood warning for River Thames at Staines on 9 February 2014). The EA had personnel on site in the Staines area from 10&ndash;14 February to record flooded properties and extent. [PAG,MUL] (p11)</p></div></div></body></div>`)[0];
+                popup_b28b1f5cfdf86b1a94f3458edd02a302.setContent(html_11d39b007056d80a565aaf23c09fd1b6);
+            
+        
+
+        marker_df6412b05707ab3d8282a4eb2397ae80.bindPopup(popup_b28b1f5cfdf86b1a94f3458edd02a302)
+        ;
+
+        
+    
+    
+            var marker_eb11b3f920740b543f08f66965030616 = L.marker(
+                [51.4383492, -0.5045637],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_cddcba6dd97a86c278aa337b23c8b58f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eb11b3f920740b543f08f66965030616.setIcon(icon_cddcba6dd97a86c278aa337b23c8b58f);
+        
+    
+        var popup_dcbdd24a22a0649331e8997a772f804c = L.popup({});
+
+        
+            
+                var html_f0032ce1460d3cace4c4006cf9609acf = $(`<div id="html_f0032ce1460d3cace4c4006cf9609acf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Birch Green</h1><div class="nugget-popup"><p>Birch Green was a location where the aqueduct overtopped significantly, contributing to increased flows and local flooding in the area. (p6)</p></div><div class="nugget-popup"><p>Property flooding occurred in the Birch Green area as a result of a sharp rise in water levels along the River Ash; water from nearby watercourses entering the aqueduct spilled into the River Ash and contributed to the rapid rise in levels that led to the property flooding. (p13)</p></div></div></body></div>`)[0];
+                popup_dcbdd24a22a0649331e8997a772f804c.setContent(html_f0032ce1460d3cace4c4006cf9609acf);
+            
+        
+
+        marker_eb11b3f920740b543f08f66965030616.bindPopup(popup_dcbdd24a22a0649331e8997a772f804c)
+        ;
+
+        
+    
+    
+            var marker_9d95bfb79ef9c24030545f766a883ad5 = L.marker(
+                [51.4330238, -0.4619837],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_52252724a7ea56b70957b8219d040ff0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9d95bfb79ef9c24030545f766a883ad5.setIcon(icon_52252724a7ea56b70957b8219d040ff0);
+        
+    
+        var popup_ce2663a752c6a2c459e559de19eb5d24 = L.popup({});
+
+        
+            
+                var html_b30519543891e3fbf586d28c8cd552b7 = $(`<div id="html_b30519543891e3fbf586d28c8cd552b7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ashford</h1><div class="nugget-popup"><p>Overtopping of the Staines Reservoir Aqueduct and backed&ndash;up tributary flows increased flow in the River Ash and overtopped significantly in the Ashford area, producing localised flooding. (p6)</p></div></div></body></div>`)[0];
+                popup_ce2663a752c6a2c459e559de19eb5d24.setContent(html_b30519543891e3fbf586d28c8cd552b7);
+            
+        
+
+        marker_9d95bfb79ef9c24030545f766a883ad5.bindPopup(popup_ce2663a752c6a2c459e559de19eb5d24)
+        ;
+
+        
+    
+    
+            var marker_0afcaef5afd28a7376eb4d39c32e7161 = L.marker(
+                [51.4432437, -0.5378477],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_c1bc996d78cc8b3e6023cfb8603d5592 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0afcaef5afd28a7376eb4d39c32e7161.setIcon(icon_c1bc996d78cc8b3e6023cfb8603d5592);
+        
+    
+        var popup_f4ff0a3c7aaa8921faacce47004e801d = L.popup({});
+
+        
+            
+                var html_28582164c08b95513847e0936c2cf787 = $(`<div id="html_28582164c08b95513847e0936c2cf787" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hythe End</h1><div class="nugget-popup"><p>Rising water levels at Hythe End triggered the Ash Protocol; intake gates at Hythe End were operated (in automatic mode and then reported fully closed) to control Aqueduct water levels, and the Aqueduct became fed by floodwater as a consequence. [MUL] (p10)</p></div></div></body></div>`)[0];
+                popup_f4ff0a3c7aaa8921faacce47004e801d.setContent(html_28582164c08b95513847e0936c2cf787);
+            
+        
+
+        marker_0afcaef5afd28a7376eb4d39c32e7161.bindPopup(popup_f4ff0a3c7aaa8921faacce47004e801d)
+        ;
+
+        
+    
+    
+            var marker_8c0f73ce04eb673310b2323f30b96103 = L.marker(
+                [51.4306161, -0.5000255],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_506c7078fe8c8b10808beab411250f41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8c0f73ce04eb673310b2323f30b96103.setIcon(icon_506c7078fe8c8b10808beab411250f41);
+        
+    
+        var popup_ac7dff594a6afe98df77cc67384f77e0 = L.popup({});
+
+        
+            
+                var html_715185b20009395f1ae48d7afd3ea283 = $(`<div id="html_715185b20009395f1ae48d7afd3ea283" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Knowle Green</h1><div class="nugget-popup"><p>Knowle Green was included in EA flood warnings for the River Ash (10 February 2014) and is within the area for which river level monitoring thresholds were reviewed and reduced, so warnings will be issued earlier for this locality. [PAG,MUL] (p12)</p></div></div></body></div>`)[0];
+                popup_ac7dff594a6afe98df77cc67384f77e0.setContent(html_715185b20009395f1ae48d7afd3ea283);
+            
+        
+
+        marker_8c0f73ce04eb673310b2323f30b96103.bindPopup(popup_ac7dff594a6afe98df77cc67384f77e0)
+        ;
+
+        
+    
+    
+            var marker_d55f4f05fd009ca573ddd44184cde7be = L.marker(
+                [51.4368274, -0.5005016],
+                {}
+            ).addTo(map_e92f317cec668e441b16e5d77d44629c);
+        
+    
+            var icon_20324553534415a14b3ccfaaff47c95b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d55f4f05fd009ca573ddd44184cde7be.setIcon(icon_20324553534415a14b3ccfaaff47c95b);
+        
+    
+        var popup_cd9d18160ae2a0537748c5b52267759b = L.popup({});
+
+        
+            
+                var html_ef6170e484737557a02672269a5c9fd5 = $(`<div id="html_ef6170e484737557a02672269a5c9fd5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Staines Reservoir Aqueduct</h1><div class="nugget-popup"><p>The aqueduct was a focus of flood&ndash;control operations; the Environment Agency worked with Thames Water under the Ash Protocol to control flooding at the Staines Reservoir Aqueduct. Thames Water carried out repairs to the aqueduct following the event and will agree revised operating arrangements for when nearby river levels are high. (p2)</p></div><div class="nugget-popup"><p>Staines Reservoir Aqueduct (asset associated with the reservoir) rose above its banks and received overflow from fluvial water; operation of assets on the Staines Reservoir Aqueduct was implicated and recommended for revised operating arrangements. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>The Staines Reservoir Aqueduct overtopped (into the River Ash at the Crooked Billet side weir) and overtopping at multiple points contributed to increased flows in the River Ash and local flooding. (p6)</p></div><div class="nugget-popup"><p>During the February event the Aqueduct was fed solely with floodwater originating from the County Ditch and Wraysbury River. Thames Water intake gates at Hythe End were set to control levels and were fully closed on 9 February. Operations on the Aqueduct (including Moor Lane sluice gate) were managed as part of flood control: pumping from Birch Green pumping station was increased to control flood levels, Moor Lane sluice gate was instructed to be 50% closed (completed by 00:30 on 12 February), flows began to recede on 12 February afternoon so no further closure was required, and the gate was raised and pumping reduced when levels fell. [MUL] (p10)</p></div><div class="nugget-popup"><p>The Staines Reservoir Aqueduct partially collapsed following the flood event, causing significant damage; it was taken out of service for repairs and remained out of service throughout the summer of 2014. [PAG] (p11)</p></div><div class="nugget-popup"><p>Subject to high river levels and risk of overtopping during the February 2014 flood event; operational changes made to reduce flood risk including removal of a sluice gate, installation of new isolation valves on the siphon under the railway, Thames Water to close valves when aqueduct levels reach a trigger before overtopping, and the aqueduct was added to the SCC Flooding Asset Register to highlight its importance to flood risk. Thames Water will run annual tests of communications and operations. (p12)</p></div><div class="nugget-popup"><p>Water from various watercourses getting into the aqueduct caused levels to rise and spill over into the River Ash, contributing to the sharp rise in river levels that led to flooding. (p13)</p></div><div class="nugget-popup"><p>The report states that water from various watercourses entering the aqueduct caused levels to rise and spill into the River Ash, likely contributing to the sudden rise in river levels and downstream property flooding in Birch Green when combined with other factors. (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>pumping increased from 270 million litres&ndash;a&ndash;day to 350 million litres&ndash;a&ndash;day and later to 420 million litres&ndash;a&ndash;day; Moor Lane sluice gate 50% closed by 00:30 on 12 February [MUL] (p10)</p></div></div></body></div>`)[0];
+                popup_cd9d18160ae2a0537748c5b52267759b.setContent(html_ef6170e484737557a02672269a5c9fd5);
+            
+        
+
+        marker_d55f4f05fd009ca573ddd44184cde7be.bindPopup(popup_cd9d18160ae2a0537748c5b52267759b)
+        ;
+
+        
+    
+</script>
+</html>
