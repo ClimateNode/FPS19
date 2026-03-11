@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4fa019ea06e19b0b591526f5812a0cbd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4fa019ea06e19b0b591526f5812a0cbd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4fa019ea06e19b0b591526f5812a0cbd = L.map(
+                "map_4fa019ea06e19b0b591526f5812a0cbd",
+                {
+                    center: [51.311962011659894, -0.53986675433417],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c11e7cc5ae9f3769f6b6a17874dd6373 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_c11e7cc5ae9f3769f6b6a17874dd6373.addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+    
+            var marker_83467cc2ade4c7f18796665fc79abe7e = L.marker(
+                [51.157855, -0.8068839],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_2660bc3bebf1a58916cd05def53d029c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_83467cc2ade4c7f18796665fc79abe7e.setIcon(icon_2660bc3bebf1a58916cd05def53d029c);
+        
+    
+        var popup_cfc33488206d4387d1d8a581548c37c2 = L.popup({});
+
+        
+            
+                var html_e830862019e987ab6f70f41dfa74fd20 = $(`<div id="html_e830862019e987ab6f70f41dfa74fd20" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Wey</h1><div class="nugget-popup"><p>The River Wey overtopped its banks during the event on 25&ndash;26 December 2013, causing fluvial flooding of adjacent residential properties (Bridge Close, High Road and Weyside Close). Floodwater entered properties from the rear via gardens and from the front/roadway; property flooding began around midday on 25 December and river levels peaked on 26 December 2013. [MUL] (p22)</p></div><div class="nugget-popup"><p>High flows on the River Wey prompted a flood warning for the River Wey at Byfleet; the EA issued a flood warning and deployed ambassadors during the event and subsequently adjusted the flood warning trigger level and began an assessment for larger flood defences. (p23)</p></div><div class="nugget-popup"><p>The River Wey overtopped its banks and was the initial cause of flooding that affected Sanway Road and Sanway Close on 25 December 2013. River water backed up highway drains at Sanway Close and contributed to floodwaters flowing through adjacent fields into the residential area. (p25)</p></div><div class="nugget-popup"><p>Flooding from the River Wey at Byfleet resulted in properties flooding almost immediately after a flood warning was issued. (p26)</p></div><div class="nugget-popup"><p>High river flows on the River Wey triggered a flood warning for the River Wey at Byfleet; evidence from the event led the Environment Agency to adjust the flood warning trigger level. (p27)</p></div><div class="nugget-popup"><p>River Wey levels rose and peaked (reported peak at 08:00 on 25 December 2013), flooded the southern fields (functional floodplain) and backed up the drainage network, contributing to surcharging of gullies and flooding onto the High Street. [PAG] (p28)</p></div><div class="nugget-popup"><p>River Wey experienced river (fluvial) flooding during winter 2013/14 at Guildford; the level observed at Guildford has an estimated return period of 20&ndash;30 years. (p29)</p></div><div class="nugget-popup"><p>High river levels on the River Wey at Old Woking triggered flood warnings during the winter 2013/14 incident and are being investigated as the source of a magnitude event that flooded the residential area, prompting consideration of a larger flood defence scheme. [MUL] (p30)</p></div><div class="nugget-popup"><p>The River Wey at Guildford experienced elevated flows during winter 2013/14; the level of flooding observed on the River Wey at Guildford for that event is estimated to have a return period of 20&ndash;30 years. (p32)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 2,000 people (issued with a flood warning) (p23)</p></div><div class="nugget-popup quant"><p>over 2,000 people (p27)</p></div></div></body></div>`)[0];
+                popup_cfc33488206d4387d1d8a581548c37c2.setContent(html_e830862019e987ab6f70f41dfa74fd20);
+            
+        
+
+        marker_83467cc2ade4c7f18796665fc79abe7e.bindPopup(popup_cfc33488206d4387d1d8a581548c37c2)
+        ;
+
+        
+    
+    
+            var marker_27bd7e3ea648ac029dfb876f075eab36 = L.marker(
+                [51.338672, -0.517704],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_41cc948e2c77a4304acb2791c624bffb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_27bd7e3ea648ac029dfb876f075eab36.setIcon(icon_41cc948e2c77a4304acb2791c624bffb);
+        
+    
+        var popup_69a701fe933e92b77fd27c358d2105fe = L.popup({});
+
+        
+            
+                var html_37587cc9a7891db2ec94fd2acd8608a6 = $(`<div id="html_37587cc9a7891db2ec94fd2acd8608a6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sheerwater Bridge</h1><div class="nugget-popup"><p>Identified as the emergence point of a high&ndash;capacity underground pipe (just east of the bridge) which was added to the Flooding asset register as part of SCC's post&ndash;winter 2013/14 flood work. (p16)</p></div></div></body></div>`)[0];
+                popup_69a701fe933e92b77fd27c358d2105fe.setContent(html_37587cc9a7891db2ec94fd2acd8608a6);
+            
+        
+
+        marker_27bd7e3ea648ac029dfb876f075eab36.bindPopup(popup_69a701fe933e92b77fd27c358d2105fe)
+        ;
+
+        
+    
+    
+            var marker_7a9a5801a9dced1fa21567ee2eca878b = L.marker(
+                [51.3049349, -0.6125849],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_40d0c9ef754d67e6e70fa8b59ade115d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7a9a5801a9dced1fa21567ee2eca878b.setIcon(icon_40d0c9ef754d67e6e70fa8b59ade115d);
+        
+    
+        var popup_b28b33f96b9034e7708d870d0826e0ae = L.popup({});
+
+        
+            
+                var html_410093c9db3ef3a12e62367e79bdc74e = $(`<div id="html_410093c9db3ef3a12e62367e79bdc74e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Blackhorse Road, Woking</h1><div class="nugget-popup"><p>Internal property flooding reported at multiple addresses; road closures recorded during Winter 2013&ndash;14. [TAB] (p2)</p></div><div class="nugget-popup"><p>The Blackhorse Road sub&ndash;area was identified in the report as one of the areas within Woking containing investigation sites that flooded during winter 2013/14 and so experienced flood impacts as part of the borough&ndash;wide event. [IMG] (p10)</p></div><div class="nugget-popup"><p>Local drainage outfall to the highway ditch was blocked by debris, causing drainage ditches to back up and contributing to local surface flooding and surcharge of the highway drainage system; a culvert under Blackhorse Road was identified for investigation to increase capacity. [MUL] (p20)</p></div><div class="nugget-popup"><p>Blackhorse Road was subject to temporary road closures during the winter 2013/14 flooding; there were concerns about a pipe at the north of Blackhorse Road becoming blocked by debris and plans were made to install a trash screen and investigate the culvert under the road to increase capacity or identify additional storage. [PAG] (p21)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of 25 sites across six sub&ndash;areas; part of approximately 40 incidents of internal property flooding in Woking [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_b28b33f96b9034e7708d870d0826e0ae.setContent(html_410093c9db3ef3a12e62367e79bdc74e);
+            
+        
+
+        marker_7a9a5801a9dced1fa21567ee2eca878b.bindPopup(popup_b28b33f96b9034e7708d870d0826e0ae)
+        ;
+
+        
+    
+    
+            var marker_fb44a754ccc1ea8fbe7400f81ae5110f = L.marker(
+                [51.2959979, -0.5813351],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_0c900948b24e2273c75f05e4d1404693 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fb44a754ccc1ea8fbe7400f81ae5110f.setIcon(icon_0c900948b24e2273c75f05e4d1404693);
+        
+    
+        var popup_19ba347e88a368226170f163de63dd7d = L.popup({});
+
+        
+            
+                var html_1c73cb8a905348badf495f9c18295e8b = $(`<div id="html_1c73cb8a905348badf495f9c18295e8b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Smarts Heath Road, Mayford</h1><div class="nugget-popup"><p>A depth of flood water covered Smarts Heath Road near the Saunders Lane drainage ditches due to combined flooding from the Hoe Stream, flow from local drainage ditches and blockage of the local drainage network; drainage ditches were unable to discharge when the stream and Hoe Stream were in flood, causing backing up. [MUL] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>250mm depth of flood water [MUL] (p20)</p></div></div></body></div>`)[0];
+                popup_19ba347e88a368226170f163de63dd7d.setContent(html_1c73cb8a905348badf495f9c18295e8b);
+            
+        
+
+        marker_fb44a754ccc1ea8fbe7400f81ae5110f.bindPopup(popup_19ba347e88a368226170f163de63dd7d)
+        ;
+
+        
+    
+    
+            var marker_1030c92f8c1e2f902d00a4b09f249b57 = L.marker(
+                [51.2977018, -0.5915456],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_0fe1f81387a899cc4a89344294657039 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1030c92f8c1e2f902d00a4b09f249b57.setIcon(icon_0fe1f81387a899cc4a89344294657039);
+        
+    
+        var popup_569a4ced74cb3cea81622824f72b7f88 = L.popup({});
+
+        
+            
+                var html_25b0d27e5a4c0ccd3f5bb49be137f006 = $(`<div id="html_25b0d27e5a4c0ccd3f5bb49be137f006" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Saunders Lane, Mayford</h1><div class="nugget-popup"><p>Drainage ditches in the Saunders Lane area (to the east of Blackhorse Road) were unable to discharge because the stream and Hoe Stream were in flood and local outfalls were blocked, contributing to backing up of ditches and surface water flooding in the immediate area. (p20)</p></div><div class="nugget-popup"><p>Saunders Lane drainage was affected by the flooding; WBC and SCC have worked with private landowners on maintenance of riparian ditches, and trash screens have been replaced at the junction with Heath House Lane as part of post&ndash;flood repairs. [PAG] (p21)</p></div></div></body></div>`)[0];
+                popup_569a4ced74cb3cea81622824f72b7f88.setContent(html_25b0d27e5a4c0ccd3f5bb49be137f006);
+            
+        
+
+        marker_1030c92f8c1e2f902d00a4b09f249b57.bindPopup(popup_569a4ced74cb3cea81622824f72b7f88)
+        ;
+
+        
+    
+    
+            var marker_adfa8700c06c93702e0b7fbceeb81cd3 = L.marker(
+                [51.2971367, -0.6136257],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_65de5c2a1d2ff421f739c2383ba630c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_adfa8700c06c93702e0b7fbceeb81cd3.setIcon(icon_65de5c2a1d2ff421f739c2383ba630c8);
+        
+    
+        var popup_521fcf59663e756b8949e22a8c9b3fa0 = L.popup({});
+
+        
+            
+                var html_454d8625f7a3534139e4ab644f45b0dd = $(`<div id="html_454d8625f7a3534139e4ab644f45b0dd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Heath House Road, Brookwood</h1><div class="nugget-popup"><p>The junction of Heath House Lane and Saunders Lane required replacement of trash screens and extensive maintenance by SCC following the winter 2013/14 flooding. (p21)</p></div></div></body></div>`)[0];
+                popup_521fcf59663e756b8949e22a8c9b3fa0.setContent(html_454d8625f7a3534139e4ab644f45b0dd);
+            
+        
+
+        marker_adfa8700c06c93702e0b7fbceeb81cd3.bindPopup(popup_521fcf59663e756b8949e22a8c9b3fa0)
+        ;
+
+        
+    
+    
+            var marker_01da1e7b45cdfc635cc7c0aa92873510 = L.marker(
+                [51.3401131, -0.4655549],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_dae94f411c4bc76c19d425d5cc32d940 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_01da1e7b45cdfc635cc7c0aa92873510.setIcon(icon_dae94f411c4bc76c19d425d5cc32d940);
+        
+    
+        var popup_12073cfc97b0c98c07719ddcbef863b8 = L.popup({});
+
+        
+            
+                var html_2fae5def2f428028c2624487475a701e = $(`<div id="html_2fae5def2f428028c2624487475a701e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Weyside Close, Byfleet</h1><div class="nugget-popup"><p>Properties within Weyside Close were flooded when the River Wey overtopped its banks adjacent to these properties; residents reported floodwater entering properties from the rear (from the river side) and also from the front. [MUL] (p22)</p></div></div></body></div>`)[0];
+                popup_12073cfc97b0c98c07719ddcbef863b8.setContent(html_2fae5def2f428028c2624487475a701e);
+            
+        
+
+        marker_01da1e7b45cdfc635cc7c0aa92873510.bindPopup(popup_12073cfc97b0c98c07719ddcbef863b8)
+        ;
+
+        
+    
+    
+            var marker_2dd5b1b5f809269b3472689de19312f7 = L.marker(
+                [51.3389964, -0.4687443],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_6f7fda9e37322219ada1588b7c7c066a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2dd5b1b5f809269b3472689de19312f7.setIcon(icon_6f7fda9e37322219ada1588b7c7c066a);
+        
+    
+        var popup_bc4bc26ab752cb40d428b8a3ee80ab77 = L.popup({});
+
+        
+            
+                var html_927979a61c28a2050e65db20b8211da8 = $(`<div id="html_927979a61c28a2050e65db20b8211da8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Road, Byfleet</h1><div class="nugget-popup"><p>Residents on High Road reported flooding from the River Wey; floodwater was reported to have come through gardens in Bridge Close onto High Road and then flowed along the roadway into adjacent areas. [MUL] (p22)</p></div></div></body></div>`)[0];
+                popup_bc4bc26ab752cb40d428b8a3ee80ab77.setContent(html_927979a61c28a2050e65db20b8211da8);
+            
+        
+
+        marker_2dd5b1b5f809269b3472689de19312f7.bindPopup(popup_bc4bc26ab752cb40d428b8a3ee80ab77)
+        ;
+
+        
+    
+    
+            var marker_77468aff615ff5509dd4963d00cd4cda = L.marker(
+                [51.3398422, -0.4667249],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_3dcc64ba9c9a25cb37ab6ea601ff2613 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_77468aff615ff5509dd4963d00cd4cda.setIcon(icon_3dcc64ba9c9a25cb37ab6ea601ff2613);
+        
+    
+        var popup_0d9e9247d08a425a52dabec138a6073c = L.popup({});
+
+        
+            
+                var html_02c6fb12cb4547eef0572b0013456050 = $(`<div id="html_02c6fb12cb4547eef0572b0013456050" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bridge Close, Byfleet</h1><div class="nugget-popup"><p>Residents in Bridge Close reported flooding when the River Wey overtopped its banks; floodwater initially came through the gardens in Bridge Close, flowed onto High Road and down into Weyside, and properties were inundated from the rear. [MUL] (p22)</p></div></div></body></div>`)[0];
+                popup_0d9e9247d08a425a52dabec138a6073c.setContent(html_02c6fb12cb4547eef0572b0013456050);
+            
+        
+
+        marker_77468aff615ff5509dd4963d00cd4cda.bindPopup(popup_0d9e9247d08a425a52dabec138a6073c)
+        ;
+
+        
+    
+    
+            var marker_cf79daa393034c452d35920a86ef1a68 = L.marker(
+                [51.32895, -0.4766176],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_4c1050042b72b7d95e9ef98adeba04d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cf79daa393034c452d35920a86ef1a68.setIcon(icon_4c1050042b72b7d95e9ef98adeba04d8);
+        
+    
+        var popup_c5c77c60981817c6a7213c563cf3d953 = L.popup({});
+
+        
+            
+                var html_913b9b9033bdda2c89e7ba070a0fd423 = $(`<div id="html_913b9b9033bdda2c89e7ba070a0fd423" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sanway Road, Byfleet</h1><div class="nugget-popup"><p>Floodwater from the River Wey and Broad Ditch overtopping flowed through fields to the west and inundated the road; residents reported water flowing from Sanway Road into the area on the morning of 25 December 2013. (p25)</p></div></div></body></div>`)[0];
+                popup_c5c77c60981817c6a7213c563cf3d953.setContent(html_913b9b9033bdda2c89e7ba070a0fd423);
+            
+        
+
+        marker_cf79daa393034c452d35920a86ef1a68.bindPopup(popup_c5c77c60981817c6a7213c563cf3d953)
+        ;
+
+        
+    
+    
+            var marker_12031f72406649ee440e0da0b35c9ffb = L.marker(
+                [51.3302209, -0.4750542],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_e3bdf004511ec64a456e745e7f726668 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_12031f72406649ee440e0da0b35c9ffb.setIcon(icon_e3bdf004511ec64a456e745e7f726668);
+        
+    
+        var popup_833d16c02c23630816c4d834abc363ee = L.popup({});
+
+        
+            
+                var html_8cedff02a6f0a690627eb646309af9f5 = $(`<div id="html_8cedff02a6f0a690627eb646309af9f5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sanway Close, Byfleet</h1><div class="nugget-popup"><p>On 25 December 2013 river water from the River Wey (and overtopping of the Broad Ditch at low spots) backed up highway drains and gullies causing floodwater to enter Sanway Close; residents reported gully flooding on the morning of 25 December. (p25)</p></div><div class="nugget-popup"><p>Post&ndash;incident works planned to install a non&ndash;return valve in the main surface water sewer network at Sanway Close because an external flap valve was unsuitable, indicating sewer/surface&ndash;water flooding or backflow impacts at the location. (p26)</p></div><div class="nugget-popup"><p>Thames Water worked with WBC to install a non&ndash;return valve in the main surface water sewer network at Sanway Close to address flooding/backflow risk; an external flap valve was determined not suitable. (p27)</p></div></div></body></div>`)[0];
+                popup_833d16c02c23630816c4d834abc363ee.setContent(html_8cedff02a6f0a690627eb646309af9f5);
+            
+        
+
+        marker_12031f72406649ee440e0da0b35c9ffb.bindPopup(popup_833d16c02c23630816c4d834abc363ee)
+        ;
+
+        
+    
+    
+            var marker_0f1aca8d0f9f43f8975519b4297c6b04 = L.marker(
+                [51.3256343, -0.4893313],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_e0792cd5563e813f1023e56fa51db208 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0f1aca8d0f9f43f8975519b4297c6b04.setIcon(icon_e0792cd5563e813f1023e56fa51db208);
+        
+    
+        var popup_fc84ff98724ae3361b8664b4b1297979 = L.popup({});
+
+        
+            
+                var html_80cafe56fccc3154225b75b4c80b553d = $(`<div id="html_80cafe56fccc3154225b75b4c80b553d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wisley Lane, Wisley</h1><div class="nugget-popup"><p>Temporary road closures on Wisley Lane occurred during the flood incident. [PAG] (p26)</p></div></div></body></div>`)[0];
+                popup_fc84ff98724ae3361b8664b4b1297979.setContent(html_80cafe56fccc3154225b75b4c80b553d);
+            
+        
+
+        marker_0f1aca8d0f9f43f8975519b4297c6b04.bindPopup(popup_fc84ff98724ae3361b8664b4b1297979)
+        ;
+
+        
+    
+    
+            var marker_b0b520be8b50a38ea7d177dd95f1286c = L.marker(
+                [51.3023131, -0.5458299],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_bbd4a1e0c74d7d85d53227829aee276c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b0b520be8b50a38ea7d177dd95f1286c.setIcon(icon_bbd4a1e0c74d7d85d53227829aee276c);
+        
+    
+        var popup_b3ba97800883a53a6872ee1f0b7e7e5b = L.popup({});
+
+        
+            
+                var html_28e2945467958ea172bffa892637db28 = $(`<div id="html_28e2945467958ea172bffa892637db28" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Westfield</h1><div class="nugget-popup"><p>The roadway flooded when highway gullies surcharged and river water backed up the drainage network. The High Street was closed; vehicles driving through created bow waves that caused floodwater to enter some properties where thresholds were lower than the road. (p28)</p></div><div class="nugget-popup"><p>Sandbags were issued in the High Street area which prevented internal flooding to properties during the event; follow&ndash;up property protection measures have been installed for impacted residents. (p29)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 10 properties (p29)</p></div></div></body></div>`)[0];
+                popup_b3ba97800883a53a6872ee1f0b7e7e5b.setContent(html_28e2945467958ea172bffa892637db28);
+            
+        
+
+        marker_b0b520be8b50a38ea7d177dd95f1286c.bindPopup(popup_b3ba97800883a53a6872ee1f0b7e7e5b)
+        ;
+
+        
+    
+    
+            var marker_e3e5807970d99e68ae3c3faa94bd9bd9 = L.marker(
+                [51.298694, -0.5450032],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_688c6d497c2b3d6915ff9e4c51b6dbe4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e3e5807970d99e68ae3c3faa94bd9bd9.setIcon(icon_688c6d497c2b3d6915ff9e4c51b6dbe4);
+        
+    
+        var popup_33fab57ed2230b38e48e7e3114142167 = L.popup({});
+
+        
+            
+                var html_8d2ebd8d4cf4db635ab775bf54de2c12 = $(`<div id="html_8d2ebd8d4cf4db635ab775bf54de2c12" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gresham Mill, Westfield</h1><div class="nugget-popup"><p>Access to the Gresham Mill residential development was made impassable by flooding, although the properties themselves remained unaffected. (p28)</p></div></div></body></div>`)[0];
+                popup_33fab57ed2230b38e48e7e3114142167.setContent(html_8d2ebd8d4cf4db635ab775bf54de2c12);
+            
+        
+
+        marker_e3e5807970d99e68ae3c3faa94bd9bd9.bindPopup(popup_33fab57ed2230b38e48e7e3114142167)
+        ;
+
+        
+    
+    
+            var marker_7c867f001c8de62c272fbaa48c7937d4 = L.marker(
+                [51.3213176, -0.5840157],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_bd4072026f99955a75320b409de49ce9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7c867f001c8de62c272fbaa48c7937d4.setIcon(icon_bd4072026f99955a75320b409de49ce9);
+        
+    
+        var popup_d3eb748f5fdfcedad51152d1aa1fc7ab = L.popup({});
+
+        
+            
+                var html_08354b788f64ea216125eb9aa5311b6a = $(`<div id="html_08354b788f64ea216125eb9aa5311b6a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>French's Wells, Horsell</h1><div class="nugget-popup"><p>During winter 2013/14 the Horsell sub area (which includes French's Wells) experienced internal property flooding and road closures. French's Wells is identified on EA maps as being at risk of surface water flooding. (p31)</p></div></div></body></div>`)[0];
+                popup_d3eb748f5fdfcedad51152d1aa1fc7ab.setContent(html_08354b788f64ea216125eb9aa5311b6a);
+            
+        
+
+        marker_7c867f001c8de62c272fbaa48c7937d4.bindPopup(popup_d3eb748f5fdfcedad51152d1aa1fc7ab)
+        ;
+
+        
+    
+    
+            var marker_a85af2aabacc8066478a235109fcb9eb = L.marker(
+                [51.2816049, -0.5591021],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_826551d38fe8cc10febbc2c39947ced9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a85af2aabacc8066478a235109fcb9eb.setIcon(icon_826551d38fe8cc10febbc2c39947ced9);
+        
+    
+        var popup_cf3bc6d725a14416356642d5cb22778c = L.popup({});
+
+        
+            
+                var html_e3ef14a31f42fd19669ab3cd01f06076 = $(`<div id="html_e3ef14a31f42fd19669ab3cd01f06076" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>New Lane, Sutton Green</h1><div class="nugget-popup"><p>EA surface water flood mapping shows a risk of surface water flooding to New Lane; in places New Lane acted as a natural flow route during the winter 2013/14 events. Ditches alongside New Lane were full of sediment and have since been cleared following the floods. [PAG] (p32)</p></div><div class="nugget-popup"><p>Main ditches along New Lane were cleared after being found full of sediment and debris; the drainage network on the western side of New Lane was jetted to remove blockages and manhole covers were located along the drain run to aid future maintenance and assess pipe condition. (p33)</p></div></div></body></div>`)[0];
+                popup_cf3bc6d725a14416356642d5cb22778c.setContent(html_e3ef14a31f42fd19669ab3cd01f06076);
+            
+        
+
+        marker_a85af2aabacc8066478a235109fcb9eb.bindPopup(popup_cf3bc6d725a14416356642d5cb22778c)
+        ;
+
+        
+    
+    
+            var marker_efca4ee637bbbb84a7745b6c1e11924e = L.marker(
+                [51.2953325, -0.5572108],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_ebfb648f04e8dfd7456df3651736f424 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_efca4ee637bbbb84a7745b6c1e11924e.setIcon(icon_ebfb648f04e8dfd7456df3651736f424);
+        
+    
+        var popup_a2a8c6d1ebac39dd666200d566939f3e = L.popup({});
+
+        
+            
+                var html_eff52fadf7f27a575580d20204be14db = $(`<div id="html_eff52fadf7f27a575580d20204be14db" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Moor Lane, Westfield</h1><div class="nugget-popup"><p>During winter 2013/14 the area experienced surface water flooding that contributed to road closures and internal property flooding in the Sutton Green and Worplesdon sub area. Roads in the corridor (New Lane which runs from Sutton Green to Moor Lane) acted as natural flow routes; ditches were blocked with sediment and debris and subsequently cleared. (p32)</p></div></div></body></div>`)[0];
+                popup_a2a8c6d1ebac39dd666200d566939f3e.setContent(html_eff52fadf7f27a575580d20204be14db);
+            
+        
+
+        marker_efca4ee637bbbb84a7745b6c1e11924e.bindPopup(popup_a2a8c6d1ebac39dd666200d566939f3e)
+        ;
+
+        
+    
+    
+            var marker_8a0697c28fe693559b7cca09833941a1 = L.marker(
+                [51.2891392, -0.5861102],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_84b188b926c1503b36061a3947d6a658 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8a0697c28fe693559b7cca09833941a1.setIcon(icon_84b188b926c1503b36061a3947d6a658);
+        
+    
+        var popup_5a6772dcef546945282b604e9a473006 = L.popup({});
+
+        
+            
+                var html_07b19fe854eedeb3eebbdceb551cdea9 = $(`<div id="html_07b19fe854eedeb3eebbdceb551cdea9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Prey Heath Road, Mayford</h1><div class="nugget-popup"><p>Prey Heath Road was closed for public safety during the flooding. (p33)</p></div></div></body></div>`)[0];
+                popup_5a6772dcef546945282b604e9a473006.setContent(html_07b19fe854eedeb3eebbdceb551cdea9);
+            
+        
+
+        marker_8a0697c28fe693559b7cca09833941a1.bindPopup(popup_5a6772dcef546945282b604e9a473006)
+        ;
+
+        
+    
+    
+            var marker_51cb99de042778dcc047f16ca87fb49e = L.marker(
+                [51.2828472, -0.5546064],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_a8921003bd545d793168cd20a5671d9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_51cb99de042778dcc047f16ca87fb49e.setIcon(icon_a8921003bd545d793168cd20a5671d9e);
+        
+    
+        var popup_282bba0ffa2edf725d4d133b41568971 = L.popup({});
+
+        
+            
+                var html_51eab18f7c5f8813e8c6b35a3ab74a47 = $(`<div id="html_51eab18f7c5f8813e8c6b35a3ab74a47" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sutton Green Road, Sutton Green</h1><div class="nugget-popup"><p>Main ditches along Sutton Green Road were cleared after being found full of sediment and debris as part of post&ndash;flood remedial works. (p33)</p></div></div></body></div>`)[0];
+                popup_282bba0ffa2edf725d4d133b41568971.setContent(html_51eab18f7c5f8813e8c6b35a3ab74a47);
+            
+        
+
+        marker_51cb99de042778dcc047f16ca87fb49e.bindPopup(popup_282bba0ffa2edf725d4d133b41568971)
+        ;
+
+        
+    
+    
+            var marker_a7e2dbbe39adfa5cd2a1757cd78edbcb = L.marker(
+                [51.30322539111366, -0.6035307993904105],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_16dee38988d5707b06bdffcad5565190 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a7e2dbbe39adfa5cd2a1757cd78edbcb.setIcon(icon_16dee38988d5707b06bdffcad5565190);
+        
+    
+        var popup_529564ff65cabf1c92b40a4479257a17 = L.popup({});
+
+        
+            
+                var html_bd8ed6ab883b9f5ed1707687cbb5a8dd = $(`<div id="html_bd8ed6ab883b9f5ed1707687cbb5a8dd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woking District</h1><div class="nugget-popup"><p>Internal property flooding reported at multiple addresses; road closures recorded during Winter 2013&ndash;14. [TAB] (p2)</p></div><div class="nugget-popup"><p>Experienced widespread flooding during winter 2013/14 due to unprecedented rainfall: drainage systems and river channels were unable to cope, resulting in internal property flooding and disruption to transport and services. [PAG] (p7)</p></div><div class="nugget-popup"><p>25 sites within the borough were investigated as having flooded during the winter 2013/14 event; the borough experienced approximately 40 incidents of internal property flooding. [IMG] (p10)</p></div><div class="nugget-popup"><p>Flooding associated with the December 2013 (winter 2013/14) event affected parts of Woking (including Woking South). The event involved high flows on tributaries of the River Thames (notably the Hoe Stream and Wey) and resulted in river and localised surface water flooding in the area. [PAG] (p13)</p></div><div class="nugget-popup"><p>Identified as an area particularly affected by the winter 2013/14 flooding; formed a focus of the multi&ndash;agency investigation and response described. (p15)</p></div><div class="nugget-popup"><p>Hosted a high&ndash;capacity underground drainage pipe identified as a key drainage asset and added to the Flooding asset register by SCC as part of post&ndash;event flood risk management following the winter 2013/14 floods. [PAG] (p16)</p></div><div class="nugget-popup"><p>Properties in the Borough experienced internal flooding; sandbags were delivered and evacuations assisted; river levels were monitored; Property Level Protection measures were coordinated and installed to internally flooded properties; debris clearance, ditching and drainage works were undertaken to restore drainage function. (p17)</p></div><div class="nugget-popup"><p>The Hoe Stream at Woking experienced fluvial flooding during winter 2013/14; the event on the Hoe Stream is estimated to have a 5&ndash;15 year return period. [PAG] (p29)</p></div><div class="nugget-popup"><p>Experienced major flooding from fluvial, surface water and sewer sources during winter 2013/14; the River Wey was the main source of fluvial flooding affecting parts of the borough. (p34)</p></div><div class="nugget-popup"><p>Woking was affected by the winter 2013/14 flooding; SCC is undertaking detailed modelling to identify flood alleviation options in Woking (and neighbouring areas) as part of the Rive Catchment Appraisal in response to that event. (p35)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 40 incidents of internal property flooding [PAG] (p7)</p></div><div class="nugget-popup quant"><p>25 sites; 40 incidents of internal property flooding [IMG] (p10)</p></div><div class="nugget-popup quant"><p>20&ndash;30 year return period (recorded for a Guildford tributary) [PAG] (p13)</p></div><div class="nugget-popup quant"><p>40 incidents of internal property flooding (p34)</p></div></div></body></div>`)[0];
+                popup_529564ff65cabf1c92b40a4479257a17.setContent(html_bd8ed6ab883b9f5ed1707687cbb5a8dd);
+            
+        
+
+        marker_a7e2dbbe39adfa5cd2a1757cd78edbcb.bindPopup(popup_529564ff65cabf1c92b40a4479257a17)
+        ;
+
+        
+    
+    
+            var marker_3eb77cc88b9b815c7998136c3aa679e9 = L.marker(
+                [51.2715316, -0.3414523511290909],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_01878c6892c2ad4f2333484fbda0dc3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3eb77cc88b9b815c7998136c3aa679e9.setIcon(icon_01878c6892c2ad4f2333484fbda0dc3e);
+        
+    
+        var popup_95165db8f9936b090791c02bb47bdecf = L.popup({});
+
+        
+            
+                var html_8170df07519f03fc10ae79417b7228f5 = $(`<div id="html_8170df07519f03fc10ae79417b7228f5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Surrey</h1><div class="nugget-popup"><p>Widespread flooding occurred across the county during winter 2013/14, prompting multiple investigation reports. (p9)</p></div><div class="nugget-popup"><p>Experienced flooding across the county during winter 2013/14; multi&ndash;agency response activities (EA, TW and others) were carried out across Surrey. [PAG] (p15)</p></div><div class="nugget-popup"><p>Affected by the Winter 2013/14 floods county&ndash;wide: roads were flood&ndash;damaged and assessed for repair under Project 400; Section 19 investigations/reports were produced; highways and drainage clearance (trees, debris, ditching) and sandbag distribution were carried out as part of the response and recovery. (p16)</p></div><div class="nugget-popup"><p>Temporary road closures within the sub area, including Wisley Lane, associated with the flood incident. (p26)</p></div><div class="nugget-popup"><p>A flood warning for the River Wey at Byfleet was issued to over 2,000 people on 25 December 2013; EA ambassadors visited Byfleet between Christmas and New Year and again during high flows in January; the Broad Ditch (a watercourse in the area) is classified as a Main River and was subject to investigation by WBC and the EA to address low bank spots and debris build&ndash;up; the EA completed an initial assessment for a larger flood defence scheme for Byfleet and Weybridge and adjusted the flood warning trigger level for the River Wey at Byfleet. Temporary road closures occurred within the sub area, including Wisley Lane. (p27)</p></div><div class="nugget-popup"><p>Widespread flooding across Surrey during winter 2013/14 due to exceptional rainfall, resulting in major fluvial, surface water and sewer flooding in the county. [PAG] (p34)</p></div><div class="nugget-popup"><p>The winter 2013/14 flood event caused widespread flooding across Surrey. Lack of maintenance of some riparian&ndash;owned ditches was identified as a contributing factor to the impacts of the flooding. [PAG] (p35)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 2,000 people (p27)</p></div></div></body></div>`)[0];
+                popup_95165db8f9936b090791c02bb47bdecf.setContent(html_8170df07519f03fc10ae79417b7228f5);
+            
+        
+
+        marker_3eb77cc88b9b815c7998136c3aa679e9.bindPopup(popup_95165db8f9936b090791c02bb47bdecf)
+        ;
+
+        
+    
+    
+            var marker_224b529eec031bf374965eba9aa0a5bb = L.marker(
+                [51.3948374, -0.5519609],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_5d7a852c48168be9bbf41786cecd250b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_224b529eec031bf374965eba9aa0a5bb.setIcon(icon_5d7a852c48168be9bbf41786cecd250b);
+        
+    
+        var popup_68726d7c375713ae46d4c58eeda37868 = L.popup({});
+
+        
+            
+                var html_36c83ae5b1e20651fa26ec04ae7a161a = $(`<div id="html_36c83ae5b1e20651fa26ec04ae7a161a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Runnymede</h1><div class="nugget-popup"><p>Undertook clean&ndash;up operations following the winter 2013/14 floods; received a sweeper from Woking Borough Council to assist in clearing debris and restoring roads. (p17)</p></div></div></body></div>`)[0];
+                popup_68726d7c375713ae46d4c58eeda37868.setContent(html_36c83ae5b1e20651fa26ec04ae7a161a);
+            
+        
+
+        marker_224b529eec031bf374965eba9aa0a5bb.bindPopup(popup_68726d7c375713ae46d4c58eeda37868)
+        ;
+
+        
+    
+    
+            var marker_aa792e0e5ad21b66dc4d559c2085a19d = L.marker(
+                [51.3401727, -0.472897],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_924efd36804740f2286df8b1403c026a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aa792e0e5ad21b66dc4d559c2085a19d.setIcon(icon_924efd36804740f2286df8b1403c026a);
+        
+    
+        var popup_5db8ac9a439ce5cb14f7e87a8e8c2d65 = L.popup({});
+
+        
+            
+                var html_ff3f064291060d32190db7fabfd90bff = $(`<div id="html_ff3f064291060d32190db7fabfd90bff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Byfleet</h1><div class="nugget-popup"><p>Internal property flooding reported at multiple addresses; road closures recorded during Winter 2013&ndash;14. [TAB] (p2)</p></div><div class="nugget-popup"><p>Sites within the Byfleet (including Byfleet south & Wisley) sub&ndash;area flooded during winter 2013/14 and were included in the S19 investigation; these incidents formed part of the borough&ndash;wide internal property flooding recorded during the event. [IMG] (p10)</p></div><div class="nugget-popup"><p>On 25 and 26 December 2013 Byfleet experienced its worst flooding since 2000. Properties flooded from the River Wey following heavy rainfall on saturated ground; property flooding started around midday on 25 December, became deeper and more widespread through that day, and the river reached its highest level on 26 December. [MUL] (p22)</p></div><div class="nugget-popup"><p>Properties and residents in Byfleet were directly affected: sandbags were delivered to impacted properties and officers helped residents evacuate during the flood; the EA issued flood warnings and sent ambassadors; afterwards WBC liaised with affected residents to install property&ndash;level protection and offer repair/renewal grants. [MUL] (p23)</p></div><div class="nugget-popup"><p>The south of Byfleet was affected by flooding on 25 December 2013: floodwaters from the River Wey and Broad Ditch overtopping flowed through fields into the southern residential area, inundating Sanway Road and Sanway Close and causing highway drain/gully backup. (p25)</p></div><div class="nugget-popup"><p>River Wey floodwaters overtopped/affected the Byfleet area after a flood warning was issued; properties flooded almost immediately following the warning. (p26)</p></div><div class="nugget-popup"><p>Byfleet received a flood warning for the River Wey; EA ambassadors visited the area between Christmas and New Year and again during high flows in January; recovery and investigation actions (including consideration of larger flood defences) followed. [MUL] (p27)</p></div><div class="nugget-popup"><p>Affected by fluvial flooding from the River Wey during the winter 2013/14 event. (p34)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of 25 sites across Woking; contributed to approximately 40 incidents of internal property flooding in Woking [IMG] (p10)</p></div><div class="nugget-popup quant"><p>over 2,000 people (issued with a flood warning) [MUL] (p23)</p></div><div class="nugget-popup quant"><p>over 2,000 people [MUL] (p27)</p></div></div></body></div>`)[0];
+                popup_5db8ac9a439ce5cb14f7e87a8e8c2d65.setContent(html_ff3f064291060d32190db7fabfd90bff);
+            
+        
+
+        marker_aa792e0e5ad21b66dc4d559c2085a19d.bindPopup(popup_5db8ac9a439ce5cb14f7e87a8e8c2d65)
+        ;
+
+        
+    
+    
+            var marker_06de117f470b73f636f8b3e196bd2a57 = L.marker(
+                [51.32364657514479, -0.4770989519149169],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_fec82260f106696e12fec2d33f5ca42b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_06de117f470b73f636f8b3e196bd2a57.setIcon(icon_fec82260f106696e12fec2d33f5ca42b);
+        
+    
+        var popup_a17296b3c4c3640e2954f73c7f6442ec = L.popup({});
+
+        
+            
+                var html_c1bfcdafb038841eb81baae2b3ce199a = $(`<div id="html_c1bfcdafb038841eb81baae2b3ce199a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wisley</h1><div class="nugget-popup"><p>Internal property flooding reported at multiple addresses; road closures recorded during Winter 2013&ndash;14. [TAB] (p2)</p></div><div class="nugget-popup"><p>Wisley (included in the Byfleet (south) & Wisley sub&ndash;area) was identified on the report map as containing investigation sites that flooded during winter 2013/14 and therefore was affected by the borough&ndash;wide flooding that produced internal property flooding. [IMG] (p10)</p></div><div class="nugget-popup"><p>Fluvial flooding from the River Wey affected the Wisley sub&ndash;area during the exceptional rainfall of winter 2013/14, contributing to internal property flooding as part of the major flood event across Woking borough. (p34)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of 25 sites across six sub&ndash;areas; part of approximately 40 incidents of internal property flooding in Woking [IMG] (p10)</p></div><div class="nugget-popup quant"><p>approximately 40 incidents of internal property flooding in Woking borough (p34)</p></div></div></body></div>`)[0];
+                popup_a17296b3c4c3640e2954f73c7f6442ec.setContent(html_c1bfcdafb038841eb81baae2b3ce199a);
+            
+        
+
+        marker_06de117f470b73f636f8b3e196bd2a57.bindPopup(popup_a17296b3c4c3640e2954f73c7f6442ec)
+        ;
+
+        
+    
+    
+            var marker_b6f3c2a95d8ba18e205be737c61fc89b = L.marker(
+                [51.302944, -0.54480207],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_73a57d5d80c616d417500c7f50b8f417 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b6f3c2a95d8ba18e205be737c61fc89b.setIcon(icon_73a57d5d80c616d417500c7f50b8f417);
+        
+    
+        var popup_f73f7aa14c2f92dd42d57e497da0d1c9 = L.popup({});
+
+        
+            
+                var html_b979aace6c71dae109677cc76821e81b = $(`<div id="html_b979aace6c71dae109677cc76821e81b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Old Woking</h1><div class="nugget-popup"><p>Internal property flooding reported at multiple addresses; road closures recorded during Winter 2013&ndash;14. [TAB] (p2)</p></div><div class="nugget-popup"><p>Sites within the Old Woking & Maybury sub&ndash;area flooded during winter 2013/14 and were included in the S19 investigation; these incidents formed part of the borough&ndash;wide internal property flooding recorded during the event. [IMG] (p10)</p></div><div class="nugget-popup"><p>Flooding reported in the Old Woking area with highway gullies surcharging and river water backing up the drainage network leading to inundation of the High Street, closure of the High Street and impassable access to the Gresham Mill development; river levels peaked on 25 December 2013. (p28)</p></div><div class="nugget-popup"><p>The south of Old Woking and Old Woking High Street were affected by flooding in winter 2013/14. Sandbags issued in the High Street area prevented internal flooding to properties; ditches and watercourses to the south of the High Street are now full of sediment and debris, reducing local surface water drainage and future flood water storage capacity. Property protection measures were installed for impacted residents and individual flood plans are being prepared. [PAG] (p29)</p></div><div class="nugget-popup"><p>During the winter 2013/14 flood event there was backflow of flood water into the highway system; WBC recommended installing flap valves on all pipes greater than 300 mm in Old Woking to prevent future backflow into the highway. (p35)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of 25 sites across Woking; contributed to approximately 40 incidents of internal property flooding in Woking [IMG] (p10)</p></div><div class="nugget-popup quant"><p>approximately 10 properties [PAG] (p29)</p></div></div></body></div>`)[0];
+                popup_f73f7aa14c2f92dd42d57e497da0d1c9.setContent(html_b979aace6c71dae109677cc76821e81b);
+            
+        
+
+        marker_b6f3c2a95d8ba18e205be737c61fc89b.bindPopup(popup_f73f7aa14c2f92dd42d57e497da0d1c9)
+        ;
+
+        
+    
+    
+            var marker_5db3e93c594513ec2ab46170746a147b = L.marker(
+                [51.319824, -0.5412548],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_f8ebc3706ba1097d8f47bf6c3a34381a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5db3e93c594513ec2ab46170746a147b.setIcon(icon_f8ebc3706ba1097d8f47bf6c3a34381a);
+        
+    
+        var popup_bcf951bc08f47693540bb87dc4807bba = L.popup({});
+
+        
+            
+                var html_e96d297a412b6d032cfcbe1399a7811d = $(`<div id="html_e96d297a412b6d032cfcbe1399a7811d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Maybury</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses in the area; associated road closures during the winter 2013&ndash;14 event. [TAB] (p2)</p></div><div class="nugget-popup"><p>Maybury (shown as Old Woking & Maybury sub&ndash;area) was one of the sub&ndash;areas used in the report to group flooded investigation sites during the winter 2013/14 event and therefore experienced flooding impacts contributing to internal property flooding in the borough. [IMG] (p10)</p></div><div class="nugget-popup"><p>Backflow of flood water entered the highway system at High Street in Maybury during the winter 2013/14 floods; WBC recommended installation of flap valves on pipes &gt;300mm to prevent repeat backflow into the highway. (p35)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of 25 sites across six sub&ndash;areas; part of approximately 40 incidents of internal property flooding in Woking [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_bcf951bc08f47693540bb87dc4807bba.setContent(html_e96d297a412b6d032cfcbe1399a7811d);
+            
+        
+
+        marker_5db3e93c594513ec2ab46170746a147b.bindPopup(popup_bcf951bc08f47693540bb87dc4807bba)
+        ;
+
+        
+    
+    
+            var marker_61ae753e6cf5cd67b2982afd3166a337 = L.marker(
+                [51.3246896, -0.566865],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_c20509c509c6bf890e101f7426bfe24e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_61ae753e6cf5cd67b2982afd3166a337.setIcon(icon_c20509c509c6bf890e101f7426bfe24e);
+        
+    
+        var popup_8c2ff247945d6fe7e844961224907377 = L.popup({});
+
+        
+            
+                var html_2ad45ac1a72acd00167dd0a92d9abbc2 = $(`<div id="html_2ad45ac1a72acd00167dd0a92d9abbc2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Horsell</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses in the area; associated road closures during the winter 2013&ndash;14 event. [TAB] (p2)</p></div><div class="nugget-popup"><p>Horsell was identified as one of the sub&ndash;areas within Woking Borough that contained sites investigated for flooding during the winter 2013/14 event; it formed part of the borough&ndash;wide flooding that contributed to internal property flooding incidents. [IMG] (p10)</p></div><div class="nugget-popup"><p>Internal property flooding and road closures occurred in the Horsell sub area during the winter 2013/14 event. (p31)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of 25 sites across six sub&ndash;areas; part of approximately 40 incidents of internal property flooding in Woking [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_8c2ff247945d6fe7e844961224907377.setContent(html_2ad45ac1a72acd00167dd0a92d9abbc2);
+            
+        
+
+        marker_61ae753e6cf5cd67b2982afd3166a337.bindPopup(popup_8c2ff247945d6fe7e844961224907377)
+        ;
+
+        
+    
+    
+            var marker_5863f65c8ef0ebe64fc927082a6ee6bd = L.marker(
+                [51.2804391, -0.5584087],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_a5c7db1eb157f3d8f1ade2702d9152a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5863f65c8ef0ebe64fc927082a6ee6bd.setIcon(icon_a5c7db1eb157f3d8f1ade2702d9152a0);
+        
+    
+        var popup_0a1c525ce3b6a3c8bd260eb859c1b192 = L.popup({});
+
+        
+            
+                var html_c41d518e7e4dda71bbaa07f7d299ddfc = $(`<div id="html_c41d518e7e4dda71bbaa07f7d299ddfc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sutton Green</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses in the area; associated road closures during the winter 2013&ndash;14 event. [TAB] (p2)</p></div><div class="nugget-popup"><p>Sites within the Sutton Green & Worplesdon sub&ndash;area flooded during winter 2013/14 and were included in the S19 investigation; these incidents formed part of the borough&ndash;wide internal property flooding recorded during the event. [IMG] (p10)</p></div><div class="nugget-popup"><p>Internal property flooding and road closures occurred in the Sutton Green and Worplesdon sub area during winter 2013/14, affecting Sutton Green; drainage is via ditches and piped watercourses discharging to the Hoe Stream which contributed to local flooding. [PAG] (p32)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of 25 sites across Woking; contributed to approximately 40 incidents of internal property flooding in Woking [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_0a1c525ce3b6a3c8bd260eb859c1b192.setContent(html_c41d518e7e4dda71bbaa07f7d299ddfc);
+            
+        
+
+        marker_5863f65c8ef0ebe64fc927082a6ee6bd.bindPopup(popup_0a1c525ce3b6a3c8bd260eb859c1b192)
+        ;
+
+        
+    
+    
+            var marker_8e41705d26dd1e22a876e912a002b63d = L.marker(
+                [51.275650453497754, -0.6082016835957014],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_04cc33ebcd0ff4225a6ed59b3d7d4ccd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8e41705d26dd1e22a876e912a002b63d.setIcon(icon_04cc33ebcd0ff4225a6ed59b3d7d4ccd);
+        
+    
+        var popup_af558f618395058ec6a43dc5a993bf96 = L.popup({});
+
+        
+            
+                var html_08af95495d1723b85c0c76adca3fde25 = $(`<div id="html_08af95495d1723b85c0c76adca3fde25" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Worplesdon</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses in the area; associated road closures during the winter 2013&ndash;14 event. [TAB] (p2)</p></div><div class="nugget-popup"><p>Worplesdon (included with Sutton Green & Worplesdon sub&ndash;area) was identified as a sub&ndash;area in the report that contained flooded investigation sites during the winter 2013/14 event and contributed to the borough's internal property flooding incidents. [IMG] (p10)</p></div><div class="nugget-popup"><p>Worplesdon is part of the Sutton Green and Worplesdon sub area where a number of internal property flooding incidents and road closures occurred during winter 2013/14; local drainage via ditches and connections to the Hoe Stream were implicated. (p32)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of 25 sites across six sub&ndash;areas; part of approximately 40 incidents of internal property flooding in Woking [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_af558f618395058ec6a43dc5a993bf96.setContent(html_08af95495d1723b85c0c76adca3fde25);
+            
+        
+
+        marker_8e41705d26dd1e22a876e912a002b63d.bindPopup(popup_af558f618395058ec6a43dc5a993bf96)
+        ;
+
+        
+    
+    
+            var marker_a916aed2dfa0f700e7e8bfd9ee8f4624 = L.marker(
+                [51.34777, -0.6010128],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_b74e71f633ac3a751d7c346e49181e02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a916aed2dfa0f700e7e8bfd9ee8f4624.setIcon(icon_b74e71f633ac3a751d7c346e49181e02);
+        
+    
+        var popup_a3f083d43c35ec4f8555954b1291203c = L.popup({});
+
+        
+            
+                var html_a4cb95b15af0ecc55c3e749b2ad671c5 = $(`<div id="html_a4cb95b15af0ecc55c3e749b2ad671c5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chobham</h1><div class="nugget-popup"><p>Chobham is shown on the map as a neighbouring area included in the report's geographic context; it formed part of the broader pattern of sites/sub&ndash;areas considered in the borough&ndash;wide investigations of flooding during winter 2013/14. [IMG] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of 25 sites across six sub&ndash;areas; part of approximately 40 incidents of internal property flooding in Woking [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_a3f083d43c35ec4f8555954b1291203c.setContent(html_a4cb95b15af0ecc55c3e749b2ad671c5);
+            
+        
+
+        marker_a916aed2dfa0f700e7e8bfd9ee8f4624.bindPopup(popup_a3f083d43c35ec4f8555954b1291203c)
+        ;
+
+        
+    
+    
+            var marker_dac141ff2495900aaed20f81e05a9640 = L.marker(
+                [51.3340438, -0.5276444],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_a515dc9ba9a0302f5a56e2bc71119cf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dac141ff2495900aaed20f81e05a9640.setIcon(icon_a515dc9ba9a0302f5a56e2bc71119cf2);
+        
+    
+        var popup_8b11393bf2347b362b1ec4f5b23b9d38 = L.popup({});
+
+        
+            
+                var html_100c8f2dc0216be3ea13e5a266e1095d = $(`<div id="html_100c8f2dc0216be3ea13e5a266e1095d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sheerwater</h1><div class="nugget-popup"><p>A high&ndash;capacity underground pipe that runs through Sheerwater was identified as a key drainage asset and added to the Flooding asset register (identified in SCC's post&ndash;event work following the winter 2013/14 floods / LFRMS process). (p16)</p></div><div class="nugget-popup"><p>Area was affected by flooding during the winter 2013/14 event; the flood risk was sufficient to prompt Surrey County Council to undertake detailed modelling to identify flood alleviation options. (p35)</p></div></div></body></div>`)[0];
+                popup_8b11393bf2347b362b1ec4f5b23b9d38.setContent(html_100c8f2dc0216be3ea13e5a266e1095d);
+            
+        
+
+        marker_dac141ff2495900aaed20f81e05a9640.bindPopup(popup_8b11393bf2347b362b1ec4f5b23b9d38)
+        ;
+
+        
+    
+    
+            var marker_757e10a7ae6eb4eed99d25c928fc76ab = L.marker(
+                [51.235607, -0.5732063],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_71acaeb698a3fa6ab18e456836e4abc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_757e10a7ae6eb4eed99d25c928fc76ab.setIcon(icon_71acaeb698a3fa6ab18e456836e4abc6);
+        
+    
+        var popup_462e2cbe282b40bd7cfad3678b3b5e48 = L.popup({});
+
+        
+            
+                var html_21522916df77cb66f48ce1c0118191a6 = $(`<div id="html_21522916df77cb66f48ce1c0118191a6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Guildford</h1><div class="nugget-popup"><p>River Wey experienced elevated fluvial levels during the winter 2013/14 event. (p25)</p></div><div class="nugget-popup"><p>Flooding from the River Wey occurred at Guildford in winter 2013/14; the level at Guildford is estimated to have a 20&ndash;30 year return period. (p29)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>20&ndash;30 year return period (p25)</p></div></div></body></div>`)[0];
+                popup_462e2cbe282b40bd7cfad3678b3b5e48.setContent(html_21522916df77cb66f48ce1c0118191a6);
+            
+        
+
+        marker_757e10a7ae6eb4eed99d25c928fc76ab.bindPopup(popup_462e2cbe282b40bd7cfad3678b3b5e48)
+        ;
+
+        
+    
+    
+            var marker_ad415d0def5418af99ff8427e417115b = L.marker(
+                [51.3727175, -0.4549297],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_1e0381cc762e70346996c8972bdb5027 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ad415d0def5418af99ff8427e417115b.setIcon(icon_1e0381cc762e70346996c8972bdb5027);
+        
+    
+        var popup_fe9a972cba8ad97b554496782af55e0b = L.popup({});
+
+        
+            
+                var html_00e1522f03f06b7cf082c7c4d286e974 = $(`<div id="html_00e1522f03f06b7cf082c7c4d286e974" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Weybridge</h1><div class="nugget-popup"><p>River Wey experienced elevated fluvial levels during the winter 2013/14 event. (p25)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>20&ndash;30 year return period (p25)</p></div></div></body></div>`)[0];
+                popup_fe9a972cba8ad97b554496782af55e0b.setContent(html_00e1522f03f06b7cf082c7c4d286e974);
+            
+        
+
+        marker_ad415d0def5418af99ff8427e417115b.bindPopup(popup_fe9a972cba8ad97b554496782af55e0b)
+        ;
+
+        
+    
+    
+            var marker_980b9c60e76c4cc1c876ee8dc26dc90f = L.marker(
+                [51.346786, -0.5141027],
+                {}
+            ).addTo(map_4fa019ea06e19b0b591526f5812a0cbd);
+        
+    
+            var icon_aa5e74f840db05375da5c594a4dfffbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_980b9c60e76c4cc1c876ee8dc26dc90f.setIcon(icon_aa5e74f840db05375da5c594a4dfffbc);
+        
+    
+        var popup_6dba179060419ce427661b4ee71db347 = L.popup({});
+
+        
+            
+                var html_40aa5f4aec41e438623b049464f0bc3d = $(`<div id="html_40aa5f4aec41e438623b049464f0bc3d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woodham</h1><div class="nugget-popup"><p>Area was affected by flooding during the winter 2013/14 event; the flood risk was sufficient to prompt Surrey County Council to undertake detailed modelling to identify flood alleviation options. (p35)</p></div></div></body></div>`)[0];
+                popup_6dba179060419ce427661b4ee71db347.setContent(html_40aa5f4aec41e438623b049464f0bc3d);
+            
+        
+
+        marker_980b9c60e76c4cc1c876ee8dc26dc90f.bindPopup(popup_6dba179060419ce427661b4ee71db347)
+        ;
+
+        
+    
+</script>
+</html>
