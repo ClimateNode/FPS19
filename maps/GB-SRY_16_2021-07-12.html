@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f3c3f48279848032d9675de4560170bb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f3c3f48279848032d9675de4560170bb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f3c3f48279848032d9675de4560170bb = L.map(
+                "map_f3c3f48279848032d9675de4560170bb",
+                {
+                    center: [51.310927407342994, -0.2281876002772446],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bcca654d0f3c5b9ed07780f98e578714 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_bcca654d0f3c5b9ed07780f98e578714.addTo(map_f3c3f48279848032d9675de4560170bb);
+    
+            var marker_d6446c6727b3edad62ea59abd4fa8f3b = L.marker(
+                [51.311485, -0.2262038],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_cd0de411d5c19f42cc1b6a428ce27f25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d6446c6727b3edad62ea59abd4fa8f3b.setIcon(icon_cd0de411d5c19f42cc1b6a428ce27f25);
+        
+    
+        var popup_0fa10ff0e760e5ec72652650914b8a99 = L.popup({});
+
+        
+            
+                var html_b2cf269b538a562c3e826e508f544e1c = $(`<div id="html_b2cf269b538a562c3e826e508f544e1c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Great Tattenhams, Nork</h1><div class="nugget-popup"><p>Surface water flooding on 12th July 2021 impacted properties in Great Tattenhams; site visit and photos were used to confirm the extent of property flooding. (p4)</p></div><div class="nugget-popup"><p>Flooding at 131 Great Tattenhams was caused solely by foul sewer surcharge from a manhole in the back garden (no surface water flow from the highway affected this property). (p7)</p></div><div class="nugget-popup"><p>Extensions and construction at 94 and 98 Great Tattenhams obstructed historic flow routes, increasing local pooling and causing water to be unable to bypass properties; during flood events doors were opened to let water flow through or around the properties to relieve pressure, indicating these properties experienced direct inundation risk and pooling. (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (131 Great Tattenhams) (p7)</p></div><div class="nugget-popup quant"><p>2 properties (94 and 98 Great Tattenhams) (p8)</p></div></div></body></div>`)[0];
+                popup_0fa10ff0e760e5ec72652650914b8a99.setContent(html_b2cf269b538a562c3e826e508f544e1c);
+            
+        
+
+        marker_d6446c6727b3edad62ea59abd4fa8f3b.bindPopup(popup_0fa10ff0e760e5ec72652650914b8a99)
+        ;
+
+        
+    
+    
+            var marker_03d33179a84a82285a992669c9278c9c = L.marker(
+                [51.3105574, -0.234303],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_064cebfb68e7451eee19a48a1bf92bf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_03d33179a84a82285a992669c9278c9c.setIcon(icon_064cebfb68e7451eee19a48a1bf92bf2);
+        
+    
+        var popup_5e22eefdda7717b00d21208cefdfab81 = L.popup({});
+
+        
+            
+                var html_8395b4700ca235d6f97cfc4de885b0fa = $(`<div id="html_8395b4700ca235d6f97cfc4de885b0fa" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Uplands Way, Nork</h1><div class="nugget-popup"><p>Surface water flooding on 12th July 2021 affected properties on Uplands Way; site visit and resident photos were used to confirm impacts and extent. (p4)</p></div><div class="nugget-popup"><p>Surface water flooding on 12th July 2021 produced flow routes through the catchment including Upland Way and caused flooding to properties; site visits were undertaken to confirm impact and extent. [PAG,IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_5e22eefdda7717b00d21208cefdfab81.setContent(html_8395b4700ca235d6f97cfc4de885b0fa);
+            
+        
+
+        marker_03d33179a84a82285a992669c9278c9c.bindPopup(popup_5e22eefdda7717b00d21208cefdfab81)
+        ;
+
+        
+    
+    
+            var marker_eda476db7b67e30ca8dbc0462f5f2d2a = L.marker(
+                [51.3264564, -0.2331544],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_2e73f72ef4375d0a61aabd365fd030ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eda476db7b67e30ca8dbc0462f5f2d2a.setIcon(icon_2e73f72ef4375d0a61aabd365fd030ae);
+        
+    
+        var popup_bf2271cb958f0770894163e073785373 = L.popup({});
+
+        
+            
+                var html_62bf4d16060273f82b4892e2a00b1c69 = $(`<div id="html_62bf4d16060273f82b4892e2a00b1c69" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Reigate Road, Nork</h1><div class="nugget-popup"><p>Surface water flooding on 12th July 2021 impacted properties on Reigate Road; impact and extent were confirmed during the site visit and via resident photographs. (p4)</p></div><div class="nugget-popup"><p>Surface water flooding on 12th July 2021 affected flow routes through Reigate Road and resulted in flooding impacts to properties in the catchment; site visits confirmed extent and impacts. [PAG,IMG] (p5)</p></div><div class="nugget-popup"><p>Properties on the eastern side of Reigate Road flooded where they are lower than the highway; flows from Nork Way and Rosebushes crossed footpaths via vehicle crossovers and inundated driveways and front gardens. (p7)</p></div><div class="nugget-popup"><p>Surface water flowed down the eastern side of the road due to highway camber and reached properties by flowing over dropped kerbs; water then collected in lower driveways and front gardens with no onward drainage, causing property flooding. (p8)</p></div></div></body></div>`)[0];
+                popup_bf2271cb958f0770894163e073785373.setContent(html_62bf4d16060273f82b4892e2a00b1c69);
+            
+        
+
+        marker_eda476db7b67e30ca8dbc0462f5f2d2a.bindPopup(popup_bf2271cb958f0770894163e073785373)
+        ;
+
+        
+    
+    
+            var marker_4c4d7e5f9b520068cf5d14abc6deea58 = L.marker(
+                [51.3201195, -0.2290167],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_bd14e8deed725251267818ebf51f7ca9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4c4d7e5f9b520068cf5d14abc6deea58.setIcon(icon_bd14e8deed725251267818ebf51f7ca9);
+        
+    
+        var popup_98de47a347c333d3218e8a4bee29500b = L.popup({});
+
+        
+            
+                var html_36cb8658851f92165944b5bf83c7af95 = $(`<div id="html_36cb8658851f92165944b5bf83c7af95" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nork Way, Nork</h1><div class="nugget-popup"><p>Surface water flooding on 12th July 2021 affected properties on Nork Way (within catchment 2); impacts were confirmed by site inspection and resident photographs. (p4)</p></div><div class="nugget-popup"><p>Surface water flooding on 12th July 2021 impacted the Nork Way flow route within Catchment 2, causing flooding to properties as confirmed by site visits. [PAG,IMG] (p5)</p></div><div class="nugget-popup"><p>Rapid surface water runoff collected and flowed across the highway towards low points in front of properties causing external flooding; foul sewage inundation affected properties in August 2020 due to damaged non&ndash;return valves (subsequently replaced). Residents installed flood gates and other barriers; some properties experienced internal flooding with foul sewage. [PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>Surface water runoff collected and flowed across the highway towards low points in front of properties, with gullies overtopped and water continuing down to low points. Additionally, internal flooding with foul sewage occurred at 83A Nork Way (August 2020) caused by damaged non&ndash;return valves; 83A has since installed flood gates and internal garage access gates which have been left up. Thames Water was reported to the August 2020 sewage incident and the damaged non&ndash;return valves were replaced. [PAG,MUL] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>External flooding: part of Catchment 2 total of 8 properties (12 July 2021); 2 properties (83A and 87 Nork Way) impacted by foul sewage in August 2020; 1 property (83A) flooded internally with foul sewage (August 2020). [PAG,MUL] (p11)</p></div><div class="nugget-popup quant"><p>83A Nork Way; 87 Nork Way (2 properties) [PAG,MUL] (p12)</p></div></div></body></div>`)[0];
+                popup_98de47a347c333d3218e8a4bee29500b.setContent(html_36cb8658851f92165944b5bf83c7af95);
+            
+        
+
+        marker_4c4d7e5f9b520068cf5d14abc6deea58.bindPopup(popup_98de47a347c333d3218e8a4bee29500b)
+        ;
+
+        
+    
+    
+            var marker_838ba3ebd393162580edcd0d346ed2a4 = L.marker(
+                [51.3244255, -0.2238653],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_e0ab5f1ec90bb9e455b0ab332d878e7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_838ba3ebd393162580edcd0d346ed2a4.setIcon(icon_e0ab5f1ec90bb9e455b0ab332d878e7f);
+        
+    
+        var popup_4691fd18f54073da5dd343b38058191c = L.popup({});
+
+        
+            
+                var html_2a7bb737af65cad33c32353c6851798b = $(`<div id="html_2a7bb737af65cad33c32353c6851798b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Roundwood Way, Nork</h1><div class="nugget-popup"><p>Surface water flooding on 12th July 2021 impacted properties on Roundwood (within catchment 2); the extent of flooding was documented during the site visit and with resident photos. (p4)</p></div><div class="nugget-popup"><p>Surface water flooding on 12th July 2021 affected flow routes through Roundwood within Catchment 2 and caused flooding to properties, with impacts confirmed by site visits. [PAG,IMG] (p5)</p></div><div class="nugget-popup"><p>Surface water drainage was less effective due to topography and constrained/access&ndash;limited inspections; a highway soakaway surcharged and released water that flowed toward properties, causing external flooding; residents reported eventual surcharge from a soakaway on the highway. [PAG] (p11)</p></div><div class="nugget-popup"><p>Although gullies drained much of the water, a highway soakaway eventually surcharged and released water that flowed towards properties at the low point, allowing flood water to reach properties. (p12)</p></div><div class="nugget-popup"><p>Highway drainage on Roundwood Way had not been inspected for about three years due to blocked access (cars parked over gullies, stuck covers); residents reported gullies surcharging, indicating localised surface water flooding when drainage capacity was exceeded. (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of Catchment 2 external flooding: total of 8 properties (12 July 2021). [PAG] (p11)</p></div><div class="nugget-popup quant"><p>48 Roundwood Way; 50 Roundwood Way (2 properties) (p12)</p></div></div></body></div>`)[0];
+                popup_4691fd18f54073da5dd343b38058191c.setContent(html_2a7bb737af65cad33c32353c6851798b);
+            
+        
+
+        marker_838ba3ebd393162580edcd0d346ed2a4.bindPopup(popup_4691fd18f54073da5dd343b38058191c)
+        ;
+
+        
+    
+    
+            var marker_9aad4357026f74fca38fb45c5d8ada64 = L.marker(
+                [51.324739, -0.2136438],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_abc7107353a4f23bdcbf193d2936f3f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9aad4357026f74fca38fb45c5d8ada64.setIcon(icon_abc7107353a4f23bdcbf193d2936f3f8);
+        
+    
+        var popup_0e3a94fe6c9b841d833ef1b79f323339 = L.popup({});
+
+        
+            
+                var html_6ea3097ac35f32291aa49e6ab0a99f44 = $(`<div id="html_6ea3097ac35f32291aa49e6ab0a99f44" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Green Curve, Nork</h1><div class="nugget-popup"><p>Surface water flooding affected properties; site visit notes and resident photographs confirm flooding and extent to properties on 12th July 2021. (p4)</p></div><div class="nugget-popup"><p>Surface water flooding on 12th July 2021 caused flows and property flooding along Green Curve as part of Catchment 2; site visits were carried out to document impact and extent. [PAG,IMG] (p5)</p></div><div class="nugget-popup"><p>Surface water flowed rapidly over gullies and along the highway toward low points in front of properties, causing external flooding; residents used barriers, sandbags and pumps in some cases to prevent internal flooding. [PAG] (p11)</p></div><div class="nugget-popup"><p>High&ndash;speed surface water flowed over gullies and continued down the highway towards low points in front of properties; gullies were unable to capture the runoff leading to flow towards properties. (p12)</p></div><div class="nugget-popup"><p>Surface water was flowing along the verge next to 34 Green Curve onto the highway, indicating localised surface water runoff that overwhelmed interception; recommendation to consider additional gullies or drainage to intercept these flows. (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of Catchment 2 external flooding: total of 8 properties (12 July 2021). [PAG] (p11)</p></div></div></body></div>`)[0];
+                popup_0e3a94fe6c9b841d833ef1b79f323339.setContent(html_6ea3097ac35f32291aa49e6ab0a99f44);
+            
+        
+
+        marker_9aad4357026f74fca38fb45c5d8ada64.bindPopup(popup_0e3a94fe6c9b841d833ef1b79f323339)
+        ;
+
+        
+    
+    
+            var marker_4f97e9e89098f3ed46d2a24124a0185d = L.marker(
+                [51.3100123, -0.2207691],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_7f1f1106fa0efb35c1ad0bacc9da3063 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4f97e9e89098f3ed46d2a24124a0185d.setIcon(icon_7f1f1106fa0efb35c1ad0bacc9da3063);
+        
+    
+        var popup_b71ea25a58773291f295bfc611ae5235 = L.popup({});
+
+        
+            
+                var html_a46dc1430de7d5c1ef2b7e0bbe70daf6 = $(`<div id="html_a46dc1430de7d5c1ef2b7e0bbe70daf6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Waterer Gardens, Nork</h1><div class="nugget-popup"><p>Surface water flooding affected properties; site visit notes and resident photographs confirm flooding and extent to properties on 12th July 2021. (p4)</p></div><div class="nugget-popup"><p>Surface water flooding on 12th July 2021 impacted Waterer Gardens as part of Catchment 3, leading to flooding of properties and flow&ndash;route impacts documented during site visits. [PAG,IMG] (p5)</p></div><div class="nugget-popup"><p>Identified as the start of the surface water flow route; surface water ran through gardens in Waterer Gardens and onto Tangier Way, feeding the route that led to property flooding at the low point of the catchment. (p15)</p></div><div class="nugget-popup"><p>Start of a surface water flow route: water flowed through gardens and onto the highway at Waterer Gardens, overtopping gullies on steep sections and flowing over the hard standing of a private road into rear gardens (contributing flow into Tangier Way properties). [PAG] (p16)</p></div><div class="nugget-popup"><p>Surface water flows across the highway toward a single low&ndash;point soakaway in front of number 47; combined gully flow and surface runoff rapidly fills highway storage and exceeds drainage capacity during high rainfall, causing localised flooding at the low point. (p17)</p></div></div></body></div>`)[0];
+                popup_b71ea25a58773291f295bfc611ae5235.setContent(html_a46dc1430de7d5c1ef2b7e0bbe70daf6);
+            
+        
+
+        marker_4f97e9e89098f3ed46d2a24124a0185d.bindPopup(popup_b71ea25a58773291f295bfc611ae5235)
+        ;
+
+        
+    
+    
+            var marker_36cc023b0c65e5e45138db7e3470d1d8 = L.marker(
+                [51.3109911, -0.2182162],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_245613f316af682bff386f7a74ba30af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_36cc023b0c65e5e45138db7e3470d1d8.setIcon(icon_245613f316af682bff386f7a74ba30af);
+        
+    
+        var popup_97458dcade1c039d2ce8a96c885c6cb2 = L.popup({});
+
+        
+            
+                var html_058256e4c82c0bed678495ae67672876 = $(`<div id="html_058256e4c82c0bed678495ae67672876" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tangier Way, Nork</h1><div class="nugget-popup"><p>Surface water flooding affected properties; site visit notes and resident photographs confirm flooding and extent to properties on 12th July 2021. (p4)</p></div><div class="nugget-popup"><p>Surface water flooding on 12 July 2021 affected properties on Tangier Way (part of Catchment 3); site visit confirmed flooding and its extent to properties. [PAG,IMG] (p5)</p></div><div class="nugget-popup"><p>Surface water flowed through gardens onto the highway of Tangier Way and collected at the junction with Tattenham Way, contributing to the downstream property flooding seen at the low point of the catchment; some homeowners deployed barriers, sandbags and pumps to avoid internal flooding. (p15)</p></div><div class="nugget-popup"><p>Surface water flowed through gardens onto the highway at Tangier Way, collecting at the junction with Tattenham Way; water moved through the back garden of 12 Tangier Way into 10 Tangier Way, demonstrating overland flow between properties. [PAG] (p16)</p></div></div></body></div>`)[0];
+                popup_97458dcade1c039d2ce8a96c885c6cb2.setContent(html_058256e4c82c0bed678495ae67672876);
+            
+        
+
+        marker_36cc023b0c65e5e45138db7e3470d1d8.bindPopup(popup_97458dcade1c039d2ce8a96c885c6cb2)
+        ;
+
+        
+    
+    
+            var marker_1807cb17eb3e598126712470d185b9e5 = L.marker(
+                [51.3027164, -0.2245291],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_084798eda0ad8f8a408d4ca005b59cf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1807cb17eb3e598126712470d185b9e5.setIcon(icon_084798eda0ad8f8a408d4ca005b59cf2);
+        
+    
+        var popup_902d24c7daf0f11a8268acae70343932 = L.popup({});
+
+        
+            
+                var html_0e3014d165e37e09e7c13ddc30f650f3 = $(`<div id="html_0e3014d165e37e09e7c13ddc30f650f3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hatch Gardens, Tadworth</h1><div class="nugget-popup"><p>Surface water flooding affected properties; site visit notes and resident photographs confirm flooding and extent to properties on 12th July 2021. (p4)</p></div><div class="nugget-popup"><p>Surface water flooding on 12 July 2021 affected Hatch Gardens (part of Catchment 4); the catchment was investigated and site visits were made to confirm impacts to properties. [IMG,PAG] (p5)</p></div><div class="nugget-popup"><p>Surface water originating from a new development north of Hatch Gardens flowed under boundary fences into front gardens, pooled and built up next to properties. This resulted in internal flooding of one property and external flooding to others; homeowners used barriers, sandbags and pumps to prevent further internal flooding. [MUL] (p19)</p></div><div class="nugget-popup"><p>The site slope and additional impermeable area at the adjacent development meant that during the 12th July 2021 intense rainfall surface water exceeded drainage capacity and flowed toward Hatch Gardens along the mapped exceedance route. (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internal flooding; 4 properties external flooding [MUL] (p19)</p></div></div></body></div>`)[0];
+                popup_902d24c7daf0f11a8268acae70343932.setContent(html_0e3014d165e37e09e7c13ddc30f650f3);
+            
+        
+
+        marker_1807cb17eb3e598126712470d185b9e5.bindPopup(popup_902d24c7daf0f11a8268acae70343932)
+        ;
+
+        
+    
+    
+            var marker_e7bc3560bb15d877af6dcf3d30575eb8 = L.marker(
+                [51.3127989, -0.2146293],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_95a7631f35d7b11e5f084b9e93ee9ef6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e7bc3560bb15d877af6dcf3d30575eb8.setIcon(icon_95a7631f35d7b11e5f084b9e93ee9ef6);
+        
+    
+        var popup_89ee81bb76010f65152944d27a97984d = L.popup({});
+
+        
+            
+                var html_413ac411ec2832c67532bab9a2a3d430 = $(`<div id="html_413ac411ec2832c67532bab9a2a3d430" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tattenham Way, Nork</h1><div class="nugget-popup"><p>Surface water flooding on 12 July 2021 affected properties on Tattenham Way (part of Catchment 3); site visit confirmed flooding and its extent to properties. [PAG,IMG] (p5)</p></div><div class="nugget-popup"><p>Flooding occurred at the bottom of the catchment at Tattenham Way; the event produced impacts similar to previous storm reports and contributed to property flooding recorded in the catchment (external and at least one internal incident). Garage flooding on Meadow Way is recorded as resulting from surface water flow from Tattenham Way. (p15)</p></div><div class="nugget-popup"><p>Surface water flow collected at low points adjacent to the A217; highway drainage was overwhelmed causing pooling and flow over footpaths into properties. No. 2 Tattenham Way flooded internally with water entering via airbricks and through floorboards; flood water entered the front of the property in July 2021 and was exacerbated by vehicles creating bow waves. Surface water from Tattenham Way also caused garage flooding on Meadow Way. [PAG] (p16)</p></div><div class="nugget-popup"><p>Overland runoff from surrounding slopes and paved areas flows downhill onto the highway, overwhelming highway gullies and soakaways and allowing water to collect at the low point/junction beside numbers 2 and 3 Tattenham Way. (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (No.2 Tattenham Way) [PAG] (p16)</p></div></div></body></div>`)[0];
+                popup_89ee81bb76010f65152944d27a97984d.setContent(html_413ac411ec2832c67532bab9a2a3d430);
+            
+        
+
+        marker_e7bc3560bb15d877af6dcf3d30575eb8.bindPopup(popup_89ee81bb76010f65152944d27a97984d)
+        ;
+
+        
+    
+    
+            var marker_813a564e7f10ccf115c5352e2e0cf4b3 = L.marker(
+                [51.3121894, -0.2282363],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_fb82e12b5255dbca68a2a57ab51d983d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_813a564e7f10ccf115c5352e2e0cf4b3.setIcon(icon_fb82e12b5255dbca68a2a57ab51d983d);
+        
+    
+        var popup_e3ff7e8d82ea94d3508d3e8c5ed63689 = L.popup({});
+
+        
+            
+                var html_26d8068c5f11c6930f9f8ae383ee0d5c = $(`<div id="html_26d8068c5f11c6930f9f8ae383ee0d5c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Shawley Crescent, Nork</h1><div class="nugget-popup"><p>A newly installed vehicle crossover (dropped kerb) adjacent to 37 Shawley Crescent changed flow paths so surface water reached the footpath and then residential drives more quickly, increasing the likelihood of properties receiving overland water from the highway during the storm. (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>37 Shawley Crescent (location of new VCO) (p8)</p></div></div></body></div>`)[0];
+                popup_e3ff7e8d82ea94d3508d3e8c5ed63689.setContent(html_26d8068c5f11c6930f9f8ae383ee0d5c);
+            
+        
+
+        marker_813a564e7f10ccf115c5352e2e0cf4b3.bindPopup(popup_e3ff7e8d82ea94d3508d3e8c5ed63689)
+        ;
+
+        
+    
+    
+            var marker_caa89325fbadb69feb4f8342b230dba3 = L.marker(
+                [51.317719, -0.236911],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_070f7f07fa3222afc0cd4138bea2cf98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_caa89325fbadb69feb4f8342b230dba3.setIcon(icon_070f7f07fa3222afc0cd4138bea2cf98);
+        
+    
+        var popup_fc57d13b5dfe0d9d06c985d3140bbd5a = L.popup({});
+
+        
+            
+                var html_26baa2a16999bc4444da62df23404eb4 = $(`<div id="html_26baa2a16999bc4444da62df23404eb4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rose Bushes, Nork</h1><div class="nugget-popup"><p>Three boundary/service walls along Rose Bushes obstructed natural surface water flow, causing water to pool on the footpath and service road, increasing flow speed towards properties. During the August 2020 storms a wall behind number 3 obstructed flow, caused a backup into properties until it collapsed and released a surge that knocked down the wall at number 9. The wall at number 9 (rebuilt) continues to cause pooling, with water flowing under it; resident flood barriers prevented internal flooding in July 2021. [MUL] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>three walls [MUL] (p9)</p></div></div></body></div>`)[0];
+                popup_fc57d13b5dfe0d9d06c985d3140bbd5a.setContent(html_26baa2a16999bc4444da62df23404eb4);
+            
+        
+
+        marker_caa89325fbadb69feb4f8342b230dba3.bindPopup(popup_fc57d13b5dfe0d9d06c985d3140bbd5a)
+        ;
+
+        
+    
+    
+            var marker_412640a30249b003e7bcb49c45c855f3 = L.marker(
+                [51.3221759, -0.213895],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_62b99c996c08e0f61fa72e5d03e1644a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_412640a30249b003e7bcb49c45c855f3.setIcon(icon_62b99c996c08e0f61fa72e5d03e1644a);
+        
+    
+        var popup_c6e58649a9fb51904a9ac80d221f7e45 = L.popup({});
+
+        
+            
+                var html_094e505d3e4d541910000e3f3def6e26 = $(`<div id="html_094e505d3e4d541910000e3f3def6e26" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burgh Wood, Nork</h1><div class="nugget-popup"><p>Reported as part of the same flow route / catchment where similar surface water runoff issues occurred, with surface water flowing toward low points and affecting properties (external flooding) along the linked route. (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of Catchment 2 external flooding: total of 8 properties (12 July 2021). (p11)</p></div></div></body></div>`)[0];
+                popup_c6e58649a9fb51904a9ac80d221f7e45.setContent(html_094e505d3e4d541910000e3f3def6e26);
+            
+        
+
+        marker_412640a30249b003e7bcb49c45c855f3.bindPopup(popup_c6e58649a9fb51904a9ac80d221f7e45)
+        ;
+
+        
+    
+    
+            var marker_169bad152576ba3f2e0d7f8931b46476 = L.marker(
+                [51.3237866, -0.2235609],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_56fdee86e23813e57c92d3cbdb218ccf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_169bad152576ba3f2e0d7f8931b46476.setIcon(icon_56fdee86e23813e57c92d3cbdb218ccf);
+        
+    
+        var popup_72ed1ded43a95bb3ee799aeb825008f2 = L.popup({});
+
+        
+            
+                var html_0fb447a1e541ad90ad79a8f67539585e = $(`<div id="html_0fb447a1e541ad90ad79a8f67539585e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Roundwood View, Nork</h1><div class="nugget-popup"><p>Roundwood View, which slopes towards Roundwood Way and has very limited drainage (only two gullies), is described as directing runoff straight towards the low point in front of 48 and 50 Roundwood Way once gully capacity was exceeded, contributing to inundation at that low point. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 gullies; contributed to flooding of 48 Roundwood Way and 50 Roundwood Way (2 properties) (p12)</p></div></div></body></div>`)[0];
+                popup_72ed1ded43a95bb3ee799aeb825008f2.setContent(html_0fb447a1e541ad90ad79a8f67539585e);
+            
+        
+
+        marker_169bad152576ba3f2e0d7f8931b46476.bindPopup(popup_72ed1ded43a95bb3ee799aeb825008f2)
+        ;
+
+        
+    
+    
+            var marker_26e8bddd0a57cd07102a258a4709cda7 = L.marker(
+                [51.3127939, -0.2168469],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_adb403f44817fe089271e971e937415d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_26e8bddd0a57cd07102a258a4709cda7.setIcon(icon_adb403f44817fe089271e971e937415d);
+        
+    
+        var popup_d2f468e3a572c16de6ebb0517f161d85 = L.popup({});
+
+        
+            
+                var html_98141f0e8a3b6bfff9ad55e3a6c77627 = $(`<div id="html_98141f0e8a3b6bfff9ad55e3a6c77627" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Meadow Way, Nork</h1><div class="nugget-popup"><p>Garage flooding on Meadow Way caused by surface water flow originating from Tattenham Way. (p15)</p></div></div></body></div>`)[0];
+                popup_d2f468e3a572c16de6ebb0517f161d85.setContent(html_98141f0e8a3b6bfff9ad55e3a6c77627);
+            
+        
+
+        marker_26e8bddd0a57cd07102a258a4709cda7.bindPopup(popup_d2f468e3a572c16de6ebb0517f161d85)
+        ;
+
+        
+    
+    
+            var marker_9761edb438bdbeb95225b0f659e8751b = L.marker(
+                [51.3167599, -0.2149502],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_dc42d5d68c9cc37beead6611655f3d5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9761edb438bdbeb95225b0f659e8751b.setIcon(icon_dc42d5d68c9cc37beead6611655f3d5f);
+        
+    
+        var popup_6025796bad57b7c1d90bcb2e71cf0b9a = L.popup({});
+
+        
+            
+                var html_830e08c0b3a029c2a2201134c4c2b1ba = $(`<div id="html_830e08c0b3a029c2a2201134c4c2b1ba" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Picquets Way, Nork</h1><div class="nugget-popup"><p>Surface water flowed from Piquet Way onto Tattenham Way, with properties on a cul&ndash;de&ndash;sac reported flooded externally as a result of that flow. (p16)</p></div></div></body></div>`)[0];
+                popup_6025796bad57b7c1d90bcb2e71cf0b9a.setContent(html_830e08c0b3a029c2a2201134c4c2b1ba);
+            
+        
+
+        marker_9761edb438bdbeb95225b0f659e8751b.bindPopup(popup_6025796bad57b7c1d90bcb2e71cf0b9a)
+        ;
+
+        
+    
+    
+            var marker_1ce75d43765189bcd6518c84d79ca817 = L.marker(
+                [51.2516256, -0.1864884],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_a675769eb6d39bf2ecb3b92ff49729af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1ce75d43765189bcd6518c84d79ca817.setIcon(icon_a675769eb6d39bf2ecb3b92ff49729af);
+        
+    
+        var popup_372f1d44308b9d7de6c48eaea1a8cd20 = L.popup({});
+
+        
+            
+                var html_e0078cca62c49c521f0ea1660f2bdc9a = $(`<div id="html_e0078cca62c49c521f0ea1660f2bdc9a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Reigate and Banstead</h1><div class="nugget-popup"><p>Properties in the Nork and Tattenhams areas of the borough experienced internal property flooding. The report investigates the event on 12 July 2021 and notes a similar repeated event on 13 August 2020; road closures and internal property flooding were recorded. [MUL] (p3)</p></div><div class="nugget-popup"><p>Surface water flow routes in the borough (specifically Catchment 2: Nork Way, Green Curve and Roundwood Way, Burgh Wood) routed to the north and joined downstream flows toward Reigate Road, producing flow&ndash;route issues and localised surface water flooding along that corridor. (p10)</p></div></div></body></div>`)[0];
+                popup_372f1d44308b9d7de6c48eaea1a8cd20.setContent(html_e0078cca62c49c521f0ea1660f2bdc9a);
+            
+        
+
+        marker_1ce75d43765189bcd6518c84d79ca817.bindPopup(popup_372f1d44308b9d7de6c48eaea1a8cd20)
+        ;
+
+        
+    
+    
+            var marker_cf3adc5b1e5c6f95e6baeddd8807d8d5 = L.marker(
+                [51.2715316, -0.3414523511290909],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_25aac98c79589bcac1da1387543b42c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cf3adc5b1e5c6f95e6baeddd8807d8d5.setIcon(icon_25aac98c79589bcac1da1387543b42c2);
+        
+    
+        var popup_75bc692b431ad07b782202182f2f435b = L.popup({});
+
+        
+            
+                var html_2406d80aeba3e6d9fc0fc6d7675ce028 = $(`<div id="html_2406d80aeba3e6d9fc0fc6d7675ce028" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Surrey</h1><div class="nugget-popup"><p>County&ndash;wide intense rainfall on 12th July 2021 produced rapid surface water runoff that contributed to surface water/urban flooding in affected catchments (including Nork and the Tattenhams), overwhelming drainage and producing localized property and highway flooding. (p16)</p></div></div></body></div>`)[0];
+                popup_75bc692b431ad07b782202182f2f435b.setContent(html_2406d80aeba3e6d9fc0fc6d7675ce028);
+            
+        
+
+        marker_cf3adc5b1e5c6f95e6baeddd8807d8d5.bindPopup(popup_75bc692b431ad07b782202182f2f435b)
+        ;
+
+        
+    
+    
+            var marker_65fe407b0e6d55b3ef14bcb251ad1d47 = L.marker(
+                [51.3228216, -0.2239885],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_4a6a6c204c668c051f9e0bf8dd245a53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_65fe407b0e6d55b3ef14bcb251ad1d47.setIcon(icon_4a6a6c204c668c051f9e0bf8dd245a53);
+        
+    
+        var popup_d297553f1991d8d2e79276a464e64226 = L.popup({});
+
+        
+            
+                var html_9c835a4d5cbbbacba7f7d85c34a1f25e = $(`<div id="html_9c835a4d5cbbbacba7f7d85c34a1f25e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nork</h1><div class="nugget-popup"><p>Parts of Nork were flooded during the July 2021 flood event. [IMG] (p1)</p></div><div class="nugget-popup"><p>Internal property flooding to properties in the Nork area; residents provided photos of internal flooding and road&ndash;closure information was recorded. The event under investigation occurred on 12 July 2021 and was a repeated event similar to flooding on 13 August 2020. [MUL] (p3)</p></div><div class="nugget-popup"><p>Properties in the Nork area experienced surface water flooding; site visits and resident photographs were used to confirm the impact and extent of flooding to properties on 12th July 2021. [PAG] (p4)</p></div><div class="nugget-popup"><p>Surface water flooding affected properties in the Nork area; a site visit for this investigation confirmed the impact and extent of flooding to properties on 12 July 2021. [PAG,IMG] (p5)</p></div><div class="nugget-popup"><p>High&ndash;intensity rainfall generated rapid overland runoff from Nork Way that contributed to flows toward low points and downstream property flooding (including Reigate Road). Gullies were bypassed due to flow speed. (p7)</p></div><div class="nugget-popup"><p>Intense rainfall on 12 July 2021 caused highway drainage capacity to be exceeded in parts of Nork (including Nork Way, Green Curve and Roundwood Way), leading to water pooling on the highway and flowing over footpaths toward low&ndash;lying properties; at Roundwood Way a surcharged roadside soakaway contributed to flow towards properties. Separately, in August 2020 foul sewage internally flooded 83A Nork Way (and 87 Nork Way was also impacted by foul sewage) caused by damaged non&ndash;return valves (these have since been replaced); 83A has since installed flood gates and internal garage access barriers. [PAG,MUL] (p12)</p></div><div class="nugget-popup"><p>The Nork area experienced very high rainfall on 12th July 2021 that contributed to surface water flooding across the local catchment, overwhelming highway drainage and generating fast overland flows toward low points. (p16)</p></div><div class="nugget-popup"><p>Intense rainfall on 12th July 2021 produced surface water runoff in the Nork area; runoff followed mapped surface water flow routes and increased in severity since the nearby development, with flow splitting and continuing south onto the highway and east along a footpath toward Kingswood. (p20)</p></div><div class="nugget-popup"><p>Heavy rainfall on 12 July 2021 caused flooding along modelled surface water flow routes in Nork. Surface water accumulated at topographical low points, overtopped kerb thresholds and flowed towards properties situated lower than the road and drainage system; this flooding was worsened by increased runoff from local development and hard landscaping and where residents had extended into or diverted the flow routes. (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (83A and 87 Nork Way) [PAG,MUL] (p12)</p></div></div></body></div>`)[0];
+                popup_d297553f1991d8d2e79276a464e64226.setContent(html_9c835a4d5cbbbacba7f7d85c34a1f25e);
+            
+        
+
+        marker_65fe407b0e6d55b3ef14bcb251ad1d47.bindPopup(popup_d297553f1991d8d2e79276a464e64226)
+        ;
+
+        
+    
+    
+            var marker_943b08ce0d43011a610a3db3a36169e2 = L.marker(
+                [51.31284314685993, -0.23909175441580136],
+                {}
+            ).addTo(map_f3c3f48279848032d9675de4560170bb);
+        
+    
+            var icon_9aec2a47f485b6fca3b020f63072c333 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_943b08ce0d43011a610a3db3a36169e2.setIcon(icon_9aec2a47f485b6fca3b020f63072c333);
+        
+    
+        var popup_16c12135be0306dd2911c1f86f8847ba = L.popup({});
+
+        
+            
+                var html_823d27ce2fe9f575d48f57527138246e = $(`<div id="html_823d27ce2fe9f575d48f57527138246e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tattenhams</h1><div class="nugget-popup"><p>Parts of Tattenhams were flooded during the July 2021 flood event. [IMG] (p1)</p></div><div class="nugget-popup"><p>Internal property flooding to properties in the Tattenhams area; residents provided photographic evidence of internal flooding and road&ndash;closure information was recorded. The investigation focuses on the flooding that occurred on 12 July 2021, with a similar event on 13 August 2020. [MUL] (p3)</p></div><div class="nugget-popup"><p>Properties in the Tattenhams area experienced surface water flooding; site visits and resident photographs were used to confirm the impact and extent of flooding to properties on 12th July 2021. [PAG] (p4)</p></div><div class="nugget-popup"><p>Surface water flooding affected properties in the Tattenhams area; a site visit for this investigation confirmed the impact and extent of flooding to properties on 12 July 2021. [PAG,IMG] (p5)</p></div><div class="nugget-popup"><p>The Tattenhams area experienced intense rainfall and steep terrain&ndash;driven rapid flows that routed water to low points, exceeding drainage capacity and causing both surface water inundation and foul sewer surcharging at manholes. (p7)</p></div><div class="nugget-popup"><p>The Tattenhams area experienced intense rainfall on 12th July 2021 leading to rapid overland surface water flows, overwhelmed gullies and highway drainage, and flows collecting at low points that caused property and highway flooding across the area. [PAG] (p16)</p></div><div class="nugget-popup"><p>On 12th July 2021 very high rainfall generated surface water runoff in the Tattenhams area that contributed to the surface water flow route described; runoff severity increased following development to the north and contributed to flows onto the highway and along the eastern footpath. (p20)</p></div><div class="nugget-popup"><p>Heavy rainfall on 12 July 2021 caused flooding along modelled surface water flow routes in the Tattenhams area. Surface water collected in valley low points, overtopped kerbs and flowed towards properties at lower elevations; flooding was exacerbated by urbanisation in the catchment (increased hard surfaces and reduced infiltration) and by alterations that diverted or encroached on flow routes. (p22)</p></div></div></body></div>`)[0];
+                popup_16c12135be0306dd2911c1f86f8847ba.setContent(html_823d27ce2fe9f575d48f57527138246e);
+            
+        
+
+        marker_943b08ce0d43011a610a3db3a36169e2.bindPopup(popup_16c12135be0306dd2911c1f86f8847ba)
+        ;
+
+        
+    
+</script>
+</html>
