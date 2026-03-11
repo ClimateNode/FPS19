@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ca2f41a3e40329921a15eea080f6e0cc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ca2f41a3e40329921a15eea080f6e0cc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ca2f41a3e40329921a15eea080f6e0cc = L.map(
+                "map_ca2f41a3e40329921a15eea080f6e0cc",
+                {
+                    center: [51.42276556, -0.5196411502258181],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d841aa5c80c916bee3600a82a6c7f0f1 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_d841aa5c80c916bee3600a82a6c7f0f1.addTo(map_ca2f41a3e40329921a15eea080f6e0cc);
+    
+            var marker_b9eed0162f10791a46cd702fc99cb589 = L.marker(
+                [51.425697, -0.5050193],
+                {}
+            ).addTo(map_ca2f41a3e40329921a15eea080f6e0cc);
+        
+    
+            var icon_602de3941fb2bf3aa95098dda41488ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b9eed0162f10791a46cd702fc99cb589.setIcon(icon_602de3941fb2bf3aa95098dda41488ac);
+        
+    
+        var popup_0eb7cc1304bcd2eb1ebe308f948721b5 = L.popup({});
+
+        
+            
+                var html_945110fe84aee1ca2f096da0cfd438da = $(`<div id="html_945110fe84aee1ca2f096da0cfd438da" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Guildford Street, Knowle Green</h1><div class="nugget-popup"><p>A low point on Guildford Street (between nos. 14 and 24) pooled with floodwater during the event; limited drainage (only gullies and a soakaway) meant most of the road was susceptible to flooding and photos from residents show water pooling at that location. Surface water also entered the foul sewer system in the area (investigation evidence). (p3)</p></div><div class="nugget-popup"><p>Rising groundwater (linked to high River Thames levels) filled the highway soakaway capacity so surface water falling on the highway could not drain, flowed overland and pooled at a low point. Groundwater also entered the foul sewer through joints/cracks and a hole in a foul sewer lateral near the manhole in the front garden of 21 Guildford Street, causing foul contamination of floodwater and causing the foul sewer to exceed capacity. The lateral has since been lined/repaired. [PAG] (p5)</p></div></div></body></div>`)[0];
+                popup_0eb7cc1304bcd2eb1ebe308f948721b5.setContent(html_945110fe84aee1ca2f096da0cfd438da);
+            
+        
+
+        marker_b9eed0162f10791a46cd702fc99cb589.bindPopup(popup_0eb7cc1304bcd2eb1ebe308f948721b5)
+        ;
+
+        
+    
+    
+            var marker_a00c3b5aadffd2a304ddfbd3b1d3b44e = L.marker(
+                [51.4250347, -0.4592861],
+                {}
+            ).addTo(map_ca2f41a3e40329921a15eea080f6e0cc);
+        
+    
+            var icon_c70ab7b9ced4aac4b89d97c645764ed9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a00c3b5aadffd2a304ddfbd3b1d3b44e.setIcon(icon_c70ab7b9ced4aac4b89d97c645764ed9);
+        
+    
+        var popup_e1de2f287226bd1c2aa4788f6cd443d7 = L.popup({});
+
+        
+            
+                var html_1764000474fbad2347131cd6c05f1817 = $(`<div id="html_1764000474fbad2347131cd6c05f1817" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Spelthorne</h1><div class="nugget-popup"><p>Surface water pooled at a low point on Guildford Street (between 14 and 24 Guildford Street) during Storm Christoph; limited drainage on the road contributed to pooling. Thames Water investigation found surface water entered the foul sewer network via pipe joins and a hole in a lateral from one property. (p3)</p></div><div class="nugget-popup"><p>Large parts of Spelthorne (including Staines) sit on River Terrace Deposits so when the River Thames was high, groundwater rose to the same level and lower&ndash;lying land experienced groundwater coming to the surface. In this event rising groundwater filled the soakaway on Guildford Street, causing surface water to flow overland and pool, and groundwater ingress into the foul sewer plus a hole in a lateral at 21 Guildford Street led to foul contamination of flood water. [PAG] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>addresses 14&ndash;24 Guildford Street; one property lateral hole (p3)</p></div><div class="nugget-popup quant"><p>1 hole in a foul sewer lateral (near the manhole in the front garden of 21 Guildford Street) [PAG] (p5)</p></div></div></body></div>`)[0];
+                popup_e1de2f287226bd1c2aa4788f6cd443d7.setContent(html_1764000474fbad2347131cd6c05f1817);
+            
+        
+
+        marker_a00c3b5aadffd2a304ddfbd3b1d3b44e.bindPopup(popup_e1de2f287226bd1c2aa4788f6cd443d7)
+        ;
+
+        
+    
+    
+            var marker_19d54c53ef85bd170e5081a4aae393d1 = L.marker(
+                [51.434012, -0.511044],
+                {}
+            ).addTo(map_ca2f41a3e40329921a15eea080f6e0cc);
+        
+    
+            var icon_129b00ec42301603a564f57dbea72855 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_19d54c53ef85bd170e5081a4aae393d1.setIcon(icon_129b00ec42301603a564f57dbea72855);
+        
+    
+        var popup_8a04e453af098c80dc461387d70aabda = L.popup({});
+
+        
+            
+                var html_a495b112dc29ad7d5f7b2c3b78b95a22 = $(`<div id="html_a495b112dc29ad7d5f7b2c3b78b95a22" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Staines-Upon-Thames</h1><div class="nugget-popup"><p>Flooding occurred in the Guildford Street area of Staines during Storm Christoph, with road pooling at the identified low point and impacts to adjacent residential properties and drainage infrastructure. (p3)</p></div></div></body></div>`)[0];
+                popup_8a04e453af098c80dc461387d70aabda.setContent(html_a495b112dc29ad7d5f7b2c3b78b95a22);
+            
+        
+
+        marker_19d54c53ef85bd170e5081a4aae393d1.bindPopup(popup_8a04e453af098c80dc461387d70aabda)
+        ;
+
+        
+    
+</script>
+</html>
