@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa80fe8db7fc3b67c09f431bf2926c6b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa80fe8db7fc3b67c09f431bf2926c6b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa80fe8db7fc3b67c09f431bf2926c6b = L.map(
+                "map_aa80fe8db7fc3b67c09f431bf2926c6b",
+                {
+                    center: [51.29769741195281, -0.24470473400642737],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6c9afbfa34d8ad809f11092af5e5a77c = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_6c9afbfa34d8ad809f11092af5e5a77c.addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+    
+            var marker_2bb4372cf84af631c56a1860c0563722 = L.marker(
+                [51.1495129, -0.1615285],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_5bd630ca0aaeaa38e35b173d7fd0f5cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2bb4372cf84af631c56a1860c0563722.setIcon(icon_5bd630ca0aaeaa38e35b173d7fd0f5cf);
+        
+    
+        var popup_5826c2aeb75ba5267058f7fb483ff4d9 = L.popup({});
+
+        
+            
+                var html_91d6ec0940c81f9d55b61a71c4f3daf0 = $(`<div id="html_91d6ec0940c81f9d55b61a71c4f3daf0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gatwick Stream</h1><div class="nugget-popup"><p>Analysis for winter 2013&ndash;14 indicates elevated peak flows in the Gatwick Stream sub&ndash;catchment that were part of the regional fluvial response; these flows are noted in the report as relevant to Gatwick Airport. [TAB] (p11)</p></div><div class="nugget-popup"><p>As a tributary of the River Mole running through Horley, Gatwick Stream contributed to the flooding in Horley during the 23&ndash;24 December 2013 storms, adding to road closures and internal property flooding in the sub area. [MUL] (p21)</p></div></div></body></div>`)[0];
+                popup_5826c2aeb75ba5267058f7fb483ff4d9.setContent(html_91d6ec0940c81f9d55b61a71c4f3daf0);
+            
+        
+
+        marker_2bb4372cf84af631c56a1860c0563722.bindPopup(popup_5826c2aeb75ba5267058f7fb483ff4d9)
+        ;
+
+        
+    
+    
+            var marker_9bf00c4e3f817914f095b6f0818f92d7 = L.marker(
+                [51.2475368, -0.1476932],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_760049a4b2e530e52a307c5944a8bcc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9bf00c4e3f817914f095b6f0818f92d7.setIcon(icon_760049a4b2e530e52a307c5944a8bcc0);
+        
+    
+        var popup_451ff8dff866ce95dcf93444a528b8e8 = L.popup({});
+
+        
+            
+                var html_6faeddcb985bb39917f2797f297cbdc3 = $(`<div id="html_6faeddcb985bb39917f2797f297cbdc3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Redhill Brook</h1><div class="nugget-popup"><p>Redhill Brook was assessed as part of the winter 2013&ndash;14 river flow analysis and is associated with fluvial flood risk in Redhill during that winter; estimates indicate elevated peak flows contributing to flood hazard in the area. [TAB] (p11)</p></div><div class="nugget-popup"><p>Burst its banks on 31 December 2013; flow ran into an adjacent quarry. From the end of December 2013 the brook was deliberately diverted into the quarry to attenuate flows. Emergency works were carried out to install an outfall to prevent a potential disaster. A new channel was cut in March 2014 to re&ndash;establish Redhill Brook. [MUL] (p26)</p></div></div></body></div>`)[0];
+                popup_451ff8dff866ce95dcf93444a528b8e8.setContent(html_6faeddcb985bb39917f2797f297cbdc3);
+            
+        
+
+        marker_9bf00c4e3f817914f095b6f0818f92d7.bindPopup(popup_451ff8dff866ce95dcf93444a528b8e8)
+        ;
+
+        
+    
+    
+            var marker_036b5c79f0b2e14225746c2ab53617b1 = L.marker(
+                [51.1693969, -0.1977448],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_7d41a1e12b6ea400420e65c8a90259bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_036b5c79f0b2e14225746c2ab53617b1.setIcon(icon_7d41a1e12b6ea400420e65c8a90259bb);
+        
+    
+        var popup_799153f8be8120c6d712edd2ef17b308 = L.popup({});
+
+        
+            
+                var html_6066d6fb25fd3a9c12a68409207e6299 = $(`<div id="html_6066d6fb25fd3a9c12a68409207e6299" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hookwood Common Brook</h1><div class="nugget-popup"><p>As a tributary running through Hookwood, Hookwood Common Brook was part of the watercourse network contributing to the combined fluvial/surface&ndash;water/groundwater flooding that affected the sub area (including road closures and internal property flooding) during the 23&ndash;24 December 2013 storms. [MUL] (p21)</p></div></div></body></div>`)[0];
+                popup_799153f8be8120c6d712edd2ef17b308.setContent(html_6066d6fb25fd3a9c12a68409207e6299);
+            
+        
+
+        marker_036b5c79f0b2e14225746c2ab53617b1.bindPopup(popup_799153f8be8120c6d712edd2ef17b308)
+        ;
+
+        
+    
+    
+            var marker_4795efe8dc149fa6aafb13ef7546be73 = L.marker(
+                [51.1445967, -0.1335843],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_53f878996c8ce5cb032017062ec9ed38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4795efe8dc149fa6aafb13ef7546be73.setIcon(icon_53f878996c8ce5cb032017062ec9ed38);
+        
+    
+        var popup_3bab47e0e9accff53335b09a22525ff8 = L.popup({});
+
+        
+            
+                var html_836d9e5a94dc874b914f119f2df6266c = $(`<div id="html_836d9e5a94dc874b914f119f2df6266c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burstow Stream</h1><div class="nugget-popup"><p>Burstow Stream, a watercourse in the catchment, contributed to flooding in Horley and Salfords during the 23&ndash;24 December 2013 storms, which resulted in road closures and internal property flooding in the sub area. [MUL] (p21)</p></div></div></body></div>`)[0];
+                popup_3bab47e0e9accff53335b09a22525ff8.setContent(html_836d9e5a94dc874b914f119f2df6266c);
+            
+        
+
+        marker_4795efe8dc149fa6aafb13ef7546be73.bindPopup(popup_3bab47e0e9accff53335b09a22525ff8)
+        ;
+
+        
+    
+    
+            var marker_0941afa0165fa444820856e9b8e8492e = L.marker(
+                [51.2182355, -0.2255111],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_5d7daecc67de5456573394cf9d1e01b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0941afa0165fa444820856e9b8e8492e.setIcon(icon_5d7daecc67de5456573394cf9d1e01b5);
+        
+    
+        var popup_3c8218863de31186a0fd170137f159fc = L.popup({});
+
+        
+            
+                var html_ef39702a59f123495db8bd5034a18ee9 = $(`<div id="html_ef39702a59f123495db8bd5034a18ee9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wallace Brook</h1><div class="nugget-popup"><p>EA flood mapping identifies a small area to the south&ndash;west of the Reigate sub area at medium risk of fluvial flooding from Wallace Brook. The wider Reigate area experienced fluvial flooding during the storms of 23 and 24 December 2013, indicating Wallace Brook as a fluvial flood risk within the sub area. (p27)</p></div></div></body></div>`)[0];
+                popup_3c8218863de31186a0fd170137f159fc.setContent(html_ef39702a59f123495db8bd5034a18ee9);
+            
+        
+
+        marker_0941afa0165fa444820856e9b8e8492e.bindPopup(popup_3c8218863de31186a0fd170137f159fc)
+        ;
+
+        
+    
+    
+            var marker_3b07f4c00664d945918a877ac585e8bd = L.marker(
+                [51.2398086, -0.3019955],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_2b1827e84770699828a62901155c186e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3b07f4c00664d945918a877ac585e8bd.setIcon(icon_2b1827e84770699828a62901155c186e);
+        
+    
+        var popup_4db68389e5ee8c5ec1fb65277f50ea58 = L.popup({});
+
+        
+            
+                var html_e88e220060050e09bb3240bf1da20074 = $(`<div id="html_e88e220060050e09bb3240bf1da20074" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Mole</h1><div class="nugget-popup"><p>Fluvial flooding from the River Mole and its tributaries caused inundation across river floodplains in Surrey during the winter 2013&ndash;14 storms, contributing to local flood impacts in the Reigate and Banstead area. (p10)</p></div><div class="nugget-popup"><p>The River Mole experienced very high flows during winter 2013&ndash;14 that produced fluvial flooding and inundation across river floodplains in Surrey. Peak flows were driven by the 23&ndash;24 December 2013 storm (largest recorded), with further significant peaks around 17 January 2014 and 1 February 2014. Gauging stations in the middle Mole (Dorking and Leatherhead) exceeded their capacity during the December/January peaks so peak flows were not fully recorded at those sites. [IMG,TAB,PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>The middle Mole experienced extreme river levels during the 23&ndash;24 December 2013 storm that exceeded the capacity of gauging stations (Dorking and Leatherhead). The river exhibited flash behaviour &mdash; levels rose rapidly and returned to normal about 10 hours after peak. Significant high flows were also recorded in the middle Mole area on 17 January 2014 and 1 February 2014. [MUL] (p12)</p></div><div class="nugget-popup"><p>High flows in the River Mole caused flooding across Horley and the catchment, contributing to road closures and internal property flooding; river levels in Horley reached record highs. [TAB,MUL] (p21)</p></div><div class="nugget-popup"><p>Extremely high river flows at the Horley gauge during December 2013&ndash;February 2014; river levels in Horley were the highest since EA records began (approximately 1985). [TAB] (p22)</p></div></div></body></div>`)[0];
+                popup_4db68389e5ee8c5ec1fb65277f50ea58.setContent(html_e88e220060050e09bb3240bf1da20074);
+            
+        
+
+        marker_3b07f4c00664d945918a877ac585e8bd.bindPopup(popup_4db68389e5ee8c5ec1fb65277f50ea58)
+        ;
+
+        
+    
+    
+            var marker_e70607817a515b95bc6dd670832072b2 = L.marker(
+                [51.2498486, -0.1698079],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_3e4991c48e84dd59b094598fefb79e33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e70607817a515b95bc6dd670832072b2.setIcon(icon_3e4991c48e84dd59b094598fefb79e33);
+        
+    
+        var popup_b45240f582a8274ebd9ef1547913f292 = L.popup({});
+
+        
+            
+                var html_a7d0ae3159da528db1cf689894ea0990 = $(`<div id="html_a7d0ae3159da528db1cf689894ea0990" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Colesmead Road, Redhill</h1><div class="nugget-popup"><p>SCC removed a grille and carried out silt clearance on Colesmead Road (Redhill) as part of the flood response to the winter 2013/14 event. (p7)</p></div><div class="nugget-popup"><p>SCC carried out works on an ordinary watercourse here in response to flooding, including removal of a grill and silt clearance to alleviate flow/blockage issues. (p26)</p></div></div></body></div>`)[0];
+                popup_b45240f582a8274ebd9ef1547913f292.setContent(html_a7d0ae3159da528db1cf689894ea0990);
+            
+        
+
+        marker_e70607817a515b95bc6dd670832072b2.bindPopup(popup_b45240f582a8274ebd9ef1547913f292)
+        ;
+
+        
+    
+    
+            var marker_350a012ba71da367fd5e5d655ebad61c = L.marker(
+                [51.3264564, -0.2331544],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_a881c984360f86ee324131fc6a0d4fd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_350a012ba71da367fd5e5d655ebad61c.setIcon(icon_a881c984360f86ee324131fc6a0d4fd1);
+        
+    
+        var popup_ea1058df71522aa4288d3551bfe14775 = L.popup({});
+
+        
+            
+                var html_4fae93cec1bfea03f418512d97b4b894 = $(`<div id="html_4fae93cec1bfea03f418512d97b4b894" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Reigate Road, Banstead</h1><div class="nugget-popup"><p>SCC cleared a culvert on Reigate Road, Hookwood as part of flood&ndash;response works during the winter 2013/14 floods. (p7)</p></div><div class="nugget-popup"><p>Subject to a temporary road closure during the flooding; a culvert on Reigate Road (Hookwood) was cleared by SCC as part of the response. (p24)</p></div></div></body></div>`)[0];
+                popup_ea1058df71522aa4288d3551bfe14775.setContent(html_4fae93cec1bfea03f418512d97b4b894);
+            
+        
+
+        marker_350a012ba71da367fd5e5d655ebad61c.bindPopup(popup_ea1058df71522aa4288d3551bfe14775)
+        ;
+
+        
+    
+    
+            var marker_0f882c5b7ca2f1a52352ca428e6d8ea8 = L.marker(
+                [51.3104918, -0.1840724],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_3dfa626278deeb26b01541643cff55f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0f882c5b7ca2f1a52352ca428e6d8ea8.setIcon(icon_3dfa626278deeb26b01541643cff55f5);
+        
+    
+        var popup_69aed23c0c093053f3d0e1018998fd8a = L.popup({});
+
+        
+            
+                var html_79078fd513b0bfaac48b0e0a04fb748a = $(`<div id="html_79078fd513b0bfaac48b0e0a04fb748a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holly Lane, Chipstead</h1><div class="nugget-popup"><p>Surrey County Council carried out enhanced maintenance works and constructed swales and soakaways on Holly Lane (Chipstead) to manage runoff after the winter 2013/14 flooding. (p7)</p></div></div></body></div>`)[0];
+                popup_69aed23c0c093053f3d0e1018998fd8a.setContent(html_79078fd513b0bfaac48b0e0a04fb748a);
+            
+        
+
+        marker_0f882c5b7ca2f1a52352ca428e6d8ea8.bindPopup(popup_69aed23c0c093053f3d0e1018998fd8a)
+        ;
+
+        
+    
+    
+            var marker_02ee27f956dda8349df654706860988c = L.marker(
+                [51.3183171, -0.2111974],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_293fb90d1f3961da7471e80a0d4be5ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_02ee27f956dda8349df654706860988c.setIcon(icon_293fb90d1f3961da7471e80a0d4be5ca);
+        
+    
+        var popup_69b09b884a904b5cbca62176772e81c4 = L.popup({});
+
+        
+            
+                var html_406ae437651a887a45d21ec6be0da41a = $(`<div id="html_406ae437651a887a45d21ec6be0da41a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Garratts Lane, Banstead</h1><div class="nugget-popup"><p>Surrey County Council carried out enhanced maintenance works on Garrets Lane (Banstead) following flooding in winter 2013/14 to reduce flood risk and manage drainage. (p7)</p></div><div class="nugget-popup"><p>Identified for enhanced maintenance under SCC's Wetspots Capital programme in response to wetness/flooding issues following the winter 2013&ndash;14 event. (p19)</p></div></div></body></div>`)[0];
+                popup_69b09b884a904b5cbca62176772e81c4.setContent(html_406ae437651a887a45d21ec6be0da41a);
+            
+        
+
+        marker_02ee27f956dda8349df654706860988c.bindPopup(popup_69b09b884a904b5cbca62176772e81c4)
+        ;
+
+        
+    
+    
+            var marker_07fb4d7b6786b8c4ee306e21079d6d3b = L.marker(
+                [51.3108282, -0.1702837],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_d1ea66555a415baea53fb7da0222a42e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_07fb4d7b6786b8c4ee306e21079d6d3b.setIcon(icon_d1ea66555a415baea53fb7da0222a42e);
+        
+    
+        var popup_bca54727e8c4e55e5bc89f0041c2325d = L.popup({});
+
+        
+            
+                var html_03e23a183d02c0b4c04d21c84845271a = $(`<div id="html_03e23a183d02c0b4c04d21c84845271a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Outwood Lane, Chipstead</h1><div class="nugget-popup"><p>Surrey County Council constructed a new lagoon and drainage system on Outwood Lane (Chipstead) as a measure following flooding in winter 2013/14 to manage surface water and reduce future flood risk. (p7)</p></div><div class="nugget-popup"><p>Temporary road closure during the winter 2013/2014 flooding event. (p20)</p></div></div></body></div>`)[0];
+                popup_bca54727e8c4e55e5bc89f0041c2325d.setContent(html_03e23a183d02c0b4c04d21c84845271a);
+            
+        
+
+        marker_07fb4d7b6786b8c4ee306e21079d6d3b.bindPopup(popup_bca54727e8c4e55e5bc89f0041c2325d)
+        ;
+
+        
+    
+    
+            var marker_62a0e853d9d4d616275d6f8e2e14ab4c = L.marker(
+                [51.3123096, -0.2137307],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_97f9d045fe12529140252c8c4ca12d50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_62a0e853d9d4d616275d6f8e2e14ab4c.setIcon(icon_97f9d045fe12529140252c8c4ca12d50);
+        
+    
+        var popup_2166792c1ad91cd131c4b95c584f9f51 = L.popup({});
+
+        
+            
+                var html_d415db5954c0f84c5f6db15e379558ff = $(`<div id="html_d415db5954c0f84c5f6db15e379558ff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brighton Road, Burgh Heath</h1><div class="nugget-popup"><p>At Burgh Heath surface water flowing off saturated ground caused the Brighton Road A217 to flood; other lengths of the road flooded where rainwater collected at low points. (p19)</p></div></div></body></div>`)[0];
+                popup_2166792c1ad91cd131c4b95c584f9f51.setContent(html_d415db5954c0f84c5f6db15e379558ff);
+            
+        
+
+        marker_62a0e853d9d4d616275d6f8e2e14ab4c.bindPopup(popup_2166792c1ad91cd131c4b95c584f9f51)
+        ;
+
+        
+    
+    
+            var marker_f8af909262c4295e5b4dec0846c3cbee = L.marker(
+                [51.2806633, -0.1917039],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_eb521c4774fedf9b05faea97e061eded = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f8af909262c4295e5b4dec0846c3cbee.setIcon(icon_eb521c4774fedf9b05faea97e061eded);
+        
+    
+        var popup_2374a31847046ef0b648e0bd3012308a = L.popup({});
+
+        
+            
+                var html_f7e1f1c3e0b4d8dee2767b1a16eb166e = $(`<div id="html_f7e1f1c3e0b4d8dee2767b1a16eb166e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pigeonhouse Lane, Kingswood</h1><div class="nugget-popup"><p>Pigeonhouse Lane was in a surface&ndash;water flow route and was subject to temporary road closure during the winter 2013&ndash;14 flooding. (p19)</p></div></div></body></div>`)[0];
+                popup_2374a31847046ef0b648e0bd3012308a.setContent(html_f7e1f1c3e0b4d8dee2767b1a16eb166e);
+            
+        
+
+        marker_f8af909262c4295e5b4dec0846c3cbee.bindPopup(popup_2374a31847046ef0b648e0bd3012308a)
+        ;
+
+        
+    
+    
+            var marker_2e59fb27c6c88b4939bcf0403ffc7be3 = L.marker(
+                [51.3253181, -0.1914687],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_2f0907da2c4b66e70e2f9f08261ba34b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2e59fb27c6c88b4939bcf0403ffc7be3.setIcon(icon_2f0907da2c4b66e70e2f9f08261ba34b);
+        
+    
+        var popup_55239ff3ff9710d25d896934bb2fb194 = L.popup({});
+
+        
+            
+                var html_ad530318054aa92b371a6d034c1fa8d3 = $(`<div id="html_ad530318054aa92b371a6d034c1fa8d3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woodmansterne Lane, Banstead</h1><div class="nugget-popup"><p>Woodmansterne Lane was subject to a temporary road closure during the winter 2013&ndash;14 flooding. (p19)</p></div></div></body></div>`)[0];
+                popup_55239ff3ff9710d25d896934bb2fb194.setContent(html_ad530318054aa92b371a6d034c1fa8d3);
+            
+        
+
+        marker_2e59fb27c6c88b4939bcf0403ffc7be3.bindPopup(popup_55239ff3ff9710d25d896934bb2fb194)
+        ;
+
+        
+    
+    
+            var marker_7185893e2538e005c36230844e9d04c0 = L.marker(
+                [51.3162967, -0.1999889],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_0e0af953e67c524ff5b4e11509d97a22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7185893e2538e005c36230844e9d04c0.setIcon(icon_0e0af953e67c524ff5b4e11509d97a22);
+        
+    
+        var popup_9ec6587768292cc82dc18439c5f19637 = L.popup({});
+
+        
+            
+                var html_0cb332164a1fc1ba06c4cfc1967e343d = $(`<div id="html_0cb332164a1fc1ba06c4cfc1967e343d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holly Lane, Banstead</h1><div class="nugget-popup"><p>Identified for enhanced maintenance under SCC's Wetspots Capital programme in response to wetness/flooding issues following the winter 2013&ndash;14 event. (p19)</p></div></div></body></div>`)[0];
+                popup_9ec6587768292cc82dc18439c5f19637.setContent(html_0cb332164a1fc1ba06c4cfc1967e343d);
+            
+        
+
+        marker_7185893e2538e005c36230844e9d04c0.bindPopup(popup_9ec6587768292cc82dc18439c5f19637)
+        ;
+
+        
+    
+    
+            var marker_a2d0fb1facbddf1d391ab4af3a80a22b = L.marker(
+                [51.2825417, -0.1457507],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_e1ae6bc8480c43e17a1f76e4a0bcdf3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a2d0fb1facbddf1d391ab4af3a80a22b.setIcon(icon_e1ae6bc8480c43e17a1f76e4a0bcdf3c);
+        
+    
+        var popup_1fa3246e77062610ac1e6ad8153ed9ce = L.popup({});
+
+        
+            
+                var html_ed51d79f4ffb203a2f08ac5b63e3dd61 = $(`<div id="html_ed51d79f4ffb203a2f08ac5b63e3dd61" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dean Lane, Hooley</h1><div class="nugget-popup"><p>Parts of Dean Lane were affected by surface water flooding according to the EA surface water flood maps and as part of the sub&ndash;area flooding in winter 2013/2014. (p20)</p></div></div></body></div>`)[0];
+                popup_1fa3246e77062610ac1e6ad8153ed9ce.setContent(html_ed51d79f4ffb203a2f08ac5b63e3dd61);
+            
+        
+
+        marker_a2d0fb1facbddf1d391ab4af3a80a22b.bindPopup(popup_1fa3246e77062610ac1e6ad8153ed9ce)
+        ;
+
+        
+    
+    
+            var marker_358cd47c4d5f6e841dd82976d2ec5c66 = L.marker(
+                [51.1812919, -0.1954135],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_e5d2aef528a99f1a578835b39aab932c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_358cd47c4d5f6e841dd82976d2ec5c66.setIcon(icon_e5d2aef528a99f1a578835b39aab932c);
+        
+    
+        var popup_466a79f7facfd6080c6d2f00a7479d72 = L.popup({});
+
+        
+            
+                var html_64dc8dbc8cce30eb64e57636b8e3a709 = $(`<div id="html_64dc8dbc8cce30eb64e57636b8e3a709" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Reigate Road, Horley</h1><div class="nugget-popup"><p>Listed as part of the Horley and Salfords sub&ndash;area that was subject to flooding in winter 2013/14, which resulted in road closures during the 23&ndash;24 December 2013 storms. (p21)</p></div><div class="nugget-popup"><p>Temporary road closure during the winter 2013/2014 surface water flooding (Reigate Road / A217), disrupting the route through Horley. (p22)</p></div></div></body></div>`)[0];
+                popup_466a79f7facfd6080c6d2f00a7479d72.setContent(html_64dc8dbc8cce30eb64e57636b8e3a709);
+            
+        
+
+        marker_358cd47c4d5f6e841dd82976d2ec5c66.bindPopup(popup_466a79f7facfd6080c6d2f00a7479d72)
+        ;
+
+        
+    
+    
+            var marker_3f9a6f68ad55e7c2938e9dbc7ff6d17d = L.marker(
+                [51.1819102, -0.1770996],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_0292f193759420e89dee16dcc0b8359b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3f9a6f68ad55e7c2938e9dbc7ff6d17d.setIcon(icon_0292f193759420e89dee16dcc0b8359b);
+        
+    
+        var popup_eed9329fcb1f4b87b5d04b3f146ec08d = L.popup({});
+
+        
+            
+                var html_e4774cc5686cde195db249578da2273a = $(`<div id="html_e4774cc5686cde195db249578da2273a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Meath Green Lane, Horley</h1><div class="nugget-popup"><p>Named in the sub&ndash;area that was affected by the winter 2013/14 floods; the sub&ndash;area experienced road closures and internal property flooding during the 23&ndash;24 December 2013 storms, so the road was within the impacted area. (p21)</p></div><div class="nugget-popup"><p>Temporary road closure during the winter 2013/2014 flooding event due to surface water flooding, disrupting local transport routes. (p22)</p></div><div class="nugget-popup"><p>Subject to a temporary road closure during the flooding. (p24)</p></div></div></body></div>`)[0];
+                popup_eed9329fcb1f4b87b5d04b3f146ec08d.setContent(html_e4774cc5686cde195db249578da2273a);
+            
+        
+
+        marker_3f9a6f68ad55e7c2938e9dbc7ff6d17d.bindPopup(popup_eed9329fcb1f4b87b5d04b3f146ec08d)
+        ;
+
+        
+    
+    
+            var marker_9f3b088a16a7e0ee0d0f6b6e11891331 = L.marker(
+                [51.1812734, -0.1637289],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_657581b6bf6a46b3285e9026322cdb62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9f3b088a16a7e0ee0d0f6b6e11891331.setIcon(icon_657581b6bf6a46b3285e9026322cdb62);
+        
+    
+        var popup_9f7b8b055cc9643ad01d69547149365f = L.popup({});
+
+        
+            
+                var html_f2a4d057358c12316f170bbb60ed41fe = $(`<div id="html_f2a4d057358c12316f170bbb60ed41fe" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bonehurst Road, Horley</h1><div class="nugget-popup"><p>Included in the Horley and Salfords sub&ndash;area affected by the winter 2013/14 flooding; the sub&ndash;area experienced road closures and internal property flooding during the storms of 23&ndash;24 December 2013. (p21)</p></div></div></body></div>`)[0];
+                popup_9f7b8b055cc9643ad01d69547149365f.setContent(html_f2a4d057358c12316f170bbb60ed41fe);
+            
+        
+
+        marker_9f3b088a16a7e0ee0d0f6b6e11891331.bindPopup(popup_9f7b8b055cc9643ad01d69547149365f)
+        ;
+
+        
+    
+    
+            var marker_953860f733d2d46c7c1410c4291542cf = L.marker(
+                [51.1752686, -0.1844989],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_71d0b6b92939edf74087ff62e429588e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_953860f733d2d46c7c1410c4291542cf.setIcon(icon_71d0b6b92939edf74087ff62e429588e);
+        
+    
+        var popup_86b94cd3bf8cd0aec354a74de5bf05bb = L.popup({});
+
+        
+            
+                var html_35a807bc3ed32774241c4f227afef332 = $(`<div id="html_35a807bc3ed32774241c4f227afef332" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Lane, Horley</h1><div class="nugget-popup"><p>Temporary road closure during the winter 2013/2014 surface water flooding, affecting local travel. (p22)</p></div></div></body></div>`)[0];
+                popup_86b94cd3bf8cd0aec354a74de5bf05bb.setContent(html_35a807bc3ed32774241c4f227afef332);
+            
+        
+
+        marker_953860f733d2d46c7c1410c4291542cf.bindPopup(popup_86b94cd3bf8cd0aec354a74de5bf05bb)
+        ;
+
+        
+    
+    
+            var marker_6f17e6da20f849c65e8f929c78841e00 = L.marker(
+                [51.1765288, -0.1828794],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_3b9b5a4c1462a78afc59a3787cef5b15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6f17e6da20f849c65e8f929c78841e00.setIcon(icon_3b9b5a4c1462a78afc59a3787cef5b15);
+        
+    
+        var popup_1003f41ed4e7097fc067ab22067cc7c3 = L.popup({});
+
+        
+            
+                var html_cf625319ea03623e8343be76589b410d = $(`<div id="html_cf625319ea03623e8343be76589b410d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lee Street, Horley</h1><div class="nugget-popup"><p>Temporary road closure during the winter 2013/2014 surface water flooding, interrupting local access. (p22)</p></div></div></body></div>`)[0];
+                popup_1003f41ed4e7097fc067ab22067cc7c3.setContent(html_cf625319ea03623e8343be76589b410d);
+            
+        
+
+        marker_6f17e6da20f849c65e8f929c78841e00.bindPopup(popup_1003f41ed4e7097fc067ab22067cc7c3)
+        ;
+
+        
+    
+    
+            var marker_020fefba96d2e7cb713438652d2cbb2a = L.marker(
+                [51.1787903, -0.1599759],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_d93d7b41fab02590ff498db7d7616761 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_020fefba96d2e7cb713438652d2cbb2a.setIcon(icon_d93d7b41fab02590ff498db7d7616761);
+        
+    
+        var popup_6782af2a188a0741076e61ccc54d9643 = L.popup({});
+
+        
+            
+                var html_b7ecc95a8ca27ea1a23155869dc052f3 = $(`<div id="html_b7ecc95a8ca27ea1a23155869dc052f3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tanyard Way, Horley</h1><div class="nugget-popup"><p>Temporary road closure during the winter 2013/2014 surface water flooding, affecting local transport links. (p22)</p></div><div class="nugget-popup"><p>Subject to a temporary road closure during the flooding. (p24)</p></div></div></body></div>`)[0];
+                popup_6782af2a188a0741076e61ccc54d9643.setContent(html_b7ecc95a8ca27ea1a23155869dc052f3);
+            
+        
+
+        marker_020fefba96d2e7cb713438652d2cbb2a.bindPopup(popup_6782af2a188a0741076e61ccc54d9643)
+        ;
+
+        
+    
+    
+            var marker_349dd8ab9f047403b0d3550e0560c7e7 = L.marker(
+                [51.1608947, -0.1514745],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_c58036fc9a9d442bbd03fad3cd0787a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_349dd8ab9f047403b0d3550e0560c7e7.setIcon(icon_c58036fc9a9d442bbd03fad3cd0787a9);
+        
+    
+        var popup_a09c71fc5a8d9f59d681bcd614e3180b = L.popup({});
+
+        
+            
+                var html_3a6ad64053ba7a8e075e856e79b67fe3 = $(`<div id="html_3a6ad64053ba7a8e075e856e79b67fe3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Balcombe Road, Horley</h1><div class="nugget-popup"><p>Drainage systems on Balcombe Road were severely affected during the winter 2013/2014 floods; the borough council received complaints from local residents relating to sewerage issues. (p22)</p></div></div></body></div>`)[0];
+                popup_a09c71fc5a8d9f59d681bcd614e3180b.setContent(html_3a6ad64053ba7a8e075e856e79b67fe3);
+            
+        
+
+        marker_349dd8ab9f047403b0d3550e0560c7e7.bindPopup(popup_a09c71fc5a8d9f59d681bcd614e3180b)
+        ;
+
+        
+    
+    
+            var marker_767bf60eafeb58a159e33478664eb520 = L.marker(
+                [51.1732710451104, -0.18910200805210983],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_754acb14aa41f01d10945c01b22ad319 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_767bf60eafeb58a159e33478664eb520.setIcon(icon_754acb14aa41f01d10945c01b22ad319);
+        
+    
+        var popup_ed46af322369fb0faa49c6a30e6cff27 = L.popup({});
+
+        
+            
+                var html_4579fd4fb2e9619e505d9815f8c8ad16 = $(`<div id="html_4579fd4fb2e9619e505d9815f8c8ad16" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Lane, Hookwood</h1><div class="nugget-popup"><p>Subject to a temporary road closure during the flooding. (p24)</p></div></div></body></div>`)[0];
+                popup_ed46af322369fb0faa49c6a30e6cff27.setContent(html_4579fd4fb2e9619e505d9815f8c8ad16);
+            
+        
+
+        marker_767bf60eafeb58a159e33478664eb520.bindPopup(popup_ed46af322369fb0faa49c6a30e6cff27)
+        ;
+
+        
+    
+    
+            var marker_ba052ddaeaf0649044b85d9197c88cd6 = L.marker(
+                [51.2360114, -0.1779267],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_a879cad3d624d15c60d6d0005c261159 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ba052ddaeaf0649044b85d9197c88cd6.setIcon(icon_a879cad3d624d15c60d6d0005c261159);
+        
+    
+        var popup_6830e7e58c79c6d1ee16a85d0bc6d903 = L.popup({});
+
+        
+            
+                var html_a6f6734fcb7c755cb6769a3d65942b42 = $(`<div id="html_a6f6734fcb7c755cb6769a3d65942b42" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Whitepost Hill, Redhill</h1><div class="nugget-popup"><p>Subject to temporary road closure during the winter 2013/14 flooding. (p26)</p></div></div></body></div>`)[0];
+                popup_6830e7e58c79c6d1ee16a85d0bc6d903.setContent(html_a6f6734fcb7c755cb6769a3d65942b42);
+            
+        
+
+        marker_ba052ddaeaf0649044b85d9197c88cd6.bindPopup(popup_6830e7e58c79c6d1ee16a85d0bc6d903)
+        ;
+
+        
+    
+    
+            var marker_8ad739cd231f97a44b7b1d7fbdb5683d = L.marker(
+                [51.2478373, -0.1852233],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_5f8867335c5425ad502f534f1b31e08a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8ad739cd231f97a44b7b1d7fbdb5683d.setIcon(icon_5f8867335c5425ad502f534f1b31e08a);
+        
+    
+        var popup_77ff7f3a45deae2f320219d17fc18bee = L.popup({});
+
+        
+            
+                var html_249a983fd10bcb22265815737fc15ccc = $(`<div id="html_249a983fd10bcb22265815737fc15ccc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gatton Park Road, Redhill</h1><div class="nugget-popup"><p>Temporary road closure during the winter 2013/14 flooding; the road is also identified on EA surface water maps as lying in a surface water flow route. [PAG] (p26)</p></div></div></body></div>`)[0];
+                popup_77ff7f3a45deae2f320219d17fc18bee.setContent(html_249a983fd10bcb22265815737fc15ccc);
+            
+        
+
+        marker_8ad739cd231f97a44b7b1d7fbdb5683d.bindPopup(popup_77ff7f3a45deae2f320219d17fc18bee)
+        ;
+
+        
+    
+    
+            var marker_3047783f8253fbcf2933e7f972dfcd18 = L.marker(
+                [51.2516256, -0.1864884],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_21ca980c7543cc096809e888c2f98b81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3047783f8253fbcf2933e7f972dfcd18.setIcon(icon_21ca980c7543cc096809e888c2f98b81);
+        
+    
+        var popup_87762ef055b52c5144f81327709fa1e2 = L.popup({});
+
+        
+            
+                var html_4a56d13e8c3319e53cd5f79571d5d750 = $(`<div id="html_4a56d13e8c3319e53cd5f79571d5d750" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Reigate and Banstead</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses and road closures were reported across the district during the winter 2013/14 flooding. (p2)</p></div><div class="nugget-popup"><p>Internal property flooding and wider disruption across the borough, including road closures. (p7)</p></div><div class="nugget-popup"><p>Flooding across the borough during winter 2013/14: 51 sites within the borough flooded (S19 sites), with properties experiencing internal flooding. Flood sources in the borough included high groundwater and surface water; sites were spread across multiple sub&ndash;areas (Banstead & Kingswood; Chipstead & Hooley; Reigate & Redhill; Horley & Salfords). [IMG] (p9)</p></div><div class="nugget-popup"><p>Areas outside the River Mole flood plain were flooded by intense rainfall; the main source of flooding in these areas was surface water from the heavy rainfall rather than fluvial (river) flooding. [PAG] (p13)</p></div><div class="nugget-popup"><p>Provided sandbags to slow ingress of floodwater into properties; responded to tree issues after the storms and flooding; and promoted the Repair and Renew Grant (up to £5000) to support residents and businesses flooded in order to protect properties from future flooding. (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 60 incidents of internal property flooding (p7)</p></div><div class="nugget-popup quant"><p>51 sites; approximately 60 incidents of internal property flooding [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_87762ef055b52c5144f81327709fa1e2.setContent(html_4a56d13e8c3319e53cd5f79571d5d750);
+            
+        
+
+        marker_3047783f8253fbcf2933e7f972dfcd18.bindPopup(popup_87762ef055b52c5144f81327709fa1e2)
+        ;
+
+        
+    
+    
+            var marker_5dc5fc619618a34ff8def98fe4e7cdf5 = L.marker(
+                [51.2715316, -0.3414523511290909],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_cb4ac01430dc129dd89f913a4c58a6dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5dc5fc619618a34ff8def98fe4e7cdf5.setIcon(icon_cb4ac01430dc129dd89f913a4c58a6dc);
+        
+    
+        var popup_07988debc5e8f7c69718d379e0ffc763 = L.popup({});
+
+        
+            
+                var html_6397d44d96648c765f0928b3dcec8506 = $(`<div id="html_6397d44d96648c765f0928b3dcec8506" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Surrey</h1><div class="nugget-popup"><p>Closed roads across Reigate and Banstead; removed a grill and carried out silt clearance on Colesmead Road (Redhill); cleared a culvert on Reigate Road (Hookwood); undertook an assessment of options to reduce flood risk in Burstow; carried out enhanced maintenance on Holly Lane, Garrets Lane and Bolters Lane (Banstead); constructed a new lagoon and drainage system on Outwood Lane (Chipstead); and installed swales and soakaways on Holly Lane (Chipstead). [PAG] (p8)</p></div><div class="nugget-popup"><p>Widespread flooding across the county during winter 2013/14 due to record rainfall and very high groundwater levels; some areas exceeded previous groundwater flood records (2000/01). [IMG,PAG] (p9)</p></div><div class="nugget-popup"><p>Widespread flooding across the county during winter 2013/14 from multiple sources: elevated groundwater levels caused groundwater flooding; intense and persistent rainfall produced local pluvial (surface water) flooding; and the River Mole and its tributaries produced fluvial (river) flooding that inundated river flood plains across Surrey. [IMG] (p10)</p></div><div class="nugget-popup"><p>Widespread flooding across the county during winter 2013/14, with a major incident declared and particular impacts reported in Reigate and Banstead. [PAG] (p15)</p></div><div class="nugget-popup"><p>Experienced widespread flooding during Winter 2013/14 (including a February 2014 event) that caused road damage, internal sewer flooding at properties, and required multi&ndash;agency response and recovery actions across the county. [MUL] (p16)</p></div></div></body></div>`)[0];
+                popup_07988debc5e8f7c69718d379e0ffc763.setContent(html_6397d44d96648c765f0928b3dcec8506);
+            
+        
+
+        marker_5dc5fc619618a34ff8def98fe4e7cdf5.bindPopup(popup_07988debc5e8f7c69718d379e0ffc763)
+        ;
+
+        
+    
+    
+            var marker_e9525c8972ccc6def6a7a94089e17686 = L.marker(
+                [51.15344, -0.181805],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_394a902228f12a7628af0d306c272579 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e9525c8972ccc6def6a7a94089e17686.setIcon(icon_394a902228f12a7628af0d306c272579);
+        
+    
+        var popup_77fa2b13973d4f8bf41a6122ec0a5f08 = L.popup({});
+
+        
+            
+                var html_ed5317e61422b8d037bd451cca03713f = $(`<div id="html_ed5317e61422b8d037bd451cca03713f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gatwick Airport</h1><div class="nugget-popup"><p>High flows in the Gatwick Stream during winter 2013&ndash;14 produced fluvial flood risk affecting the Gatwick Airport area; peak flows in the catchment were estimated to have a lower return period compared with other parts of the Mole catchment. [TAB] (p11)</p></div></div></body></div>`)[0];
+                popup_77fa2b13973d4f8bf41a6122ec0a5f08.setContent(html_ed5317e61422b8d037bd451cca03713f);
+            
+        
+
+        marker_e9525c8972ccc6def6a7a94089e17686.bindPopup(popup_77fa2b13973d4f8bf41a6122ec0a5f08)
+        ;
+
+        
+    
+    
+            var marker_0fcc74553c260dc239f91336864f700a = L.marker(
+                [51.3238969, -0.1986813],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_78250dc24253c017511ca6b3aca628f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0fcc74553c260dc239f91336864f700a.setIcon(icon_78250dc24253c017511ca6b3aca628f1);
+        
+    
+        var popup_1468921def1929e30b7471092b947b7c = L.popup({});
+
+        
+            
+                var html_73b2498ac4f339a4a0f91747bd730720 = $(`<div id="html_73b2498ac4f339a4a0f91747bd730720" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Banstead</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses and road closures were reported in Banstead during the winter 2013/14 flooding. [TAB] (p2)</p></div><div class="nugget-popup"><p>Part of the Banstead & Kingswood sub&ndash;area investigated after flooding in winter 2013/14; sites in this sub&ndash;area experienced flood impacts during the borough&ndash;wide event. [IMG] (p9)</p></div><div class="nugget-popup"><p>During winter 2013&ndash;14 groundwater levels rose, ponds overflowed and the ground was saturated so surface water lay on the ground; this led to road closures and internal property flooding in the Banstead area. (p19)</p></div></div></body></div>`)[0];
+                popup_1468921def1929e30b7471092b947b7c.setContent(html_73b2498ac4f339a4a0f91747bd730720);
+            
+        
+
+        marker_0fcc74553c260dc239f91336864f700a.bindPopup(popup_1468921def1929e30b7471092b947b7c)
+        ;
+
+        
+    
+    
+            var marker_62c03ef8c5a937f5f83f10c3431ed8dd = L.marker(
+                [51.29209448082493, -0.20849149217453034],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_c869f583c2fa94a21998201f90448df5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_62c03ef8c5a937f5f83f10c3431ed8dd.setIcon(icon_c869f583c2fa94a21998201f90448df5);
+        
+    
+        var popup_d7774a5077b2928283633927adedd9ec = L.popup({});
+
+        
+            
+                var html_571bf2269a021da4e8ad79f33971001d = $(`<div id="html_571bf2269a021da4e8ad79f33971001d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingswood</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses and road closures were reported in Kingswood during the winter 2013/14 flooding. [TAB] (p2)</p></div><div class="nugget-popup"><p>The Banstead & Kingswood sub&ndash;area is one of five RBBC sub&ndash;areas identified for S19 investigations and therefore contained sites that flooded during the winter 2013/14 events. The borough reported widespread flooding (including from groundwater) and internal property flooding during that winter; the Kingswood sub&ndash;area was affected as part of those investigations. [IMG] (p9)</p></div><div class="nugget-popup"><p>As part of the Banstead and Kingswood sub&ndash;area during winter 2013&ndash;14, groundwater levels rose and surface water accumulated, contributing to road closures and internal property flooding affecting the sub&ndash;area including Kingswood. (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>51 sites; approximately 60 incidents of internal property flooding (borough&ndash;wide) [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_d7774a5077b2928283633927adedd9ec.setContent(html_571bf2269a021da4e8ad79f33971001d);
+            
+        
+
+        marker_62c03ef8c5a937f5f83f10c3431ed8dd.bindPopup(popup_d7774a5077b2928283633927adedd9ec)
+        ;
+
+        
+    
+    
+            var marker_dab73d657c86f968b0431368da880167 = L.marker(
+                [51.3093522, -0.1693688],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_5c9b4555c28f5573e56f06a1b1259c63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dab73d657c86f968b0431368da880167.setIcon(icon_5c9b4555c28f5573e56f06a1b1259c63);
+        
+    
+        var popup_59676db2ed521941d4f3de4e7fdec3aa = L.popup({});
+
+        
+            
+                var html_789df66cd77178602ddf6a15bb0942a5 = $(`<div id="html_789df66cd77178602ddf6a15bb0942a5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chipstead</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses and road closures were reported in Chipstead during the winter 2013/14 flooding. [TAB] (p2)</p></div><div class="nugget-popup"><p>Part of the Chipstead & Hooley sub&ndash;area investigated after flooding in winter 2013/14; sites in this sub&ndash;area were affected during the borough&ndash;wide floods. [IMG] (p9)</p></div><div class="nugget-popup"><p>The Chipstead part of the sub&ndash;area was subject to surface water flooding in winter 2013/2014, resulting in road closures and internal property flooding. (p20)</p></div></div></body></div>`)[0];
+                popup_59676db2ed521941d4f3de4e7fdec3aa.setContent(html_789df66cd77178602ddf6a15bb0942a5);
+            
+        
+
+        marker_dab73d657c86f968b0431368da880167.bindPopup(popup_59676db2ed521941d4f3de4e7fdec3aa)
+        ;
+
+        
+    
+    
+            var marker_cd0e153444052ab13fec02cb473f7090 = L.marker(
+                [51.2923793, -0.1550824],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_fb35c286a776f3f146e0df62f90672a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cd0e153444052ab13fec02cb473f7090.setIcon(icon_fb35c286a776f3f146e0df62f90672a7);
+        
+    
+        var popup_f0ac592413a86a99d1c3d96087601087 = L.popup({});
+
+        
+            
+                var html_c0c7a232884d583414e3eda22f84d89a = $(`<div id="html_c0c7a232884d583414e3eda22f84d89a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hooley</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses and road closures were reported in Hooley during the winter 2013/14 flooding. [TAB] (p2)</p></div><div class="nugget-popup"><p>Part of the Chipstead & Hooley sub&ndash;area investigated after flooding in winter 2013/14; sites in this sub&ndash;area experienced flood impacts as part of the borough&ndash;wide event. [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_f0ac592413a86a99d1c3d96087601087.setContent(html_c0c7a232884d583414e3eda22f84d89a);
+            
+        
+
+        marker_cd0e153444052ab13fec02cb473f7090.bindPopup(popup_f0ac592413a86a99d1c3d96087601087)
+        ;
+
+        
+    
+    
+            var marker_8d249cf427209869c5049578180c4222 = L.marker(
+                [51.1716895, -0.1640754],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_8ff0509bdcb8e5661d31b1eb29b26b9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8d249cf427209869c5049578180c4222.setIcon(icon_8ff0509bdcb8e5661d31b1eb29b26b9d);
+        
+    
+        var popup_bba726c08ec37c9d117a5ddc366b98df = L.popup({});
+
+        
+            
+                var html_a90356df57b0ba21188b03c1a33b1415 = $(`<div id="html_a90356df57b0ba21188b03c1a33b1415" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Horley</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses and road closures were reported in Horley during the winter 2013/14 flooding event. [TAB] (p2)</p></div><div class="nugget-popup"><p>Part of the Horley & Salfords sub&ndash;area investigated after flooding in winter 2013/14; sites in this sub&ndash;area experienced flood impacts during the borough&ndash;wide event. [IMG] (p9)</p></div><div class="nugget-popup"><p>The River Mole gauge at Horley recorded multiple large instantaneous flow peaks during winter 2013&ndash;14, with the maximum peak associated with the 23 December 2013 storm; these high flows reflect the river&ndash;driven flooding risk and contributed to inundation of river floodplains in the area. [IMG,MUL] (p11)</p></div><div class="nugget-popup"><p>Subject to flooding during the winter 2013/14 storms (23&ndash;24 December 2013). Flooding caused road closures and internal property flooding in the town. River flows in Horley showed a sequence of high flow events over winter 2013/14, with flows &gt;10 m3/s on multiple occasions and a major peak event. [TAB,PAG] (p21)</p></div><div class="nugget-popup"><p>Significant surface&ndash;water flooding across the Horley area during winter 2013/2014. River levels on the River Mole reached their highest recorded levels since records began (~1985). Flooding led to temporary road closures across the area (including Meath Green Lane, Mill Lane, Reigate Road (A217), Lee Street and Tanyard Way) and large parts of the sub&ndash;area were within EA Flood Warning/Alert Areas. [TAB] (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Mean flow at the Horley gauge is 1.4 m3/s; 10 m3/s was exceeded 26 times during the winter; highest instantaneous flow just above 60 m3/s around 23&ndash;Dec&ndash;2013 [IMG,MUL] (p11)</p></div><div class="nugget-popup quant"><p>Maximum over any consecutive 4 weeks (February 2014) had a 121&ndash;year return period; maximum over any consecutive 4 weeks (January 2014) had an 80&ndash;year return period; maximum over any consecutive 14&ndash;days (February 2014) had a 73&ndash;year return period; maximum over any consecutive 14&ndash;days (December 2013) had a 20&ndash;year return period; maximum over any consecutive 14&ndash;days (January 2014) had a 15&ndash;year return period; maximum over any consecutive 4 weeks (December 2013) had a 5&ndash;year return period. [TAB] (p22)</p></div></div></body></div>`)[0];
+                popup_bba726c08ec37c9d117a5ddc366b98df.setContent(html_a90356df57b0ba21188b03c1a33b1415);
+            
+        
+
+        marker_8d249cf427209869c5049578180c4222.bindPopup(popup_bba726c08ec37c9d117a5ddc366b98df)
+        ;
+
+        
+    
+    
+            var marker_71f840f208745414966094d68d0553b2 = L.marker(
+                [51.19973373581304, -0.16551389674064443],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_56f41f005c93881f3114cb4e1dce5b69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_71f840f208745414966094d68d0553b2.setIcon(icon_56f41f005c93881f3114cb4e1dce5b69);
+        
+    
+        var popup_bdaa0fcf5d2da4bfbc3a21a1e112e14a = L.popup({});
+
+        
+            
+                var html_b39fc0e445cb841102f347a705241d04 = $(`<div id="html_b39fc0e445cb841102f347a705241d04" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Salfords</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses and road closures were reported in Salfords during the winter 2013/14 flooding event. [TAB] (p2)</p></div><div class="nugget-popup"><p>Part of the Horley & Salfords sub&ndash;area investigated after flooding in winter 2013/14; sites in this sub&ndash;area were affected as part of the borough&ndash;wide floods. [IMG] (p9)</p></div><div class="nugget-popup"><p>Subject to flooding during the storms of 23&ndash;24 December 2013 as part of the River Mole catchment; the sub&ndash;area experienced road closures and internal property flooding. (p21)</p></div></div></body></div>`)[0];
+                popup_bdaa0fcf5d2da4bfbc3a21a1e112e14a.setContent(html_b39fc0e445cb841102f347a705241d04);
+            
+        
+
+        marker_71f840f208745414966094d68d0553b2.bindPopup(popup_bdaa0fcf5d2da4bfbc3a21a1e112e14a)
+        ;
+
+        
+    
+    
+            var marker_1da04d04c070e15af331584f0c999e97 = L.marker(
+                [51.24047, -0.1682816],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_67a1f247df3bd3c092b19a553530bf55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1da04d04c070e15af331584f0c999e97.setIcon(icon_67a1f247df3bd3c092b19a553530bf55);
+        
+    
+        var popup_9f774cbb0c3af7dfc420f6853fd18d81 = L.popup({});
+
+        
+            
+                var html_22a16617df03d10330547d82858d05f5 = $(`<div id="html_22a16617df03d10330547d82858d05f5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Redhill</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses and road closures were reported in Redhill during the winter 2013/14 flooding event. [TAB] (p2)</p></div><div class="nugget-popup"><p>Flood&ndash;response works were carried out in Redhill during the winter 2013/14 floods (for example, grille removal and silt clearance on Colesmead Road); roads in the borough were closed as a result of flooding. (p7)</p></div><div class="nugget-popup"><p>Part of the Reigate & Redhill central sub&ndash;area investigated after flooding in winter 2013/14; sites in this area were included in the borough&ndash;wide investigations. [IMG] (p9)</p></div><div class="nugget-popup"><p>Flood risk from Redhill Brook to Redhill; analysis for winter 2013&ndash;14 estimates river flood&ndash;levels affecting Redhill. [TAB] (p11)</p></div><div class="nugget-popup"><p>Experienced impacts during the winter 2013/14 flooding: roads in Redhill were affected (Gatton Park Road and Whitepost Hill were temporarily closed), and SCC carried out works on an ordinary watercourse on Colesmead Road (removal of a grill and silt clearance). The diversion and bursting of Redhill Brook affected flows in the area. (p26)</p></div></div></body></div>`)[0];
+                popup_9f774cbb0c3af7dfc420f6853fd18d81.setContent(html_22a16617df03d10330547d82858d05f5);
+            
+        
+
+        marker_1da04d04c070e15af331584f0c999e97.bindPopup(popup_9f774cbb0c3af7dfc420f6853fd18d81)
+        ;
+
+        
+    
+    
+            var marker_16b04fa558e6a162fc4857ee1394e1ce = L.marker(
+                [51.237656, -0.2057067],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_410e17faa9f1d454fe239cf2715a3983 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_16b04fa558e6a162fc4857ee1394e1ce.setIcon(icon_410e17faa9f1d454fe239cf2715a3983);
+        
+    
+        var popup_1a1e20185a9d23782e5bd522fd479597 = L.popup({});
+
+        
+            
+                var html_5e4b3ce906717857e4c75cbf68e06177 = $(`<div id="html_5e4b3ce906717857e4c75cbf68e06177" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Reigate</h1><div class="nugget-popup"><p>Internal property flooding at multiple addresses and road closures were reported in Reigate during the winter 2013/14 flooding event. [TAB] (p2)</p></div><div class="nugget-popup"><p>The Reigate (Reigate & Redhill) sub&ndash;area was one of the five RBBC sub&ndash;areas identified for S19 investigations and therefore contained sites that flooded during the winter 2013/14 events. The borough reported widespread flooding across Surrey (including groundwater&ndash;driven flooding) and approximately 60 incidents of internal property flooding during that winter; the Reigate sub&ndash;area was affected as part of those events. [IMG] (p9)</p></div><div class="nugget-popup"><p>The Reigate sub area was subject to flooding during the storms of 23 and 24 December 2013. Flooding across the River Mole catchment (including Reigate) involved a combination of surface water, fluvial (river) and groundwater flooding mechanisms. During the winter of 2013/2014 the sub area experienced internal property flooding. [MUL] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>51 sites; approximately 60 incidents of internal property flooding (borough&ndash;wide) [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_1a1e20185a9d23782e5bd522fd479597.setContent(html_5e4b3ce906717857e4c75cbf68e06177);
+            
+        
+
+        marker_16b04fa558e6a162fc4857ee1394e1ce.bindPopup(popup_1a1e20185a9d23782e5bd522fd479597)
+        ;
+
+        
+    
+    
+            var marker_8c84942ad0624015cd55363d8a00f374 = L.marker(
+                [51.166677, -0.1868825],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_87d31e856ed44371165e79682e8c8b26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8c84942ad0624015cd55363d8a00f374.setIcon(icon_87d31e856ed44371165e79682e8c8b26);
+        
+    
+        var popup_3bfb952ee2b62d11688806842e2bf6ee = L.popup({});
+
+        
+            
+                var html_95298f172873181384b0d5d1418a7132 = $(`<div id="html_95298f172873181384b0d5d1418a7132" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hookwood</h1><div class="nugget-popup"><p>Surrey County Council cleared a culvert on Reigate Road at Hookwood as a response to flooding, indicating local highway drainage blockage and road flooding. (p7)</p></div><div class="nugget-popup"><p>Affected during the winter 2013/14 storms (23&ndash;24 December 2013). Hookwood lies on the Hookwood Common Brook (a tributary of the River Mole) and was part of the sub&ndash;area that suffered road closures and internal property flooding from combined fluvial, surface water and groundwater mechanisms. (p21)</p></div><div class="nugget-popup"><p>Experienced flood impacts that caused temporary road closures on streets including Reigate Road and Mill Lane; SCC carried out culvert clearance on Reigate Road in Hookwood. (p24)</p></div></div></body></div>`)[0];
+                popup_3bfb952ee2b62d11688806842e2bf6ee.setContent(html_95298f172873181384b0d5d1418a7132);
+            
+        
+
+        marker_8c84942ad0624015cd55363d8a00f374.bindPopup(popup_3bfb952ee2b62d11688806842e2bf6ee)
+        ;
+
+        
+    
+    
+            var marker_b4c89687924db26ff6972bdf143a59df = L.marker(
+                [51.15596113291979, -0.12422360936728112],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_80d9402df1f668ba18cef74af49bb264 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b4c89687924db26ff6972bdf143a59df.setIcon(icon_80d9402df1f668ba18cef74af49bb264);
+        
+    
+        var popup_9138b1d73aa0c07417edb3f817548a43 = L.popup({});
+
+        
+            
+                var html_3e075b959a9c8e11fb5d9a8e8d71fb71 = $(`<div id="html_3e075b959a9c8e11fb5d9a8e8d71fb71" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burstow</h1><div class="nugget-popup"><p>Surrey County Council undertook an assessment of options to reduce flood risk in Burstow following the winter 2013/14 floods, indicating Burstow experienced flood impacts that prompted remedial planning. (p7)</p></div><div class="nugget-popup"><p>The Burstow catchment (a tributary to the Mole by Horley) experienced an exceptional long&ndash;duration winter rainfall event that produced a sharp rise in river flows during winter 2013&ndash;14, increasing flood risk in the tributary and downstream areas. (p10)</p></div><div class="nugget-popup"><p>Subject of a post&ndash;incident assessment by SCC to identify potential options to reduce flood risk following the winter 2013/14 flood incident. (p24)</p></div></div></body></div>`)[0];
+                popup_9138b1d73aa0c07417edb3f817548a43.setContent(html_3e075b959a9c8e11fb5d9a8e8d71fb71);
+            
+        
+
+        marker_b4c89687924db26ff6972bdf143a59df.bindPopup(popup_9138b1d73aa0c07417edb3f817548a43)
+        ;
+
+        
+    
+    
+            var marker_12bf976319f8349d75e7cb9bad7d938f = L.marker(
+                [51.232517, -0.3306724],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_0a8652d526f31d214c771cfe9b6b1aa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_12bf976319f8349d75e7cb9bad7d938f.setIcon(icon_0a8652d526f31d214c771cfe9b6b1aa3);
+        
+    
+        var popup_88ac7ce8eb9c97f8f6f701138958f2f7 = L.popup({});
+
+        
+            
+                var html_cbcbbf61c8afc09ce3d625f8061e75ea = $(`<div id="html_cbcbbf61c8afc09ce3d625f8061e75ea" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dorking</h1><div class="nugget-popup"><p>The Middle Mole produced extreme river levels: Dorking experienced significant fluvial flows during the winter 2013&ndash;14 sequence. The largest recorded event was 23&ndash;24 December 2013 and further high flows occurred on 17 January 2014 and 1 February 2014; the Dorking gauging station exceeded its recording capacity for the December event so peak flow was not recorded. [TAB,MUL] (p11)</p></div></div></body></div>`)[0];
+                popup_88ac7ce8eb9c97f8f6f701138958f2f7.setContent(html_cbcbbf61c8afc09ce3d625f8061e75ea);
+            
+        
+
+        marker_12bf976319f8349d75e7cb9bad7d938f.bindPopup(popup_88ac7ce8eb9c97f8f6f701138958f2f7)
+        ;
+
+        
+    
+    
+            var marker_e4fee1bc881ed42b8465d5eb429393e3 = L.marker(
+                [51.295506, -0.3293689],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_97087185d33b19aef8348a1254816c96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e4fee1bc881ed42b8465d5eb429393e3.setIcon(icon_97087185d33b19aef8348a1254816c96);
+        
+    
+        var popup_960c9ed45bc39739f9e10c4dbd971c6a = L.popup({});
+
+        
+            
+                var html_3f74fe1e303733c63c3bc07290272755 = $(`<div id="html_3f74fe1e303733c63c3bc07290272755" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Leatherhead</h1><div class="nugget-popup"><p>Leatherhead on the Middle Mole was affected by the same extreme river levels in winter 2013&ndash;14; the Leatherhead gauging station was unable to record the 24 December 2013 and 17 January 2014 peaks (exceeded capacity) but did record a flow during the February event. [TAB,PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>The Leatherhead gauging station was overwhelmed by extreme river levels during the winter 2013/14 events; it was unable to record the peak flows for the 24 December 2013 and 17 January 2014 peaks, though it did record flow during the 1 February 2014 event. [PAG,MUL] (p12)</p></div></div></body></div>`)[0];
+                popup_960c9ed45bc39739f9e10c4dbd971c6a.setContent(html_3f74fe1e303733c63c3bc07290272755);
+            
+        
+
+        marker_e4fee1bc881ed42b8465d5eb429393e3.bindPopup(popup_960c9ed45bc39739f9e10c4dbd971c6a)
+        ;
+
+        
+    
+    
+            var marker_91d1999eef54aa424f17fae06ca25155 = L.marker(
+                [51.33001, -0.4120821],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_5a12a5110ac4b1a923a81195052dafe1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_91d1999eef54aa424f17fae06ca25155.setIcon(icon_5a12a5110ac4b1a923a81195052dafe1);
+        
+    
+        var popup_2c33b3ef288b6a5863ca5dd72cbf7746 = L.popup({});
+
+        
+            
+                var html_9eef6c9e000eec5ed3786fa3740dade7 = $(`<div id="html_9eef6c9e000eec5ed3786fa3740dade7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cobham</h1><div class="nugget-popup"><p>Cobham was associated with elevated River Mole flows during winter 2013&ndash;14 that gave rise to fluvial flood risk and inundation across river flood plain areas. [TAB] (p11)</p></div></div></body></div>`)[0];
+                popup_2c33b3ef288b6a5863ca5dd72cbf7746.setContent(html_9eef6c9e000eec5ed3786fa3740dade7);
+            
+        
+
+        marker_91d1999eef54aa424f17fae06ca25155.bindPopup(popup_2c33b3ef288b6a5863ca5dd72cbf7746)
+        ;
+
+        
+    
+    
+            var marker_1de9ced48f94bc75b4d3c59bda1fef20 = L.marker(
+                [51.3693929, -0.3654406],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_3d5632fb2d4b26bd960e15b1c5fac323 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1de9ced48f94bc75b4d3c59bda1fef20.setIcon(icon_3d5632fb2d4b26bd960e15b1c5fac323);
+        
+    
+        var popup_29dcf2228a8fdfda14b3c2daa0676b7f = L.popup({});
+
+        
+            
+                var html_4f088ace3abc0cb4c5038f538f386087 = $(`<div id="html_4f088ace3abc0cb4c5038f538f386087" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Esher</h1><div class="nugget-popup"><p>Esher was linked to elevated River Mole flows in winter 2013&ndash;14, with fluvial flooding and inundation of river floodplain areas during the high&ndash;flow sequence. [TAB] (p11)</p></div></div></body></div>`)[0];
+                popup_29dcf2228a8fdfda14b3c2daa0676b7f.setContent(html_4f088ace3abc0cb4c5038f538f386087);
+            
+        
+
+        marker_1de9ced48f94bc75b4d3c59bda1fef20.bindPopup(popup_29dcf2228a8fdfda14b3c2daa0676b7f)
+        ;
+
+        
+    
+    
+            var marker_cf03d5f5caf5dd14f866f741671b875a = L.marker(
+                [51.3145287, -0.2186591],
+                {}
+            ).addTo(map_aa80fe8db7fc3b67c09f431bf2926c6b);
+        
+    
+            var icon_da01c15f0c55d86eaff32b2864364f10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cf03d5f5caf5dd14f866f741671b875a.setIcon(icon_da01c15f0c55d86eaff32b2864364f10);
+        
+    
+        var popup_cebae135550a88a4f7434dcfbd548324 = L.popup({});
+
+        
+            
+                var html_6e0b25b9db1dbf35e0456a124048b13b = $(`<div id="html_6e0b25b9db1dbf35e0456a124048b13b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burgh Heath</h1><div class="nugget-popup"><p>At Burgh Heath the Brighton Road A217 flooded from surface water flowing off saturated ground onto the road; other lengths flooded where rainwater collected on the road surface at low points. (p19)</p></div></div></body></div>`)[0];
+                popup_cebae135550a88a4f7434dcfbd548324.setContent(html_6e0b25b9db1dbf35e0456a124048b13b);
+            
+        
+
+        marker_cf03d5f5caf5dd14f866f741671b875a.bindPopup(popup_cebae135550a88a4f7434dcfbd548324)
+        ;
+
+        
+    
+</script>
+</html>
