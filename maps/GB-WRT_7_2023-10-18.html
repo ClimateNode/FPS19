@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_216abda377dc53a1e49a0536b5806bb1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_216abda377dc53a1e49a0536b5806bb1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_216abda377dc53a1e49a0536b5806bb1 = L.map(
+                "map_216abda377dc53a1e49a0536b5806bb1",
+                {
+                    center: [53.8838787403473, -2.522405092913757],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cdb41f0cb6ccb599111e45fa64a50200 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_cdb41f0cb6ccb599111e45fa64a50200.addTo(map_216abda377dc53a1e49a0536b5806bb1);
+    
+            var marker_d8829a51be0736b87ad83c941ee92229 = L.marker(
+                [53.4405292, -2.5506354],
+                {}
+            ).addTo(map_216abda377dc53a1e49a0536b5806bb1);
+        
+    
+            var icon_58e515b825348b71e5a426656bfa7aa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d8829a51be0736b87ad83c941ee92229.setIcon(icon_58e515b825348b71e5a426656bfa7aa8);
+        
+    
+        var popup_5c738656ba865317b3fc9aa8e00f8209 = L.popup({});
+
+        
+            
+                var html_8460599b94dd11eaeceba3614dafc9c0 = $(`<div id="html_8460599b94dd11eaeceba3614dafc9c0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Croft Primary School</h1><div class="nugget-popup"><p>Internal flooding of the school caused by water entering via underground service ducting (not overland flow), leading to water ingress into the building and access/operational impacts. (p6)</p></div><div class="nugget-popup"><p>Water entered the building via underground ducting during the event; flooding was reported as ankle deep and restricted to a couple of rooms. The school continued to operate. (p18)</p></div><div class="nugget-popup"><p>Floodwater entered Croft Primary School via underground ducting, causing internal flooding confined to a small part of the building; school continued to operate. [IMG] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (internal flooding) (p6)</p></div><div class="nugget-popup quant"><p>a couple rooms; ankle&ndash;deep water (p18)</p></div><div class="nugget-popup quant"><p>2 rooms [IMG] (p19)</p></div></div></body></div>`)[0];
+                popup_5c738656ba865317b3fc9aa8e00f8209.setContent(html_8460599b94dd11eaeceba3614dafc9c0);
+            
+        
+
+        marker_d8829a51be0736b87ad83c941ee92229.bindPopup(popup_5c738656ba865317b3fc9aa8e00f8209)
+        ;
+
+        
+    
+    
+            var marker_c33a5cb42cc31fe158f773a4ed11cfbe = L.marker(
+                [53.39117518202302, -2.5967829867827383],
+                {}
+            ).addTo(map_216abda377dc53a1e49a0536b5806bb1);
+        
+    
+            var icon_7511cf055d04e16f7c7d8cd651901079 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c33a5cb42cc31fe158f773a4ed11cfbe.setIcon(icon_7511cf055d04e16f7c7d8cd651901079);
+        
+    
+        var popup_8df4fd73c40dc88bc54dbb47cbea8e63 = L.popup({});
+
+        
+            
+                var html_2765b241ca03f236c3a27f658ffc8b0e = $(`<div id="html_2765b241ca03f236c3a27f658ffc8b0e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Warrington Unitary Authority</h1><div class="nugget-popup"><p>The incident in Croft (Warrington) was driven by Storm Babet and prolonged heavy rainfall, combined with drainage system failures (liner failure, pipe failure adjacent to a chamber near No1 Mustard Lane) and lack of drainage capacity; this resulted in internal flooding to two properties on Mustard Lane (Croft Memorial Hall and Croft Primary School) and external flooding to two further properties in the vicinity. [TAB,PAG] (p6)</p></div><div class="nugget-popup"><p>Flooding event in Warrington during October 2023. Included external flooding to properties in Croft (Mustard Lane). (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (internal); 2 properties (external) [TAB,PAG] (p6)</p></div><div class="nugget-popup quant"><p>2 properties (p7)</p></div></div></body></div>`)[0];
+                popup_8df4fd73c40dc88bc54dbb47cbea8e63.setContent(html_2765b241ca03f236c3a27f658ffc8b0e);
+            
+        
+
+        marker_c33a5cb42cc31fe158f773a4ed11cfbe.bindPopup(popup_8df4fd73c40dc88bc54dbb47cbea8e63)
+        ;
+
+        
+    
+    
+            var marker_5a3c0bc4cc7d544647246cde3900af81 = L.marker(
+                [53.4441492, -2.545452],
+                {}
+            ).addTo(map_216abda377dc53a1e49a0536b5806bb1);
+        
+    
+            var icon_c0f74515de8c7e499464f7a7e973b3c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5a3c0bc4cc7d544647246cde3900af81.setIcon(icon_c0f74515de8c7e499464f7a7e973b3c8);
+        
+    
+        var popup_9c05a41d04105ca157a7db49b02cfc81 = L.popup({});
+
+        
+            
+                var html_7d3003217e34687db3d6fd0dd8c2df71 = $(`<div id="html_7d3003217e34687db3d6fd0dd8c2df71" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mustard Lane, Warrington Unitary Authority</h1><div class="nugget-popup"><p>Flooding affected properties on Mustard Lane due to overwhelmed drainage and failure of underground pipework (including failure of the pipe adjacent to the chamber near No.1 Mustard Lane), causing internal and external flooding of properties. [TAB] (p6)</p></div><div class="nugget-popup"><p>Surface water/sewer&ndash;related flooding along Mustard Lane required sandbags to be deployed to control flow. Highway gullies on Mustard Lane (south of the Memorial Hall) operated and drained excess water. The existing drainage/sewer infrastructure runs under Mustard Lane and conveyed significant volumes of highway, property and land drainage into the area during the event. [IMG] (p18)</p></div><div class="nugget-popup"><p>Overland flow was controlled with sandbags delivered by the Council; highway gullies to the south of the Memorial Hall drained excess water. The statutory maps and CCTV show a combined public sewer and a larger drainage system running along Mustard Lane; defects identified included a failed pipe adjacent to the chamber near No.1 Mustard Lane (creating a significant void) and a defective liner that was later removed. The drainage system was cleaned to restore operation, but pipe weakening and subsequent failure occurred due to pressures during the event. [PAG] (p19)</p></div><div class="nugget-popup"><p>A failed section of the drainage system was confirmed 1.0m from the chamber outside No.1 Mustard Lane, extending for approximately 10.0m upstream. The failure is attributed to increased pressure on the drainage system during Storm Babet; open&ndash;cut repair was required and completed in January 2024. Final remedial works include installing a continuous liner for the full length of the system to the chamber in Sandy Lane (approx. 50.0m). [PAG] (p20)</p></div><div class="nugget-popup"><p>Flooding to property on Mustard Lane between 19 and 20 October 2023 was attributed in the report to factors including defects following lining works to the local drainage system; properties on Mustard Lane were directly affected and repairs (a continuous liner) have been required. [PAG] (p21)</p></div><div class="nugget-popup"><p>Properties on Mustard Lane were flooded between 19 and 20 October 2023 due to surcharging of the drainage system driven by Storm Babet and prolonged heavy rainfall. Contributing factors cited include lack of drainage capacity for overland flow, significant tree roots, failure of a CIPP liner in sections (installed circa 2016) and failure of a pipe adjacent to a chamber near No1 Mustard Lane which created a significant void. (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (internal flooding); 2 properties (external flooding) [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_9c05a41d04105ca157a7db49b02cfc81.setContent(html_7d3003217e34687db3d6fd0dd8c2df71);
+            
+        
+
+        marker_5a3c0bc4cc7d544647246cde3900af81.bindPopup(popup_9c05a41d04105ca157a7db49b02cfc81)
+        ;
+
+        
+    
+    
+            var marker_9783fe79e1e7f0870a3e1b0f2bf44740 = L.marker(
+                [53.4413238, -2.5519262],
+                {}
+            ).addTo(map_216abda377dc53a1e49a0536b5806bb1);
+        
+    
+            var icon_11a2f2e4d1b4884c7ee60c1ed4662a62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9783fe79e1e7f0870a3e1b0f2bf44740.setIcon(icon_11a2f2e4d1b4884c7ee60c1ed4662a62);
+        
+    
+        var popup_e4b7cd38e001d2c166d9cfb5b226bb0f = L.popup({});
+
+        
+            
+                var html_c832d7d8b8cd5a135a38146db142ab06 = $(`<div id="html_c832d7d8b8cd5a135a38146db142ab06" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sandy Lane, Croft</h1><div class="nugget-popup"><p>Surcharging from a sewer chamber on Sandy Lane caused water to flow down the road, producing surface water runoff that travelled downstream and contributed to accumulation in the low area around Croft Memorial Hall. (p18)</p></div><div class="nugget-popup"><p>A chamber on Sandy Lane was reported to be surcharging; this blockage/surcharging caused overland flow down the road contributing to accumulation near Croft Memorial Hall. [PAG] (p19)</p></div><div class="nugget-popup"><p>The drainage chamber at Sandy Lane is the upstream end of the drainage run that had defects following recent lining works. Those defects formed part of the cause of flooding to property on Mustard Lane (19&ndash;20 October 2023); repairs require a continuous liner from the Sandy Lane chamber to the chamber adjacent to No1 Mustard Lane (approx. 50.0m). (p21)</p></div></div></body></div>`)[0];
+                popup_e4b7cd38e001d2c166d9cfb5b226bb0f.setContent(html_c832d7d8b8cd5a135a38146db142ab06);
+            
+        
+
+        marker_9783fe79e1e7f0870a3e1b0f2bf44740.bindPopup(popup_e4b7cd38e001d2c166d9cfb5b226bb0f)
+        ;
+
+        
+    
+    
+            var marker_9161b17de5ce3a5d19a48b3c65c031e0 = L.marker(
+                [53.43655660214455, -2.5590661281823457],
+                {}
+            ).addTo(map_216abda377dc53a1e49a0536b5806bb1);
+        
+    
+            var icon_dbb8f710d26326206a6e04b5e6cafbca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9161b17de5ce3a5d19a48b3c65c031e0.setIcon(icon_dbb8f710d26326206a6e04b5e6cafbca);
+        
+    
+        var popup_4e862ab214aa7e3ab612e0a4a9565e63 = L.popup({});
+
+        
+            
+                var html_9a69028cca5e9b5ebc4b86703c66bb97 = $(`<div id="html_9a69028cca5e9b5ebc4b86703c66bb97" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Croft</h1><div class="nugget-popup"><p>The village experienced flooding driven by prolonged heavy rainfall, saturated catchment and insufficient drainage capacity; drainage failures led to property flooding and localised infrastructure impacts. [IMG,TAB] (p6)</p></div><div class="nugget-popup"><p>Surface water and sewer&ndash;related flooding concentrated in a localised topographic depression around Croft Memorial Hall: water was reported to be surcharging from a sewer chamber on Sandy Lane, flowing down the road and accumulating in the low area around Croft Memorial Hall. The hall is verified on site as being in a localised depression that collects this water. [IMG,PAG] (p17)</p></div><div class="nugget-popup"><p>Areas within Croft experienced surface water/sewer&ndash;related flooding during the event: water surcharged from a chamber on Sandy Lane, flowed along Mustard Lane and accumulated around the Memorial Hall area, and Croft Primary School experienced internal flooding via underground ducting. [IMG] (p18)</p></div><div class="nugget-popup"><p>Surface water and surcharging drainage flowed from a chamber on Sandy Lane down the road and accumulated in the low area around Croft Memorial Hall. Flooding to Croft Primary School occurred when water entered the building via underground ducting (ankle&ndash;deep, restricted to a couple of rooms). [PAG,IMG] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 properties (total reported: 2 internal, 2 external) [IMG,TAB] (p6)</p></div><div class="nugget-popup quant"><p>a couple rooms (at Croft Primary School) [IMG] (p18)</p></div><div class="nugget-popup quant"><p>2 rooms (Croft Primary School) [PAG,IMG] (p19)</p></div></div></body></div>`)[0];
+                popup_4e862ab214aa7e3ab612e0a4a9565e63.setContent(html_9a69028cca5e9b5ebc4b86703c66bb97);
+            
+        
+
+        marker_9161b17de5ce3a5d19a48b3c65c031e0.bindPopup(popup_4e862ab214aa7e3ab612e0a4a9565e63)
+        ;
+
+        
+    
+</script>
+</html>
