@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_994ec6401e1a56e9ee592422b5a5e2bf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_994ec6401e1a56e9ee592422b5a5e2bf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_994ec6401e1a56e9ee592422b5a5e2bf = L.map(
+                "map_994ec6401e1a56e9ee592422b5a5e2bf",
+                {
+                    center: [52.578841983333334, -1.6618733666666667],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8c7b7d4bae80b3543068145ea21cc4aa = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_8c7b7d4bae80b3543068145ea21cc4aa.addTo(map_994ec6401e1a56e9ee592422b5a5e2bf);
+    
+            var marker_98c6514e97518408d19db9e395944069 = L.marker(
+                [52.5791122, -1.6647416],
+                {}
+            ).addTo(map_994ec6401e1a56e9ee592422b5a5e2bf);
+        
+    
+            var icon_8355878309a7fe70e48669d2e4516384 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_98c6514e97518408d19db9e395944069.setIcon(icon_8355878309a7fe70e48669d2e4516384);
+        
+    
+        var popup_835d1ed532613bfdb62d495e6d3f6db0 = L.popup({});
+
+        
+            
+                var html_8219a0bce570446f5f79fb7fcd9997f7 = $(`<div id="html_8219a0bce570446f5f79fb7fcd9997f7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Piccadilly Crescent, Piccadilly</h1><div class="nugget-popup"><p>Two properties on Piccadilly Crescent experienced internal flooding during an intense, localized thunderstorm on 11 June 2023; the heavy downpour caused internal property flooding. [PAG] (p3)</p></div><div class="nugget-popup"><p>Internal flooding of two properties occurred when high&ndash;intensity rainfall exceeded the capacity of the piped drainage network or prevented flows entering the network quickly enough. Flooding was compounded because the two properties sit at the low spot of Piccadilly Crescent and front landscaping created an accessible route for surface water flows. Flooding was reported to the LLFA and verified with photographs; a site visit found no apparent asset failure or restriction within the drainage network. [IMG] (p4)</p></div><div class="nugget-popup"><p>Properties on Piccadilly Crescent were subject to flooding caused by an under&ndash;performing local drainage network and surface water run&ndash;off; actions include gully cleansing, maintenance of the 150mm VC drain, installation of a continuous liner to improve connectivity to Trinity Road, and property flood resilience consideration. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two properties [PAG] (p3)</p></div><div class="nugget-popup quant"><p>two properties [IMG] (p4)</p></div></div></body></div>`)[0];
+                popup_835d1ed532613bfdb62d495e6d3f6db0.setContent(html_8219a0bce570446f5f79fb7fcd9997f7);
+            
+        
+
+        marker_98c6514e97518408d19db9e395944069.bindPopup(popup_835d1ed532613bfdb62d495e6d3f6db0)
+        ;
+
+        
+    
+    
+            var marker_6015c1c962a943a84a47793ea1bf8729 = L.marker(
+                [52.5873652, -1.6566663],
+                {}
+            ).addTo(map_994ec6401e1a56e9ee592422b5a5e2bf);
+        
+    
+            var icon_ceae284ba74dbdf8b200c6a73f4c9d3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6015c1c962a943a84a47793ea1bf8729.setIcon(icon_ceae284ba74dbdf8b200c6a73f4c9d3b);
+        
+    
+        var popup_97f1799d43cac12ffac9cbda22f84859 = L.popup({});
+
+        
+            
+                var html_80b44d5d385d40182f633155fa1da21e = $(`<div id="html_80b44d5d385d40182f633155fa1da21e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Trinity Road, Wood End</h1><div class="nugget-popup"><p>The 150mm VC drainage system between Piccadilly Crescent and Trinity Road had works (continuous liner installation) to address drainage connectivity and reduce flood risk; this links Trinity Road into the drainage interventions for affected properties. [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_97f1799d43cac12ffac9cbda22f84859.setContent(html_80b44d5d385d40182f633155fa1da21e);
+            
+        
+
+        marker_6015c1c962a943a84a47793ea1bf8729.bindPopup(popup_97f1799d43cac12ffac9cbda22f84859)
+        ;
+
+        
+    
+    
+            var marker_7d552b4cadaf12365e457aa7964a996d = L.marker(
+                [52.5644762, -1.6829673],
+                {}
+            ).addTo(map_994ec6401e1a56e9ee592422b5a5e2bf);
+        
+    
+            var icon_12871e8b81c4b8bf3aa44556066ee851 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7d552b4cadaf12365e457aa7964a996d.setIcon(icon_12871e8b81c4b8bf3aa44556066ee851);
+        
+    
+        var popup_44dccd79cfcd00017df2748f66644f70 = L.popup({});
+
+        
+            
+                var html_36a2d6ef4bc20cb266e6735e69783737 = $(`<div id="html_36a2d6ef4bc20cb266e6735e69783737" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingsbury</h1><div class="nugget-popup"><p>Properties on Piccadilly Crescent in Kingsbury were affected by flooding, triggering actions including gully cleansing, lining of the 150mm VC drain (continuous liner installed between Piccadilly Crescent and Trinity Road funded by NWBC), and installation of a new chamber with a grated cover; PFR recommendations survey undertaken and funding identified for mitigation. (p6)</p></div></div></body></div>`)[0];
+                popup_44dccd79cfcd00017df2748f66644f70.setContent(html_36a2d6ef4bc20cb266e6735e69783737);
+            
+        
+
+        marker_7d552b4cadaf12365e457aa7964a996d.bindPopup(popup_44dccd79cfcd00017df2748f66644f70)
+        ;
+
+        
+    
+    
+            var marker_baa76ef05c95f74a97a74ba9960d68a4 = L.marker(
+                [52.5794316, -1.6650024],
+                {}
+            ).addTo(map_994ec6401e1a56e9ee592422b5a5e2bf);
+        
+    
+            var icon_57777873c0d5c28bb2415ae055dcde53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_baa76ef05c95f74a97a74ba9960d68a4.setIcon(icon_57777873c0d5c28bb2415ae055dcde53);
+        
+    
+        var popup_d0adfb3d444a181582707bc9304f5756 = L.popup({});
+
+        
+            
+                var html_9e3568adeb3f9036b4c5d82286682911 = $(`<div id="html_9e3568adeb3f9036b4c5d82286682911" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Piccadilly</h1><div class="nugget-popup"><p>Internal property flooding occurred within the settlement (two properties on Piccadilly Crescent) during a high&ndash;intensity rainfall event; properties are located in a low spot and on the surface water flow path, contributing to inundation. [IMG] (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two properties [IMG] (p4)</p></div></div></body></div>`)[0];
+                popup_d0adfb3d444a181582707bc9304f5756.setContent(html_9e3568adeb3f9036b4c5d82286682911);
+            
+        
+
+        marker_baa76ef05c95f74a97a74ba9960d68a4.bindPopup(popup_d0adfb3d444a181582707bc9304f5756)
+        ;
+
+        
+    
+    
+            var marker_6229a266ddc49484f933ab4ff8d15f5d = L.marker(
+                [52.5824436, -1.6424757],
+                {}
+            ).addTo(map_994ec6401e1a56e9ee592422b5a5e2bf);
+        
+    
+            var icon_7e7f06618b78ce413015167ad0f1508d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6229a266ddc49484f933ab4ff8d15f5d.setIcon(icon_7e7f06618b78ce413015167ad0f1508d);
+        
+    
+        var popup_16f98a27ac3adc808581149a90dab4b7 = L.popup({});
+
+        
+            
+                var html_abce6706555aa047d5e8eec43e431995 = $(`<div id="html_abce6706555aa047d5e8eec43e431995" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wood End</h1><div class="nugget-popup"><p>The nearby settlement experienced flooding during the same high&ndash;intensity rainfall event on 11 June 2023 (noted as being affected during the same event that produced internal flooding in Piccadilly Crescent). (p4)</p></div></div></body></div>`)[0];
+                popup_16f98a27ac3adc808581149a90dab4b7.setContent(html_abce6706555aa047d5e8eec43e431995);
+            
+        
+
+        marker_6229a266ddc49484f933ab4ff8d15f5d.bindPopup(popup_16f98a27ac3adc808581149a90dab4b7)
+        ;
+
+        
+    
+</script>
+</html>
