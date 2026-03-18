@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e27957fc2043792ac94e61817daf5a4a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e27957fc2043792ac94e61817daf5a4a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e27957fc2043792ac94e61817daf5a4a = L.map(
+                "map_e27957fc2043792ac94e61817daf5a4a",
+                {
+                    center: [52.19345466823754, -1.6478122508830613],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7a557e651bc43b432b2be6b1c25cc978 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_7a557e651bc43b432b2be6b1c25cc978.addTo(map_e27957fc2043792ac94e61817daf5a4a);
+    
+            var marker_f5e23d68aece497ca524e179db8a763c = L.marker(
+                [52.29230407558795, -1.5360388084350638],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_de70eb60434bc515a37b80fb0e7bcd83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f5e23d68aece497ca524e179db8a763c.setIcon(icon_de70eb60434bc515a37b80fb0e7bcd83);
+        
+    
+        var popup_ca2ef1e7330bc4b4565e9b97ee1ce8c3 = L.popup({});
+
+        
+            
+                var html_909a3c9a64c6a76d6e5e8765ba4bd451 = $(`<div id="html_909a3c9a64c6a76d6e5e8765ba4bd451" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Parade</h1><div class="nugget-popup"><p>Floodwater from the River Leam spilled onto the floodplain and resulted in internal flooding of one commercial property located on The Parade. [TAB] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 commercial property [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_ca2ef1e7330bc4b4565e9b97ee1ce8c3.setContent(html_909a3c9a64c6a76d6e5e8765ba4bd451);
+            
+        
+
+        marker_f5e23d68aece497ca524e179db8a763c.bindPopup(popup_ca2ef1e7330bc4b4565e9b97ee1ce8c3)
+        ;
+
+        
+    
+    
+            var marker_c4bd5313933a6ef190bcbb87ed6d6faf = L.marker(
+                [52.24464288318919, -1.668153194049851],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_997c2074f9bb3a6bb607740e5a353c65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c4bd5313933a6ef190bcbb87ed6d6faf.setIcon(icon_997c2074f9bb3a6bb607740e5a353c65);
+        
+    
+        var popup_212900ad44d7b4c0889ac19da28f341a = L.popup({});
+
+        
+            
+                var html_c87148547fb98be73d11cafdd0d80fb1 = $(`<div id="html_c87148547fb98be73d11cafdd0d80fb1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bell Brook</h1><div class="nugget-popup"><p>The Bell Brook rose significantly during heavy rainfall on 14/15 November 2019, burst its banks and caused further highway flooding; its high level prevented the highway surface water system from discharging and contributed to the foul sewer system being overwhelmed and backing up into properties. (p22)</p></div></div></body></div>`)[0];
+                popup_212900ad44d7b4c0889ac19da28f341a.setContent(html_c87148547fb98be73d11cafdd0d80fb1);
+            
+        
+
+        marker_c4bd5313933a6ef190bcbb87ed6d6faf.bindPopup(popup_212900ad44d7b4c0889ac19da28f341a)
+        ;
+
+        
+    
+    
+            var marker_3958494908ac9fcbbb63de2e1d499318 = L.marker(
+                [52.0508449, -1.5458605],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_59ddbe5a649c4ec44979e19f11697332 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3958494908ac9fcbbb63de2e1d499318.setIcon(icon_59ddbe5a649c4ec44979e19f11697332);
+        
+    
+        var popup_bff87d4856cda50039ccfe2934b5da97 = L.popup({});
+
+        
+            
+                var html_26359e47975f9e7b31fc8233c7a2cc1b = $(`<div id="html_26359e47975f9e7b31fc8233c7a2cc1b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sutton Brook</h1><div class="nugget-popup"><p>High river levels on the Sutton Brook caused water to spill out onto the High Street and affect nearby properties; combined with surface runoff this contributed to internal flooding of a property in Lower Brailes. (p29)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p29)</p></div></div></body></div>`)[0];
+                popup_bff87d4856cda50039ccfe2934b5da97.setContent(html_26359e47975f9e7b31fc8233c7a2cc1b);
+            
+        
+
+        marker_3958494908ac9fcbbb63de2e1d499318.bindPopup(popup_bff87d4856cda50039ccfe2934b5da97)
+        ;
+
+        
+    
+    
+            var marker_dfc2ed8fe7bbe9bba9f400806eea7d04 = L.marker(
+                [52.3520146, -1.5154191],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_bac442b3d48e7eeb3eee65ec7460413b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dfc2ed8fe7bbe9bba9f400806eea7d04.setIcon(icon_bac442b3d48e7eeb3eee65ec7460413b);
+        
+    
+        var popup_cf7e489561110d17e40c879479efe13f = L.popup({});
+
+        
+            
+                var html_03aecdcaab724f123afc9cb12763830b = $(`<div id="html_03aecdcaab724f123afc9cb12763830b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Bank</h1><div class="nugget-popup"><p>Surface water flows accumulated at 'The Bank' producing internal flooding of one residential property and external flooding to other properties; local pumping was attempted but effectiveness is unclear. [TAB] (p28)</p></div><div class="nugget-popup"><p>Surface water accumulated in the area known as 'The Bank' during heavy rainfall, resulting in internal flooding of one residential property and external flooding to around ten other properties; community attempts to operate the decommissioned pump were made but effectiveness is unknown. (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property internally flooded; 10 properties externally flooded [TAB] (p28)</p></div><div class="nugget-popup quant"><p>1 property internally flooded; 10 properties externally flooded (p30)</p></div></div></body></div>`)[0];
+                popup_cf7e489561110d17e40c879479efe13f.setContent(html_03aecdcaab724f123afc9cb12763830b);
+            
+        
+
+        marker_dfc2ed8fe7bbe9bba9f400806eea7d04.bindPopup(popup_cf7e489561110d17e40c879479efe13f)
+        ;
+
+        
+    
+    
+            var marker_a1cfc3617552bf6ee8fb6c082a5dff0f = L.marker(
+                [52.0531726, -1.5565187],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_43d393a7a6305c9295d08c8ecea8fd40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a1cfc3617552bf6ee8fb6c082a5dff0f.setIcon(icon_43d393a7a6305c9295d08c8ecea8fd40);
+        
+    
+        var popup_0349dd5c91810d676005de6aebe55382 = L.popup({});
+
+        
+            
+                var html_cb8cd407395b94eb4fa0af009489297a = $(`<div id="html_cb8cd407395b94eb4fa0af009489297a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>B4035 at Upper Brailes</h1><div class="nugget-popup"><p>Runoff from fields to the rear of a property combined with a blocked drain caused internal flooding of a property on the B4035 Main Road. [TAB] (p28)</p></div><div class="nugget-popup"><p>Runoff from fields to the rear of a property combined with a blocked drain and caused internal flooding of that property on the B4035 Main Road. (p31)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded [TAB] (p28)</p></div><div class="nugget-popup quant"><p>1 property (p31)</p></div></div></body></div>`)[0];
+                popup_0349dd5c91810d676005de6aebe55382.setContent(html_cb8cd407395b94eb4fa0af009489297a);
+            
+        
+
+        marker_a1cfc3617552bf6ee8fb6c082a5dff0f.bindPopup(popup_0349dd5c91810d676005de6aebe55382)
+        ;
+
+        
+    
+    
+            var marker_c157e5ff765ccaee6f563fbbdcf2e2ac = L.marker(
+                [52.1542036, -1.8729011],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_bfdd90e9208350457cf1d5257a2493f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c157e5ff765ccaee6f563fbbdcf2e2ac.setIcon(icon_bfdd90e9208350457cf1d5257a2493f6);
+        
+    
+        var popup_c815265e52b8804d24638f2785e92dc5 = L.popup({});
+
+        
+            
+                var html_d47e7c3556f9ae2a7da34dc883f24dc2 = $(`<div id="html_d47e7c3556f9ae2a7da34dc883f24dc2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Avon</h1><div class="nugget-popup"><p>Following heavy rainfall on 14 November, river levels across Warwickshire rose notably and rivers generally peaked later on 14 November or into 15 November. Some smaller ordinary watercourses (particularly in steep or urban areas) responded to the rainfall more quickly. [PAG,IMG] (p7)</p></div></div></body></div>`)[0];
+                popup_c815265e52b8804d24638f2785e92dc5.setContent(html_d47e7c3556f9ae2a7da34dc883f24dc2);
+            
+        
+
+        marker_c157e5ff765ccaee6f563fbbdcf2e2ac.bindPopup(popup_c815265e52b8804d24638f2785e92dc5)
+        ;
+
+        
+    
+    
+            var marker_59da44620ebef93908400ccb15fb3b5a = L.marker(
+                [52.0764978, -1.6171664],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_468b5b7e35f74b734e66dbac8e4892a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_59da44620ebef93908400ccb15fb3b5a.setIcon(icon_468b5b7e35f74b734e66dbac8e4892a2);
+        
+    
+        var popup_32f1628557469dd090ef761d14da175f = L.popup({});
+
+        
+            
+                var html_a8ccc75892c02c2c1d17f09b1c45cd82 = $(`<div id="html_a8ccc75892c02c2c1d17f09b1c45cd82" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Stour</h1><div class="nugget-popup"><p>The River Stour rose significantly during heavy rainfall and spilled onto its floodplain, causing inundation of adjacent gardens, fields, highway and properties in Stourton. (p24)</p></div><div class="nugget-popup"><p>The Stour (mapped as the Main River) is identified as the watercourse contributing to flooding at Stourton; the report raises upstream flood&ndash;storage and river&ndash;defence options to reduce flood risk to the village. [IMG,PAG] (p25)</p></div><div class="nugget-popup"><p>River levels on the River Stour (and associated Mill Stream) rose significantly and burst their banks, leading to water entering properties on Mill Lane (entered through floors and fronts) and affecting access to one property. [TAB] (p28)</p></div><div class="nugget-popup"><p>River Stour levels rose significantly following heavy rainfall and burst its banks, contributing to internal flooding of properties on Mill Lane and affecting drainage capacity of nearby highway assets. (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>four properties; flood depths up to 1 metre in gardens/fields; up to 5 centimetres inside properties (p24)</p></div><div class="nugget-popup quant"><p>2 properties [TAB] (p28)</p></div><div class="nugget-popup quant"><p>2 properties internally flooded (p30)</p></div></div></body></div>`)[0];
+                popup_32f1628557469dd090ef761d14da175f.setContent(html_a8ccc75892c02c2c1d17f09b1c45cd82);
+            
+        
+
+        marker_59da44620ebef93908400ccb15fb3b5a.bindPopup(popup_32f1628557469dd090ef761d14da175f)
+        ;
+
+        
+    
+    
+            var marker_f2f0a9440f93fd521ba1bacc99a188c5 = L.marker(
+                [52.3111473, -1.3621981],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_c54d9fd87547cbe0831c7f5ef1269194 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f2f0a9440f93fd521ba1bacc99a188c5.setIcon(icon_c54d9fd87547cbe0831c7f5ef1269194);
+        
+    
+        var popup_fd7dcbf698253d014e500fe29ea65ca7 = L.popup({});
+
+        
+            
+                var html_855552b38d6e6ca9fb0ec31072751fc3 = $(`<div id="html_855552b38d6e6ca9fb0ec31072751fc3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Leam</h1><div class="nugget-popup"><p>The River Leam exceeded levels where minor flooding is possible and spilled onto its floodplain within the public gardens in Leamington Spa, resulting in internal flooding of one commercial property; the River Leam also rose at Eathorpe and was associated with flooding to a property there. [TAB] (p28)</p></div><div class="nugget-popup"><p>Following heavy rainfall the River Leam through Leamington Spa exceeded minor flood levels, spilled onto its floodplain within the public gardens and this led to internal flooding of a commercial property. (p29)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 commercial property (Leamington Spa); 1 property (Eathorpe) [TAB] (p28)</p></div><div class="nugget-popup quant"><p>1 commercial property (p29)</p></div></div></body></div>`)[0];
+                popup_fd7dcbf698253d014e500fe29ea65ca7.setContent(html_855552b38d6e6ca9fb0ec31072751fc3);
+            
+        
+
+        marker_f2f0a9440f93fd521ba1bacc99a188c5.bindPopup(popup_fd7dcbf698253d014e500fe29ea65ca7)
+        ;
+
+        
+    
+    
+            var marker_0abaf60436f684452277033b48ecf8d4 = L.marker(
+                [52.1470929, -1.683969],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_234bf634dfc2a383cfb3d5e57632368d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0abaf60436f684452277033b48ecf8d4.setIcon(icon_234bf634dfc2a383cfb3d5e57632368d);
+        
+    
+        var popup_2b1f27e0f6d18dcdd8e1f995274cad4b = L.popup({});
+
+        
+            
+                var html_e044e711b31aab848d93a1494533fbef = $(`<div id="html_e044e711b31aab848d93a1494533fbef" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Shipston Road, Alderminster</h1><div class="nugget-popup"><p>Listed in Appendix A of the Section 19 investigation as a location affected by the 14/15 November 2019 flooding; properties in the Stratford&ndash;on&ndash;Avon District area were eligible for Defra Property Flood Resilience grants following the event. (p15)</p></div><div class="nugget-popup"><p>Significant surface water flows entered the carriageway from higher agricultural land, exceeding the capacity of the highways drainage; flows travelled along the road, entered residential curtilages and welled up beneath floors causing internal flooding of properties to several centimetres. [PAG] (p16)</p></div><div class="nugget-popup"><p>Historic water ingress to one property caused by a damaged highway drain (drain later abandoned). During the November 2019 event (and a subsequent event on 9 January 2020) one domestic property and one business property experienced internal flooding when flow routed along the highway/adjacent land and water impounded behind a garden flood defence wall exceeded property threshold, causing internal flooding and failure of the flood wall. Highway drainage features (culvert under the carriageway, gullies, verges) were implicated and targeted for works (gully cleansing, culvert checks, verge reprofiling). [TAB,MUL] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30 properties eligible within Stratford&ndash;on&ndash;Avon District; 8 successful PFR applications across the district (p15)</p></div><div class="nugget-popup quant"><p>14/15 November 2019: carriageway flows resulted in 2 residential properties internally flooded; 1 property externally flooded [PAG] (p16)</p></div><div class="nugget-popup quant"><p>1 property; 1 business property; 1 flood wall failure [TAB,MUL] (p17)</p></div></div></body></div>`)[0];
+                popup_2b1f27e0f6d18dcdd8e1f995274cad4b.setContent(html_e044e711b31aab848d93a1494533fbef);
+            
+        
+
+        marker_0abaf60436f684452277033b48ecf8d4.bindPopup(popup_2b1f27e0f6d18dcdd8e1f995274cad4b)
+        ;
+
+        
+    
+    
+            var marker_f7dbfdddbad0388d2fbc668d0ca0c441 = L.marker(
+                [52.1676045, -1.717256],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_e2c25200f7db4aeb496d70bf3ee27d47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f7dbfdddbad0388d2fbc668d0ca0c441.setIcon(icon_e2c25200f7db4aeb496d70bf3ee27d47);
+        
+    
+        var popup_17155e5ec1ad64596a285731cee83dd7 = L.popup({});
+
+        
+            
+                var html_81ea229bc545f7bace2fe8307b9dab1d = $(`<div id="html_81ea229bc545f7bace2fe8307b9dab1d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Nashes, Clifford Chambers</h1><div class="nugget-popup"><p>Included in Appendix B of the Section 19 investigation as a location affected by the 14/15 November 2019 flooding; properties in the Stratford&ndash;on&ndash;Avon District area were eligible for Defra Property Flood Resilience grants following the event. (p15)</p></div><div class="nugget-popup"><p>Overland flows from saturated Martins Hill and from saturated allotments overtopped a rear ditch and entered gardens and properties on The Nashes, causing internal flooding. (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30 properties eligible within Stratford&ndash;on&ndash;Avon District; 8 successful PFR applications across the district (p15)</p></div><div class="nugget-popup quant"><p>4 properties internally flooded along The Nashes (p18)</p></div></div></body></div>`)[0];
+                popup_17155e5ec1ad64596a285731cee83dd7.setContent(html_81ea229bc545f7bace2fe8307b9dab1d);
+            
+        
+
+        marker_f7dbfdddbad0388d2fbc668d0ca0c441.bindPopup(popup_17155e5ec1ad64596a285731cee83dd7)
+        ;
+
+        
+    
+    
+            var marker_62c825bc25c207821cdf78ed7626d1ca = L.marker(
+                [52.1670887, -1.6317347],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_e6a84de6e09231bf5d838fa99a36a68f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_62c825bc25c207821cdf78ed7626d1ca.setIcon(icon_e6a84de6e09231bf5d838fa99a36a68f);
+        
+    
+        var popup_ebc4d35a88036885e94c66b51fac4953 = L.popup({});
+
+        
+            
+                var html_2fa6bc82533da641b7a3cd48f4cab4c7 = $(`<div id="html_2fa6bc82533da641b7a3cd48f4cab4c7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Goldicote Road, Loxley</h1><div class="nugget-popup"><p>Listed in Appendix C of the Section 19 investigation as a location affected by the 14/15 November 2019 flooding; properties in the Stratford&ndash;on&ndash;Avon District area were eligible for Defra Property Flood Resilience grants following the event. (p15)</p></div><div class="nugget-popup"><p>Following heavy rainfall on 14/15 Nov 2019, surface water from land to the south&ndash;west entered the highway and overwhelmed the highway drainage. Flows surcharged a chamber on Goldicote Road (chamber found holding water post&ndash;event, indicating downstream blockage), flowed northward and down Manor Drive, causing internal flooding to one residential property (water appeared to rise through the floor despite not breaching the threshold) and external flooding to surrounding properties. The location has a history of repeated garden/driveway/garage flooding and experienced similar external flooding on 09/01/2020. [MUL] (p20)</p></div><div class="nugget-popup"><p>Repeated external flooding of gardens, driveways and garages; properties were internally flooded from the event (residents were offered advice and support). [TAB,MUL] (p21)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30 properties eligible within Stratford&ndash;on&ndash;Avon District; 8 successful PFR applications across the district (p15)</p></div><div class="nugget-popup quant"><p>1 residential property internally flooded; 4 properties externally flooded [MUL] (p20)</p></div></div></body></div>`)[0];
+                popup_ebc4d35a88036885e94c66b51fac4953.setContent(html_2fa6bc82533da641b7a3cd48f4cab4c7);
+            
+        
+
+        marker_62c825bc25c207821cdf78ed7626d1ca.bindPopup(popup_ebc4d35a88036885e94c66b51fac4953)
+        ;
+
+        
+    
+    
+            var marker_fac037b34b2635c2330a54d9a27e02cc = L.marker(
+                [52.2368247, -1.6891811],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_63061d5df89baad51423a08c2f4ee92f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fac037b34b2635c2330a54d9a27e02cc.setIcon(icon_63061d5df89baad51423a08c2f4ee92f);
+        
+    
+        var popup_e93f03d951e804e6012d92d595ba493a = L.popup({});
+
+        
+            
+                var html_1cf013b2aa538cb1ab73bd917feb71b6 = $(`<div id="html_1cf013b2aa538cb1ab73bd917feb71b6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>School Road, Snitterfield</h1><div class="nugget-popup"><p>Listed in Appendix D of the Section 19 investigation as a location affected by the 14/15 November 2019 flooding; properties in the Stratford&ndash;on&ndash;Avon District area were eligible for Defra Property Flood Resilience grants following the event. (p15)</p></div><div class="nugget-popup"><p>School Lane/School Road is the low point where water collected after Bell Brook rose and burst its banks. Highway drainage could not discharge to the brook, leading to surface&ndash;water flooding at this location; sewer system was overwhelmed and backed up, causing internal flooding to nearby properties. (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30 properties eligible within Stratford&ndash;on&ndash;Avon District; 8 successful PFR applications across the district (p15)</p></div><div class="nugget-popup quant"><p>Contributed to the event that led to 5 properties flooded internally (report text); Appendix D indicates 4 residential properties internally flooded. (p22)</p></div></div></body></div>`)[0];
+                popup_e93f03d951e804e6012d92d595ba493a.setContent(html_1cf013b2aa538cb1ab73bd917feb71b6);
+            
+        
+
+        marker_fac037b34b2635c2330a54d9a27e02cc.bindPopup(popup_e93f03d951e804e6012d92d595ba493a)
+        ;
+
+        
+    
+    
+            var marker_fa5ab4a012f5874c33d81f2ecf82db77 = L.marker(
+                [52.1642366, -1.7798167],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_0420445726b28876bf2ed53762b662e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fa5ab4a012f5874c33d81f2ecf82db77.setIcon(icon_0420445726b28876bf2ed53762b662e5);
+        
+    
+        var popup_b1fc508b870072f0b3ad509c2b0361e7 = L.popup({});
+
+        
+            
+                var html_cc4b43cf23811528da7ce521aa139bee = $(`<div id="html_cc4b43cf23811528da7ce521aa139bee" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pool Close, Welford On Avon</h1><div class="nugget-popup"><p>Properties on Pool Close in Welford&ndash;on&ndash;Avon were affected by flooding and are included in the Section 19 location reports; properties in the SDC area became eligible for Defra PFR grants as a result of the event. (p15)</p></div><div class="nugget-popup"><p>Following heavy and prolonged rainfall the land southeast of Pool Close became saturated, garden areas flooded and the local piped drainage was overwhelmed. A pumped combined foul and surface water sewer reached capacity causing sewer flooding. Blockage from tree root ingress downstream reduced piped capacity and caused flows to back up, resulting in internal flooding of properties. (p26)</p></div><div class="nugget-popup"><p>Surface water flooding affected the vicinity of Pool Close (previous issues reported in 2016) and emergency works (blockage clearance of piped system) were undertaken to relieve flooding; residents were offered advice after internal flooding from this event. [IMG,PAG,MUL] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30 properties eligible for PFR within Stratford District; 8 successful PFR applications (SDC area) (p15)</p></div><div class="nugget-popup quant"><p>3 properties (p26)</p></div></div></body></div>`)[0];
+                popup_b1fc508b870072f0b3ad509c2b0361e7.setContent(html_cc4b43cf23811528da7ce521aa139bee);
+            
+        
+
+        marker_fa5ab4a012f5874c33d81f2ecf82db77.bindPopup(popup_b1fc508b870072f0b3ad509c2b0361e7)
+        ;
+
+        
+    
+    
+            var marker_1fddd4b9d6787a576c879b3ee0977da9 = L.marker(
+                [52.1685562, -1.7158731],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_2b777cf60627d116af28b235e65b3832 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1fddd4b9d6787a576c879b3ee0977da9.setIcon(icon_2b777cf60627d116af28b235e65b3832);
+        
+    
+        var popup_65545421df3eceed7f9e7fda33a4e4d5 = L.popup({});
+
+        
+            
+                var html_44ce799dc8923cae5e090a9b2b7d0a03 = $(`<div id="html_44ce799dc8923cae5e090a9b2b7d0a03" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barn Close, Clifford Chambers</h1><div class="nugget-popup"><p>One property near Barn Close experienced internal flooding when overland/surface water flows from saturated ground and overtopped the local ditch/drainage on 14/15 November 2019. (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p18)</p></div></div></body></div>`)[0];
+                popup_65545421df3eceed7f9e7fda33a4e4d5.setContent(html_44ce799dc8923cae5e090a9b2b7d0a03);
+            
+        
+
+        marker_1fddd4b9d6787a576c879b3ee0977da9.bindPopup(popup_65545421df3eceed7f9e7fda33a4e4d5)
+        ;
+
+        
+    
+    
+            var marker_fb2ca4f7b070e8525b64eab01d1a65af = L.marker(
+                [52.1711216, -1.6253667],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_7a79a558a8e6d4c937b5b3c577250797 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fb2ca4f7b070e8525b64eab01d1a65af.setIcon(icon_7a79a558a8e6d4c937b5b3c577250797);
+        
+    
+        var popup_47a087a4112ec16695004fcc17fe5439 = L.popup({});
+
+        
+            
+                var html_4cf289f613e3b78d16be95e4902216e5 = $(`<div id="html_4cf289f613e3b78d16be95e4902216e5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Manor Lane, Loxley</h1><div class="nugget-popup"><p>Surface water flows from land south&ndash;west of the village entered the highway (Goldicote Road), overwhelmed the highway drainage and flowed northward down Manor Drive (sic). A surcharged chamber on Goldicote Road was noted; flows followed the corridor down Manor Drive. One property suffered internal flooding (water appearing to rise through the floor) and four properties experienced external flooding. Repeated garden/driveway/garage flooding has occurred at this location; a similar external flood happened on 9 January 2020. [MUL] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property internally flooded; 4 properties externally flooded [MUL] (p20)</p></div></div></body></div>`)[0];
+                popup_47a087a4112ec16695004fcc17fe5439.setContent(html_4cf289f613e3b78d16be95e4902216e5);
+            
+        
+
+        marker_fb2ca4f7b070e8525b64eab01d1a65af.bindPopup(popup_47a087a4112ec16695004fcc17fe5439)
+        ;
+
+        
+    
+    
+            var marker_85df8ff8a3997a28250fa42e5615969e = L.marker(
+                [52.2514446, -1.697841],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_a3afd12d594795018dd352965f782459 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_85df8ff8a3997a28250fa42e5615969e.setIcon(icon_a3afd12d594795018dd352965f782459);
+        
+    
+        var popup_4a6cfdb43a99a6435bf20468bd225e2c = L.popup({});
+
+        
+            
+                var html_dcc0c1c83aa9f316bc97ce3ca5a3d351 = $(`<div id="html_dcc0c1c83aa9f316bc97ce3ca5a3d351" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wolverton Road, Wolverton</h1><div class="nugget-popup"><p>Steep section of highway where rainwater ran downhill towards the village low point (School Lane), contributing surface&ndash;water runoff to the flooding around School Lane and the already full Bell Brook. (p22)</p></div></div></body></div>`)[0];
+                popup_4a6cfdb43a99a6435bf20468bd225e2c.setContent(html_dcc0c1c83aa9f316bc97ce3ca5a3d351);
+            
+        
+
+        marker_85df8ff8a3997a28250fa42e5615969e.bindPopup(popup_4a6cfdb43a99a6435bf20468bd225e2c)
+        ;
+
+        
+    
+    
+            var marker_ba78a08e92231737cd97bfec239e42a9 = L.marker(
+                [52.2372169, -1.6858439],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_8d9eb2f6bf99747f33779f633bc5d562 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ba78a08e92231737cd97bfec239e42a9.setIcon(icon_8d9eb2f6bf99747f33779f633bc5d562);
+        
+    
+        var popup_83c53109b0574214492fb453648f9bb8 = L.popup({});
+
+        
+            
+                var html_e4186dbbd0a19b0e1ed3b893f22a0857 = $(`<div id="html_e4186dbbd0a19b0e1ed3b893f22a0857" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bell Lane, Snitterfield</h1><div class="nugget-popup"><p>Steep section of highway where rainwater ran downhill towards School Lane; gullies at the junction with School Road discharged to a chamber tied to Bell Brook but could not drain when the brook was high, contributing to local highway and property flooding. (p22)</p></div></div></body></div>`)[0];
+                popup_83c53109b0574214492fb453648f9bb8.setContent(html_e4186dbbd0a19b0e1ed3b893f22a0857);
+            
+        
+
+        marker_ba78a08e92231737cd97bfec239e42a9.bindPopup(popup_83c53109b0574214492fb453648f9bb8)
+        ;
+
+        
+    
+    
+            var marker_ced6dbadc940b740a899b44f515e3af6 = L.marker(
+                [52.2357674, -1.6879197],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_f92076c39066f9af9b030c0804c6ee1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ced6dbadc940b740a899b44f515e3af6.setIcon(icon_f92076c39066f9af9b030c0804c6ee1d);
+        
+    
+        var popup_8e61c1e13539fd492c68f66d53199bce = L.popup({});
+
+        
+            
+                var html_b29d4bab84f54c8acbf8fcb2a10ab83b = $(`<div id="html_b29d4bab84f54c8acbf8fcb2a10ab83b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Smiths Lane, Snitterfield</h1><div class="nugget-popup"><p>Flows from this steep stretch of highway ran down towards the village low point (School Lane) during heavy rainfall on 14/15 November 2019, contributing to highway flooding and the accumulation of water around the full Bell Brook. (p22)</p></div></div></body></div>`)[0];
+                popup_8e61c1e13539fd492c68f66d53199bce.setContent(html_b29d4bab84f54c8acbf8fcb2a10ab83b);
+            
+        
+
+        marker_ced6dbadc940b740a899b44f515e3af6.bindPopup(popup_8e61c1e13539fd492c68f66d53199bce)
+        ;
+
+        
+    
+    
+            var marker_f5375a122149e0d4418284c18a28eda9 = L.marker(
+                [52.2407507, -1.7109368],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_c3b58899f08c6c36768076a2d9b1c127 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f5375a122149e0d4418284c18a28eda9.setIcon(icon_c3b58899f08c6c36768076a2d9b1c127);
+        
+    
+        var popup_f380a5067ef3fcf4f6e3d8572aa556f7 = L.popup({});
+
+        
+            
+                var html_fed6b9fe05480d6ca996b3a140408837 = $(`<div id="html_fed6b9fe05480d6ca996b3a140408837" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bearley Road, Snitterfield</h1><div class="nugget-popup"><p>This steep road shed surface water downhill towards School Lane during the heavy rainfall on 14/15 November 2019, contributing to highway flooding and the accumulation of water where the Bell Brook was high. (p22)</p></div></div></body></div>`)[0];
+                popup_f380a5067ef3fcf4f6e3d8572aa556f7.setContent(html_fed6b9fe05480d6ca996b3a140408837);
+            
+        
+
+        marker_f5375a122149e0d4418284c18a28eda9.bindPopup(popup_f380a5067ef3fcf4f6e3d8572aa556f7)
+        ;
+
+        
+    
+    
+            var marker_910cd5b4aac39b36eb8e5827a83e2117 = L.marker(
+                [52.2079675, -1.8701528],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_311a942e1f250e6f8fe712d2365f977c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_910cd5b4aac39b36eb8e5827a83e2117.setIcon(icon_311a942e1f250e6f8fe712d2365f977c);
+        
+    
+        var popup_9a6dd15471bd89302b8e1e44557619ff = L.popup({});
+
+        
+            
+                var html_b9b929e352c52b42cb384ed3ddbea9c8 = $(`<div id="html_b9b929e352c52b42cb384ed3ddbea9c8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Lane, Alcester</h1><div class="nugget-popup"><p>Surface water runoff from the field behind properties on Mill Lane entered gardens and properties, causing internal flooding to one property and extensive garden flooding to two properties. [TAB] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded; 2 properties with extensive garden flooding [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_9a6dd15471bd89302b8e1e44557619ff.setContent(html_b9b929e352c52b42cb384ed3ddbea9c8);
+            
+        
+
+        marker_910cd5b4aac39b36eb8e5827a83e2117.bindPopup(popup_9a6dd15471bd89302b8e1e44557619ff)
+        ;
+
+        
+    
+    
+            var marker_aed4003db61d76828281e0ecdf16175c = L.marker(
+                [52.13476943701642, -1.4329139338332653],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_9b78c3c187db8b61d5fd7f53486ca263 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aed4003db61d76828281e0ecdf16175c.setIcon(icon_9b78c3c187db8b61d5fd7f53486ca263);
+        
+    
+        var popup_73a3f089b6abd1f1d5b4a81a7fd77a01 = L.popup({});
+
+        
+            
+                var html_b23315db1bc0a20121ac9076c6b699b6 = $(`<div id="html_b23315db1bc0a20121ac9076c6b699b6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Arlescote Road, Arlescote</h1><div class="nugget-popup"><p>Runoff from steep land behind the village affected properties along Arlescote Road, contributing to one internal property flood and one external property flood; runoff flowed through the village and exited along the main road where gullies are located. [TAB] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded; 1 property externally flooded [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_73a3f089b6abd1f1d5b4a81a7fd77a01.setContent(html_b23315db1bc0a20121ac9076c6b699b6);
+            
+        
+
+        marker_aed4003db61d76828281e0ecdf16175c.bindPopup(popup_73a3f089b6abd1f1d5b4a81a7fd77a01)
+        ;
+
+        
+    
+    
+            var marker_705f9b8007a3461c66e87bc146e65704 = L.marker(
+                [52.1716372, -1.8317475],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_a7d93a625fe880c76bc9d5456ce11781 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_705f9b8007a3461c66e87bc146e65704.setIcon(icon_a7d93a625fe880c76bc9d5456ce11781);
+        
+    
+        var popup_f77985d4954f52e3cb0cdb8a581b5cec = L.popup({});
+
+        
+            
+                var html_1064b9eebceb09906dc8bb713c39a188 = $(`<div id="html_1064b9eebceb09906dc8bb713c39a188" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stratford Road, Bidford-On-Avon</h1><div class="nugget-popup"><p>Surface water entered a drainage chamber via an unsealed electricity cable duct on Stratford Road, allowing water to seep into and internally flood one property. [TAB] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_f77985d4954f52e3cb0cdb8a581b5cec.setContent(html_1064b9eebceb09906dc8bb713c39a188);
+            
+        
+
+        marker_705f9b8007a3461c66e87bc146e65704.bindPopup(popup_f77985d4954f52e3cb0cdb8a581b5cec)
+        ;
+
+        
+    
+    
+            var marker_08c80a0a8f7043ef54689158b38f6dbd = L.marker(
+                [52.048785, -1.6203124],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_d90ca3060d5542aaf03e9fdfe52ea842 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_08c80a0a8f7043ef54689158b38f6dbd.setIcon(icon_d90ca3060d5542aaf03e9fdfe52ea842);
+        
+    
+        var popup_e3d8abd03380f9ae4d40270afc8b1415 = L.popup({});
+
+        
+            
+                var html_06a378f2ac24936331771d7a5123725f = $(`<div id="html_06a378f2ac24936331771d7a5123725f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>London Road, Burmington</h1><div class="nugget-popup"><p>Very high River Stour levels caused water to rise through the floor and walls of a property on London Road (A3400, Burmington) to a depth of several inches; the property's access was also flooded. [TAB] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_e3d8abd03380f9ae4d40270afc8b1415.setContent(html_06a378f2ac24936331771d7a5123725f);
+            
+        
+
+        marker_08c80a0a8f7043ef54689158b38f6dbd.bindPopup(popup_e3d8abd03380f9ae4d40270afc8b1415)
+        ;
+
+        
+    
+    
+            var marker_a9e2d1cd4a0e169abacd698f265c2e70 = L.marker(
+                [52.0511802, -1.543732],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_b0f0040f1d044a0d105981b26a349741 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a9e2d1cd4a0e169abacd698f265c2e70.setIcon(icon_b0f0040f1d044a0d105981b26a349741);
+        
+    
+        var popup_bcc3142739794eb96f993d79bd6190e4 = L.popup({});
+
+        
+            
+                var html_6e33b0eba9515df82765f7159cf291da = $(`<div id="html_6e33b0eba9515df82765f7159cf291da" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Lower Brailes</h1><div class="nugget-popup"><p>High river levels on the Sutton Brook spilled onto the High Street and combined with surface runoff from the highway, causing one property to internally flood. [TAB] (p28)</p></div><div class="nugget-popup"><p>Water from Sutton Brook and surface runoff from the highway spilled onto the High Street, pooled at a low point and contributed to the internal flooding of a nearby property. (p29)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded [TAB] (p28)</p></div><div class="nugget-popup quant"><p>1 property (p29)</p></div></div></body></div>`)[0];
+                popup_bcc3142739794eb96f993d79bd6190e4.setContent(html_6e33b0eba9515df82765f7159cf291da);
+            
+        
+
+        marker_a9e2d1cd4a0e169abacd698f265c2e70.bindPopup(popup_bcc3142739794eb96f993d79bd6190e4)
+        ;
+
+        
+    
+    
+            var marker_fad917e30ca8eb237e195feeb0f6e4c3 = L.marker(
+                [52.1857085, -1.7279817],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_48c49c0dcda4d23bf03b6e7c021fb95f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fad917e30ca8eb237e195feeb0f6e4c3.setIcon(icon_48c49c0dcda4d23bf03b6e7c021fb95f);
+        
+    
+        var popup_f046e5c14e8b29ebb0dc2317f6b38d15 = L.popup({});
+
+        
+            
+                var html_c284447836bff73db906648e43a60d2a = $(`<div id="html_c284447836bff73db906648e43a60d2a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Evesham Road, Stratford-Upon-Avon</h1><div class="nugget-popup"><p>One property on Evesham Road was reportedly internally flooded by groundwater to several inches depth following heavy rainfall; surface water may have been a contributing factor. [TAB] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_f046e5c14e8b29ebb0dc2317f6b38d15.setContent(html_c284447836bff73db906648e43a60d2a);
+            
+        
+
+        marker_fad917e30ca8eb237e195feeb0f6e4c3.bindPopup(popup_f046e5c14e8b29ebb0dc2317f6b38d15)
+        ;
+
+        
+    
+    
+            var marker_ede6a9a456e16aa0a73032e517c21fd1 = L.marker(
+                [52.3169, -1.4018113],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_e4f456542476f0c3d66827fa7645c1da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ede6a9a456e16aa0a73032e517c21fd1.setIcon(icon_e4f456542476f0c3d66827fa7645c1da);
+        
+    
+        var popup_25ac979877b1efd8a5e8ad63c5f5b490 = L.popup({});
+
+        
+            
+                var html_0a46dffb7f4747f90df2ea9e25fdc579 = $(`<div id="html_0a46dffb7f4747f90df2ea9e25fdc579" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Coventry Road, Marton</h1><div class="nugget-popup"><p>Excess surface water runoff accumulated on the highway (Coventry Road/A423) following heavy rainfall, impairing drainage and contributing to internal flooding of an adjacent property. [TAB] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_25ac979877b1efd8a5e8ad63c5f5b490.setContent(html_0a46dffb7f4747f90df2ea9e25fdc579);
+            
+        
+
+        marker_ede6a9a456e16aa0a73032e517c21fd1.bindPopup(popup_25ac979877b1efd8a5e8ad63c5f5b490)
+        ;
+
+        
+    
+    
+            var marker_8dcc59da41adec7f2e8e997701c5c48a = L.marker(
+                [52.2607334, -1.9185447],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_d9f61b3e9a6f7aa84655c82ce972da28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8dcc59da41adec7f2e8e997701c5c48a.setIcon(icon_d9f61b3e9a6f7aa84655c82ce972da28);
+        
+    
+        var popup_7ce136a9cd321938dd464079134b8c27 = L.popup({});
+
+        
+            
+                var html_7c976e6339f1c9728fbe66876165970a = $(`<div id="html_7c976e6339f1c9728fbe66876165970a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oak Tree Lane, Sambourne</h1><div class="nugget-popup"><p>Overland surface water flows from the field to the rear of properties entered the rear garden and the house of one residential property, causing internal flooding. [TAB] (p28)</p></div><div class="nugget-popup"><p>Overland surface water flows from an adjacent field entered the rear garden and the house of one residential property, causing internal flooding. (p31)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p28)</p></div><div class="nugget-popup quant"><p>1 property (p31)</p></div></div></body></div>`)[0];
+                popup_7ce136a9cd321938dd464079134b8c27.setContent(html_7c976e6339f1c9728fbe66876165970a);
+            
+        
+
+        marker_8dcc59da41adec7f2e8e997701c5c48a.bindPopup(popup_7ce136a9cd321938dd464079134b8c27)
+        ;
+
+        
+    
+    
+            var marker_ab0e51fa930c6dd3a9d2f00fae172a59 = L.marker(
+                [52.2448814, -1.3967164],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_169577c302423625073ac8780f30ce25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ab0e51fa930c6dd3a9d2f00fae172a59.setIcon(icon_169577c302423625073ac8780f30ce25);
+        
+    
+        var popup_cfc2e1b3fb1ef8c917da700aab9b3e7b = L.popup({});
+
+        
+            
+                var html_af2c4ef20ad34906c814e69f5250984b = $(`<div id="html_af2c4ef20ad34906c814e69f5250984b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Southfield Road, Southam</h1><div class="nugget-popup"><p>Heavy rainfall exceeded the capacity of the highway drainage gully, overtopped the dropped kerb and entered business premises (floor level lower than highway), causing internal flooding of the business. [TAB] (p28)</p></div><div class="nugget-popup"><p>Highway drainage overwhelmed; surface water overtopped a dropped kerb and entered a business premises where the floor level is lower than the highway, causing internal flooding of the business. (p31)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_cfc2e1b3fb1ef8c917da700aab9b3e7b.setContent(html_af2c4ef20ad34906c814e69f5250984b);
+            
+        
+
+        marker_ab0e51fa930c6dd3a9d2f00fae172a59.bindPopup(popup_cfc2e1b3fb1ef8c917da700aab9b3e7b)
+        ;
+
+        
+    
+    
+            var marker_7d9d2805931a80ca153b58fb2a12f390 = L.marker(
+                [52.1118065, -1.6348001],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_3175ca69b3155717d37707caf0d8ca27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7d9d2805931a80ca153b58fb2a12f390.setIcon(icon_3175ca69b3155717d37707caf0d8ca27);
+        
+    
+        var popup_bbc97c14dd4b188c4467525a503ed889 = L.popup({});
+
+        
+            
+                var html_a261068c433a67e0d981e798f2da4da7 = $(`<div id="html_a261068c433a67e0d981e798f2da4da7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Lane, Newbold-On-Stour</h1><div class="nugget-popup"><p>River Stour and Mill Stream rose significantly and subsequently burst their banks, leading to internal flooding of properties on Mill Lane. Water entered properties through the floor and from the front; access to one property was affected. (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties internally flooded; access to 1 property affected (p30)</p></div></div></body></div>`)[0];
+                popup_bbc97c14dd4b188c4467525a503ed889.setContent(html_a261068c433a67e0d981e798f2da4da7);
+            
+        
+
+        marker_7d9d2805931a80ca153b58fb2a12f390.bindPopup(popup_bbc97c14dd4b188c4467525a503ed889)
+        ;
+
+        
+    
+    
+            var marker_813cba6db731d5dd960fa410f5315fac = L.marker(
+                [52.3213064, -1.5536906],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_beeb776e77b32998dc47666c9dd58c37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_813cba6db731d5dd960fa410f5315fac.setIcon(icon_beeb776e77b32998dc47666c9dd58c37);
+        
+    
+        var popup_402071f39332cd83cf63e62720c2a0f0 = L.popup({});
+
+        
+            
+                var html_cc41a9548f5be27d325b26aa821c29aa = $(`<div id="html_cc41a9548f5be27d325b26aa821c29aa" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Warwickshire</h1><div class="nugget-popup"><p>Heavy rainfall on 14/15 November 2019 caused surface water/urban flooding across parts of the county, resulting in internal property flooding, highway flooding and flooding to gardens and outbuildings. Impacts included internal flooding of properties, disruption to schools and road closures across affected communities. (p3)</p></div><div class="nugget-popup"><p>Widespread flooding across Warwickshire on 14/15 November 2019, including confirmed internal property flooding at multiple locations; recovery and follow&ndash;on actions largely complete. (p4)</p></div><div class="nugget-popup"><p>Heavy rainfall on 14&ndash;15 November 2019 produced widespread runoff across Warwickshire: soils were wetter than average and many rivers were responsive and described as notably or exceptionally high by the Environment Agency. Environment Agency Flood Alerts and Flood Warnings were in force for river flooding across parts of the county. [PAG] (p6)</p></div><div class="nugget-popup"><p>Following heavy rainfall on 14 November, river levels rose notably across the county and rivers generally peaked later on 14 November or into 15 November; Environment Agency Flood Alerts and Flood Warnings and a Flood Guidance Statement were in force for parts of the county. Antecedent wet soils increased rapid runoff, and some smaller ordinary watercourses (particularly in steep or urban areas) responded more quickly to the rainfall. [PAG,IMG] (p7)</p></div><div class="nugget-popup"><p>Confirmed internal flooding of properties across the county (map of confirmed internally flooded properties for the 14/15 November 2019 event). Widespread highway flooding reported countywide resulting in road closures, flood signage and local sandbagging where properties were significantly affected. [PAG,IMG] (p9)</p></div><div class="nugget-popup"><p>Widespread highway and urban/surface&ndash;water flooding across the county on 14/15 November 2019: large numbers of highway flood reports and many reports of flooding to gardens, garages/outbuildings, driveways and footpaths. The county&#8217;s resilient highway network was also affected, with incidents occurring on priority routes. [IMG] (p11)</p></div><div class="nugget-popup"><p>Numerous reports across the area of flooding to gardens, garages/outbuildings, driveways and footpaths. Some reports of internal property flooding were recorded but remained unconfirmed after WCC and partners attempted confirmation (visits and correspondence). [IMG] (p12)</p></div><div class="nugget-popup"><p>County&ndash;wide rainfall on 14/15 November 2019 produced widespread flooding across many communities in Warwickshire. Rivers reacted quickly causing river flooding in some areas, and rainfall running over already saturated ground produced extensive surface water flooding; sewer and groundwater flooding also contributed in a minority of locations. The event led to multiple community impacts including flooded access that caused school closures and numerous locations requiring investigation and support. [PAG] (p13)</p></div><div class="nugget-popup"><p>Properties across Warwickshire were flooded during 14/15 November 2019; within the county only Stratford&ndash;on&ndash;Avon District met the government threshold to administer recovery grants. (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>34 properties; 28 emergency school closures; more than 150 reports of highway flooding; 20 locations with confirmed internal property flooding (p3)</p></div><div class="nugget-popup quant"><p>20 locations where internal property flooding was confirmed (p4)</p></div><div class="nugget-popup quant"><p>34 properties; 20 locations; 3 business premises; more than 150 highway flooding reports [PAG,IMG] (p9)</p></div><div class="nugget-popup quant"><p>more than 150 highway flood reports; 43 highway or fire & rescue reports on the WCC resilient network [IMG] (p11)</p></div><div class="nugget-popup quant"><p>28 emergency school closures [IMG] (p12)</p></div><div class="nugget-popup quant"><p>20 locations included in the report; 70% of locations affected by surface water flooding; 30% affected by main river/river flooding; 25% affected by ordinary watercourse; 10% affected by sewer flooding; 10% affected by other (such as groundwater). [PAG] (p13)</p></div><div class="nugget-popup quant"><p>30 properties eligible (p14)</p></div></div></body></div>`)[0];
+                popup_402071f39332cd83cf63e62720c2a0f0.setContent(html_cc41a9548f5be27d325b26aa821c29aa);
+            
+        
+
+        marker_813cba6db731d5dd960fa410f5315fac.bindPopup(popup_402071f39332cd83cf63e62720c2a0f0)
+        ;
+
+        
+    
+    
+            var marker_6ed90298ec7b89b57aab05daa587bb88 = L.marker(
+                [52.1927803, -1.70634],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_e74ed0f34819cf1f2b5ca454aa02b982 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6ed90298ec7b89b57aab05daa587bb88.setIcon(icon_e74ed0f34819cf1f2b5ca454aa02b982);
+        
+    
+        var popup_14d4c5c39cad36b3729e1d50c5b6ed0b = L.popup({});
+
+        
+            
+                var html_bc3a7ca75735577bb403c9332c822bd0 = $(`<div id="html_bc3a7ca75735577bb403c9332c822bd0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stratford-On-Avon</h1><div class="nugget-popup"><p>Most of the flooding impacts from the 14/15 November 2019 event occurred within Stratford&ndash;on&ndash;Avon District: the majority of internal property floodings, many highway flood reports and emergency school closures were located here. (p3)</p></div><div class="nugget-popup"><p>Southern parts of the county (Stratford area) received the highest rainfall during the event, producing a stronger river response and notable rises in river levels into 14&ndash;15 November; EA flood guidance, alerts and warnings covered the area. [PAG,IMG] (p7)</p></div><div class="nugget-popup"><p>Internal flooding of properties across the local area: a total of 34 properties suffered internal flooding across 20 locations; three of the flooded properties were business premises and the remainder were residential. Flooding followed heavy rainfall and notable rises in river levels that peaked on 14 November or into 15 November 2019. (p8)</p></div><div class="nugget-popup"><p>Most of the internally flooded properties from the 14/15 November 2019 event were located within Stratford&ndash;on&ndash;Avon District; these formed the basis of the investigation and are reported in the appendices. [PAG,IMG] (p9)</p></div><div class="nugget-popup"><p>Flooded highways or external school grounds prevented safe access, resulting in 28 emergency school closures distributed across districts in the county. [IMG] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>34 properties (majority within Stratford); 28 emergency school closures; more than 150 reports of highway flooding; 20 locations with confirmed internal property flooding (p3)</p></div><div class="nugget-popup quant"><p>34 properties; 20 locations; 3 business premises (p8)</p></div><div class="nugget-popup quant"><p>34 properties; 20 locations; 3 business premises [PAG,IMG] (p9)</p></div><div class="nugget-popup quant"><p>28 emergency school closures [IMG] (p12)</p></div></div></body></div>`)[0];
+                popup_14d4c5c39cad36b3729e1d50c5b6ed0b.setContent(html_bc3a7ca75735577bb403c9332c822bd0);
+            
+        
+
+        marker_6ed90298ec7b89b57aab05daa587bb88.bindPopup(popup_14d4c5c39cad36b3729e1d50c5b6ed0b)
+        ;
+
+        
+    
+    
+            var marker_1887e1214a06ec9fa68205649c790b19 = L.marker(
+                [52.36708856125812, -1.330292121394036],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_e41e050eadca4267c4f6f50122ede9f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1887e1214a06ec9fa68205649c790b19.setIcon(icon_e41e050eadca4267c4f6f50122ede9f4);
+        
+    
+        var popup_beed1cd93523adf535dcf0b5bc3dda3a = L.popup({});
+
+        
+            
+                var html_991e17f294f043cdd3b9b3f023bdad19 = $(`<div id="html_991e17f294f043cdd3b9b3f023bdad19" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rugby District</h1><div class="nugget-popup"><p>There were reports of flooding in parts of Rugby Borough associated with the 14/15 November 2019 event (surface water/urban flooding). (p3)</p></div><div class="nugget-popup"><p>Rivers in the Rugby area rose notably following the 14 November rainfall; some ordinary watercourses responded quickly, and EA river flood alerts/warnings were in force for parts of the area. [PAG,IMG] (p7)</p></div></div></body></div>`)[0];
+                popup_beed1cd93523adf535dcf0b5bc3dda3a.setContent(html_991e17f294f043cdd3b9b3f023bdad19);
+            
+        
+
+        marker_1887e1214a06ec9fa68205649c790b19.bindPopup(popup_beed1cd93523adf535dcf0b5bc3dda3a)
+        ;
+
+        
+    
+    
+            var marker_542b9920fa51b7829963e370fe015c05 = L.marker(
+                [52.501026, -1.4677263],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_321304ae13d279cf3e3a6dc02764ea93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_542b9920fa51b7829963e370fe015c05.setIcon(icon_321304ae13d279cf3e3a6dc02764ea93);
+        
+    
+        var popup_9a76c05c12fb890ebc1604cc84a31e60 = L.popup({});
+
+        
+            
+                var html_42b6989c647f0c590fd38395cf066811 = $(`<div id="html_42b6989c647f0c590fd38395cf066811" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nuneaton and Bedworth</h1><div class="nugget-popup"><p>Heavy rainfall on 14 November produced a rapid river response in the borough with river levels rising; Environment Agency flood alerts/warnings were in force for parts of the area. [PAG] (p7)</p></div></div></body></div>`)[0];
+                popup_9a76c05c12fb890ebc1604cc84a31e60.setContent(html_42b6989c647f0c590fd38395cf066811);
+            
+        
+
+        marker_542b9920fa51b7829963e370fe015c05.bindPopup(popup_9a76c05c12fb890ebc1604cc84a31e60)
+        ;
+
+        
+    
+    
+            var marker_d95cf5c0eb8294fee8479b7e40443b43 = L.marker(
+                [52.561361, -1.6296344],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_99261397046dce12249ccdd5aae3a43c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d95cf5c0eb8294fee8479b7e40443b43.setIcon(icon_99261397046dce12249ccdd5aae3a43c);
+        
+    
+        var popup_44c8bbd43502be9f10f28171bd6b3872 = L.popup({});
+
+        
+            
+                var html_731cb1d00adcb1910b2cd58b3a4c0acc = $(`<div id="html_731cb1d00adcb1910b2cd58b3a4c0acc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North Warwickshire</h1><div class="nugget-popup"><p>Some smaller ordinary watercourses in steep or urban areas responded rapidly to the 14 November rainfall, producing a quicker rise in water levels compared with larger rivers during the 14/15 November event. [PAG,IMG] (p7)</p></div></div></body></div>`)[0];
+                popup_44c8bbd43502be9f10f28171bd6b3872.setContent(html_731cb1d00adcb1910b2cd58b3a4c0acc);
+            
+        
+
+        marker_d95cf5c0eb8294fee8479b7e40443b43.bindPopup(popup_44c8bbd43502be9f10f28171bd6b3872)
+        ;
+
+        
+    
+    
+            var marker_da2f40c88b4ef7a9dc9192ffb2e9c634 = L.marker(
+                [52.1684092, -1.7144692],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_b092fa9e97611ae941802b3f7fbcda5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_da2f40c88b4ef7a9dc9192ffb2e9c634.setIcon(icon_b092fa9e97611ae941802b3f7fbcda5f);
+        
+    
+        var popup_0652f5513bc1623c586436f1056e219e = L.popup({});
+
+        
+            
+                var html_b231b1db4f290c79e9d1c399178b554f = $(`<div id="html_b231b1db4f290c79e9d1c399178b554f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Clifford Chambers</h1><div class="nugget-popup"><p>Internal property flooding occurred at this location; this location triggered the LLFA investigation as the thresholds for a Section 19 report were met. (p3)</p></div><div class="nugget-popup"><p>Appears as the location for Appendix B in the Section 19 investigation, indicating the village experienced flooding during the 14/15 November 2019 event; properties in the district were eligible for Defra PFR grants afterwards. (p15)</p></div><div class="nugget-popup"><p>Overland flows from Martins Hill and adjacent saturated allotments entered The Nashes and other parts of the village; properties flooded internally as a result. (p18)</p></div><div class="nugget-popup"><p>Repeated internal property flooding has been reported in the village. Historic incidents: internal flooding of properties reported in 1998 and 2007 (with internal property flooding also reported in 2012). The report notes additional occasions and near&ndash;misses were described during a November visit, and more recent flooding has occurred in the vicinity of The Close. [TAB,PAG,MUL] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30 properties eligible within Stratford&ndash;on&ndash;Avon District; 8 successful PFR applications across the district (p15)</p></div><div class="nugget-popup quant"><p>4 properties along The Nashes; 1 property near Barn Close (internally flooded) (p18)</p></div><div class="nugget-popup quant"><p>18 properties; 10 properties [TAB,PAG,MUL] (p19)</p></div></div></body></div>`)[0];
+                popup_0652f5513bc1623c586436f1056e219e.setContent(html_b231b1db4f290c79e9d1c399178b554f);
+            
+        
+
+        marker_da2f40c88b4ef7a9dc9192ffb2e9c634.bindPopup(popup_0652f5513bc1623c586436f1056e219e)
+        ;
+
+        
+    
+    
+            var marker_2788738d6ec2dce99fd12224192f17a8 = L.marker(
+                [52.174415482006204, -1.6243901023282177],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_78ec9acca348945a56bd4d42f55bf790 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2788738d6ec2dce99fd12224192f17a8.setIcon(icon_78ec9acca348945a56bd4d42f55bf790);
+        
+    
+        var popup_9fe7946b92c2aa04ecbd982c86df6597 = L.popup({});
+
+        
+            
+                var html_d93c94656ef9eb094e27823b25136b7c = $(`<div id="html_d93c94656ef9eb094e27823b25136b7c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Loxley</h1><div class="nugget-popup"><p>Appears in Appendix C of the Section 19 investigation (Goldicote Road, Loxley), indicating the village experienced flooding during the 14/15 November 2019 event; properties in the district were eligible for Defra PFR grants afterwards. (p15)</p></div><div class="nugget-popup"><p>Surface water flows from higher ground (south&ndash;west of the village) entered the highway and overwhelmed highway drainage, flowing north through Goldicote Road and down Manor Drive. A culvert/manhole chamber on Goldicote Road surcharged and was holding water, indicating a downstream blockage. Flooding caused internal flooding to one residential property (water appeared to rise through the floor) and external flooding to nearby properties; repeated garden/driveway/garage flooding has occurred at this location. [MUL] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30 properties eligible within Stratford&ndash;on&ndash;Avon District; 8 successful PFR applications across the district (p15)</p></div><div class="nugget-popup quant"><p>1 residential property internally flooded; 4 properties externally flooded [MUL] (p20)</p></div></div></body></div>`)[0];
+                popup_9fe7946b92c2aa04ecbd982c86df6597.setContent(html_d93c94656ef9eb094e27823b25136b7c);
+            
+        
+
+        marker_2788738d6ec2dce99fd12224192f17a8.bindPopup(popup_9fe7946b92c2aa04ecbd982c86df6597)
+        ;
+
+        
+    
+    
+            var marker_ab63373aa34712ed02dc21a5ed82f1bf = L.marker(
+                [52.1654818, -1.7847141],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_d757660b6cc806a6db1a423c2e80152f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ab63373aa34712ed02dc21a5ed82f1bf.setIcon(icon_d757660b6cc806a6db1a423c2e80152f);
+        
+    
+        var popup_50e51c40954c4a2cd562a4ad0c476f35 = L.popup({});
+
+        
+            
+                var html_3d940e5d14bad9b6ea3707980f73ede2 = $(`<div id="html_3d940e5d14bad9b6ea3707980f73ede2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Welford On Avon</h1><div class="nugget-popup"><p>Welford&ndash;on&ndash;Avon experienced flooding that led to local properties being eligible for Defra PFR grants and inclusion in the Section 19 investigation. (p15)</p></div><div class="nugget-popup"><p>Extensive internal flooding in the village from the River Avon during historic events (notably 1998 and 2007). Surface&ndash;water&ndash;related internal flooding occurred during the November 14/15 2019 event; localised previous flooding reported in the vicinity of Pool Close in 2016. [TAB,PAG,MUL] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30 properties eligible for PFR within Stratford District; 8 successful PFR applications (SDC area) (p15)</p></div></div></body></div>`)[0];
+                popup_50e51c40954c4a2cd562a4ad0c476f35.setContent(html_3d940e5d14bad9b6ea3707980f73ede2);
+            
+        
+
+        marker_ab63373aa34712ed02dc21a5ed82f1bf.bindPopup(popup_50e51c40954c4a2cd562a4ad0c476f35)
+        ;
+
+        
+    
+    
+            var marker_70b46b450a2e8a2d11f5eb6cb9f9d4a8 = L.marker(
+                [52.236336, -1.6860312],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_a2b28c5db3a2af118eea824415a90056 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_70b46b450a2e8a2d11f5eb6cb9f9d4a8.setIcon(icon_a2b28c5db3a2af118eea824415a90056);
+        
+    
+        var popup_c22cd1e343509205caa5b7eb05fddf7f = L.popup({});
+
+        
+            
+                var html_e858b608a9fd5152fc83b1d9a253d445 = $(`<div id="html_e858b608a9fd5152fc83b1d9a253d445" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Snitterfield</h1><div class="nugget-popup"><p>Bell Brook levels rose and the brook burst its banks. High river levels prevented the highway drainage system from discharging to the brook, causing highway surface water to pond. The foul sewer was overwhelmed and backed up, causing internal flooding to properties. Runoff from steep roads (Bell Lane, Wolverton Road, Smiths Lane, Bearley Road) ran downhill to the low point around School Lane where flooding concentrated. (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Report text: 5 properties flooded internally, some to depths in excess of 15 centimetres; Appendix D summary lists 4 residential properties internally flooded and 4 properties externally flooded. (p22)</p></div></div></body></div>`)[0];
+                popup_c22cd1e343509205caa5b7eb05fddf7f.setContent(html_e858b608a9fd5152fc83b1d9a253d445);
+            
+        
+
+        marker_70b46b450a2e8a2d11f5eb6cb9f9d4a8.bindPopup(popup_c22cd1e343509205caa5b7eb05fddf7f)
+        ;
+
+        
+    
+    
+            var marker_49d28f3507f116dc6f08c1143af1004e = L.marker(
+                [52.02898421132944, -1.5685337190232553],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_f8e173f8582d58f25f92802b2a9b2ebe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_49d28f3507f116dc6f08c1143af1004e.setIcon(icon_f8e173f8582d58f25f92802b2a9b2ebe);
+        
+    
+        var popup_a08d9bbe91416177a22a9f5e31cc6ee7 = L.popup({});
+
+        
+            
+                var html_20bf9b143e7f64bc4f6a656e4951ee3f = $(`<div id="html_20bf9b143e7f64bc4f6a656e4951ee3f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stourton</h1><div class="nugget-popup"><p>During heavy rainfall the River Stour rose and spilled onto the floodplain through Stourton. Floodwater affected gardens and fields adjacent to the river (depths up to 1 m), flooded the highway, and entered property frontages. Despite use of sandbags and some flood boards, floodwater entered habitable rooms of properties (with depths up to 5 centimetres). WCC County Highways received sandbag requests from residents. Water likely entered via doors, air bricks, waste pipes, floors and walls. (p24)</p></div><div class="nugget-popup"><p>Residents of Stourton reported that flooding occurs annually. Flooding affected the village including the highway (Village Road) and there are historic reports of property flooding in the nearby community of Cherington. The report identifies opportunities for upstream storage on the Stour and property flood resilience to reduce future impacts. [IMG,PAG] (p25)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>four properties; flood depths up to 1 metre in gardens/fields; up to 5 centimetres inside properties (p24)</p></div></div></body></div>`)[0];
+                popup_a08d9bbe91416177a22a9f5e31cc6ee7.setContent(html_20bf9b143e7f64bc4f6a656e4951ee3f);
+            
+        
+
+        marker_49d28f3507f116dc6f08c1143af1004e.bindPopup(popup_a08d9bbe91416177a22a9f5e31cc6ee7)
+        ;
+
+        
+    
+    
+            var marker_8aa00c8ce1dbbe4a0c252466ba0af8c3 = L.marker(
+                [52.21502, -1.8695765],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_c6a0d9175cea84a404b1f114d814e1d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8aa00c8ce1dbbe4a0c252466ba0af8c3.setIcon(icon_c6a0d9175cea84a404b1f114d814e1d2);
+        
+    
+        var popup_ffda87358d8ac64390268166e29b5100 = L.popup({});
+
+        
+            
+                var html_0a16de7f1dacff338f80fafad8d86f14 = $(`<div id="html_0a16de7f1dacff338f80fafad8d86f14" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Alcester</h1><div class="nugget-popup"><p>Heavy rainfall caused surface water runoff from a field to the rear of properties in Oversley Green (part of Alcester). This runoff resulted in internal flooding of one property and extensive garden flooding to two properties. [TAB] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded; 2 properties with extensive garden flooding [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_ffda87358d8ac64390268166e29b5100.setContent(html_0a16de7f1dacff338f80fafad8d86f14);
+            
+        
+
+        marker_8aa00c8ce1dbbe4a0c252466ba0af8c3.bindPopup(popup_ffda87358d8ac64390268166e29b5100)
+        ;
+
+        
+    
+    
+            var marker_6bf759d67c655149d7a219f247662233 = L.marker(
+                [52.1350219, -1.4318712],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_6f2f03a76eb33ca6bcd4bda98abe393e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6bf759d67c655149d7a219f247662233.setIcon(icon_6f2f03a76eb33ca6bcd4bda98abe393e);
+        
+    
+        var popup_1bd47aaa804705122841fa4de6a4f27d = L.popup({});
+
+        
+            
+                var html_4d13b14bc1e7c1fec0dcd6d7ae109591 = $(`<div id="html_4d13b14bc1e7c1fec0dcd6d7ae109591" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Arlescote</h1><div class="nugget-popup"><p>Surface water runoff from steep land behind the village flowed into properties in Arlescote, causing one property to flood internally and one property to flood externally; flows then continued past properties and exited the village along the main road. [TAB] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded; 1 property externally flooded [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_1bd47aaa804705122841fa4de6a4f27d.setContent(html_4d13b14bc1e7c1fec0dcd6d7ae109591);
+            
+        
+
+        marker_6bf759d67c655149d7a219f247662233.bindPopup(popup_1bd47aaa804705122841fa4de6a4f27d)
+        ;
+
+        
+    
+    
+            var marker_c275b5351f6ecf1dfea5778d5630a7f5 = L.marker(
+                [52.165607, -1.8558927],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_dc0a22458ec31bef8a817b656d73cc8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c275b5351f6ecf1dfea5778d5630a7f5.setIcon(icon_dc0a22458ec31bef8a817b656d73cc8a);
+        
+    
+        var popup_e94c80cc8a63c83922324aecdc9a0e28 = L.popup({});
+
+        
+            
+                var html_4d90d8d7762b2c06e1ef4dab1071f004 = $(`<div id="html_4d90d8d7762b2c06e1ef4dab1071f004" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bidford-On-Avon</h1><div class="nugget-popup"><p>Surface water entered a drainage chamber via an unsealed electricity cable duct on Stratford Road, leading to internal flooding of a property. [TAB] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_e94c80cc8a63c83922324aecdc9a0e28.setContent(html_4d90d8d7762b2c06e1ef4dab1071f004);
+            
+        
+
+        marker_c275b5351f6ecf1dfea5778d5630a7f5.bindPopup(popup_e94c80cc8a63c83922324aecdc9a0e28)
+        ;
+
+        
+    
+    
+            var marker_640d8f10b83121c3b5548b0a37f236d1 = L.marker(
+                [52.2112318, -1.8631335],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_20f2868a282c2d71807e80a783287b37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_640d8f10b83121c3b5548b0a37f236d1.setIcon(icon_20f2868a282c2d71807e80a783287b37);
+        
+    
+        var popup_a20900d2105454afec30e2f20ccab4ce = L.popup({});
+
+        
+            
+                var html_eeb69b5d3f26a2d5601b2217f686fa0e = $(`<div id="html_eeb69b5d3f26a2d5601b2217f686fa0e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oversley Green</h1><div class="nugget-popup"><p>Heavy rainfall caused surface water runoff from a field behind properties on Mill Lane to enter properties in Oversley Green, causing internal flooding to one property and extensive garden flooding to two properties. [TAB] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded; 2 properties with extensive garden flooding [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_a20900d2105454afec30e2f20ccab4ce.setContent(html_eeb69b5d3f26a2d5601b2217f686fa0e);
+            
+        
+
+        marker_640d8f10b83121c3b5548b0a37f236d1.bindPopup(popup_a20900d2105454afec30e2f20ccab4ce)
+        ;
+
+        
+    
+    
+            var marker_a2a46d7cafb957e361ffc800c7335c11 = L.marker(
+                [52.2913394, -1.536404],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_a816394ac1669ac8d11d6d9d69265e24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a2a46d7cafb957e361ffc800c7335c11.setIcon(icon_a816394ac1669ac8d11d6d9d69265e24);
+        
+    
+        var popup_94b44da0be4d897fd0eb1ace427b46ad = L.popup({});
+
+        
+            
+                var html_1321fe10da9eb0d3e4d6aeadf484fb9e = $(`<div id="html_1321fe10da9eb0d3e4d6aeadf484fb9e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Leamington Spa</h1><div class="nugget-popup"><p>The River Leam exceeded minor flood levels and spilled onto its floodplain within the public gardens, causing internal flooding to a commercial property on The Parade. [TAB] (p28)</p></div><div class="nugget-popup"><p>High river levels of the River Leam within Leamington Spa caused flooding onto the public gardens and resulted in internal flooding of a commercial property. (p29)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 commercial property [TAB] (p28)</p></div><div class="nugget-popup quant"><p>1 commercial property (p29)</p></div></div></body></div>`)[0];
+                popup_94b44da0be4d897fd0eb1ace427b46ad.setContent(html_1321fe10da9eb0d3e4d6aeadf484fb9e);
+            
+        
+
+        marker_a2a46d7cafb957e361ffc800c7335c11.bindPopup(popup_94b44da0be4d897fd0eb1ace427b46ad)
+        ;
+
+        
+    
+    
+            var marker_516e0684daae6f9a70e7f634d882fa48 = L.marker(
+                [52.1145861, -1.6400434],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_a1cf42c4b0bb95c72139c0a4ad996b21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_516e0684daae6f9a70e7f634d882fa48.setIcon(icon_a1cf42c4b0bb95c72139c0a4ad996b21);
+        
+    
+        var popup_8d715b938966b8aff74d145d60610e1b = L.popup({});
+
+        
+            
+                var html_046a0f5e7dc32dbd6a2c81e341ac508d = $(`<div id="html_046a0f5e7dc32dbd6a2c81e341ac508d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Newbold-On-Stour</h1><div class="nugget-popup"><p>River Stour and Mill Stream rose and burst their banks after heavy rainfall, causing floodwater to enter properties on Mill Lane through the floor and from the front; access to one property was also affected. [TAB] (p28)</p></div><div class="nugget-popup"><p>Flooding occurred in Newbold&ndash;On&ndash;Stour due to a predominantly main river source. (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_8d715b938966b8aff74d145d60610e1b.setContent(html_046a0f5e7dc32dbd6a2c81e341ac508d);
+            
+        
+
+        marker_516e0684daae6f9a70e7f634d882fa48.bindPopup(popup_8d715b938966b8aff74d145d60610e1b)
+        ;
+
+        
+    
+    
+            var marker_220ca8cfa0cd7ffec13ba88a893975ee = L.marker(
+                [52.05086303108409, -1.5454556509921586],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_3af9a619efb4256ef3a814f1880d5ca0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_220ca8cfa0cd7ffec13ba88a893975ee.setIcon(icon_3af9a619efb4256ef3a814f1880d5ca0);
+        
+    
+        var popup_c4c78900f5508cba183a3e8bbf23d46c = L.popup({});
+
+        
+            
+                var html_6a08b1b755bf598bf110f238298b7ffa = $(`<div id="html_6a08b1b755bf598bf110f238298b7ffa" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lower Brailes</h1><div class="nugget-popup"><p>High levels on the Sutton Brook caused water to spill onto the High Street and, combined with surface runoff from the highway, caused one property on the High Street to internally flood. [TAB] (p28)</p></div><div class="nugget-popup"><p>High river levels on the Sutton Brook overtopped and spilled onto the High Street. Surface runoff from the highway moved to the low point and combined with water from the Sutton Brook, causing internal flooding to a nearby property. (p29)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p28)</p></div><div class="nugget-popup quant"><p>1 property internally flooded (p29)</p></div></div></body></div>`)[0];
+                popup_c4c78900f5508cba183a3e8bbf23d46c.setContent(html_6a08b1b755bf598bf110f238298b7ffa);
+            
+        
+
+        marker_220ca8cfa0cd7ffec13ba88a893975ee.bindPopup(popup_c4c78900f5508cba183a3e8bbf23d46c)
+        ;
+
+        
+    
+    
+            var marker_ba4cfac8266879b71c3d88d9b66332cc = L.marker(
+                [52.1704564, -1.7595399],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_fd176517accf27f7a1f76f2bc64d1e31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ba4cfac8266879b71c3d88d9b66332cc.setIcon(icon_fd176517accf27f7a1f76f2bc64d1e31);
+        
+    
+        var popup_c88b4062a51334773baf520eff7edcd8 = L.popup({});
+
+        
+            
+                var html_8411e30866538a177fb4d7af9acf7ade = $(`<div id="html_8411e30866538a177fb4d7af9acf7ade" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Luddington</h1><div class="nugget-popup"><p>Following heavy rainfall one property was reportedly internally flooded by groundwater to several inches depth; surface water runoff may have also contributed. [TAB] (p28)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded [TAB] (p28)</p></div></div></body></div>`)[0];
+                popup_c88b4062a51334773baf520eff7edcd8.setContent(html_8411e30866538a177fb4d7af9acf7ade);
+            
+        
+
+        marker_ba4cfac8266879b71c3d88d9b66332cc.bindPopup(popup_c88b4062a51334773baf520eff7edcd8)
+        ;
+
+        
+    
+    
+            var marker_62d9c3a5689abd9549616514b09e8d63 = L.marker(
+                [52.1537618, -1.8622388],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_997e77839e67a263a8a0c7f629e7cb00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_62d9c3a5689abd9549616514b09e8d63.setIcon(icon_997e77839e67a263a8a0c7f629e7cb00);
+        
+    
+        var popup_d390bc40db01d1ff8c3b90b18fca843b = L.popup({});
+
+        
+            
+                var html_8ab2abd7ca69a188bd22045df6b64ae3 = $(`<div id="html_8ab2abd7ca69a188bd22045df6b64ae3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Marlcliff</h1><div class="nugget-popup"><p>During heavy rainfall surface water flows accumulated in the area known as 'The Bank', causing internal flooding of one residential property and external flooding to around ten other properties. [TAB] (p28)</p></div><div class="nugget-popup"><p>Surface water flow path through the village (area known as 'The Bank') accumulated during heavy rainfall causing internal flooding of one residential property and external flooding to around ten other properties. High river levels in the River Stour and Mill Stream rose and burst banks, causing properties (on Mill Lane) to internally flood. Highway runoff and vehicle bow waves exacerbated flooding; the decommissioned surface water pump was not fully available to remove impounded flows. (p30)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property internally flooded; 10 properties externally flooded [TAB] (p28)</p></div><div class="nugget-popup quant"><p>1 residential property internally flooded; 10 properties externally flooded; 2 properties on Mill Lane internally flooded (p30)</p></div></div></body></div>`)[0];
+                popup_d390bc40db01d1ff8c3b90b18fca843b.setContent(html_8ab2abd7ca69a188bd22045df6b64ae3);
+            
+        
+
+        marker_62d9c3a5689abd9549616514b09e8d63.bindPopup(popup_d390bc40db01d1ff8c3b90b18fca843b)
+        ;
+
+        
+    
+    
+            var marker_96dc8e5fabbb2c9385660e15f9a204e2 = L.marker(
+                [52.0588534, -1.5579989],
+                {}
+            ).addTo(map_e27957fc2043792ac94e61817daf5a4a);
+        
+    
+            var icon_5bf56ea90d411e3274d14f610964f5e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_96dc8e5fabbb2c9385660e15f9a204e2.setIcon(icon_5bf56ea90d411e3274d14f610964f5e7);
+        
+    
+        var popup_ce2e8d879d3b786224e031f2a7a3fdd3 = L.popup({});
+
+        
+            
+                var html_478f64386aae2f57ef9cef098a99b344 = $(`<div id="html_478f64386aae2f57ef9cef098a99b344" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Upper Brailes</h1><div class="nugget-popup"><p>Runoff from fields to the rear of properties combined with a blocked drain caused surface water to enter a property on Main Road, resulting in internal flooding. [TAB] (p28)</p></div><div class="nugget-popup"><p>A property on the B4035 Main Road experienced internal flooding due to field runoff and a blocked drain during the November 2019 event; the record also notes a separate property flood in 2007. [MUL] (p31)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded [TAB] (p28)</p></div><div class="nugget-popup quant"><p>1 property (2019); 1 property (2007) [MUL] (p31)</p></div></div></body></div>`)[0];
+                popup_ce2e8d879d3b786224e031f2a7a3fdd3.setContent(html_478f64386aae2f57ef9cef098a99b344);
+            
+        
+
+        marker_96dc8e5fabbb2c9385660e15f9a204e2.bindPopup(popup_ce2e8d879d3b786224e031f2a7a3fdd3)
+        ;
+
+        
+    
+</script>
+</html>
