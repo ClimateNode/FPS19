@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_97b5cbf1e69a16d967d709f3ce9e7b6e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_97b5cbf1e69a16d967d709f3ce9e7b6e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_97b5cbf1e69a16d967d709f3ce9e7b6e = L.map(
+                "map_97b5cbf1e69a16d967d709f3ce9e7b6e",
+                {
+                    center: [51.053885040237674, -2.058311344053375],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_29888c24b004a343b501f6cecd55478a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_29888c24b004a343b501f6cecd55478a.addTo(map_97b5cbf1e69a16d967d709f3ce9e7b6e);
+    
+            var marker_9a1aa88f37867222578361e9154bba27 = L.marker(
+                [51.0732368, -1.9818683],
+                {}
+            ).addTo(map_97b5cbf1e69a16d967d709f3ce9e7b6e);
+        
+    
+            var icon_c62010aae1d30c187f9b7df0143c28f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9a1aa88f37867222578361e9154bba27.setIcon(icon_c62010aae1d30c187f9b7df0143c28f5);
+        
+    
+        var popup_9ceb8be1bfba690b92a0521448253370 = L.popup({});
+
+        
+            
+                var html_71443e42d2d7c675293a1ea828b0d7e8 = $(`<div id="html_71443e42d2d7c675293a1ea828b0d7e8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Nadder</h1><div class="nugget-popup"><p>The River Nadder reached its highest recorded level during the 20&ndash;21 October 2021 event; it flowed at bank capacity and, when combined with intense localised pluvial runoff, came out of bank and caused fluvial flooding through the parish, threatening riverside properties including the old mills. [PAG,MUL] (p1)</p></div><div class="nugget-popup"><p>The Nadder came out of bank during the event; river&ndash;based flooding followed the EA Flood Zone 3 extents. The river was driven to bank capacity by the base heavy storm rainfall and, with local intense rainfall flowing overland into the Nadder, produced out&ndash;of&ndash;bank flows that contributed to flooding in the area. (p2)</p></div></div></body></div>`)[0];
+                popup_9ceb8be1bfba690b92a0521448253370.setContent(html_71443e42d2d7c675293a1ea828b0d7e8);
+            
+        
+
+        marker_9a1aa88f37867222578361e9154bba27.bindPopup(popup_9ceb8be1bfba690b92a0521448253370)
+        ;
+
+        
+    
+    
+            var marker_f01226a34e18b2034441f0f878a9a7ca = L.marker(
+                [51.02181392071302, -2.120425132160124],
+                {}
+            ).addTo(map_97b5cbf1e69a16d967d709f3ce9e7b6e);
+        
+    
+            var icon_8f35f42d590d921ba94b6717e1a41609 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f01226a34e18b2034441f0f878a9a7ca.setIcon(icon_8f35f42d590d921ba94b6717e1a41609);
+        
+    
+        var popup_47ead1e6cb4be6a53f534a21e83016e3 = L.popup({});
+
+        
+            
+                var html_2117a49d01a396a327221708e379344e = $(`<div id="html_2117a49d01a396a327221708e379344e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Donhead St Andrew</h1><div class="nugget-popup"><p>Multiple properties in the village were flooded by a combination of fluvial flooding from the River Nadder (river overtopping bank capacity) and localised pluvial/surface water runoff; old mill properties adjacent to the Nadder were directly threatened by river flooding. The Nadder reached its highest recorded level on the 20&ndash;21 October event and surveyed levels behind Court Street matched a 150&ndash;year return period model, supporting significant river overtopping. [MUL] (p1)</p></div><div class="nugget-popup"><p>Properties in the parish experienced pluvial (surface water) flooding caused by local high&ndash;intensity rainfall; combined with the Nadder coming out of bank, this produced property and highway flooding. Surface water from higher land flowed onto and along the highway (using it as a conduit) and overwhelmed the highway drainage system. A programme of repairs and improvements to aid highway safety is underway. [MUL] (p2)</p></div></div></body></div>`)[0];
+                popup_47ead1e6cb4be6a53f534a21e83016e3.setContent(html_2117a49d01a396a327221708e379344e);
+            
+        
+
+        marker_f01226a34e18b2034441f0f878a9a7ca.bindPopup(popup_47ead1e6cb4be6a53f534a21e83016e3)
+        ;
+
+        
+    
+</script>
+</html>
