@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bad1c7835e9fd71cc027e8279dc97ce6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bad1c7835e9fd71cc027e8279dc97ce6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bad1c7835e9fd71cc027e8279dc97ce6 = L.map(
+                "map_bad1c7835e9fd71cc027e8279dc97ce6",
+                {
+                    center: [52.55816554791926, -2.0857304700389814],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6408dc73e226210c1d85ed0f4ca006cb = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_6408dc73e226210c1d85ed0f4ca006cb.addTo(map_bad1c7835e9fd71cc027e8279dc97ce6);
+    
+            var marker_f908bcdbbca050f1903ed19ade4b511a = L.marker(
+                [52.5847651, -2.127567],
+                {}
+            ).addTo(map_bad1c7835e9fd71cc027e8279dc97ce6);
+        
+    
+            var icon_dc2d9ac4018e98479cef2c32173b8803 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f908bcdbbca050f1903ed19ade4b511a.setIcon(icon_dc2d9ac4018e98479cef2c32173b8803);
+        
+    
+        var popup_cff413b74168c73af47aee91a0335ac1 = L.popup({});
+
+        
+            
+                var html_ee29477be078de7bdd896e7b25516016 = $(`<div id="html_ee29477be078de7bdd896e7b25516016" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wolverhampton Metropolitan District</h1><div class="nugget-popup"><p>Wolverhampton (the Bilston area) experienced urban surface water flooding during the 12 June 2023 event, with streets inundated and transport/disruption impacts in the affected neighbourhoods. [PAG] (p1)</p></div><div class="nugget-popup"><p>The radar imagery places the epicentre of the high&ndash;intensity rainfall band over the Bilston/Wolverhampton area around 18:00 on 12th June 2023. Multiple image snapshots (18:00&ndash;18:20) show very high, highly localised rainfall cells passing over Wolverhampton and nearby neighbourhoods (including Penn Fields/Lower Gornal vicinity), producing conditions consistent with rapid urban surface&ndash;water and flash flooding in affected streets and low&ndash;lying areas. [PAG,IMG] (p17)</p></div><div class="nugget-popup"><p>Drainage capacity was overwhelmed by the intense storm on 12th June 2023. Surface water runoff was channelled by impermeable surfaces to the lowest points (the highway), overflowing the highway drainage and spilling from the highway into downhill properties; flows also escaped from sewer manholes and highway gullies. [TAB] (p24)</p></div></div></body></div>`)[0];
+                popup_cff413b74168c73af47aee91a0335ac1.setContent(html_ee29477be078de7bdd896e7b25516016);
+            
+        
+
+        marker_f908bcdbbca050f1903ed19ade4b511a.bindPopup(popup_cff413b74168c73af47aee91a0335ac1)
+        ;
+
+        
+    
+    
+            var marker_6975b99111515f50563ad1e44b4284ae = L.marker(
+                [52.51108, -2.0816813],
+                {}
+            ).addTo(map_bad1c7835e9fd71cc027e8279dc97ce6);
+        
+    
+            var icon_f5005aeb311e6045c420b78b7a01486f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6975b99111515f50563ad1e44b4284ae.setIcon(icon_f5005aeb311e6045c420b78b7a01486f);
+        
+    
+        var popup_e0ed92c8e2063c80ef24e40871f7093b = L.popup({});
+
+        
+            
+                var html_c1d1d0621890624b758841d4b68611aa = $(`<div id="html_c1d1d0621890624b758841d4b68611aa" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dudley Metropolitan District</h1><div class="nugget-popup"><p>A localised, intense band of rainfall was centred on the Dudley&ndash;Tipton area on 12th June 2023 (highest intensities 30&ndash;100 mm/h shown on radar). This produced conditions for isolated surface water / flash flooding in the Dudley&ndash;Tipton area and was highlighted by the Flood Forecasting Centre as having potential for significant impacts. (p16)</p></div><div class="nugget-popup"><p>Radar snapshots show the central band of very high rainfall intensity running from Wolverhampton through Dudley and Tipton around 18:10 on 12th June 2023. This suggests Dudley was subject to intense, short&ndash;duration rainfall producing high runoff rates and a risk of localized surface&ndash;water/flash flooding in urban and valley locations within the borough. [PAG,IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_e0ed92c8e2063c80ef24e40871f7093b.setContent(html_c1d1d0621890624b758841d4b68611aa);
+            
+        
+
+        marker_6975b99111515f50563ad1e44b4284ae.bindPopup(popup_e0ed92c8e2063c80ef24e40871f7093b)
+        ;
+
+        
+    
+    
+            var marker_329f6d4114be428ccaf2f52f58f37121 = L.marker(
+                [52.5704613, -2.1021704],
+                {}
+            ).addTo(map_bad1c7835e9fd71cc027e8279dc97ce6);
+        
+    
+            var icon_a5b55ef1a1395e4b59b12afd31566caa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_329f6d4114be428ccaf2f52f58f37121.setIcon(icon_a5b55ef1a1395e4b59b12afd31566caa);
+        
+    
+        var popup_f99a95417d41bb16e2980c014e826d81 = L.popup({});
+
+        
+            
+                var html_987478c4f64c4abb152e5c5836592f21 = $(`<div id="html_987478c4f64c4abb152e5c5836592f21" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ettingshall Road, Wolverhampton Metropolitan District</h1><div class="nugget-popup"><p>Carriageway inundated by surface water during the 12 June 2023 flood event; road surface was covered edge&ndash;to&ndash;edge with water high enough to partially submerge vehicle wheels, disrupting traffic and access to adjacent residences. (p1)</p></div><div class="nugget-popup"><p>Surface water from isolated heavy rainfall on 12th June 2023 caused internal flooding to properties on Ettingshall Road. (p5)</p></div><div class="nugget-popup"><p>Flooding occurred on the street on 12 June 2023. (p7)</p></div><div class="nugget-popup"><p>Intense, short&ndash;duration rainfall recorded at the monitoring location produced rapid surface water / flash flooding that contributed to flooding of local infrastructure and properties. [IMG] (p18)</p></div><div class="nugget-popup"><p>Surface water flooding on highways and footways affected highway drainage and sewer infrastructure; high&ndash;velocity runoff inundated driveways and gardens and progressed into internal areas of properties (through thresholds and communal areas). Debris and building materials were washed down the catchment and blinded highway drainage. [PAG] (p21)</p></div><div class="nugget-popup"><p>Surface water inundation across the carriageway with highway drainage failure; adjacent driveways and residential properties were flooded. Sewer infrastructure was affected/surcharged contributing to flooding. (p22)</p></div><div class="nugget-popup"><p>Highway gullies and subsurface drainage on Ettingshall Road were overwhelmed during the storm on 12th June 2023; surface water flowed over/around gullies and along the highway to lower&ndash;lying properties, with water escaping from gullies and sewer manholes. Sensors have been placed inside gullies on Ettingshall Road to monitor water levels for operational response. [TAB] (p24)</p></div><div class="nugget-popup"><p>Previous measures (altered road/footpath profile and additional gullies) increased capacity but were insufficient; the storm produced volumes/velocities that would not have been contained by this infrastructure, indicating flooding/overwhelming of drainage on the road. (p25)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>15 properties (across Ettingshall Road and Birmingham New Road) (p5)</p></div></div></body></div>`)[0];
+                popup_f99a95417d41bb16e2980c014e826d81.setContent(html_987478c4f64c4abb152e5c5836592f21);
+            
+        
+
+        marker_329f6d4114be428ccaf2f52f58f37121.bindPopup(popup_f99a95417d41bb16e2980c014e826d81)
+        ;
+
+        
+    
+    
+            var marker_0c060b41e726fbedee1b05d7c67bfb6e = L.marker(
+                [52.557504867423056, -2.107528529251428],
+                {}
+            ).addTo(map_bad1c7835e9fd71cc027e8279dc97ce6);
+        
+    
+            var icon_2a79497a3d397e0fe086204c72a6cb7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0c060b41e726fbedee1b05d7c67bfb6e.setIcon(icon_2a79497a3d397e0fe086204c72a6cb7c);
+        
+    
+        var popup_2d4d25a5278b722d47393a347324dd0c = L.popup({});
+
+        
+            
+                var html_731ea3d5d33c31e60e44d90cc6d39d8b = $(`<div id="html_731ea3d5d33c31e60e44d90cc6d39d8b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Birmingham New Road, Wolverhampton Metropolitan District</h1><div class="nugget-popup"><p>Carriageway inundated by surface water during the 12 June 2023 flood event; urban street flooding disrupted vehicular movement and access to nearby properties. (p1)</p></div><div class="nugget-popup"><p>Surface water from isolated heavy rainfall on 12th June 2023 caused internal flooding to properties on Birmingham New Road. (p5)</p></div><div class="nugget-popup"><p>Flooding occurred on the street on 12 June 2023. (p7)</p></div><div class="nugget-popup"><p>A highly localised, short&ndash;duration intense storm occurred on 12th June 2023 with a pronounced rainfall spike around 18:15 recorded at the COWC Ettingshall Road gauge. The rapid accumulation of runoff from this event produced very large volumes of water across the catchment and is identified in the report as the primary cause of flooding to infrastructure and properties in the area. [IMG] (p18)</p></div><div class="nugget-popup"><p>Surface water inundation of the highway affecting carriageway drainage; driveways and nearby residential properties were flooded and sewer infrastructure was impacted/surcharged. (p22)</p></div><div class="nugget-popup"><p>Severn Trent&#8217;s modelling and assessments focused on the existing surface water sewer infrastructure within the Birmingham New Road environs and its downstream interactions, implying the sewer/surface water system in this area was affected by the storm. (p25)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>15 properties (across Ettingshall Road and Birmingham New Road) (p5)</p></div></div></body></div>`)[0];
+                popup_2d4d25a5278b722d47393a347324dd0c.setContent(html_731ea3d5d33c31e60e44d90cc6d39d8b);
+            
+        
+
+        marker_0c060b41e726fbedee1b05d7c67bfb6e.bindPopup(popup_2d4d25a5278b722d47393a347324dd0c)
+        ;
+
+        
+    
+    
+            var marker_65a1ec7cfce424e607187556204dcf11 = L.marker(
+                [52.5512059, -2.0972529],
+                {}
+            ).addTo(map_bad1c7835e9fd71cc027e8279dc97ce6);
+        
+    
+            var icon_982aeb2845f1613cc6e67c683c9922bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_65a1ec7cfce424e607187556204dcf11.setIcon(icon_982aeb2845f1613cc6e67c683c9922bb);
+        
+    
+        var popup_324874dbc45fb6d1f9d828e8e2944a88 = L.popup({});
+
+        
+            
+                var html_3ef6727377b74e936d104b5786c99999 = $(`<div id="html_3ef6727377b74e936d104b5786c99999" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Meadow Lane, Wolverhampton Metropolitan District</h1><div class="nugget-popup"><p>Modelled surface&ndash;water accumulation was concentrated in depressions and open areas adjacent to Meadow Lane during the intense short&ndash;duration storm on 12th June 2023, resulting in surface&ndash;water flooding that threatened and likely inundated low&ndash;lying property areas and local infrastructure. [PAG,IMG] (p19)</p></div></div></body></div>`)[0];
+                popup_324874dbc45fb6d1f9d828e8e2944a88.setContent(html_3ef6727377b74e936d104b5786c99999);
+            
+        
+
+        marker_65a1ec7cfce424e607187556204dcf11.bindPopup(popup_324874dbc45fb6d1f9d828e8e2944a88)
+        ;
+
+        
+    
+    
+            var marker_43a42047f55d52e4598bfc320e099126 = L.marker(
+                [52.5512563, -2.1017338],
+                {}
+            ).addTo(map_bad1c7835e9fd71cc027e8279dc97ce6);
+        
+    
+            var icon_943dee600c6c7ccb825b9e8d221b1692 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_43a42047f55d52e4598bfc320e099126.setIcon(icon_943dee600c6c7ccb825b9e8d221b1692);
+        
+    
+        var popup_c8b03cddb1286be115a16d9071d25f1c = L.popup({});
+
+        
+            
+                var html_bcbbe06479e542cde23a797aea083b19 = $(`<div id="html_bcbbe06479e542cde23a797aea083b19" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woodcross Lane, Wolverhampton Metropolitan District</h1><div class="nugget-popup"><p>Figure 14 (flow&ndash;route map) shows overland surface&ndash;water flow beginning near Woodcross Lane and moving east; the lane acted as a flow route directing water into residential areas, contributing to surface&ndash;water/overland flooding during the event. [IMG] (p22)</p></div></div></body></div>`)[0];
+                popup_c8b03cddb1286be115a16d9071d25f1c.setContent(html_bcbbe06479e542cde23a797aea083b19);
+            
+        
+
+        marker_43a42047f55d52e4598bfc320e099126.bindPopup(popup_c8b03cddb1286be115a16d9071d25f1c)
+        ;
+
+        
+    
+    
+            var marker_06ca1ea59820774753a30d0479289782 = L.marker(
+                [52.546526, -2.1068447],
+                {}
+            ).addTo(map_bad1c7835e9fd71cc027e8279dc97ce6);
+        
+    
+            var icon_4bbcc5ece45fb459514386d3e611adde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_06ca1ea59820774753a30d0479289782.setIcon(icon_4bbcc5ece45fb459514386d3e611adde);
+        
+    
+        var popup_8e0521e5c0c6eff65afc781411df31f5 = L.popup({});
+
+        
+            
+                var html_ddb05b8bb13fde389aa50ba2941a0cd6 = $(`<div id="html_ddb05b8bb13fde389aa50ba2941a0cd6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hall Lane, Wolverhampton Metropolitan District</h1><div class="nugget-popup"><p>Flow&ndash;route mapping (Figure 14) shows surface&ndash;water flow proceeding east along Hall Lane and splitting into branches into residential areas, indicating Hall Lane carried overland flow that contributed to local surface&ndash;water flooding during the event. [IMG] (p22)</p></div></div></body></div>`)[0];
+                popup_8e0521e5c0c6eff65afc781411df31f5.setContent(html_ddb05b8bb13fde389aa50ba2941a0cd6);
+            
+        
+
+        marker_06ca1ea59820774753a30d0479289782.bindPopup(popup_8e0521e5c0c6eff65afc781411df31f5)
+        ;
+
+        
+    
+    
+            var marker_581b800735aa2a60584d052381022d40 = L.marker(
+                [52.61577905968879, -2.0442045411773653],
+                {}
+            ).addTo(map_bad1c7835e9fd71cc027e8279dc97ce6);
+        
+    
+            var icon_f906fbeee4011e357994625b8e321a20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_581b800735aa2a60584d052381022d40.setIcon(icon_f906fbeee4011e357994625b8e321a20);
+        
+    
+        var popup_e47decdb01550704a52f24dd11a6e3a0 = L.popup({});
+
+        
+            
+                var html_e217b53f846435693514f9729da32d76 = $(`<div id="html_e217b53f846435693514f9729da32d76" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Midlands</h1><div class="nugget-popup"><p>Isolated heavy rainfall on 12th June 2023 caused surface water flooding in parts of the West Midlands, resulting in internal flooding to properties and businesses. (p5)</p></div><div class="nugget-popup"><p>A belt of heavy convective rainfall moved northwest across the West Midlands on 12 June 2023 (approx. 17:00&ndash;20:00). The rainfall epicentre passed over Bilston around 18:00, producing intense downpours that the guidance and radar indicated could cause isolated surface water flooding in urban areas with the potential for significant impacts. [PAG] (p15)</p></div><div class="nugget-popup"><p>Rainfall radar over the West Midlands on 12 June 2023 shows spatially variable but locally very high intensities (cores of 30&ndash;100 mm/h in places). The Met Office issued thunderstorm warnings covering the West Midlands and neighbouring authorities, and the Flood Forecasting Centre warned of isolated surface water flooding with potential for significant impacts. [PAG,IMG] (p16)</p></div><div class="nugget-popup"><p>A localized, fast&ndash;moving belt of very intense rainfall crossed the West Midlands between about 17:00&ndash;20:00 on 12th June 2023. The radar&ndash;derived snapshot shows a concentrated band of very high rainfall intensity moving NW across the region (epicentre around Bilston/Wolverhampton at ~18:00). This produced highly localised extreme runoff potential and is the precipitating cause of reported urban/surface&ndash;water flood impacts in the area (likely rapid surface&ndash;water and flash flooding in low&ndash;lying urban catchments). [PAG,IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_e47decdb01550704a52f24dd11a6e3a0.setContent(html_e217b53f846435693514f9729da32d76);
+            
+        
+
+        marker_581b800735aa2a60584d052381022d40.bindPopup(popup_e47decdb01550704a52f24dd11a6e3a0)
+        ;
+
+        
+    
+    
+            var marker_8cab9c2114cf618123d63d273b690b44 = L.marker(
+                [52.5700229, -2.0822333],
+                {}
+            ).addTo(map_bad1c7835e9fd71cc027e8279dc97ce6);
+        
+    
+            var icon_af833aa2af4ac5affda26dac2dac38c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8cab9c2114cf618123d63d273b690b44.setIcon(icon_af833aa2af4ac5affda26dac2dac38c7);
+        
+    
+        var popup_8483b4ac5b5237578064f00af3ee7a6f = L.popup({});
+
+        
+            
+                var html_cef21dbd39cc0d45d6e78e8aa6cd39bb = $(`<div id="html_cef21dbd39cc0d45d6e78e8aa6cd39bb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bilston</h1><div class="nugget-popup"><p>Residential streets in Bilston (including Ettingshall Road and Birmingham New Road) were heavily affected by surface water/urban flooding on 12 June 2023, causing inundation of roads, disruption to vehicle movement and impacts to property access. (p1)</p></div><div class="nugget-popup"><p>At least 15 properties in Ettingshall Road and Birmingham New Road in Bilston suffered internal flooding from surface water following isolated heavy rainfall on 12th June 2023. (p5)</p></div><div class="nugget-popup"><p>Flooding occurred on 12 June 2023 affecting Ettingshall Road and Birmingham New Road in Bilston. (p7)</p></div><div class="nugget-popup"><p>Radar&ndash;derived rainfall estimates show the epicentre of a high&ndash;intensity rainfall band passed directly over Bilston at around 18:00 on 12 June 2023. This intense short&ndash;duration rainfall was associated with Met Office thunderstorm warnings and Flood Forecasting Centre warnings for isolated surface water flooding, indicating a risk of surface&ndash;water/flash flooding in Bilston. (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>15 properties (p5)</p></div></div></body></div>`)[0];
+                popup_8483b4ac5b5237578064f00af3ee7a6f.setContent(html_cef21dbd39cc0d45d6e78e8aa6cd39bb);
+            
+        
+
+        marker_8cab9c2114cf618123d63d273b690b44.bindPopup(popup_8483b4ac5b5237578064f00af3ee7a6f)
+        ;
+
+        
+    
+    
+            var marker_cb409569bd179fbdb8a6d6d14a334635 = L.marker(
+                [52.5290396, -2.0693747],
+                {}
+            ).addTo(map_bad1c7835e9fd71cc027e8279dc97ce6);
+        
+    
+            var icon_338cd67dacf8a2cbf56b91006e520f28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cb409569bd179fbdb8a6d6d14a334635.setIcon(icon_338cd67dacf8a2cbf56b91006e520f28);
+        
+    
+        var popup_240a6032576996070e46413d722a43da = L.popup({});
+
+        
+            
+                var html_940957ff39b79caa2657265d7e42e412 = $(`<div id="html_940957ff39b79caa2657265d7e42e412" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tipton</h1><div class="nugget-popup"><p>Radar&ndash;derived rainfall intensity maps show the core of a short, very intense convective band passing directly over Tipton around 18:00 on 12 June 2023. This intense, short&ndash;duration rainfall had the potential to produce isolated surface&ndash;water/flash flooding in urban areas of Tipton; the report links this rainfall to FFC warnings of isolated surface water flooding with potential for significant impacts. [PAG,IMG] (p16)</p></div></div></body></div>`)[0];
+                popup_240a6032576996070e46413d722a43da.setContent(html_940957ff39b79caa2657265d7e42e412);
+            
+        
+
+        marker_cb409569bd179fbdb8a6d6d14a334635.bindPopup(popup_240a6032576996070e46413d722a43da)
+        ;
+
+        
+    
+</script>
+</html>
