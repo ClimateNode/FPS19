@@ -2,11 +2,11 @@
 
 ## Intro
 
-This repository contains the interim outputs of an experimental *pro bono* project being undertaken by Helen Jackson (Director of [ClimateNode](https://www.climatenode.org)) for Flooded People using an LLM to extract information on flood impacts from Local Authority Section 19 reports. Final outputs in the form of a consolidated geoJSON data set and interactive maps are expected soon.
+This repository contains the interim outputs of an experimental *pro bono* project being undertaken by Helen Jackson (Director of [ClimateNode](https://www.climatenode.org)) for Flooded People using an LLM to extract information on flood impacts from Local Authority Section 19 reports. Final outputs in the form of a consolidated geoJSON data set and interactive map are expected soon.
 
 It contains two types of outputs:
 
-• maps (HTML files)
+• downloadable maps (HTML files)
 
 • readouts (markdown files)
 (One of each per individual document)
