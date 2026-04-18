@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2284cb21e0aa1942333f344b5526eb72 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2284cb21e0aa1942333f344b5526eb72" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2284cb21e0aa1942333f344b5526eb72 = L.map(
+                "map_2284cb21e0aa1942333f344b5526eb72",
+                {
+                    center: [50.913750871618106, -0.3762434463417665],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2780eec2873a6ec3672c9099dbf53d5e = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_2780eec2873a6ec3672c9099dbf53d5e.addTo(map_2284cb21e0aa1942333f344b5526eb72);
+    
+            var marker_1e12fdaea4ec39bbcbc1c5a450c80f9f = L.marker(
+                [50.9445845, -0.5278477],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_4266d4fcab15993ea6b1236e5e94f169 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1e12fdaea4ec39bbcbc1c5a450c80f9f.setIcon(icon_4266d4fcab15993ea6b1236e5e94f169);
+        
+    
+        var popup_dc2ce888d6f1c3d757d94ae848c60a01 = L.popup({});
+
+        
+            
+                var html_b4bba1406c60319233281611d86d9bf1 = $(`<div id="html_b4bba1406c60319233281611d86d9bf1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sussex</h1><div class="nugget-popup"><p>Prolonged heavy rainfall across much of Sussex generated excess runoff leading to surface water flooding and significant disruption in affected parts. [PAG] (p14)</p></div><div class="nugget-popup"><p>Persistent, very heavy rainfall across Sussex on 10&ndash;11 June produced excess runoff leading to flooding in the worst&ndash;affected parts; the FGS and raingauge records identify Sussex as within the areas of concern with likely significant disruption (particularly in urban areas and from fast&ndash;responding rivers). [PAG,IMG] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>114mm recorded at Bognor Regis (EA) within Sussex (among other extreme totals). [PAG,IMG] (p15)</p></div></div></body></div>`)[0];
+                popup_dc2ce888d6f1c3d757d94ae848c60a01.setContent(html_b4bba1406c60319233281611d86d9bf1);
+            
+        
+
+        marker_1e12fdaea4ec39bbcbc1c5a450c80f9f.bindPopup(popup_dc2ce888d6f1c3d757d94ae848c60a01)
+        ;
+
+        
+    
+    
+            var marker_a0066261f52b80e56e23a632b1927beb = L.marker(
+                [50.7951535, -0.6630582],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_2178bf377bb91a91b0f30ee757c0ad8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a0066261f52b80e56e23a632b1927beb.setIcon(icon_2178bf377bb91a91b0f30ee757c0ad8b);
+        
+    
+        var popup_910f83cd95c80eaa853580163379895d = L.popup({});
+
+        
+            
+                var html_7b56dc46f92c0084e64d095d44afa4e4 = $(`<div id="html_7b56dc46f92c0084e64d095d44afa4e4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Aldingbourne Rife</h1><div class="nugget-popup"><p>Both a Flood Alert and a Flood Warning were issued for Aldingbourne Rife during the June 10&ndash;12, 2012 event. Water levels in the Aldingbourne Rife remained high for days after the rainfall, contributing to prolonged inundation in the local rife network (notably the Manhood Peninsula) due to the flat, low&ndash;lying catchment. (p16)</p></div></div></body></div>`)[0];
+                popup_910f83cd95c80eaa853580163379895d.setContent(html_7b56dc46f92c0084e64d095d44afa4e4);
+            
+        
+
+        marker_a0066261f52b80e56e23a632b1927beb.bindPopup(popup_910f83cd95c80eaa853580163379895d)
+        ;
+
+        
+    
+    
+            var marker_5d1027f090c920d435f5e6ca0bce3110 = L.marker(
+                [50.7769753, -0.8738316],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_a26796204b2eaa3bd689dbf94a85a0b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5d1027f090c920d435f5e6ca0bce3110.setIcon(icon_a26796204b2eaa3bd689dbf94a85a0b9);
+        
+    
+        var popup_63587c88cab66bf770d9795e0f9629af = L.popup({});
+
+        
+            
+                var html_e844b1d216ecc260abe12e8501d4990b = $(`<div id="html_e844b1d216ecc260abe12e8501d4990b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Manhood Peninsula</h1><div class="nugget-popup"><p>Identified as one of the worst&ndash;affected areas during the 10&ndash;12 June 2012 event; widespread flooding impacted properties across the peninsula. (p3)</p></div><div class="nugget-popup"><p>The rife network on the Manhood Peninsula experienced prolonged high water levels for days after the rainfall because the flat, low&ndash;lying catchments slowed drainage. [MUL] (p16)</p></div></div></body></div>`)[0];
+                popup_63587c88cab66bf770d9795e0f9629af.setContent(html_e844b1d216ecc260abe12e8501d4990b);
+            
+        
+
+        marker_5d1027f090c920d435f5e6ca0bce3110.bindPopup(popup_63587c88cab66bf770d9795e0f9629af)
+        ;
+
+        
+    
+    
+            var marker_d7d3f91b9038bfd8bc6525af97a62ccb = L.marker(
+                [50.990468, -0.5072919],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_08a6045713655d57b268751e6af84c9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d7d3f91b9038bfd8bc6525af97a62ccb.setIcon(icon_08a6045713655d57b268751e6af84c9f);
+        
+    
+        var popup_4b05c92ada2bd0e37a35b1d2b6f34e78 = L.popup({});
+
+        
+            
+                var html_b424c3173989c8dde2638da07547f4e8 = $(`<div id="html_b424c3173989c8dde2638da07547f4e8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Arun</h1><div class="nugget-popup"><p>A Flood Alert was issued for the River Arun during the main June event (10&ndash;12 June 2012); the river was identified as a contributor to river&ndash;linked flooding during the event, although few properties were believed to have flooded solely from rivers. (p16)</p></div></div></body></div>`)[0];
+                popup_4b05c92ada2bd0e37a35b1d2b6f34e78.setContent(html_b424c3173989c8dde2638da07547f4e8);
+            
+        
+
+        marker_d7d3f91b9038bfd8bc6525af97a62ccb.bindPopup(popup_4b05c92ada2bd0e37a35b1d2b6f34e78)
+        ;
+
+        
+    
+    
+            var marker_fa6a61b4dbbfd8ab6418174a1227ecc7 = L.marker(
+                [50.9887789, 0.5011276],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_ddb5546b605396a28c45d887c2786dcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fa6a61b4dbbfd8ab6418174a1227ecc7.setIcon(icon_ddb5546b605396a28c45d887c2786dcc);
+        
+    
+        var popup_bc46aab9daf1dd3f4e685df2028bb017 = L.popup({});
+
+        
+            
+                var html_a6d8e1545170d3d6fffc398bf8efe286 = $(`<div id="html_a6d8e1545170d3d6fffc398bf8efe286" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Rother</h1><div class="nugget-popup"><p>A Flood Alert was issued for the River Rother during the main June event (10&ndash;12 June 2012); the Rother was listed among rivers linked to flooding in the area. (p16)</p></div></div></body></div>`)[0];
+                popup_bc46aab9daf1dd3f4e685df2028bb017.setContent(html_a6d8e1545170d3d6fffc398bf8efe286);
+            
+        
+
+        marker_fa6a61b4dbbfd8ab6418174a1227ecc7.bindPopup(popup_bc46aab9daf1dd3f4e685df2028bb017)
+        ;
+
+        
+    
+    
+            var marker_b64764dd62ebc8cd5dadec5d2f762c8e = L.marker(
+                [51.0, -0.416667],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_9c8d3ddd4704a3704c8a6c1ed793e02d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b64764dd62ebc8cd5dadec5d2f762c8e.setIcon(icon_9c8d3ddd4704a3704c8a6c1ed793e02d);
+        
+    
+        var popup_ccb3afc576beead2a692e911391bef27 = L.popup({});
+
+        
+            
+                var html_3d7569ec2ae52a8588e8006d0e78e07a = $(`<div id="html_3d7569ec2ae52a8588e8006d0e78e07a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Sussex</h1><div class="nugget-popup"><p>An extreme rainfall event on 10&ndash;12 June 2012 caused widespread flooding across parts of the county. Almost 800 properties across West Sussex were affected by flooding from a variety of sources; the worst affected areas included the Manhood Peninsula, Bognor Regis, Littlehampton and Worthing. The Bognor Regis conurbation (including Middleton on Sea, Elmer and Felpham) had reports of properties flooded primarily by surface water. (p3)</p></div><div class="nugget-popup"><p>The county experienced unprecedented summer 2012 rainfall (notably 10&ndash;12 June 2012) that overloaded local drainage networks across the coastal plain. Flood water generally dissipated over 2&ndash;3 days with no significant infrastructure damage, but the event caused widespread surface water flooding. (p5)</p></div><div class="nugget-popup"><p>Widespread surface water flooding during the June 2012 event; flooding patterns closely matched the county's Areas Susceptible to Surface Water Flooding maps. Prolonged heavy rainfall (some locations received large totals in 12&ndash;24 hours) generated excess runoff and caused inundation across parts of the county. (p13)</p></div><div class="nugget-popup"><p>West Sussex experienced very high short&ndash;duration rainfall that generated excess runoff and led to surface water flooding in the county. [PAG] (p14)</p></div><div class="nugget-popup"><p>Numerous extreme rainfall observations were recorded across West Sussex during the event (Met Office and other networks). The report notes multiple very large local totals in the county and describes highly localised convective cells, indicating the county experienced intense rainfall that increased the likelihood of significant disruption and potential flooding in parts of West Sussex. (p15)</p></div><div class="nugget-popup"><p>Extremely high, localised rainfall across West Sussex produced widespread surface water flooding (the majority of property flooding on 10&ndash;12 June) and some river&ndash;linked flooding; the Environment Agency issued Flood Alerts and Flood Warnings for multiple rivers and watercourses in the county. [PAG] (p16)</p></div><div class="nugget-popup"><p>Widespread extreme rainfall in June 2012 caused extensive surface water flooding across the county (main event 10&ndash;12 June 2012). Some property flooding occurred; river levels in parts of the county (notably Aldingbourne Rife and the Manhood Peninsula rife network) remained high for days after the rain. [PAG,IMG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>almost 800 properties; up to 370 properties (p3)</p></div><div class="nugget-popup quant"><p>780 properties (p5)</p></div></div></body></div>`)[0];
+                popup_ccb3afc576beead2a692e911391bef27.setContent(html_3d7569ec2ae52a8588e8006d0e78e07a);
+            
+        
+
+        marker_b64764dd62ebc8cd5dadec5d2f762c8e.bindPopup(popup_ccb3afc576beead2a692e911391bef27)
+        ;
+
+        
+    
+    
+            var marker_0f565517044738c083895fefab5f954c = L.marker(
+                [51.04483545, -1.2434093597173146],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_3ee992f9f9c117ac7be54746272afd1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0f565517044738c083895fefab5f954c.setIcon(icon_3ee992f9f9c117ac7be54746272afd1d);
+        
+    
+        var popup_0614a4124455675423dcd850fef5ac2f = L.popup({});
+
+        
+            
+                var html_4b7db229af14a6d90f2b526a20cf6793 = $(`<div id="html_4b7db229af14a6d90f2b526a20cf6793" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hampshire</h1><div class="nugget-popup"><p>Prolonged heavy rain over 12&ndash;24 hours during the 10&ndash;11 June 2012 event generated excess runoff and led to flooding across Hampshire; the report lists Hampshire as one of the worst affected areas. [PAG] (p13)</p></div><div class="nugget-popup"><p>Persistent heavy rain beginning on 10 June tracked into East Hampshire and continued without interruption in worst affected parts, generating excess runoff that led to flooding; very heavy bursts were expected in eastern parts of the county and were likely to bring significant disruption. (p14)</p></div><div class="nugget-popup"><p>Eastern parts of Hampshire were highlighted by the FGS as likely to receive very heavy bursts of rain on 10 June that could bring significant disruption; EA/other gauge coverage also recorded extreme rainfall across Sussex and eastern Hampshire that raised flood risk. [PAG] (p15)</p></div></div></body></div>`)[0];
+                popup_0614a4124455675423dcd850fef5ac2f.setContent(html_4b7db229af14a6d90f2b526a20cf6793);
+            
+        
+
+        marker_0f565517044738c083895fefab5f954c.bindPopup(popup_0614a4124455675423dcd850fef5ac2f)
+        ;
+
+        
+    
+    
+            var marker_e23320fc695886f65f418f3b9d7c78ec = L.marker(
+                [50.9404266, 0.3699978],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_3746bd609410358294bd209ab8cd0d98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e23320fc695886f65f418f3b9d7c78ec.setIcon(icon_3746bd609410358294bd209ab8cd0d98);
+        
+    
+        var popup_aacc75a4dd6073b9cb05e4184b2a8162 = L.popup({});
+
+        
+            
+                var html_648ff0f4659c2dd633fe80abc57122fd = $(`<div id="html_648ff0f4659c2dd633fe80abc57122fd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Sussex</h1><div class="nugget-popup"><p>Significant, persistent heavy rain during the 10&ndash;11 June 2012 event affected East Sussex; the slow&ndash;moving low pressure and prolonged rainfall produced excess runoff that contributed to flooding in the county. (p13)</p></div></div></body></div>`)[0];
+                popup_aacc75a4dd6073b9cb05e4184b2a8162.setContent(html_648ff0f4659c2dd633fe80abc57122fd);
+            
+        
+
+        marker_e23320fc695886f65f418f3b9d7c78ec.bindPopup(popup_aacc75a4dd6073b9cb05e4184b2a8162)
+        ;
+
+        
+    
+    
+            var marker_94a9c2ef4957d56bf40d9e1d93361296 = L.marker(
+                [50.8453169, -0.2939887],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_a2631dcdcc30f5ebd1877ba8c925a16c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_94a9c2ef4957d56bf40d9e1d93361296.setIcon(icon_a2631dcdcc30f5ebd1877ba8c925a16c);
+        
+    
+        var popup_fccac61b8c672c38b4c374cd7e968c53 = L.popup({});
+
+        
+            
+                var html_ab0aa41449acfe6503b4ae6162e02121 = $(`<div id="html_ab0aa41449acfe6503b4ae6162e02121" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Adur</h1><div class="nugget-popup"><p>A Flood Alert was issued for the River Adur during the main June event (10&ndash;12 June 2012); the Adur was identified among rivers linked to the flooding experienced in West Sussex. (p16)</p></div></div></body></div>`)[0];
+                popup_fccac61b8c672c38b4c374cd7e968c53.setContent(html_ab0aa41449acfe6503b4ae6162e02121);
+            
+        
+
+        marker_94a9c2ef4957d56bf40d9e1d93361296.bindPopup(popup_fccac61b8c672c38b4c374cd7e968c53)
+        ;
+
+        
+    
+    
+            var marker_971fa83b2b5b61077cd978458c3c3ffd = L.marker(
+                [50.7834973, -0.6730718],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_b5e0378d73826732bfae59b72466049c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_971fa83b2b5b61077cd978458c3c3ffd.setIcon(icon_b5e0378d73826732bfae59b72466049c);
+        
+    
+        var popup_35d6f384cf7a3b7ac05c40a8af77e7b7 = L.popup({});
+
+        
+            
+                var html_64661ddc738c4994751e0f94271f0c08 = $(`<div id="html_64661ddc738c4994751e0f94271f0c08" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bognor Regis</h1><div class="nugget-popup"><p>Bognor Regis conurbation was among the worst affected in the 10&ndash;12 June 2012 event; properties flooded and the conurbation is thought to have been flooded primarily by surface water. (p3)</p></div><div class="nugget-popup"><p>The Bognor to Chichester area recorded the highest rainfall during the 10&ndash;12 June 2012 event; the intense rainfall overloaded local drainage leading to surface water/urban flooding in low&ndash;lying parts of the area. (p5)</p></div><div class="nugget-popup"><p>Extreme, highly localised rainfall was recorded in Bognor Regis during the event. The Environment Agency rain gauge at Bognor Regis recorded 114mm over the whole event &mdash; the highest 24&ndash;hour total recorded at Bognor since EA records began in 1974 &mdash; and the report characterises this as approximately a 1&ndash;in&ndash;200&ndash;year (0.5% annual chance) rainfall event. A separate town council gauge and other local gauges reported substantially higher totals at nearby locations, indicating an exceptionally intense, localised storm over the Bognor area and implying a high potential for disruption. [PAG] (p15)</p></div><div class="nugget-popup"><p>Extremely intense, localized rainfall during the June 2012 event (recorded as one of the highest totals in the EA network) contributed to surface water flooding; properties in the area were flooded during the main event. [PAG,IMG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>up to 370 properties (Bognor Regis conurbation incl. Middleton on Sea, Elmer and Felpham) (p3)</p></div></div></body></div>`)[0];
+                popup_35d6f384cf7a3b7ac05c40a8af77e7b7.setContent(html_64661ddc738c4994751e0f94271f0c08);
+            
+        
+
+        marker_971fa83b2b5b61077cd978458c3c3ffd.bindPopup(popup_35d6f384cf7a3b7ac05c40a8af77e7b7)
+        ;
+
+        
+    
+    
+            var marker_e267fc1ccae31dfae395db6ceb32efa8 = L.marker(
+                [50.80958, -0.5424424],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_15622f2b7c37d295f1af4f317a4a2c9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e267fc1ccae31dfae395db6ceb32efa8.setIcon(icon_15622f2b7c37d295f1af4f317a4a2c9d);
+        
+    
+        var popup_6b6d13c6d7865f7c7df6860ea0a8acff = L.popup({});
+
+        
+            
+                var html_b60fdc3cacda475463aa0e0fb290a2bd = $(`<div id="html_b60fdc3cacda475463aa0e0fb290a2bd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Littlehampton</h1><div class="nugget-popup"><p>Named as one of the worst&ndash;affected areas during the 10&ndash;12 June 2012 event; widespread flooding affected properties in the town. (p3)</p></div></div></body></div>`)[0];
+                popup_6b6d13c6d7865f7c7df6860ea0a8acff.setContent(html_b60fdc3cacda475463aa0e0fb290a2bd);
+            
+        
+
+        marker_e267fc1ccae31dfae395db6ceb32efa8.bindPopup(popup_6b6d13c6d7865f7c7df6860ea0a8acff)
+        ;
+
+        
+    
+    
+            var marker_be86354600811abd32c8a5c1a81f411f = L.marker(
+                [50.8115402, -0.3699697],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_d194e8785f8f9a5ef536fb1460cb66ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_be86354600811abd32c8a5c1a81f411f.setIcon(icon_d194e8785f8f9a5ef536fb1460cb66ec);
+        
+    
+        var popup_8de84328c06817c0c67a9847be8b0097 = L.popup({});
+
+        
+            
+                var html_5d0d6ec05bddd944af412fcbf7d5b1eb = $(`<div id="html_5d0d6ec05bddd944af412fcbf7d5b1eb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Worthing</h1><div class="nugget-popup"><p>Named as one of the worst&ndash;affected areas during the 10&ndash;12 June 2012 event; widespread flooding affected properties in the town. (p3)</p></div><div class="nugget-popup"><p>Area was among the worst affected by the 10&ndash;12 June 2012 storm; extreme rainfall overloaded local drainage networks causing surface water/urban flooding. Floodwaters attracted national media attention; flooding generally dissipated over 2&ndash;3 days and caused property flooding though no significant infrastructure damage is reported in the text. (p5)</p></div></div></body></div>`)[0];
+                popup_8de84328c06817c0c67a9847be8b0097.setContent(html_5d0d6ec05bddd944af412fcbf7d5b1eb);
+            
+        
+
+        marker_be86354600811abd32c8a5c1a81f411f.bindPopup(popup_8de84328c06817c0c67a9847be8b0097)
+        ;
+
+        
+    
+    
+            var marker_252159b963de64e25050abaefa6064b2 = L.marker(
+                [50.7905472, -0.620959],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_2c406950de402913db6038b1515287e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_252159b963de64e25050abaefa6064b2.setIcon(icon_2c406950de402913db6038b1515287e7);
+        
+    
+        var popup_c28183f360041fffb6ea100dcd52d1f6 = L.popup({});
+
+        
+            
+                var html_723ef58a475e97c021e2d57f57b10fef = $(`<div id="html_723ef58a475e97c021e2d57f57b10fef" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Middleton-On-Sea</h1><div class="nugget-popup"><p>Part of the Bognor Regis conurbation that reported flooding during 10&ndash;12 June 2012; thought to have been flooded primarily by surface water. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>up to 370 properties (Bognor Regis conurbation incl. Middleton on Sea, Elmer and Felpham) (p3)</p></div></div></body></div>`)[0];
+                popup_c28183f360041fffb6ea100dcd52d1f6.setContent(html_723ef58a475e97c021e2d57f57b10fef);
+            
+        
+
+        marker_252159b963de64e25050abaefa6064b2.bindPopup(popup_c28183f360041fffb6ea100dcd52d1f6)
+        ;
+
+        
+    
+    
+            var marker_c9ddf7b5359915bc497301f151f4c192 = L.marker(
+                [50.7926412, -0.60594],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_8f03bd0617ff9e95fe472ef619def7fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c9ddf7b5359915bc497301f151f4c192.setIcon(icon_8f03bd0617ff9e95fe472ef619def7fe);
+        
+    
+        var popup_c43ff8b167167d8fa6e273c8491e4aed = L.popup({});
+
+        
+            
+                var html_adf892aea0dd346c6f7b73d21fcf69f8 = $(`<div id="html_adf892aea0dd346c6f7b73d21fcf69f8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Elmer</h1><div class="nugget-popup"><p>Part of the Bognor Regis conurbation that reported flooding during 10&ndash;12 June 2012; thought to have been flooded primarily by surface water. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>up to 370 properties (Bognor Regis conurbation incl. Middleton on Sea, Elmer and Felpham) (p3)</p></div></div></body></div>`)[0];
+                popup_c43ff8b167167d8fa6e273c8491e4aed.setContent(html_adf892aea0dd346c6f7b73d21fcf69f8);
+            
+        
+
+        marker_c9ddf7b5359915bc497301f151f4c192.bindPopup(popup_c43ff8b167167d8fa6e273c8491e4aed)
+        ;
+
+        
+    
+    
+            var marker_a9246bef1c72d7c91cb367d837611594 = L.marker(
+                [50.7904582, -0.65412],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_bdd2ec6945040e004953c9e48bf213f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a9246bef1c72d7c91cb367d837611594.setIcon(icon_bdd2ec6945040e004953c9e48bf213f9);
+        
+    
+        var popup_3c838c374138468dcf7ceb59d20c3f31 = L.popup({});
+
+        
+            
+                var html_fe97eaf188b6514fc85ca9b726290b16 = $(`<div id="html_fe97eaf188b6514fc85ca9b726290b16" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Felpham</h1><div class="nugget-popup"><p>Part of the Bognor Regis conurbation that experienced flooding primarily from surface water; properties were inundated as part of the wider local flood impacts. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>up to 370 properties (Bognor Regis conurbation: Middleton on Sea, Elmer and Felpham) (p3)</p></div></div></body></div>`)[0];
+                popup_3c838c374138468dcf7ceb59d20c3f31.setContent(html_fe97eaf188b6514fc85ca9b726290b16);
+            
+        
+
+        marker_a9246bef1c72d7c91cb367d837611594.bindPopup(popup_3c838c374138468dcf7ceb59d20c3f31)
+        ;
+
+        
+    
+    
+            var marker_d11c81fe443e236ab13743f7f501833a = L.marker(
+                [50.83743021074402, -0.776735169647157],
+                {}
+            ).addTo(map_2284cb21e0aa1942333f344b5526eb72);
+        
+    
+            var icon_c48ec73750a2756c42cb6180eda5a0a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d11c81fe443e236ab13743f7f501833a.setIcon(icon_c48ec73750a2756c42cb6180eda5a0a9);
+        
+    
+        var popup_f14c32b777384e1df5dbfdf1b3fcbf49 = L.popup({});
+
+        
+            
+                var html_b81e5a82ac600fe6d0d5aadb2d3c6f15 = $(`<div id="html_b81e5a82ac600fe6d0d5aadb2d3c6f15" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chichester</h1><div class="nugget-popup"><p>Chichester was part of the Bognor&ndash;to&ndash;Chichester area that recorded very high rainfall on 10&ndash;12 June 2012; local drainage networks were overwhelmed, causing surface water/urban flooding in vulnerable low&ndash;lying locations. (p5)</p></div></div></body></div>`)[0];
+                popup_f14c32b777384e1df5dbfdf1b3fcbf49.setContent(html_b81e5a82ac600fe6d0d5aadb2d3c6f15);
+            
+        
+
+        marker_d11c81fe443e236ab13743f7f501833a.bindPopup(popup_f14c32b777384e1df5dbfdf1b3fcbf49)
+        ;
+
+        
+    
+</script>
+</html>
