@@ -8,6 +8,6 @@ There are two geoJSON samples:
 The geoJSON properties are structured as follows:
 
 `"properties`" : {  
-        `"name"` : map feature name  
+&nbsp;&nbsp;&nbsp;&nbsp;`"name"` : map feature name  
 }
 
