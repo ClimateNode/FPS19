@@ -1,0 +1,1 @@
+# Sample geoJSON structure
