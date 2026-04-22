@@ -8,6 +8,13 @@ There are two geoJSON samples:
 The geoJSON properties are structured as follows:
 
 `"properties`" : {  
-&nbsp;&nbsp;&nbsp;&nbsp;`"name"` : map feature name  
+&nbsp;&nbsp;&nbsp;&nbsp;`"name"` : map feature name
+&nbsp;&nbsp;&nbsp;&nbsp;`"gross_type"` : category denoting the rough level of granularity of the feature, with three main levels: `admin` (administrative unit, e.g. County), `settlement` (city, town, village, parish or ward), `asset_or_street`. There are also `hydro` (for hydrological features) and `other` categories (e.g. other physical features or local toponyms) at the moment – we can decide what to do with these later. 
+&nbsp;&nbsp;&nbsp;&nbsp;`"medium_type"` : name of the class of the place name record in the original database in snake case
+&nbsp;&nbsp;&nbsp;&nbsp;`"fine_type"` : OpenStreetMap [map feature type](https://wiki.openstreetmap.org/wiki/Map_features), where available (not all map features in the dataset are present in OpenStreetMap, and not all coordinates are derived from it)
+&nbsp;&nbsp;&nbsp;&nbsp;`"events"` : [
+&nbsp;&nbsp;&nbsp;&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;]
 }
 
