@@ -6,8 +6,8 @@ There are two geoJSON samples:
 `large_geoJSON_sample_GB-KEN_all`: This is a more complex sample generated using (nearly) all the Kent Section 19 reports, resulting in 400+ map features. It is quite a bit more complex as individual map features may have experienced more than one event, and have information taken from more than one Section 19 report.
 
 The geoJSON properties are structured as follows:
-````
-"properties" : {
-    "name" : `map feature name`
+
+`"properties`" : {
+    `"name"` : map feature name
 }
-````
+
