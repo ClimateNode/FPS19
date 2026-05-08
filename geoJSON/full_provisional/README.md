@@ -1,12 +1,15 @@
 # Provisional full geoJSON
 
+Changes from the sample geoJSON structure:
+* the three type properties have been replaced by a single `type`
+* `llfa` property has been added
+* `ref` property has replaced `link` in order to give both the title and link of the flood investigation report
+
 The geoJSON properties are structured as follows:
 
 `"properties`" : {  
 &nbsp;&nbsp;&nbsp;&nbsp;`"name"` : map feature name  
-&nbsp;&nbsp;&nbsp;&nbsp;`"gross_type"` : category denoting the rough level of granularity of the feature, with three main levels: `admin` (administrative unit, e.g. County), `settlement` (city, town, village, parish or ward), `asset_or_street`. There are also `hydro` (for hydrological features) and `other` categories (e.g. other physical features or local toponyms) at the moment – we can decide what to do with these later.   
-&nbsp;&nbsp;&nbsp;&nbsp;`"medium_type"` : class in the original database as snake case  
-&nbsp;&nbsp;&nbsp;&nbsp;`"fine_type"` : OpenStreetMap [map feature type](https://wiki.openstreetmap.org/wiki/Map_features), where available (not all map features in the dataset are present in OpenStreetMap, and not all coordinates are derived from it)  
+&nbsp;&nbsp;&nbsp;&nbsp;`"type"` : map feature type description. One of [`"settlement"`,`"administrative unit"`,`"hydrographic feature"`,`"physical feature"`,`"street"`,`"asset"`,`"other feature"`]   
 &nbsp;&nbsp;&nbsp;&nbsp;`"events"` : \[  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"start_date"` : event start date (`null` if there is only a text description of when the event happened)  
@@ -32,9 +35,7 @@ The geoJSON properties are structured as follows:
 Example:  
 `"properties`" : {  
 &nbsp;&nbsp;&nbsp;&nbsp;`"name"`: "Barrington",  
-&nbsp;&nbsp;&nbsp;&nbsp;`"gross_type"`: "settlement",  
-&nbsp;&nbsp;&nbsp;&nbsp;`"medium_type"`: "urban",  
-&nbsp;&nbsp;&nbsp;&nbsp;`"fine_type"`: "administrative",  
+&nbsp;&nbsp;&nbsp;&nbsp;`"type"`: "settlement",  
 &nbsp;&nbsp;&nbsp;&nbsp;`"events"`: \[  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"start_date"`: "2015-07-17",  
