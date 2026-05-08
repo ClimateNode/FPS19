@@ -5,11 +5,18 @@ Changes from the sample geoJSON structure:
 * `llfa` property has been added
 * `ref` property has replaced `link` in order to give both the title and link of the flood investigation report
 
+Known issues
+* An `llfa` of `null` is allowed for the provisional version but won't be for the final version
+* Some `when_desc` strings are a bit messy – these will be tidied for the final version
+* Some map features problably have too much information, as previously discussed
+* Final version to have undergone a check for consistency of quantitative information with respect to the number of properties flooded 
+
 The geoJSON properties are structured as follows:
 
 `"properties`" : {  
 &nbsp;&nbsp;&nbsp;&nbsp;`"name"` : map feature name  
 &nbsp;&nbsp;&nbsp;&nbsp;`"type"` : map feature type description. One of [`"settlement"`,`"administrative unit"`,`"hydrographic feature"`,`"physical feature"`,`"street"`,`"asset"`,`"other feature"`]   
+&nbsp;&nbsp;&nbsp;&nbsp;`"llfa"` : Lead Local Flood Authority 
 &nbsp;&nbsp;&nbsp;&nbsp;`"events"` : \[  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"start_date"` : event start date (`null` if there is only a text description of when the event happened)  
