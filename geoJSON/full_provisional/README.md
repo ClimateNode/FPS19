@@ -9,7 +9,8 @@ Known issues
 * An `llfa` of `null` is allowed for the provisional version but won't be for the final version
 * Some `when_desc` strings are a bit messy – these will be tidied for the final version
 * Some map features problably have too much information, as previously discussed
-* Final version to have undergone a check for consistency of quantitative information with respect to the number of properties flooded 
+* Final version to have undergone a check for consistency of quantitative information with respect to the number of properties flooded
+* Cumbria is an old LLFA and needs to be replaced with Cumberland and Westmorland and Furness Unitary Authorities.
 
 The geoJSON properties are structured as follows:
 
