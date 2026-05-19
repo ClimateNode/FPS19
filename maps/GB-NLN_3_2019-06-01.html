@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_af21c18f1db56df4b5b3cfaeebfb6572 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_af21c18f1db56df4b5b3cfaeebfb6572" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_af21c18f1db56df4b5b3cfaeebfb6572 = L.map(
+                "map_af21c18f1db56df4b5b3cfaeebfb6572",
+                {
+                    center: [53.13716442611824, 0.17329635999516968],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_18f4c66b931a4f3a02f5d6ee839492bd = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_18f4c66b931a4f3a02f5d6ee839492bd.addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+    
+            var marker_411ba4cc7442e51f3af722873f760589 = L.marker(
+                [53.1731564, 0.1495908],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_90a619fd5598e7e4af3229f58cc67b9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_411ba4cc7442e51f3af722873f760589.setIcon(icon_90a619fd5598e7e4af3229f58cc67b9c);
+        
+    
+        var popup_8c38939e6fb4b48d22977ffab664a2c4 = L.popup({});
+
+        
+            
+                var html_229acfca93b43a488a9da43f20ace4c6 = $(`<div id="html_229acfca93b43a488a9da43f20ace4c6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lady Wath's Beck</h1><div class="nugget-popup"><p>Lady Wath (labelled as Lady Wath's Beck on the map) is shown as an ordinary watercourse contributing to internal property flooding in Great Steeping; properties are annotated with ordinary&ndash;watercourse flood markers linked to this channel. [IMG] (p19)</p></div></div></body></div>`)[0];
+                popup_8c38939e6fb4b48d22977ffab664a2c4.setContent(html_229acfca93b43a488a9da43f20ace4c6);
+            
+        
+
+        marker_411ba4cc7442e51f3af722873f760589.bindPopup(popup_8c38939e6fb4b48d22977ffab664a2c4)
+        ;
+
+        
+    
+    
+            var marker_15da392ddcd1dca5426633e20db9d153 = L.marker(
+                [53.10917482962565, 0.22757619366200837],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_fb2203c96293d580c611252923582678 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_15da392ddcd1dca5426633e20db9d153.setIcon(icon_fb2203c96293d580c611252923582678);
+        
+    
+        var popup_d10a74a6f519aa4155ac203278a303c6 = L.popup({});
+
+        
+            
+                var html_c5d77616bc7359b7da9202b295a4c79d = $(`<div id="html_c5d77616bc7359b7da9202b295a4c79d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Matt Pitts Lane, Wainfleet All Saints</h1><div class="nugget-popup"><p>Internal flooding of residential properties caused by fluvial (river) sources. [TAB] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>12 properties [TAB] (p10)</p></div></div></body></div>`)[0];
+                popup_d10a74a6f519aa4155ac203278a303c6.setContent(html_c5d77616bc7359b7da9202b295a4c79d);
+            
+        
+
+        marker_15da392ddcd1dca5426633e20db9d153.bindPopup(popup_d10a74a6f519aa4155ac203278a303c6)
+        ;
+
+        
+    
+    
+            var marker_f345c25b1d86cc18f2f5f2a4b2877d8e = L.marker(
+                [53.114275, 0.1990554],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_c9ba8f2fc73e6148b1da1d460abb0586 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f345c25b1d86cc18f2f5f2a4b2877d8e.setIcon(icon_c9ba8f2fc73e6148b1da1d460abb0586);
+        
+    
+        var popup_c8e31d875d8237ab42f9ea0d3461f343 = L.popup({});
+
+        
+            
+                var html_f5f5fb4d442979763311a6a0be213264 = $(`<div id="html_f5f5fb4d442979763311a6a0be213264" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brewster Lane, Wainfleet All Saints</h1><div class="nugget-popup"><p>Internal flooding of residential properties caused by fluvial (river) sources. [TAB] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 properties [TAB] (p10)</p></div></div></body></div>`)[0];
+                popup_c8e31d875d8237ab42f9ea0d3461f343.setContent(html_f5f5fb4d442979763311a6a0be213264);
+            
+        
+
+        marker_f345c25b1d86cc18f2f5f2a4b2877d8e.bindPopup(popup_c8e31d875d8237ab42f9ea0d3461f343)
+        ;
+
+        
+    
+    
+            var marker_de07846893390142e6c0faead56ff17a = L.marker(
+                [53.1088261, 0.236611],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_21fb74b0f336e47bc44d5542baf6b43a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_de07846893390142e6c0faead56ff17a.setIcon(icon_21fb74b0f336e47bc44d5542baf6b43a);
+        
+    
+        var popup_7c569adf71f415919e6b5cda3127b6b9 = L.popup({});
+
+        
+            
+                var html_f8dd5fc9a774aa88dde587220dc6f38b = $(`<div id="html_f8dd5fc9a774aa88dde587220dc6f38b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Spilsby Road, Wainfleet All Saints</h1><div class="nugget-popup"><p>Internal flooding of residential properties with multiple source attributions: majority from fluvial (river) sources, one by multiple sources and one unknown. [TAB] (p10)</p></div><div class="nugget-popup"><p>Internal flooding of properties on Spilsby Road from multiple sources (surface water, an ordinary watercourse and the main river). [IMG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>12 properties (10 by fluvial sources, 1 by multiple sources, 1 unknown) [TAB] (p10)</p></div><div class="nugget-popup quant"><p>2 properties (surface water); 1 property (ordinary watercourse); 1 property (main river) [IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_7c569adf71f415919e6b5cda3127b6b9.setContent(html_f8dd5fc9a774aa88dde587220dc6f38b);
+            
+        
+
+        marker_de07846893390142e6c0faead56ff17a.bindPopup(popup_7c569adf71f415919e6b5cda3127b6b9)
+        ;
+
+        
+    
+    
+            var marker_d03279a23b58410c25ba7490a5f343ba = L.marker(
+                [53.1031485, 0.23411],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_7485c36ff0b93cdd9c325776ac1dcedc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d03279a23b58410c25ba7490a5f343ba.setIcon(icon_7485c36ff0b93cdd9c325776ac1dcedc);
+        
+    
+        var popup_58e46ce583a002e9f678dca405022dd8 = L.popup({});
+
+        
+            
+                var html_af73fc191921f9c50c1a04d0c841388c = $(`<div id="html_af73fc191921f9c50c1a04d0c841388c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Havenside, Wainfleet All Saints</h1><div class="nugget-popup"><p>Internal flooding of residential properties caused by fluvial (river) sources. [TAB] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties [TAB] (p10)</p></div></div></body></div>`)[0];
+                popup_58e46ce583a002e9f678dca405022dd8.setContent(html_af73fc191921f9c50c1a04d0c841388c);
+            
+        
+
+        marker_d03279a23b58410c25ba7490a5f343ba.bindPopup(popup_58e46ce583a002e9f678dca405022dd8)
+        ;
+
+        
+    
+    
+            var marker_aa59a7626b694496d216d7fe4b9c4cc8 = L.marker(
+                [53.1083997, 0.2182061],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_a4ab1d34c46692b652b80603b05dfd0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aa59a7626b694496d216d7fe4b9c4cc8.setIcon(icon_a4ab1d34c46692b652b80603b05dfd0d);
+        
+    
+        var popup_441bbd0f5b1b14726e4391f808ee7606 = L.popup({});
+
+        
+            
+                var html_5dc7fd988ff8e3aee8a7ab22e98a68a1 = $(`<div id="html_5dc7fd988ff8e3aee8a7ab22e98a68a1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Crows Bridge, Wainfleet All Saints</h1><div class="nugget-popup"><p>Internal flooding of a residential property caused by fluvial (river) sources. [TAB] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div></div></body></div>`)[0];
+                popup_441bbd0f5b1b14726e4391f808ee7606.setContent(html_5dc7fd988ff8e3aee8a7ab22e98a68a1);
+            
+        
+
+        marker_aa59a7626b694496d216d7fe4b9c4cc8.bindPopup(popup_441bbd0f5b1b14726e4391f808ee7606)
+        ;
+
+        
+    
+    
+            var marker_5d7c66a7dc4374fbbd3ef04993844e18 = L.marker(
+                [53.1130528, 0.239651],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_978e7709328d09dbb2a3636c4d4a94f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5d7c66a7dc4374fbbd3ef04993844e18.setIcon(icon_978e7709328d09dbb2a3636c4d4a94f9);
+        
+    
+        var popup_7f1ff85623604a7893a415da99321522 = L.popup({});
+
+        
+            
+                var html_5060311bc2d51b04325ed3de4ccc84ee = $(`<div id="html_5060311bc2d51b04325ed3de4ccc84ee" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Liams Way, Wainfleet St Mary</h1><div class="nugget-popup"><p>Internal flooding of a residential property caused by fluvial (river) flooding. [TAB] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div></div></body></div>`)[0];
+                popup_7f1ff85623604a7893a415da99321522.setContent(html_5060311bc2d51b04325ed3de4ccc84ee);
+            
+        
+
+        marker_5d7c66a7dc4374fbbd3ef04993844e18.bindPopup(popup_7f1ff85623604a7893a415da99321522)
+        ;
+
+        
+    
+    
+            var marker_d0ccd919910764a2df26f203bff8ecde = L.marker(
+                [53.1110249, 0.2201518],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_ff094ceab39dd9b024dcc40b5e77fa4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d0ccd919910764a2df26f203bff8ecde.setIcon(icon_ff094ceab39dd9b024dcc40b5e77fa4f);
+        
+    
+        var popup_28e42bab4a60ce703597164be0cdb942 = L.popup({});
+
+        
+            
+                var html_77b5dcf01db629c059a759f62221b919 = $(`<div id="html_77b5dcf01db629c059a759f62221b919" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Collison Gate, Wainfleet All Saints</h1><div class="nugget-popup"><p>Internal flooding of a residential property caused by fluvial (river) flooding. [TAB] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div></div></body></div>`)[0];
+                popup_28e42bab4a60ce703597164be0cdb942.setContent(html_77b5dcf01db629c059a759f62221b919);
+            
+        
+
+        marker_d0ccd919910764a2df26f203bff8ecde.bindPopup(popup_28e42bab4a60ce703597164be0cdb942)
+        ;
+
+        
+    
+    
+            var marker_ff50c47a6836ce567e71ec55a8ceddf5 = L.marker(
+                [53.1100867, 0.1946792],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_aa0cd51d4eabefebe692cdd2d9b32400 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ff50c47a6836ce567e71ec55a8ceddf5.setIcon(icon_aa0cd51d4eabefebe692cdd2d9b32400);
+        
+    
+        var popup_06b55301cc1fd6dba2d42ae996513a4b = L.popup({});
+
+        
+            
+                var html_8ec26364952a4af8fd508afdd07a90a5 = $(`<div id="html_8ec26364952a4af8fd508afdd07a90a5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wainfleet Bank, Wainfleet All Saints</h1><div class="nugget-popup"><p>Internal flooding of a residential property caused by fluvial (river) flooding. [TAB] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div></div></body></div>`)[0];
+                popup_06b55301cc1fd6dba2d42ae996513a4b.setContent(html_8ec26364952a4af8fd508afdd07a90a5);
+            
+        
+
+        marker_ff50c47a6836ce567e71ec55a8ceddf5.bindPopup(popup_06b55301cc1fd6dba2d42ae996513a4b)
+        ;
+
+        
+    
+    
+            var marker_3ca1933d91a4388b17d165ae342e2d45 = L.marker(
+                [53.0856493, 0.2131389],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_39a3513c064eea662e31db0a79cc7300 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3ca1933d91a4388b17d165ae342e2d45.setIcon(icon_39a3513c064eea662e31db0a79cc7300);
+        
+    
+        var popup_8efcadfc7afc7db63f7996d75df8770a = L.popup({});
+
+        
+            
+                var html_7a3a2270489cc767f38dde39dfda403d = $(`<div id="html_7a3a2270489cc767f38dde39dfda403d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Lane, Wainfleet All Saints</h1><div class="nugget-popup"><p>Internal flooding of a property on Mill Lane caused by fluvial sources. [TAB] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div></div></body></div>`)[0];
+                popup_8efcadfc7afc7db63f7996d75df8770a.setContent(html_7a3a2270489cc767f38dde39dfda403d);
+            
+        
+
+        marker_3ca1933d91a4388b17d165ae342e2d45.bindPopup(popup_8efcadfc7afc7db63f7996d75df8770a)
+        ;
+
+        
+    
+    
+            var marker_474c703326e6b725896b005ad048c502 = L.marker(
+                [53.1104894, 0.2364245],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_84dcc3ed865b84a633d3c9b022207bc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_474c703326e6b725896b005ad048c502.setIcon(icon_84dcc3ed865b84a633d3c9b022207bc3);
+        
+    
+        var popup_426f8ebb5e9438e62e8fc442f73b3901 = L.popup({});
+
+        
+            
+                var html_9bdfbab3d092684990b983abaa766698 = $(`<div id="html_9bdfbab3d092684990b983abaa766698" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hastings Drive, Wainfleet All Saints</h1><div class="nugget-popup"><p>Internal flooding of a property on Hastings Drive from fluvial sources. [TAB] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div></div></body></div>`)[0];
+                popup_426f8ebb5e9438e62e8fc442f73b3901.setContent(html_9bdfbab3d092684990b983abaa766698);
+            
+        
+
+        marker_474c703326e6b725896b005ad048c502.bindPopup(popup_426f8ebb5e9438e62e8fc442f73b3901)
+        ;
+
+        
+    
+    
+            var marker_767bbf9edf136355e8815f5a2b26985d = L.marker(
+                [53.0916286, 0.2132888],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_ae673fd8583e9ba634edeb330beb2a1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_767bbf9edf136355e8815f5a2b26985d.setIcon(icon_ae673fd8583e9ba634edeb330beb2a1f);
+        
+    
+        var popup_243a7a876e1832fc70b6b7a7e725188f = L.popup({});
+
+        
+            
+                var html_50c2457a49c4f6b47c616f6206f01341 = $(`<div id="html_50c2457a49c4f6b47c616f6206f01341" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Low Road, Wainfleet St Mary</h1><div class="nugget-popup"><p>Internal flooding of a property on Low Road (source recorded as unknown). [TAB] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div></div></body></div>`)[0];
+                popup_243a7a876e1832fc70b6b7a7e725188f.setContent(html_50c2457a49c4f6b47c616f6206f01341);
+            
+        
+
+        marker_767bbf9edf136355e8815f5a2b26985d.bindPopup(popup_243a7a876e1832fc70b6b7a7e725188f)
+        ;
+
+        
+    
+    
+            var marker_5231c91cc9db23ec454b8b6134a36532 = L.marker(
+                [53.1233307, 0.1995402],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_04fa6ab524625de93c4ea952946d92a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5231c91cc9db23ec454b8b6134a36532.setIcon(icon_04fa6ab524625de93c4ea952946d92a9);
+        
+    
+        var popup_b1db86f251a914afd85bd854c2807961 = L.popup({});
+
+        
+            
+                var html_dda2c622ed535d227a2cede7cebd9d80 = $(`<div id="html_dda2c622ed535d227a2cede7cebd9d80" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Station Road, Thorpe Culvert</h1><div class="nugget-popup"><p>Internal flooding of residential properties on Station Road. [TAB] (p10)</p></div><div class="nugget-popup"><p>Internal flooding of properties on Station Road caused by main&ndash;river flooding (River Steeping). [IMG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>10 properties [TAB] (p10)</p></div><div class="nugget-popup quant"><p>10 properties [IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_b1db86f251a914afd85bd854c2807961.setContent(html_dda2c622ed535d227a2cede7cebd9d80);
+            
+        
+
+        marker_5231c91cc9db23ec454b8b6134a36532.bindPopup(popup_b1db86f251a914afd85bd854c2807961)
+        ;
+
+        
+    
+    
+            var marker_72168290b9a3483b614e67cfaedfca93 = L.marker(
+                [53.1260254, 0.201439],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_49f03c2f13160ed34713675f824bc31d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_72168290b9a3483b614e67cfaedfca93.setIcon(icon_49f03c2f13160ed34713675f824bc31d);
+        
+    
+        var popup_b4fd3713f61c1666cde90e92036c8b15 = L.popup({});
+
+        
+            
+                var html_701f5e96ce17c5862fe8cdff1f894434 = $(`<div id="html_701f5e96ce17c5862fe8cdff1f894434" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cork Lane, Thorpe Culvert</h1><div class="nugget-popup"><p>Internal flooding of a property on Cork Lane. [TAB] (p10)</p></div><div class="nugget-popup"><p>One property internally flooded due to main&ndash;river (River Steeping) flooding. [IMG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div><div class="nugget-popup quant"><p>1 property (main river) [IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_b4fd3713f61c1666cde90e92036c8b15.setContent(html_701f5e96ce17c5862fe8cdff1f894434);
+            
+        
+
+        marker_72168290b9a3483b614e67cfaedfca93.bindPopup(popup_b4fd3713f61c1666cde90e92036c8b15)
+        ;
+
+        
+    
+    
+            var marker_21a020732c2dafe7693bed89a849ac9c = L.marker(
+                [53.1302652, 0.1978849],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_3c4105f615aadb03dd8e1a8fbc9707bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_21a020732c2dafe7693bed89a849ac9c.setIcon(icon_3c4105f615aadb03dd8e1a8fbc9707bf);
+        
+    
+        var popup_dd702acdece4957c83641ead85e02d78 = L.popup({});
+
+        
+            
+                var html_1c51db101b794056a13a76350f92f7a5 = $(`<div id="html_1c51db101b794056a13a76350f92f7a5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tip Lane, Thorpe Culvert</h1><div class="nugget-popup"><p>One property on Tip Lane was internally flooded by an ordinary watercourse (fluvial flooding). [TAB] (p10)</p></div><div class="nugget-popup"><p>One property internally flooded due to an ordinary watercourse (local watercourse) failure/overflow. [IMG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div><div class="nugget-popup quant"><p>1 property (ordinary watercourse) [IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_dd702acdece4957c83641ead85e02d78.setContent(html_1c51db101b794056a13a76350f92f7a5);
+            
+        
+
+        marker_21a020732c2dafe7693bed89a849ac9c.bindPopup(popup_dd702acdece4957c83641ead85e02d78)
+        ;
+
+        
+    
+    
+            var marker_fe945256e07a4a33cc57bb3ff552a357 = L.marker(
+                [53.120543, 0.1971956],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_54e47fff5d2ea8954ca6ac681556260a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fe945256e07a4a33cc57bb3ff552a357.setIcon(icon_54e47fff5d2ea8954ca6ac681556260a);
+        
+    
+        var popup_a02c0dcdfe667bea13f57188ffa89d22 = L.popup({});
+
+        
+            
+                var html_5dd6235963e587f83f93eb3704ce712d = $(`<div id="html_5dd6235963e587f83f93eb3704ce712d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Culvert Road, Thorpe Culvert</h1><div class="nugget-popup"><p>One property on Culvert Road was internally flooded by fluvial (river) sources. (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p11)</p></div></div></body></div>`)[0];
+                popup_a02c0dcdfe667bea13f57188ffa89d22.setContent(html_5dd6235963e587f83f93eb3704ce712d);
+            
+        
+
+        marker_fe945256e07a4a33cc57bb3ff552a357.bindPopup(popup_a02c0dcdfe667bea13f57188ffa89d22)
+        ;
+
+        
+    
+    
+            var marker_0f29fa41b49bc0553e33cc566a21f7f8 = L.marker(
+                [53.1728732, 0.0696928],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_edb1dbfa326f55bd7d62e845ab7a9207 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0f29fa41b49bc0553e33cc566a21f7f8.setIcon(icon_edb1dbfa326f55bd7d62e845ab7a9207);
+        
+    
+        var popup_e629cc67fd2af4d8ae4bbbd58a75e9ee = L.popup({});
+
+        
+            
+                var html_d8c6160df08c8b4f6e325d3f1b8f2c61 = $(`<div id="html_d8c6160df08c8b4f6e325d3f1b8f2c61" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brickyard Lane, Hundleby</h1><div class="nugget-popup"><p>Surface water inundation led to internal flooding of a property on Brickyard Lane Hundelby. (p11)</p></div><div class="nugget-popup"><p>One property on Brickyard Lane was internally flooded by surface water. [IMG] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p11)</p></div><div class="nugget-popup quant"><p>1 internally flooded property [IMG] (p18)</p></div></div></body></div>`)[0];
+                popup_e629cc67fd2af4d8ae4bbbd58a75e9ee.setContent(html_d8c6160df08c8b4f6e325d3f1b8f2c61);
+            
+        
+
+        marker_0f29fa41b49bc0553e33cc566a21f7f8.bindPopup(popup_e629cc67fd2af4d8ae4bbbd58a75e9ee)
+        ;
+
+        
+    
+    
+            var marker_8de228d0a7c5bad23f5c3d94daf44331 = L.marker(
+                [53.1671972, 0.1834698],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_34201c6ebc391eda544912006f083870 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8de228d0a7c5bad23f5c3d94daf44331.setIcon(icon_34201c6ebc391eda544912006f083870);
+        
+    
+        var popup_3c7917da56b3260569a4ddc10e593f8a = L.popup({});
+
+        
+            
+                var html_b5c73e02c31dc4bbf0cfb7a7b935b212 = $(`<div id="html_b5c73e02c31dc4bbf0cfb7a7b935b212" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sandy Lane, Great Steeping</h1><div class="nugget-popup"><p>River (fluvial) flooding caused internal flooding of properties on Sandy Lane. (p11)</p></div><div class="nugget-popup"><p>Internally flooded properties reported on the street; map links these reports to nearby watercourses and indicates sources including main river and surface&ndash;water related flooding. [IMG] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 properties (p11)</p></div></div></body></div>`)[0];
+                popup_3c7917da56b3260569a4ddc10e593f8a.setContent(html_b5c73e02c31dc4bbf0cfb7a7b935b212);
+            
+        
+
+        marker_8de228d0a7c5bad23f5c3d94daf44331.bindPopup(popup_3c7917da56b3260569a4ddc10e593f8a)
+        ;
+
+        
+    
+    
+            var marker_cc5b59551cd23b3168d7358003ac2552 = L.marker(
+                [53.1556073, 0.1451636],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_e1f1a786f4e90e56482ddef6522d35a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cc5b59551cd23b3168d7358003ac2552.setIcon(icon_e1f1a786f4e90e56482ddef6522d35a3);
+        
+    
+        var popup_5b13d12fd995f75b08a2530543079614 = L.popup({});
+
+        
+            
+                var html_5446d3fb5b697ec348d562b2c8a6958c = $(`<div id="html_5446d3fb5b697ec348d562b2c8a6958c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Old Church Lane, Great Steeping</h1><div class="nugget-popup"><p>Properties on Old Church Lane experienced internal flooding from multiple sources (fluvial and surface water). (p11)</p></div><div class="nugget-popup"><p>Internally flooded properties reported on the street; properties marked on the map as affected by flooding originating from the main river and from surface water/ordinary watercourse sources. [IMG] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p11)</p></div></div></body></div>`)[0];
+                popup_5b13d12fd995f75b08a2530543079614.setContent(html_5446d3fb5b697ec348d562b2c8a6958c);
+            
+        
+
+        marker_cc5b59551cd23b3168d7358003ac2552.bindPopup(popup_5b13d12fd995f75b08a2530543079614)
+        ;
+
+        
+    
+    
+            var marker_d58fcc164f34b679663a8933d26e3ae5 = L.marker(
+                [53.1558319, 0.1378649],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_9ce3059970d3b39543457eec03e72737 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d58fcc164f34b679663a8933d26e3ae5.setIcon(icon_9ce3059970d3b39543457eec03e72737);
+        
+    
+        var popup_a4ba6d965e1f358fe84fd69e99c8faa0 = L.popup({});
+
+        
+            
+                var html_37fc9c802654313d3f938f6d152464e3 = $(`<div id="html_37fc9c802654313d3f938f6d152464e3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Lane, Great Steeping</h1><div class="nugget-popup"><p>Properties on Mill Lane experienced internal flooding from multiple sources (fluvial and surface water). (p11)</p></div><div class="nugget-popup"><p>Internally flooded properties reported on the street; locations are shown on the map near watercourses, with sources indicated as main river and surface&ndash;water/ordinary watercourse contributions. [IMG] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p11)</p></div></div></body></div>`)[0];
+                popup_a4ba6d965e1f358fe84fd69e99c8faa0.setContent(html_37fc9c802654313d3f938f6d152464e3);
+            
+        
+
+        marker_d58fcc164f34b679663a8933d26e3ae5.bindPopup(popup_a4ba6d965e1f358fe84fd69e99c8faa0)
+        ;
+
+        
+    
+    
+            var marker_86ff63179f4f6575714572862a12fd5e = L.marker(
+                [53.111676, 0.2411992],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_336a635a6261834640ef8cd874a65dda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_86ff63179f4f6575714572862a12fd5e.setIcon(icon_336a635a6261834640ef8cd874a65dda);
+        
+    
+        var popup_7f820fc394a8eb9cf14e45714c7dd768 = L.popup({});
+
+        
+            
+                var html_63449fe78b1e47b76d71a5546e731b56 = $(`<div id="html_63449fe78b1e47b76d71a5546e731b56" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Croft Lane, Wainfleet St Mary</h1><div class="nugget-popup"><p>Surface water flooding caused internal flooding of properties on Croft Lane. (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties (p11)</p></div></div></body></div>`)[0];
+                popup_7f820fc394a8eb9cf14e45714c7dd768.setContent(html_63449fe78b1e47b76d71a5546e731b56);
+            
+        
+
+        marker_86ff63179f4f6575714572862a12fd5e.bindPopup(popup_7f820fc394a8eb9cf14e45714c7dd768)
+        ;
+
+        
+    
+    
+            var marker_4a108fffcb0271df81f2f7923ae41218 = L.marker(
+                [53.1123099, 0.2490587],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_146e14160b52b5ca936051b99346ada1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4a108fffcb0271df81f2f7923ae41218.setIcon(icon_146e14160b52b5ca936051b99346ada1);
+        
+    
+        var popup_dcbd84a444cfcb295f3d6cc3d64390b5 = L.popup({});
+
+        
+            
+                var html_879f65acdd8f20ca2b15116047e5ec8b = $(`<div id="html_879f65acdd8f20ca2b15116047e5ec8b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Croft Bank, Wainfleet St Mary</h1><div class="nugget-popup"><p>Surface&ndash;water flooding caused internal flooding of residential properties on Croft Bank. (p11)</p></div><div class="nugget-popup"><p>Internal flooding of properties due to surface water runoff within the settlement. [IMG] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties (p11)</p></div><div class="nugget-popup quant"><p>2 properties [IMG] (p20)</p></div></div></body></div>`)[0];
+                popup_dcbd84a444cfcb295f3d6cc3d64390b5.setContent(html_879f65acdd8f20ca2b15116047e5ec8b);
+            
+        
+
+        marker_4a108fffcb0271df81f2f7923ae41218.bindPopup(popup_dcbd84a444cfcb295f3d6cc3d64390b5)
+        ;
+
+        
+    
+    
+            var marker_d3597f9a398d1b6c45c98e1311ef2ce9 = L.marker(
+                [53.1365543, 0.1763325],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_51b94d49b193490bc02f17a0e47c17b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d3597f9a398d1b6c45c98e1311ef2ce9.setIcon(icon_51b94d49b193490bc02f17a0e47c17b3);
+        
+    
+        var popup_92e141d04650c644aaab866990884a39 = L.popup({});
+
+        
+            
+                var html_46b5882bf9e3a1493e49e17ffd80fbdc = $(`<div id="html_46b5882bf9e3a1493e49e17ffd80fbdc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Clough Lane, Firsby</h1><div class="nugget-popup"><p>One property internally flooded due to main&ndash;river (River Steeping) flooding. [IMG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (main river) [IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_92e141d04650c644aaab866990884a39.setContent(html_46b5882bf9e3a1493e49e17ffd80fbdc);
+            
+        
+
+        marker_d3597f9a398d1b6c45c98e1311ef2ce9.bindPopup(popup_92e141d04650c644aaab866990884a39)
+        ;
+
+        
+    
+    
+            var marker_50af31d301a19878d4f03f711d3c0a6d = L.marker(
+                [53.2680103, 0.0127758],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_5eb705bec4511fe60a535fd1fa361087 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_50af31d301a19878d4f03f711d3c0a6d.setIcon(icon_5eb705bec4511fe60a535fd1fa361087);
+        
+    
+        var popup_dd8cc18957b2d13bfe4597c45c694d63 = L.popup({});
+
+        
+            
+                var html_8642b65b04d042249a0694b69beb660a = $(`<div id="html_8642b65b04d042249a0694b69beb660a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Lindsey</h1><div class="nugget-popup"><p>Internal flooding across the district: properties in multiple parishes were internally flooded; mass evacuations over several days affected local communities and infrastructure. The relief channel breach exacerbated the flooding, and local pumping stations struggled to cope. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>88 properties internally flooded; 580 homes evacuated over 6 days; around 1000 people affected (p3)</p></div></div></body></div>`)[0];
+                popup_dd8cc18957b2d13bfe4597c45c694d63.setContent(html_8642b65b04d042249a0694b69beb660a);
+            
+        
+
+        marker_50af31d301a19878d4f03f711d3c0a6d.bindPopup(popup_dd8cc18957b2d13bfe4597c45c694d63)
+        ;
+
+        
+    
+    
+            var marker_2dcef3db3a8d9a1c83c898364f051fd5 = L.marker(
+                [53.1823034, -0.2031209],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_22edda653b0457d0daa1906b3cf9dd58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2dcef3db3a8d9a1c83c898364f051fd5.setIcon(icon_22edda653b0457d0daa1906b3cf9dd58);
+        
+    
+        var popup_062b4c239ab072315733d2b74a953668 = L.popup({});
+
+        
+            
+                var html_2b05fc1573e393feafeebce94b482a54 = $(`<div id="html_2b05fc1573e393feafeebce94b482a54" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lincolnshire</h1><div class="nugget-popup"><p>Portions of Lincolnshire within the Steeping River catchment experienced internal property flooding, particularly in the lower catchment around Wainfleet All Saints. [IMG] (p12)</p></div></div></body></div>`)[0];
+                popup_062b4c239ab072315733d2b74a953668.setContent(html_2b05fc1573e393feafeebce94b482a54);
+            
+        
+
+        marker_2dcef3db3a8d9a1c83c898364f051fd5.bindPopup(popup_062b4c239ab072315733d2b74a953668)
+        ;
+
+        
+    
+    
+            var marker_d7d29d5a7c448aec3369ab804c97d601 = L.marker(
+                [53.10745, 0.2369499],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_9cd5ece88a266c03b44d9d8c8faaaed1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d7d29d5a7c448aec3369ab804c97d601.setIcon(icon_9cd5ece88a266c03b44d9d8c8faaaed1);
+        
+    
+        var popup_3aa7ab417831da74213eeafa0d0e4deb = L.popup({});
+
+        
+            
+                var html_b67508fa6dd950dd72d96c33ddb09c3f = $(`<div id="html_b67508fa6dd950dd72d96c33ddb09c3f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wainfleet All Saints</h1><div class="nugget-popup"><p>Floodwaters inundated roads, yards, agricultural fields and parts of the residential settlement. Water reached up to the bottom of building windows and partially submerged fences and entrances, disrupting transportation and access. A levee/embankment breach allowed forceful flow into adjacent land; sandbags were deployed in attempts to control the breach. (p1)</p></div><div class="nugget-popup"><p>Wainfleet was flooded during June 2019. The investigation references a breach in the relief channel that contributed to flooding of the town and led to recommendations for embankment assessment and other mitigation measures. (p5)</p></div><div class="nugget-popup"><p>Wainfleet was flooded in June 2019 as a result of high flows in the Steeping River and its relief channel, triggering a Section 19 investigation and subsequent recommendations to RMAs. [PAG] (p6)</p></div><div class="nugget-popup"><p>Wainfleet experienced a flood incident in June 2019 that formed part of the catchment&ndash;wide flooding response; properties suffered internal flooding and Risk Management Authorities mounted a collective response to the incident. (p9)</p></div><div class="nugget-popup"><p>Multiple properties in Wainfleet experienced internal flooding from fluvial sources; multi&ndash;agency response included evacuation coordination, Fire and Rescue pumping properties out, RAF dropping sandbags to seal a breach, and Environment Agency repair/reinforcement of the breached bank. [TAB,PAG] (p10)</p></div><div class="nugget-popup"><p>Concentration of internal property flooding in the town; properties reported internal flooding caused by main river overtopping and surface&ndash;water runoff, with multiple&ndash;source flooding incidents in the lower catchment near the town. [IMG] (p12)</p></div><div class="nugget-popup"><p>Wainfleet experienced the most intense rainfall in the catchment during 10&ndash;11 June 2019 (record daily totals) which contributed to flooding in the town during the June 2019 event. [TAB] (p13)</p></div><div class="nugget-popup"><p>Multiple streets in Wainfleet experienced internal flooding from fluvial (river) sources and some surface&ndash;water/other sources. Fire and Rescue Service responded: pumped out properties, visited affected residents to offer advice and gathered information, and carried out measures to minimise flood impacts. A multi&ndash;agency group (Environment Agency, Lincolnshire County Council, East Lindsey District Council, Lincolnshire Police) coordinated evacuations of Wainfleet. The RAF dropped sandbags to seal a breach. The Environment Agency repaired and reinforced the bank at the breach site. Witham Fourth District IDB and Lindsey Marsh IDB worked together to pump water away from the breached area. [IMG] (p14)</p></div><div class="nugget-popup"><p>Internal flooding of properties concentrated in central and southern Wainfleet All Saints. The majority of internally flooded properties are attributed to the main river (Steeping River); additional properties were flooded by surface water and by multiple/undetermined sources. Flooding is clustered along main roads and adjacent to watercourses. [IMG] (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>88 incidents of internal flooding (p9)</p></div><div class="nugget-popup quant"><p>12 properties on Matt Pitts Lane; 11 properties on Brewster Lane; 12 properties on Spilsby Road (10 fluvial, 1 multiple sources, 1 unknown); 3 properties on Havenside; 1 property on Crows Bridge; 1 property on Liam's Way; 1 property on Collison Gate; 1 property on Wainfleet Bank; 1 property on Mill Lane; 1 property on Hastings Drive; 1 property on Low Road [TAB,PAG] (p10)</p></div><div class="nugget-popup quant"><p>12 properties on Matt Pitts Lane; 11 properties on Brewster Lane; 12 properties on Spilsby Road (10 fluvial, 1 multiple sources, 1 unknown); 3 properties on Havenside; 1 property on Crows Bridge; 1 on Liam's Way; 1 on Collison Gate; 1 on Wainfleet Bank; 1 on Mill Lane; 1 on Hastings Drive; 1 on Low Road (total 45 properties internally flooded in Wainfleet) [IMG] (p14)</p></div></div></body></div>`)[0];
+                popup_3aa7ab417831da74213eeafa0d0e4deb.setContent(html_b67508fa6dd950dd72d96c33ddb09c3f);
+            
+        
+
+        marker_d7d29d5a7c448aec3369ab804c97d601.bindPopup(popup_3aa7ab417831da74213eeafa0d0e4deb)
+        ;
+
+        
+    
+    
+            var marker_606157764344588edd49160bba492366 = L.marker(
+                [53.12369945972579, 0.19983218828772162],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_863df87a54f6862abf3acc9ccffa6f0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_606157764344588edd49160bba492366.setIcon(icon_863df87a54f6862abf3acc9ccffa6f0c);
+        
+    
+        var popup_303c16fc498993c64692df1a66ad243d = L.popup({});
+
+        
+            
+                var html_babb82d4b1fc6538d9c316f8377df95f = $(`<div id="html_babb82d4b1fc6538d9c316f8377df95f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thorpe Culvert</h1><div class="nugget-popup"><p>Local pumping infrastructure was affected during the event: Thorpe Culvert pumping station was turned off for one hour on 12 June 2019 due to the volume of water. The parish grouping that includes Thorpe Culvert (Thorpe St Peter, Thorpe Culvert and Firsby) experienced internal property flooding. (p3)</p></div><div class="nugget-popup"><p>Area&ndash;level internal flooding incidents between 11&ndash;16 June 2019 affecting residential streets in the Thorpe St Peter / Thorpe Culvert / Firsby area. [TAB] (p10)</p></div><div class="nugget-popup"><p>Multiple properties were flooded due to the main river source; the map shows a concentration of main&ndash;river flooding incidents associated with Station Road. [IMG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Pumping station turned off for one hour on 12 June 2019; 18 properties reported internally flooded in Thorpe St Peter, Thorpe Culvert and Firsby (parish total). (p3)</p></div><div class="nugget-popup quant"><p>10 properties on Station Road; 4 properties on Spilsby Road; 1 property on Cork Lane; 1 property on Tip Lane [TAB] (p10)</p></div><div class="nugget-popup quant"><p>10 properties (Station Road: main river) [IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_303c16fc498993c64692df1a66ad243d.setContent(html_babb82d4b1fc6538d9c316f8377df95f);
+            
+        
+
+        marker_606157764344588edd49160bba492366.bindPopup(popup_303c16fc498993c64692df1a66ad243d)
+        ;
+
+        
+    
+    
+            var marker_007da8bd0395f333e9be648dec6eec54 = L.marker(
+                [53.1233692, 0.2162406],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_a515dff9b441c5cfdcee5c0d57cde384 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_007da8bd0395f333e9be648dec6eec54.setIcon(icon_a515dff9b441c5cfdcee5c0d57cde384);
+        
+    
+        var popup_6c5ac1e9a744e79d16e3163c330d15af = L.popup({});
+
+        
+            
+                var html_4aaa27526e37af387fbd672112ddc194 = $(`<div id="html_4aaa27526e37af387fbd672112ddc194" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thorpe St Peter</h1><div class="nugget-popup"><p>Named among the parishes where properties were internally flooded during the event. (p3)</p></div><div class="nugget-popup"><p>Internal flooding of properties in the Thorpe St Peter area (Station Road) caused by fluvial sources; local IDBs worked to pump water away from the breached area. [TAB] (p10)</p></div><div class="nugget-popup"><p>At least one property in the village (on Culvert Road) was internally flooded by fluvial sources. (p11)</p></div><div class="nugget-popup"><p>Internal flooding of properties reported within the village; map shows a cluster of flooded&ndash;property reports (multiple sources indicated, including surface water and main&ndash;river related flooding). [IMG] (p12)</p></div><div class="nugget-popup"><p>Multiple residential properties experienced internal flooding from fluvial sources and surface water; local drainage/pumping operations were undertaken by internal drainage boards to remove water from breached areas. [IMG] (p14)</p></div><div class="nugget-popup"><p>Properties in the village were internally flooded from multiple sources (surface water, ordinary watercourse and main river); incidents are shown on the map concentrated along local roads (including Spilsby Road). [IMG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of the combined 18 properties listed for 'Thorpe St Peter, Thorpe Culvertand Firsby' (p3)</p></div><div class="nugget-popup quant"><p>10 properties on Station Road [TAB] (p10)</p></div><div class="nugget-popup quant"><p>1 property (p11)</p></div><div class="nugget-popup quant"><p>10 properties on Station Road; 4 properties on Spilsby Road; 1 property on Cork Lane; 1 property on Tip Lane (total 16 properties internally flooded) [IMG] (p14)</p></div><div class="nugget-popup quant"><p>4 properties (Spilsby Road: 2 surface water; 1 ordinary watercourse; 1 main river) [IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_6c5ac1e9a744e79d16e3163c330d15af.setContent(html_4aaa27526e37af387fbd672112ddc194);
+            
+        
+
+        marker_007da8bd0395f333e9be648dec6eec54.bindPopup(popup_6c5ac1e9a744e79d16e3163c330d15af)
+        ;
+
+        
+    
+    
+            var marker_3784ac7eb78c2eec5e06c81a9394bdcf = L.marker(
+                [53.1453087, 0.177353],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_2bde2ef07277f62152834e2b04bb500c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3784ac7eb78c2eec5e06c81a9394bdcf.setIcon(icon_2bde2ef07277f62152834e2b04bb500c);
+        
+    
+        var popup_cae43ba23e976e2fdded0e3746286861 = L.popup({});
+
+        
+            
+                var html_bedd8a17fd229e1c37b50456a35f3856 = $(`<div id="html_bedd8a17fd229e1c37b50456a35f3856" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Firsby</h1><div class="nugget-popup"><p>Named among the parishes where properties were internally flooded. Local pumping infrastructure at Thorpe Culvert struggled: Thorpe Culvert pumping station was turned off for one hour on 12 June 2019 as pumps struggled to cope. (p3)</p></div><div class="nugget-popup"><p>Area&ndash;level internal flooding incidents between 11&ndash;16 June 2019 affecting residential streets in the Thorpe St Peter / Thorpe Culvert / Firsby area. [TAB] (p10)</p></div><div class="nugget-popup"><p>One property in Firsby was internally flooded by surface water. (p11)</p></div><div class="nugget-popup"><p>At least one property in Firsby was flooded from the main river (shown on the map at Clough Road). [IMG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of the combined 18 properties listed for 'Thorpe St Peter, Thorpe Culvertand Firsby' (p3)</p></div><div class="nugget-popup quant"><p>10 properties on Station Road; 4 properties on Spilsby Road; 1 property on Cork Lane; 1 property on Tip Lane [TAB] (p10)</p></div><div class="nugget-popup quant"><p>1 property (p11)</p></div><div class="nugget-popup quant"><p>1 property (Clough Road: main river) [IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_cae43ba23e976e2fdded0e3746286861.setContent(html_bedd8a17fd229e1c37b50456a35f3856);
+            
+        
+
+        marker_3784ac7eb78c2eec5e06c81a9394bdcf.bindPopup(popup_cae43ba23e976e2fdded0e3746286861)
+        ;
+
+        
+    
+    
+            var marker_53db6bbf621c3d08df0570fdcc10c4ea = L.marker(
+                [53.1781825, 0.0763308],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_8c7bfd4e08eb0a43fc506675bf6bed39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_53db6bbf621c3d08df0570fdcc10c4ea.setIcon(icon_8c7bfd4e08eb0a43fc506675bf6bed39);
+        
+    
+        var popup_14a9fa2da1058e5dd6a28852d316e17e = L.popup({});
+
+        
+            
+                var html_7ea31bb44fbd77a223d7458f06226927 = $(`<div id="html_7ea31bb44fbd77a223d7458f06226927" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hundleby</h1><div class="nugget-popup"><p>Named among the parishes where properties were internally flooded during the event. (p3)</p></div><div class="nugget-popup"><p>One property on Brickyard Lane in Hundleby was internally flooded by surface water. (p11)</p></div><div class="nugget-popup"><p>One property was internally flooded by surface water. [IMG] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of the combined 3 properties listed for 'Partney, Hundelby and Greetham' (p3)</p></div><div class="nugget-popup quant"><p>1 property (p11)</p></div><div class="nugget-popup quant"><p>1 internally flooded property [IMG] (p18)</p></div></div></body></div>`)[0];
+                popup_14a9fa2da1058e5dd6a28852d316e17e.setContent(html_7ea31bb44fbd77a223d7458f06226927);
+            
+        
+
+        marker_53db6bbf621c3d08df0570fdcc10c4ea.bindPopup(popup_14a9fa2da1058e5dd6a28852d316e17e)
+        ;
+
+        
+    
+    
+            var marker_b2b42403c49479a0f2ceda1570c64a15 = L.marker(
+                [53.2173903, -0.0415723],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_cdde3002c1827e213eca5fd895caab5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b2b42403c49479a0f2ceda1570c64a15.setIcon(icon_cdde3002c1827e213eca5fd895caab5d);
+        
+    
+        var popup_83025727d70dddfd0e454cca7a253879 = L.popup({});
+
+        
+            
+                var html_13fcb8b77af9741c0b69b702d617dc5e = $(`<div id="html_13fcb8b77af9741c0b69b702d617dc5e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Greetham</h1><div class="nugget-popup"><p>Named among the parishes where properties were internally flooded during the event. (p3)</p></div><div class="nugget-popup"><p>One property in Greetham was internally flooded by surface water. (p11)</p></div><div class="nugget-popup"><p>One property was internally flooded by surface water. [IMG] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of the combined 3 properties listed for 'Partney, Hundelby and Greetham' (p3)</p></div><div class="nugget-popup quant"><p>1 property (p11)</p></div><div class="nugget-popup quant"><p>1 internally flooded property [IMG] (p18)</p></div></div></body></div>`)[0];
+                popup_83025727d70dddfd0e454cca7a253879.setContent(html_13fcb8b77af9741c0b69b702d617dc5e);
+            
+        
+
+        marker_b2b42403c49479a0f2ceda1570c64a15.bindPopup(popup_83025727d70dddfd0e454cca7a253879)
+        ;
+
+        
+    
+    
+            var marker_78d4189beaa3ebc18d2986951e08c689 = L.marker(
+                [53.193616484211816, 0.11039270859450269],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_37b472c5324a616a22765eb31a5e3c5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_78d4189beaa3ebc18d2986951e08c689.setIcon(icon_37b472c5324a616a22765eb31a5e3c5d);
+        
+    
+        var popup_aaa8d0854c8a9fe60f81c2189f17c82c = L.popup({});
+
+        
+            
+                var html_431f04985bc8e0649b18cf19541c41a1 = $(`<div id="html_431f04985bc8e0649b18cf19541c41a1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Partney</h1><div class="nugget-popup"><p>One property in Partney was internally flooded by surface water. (p11)</p></div><div class="nugget-popup"><p>One property was internally flooded by surface water. [IMG] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p11)</p></div><div class="nugget-popup quant"><p>1 internally flooded property [IMG] (p18)</p></div></div></body></div>`)[0];
+                popup_aaa8d0854c8a9fe60f81c2189f17c82c.setContent(html_431f04985bc8e0649b18cf19541c41a1);
+            
+        
+
+        marker_78d4189beaa3ebc18d2986951e08c689.bindPopup(popup_aaa8d0854c8a9fe60f81c2189f17c82c)
+        ;
+
+        
+    
+    
+            var marker_bff3dbfa45cb4f75f02d5f3af8a001c7 = L.marker(
+                [53.159004, 0.15512028],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_3a48e04b2b995fd8e2f669f3746f0f58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bff3dbfa45cb4f75f02d5f3af8a001c7.setIcon(icon_3a48e04b2b995fd8e2f669f3746f0f58);
+        
+    
+        var popup_0caeec89320ee8a4ab1615d22bf70390 = L.popup({});
+
+        
+            
+                var html_b1416cde06ebde85049a55e13721db15 = $(`<div id="html_b1416cde06ebde85049a55e13721db15" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Great Steeping</h1><div class="nugget-popup"><p>Multiple properties in Great Steeping experienced internal flooding: a mix of fluvial and combined&ndash;source events affected the village. (p11)</p></div><div class="nugget-popup"><p>Internal flooding of properties reported within the village; map shows a cluster of flooded&ndash;property reports in and around Great Steeping (sources include surface water and main&ndash;river related flooding). [IMG] (p12)</p></div><div class="nugget-popup"><p>Internally flooded properties reported within Great Steeping on multiple streets (map annotations list Old Church Lane, Sandy Lane, Mill Lane and nearby farms). Flooding incidents concentrated along main roads and adjacent to watercourses; sources shown on the map include the main river (Steeping River), surface water and ordinary watercourses (multiple&ndash;source flooding). [IMG] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>7 properties (p11)</p></div></div></body></div>`)[0];
+                popup_0caeec89320ee8a4ab1615d22bf70390.setContent(html_b1416cde06ebde85049a55e13721db15);
+            
+        
+
+        marker_bff3dbfa45cb4f75f02d5f3af8a001c7.bindPopup(popup_0caeec89320ee8a4ab1615d22bf70390)
+        ;
+
+        
+    
+    
+            var marker_7f918530d8effd36933246b70c436184 = L.marker(
+                [53.1620262, 0.243838],
+                {}
+            ).addTo(map_af21c18f1db56df4b5b3cfaeebfb6572);
+        
+    
+            var icon_53d455480ee394cf6331b79f546e29a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7f918530d8effd36933246b70c436184.setIcon(icon_53d455480ee394cf6331b79f546e29a2);
+        
+    
+        var popup_2e7b986386101ab4056ce7a32ab732fe = L.popup({});
+
+        
+            
+                var html_ae07e5bf0829e97b56c52e75932fee99 = $(`<div id="html_ae07e5bf0829e97b56c52e75932fee99" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burgh Le Marsh</h1><div class="nugget-popup"><p>Surface&ndash;water flooding caused internal flooding of residential properties in Burgh Le Marsh. (p11)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties caused by surface water runoff clustered within the town. [IMG] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties (p11)</p></div><div class="nugget-popup quant"><p>3 properties [IMG] (p20)</p></div></div></body></div>`)[0];
+                popup_2e7b986386101ab4056ce7a32ab732fe.setContent(html_ae07e5bf0829e97b56c52e75932fee99);
+            
+        
+
+        marker_7f918530d8effd36933246b70c436184.bindPopup(popup_2e7b986386101ab4056ce7a32ab732fe)
+        ;
+
+        
+    
+</script>
+</html>
