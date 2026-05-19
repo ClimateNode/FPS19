@@ -11,7 +11,7 @@ Known issues
 * Some map features problably have too much information, as previously discussed
 * Final version to have undergone a check for consistency of quantitative information with respect to the number of properties flooded
 * Cumbria is an old LLFA and needs to be replaced with Cumberland and Westmorland and Furness Unitary Authorities.
-* Remove point in Wales and the North Sea
+* Remove point in Wales and the North Sea. Also "UK" and "England"
 
 The geoJSON properties are structured as follows:
 
