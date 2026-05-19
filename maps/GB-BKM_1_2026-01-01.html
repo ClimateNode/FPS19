@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_78a706a840e32b933c2de036bef727bf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_78a706a840e32b933c2de036bef727bf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_78a706a840e32b933c2de036bef727bf = L.map(
+                "map_78a706a840e32b933c2de036bef727bf",
+                {
+                    center: [51.84611457453107, -0.7341859194999643],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_80bbc921049d21c14a97f1fc45edb80b = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_80bbc921049d21c14a97f1fc45edb80b.addTo(map_78a706a840e32b933c2de036bef727bf);
+    
+            var marker_5f6a3c9f904f8c09e03230f4b50ffc3e = L.marker(
+                [51.667735766681965, -0.6189785814342308],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_4bd3ca636b914ef92bf3f5cd88e8abe7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5f6a3c9f904f8c09e03230f4b50ffc3e.setIcon(icon_4bd3ca636b914ef92bf3f5cd88e8abe7);
+        
+    
+        var popup_edb1700f5a131c216ecacea722b7d16b = L.popup({});
+
+        
+            
+                var html_4d0c215faaf8e2be33cb23f8ed04a14d = $(`<div id="html_4d0c215faaf8e2be33cb23f8ed04a14d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Maltings</h1><div class="nugget-popup"><p>The culvert beneath The Maltings had a restricted flow (identified as area of concern A), reducing river conveyance through Old Amersham and contributing to local flood risk. [PAG,IMG] (p7)</p></div><div class="nugget-popup"><p>The Maltings culvert was identified as a possible restriction and under&ndash;capacity during high flows; its siphon design encourages debris build&ndash;up immediately downstream, contributing to high water levels. EA Operations attended to remove debris; a local resident entered the culvert to remove debris, placing themselves in danger. Two downstream weirs and collected silt further impeded flow. [MUL] (p14)</p></div><div class="nugget-popup"><p>The culvert under The Maltings was partly restricted during the event, reducing conveyance and contributing to elevated local water levels and surface drainage not discharging freely into the river. [PAG] (p19)</p></div><div class="nugget-popup"><p>The culvert located under The Maltings had its flow partly restricted, which prevented rapid discharge of river water, caused backing up of flow at the culvert and reduced the drainage system's ability to convey additional flows, contributing to local flooding. [PAG] (p20)</p></div><div class="nugget-popup"><p>A partial flow restriction in the culvert underneath The Maltings was identified as the primary cause of upstream flooding; EA installed bypass pumping and jetted the culvert (clearing the obstruction) starting 12 February 2014, after which no further flooding occurred. [MUL] (p22)</p></div><div class="nugget-popup"><p>Culvert under The Maltings was partially restricted during high river levels, causing water to back up and impeding flow. (p23)</p></div><div class="nugget-popup"><p>Investigation found a partial flow restriction within the culvert underneath The Maltings which contributed to High Street and garden flooding; removal of an obstruction and subsequent jetting of the culvert substantially restored flow and reduced water levels, ending most of the flooding affecting the High Street. [TAB,MUL] (p24)</p></div><div class="nugget-popup"><p>The culvert under The Maltings was partially restricted, causing water to back up and contributing to local flooding. (p30)</p></div><div class="nugget-popup"><p>Standing floodwater inundated the Maltings area/courtyard. Vehicles and a caravan were partially submerged and debris/vegetation visible, indicating waterlogged surroundings and likely vehicle/property damage and loss of access. [IMG] (p44)</p></div></div></body></div>`)[0];
+                popup_edb1700f5a131c216ecacea722b7d16b.setContent(html_4d0c215faaf8e2be33cb23f8ed04a14d);
+            
+        
+
+        marker_5f6a3c9f904f8c09e03230f4b50ffc3e.bindPopup(popup_edb1700f5a131c216ecacea722b7d16b)
+        ;
+
+        
+    
+    
+            var marker_aa69325be1532ea33083cbcf10f036a8 = L.marker(
+                [51.6687957, -0.6200158],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_b8b4badf49f30e9a317c10bff19da1bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aa69325be1532ea33083cbcf10f036a8.setIcon(icon_b8b4badf49f30e9a317c10bff19da1bc);
+        
+    
+        var popup_b7bdb7c0d6c6ea4eeb5ef798a0c82804 = L.popup({});
+
+        
+            
+                var html_3967fb4a854462143df2b1fd2131b6aa = $(`<div id="html_3967fb4a854462143df2b1fd2131b6aa" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barn Meadow</h1><div class="nugget-popup"><p>Flooding of the footpath into Barn Meadow, with the path submerged and access impeded. [IMG] (p40)</p></div><div class="nugget-popup"><p>The footpath to Barn Meadow from Mill Lane was submerged and impassable (photo 10/02/14); the Misbourne alongside Barn Meadow was also photographed with raised water levels (09/01/14). [IMG,PAG,MUL] (p42)</p></div></div></body></div>`)[0];
+                popup_b7bdb7c0d6c6ea4eeb5ef798a0c82804.setContent(html_3967fb4a854462143df2b1fd2131b6aa);
+            
+        
+
+        marker_aa69325be1532ea33083cbcf10f036a8.bindPopup(popup_b7bdb7c0d6c6ea4eeb5ef798a0c82804)
+        ;
+
+        
+    
+    
+            var marker_d410d8ce096a213558ba65349bbfde7a = L.marker(
+                [51.66386140077072, -0.6074233638836425],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_fd9a4aae64d846a59e64990339e01886 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d410d8ce096a213558ba65349bbfde7a.setIcon(icon_fd9a4aae64d846a59e64990339e01886);
+        
+    
+        var popup_c36e5eadfcf447acdd595c4ca2ad5e4d = L.popup({});
+
+        
+            
+                var html_7c28b57405ae875f1c7d2e186999ac37 = $(`<div id="html_7c28b57405ae875f1c7d2e186999ac37" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Jaguar Garage</h1><div class="nugget-popup"><p>Bank collapse of the River Misbourne occurred close to the Jaguar garage location (grid SU 96533 96984); the river channels rejoin east of the garage and the bank failure was identified as a localised area of concern. [PAG,IMG] (p7)</p></div><div class="nugget-popup"><p>On 07 February 2014 a section of riverbank downstream of the Jaguar garage collapsed, causing water to back up and flood the Jaguar garage workshop; the collapse was repaired the same day and a boom installed to prevent pollution as on&ndash;site oil tanks came close to being overtopped. A fallen tree at the location further restricted flow and raised river levels. (p22)</p></div><div class="nugget-popup"><p>A section of the riverbank downstream of the Jaguar garage collapsed and a fallen tree downstream of the garage further impeded river flow, worsening flooding. (p23)</p></div><div class="nugget-popup"><p>A section of the riverbank downstream of the Jaguar garage collapsed during the high river conditions, contributing to the flood impacts. (p30)</p></div><div class="nugget-popup"><p>Internal flooding of an automotive repair workshop: floor covered in floodwater reaching the lower edge of vehicle doors, with vehicles and workshop equipment standing in water and operational disruption/damage to vehicles and tooling. [IMG] (p40)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 garage workshop (p22)</p></div></div></body></div>`)[0];
+                popup_c36e5eadfcf447acdd595c4ca2ad5e4d.setContent(html_7c28b57405ae875f1c7d2e186999ac37);
+            
+        
+
+        marker_d410d8ce096a213558ba65349bbfde7a.bindPopup(popup_c36e5eadfcf447acdd595c4ca2ad5e4d)
+        ;
+
+        
+    
+    
+            var marker_950e23d15097c192effe2028e12bfdad = L.marker(
+                [51.6671771, -0.6192494],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_c5fdff9bd34598370b3662e370d52129 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_950e23d15097c192effe2028e12bfdad.setIcon(icon_c5fdff9bd34598370b3662e370d52129);
+        
+    
+        var popup_f0f9f10cc5fb11e3423aef2046ad3faa = L.popup({});
+
+        
+            
+                var html_d12cc35b03dc49c85909825ec9c5b80d = $(`<div id="html_d12cc35b03dc49c85909825ec9c5b80d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Elephant and Castle</h1><div class="nugget-popup"><p>Basement/internal flooding occurred on and after 17 January 2014 when debris had lodged a flap valve open and river water backed up through a gully onto the High Street. The property was also affected by the more severe flood that began overnight 06&ndash;07 February 2014, with internal flooding continuing for several days. [MUL] (p21)</p></div></div></body></div>`)[0];
+                popup_f0f9f10cc5fb11e3423aef2046ad3faa.setContent(html_d12cc35b03dc49c85909825ec9c5b80d);
+            
+        
+
+        marker_950e23d15097c192effe2028e12bfdad.bindPopup(popup_f0f9f10cc5fb11e3423aef2046ad3faa)
+        ;
+
+        
+    
+    
+            var marker_9d3c6f9daa5eec977bc02aa872b621ed = L.marker(
+                [51.6671313, -0.6139697],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_70f32bb5ede3c9f822ec43e69d2a3021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9d3c6f9daa5eec977bc02aa872b621ed.setIcon(icon_70f32bb5ede3c9f822ec43e69d2a3021);
+        
+    
+        var popup_0f1ecf53f90012c540c4e74585de4d84 = L.popup({});
+
+        
+            
+                var html_c32962bb46af1230fc5f0a04641d2ec2 = $(`<div id="html_c32962bb46af1230fc5f0a04641d2ec2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Mead</h1><div class="nugget-popup"><p>High water in the River Misbourne encroached onto grassy areas and reached park furniture/bank at Church Mead. [IMG] (p42)</p></div></div></body></div>`)[0];
+                popup_0f1ecf53f90012c540c4e74585de4d84.setContent(html_c32962bb46af1230fc5f0a04641d2ec2);
+            
+        
+
+        marker_9d3c6f9daa5eec977bc02aa872b621ed.bindPopup(popup_0f1ecf53f90012c540c4e74585de4d84)
+        ;
+
+        
+    
+    
+            var marker_8931aa0303e40bafad048062672658dc = L.marker(
+                [51.6480032, -0.5800363],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_a838b258bdb62c3369e74b20aea5639d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8931aa0303e40bafad048062672658dc.setIcon(icon_a838b258bdb62c3369e74b20aea5639d);
+        
+    
+        var popup_e7c80c79b1507f0e40f53146e6605406 = L.popup({});
+
+        
+            
+                var html_5216bc94da316f4508f1f58e89b7080e = $(`<div id="html_5216bc94da316f4508f1f58e89b7080e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Misbourne</h1><div class="nugget-popup"><p>River levels were raised by prolonged rainfall and exceptionally high groundwater; a culvert flow restriction caused the River Misbourne to back up and a riverbank collapse occurred, which led to property flooding. (p4)</p></div><div class="nugget-popup"><p>Flow through Old Amersham was physically impeded: the culvert beneath The Maltings had restricted flow and a bank collapse occurred near the Jaguar garage where the channels rejoin, affecting the channel alignment and conveyance through the town. [PAG] (p6)</p></div><div class="nugget-popup"><p>Flow through Old Amersham was restricted by a culvert under The Maltings (SU 95599 97438) and a bank collapse was recorded near the Jaguar garage on the A355 (SU 96533 96984). The river runs behind houses on the northern side of the High Street and along the southern edge of Barn Meadow Recreation Ground; the identified culvert restriction and bank collapse were recorded as areas of concern affecting river flow through the town. [PAG,IMG] (p7)</p></div><div class="nugget-popup"><p>Within Old Amersham the river passes behind properties, through a series of culverts and splits into two channels east of the superstore before rejoining. A culvert beneath The Maltings had restricted flow (location A, SU 95599 97438) and there was a bank collapse near the Jaguar garage on the A355 (location B, SU 96533 96984). These issues are identified as key areas of concern along the River Misbourne through the town. [PAG] (p8)</p></div><div class="nugget-popup"><p>Culvert flow restrictions and bank collapse were identified in Old Amersham where the Misbourne is culverted through the town; these issues contributed to fluvial flooding risks and affected areas where the channel passes under the highway and adjacent properties. [PAG] (p9)</p></div><div class="nugget-popup"><p>Sections of the Misbourne in Old Amersham experienced culvert flow restriction and bank collapse that obstructed channel flow and contributed to local flooding of adjacent areas; the river is culverted through parts of the town and these failures affected flow conveyance. [PAG,IMG] (p10)</p></div><div class="nugget-popup"><p>Predicted surface&ndash;water flood depths and extents are concentrated along the river channel in the 1:100 and 1:1000 maps; the river corridor is associated with inundation of low&ndash;lying areas and the town centre and with property/basement flooding events recorded in winter 2000/01 and during the event described in this report. [PAG,MUL] (p12)</p></div><div class="nugget-popup"><p>The River Misbourne produced flows of river water that ran down the High Street, causing garden and property flooding in Old Amersham during multiple events (including winter 2000/1, March 2013, August 2013 and January&ndash;February 2014). [PAG,MUL] (p13)</p></div><div class="nugget-popup"><p>The River Misbourne experienced prolonged high water levels from November 2013 to mid&ndash;February 2014, with two particularly severe flooding events on/around 17 January and 06/07 February 2014. The high river levels and saturated catchment caused the river and highway drainage to be exceeded, contributed to surface and highway runoff, and a riverbank collapse occurred downstream of the Jaguar garage on 07 February 2014, allowing river water to flow into surrounding areas. Sedimentation and weirs downstream of The Maltings impeded flushing and exacerbated conveyance problems. [MUL] (p20)</p></div><div class="nugget-popup"><p>High river levels in the River Misbourne, combined with saturated catchment and large surface runoff, exceeded channel and highway drainage capacity. Riverbank collapse allowed river water to flow into surrounding areas; backing up through drainage gullies contributed to flooding of High Street and nearby properties. A partial culvert restriction reduced conveyance until cleared by the EA. [PAG,MUL] (p21)</p></div><div class="nugget-popup"><p>High river and groundwater levels led to elevated Misbourne flows; a tampered/damaged flap valve allowed river water to back up and flow east along the High Street, and high river levels prevented return flow through downstream valves. (p23)</p></div><div class="nugget-popup"><p>High river levels and a partial flow restriction within a culvert beneath The Maltings caused flooding of gardens and High Street properties in Old Amersham. Removal of an obstruction to a flap valve on 18 January ended the bulk of High Street flooding. A pump was installed on 06 February and jetting of the restricted culvert (11&ndash;12 February) reduced water levels substantially (300 mm drop on 11 Feb and a further 300 mm on 12 Feb) and restored most flow through the culvert. Downstream bank collapse near the Jaguar garage required emergency bank restoration and a boom to protect against pollution. Sandbags and FloodSax were distributed to affected properties. [TAB,PAG,MUL] (p24)</p></div><div class="nugget-popup"><p>Culvert flow restriction and obstructions on the River Misbourne caused flooding of Old Amersham High Street; removal of a flap valve obstruction ended the bulk of High Street flooding. A bank collapse downstream of the Jaguar garage required multi&ndash;agency repair and pollution control. A tree removal downstream lowered water levels and culvert jetting substantially reduced water levels and restored flow; EA planned repairs and later multi&ndash;agency meetings addressed culvert/weir removal to reduce future risk. [PAG,MUL] (p25)</p></div><div class="nugget-popup"><p>Weirs and culvert flow restrictions on the Misbourne were identified as contributing to increased flood risk; a multi&ndash;agency meeting (2 July 2014) led to agreement in principle (mid&ndash;July 2014) between the Environment Agency and riparian owners to remove weirs to reduce flooding risk. [TAB] (p26)</p></div><div class="nugget-popup"><p>The Misbourne had very high water levels which contributed to prolonged flooding in the area and enabled backflow into adjacent streets when a valve was tampered with. (p30)</p></div><div class="nugget-popup"><p>The River Misbourne overtopped/caused flooding in winter 2013/14 (January&ndash;February 2014), flooding properties in Old Amersham and prompting recovery actions. The event led to requirements for culvert and gully inspections, clearance of vegetation and debris, installation of trash screens on culverts, and coordination between RMAs and riparian owners to reduce blockages and restore flow. [PAG] (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties; 5 business premises (p23)</p></div></div></body></div>`)[0];
+                popup_e7c80c79b1507f0e40f53146e6605406.setContent(html_5216bc94da316f4508f1f58e89b7080e);
+            
+        
+
+        marker_8931aa0303e40bafad048062672658dc.bindPopup(popup_e7c80c79b1507f0e40f53146e6605406)
+        ;
+
+        
+    
+    
+            var marker_c801386ee3dd3489151f109a97df556c = L.marker(
+                [51.6341785, -0.4172156],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_c26ed94f5c8bb43baebd3a7ec099ac8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c801386ee3dd3489151f109a97df556c.setIcon(icon_c26ed94f5c8bb43baebd3a7ec099ac8f);
+        
+    
+        var popup_4ac098dd37a224eea50b8080790c1c23 = L.popup({});
+
+        
+            
+                var html_0b636a7195dccc5c36b5f4281626d67b = $(`<div id="html_0b636a7195dccc5c36b5f4281626d67b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Colne</h1><div class="nugget-popup"><p>Groundwater across the Colne catchment was reported as 'exceptionally high' during the flooding period, and saturated soils (SMD = 0 in February 2014) meant continued rainfall produced widespread runoff and elevated river levels across the catchment; the EA treated the three&ndash;month period leading up to 08 March 2014 as a single event because of groundwater influence. [PAG,MUL] (p19)</p></div></div></body></div>`)[0];
+                popup_4ac098dd37a224eea50b8080790c1c23.setContent(html_0b636a7195dccc5c36b5f4281626d67b);
+            
+        
+
+        marker_c801386ee3dd3489151f109a97df556c.bindPopup(popup_4ac098dd37a224eea50b8080790c1c23)
+        ;
+
+        
+    
+    
+            var marker_4b90ca985e929c1ddac7391b4e0683c2 = L.marker(
+                [51.6736182, -0.6319411],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_4dcb660f4c590bb3ba64e8f1e2fdbb4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4b90ca985e929c1ddac7391b4e0683c2.setIcon(icon_4dcb660f4c590bb3ba64e8f1e2fdbb4e);
+        
+    
+        var popup_68ec9a4bd32977ae72e84a555b49642d = L.popup({});
+
+        
+            
+                var html_edac8fd94513726fa55e016defc1284f = $(`<div id="html_edac8fd94513726fa55e016defc1284f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Old Amersham</h1><div class="nugget-popup"><p>A blockage of a drainage asset caused a secondary flow down the High Street, producing flooding of the street. (p4)</p></div><div class="nugget-popup"><p>Properties along the High Street were inundated by flows of river water. Several properties flooded in winter 2000/1; at least one of those properties was flooded internally again during the January&ndash;February 2014 event. A garden backing onto the Misbourne flooded on three occasions prior to 2014 (including March 2013 and August 2013). Two businesses reported that barriers installed after 2000/1 protected their premises during the January&ndash;February 2014 event. [PAG,MUL] (p13)</p></div><div class="nugget-popup"><p>Garden of a household backing onto the River Misbourne was flooded; flows of river water ran down the High Street from west to east during flood events, matching the flows witnessed in the main report event. [PAG,MUL] (p14)</p></div><div class="nugget-popup"><p>High Street gullies designed to discharge to the River Misbourne were partly blocked with sediment and were largely unable to discharge at full capacity because of high water levels in the Misbourne, reducing highway drainage capacity and contributing to surface water/urban flooding of the highway and surrounding area. (p20)</p></div><div class="nugget-popup"><p>On and after 17 January 2014 the High Street was flooded (road and above kerb line) when a flap valve was blocked, causing river water to back up through a nearby gully and flow eastward along the street; water entered basements (notably the Elephant and Castle pub). Parking and movement of temporary defences affected flow paths. The most severe event overnight 06&ndash;07 February 2014 caused internal flooding of properties along the High Street for several days. The primary cause included a partial culvert restriction under The Maltings; EA bypass pumping and culvert jetting (from 12 Feb 2014) removed the restriction and halted further flooding. [PAG,MUL] (p21)</p></div><div class="nugget-popup"><p>Properties along the High Street were flooded internally and remained flooded for several days; business activity was indirectly affected by disruption to parking and pavement usage by customers. (p22)</p></div><div class="nugget-popup"><p>Water from the River Misbourne backed up and flowed eastward down the High Street; highway drainage was overwhelmed. Business activities were indirectly affected by impacts to parking and pavement use by customers. [PAG] (p23)</p></div><div class="nugget-popup"><p>The High Street experienced flooding driven by high river levels and a culvert/flap&ndash;valve obstruction; sandbags and FloodSax were distributed to protect at&ndash;risk properties; removal of the flap&ndash;valve obstruction on 18 January ended the bulk of the flooding; ATC cleared debris in a High Street property's garden and responders door&ndash;knocked to update residents. [TAB,PAG,MUL] (p24)</p></div><div class="nugget-popup"><p>High Street was flooded due to a culvert / flap&ndash;valve obstruction on the River Misbourne. Agencies removed the flap&ndash;valve obstruction which ended the bulk of the High Street flooding; pumps were installed to alleviate flooding; sandbags and FloodSax were distributed and residents door&ndash;knocked; debris in the garden of one High Street property was cleared. [PAG] (p25)</p></div><div class="nugget-popup"><p>Water from the River Misbourne backed up (after tampering/damage to a flap valve) and flowed eastward down the High Street; high river levels then prevented return flow through downstream valves, prolonging flooding on the High Street. (p30)</p></div><div class="nugget-popup"><p>Drainage and gullies on the High Street were targeted for jetting and cleansing as part of the post&ndash;event response to address flow restrictions and prevent repeated surface water/highway flooding during future events. [TAB,PAG] (p31)</p></div><div class="nugget-popup"><p>Surface water inundation on the High Street with standing water pooling against building fronts and parked cars; flooding affected pedestrian areas and at least one property experienced internal flooding. [IMG,PAG,MUL] (p40)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties with water pooling on floors and submerging furniture and electrical items; gardens inundated with water covering most of the ground and partially submerging garden features. [IMG,MUL] (p41)</p></div><div class="nugget-popup"><p>Garden flooding recorded on High Street; photographs (08/02/14 and 10/02/14) document inundation affecting residential frontages and the streetscape. [IMG,PAG,MUL] (p42)</p></div><div class="nugget-popup"><p>Floodwater pooled outside a ground&ndash;level garage door on High Street reaching the door threshold; sandbags were placed across the base of the garage to try to prevent water ingress. [IMG] (p43)</p></div><div class="nugget-popup"><p>Public highway inundation with associated internal property flooding on premises fronting the High Street. Photograph documents water pooling across a ground&ndash;floor tiled room (reaching skirting boards and affecting appliances), indicating internal water ingress and property damage. [PAG] (p44)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>at least one property; two businesses; three occasions [PAG,MUL] (p13)</p></div><div class="nugget-popup quant"><p>1 property (Elephant and Castle pub basement) [PAG,MUL] (p21)</p></div><div class="nugget-popup quant"><p>one property [TAB,PAG,MUL] (p24)</p></div><div class="nugget-popup quant"><p>200 sandbags; one High Street property [PAG] (p25)</p></div></div></body></div>`)[0];
+                popup_68ec9a4bd32977ae72e84a555b49642d.setContent(html_edac8fd94513726fa55e016defc1284f);
+            
+        
+
+        marker_4b90ca985e929c1ddac7391b4e0683c2.bindPopup(popup_68ec9a4bd32977ae72e84a555b49642d)
+        ;
+
+        
+    
+    
+            var marker_85f427aad2fb39ec695217054da35ac5 = L.marker(
+                [51.6691473, -0.6228362],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_79526cedbb9be47d151dbe34ceef2719 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_85f427aad2fb39ec695217054da35ac5.setIcon(icon_79526cedbb9be47d151dbe34ceef2719);
+        
+    
+        var popup_d473048fc1c79103fede8af35ee0acb2 = L.popup({});
+
+        
+            
+                var html_2c987925dd2ee50f1c6be76d15aa0df4 = $(`<div id="html_2c987925dd2ee50f1c6be76d15aa0df4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Lane, Old Amersham</h1><div class="nugget-popup"><p>The culvert at Mill Lane was included among the TfB culverts implicated in flow restrictions during the flood event and is identified for continued inspection and maintenance to reduce future flood risk. [TAB,PAG] (p31)</p></div><div class="nugget-popup"><p>Culverts in the stretch from Mill Lane to the culvert under the A413 were implicated in the flooding response: they were identified for increased inspection and maintenance and for cleansing to remove blockages affecting highway drainage. Actions specified include inspections of culverts ≥900mm, jetting of drains and gullies and prioritised repair of detected flow restrictions to reduce recurrence. (p32)</p></div><div class="nugget-popup"><p>Footpath from Mill Lane to Barn Meadow was submerged by floodwater, blocking pedestrian access. [IMG] (p42)</p></div></div></body></div>`)[0];
+                popup_d473048fc1c79103fede8af35ee0acb2.setContent(html_2c987925dd2ee50f1c6be76d15aa0df4);
+            
+        
+
+        marker_85f427aad2fb39ec695217054da35ac5.bindPopup(popup_d473048fc1c79103fede8af35ee0acb2)
+        ;
+
+        
+    
+    
+            var marker_6f55ef9ad3df813cdeb37cf6408f0fff = L.marker(
+                [51.6649659, -0.6099836],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_1dea8daed5881f7207bfc182741fbffa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6f55ef9ad3df813cdeb37cf6408f0fff.setIcon(icon_1dea8daed5881f7207bfc182741fbffa);
+        
+    
+        var popup_7db23632c01839726d0be641794745ee = L.popup({});
+
+        
+            
+                var html_921b08c7fd612f9ee05176c270a63eea = $(`<div id="html_921b08c7fd612f9ee05176c270a63eea" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>London Road, Old Amersham</h1><div class="nugget-popup"><p>A culvert under the A413 near the London Road West / Stanley Hill roundabout is identified among culverts implicated in flow restrictions during the flood event and is targeted for inspection and maintenance to reduce highway/riverside flooding risk. [TAB,PAG] (p31)</p></div></div></body></div>`)[0];
+                popup_7db23632c01839726d0be641794745ee.setContent(html_921b08c7fd612f9ee05176c270a63eea);
+            
+        
+
+        marker_6f55ef9ad3df813cdeb37cf6408f0fff.bindPopup(popup_7db23632c01839726d0be641794745ee)
+        ;
+
+        
+    
+    
+            var marker_596484b814cc13d16a5309dcc176a992 = L.marker(
+                [51.86619751869193, -0.8610230642396219],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_5f2e5c335c623d2eca54e487081f7973 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_596484b814cc13d16a5309dcc176a992.setIcon(icon_5f2e5c335c623d2eca54e487081f7973);
+        
+    
+        var popup_e138a6140aca2a5d0fc2fbc8cd90f061 = L.popup({});
+
+        
+            
+                var html_599c9728f59f578d22d702ef2c72f4cf = $(`<div id="html_599c9728f59f578d22d702ef2c72f4cf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Buckinghamshire</h1><div class="nugget-popup"><p>The county area experienced a flood event in January&ndash;February 2014 that prompted a formal Flood Investigation Report; the report analyses conditions at the time, condition of features and watercourses, what happened, possible causes and incident response. (p2)</p></div><div class="nugget-popup"><p>Old Amersham (in Buckinghamshire) experienced flooding during the January&ndash;February 2014 event; the report investigates that flooding and provides recommendations to Risk Management Agencies to prevent a repeat. [PAG] (p3)</p></div><div class="nugget-popup"><p>High river levels and a partial culvert flow restriction in Old Amersham caused flooding of the High Street and gardens; residents and businesses reported internal flooding of properties. Removal of an obstruction to a flap valve ended the bulk of High Street flooding. A bank collapsed downstream of the Jaguar garage and was restored in a multi&ndash;agency response. Emergency measures across the county included sandbag and FloodSax distribution, pump installation to alleviate culvert&ndash;caused flooding, culvert jetting to restore flow and multi&ndash;agency coordination. [TAB] (p24)</p></div><div class="nugget-popup"><p>Old Amersham (within Buckinghamshire) experienced High Street flooding caused by a partial culvert flow restriction under The Maltings and an obstructed flap valve. Properties and gardens were at risk and received sandbags/FloodSax and door&ndash;to&ndash;door updates; a pump was installed to relieve flooding; a bank collapse downstream of the Jaguar garage was repaired (restoration work to the river bank); a storm drain overflow blockage near the superstore was cleared; jetting of the culvert reduced water levels and restored flow. (p25)</p></div><div class="nugget-popup"><p>The county was the location of the investigated flood event (January&ndash;February 2014); follow&ndash;up management actions recorded on this page include agreement to remove weirs in the River Misbourne as a post&ndash;event measure. (p27)</p></div></div></body></div>`)[0];
+                popup_e138a6140aca2a5d0fc2fbc8cd90f061.setContent(html_599c9728f59f578d22d702ef2c72f4cf);
+            
+        
+
+        marker_596484b814cc13d16a5309dcc176a992.bindPopup(popup_e138a6140aca2a5d0fc2fbc8cd90f061)
+        ;
+
+        
+    
+    
+            var marker_8bc7696c99777ac24c928992ce13cd46 = L.marker(
+                [51.840052299999996, -0.09785519224523963],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_689569ab833ae198ec83d53d5626b704 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8bc7696c99777ac24c928992ce13cd46.setIcon(icon_689569ab833ae198ec83d53d5626b704);
+        
+    
+        var popup_1555df619236ca236c765f3ba196ea38 = L.popup({});
+
+        
+            
+                var html_ad6b30e02d48b2c084591b18350f45f9 = $(`<div id="html_ad6b30e02d48b2c084591b18350f45f9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hertfordshire</h1><div class="nugget-popup"><p>Hatfield Area Incident Room opened to respond to widespread flooding across the EA Hertfordshire and North London area; EA issued newsletters to residents informing of high river levels and investigations. (p24)</p></div></div></body></div>`)[0];
+                popup_1555df619236ca236c765f3ba196ea38.setContent(html_ad6b30e02d48b2c084591b18350f45f9);
+            
+        
+
+        marker_8bc7696c99777ac24c928992ce13cd46.bindPopup(popup_1555df619236ca236c765f3ba196ea38)
+        ;
+
+        
+    
+    
+            var marker_c92350f5aaefb31cb6e747bb2cdabf69 = L.marker(
+                [51.665451, -0.6170104],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_9821fed37bbf2b111bebaacefe82d12a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c92350f5aaefb31cb6e747bb2cdabf69.setIcon(icon_9821fed37bbf2b111bebaacefe82d12a);
+        
+    
+        var popup_63869f75c87211507f2a7568e25292ed = L.popup({});
+
+        
+            
+                var html_4b5e68d24381c21cba186865e4c2cff7 = $(`<div id="html_4b5e68d24381c21cba186865e4c2cff7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Old Amersham</h1><div class="nugget-popup"><p>Grassy field and adjacent recreational area were inundated by standing floodwater; water covered a substantial portion of the field and extended into the adjacent landscape, with trees and park features partially inundated. (p1)</p></div><div class="nugget-popup"><p>Town experienced elevated river levels and backing up of the River Misbourne after prolonged above&ndash;average rainfall and exceptionally high groundwater levels. A culvert flow restriction caused the river to back up; a blockage of a drainage asset produced a secondary flow down the High Street; a riverbank collapse caused property flooding in the town. (p4)</p></div><div class="nugget-popup"><p>Internal flooding of business premises and flooding of residential properties within the Old Amersham area. [PAG] (p5)</p></div><div class="nugget-popup"><p>The River Misbourne runs west&ndash;east through Old Amersham; flood&ndash;related issues were recorded within the town including a restricted culvert under The Maltings and a bank collapse near the Jaguar garage that affected the river channel behind houses on the northern side of the High Street and along the southern edge of Barn Meadow Recreation Ground. [PAG] (p6)</p></div><div class="nugget-popup"><p>Two identified flood&ndash;related failures within Old Amersham: (a) flow restriction at the culvert underneath The Maltings (grid SU 95599 97438) which constrained channel conveyance; (b) collapse of the river bank near the Jaguar garage (grid SU 96533 96984). These were described as the two main areas of concern in the town. [PAG,IMG] (p7)</p></div><div class="nugget-popup"><p>River Misbourne runs west&ndash;east through Old Amersham passing behind houses on the northern side of the High Street and along the southern edge of Barn Meadow. Within the town a culvert under The Maltings had a restricted flow (location A, SU 95599 97438) and there was a bank collapse near the Jaguar garage on the A355 (location B, SU 96533 96984). Highway gullies in Old Amersham connect to the surface water drainage system which discharges to the River Misbourne and the road drainage along the High Street flows into the river. [IMG,PAG] (p8)</p></div><div class="nugget-popup"><p>Culvert flow restrictions and bank collapse locations were recorded in the town; highway gullies and the surface water drainage network (owned by TfB) discharge to the Misbourne, linking surface water drainage failure to local flooding in Old Amersham. [PAG] (p9)</p></div><div class="nugget-popup"><p>Locations within Old Amersham suffered culvert flow restriction and a bank collapse that obstructed flow through culverted sections beneath the town and contributed to local flooding; highway gullies along the High Street drain into the Misbourne and are connected to surface water drainage that influenced flood routing. [PAG,IMG] (p10)</p></div><div class="nugget-popup"><p>Properties on the High Street were flooded; at least one property flooded internally during the event described in this report (January&ndash;February 2014). Basement flooding and flooding to the rear of St Mary's Church occurred in winter 2000/01. Two businesses reported that flood barriers installed after 2000/01 protected their premises during the later event. [IMG,PAG,MUL] (p12)</p></div><div class="nugget-popup"><p>The River Misbourne overtopped/flowed through Old Amersham causing floodwaters to run down the High Street (west to east). Several properties on the High Street were flooded in the winter 2000/01 event (including basement flooding and flooding to the rear of St Mary&#8217;s Church). During the January&ndash;February 2014 event at least one property on the High Street was flooded internally again; two businesses reported their post&ndash;2000/01 flood barriers protected their premises during the 2014 event. A household with a garden backing onto the river reported garden flooding on three prior occasions, including March 2013 and August 2013, with similar river flows down the High Street as observed in the 2014 event. [PAG,IMG,MUL] (p13)</p></div><div class="nugget-popup"><p>Properties in Old Amersham experienced flooding associated with elevated river levels during peaks on 07&ndash;08 February 2014. (p17)</p></div><div class="nugget-popup"><p>Prolonged flooding from November 2013 to mid&ndash;February 2014. Internal property flooding began around 17 January 2014 when a flap valve was lodged open by debris, causing river water to back up through a gully and flow down the High Street into basements (including the Elephant and Castle pub). The most severe event occurred overnight 06&ndash;07 February 2014, with several properties along the High Street flooded internally for days. A partial flow restriction in a culvert (under The Maltings) reduced conveyance; EA installed bypass pumping and jetted the culvert (12 February 2014) which stopped further flooding. [PAG,MUL] (p21)</p></div><div class="nugget-popup"><p>Internal flooding of properties in the settlement occurred over several days; remedial clearing of the culvert on and after 12 February 2014 stopped further flooding in Old Amersham. (p22)</p></div><div class="nugget-popup"><p>Old Amersham experienced flooding caused by a partial flow restriction in a culvert beneath The Maltings and high river levels on the River Misbourne; EA and CDC investigated and responded (sandbag/FloodSax distribution, pump installation, jetting to clear culvert); a bank collapse downstream of the Jaguar garage was repaired as a multi&ndash;agency action and a tree removal lowered water levels downstream. [TAB,PAG,MUL] (p24)</p></div><div class="nugget-popup"><p>Old Amersham experienced flooding caused by a partial flow restriction in a culvert under The Maltings on the River Misbourne. EA and CDC distributed sandbags and FloodSax to properties, door&ndash;knocking and resident newsletters informed of culvert restrictions and repair plans. Jetting of the restricted culvert reduced water levels (300 mm drop on 11/02 and a further 300 mm drop on 12/02) and by 12/02 EA estimated ~98% of flow was passing through the culvert. Pumps were installed to relieve flooding and multi&ndash;agency coordination and flood surgeries were held. [PAG] (p25)</p></div><div class="nugget-popup"><p>Prolonged high River Misbourne levels together with exceptionally high groundwater caused prolonged flooding in Old Amersham, including two severe flood events affecting the settlement. (p30)</p></div><div class="nugget-popup"><p>Old Amersham residents and businesses were affected by flooding from the River Misbourne; recommendations include distributing guidance to adjacent residents, offering Repair and Renew grant support and business recovery support, and establishing community flood&ndash;action coordination and maintenance of riparian responsibilities. [TAB,PAG] (p31)</p></div><div class="nugget-popup"><p>Properties in Old Amersham were flooded during the winter 2013/14 event, causing damage to homes and businesses and prompting recovery support and grant eligibility. (p33)</p></div><div class="nugget-popup"><p>Widespread localised flooding across the town during January&ndash;February 2014, including inundation of High Street (public realm and building fronts), internal flooding of at least one property, a flooded automotive repair workshop, and submerged access path into Barn Meadow; pedestrian and recreational areas disrupted and businesses affected. [IMG] (p40)</p></div><div class="nugget-popup"><p>The village experienced high River Misbourne levels and associated surface&ndash;water impacts during January&ndash;February 2014: examples include garden flooding on High Street, submerged footpaths to Barn Meadow, and the deployment of EA pumps documented in photographs. [IMG] (p42)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two or more business premises [PAG] (p5)</p></div><div class="nugget-popup quant"><p>two locations (culvert flow restriction at The Maltings; bank collapse near Jaguar garage) [IMG,PAG] (p8)</p></div><div class="nugget-popup quant"><p>at least one property; two businesses [IMG,PAG,MUL] (p12)</p></div><div class="nugget-popup quant"><p>at least 1 property flooded internally; 2 businesses protected by barriers; garden flooded on 3 occasions (including March 2013 and August 2013) [PAG,IMG,MUL] (p13)</p></div><div class="nugget-popup quant"><p>1 property (Elephant and Castle pub basement) [PAG,MUL] (p21)</p></div><div class="nugget-popup quant"><p>4 residential properties; 5 business premises (p22)</p></div></div></body></div>`)[0];
+                popup_63869f75c87211507f2a7568e25292ed.setContent(html_4b5e68d24381c21cba186865e4c2cff7);
+            
+        
+
+        marker_c92350f5aaefb31cb6e747bb2cdabf69.bindPopup(popup_63869f75c87211507f2a7568e25292ed)
+        ;
+
+        
+    
+    
+            var marker_ed6b7680459cb817789229a853489776 = L.marker(
+                [51.66688635, -0.624285834301358],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_fd3ac69e7ddcd564664f2c2b05a8f85c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ed6b7680459cb817789229a853489776.setIcon(icon_fd3ac69e7ddcd564664f2c2b05a8f85c);
+        
+    
+        var popup_286252913fb23aa7d599e8fcb33a8a81 = L.popup({});
+
+        
+            
+                var html_2a2b3363770f03af30c21e8801434427 = $(`<div id="html_2a2b3363770f03af30c21e8801434427" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Amersham</h1><div class="nugget-popup"><p>Residential area affected by floodwater extending across the landscape; trees are partially submerged and houses are visible behind the inundation, indicating floodwater reached into residential zones. (p1)</p></div><div class="nugget-popup"><p>Flow in the River Misbourne through Old Amersham was restricted by a culvert under The Maltings (SU 95599 97438) and there was a bank collapse near the Jaguar garage on the A355 (SU 96533 96984). The river runs behind houses on the northern side of the High Street, along the southern edge of Barn Meadow Recreation Ground, passes through a number of culverts, splits into two channels east of the superstore and rejoins east of the Jaguar garage &mdash; the culvert restriction and bank collapse were identified as areas of concern that affected river conveyance through the town. [PAG,IMG] (p7)</p></div><div class="nugget-popup"><p>Old Amersham experienced property flooding during the high&ndash;flow peaks on 07&ndash;08 February 2014. Local river levels in Amersham are strongly influenced by culverts, natural restrictions and blockages, so the upstream Little Missenden gauge (≈2.6 km upstream) only provides an indication of the local high water conditions that led to property flooding. [PAG,MUL] (p18)</p></div><div class="nugget-popup"><p>Old Amersham experienced a prolonged period of flooding (Nov 2013 to mid&ndash;Feb 2014) with particularly severe events on 17 Jan 2014 and 06&ndash;07 Feb 2014. Saturated catchment and heavy rainfall produced large runoff that, together with high River Misbourne levels, exceeded the capacity of the river and highway drainage. Local drainage assets were flow&ndash;restricted: the culvert under The Maltings was partly restricted; High Street gullies were partly blocked with sediment and largely unable to discharge because of high Misbourne levels; downstream weirs and sedimentation impeded flushing and contributed to backing up of water and reduced culvert outflow. A riverbank collapse on 07 Feb 2014 downstream of the Jaguar garage allowed river water to flow into surrounding areas. Overall the drainage infrastructure could not adequately convey additional surface and highway runoff. [MUL] (p20)</p></div><div class="nugget-popup"><p>Flooding from the River Misbourne affected Old Amersham residents and properties, prompting distribution of guidance to residents and support (e.g. Repair and Renew grant) and recommendations for river management. [TAB,PAG] (p31)</p></div></div></body></div>`)[0];
+                popup_286252913fb23aa7d599e8fcb33a8a81.setContent(html_2a2b3363770f03af30c21e8801434427);
+            
+        
+
+        marker_ed6b7680459cb817789229a853489776.bindPopup(popup_286252913fb23aa7d599e8fcb33a8a81)
+        ;
+
+        
+    
+    
+            var marker_70a5e078a578ea74dbb2f3fbc4d94d1b = L.marker(
+                [51.681848711830746, -0.6677507653552992],
+                {}
+            ).addTo(map_78a706a840e32b933c2de036bef727bf);
+        
+    
+            var icon_fb3202320e798e794d26be93d6688d9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_70a5e078a578ea74dbb2f3fbc4d94d1b.setIcon(icon_fb3202320e798e794d26be93d6688d9f);
+        
+    
+        var popup_89a8678d6c31f60648568f4b4ca6044a = L.popup({});
+
+        
+            
+                var html_61a6bba9816f3d5d53dafa82f8c3025e = $(`<div id="html_61a6bba9816f3d5d53dafa82f8c3025e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Little Missenden</h1><div class="nugget-popup"><p>Telemetered river gauge at Little Missenden recorded exceptionally high river levels during the winter 2013&ndash;2014 event; the entire event is ranked number 1 of the top 10 recorded levels at this site. Peaks occurred on 07&ndash;08 February 2014 (coincident with much of the property flooding in the area) and the highest peak was recorded on 08 March 2014. [PAG,MUL] (p17)</p></div><div class="nugget-popup"><p>The Little Missenden gauge recorded exceptionally high river levels across the three&ndash;month event to March 2014; the record for the gauge lists the whole period as the site&#8217;s number 1 top&ndash;10 level event. Peaks occurred on 07&ndash;08 February 2014 when much property flooding occurred locally, and the highest recorded peak at the gauge was on 08 March 2014. [PAG,IMG,MUL] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>number 1 of the top 10 recorded levels at the gauge [PAG,MUL] (p17)</p></div><div class="nugget-popup quant"><p>459 mm; 443 mm [PAG,IMG,MUL] (p19)</p></div></div></body></div>`)[0];
+                popup_89a8678d6c31f60648568f4b4ca6044a.setContent(html_61a6bba9816f3d5d53dafa82f8c3025e);
+            
+        
+
+        marker_70a5e078a578ea74dbb2f3fbc4d94d1b.bindPopup(popup_89a8678d6c31f60648568f4b4ca6044a)
+        ;
+
+        
+    
+</script>
+</html>
