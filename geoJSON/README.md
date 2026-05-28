@@ -13,7 +13,7 @@ The geoJSON properties are structured as follows:
 `"properties`" : {  
 &nbsp;&nbsp;&nbsp;&nbsp;`"name"` : map feature name  
 &nbsp;&nbsp;&nbsp;&nbsp;`"type"` : map feature type description. One of [`"settlement"`,`"administrative unit"`,`"hydrographic feature"`,`"physical feature"`,`"street"`,`"asset"`,`"other feature"`]   
-&nbsp;&nbsp;&nbsp;&nbsp;`"llfa"` : Lead Local Flood Authority 
+&nbsp;&nbsp;&nbsp;&nbsp;`"llfa"` : Lead Local Flood Authority  
 &nbsp;&nbsp;&nbsp;&nbsp;`"events"` : \[  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"start_date"` : event start date (`null` if there is only a text description of when the event happened)  
