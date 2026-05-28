@@ -1,6 +1,7 @@
 # Full geoJSON
 
 Changes from the provisional full geoJSON structure:
+* links have been updated so they link to a Google Drive
 * An `llfa` of `null` is not allowed 
 * `when_desc` strings have been standardised
 * some repetitive information has been filtered out (using semantic similarity)
