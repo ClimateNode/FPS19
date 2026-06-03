@@ -4,6 +4,8 @@
 
 <p>The map has been derived by extracting information using a Large Language Model (LLM). Relevant pages of each report were sent to the LLM along with instructions to return information on what happened in terms of impacts in the individual places described, and when these things happened. Coordinates matching place names were then derived used geocoding.</p> 
 
+<p>It is recommended that users familiarise themselves with the known issues and data quality flags described in this document before using the map. Particularly import points are emphasised in <b>bold</b></b></p>
+
 <h2>Points of interest</h2>
 
 <p>It is important to note that the coordinates of each place <b>do not indicate the precise location of flood impacts</b> and should not be interpreted such. They are simply coordinates which indicate the general location of the place. Most coordinates have been derived from OpenStreetMap.</p>
@@ -20,35 +22,37 @@
 
 <p>Another potential source of inaccuracy is the way the LLM has been instructed to return information in standardised formats, which may lead to shortcuts and inaccuracies when passages contain complex or nuanced information about multiple events. In paragraphs about multiple flood events it has not always been possible to disentangle information about which impacts relate to which events. For that reason, the same information is sometimes presented repeatedly for all events mentioned in a paragraph, though it may contain facts which are relevant only to a subset of those events. For this reasons <b>users should treat information from passages about multiple events with caution</b> (see below).</p> 
 
-<p>The following data quality flags are used to inform users that a given piece of information may be subject to one of more of these problems:</p>
+<p>The following <b>data quality flags</b> are used to inform users that a given piece of information may be subject to one of more of these problems:</p>
 
 <ul style="list-style: none;">
 <li><b>IMG:</b> information may have been extracted from an image
 <li><b>TAB:</b> information may have been extracted from a table
 <li><b>LST:</b> information may have been extracted from a list overlapping pages
 <li><b>MUL:</b> information has been extracted from a sentence/paragraph about events on more than one date
-<li><b>PAG:</b> information may have been extracted from text from a page other than the one indicated (see 'Page numbers' section below)
+<li><b>PAG:</b> information may have been extracted from text from a page other than the one indicated (see 'Page numbering' section below)
 </ul>
   
 <h2>Date information</h2>
-Most flood impacts described in a given Section 19 report will be those which occurred during the event which is the subject of the report. However, many reports also provide a detailed flood history of the location and information about other recent flood events.
+<p>Most flood impacts described in a given Section 19 report will be those which occurred during the event(s) which is/are the subject of the report. However, many reports also provide detailed flood histories, which can go back to previous centuries, and/or frequent references to other recent flood events.</p>
 
-Information on when flooding occurred contained in text can be very specific, i.e. a precise date, or very vague, for example "winter 2013-14", "Easter 1998", etc., or sometimes just a year or decade. Precise dates or date ranges are given where they are available, but otherwise verbal descriptions of dates are used.
+<p>Information on when flooding occurred contained in text can be very specific, i.e. a precise date, or very vague, for example "winter 2013-14", "Easter 1998", etc., or sometimes just a year or decade. Precise dates or date ranges are given where they are available, but otherwise verbal descriptions of dates are used.</p>
 
-The term "ambiguous date" is used when:
+<p>The term "ambiguous date" is used when information relates to:</p>
 <ul>
-  <li>Information is about flooding in general rather then a precise event</li>
-  <li>Information is about a precise event, but the LLM has failed to identify which one(s)</li>
+  <li>flooding in general rather then a precise event</li>
+  <li>a precise event which the LLM has failed to identify</li>
+  <li>flooding which has occurred repeatedly or at some point within a specific but very long time range, for example 2002-2020</li>
 </ul>
 
-Where different date descriptions of the same event have been used in different documents, attempts have been made to harmonise these to avoid repetition. For example, Report A describes flooding which happened during Storm Babet between the 18th and 23rd of October 2023 in Borsetshire. Page 10 of Report B describes the same event, but states it happened in 'October 2023'. If there was no other notable flooding in Borsetshire in October 2023, these should both be listed under the date range '18-23 October 2023'. However, when users refer to p10 of Report B, they will find a reference to 'October 2023' and not the precise date range. Users may find that some multiple descriptions of the same event are displayed in the map sidebar.
+<p>Where different date descriptions of the same event have been used in different documents, attempts have been made to harmonise these to avoid repetition. For example, Report A describes flooding which happened during Storm Babet between the 18th and 23rd of October 2023 in Borsetshire. Page 10 of Report B describes the same event, but states it happened in 'October 2023'. If there was no other notable flooding in Borsetshire in October 2023, these should both be listed under the date range '18-23 October 2023'. However, when users refer to p10 of Report B, they will find a reference to 'October 2023' and not the precise date range. Users may find that some multiple descriptions of the same event are displayed in the map sidebar.</p>
 
-In a number of cases, the LLM returned date information which related to the dates of investigations or remedial actions floowing the flooding rather than the event itself. Attempts have been made to correct these so they refer to the actual event, but it's possible some may still be displayed on the map sidebar.
+<p>In a number of cases, the LLM returned date information which related to the dates of investigations or remedial actions floowing the flooding rather than the event itself. Attempts have been made to correct these so they refer to the actual event, but it's possible some may still remain.</p>
 
-<h2>Page numbers</h2>
-<p>page numbers are counted from the cover page as page 1 and may differ from page numbering in the document (for example, where page numbering begins after the front matter).</p>
+<h2>Page numbering</h2>
 
-Overlapping context: a small amount of information from preceding and following pages is usually included in the context sent to the LLM for each page. Therefore information about a place or organisation may sometimes be on the following or preceding page to the one indicated.
+<p><b>All page numbers are counted so that the cover page is page 1 and therefore may differ from any nominal page numbering</b> within the document (for example, where page 1 is start of the body of the report after the cover, acknolwedgements, table of contents, etc.).</p>
 
-Overlapping lists and tables: page numbers for information extracted from lists and tables overlapping pages may also not be accurate.
-Images: if a figure is referred to on a previous page, this is included in the context sent to the LLM, along with the page the figure is actually on. Information used to interpret images may therefore be taken from pages other than the one indicated.
+<p>Page numbers are not always accurate because a small amount of information from preceding and following pages is usually included when pages are sent to the LLM so as to not abruptly cut off sentences and paragraphs. Therefore information about a place or organisation may sometimes be on the preceding or following page to the one indicated. <b>If users are looking for a particular piece of information within a report following the link and it is not on the indicated page, they should also check the preceding and following pages</b>.</p>
+
+<p>Page numbers are in particular less likely to be accurate where there is a list or table overlapping pages. Such lists and tables are treated as belonging to the page they begin on in order not to break them up.</p>
+
