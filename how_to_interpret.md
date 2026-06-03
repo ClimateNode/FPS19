@@ -18,16 +18,16 @@
 
 <p>Information extracted from <b>images, tables and lists overlapping pages should be viewed with caution</b>. It was noticed that images depicting flood flow routes in particular were liable to misinterpretation by the AI. Information contained in rows in large, complex tables can be misattributed to place names mentioned on other rows.</p>
 
-Another potential source of inaccuracy is the way the LLM has been instructed to return information in standardised formats, which may lead to shortcuts and inaccuracies when passages contain complex of nuanced information about multiple events. In paragraphs about multiple flood events it has not always been possible to disentangle information about which impacts relate to which events. For that reason, the same information is sometimes presented repeatedly for all events mentioned in a paragraph, though it may contain facts which are relevant only to a subset of those events. <b>Users should treat information with the MUL data quality flag with caution</b> (see below). 
+<p>Another potential source of inaccuracy is the way the LLM has been instructed to return information in standardised formats, which may lead to shortcuts and inaccuracies when passages contain complex or nuanced information about multiple events. In paragraphs about multiple flood events it has not always been possible to disentangle information about which impacts relate to which events. For that reason, the same information is sometimes presented repeatedly for all events mentioned in a paragraph, though it may contain facts which are relevant only to a subset of those events. For this reasons <b>users should treat information from passages about multiple events with caution</b> (see below).</p> 
 
-<p>The following data quality flags are associated with information presented in the map sidebar where relevant:</p>
+<p>The following data quality flags are used to inform users that a given piece of information may be subject to one of more of these problems:</p>
 
 <ul style="list-style: none;">
 <li><b>IMG:</b> information may have been extracted from an image
 <li><b>TAB:</b> information may have been extracted from a table
 <li><b>LST:</b> information may have been extracted from a list overlapping pages
-<li><b>PAG:</b> information may have been extracted from text added to the context from a page other than the one indicated
 <li><b>MUL:</b> information has been extracted from a sentence/paragraph about events on more than one date
+<li><b>PAG:</b> information may have been extracted from text from a page other than the one indicated (see 'Page numbers' section below)
 </ul>
   
 <h2>Date information</h2>
