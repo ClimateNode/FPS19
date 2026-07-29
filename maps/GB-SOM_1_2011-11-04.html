@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e401bc0eb962dbfd7580354d3cf313d2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e401bc0eb962dbfd7580354d3cf313d2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e401bc0eb962dbfd7580354d3cf313d2 = L.map(
+                "map_e401bc0eb962dbfd7580354d3cf313d2",
+                {
+                    center: [51.11926198335266, -2.4472884081919677],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fc0ab6f9c45adee0a593246df2164d29 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_fc0ab6f9c45adee0a593246df2164d29.addTo(map_e401bc0eb962dbfd7580354d3cf313d2);
+    
+            var marker_4e955d8f6c6b98cdeb6ffa9aafed82b4 = L.marker(
+                [51.119854300115925, -2.447314249151805],
+                {}
+            ).addTo(map_e401bc0eb962dbfd7580354d3cf313d2);
+        
+    
+            var icon_ebddb1ad09808a5d96c188fe2857d874 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4e955d8f6c6b98cdeb6ffa9aafed82b4.setIcon(icon_ebddb1ad09808a5d96c188fe2857d874);
+        
+    
+        var popup_3de5f9e76ab07559be65859f191f1fa2 = L.popup({});
+
+        
+            
+                var html_165f4006890221a5ffa3b6b7f3daa69f = $(`<div id="html_165f4006890221a5ffa3b6b7f3daa69f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Pastures</h1><div class="nugget-popup"><p>Floodwater flowing down the A359 reached the junction of the Bellways Development; because of the carriageway profile the water left the road and entered the new access to the development, conveying significant volumes of surface water into the site after highway drainage was overwhelmed. [PAG] (p9)</p></div><div class="nugget-popup"><p>Surface water from the A359 overwhelmed highway drainage and flowed down the carriageway into the new access to The Pastures. Estate road drainage captured water until the attenuation tank filled and then overflowed, adding to overland flow across the development's open space and directing water toward properties in Eastfield. Deposits of gravel from damaged pathways corroborate local accounts of this overland flow. (p10)</p></div><div class="nugget-popup"><p>The Pastures housing development's adopted surface water drainage system and attenuation tanks were overwhelmed by runoff originating outside the site during the 2011&ndash;11&ndash;04 event, resulting in flooding impacts to the development and its properties. (p12)</p></div></div></body></div>`)[0];
+                popup_3de5f9e76ab07559be65859f191f1fa2.setContent(html_165f4006890221a5ffa3b6b7f3daa69f);
+            
+        
+
+        marker_4e955d8f6c6b98cdeb6ffa9aafed82b4.bindPopup(popup_3de5f9e76ab07559be65859f191f1fa2)
+        ;
+
+        
+    
+    
+            var marker_a2befc68095d2ddc3b64f1a747b17bf0 = L.marker(
+                [51.1232532, -2.4403212],
+                {}
+            ).addTo(map_e401bc0eb962dbfd7580354d3cf313d2);
+        
+    
+            var icon_03947fca74b564776bd1ae007721b6b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a2befc68095d2ddc3b64f1a747b17bf0.setIcon(icon_03947fca74b564776bd1ae007721b6b3);
+        
+    
+        var popup_51db81d6a0fa332e78dad3fc01facf96 = L.popup({});
+
+        
+            
+                var html_7c8f529a6033cb85cf2b5896d2d926f3 = $(`<div id="html_7c8f529a6033cb85cf2b5896d2d926f3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cuckoo Hill, Bruton</h1><div class="nugget-popup"><p>Described as the origin of the flood event that affected properties in Bruton; the event originated at Cuckoo Hill and led to flooding impacts on local properties. (p5)</p></div><div class="nugget-popup"><p>A significant volume of surface water travelled down Cuckoo Hill during the event and entered The Pastures development via the new junction. The flow overwhelmed road drainage, ran over the development amenity space and into properties in Eastfield, contributing to flooding of residential properties. (p7)</p></div><div class="nugget-popup"><p>Highways surface&ndash;water run&ndash;off from Cuckoo Hill contributed additional significant volume to the flood flows reaching the A359, increasing local roadway/urban flooding. (p8)</p></div><div class="nugget-popup"><p>Area experienced flooding caused by overland surface water runoff associated with the unusual rainfall on 2011&ndash;11&ndash;04 and land management practices (maize stubble). (p13)</p></div><div class="nugget-popup"><p>Agricultural surface runoff from adjacent fields overtopped the field ditch and outfall where it meets road drains at Cuckoo Hill; the ditch had insufficient capacity so overtopping contributed to flooding reaching the road drainage system and contributed to flooding of the garden of an adjoining property. [TAB] (p17)</p></div><div class="nugget-popup"><p>A reception ditch and diversion culvert at Cuckoo Hill were unable to cope with agricultural field runoff. The diversion pipe entrance is only ~10 in (25 cm) diameter, providing limited capacity to discharge the volumes that collected in the reception ditch. The immediate sub&ndash;catchment draining to the ditch was estimated at 8 ha (within a 32 ha forage&ndash;maize field). For a 12&ndash;hour 30 mm event the intercepted rainfall was estimated at 2,400 m³, with ~70% absorption leaving an estimated 1,680 m³ of captured field runoff; if 50% of that required drainage the discharge pipe would need an average capacity of ~70 m³/hour. The report therefore identifies the culvert/pipe and reception ditch at Cuckoo Hill as being overwhelmed by surface&ndash;water/field&ndash;runoff during the event and requiring greater discharge capacity or diversion works. (p22)</p></div></div></body></div>`)[0];
+                popup_51db81d6a0fa332e78dad3fc01facf96.setContent(html_7c8f529a6033cb85cf2b5896d2d926f3);
+            
+        
+
+        marker_a2befc68095d2ddc3b64f1a747b17bf0.bindPopup(popup_51db81d6a0fa332e78dad3fc01facf96)
+        ;
+
+        
+    
+    
+            var marker_17f45e36459e8dd5a1b99098be61eaeb = L.marker(
+                [51.1171734, -2.4478136],
+                {}
+            ).addTo(map_e401bc0eb962dbfd7580354d3cf313d2);
+        
+    
+            var icon_3ea1a9fd393b15398488422cba1a0378 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_17f45e36459e8dd5a1b99098be61eaeb.setIcon(icon_3ea1a9fd393b15398488422cba1a0378);
+        
+    
+        var popup_152e239e93c6ad0bb8cd623723af7fd8 = L.popup({});
+
+        
+            
+                var html_f214177a7f598e0efe25aeec9fd3830b = $(`<div id="html_f214177a7f598e0efe25aeec9fd3830b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Eastfield, Bruton</h1><div class="nugget-popup"><p>Properties in Eastfield were flooded when surface water from Cuckoo Hill passed through The Pastures; sheltered housing (operated by Yarlington Homes) required evacuation of a number of vulnerable elderly residents. Between 10 and 15 homes across The Pastures and Eastfield were affected. (p7)</p></div><div class="nugget-popup"><p>Surface water travelled overland from The Pastures across open space and down roads, continuing through Eastfield and flooding residential properties; pathway surfaces were damaged with gravel deposits from the flood. (p10)</p></div><div class="nugget-popup"><p>Surface water flowed through Eastfield (from The Pastures open space and via Brue Avenue), entering the residential area and flooding houses. [PAG,IMG] (p11)</p></div><div class="nugget-popup"><p>Private surface water runoff reached the highway drainage in Eastfield in volumes significantly in excess of the system's design capacity; highway drainage was overwhelmed and ditch clearance and drainage investigations were planned. (p12)</p></div><div class="nugget-popup"><p>Experienced surface water / overland flow flooding during the event on 2011&ndash;11&ndash;04 resulting from an unusual rainfall pattern combined with land management factors; identified for further drainage and mitigation actions. (p13)</p></div><div class="nugget-popup"><p>A localised flooding event occurred at Eastfield (near Bruton) that was investigated as being influenced by surface runoff from adjacent agricultural land (Whaddon Farm fields). (p18)</p></div></div></body></div>`)[0];
+                popup_152e239e93c6ad0bb8cd623723af7fd8.setContent(html_f214177a7f598e0efe25aeec9fd3830b);
+            
+        
+
+        marker_17f45e36459e8dd5a1b99098be61eaeb.bindPopup(popup_152e239e93c6ad0bb8cd623723af7fd8)
+        ;
+
+        
+    
+    
+            var marker_dd2ccc4998ba2bd55c7cbc4f7045ba83 = L.marker(
+                [51.1169747, -2.4468993],
+                {}
+            ).addTo(map_e401bc0eb962dbfd7580354d3cf313d2);
+        
+    
+            var icon_f34d9a427820b6993c4bae731cce5ae1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dd2ccc4998ba2bd55c7cbc4f7045ba83.setIcon(icon_f34d9a427820b6993c4bae731cce5ae1);
+        
+    
+        var popup_b98970f8a137895ab038abbcf2cb980b = L.popup({});
+
+        
+            
+                var html_bc824200aad38b92cd4da0ca01f9a8b6 = $(`<div id="html_bc824200aad38b92cd4da0ca01f9a8b6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brue Avenue, Bruton</h1><div class="nugget-popup"><p>Surface water continued through Eastfield and flooded a number of houses on Brue Avenue. (p10)</p></div></div></body></div>`)[0];
+                popup_b98970f8a137895ab038abbcf2cb980b.setContent(html_bc824200aad38b92cd4da0ca01f9a8b6);
+            
+        
+
+        marker_dd2ccc4998ba2bd55c7cbc4f7045ba83.bindPopup(popup_b98970f8a137895ab038abbcf2cb980b)
+        ;
+
+        
+    
+    
+            var marker_1043997c1788eab6195abd8d45090ab5 = L.marker(
+                [51.1261525, -2.4480541],
+                {}
+            ).addTo(map_e401bc0eb962dbfd7580354d3cf313d2);
+        
+    
+            var icon_930032894e0f0beb04a8a74f07ce531c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1043997c1788eab6195abd8d45090ab5.setIcon(icon_930032894e0f0beb04a8a74f07ce531c);
+        
+    
+        var popup_47663ae2bc2cfe2b2b9ccc1fd9ec59cb = L.popup({});
+
+        
+            
+                var html_c435d0c9d462dd7718f9ad6a89921ee3 = $(`<div id="html_c435d0c9d462dd7718f9ad6a89921ee3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Whaddon Hill, Bruton</h1><div class="nugget-popup"><p>Fields to the east of Whaddon Hill drained in a south&ndash;westerly direction into a headland ditch area between fields 1 and 2. Post&ndash;harvest maize stubbles and silty loam soils produced waterlogged headland areas with standing water and poor drainage, producing surface runoff that contributed to a localised flooding event at Eastfield (near Bruton). (p18)</p></div></div></body></div>`)[0];
+                popup_47663ae2bc2cfe2b2b9ccc1fd9ec59cb.setContent(html_c435d0c9d462dd7718f9ad6a89921ee3);
+            
+        
+
+        marker_1043997c1788eab6195abd8d45090ab5.bindPopup(popup_47663ae2bc2cfe2b2b9ccc1fd9ec59cb)
+        ;
+
+        
+    
+    
+            var marker_48e773a96e912736523d8f2cb4b4e944 = L.marker(
+                [51.1121638, -2.453328],
+                {}
+            ).addTo(map_e401bc0eb962dbfd7580354d3cf313d2);
+        
+    
+            var icon_15dc10ebd4823065db65164a6bcbc068 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_48e773a96e912736523d8f2cb4b4e944.setIcon(icon_15dc10ebd4823065db65164a6bcbc068);
+        
+    
+        var popup_ec9f539cc33bec036001730726ef399f = L.popup({});
+
+        
+            
+                var html_bd72d740c0b72336d6d32381755844ac = $(`<div id="html_bd72d740c0b72336d6d32381755844ac" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bruton</h1><div class="nugget-popup"><p>Affected by the flood event originating at Cuckoo Hill; the event affected a significant number of properties in Bruton and generated substantial correspondence and local concern. (p5)</p></div><div class="nugget-popup"><p>Surface water travelling down Cuckoo Hill entered The Pastures development and flowed into Eastfield, flooding properties in Bruton and causing evacuation of vulnerable residents; between 10 and 15 homes across the affected area were flooded. [PAG] (p7)</p></div><div class="nugget-popup"><p>Intense short&ndash;duration downpours and saturated ground produced surface&ndash;water flooding in Bruton. Surface water and an overwhelmed field ditch ran overland onto the A359; between 10 and 15 homes in Bruton were flooded to varying degrees. Sheltered housing in Eastfield (Yarlington Homes) required evacuation of vulnerable elderly residents. [PAG] (p8)</p></div><div class="nugget-popup"><p>Intense short&ndash;duration rainfall and saturated ground produced large surface water run&ndash;off from agricultural land (maize stubble) which overwhelmed a field ditch and then the highway drainage on the A359. Turbid runoff covered the carriageway of the A359 at Bruton, impeding traffic and requiring an emergency/response presence; highway drainage was completely overwhelmed by flows originating off&ndash;field and from Cuckoo Hill. [PAG,IMG] (p9)</p></div><div class="nugget-popup"><p>On 2011&ndash;11&ndash;04 North Bruton experienced surface water flooding driven by an unusual rainfall pattern and runoff from farmland (notably maize stubble) north of the A359. Overland flows and overwhelmed highway/local drainage led to floodwater entering residential areas (including Cuckoo Hill, The Pastures and Eastfield) and caused damage to property; local drainage defects (blocked watercourse opposite the cemetery and a low headwall) exacerbated the flooding. (p13)</p></div></div></body></div>`)[0];
+                popup_ec9f539cc33bec036001730726ef399f.setContent(html_bd72d740c0b72336d6d32381755844ac);
+            
+        
+
+        marker_48e773a96e912736523d8f2cb4b4e944.bindPopup(popup_ec9f539cc33bec036001730726ef399f)
+        ;
+
+        
+    
+</script>
+</html>
