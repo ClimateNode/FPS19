@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_581b862859dc8afead1cea2375c267cc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_581b862859dc8afead1cea2375c267cc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_581b862859dc8afead1cea2375c267cc = L.map(
+                "map_581b862859dc8afead1cea2375c267cc",
+                {
+                    center: [50.89660591536431, -2.945571303777439],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4b08f0b5ca0654ce2e07b3e3a126d49e = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_4b08f0b5ca0654ce2e07b3e3a126d49e.addTo(map_581b862859dc8afead1cea2375c267cc);
+    
+            var marker_234b6d95b5967e781d94da919e2c212a = L.marker(
+                [50.882227031357104, -2.952754299274599],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_bf8973fcf893d3ade966c37f243d9e0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_234b6d95b5967e781d94da919e2c212a.setIcon(icon_bf8973fcf893d3ade966c37f243d9e0d);
+        
+    
+        var popup_99bb29dd27b7b53214ad6d2b93e45aa5 = L.popup({});
+
+        
+            
+                var html_b7f33fc9bf01dd41195802a4312fae41 = $(`<div id="html_b7f33fc9bf01dd41195802a4312fae41" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Furnham Road Industrial Estate</h1><div class="nugget-popup"><p>The Furnham Road industrial area/estate in Chard was affected by flooding during the heavy rainfall on 21&ndash;22 October 2021. The report references resident&ndash;supplied photographs of flooding in progress and describes the rainfall as a 1&ndash;in&ndash;38&ndash;year event, with extent/depth below that of a 1&ndash;in&ndash;100&ndash;year event shown on EA maps. [IMG] (p5)</p></div><div class="nugget-popup"><p>Flooding occurred in Furnham Road Industrial Estate during the event; the estate experienced surface water inundation (extent not fully detailed in the text). (p13)</p></div></div></body></div>`)[0];
+                popup_99bb29dd27b7b53214ad6d2b93e45aa5.setContent(html_b7f33fc9bf01dd41195802a4312fae41);
+            
+        
+
+        marker_234b6d95b5967e781d94da919e2c212a.bindPopup(popup_99bb29dd27b7b53214ad6d2b93e45aa5)
+        ;
+
+        
+    
+    
+            var marker_9fe3a3f268303c9dae79b6fcfbcdac07 = L.marker(
+                [50.9631628, -2.9042869],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_ede3c343c29f07a184766424df3300df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9fe3a3f268303c9dae79b6fcfbcdac07.setIcon(icon_ede3c343c29f07a184766424df3300df);
+        
+    
+        var popup_3008452d9733746468e88e6142973171 = L.popup({});
+
+        
+            
+                var html_f6c5e8657536e11021e6c69d08b4ea6e = $(`<div id="html_f6c5e8657536e11021e6c69d08b4ea6e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Isle</h1><div class="nugget-popup"><p>The town's drainage mostly heads towards the River Isle and surrounding villages sit along its route; during the heavy rainfall on 21&ndash;22 October 2021 elevated flows in the River Isle were implicated in flooding along its route, contributing to flooding of nearby communities. (p5)</p></div></div></body></div>`)[0];
+                popup_3008452d9733746468e88e6142973171.setContent(html_f6c5e8657536e11021e6c69d08b4ea6e);
+            
+        
+
+        marker_9fe3a3f268303c9dae79b6fcfbcdac07.bindPopup(popup_3008452d9733746468e88e6142973171)
+        ;
+
+        
+    
+    
+            var marker_f6f1b4d9aea4126d9f90c56938ac490c = L.marker(
+                [50.8791878, -2.9711059],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_946fc4b0a6569d75ba7cc8f431a622b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f6f1b4d9aea4126d9f90c56938ac490c.setIcon(icon_946fc4b0a6569d75ba7cc8f431a622b5);
+        
+    
+        var popup_31a49360f385466be91bbfb8f0c698d5 = L.popup({});
+
+        
+            
+                var html_357dd81d07bc756b97978bdad35424ea = $(`<div id="html_357dd81d07bc756b97978bdad35424ea" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Crimchard, Chard</h1><div class="nugget-popup"><p>The Crimchard neighbourhood was affected by flooding during the heavy rainfall event. Residents supplied photographs showing flooding in progress; the event is described in the report as a 1&ndash;in&ndash;38&ndash;year rainfall event so the extent and depths were less than those shown for a 1&ndash;in&ndash;100&ndash;year event on Environment Agency maps. [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_31a49360f385466be91bbfb8f0c698d5.setContent(html_357dd81d07bc756b97978bdad35424ea);
+            
+        
+
+        marker_f6f1b4d9aea4126d9f90c56938ac490c.bindPopup(popup_31a49360f385466be91bbfb8f0c698d5)
+        ;
+
+        
+    
+    
+            var marker_1ad5068ffa8aefb96f93cd8611ebd3e5 = L.marker(
+                [50.8746105, -2.9738503],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_5ab360ac463953f0d6259de4be0b3f1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1ad5068ffa8aefb96f93cd8611ebd3e5.setIcon(icon_5ab360ac463953f0d6259de4be0b3f1d);
+        
+    
+        var popup_1b05f8b78159deff5b9f53df85040e47 = L.popup({});
+
+        
+            
+                var html_9e3d9c825f1ef7bd0aa7f9f862abb02f = $(`<div id="html_9e3d9c825f1ef7bd0aa7f9f862abb02f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Touchstone Lane, Wadeford</h1><div class="nugget-popup"><p>Touchstone Lane, as a street within Chard, was affected by flooding during the heavy rainfall on 21&ndash;22 October 2021; residents provided images of flooding in progress and the event is characterised in the report as a 1&ndash;in&ndash;38&ndash;year event (less extensive than a 1&ndash;in&ndash;100&ndash;year event). [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_1b05f8b78159deff5b9f53df85040e47.setContent(html_9e3d9c825f1ef7bd0aa7f9f862abb02f);
+            
+        
+
+        marker_1ad5068ffa8aefb96f93cd8611ebd3e5.bindPopup(popup_1b05f8b78159deff5b9f53df85040e47)
+        ;
+
+        
+    
+    
+            var marker_056499beab9a48c40805fc7bc2676356 = L.marker(
+                [50.872437, -2.969306],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_6a087e7af1f8ee45d4a25958fa5c79f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_056499beab9a48c40805fc7bc2676356.setIcon(icon_6a087e7af1f8ee45d4a25958fa5c79f2);
+        
+    
+        var popup_d2e6d97643b8b3a59680d4b74c44acb6 = L.popup({});
+
+        
+            
+                var html_fabeaa564e8736597cd0e3be6eaba064 = $(`<div id="html_fabeaa564e8736597cd0e3be6eaba064" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>High Street, Chard</h1><div class="nugget-popup"><p>High Street in Chard experienced flooding during the heavy rainfall event on 21&ndash;22 October 2021. The report includes resident&ndash;supplied photographs of flooding in progress and notes the rainfall was a 1&ndash;in&ndash;38&ndash;year event (so extent/depth were less than a 1&ndash;in&ndash;100&ndash;year event). [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_d2e6d97643b8b3a59680d4b74c44acb6.setContent(html_fabeaa564e8736597cd0e3be6eaba064);
+            
+        
+
+        marker_056499beab9a48c40805fc7bc2676356.bindPopup(popup_d2e6d97643b8b3a59680d4b74c44acb6)
+        ;
+
+        
+    
+    
+            var marker_a013ed1fcdef04271e2334f40ffd203d = L.marker(
+                [50.86646, -2.965473],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_d6036b68a11af009d569ca511a8026fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a013ed1fcdef04271e2334f40ffd203d.setIcon(icon_d6036b68a11af009d569ca511a8026fa);
+        
+    
+        var popup_b061ca60c3f9500a3bd7077621099e7c = L.popup({});
+
+        
+            
+                var html_652bc1c75ee5653151de0b3bb54a6b10 = $(`<div id="html_652bc1c75ee5653151de0b3bb54a6b10" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>St Marys Close, Chard</h1><div class="nugget-popup"><p>St Mary&#8217;s Close was affected by flooding during the heavy rainfall on 21&ndash;22 October 2021; residents provided photographs included in the report showing flooding in progress. The event is described as approximately a 1&ndash;in&ndash;38&ndash;year rainfall event. (p5)</p></div></div></body></div>`)[0];
+                popup_b061ca60c3f9500a3bd7077621099e7c.setContent(html_652bc1c75ee5653151de0b3bb54a6b10);
+            
+        
+
+        marker_a013ed1fcdef04271e2334f40ffd203d.bindPopup(popup_b061ca60c3f9500a3bd7077621099e7c)
+        ;
+
+        
+    
+    
+            var marker_e2b379ca8be8a435e48036ea44d06507 = L.marker(
+                [50.878597, -2.9633312],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_f35df576e469b76a4acdca7afcc8016c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e2b379ca8be8a435e48036ea44d06507.setIcon(icon_f35df576e469b76a4acdca7afcc8016c);
+        
+    
+        var popup_e25d4419d985b458f80759edb7d17fad = L.popup({});
+
+        
+            
+                var html_02b24c4ade988056d82355511a7bc8ce = $(`<div id="html_02b24c4ade988056d82355511a7bc8ce" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Glynswood, Chard</h1><div class="nugget-popup"><p>The Glynswood neighbourhood was impacted by flooding during the heavy rainfall event of 21&ndash;22 October 2021. The report includes resident&ndash;submitted photographs of flooding in progress and characterises the rainfall as roughly a 1&ndash;in&ndash;38&ndash;year event (less severe than a 1&ndash;in&ndash;100&ndash;year event). [IMG] (p5)</p></div><div class="nugget-popup"><p>Flooding reported around Glynswood with internal property flooding affecting properties in the area. [TAB] (p11)</p></div><div class="nugget-popup"><p>Two properties in Glynswood were internally flooded. Part of the flooding was due to the local stream (running across open ground behind the secondary school) backing up; blockage at the debris grid to the culvert or lack of culvert capacity was suspected to have contributed. Surface water also flowed from nearby pinch points (Catch Gate Lane, Thorndon Park) onto Glynswood. [PAG] (p13)</p></div><div class="nugget-popup"><p>Two properties internally flooded in Glynswood. Flooding was caused in part by a stream running across open ground behind the secondary school backing up; contributors may have included a blocked debris grid at a culvert and/or insufficient culvert capacity, in combination with overland flow of rainwater. [TAB] (p14)</p></div><div class="nugget-popup"><p>Area was the focus of public concern about a sluice; Wessex Water attended the Glynswood area to investigate sewer flooding and surface water entering the sewer system during the event. [TAB] (p16)</p></div><div class="nugget-popup"><p>Wessex Water attended the Glynswood area to investigate sewer flooding and surface water entering the sewer system; residents reported concerns about a sluice. There were reports of residents lifting sewer manhole covers to release surface water, which caused sewer surcharging elsewhere. (p17)</p></div><div class="nugget-popup"><p>Surface water ran into a brook that conveyed flows through open space in Glynswood and entered a culverted section beneath properties at the eastern end; the culvert acted as a bottleneck that restricted flows and increased local flooding risk during the event. [IMG] (p19)</p></div><div class="nugget-popup"><p>Photographic evidence in the report (Figure 9) shows flooding occurring on Glynswood in Chard; the street was inundated by floodwater. (p22)</p></div><div class="nugget-popup"><p>Street flooding covered a significant portion of the roadway and extended to the verge/entrances of adjacent residential properties; multiple parked cars were partially in standing water; residents observed/stood near houses suggesting risk to homes and the need for immediate attention. Water depth visually shallow (a few centimetres) but sufficient to inundate the road surface and approach doorways. [IMG] (p23)</p></div></div></body></div>`)[0];
+                popup_e25d4419d985b458f80759edb7d17fad.setContent(html_02b24c4ade988056d82355511a7bc8ce);
+            
+        
+
+        marker_e2b379ca8be8a435e48036ea44d06507.bindPopup(popup_e25d4419d985b458f80759edb7d17fad)
+        ;
+
+        
+    
+    
+            var marker_874a049a1759ad90fc14e6fa13a165d0 = L.marker(
+                [50.8817064, -2.9723549],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_dba0ba198d284767bb549ab8ec1a9cd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_874a049a1759ad90fc14e6fa13a165d0.setIcon(icon_dba0ba198d284767bb549ab8ec1a9cd0);
+        
+    
+        var popup_bebcfbdc5232b32150944dae8b200247 = L.popup({});
+
+        
+            
+                var html_b726aac25ba25117550a0cae507a11f7 = $(`<div id="html_b726aac25ba25117550a0cae507a11f7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Catchgate Lane, Wadeford</h1><div class="nugget-popup"><p>Internal property flooding reported around Catchgate Lane; multiple residential properties affected. [TAB] (p11)</p></div><div class="nugget-popup"><p>Surface water flowed through Catch Gate Lane and overwhelmed the flood&ndash;prevention silt trap installed by Highways; the lane acted as a crucial pinch point contributing to downstream flooding. Highways later performed jetting and camera surveys at this location. (p13)</p></div></div></body></div>`)[0];
+                popup_bebcfbdc5232b32150944dae8b200247.setContent(html_b726aac25ba25117550a0cae507a11f7);
+            
+        
+
+        marker_874a049a1759ad90fc14e6fa13a165d0.bindPopup(popup_bebcfbdc5232b32150944dae8b200247)
+        ;
+
+        
+    
+    
+            var marker_4cc4e36ad00c63dbadaa57e71b7ee4f6 = L.marker(
+                [50.8814999, -2.9510682],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_3472ca8782b44bdd97fd53cc36a92d57 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4cc4e36ad00c63dbadaa57e71b7ee4f6.setIcon(icon_3472ca8782b44bdd97fd53cc36a92d57);
+        
+    
+        var popup_fc85e1f7e4fe62fa563df53448da84f8 = L.popup({});
+
+        
+            
+                var html_4ba8f9aa903aa23c0aa95ed4b1b30a48 = $(`<div id="html_4ba8f9aa903aa23c0aa95ed4b1b30a48" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Beeching Close, Chard</h1><div class="nugget-popup"><p>Internal property flooding reported in Beeching Close; residential properties impacted. [TAB] (p11)</p></div><div class="nugget-popup"><p>Surface water from the Blackdown Hills routed down through Furnham Road and Beeching Close towards the low point at Chard Reservoir, contributing to local road flooding and increased runoff into the reservoir. [TAB] (p14)</p></div><div class="nugget-popup"><p>Overland surface water spilled into Beeching Close during the event, flooding at least one property. [IMG] (p19)</p></div></div></body></div>`)[0];
+                popup_fc85e1f7e4fe62fa563df53448da84f8.setContent(html_4ba8f9aa903aa23c0aa95ed4b1b30a48);
+            
+        
+
+        marker_4cc4e36ad00c63dbadaa57e71b7ee4f6.bindPopup(popup_fc85e1f7e4fe62fa563df53448da84f8)
+        ;
+
+        
+    
+    
+            var marker_f877c4074157b2d866eb8ae2704b5718 = L.marker(
+                [50.8465409, -2.9429964],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_9c40d33c3c6d20d3f9dbdcc7af9d32c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f877c4074157b2d866eb8ae2704b5718.setIcon(icon_9c40d33c3c6d20d3f9dbdcc7af9d32c6);
+        
+    
+        var popup_c8466b920dee13764bbca4d383026595 = L.popup({});
+
+        
+            
+                var html_4ad665f9a0981b9f4bfdf63e61818e51 = $(`<div id="html_4ad665f9a0981b9f4bfdf63e61818e51" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Fore Street, Tatworth</h1><div class="nugget-popup"><p>Internal property flooding reported around Fore Street in Tatworth; residential properties affected. [TAB] (p11)</p></div></div></body></div>`)[0];
+                popup_c8466b920dee13764bbca4d383026595.setContent(html_4ad665f9a0981b9f4bfdf63e61818e51);
+            
+        
+
+        marker_f877c4074157b2d866eb8ae2704b5718.bindPopup(popup_c8466b920dee13764bbca4d383026595)
+        ;
+
+        
+    
+    
+            var marker_6e0c0c679bcb0e96503896fa7c3ed657 = L.marker(
+                [50.8422978, -2.9396921],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_61e15d7479268f21073f554527559fee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6e0c0c679bcb0e96503896fa7c3ed657.setIcon(icon_61e15d7479268f21073f554527559fee);
+        
+    
+        var popup_c7354cb73c05e8f21ea204ffa9800234 = L.popup({});
+
+        
+            
+                var html_33bd75895db244baa06b31160b4daf66 = $(`<div id="html_33bd75895db244baa06b31160b4daf66" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Station Road, Chard Junction</h1><div class="nugget-popup"><p>Internal property flooding reported around Station Road in Tatworth; residential properties affected. [TAB] (p11)</p></div></div></body></div>`)[0];
+                popup_c7354cb73c05e8f21ea204ffa9800234.setContent(html_33bd75895db244baa06b31160b4daf66);
+            
+        
+
+        marker_6e0c0c679bcb0e96503896fa7c3ed657.bindPopup(popup_c7354cb73c05e8f21ea204ffa9800234)
+        ;
+
+        
+    
+    
+            var marker_fd7d33451eb44409d07abed1ca17006e = L.marker(
+                [50.8415859, -2.94555],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_35857537d0d425081802f5d7f15463f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fd7d33451eb44409d07abed1ca17006e.setIcon(icon_35857537d0d425081802f5d7f15463f5);
+        
+    
+        var popup_de57ae417200dd6b46adbfc97841999d = L.popup({});
+
+        
+            
+                var html_e09824d2f73e80a0320094b20b09f256 = $(`<div id="html_e09824d2f73e80a0320094b20b09f256" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Factory Lane, Tatworth</h1><div class="nugget-popup"><p>Internal property flooding reported around Factory Lane; homes affected by floodwater entering properties. [TAB] (p11)</p></div></div></body></div>`)[0];
+                popup_de57ae417200dd6b46adbfc97841999d.setContent(html_e09824d2f73e80a0320094b20b09f256);
+            
+        
+
+        marker_fd7d33451eb44409d07abed1ca17006e.bindPopup(popup_de57ae417200dd6b46adbfc97841999d)
+        ;
+
+        
+    
+    
+            var marker_b300ab40db4f401352621f5d33faf8c9 = L.marker(
+                [50.84888, -2.9435222],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_7900eea210d26ad2bc5aeb32747ff6dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b300ab40db4f401352621f5d33faf8c9.setIcon(icon_7900eea210d26ad2bc5aeb32747ff6dc);
+        
+    
+        var popup_01786372c569643625c1bef192aa4aa2 = L.popup({});
+
+        
+            
+                var html_a5ea4a6ed01a60273ee416413bfcac9f = $(`<div id="html_a5ea4a6ed01a60273ee416413bfcac9f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Lower Coombses, Tatworth</h1><div class="nugget-popup"><p>Internal property flooding reported around Lower Coombses; properties experienced floodwater ingress. [TAB] (p11)</p></div><div class="nugget-popup"><p>Flooding reported at the end of Lower Coombses equivalent to the June incident; impacts were assumed to be road and outbuilding flooding (no confirmed internal property flooding reported). (p13)</p></div></div></body></div>`)[0];
+                popup_01786372c569643625c1bef192aa4aa2.setContent(html_a5ea4a6ed01a60273ee416413bfcac9f);
+            
+        
+
+        marker_b300ab40db4f401352621f5d33faf8c9.bindPopup(popup_01786372c569643625c1bef192aa4aa2)
+        ;
+
+        
+    
+    
+            var marker_5ff26fb3bbb43f0ddbd9481d1a793a1b = L.marker(
+                [50.8817711, -2.9605707],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_6b34ebd08b188dfe3481f559d9ffdad9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5ff26fb3bbb43f0ddbd9481d1a793a1b.setIcon(icon_6b34ebd08b188dfe3481f559d9ffdad9);
+        
+    
+        var popup_e6a96583341b1d19477bd5b18ff05db0 = L.popup({});
+
+        
+            
+                var html_d104dbaea19873784fd993f80ddcfd6d = $(`<div id="html_d104dbaea19873784fd993f80ddcfd6d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Thorndun Park Drive, Wadeford</h1><div class="nugget-popup"><p>Brown surface water was observed coming onto Thorndon Park (sic) and flowing back toward Glynswood, indicating surface&ndash;water/overland flow impacts on the park and contributing to flooding in the adjacent Glynswood area. (p13)</p></div></div></body></div>`)[0];
+                popup_e6a96583341b1d19477bd5b18ff05db0.setContent(html_d104dbaea19873784fd993f80ddcfd6d);
+            
+        
+
+        marker_5ff26fb3bbb43f0ddbd9481d1a793a1b.bindPopup(popup_e6a96583341b1d19477bd5b18ff05db0)
+        ;
+
+        
+    
+    
+            var marker_65eadd60c1e0727d215945f35b9f9c5c = L.marker(
+                [50.8473885, -2.9555513],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_d54aea90eeb4fe01d93f7f908b220587 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_65eadd60c1e0727d215945f35b9f9c5c.setIcon(icon_d54aea90eeb4fe01d93f7f908b220587);
+        
+    
+        var popup_7f25f7142788999f46d95644a6e6adff = L.popup({});
+
+        
+            
+                var html_6fdda848d3868ebf5bd71a08e032b33c = $(`<div id="html_6fdda848d3868ebf5bd71a08e032b33c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Waterlake Road, Tatworth</h1><div class="nugget-popup"><p>Water pooled at this low point during the event; Highways reported flooding on Waterlake Road equivalent to the June incident. Impacts were reported as road and outbuilding flooding, with no confirmed internal property flooding noted. (p13)</p></div></div></body></div>`)[0];
+                popup_7f25f7142788999f46d95644a6e6adff.setContent(html_6fdda848d3868ebf5bd71a08e032b33c);
+            
+        
+
+        marker_65eadd60c1e0727d215945f35b9f9c5c.bindPopup(popup_7f25f7142788999f46d95644a6e6adff)
+        ;
+
+        
+    
+    
+            var marker_526e8524af101da0b3ad963128a954a6 = L.marker(
+                [50.8762126, -2.9582902],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_fcd1400cebf5818c3c2fa7cb577d0af2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_526e8524af101da0b3ad963128a954a6.setIcon(icon_fcd1400cebf5818c3c2fa7cb577d0af2);
+        
+    
+        var popup_3514f40bcd67bfbf7728abf9d623ea86 = L.popup({});
+
+        
+            
+                var html_add71a4bfa7b4dedf1628a0c8e167d0d = $(`<div id="html_add71a4bfa7b4dedf1628a0c8e167d0d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Furnham Road, Chard</h1><div class="nugget-popup"><p>Runoff from higher ground was funnelled down Furnham Road during the event, concentrating overland flow along the road and contributing to spill&ndash;over into adjoining streets. [IMG] (p19)</p></div></div></body></div>`)[0];
+                popup_3514f40bcd67bfbf7728abf9d623ea86.setContent(html_add71a4bfa7b4dedf1628a0c8e167d0d);
+            
+        
+
+        marker_526e8524af101da0b3ad963128a954a6.bindPopup(popup_3514f40bcd67bfbf7728abf9d623ea86)
+        ;
+
+        
+    
+    
+            var marker_287bb20260e12fc5a52013980016ac0f = L.marker(
+                [50.8476531, -2.9581551],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_fd329597665318a85645982dedfcd5f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_287bb20260e12fc5a52013980016ac0f.setIcon(icon_fd329597665318a85645982dedfcd5f0);
+        
+    
+        var popup_70c3487198218c824b1f6d726db6547e = L.popup({});
+
+        
+            
+                var html_25a8a7e77ef2d5d21e92b1738b6b167a = $(`<div id="html_25a8a7e77ef2d5d21e92b1738b6b167a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tatworth</h1><div class="nugget-popup"><p>Village was badly affected by the heavy rainfall event; subsequent flooding occurred during the incident (residents provided photographs of flooding in progress). [PAG] (p5)</p></div><div class="nugget-popup"><p>Internal property flooding was reported in October 2021 affecting properties and streets around Fore Street, Station Road, Factory Lane and Lower Coombses in Tatworth. [PAG] (p10)</p></div><div class="nugget-popup"><p>Multiple areas of Tatworth experienced flooding with internal property flooding reported around Fore Street, Station Road, Factory Lane and Lower Coombses. [TAB] (p11)</p></div><div class="nugget-popup"><p>Additional reported flooding at up to three locations that may have been road&ndash;only flooding (surface water running to low points). One location was a factory adjacent to a watercourse where debris showed the water had been high and fast&ndash;flowing; it is possible (not confirmed) that the factory was flooded from the watercourse. [TAB,MUL] (p14)</p></div></div></body></div>`)[0];
+                popup_70c3487198218c824b1f6d726db6547e.setContent(html_25a8a7e77ef2d5d21e92b1738b6b167a);
+            
+        
+
+        marker_287bb20260e12fc5a52013980016ac0f.bindPopup(popup_70c3487198218c824b1f6d726db6547e)
+        ;
+
+        
+    
+    
+            var marker_1b8308268190c861b85a558f392da918 = L.marker(
+                [50.873672, -2.9597425],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_2ed632e3ddb4daeca5da9a9d5d96d59e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1b8308268190c861b85a558f392da918.setIcon(icon_2ed632e3ddb4daeca5da9a9d5d96d59e);
+        
+    
+        var popup_c3f71c855c6f00f031c84298933ad1aa = L.popup({});
+
+        
+            
+                var html_ac03d2f88844f3e267c992792d113738 = $(`<div id="html_ac03d2f88844f3e267c992792d113738" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chard</h1><div class="nugget-popup"><p>Following heavy rainfall on 21&ndash;22 October 2021 the town experienced flooding: streets and urban areas were inundated and properties were affected. The event was assessed as 1&ndash;in&ndash;38&ndash;year intensity, so extent and depths were less than those shown for a 1&ndash;in&ndash;100&ndash;year event. [IMG] (p5)</p></div><div class="nugget-popup"><p>Flooding occurred around Catchgate Lane (northwest), Beeching Close (northeast) and Glynswood. Several properties and businesses were flooded, with water reported up to two feet (approximately 600 mm) deep; some properties were described as quite badly flooded though the water cleared without significant lasting damage. The Guildhall was opened as a Place of Safety and sandbags were distributed from there. [PAG] (p12)</p></div><div class="nugget-popup"><p>Two properties in the Glynswood area were internally flooded. Part of this flooding was due to a stream that backs up across the open ground behind the secondary school; the report notes possible contribution from a blocked debris grid on a culvert and/or insufficient culvert capacity. [TAB,MUL] (p14)</p></div><div class="nugget-popup"><p>The town experienced the 1&ndash;in&ndash;38&ndash;year rainfall event which produced primary flow paths across the town, causing surface water to run through open spaces and watercourses and leading to localised flooding of properties and areas (photos from Chard referenced). Flood mitigation measures are being developed in response, including pilot projects and wider modelling. [TAB] (p20)</p></div><div class="nugget-popup"><p>Flood water flowed along and across a residential street, inundating the carriageway adjacent to houses and parked cars. Water was orange&ndash;brown and carrying silt and debris, indicating sediment&ndash;laden surface runoff affecting the street and nearby properties. [PAG,IMG] (p25)</p></div><div class="nugget-popup"><p>Thorndon Park Drive: two houses flooded. [PAG,MUL] (p26)</p></div></div></body></div>`)[0];
+                popup_c3f71c855c6f00f031c84298933ad1aa.setContent(html_ac03d2f88844f3e267c992792d113738);
+            
+        
+
+        marker_1b8308268190c861b85a558f392da918.bindPopup(popup_c3f71c855c6f00f031c84298933ad1aa)
+        ;
+
+        
+    
+    
+            var marker_ea1e1756e12308bcb9f782866d12dd29 = L.marker(
+                [50.85878, -2.9446025],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_769571b131889cb81c295c9f949c3441 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ea1e1756e12308bcb9f782866d12dd29.setIcon(icon_769571b131889cb81c295c9f949c3441);
+        
+    
+        var popup_dd724f51df5e3a43059296083448ca6e = L.popup({});
+
+        
+            
+                var html_bc188ff20e9558eb635709d528646c37 = $(`<div id="html_bc188ff20e9558eb635709d528646c37" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Forton</h1><div class="nugget-popup"><p>Flooding reported around Forton; no confirmed internal property flooding but assumed outbuilding or road flooding occurred. [TAB] (p11)</p></div><div class="nugget-popup"><p>The area experienced significant pressure from flood flows during the event (reported as significant pressure comparable to other affected localities). (p13)</p></div><div class="nugget-popup"><p>Reports of flooding in the area affecting roads and possibly outbuildings; residents did not report internal property flooding but public highways and non&ndash;residential structures were affected by surface water runoff. [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_dd724f51df5e3a43059296083448ca6e.setContent(html_bc188ff20e9558eb635709d528646c37);
+            
+        
+
+        marker_ea1e1756e12308bcb9f782866d12dd29.bindPopup(popup_dd724f51df5e3a43059296083448ca6e)
+        ;
+
+        
+    
+    
+            var marker_74981fd88e687803989e8cf481c6c809 = L.marker(
+                [50.9267192, -2.9102756],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_b298e85878624dfb67b1dd7d0f9be40a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_74981fd88e687803989e8cf481c6c809.setIcon(icon_b298e85878624dfb67b1dd7d0f9be40a);
+        
+    
+        var popup_4b371650e4ebb8ec0c8e75c1bda803d9 = L.popup({});
+
+        
+            
+                var html_6a166675d74271dfb67cde0aeef430ac = $(`<div id="html_6a166675d74271dfb67cde0aeef430ac" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ilminster</h1><div class="nugget-popup"><p>A life&ndash;threatening flooding incident affected at least ten households in Ilminster, requiring emergency response and prioritisation by Fire and Rescue services. (p12)</p></div></div></body></div>`)[0];
+                popup_4b371650e4ebb8ec0c8e75c1bda803d9.setContent(html_6a166675d74271dfb67cde0aeef430ac);
+            
+        
+
+        marker_74981fd88e687803989e8cf481c6c809.bindPopup(popup_4b371650e4ebb8ec0c8e75c1bda803d9)
+        ;
+
+        
+    
+    
+            var marker_ba794240c5c28924f886d49b8eef43e5 = L.marker(
+                [50.8957399, -3.0223058],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_1a57e31f5b7ff5265410d84abd2eb5c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ba794240c5c28924f886d49b8eef43e5.setIcon(icon_1a57e31f5b7ff5265410d84abd2eb5c3);
+        
+    
+        var popup_73e59a9fdaca0c160dacea9be17e6adb = L.popup({});
+
+        
+            
+                var html_b7357ea1d6faf5e49cb9a3cd420522f0 = $(`<div id="html_b7357ea1d6faf5e49cb9a3cd420522f0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northay</h1><div class="nugget-popup"><p>Road damage from the event required only a small patching response (less severe than the June incident). (p13)</p></div></div></body></div>`)[0];
+                popup_73e59a9fdaca0c160dacea9be17e6adb.setContent(html_b7357ea1d6faf5e49cb9a3cd420522f0);
+            
+        
+
+        marker_ba794240c5c28924f886d49b8eef43e5.bindPopup(popup_73e59a9fdaca0c160dacea9be17e6adb)
+        ;
+
+        
+    
+    
+            var marker_df8f01edff70f96edb4e02f6b0a0bd09 = L.marker(
+                [50.885162, -2.9415295],
+                {}
+            ).addTo(map_581b862859dc8afead1cea2375c267cc);
+        
+    
+            var icon_af18d5f85199c4bd7d38c1519337667d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_df8f01edff70f96edb4e02f6b0a0bd09.setIcon(icon_af18d5f85199c4bd7d38c1519337667d);
+        
+    
+        var popup_c04ca54f037b6a7a9be525c11689af23 = L.popup({});
+
+        
+            
+                var html_ddf24492e994a406aa34891352aad181 = $(`<div id="html_ddf24492e994a406aa34891352aad181" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chard Reservoir</h1><div class="nugget-popup"><p>Chard Reservoir overtopped/overflowed, discharging into the River Isle to the east of the town during the event; this overflow formed part of the flood flow in the Isle corridor (a flood warning was issued for this stretch of river). [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_c04ca54f037b6a7a9be525c11689af23.setContent(html_ddf24492e994a406aa34891352aad181);
+            
+        
+
+        marker_df8f01edff70f96edb4e02f6b0a0bd09.bindPopup(popup_c04ca54f037b6a7a9be525c11689af23)
+        ;
+
+        
+    
+</script>
+</html>
