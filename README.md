@@ -15,6 +15,8 @@ These are intended only as interim outputs for progress checking. The current ma
 
 ## Interpretation notes
 
+Please also see "How to interpret the map" on the interactive map page.
+
 •  Outputs linked to individual Section 19 reports can be identified via the file name of each readout/map in the following format:<br>[_ISO code of the relevant local authority_](https://www.iso.org/obp/ui#iso:code:3166:GB) _ _index_ _ _start date of the event (YYYY-mm-dd)_ _ _file extension_
 
 • Map coordinates of places are typically derived from geocoding and do not indicate the precise locations of flood impacts – do not interpret them as such.
