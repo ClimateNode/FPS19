@@ -1,17 +1,4 @@
-# Provisional full geoJSON
-
-Changes from the sample geoJSON structure:
-* the three type properties have been replaced by a single `type`
-* `llfa` property has been added
-* `ref` property has replaced `link` in order to give both the title and link of the flood investigation report
-
-Known issues
-* An `llfa` of `null` is allowed for the provisional version but won't be for the final version
-* Some `when_desc` strings are a bit messy – these will be tidied for the final version
-* Some map features problably have too much information, as previously discussed
-* Final version to have undergone a check for consistency of quantitative information with respect to the number of properties flooded
-* Cumbria is an old LLFA and needs to be replaced with Cumberland and Westmorland and Furness Unitary Authorities.
-* Remove point in Wales and the North Sea. Also "UK" and "England"
+# Full geoJSON
 
 The geoJSON properties are structured as follows:
 
