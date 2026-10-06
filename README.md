@@ -12,7 +12,7 @@ It contains three types of outputs:
 
 • readouts of individual reports (markdown files)
 
-The first of these is the current main output: and is contained in `[geoJSON/FPS19_full.json.zip](https://github.com/ClimateNode/FPS19/blob/main/geoJSON/FPS19_full.json.zip)`. It is expected to be updated in late 2026. This dataset is also displayed on an interactive map [here](https://www.floodedpeople.org.uk/s19-investigations). The latter two were intended only as interim outputs for progress checking. 
+The first of these is the current main output: and is contained in [geoJSON/FPS19_full.json.zip](https://github.com/ClimateNode/FPS19/blob/main/geoJSON/FPS19_full.json.zip). It is expected to be updated in late 2026. This dataset is also displayed on an interactive map [here](https://www.floodedpeople.org.uk/s19-investigations). The latter two were intended only as interim outputs for progress checking. 
 
 ## Licence and attribution
 
