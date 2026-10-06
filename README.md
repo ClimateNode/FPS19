@@ -16,7 +16,7 @@ The first of these is the current main output: and is contained in [geoJSON/FPS1
 
 ## Licence and attribution
 
-The geoJSON dataset and maps contain OpenStreetMap data, therefore they inherit the [licensing](https://osmfoundation.org/wiki/Licence/Licence_and_Legal_FAQ) and [attribution](https://osmfoundation.org/wiki/Licence/Attribution_Guidelines) conditions of OpenStreetMap. If using the data, you must attribute OpenStreetMap and Helen Jackson. The data is available under an [Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/deed.en) (CC-BY-SA) licence.
+The geoJSON dataset and maps contain OpenStreetMap data, therefore they inherit the [licensing](https://osmfoundation.org/wiki/Licence/Licence_and_Legal_FAQ) and [attribution](https://osmfoundation.org/wiki/Licence/Attribution_Guidelines) conditions of OpenStreetMap. If using the data, you must attribute OpenStreetMap and Helen Jackson. The outputs are available under an [Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/deed.en) (CC-BY-SA) licence.
 
 ## Disclaimer
 
