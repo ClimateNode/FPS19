@@ -25,3 +25,5 @@ LLMs can hallucinate, be over-confident and misunderstand instructions. Use the 
 ## Interpretation notes
 
 Please see "[How to interpret the map](https://www.floodedpeople.org.uk/s19-investigations)" on the interactive map page for notes on how to interpret the data.
+
+Note that coordinates indicate the general place mentioned, not the precise location of flood impacts. 
