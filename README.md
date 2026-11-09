@@ -18,7 +18,7 @@ The geoJSON dataset and maps contain OpenStreetMap data, therefore they inherit 
 
 ## Disclaimer
 
-These outputs are the result of an experimental *pro bono* project and are available to download and use on an "as is" basis.
+These outputs are the result of an experimental *pro bono* project and are available to download and use for free on an "as is" basis.
 
 LLMs can hallucinate, be over-confident and misunderstand instructions. Use the data with this in mind. If a finding or piece of information in the dataset is materially important to you, *check the corresponding statements in the underlying source*, particularly if it attributes responsibility. Familiarise yourself with the 'Sources of inaccuracy' section and data quality flags in the "[How to interpret the map](https://www.floodedpeople.org.uk/s19-investigations)" section on the interactive map page. The author accepts no responsibility for inaccurate information.
 
