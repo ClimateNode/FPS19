@@ -10,7 +10,7 @@ It contains:
 
 • interim outputs used to track project progress
 
-The first of these is the current main output: and is contained in [geoJSON/FPS19_full.json.zip](https://github.com/ClimateNode/FPS19/blob/main/geoJSON/FPS19_full.json.zip). It is expected to be updated in late 2026. This dataset is also displayed on an interactive map [here](https://www.floodedpeople.org.uk/s19-investigations). 
+The first of these is the current main output: and is contained in [geoJSON/FPS19_full.json.zip](https://github.com/ClimateNode/FPS19/blob/main/geoJSON/FPS19_full.json.zip). It may be updated to include more reports and/or improve quality at a later date. This dataset is also displayed on an interactive map [here](https://www.floodedpeople.org.uk/s19-investigations). 
 
 ## Licence and attribution
 
