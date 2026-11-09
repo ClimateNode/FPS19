@@ -25,5 +25,3 @@ LLMs can hallucinate, be over-confident and misunderstand instructions. Use the 
 ## Interpretation notes
 
 Please see "[How to interpret the map](https://www.floodedpeople.org.uk/s19-investigations)" on the interactive map page for notes on how to interpret the data.
-  * Curly braces surrounding date(s) indicate that the information is about events on the date(s) shown
-  * `{general}` indicates that the information is about flooding in general, not specific events
