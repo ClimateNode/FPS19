@@ -2,7 +2,7 @@
 
 ## Intro
 
-This repository contains the interim and final outputs of an experimental project undertaken by Helen Jackson (Director of [ClimateNode](https://www.climatenode.org)) for Flooded People using an LLM to extract information on flood impacts from Local Authority Section 19 flood investigation reports. 
+This repository contains the interim and final outputs of an experimental project undertaken by [Helen Jackson](https://www.linkedin.com/in/helen-jackson-28926285/) (Director of [ClimateNode](https://www.climatenode.org)) for Flooded People using an LLM to extract information on flood impacts from Local Authority Section 19 flood investigation reports. 
 
 It contains:
 
