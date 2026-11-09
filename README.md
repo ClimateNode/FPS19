@@ -6,7 +6,7 @@ This repository contains the interim and final outputs of an experimental projec
 
 It contains:
 
-• a full geoJSON dataset of streets, assets, towns, villages, cities and local authority areas mentioned across approximately 690 reports
+• a full geoJSON dataset of 10,000+ streets, assets, towns, villages, cities and local authority areas mentioned across approximately 690 reports, and summaries of the information contained about them in those reports.
 
 • interim outputs used to track project progress
 
