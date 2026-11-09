@@ -2,17 +2,15 @@
 
 ## Intro
 
-This repository contains the interim and final outputs of an experimental project undertaken by Helen Jackson (Director of [ClimateNode](https://www.climatenode.org)) for Flooded People using an LLM to extract information on flood impacts from Local Authority Section 19 reports. 
+This repository contains the interim and final outputs of an experimental project undertaken by Helen Jackson (Director of [ClimateNode](https://www.climatenode.org)) for Flooded People using an LLM to extract information on flood impacts from Local Authority Section 19 flood investigation reports. 
 
-It contains three types of outputs:
+It contains:
 
 • a full geoJSON dataset of streets, assets, towns, villages, cities and local authority areas mentioned across approximately 690 reports
 
-• downloadable maps of individual reports (HTML files)
+• interim outputs used to track project progress
 
-• readouts of individual reports (markdown files)
-
-The first of these is the current main output: and is contained in [geoJSON/FPS19_full.json.zip](https://github.com/ClimateNode/FPS19/blob/main/geoJSON/FPS19_full.json.zip). It is expected to be updated in late 2026. This dataset is also displayed on an interactive map [here](https://www.floodedpeople.org.uk/s19-investigations). The latter two were intended only as interim outputs for progress checking. 
+The first of these is the current main output: and is contained in [geoJSON/FPS19_full.json.zip](https://github.com/ClimateNode/FPS19/blob/main/geoJSON/FPS19_full.json.zip). It is expected to be updated in late 2026. This dataset is also displayed on an interactive map [here](https://www.floodedpeople.org.uk/s19-investigations). 
 
 ## Licence and attribution
 
@@ -27,10 +25,5 @@ LLMs can hallucinate, be over-confident and misunderstand instructions. Use the 
 ## Interpretation notes
 
 Please see "[How to interpret the map](https://www.floodedpeople.org.uk/s19-investigations)" on the interactive map page for notes on how to interpret the data.
-
-Maps show only information specific to the event which triggered the report, while readouts also contain any information in the report about historic flood events, or flooding in general, at a location.
-
-Curly braces {} in readouts:
-  * If a piece of information has no curly braces it means that it relates to the main flood event described in the report
   * Curly braces surrounding date(s) indicate that the information is about events on the date(s) shown
   * `{general}` indicates that the information is about flooding in general, not specific events
