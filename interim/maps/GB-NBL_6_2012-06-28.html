@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f5a3ec579399d07b31e3ee5c860e4802 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f5a3ec579399d07b31e3ee5c860e4802" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f5a3ec579399d07b31e3ee5c860e4802 = L.map(
+                "map_f5a3ec579399d07b31e3ee5c860e4802",
+                {
+                    center: [55.372108425, -1.78542575],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4f6c156a8c384251db04a92e422db202 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_4f6c156a8c384251db04a92e422db202.addTo(map_f5a3ec579399d07b31e3ee5c860e4802);
+    
+            var marker_16792ef74de1884767a8062e1e1a894b = L.marker(
+                [55.4140842, -1.715817],
+                {}
+            ).addTo(map_f5a3ec579399d07b31e3ee5c860e4802);
+        
+    
+            var icon_f4fea4c3837d179a016ee46f58587b32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_16792ef74de1884767a8062e1e1a894b.setIcon(icon_f4fea4c3837d179a016ee46f58587b32);
+        
+    
+        var popup_5cabbfd0b1ef8bb234245fc1f41717c1 = L.popup({});
+
+        
+            
+                var html_7686f11f704ee58ceee2a65eade1a6e4 = $(`<div id="html_7686f11f704ee58ceee2a65eade1a6e4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Alwynside, Alnwick</h1><div class="nugget-popup"><p>Residential properties in Alwynside were flooded when the Wash Burn (an ordinary watercourse) runs in a culvert beneath southern properties; water emerged from gardens and entered properties. Blockages in the culvert caused water to back up and flood properties. [MUL] (p1)</p></div><div class="nugget-popup"><p>The Wash Burn (including a culverted section) experienced blockages that caused water to back up and subsequently flood residential properties; excavations in a garden and the culverted stone&ndash;to&ndash;concrete transition are documented in photos. Remedial works (clearing blockages, installing manholes) were carried out. [TAB] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties [MUL] (p1)</p></div></div></body></div>`)[0];
+                popup_5cabbfd0b1ef8bb234245fc1f41717c1.setContent(html_7686f11f704ee58ceee2a65eade1a6e4);
+            
+        
+
+        marker_16792ef74de1884767a8062e1e1a894b.bindPopup(popup_5cabbfd0b1ef8bb234245fc1f41717c1)
+        ;
+
+        
+    
+    
+            var marker_8ff83c0bd05f577a24cc3a4c8e477a3f = L.marker(
+                [55.4108635, -1.7180164],
+                {}
+            ).addTo(map_f5a3ec579399d07b31e3ee5c860e4802);
+        
+    
+            var icon_4dcb084c2631cb221557394d53ed135e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8ff83c0bd05f577a24cc3a4c8e477a3f.setIcon(icon_4dcb084c2631cb221557394d53ed135e);
+        
+    
+        var popup_da59f88cb936ed4037c6077fe4ec737a = L.popup({});
+
+        
+            
+                var html_9d86a6c5886cd611ac025f95ac37867f = $(`<div id="html_9d86a6c5886cd611ac025f95ac37867f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Thomas Crescent, Alnwick</h1><div class="nugget-popup"><p>Surface water flow routes and affected roads on the map indicate flooding of residential streets forming a loop through St Thomas Close (sic). Residential areas around St Thomas Close were primarily impacted by the surface water flooding on 28/06/2012. [IMG] (p1)</p></div></div></body></div>`)[0];
+                popup_da59f88cb936ed4037c6077fe4ec737a.setContent(html_9d86a6c5886cd611ac025f95ac37867f);
+            
+        
+
+        marker_8ff83c0bd05f577a24cc3a4c8e477a3f.bindPopup(popup_da59f88cb936ed4037c6077fe4ec737a)
+        ;
+
+        
+    
+    
+            var marker_c68ef5a6b3d9009ba9f0a34f5e81d83f = L.marker(
+                [55.25, -2.000559],
+                {}
+            ).addTo(map_f5a3ec579399d07b31e3ee5c860e4802);
+        
+    
+            var icon_154aabedeb1f46fade653d70b1aac0ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c68ef5a6b3d9009ba9f0a34f5e81d83f.setIcon(icon_154aabedeb1f46fade653d70b1aac0ed);
+        
+    
+        var popup_f5eff8d51115401f2820d49a68a2f4b2 = L.popup({});
+
+        
+            
+                var html_af255cf59b4ed4bc6489cad6dbecfd7d = $(`<div id="html_af255cf59b4ed4bc6489cad6dbecfd7d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northumberland</h1><div class="nugget-popup"><p>Heavy rain on 28/06/2012 caused surface water flooding and flooding associated with an ordinary watercourse (the Wash Burn) in west Alnwick. Properties, roads and businesses in the west of Alnwick were flooded when water backed up in a blocked culverted watercourse and emerged from gardens. [IMG] (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties; 1 business; 1 other building; 3 roads [IMG] (p1)</p></div></div></body></div>`)[0];
+                popup_f5eff8d51115401f2820d49a68a2f4b2.setContent(html_af255cf59b4ed4bc6489cad6dbecfd7d);
+            
+        
+
+        marker_c68ef5a6b3d9009ba9f0a34f5e81d83f.bindPopup(popup_f5eff8d51115401f2820d49a68a2f4b2)
+        ;
+
+        
+    
+    
+            var marker_774ce83a363017b2648386f4dcd03c3f = L.marker(
+                [55.413486, -1.7073106],
+                {}
+            ).addTo(map_f5a3ec579399d07b31e3ee5c860e4802);
+        
+    
+            var icon_27d2253d10f91688c23b893ac5b7f1a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_774ce83a363017b2648386f4dcd03c3f.setIcon(icon_27d2253d10f91688c23b893ac5b7f1a0);
+        
+    
+        var popup_5cb55f9a8c2fb295556c5f9218df985a = L.popup({});
+
+        
+            
+                var html_7bca20e87065edd789e6cb3e15875f13 = $(`<div id="html_7bca20e87065edd789e6cb3e15875f13" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Alnwick</h1><div class="nugget-popup"><p>Heavy rain on 28 June 2012 caused surface water flooding and flooding associated with an ordinary watercourse (the Wash Burn) in west Alnwick, resulting in inundation of properties, roads and businesses. [IMG] (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties; 1 business; 1 other building; 3 roads [IMG] (p1)</p></div></div></body></div>`)[0];
+                popup_5cb55f9a8c2fb295556c5f9218df985a.setContent(html_7bca20e87065edd789e6cb3e15875f13);
+            
+        
+
+        marker_774ce83a363017b2648386f4dcd03c3f.bindPopup(popup_5cb55f9a8c2fb295556c5f9218df985a)
+        ;
+
+        
+    
+</script>
+</html>

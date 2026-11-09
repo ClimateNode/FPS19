@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f9e110ca9b3d0b7d05a6515ddeef322f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f9e110ca9b3d0b7d05a6515ddeef322f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f9e110ca9b3d0b7d05a6515ddeef322f = L.map(
+                "map_f9e110ca9b3d0b7d05a6515ddeef322f",
+                {
+                    center: [51.03471095457115, -2.61959102902111],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d74df86ede5852ebdc0aa6eeec7cf5e7 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_d74df86ede5852ebdc0aa6eeec7cf5e7.addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+    
+            var marker_4c0f863824a009cfe63c4fdd4949040b = L.marker(
+                [51.0208698, -2.650021],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_62c1a9ced8a5c72096dc44b46f2591b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4c0f863824a009cfe63c4fdd4949040b.setIcon(icon_62c1a9ced8a5c72096dc44b46f2591b2);
+        
+    
+        var popup_832854dd3321c39fb12adc193d1fb613 = L.popup({});
+
+        
+            
+                var html_7b072ec548f9c0b0f4bfcf64c3f0ca69 = $(`<div id="html_7b072ec548f9c0b0f4bfcf64c3f0ca69" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Farm</h1><div class="nugget-popup"><p>Church Farm flooded during the event &mdash; described as experiencing flooding for the first time in 150 years. [MUL] (p33)</p></div></div></body></div>`)[0];
+                popup_832854dd3321c39fb12adc193d1fb613.setContent(html_7b072ec548f9c0b0f4bfcf64c3f0ca69);
+            
+        
+
+        marker_4c0f863824a009cfe63c4fdd4949040b.bindPopup(popup_832854dd3321c39fb12adc193d1fb613)
+        ;
+
+        
+    
+    
+            var marker_998f50602638557f5fd699ae32a27a8d = L.marker(
+                [51.0211285, -2.6610828],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_e7ffbaeaa66b96eba3fc65b72358ddf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_998f50602638557f5fd699ae32a27a8d.setIcon(icon_e7ffbaeaa66b96eba3fc65b72358ddf7);
+        
+    
+        var popup_cced8e53a776d12c81c166da4de70678 = L.popup({});
+
+        
+            
+                var html_26bfbce5a4e9d6cc402f07db173af66c = $(`<div id="html_26bfbce5a4e9d6cc402f07db173af66c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Park Brook</h1><div class="nugget-popup"><p>Sluice gate at the point where Park Brook joins the River Cary was reported to have been in the up position, preventing drainage; this prolonged inundation in Podimore and contributed to the village centre being under more than 4 ft of water until the gate/board was released. (p41)</p></div></div></body></div>`)[0];
+                popup_cced8e53a776d12c81c166da4de70678.setContent(html_26bfbce5a4e9d6cc402f07db173af66c);
+            
+        
+
+        marker_998f50602638557f5fd699ae32a27a8d.bindPopup(popup_cced8e53a776d12c81c166da4de70678)
+        ;
+
+        
+    
+    
+            var marker_21775ae23d52d908471435fc6f1780f8 = L.marker(
+                [51.0364065, -2.6674574],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_f78ac0666fb19771ed6f980e0f7ca9a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_21775ae23d52d908471435fc6f1780f8.setIcon(icon_f78ac0666fb19771ed6f980e0f7ca9a8);
+        
+    
+        var popup_36d1ebcbe51e1e8b8384ccd39b123419 = L.popup({});
+
+        
+            
+                var html_7499700e4a07faf83ec166dbf2580c5f = $(`<div id="html_7499700e4a07faf83ec166dbf2580c5f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lytes Cary</h1><div class="nugget-popup"><p>Sluice/gate at the junction where Park Brook joins the River Cary (near Lytes Cary) was reported to be in the 'up' position, delaying clearance of floodwater; after gate release water from Podimore drained away rapidly. [MUL] (p41)</p></div></div></body></div>`)[0];
+                popup_36d1ebcbe51e1e8b8384ccd39b123419.setContent(html_7499700e4a07faf83ec166dbf2580c5f);
+            
+        
+
+        marker_21775ae23d52d908471435fc6f1780f8.bindPopup(popup_36d1ebcbe51e1e8b8384ccd39b123419)
+        ;
+
+        
+    
+    
+            var marker_dc832e2b2291ce86eacef8159d8f4bfe = L.marker(
+                [51.0020875, -2.6804386],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_a84a9226bfb9e66bb89dad60e9c79133 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dc832e2b2291ce86eacef8159d8f4bfe.setIcon(icon_a84a9226bfb9e66bb89dad60e9c79133);
+        
+    
+        var popup_eeba2422f5007dbb45eb135466c904d0 = L.popup({});
+
+        
+            
+                var html_c18d6f2c4e5a2017368247628746d200 = $(`<div id="html_c18d6f2c4e5a2017368247628746d200" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Yeo</h1><div class="nugget-popup"><p>The report investigates fluvial (river) flooding as part of the cause of inundation in Yeovilton parish on 9 May 2023. Given Yeovilton lies on the north bank of the River Yeo and fluvial flooding is cited, the River Yeo is indicated as contributing to flooding that affected communities (contributing to internal property flooding in the parish). (p7)</p></div></div></body></div>`)[0];
+                popup_eeba2422f5007dbb45eb135466c904d0.setContent(html_c18d6f2c4e5a2017368247628746d200);
+            
+        
+
+        marker_dc832e2b2291ce86eacef8159d8f4bfe.bindPopup(popup_eeba2422f5007dbb45eb135466c904d0)
+        ;
+
+        
+    
+    
+            var marker_dacf594a5997f5f93d5d2d98ccfc8b07 = L.marker(
+                [51.0296706, -2.5581938],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_bb119563e935536988748ef3af64ee45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dacf594a5997f5f93d5d2d98ccfc8b07.setIcon(icon_bb119563e935536988748ef3af64ee45);
+        
+    
+        var popup_8e04fe0d1e0551e6c971a9232ea840d8 = L.popup({});
+
+        
+            
+                var html_1612465cd1e2c68fa9506970ab740ba8 = $(`<div id="html_1612465cd1e2c68fa9506970ab740ba8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Cam</h1><div class="nugget-popup"><p>Overflowed from a bend in the river on 9 May 2023, contributing to inundation of the nearby road and properties and causing overtopping of the main bridge. [IMG,MUL] (p30)</p></div><div class="nugget-popup"><p>Received surface water runoff during the event on 2023&ndash;05&ndash;09; elevated river flows contributed to flooding of surrounding communities. (p32)</p></div><div class="nugget-popup"><p>A rapid surge described as a 'tidal wave' moved down the River Cam on 2023&ndash;05&ndash;09, sweeping across the Cam Valley and producing a pronounced gush of water that propagated downstream through multiple communities. (p33)</p></div></div></body></div>`)[0];
+                popup_8e04fe0d1e0551e6c971a9232ea840d8.setContent(html_1612465cd1e2c68fa9506970ab740ba8);
+            
+        
+
+        marker_dacf594a5997f5f93d5d2d98ccfc8b07.bindPopup(popup_8e04fe0d1e0551e6c971a9232ea840d8)
+        ;
+
+        
+    
+    
+            var marker_ca5d6358a55290f09636c36013c3288c = L.marker(
+                [51.0507835, -2.6427609],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_d237fe216526c6d06c7bc1fcc89008e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ca5d6358a55290f09636c36013c3288c.setIcon(icon_d237fe216526c6d06c7bc1fcc89008e8);
+        
+    
+        var popup_58e252be3b0f0024d97ac6829cd2d369 = L.popup({});
+
+        
+            
+                var html_61fa4e6c6a4c5ea82b38cab7f808e7a4 = $(`<div id="html_61fa4e6c6a4c5ea82b38cab7f808e7a4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Cary</h1><div class="nugget-popup"><p>River Cary (and the confluence with Park Brook) was implicated in the flooding &mdash; river floodwater and backwater effects contributed to inundation of Podimore and surrounding areas. [IMG] (p41)</p></div></div></body></div>`)[0];
+                popup_58e252be3b0f0024d97ac6829cd2d369.setContent(html_61fa4e6c6a4c5ea82b38cab7f808e7a4);
+            
+        
+
+        marker_ca5d6358a55290f09636c36013c3288c.bindPopup(popup_58e252be3b0f0024d97ac6829cd2d369)
+        ;
+
+        
+    
+    
+            var marker_e92db9784bf0cad5c86b644682d5b1ff = L.marker(
+                [51.0218871, -2.6487168],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_d1d26432b0b85d5676b383cb6d4ccd5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e92db9784bf0cad5c86b644682d5b1ff.setIcon(icon_d1d26432b0b85d5676b383cb6d4ccd5f);
+        
+    
+        var popup_f05580a2ab22d8516b21ac87de52d648 = L.popup({});
+
+        
+            
+                var html_196720e73961eb14e20ed6a6a648788f = $(`<div id="html_196720e73961eb14e20ed6a6a648788f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Church Street, Podimore</h1><div class="nugget-popup"><p>Church Street was flooded on 9 May 2023; the report notes flooding in May 2023 that was less severe than flooding experienced in 2000. (p33)</p></div></div></body></div>`)[0];
+                popup_f05580a2ab22d8516b21ac87de52d648.setContent(html_196720e73961eb14e20ed6a6a648788f);
+            
+        
+
+        marker_e92db9784bf0cad5c86b644682d5b1ff.bindPopup(popup_f05580a2ab22d8516b21ac87de52d648)
+        ;
+
+        
+    
+    
+            var marker_ac2e78ef49e296565e2de7a3636f5eae = L.marker(
+                [51.0730892, -2.4743437],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_36ba29981d6e686acc5e53944b5343f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ac2e78ef49e296565e2de7a3636f5eae.setIcon(icon_36ba29981d6e686acc5e53944b5343f4);
+        
+    
+        var popup_dc3db920116f52b2c766aaf4a453a624 = L.popup({});
+
+        
+            
+                var html_c94faaff4344334c7ccb85c8a6af8edb = $(`<div id="html_c94faaff4344334c7ccb85c8a6af8edb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Cattle Hill, Shepton Montague</h1><div class="nugget-popup"><p>Cattle Hill experienced a sudden surge of water (described by residents as a 'tsunami') on 9 May 2023, indicating a rapid, high&ndash;energy flood event at this location. (p33)</p></div></div></body></div>`)[0];
+                popup_dc3db920116f52b2c766aaf4a453a624.setContent(html_c94faaff4344334c7ccb85c8a6af8edb);
+            
+        
+
+        marker_ac2e78ef49e296565e2de7a3636f5eae.bindPopup(popup_dc3db920116f52b2c766aaf4a453a624)
+        ;
+
+        
+    
+    
+            var marker_1db8391750d616cf7081a41fc0a173a9 = L.marker(
+                [51.161750850000004, -3.0753867062227487],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_5c97770be8a80c79ce53c75ccff05619 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1db8391750d616cf7081a41fc0a173a9.setIcon(icon_5c97770be8a80c79ce53c75ccff05619);
+        
+    
+        var popup_b9595416b7c4e0023034bb0ecf87a391 = L.popup({});
+
+        
+            
+                var html_15b15f1a0ac9007d3ebcd2728539dcbd = $(`<div id="html_15b15f1a0ac9007d3ebcd2728539dcbd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Somerset</h1><div class="nugget-popup"><p>The heavy rainfall event on 2023&ndash;05&ndash;09 affected communities in the county, including the parish of Yeovilton where 29 properties were reported internally flooded (24 in Podimore and 5 in Bridgehampton). Flooding comprised a combination of pluvial (surface water) and fluvial (river) flooding across parts of the county in this locality. [IMG] (p7)</p></div><div class="nugget-popup"><p>On 2023&ndash;05&ndash;09 a rapid wave of water moved down the River Cam catchment (Cam Valley), sweeping through Yarlington, North Cadbury, South Cadbury, Blackford, Sparkford, Queen Camel, West Camel, Bridgehampton and Podimore. Several properties in the affected villages were partially submerged to at least 3 feet, some remained inundated for days. Numerous vehicles were written off and many residents (including elderly) had to temporarily relocate during home repairs. Church Farm flooded for the first time in 150 years; residents described a sudden 'gush' or 'tidal wave' of water passing down the catchment. Shepton Montague (Cattle Hill) recorded a sudden surge described as a 'tsunami.' (p33)</p></div><div class="nugget-popup"><p>Widespread heavy rainfall across Somerset on 9 May 2023 stretched Risk Management Authorities county&ndash;wide, resulting in multiple major incidents and thinly spread response resources. [PAG] (p34)</p></div><div class="nugget-popup"><p>The investigation area within Somerset experienced flooding on 9 May 2023. A combination of river flooding and surface&ndash;water flooding led to 29 properties reported flooded across the three communities in the report, with 24 of those properties in Podimore. [IMG,MUL] (p41)</p></div></div></body></div>`)[0];
+                popup_b9595416b7c4e0023034bb0ecf87a391.setContent(html_15b15f1a0ac9007d3ebcd2728539dcbd);
+            
+        
+
+        marker_1db8391750d616cf7081a41fc0a173a9.bindPopup(popup_b9595416b7c4e0023034bb0ecf87a391)
+        ;
+
+        
+    
+    
+            var marker_920d033120e41ca2e4e314141965c18d = L.marker(
+                [51.0044321, -2.6467489],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_9f338dbfb4e87f1b924c881fd109bd61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_920d033120e41ca2e4e314141965c18d.setIcon(icon_9f338dbfb4e87f1b924c881fd109bd61);
+        
+    
+        var popup_40160a2a89130cff4b0cda6f97b80721 = L.popup({});
+
+        
+            
+                var html_7c3be96ee4ab69bf361ee376053bddbc = $(`<div id="html_7c3be96ee4ab69bf361ee376053bddbc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Yeovilton</h1><div class="nugget-popup"><p>Severe flooding on 9 May 2023: drains filled rapidly and inadequate attenuation exacerbated impacts; roads became impassable; properties were partially submerged and homes rendered unliveable for an extended period; vehicles were written off and some residents required temporary relocation. Part of the total of 29 reported properties affected in the event were in this locality. (p5)</p></div><div class="nugget-popup"><p>Multiple, spatially separated locations in and around Yeovilton experienced flooding on 9 May 2023; map highlights clusters north and east of the main village where properties and local areas were inundated (internal property flooding reported within the parish though not individually numbered for the village in the table). [IMG] (p7)</p></div><div class="nugget-popup"><p>On 2023&ndash;05&ndash;09 RNS Yeovilton experienced internal flooding to at least one building (internal water ingress to a structure on site). (p30)</p></div></div></body></div>`)[0];
+                popup_40160a2a89130cff4b0cda6f97b80721.setContent(html_7c3be96ee4ab69bf361ee376053bddbc);
+            
+        
+
+        marker_920d033120e41ca2e4e314141965c18d.bindPopup(popup_40160a2a89130cff4b0cda6f97b80721)
+        ;
+
+        
+    
+    
+            var marker_fc5a7f31e4b3a09319108207207a2c08 = L.marker(
+                [51.0141868, -2.6239187],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_8269a843bf3f02b8b43c337280910303 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fc5a7f31e4b3a09319108207207a2c08.setIcon(icon_8269a843bf3f02b8b43c337280910303);
+        
+    
+        var popup_83b2c65cbc2e6087a351bcedbdacb2f8 = L.popup({});
+
+        
+            
+                var html_ce86e6163776388a58a9cfdb08d5a28f = $(`<div id="html_ce86e6163776388a58a9cfdb08d5a28f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bridgehampton</h1><div class="nugget-popup"><p>Severe flooding on 9 May 2023: drains filled rapidly and inadequate attenuation exacerbated impacts; roads became impassable; properties were partially submerged and homes rendered unliveable for an extended period; vehicles were written off and some residents required temporary relocation. Part of the total of 29 reported properties affected in the event were in this locality. (p5)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties: 5 residential properties were internally flooded as a result of the combined surface water (pluvial) and river (fluvial) flooding affecting Bridgehampton on 9 May 2023. [TAB] (p7)</p></div><div class="nugget-popup"><p>On 2023&ndash;05&ndash;09 ditches and an attenuation pond north of the village overtopped and a flood barrier failed. Floodwater inundated the road and houses south of the road; the main bridge was overtopped making the village impassable. Almost all properties in the area were affected and some homes were unliveable for a significant period; roads became impassable to vehicles. [PAG,IMG,MUL] (p30)</p></div><div class="nugget-popup"><p>Recorded a noticeable 'gush' / sudden rush of water passing down the River Cam catchment through the day on 9 May, indicating fluvial flooding affected the community. (p33)</p></div><div class="nugget-popup"><p>Exceptional rainfall on 2023&ndash;05&ndash;09 overwhelmed drainage in Bridgehampton, inundating properties. Drains filled rapidly and inadequate attenuation exacerbated flooding. Roads became impassable, homes were unliveable for an extended period, properties were partially submerged, vehicles were written off, and some residents were temporarily relocated. (p38)</p></div></div></body></div>`)[0];
+                popup_83b2c65cbc2e6087a351bcedbdacb2f8.setContent(html_ce86e6163776388a58a9cfdb08d5a28f);
+            
+        
+
+        marker_fc5a7f31e4b3a09319108207207a2c08.bindPopup(popup_83b2c65cbc2e6087a351bcedbdacb2f8)
+        ;
+
+        
+    
+    
+            var marker_1796771fb14f076ed456e5ec8d10df58 = L.marker(
+                [51.023262, -2.6484919],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_d8dd5ca81bdd14cde9c7f04a448ee47d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1796771fb14f076ed456e5ec8d10df58.setIcon(icon_d8dd5ca81bdd14cde9c7f04a448ee47d);
+        
+    
+        var popup_67434aa93c38299010147dac415becfc = L.popup({});
+
+        
+            
+                var html_4839bbd4e1ec1495865779b597fd4754 = $(`<div id="html_4839bbd4e1ec1495865779b597fd4754" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Podimore</h1><div class="nugget-popup"><p>Severe flooding on 9 May 2023 affecting the locality: drains filled rapidly and inadequate attenuation exacerbated impacts; roads became impassable; properties were partially submerged and homes rendered unliveable for an extended period; vehicles were written off and some residents required temporary relocation. Part of the total of 29 reported properties affected in the event were in this locality. (p5)</p></div><div class="nugget-popup"><p>On 9 May 2023, 24 residential properties in Podimore were internally flooded. Flooding followed heavy rainfall and a combination of pluvial and fluvial processes investigated in the report. [TAB] (p7)</p></div><div class="nugget-popup"><p>On 2023&ndash;05&ndash;09 water began flowing into the village from fields east of Church Street (around midnight), carrying waste material from corn/maize fields. The most severe flooding occurred between 03:00 and 04:00 on 2023&ndash;05&ndash;09, with water entering properties, following road and open&ndash;space pathways, and converging southeast through the village. [PAG,IMG,MUL] (p31)</p></div><div class="nugget-popup"><p>Overnight runoff from adjacent maize fields and overflow from the road and surrounding fields led to rapid inundation beginning around midnight and peaking between 03:00 and 04:00 on 2023&ndash;05&ndash;09. Water entered houses around Lower Farm Meadows at both front and rear, encircling properties. Several properties were partially submerged to depths of around 3 feet, with some remaining inundated for days. Vehicular movement through the village was severely restricted; numerous vehicles were written off. Many residents (including elderly people) were temporarily displaced during home renovations. Floodwater carried waste material from corn fields and bow waves from vehicles worsened property flooding. [IMG,MUL] (p32)</p></div><div class="nugget-popup"><p>Experienced a sudden rush of water passing down the catchment on 9 May; standing water was present on 10 May such that officers could not visit all houses. Community reported feeling abandoned by responders; local actions and a point of contact were established following the visit. (p33)</p></div><div class="nugget-popup"><p>Exceptional rainfall on 2023&ndash;05&ndash;09 overwhelmed drainage and attenuation, inundating properties in Podimore. Drains filled rapidly, roads became impassable, homes were rendered unliveable for an extended period, properties were partially submerged, some vehicles were written off, and residents required temporary relocation. (p38)</p></div><div class="nugget-popup"><p>Experienced unusually severe internal property flooding on 9 May 2023 at levels not previously recorded. After the event residents reported the village has flooded more frequently since May 2023, possibly due to increased silt in drains and changes to A303 runoff; roads and properties required clean&ndash;up following the flood; a reservoir at the base of the A303 bridge filled and flowed back toward a T&ndash;junction. [MUL] (p39)</p></div><div class="nugget-popup"><p>Blocked/choked drainage (reported as the ditch/drainage from the A303) contributed to surface water flooding and impeded drainage of runoff. [MUL] (p41)</p></div><div class="nugget-popup"><p>24 properties reported flooded in Podimore (24 of 29 properties reported flooded across the three communities). (p42)</p></div></div></body></div>`)[0];
+                popup_67434aa93c38299010147dac415becfc.setContent(html_4839bbd4e1ec1495865779b597fd4754);
+            
+        
+
+        marker_1796771fb14f076ed456e5ec8d10df58.bindPopup(popup_67434aa93c38299010147dac415becfc)
+        ;
+
+        
+    
+    
+            var marker_5425125bb58cf616cc5f631cfb12ae7a = L.marker(
+                [51.0175072, -2.6326814],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_f195ee85b480dcf103cb001ad854f6d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5425125bb58cf616cc5f631cfb12ae7a.setIcon(icon_f195ee85b480dcf103cb001ad854f6d9);
+        
+    
+        var popup_f0163c5d8b600161cbae291b9f249cbc = L.popup({});
+
+        
+            
+                var html_f2df246d951ea1a7cd43cc1980be487e = $(`<div id="html_f2df246d951ea1a7cd43cc1980be487e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stockwitch Cross</h1><div class="nugget-popup"><p>On 2023&ndash;05&ndash;09 water built up toward the Stockwitch crossing at the west end of the village as the situation in Bridgehampton worsened, indicating accumulation/flow toward the crossing and likely disruption of the crossing. (p30)</p></div></div></body></div>`)[0];
+                popup_f0163c5d8b600161cbae291b9f249cbc.setContent(html_f2df246d951ea1a7cd43cc1980be487e);
+            
+        
+
+        marker_5425125bb58cf616cc5f631cfb12ae7a.bindPopup(popup_f0163c5d8b600161cbae291b9f249cbc)
+        ;
+
+        
+    
+    
+            var marker_571bbe2b04fe90f80e874bbdedbc9264 = L.marker(
+                [51.01063493665368, -2.6253356345292627],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_18b3b1a59334084777f93521d16cc8b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_571bbe2b04fe90f80e874bbdedbc9264.setIcon(icon_18b3b1a59334084777f93521d16cc8b9);
+        
+    
+        var popup_19127ff0c72e53d1f07e4fe27ac736c7 = L.popup({});
+
+        
+            
+                var html_3039938cc09b0546c7773df5e9c31b1f = $(`<div id="html_3039938cc09b0546c7773df5e9c31b1f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Speckington</h1><div class="nugget-popup"><p>Residents noted that Speckington was also impacted in connection with the 9 May 2023 flooding, though the council recorded no formal reports; this suggests localized flood effects were observed by residents but are not fully documented by the council. (p30)</p></div></div></body></div>`)[0];
+                popup_19127ff0c72e53d1f07e4fe27ac736c7.setContent(html_3039938cc09b0546c7773df5e9c31b1f);
+            
+        
+
+        marker_571bbe2b04fe90f80e874bbdedbc9264.bindPopup(popup_19127ff0c72e53d1f07e4fe27ac736c7)
+        ;
+
+        
+    
+    
+            var marker_06114a96f3b4445d778b41af68c550dd = L.marker(
+                [51.0830454, -2.4622328],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_7b9d9e80f0a0b9cd8111e437c5f2c7ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_06114a96f3b4445d778b41af68c550dd.setIcon(icon_7b9d9e80f0a0b9cd8111e437c5f2c7ef);
+        
+    
+        var popup_cf52b5a3d7d69d209a1f9f6ee2b74e95 = L.popup({});
+
+        
+            
+                var html_89f5555d9ac34dc04676dacb541d1ef6 = $(`<div id="html_89f5555d9ac34dc04676dacb541d1ef6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Shepton Montague</h1><div class="nugget-popup"><p>Residents in Shepton Montague recorded a sudden, very large surge of water (described as a 'tsunami') on Cattle Hill during the event on 9 May 2023, indicating a rapid local flood surge and local inundation. (p33)</p></div></div></body></div>`)[0];
+                popup_cf52b5a3d7d69d209a1f9f6ee2b74e95.setContent(html_89f5555d9ac34dc04676dacb541d1ef6);
+            
+        
+
+        marker_06114a96f3b4445d778b41af68c550dd.bindPopup(popup_cf52b5a3d7d69d209a1f9f6ee2b74e95)
+        ;
+
+        
+    
+    
+            var marker_30daf9428c62acb9ff29f7a022656a6e = L.marker(
+                [51.0614092, -2.4936409],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_a2819d673429a1f02288de1ce088e8e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_30daf9428c62acb9ff29f7a022656a6e.setIcon(icon_a2819d673429a1f02288de1ce088e8e7);
+        
+    
+        var popup_519e10b56a8d8f805b76d51ef6ef5639 = L.popup({});
+
+        
+            
+                var html_89570cc93e20ba40320bb26adc0789f0 = $(`<div id="html_89570cc93e20ba40320bb26adc0789f0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Yarlington</h1><div class="nugget-popup"><p>Recorded a noticeable 'gush' of water passing down the catchment on 2023&ndash;05&ndash;09 as the surge moved downstream along the River Cam. (p33)</p></div></div></body></div>`)[0];
+                popup_519e10b56a8d8f805b76d51ef6ef5639.setContent(html_89570cc93e20ba40320bb26adc0789f0);
+            
+        
+
+        marker_30daf9428c62acb9ff29f7a022656a6e.bindPopup(popup_519e10b56a8d8f805b76d51ef6ef5639)
+        ;
+
+        
+    
+    
+            var marker_b19c8f86fcff08c9f0e367b0a6612806 = L.marker(
+                [51.0443306, -2.5232092],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_6aa7da5915dcc5e85ce1e96fca2b39fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b19c8f86fcff08c9f0e367b0a6612806.setIcon(icon_6aa7da5915dcc5e85ce1e96fca2b39fb);
+        
+    
+        var popup_0a745bb4b0c8ee8ccf5f568ecf504438 = L.popup({});
+
+        
+            
+                var html_e0f9b0e8735888186fa2fb73413c2ef8 = $(`<div id="html_e0f9b0e8735888186fa2fb73413c2ef8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North Cadbury</h1><div class="nugget-popup"><p>Recorded a noticeable 'gush' of water passing down the catchment on 2023&ndash;05&ndash;09 as the surge moved downstream along the River Cam. (p33)</p></div></div></body></div>`)[0];
+                popup_0a745bb4b0c8ee8ccf5f568ecf504438.setContent(html_e0f9b0e8735888186fa2fb73413c2ef8);
+            
+        
+
+        marker_b19c8f86fcff08c9f0e367b0a6612806.bindPopup(popup_0a745bb4b0c8ee8ccf5f568ecf504438)
+        ;
+
+        
+    
+    
+            var marker_0fbb1c7f4272805f73fba2b2a6f10cb0 = L.marker(
+                [51.0288034, -2.5254367],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_f04a5da10a416609b3889f04d29a5d10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0fbb1c7f4272805f73fba2b2a6f10cb0.setIcon(icon_f04a5da10a416609b3889f04d29a5d10);
+        
+    
+        var popup_8e9698df2f0384bd0c31f96199fdab29 = L.popup({});
+
+        
+            
+                var html_38da75777eb6a15cdd11f659328dfa72 = $(`<div id="html_38da75777eb6a15cdd11f659328dfa72" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Cadbury</h1><div class="nugget-popup"><p>Recorded a noticeable 'gush' of water passing down the catchment on 2023&ndash;05&ndash;09 as the surge moved downstream along the River Cam. (p33)</p></div></div></body></div>`)[0];
+                popup_8e9698df2f0384bd0c31f96199fdab29.setContent(html_38da75777eb6a15cdd11f659328dfa72);
+            
+        
+
+        marker_0fbb1c7f4272805f73fba2b2a6f10cb0.bindPopup(popup_8e9698df2f0384bd0c31f96199fdab29)
+        ;
+
+        
+    
+    
+            var marker_1f66eee67abe90c056dadffef47516c1 = L.marker(
+                [51.02039931625671, -2.6029506490145993],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_c34f9239e10b9e571880686d1dc38647 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1f66eee67abe90c056dadffef47516c1.setIcon(icon_c34f9239e10b9e571880686d1dc38647);
+        
+    
+        var popup_301e798162d9e120961e94e1c3fa0344 = L.popup({});
+
+        
+            
+                var html_b23e80113646f5176c8ea6af9069e5cb = $(`<div id="html_b23e80113646f5176c8ea6af9069e5cb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Camel</h1><div class="nugget-popup"><p>Recorded a noticeable 'gush' / sudden rush of water passing down the River Cam catchment through the day on 9 May, indicating fluvial flooding affected the community. (p33)</p></div></div></body></div>`)[0];
+                popup_301e798162d9e120961e94e1c3fa0344.setContent(html_b23e80113646f5176c8ea6af9069e5cb);
+            
+        
+
+        marker_1f66eee67abe90c056dadffef47516c1.bindPopup(popup_301e798162d9e120961e94e1c3fa0344)
+        ;
+
+        
+    
+    
+            var marker_ed58f0ff981460e2da070c32b4da7d5d = L.marker(
+                [51.0334782, -2.4894314],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_74f09f85ef94f32567d6c2fd8fa402d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ed58f0ff981460e2da070c32b4da7d5d.setIcon(icon_74f09f85ef94f32567d6c2fd8fa402d0);
+        
+    
+        var popup_1e6d5903a0100422f9513c5d7a67dc01 = L.popup({});
+
+        
+            
+                var html_17bdae8b4712b07efff4f13bd2d1b1e4 = $(`<div id="html_17bdae8b4712b07efff4f13bd2d1b1e4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Blackford</h1><div class="nugget-popup"><p>Identified in the report as recording a noticeable 'gush' of water passing down the catchment on 2023&ndash;05&ndash;09 as the wave progressed downstream. (p33)</p></div></div></body></div>`)[0];
+                popup_1e6d5903a0100422f9513c5d7a67dc01.setContent(html_17bdae8b4712b07efff4f13bd2d1b1e4);
+            
+        
+
+        marker_ed58f0ff981460e2da070c32b4da7d5d.bindPopup(popup_1e6d5903a0100422f9513c5d7a67dc01)
+        ;
+
+        
+    
+    
+            var marker_08a96999faa871c3026090cfc79132ec = L.marker(
+                [51.034434484603615, -2.563905481448959],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_dc0346d6e5b152b660d579240039c88f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_08a96999faa871c3026090cfc79132ec.setIcon(icon_dc0346d6e5b152b660d579240039c88f);
+        
+    
+        var popup_76fc20cd067110b49a1daa9bd00e5f53 = L.popup({});
+
+        
+            
+                var html_647d86dc4f888f1150d6d2ac519a8dbf = $(`<div id="html_647d86dc4f888f1150d6d2ac519a8dbf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sparkford</h1><div class="nugget-popup"><p>Recorded a noticeable 'gush' of water passing down the catchment on 2023&ndash;05&ndash;09 as the surge moved downstream along the River Cam. (p33)</p></div></div></body></div>`)[0];
+                popup_76fc20cd067110b49a1daa9bd00e5f53.setContent(html_647d86dc4f888f1150d6d2ac519a8dbf);
+            
+        
+
+        marker_08a96999faa871c3026090cfc79132ec.bindPopup(popup_76fc20cd067110b49a1daa9bd00e5f53)
+        ;
+
+        
+    
+    
+            var marker_931a07321e2bb53b2d5405a9da1d1847 = L.marker(
+                [51.020449467622505, -2.578052116469147],
+                {}
+            ).addTo(map_f9e110ca9b3d0b7d05a6515ddeef322f);
+        
+    
+            var icon_2d1668b4e8bf9308cb25e6376080f174 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_931a07321e2bb53b2d5405a9da1d1847.setIcon(icon_2d1668b4e8bf9308cb25e6376080f174);
+        
+    
+        var popup_c25e4899692f9ccea081366739262407 = L.popup({});
+
+        
+            
+                var html_558bc79aac0adb29b98c51484f626de1 = $(`<div id="html_558bc79aac0adb29b98c51484f626de1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Queen Camel</h1><div class="nugget-popup"><p>Recorded a noticeable 'gush' / sudden rush of water passing down the River Cam catchment through the day on 9 May, indicating fluvial flooding affected the community. (p33)</p></div></div></body></div>`)[0];
+                popup_c25e4899692f9ccea081366739262407.setContent(html_558bc79aac0adb29b98c51484f626de1);
+            
+        
+
+        marker_931a07321e2bb53b2d5405a9da1d1847.bindPopup(popup_c25e4899692f9ccea081366739262407)
+        ;
+
+        
+    
+</script>
+</html>

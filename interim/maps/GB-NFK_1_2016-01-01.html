@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b5629a4871649e57abc7dddf44fd57f5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b5629a4871649e57abc7dddf44fd57f5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b5629a4871649e57abc7dddf44fd57f5 = L.map(
+                "map_b5629a4871649e57abc7dddf44fd57f5",
+                {
+                    center: [52.887184338888886, 1.2507845549169254],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ce11928705af17d72c146bd968f2015d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_ce11928705af17d72c146bd968f2015d.addTo(map_b5629a4871649e57abc7dddf44fd57f5);
+    
+            var marker_5bc869b27ed1583363cab99da293f5f0 = L.marker(
+                [52.9192877, 1.3015545],
+                {}
+            ).addTo(map_b5629a4871649e57abc7dddf44fd57f5);
+        
+    
+            var icon_1ad98defbfd4df59b6ff73266ee881ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5bc869b27ed1583363cab99da293f5f0.setIcon(icon_1ad98defbfd4df59b6ff73266ee881ce);
+        
+    
+        var popup_abb998c635d8d865c94921e4ddd5f82d = L.popup({});
+
+        
+            
+                var html_281b8d97b808badb2503d286dc3de869 = $(`<div id="html_281b8d97b808badb2503d286dc3de869" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brownshill, Cromer</h1><div class="nugget-popup"><p>Drainage system overload and surcharging, drainage/outfall blockage and surface water run&ndash;off (including water washed off the public highway by vehicles) led to flood water reaching the location and entering properties. (p3)</p></div><div class="nugget-popup"><p>One property on Brownshill was internally flooded. [TAB] (p15)</p></div><div class="nugget-popup"><p>Run&ndash;off from intense rainfall was directed into the combined drainage network which was already overloaded; infiltration of surface water into the foul system caused it to surcharge and directed flood water towards properties in Brownshill. Floodwater entered properties internally via toilets and sinks. [TAB,PAG] (p17)</p></div><div class="nugget-popup"><p>Significant rainfall was directed into the foul (combined) sewer system causing the foul system to surcharge elsewhere; this surcharging contributed to flooding at properties in Brownshill. (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties (internal flooding across the listed locations) (p3)</p></div><div class="nugget-popup quant"><p>1 property [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_abb998c635d8d865c94921e4ddd5f82d.setContent(html_281b8d97b808badb2503d286dc3de869);
+            
+        
+
+        marker_5bc869b27ed1583363cab99da293f5f0.bindPopup(popup_abb998c635d8d865c94921e4ddd5f82d)
+        ;
+
+        
+    
+    
+            var marker_9479cb6e58a2e804e26b8247ecc1ffb2 = L.marker(
+                [52.9255383, 1.3054149],
+                {}
+            ).addTo(map_b5629a4871649e57abc7dddf44fd57f5);
+        
+    
+            var icon_aac5862717218a5a223894ddc60f870a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9479cb6e58a2e804e26b8247ecc1ffb2.setIcon(icon_aac5862717218a5a223894ddc60f870a);
+        
+    
+        var popup_2d93e52a4e965d3409144d62f5e3f494 = L.popup({});
+
+        
+            
+                var html_5463b92027f4581bc1d23cb6dfbe39c0 = $(`<div id="html_5463b92027f4581bc1d23cb6dfbe39c0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cromwell Road, Cromer</h1><div class="nugget-popup"><p>Drainage system overload and surcharging, drainage/outfall blockage and surface run&ndash;off (including water washed off the public highway by vehicles) caused flood water to reach the road and enter nearby properties. (p3)</p></div><div class="nugget-popup"><p>One property on Cromwell Road was internally flooded. [TAB] (p8)</p></div><div class="nugget-popup"><p>Significant rainfall was directed into the local ditch/watercourse causing it to surcharge, which contributed to flooding at the affected property on Cromwell Road. [TAB] (p11)</p></div><div class="nugget-popup"><p>Significant rainfall directed into the nearby ditch/watercourse caused it to surcharge; the surcharging contributed to flooding at a property on Cromwell Road by allowing water to enter the building via low thresholds at the entrances. [PAG] (p12)</p></div><div class="nugget-popup"><p>Significant rainfall was directed into the adjacent ditch/watercourse causing it to surcharge; the surcharging contributed to flooding of a property by entering the building via low thresholds at the entrances. [IMG] (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties (internal flooding across the listed locations) (p3)</p></div><div class="nugget-popup quant"><p>1 property [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_2d93e52a4e965d3409144d62f5e3f494.setContent(html_5463b92027f4581bc1d23cb6dfbe39c0);
+            
+        
+
+        marker_9479cb6e58a2e804e26b8247ecc1ffb2.bindPopup(popup_2d93e52a4e965d3409144d62f5e3f494)
+        ;
+
+        
+    
+    
+            var marker_7e3fac86fb5c36bd9fa2c40ffb4a4973 = L.marker(
+                [52.9305997, 1.3012183],
+                {}
+            ).addTo(map_b5629a4871649e57abc7dddf44fd57f5);
+        
+    
+            var icon_4dcc1488947acec14fbf907fcfc2f51e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7e3fac86fb5c36bd9fa2c40ffb4a4973.setIcon(icon_4dcc1488947acec14fbf907fcfc2f51e);
+        
+    
+        var popup_7a5d939abc97145989af90568830f4a1 = L.popup({});
+
+        
+            
+                var html_2d1de68ced24d017df271d75bf57593a = $(`<div id="html_2d1de68ced24d017df271d75bf57593a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bond Street, Cromer</h1><div class="nugget-popup"><p>Flooding driven by overloaded/surcharging drainage, blocked outfalls and surface run&ndash;off from roads (including vehicle wash&ndash;off) led to flood water reaching the street and properties. (p3)</p></div><div class="nugget-popup"><p>Partial obstruction of the foul drainage system by debris or silt caused failure of the upstream drainage system, contributing to flooding at properties on Bond Street. [IMG] (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties (internal flooding across the listed locations) (p3)</p></div></div></body></div>`)[0];
+                popup_7a5d939abc97145989af90568830f4a1.setContent(html_2d1de68ced24d017df271d75bf57593a);
+            
+        
+
+        marker_7e3fac86fb5c36bd9fa2c40ffb4a4973.bindPopup(popup_7a5d939abc97145989af90568830f4a1)
+        ;
+
+        
+    
+    
+            var marker_a79a8c118d72263bd3a0e7e037bd1712 = L.marker(
+                [52.9209943, 1.3114299],
+                {}
+            ).addTo(map_b5629a4871649e57abc7dddf44fd57f5);
+        
+    
+            var icon_13a3e8f53517881cab749285eec6a572 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a79a8c118d72263bd3a0e7e037bd1712.setIcon(icon_13a3e8f53517881cab749285eec6a572);
+        
+    
+        var popup_091ec75cc6d773ff39634f23ffc3e2e7 = L.popup({});
+
+        
+            
+                var html_569381bbc1240475b1c9fe7d821f8156 = $(`<div id="html_569381bbc1240475b1c9fe7d821f8156" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Station Road, Cromer</h1><div class="nugget-popup"><p>Surface water run&ndash;off and overloaded/surcharging drainage (and associated blockages) resulted in flood water reaching the road and entering properties. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties (internal flooding across the listed locations) (p3)</p></div></div></body></div>`)[0];
+                popup_091ec75cc6d773ff39634f23ffc3e2e7.setContent(html_569381bbc1240475b1c9fe7d821f8156);
+            
+        
+
+        marker_a79a8c118d72263bd3a0e7e037bd1712.bindPopup(popup_091ec75cc6d773ff39634f23ffc3e2e7)
+        ;
+
+        
+    
+    
+            var marker_f2cfde7f0d492a3bf0f63a297244561e = L.marker(
+                [52.9310174, 1.3011496],
+                {}
+            ).addTo(map_b5629a4871649e57abc7dddf44fd57f5);
+        
+    
+            var icon_92c15dd0b188f330322219dcd68fe6f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f2cfde7f0d492a3bf0f63a297244561e.setIcon(icon_92c15dd0b188f330322219dcd68fe6f1);
+        
+    
+        var popup_1103c54c853c35630ef94d8f30cc9079 = L.popup({});
+
+        
+            
+                var html_5529f59d84a7b45e97deecb5f917e309 = $(`<div id="html_5529f59d84a7b45e97deecb5f917e309" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Street, Cromer</h1><div class="nugget-popup"><p>Flooding caused by an overloaded/surcharging drainage system, outfall blockage and surface run&ndash;off (including wash&ndash;off from the highway) led to flood water entering properties on/near the street. (p3)</p></div><div class="nugget-popup"><p>One property on Church Street was internally flooded. [TAB] (p8)</p></div><div class="nugget-popup"><p>Surface run&ndash;off from the highway (road camber) flowed onto property accesses and contributed to flooding of properties. The local surface water drainage was partially obstructed and/or overloaded so flows could not be accommodated and flood water entered properties (through low thresholds at entrances). [TAB] (p11)</p></div><div class="nugget-popup"><p>Flooding occurred at Church Street on 08/08/2017 and affected properties on that street. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties (internal flooding across the listed locations) (p3)</p></div><div class="nugget-popup quant"><p>1 property [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_1103c54c853c35630ef94d8f30cc9079.setContent(html_5529f59d84a7b45e97deecb5f917e309);
+            
+        
+
+        marker_f2cfde7f0d492a3bf0f63a297244561e.bindPopup(popup_1103c54c853c35630ef94d8f30cc9079)
+        ;
+
+        
+    
+    
+            var marker_2ba3b48b2c89c19bf24d7516da8e4c0b = L.marker(
+                [52.9289607, 1.3062974],
+                {}
+            ).addTo(map_b5629a4871649e57abc7dddf44fd57f5);
+        
+    
+            var icon_bae7d1f79bba116e993d6f493025d267 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2ba3b48b2c89c19bf24d7516da8e4c0b.setIcon(icon_bae7d1f79bba116e993d6f493025d267);
+        
+    
+        var popup_1ab85ed177cec56745227be510f8f657 = L.popup({});
+
+        
+            
+                var html_b9f355675c47f5d15e2221ba3e27bb9e = $(`<div id="html_b9f355675c47f5d15e2221ba3e27bb9e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Overstrand Road, Cromer</h1><div class="nugget-popup"><p>Drainage system overload, surcharging and blockages combined with surface run&ndash;off from the road (including vehicle wash&ndash;off) led to flood water reaching and entering properties adjacent to the road. (p3)</p></div><div class="nugget-popup"><p>One property on Overstrand Road was internally flooded; residents were visited afterwards by agencies to offer advice and gather information. [TAB] (p8)</p></div><div class="nugget-popup"><p>Run&ndash;off from significant rainfall was directed towards the surface water drainage network which was already overloaded; the drainage system was also partially obstructed by debris/silt, reducing its efficiency and directing flood water towards affected properties. [TAB] (p11)</p></div><div class="nugget-popup"><p>Flooding occurred on Overstrand Road on 08/08/2017 and affected the road and nearby properties. (p12)</p></div><div class="nugget-popup"><p>The surface water drainage system was partially obstructed by debris or silt, causing the ditch/watercourse to overflow and flood into nearby properties. [IMG] (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties (internal flooding across the listed locations) (p3)</p></div><div class="nugget-popup quant"><p>1 property [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_1ab85ed177cec56745227be510f8f657.setContent(html_b9f355675c47f5d15e2221ba3e27bb9e);
+            
+        
+
+        marker_2ba3b48b2c89c19bf24d7516da8e4c0b.bindPopup(popup_1ab85ed177cec56745227be510f8f657)
+        ;
+
+        
+    
+    
+            var marker_b513d3a7e73341963a09d59c3ea8e8f6 = L.marker(
+                [52.835652, 1.1276598],
+                {}
+            ).addTo(map_b5629a4871649e57abc7dddf44fd57f5);
+        
+    
+            var icon_27659c63ebda35e33ca45ee6d48710c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b513d3a7e73341963a09d59c3ea8e8f6.setIcon(icon_27659c63ebda35e33ca45ee6d48710c5);
+        
+    
+        var popup_5b507ace9d4fc092cab10746de948958 = L.popup({});
+
+        
+            
+                var html_8c7843dbb085afa1363f86bd23aa1722 = $(`<div id="html_8c7843dbb085afa1363f86bd23aa1722" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North Norfolk</h1><div class="nugget-popup"><p>The properties affected by the reported incidents were concentrated within the North Norfolk catchment; flooding across these catchments was caused by obstructed or overloaded surface water drainage and increased surface run&ndash;off which resulted in internal and external property flooding. (p3)</p></div><div class="nugget-popup"><p>North Norfolk District Council was recommended to assess the use of permissive powers under the Land Drainage Act 1991 to maintain a watercourse in relation to Cromwell Road following the flooding. [IMG,PAG] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>17 properties affected; 5 internal; 12 external (p3)</p></div></div></body></div>`)[0];
+                popup_5b507ace9d4fc092cab10746de948958.setContent(html_8c7843dbb085afa1363f86bd23aa1722);
+            
+        
+
+        marker_b513d3a7e73341963a09d59c3ea8e8f6.bindPopup(popup_5b507ace9d4fc092cab10746de948958)
+        ;
+
+        
+    
+    
+            var marker_ecde5d4fde4d501b8db84b50da763bc6 = L.marker(
+                [52.666667, 1.0],
+                {}
+            ).addTo(map_b5629a4871649e57abc7dddf44fd57f5);
+        
+    
+            var icon_2a78bb580c6c14e4b830ab3053c004a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ecde5d4fde4d501b8db84b50da763bc6.setIcon(icon_2a78bb580c6c14e4b830ab3053c004a2);
+        
+    
+        var popup_0894df4cde7ccd746343aa3cdc876873 = L.popup({});
+
+        
+            
+                var html_ffb7f8bec2ab54f71f536756711a106f = $(`<div id="html_ffb7f8bec2ab54f71f536756711a106f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Norfolk</h1><div class="nugget-popup"><p>Norfolk County Council, acting as the Lead Local Flood Authority, is investigating the significant flooding incident under Section 19 of the Flood and Water Management Act 2010. [IMG,PAG] (p5)</p></div><div class="nugget-popup"><p>Internal flooding of properties and impacts to people, property and infrastructure within the catchment. The investigation records 1 incident of internal flooding in the catchment and recommends RMAs to review assets and communicate with affected residents. [PAG] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 incident (100%) of internal flooding in this catchment [PAG] (p20)</p></div></div></body></div>`)[0];
+                popup_0894df4cde7ccd746343aa3cdc876873.setContent(html_ffb7f8bec2ab54f71f536756711a106f);
+            
+        
+
+        marker_ecde5d4fde4d501b8db84b50da763bc6.bindPopup(popup_0894df4cde7ccd746343aa3cdc876873)
+        ;
+
+        
+    
+    
+            var marker_9765ded0ac9cc58dffbaffe0ca11fa2f = L.marker(
+                [52.925941949999995, 1.3023365942523295],
+                {}
+            ).addTo(map_b5629a4871649e57abc7dddf44fd57f5);
+        
+    
+            var icon_0e8bef574093fb6f83658e5a27c0c4d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9765ded0ac9cc58dffbaffe0ca11fa2f.setIcon(icon_0e8bef574093fb6f83658e5a27c0c4d9);
+        
+    
+        var popup_ff630c13631958b26168ea0aaa8185ae = L.popup({});
+
+        
+            
+                var html_356a687fdd252d25e6ccc0cde6dc8486 = $(`<div id="html_356a687fdd252d25e6ccc0cde6dc8486" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cromer</h1><div class="nugget-popup"><p>Urban surface water flooding and associated contamination in parts of the town; prompted emergency response and mitigation activities documented in images. (p1)</p></div><div class="nugget-popup"><p>Between 1 January 2016 and 31 December 2017 there were 17 reported flooding incidents for Cromer which led to internal flooding of 5 properties (plus 2 further unconfirmed internal reports). Flooding causes reported included overloaded or surcharging drainage systems, drainage/outfall blockages, surface water washed off public highways by vehicles, and surface run&ndash;off from roads; flood water entered properties via unprotected building features (low thresholds, unprotected air bricks and service conduits). (p3)</p></div><div class="nugget-popup"><p>Significant flooding affected the town, impacting people, property and infrastructure and triggering a Section 19 investigation. [IMG] (p5)</p></div><div class="nugget-popup"><p>Multiple residential properties and multiple commercial properties in Cromer were internally flooded. [PAG] (p6)</p></div><div class="nugget-popup"><p>Flood reports (both external and internal) were clustered mainly in the central and northern parts of Cromer during the event, particularly along the central flow line. Reported incidents were concentrated near key infrastructure (hospital and schools) and in more densely populated urban areas. [IMG,PAG] (p7)</p></div><div class="nugget-popup"><p>Internal flooding of properties within Cromer (Cromwell Road, Church Street, Overstrand Road) during the reported incidents. [TAB,MUL] (p8)</p></div><div class="nugget-popup"><p>Parts of Cromer experienced surface water/urban flooding: properties on Church Street and Overstrand Road were flooded on 08/08/2017 due to highway run&ndash;off, obstructed/overloaded surface water drains and low thresholds allowing entry; a property on Cromwell Road was flooded on 23/06/2016 when heavy rainfall caused the local ditch/watercourse to surcharge. [TAB,MUL] (p11)</p></div><div class="nugget-popup"><p>Parts of Cromer were affected by flooding during events on 23/06/2016 and 08/08/2017, including impacts on streets listed (Church Street, Overstrand Road and Cromwell Road). [MUL] (p12)</p></div><div class="nugget-popup"><p>Flood reports aggregate around the town centre and more built&ndash;up areas of Cromer; watercourses and low&ndash;lying zones near the town are shown in 1&ndash;in&ndash;100 flood risk areas. Main roads and bridges through the town intersect flood&ndash;prone areas, indicating local infrastructure vulnerability. [IMG,PAG] (p14)</p></div><div class="nugget-popup"><p>An internal flood affected a property in Cromer (on Brownshill). [TAB] (p15)</p></div><div class="nugget-popup"><p>The Brownshill area of Cromer experienced flooding on 23/06/2016 when significant rainfall overwhelmed the combined drainage network and caused foul&ndash;system surcharge, resulting in internal property flooding (water entering through toilets and sinks). [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>17 reports; 5 internal properties; 2 unconfirmed internal instances (p3)</p></div><div class="nugget-popup quant"><p>3 properties [TAB,MUL] (p8)</p></div><div class="nugget-popup quant"><p>1 property [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_ff630c13631958b26168ea0aaa8185ae.setContent(html_356a687fdd252d25e6ccc0cde6dc8486);
+            
+        
+
+        marker_9765ded0ac9cc58dffbaffe0ca11fa2f.bindPopup(popup_ff630c13631958b26168ea0aaa8185ae)
+        ;
+
+        
+    
+</script>
+</html>

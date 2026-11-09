@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8818bbf5737b7886d049bb60eb4a0d90 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8818bbf5737b7886d049bb60eb4a0d90" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8818bbf5737b7886d049bb60eb4a0d90 = L.map(
+                "map_8818bbf5737b7886d049bb60eb4a0d90",
+                {
+                    center: [51.2243432, 1.3982437],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9c4a6a84a4f099b680a9d1fd80d90250 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_9c4a6a84a4f099b680a9d1fd80d90250.addTo(map_8818bbf5737b7886d049bb60eb4a0d90);
+    
+            var marker_01069855a4b7999d463ad208b616ef74 = L.marker(
+                [51.2241407, 1.3968996],
+                {}
+            ).addTo(map_8818bbf5737b7886d049bb60eb4a0d90);
+        
+    
+            var icon_609dd497fd34d43f7da1a52229367249 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_01069855a4b7999d463ad208b616ef74.setIcon(icon_609dd497fd34d43f7da1a52229367249);
+        
+    
+        var popup_ee3b2d64ba54f41a0113a5772ed705d9 = L.popup({});
+
+        
+            
+                var html_ba15079049a7c12e69366a34e5aa59ee = $(`<div id="html_ba15079049a7c12e69366a34e5aa59ee" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Albert Road, Deal</h1><div class="nugget-popup"><p>Residential properties on Albert Road were damaged by the flood event. [IMG] (p1)</p></div><div class="nugget-popup"><p>Road and adjacent residential properties were flooded following heavy rainfall; internal flooding and property damage occurred and vehicles were damaged. [IMG] (p2)</p></div><div class="nugget-popup"><p>Foul sewers surcharged (due to Golf Road pumping station failure) and excess foul and rainwater discharged onto Albert Road; water could not escape quickly and the surface water sewer lacked capacity, resulting in inundation of the road; road drains were subsequently cleared of foul effluent. (p3)</p></div><div class="nugget-popup"><p>Identified as a low point where overland flow from the south is trapped by the railway embankment, creating local flood risk during the flood event; properties here are at risk from surface water/overland flow (noted that properties do not have basements). (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>22 properties [IMG] (p1)</p></div><div class="nugget-popup quant"><p>22 properties flooded internally; approximately 30 cm deep floodwater on the road [IMG] (p2)</p></div></div></body></div>`)[0];
+                popup_ee3b2d64ba54f41a0113a5772ed705d9.setContent(html_ba15079049a7c12e69366a34e5aa59ee);
+            
+        
+
+        marker_01069855a4b7999d463ad208b616ef74.bindPopup(popup_ee3b2d64ba54f41a0113a5772ed705d9)
+        ;
+
+        
+    
+    
+            var marker_7a02d2a6654d61fcbb770e7206039ac9 = L.marker(
+                [51.2249359, 1.3950971],
+                {}
+            ).addTo(map_8818bbf5737b7886d049bb60eb4a0d90);
+        
+    
+            var icon_2d0bbf31a480a6daaaa7594f009b9878 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7a02d2a6654d61fcbb770e7206039ac9.setIcon(icon_2d0bbf31a480a6daaaa7594f009b9878);
+        
+    
+        var popup_d95238c4be7e1c33f20de9c2eaad720e = L.popup({});
+
+        
+            
+                var html_c3237f559e9fe7b8bb58c806e1b69946 = $(`<div id="html_c3237f559e9fe7b8bb58c806e1b69946" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Matthews Close, Deal</h1><div class="nugget-popup"><p>The ditch at the back of Matthews Close (an ordinary watercourse) is part of the local drainage system; surface water sewers discharge into this ditch which is then culverted to the Penfield Sewer. Improvement works on the ditch had commenced but were incomplete at the time of the flood; the works did not prevent the culvert from functioning and inspection showed the culvert was working during the flood. (p4)</p></div></div></body></div>`)[0];
+                popup_d95238c4be7e1c33f20de9c2eaad720e.setContent(html_c3237f559e9fe7b8bb58c806e1b69946);
+            
+        
+
+        marker_7a02d2a6654d61fcbb770e7206039ac9.bindPopup(popup_d95238c4be7e1c33f20de9c2eaad720e)
+        ;
+
+        
+    
+</script>
+</html>

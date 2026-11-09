@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b8df3f3ea26ac6086b6fddbef58d1bd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6b8df3f3ea26ac6086b6fddbef58d1bd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6b8df3f3ea26ac6086b6fddbef58d1bd = L.map(
+                "map_6b8df3f3ea26ac6086b6fddbef58d1bd",
+                {
+                    center: [52.28747234251441, -0.2170903164658551],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bcfd6d4f6dc03f9f35f208f724d8023f = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_bcfd6d4f6dc03f9f35f208f724d8023f.addTo(map_6b8df3f3ea26ac6086b6fddbef58d1bd);
+    
+            var marker_13c5aeb2aac2b1d81d12fce17a0f3edb = L.marker(
+                [52.28486221017296, -0.2160429033702549],
+                {}
+            ).addTo(map_6b8df3f3ea26ac6086b6fddbef58d1bd);
+        
+    
+            var icon_de97b9281603256ec4fc9c99ad8e4f2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_13c5aeb2aac2b1d81d12fce17a0f3edb.setIcon(icon_de97b9281603256ec4fc9c99ad8e4f2f);
+        
+    
+        var popup_7e63231dee36bf2b9c214b3bdbc4b5f1 = L.popup({});
+
+        
+            
+                var html_b2d697cda377cb3ab63fc665f64fd214 = $(`<div id="html_b2d697cda377cb3ab63fc665f64fd214" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Millennium Green</h1><div class="nugget-popup"><p>Flows were reported to have come out of bank from the High Street and downstream into the Millennium Green open space, inundating the green during the event; the watercourse then passes through a culvert under the railway where flows were impeded. (p14)</p></div><div class="nugget-popup"><p>The watercourse running through Millennium Green was cleared of vegetation and debris by the Parish Council after the flood to improve flow and reduce future blockage. (p21)</p></div><div class="nugget-popup"><p>The ordinary watercourse culvert beneath the railway at Millennium Green was identified for significant maintenance and clearance following the village flooding; the culvert has been inspected/targeted for clearance to reduce future flood risk. (p25)</p></div></div></body></div>`)[0];
+                popup_7e63231dee36bf2b9c214b3bdbc4b5f1.setContent(html_b2d697cda377cb3ab63fc665f64fd214);
+            
+        
+
+        marker_13c5aeb2aac2b1d81d12fce17a0f3edb.bindPopup(popup_7e63231dee36bf2b9c214b3bdbc4b5f1)
+        ;
+
+        
+    
+    
+            var marker_80e56b1629c5b272661ad439e0178ab0 = L.marker(
+                [52.2872136, -0.2139324],
+                {}
+            ).addTo(map_6b8df3f3ea26ac6086b6fddbef58d1bd);
+        
+    
+            var icon_b5be921372d16b5a2f50fc7f1ebcd1bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_80e56b1629c5b272661ad439e0178ab0.setIcon(icon_b5be921372d16b5a2f50fc7f1ebcd1bb);
+        
+    
+        var popup_317a88e9522a8e5ca30d08fb70ec6db5 = L.popup({});
+
+        
+            
+                var html_5db57c6009076c9f2eeebee36877d301 = $(`<div id="html_5db57c6009076c9f2eeebee36877d301" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Offord Cluny</h1><div class="nugget-popup"><p>North section experienced significant and prolonged highway flooding that resulted in a full road closure. Properties on the High Street (reported as a key risk area) suffered internal flooding with ingress that did not recede for a number of days; some affected properties subsequently experienced loss of access to foul sewerage provision for an extended period. [PAG] (p11)</p></div><div class="nugget-popup"><p>Extensive surface water flooding of the highway (B1043), adjacent gardens and properties. Wetland to the east exceeded capacity and flooded the road, field edges and properties. Flood water reached significant depth and persisted; the Anglian Water sewer system was impacted and some residents were without foul sewerage provision. [PAG,IMG] (p12)</p></div><div class="nugget-popup"><p>Extensive surface water flooding from an overwhelmed wetland and high groundwater flooded the B1043 (High Street) and adjacent field edge, inundating gardens, outbuildings and properties to the east and causing some rear garden flooding. Floodwater reached significant depth and persisted, causing the road to be closed and the Anglian Water sewer system to be impacted, leaving some residents without foul sewerage provision. [TAB] (p13)</p></div><div class="nugget-popup"><p>Flows were reported to come out of bank from the High Street and flow downstream into Millennium Green and nearby industrial/business curtilage, contributing to property and open&ndash;space inundation; impeded culvert and vegetation downstream affected flow routes. [TAB] (p14)</p></div><div class="nugget-popup"><p>Reports of flooding at High Street (North) were investigated by RMAs and the LLFA; site visits identified that a substantially blocked small&ndash;diameter Network Rail culvert in the vicinity likely contributed to local flooding at this location, prompting confirmation of maintenance actions. [TAB] (p15)</p></div><div class="nugget-popup"><p>Localised flooding caused by reduced flow in the adjacent watercourse due to vegetation and silt build&ndash;up and an unconsented metal security fence obstructing the channel. Investigation and riparian works were carried out: fence removed (actioned under S23), vegetation and silt clearance advised and undertaken, resulting in improved flow by May 2021. [IMG] (p18)</p></div><div class="nugget-popup"><p>Sections of High Street (North and South) were affected during the 23 December 2020 event: surface water flooding occurred (both North and South), and groundwater flooding was recorded in the North. Contributing issues identified for High Street included sewer capacity problems, mis&ndash;connections to foul sewers, RMA operational issues and riparian maintenance shortcomings. [TAB] (p26)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>full road closure lasting approximately 3 weeks [PAG] (p11)</p></div><div class="nugget-popup quant"><p>approximately 45 cm; full road closure lasting approximately 3 weeks; loss of foul sewerage provision to properties for approximately 3 weeks [PAG,IMG] (p12)</p></div><div class="nugget-popup quant"><p>approximately 45 cm depth; road closure lasting approximately 3 weeks; approximately 3 weeks without foul sewerage provision [TAB] (p13)</p></div><div class="nugget-popup quant"><p>flood depths approximately 20&ndash;45cm across the area; residents displaced for 6&ndash;8 months [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_317a88e9522a8e5ca30d08fb70ec6db5.setContent(html_5db57c6009076c9f2eeebee36877d301);
+            
+        
+
+        marker_80e56b1629c5b272661ad439e0178ab0.bindPopup(popup_317a88e9522a8e5ca30d08fb70ec6db5)
+        ;
+
+        
+    
+    
+            var marker_1d06de17ea02855b6e9c7d4c43028380 = L.marker(
+                [52.2887905, -0.2155303],
+                {}
+            ).addTo(map_6b8df3f3ea26ac6086b6fddbef58d1bd);
+        
+    
+            var icon_ae9471de5d0679801dde70a4f19ca95b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1d06de17ea02855b6e9c7d4c43028380.setIcon(icon_ae9471de5d0679801dde70a4f19ca95b);
+        
+    
+        var popup_727087a504a22f0b86f185601b8cb9b3 = L.popup({});
+
+        
+            
+                var html_b93fd91518ab894dd78ccb98f7649586 = $(`<div id="html_b93fd91518ab894dd78ccb98f7649586" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Station Lane, Offord Cluny</h1><div class="nugget-popup"><p>Reported as one of the three key risk areas where internal property flooding occurred; ingress of water into properties did not recede for a number of days. [PAG] (p11)</p></div><div class="nugget-popup"><p>Reported as one of three key risk areas where internal property flooding was recorded during the winter 2020/21 event. [PAG,IMG] (p12)</p></div><div class="nugget-popup"><p>Water levels rose rapidly on 23 December 2020, inundating Station Lane and nearby properties to a significant depth before receding. The banked railway acted as a barrier to runoff; outfalls to the main river were submerged. Overflow from a nearby Anglian Water pumping station was involved in local drainage. (p13)</p></div><div class="nugget-popup"><p>Properties internally flooded to shallow depths; gardens and outbuildings also inundated. Residents were displaced from their homes. [TAB] (p14)</p></div><div class="nugget-popup"><p>Reports of localised flooding on Station Lane associated with blocked/insufficient culverts, ditches and highway drainage. LLFA attended site to investigate, downstream investigations were initiated and highway gully cleansing frequency was increased as a response. [TAB] (p17)</p></div><div class="nugget-popup"><p>Station Lane experienced surface water flooding during the 23 December 2020 event. The investigation identified RMA operational issues and riparian maintenance issues as contributing factors to flooding at this location. [TAB] (p26)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 22 cm depth; receded within 5 hours (p13)</p></div><div class="nugget-popup quant"><p>internal flooding up to approximately 22cm; gardens and outbuildings up to approximately 60cm; residents displaced for over 1 month [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_727087a504a22f0b86f185601b8cb9b3.setContent(html_b93fd91518ab894dd78ccb98f7649586);
+            
+        
+
+        marker_1d06de17ea02855b6e9c7d4c43028380.bindPopup(popup_727087a504a22f0b86f185601b8cb9b3)
+        ;
+
+        
+    
+    
+            var marker_618639603ae211feb50438a35008ca40 = L.marker(
+                [52.2863582, -0.2124586],
+                {}
+            ).addTo(map_6b8df3f3ea26ac6086b6fddbef58d1bd);
+        
+    
+            var icon_5cef9e638ef3330cf014d365eecfcc94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_618639603ae211feb50438a35008ca40.setIcon(icon_5cef9e638ef3330cf014d365eecfcc94);
+        
+    
+        var popup_e48bcca5718413eedb494d0eed7527ae = L.popup({});
+
+        
+            
+                var html_d4571b3b8f24e0df9f38dd31f3784022 = $(`<div id="html_d4571b3b8f24e0df9f38dd31f3784022" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Park Way, Offord Cluny</h1><div class="nugget-popup"><p>Included in the Parkway/Elm Close/Latin Close/New Road/High Street (South) cluster where internal property flooding was reported; affected properties experienced ingress of water that did not recede for several days. [PAG] (p11)</p></div><div class="nugget-popup"><p>Properties on Parkway were flooded internally due to overland surface water flows originating from a blocked section of the ordinary watercourse upstream; flooding affected properties and gardens in the street. [TAB] (p14)</p></div><div class="nugget-popup"><p>Reports of localised flooding associated with an adjacent watercourse: observed silt and vegetation build&ndash;up and an obstructing security fence that impeded flow; site investigations undertaken, fence removed and further vegetation/silt clearance and maintenance planned to restore flow. [IMG] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 20&ndash;45 cm; residents displaced for 6&ndash;8 months [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_e48bcca5718413eedb494d0eed7527ae.setContent(html_d4571b3b8f24e0df9f38dd31f3784022);
+            
+        
+
+        marker_618639603ae211feb50438a35008ca40.bindPopup(popup_e48bcca5718413eedb494d0eed7527ae)
+        ;
+
+        
+    
+    
+            var marker_6891ce823d99ec50b24eeac5e9dfb5f1 = L.marker(
+                [52.286667, -0.211582],
+                {}
+            ).addTo(map_6b8df3f3ea26ac6086b6fddbef58d1bd);
+        
+    
+            var icon_679ba2c0fde11214f45635c521c2bc16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6891ce823d99ec50b24eeac5e9dfb5f1.setIcon(icon_679ba2c0fde11214f45635c521c2bc16);
+        
+    
+        var popup_fd96d57091fae48ca39c12c9c88894f8 = L.popup({});
+
+        
+            
+                var html_4b41088ea491752ba2d0ca15152cb7bf = $(`<div id="html_4b41088ea491752ba2d0ca15152cb7bf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Elm Drive, Offord Cluny</h1><div class="nugget-popup"><p>Part of the southern cluster (Parkway/Elm Close (sic)/Latin Close/New Road/High Street (South)) where internal property flooding was reported; properties experienced ingress of water that did not recede for a number of days. [PAG] (p11)</p></div><div class="nugget-popup"><p>Part of the southern cluster (Parkway/Elm Close (sic)/Latin Close/New Road/High Street South) where internal and external property flooding incidents were reported. [PAG,IMG] (p12)</p></div><div class="nugget-popup"><p>Properties on Elm Drive were flooded by surface water flows originating from blockage&ndash;induced overland flow; internal and external flooding affected properties and gardens. [TAB] (p14)</p></div><div class="nugget-popup"><p>Subject to investigations for reported flooding caused by obstructed watercourse/culvert and silt/vegetation build&ndash;up; remedial actions included riparian clearance and planned maintenance to reduce future blockages. [IMG] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths approximately 20&ndash;45cm across the area; residents displaced for 6&ndash;8 months [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_fd96d57091fae48ca39c12c9c88894f8.setContent(html_4b41088ea491752ba2d0ca15152cb7bf);
+            
+        
+
+        marker_6891ce823d99ec50b24eeac5e9dfb5f1.bindPopup(popup_fd96d57091fae48ca39c12c9c88894f8)
+        ;
+
+        
+    
+    
+            var marker_b1b6f4d2f597fa498c1cad8729242da7 = L.marker(
+                [52.2866607, -0.2096311],
+                {}
+            ).addTo(map_6b8df3f3ea26ac6086b6fddbef58d1bd);
+        
+    
+            var icon_439cc6ce37d41ed188b9f609906e6888 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b1b6f4d2f597fa498c1cad8729242da7.setIcon(icon_439cc6ce37d41ed188b9f609906e6888);
+        
+    
+        var popup_d42a7cc85bc399f20abcd072b239a5e7 = L.popup({});
+
+        
+            
+                var html_dd0f1cba4022d99b217515d1dcdeaeb9 = $(`<div id="html_dd0f1cba4022d99b217515d1dcdeaeb9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Latin Close, Offord Cluny</h1><div class="nugget-popup"><p>Included in the southern cluster of streets where internal property flooding was reported; ingress of water into properties persisted for days. [PAG] (p11)</p></div><div class="nugget-popup"><p>Included in the Parkway/Elm Close/Latin Close/New Road/High Street (South) cluster where internal property flooding was reported. Properties in this southern cluster experienced ingress that did not recede for a number of days and some residents experienced prolonged loss of foul sewerage service. [PAG,IMG] (p12)</p></div><div class="nugget-popup"><p>Properties and gardens in Latin Close were inundated by surface water flows resulting from upstream blockage and overland flow. [TAB] (p14)</p></div><div class="nugget-popup"><p>Included in the Parkway/Elm Drive/Latin Close/New Road/High Street (South) investigation: experienced or was at risk from local flooding due to obstructed watercourse (silt/vegetation and fence obstruction); subject to inspections and riparian remediation actions. [IMG] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths approximately 20&ndash;45cm across the area; residents displaced for 6&ndash;8 months [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_d42a7cc85bc399f20abcd072b239a5e7.setContent(html_dd0f1cba4022d99b217515d1dcdeaeb9);
+            
+        
+
+        marker_b1b6f4d2f597fa498c1cad8729242da7.bindPopup(popup_d42a7cc85bc399f20abcd072b239a5e7)
+        ;
+
+        
+    
+    
+            var marker_21c13c9221f747bb0e2af404666516dd = L.marker(
+                [52.2872146, -0.2055952],
+                {}
+            ).addTo(map_6b8df3f3ea26ac6086b6fddbef58d1bd);
+        
+    
+            var icon_fd83ea2a066dd704eb96a913cee5ca1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_21c13c9221f747bb0e2af404666516dd.setIcon(icon_fd83ea2a066dd704eb96a913cee5ca1d);
+        
+    
+        var popup_0907a74863ff567f414c18cc2bdd392b = L.popup({});
+
+        
+            
+                var html_0be0c2333b8780c4b1d538a490835c7b = $(`<div id="html_0be0c2333b8780c4b1d538a490835c7b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>New Road, Offord Cluny</h1><div class="nugget-popup"><p>Named as part of the Parkway/Elm Close/Latin Close/New Road/High Street (South) grouping where internal property flooding occurred; affected properties experienced prolonged water ingress. [PAG] (p11)</p></div><div class="nugget-popup"><p>Included within the southern cluster (Parkway/Elm Close/Latin Close/New Road/High Street South) where internal and external property flooding incidents were reported. [PAG,IMG] (p12)</p></div><div class="nugget-popup"><p>Properties on New Road were flooded due to surcharging sewer systems (sewer flooding), causing internal and external property inundation. [TAB] (p14)</p></div><div class="nugget-popup"><p>Reported flooding linked to adjacent watercourse obstruction and silt/vegetation accumulation; investigations conducted by RMA/LLFA with actions including vegetation clearance, removal of the obstructing fence and planned maintenance (gully cleansing and de&ndash;silting by Network Rail). [IMG] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>flood depths approximately 20&ndash;45cm across the area; residents displaced for 6&ndash;8 months [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_0907a74863ff567f414c18cc2bdd392b.setContent(html_0be0c2333b8780c4b1d538a490835c7b);
+            
+        
+
+        marker_21c13c9221f747bb0e2af404666516dd.bindPopup(popup_0907a74863ff567f414c18cc2bdd392b)
+        ;
+
+        
+    
+    
+            var marker_1c5f3287f029dfcfe142f1c98633a7d3 = L.marker(
+                [52.3729017, -0.04493599422000649],
+                {}
+            ).addTo(map_6b8df3f3ea26ac6086b6fddbef58d1bd);
+        
+    
+            var icon_a055ceaa1ed0d41d493c2a52946fb7e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1c5f3287f029dfcfe142f1c98633a7d3.setIcon(icon_a055ceaa1ed0d41d493c2a52946fb7e8);
+        
+    
+        var popup_9d7d63d3f5acc4da266c70da30670908 = L.popup({});
+
+        
+            
+                var html_a93df50628606a837e115395fb8ddbc6 = $(`<div id="html_a93df50628606a837e115395fb8ddbc6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cambridgeshire</h1><div class="nugget-popup"><p>Significant flooding affected The Offords (Offord Cluny and Offord D'arcy) due to very high runoff from intense rainfall on 23 December 2020 and re&ndash;flooding on 14 January 2021. Flooding included surface water and groundwater inundation followed by fluvial flooding; the local authority received 22 flood reports from the community across Offord Cluny and Offord D'arcy. [IMG,MUL] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>22 flood reports [IMG,MUL] (p10)</p></div></div></body></div>`)[0];
+                popup_9d7d63d3f5acc4da266c70da30670908.setContent(html_a93df50628606a837e115395fb8ddbc6);
+            
+        
+
+        marker_1c5f3287f029dfcfe142f1c98633a7d3.bindPopup(popup_9d7d63d3f5acc4da266c70da30670908)
+        ;
+
+        
+    
+    
+            var marker_91a4c0c13f48bebfe16473b629510a04 = L.marker(
+                [52.371044, -0.2235779],
+                {}
+            ).addTo(map_6b8df3f3ea26ac6086b6fddbef58d1bd);
+        
+    
+            var icon_10599856e6ffac6939438fbcbc2da681 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_91a4c0c13f48bebfe16473b629510a04.setIcon(icon_10599856e6ffac6939438fbcbc2da681);
+        
+    
+        var popup_cfce85da7b2a455aa303f9a67a429c41 = L.popup({});
+
+        
+            
+                var html_d1a2f3b7b0b157c7c589682cb9677f1a = $(`<div id="html_d1a2f3b7b0b157c7c589682cb9677f1a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Huntingdonshire</h1><div class="nugget-popup"><p>Severe flooding across the district on 23rd December 2020 that prompted multi&ndash;agency response, community meetings and follow&ndash;up inspections. (p15)</p></div></div></body></div>`)[0];
+                popup_cfce85da7b2a455aa303f9a67a429c41.setContent(html_d1a2f3b7b0b157c7c589682cb9677f1a);
+            
+        
+
+        marker_91a4c0c13f48bebfe16473b629510a04.bindPopup(popup_cfce85da7b2a455aa303f9a67a429c41)
+        ;
+
+        
+    
+    
+            var marker_6e2813cbd457a2c0b08b23236590a47d = L.marker(
+                [52.287903, -0.2130961],
+                {}
+            ).addTo(map_6b8df3f3ea26ac6086b6fddbef58d1bd);
+        
+    
+            var icon_4c494a7b302e509c4668e12af63352af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6e2813cbd457a2c0b08b23236590a47d.setIcon(icon_4c494a7b302e509c4668e12af63352af);
+        
+    
+        var popup_9ad7375ad3f226fe050b2152b08673c6 = L.popup({});
+
+        
+            
+                var html_742566ffae2e99f45e28a951beccc012 = $(`<div id="html_742566ffae2e99f45e28a951beccc012" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Offord Cluny</h1><div class="nugget-popup"><p>As part of The Offords, Offord Cluny was within the area reported to have experienced significant flooding on 23 December 2020 and on 14 January 2021. The report and accompanying surface&ndash;water risk map show built&ndash;up areas (including parts of Offord Cluny) overlap medium/high surface&ndash;water risk zones, but the report does not specify which particular streets or properties in Offord Cluny were flooded. [PAG,IMG,MUL] (p7)</p></div><div class="nugget-popup"><p>Widespread flooding across the settlement with internal and external property flooding in multiple areas. Three key risk areas with internal property flooding were identified (High Street North; Station Lane; Parkway/Elm Close/Latin Close/New Road/High Street South). Ingress into properties did not recede for a number of days; some properties lost foul sewerage provision for about three weeks. Significant and prolonged flooding occurred along the B1043 High Street to the north, causing a full road closure. At least eight properties were rendered uninhabitable for between one and eight months. (p11)</p></div><div class="nugget-popup"><p>Extensive surface&ndash;water flooding at High Street (North) low spot and adjacent wetland overtopping, causing inundation of the B1043 carriageway, gardens and properties to the east and low rear spots. Flood depths reached approximately 45 cm; highway was closed for approximately 3 weeks; Anglian Water sewer system was impacted leaving some residents without foul sewerage for about 3 weeks. Ingress into properties did not recede for days and at least some properties were made uninhabitable for extended periods (see combined figures). [PAG,IMG] (p12)</p></div><div class="nugget-popup"><p>Flooding associated with the 23rd December 2020 event inundated properties in The Offords; residents were reported to have to leave their homes for around 6&ndash;8 months. Investigations identified a substantially blocked Network Rail railway culvert on High Street (North) as potentially critical to local flood risk and maintenance actions were confirmed. (p15)</p></div><div class="nugget-popup"><p>Rural road inundated with standing floodwater (photo Jan 2021); road surface damaged and scheduled for replacement after prolonged flooding and high groundwater; a Network Rail culvert in the vicinity was found to be substantially blocked and identified as potentially critical to local flood risk; some properties experienced loss of foul sewerage service associated with ingress to the sewer system. [IMG,MUL] (p16)</p></div><div class="nugget-popup"><p>Reported flooding prompted LLFA investigations and downstream inspections; highway response included cleansing of highway gullies across The Offords and increasing gully maintenance frequency (response to local flooding and drainage issues). [TAB] (p17)</p></div><div class="nugget-popup"><p>Experienced flooding and sewer&ndash;system impacts from excessive rainfall: highway gullies across The Offords required cleansing and gully maintenance frequency was increased; numerous properties were left without foul sewerage for an extended period, prompting response actions. [MUL] (p19)</p></div><div class="nugget-popup"><p>The village experienced flooding associated with the ordinary watercourse and blocked/undersized culverts on 23 December 2020. Post&ndash;event actions recorded include significant riparian maintenance and clearance of the ordinary watercourse and culverts under the railway to reduce future risk, and Parish Council work to prepare a Local Flood Plan. (p25)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>22 flood reports, 29 properties flooded internally, 31 properties flooded externally, 8 properties uninhabitable, road closure lasting approximately 3 weeks (Offord Cluny and Offord d'Arcy) (p11)</p></div><div class="nugget-popup quant"><p>45 cm; 3 weeks; 3 weeks; 8 properties (uninhabitable, at least) [PAG,IMG] (p12)</p></div></div></body></div>`)[0];
+                popup_9ad7375ad3f226fe050b2152b08673c6.setContent(html_742566ffae2e99f45e28a951beccc012);
+            
+        
+
+        marker_6e2813cbd457a2c0b08b23236590a47d.bindPopup(popup_9ad7375ad3f226fe050b2152b08673c6)
+        ;
+
+        
+    
+    
+            var marker_d10077ff965751b2bec8794deb72fc40 = L.marker(
+                [52.2822224, -0.2136807],
+                {}
+            ).addTo(map_6b8df3f3ea26ac6086b6fddbef58d1bd);
+        
+    
+            var icon_2dea6fc3be8f806d12b4eb1645bf12c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d10077ff965751b2bec8794deb72fc40.setIcon(icon_2dea6fc3be8f806d12b4eb1645bf12c0);
+        
+    
+        var popup_d1e91f83df45fd929eec511e8663e7a0 = L.popup({});
+
+        
+            
+                var html_d8307221da6a3f79f807f3f07ae86045 = $(`<div id="html_d8307221da6a3f79f807f3f07ae86045" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Offord D'Arcy</h1><div class="nugget-popup"><p>Significant flooding occurred in the Offords settlement (which includes Offord D'Arcy) as a result of intense rainfall and existing ground conditions; flooding was exacerbated by high River Great Ouse levels and restricted discharge from an ordinary contributory watercourse. Large areas of the Offords are shown at significant risk from surface water flooding and parts of the built environment are in medium&ndash;high risk zones. [PAG,IMG,MUL] (p7)</p></div><div class="nugget-popup"><p>Widespread flooding across the settlement with internal and external property flooding in multiple areas. Three key risk areas with internal property flooding were identified (High Street North; Station Lane; Parkway/Elm Close/Latin Close/New Road/High Street South). Ingress into properties did not recede for a number of days; some properties lost foul sewerage provision for about three weeks. Significant and prolonged flooding occurred along the B1043 High Street to the north, causing a full road closure. At least eight properties were rendered uninhabitable for between one and eight months. (p11)</p></div><div class="nugget-popup"><p>Area&ndash;wide reporting to the LLFA shows multiple flood incidents across the villages: 22 community flood reports were received; properties experienced internal and external flooding; ingress did not recede for days, some properties were uninhabitable and there were prolonged sewer and highway impacts. [PAG,IMG] (p12)</p></div><div class="nugget-popup"><p>Flooding associated with the 23rd December 2020 event inundated properties in The Offords; residents were reported to have to leave their homes for around 6&ndash;8 months. Investigations identified a substantially blocked Network Rail railway culvert on High Street (North) as potentially critical to local flood risk and maintenance actions were confirmed. (p15)</p></div><div class="nugget-popup"><p>Rural road inundated with standing floodwater (photo Jan 2021); road surface damaged and scheduled for replacement after prolonged flooding and high groundwater; a Network Rail culvert in the vicinity was found to be substantially blocked and identified as potentially critical to local flood risk; some properties experienced loss of foul sewerage service associated with ingress to the sewer system. [IMG,MUL] (p16)</p></div><div class="nugget-popup"><p>Reported flooding prompted LLFA investigations and downstream inspections; highway response included cleansing of highway gullies across The Offords and increasing gully maintenance frequency (response to local flooding and drainage issues). [TAB] (p17)</p></div><div class="nugget-popup"><p>Experienced flooding and sewer&ndash;system impacts from excessive rainfall: highway gullies across The Offords required cleansing and gully maintenance frequency was increased; numerous properties were left without foul sewerage for an extended period, prompting response actions. [MUL] (p19)</p></div><div class="nugget-popup"><p>The village experienced flooding associated with the ordinary watercourse and blocked/undersized culverts on 23 December 2020. Post&ndash;event actions recorded include significant riparian maintenance and clearance of the ordinary watercourse and culverts under the railway to reduce future risk, and Parish Council work to prepare a Local Flood Plan. (p25)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>22 flood reports, 29 properties flooded internally, 31 properties flooded externally, 8 properties uninhabitable, road closure lasting approximately 3 weeks (Offord Cluny and Offord d'Arcy) (p11)</p></div><div class="nugget-popup quant"><p>22 flood reports; 29 properties reported flooded internally; 31 properties reported flooded externally; at least 8 properties uninhabitable for 1&ndash;8 months; full road closure lasting approximately 3 weeks; loss of foul sewerage provision for approximately 3 weeks (Offord Cluny and Offord d'Arcy) [PAG,IMG] (p12)</p></div></div></body></div>`)[0];
+                popup_d1e91f83df45fd929eec511e8663e7a0.setContent(html_d8307221da6a3f79f807f3f07ae86045);
+            
+        
+
+        marker_d10077ff965751b2bec8794deb72fc40.bindPopup(popup_d1e91f83df45fd929eec511e8663e7a0)
+        ;
+
+        
+    
+</script>
+</html>

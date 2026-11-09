@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_faaee379357a4820b2f719b365cebd0d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_faaee379357a4820b2f719b365cebd0d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_faaee379357a4820b2f719b365cebd0d = L.map(
+                "map_faaee379357a4820b2f719b365cebd0d",
+                {
+                    center: [51.707685257551844, -0.9664810216956845],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_33e755ba350d754e1d1d7eb8ca400933 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_33e755ba350d754e1d1d7eb8ca400933.addTo(map_faaee379357a4820b2f719b365cebd0d);
+    
+            var marker_8269cc3c3a2e39615db23b5796b4172b = L.marker(
+                [51.7108797, -0.9425666],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_1e7d7f0be17df630b8474a99fa3e77d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8269cc3c3a2e39615db23b5796b4172b.setIcon(icon_1e7d7f0be17df630b8474a99fa3e77d4);
+        
+    
+        var popup_099e15018beff72e1cc9b51a0123a048 = L.popup({});
+
+        
+            
+                var html_1fc07cf6e23e0b2ee14245bd964bdad2 = $(`<div id="html_1fc07cf6e23e0b2ee14245bd964bdad2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sydenham Road, Sydenham</h1><div class="nugget-popup"><p>Highway culverts on Sydenham Road were reported as damaged as a result of the flood event and require replacement; the flooding rendered highways in the area impassable. [TAB] (p2)</p></div><div class="nugget-popup"><p>Sydenham Road experienced highway flooding where water overflowed from fields into roadside ditches; works include clearing the north roadside ditch, excavating a road ditch to receive a new drainage channel across a field entrance, and planned culvert replacements and new gully/carrier pipe to reduce future highway flooding and risk to adjacent properties. (p12)</p></div><div class="nugget-popup"><p>Highway culverts on Sydenham Road were damaged during the event and were recommended for replacement due to their failure/impairment of drainage, posing a risk to the carriageway and local drainage. [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_099e15018beff72e1cc9b51a0123a048.setContent(html_1fc07cf6e23e0b2ee14245bd964bdad2);
+            
+        
+
+        marker_8269cc3c3a2e39615db23b5796b4172b.bindPopup(popup_099e15018beff72e1cc9b51a0123a048)
+        ;
+
+        
+    
+    
+            var marker_02464292184aabe275b21f8cbfa1c0e3 = L.marker(
+                [51.6832075, -0.9492695],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_24a978244cf304988c9da511bf46912c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_02464292184aabe275b21f8cbfa1c0e3.setIcon(icon_24a978244cf304988c9da511bf46912c);
+        
+    
+        var popup_37099203d273d0d23a972d6e6949c1fb = L.popup({});
+
+        
+            
+                var html_40edb502b3c586287bed14cc6dcf2d85 = $(`<div id="html_40edb502b3c586287bed14cc6dcf2d85" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Aston Rowant Road, Aston Rowant</h1><div class="nugget-popup"><p>Sections of the B4009 (Aston Rowant Road) were flooded, resulting in road closures. (p5)</p></div></div></body></div>`)[0];
+                popup_37099203d273d0d23a972d6e6949c1fb.setContent(html_40edb502b3c586287bed14cc6dcf2d85);
+            
+        
+
+        marker_02464292184aabe275b21f8cbfa1c0e3.bindPopup(popup_37099203d273d0d23a972d6e6949c1fb)
+        ;
+
+        
+    
+    
+            var marker_2e8222a96382f2b0f6fdbf0c6807a6f6 = L.marker(
+                [51.6872949, -0.9355496],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_6da26ffd01f914fa3b355dcfe47d1190 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2e8222a96382f2b0f6fdbf0c6807a6f6.setIcon(icon_6da26ffd01f914fa3b355dcfe47d1190);
+        
+    
+        var popup_2197c62e57480ec5bfeb965e194d934f = L.popup({});
+
+        
+            
+                var html_d5746c6def3e2f6202d63598fdf4277d = $(`<div id="html_d5746c6def3e2f6202d63598fdf4277d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chinnor Road, Aston Rowant</h1><div class="nugget-popup"><p>The B4009 at Aston Rowant (Chinnor Road) flooded and was impassable during the January event; vehicles broke down in flood water after attempting to drive through. Flooding originated as surface water running down from the Chiltern Hills and accumulated on the highway. Clearance of a root&ndash;obstructed culvert/pipe feeding to the nearby pond alleviated the highway flooding; further root cutting work is scheduled. [IMG] (p8)</p></div></div></body></div>`)[0];
+                popup_2197c62e57480ec5bfeb965e194d934f.setContent(html_d5746c6def3e2f6202d63598fdf4277d);
+            
+        
+
+        marker_2e8222a96382f2b0f6fdbf0c6807a6f6.bindPopup(popup_2197c62e57480ec5bfeb965e194d934f)
+        ;
+
+        
+    
+    
+            var marker_743a9635ff238bb880f78a556084ac79 = L.marker(
+                [51.6846512, -0.9484033],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_845c492acff7d053705ab4ea2ea5a57a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_743a9635ff238bb880f78a556084ac79.setIcon(icon_845c492acff7d053705ab4ea2ea5a57a);
+        
+    
+        var popup_0f122f3d1248b6c4bf02a1296c3dac68 = L.popup({});
+
+        
+            
+                var html_935f2767550619070c22683e1f1444c7 = $(`<div id="html_935f2767550619070c22683e1f1444c7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Aston Park, Aston Rowant</h1><div class="nugget-popup"><p>The lake at Aston Park received released flood water after the culvert/pipe feeding from the B4009 was cleared of root ingress. OCC Highways inspected the lake with residents to ensure it could accept the influx without causing downstream flooding. [PAG] (p8)</p></div></div></body></div>`)[0];
+                popup_0f122f3d1248b6c4bf02a1296c3dac68.setContent(html_935f2767550619070c22683e1f1444c7);
+            
+        
+
+        marker_743a9635ff238bb880f78a556084ac79.bindPopup(popup_0f122f3d1248b6c4bf02a1296c3dac68)
+        ;
+
+        
+    
+    
+            var marker_728e9b2262b28468bf7be53f0762ee1f = L.marker(
+                [51.833332, -1.25],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_5e1cebc6cdd5e82b976c828bdce056d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_728e9b2262b28468bf7be53f0762ee1f.setIcon(icon_5e1cebc6cdd5e82b976c828bdce056d4);
+        
+    
+        var popup_c847346d63e9291045b978d2932b93b0 = L.popup({});
+
+        
+            
+                var html_10c632a87af5ee1e41e22f4e67827480 = $(`<div id="html_10c632a87af5ee1e41e22f4e67827480" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oxfordshire</h1><div class="nugget-popup"><p>Flooding in and around Chinnor (Oxfordshire) during the Storm Henk rainfall event led to multiple highways becoming impassable; Oxfordshire County Council Highways undertook works to reduce repeat risk. [TAB] (p2)</p></div><div class="nugget-popup"><p>Highway flooding in the eastern part of the county around Chinnor caused multiple road closures on B&ndash;class roads, disrupting transport links and requiring investigation. [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_c847346d63e9291045b978d2932b93b0.setContent(html_10c632a87af5ee1e41e22f4e67827480);
+            
+        
+
+        marker_728e9b2262b28468bf7be53f0762ee1f.bindPopup(popup_c847346d63e9291045b978d2932b93b0)
+        ;
+
+        
+    
+    
+            var marker_4374599ef22508345f7997b3d1e9ece3 = L.marker(
+                [51.58629400572581, -1.0630222037395838],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_ed8d6a76186974ba5170a7b1c0e95b1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4374599ef22508345f7997b3d1e9ece3.setIcon(icon_ed8d6a76186974ba5170a7b1c0e95b1a);
+        
+    
+        var popup_7a86e32f2a4016af14417761f6e50bf5 = L.popup({});
+
+        
+            
+                var html_54337e4d1cedbbf2d9487b6003f69dd2 = $(`<div id="html_54337e4d1cedbbf2d9487b6003f69dd2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Oxfordshire</h1><div class="nugget-popup"><p>Highways surrounding the village of Chinnor (within South Oxfordshire) were flooded in January 2024 and were made impassable by the event. [TAB] (p2)</p></div><div class="nugget-popup"><p>Surface&ndash;water flooding affected highways within the district in early January 2024 (investigation reviewed flooding to highways around Chinnor, within South Oxfordshire). (p7)</p></div></div></body></div>`)[0];
+                popup_7a86e32f2a4016af14417761f6e50bf5.setContent(html_54337e4d1cedbbf2d9487b6003f69dd2);
+            
+        
+
+        marker_4374599ef22508345f7997b3d1e9ece3.bindPopup(popup_7a86e32f2a4016af14417761f6e50bf5)
+        ;
+
+        
+    
+    
+            var marker_37a112eb76b09bd35e05b398b30babfd = L.marker(
+                [51.6853033, -0.9489914],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_7d147abd704e1b3b2f75e4be52814396 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_37a112eb76b09bd35e05b398b30babfd.setIcon(icon_7d147abd704e1b3b2f75e4be52814396);
+        
+    
+        var popup_f2d2dd08cb33aa86e689272841fee5bf = L.popup({});
+
+        
+            
+                var html_d351d3a38c36cc08359cb540e3e96b04 = $(`<div id="html_d351d3a38c36cc08359cb540e3e96b04" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Aston Rowant</h1><div class="nugget-popup"><p>A culvert linking the B4009 to a pond was identified as requiring root&ndash;cutting as part of post&ndash;event works because its condition contributed to highway flooding in the area; works were recommended to reduce repeat flooding risk. [TAB] (p2)</p></div><div class="nugget-popup"><p>Flooding near Aston Rowant affected the B4009 (Aston Rowant Road) and nearby highway sections, producing road closures and transport disruption. [IMG] (p5)</p></div><div class="nugget-popup"><p>A culvert from the B4009 to a pond was obstructed by roots and required root&ndash;cutting works; the blockage contributed to local flooding/ponding and was identified for remediation. [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_f2d2dd08cb33aa86e689272841fee5bf.setContent(html_d351d3a38c36cc08359cb540e3e96b04);
+            
+        
+
+        marker_37a112eb76b09bd35e05b398b30babfd.bindPopup(popup_f2d2dd08cb33aa86e689272841fee5bf)
+        ;
+
+        
+    
+    
+            var marker_a8633783bd1d72cf1e66d8da18b4fd4e = L.marker(
+                [51.710315, -0.9447026],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_c4a951362b9e9e785bf9f19907090812 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a8633783bd1d72cf1e66d8da18b4fd4e.setIcon(icon_c4a951362b9e9e785bf9f19907090812);
+        
+    
+        var popup_c77c70ecdeea68e7e8522b34b8d61656 = L.popup({});
+
+        
+            
+                var html_3cb7efb03e3ff20aa587fdf3a9cc2c3e = $(`<div id="html_3cb7efb03e3ff20aa587fdf3a9cc2c3e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sydenham</h1><div class="nugget-popup"><p>Blocked/obstructed ditches through Sydenham were identified as contributing to flooding of highways; clearance of these ditches was recommended to reduce flood risk. [TAB] (p2)</p></div><div class="nugget-popup"><p>The B4445 toward Thame around Sydenham (and Towersey) lies within EA Flood Zone 3 and is likely functional floodplain (Zone 3b); this stretch experienced highway flooding and was subject to closures. [IMG,PAG] (p5)</p></div><div class="nugget-popup"><p>Flooding occurred around Sydenham with water overflowing from adjoining fields into ditches, causing highway flooding at the western end and creating risk to adjacent properties; local works planned to increase ditch capacity and install a gully and carrier pipe to reduce highway flooding. (p12)</p></div><div class="nugget-popup"><p>Ditches through Sydenham were identified as blocked/overgrown and contributing to flooding; recommendation issued to clear ditches and remove obstructions to reduce future flooding. [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_c77c70ecdeea68e7e8522b34b8d61656.setContent(html_3cb7efb03e3ff20aa587fdf3a9cc2c3e);
+            
+        
+
+        marker_a8633783bd1d72cf1e66d8da18b4fd4e.bindPopup(popup_c77c70ecdeea68e7e8522b34b8d61656)
+        ;
+
+        
+    
+    
+            var marker_2891cde86e2ac3c74cc768b7b122b03d = L.marker(
+                [51.7013543, -0.9111593],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_7c07d6d3ca90803b210f3281cbe74616 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2891cde86e2ac3c74cc768b7b122b03d.setIcon(icon_7c07d6d3ca90803b210f3281cbe74616);
+        
+    
+        var popup_ec32355e56405972e63f5a75d8877de2 = L.popup({});
+
+        
+            
+                var html_0bb33bb070d4374b555838171856954f = $(`<div id="html_0bb33bb070d4374b555838171856954f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chinnor</h1><div class="nugget-popup"><p>Multiple highways surrounding the village were flooded and became impassable during the January 2024 event. [TAB] (p2)</p></div><div class="nugget-popup"><p>Highways around the village flooded, causing multiple road closures and making transport links impassable. [IMG] (p5)</p></div><div class="nugget-popup"><p>Highways surrounding the village were flooded in early January 2024. The investigation specifically notes flooding to highways around Chinnor and identifies the B4445 (toward Thame, adjacent to Sydenham/Towersey) as lying within Flood Zone 3 (likely Zone 3b / functional floodplain), indicating the road and surrounding carriageways were affected by floodwater. [IMG,PAG] (p6)</p></div><div class="nugget-popup"><p>Highways surrounding the village experienced surface&ndash;water flooding during early January 2024, causing road inundation and local travel disruption. [PAG] (p7)</p></div><div class="nugget-popup"><p>Flooding affected the B4009 east of Chinnor in two locations, including near the county boundary and around a recent housing development at the eastern end of the village. Post&ndash;event actions included a landowner clearing the adjacent ditch and a planned jetting/clearance of the 300mm highway drainage to allow discharge from the highway system; removal of a willow obstructing the channel was recommended on flood risk grounds (subject to consents). [IMG] (p8)</p></div><div class="nugget-popup"><p>Flooding affected the B4009 east of Chinnor in two locations (near the county boundary) and also occurred around the recent housing development at the eastern end of the village. Flooding occurred at the restricted&ndash;width location where traffic entering the village from the west reduces speed from 50 to 20 mph. Post&ndash;event work included the adjacent landowner clearing the receiving ditch; removal of an obstructing willow tree was recommended to reduce flood risk. [IMG,PAG] (p9)</p></div><div class="nugget-popup"><p>B4009 in Chinnor was inundated with floodwater covering the full carriageway (verge&ndash;to&ndash;verge), partially submerging road markings, signs and bollards, rendering the road impassable or hazardous to traffic and disrupting normal use of the highway. [IMG,PAG] (p10)</p></div><div class="nugget-popup"><p>Blocked ditch and a tree in a channel off the B4009 at the east end of Chinnor required clearance following flooding; drainage blockage identified as a cause/contributor and recommended for remediation. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two locations [IMG,PAG] (p9)</p></div></div></body></div>`)[0];
+                popup_ec32355e56405972e63f5a75d8877de2.setContent(html_0bb33bb070d4374b555838171856954f);
+            
+        
+
+        marker_2891cde86e2ac3c74cc768b7b122b03d.bindPopup(popup_ec32355e56405972e63f5a75d8877de2)
+        ;
+
+        
+    
+    
+            var marker_88bd19a1ef0b80b98cc9df9f9759f93d = L.marker(
+                [51.7060072, -0.9498548],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_725a7790570c4bd273e85a5a9dd79526 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_88bd19a1ef0b80b98cc9df9f9759f93d.setIcon(icon_725a7790570c4bd273e85a5a9dd79526);
+        
+    
+        var popup_d46c38b4b8c12d464b8fd7708fb3f787 = L.popup({});
+
+        
+            
+                var html_9bb052ad74bc3b7136b043fa7b10f70e = $(`<div id="html_9bb052ad74bc3b7136b043fa7b10f70e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingston Stert</h1><div class="nugget-popup"><p>Flooding concentrated north of Kingston Stert (and Sydenham) inundated highway sections, making transport links impassable and contributing to road closures in the area. [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_d46c38b4b8c12d464b8fd7708fb3f787.setContent(html_9bb052ad74bc3b7136b043fa7b10f70e);
+            
+        
+
+        marker_88bd19a1ef0b80b98cc9df9f9759f93d.bindPopup(popup_d46c38b4b8c12d464b8fd7708fb3f787)
+        ;
+
+        
+    
+    
+            var marker_65ffeb26c197855c6eef57290299ff05 = L.marker(
+                [51.7163968, -0.8975371],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_11a32cfe32ef38002cd8bd9c6f3d9ad6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_65ffeb26c197855c6eef57290299ff05.setIcon(icon_11a32cfe32ef38002cd8bd9c6f3d9ad6);
+        
+    
+        var popup_84972398b416dcb54129bee9ab369d74 = L.popup({});
+
+        
+            
+                var html_e4ca979947c2244749e9dc551962c331 = $(`<div id="html_e4ca979947c2244749e9dc551962c331" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Henton</h1><div class="nugget-popup"><p>Highway flooding east of Chinnor extended toward Henton, inundating sections of road and contributing to closures and transport disruption in the area. [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_84972398b416dcb54129bee9ab369d74.setContent(html_e4ca979947c2244749e9dc551962c331);
+            
+        
+
+        marker_65ffeb26c197855c6eef57290299ff05.bindPopup(popup_84972398b416dcb54129bee9ab369d74)
+        ;
+
+        
+    
+    
+            var marker_69d59cbbefb24dec62dcfc9f5bcde8bc = L.marker(
+                [51.7135242, -0.8749937],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_f6d139d36a5ef5d8d7bcb0020e87d44b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_69d59cbbefb24dec62dcfc9f5bcde8bc.setIcon(icon_f6d139d36a5ef5d8d7bcb0020e87d44b);
+        
+    
+        var popup_96a69d51b5f05559468e2c60deb9332e = L.popup({});
+
+        
+            
+                var html_2e83db69b32b1b769c89d24199f71be7 = $(`<div id="html_2e83db69b32b1b769c89d24199f71be7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bledlow</h1><div class="nugget-popup"><p>Flooding east of Chinnor extended toward Bledlow, with inundated highway sections causing road closures and interruption to local transport routes. [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_96a69d51b5f05559468e2c60deb9332e.setContent(html_2e83db69b32b1b769c89d24199f71be7);
+            
+        
+
+        marker_69d59cbbefb24dec62dcfc9f5bcde8bc.bindPopup(popup_96a69d51b5f05559468e2c60deb9332e)
+        ;
+
+        
+    
+    
+            var marker_24fbbf88295b182f087cdd68dc0559f8 = L.marker(
+                [51.7482733, -0.9781805],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_5b2e6039f65580fe541083c2703396b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_24fbbf88295b182f087cdd68dc0559f8.setIcon(icon_5b2e6039f65580fe541083c2703396b4);
+        
+    
+        var popup_61ea26f4ca03dd326ec15414f8ee5cd9 = L.popup({});
+
+        
+            
+                var html_be2b5489f709c19fc3737b4cf9a00de7 = $(`<div id="html_be2b5489f709c19fc3737b4cf9a00de7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thame</h1><div class="nugget-popup"><p>Flood map and investigation identify river&ndash;flooding risk concentrated near Thame and indicate highways toward Thame (B4445) lie within flood zone 3 / functional floodplain. The investigation reviewed flooding to highways surrounding Chinnor in early January 2024, including stretches toward Thame. [IMG] (p6)</p></div></div></body></div>`)[0];
+                popup_61ea26f4ca03dd326ec15414f8ee5cd9.setContent(html_be2b5489f709c19fc3737b4cf9a00de7);
+            
+        
+
+        marker_24fbbf88295b182f087cdd68dc0559f8.bindPopup(popup_61ea26f4ca03dd326ec15414f8ee5cd9)
+        ;
+
+        
+    
+    
+            var marker_9b439031aa8adc99f84012fe1e9e27ee = L.marker(
+                [51.7407602, -0.9365037],
+                {}
+            ).addTo(map_faaee379357a4820b2f719b365cebd0d);
+        
+    
+            var icon_3311f45ac138b99ca43e6834d274e32b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9b439031aa8adc99f84012fe1e9e27ee.setIcon(icon_3311f45ac138b99ca43e6834d274e32b);
+        
+    
+        var popup_1e74e6286c0f2fca5c13a98f311f2158 = L.popup({});
+
+        
+            
+                var html_5063d204f32c1503fd07be8636b70198 = $(`<div id="html_5063d204f32c1503fd07be8636b70198" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Towersey</h1><div class="nugget-popup"><p>Flooding occurred around Towersey as part of the same event, with water overflowing from fields into ditches and affecting nearby roads. (p12)</p></div></div></body></div>`)[0];
+                popup_1e74e6286c0f2fca5c13a98f311f2158.setContent(html_5063d204f32c1503fd07be8636b70198);
+            
+        
+
+        marker_9b439031aa8adc99f84012fe1e9e27ee.bindPopup(popup_1e74e6286c0f2fca5c13a98f311f2158)
+        ;
+
+        
+    
+</script>
+</html>

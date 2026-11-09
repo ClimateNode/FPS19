@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e5fbdd2e37669b985b4a2d55f806a368 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e5fbdd2e37669b985b4a2d55f806a368" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e5fbdd2e37669b985b4a2d55f806a368 = L.map(
+                "map_e5fbdd2e37669b985b4a2d55f806a368",
+                {
+                    center: [52.97789495647279, -1.6934802594434202],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2d947d7db5d2607294ac555e95f7a785 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_2d947d7db5d2607294ac555e95f7a785.addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+    
+            var marker_9ad71d2de73a131705a22543d5c2b888 = L.marker(
+                [53.014608442604576, -1.7380900132958323],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_e77f611f4b59ee059dfb1859850865e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9ad71d2de73a131705a22543d5c2b888.setIcon(icon_e77f611f4b59ee059dfb1859850865e4);
+        
+    
+        var popup_ba13f502ab9ac0f4e494581c45f5f398 = L.popup({});
+
+        
+            
+                var html_54612b425d896ba73edfd3f4e9a23ea7 = $(`<div id="html_54612b425d896ba73edfd3f4e9a23ea7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Oswald's Church Hall</h1><div class="nugget-popup"><p>Oswald's Church Centre (hall) was internally flooded during Storm Babet; it is listed among the three non&ndash;residential properties that flooded in the community. (p4)</p></div><div class="nugget-popup"><p>Flood water affected the church hall area; channels were excavated through the top of the flood embankment to the west of the church hall to allow flood water to drain away. Excavations were carried out around 15:00 on 20 October 2023. (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 non&ndash;residential property (part of 3 non&ndash;residential properties flooded) (p4)</p></div><div class="nugget-popup quant"><p>23 cm depth (p8)</p></div></div></body></div>`)[0];
+                popup_ba13f502ab9ac0f4e494581c45f5f398.setContent(html_54612b425d896ba73edfd3f4e9a23ea7);
+            
+        
+
+        marker_9ad71d2de73a131705a22543d5c2b888.bindPopup(popup_ba13f502ab9ac0f4e494581c45f5f398)
+        ;
+
+        
+    
+    
+            var marker_e9a46b210feb06578d5eb283151f23cb = L.marker(
+                [53.013989, -1.7370395],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_4013d465ec1c06302d1fc9280030b7a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e9a46b210feb06578d5eb283151f23cb.setIcon(icon_4013d465ec1c06302d1fc9280030b7a3);
+        
+    
+        var popup_92c3a1c70f17fac0fd4b18751687810e = L.popup({});
+
+        
+            
+                var html_32a5e719f2c7dcd6d4eaffdb2734ad22 = $(`<div id="html_32a5e719f2c7dcd6d4eaffdb2734ad22" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingdom Hall</h1><div class="nugget-popup"><p>Kingdom Hall was internally flooded during Storm Babet; it is listed among the three non&ndash;residential properties that flooded in the community. [PAG] (p4)</p></div><div class="nugget-popup"><p>Kingdom Hall (a non&ndash;residential property) was flooded during the event. [PAG] (p5)</p></div><div class="nugget-popup"><p>Internally flooded after flood water overtopped banks adjacent to School Lane bridge and flowed southwards toward the hall. (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 non&ndash;residential property (part of 3 non&ndash;residential properties flooded) [PAG] (p4)</p></div></div></body></div>`)[0];
+                popup_92c3a1c70f17fac0fd4b18751687810e.setContent(html_32a5e719f2c7dcd6d4eaffdb2734ad22);
+            
+        
+
+        marker_e9a46b210feb06578d5eb283151f23cb.bindPopup(popup_92c3a1c70f17fac0fd4b18751687810e)
+        ;
+
+        
+    
+    
+            var marker_90928c09e53d554124fe673531f6ce76 = L.marker(
+                [53.016269, -1.7323899],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_f9361e7fccbfa4a9c2b44e0178c9020e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_90928c09e53d554124fe673531f6ce76.setIcon(icon_f9361e7fccbfa4a9c2b44e0178c9020e);
+        
+    
+        var popup_a670e886ceb0616280cc20efa788cca8 = L.popup({});
+
+        
+            
+                var html_5da62c0516d45736f23f209313725629 = $(`<div id="html_5da62c0516d45736f23f209313725629" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Bridge</h1><div class="nugget-popup"><p>Internally flooded during Storm Babet as one of the non&ndash;residential properties affected in the western part of Ashbourne on Dig Street; flooding was caused by the Henmore Brook / associated river flooding on the local floodplain. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 non&ndash;residential property (Bridge Public House); part of 16 properties internally flooded in the community; part of 3 non&ndash;residential properties flooded (p4)</p></div></div></body></div>`)[0];
+                popup_a670e886ceb0616280cc20efa788cca8.setContent(html_5da62c0516d45736f23f209313725629);
+            
+        
+
+        marker_90928c09e53d554124fe673531f6ce76.bindPopup(popup_a670e886ceb0616280cc20efa788cca8)
+        ;
+
+        
+    
+    
+            var marker_24470abf979b1bb9a6c7b9c44a2c26e5 = L.marker(
+                [53.015750582324905, -1.7365591434184937],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_7e21a35f755253f92fed5b6844f49d3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_24470abf979b1bb9a6c7b9c44a2c26e5.setIcon(icon_7e21a35f755253f92fed5b6844f49d3c);
+        
+    
+        var popup_f6cf41a7657bac88cb58136b74a537e9 = L.popup({});
+
+        
+            
+                var html_db1528c46279c2e7ee0b17c8341f14e4 = $(`<div id="html_db1528c46279c2e7ee0b17c8341f14e4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Almshouses</h1><div class="nugget-popup"><p>Internal flooding of properties in the Almshouses complex on School Lane; the majority of the community's flooded homes were in this complex. (p4)</p></div><div class="nugget-popup"><p>Properties within the Almshouses complex had floodwater enter the courtyard and then the properties through doorways after Henmore Brook overtopped adjacent defences; internal flooding depths reported up to 15 cm. The protective embankment did not overtop but was temporarily lowered after the peak to allow trapped water to drain. [PAG] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of the 10 residential properties on School Lane that were internally flooded; internal flooding up to 15 cm [PAG] (p7)</p></div></div></body></div>`)[0];
+                popup_f6cf41a7657bac88cb58136b74a537e9.setContent(html_db1528c46279c2e7ee0b17c8341f14e4);
+            
+        
+
+        marker_24470abf979b1bb9a6c7b9c44a2c26e5.bindPopup(popup_f6cf41a7657bac88cb58136b74a537e9)
+        ;
+
+        
+    
+    
+            var marker_1efeac75b9e855bbbe9c8ca94b26a09c = L.marker(
+                [53.0117523, -1.7417989],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_89a3a18406f8df5edaab898d6e1364fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1efeac75b9e855bbbe9c8ca94b26a09c.setIcon(icon_89a3a18406f8df5edaab898d6e1364fd);
+        
+    
+        var popup_ca565b9d1aa9b6445082f10f4020c97b = L.popup({});
+
+        
+            
+                var html_da32728150e02f6f8e3ddd60d2928154 = $(`<div id="html_da32728150e02f6f8e3ddd60d2928154" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Henmore Brook</h1><div class="nugget-popup"><p>Responded rapidly to Storm Babet (short lag between peak rainfall and peak flow) and produced high flows that contributed to flooding in Ashbourne; peak flow during Storm Babet was the second highest on record at the Ashbourne gauging station. [PAG,MUL] (p3)</p></div><div class="nugget-popup"><p>Henmore Brook had a very large peak flow during Storm Babet (second highest on the gauging station record), with a short 3&ndash;hour lag from peak rainfall to peak flow; the brook on its floodplain contributed to internal flooding of properties to the west of Ashbourne. [PAG] (p4)</p></div><div class="nugget-popup"><p>Overbanking of Henmore Brook during the storm caused river flooding that inundated the adjacent residential community in central Ashbourne. Floodwaters entered homes in the Almshouses on School Lane and properties on Coachmans Close and affected non&ndash;residential buildings including St Oswald&#8217;s Church Centre (hall), Kingdom Hall and the Bridge Public House on Dig Street. [PAG,IMG] (p5)</p></div><div class="nugget-popup"><p>Flooding from Henmore Brook overtopped flood defences and caused internal property flooding in the adjacent Ashbourne community (properties on School Lane, Coachmans Close and nearby non&ndash;residential buildings). Flood warnings were issued for the Henmore Brook at Ashbourne during the event. [IMG,PAG] (p6)</p></div><div class="nugget-popup"><p>Identified as the primary source of flooding during Storm Babet; overtopping of Henmore Brook banks and a retaining wall allowed flow to escape the channel and inundate adjacent streets and properties (notably School Lane and Coachmans Close). [IMG] (p7)</p></div><div class="nugget-popup"><p>Banks of Henmore Brook overtopped, sending water northwards along School Lane into the Almshouses courtyard and properties; overtopping adjacent to School Lane bridge also directed flows that flooded nearby buildings. Flood levels exceeded the previous 1% AEP design standard at this location and at Coachmans Close. The embankment protecting the Almshouses did not overtop but was purposefully lowered after Storm Babet's peak to allow trapped water to drain and was subsequently reinstated. [PAG] (p8)</p></div><div class="nugget-popup"><p>Described as the subject of post&ndash;event actions: the Environment Agency is updating the Henmore Brook flood model to investigate the current standard of protection provided by defences and to test whether water can be stored earlier in the Ashbourne Flood Storage Reservoir during lower&ndash;magnitude events. These actions follow flooding on 20 October 2023. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Peak flow was the second highest in the station's record; lag time between peak rainfall and peak river flow recorded in Ashbourne was 3 hours. [PAG,MUL] (p3)</p></div><div class="nugget-popup quant"><p>16 properties [PAG] (p4)</p></div><div class="nugget-popup quant"><p>3 purpose built flood defences overtopped [IMG,PAG] (p6)</p></div><div class="nugget-popup quant"><p>16 internally flooded properties (community total) [IMG] (p7)</p></div><div class="nugget-popup quant"><p>10 residential properties; up to 15 cm depth [PAG] (p8)</p></div></div></body></div>`)[0];
+                popup_ca565b9d1aa9b6445082f10f4020c97b.setContent(html_da32728150e02f6f8e3ddd60d2928154);
+            
+        
+
+        marker_1efeac75b9e855bbbe9c8ca94b26a09c.bindPopup(popup_ca565b9d1aa9b6445082f10f4020c97b)
+        ;
+
+        
+    
+    
+            var marker_56e60af430e6ce0b8883c0ac425e9599 = L.marker(
+                [52.8605665, -1.6356159],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_05326e6ce3c40e7e0c311c98156c061c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_56e60af430e6ce0b8883c0ac425e9599.setIcon(icon_05326e6ce3c40e7e0c311c98156c061c);
+        
+    
+        var popup_6e29691d4bbb46af8f1523c37ab4a135 = L.popup({});
+
+        
+            
+                var html_0261268e6b4d0762552e925156162168 = $(`<div id="html_0261268e6b4d0762552e925156162168" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hilton Brook</h1><div class="nugget-popup"><p>Hilton Brook is the main river flowing through the community where internal property flooding occurred during Storm Babet; the text and map link watercourse locations and flooded streets, so the brook is likely a contributing source to the internal flooding in Hilton. [IMG] (p9)</p></div><div class="nugget-popup"><p>Overflow of Hilton Brook onto its floodplain caused internal flooding of properties in Hilton during Storm Babet; most flooded homes were west of the brook. [PAG,IMG] (p10)</p></div><div class="nugget-popup"><p>The community sits on the Hilton Brook floodplain; most flooded homes were west of Hilton Brook. Internal flooding of properties in the community occurred during Storm Babet. A flood relief channel and engineered high ground adjacent to Uttoxeter Road are identified along the brook. [PAG,IMG] (p11)</p></div><div class="nugget-popup"><p>Hilton Brook overflowed upstream of Hilton village, overtopped its channel (upstream of the relief channel) and caused flooding onto Uttoxeter Road and into nearby properties. A blocked culvert beneath Uttoxeter Road was reported to have contributed to upstream overtopping. The Sutton Mill gauge on Hilton Brook recorded its highest&ndash;ever level during the event. [PAG] (p12)</p></div><div class="nugget-popup"><p>Overflowed (about 600 m upstream of the Uttoxeter Road crossing) and overtopped upstream of the village; a blocked culvert beneath Uttoxeter Road caused the channel to overtop and flood onto Uttoxeter Road, with floodwater flowing westwards and along flow routes to Main Street and Mill Lane, internally flooding local properties. Internal depths reached almost 1 m at some properties; some semi&ndash;detached properties are known to flood frequently; one property had a sump and pump; a few properties only flooded externally. [PAG,IMG] (p13)</p></div><div class="nugget-popup"><p>Hilton Brook overtopped/caused flooding at Sutton on the Hill and Uttoxeter Road (Hilton), leading to property flooding. Sandbags provided to some properties were overwhelmed by high flood levels. The flood relief channel was inspected and found to be operating as designed; investigations are exploring redirecting floodwater that currently escapes upstream back into the Hilton Brook channel to reduce future property flooding. [PAG] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties; 2 commercial properties [PAG,IMG] (p10)</p></div><div class="nugget-popup quant"><p>5 homes; 3 commercial properties [PAG,IMG] (p11)</p></div><div class="nugget-popup quant"><p>Peak gauge level 1.84 m at Sutton Mill (highest recorded at that gauge) [PAG] (p12)</p></div><div class="nugget-popup quant"><p>7 properties on Uttoxeter Road; 1 home on Mill Lane; five homes and three commercial properties (reported) [PAG,IMG] (p13)</p></div></div></body></div>`)[0];
+                popup_6e29691d4bbb46af8f1523c37ab4a135.setContent(html_0261268e6b4d0762552e925156162168);
+            
+        
+
+        marker_56e60af430e6ce0b8883c0ac425e9599.bindPopup(popup_6e29691d4bbb46af8f1523c37ab4a135)
+        ;
+
+        
+    
+    
+            var marker_b22061d3a9e3e1080040657d7b38185f = L.marker(
+                [52.8826914, -1.8231664],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_daf82eb1aa0e3a17f3d3fb2852d71bc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b22061d3a9e3e1080040657d7b38185f.setIcon(icon_daf82eb1aa0e3a17f3d3fb2852d71bc8);
+        
+    
+        var popup_9547605ca417316a0b812a6a9d05d49c = L.popup({});
+
+        
+            
+                var html_066debf12416035441ff7c0d9bbef9d0 = $(`<div id="html_066debf12416035441ff7c0d9bbef9d0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Dove</h1><div class="nugget-popup"><p>The Dove sub&ndash;catchment experienced hydrological effects during Storm Babet (changes to river flows and levels across the Dove catchment). (p1)</p></div><div class="nugget-popup"><p>The Dove sub&ndash;catchment experienced extreme rainfall during Storm Babet which drove high river flows in the catchment; Henmore Brook is a tributary of the Dove and contributed to flooding in Ashbourne. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1.9% to 3.9% AEP (recorded rainfall equating to these AEPs across stations in the catchment) (p3)</p></div></div></body></div>`)[0];
+                popup_9547605ca417316a0b812a6a9d05d49c.setContent(html_066debf12416035441ff7c0d9bbef9d0);
+            
+        
+
+        marker_b22061d3a9e3e1080040657d7b38185f.bindPopup(popup_9547605ca417316a0b812a6a9d05d49c)
+        ;
+
+        
+    
+    
+            var marker_55ea116622d839adea6ef2d0cbc7d674 = L.marker(
+                [53.01416210959004, -1.737360993864126],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_66cf1fdae1768b3fe1f229e92b7bb5ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_55ea116622d839adea6ef2d0cbc7d674.setIcon(icon_66cf1fdae1768b3fe1f229e92b7bb5ba);
+        
+    
+        var popup_2cbee5b9fc2d76aaf73361dd912eb86b = L.popup({});
+
+        
+            
+                var html_bcb4043b40a43673e13c14b90a7899e4 = $(`<div id="html_bcb4043b40a43673e13c14b90a7899e4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>School Lane Bridge</h1><div class="nugget-popup"><p>Banks adjacent to the bridge overtopped, enabling flood water to flow toward the Kingdom Hall and northwards along School Lane into the Almshouses courtyard and properties, contributing to internal flooding. (p8)</p></div><div class="nugget-popup"><p>As a short&ndash;term action following the flood on 20 October 2023, de&ndash;silting and removal of vegetation from School Lane Bridge are scheduled for 2024 to address issues identified during the event. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>10 residential properties; up to 15 cm depth (p8)</p></div></div></body></div>`)[0];
+                popup_2cbee5b9fc2d76aaf73361dd912eb86b.setContent(html_bcb4043b40a43673e13c14b90a7899e4);
+            
+        
+
+        marker_55ea116622d839adea6ef2d0cbc7d674.bindPopup(popup_2cbee5b9fc2d76aaf73361dd912eb86b)
+        ;
+
+        
+    
+    
+            var marker_fd897e21d897c87d52dc0ca69e45b386 = L.marker(
+                [53.0139355, -1.7374501],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_eb253b74c2404acc26cbb312b4614b2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fd897e21d897c87d52dc0ca69e45b386.setIcon(icon_eb253b74c2404acc26cbb312b4614b2e);
+        
+    
+        var popup_e9b917b565efcfd5cb70ca2eb891b5a0 = L.popup({});
+
+        
+            
+                var html_22f11866828f2093321560875585f4ed = $(`<div id="html_22f11866828f2093321560875585f4ed" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>School Lane, Ashbourne</h1><div class="nugget-popup"><p>Properties on School Lane (including the Almshouses) experienced internal flooding during Storm Babet; the area sits on the Henmore Brook floodplain. [PAG,IMG] (p4)</p></div><div class="nugget-popup"><p>The Almshouses complex on School Lane (majority of properties in the complex) were part of the community that flooded; properties experienced internal flooding during the event. [PAG] (p5)</p></div><div class="nugget-popup"><p>Floodwater from Henmore Brook overtopped the banks and a retaining wall, flowed north along School Lane into the Almshouses courtyard and entered properties through doorways, causing internal flooding and prompting lowering of a protective embankment post&ndash;peak to drain trapped water (subsequently reinstated). [PAG,IMG] (p7)</p></div><div class="nugget-popup"><p>Flood water overtopped Henmore Brook banks and a retaining wall, flowed north along School Lane into the Almshouses courtyard and entered properties through doorways; embankment protecting the Almshouses was purposefully lowered after the peak to release trapped water and later reinstated. [PAG] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>10 residential properties and 2 non&ndash;residential properties internally flooded on School Lane [PAG,IMG] (p7)</p></div><div class="nugget-popup quant"><p>10 residential properties; up to 15 cm internal flood depth [PAG] (p8)</p></div></div></body></div>`)[0];
+                popup_e9b917b565efcfd5cb70ca2eb891b5a0.setContent(html_22f11866828f2093321560875585f4ed);
+            
+        
+
+        marker_fd897e21d897c87d52dc0ca69e45b386.bindPopup(popup_e9b917b565efcfd5cb70ca2eb891b5a0)
+        ;
+
+        
+    
+    
+            var marker_1f816fd33d1cdf240ccdb3d76321e24c = L.marker(
+                [53.0146836, -1.737059],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_8733a50da3b4f2cb6c956e5159bc7080 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1f816fd33d1cdf240ccdb3d76321e24c.setIcon(icon_8733a50da3b4f2cb6c956e5159bc7080);
+        
+    
+        var popup_7f0c9e6fcd79a50a244e5731635c5676 = L.popup({});
+
+        
+            
+                var html_a0988c3d130ddfd901de7bae9079add8 = $(`<div id="html_a0988c3d130ddfd901de7bae9079add8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Coachmans Close, Ashbourne</h1><div class="nugget-popup"><p>Residential properties on Coachmans Close, north of Henmore Brook, suffered internal flooding during Storm Babet; parts of Coachmans Close are also identified on long&ndash;term mapping as having a high surface&ndash;water flood risk. [PAG] (p4)</p></div><div class="nugget-popup"><p>Residential properties on Coachmans Close were flooded during the event; properties experienced internal flooding as part of the community&ndash;wide flooding adjacent to Henmore Brook. [PAG] (p5)</p></div><div class="nugget-popup"><p>Residential properties on Coachmans Close were flooded during the event. Some parts of Coachmans Close are shown on the long&ndash;term surface water flood risk map as high risk (>3.3% AEP); more typically School Lane, Coachmans Close and Kingdom Hall have low (0.1&ndash;1% AEP) surface water flood chance. [PAG] (p6)</p></div><div class="nugget-popup"><p>Floodwater flowed over the embankment north of the properties and flood defence wall to the east and south of Coachmans Close overtopped along its length, resulting in internal flooding of properties. [PAG] (p7)</p></div><div class="nugget-popup"><p>Flood levels in this location exceeded the previous 1% AEP design standard during the event. [PAG] (p8)</p></div><div class="nugget-popup"><p>Flood defences around Coachmans Close were identified as having low sections and embankment height issues during the response to the 20 October 2023 flooding. Short&ndash;term works planned for summer 2024 include raising the lowest sections of the defence wall to a consistent crest level and raising the embankment to match the coping stones. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 residential properties internally flooded to a reported depth of 0.5 m [PAG] (p7)</p></div></div></body></div>`)[0];
+                popup_7f0c9e6fcd79a50a244e5731635c5676.setContent(html_a0988c3d130ddfd901de7bae9079add8);
+            
+        
+
+        marker_1f816fd33d1cdf240ccdb3d76321e24c.bindPopup(popup_7f0c9e6fcd79a50a244e5731635c5676)
+        ;
+
+        
+    
+    
+            var marker_3f68c2420744a3f1fa11a8ca3a5bbf5b = L.marker(
+                [53.0166798, -1.7328734],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_4514d7d2884c8486753e9101a124e9ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3f68c2420744a3f1fa11a8ca3a5bbf5b.setIcon(icon_4514d7d2884c8486753e9101a124e9ab);
+        
+    
+        var popup_c6844eb77a062bf5994b3663d41e34af = L.popup({});
+
+        
+            
+                var html_c56c615fc258ebb0a9c9c9a77b41935a = $(`<div id="html_c56c615fc258ebb0a9c9c9a77b41935a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dig Street, Ashbourne</h1><div class="nugget-popup"><p>Location where the Bridge Public House suffered internal flooding during Storm Babet; Dig Street lies within the area of western Ashbourne that experienced river flooding from the Henmore Brook floodplain. [PAG,IMG] (p4)</p></div><div class="nugget-popup"><p>Bridge Public House on Dig Street (a non&ndash;residential property) was flooded (internal property flooding reported). [PAG,IMG] (p5)</p></div><div class="nugget-popup"><p>Non&ndash;residential property on Dig Street (the Bridge Public House) was flooded during the event. [PAG,IMG] (p6)</p></div><div class="nugget-popup"><p>At least one non&ndash;residential property on Dig Street (the Bridge Public House) experienced internal flooding associated with the Henmore Brook overtopping and local flow routes during the event. [PAG,IMG] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 non&ndash;residential property (Bridge Public House) internally flooded; part of 16 properties internally flooded in the community; part of 3 non&ndash;residential properties flooded [PAG,IMG] (p4)</p></div><div class="nugget-popup quant"><p>1 non&ndash;residential property (Bridge Public House) flooded [PAG,IMG] (p6)</p></div><div class="nugget-popup quant"><p>1 non&ndash;residential property internally flooded on Dig Street [PAG,IMG] (p7)</p></div></div></body></div>`)[0];
+                popup_c6844eb77a062bf5994b3663d41e34af.setContent(html_c56c615fc258ebb0a9c9c9a77b41935a);
+            
+        
+
+        marker_3f68c2420744a3f1fa11a8ca3a5bbf5b.bindPopup(popup_c6844eb77a062bf5994b3663d41e34af)
+        ;
+
+        
+    
+    
+            var marker_3722d7139d8106b40ae7f73dbda612cb = L.marker(
+                [53.0159171, -1.735558],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_a16fdfc858c76803d8e0109daf1b2b04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3722d7139d8106b40ae7f73dbda612cb.setIcon(icon_a16fdfc858c76803d8e0109daf1b2b04);
+        
+    
+        var popup_f216da887487c9dee3a56a289e125e0d = L.popup({});
+
+        
+            
+                var html_4d01c5d7fae62046d1fb9b0fb40d50e7 = $(`<div id="html_4d01c5d7fae62046d1fb9b0fb40d50e7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Station Road, Ashbourne</h1><div class="nugget-popup"><p>Flow routes mapped for Storm Babet indicate Henmore Brook overtopped or escaped and directed floodwater toward the area around Station Road; the map highlights areas near Station Road as points where water escaped the brook during the event. [IMG] (p7)</p></div></div></body></div>`)[0];
+                popup_f216da887487c9dee3a56a289e125e0d.setContent(html_4d01c5d7fae62046d1fb9b0fb40d50e7);
+            
+        
+
+        marker_3722d7139d8106b40ae7f73dbda612cb.bindPopup(popup_f216da887487c9dee3a56a289e125e0d)
+        ;
+
+        
+    
+    
+            var marker_b9cf1da249a2eefa66a9dcedb984a967 = L.marker(
+                [52.8726744, -1.6422928],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_23114bbdbf665566fa2cf003119944f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b9cf1da249a2eefa66a9dcedb984a967.setIcon(icon_23114bbdbf665566fa2cf003119944f3);
+        
+    
+        var popup_7a7a9ce4239f2c723db9c4605b090704 = L.popup({});
+
+        
+            
+                var html_6231ebae2b6f56c7c08e7a30715e91e1 = $(`<div id="html_6231ebae2b6f56c7c08e7a30715e91e1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Uttoxeter Road, Hilton</h1><div class="nugget-popup"><p>Internal flooding of residential properties and a business located on Uttoxeter Road in Hilton, caused by overtopping/overflow from the local watercourse (Hilton Brook / relief channel). [IMG] (p9)</p></div><div class="nugget-popup"><p>Parts of Uttoxeter Road lie within the Flood Warning Area and are adjacent to Flood Zone 3 concentrated along Hilton Brook and the Flood Relief Channel, indicating exposure to river and surface&ndash;water flooding during Storm Babet and being within the area where internal property flooding occurred in Hilton. [PAG,IMG] (p10)</p></div><div class="nugget-popup"><p>Properties on Uttoxeter Road were reported among those that flooded internally during Storm Babet (internal flooding occurred in the early hours of 21 October). [PAG,IMG] (p11)</p></div><div class="nugget-popup"><p>Hilton Brook overtopped upstream of the village, flowed onto Uttoxeter Road and downslope westwards, internally flooding properties on Uttoxeter Road. A culvert beneath Uttoxeter Road was reported blocked, causing upstream overtopping and flow onto the road. [PAG] (p12)</p></div><div class="nugget-popup"><p>Hilton Brook overtopped upstream where a culvert beneath Uttoxeter Road was reported blocked; floodwater flowed onto and along Uttoxeter Road, moving westwards downslope and entering properties, causing internal flooding. [PAG,IMG] (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>7 homes; 1 business [IMG] (p9)</p></div><div class="nugget-popup quant"><p>4 residential properties; 2 commercial properties (these flooded properties are within the Hilton community as a whole) [PAG,IMG] (p10)</p></div><div class="nugget-popup quant"><p>5 homes; 3 commercial properties (including properties on Uttoxeter Road) [PAG,IMG] (p11)</p></div><div class="nugget-popup quant"><p>7 properties internally flooded; internal flood depth almost 1 m at some properties [PAG] (p12)</p></div><div class="nugget-popup quant"><p>7 properties internally flooded on Uttoxeter Road [PAG,IMG] (p13)</p></div></div></body></div>`)[0];
+                popup_7a7a9ce4239f2c723db9c4605b090704.setContent(html_6231ebae2b6f56c7c08e7a30715e91e1);
+            
+        
+
+        marker_b9cf1da249a2eefa66a9dcedb984a967.bindPopup(popup_7a7a9ce4239f2c723db9c4605b090704)
+        ;
+
+        
+    
+    
+            var marker_379bf37aa29c1eaa0e69ec62be4fb6f8 = L.marker(
+                [52.8722977, -1.6394433],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_da9414cd55179fcfff113eb3355a8536 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_379bf37aa29c1eaa0e69ec62be4fb6f8.setIcon(icon_da9414cd55179fcfff113eb3355a8536);
+        
+    
+        var popup_8c5a888263c988a00ba2f2fdef92d552 = L.popup({});
+
+        
+            
+                var html_e8c42b90afbdf3c38c6e592569aee685 = $(`<div id="html_e8c42b90afbdf3c38c6e592569aee685" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Lane, Hilton</h1><div class="nugget-popup"><p>Internal flooding of a residential property on Mill Lane in Hilton, associated with the nearby watercourse. [IMG] (p9)</p></div><div class="nugget-popup"><p>Internal flooding of properties (residential and commercial) on Mill Lane during Storm Babet; properties suffered internal inundation, associated with Hilton Brook floodplain and surface&ndash;water risk. [PAG,IMG] (p11)</p></div><div class="nugget-popup"><p>Properties on Mill Lane were reported to have flooded internally during the event (included among the homes and commercial properties that experienced internal flooding). (p12)</p></div><div class="nugget-popup"><p>One residential property on Mill Lane was internally flooded when floodwater escaping from Hilton Brook flowed along local roads; internal depths in the community reached almost 1 m in some properties. [PAG,IMG] (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 home [IMG] (p9)</p></div><div class="nugget-popup quant"><p>five homes and three commercial properties (across Uttoxeter Road and Mill Lane) [PAG,IMG] (p11)</p></div><div class="nugget-popup quant"><p>Part of five homes and three commercial properties that flooded internally (p12)</p></div><div class="nugget-popup quant"><p>1 home; internal flood depth almost 1 m (at some properties in the area) [PAG,IMG] (p13)</p></div></div></body></div>`)[0];
+                popup_8c5a888263c988a00ba2f2fdef92d552.setContent(html_e8c42b90afbdf3c38c6e592569aee685);
+            
+        
+
+        marker_379bf37aa29c1eaa0e69ec62be4fb6f8.bindPopup(popup_8c5a888263c988a00ba2f2fdef92d552)
+        ;
+
+        
+    
+    
+            var marker_89bdc340f44bcbe57edb79398fbd4676 = L.marker(
+                [52.8728235, -1.6387888],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_a1a9548f56e7e520859313ced6e8b017 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_89bdc340f44bcbe57edb79398fbd4676.setIcon(icon_a1a9548f56e7e520859313ced6e8b017);
+        
+    
+        var popup_73cee8ca27acfe05cddd85812859343d = L.popup({});
+
+        
+            
+                var html_2848d76eeae1894671bb6849c1c546b3 = $(`<div id="html_2848d76eeae1894671bb6849c1c546b3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Main Street, Hilton</h1><div class="nugget-popup"><p>Portion of Main Street lies within the Environment Agency Flood Warning Area and adjacent Flood Zone 3 along Hilton Brook; areas around Main Street are identified as having high surface water flood risk and are within the zones where properties in Hilton experienced internal flooding during Storm Babet. This places Main Street within the area directly affected by river and surface&ndash;water flooding risk during the event (exact properties on Main Street not individually named). [PAG,IMG] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties; 2 commercial properties (these flooded properties are within the Hilton community as a whole) [PAG,IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_73cee8ca27acfe05cddd85812859343d.setContent(html_2848d76eeae1894671bb6849c1c546b3);
+            
+        
+
+        marker_89bdc340f44bcbe57edb79398fbd4676.bindPopup(popup_73cee8ca27acfe05cddd85812859343d)
+        ;
+
+        
+    
+    
+            var marker_2acc5851acd9be7a05fb9d237ac3353d = L.marker(
+                [52.8774561, -1.6238033],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_04409c64f5a905a6da90c877793fb2a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2acc5851acd9be7a05fb9d237ac3353d.setIcon(icon_04409c64f5a905a6da90c877793fb2a6);
+        
+    
+        var popup_07c8d8ef8710f4acccc6bd8c8b31b8f8 = L.popup({});
+
+        
+            
+                var html_75b3483ac6ff56a29a03136604f17f8c = $(`<div id="html_75b3483ac6ff56a29a03136604f17f8c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Derby Road, Hilton</h1><div class="nugget-popup"><p>Derby Road is adjacent to Hilton Brook and the Flood Relief Channel and is shown on the map as being within/near Flood Zone 3 where the highest flood risk is concentrated; it therefore lies within the area affected by river and surface&ndash;water flooding during Storm Babet. [PAG,IMG] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties; 2 commercial properties (these flooded properties are within the Hilton community as a whole) [PAG,IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_07c8d8ef8710f4acccc6bd8c8b31b8f8.setContent(html_75b3483ac6ff56a29a03136604f17f8c);
+            
+        
+
+        marker_2acc5851acd9be7a05fb9d237ac3353d.bindPopup(popup_07c8d8ef8710f4acccc6bd8c8b31b8f8)
+        ;
+
+        
+    
+    
+            var marker_3458d1a8163866f306049c1926b0c1f3 = L.marker(
+                [53.118504, -1.556618],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_562ed4385df47b2f3232aa8bc8062e1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3458d1a8163866f306049c1926b0c1f3.setIcon(icon_562ed4385df47b2f3232aa8bc8062e1b);
+        
+    
+        var popup_cf7e8ffca9e3381f47ddddf026a81b01 = L.popup({});
+
+        
+            
+                var html_6456e68a4da3fdba8accfc0a711974fd = $(`<div id="html_6456e68a4da3fdba8accfc0a711974fd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Derbyshire</h1><div class="nugget-popup"><p>Parts of the Dove sub&ndash;catchment in Derbyshire experienced extreme rainfall and river flood impacts during Storm Babet, including internal flooding of properties in Ashbourne. (p3)</p></div><div class="nugget-popup"><p>Storm Babet (18&ndash;21 Oct 2023) produced heavy rainfall and high river flows in the Dove catchment; part of Derbyshire (Ashbourne) experienced property flooding &mdash; 16 properties in west Ashbourne suffered internal flooding. [PAG,IMG] (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>16 properties (p3)</p></div><div class="nugget-popup quant"><p>16 properties (13 residential, 3 non&ndash;residential) [PAG,IMG] (p4)</p></div></div></body></div>`)[0];
+                popup_cf7e8ffca9e3381f47ddddf026a81b01.setContent(html_6456e68a4da3fdba8accfc0a711974fd);
+            
+        
+
+        marker_3458d1a8163866f306049c1926b0c1f3.bindPopup(popup_cf7e8ffca9e3381f47ddddf026a81b01)
+        ;
+
+        
+    
+    
+            var marker_99f3570bc2f7698c1ca0701de45e34a1 = L.marker(
+                [53.016778, -1.732231],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_f440aba71202b7c15674d142c152b92c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_99f3570bc2f7698c1ca0701de45e34a1.setIcon(icon_f440aba71202b7c15674d142c152b92c);
+        
+    
+        var popup_2992fa6ac2cd858eb28d6ddd5d7a098f = L.popup({});
+
+        
+            
+                var html_6efa19800113dd20af9d164e4ba0c769 = $(`<div id="html_6efa19800113dd20af9d164e4ba0c769" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ashbourne</h1><div class="nugget-popup"><p>Internal flooding of properties to the west of Ashbourne as a result of Storm Babet / rapid response of Henmore Brook; affected primarily the Almshouses complex on School Lane, properties on Coachmans Close (north of Henmore Brook), and three non&ndash;residential buildings (Oswald's Church Centre hall, Kingdom Hall, and the Bridge Public House on Dig Street). [MUL] (p3)</p></div><div class="nugget-popup"><p>Internal flooding of properties to the west of Ashbourne due to flooding on Henmore Brook and local surface water; affected buildings include the Almshouses complex (School Lane), residential properties on Coachmans Close, and non&ndash;residential properties including Oswald's Church Centre, Kingdom Hall and the Bridge Public House on Dig Street. [PAG,IMG] (p4)</p></div><div class="nugget-popup"><p>Properties in Ashbourne (central area adjacent to Henmore Brook) experienced internal flooding during the event; historic records indicate similar flood extents in 1960 and September 2008. [PAG,IMG] (p5)</p></div><div class="nugget-popup"><p>Properties in Ashbourne were internally flooded during Storm Babet. Flood defences in the locality were overtopped when their design level was exceeded. Non&ndash;residential properties reported flooded included St Oswald's Church Centre (hall), Kingdom Hall and the Bridge Public House on Dig Street. [PAG] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>16 properties internally flooded (13 residential, 3 non&ndash;residential). [MUL] (p3)</p></div><div class="nugget-popup quant"><p>16 properties (13 residential, 3 non&ndash;residential) [PAG,IMG] (p4)</p></div><div class="nugget-popup quant"><p>3 flood defences overtopped [PAG] (p6)</p></div></div></body></div>`)[0];
+                popup_2992fa6ac2cd858eb28d6ddd5d7a098f.setContent(html_6efa19800113dd20af9d164e4ba0c769);
+            
+        
+
+        marker_99f3570bc2f7698c1ca0701de45e34a1.bindPopup(popup_2992fa6ac2cd858eb28d6ddd5d7a098f)
+        ;
+
+        
+    
+    
+            var marker_fb00e1cd73473ad929021168448bf976 = L.marker(
+                [52.869667394936194, -1.6281444382899535],
+                {}
+            ).addTo(map_e5fbdd2e37669b985b4a2d55f806a368);
+        
+    
+            var icon_49d0050961574ac800edadf32720ecad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fb00e1cd73473ad929021168448bf976.setIcon(icon_49d0050961574ac800edadf32720ecad);
+        
+    
+        var popup_b605758de0690b216c09dd7e5a25d4ed = L.popup({});
+
+        
+            
+                var html_8352db6452003b57f3608e608267ea4e = $(`<div id="html_8352db6452003b57f3608e608267ea4e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hilton</h1><div class="nugget-popup"><p>Internal flooding of properties in the community during Storm Babet (October 2023). The report text states residential and commercial properties suffered internal flooding; map annotations show flooding concentrated on Uttoxeter Road and Mill Lane. [IMG,PAG] (p9)</p></div><div class="nugget-popup"><p>Internal flooding of properties in the village during Storm Babet; most flooded homes were west of Hilton Brook on the brook's floodplain. Flood risk maps show affected properties lie in Flood Zone 2 and Flood Zone 3 and have at least low long&ndash;term surface water risk; areas off Main Street have high surface water risk. [PAG,IMG] (p10)</p></div><div class="nugget-popup"><p>Properties within the Hilton community experienced internal flooding when Hilton Brook overflowed upstream of the village and water flowed onto Uttoxeter Road before reaching the relief channel. Some properties experienced internal depths of almost 1 m; semi&ndash;detached properties in the area are known to flood frequently. [PAG] (p12)</p></div><div class="nugget-popup"><p>Overflow from Hilton Brook (about 600 m upstream of the Uttoxeter Road culvert) caused floodwater to escape the channel, flow into the village along Uttoxeter Road and Mill Lane, and internally flood residential and commercial properties; internal flood depths reached almost 1 m at some properties. Culvert blockage and a weir/sharp bend upstream were reported as contributing factors. [PAG,IMG] (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties; 2 commercial properties (report text); map annotations: 7 homes and 1 business internally flooded on Uttoxeter Road; 1 home internally flooded on Mill Lane (map) [IMG,PAG] (p9)</p></div><div class="nugget-popup quant"><p>4 residential properties and 2 commercial properties [PAG,IMG] (p10)</p></div><div class="nugget-popup quant"><p>Five homes and three commercial properties flooded internally; internal flood depth almost 1 m at some properties [PAG] (p12)</p></div><div class="nugget-popup quant"><p>5 homes; 3 commercial properties; 7 properties on Uttoxeter Road; 1 home on Mill Lane [PAG,IMG] (p13)</p></div></div></body></div>`)[0];
+                popup_b605758de0690b216c09dd7e5a25d4ed.setContent(html_8352db6452003b57f3608e608267ea4e);
+            
+        
+
+        marker_fb00e1cd73473ad929021168448bf976.bindPopup(popup_b605758de0690b216c09dd7e5a25d4ed)
+        ;
+
+        
+    
+</script>
+</html>

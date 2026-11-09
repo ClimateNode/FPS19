@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_827f5f07846e6ae63d35a7a012b45769 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_827f5f07846e6ae63d35a7a012b45769" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_827f5f07846e6ae63d35a7a012b45769 = L.map(
+                "map_827f5f07846e6ae63d35a7a012b45769",
+                {
+                    center: [51.795204991358794, -1.4836351620570687],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cdacbc566c6ac568094a3cf34694f1b6 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_cdacbc566c6ac568094a3cf34694f1b6.addTo(map_827f5f07846e6ae63d35a7a012b45769);
+    
+            var marker_1a245a5221229f4a1c956dedfc067016 = L.marker(
+                [51.781809098320984, -1.481660402039328],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_0ef18d4d9c232efa1fe9eb9bfd280717 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1a245a5221229f4a1c956dedfc067016.setIcon(icon_0ef18d4d9c232efa1fe9eb9bfd280717);
+        
+    
+        var popup_492dd0e60f5fc94087e6b70765ae1fa7 = L.popup({});
+
+        
+            
+                var html_d9ade98c05bd354e7ec46fff937c926d = $(`<div id="html_d9ade98c05bd354e7ec46fff937c926d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill House Care Home</h1><div class="nugget-popup"><p>Residents needed to be evacuated during the December 2020 flood event due to internal flooding/impact from the event. (p2)</p></div><div class="nugget-popup"><p>Internal flooding led to residents being evacuated during the event on 23&ndash;24 December 2020. (p11)</p></div><div class="nugget-popup"><p>The care home was evacuated because of the flooding; residents relocated for safety. (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 residents evacuated (p16)</p></div></div></body></div>`)[0];
+                popup_492dd0e60f5fc94087e6b70765ae1fa7.setContent(html_d9ade98c05bd354e7ec46fff937c926d);
+            
+        
+
+        marker_1a245a5221229f4a1c956dedfc067016.bindPopup(popup_492dd0e60f5fc94087e6b70765ae1fa7)
+        ;
+
+        
+    
+    
+            var marker_332192e7a07eaf12d508f35705f95ea0 = L.marker(
+                [51.78933737437196, -1.4833353048991578],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_92e953f0c237b68518a4e7791fa57b29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_332192e7a07eaf12d508f35705f95ea0.setIcon(icon_92e953f0c237b68518a4e7791fa57b29);
+        
+    
+        var popup_4234acbbba9b521d6d4f7df379855708 = L.popup({});
+
+        
+            
+                var html_aaa834dcb300d7e319a12f36d4b63d6e = $(`<div id="html_aaa834dcb300d7e319a12f36d4b63d6e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Riverside House</h1><div class="nugget-popup"><p>Internally flooded; residents needed to be evacuated. (p2)</p></div><div class="nugget-popup"><p>Residents required evacuation due to internal flooding during the event on 23&ndash;24 December 2020. (p11)</p></div><div class="nugget-popup"><p>Flooding at Riverside House/Gardens led to evacuation of residents, internal flooding of homes and long repair times. (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>part of at least 54 residential and business properties flooded internally (p2)</p></div><div class="nugget-popup quant"><p>13 residents evacuated; 20 hours; 4 homes flooded; repairs averaging 6 months; one resident still not returned after nearly 12 months (p16)</p></div></div></body></div>`)[0];
+                popup_4234acbbba9b521d6d4f7df379855708.setContent(html_aaa834dcb300d7e319a12f36d4b63d6e);
+            
+        
+
+        marker_332192e7a07eaf12d508f35705f95ea0.bindPopup(popup_4234acbbba9b521d6d4f7df379855708)
+        ;
+
+        
+    
+    
+            var marker_50cf319ed41b959a5a1c9be4b85c1936 = L.marker(
+                [51.78900835, -1.4804916945625908],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_ce3a57463354408a6ae0157810a5f3f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_50cf319ed41b959a5a1c9be4b85c1936.setIcon(icon_ce3a57463354408a6ae0157810a5f3f2);
+        
+    
+        var popup_739ca78df092f9e71bdf0400b37cf041 = L.popup({});
+
+        
+            
+                var html_be8c84a998dc2a9d38e8c24f7775cbcb = $(`<div id="html_be8c84a998dc2a9d38e8c24f7775cbcb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Aquarius Development</h1><div class="nugget-popup"><p>Floodplain connectivity downstream of the Aquarius site is restricted by ground levels in adjacent fields and the site's perimeter ditch, meaning modelled flood flows (1 in 20 and 1 in 100 year events) would not pass through to the downstream floodplain as the 2014 model suggests. Recommendation to investigate modifying/diverting the site perimeter ditch to increase flow capacity. [TAB,PAG,MUL] (p3)</p></div><div class="nugget-popup"><p>The perimeter ditch of the Aquarius site is identified as a feature that could be modified or diverted to increase flow capacity and reduce flood risk on the downstream reach of the River Windrush. [PAG] (p4)</p></div><div class="nugget-popup"><p>Lidar and field levels indicate poor floodplain connectivity downstream of the Aquarius site during the December 2020 event &mdash; flood flows south of the Aquarius site and east of the eastern channel of the Windrush would not easily fill and pass through to the downstream floodplain, altering expected flow routes. (p21)</p></div><div class="nugget-popup"><p>The perimeter ditch at the Aquarius site was identified as constraining flow capacity during flood events; report recommends investigating whether the ditch can be modified or diverted to increase flow capacity to reduce flooding. [TAB,PAG] (p27)</p></div><div class="nugget-popup"><p>The perimeter ditch at the Aquarius site was identified as having insufficient flow capacity during the December 23&ndash;24, 2020 flood and is proposed to be modified or diverted to increase conveyance and reduce local flooding risk. (p28)</p></div><div class="nugget-popup"><p>The perimeter ditch at the Aquarius site was identified as having insufficient conveyance capacity; it was recommended that the ditch be modified or diverted to increase flow capacity to reduce flood risk to the site and surrounding area. (p32)</p></div></div></body></div>`)[0];
+                popup_739ca78df092f9e71bdf0400b37cf041.setContent(html_be8c84a998dc2a9d38e8c24f7775cbcb);
+            
+        
+
+        marker_50cf319ed41b959a5a1c9be4b85c1936.bindPopup(popup_739ca78df092f9e71bdf0400b37cf041)
+        ;
+
+        
+    
+    
+            var marker_54dc06d37b449fd9e7e21a8ae7d08877 = L.marker(
+                [51.7855776, -1.4803535],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_37fd21717923685d8456a391a6cb6418 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_54dc06d37b449fd9e7e21a8ae7d08877.setIcon(icon_37fd21717923685d8456a391a6cb6418);
+        
+    
+        var popup_3861ac58207f2b7a8efb6b8c617495ae = L.popup({});
+
+        
+            
+                var html_149086370dd87a58d7d93a768c186c03 = $(`<div id="html_149086370dd87a58d7d93a768c186c03" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Langel Common</h1><div class="nugget-popup"><p>A raised footpath/embankment at Langel Common (levels 79.72&ndash;80.10m AOD) is higher than the modelled 1 in 100 year level (79.68m AOD in the 2014 model), confirming the embankment prevents floodplain connectivity and that not all flows would spill back to the river as the model suggests. Recommendations include improving flows through the footpath to restore connectivity and installing gauge boards. [TAB,PAG] (p3)</p></div><div class="nugget-popup"><p>The footpath at Langel Common and its floodplain connectivity are affected by flooding; actions propose improving flows through the Langel Common footpath to ensure floodplain connectivity during flood events and installing gauge boards from Woodford Mill to Langel Common. [PAG] (p4)</p></div><div class="nugget-popup"><p>A raised footpath in Langel Common (Lidar levels reported between 79.72m and 80.10m AOD) forms a continuous raised structure that disconnects the floodplain upstream and downstream. This restricts out&ndash;of&ndash;bank flows from filling and passing through the floodplain and therefore alters flood routing during high River Windrush levels (noted during the flooding on 23&ndash;24 Dec 2020). (p13)</p></div><div class="nugget-popup"><p>A raised footpath in Langel Common was observed impounding floodplain flows and overtopping during the event, producing a noticeable difference in water level upstream and downstream. [PAG] (p14)</p></div><div class="nugget-popup"><p>Low&ndash;lying areas of the common experienced flooding; a continuous raised footpath through the common acted as a barrier, causing impoundment of floodplain flows and localised overtopping across the path. [IMG,PAG] (p15)</p></div><div class="nugget-popup"><p>Identified as a low&ndash;lying area with significant surface&ndash;water flood risk; the continuous raised footpath across Langel Common was noted as potentially acting as a barrier to flood waters and causing accessibility issues; investigation proposed to replace raised footpath with a continuous bridge. [IMG,PAG] (p16)</p></div><div class="nugget-popup"><p>Model outputs indicate excess flows spill onto the floodplain and re&ndash;join the river before the raised footpath at Langel Common. The modelling suggests the footpath there is overtopped in the modelled 1 in 100 year event. (p17)</p></div><div class="nugget-popup"><p>Reported flooding issues in the area around Langel Common during the December 2020 event; highlighted for further analysis in updated flood modelling for Witney. (p19)</p></div><div class="nugget-popup"><p>The raised footpath/embankment at Langel Common restricted floodplain connectivity during the December 2020 event; the embankment crest was higher than the modelled 1 in 100 year flood level, preventing flows passing onto the floodplain as the 2014 model had suggested. (p21)</p></div><div class="nugget-popup"><p>Footpath and floodplain connectivity were affected by flood flows; recommendations to improve flows through the Langel Common footpath, install gauge boards through to Langel Common and update models to reflect levels affecting this area. [TAB] (p27)</p></div><div class="nugget-popup"><p>Flows through the Langel Common footpath and floodplain connectivity were impaired during the 23&ndash;24 December 2020 flood; actions include improving flow connectivity and installing gauge boards to monitor levels between Woodford Mill and Langel Common. (p28)</p></div><div class="nugget-popup"><p>Flooding affected the footpath and floodplain connectivity at Langel Common during the event; the report calls for improvements to flows and floodplain connectivity and installation of gauge boards at this location. (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>79.68m AOD (modelled 1 in 100 footpath flood level) (p17)</p></div></div></body></div>`)[0];
+                popup_3861ac58207f2b7a8efb6b8c617495ae.setContent(html_149086370dd87a58d7d93a768c186c03);
+            
+        
+
+        marker_54dc06d37b449fd9e7e21a8ae7d08877.bindPopup(popup_3861ac58207f2b7a8efb6b8c617495ae)
+        ;
+
+        
+    
+    
+            var marker_126a2b9cebcc31d1f8a109399cfb8fc0 = L.marker(
+                [51.7850861, -1.4775462],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_213908359f8c4119dcc388192929cc30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_126a2b9cebcc31d1f8a109399cfb8fc0.setIcon(icon_213908359f8c4119dcc388192929cc30);
+        
+    
+        var popup_97b7d629e2cb14301a6ddaa4cf3b3020 = L.popup({});
+
+        
+            
+                var html_667acbf0869d46ffc97073997372062a = $(`<div id="html_667acbf0869d46ffc97073997372062a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Madley Brook</h1><div class="nugget-popup"><p>Referenced as a nearby watercourse and as an 'other affected area'; its confluence with the Windrush was noted in relation to raised ground levels and flood routing, and it was discussed as part of the areas affected by the flood event. [PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_97b7d629e2cb14301a6ddaa4cf3b3020.setContent(html_667acbf0869d46ffc97073997372062a);
+            
+        
+
+        marker_126a2b9cebcc31d1f8a109399cfb8fc0.bindPopup(popup_97b7d629e2cb14301a6ddaa4cf3b3020)
+        ;
+
+        
+    
+    
+            var marker_181bd4dac3317b28a56e12466d90f410 = L.marker(
+                [51.8104016, -1.6308005],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_c27d005aea1f2cacf060f027c3536d61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_181bd4dac3317b28a56e12466d90f410.setIcon(icon_c27d005aea1f2cacf060f027c3536d61);
+        
+    
+        var popup_565042be1b6c50e0f7848ac7a28d2373 = L.popup({});
+
+        
+            
+                var html_eced985d5854d093d20093de4b82daa6 = $(`<div id="html_eced985d5854d093d20093de4b82daa6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Windrush</h1><div class="nugget-popup"><p>The River Windrush through and downstream of Witney shows reduced flow capacity and poor condition (due to lack of maintenance), causing floodplain connectivity issues and contributing to higher flood levels upstream. The report recommends increased EA/riparian maintenance, potential river modification to increase flow capacity, and an updated river model incorporating December 2020 flood data. [TAB,PAG,MUL] (p3)</p></div><div class="nugget-popup"><p>River Windrush overtopping/limited channel capacity through and downstream of Witney contributed to flooding risk along the town and downstream reaches; recommendations target riparian maintenance, channel modification and increased floodplain connectivity between New Bridge Street and the footpath at Langel Common and upstream storage to reduce peak flows. (p4)</p></div><div class="nugget-popup"><p>Upstream catchment flows reached Witney causing river flooding on 24/12/2020; contributed to river levels peaking (river flooding) and to internal and external flooding across Witney. (p11)</p></div><div class="nugget-popup"><p>Exceptional river flows recorded on the River Windrush during the December 2020 event, producing high river levels that fed the flooding recorded in Witney (peak river level at Riverside Gardens of 81.45 m AOD on 25/12/2020). [PAG] (p12)</p></div><div class="nugget-popup"><p>River Windrush contributed to flooding in Witney: gauge boards on the Windrush (at Bridge Street) were submerged during floods; channel obstructions (fallen tree at Blanket Hall and the Bridge Street bridge alignment) restricted peak flows and generated a bow wave when levels were high on the evening of 24 December 2020. [PAG] (p13)</p></div><div class="nugget-popup"><p>The River Windrush generated high flows during the event: the peak flow recorded at Worsham on 24/12/2020 compared to the modelled 1 in 100 year plus 20% event, and recorded peak flood level at Riverside Gardens exceeded the 1 in 100 year flood level, causing river inundation of low&ndash;lying areas. (p16)</p></div><div class="nugget-popup"><p>Rapid rise in the River Windrush on 23&ndash;24 Dec 2020 contributed to flooding in Witney, triggering a late flood warning and prompting changes to warning thresholds and development of updated flood&ndash;risk modelling. (p19)</p></div><div class="nugget-popup"><p>The River Windrush produced flows in December 2020 greater than the existing EA modelled 1 in 100 year event (comparable to the modelled 1 in 100 year plus 20% peak flow), causing flooding through the town. Poor channel condition and lack of significant maintenance upstream contributed to the severity of flooding. (p21)</p></div><div class="nugget-popup"><p>The River Windrush is described as the channel through and downstream of Witney requiring increased EA/riparian maintenance and potential channel modification to increase flow capacity during severe conditions; it is the source of the river flooding affecting Witney. [TAB] (p27)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>modelled 1 in 20 year event; modelled 1 in 100 year event; raised footpath levels 79.72&ndash;80.10m AOD compared with modelled 79.68m AOD [TAB,PAG,MUL] (p3)</p></div><div class="nugget-popup quant"><p>30.348 m3/s peak flow (recorded at Worsham gauge on 24/12/2020); exceeded July 2007 flow of 29.26 m3/s. [PAG] (p12)</p></div><div class="nugget-popup quant"><p>greater than modelled 1 in 100 year; similar to modelled 1 in 100 year plus 20% event (p21)</p></div></div></body></div>`)[0];
+                popup_565042be1b6c50e0f7848ac7a28d2373.setContent(html_eced985d5854d093d20093de4b82daa6);
+            
+        
+
+        marker_181bd4dac3317b28a56e12466d90f410.bindPopup(popup_565042be1b6c50e0f7848ac7a28d2373)
+        ;
+
+        
+    
+    
+            var marker_65b22d7343a0d8a239e8a2985ee8b90b = L.marker(
+                [51.78924038213409, -1.4828730665940744],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_d458e8ddf87fd5c8fe55608c80156410 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_65b22d7343a0d8a239e8a2985ee8b90b.setIcon(icon_d458e8ddf87fd5c8fe55608c80156410);
+        
+    
+        var popup_1703292361a5ed660e0e2c38ddb1c84b = L.popup({});
+
+        
+            
+                var html_c88282704708d5599f6ed33125c85015 = $(`<div id="html_c88282704708d5599f6ed33125c85015" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bridge Street Bridge</h1><div class="nugget-popup"><p>Sediment/debris under and upstream of the bridge was identified as restricting flow and contributing to flooding risk; the bridge to be checked regularly and de&ndash;silting (including upstream) investigated to reduce flood impacts. (p5)</p></div><div class="nugget-popup"><p>On the night of 24 Dec 2020 the bridge was observed to restrict peak river flows and produce a bow&ndash;wave/turbulent flow upstream; water levels were close to the top of the bridge parapet with a risk of overtopping. [IMG] (p14)</p></div><div class="nugget-popup"><p>The EA model shows all modelled flows, including up to the 1 in 100 year plus 70% climate change event, passing through the Bridge Street Bridge. The bridge is on the main flow path and modelling suggests it may be associated with raised upstream flood levels. (p17)</p></div><div class="nugget-popup"><p>Siltation and debris under Bridge Street Bridge contributed to flow blockages during the December 2020 river flooding; recommendations include regular checks and investigation of de&ndash;silting to reduce flood risk. [TAB] (p27)</p></div><div class="nugget-popup"><p>Bridge Street bridge experienced siltation/obstruction issues related to the flooding; recommendation to check regularly and investigate de&ndash;silting both under and upstream of the bridge to reduce blockages during high flows. (p29)</p></div><div class="nugget-popup"><p>Bridge Street bridge was identified as requiring regular checks and investigation into de&ndash;silting, indicating silt/blockage at the bridge reduced conveyance and contributed to local flooding risk that affected the town during the December 2020 event. (p31)</p></div><div class="nugget-popup"><p>High river flows observed beneath the bridge with water occupying the channel upstream of the structure; vegetation at the banks adjacent to the bridge is shown in contact with floodwater. [IMG] (p40)</p></div></div></body></div>`)[0];
+                popup_1703292361a5ed660e0e2c38ddb1c84b.setContent(html_c88282704708d5599f6ed33125c85015);
+            
+        
+
+        marker_65b22d7343a0d8a239e8a2985ee8b90b.bindPopup(popup_1703292361a5ed660e0e2c38ddb1c84b)
+        ;
+
+        
+    
+    
+            var marker_13233c8678733441caf644b2b453ebbb = L.marker(
+                [51.7898188, -1.4846082],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_479b5019a3a8ea61597752ca44e28467 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_13233c8678733441caf644b2b453ebbb.setIcon(icon_479b5019a3a8ea61597752ca44e28467);
+        
+    
+        var popup_9195482ec739df8107ddc35629495095 = L.popup({});
+
+        
+            
+                var html_dc2e90748433a14bfd2b8466d0452aee = $(`<div id="html_dc2e90748433a14bfd2b8466d0452aee" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Riverside Gardens, Witney</h1><div class="nugget-popup"><p>Residents needed to be evacuated during the December 2020 flood event due to internal flooding/impact from the event. (p2)</p></div><div class="nugget-popup"><p>Internal flooding was confirmed and residents were evacuated. The river gauge at Riverside Gardens recorded the flood level peaking (81.45m AOD) as part of the December 2020 event. [PAG] (p11)</p></div><div class="nugget-popup"><p>Riverside Gardens experienced river flooding: recorded peak flood level exceeded the 1 in 100 year event. Riverside House/Gardens required evacuations (13 residents evacuated for c.20 hours) and four homes were flooded; repairs averaged six months and one resident remained displaced for nearly 12 months. (p16)</p></div><div class="nugget-popup"><p>Residents at Riverside Gardens were affected by the December 2020 flooding; the EA deployed officers to speak with affected residents and provided advice/support including assistance to obtain grants for property&ndash;level resilience measures. (p18)</p></div><div class="nugget-popup"><p>Public park area inundated at night; floodwater covered paths and reached the base of a streetlamp and partially submerged a sign; muddy brown water spread widely across the park. [IMG] (p40)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>13 residents evacuated; 20 hours evacuation; 4 homes flooded; repairs averaged 6 months; 1 resident displaced for nearly 12 months (p16)</p></div><div class="nugget-popup quant"><p>river level recorded at 81.443m AOD; photo timestamped 24th December 2020 around 23:10&ndash;23:15 [IMG] (p40)</p></div></div></body></div>`)[0];
+                popup_9195482ec739df8107ddc35629495095.setContent(html_dc2e90748433a14bfd2b8466d0452aee);
+            
+        
+
+        marker_13233c8678733441caf644b2b453ebbb.bindPopup(popup_9195482ec739df8107ddc35629495095)
+        ;
+
+        
+    
+    
+            var marker_170d903083f35a3de427e8560d6d8e69 = L.marker(
+                [51.78984511870513, -1.482001348643113],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_48dcc2c806eb61e514d616b903a5b872 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_170d903083f35a3de427e8560d6d8e69.setIcon(icon_48dcc2c806eb61e514d616b903a5b872);
+        
+    
+        var popup_d55fa7e6c26e909dd4132ac0870bac45 = L.popup({});
+
+        
+            
+                var html_b4cebafd3c205578b930db21d720ebc4 = $(`<div id="html_b4cebafd3c205578b930db21d720ebc4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bridge Street, Witney</h1><div class="nugget-popup"><p>Internal flooding was reported in the Bridge Street area during the event. [PAG] (p11)</p></div><div class="nugget-popup"><p>The Bridge Street bridge was observed to restrict peak flows and to cause a bow&ndash;wave effect when river levels were high on the evening of 24 December 2020; gauge boards at Bridge Street are reported to be submerged during floods. [PAG] (p13)</p></div><div class="nugget-popup"><p>Gauge boards at Bridge Street were submerged during floods. The channel alignment and capacity at the Bridge Street crossing was observed to restrict peak flows and create a bow&ndash;wave effect during high river levels on the evening of 24 Dec 2020. [IMG,PAG] (p14)</p></div><div class="nugget-popup"><p>Modelling and observations indicate elevated river levels upstream of Bridge Street during the event. Flows were routed through the Bridge Street Bridge and the model shows increased flood levels upstream that would affect the Bridge Street area. (p17)</p></div><div class="nugget-popup"><p>Reported flooding issues in the stretch between Bridge Street and Langel Common during the December 2020 event; identified as an area for further investigation in updated flood modelling. (p19)</p></div><div class="nugget-popup"><p>Flood levels upstream of Bridge Street were higher during the December 2020 event than represented in the 2014 model. Floodplain connectivity issues downstream (near the Aquarius site and the raised footpath at Langel Common) prevented flows passing onto the floodplain as modelled, contributing to increased flood levels upstream of Bridge Street. The river/channel upstream of Bridge Street was in poor condition due to little maintenance, exacerbating flood impacts. (p21)</p></div><div class="nugget-popup"><p>The report identifies issues with river levels upstream of Bridge Street during the event that contributed to localised flooding concerns and require investigation and modelling updates. (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>modelled 1 in 100 year; modelled 1 in 100 year plus 20%; raised footpath levels 79.72m&ndash;80.1m AOD vs modelled 79.68m AOD (p21)</p></div></div></body></div>`)[0];
+                popup_d55fa7e6c26e909dd4132ac0870bac45.setContent(html_b4cebafd3c205578b930db21d720ebc4);
+            
+        
+
+        marker_170d903083f35a3de427e8560d6d8e69.bindPopup(popup_d55fa7e6c26e909dd4132ac0870bac45)
+        ;
+
+        
+    
+    
+            var marker_9ca3a39fab4e5f8c178f652512839be8 = L.marker(
+                [51.7891731, -1.4803881],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_ca103d95c8b6628477a6a2abb5d4891e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9ca3a39fab4e5f8c178f652512839be8.setIcon(icon_ca103d95c8b6628477a6a2abb5d4891e);
+        
+    
+        var popup_7b05efe1d34e496906048783dbee434b = L.popup({});
+
+        
+            
+                var html_8fe18f29f4f14da3f11fac2e8fed4512 = $(`<div id="html_8fe18f29f4f14da3f11fac2e8fed4512" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>New Bridge Street, Witney</h1><div class="nugget-popup"><p>The reach of river between New Bridge Street and the footpath at Langel Common is identified as having limited flow capacity during severe conditions; investigations (including de&ndash;silt works under Bridge Street bridge) are recommended to improve conveyance and reduce flood risk. (p4)</p></div><div class="nugget-popup"><p>Flooding / reduced river conveyance occurred in the River Windrush reach at and around New Bridge Street, prompting recommendations to investigate modifying the river channel to increase flow capacity between New Bridge Street and the footpath at Langel Common. [TAB] (p27)</p></div><div class="nugget-popup"><p>Flooding and constrained channel capacity between New Bridge Street and the Langel Common footpath during severe conditions were identified; the report recommends investigating modifications to increase flow capacity in this reach. (p33)</p></div></div></body></div>`)[0];
+                popup_7b05efe1d34e496906048783dbee434b.setContent(html_8fe18f29f4f14da3f11fac2e8fed4512);
+            
+        
+
+        marker_9ca3a39fab4e5f8c178f652512839be8.bindPopup(popup_7b05efe1d34e496906048783dbee434b)
+        ;
+
+        
+    
+    
+            var marker_c4b3bb8ff9076dc2189532f84fa5b514 = L.marker(
+                [51.790398, -1.4872019],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_ea64f60b8cb8b98eff9f033b00878ae4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c4b3bb8ff9076dc2189532f84fa5b514.setIcon(icon_ea64f60b8cb8b98eff9f033b00878ae4);
+        
+    
+        var popup_b4e40edba78eb63f416939d71f63c5f4 = L.popup({});
+
+        
+            
+                var html_4cd785df5817b9eb087f0c268f7f770b = $(`<div id="html_4cd785df5817b9eb087f0c268f7f770b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woodford Mill, Witney</h1><div class="nugget-popup"><p>The reach from Woodford Mill through to Langel Common is identified for installation of gauge boards to record levels during flood events &mdash; indicating this reach experiences river flooding and is a focus for monitoring and flow&ndash;management measures. (p4)</p></div><div class="nugget-popup"><p>Internal flooding of properties/units was reported in Woodford Mill during the event. (p11)</p></div><div class="nugget-popup"><p>Listed as the upstream limit of the river reach needing EA/riparian maintenance and new gauge boards following the flood, indicating the location was within the affected river reach. (p16)</p></div><div class="nugget-popup"><p>Flooding between Woodford Mill and Langel Common prompted a recommendation to install gauge boards to record water levels for future flood events and monitoring. [TAB] (p27)</p></div><div class="nugget-popup"><p>Woodford Mill area was part of the flood route monitored during the 23&ndash;24 December 2020 event; gauge boards are proposed from Woodford Mill through to Langel Common to record levels and improve understanding of flood propagation. (p28)</p></div><div class="nugget-popup"><p>Area along the River Windrush at Woodford Mill experienced elevated river levels during the incident and was identified in the report as a location where gauge boards should be installed to monitor river levels and inform flood response. (p33)</p></div></div></body></div>`)[0];
+                popup_b4e40edba78eb63f416939d71f63c5f4.setContent(html_4cd785df5817b9eb087f0c268f7f770b);
+            
+        
+
+        marker_c4b3bb8ff9076dc2189532f84fa5b514.bindPopup(popup_b4e40edba78eb63f416939d71f63c5f4)
+        ;
+
+        
+    
+    
+            var marker_fe7f48d05a59ad522fe207ce27912e8a = L.marker(
+                [51.7940516, -1.4846535],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_8c025c49e554acfff89175678c6d1cdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fe7f48d05a59ad522fe207ce27912e8a.setIcon(icon_8c025c49e554acfff89175678c6d1cdc);
+        
+    
+        var popup_fd0fb1772b757a07b8ca9c93a57dd583 = L.popup({});
+
+        
+            
+                var html_0e68fe4ae664b00f75e8d003da6ab28a = $(`<div id="html_0e68fe4ae664b00f75e8d003da6ab28a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hailey Road, Witney</h1><div class="nugget-popup"><p>Highway flooding was reported on Hailey Road linked to the Hailey Road Drain during the 23&ndash;24 December 2020 event. [PAG] (p11)</p></div><div class="nugget-popup"><p>The report recommends schemes to manage flows upstream of the Hailey Road drain (including nature&ndash;based solutions) because flows into the drain contributed to flooding issues affecting the area. [TAB] (p27)</p></div><div class="nugget-popup"><p>Flows into/through the Hailey Road drain were subject to review after the 23&ndash;24 December 2020 flood; measures upstream (including nature&ndash;based solutions) were recommended to manage flows and reduce future surface water/drain capacity issues. (p28)</p></div><div class="nugget-popup"><p>Flood&ndash;related flows in the Hailey Road drain (upstream) contributed to local flooding; the report recommends investigating upstream flow&ndash;management measures (e.g. nature&ndash;based solutions) to reduce flood risk linked to the Hailey Road drain. (p31)</p></div></div></body></div>`)[0];
+                popup_fd0fb1772b757a07b8ca9c93a57dd583.setContent(html_0e68fe4ae664b00f75e8d003da6ab28a);
+            
+        
+
+        marker_fe7f48d05a59ad522fe207ce27912e8a.bindPopup(popup_fd0fb1772b757a07b8ca9c93a57dd583)
+        ;
+
+        
+    
+    
+            var marker_fe1794afaf97d0fc1297924091a1e0d8 = L.marker(
+                [51.792061, -1.4827971],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_670b6945f024c8585944c96887006371 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fe1794afaf97d0fc1297924091a1e0d8.setIcon(icon_670b6945f024c8585944c96887006371);
+        
+    
+        var popup_96b3c534bfc70f635fe941c00b27682e = L.popup({});
+
+        
+            
+                var html_45316bd62b7cc9d995d84de5d5293d88 = $(`<div id="html_45316bd62b7cc9d995d84de5d5293d88" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West End, Witney</h1><div class="nugget-popup"><p>Internal flooding of properties was reported in the West End area (including the adjacent Industrial Estate) during the event. [PAG] (p11)</p></div><div class="nugget-popup"><p>Listed in the report as one of the other affected areas during the Windrush flooding; discussed during the site walkover as having been impacted by river flooding in the event. (p13)</p></div><div class="nugget-popup"><p>Following the December 2020 flooding, WODC carried out annual maintenance of WODC&ndash;owned watercourses to the rear of the West End industrial estate as a remedial action related to the flood event. (p18)</p></div></div></body></div>`)[0];
+                popup_96b3c534bfc70f635fe941c00b27682e.setContent(html_45316bd62b7cc9d995d84de5d5293d88);
+            
+        
+
+        marker_fe1794afaf97d0fc1297924091a1e0d8.bindPopup(popup_96b3c534bfc70f635fe941c00b27682e)
+        ;
+
+        
+    
+    
+            var marker_fa69570c502151c622e980d40ef5cf2e = L.marker(
+                [51.7965386, -1.4821036],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_819db7a6fab4e08a54dd44c61b877150 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fa69570c502151c622e980d40ef5cf2e.setIcon(icon_819db7a6fab4e08a54dd44c61b877150);
+        
+    
+        var popup_b067f1f5eae7a50a2b1c724ad096cbda = L.popup({});
+
+        
+            
+                var html_f43cd1f2e1b747d71cdefd2dac5f774b = $(`<div id="html_f43cd1f2e1b747d71cdefd2dac5f774b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Eastfield Road, Witney</h1><div class="nugget-popup"><p>Flooding reported affecting the highway and internal flooding of properties in Eastfield Road during the event. [PAG] (p11)</p></div><div class="nugget-popup"><p>Named alongside Hailey as an affected location during the event; discussed in the site walkover as having been impacted by the river flooding. (p13)</p></div></div></body></div>`)[0];
+                popup_b067f1f5eae7a50a2b1c724ad096cbda.setContent(html_f43cd1f2e1b747d71cdefd2dac5f774b);
+            
+        
+
+        marker_fa69570c502151c622e980d40ef5cf2e.bindPopup(popup_b067f1f5eae7a50a2b1c724ad096cbda)
+        ;
+
+        
+    
+    
+            var marker_70d2a2872ff783c1175c52dec96dfce9 = L.marker(
+                [51.7818813, -1.4693443],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_ab2b103ca0890fd2c31ff7cc9ec10eb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_70d2a2872ff783c1175c52dec96dfce9.setIcon(icon_ab2b103ca0890fd2c31ff7cc9ec10eb7);
+        
+    
+        var popup_0c3fde4a843b5dc907f0ed8eb6e4cdc0 = L.popup({});
+
+        
+            
+                var html_477a8360467b3c977911887ea608364b = $(`<div id="html_477a8360467b3c977911887ea608364b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Blakes Avenue, Witney</h1><div class="nugget-popup"><p>External (surface water) flooding was reported on 23 December 2020; no internal flooding was confirmed by WODC or OCC. (p11)</p></div></div></body></div>`)[0];
+                popup_0c3fde4a843b5dc907f0ed8eb6e4cdc0.setContent(html_477a8360467b3c977911887ea608364b);
+            
+        
+
+        marker_70d2a2872ff783c1175c52dec96dfce9.bindPopup(popup_0c3fde4a843b5dc907f0ed8eb6e4cdc0)
+        ;
+
+        
+    
+    
+            var marker_7c6fef7e60f94868b9165e5923dca142 = L.marker(
+                [51.7891786, -1.4991391],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_a4ccdf542bdaed74fceae18dd001cf42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7c6fef7e60f94868b9165e5923dca142.setIcon(icon_a4ccdf542bdaed74fceae18dd001cf42);
+        
+    
+        var popup_f09545ae9831453047b03473a86178e8 = L.popup({});
+
+        
+            
+                var html_20aae507befa2445f3ed21a5416ff6fb = $(`<div id="html_20aae507befa2445f3ed21a5416ff6fb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Park Road, Witney</h1><div class="nugget-popup"><p>External (surface water) flooding was reported on 23 December 2020; no internal flooding was confirmed by WODC or OCC. (p11)</p></div></div></body></div>`)[0];
+                popup_f09545ae9831453047b03473a86178e8.setContent(html_20aae507befa2445f3ed21a5416ff6fb);
+            
+        
+
+        marker_7c6fef7e60f94868b9165e5923dca142.bindPopup(popup_f09545ae9831453047b03473a86178e8)
+        ;
+
+        
+    
+    
+            var marker_591d31657476c9d7b6ed69086ea2642f = L.marker(
+                [51.7924717, -1.4614425],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_4a77ea1faaa48f2ed40b2c970efd9a47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_591d31657476c9d7b6ed69086ea2642f.setIcon(icon_4a77ea1faaa48f2ed40b2c970efd9a47);
+        
+    
+        var popup_ab6c198a393bd3677b4e7dcc48998fb6 = L.popup({});
+
+        
+            
+                var html_cfe89cfdb692fe8deb71b035b187aa91 = $(`<div id="html_cfe89cfdb692fe8deb71b035b187aa91" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cherry Tree Way, Witney</h1><div class="nugget-popup"><p>External (surface water) flooding was reported on 23 December 2020; no internal flooding was confirmed by WODC or OCC. (p11)</p></div></div></body></div>`)[0];
+                popup_ab6c198a393bd3677b4e7dcc48998fb6.setContent(html_cfe89cfdb692fe8deb71b035b187aa91);
+            
+        
+
+        marker_591d31657476c9d7b6ed69086ea2642f.bindPopup(popup_ab6c198a393bd3677b4e7dcc48998fb6)
+        ;
+
+        
+    
+    
+            var marker_328d1fd0f4fe0e810a1318e676bbfdf6 = L.marker(
+                [51.7965233, -1.4772334],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_5db75895b68696f645329c6d15533c84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_328d1fd0f4fe0e810a1318e676bbfdf6.setIcon(icon_5db75895b68696f645329c6d15533c84);
+        
+    
+        var popup_24a64a6907b19d734b86b697ec1e0c89 = L.popup({});
+
+        
+            
+                var html_d35a4e640497b42ea453230f003d2f68 = $(`<div id="html_d35a4e640497b42ea453230f003d2f68" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Vanner Road, Witney</h1><div class="nugget-popup"><p>External (surface water) flooding was reported on 23 December 2020; no internal flooding was confirmed by WODC or OCC. (p11)</p></div></div></body></div>`)[0];
+                popup_24a64a6907b19d734b86b697ec1e0c89.setContent(html_d35a4e640497b42ea453230f003d2f68);
+            
+        
+
+        marker_328d1fd0f4fe0e810a1318e676bbfdf6.bindPopup(popup_24a64a6907b19d734b86b697ec1e0c89)
+        ;
+
+        
+    
+    
+            var marker_9b67781e71dec4427ec58d2bd8ffc909 = L.marker(
+                [51.7916807, -1.4832883],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_e77ff40c6b62b4969036ab1cfa670633 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9b67781e71dec4427ec58d2bd8ffc909.setIcon(icon_e77ff40c6b62b4969036ab1cfa670633);
+        
+    
+        var popup_97ddaf018d7ce7ddd1bd161f0c053a51 = L.popup({});
+
+        
+            
+                var html_b27959b447aaa8fab5f17e3aae2d7b6d = $(`<div id="html_b27959b447aaa8fab5f17e3aae2d7b6d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Millers Mews, Witney</h1><div class="nugget-popup"><p>Internal flooding was reported in Millers Mews during the event. (p11)</p></div><div class="nugget-popup"><p>WODC carried out annual maintenance of WODC&ndash;owned watercourses to the rear of Millers Mews following the December 2020 flooding as part of remedial work. (p18)</p></div></div></body></div>`)[0];
+                popup_97ddaf018d7ce7ddd1bd161f0c053a51.setContent(html_b27959b447aaa8fab5f17e3aae2d7b6d);
+            
+        
+
+        marker_9b67781e71dec4427ec58d2bd8ffc909.bindPopup(popup_97ddaf018d7ce7ddd1bd161f0c053a51)
+        ;
+
+        
+    
+    
+            var marker_96633e1ee2cabc230ba7f969698154ba = L.marker(
+                [51.789178, -1.4762551],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_6b0c961fbfed9d689b0b9c496834e83a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_96633e1ee2cabc230ba7f969698154ba.setIcon(icon_6b0c961fbfed9d689b0b9c496834e83a);
+        
+    
+        var popup_69b86ca7209f069a09f386b1b22611c5 = L.popup({});
+
+        
+            
+                var html_198e2a431cd94a10fcea0e718bdc6a40 = $(`<div id="html_198e2a431cd94a10fcea0e718bdc6a40" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Newland, Witney</h1><div class="nugget-popup"><p>Internal flooding of properties in the Newland area (reported near the Madley Brook). (p11)</p></div></div></body></div>`)[0];
+                popup_69b86ca7209f069a09f386b1b22611c5.setContent(html_198e2a431cd94a10fcea0e718bdc6a40);
+            
+        
+
+        marker_96633e1ee2cabc230ba7f969698154ba.bindPopup(popup_69b86ca7209f069a09f386b1b22611c5)
+        ;
+
+        
+    
+    
+            var marker_f6267c9844a110e282dc53a9015e11e0 = L.marker(
+                [51.7934968, -1.4783119],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_82025b4f9f456af79755aaef531fa4c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f6267c9844a110e282dc53a9015e11e0.setIcon(icon_82025b4f9f456af79755aaef531fa4c4);
+        
+    
+        var popup_57e98fe79d08f6cb4cfcc533af27dfef = L.popup({});
+
+        
+            
+                var html_558fde4f23a45f1f1660a08d86555a0b = $(`<div id="html_558fde4f23a45f1f1660a08d86555a0b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>New Yatt Road, Witney</h1><div class="nugget-popup"><p>One property reported internal flooding. (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>one property (p11)</p></div></div></body></div>`)[0];
+                popup_57e98fe79d08f6cb4cfcc533af27dfef.setContent(html_558fde4f23a45f1f1660a08d86555a0b);
+            
+        
+
+        marker_f6267c9844a110e282dc53a9015e11e0.bindPopup(popup_57e98fe79d08f6cb4cfcc533af27dfef)
+        ;
+
+        
+    
+    
+            var marker_efee4119c9ec705929da3fd18b271bd2 = L.marker(
+                [51.840363, -1.5121274],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_269c4f2de9a940c8767e127d8b9a33fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_efee4119c9ec705929da3fd18b271bd2.setIcon(icon_269c4f2de9a940c8767e127d8b9a33fc);
+        
+    
+        var popup_426cc3709046273635902dffb9963e1d = L.popup({});
+
+        
+            
+                var html_fb4801323a83bf1caac4cd0d3ae6d31b = $(`<div id="html_fb4801323a83bf1caac4cd0d3ae6d31b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Oxfordshire</h1><div class="nugget-popup"><p>Flooding in the district (including the Witney event) exposed issues with flood warning provision and triggered recommendations to improve alerts and community response across West Oxfordshire. (p33)</p></div></div></body></div>`)[0];
+                popup_426cc3709046273635902dffb9963e1d.setContent(html_fb4801323a83bf1caac4cd0d3ae6d31b);
+            
+        
+
+        marker_efee4119c9ec705929da3fd18b271bd2.bindPopup(popup_426cc3709046273635902dffb9963e1d)
+        ;
+
+        
+    
+    
+            var marker_5666d5b122e9b20c7c765153284c2163 = L.marker(
+                [51.7838848, -1.4852861],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_13b2e56d1d1a5384648ab7abd9a56d77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5666d5b122e9b20c7c765153284c2163.setIcon(icon_13b2e56d1d1a5384648ab7abd9a56d77);
+        
+    
+        var popup_959cf9380b88238bcfbd26a9a4431221 = L.popup({});
+
+        
+            
+                var html_6eb9afa95f2f58c9c63df518270fc289 = $(`<div id="html_6eb9afa95f2f58c9c63df518270fc289" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Witney</h1><div class="nugget-popup"><p>Surface water flooding of roads began on 23 December 2020 as highway drainage was overwhelmed; followed by river flooding on 24 December 2020 when upstream flows reached Witney. At least 54 residential and business properties were confirmed as flooding internally across the event; some properties (including care home and riverside accommodation) were evacuated. River levels peaked just after midnight on 25 December 2020. [MUL] (p2)</p></div><div class="nugget-popup"><p>Flooding associated with the River Windrush affected Witney and its infrastructure (river channel, ordinary watercourses and highway drainage). Actions recommended include riparian maintenance, investigation of channel modifications, checking/de&ndash;silting of Bridge Street bridge and prioritising checks of affected areas. [PAG] (p4)</p></div><div class="nugget-popup"><p>Areas of Witney (highways and locations near Bridge Street bridge) experienced flood&ndash;related issues requiring checks, de&ndash;silting and drainage maintenance to mitigate surface water flooding. (p5)</p></div><div class="nugget-popup"><p>Flooding occurred in Witney between 23 Dec 2020 and 24 Dec 2020, prompting a Section 19 investigation by West Oxfordshire District Council (WODC) in conjunction with Oxfordshire County Council (OCC). (p7)</p></div><div class="nugget-popup"><p>Multiple properties in the town reported internal flooding, prompting a formal Section 19 investigation. [PAG] (p10)</p></div><div class="nugget-popup"><p>Widespread internal and external flooding across the town. At least 54 residential and business properties were confirmed as flooding internally on 23&ndash;24 December 2020. Surface water flooding occurred on 23 December 2020 (overwhelming drainage) followed by river flooding on 24 December 2020 as upstream flows reached Witney; river levels peaked just after midnight on 25 December 2020. Multiple streets and areas were affected including Woodford Mill, Riverside Gardens, Bridge Street, West End (including Industrial Estate), Millers Mews, Newland (near Madley Brook) and Eastfield Road. [PAG] (p11)</p></div><div class="nugget-popup"><p>River Windrush experienced very high flows that led to elevated river levels in Witney: the Worsham gauge recorded a peak flow that contributed to the December 2020 flood peak recorded at Riverside Gardens. [IMG,MUL] (p12)</p></div><div class="nugget-popup"><p>Witney experienced river flooding during the event on 23&ndash;24 December 2020; the report documents high river levels on the Windrush that caused localised flood impacts around central Witney (including submerged gauge boards at Bridge Street and hydraulic effects at local structures that exacerbated high flows). [PAG] (p13)</p></div><div class="nugget-popup"><p>The town experienced river flooding during the event on 23&ndash;24 Dec 2020, evidenced by high water at Bridge Street Bridge (nearly level with the parapet) and impounded floodplain flows at Langel Common affecting nearby residents. [IMG,PAG] (p14)</p></div><div class="nugget-popup"><p>Multiple locations in the town were affected by flooding: sewer flooding occurred at Bridge Street Mills; businesses and properties were flooded; Riverside House/Gardens residents were evacuated and homes flooded; business insurance losses reported. [IMG,PAG] (p16)</p></div><div class="nugget-popup"><p>River levels rose rapidly on 23&ndash;24 December 2020 causing inundation of the river corridor and adjacent low&ndash;lying urban areas in central Witney. The EA modelled a 1&ndash;in&ndash;100 year flood extent that follows the river and floodplain through central Witney (affecting nearby districts such as Woodgreen and Newland). The EA issued a flood warning (issued late during the event) and deployed crews to investigate blockages and support residents. [IMG,PAG] (p18)</p></div><div class="nugget-popup"><p>Rapid rise in river levels during 23&ndash;24 Dec 2020 caused flooding in the town and led to a late flood warning; prompted reviews and changes to warning thresholds and further flood&ndash;risk modelling for the town. [PAG] (p19)</p></div><div class="nugget-popup"><p>The December 23&ndash;24, 2020 river flood in Witney exceeded the EA's modelled 1&ndash;in&ndash;100 year event; flows were similar to the modelled 1&ndash;in&ndash;100 year plus 20% peak, indicating an unusually large river flooding event affecting the town. [PAG] (p20)</p></div><div class="nugget-popup"><p>Witney experienced flooding during 23&ndash;24 December 2020 that exceeded the modelled 1 in 100 year flood. Floodplain connectivity problems near the Aquarius site and the raised footpath at Langel Common altered flow routes across the floodplain, contributing to larger&ndash;than&ndash;modelled flood levels in parts of the town. [PAG] (p21)</p></div><div class="nugget-popup"><p>Surface water flooding impacted Witney on 23 Dec 2020 &ndash; 24 Dec 2020. The investigation found there is minimal information on private and highway drainage systems across the town, so further investigations are required to fully understand existing drainage arrangements and any issues contributing to the flooding. [PAG] (p22)</p></div><div class="nugget-popup"><p>Flooding occurred through and downstream of Witney caused by the River Windrush, prompting recommendations for model updates, increased riparian/EA maintenance, investigation of river modifications, flood storage opportunities upstream, property flood resilience measures and community preparedness actions. [TAB] (p27)</p></div><div class="nugget-popup"><p>Witney experienced flooding during 23&ndash;24 December 2020 that reduced floodplain connectivity and prompted actions including investigating upstream flood storage and nature&ndash;based solutions, promoting property flood resilience, checking and maintaining ordinary watercourses (WODC), highway drainage checks (OCC), and investigation of Bridge Street bridge de&ndash;silting and sewer connectivity/capacity. [PAG] (p28)</p></div><div class="nugget-popup"><p>Witney experienced flooding on 23&ndash;24 December 2020 that affected ordinary watercourses, highway drainage, and sewer/drainage connectivity; affected areas are to be prioritised for checks and remedial works. (p29)</p></div><div class="nugget-popup"><p>Witney experienced flooding during the December 2020 event (23 Dec 2020 &ndash; 24 Dec 2020), which affected properties and highway infrastructure and prompted the Section 19 investigation and subsequent actions. [PAG] (p31)</p></div><div class="nugget-popup"><p>River Windrush flooding through and downstream of the town during the 23&ndash;24 Dec 2020 event, causing town&ndash;wide flood impacts that prompted the Section 19 investigation, recommendations for property&ndash;level protection, updates to modelling and improvements to flood warnings and community support. [PAG] (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>At least 54 residential and business properties [MUL] (p2)</p></div><div class="nugget-popup quant"><p>54 properties [PAG] (p11)</p></div><div class="nugget-popup quant"><p>30.348 m3/s (Worsham peak on 24/12/2020); 81.45 m AOD (Riverside Gardens peak on 25/12/2020); July 2007 comparator 29.26 m3/s [IMG,MUL] (p12)</p></div><div class="nugget-popup quant"><p>1 property with a £40,000 insurance bill; c£300,000 estimated total insurance bill for affected businesses; 13 residents evacuated from Riverside House/Gardens; 4 homes flooded; 9 residents evacuated from Mill House Care Home [IMG,PAG] (p16)</p></div><div class="nugget-popup quant"><p>greater than modelled 1 in 100 year; similar to modelled 1 in 100 year plus 20% event [PAG] (p21)</p></div></div></body></div>`)[0];
+                popup_959cf9380b88238bcfbd26a9a4431221.setContent(html_6eb9afa95f2f58c9c63df518270fc289);
+            
+        
+
+        marker_5666d5b122e9b20c7c765153284c2163.bindPopup(popup_959cf9380b88238bcfbd26a9a4431221)
+        ;
+
+        
+    
+    
+            var marker_e891765dc086db6817b41234e18dd9b6 = L.marker(
+                [51.80581574541541, -1.5068365673407977],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_bfaecb5d874a3c7c8ad35c7e98053fc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e891765dc086db6817b41234e18dd9b6.setIcon(icon_bfaecb5d874a3c7c8ad35c7e98053fc9);
+        
+    
+        var popup_992f0aca9fb6eec809ac74803f7a6f3a = L.popup({});
+
+        
+            
+                var html_1c1138e28199bf4f196608100c85edf7 = $(`<div id="html_1c1138e28199bf4f196608100c85edf7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Crawley</h1><div class="nugget-popup"><p>The report identifies opportunities for flood storage and increased floodplain capacity upstream of Witney and Crawley to manage flows and reduce flooding risk. [TAB] (p27)</p></div><div class="nugget-popup"><p>Crawley was identified as an area upstream/adjacent to Witney for which opportunities for additional flood storage and nature&ndash;based solutions were recommended following the 23&ndash;24 December 2020 flood to help manage flows and reduce downstream impacts. (p28)</p></div><div class="nugget-popup"><p>Crawley (upstream of Witney) was identified in the report as an area where additional flood storage and increased flood plain capacity should be investigated, indicating it was affected by river flooding during the incident. (p33)</p></div></div></body></div>`)[0];
+                popup_992f0aca9fb6eec809ac74803f7a6f3a.setContent(html_1c1138e28199bf4f196608100c85edf7);
+            
+        
+
+        marker_e891765dc086db6817b41234e18dd9b6.bindPopup(popup_992f0aca9fb6eec809ac74803f7a6f3a)
+        ;
+
+        
+    
+    
+            var marker_e0a9b8559476c18a6bedf3edadd44add = L.marker(
+                [51.7935318, -1.5675239],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_85bf5b9a968c5715d749bd8cf47a89e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e0a9b8559476c18a6bedf3edadd44add.setIcon(icon_85bf5b9a968c5715d749bd8cf47a89e9);
+        
+    
+        var popup_57cd695bcd4f5508613d08698d4760fb = L.popup({});
+
+        
+            
+                var html_4507a84cac76ec6b36b14a7ce599f9d8 = $(`<div id="html_4507a84cac76ec6b36b14a7ce599f9d8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Worsham</h1><div class="nugget-popup"><p>The river gauge at Worsham recorded an exceptional peak flow associated with the December 2020 flood event, providing evidence of extreme river conditions during the episode. [PAG] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30.348 m3/s peak flow recorded at Worsham gauge on 24/12/2020; July 2007 flow recorded as 29.26 m3/s. [PAG] (p12)</p></div></div></body></div>`)[0];
+                popup_57cd695bcd4f5508613d08698d4760fb.setContent(html_4507a84cac76ec6b36b14a7ce599f9d8);
+            
+        
+
+        marker_e0a9b8559476c18a6bedf3edadd44add.bindPopup(popup_57cd695bcd4f5508613d08698d4760fb)
+        ;
+
+        
+    
+    
+            var marker_08ec9dda5a5bd05fbbda5afc2cc79405 = L.marker(
+                [51.81352968909874, -1.4913088535188628],
+                {}
+            ).addTo(map_827f5f07846e6ae63d35a7a012b45769);
+        
+    
+            var icon_b11052d756f6112f4a3007e98c278937 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_08ec9dda5a5bd05fbbda5afc2cc79405.setIcon(icon_b11052d756f6112f4a3007e98c278937);
+        
+    
+        var popup_ec76f3e544c6c6e68650cf8c1f836dc9 = L.popup({});
+
+        
+            
+                var html_502d1c00f8bec29a69f03f533c31fa0c = $(`<div id="html_502d1c00f8bec29a69f03f533c31fa0c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hailey</h1><div class="nugget-popup"><p>Identified in the report among the other affected areas (Hailey/Eastfield Road) discussed during the site walkover as having been impacted by river flooding. (p13)</p></div></div></body></div>`)[0];
+                popup_ec76f3e544c6c6e68650cf8c1f836dc9.setContent(html_502d1c00f8bec29a69f03f533c31fa0c);
+            
+        
+
+        marker_08ec9dda5a5bd05fbbda5afc2cc79405.bindPopup(popup_ec76f3e544c6c6e68650cf8c1f836dc9)
+        ;
+
+        
+    
+</script>
+</html>

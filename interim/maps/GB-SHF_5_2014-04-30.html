@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fb6e5bf17c54969dd9511bdc505c8328 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fb6e5bf17c54969dd9511bdc505c8328" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fb6e5bf17c54969dd9511bdc505c8328 = L.map(
+                "map_fb6e5bf17c54969dd9511bdc505c8328",
+                {
+                    center: [53.35142552, -1.3927739533333334],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e024c4d3fca83c98e5d54c3a38b29f10 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_e024c4d3fca83c98e5d54c3a38b29f10.addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+    
+            var marker_13615cb0223bc705d67731ce3b60b680 = L.marker(
+                [53.3585368, -1.4014013],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_0169677b82984de7126894ddc5ebab2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_13615cb0223bc705d67731ce3b60b680.setIcon(icon_0169677b82984de7126894ddc5ebab2e);
+        
+    
+        var popup_57b87921e7245e66a6fbc43d6eda5e9c = L.popup({});
+
+        
+            
+                var html_d36a636af1f64ecbb3582437dff05ecf = $(`<div id="html_d36a636af1f64ecbb3582437dff05ecf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Richmond Park</h1><div class="nugget-popup"><p>Property flooding occurred in these named locations when the extreme storm on 30 April 2014 overwhelmed local drainage, producing overland exceedance flows on highways and open land; three areas (including Normanton Spring, High Street Mosborough and Richmond Park Rise) are identified as low spots within valleys and at risk on the surface water flood map. (p1)</p></div><div class="nugget-popup"><p>High overland flows originated from Richmond Park and crossed onto Outwood Academy playing fields, contributing to floodwater that entered properties through rear gardens and onto the public highway. Culvert inlet condition/blocks at the park were identified as a main cause. (p2)</p></div><div class="nugget-popup"><p>Properties at Richmond Park Rise were identified as requiring flood protection at thresholds; recommendation for Streets Ahead to include the location on the priority drainage list for gully inspection and for The Housing Company/Great Places to consider installing flood boards at property thresholds. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>24 properties in South East Sheffield (p1)</p></div></div></body></div>`)[0];
+                popup_57b87921e7245e66a6fbc43d6eda5e9c.setContent(html_d36a636af1f64ecbb3582437dff05ecf);
+            
+        
+
+        marker_13615cb0223bc705d67731ce3b60b680.bindPopup(popup_57b87921e7245e66a6fbc43d6eda5e9c)
+        ;
+
+        
+    
+    
+            var marker_c8d9f8cb684f5da264c3a2b9dd1e6e92 = L.marker(
+                [53.3584073, -1.3916168],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_83ae58cea25fb8fbb88dba167daccd62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c8d9f8cb684f5da264c3a2b9dd1e6e92.setIcon(icon_83ae58cea25fb8fbb88dba167daccd62);
+        
+    
+        var popup_ce822b6c760129acd55909a4af5c91d4 = L.popup({});
+
+        
+            
+                var html_6ad1f164e2ee68ea69ea02a93adb7a60 = $(`<div id="html_6ad1f164e2ee68ea69ea02a93adb7a60" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Outwood Academy School</h1><div class="nugget-popup"><p>School playing fields experienced high overland flows originating from Richmond Park; flows crossed the playing fields and contributed to floodwater entering nearby properties. Culvert inlet blockage/condition was identified and immediate clearance works were carried out. (p2)</p></div></div></body></div>`)[0];
+                popup_ce822b6c760129acd55909a4af5c91d4.setContent(html_6ad1f164e2ee68ea69ea02a93adb7a60);
+            
+        
+
+        marker_c8d9f8cb684f5da264c3a2b9dd1e6e92.bindPopup(popup_ce822b6c760129acd55909a4af5c91d4)
+        ;
+
+        
+    
+    
+            var marker_3228b1337b13b59026bececbb2d885ff = L.marker(
+                [53.3806626, -1.4702278],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_f173c5d1148e4b359898dfbe2d503258 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3228b1337b13b59026bececbb2d885ff.setIcon(icon_f173c5d1148e4b359898dfbe2d503258);
+        
+    
+        var popup_3f1deb60349c22de183a1255404d87a8 = L.popup({});
+
+        
+            
+                var html_3f559a32c12cf826236fd24e5bed11b6 = $(`<div id="html_3f559a32c12cf826236fd24e5bed11b6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sheffield Metropolitan District</h1><div class="nugget-popup"><p>An extreme storm on 30 April 2014 (~60 minutes, peak ~18:15) overwhelmed local drainage in south&ndash;east Sheffield causing overland exceedance flow on public highways and across open land. Property flooding occurred at Normanton Spring, High Street Mosborough and Richmond Park Rise. (p1)</p></div><div class="nugget-popup"><p>The map in Appendix A is a spatial overview showing areas in Sheffield identified as 'affected areas' in the council plan; these areas are presented for further detailed examination in subsequent plans, indicating the city contained locations impacted by the flood event. [IMG] (p6)</p></div><div class="nugget-popup"><p>The documented flood incident occurred within the Sheffield administrative area (Mosborough ward) and identifies local drainage infrastructure failures (surcharged manhole, defective culvert) relevant to city&ndash;level flood risk management. [IMG] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>24 properties; 3 areas (p1)</p></div></div></body></div>`)[0];
+                popup_3f1deb60349c22de183a1255404d87a8.setContent(html_3f559a32c12cf826236fd24e5bed11b6);
+            
+        
+
+        marker_3228b1337b13b59026bececbb2d885ff.bindPopup(popup_3f1deb60349c22de183a1255404d87a8)
+        ;
+
+        
+    
+    
+            var marker_30b30e903d5a6b3a98450900f34e3ba6 = L.marker(
+                [53.3282793, -1.363944],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_370cdfb87636437f35e25afc498e1922 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_30b30e903d5a6b3a98450900f34e3ba6.setIcon(icon_370cdfb87636437f35e25afc498e1922);
+        
+    
+        var popup_ab2777e3991bd3e65156725cc161f74d = L.popup({});
+
+        
+            
+                var html_89106b61af531d18518d04a187769877 = $(`<div id="html_89106b61af531d18518d04a187769877" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Toll House Mead</h1><div class="nugget-popup"><p>Map annotation indicates overland surface water movement at/near Toll House Mead contributing to the flood route. [IMG] (p8)</p></div></div></body></div>`)[0];
+                popup_ab2777e3991bd3e65156725cc161f74d.setContent(html_89106b61af531d18518d04a187769877);
+            
+        
+
+        marker_30b30e903d5a6b3a98450900f34e3ba6.bindPopup(popup_ab2777e3991bd3e65156725cc161f74d)
+        ;
+
+        
+    
+    
+            var marker_af738d671324d4b9b71aa4b8e93adccc = L.marker(
+                [53.3236548, -1.3609955],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_9bc04c0e6ffb2773e17a40a9bfa00a9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_af738d671324d4b9b71aa4b8e93adccc.setIcon(icon_9bc04c0e6ffb2773e17a40a9bfa00a9a);
+        
+    
+        var popup_a06e20f8eb583c006dd33558b2306ae9 = L.popup({});
+
+        
+            
+                var html_d66d5927614a63b56e5bbf73c22e5c58 = $(`<div id="html_d66d5927614a63b56e5bbf73c22e5c58" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Mosborough</h1><div class="nugget-popup"><p>Flood waters from a surcharging manhole on a watercourse culvert (in the garden of 4 Toll House Mead), with some surface water run&ndash;off from High Street, affected properties on High Street; owners of the damaged culvert were informed and sandbags were distributed to affected properties. (p2)</p></div><div class="nugget-popup"><p>Flooding at High Street, Mosborough prompted the City Council to commission a catchment and feasibility study into mitigation options and to include the culvert asset on its capital programme for grant funding. (p3)</p></div><div class="nugget-popup"><p>Map documents a flood incident originating at a surcharged manhole on High Street; water flowed southeast along the mapped route, passing through a defective watercourse culvert and producing overland flow that reached properties and public areas (toward the Club). Infrastructure weaknesses (surcharged manhole, defective culvert) are directly linked to the observed flow paths. [IMG] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties (p2)</p></div></div></body></div>`)[0];
+                popup_a06e20f8eb583c006dd33558b2306ae9.setContent(html_d66d5927614a63b56e5bbf73c22e5c58);
+            
+        
+
+        marker_af738d671324d4b9b71aa4b8e93adccc.bindPopup(popup_a06e20f8eb583c006dd33558b2306ae9)
+        ;
+
+        
+    
+    
+            var marker_ba6b031ca8549681fe6db1a51428c144 = L.marker(
+                [53.3745965, -1.4004251],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_1e2ad7a917f2d50abe2fe373667d4565 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ba6b031ca8549681fe6db1a51428c144.setIcon(icon_1e2ad7a917f2d50abe2fe373667d4565);
+        
+    
+        var popup_84bf301b95e89c60d476f9e470f89aba = L.popup({});
+
+        
+            
+                var html_50ccb359df871cf10e85e6d30fbb0ae4 = $(`<div id="html_50ccb359df871cf10e85e6d30fbb0ae4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Richmond Park Rise, Sheffield Metropolitan District</h1><div class="nugget-popup"><p>Identified as one of three low&ndash;spot areas affected by property flooding during the event and shown as at risk on the Environment Agency Flood Map for Surface Water. (p2)</p></div><div class="nugget-popup"><p>Surface water run&ndash;off from the road (road drainage overwhelmed by storm intensity) flooded properties located at the lowest point of the intersection with Avenue; properties were vulnerable because thresholds were below footway level. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties (p3)</p></div></div></body></div>`)[0];
+                popup_84bf301b95e89c60d476f9e470f89aba.setContent(html_50ccb359df871cf10e85e6d30fbb0ae4);
+            
+        
+
+        marker_ba6b031ca8549681fe6db1a51428c144.bindPopup(popup_84bf301b95e89c60d476f9e470f89aba)
+        ;
+
+        
+    
+    
+            var marker_bbb6c860291ffacd5c5f50d56591f950 = L.marker(
+                [53.3564251, -1.3948485],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_736d3513116ceb2b24bb30bfb7696783 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bbb6c860291ffacd5c5f50d56591f950.setIcon(icon_736d3513116ceb2b24bb30bfb7696783);
+        
+    
+        var popup_ed67ef44e0578e811521b69567cbfe97 = L.popup({});
+
+        
+            
+                var html_ea8a2103d01a08e3c34305ca1ebab708 = $(`<div id="html_ea8a2103d01a08e3c34305ca1ebab708" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Haxby Street, Normanton Spring</h1><div class="nugget-popup"><p>Properties on Haxby Street were affected when overland flows from Richmond Park and the Outwood Academy playing fields entered properties via rear gardens and issued onto the public highway; the City Council delivered sandbags to properties. (p2)</p></div><div class="nugget-popup"><p>Residential street inundated by converging watercourse flow and overland flow from surrounding open land; culvert/culvert inlet capacity and overland flow routes contributed to flooding. Map annotations show planned interventions (new inlet grillage, culvert surveys) to reduce future risk. [IMG] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>10 properties (collective across Haxby Street, Normanton Spring Court and Haxby Place) (p2)</p></div></div></body></div>`)[0];
+                popup_ed67ef44e0578e811521b69567cbfe97.setContent(html_ea8a2103d01a08e3c34305ca1ebab708);
+            
+        
+
+        marker_bbb6c860291ffacd5c5f50d56591f950.bindPopup(popup_ed67ef44e0578e811521b69567cbfe97)
+        ;
+
+        
+    
+    
+            var marker_6312243603bdd77d6aae0c0c5d02afa2 = L.marker(
+                [53.3563423, -1.3924177],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_55fd52be3b3b19c034ab7029a6f1a5a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6312243603bdd77d6aae0c0c5d02afa2.setIcon(icon_55fd52be3b3b19c034ab7029a6f1a5a6);
+        
+    
+        var popup_07f0566751d7ab0c201fac7d4f4366fc = L.popup({});
+
+        
+            
+                var html_8f526beb7f7d75fdf2f237ba44df7039 = $(`<div id="html_8f526beb7f7d75fdf2f237ba44df7039" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Normanton Spring Court, Sheffield Metropolitan District</h1><div class="nugget-popup"><p>Properties on Normanton Spring Court were flooded by overland flows entering through rear gardens; sandbags were delivered by the City Council following the incident. (p2)</p></div><div class="nugget-popup"><p>Residential court/estate area shown within the hatched 'area affected by flooding' where overland flow routes and watercourse culverts converge, causing inundation of properties/grounds; annotations show proposed works (new inlet grillage, culvert surveys) to mitigate future flooding. [IMG] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>10 properties (collective across Haxby Street, Normanton Spring Court and Haxby Place) (p2)</p></div></div></body></div>`)[0];
+                popup_07f0566751d7ab0c201fac7d4f4366fc.setContent(html_8f526beb7f7d75fdf2f237ba44df7039);
+            
+        
+
+        marker_6312243603bdd77d6aae0c0c5d02afa2.bindPopup(popup_07f0566751d7ab0c201fac7d4f4366fc)
+        ;
+
+        
+    
+    
+            var marker_030bee1561e96fc3f9e68ddb2394e819 = L.marker(
+                [53.3560043, -1.3959539],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_061ac0d6922df5c1e3c6d8f4df0ab56c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_030bee1561e96fc3f9e68ddb2394e819.setIcon(icon_061ac0d6922df5c1e3c6d8f4df0ab56c);
+        
+    
+        var popup_b45639132864f89c80725629d9239088 = L.popup({});
+
+        
+            
+                var html_11206c29249aa5fe17df6706e796ecc9 = $(`<div id="html_11206c29249aa5fe17df6706e796ecc9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Haxby Place, Normanton Spring</h1><div class="nugget-popup"><p>Properties on Haxby Place were affected by overland flows that entered gardens and properties; sandbags were delivered by the City Council. (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>10 properties (collective across Haxby Street, Normanton Spring Court and Haxby Place) (p2)</p></div></div></body></div>`)[0];
+                popup_b45639132864f89c80725629d9239088.setContent(html_11206c29249aa5fe17df6706e796ecc9);
+            
+        
+
+        marker_030bee1561e96fc3f9e68ddb2394e819.bindPopup(popup_b45639132864f89c80725629d9239088)
+        ;
+
+        
+    
+    
+            var marker_d48e1110826ef602b2debe8f404e0c27 = L.marker(
+                [53.3480513, -1.401122],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_525aa1b7513c3d3466bf74670fa4b7b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d48e1110826ef602b2debe8f404e0c27.setIcon(icon_525aa1b7513c3d3466bf74670fa4b7b6);
+        
+    
+        var popup_a106c987d160ca303143b93f10689433 = L.popup({});
+
+        
+            
+                var html_0a4250114961fb3d7f1866db09f35a1f = $(`<div id="html_0a4250114961fb3d7f1866db09f35a1f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Smalldale Road, Sheffield Metropolitan District</h1><div class="nugget-popup"><p>Flood waters from surface run&ndash;off (road drainage overwhelmed by storm intensity) affected properties; sewage surcharging from an adjacent foul sewer contributed to the flooding. (p3)</p></div><div class="nugget-popup"><p>Combined sewer on Smalldale Road identified with root infiltration risk; recommendation for Yorkshire Water to place the combined sewer on an annual check for root infiltration and for Streets Ahead contractor to add the location to the priority drainage list for inspection of road gullies. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties (p3)</p></div></div></body></div>`)[0];
+                popup_a106c987d160ca303143b93f10689433.setContent(html_0a4250114961fb3d7f1866db09f35a1f);
+            
+        
+
+        marker_d48e1110826ef602b2debe8f404e0c27.bindPopup(popup_a106c987d160ca303143b93f10689433)
+        ;
+
+        
+    
+    
+            var marker_9ff925c490855e6db28d7deaccb16992 = L.marker(
+                [53.37417, -1.3984396],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_dfe4edadb1daaf202dd604c498052b32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9ff925c490855e6db28d7deaccb16992.setIcon(icon_dfe4edadb1daaf202dd604c498052b32);
+        
+    
+        var popup_bc89bd05ff8f6e2bff388ca2f772176c = L.popup({});
+
+        
+            
+                var html_3998f8dee1b7b59b11d561111c56c4ad = $(`<div id="html_3998f8dee1b7b59b11d561111c56c4ad" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Richmond Park Avenue, Sheffield Metropolitan District</h1><div class="nugget-popup"><p>Surface water run&ndash;off from the road (drainage overwhelmed by storm intensity) contributed to flooding at the intersection with Richmond Park Rise, affecting properties at the lowest point. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties (p3)</p></div></div></body></div>`)[0];
+                popup_bc89bd05ff8f6e2bff388ca2f772176c.setContent(html_3998f8dee1b7b59b11d561111c56c4ad);
+            
+        
+
+        marker_9ff925c490855e6db28d7deaccb16992.bindPopup(popup_bc89bd05ff8f6e2bff388ca2f772176c)
+        ;
+
+        
+    
+    
+            var marker_3a6a5c8b0eb0a2521ce9e0ae073dc060 = L.marker(
+                [53.3265103, -1.3643532],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_c222c3640898e523bf4825ca45f9cb31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3a6a5c8b0eb0a2521ce9e0ae073dc060.setIcon(icon_c222c3640898e523bf4825ca45f9cb31);
+        
+    
+        var popup_bde67f213ad88e557567976bab330cd3 = L.popup({});
+
+        
+            
+                var html_ff4cb2c7940d49b14344baa00795bfc9 = $(`<div id="html_ff4cb2c7940d49b14344baa00795bfc9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hillside, Sheffield Metropolitan District</h1><div class="nugget-popup"><p>The map shows the flood flow path passing adjacent to/through the Hillside area as water moved southeast from the surcharged manhole toward the defective culvert and downstream locations; Hillside is therefore likely to have experienced overland flow or related urban flooding during the event. [IMG] (p8)</p></div></div></body></div>`)[0];
+                popup_bde67f213ad88e557567976bab330cd3.setContent(html_ff4cb2c7940d49b14344baa00795bfc9);
+            
+        
+
+        marker_3a6a5c8b0eb0a2521ce9e0ae073dc060.bindPopup(popup_bde67f213ad88e557567976bab330cd3)
+        ;
+
+        
+    
+    
+            var marker_703962e37a789b01dcc20cc62241eb06 = L.marker(
+                [53.3558905, -1.3919943],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_e8c0a532925e4fbdb427c0f0dd6009b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_703962e37a789b01dcc20cc62241eb06.setIcon(icon_e8c0a532925e4fbdb427c0f0dd6009b1);
+        
+    
+        var popup_b2e8ffa4d9cc8b235e5b60eb287394e3 = L.popup({});
+
+        
+            
+                var html_8f36ec75823f0919c3210e2054912a90 = $(`<div id="html_8f36ec75823f0919c3210e2054912a90" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Normanton Spring</h1><div class="nugget-popup"><p>Property flooding occurred in these named locations when the extreme storm on 30 April 2014 overwhelmed local drainage, producing overland exceedance flows on highways and open land; three areas (including Normanton Spring, High Street Mosborough and Richmond Park Rise) are identified as low spots within valleys and at risk on the surface water flood map. (p1)</p></div><div class="nugget-popup"><p>High overland flows from Richmond Park crossed Outwood Academy school playing fields and entered properties via rear gardens before issuing onto the public highway; properties flooded and immediate culvert inlet clearance was carried out; sandbags were delivered to affected properties. (p2)</p></div><div class="nugget-popup"><p>The settlement area (including Haxby Street and Normanton Spring Court) experienced flooding from converging watercourse flows and overland flow routes, resulting in an area of residential inundation and highlighting the need for culvert/inlet improvements. [IMG] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>24 properties in South East Sheffield (p1)</p></div><div class="nugget-popup quant"><p>10 properties (p2)</p></div></div></body></div>`)[0];
+                popup_b2e8ffa4d9cc8b235e5b60eb287394e3.setContent(html_8f36ec75823f0919c3210e2054912a90);
+            
+        
+
+        marker_703962e37a789b01dcc20cc62241eb06.bindPopup(popup_b2e8ffa4d9cc8b235e5b60eb287394e3)
+        ;
+
+        
+    
+    
+            var marker_f4022a5c04601f53038dfc2a3f483556 = L.marker(
+                [53.3249858, -1.3629543],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_9bdeffe7811998ef7d1efacf0f31812b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f4022a5c04601f53038dfc2a3f483556.setIcon(icon_9bdeffe7811998ef7d1efacf0f31812b);
+        
+    
+        var popup_58a74674742aa231c91b8592d9ebc23b = L.popup({});
+
+        
+            
+                var html_9dca82ed40769caeff8e98ddc832b376 = $(`<div id="html_9dca82ed40769caeff8e98ddc832b376" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mosborough</h1><div class="nugget-popup"><p>Property flooding occurred in these named locations when the extreme storm on 30 April 2014 overwhelmed local drainage, producing overland exceedance flows on highways and open land; three areas (including Normanton Spring, High Street Mosborough and Richmond Park Rise) are identified as low spots within valleys and at risk on the surface water flood map. (p1)</p></div><div class="nugget-popup"><p>The map records a flood event within Mosborough (High Street area) where overland flows and a surcharged manhole led to flooding along a sequence of streets and through a defective culvert, affecting the local residential area. [IMG] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>24 properties in South East Sheffield (p1)</p></div></div></body></div>`)[0];
+                popup_58a74674742aa231c91b8592d9ebc23b.setContent(html_9dca82ed40769caeff8e98ddc832b376);
+            
+        
+
+        marker_f4022a5c04601f53038dfc2a3f483556.bindPopup(popup_58a74674742aa231c91b8592d9ebc23b)
+        ;
+
+        
+    
+    
+            var marker_184a15abf6ca7a00d898d50a352cd977 = L.marker(
+                [53.3488659, -1.4009153],
+                {}
+            ).addTo(map_fb6e5bf17c54969dd9511bdc505c8328);
+        
+    
+            var icon_7d1a7035832a8f57b615f3bd675ba1b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_184a15abf6ca7a00d898d50a352cd977.setIcon(icon_7d1a7035832a8f57b615f3bd675ba1b5);
+        
+    
+        var popup_af7cc8ec573751f9e63fd80d31329a21 = L.popup({});
+
+        
+            
+                var html_b6ec8be6b737c48a912385597b76c8f9 = $(`<div id="html_b6ec8be6b737c48a912385597b76c8f9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Frecheville</h1><div class="nugget-popup"><p>Property flooding occurred in these named locations when the extreme storm on 30 April 2014 overwhelmed local drainage, producing overland exceedance flows on highways and open land; three areas (including Normanton Spring, High Street Mosborough and Richmond Park Rise) are identified as low spots within valleys and at risk on the surface water flood map. (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>24 properties in South East Sheffield (p1)</p></div></div></body></div>`)[0];
+                popup_af7cc8ec573751f9e63fd80d31329a21.setContent(html_b6ec8be6b737c48a912385597b76c8f9);
+            
+        
+
+        marker_184a15abf6ca7a00d898d50a352cd977.bindPopup(popup_af7cc8ec573751f9e63fd80d31329a21)
+        ;
+
+        
+    
+</script>
+</html>

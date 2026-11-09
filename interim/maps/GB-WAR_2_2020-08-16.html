@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a064e4d26bf07a540236175fbc417563 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a064e4d26bf07a540236175fbc417563" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a064e4d26bf07a540236175fbc417563 = L.map(
+                "map_a064e4d26bf07a540236175fbc417563",
+                {
+                    center: [52.231381422599355, -1.7017845517212935],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_52672d471f07ff5c0dea53b99ee638c9 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_52672d471f07ff5c0dea53b99ee638c9.addTo(map_a064e4d26bf07a540236175fbc417563);
+    
+            var marker_4f04801e8d91d4f7eafb53a84dfdac32 = L.marker(
+                [52.24464288318919, -1.668153194049851],
+                {}
+            ).addTo(map_a064e4d26bf07a540236175fbc417563);
+        
+    
+            var icon_0e612c6327ab23df2082353b5a2697f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4f04801e8d91d4f7eafb53a84dfdac32.setIcon(icon_0e612c6327ab23df2082353b5a2697f8);
+        
+    
+        var popup_bbf4ea392cdd45e24c03bd21cb85394c = L.popup({});
+
+        
+            
+                var html_78531937bd1fe648809e7a5d83961bd6 = $(`<div id="html_78531937bd1fe648809e7a5d83961bd6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bell Brook</h1><div class="nugget-popup"><p>Flows from the ordinary watercourse associated with Bell Brook came out of bank and generated a primary surface&ndash;water flow route down the public right of way onto Duffins Piece; secondary overland flows from higher agricultural land also entered Duffins Piece. The degraded channel morphology (vegetation and self&ndash;set trees/saplings occupying the channel) contributed to the overflow and would require significant vegetation/tree removal for maintenance. (p14)</p></div><div class="nugget-popup"><p>The Bell Brook (main river) was implicated in local flooding through Snitterfield and is the subject of a modelling exercise to understand flows from Smith's Lane to downstream ponds; contributed to the event that led to internal flooding of properties in the village. [TAB] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties internally flooded (p14)</p></div><div class="nugget-popup quant"><p>6 properties [TAB] (p19)</p></div></div></body></div>`)[0];
+                popup_bbf4ea392cdd45e24c03bd21cb85394c.setContent(html_78531937bd1fe648809e7a5d83961bd6);
+            
+        
+
+        marker_4f04801e8d91d4f7eafb53a84dfdac32.bindPopup(popup_bbf4ea392cdd45e24c03bd21cb85394c)
+        ;
+
+        
+    
+    
+            var marker_91e2a50d9bfedfeb9d4c02fdd1b7e634 = L.marker(
+                [52.2335647, -1.6917575],
+                {}
+            ).addTo(map_a064e4d26bf07a540236175fbc417563);
+        
+    
+            var icon_f948f260358a6db493a6cf58b83c86ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_91e2a50d9bfedfeb9d4c02fdd1b7e634.setIcon(icon_f948f260358a6db493a6cf58b83c86ce);
+        
+    
+        var popup_462bdb4530de0b23b5483850c0ef50c1 = L.popup({});
+
+        
+            
+                var html_ebde659166277bcf30094c6146138273 = $(`<div id="html_ebde659166277bcf30094c6146138273" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Duffins Piece, Snitterfield</h1><div class="nugget-popup"><p>Overtopping of a small unnamed ordinary watercourse led flows along a public right of way into the private tarmacked access road (which has no formal drainage). Resulting flows entered properties and adjacent arable land; the event caused internal flooding of properties and significant surface flow along the access. [IMG] (p9)</p></div><div class="nugget-popup"><p>Two distinct surface&ndash;water/overland flow routes entered the Duffins Piece area during the 16 August 2020 event. Primary flow overtopped an ordinary watercourse and travelled down a public right of way onto Duffins Piece; a secondary overland flow breached a raised vehicle access and entered via a gated field access. Flows entered two properties where internal thresholds were lower than or comparable to the unadopted highway. Inspection found the ordinary watercourse had lost much of its original profile and was obstructed by self&ndash;set trees and saplings, reducing conveyance and likely increasing flood risk. [PAG] (p14)</p></div><div class="nugget-popup"><p>Internal flooding of properties caused by exceedance of the ordinary watercourse at Duffins Piece; inundation affected nearby low&ndash;lying land and resulted in property interiors being flooded. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [IMG] (p9)</p></div><div class="nugget-popup quant"><p>2 properties internally flooded; 0 properties externally flooded; 0 critical infrastructure flooded [PAG] (p14)</p></div><div class="nugget-popup quant"><p>2 properties internally flooded (p15)</p></div></div></body></div>`)[0];
+                popup_462bdb4530de0b23b5483850c0ef50c1.setContent(html_ebde659166277bcf30094c6146138273);
+            
+        
+
+        marker_91e2a50d9bfedfeb9d4c02fdd1b7e634.bindPopup(popup_462bdb4530de0b23b5483850c0ef50c1)
+        ;
+
+        
+    
+    
+            var marker_4d9d5df6e5bf6daa5fa95812d97405d5 = L.marker(
+                [52.2314543, -1.6984831],
+                {}
+            ).addTo(map_a064e4d26bf07a540236175fbc417563);
+        
+    
+            var icon_51966c78a8ab7f67bad54d91604b8095 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4d9d5df6e5bf6daa5fa95812d97405d5.setIcon(icon_51966c78a8ab7f67bad54d91604b8095);
+        
+    
+        var popup_3eeb84eddb03f83f3a4fe20507d1fd01 = L.popup({});
+
+        
+            
+                var html_380a720b461cc2faf70716f1d0e453ad = $(`<div id="html_380a720b461cc2faf70716f1d0e453ad" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Green, Snitterfield</h1><div class="nugget-popup"><p>Surface water flows from higher ground caused low&ndash;level water ingress through a flagstone floor, resulting in internal flooding of at least one property; residents were inconclusive whether this was from overland flow routes or a localised rising water table. [IMG] (p10)</p></div><div class="nugget-popup"><p>Surface water flows from higher ground to the west reached properties on The Green causing low&ndash;level water accumulation through a flag stone floor; residents reported flooding but were inconclusive on whether flows or a localised rising water table caused it. [IMG] (p11)</p></div><div class="nugget-popup"><p>The Green area experienced surface water flows from higher agricultural land to the north&ndash;east that accumulated on impermeable areas (driveways, highway) and led to external garden and highway flooding during the 16 August 2020 event. One property at The Green is reported to have suffered low&ndash;level internal flooding (ingress through flagstone floor due to raised water table). [PAG] (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Properties internally flooded 1; Properties externally flooded 2+ [PAG] (p16)</p></div></div></body></div>`)[0];
+                popup_3eeb84eddb03f83f3a4fe20507d1fd01.setContent(html_380a720b461cc2faf70716f1d0e453ad);
+            
+        
+
+        marker_4d9d5df6e5bf6daa5fa95812d97405d5.bindPopup(popup_3eeb84eddb03f83f3a4fe20507d1fd01)
+        ;
+
+        
+    
+    
+            var marker_ac16a68e0d33af65bd6b5e4a4495375e = L.marker(
+                [52.2368247, -1.6891811],
+                {}
+            ).addTo(map_a064e4d26bf07a540236175fbc417563);
+        
+    
+            var icon_a0282fbd87db350aea7b40e9217c6b4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ac16a68e0d33af65bd6b5e4a4495375e.setIcon(icon_a0282fbd87db350aea7b40e9217c6b4f);
+        
+    
+        var popup_5eabc0e17a7e36b5065b79c06a80f16a = L.popup({});
+
+        
+            
+                var html_52632568e0c646def1ca60397fd8eb45 = $(`<div id="html_52632568e0c646def1ca60397fd8eb45" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>School Road, Snitterfield</h1><div class="nugget-popup"><p>Surface water flows from higher agricultural land and private estate overwhelmed existing drainage and caused chambers to surcharge, leading to flooding along School Road. Flows routed from Hales Close and Duttons Close were a significant contributing factor. [PAG] (p10)</p></div><div class="nugget-popup"><p>Surface water flows from higher agricultural land and a private estate exploited topography, overwhelming drainage infrastructure and causing drainage chambers to surcharge; flows from Hales Close/Duttons Close were a significant contributing factor to reported flooding. [PAG] (p11)</p></div><div class="nugget-popup"><p>School Lane (sic) is reported as one of the areas within Snitterfield that experienced the most significant impacts from historical and the 16 August 2020 surface water flooding; it is identified as a focal area for flood impacts during events though no single&ndash;property counts are given in this text. (p16)</p></div><div class="nugget-popup"><p>Highway drainage/gullies on School Lane (sic) require cyclic gully cleansing to reduce highway flooding and manage surface water runoff impacting the road and nearby properties. (p17)</p></div><div class="nugget-popup"><p>Foul drainage issues investigated with a CCTV survey of manholes (3801 to 4001) following internal property flooding in the area; sewer&ndash;related flows contributed to local flooding. [TAB] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB,PAG] (p17)</p></div><div class="nugget-popup quant"><p>6 properties [TAB] (p19)</p></div></div></body></div>`)[0];
+                popup_5eabc0e17a7e36b5065b79c06a80f16a.setContent(html_52632568e0c646def1ca60397fd8eb45);
+            
+        
+
+        marker_ac16a68e0d33af65bd6b5e4a4495375e.bindPopup(popup_5eabc0e17a7e36b5065b79c06a80f16a)
+        ;
+
+        
+    
+    
+            var marker_25347bccef6c5470e2a673d321bcaecc = L.marker(
+                [52.2387091, -1.6889975],
+                {}
+            ).addTo(map_a064e4d26bf07a540236175fbc417563);
+        
+    
+            var icon_928370c9fd7db14db9a41935a54bbf19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_25347bccef6c5470e2a673d321bcaecc.setIcon(icon_928370c9fd7db14db9a41935a54bbf19);
+        
+    
+        var popup_1a943723e3854ef315728d1236189199 = L.popup({});
+
+        
+            
+                var html_15726468ad0f2c6b17d6412150132aed = $(`<div id="html_15726468ad0f2c6b17d6412150132aed" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hales Close, Snitterfield</h1><div class="nugget-popup"><p>Surface water flows from this higher ground exploited topography and generated flow routes that contributed significantly to surcharge of drainage and subsequent flooding reported on School Road. [PAG] (p10)</p></div><div class="nugget-popup"><p>Existing drainage at Hales Close is being investigated (STW investigating) following flood impacts noted in the investigation; actions target drainage improvements to reduce future internal flooding risk. [TAB] (p19)</p></div></div></body></div>`)[0];
+                popup_1a943723e3854ef315728d1236189199.setContent(html_15726468ad0f2c6b17d6412150132aed);
+            
+        
+
+        marker_25347bccef6c5470e2a673d321bcaecc.bindPopup(popup_1a943723e3854ef315728d1236189199)
+        ;
+
+        
+    
+    
+            var marker_485b3c781f4c0f22485099be75ef1388 = L.marker(
+                [52.2381685, -1.6882524],
+                {}
+            ).addTo(map_a064e4d26bf07a540236175fbc417563);
+        
+    
+            var icon_9145f8042001fd5af6028a1cdc5629d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_485b3c781f4c0f22485099be75ef1388.setIcon(icon_9145f8042001fd5af6028a1cdc5629d7);
+        
+    
+        var popup_486060ec3a3ffb6f29bea6779aa24d9f = L.popup({});
+
+        
+            
+                var html_c02fa1306653fa6cb655a758d9f58dd7 = $(`<div id="html_c02fa1306653fa6cb655a758d9f58dd7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Duttons Close, Snitterfield</h1><div class="nugget-popup"><p>Surface water flows from this area followed flow routes consistent with resident reports and were a significant contributing factor to drainage surcharge and flooding on School Road. [PAG] (p10)</p></div><div class="nugget-popup"><p>Drainage at Duttons Close (and nearby Hales Close) was investigated by Severn Trent Water on a no&ndash;prejudice basis following flooding; the location is associated with the local internal property flooding incident and drainage failures were examined. [TAB] (p19)</p></div></div></body></div>`)[0];
+                popup_486060ec3a3ffb6f29bea6779aa24d9f.setContent(html_c02fa1306653fa6cb655a758d9f58dd7);
+            
+        
+
+        marker_485b3c781f4c0f22485099be75ef1388.bindPopup(popup_486060ec3a3ffb6f29bea6779aa24d9f)
+        ;
+
+        
+    
+    
+            var marker_87cc14a85cc9526f9ebcdc3162e2d233 = L.marker(
+                [52.2357674, -1.6879197],
+                {}
+            ).addTo(map_a064e4d26bf07a540236175fbc417563);
+        
+    
+            var icon_becf00c557476eda2866379993f1c9a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_87cc14a85cc9526f9ebcdc3162e2d233.setIcon(icon_becf00c557476eda2866379993f1c9a5);
+        
+    
+        var popup_c4887e1d32e93037c8ddf85fa4ef1c06 = L.popup({});
+
+        
+            
+                var html_1177b1b934e8b512d83d3ba23366ded6 = $(`<div id="html_1177b1b934e8b512d83d3ba23366ded6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Smiths Lane, Snitterfield</h1><div class="nugget-popup"><p>Shown on the EA surface water extent mapping for the village as lying within the mapped surface water flood extent (central area highlighted), indicating it was affected by surface water flooding during the event mapping. [PAG,IMG] (p11)</p></div><div class="nugget-popup"><p>Smith's Lane lies along the reach of Bell Brook being modelled; the lane and adjacent drains were targeted for assessment because of flooding risk and likely local inundation or drainage impacts during the event. [TAB] (p19)</p></div></div></body></div>`)[0];
+                popup_c4887e1d32e93037c8ddf85fa4ef1c06.setContent(html_1177b1b934e8b512d83d3ba23366ded6);
+            
+        
+
+        marker_87cc14a85cc9526f9ebcdc3162e2d233.bindPopup(popup_c4887e1d32e93037c8ddf85fa4ef1c06)
+        ;
+
+        
+    
+    
+            var marker_b09409a9dfdc0b500855e9db5593f7f0 = L.marker(
+                [52.2386182, -1.682788],
+                {}
+            ).addTo(map_a064e4d26bf07a540236175fbc417563);
+        
+    
+            var icon_954870c3d9c3bf04e2f8fb8af3381950 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b09409a9dfdc0b500855e9db5593f7f0.setIcon(icon_954870c3d9c3bf04e2f8fb8af3381950);
+        
+    
+        var popup_20745c2950d9ac30e24d32e2b16ff432 = L.popup({});
+
+        
+            
+                var html_17508f2e1dac7a77faabc8b5acb2b3d8 = $(`<div id="html_17508f2e1dac7a77faabc8b5acb2b3d8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Lane, Snitterfield</h1><div class="nugget-popup"><p>Included in the EA surface water extent mapping and identified in the map summary as being in the central area where surface water flooding risk/extent is concentrated, indicating it was affected by surface water flooding in the mapped event. [PAG,IMG] (p11)</p></div></div></body></div>`)[0];
+                popup_20745c2950d9ac30e24d32e2b16ff432.setContent(html_17508f2e1dac7a77faabc8b5acb2b3d8);
+            
+        
+
+        marker_b09409a9dfdc0b500855e9db5593f7f0.bindPopup(popup_20745c2950d9ac30e24d32e2b16ff432)
+        ;
+
+        
+    
+    
+            var marker_a1f9ba9158e165070ad7ad0332a2a431 = L.marker(
+                [52.3213064, -1.5536906],
+                {}
+            ).addTo(map_a064e4d26bf07a540236175fbc417563);
+        
+    
+            var icon_15faf94656ba1a066714fb145c036475 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a1f9ba9158e165070ad7ad0332a2a431.setIcon(icon_15faf94656ba1a066714fb145c036475);
+        
+    
+        var popup_fbd970b894050634a339174e423f5fdd = L.popup({});
+
+        
+            
+                var html_8f74e75df508c7bc7f7a9a7c6aa8e963 = $(`<div id="html_8f74e75df508c7bc7f7a9a7c6aa8e963" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Warwickshire</h1><div class="nugget-popup"><p>Isolated heavy rainfall on 16 August 2020 caused surface water flooding across parts of the county, resulting in internal flooding to properties and businesses; some properties also experienced foul (sewer) flooding that restricted toilet use. (p3)</p></div><div class="nugget-popup"><p>The reported flood event occurred within Warwickshire (in Snitterfield), prompting Section 19 investigation, remedial works and drainage investigations by county and partner RMAs. (p4)</p></div><div class="nugget-popup"><p>The investigation map and description indicate a flooded property within Warwickshire associated with the Snitterfield investigation. [IMG] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>at least 6 properties internally flooded (p3)</p></div><div class="nugget-popup quant"><p>1 property [IMG] (p8)</p></div></div></body></div>`)[0];
+                popup_fbd970b894050634a339174e423f5fdd.setContent(html_8f74e75df508c7bc7f7a9a7c6aa8e963);
+            
+        
+
+        marker_a1f9ba9158e165070ad7ad0332a2a431.bindPopup(popup_fbd970b894050634a339174e423f5fdd)
+        ;
+
+        
+    
+    
+            var marker_38e39531e625ebbb0018f36e36bfdc87 = L.marker(
+                [52.236336, -1.6860312],
+                {}
+            ).addTo(map_a064e4d26bf07a540236175fbc417563);
+        
+    
+            var icon_57f2289b5b759e21f637bba5fb069f68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_38e39531e625ebbb0018f36e36bfdc87.setIcon(icon_57f2289b5b759e21f637bba5fb069f68);
+        
+    
+        var popup_3c2529e6095258abebd7b33d0808d34d = L.popup({});
+
+        
+            
+                var html_9c2be3d042d5a2bc436f487b8c7aa3ea = $(`<div id="html_9c2be3d042d5a2bc436f487b8c7aa3ea" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Snitterfield</h1><div class="nugget-popup"><p>Flooding occurred in the village on the reported event date; recovery and remedial works were undertaken and investigations of the drained (drainage) network carried out by WCC together with partner RMAs; parts of remedial works remain ongoing. [PAG] (p4)</p></div><div class="nugget-popup"><p>Short, intense convective rainfall (peaking late afternoon/early evening) caused localised highway flooding and led to water ingress through the fabric of multiple properties (anecdotal reports collated 17 Aug). Radar data for 16 Aug 2020 correlate peak rainfall rates with the period of reported flooding. [MUL] (p6)</p></div><div class="nugget-popup"><p>Short, localised intense rainfall caused water ingress through the fabric of buildings (not associated with fluvial mechanisms), resulting in internal property ingress across the village. [PAG] (p7)</p></div><div class="nugget-popup"><p>Short&ndash;duration, high&ndash;intensity rainfall on 16th August 2020 produced surface water flows and inundation of artificial drainage (including sewers). Flows exploited the built environment (highways, hardscaped gardens), channelled water, deposited large amounts of silt on the highway and caused flooding reported across three main areas of the village (including Duffins Piece and The Green). (p9)</p></div><div class="nugget-popup"><p>Short&ndash;duration, high&ndash;intensity rainfall on 16 Aug 2020 caused surface water flows and inundation/surcharging of artificial drainage (sewers), with flow routes exploiting highways and hardscaped areas. Flooding was reported in three main areas (Duffins Piece, The Green, School Road); drainage chambers were overwhelmed and silt was deposited onto highways. [PAG,IMG] (p10)</p></div><div class="nugget-popup"><p>On 16th August 2020 surface&ndash;water flows from higher ground impacted the village: properties on The Green experienced low&ndash;level internal water accumulation through a flagstone floor, and flows along School Road (from Hales Close/Duttons Close) overwhelmed drainage causing drainage chambers to surcharge; central parts along the village waterway showed the highest surface&ndash;water extents on EA mapping. [IMG] (p11)</p></div><div class="nugget-popup"><p>Snitterfield has a recorded history of property flooding in 1998, 2007, 2012, 2016, 2019 and 2020. During the 16 August 2020 event surface&ndash;water/overland flows associated with an ordinary watercourse and runoff from agricultural land caused internal flooding to properties in the Duffins Piece area of the village. [PAG,MUL] (p14)</p></div><div class="nugget-popup"><p>During the 16 August 2020 rainfall event Snitterfield experienced significant localised surface water accumulations and flows entering the highway from higher surrounding land. Reports recorded highway and garden flooding across the village and at least one property suffered low&ndash;level internal flooding (ingress through a flagstone floor caused by a raised local water table). Post&ndash;event inspections by Warwickshire County Council and the Environment Agency gathered further evidence but could not fully establish the precise mode of flooding. [PAG] (p16)</p></div><div class="nugget-popup"><p>Residential area in Snitterfield experienced internal flooding of properties (six properties internally flooded). Multiple investigatory and mitigation actions were taken including gully cleansing, CCTV of sewers, river/stream modelling and ditch maintenance discussions. (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>three main areas; 2 properties (p9)</p></div><div class="nugget-popup quant"><p>2 properties [PAG,IMG] (p10)</p></div><div class="nugget-popup quant"><p>2 properties internally flooded (Duffins Piece, 16 August 2020) [PAG,MUL] (p14)</p></div><div class="nugget-popup quant"><p>Properties internally flooded 1; Properties externally flooded 2+ [PAG] (p16)</p></div><div class="nugget-popup quant"><p>6 properties (p19)</p></div></div></body></div>`)[0];
+                popup_3c2529e6095258abebd7b33d0808d34d.setContent(html_9c2be3d042d5a2bc436f487b8c7aa3ea);
+            
+        
+
+        marker_38e39531e625ebbb0018f36e36bfdc87.bindPopup(popup_3c2529e6095258abebd7b33d0808d34d)
+        ;
+
+        
+    
+    
+            var marker_01b359ddc269232166bde81216c42505 = L.marker(
+                [52.2814519, -1.5815742],
+                {}
+            ).addTo(map_a064e4d26bf07a540236175fbc417563);
+        
+    
+            var icon_48035771e870be03e918a788b8750212 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_01b359ddc269232166bde81216c42505.setIcon(icon_48035771e870be03e918a788b8750212);
+        
+    
+        var popup_16cdf9c67bb0ed7ab2d7121e27effc8c = L.popup({});
+
+        
+            
+                var html_0a1c8d45ead03503c59b57fbf36d1cb5 = $(`<div id="html_0a1c8d45ead03503c59b57fbf36d1cb5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Warwick</h1><div class="nugget-popup"><p>Flooding occurred in Warwick that met the threshold for a formal S.19 investigation (this location is subject to a separate S.19 report). [IMG] (p8)</p></div></div></body></div>`)[0];
+                popup_16cdf9c67bb0ed7ab2d7121e27effc8c.setContent(html_0a1c8d45ead03503c59b57fbf36d1cb5);
+            
+        
+
+        marker_01b359ddc269232166bde81216c42505.bindPopup(popup_16cdf9c67bb0ed7ab2d7121e27effc8c)
+        ;
+
+        
+    
+    
+            var marker_bf2591acbf4b0fdf6dc317bb5b9c9220 = L.marker(
+                [52.21502, -1.8695765],
+                {}
+            ).addTo(map_a064e4d26bf07a540236175fbc417563);
+        
+    
+            var icon_17704cb9829e919e3a31edd89c5dab25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bf2591acbf4b0fdf6dc317bb5b9c9220.setIcon(icon_17704cb9829e919e3a31edd89c5dab25);
+        
+    
+        var popup_75b0ef6415b193c8abb24bce211d0b72 = L.popup({});
+
+        
+            
+                var html_5471dda11dc87eb632b491b560453cfd = $(`<div id="html_5471dda11dc87eb632b491b560453cfd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Alcester</h1><div class="nugget-popup"><p>Map inset (labelled Alcester) shows a flooded property marked with a green circle, indicating at least one property experienced flooding. [IMG] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [IMG] (p8)</p></div></div></body></div>`)[0];
+                popup_75b0ef6415b193c8abb24bce211d0b72.setContent(html_5471dda11dc87eb632b491b560453cfd);
+            
+        
+
+        marker_bf2591acbf4b0fdf6dc317bb5b9c9220.bindPopup(popup_75b0ef6415b193c8abb24bce211d0b72)
+        ;
+
+        
+    
+</script>
+</html>

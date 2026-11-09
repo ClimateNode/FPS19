@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6a0a8fefbaf5356599757aa05767bc56 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6a0a8fefbaf5356599757aa05767bc56" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6a0a8fefbaf5356599757aa05767bc56 = L.map(
+                "map_6a0a8fefbaf5356599757aa05767bc56",
+                {
+                    center: [52.9755841, -1.11180105],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_77c329f14a452ed50b3bce72f01c94b0 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_77c329f14a452ed50b3bce72f01c94b0.addTo(map_6a0a8fefbaf5356599757aa05767bc56);
+    
+            var marker_252260cf761fbd6dd2dcf39158fc6145 = L.marker(
+                [52.9562496, -1.0830733],
+                {}
+            ).addTo(map_6a0a8fefbaf5356599757aa05767bc56);
+        
+    
+            var icon_3eac771b7558114ec7301509e1b92a4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_252260cf761fbd6dd2dcf39158fc6145.setIcon(icon_3eac771b7558114ec7301509e1b92a4e);
+        
+    
+        var popup_22de20aa7f0bb5a135aa70d25936a916 = L.popup({});
+
+        
+            
+                var html_0f8737b385d4ed06025a3430610b730c = $(`<div id="html_0f8737b385d4ed06025a3430610b730c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Churchill Business Park</h1><div class="nugget-popup"><p>Internal flooding of business units within the business park. [PAG] (p2)</p></div><div class="nugget-popup"><p>Flooding occurred within the business park when a watercourse could not discharge to the River Trent due to high river levels from Storm Henk; channel capacity was exceeded and five business units were internally flooded. A second watercourse at the park's southwest boundary may also have contributed via the same mechanism. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Water from a watercourse could not discharge into the River Trent because of high river levels, causing the channel to exceed capacity and flood areas of the business park; a second watercourse at the southwest boundary may also have contributed to raised water levels. [IMG,PAG] (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 businesses [PAG] (p2)</p></div><div class="nugget-popup quant"><p>5 business properties [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>5 business properties [IMG,PAG] (p4)</p></div></div></body></div>`)[0];
+                popup_22de20aa7f0bb5a135aa70d25936a916.setContent(html_0f8737b385d4ed06025a3430610b730c);
+            
+        
+
+        marker_252260cf761fbd6dd2dcf39158fc6145.bindPopup(popup_22de20aa7f0bb5a135aa70d25936a916)
+        ;
+
+        
+    
+    
+            var marker_596928ca91030be2ed8b318da274e32e = L.marker(
+                [52.8770582, -1.3062493],
+                {}
+            ).addTo(map_6a0a8fefbaf5356599757aa05767bc56);
+        
+    
+            var icon_a568716492d63a7975848d2632f42c2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_596928ca91030be2ed8b318da274e32e.setIcon(icon_a568716492d63a7975848d2632f42c2e);
+        
+    
+        var popup_a7437a114b0f4d9c8bc0ed6f2025bc8b = L.popup({});
+
+        
+            
+                var html_992ac8e8982acb3d4685f74f67066ecc = $(`<div id="html_992ac8e8982acb3d4685f74f67066ecc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Trent</h1><div class="nugget-popup"><p>Between 2 and 4 January 2024 water levels in the River Trent at Colwick rose to near&ndash;record levels and were the primary cause of the flooding that led to internal flooding of properties in Colwick. [PAG] (p1)</p></div><div class="nugget-popup"><p>Water levels within the River Trent at Colwick rose to near&ndash;record levels due to sustained rainfall over a saturated catchment, causing flooding of roads and properties in Colwick. (p2)</p></div><div class="nugget-popup"><p>High water levels in the River Trent during Storm Henk prevented local watercourses from discharging to the river, causing backwater in those channels and contributing to internal flooding of residential and business properties in Vale Road, Charworth Road and Churchill Business Park. [PAG] (p3)</p></div><div class="nugget-popup"><p>High water levels in the River Trent (driven by rainfall during Storm Henk) prevented the local watercourse from discharging, producing backwater that caused channel capacity exceedance and internal flooding to nearby residential and business properties. [PAG] (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>16 residential properties; 5 businesses [PAG] (p1)</p></div><div class="nugget-popup quant"><p>16 residential properties; 5 business properties [PAG] (p3)</p></div><div class="nugget-popup quant"><p>16 residential properties; 5 business properties [PAG] (p4)</p></div></div></body></div>`)[0];
+                popup_a7437a114b0f4d9c8bc0ed6f2025bc8b.setContent(html_992ac8e8982acb3d4685f74f67066ecc);
+            
+        
+
+        marker_596928ca91030be2ed8b318da274e32e.bindPopup(popup_a7437a114b0f4d9c8bc0ed6f2025bc8b)
+        ;
+
+        
+    
+    
+            var marker_01450ebcfce3243ef4797ce5869a6aa0 = L.marker(
+                [52.9579721, -1.0885606],
+                {}
+            ).addTo(map_6a0a8fefbaf5356599757aa05767bc56);
+        
+    
+            var icon_39a589270335a4a1d1e2b3676f64ee39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_01450ebcfce3243ef4797ce5869a6aa0.setIcon(icon_39a589270335a4a1d1e2b3676f64ee39);
+        
+    
+        var popup_e212f7ed0702f69f7be64828369f6d09 = L.popup({});
+
+        
+            
+                var html_43a7c2d470cd8afe20b0016b4972a777 = $(`<div id="html_43a7c2d470cd8afe20b0016b4972a777" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Vale Road, Colwick</h1><div class="nugget-popup"><p>Properties on Vale Road were flooded as part of the Colwick event; properties experienced flooding (part of the residential impacts reported). [PAG] (p2)</p></div><div class="nugget-popup"><p>A watercourse flowing through and under Vale Road could not discharge into the River Trent because of high River Trent levels during Storm Henk. Water levels built up in the watercourse, exceeded channel capacity and caused internal flooding to properties on Vale Road. Residents reported vehicle bow waves exacerbating flooding; some properties experienced water entry from below floorboards (indicative of groundwater flooding). Litter in the downstream reach may have reduced channel conveyance. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Watercourse upstream of Vale Road could not discharge into the River Trent (high River Trent levels during Storm Henk), causing water levels to build in the channel and flood Vale Road; internal flooding to residential properties occurred, with reports of groundwater entering properties beneath floorboards and vehicle bow waves exacerbating impacts. [IMG,PAG] (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>15 properties [PAG] (p2)</p></div><div class="nugget-popup quant"><p>15 properties [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>16 residential properties (total across Vale Road and Charworth Road) [IMG,PAG] (p4)</p></div></div></body></div>`)[0];
+                popup_e212f7ed0702f69f7be64828369f6d09.setContent(html_43a7c2d470cd8afe20b0016b4972a777);
+            
+        
+
+        marker_01450ebcfce3243ef4797ce5869a6aa0.bindPopup(popup_e212f7ed0702f69f7be64828369f6d09)
+        ;
+
+        
+    
+    
+            var marker_39e4707eb84da21aa1b957a07264d556 = L.marker(
+                [52.9601017, -1.082366],
+                {}
+            ).addTo(map_6a0a8fefbaf5356599757aa05767bc56);
+        
+    
+            var icon_638bfd826b2b406c365f51c7c9fb6db1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_39e4707eb84da21aa1b957a07264d556.setIcon(icon_638bfd826b2b406c365f51c7c9fb6db1);
+        
+    
+        var popup_26e4d78dccd014eeb61e61e55b1bce99 = L.popup({});
+
+        
+            
+                var html_9615c5b62dcbfd28a4e1f309636e4237 = $(`<div id="html_9615c5b62dcbfd28a4e1f309636e4237" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chaworth Road, Colwick</h1><div class="nugget-popup"><p>A property on Charworth Road was flooded during the Colwick event. [PAG] (p2)</p></div><div class="nugget-popup"><p>Flooding from the same watercourse buildup (unable to discharge to the River Trent during Storm Henk) led to internal flooding to at least one residential property on Charworth Road; some properties in the area also reported groundwater ingress (water entering below floorboards). [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Flooding occurred where a watercourse flowing under Vale Road and the Business Park could not discharge to the River Trent, causing rising water levels in the channel and internal flooding of nearby properties; residents reported groundwater ingress beneath floorboards and pumping into highway gullies. [IMG,PAG] (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [PAG] (p2)</p></div><div class="nugget-popup quant"><p>1 property [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>16 residential properties (total across Vale Road and Charworth Road) [IMG,PAG] (p4)</p></div></div></body></div>`)[0];
+                popup_26e4d78dccd014eeb61e61e55b1bce99.setContent(html_9615c5b62dcbfd28a4e1f309636e4237);
+            
+        
+
+        marker_39e4707eb84da21aa1b957a07264d556.bindPopup(popup_26e4d78dccd014eeb61e61e55b1bce99)
+        ;
+
+        
+    
+    
+            var marker_e2712965c52f9bb7a2db7dd87167b944 = L.marker(
+                [53.145927, -1.0214971],
+                {}
+            ).addTo(map_6a0a8fefbaf5356599757aa05767bc56);
+        
+    
+            var icon_a5bdd37884bb3334819e75102dad039e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e2712965c52f9bb7a2db7dd87167b944.setIcon(icon_a5bdd37884bb3334819e75102dad039e);
+        
+    
+        var popup_b73bf2829f1d9cac97aeb6620f23b93c = L.popup({});
+
+        
+            
+                var html_919649e14e188f549dde7e4c95ea547a = $(`<div id="html_919649e14e188f549dde7e4c95ea547a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottinghamshire</h1><div class="nugget-popup"><p>Flooding across the county led to emergency response actions including the closure of roads, delivery of sandbags to affected communities, and coordination of post&ndash;event investigations and support. (p6)</p></div></div></body></div>`)[0];
+                popup_b73bf2829f1d9cac97aeb6620f23b93c.setContent(html_919649e14e188f549dde7e4c95ea547a);
+            
+        
+
+        marker_e2712965c52f9bb7a2db7dd87167b944.bindPopup(popup_b73bf2829f1d9cac97aeb6620f23b93c)
+        ;
+
+        
+    
+    
+            var marker_5e8dc005056fc5fe2c207dc4e94bd6b6 = L.marker(
+                [52.956196, -1.08906],
+                {}
+            ).addTo(map_6a0a8fefbaf5356599757aa05767bc56);
+        
+    
+            var icon_381e6fce6d00663898e3760df6b5469c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5e8dc005056fc5fe2c207dc4e94bd6b6.setIcon(icon_381e6fce6d00663898e3760df6b5469c);
+        
+    
+        var popup_07d1a9324d6b8243eb62f6f8976ac941 = L.popup({});
+
+        
+            
+                var html_645ef8b633a36ad70174af01e0773517 = $(`<div id="html_645ef8b633a36ad70174af01e0773517" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Colwick</h1><div class="nugget-popup"><p>Between 2 and 4 January 2024 the River Trent rose to near&ndash;record levels causing flooding in Colwick. As a result 16 residential properties and 5 businesses experienced internal flooding; additional properties suffered flooding to gardens and outbuildings. [PAG] (p1)</p></div><div class="nugget-popup"><p>Sustained rainfall over a saturated catchment caused River Trent levels at Colwick to rise to near&ndash;record levels, leading to flooding across Colwick. Sixteen residential properties and five businesses experienced internal flooding; additional properties suffered flooding to gardens and outbuildings; roads were also flooded. [PAG] (p2)</p></div><div class="nugget-popup"><p>Parts of Colwick (specifically Vale Road, Charworth Road and Churchill Business Park) experienced internal flooding when a local watercourse could not discharge to the River Trent because of high river levels during Storm Henk, causing water to back up into the built area. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Colwick experienced flooding during Storm Henk; has affected areas under assessment and is the focus of investigations and community support (including meetings, drop&ndash;ins, and consideration of flood risk reduction measures). (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>16 residential properties; 5 businesses [PAG] (p1)</p></div><div class="nugget-popup quant"><p>16 residential properties; 5 businesses [PAG] (p2)</p></div><div class="nugget-popup quant"><p>16 residential properties; 5 business properties [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_07d1a9324d6b8243eb62f6f8976ac941.setContent(html_645ef8b633a36ad70174af01e0773517);
+            
+        
+
+        marker_5e8dc005056fc5fe2c207dc4e94bd6b6.bindPopup(popup_07d1a9324d6b8243eb62f6f8976ac941)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2ae9a1a9db5928a98d4bfa7f6000d0bd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2ae9a1a9db5928a98d4bfa7f6000d0bd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2ae9a1a9db5928a98d4bfa7f6000d0bd = L.map(
+                "map_2ae9a1a9db5928a98d4bfa7f6000d0bd",
+                {
+                    center: [52.977646256103625, -1.148020877834157],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_035b04bec6671fd7e4e0d44f89f5e3bf = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_035b04bec6671fd7e4e0d44f89f5e3bf.addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+    
+            var marker_31bafd6d292609ffbe3eeedd05ab8490 = L.marker(
+                [52.9841308, -1.1338054],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_8add93e2cbb90be9133ca06f0dc69779 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_31bafd6d292609ffbe3eeedd05ab8490.setIcon(icon_8add93e2cbb90be9133ca06f0dc69779);
+        
+    
+        var popup_dbd6fe30b7fb342847f8c31f0ec2851b = L.popup({});
+
+        
+            
+                var html_8dfe3ce13232b57669b3b403de94df93 = $(`<div id="html_8dfe3ce13232b57669b3b403de94df93" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woodthorpe Grange Park</h1><div class="nugget-popup"><p>During the 23 July 2013 event surface water runoff from Woodthorpe Grange Park was routed downhill and collected at the low point around Winchester Street/Dornoch Avenue, contributing to rapid overland flows that led to flooding at the junction and along Winchester Street. (p14)</p></div><div class="nugget-popup"><p>The park and surrounding green spaces were likely saturated prior to the storm, increasing runoff that fed primary surface&ndash;water flow paths toward Winchester Street and raised flow volumes and pressure on the public sewer and highway during the storm on 23rd July 2013. [IMG,PAG] (p15)</p></div><div class="nugget-popup"><p>Ground in the park and surrounding green spaces was saturated prior to the storm, increasing surface runoff during the storm on 23rd July 2013. This additional runoff contributed volume to the ordinary watercourse and increased pressure on the public sewer, contributing to flooding on Winchester Street. (p16)</p></div></div></body></div>`)[0];
+                popup_dbd6fe30b7fb342847f8c31f0ec2851b.setContent(html_8dfe3ce13232b57669b3b403de94df93);
+            
+        
+
+        marker_31bafd6d292609ffbe3eeedd05ab8490.bindPopup(popup_dbd6fe30b7fb342847f8c31f0ec2851b)
+        ;
+
+        
+    
+    
+            var marker_a4cf1969cffff8f292f288d610e0fba0 = L.marker(
+                [52.95342, -1.149646],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_81a34c9031c113f0ecd4fb2b2413964b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a4cf1969cffff8f292f288d610e0fba0.setIcon(icon_81a34c9031c113f0ecd4fb2b2413964b);
+        
+    
+        var popup_0b5ca153840ae5b2bdc1fc012c32d97a = L.popup({});
+
+        
+            
+                var html_878abb913e4b02bc79fdf14227e6de5a = $(`<div id="html_878abb913e4b02bc79fdf14227e6de5a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottingham Unitary Authority</h1><div class="nugget-popup"><p>Nottingham contains the Sherwood neighbourhood where the 23 July 2013 flood event occurred; Sherwood roads are listed as impacted. (p1)</p></div><div class="nugget-popup"><p>An intense thunderstorm on the evening of 23 July 2013 caused widespread surface water and sewer flooding across the city, resulting in internal flooding of residential properties and extensive flooding of the highway network. (p4)</p></div><div class="nugget-popup"><p>The northern part of Nottingham City was crossed by an intense storm that initiated the flood event on 23rd July 2013, resulting in surface water flooding across parts of the city. (p12)</p></div><div class="nugget-popup"><p>The Winchester Street area of Nottingham experienced rapid concentrated surface&ndash;water flows down steep streets that converged at a low point, overwhelmed highway gullies, caused sewer network surcharge (photographic evidence of fountains from a stop tap and a manhole) and led to culvert overtopping onto the highway during the storm at about 17:00 on 23rd July 2013. [IMG] (p15)</p></div><div class="nugget-popup"><p>Residents and properties in Nottingham City were affected by flood incidents; funding was sought and allocated to provide property&ndash;level protection (for example flood doors and smart airbricks) to qualifying properties. [PAG] (p29)</p></div><div class="nugget-popup"><p>Storm passing over the city produced excessive surface water that saturated ground and overwhelmed drainage and sewer networks in parts of the city (notably the Sherwood valley), causing internal and external flooding of domestic and commercial properties. [PAG] (p33)</p></div><div class="nugget-popup"><p>Blue&ndash;shaded water accumulation is shown across low&ndash;lying urban areas and adjacent to major roads in the Nottingham map, indicating surface water/urban flooding affecting neighbourhood streets and transport corridors. [IMG] (p38)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 100 residential properties (p4)</p></div><div class="nugget-popup quant"><p>19 residential properties; 1 commercial property (within Sherwood area across Winchester Street, Spondon Street and Haydn Road) [PAG] (p33)</p></div></div></body></div>`)[0];
+                popup_0b5ca153840ae5b2bdc1fc012c32d97a.setContent(html_878abb913e4b02bc79fdf14227e6de5a);
+            
+        
+
+        marker_a4cf1969cffff8f292f288d610e0fba0.bindPopup(popup_0b5ca153840ae5b2bdc1fc012c32d97a)
+        ;
+
+        
+    
+    
+            var marker_2a2844e4d10101b459a2ac69582454d6 = L.marker(
+                [52.9811752, -1.142198],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_4282292942df62fe680a45c5b74439ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2a2844e4d10101b459a2ac69582454d6.setIcon(icon_4282292942df62fe680a45c5b74439ba);
+        
+    
+        var popup_75947fa7859e889a4b96ba7a7aaae9e5 = L.popup({});
+
+        
+            
+                var html_c807ead5680ba3d82be601236364faa6 = $(`<div id="html_c807ead5680ba3d82be601236364faa6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Winchester Street, Sherwood</h1><div class="nugget-popup"><p>Winchester Street is listed as a location impacted by the 23 July 2013 flood event in Sherwood. [IMG] (p1)</p></div><div class="nugget-popup"><p>Internal flooding of properties in the vicinity following the intense storm; reports identify domestic properties and a business in the vicinity suffering internal flooding. (p4)</p></div><div class="nugget-popup"><p>Internal (over the doorstep) flooding occurred within the catchment that includes Winchester Street, resulting in internal flooding of domestic properties and one business. [PAG] (p6)</p></div><div class="nugget-popup"><p>Internal flooding of domestic properties and at least one business within the hydrologically linked catchment that includes Winchester Street; properties experienced internal flooding during the event. [IMG,PAG] (p7)</p></div><div class="nugget-popup"><p>Winchester Street experienced flooding incidents including internal and basement flooding of properties. It was identified as the eastern&ndash;most area affected in the July 23, 2013 flooding incident; historical events include internal flooding of one property (28 June 2012) and basement flooding of one property (5/6 June 2010). [PAG,MUL] (p9)</p></div><div class="nugget-popup"><p>Properties were flooded during and after the intense rainfall on 23rd July 2013 due to rapid overland flow, surcharging of the sewerage system and ponding of surface water; steep catchment topography channelled water towards Winchester Street. (p13)</p></div><div class="nugget-popup"><p>Rapid surface water flow moved downhill along highways and converged on Winchester Street; water collected at the low point at the junction with Dornoch Avenue, causing concentrated surface water flooding along Winchester Street. [PAG] (p14)</p></div><div class="nugget-popup"><p>Surface water flowing rapidly downhill from surrounding high ground converged at the low point on Winchester Street; highway gullies were overwhelmed and unable to drain. The ordinary watercourse that flows behind Cavendish Vale could not freely enter the combined public sewer, causing water to back up, overtop the culvert and flow onto the highway. Photographic evidence shows fountains of water emerging from stop taps and a manhole indicating the public sewer network was at capacity during the storm. [IMG,PAG] (p15)</p></div><div class="nugget-popup"><p>During the storm on 23rd July 2013 floodwater pooled at the low spot on Winchester Street, causing internal flooding of one property and external flooding of at least nine properties. Residents reported external flood depths up to approximately 300mm and water entered the flooded property via air bricks and the front door. Floodwaters receded between half an hour and an hour after the storm. [IMG,PAG] (p16)</p></div><div class="nugget-popup"><p>Highway gullies were overwhelmed on Winchester Street during the same storm, indicating surface&ndash;water flooding on the street. (p18)</p></div><div class="nugget-popup"><p>Internal flooding of one residential property; extensive surface water flooding at the junction with Dornoch Avenue and external flooding of gardens and driveways of nearby properties. [TAB] (p22)</p></div><div class="nugget-popup"><p>Intense rainfall produced large volumes of surface water runoff that overwhelmed drainage, causing localised ponding and internal flooding of properties in the Winchester Street area; flood depths also damaged at least one vehicle. (p23)</p></div><div class="nugget-popup"><p>During the 23 July 2013 storm properties on Winchester Street experienced flooding; residents attempted to block air bricks to stop ingress but measures were overwhelmed or could not be taken by those who were out of their properties. Severn Trent Water modelling identifies hydraulic risk on the public sewer network at Winchester Street. (p24)</p></div><div class="nugget-popup"><p>Flooding on 23rd July 2013 inundated properties. Residents attempted temporary measures (blocking air bricks) which were overwhelmed by the flood volumes. The ordinary watercourse from Woodthorpe Grange Park overwhelmed the inlet to a culvert on Winchester Street and contributed to the flooding. Nottingham City Council subsequently cleared the channel, bank and footpath behind properties to remove impediments to flow. [TAB,PAG] (p25)</p></div><div class="nugget-popup"><p>An ordinary watercourse overwhelmed the inlet to a culvert on Winchester Street during the 23rd July 2013 event and contributed to flooding. The culvert area was investigated; a CCTV survey was carried out and an inspection chamber was de&ndash;silted to restore conveyance into the main combined sewer. [TAB] (p26)</p></div><div class="nugget-popup"><p>Highway gullies on Winchester Street are included in the targeted gully cleansing regime to maintain drainage efficiency during periods of high rainfall; part of the Haydn Road/Winchester Street catchment targeted for additional rainfall monitoring. (p29)</p></div><div class="nugget-popup"><p>Internal and external flooding of domestic and commercial properties when extreme surface water overwhelmed highway drainage and the public sewer network; overtopping of an ordinary watercourse from Woodthorpe Grange Park entered the public sewer via a culvert on Winchester Street, contributing to reverse flow in the sewer. (p33)</p></div><div class="nugget-popup"><p>Winchester Street was included in monitoring after flooding incidents: CCTV cameras were installed to identify interactions between highway drainage, the ordinary watercourse and the public sewer network to inform future mitigation. (p34)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>19 domestic properties; one business (reported across the vicinity of Winchester Street and Haydn Road) (p4)</p></div><div class="nugget-popup quant"><p>19 domestic properties; one business (figures apply across the catchment covering Haydn Road, Winchester Street and surrounding roads) [PAG] (p6)</p></div><div class="nugget-popup quant"><p>19 domestic properties; 1 business (internally flooded across the catchment including Winchester Street) [IMG,PAG] (p7)</p></div><div class="nugget-popup quant"><p>1 property (internal, 28 June 2012); 1 property (basement, 5/6 June 2010) [PAG,MUL] (p9)</p></div><div class="nugget-popup quant"><p>225 mm outlet pipe; 50 l/s estimated maximum flow rate [IMG,PAG] (p15)</p></div><div class="nugget-popup quant"><p>one property; at least 9 properties; 300mm flood depths [IMG,PAG] (p16)</p></div><div class="nugget-popup quant"><p>1 internal property; 9 external properties (on Winchester Street) [TAB] (p22)</p></div><div class="nugget-popup quant"><p>6 properties; 1 vehicle (p23)</p></div><div class="nugget-popup quant"><p>19 residential properties; 1 commercial property (across Winchester Street, Spondon Street and Haydn Road) (p33)</p></div><div class="nugget-popup quant"><p>three CCTV cameras (p34)</p></div></div></body></div>`)[0];
+                popup_75947fa7859e889a4b96ba7a7aaae9e5.setContent(html_c807ead5680ba3d82be601236364faa6);
+            
+        
+
+        marker_2a2844e4d10101b459a2ac69582454d6.bindPopup(popup_75947fa7859e889a4b96ba7a7aaae9e5)
+        ;
+
+        
+    
+    
+            var marker_83326edf290d8487f6fdbf182e07752c = L.marker(
+                [52.9796497, -1.1463652],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_a8bd1b143cfdec3e41d6eb23b7771f95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_83326edf290d8487f6fdbf182e07752c.setIcon(icon_a8bd1b143cfdec3e41d6eb23b7771f95);
+        
+    
+        var popup_925ba11deb22e8bcc26fe02832c6357d = L.popup({});
+
+        
+            
+                var html_462c45540ec3cc8906eef96f62468a59 = $(`<div id="html_462c45540ec3cc8906eef96f62468a59" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Spondon Street, Sherwood</h1><div class="nugget-popup"><p>Spondon Street is listed as a location impacted by the 23 July 2013 flood event in Sherwood. (p1)</p></div><div class="nugget-popup"><p>Part of the same hydrologically linked catchment where internal flooding of domestic properties and a business occurred during the event. [IMG,PAG] (p7)</p></div><div class="nugget-popup"><p>Affected by flooding during the event on 23rd July 2013. (p10)</p></div><div class="nugget-popup"><p>Properties were flooded during and after the intense rainfall on 23rd July 2013 due to rapid overland flow, surcharging sewers and ponding of surface water in low&ndash;lying areas. (p13)</p></div><div class="nugget-popup"><p>The map shows primary surface water flow paths branching into side streets including Spondon Street during the 23 July 2013 event; it therefore likely experienced surface water ingress or overland flow from the main Haydn Road/Winchester Street flow paths. [IMG] (p14)</p></div><div class="nugget-popup"><p>Surface water flowed into Spondon Street from the adjacent car park (north side); a property on Spondon Street was internally flooded. Surface water running along Mapperley Street and Mansfield Street likely increased volumes entering Spondon Street due to local topography. [PAG] (p17)</p></div><div class="nugget-popup"><p>Internal flooding of one retail premises due to surface water from surrounding areas. [TAB] (p22)</p></div><div class="nugget-popup"><p>Intense rainfall and overwhelmed highway/public sewer drainage caused surface water to pond in low&ndash;lying areas of Spondon Street, contributing to internal flooding of properties in the affected area. (p23)</p></div><div class="nugget-popup"><p>Car park drainage on the north side of Spondon Street was not acting efficiently and contributed to flooding; this led to cleaning and improvement works and ongoing gully maintenance. [TAB] (p27)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties when excessive surface water from the storm overwhelmed highway drainage and the public sewer network within the local catchment. (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>19 domestic properties; 1 business (internally flooded across the catchment including Spondon Street) [IMG,PAG] (p7)</p></div><div class="nugget-popup quant"><p>1 property [PAG] (p17)</p></div><div class="nugget-popup quant"><p>1 internal premise [TAB] (p22)</p></div><div class="nugget-popup quant"><p>6 properties (p23)</p></div><div class="nugget-popup quant"><p>19 residential properties; 1 commercial property (across Winchester Street, Spondon Street and Haydn Road) (p33)</p></div></div></body></div>`)[0];
+                popup_925ba11deb22e8bcc26fe02832c6357d.setContent(html_462c45540ec3cc8906eef96f62468a59);
+            
+        
+
+        marker_83326edf290d8487f6fdbf182e07752c.bindPopup(popup_925ba11deb22e8bcc26fe02832c6357d)
+        ;
+
+        
+    
+    
+            var marker_26471abfedb441d494bb78944a05dfd0 = L.marker(
+                [52.9770113, -1.166136],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_f9a89c184f441dfe0ea6cc01a57a49ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_26471abfedb441d494bb78944a05dfd0.setIcon(icon_f9a89c184f441dfe0ea6cc01a57a49ff);
+        
+    
+        var popup_fae458b1e882f7fc412adb0a29c0937f = L.popup({});
+
+        
+            
+                var html_b0560bf1edb8b63083780795cae29b85 = $(`<div id="html_b0560bf1edb8b63083780795cae29b85" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Haydn Road, Old Basford</h1><div class="nugget-popup"><p>Haydn Road is listed as a location impacted by the 23 July 2013 flood event in Sherwood. [IMG] (p1)</p></div><div class="nugget-popup"><p>Internal flooding of properties in the vicinity following the intense storm; reports identify domestic properties and a business in the vicinity suffering internal flooding. (p4)</p></div><div class="nugget-popup"><p>Internal (over the doorstep) flooding occurred within the catchment that includes Haydn Road, resulting in internal flooding of domestic properties and one business. [PAG] (p6)</p></div><div class="nugget-popup"><p>Haydn Road lies along the bottom of the valley within the catchment and is identified as a flood location; domestic properties and a business within the catchment experienced internal flooding. [IMG,PAG] (p7)</p></div><div class="nugget-popup"><p>Haydn Road and its local sewer infrastructure were implicated in repeated flooding incidents. Historical incidents affecting the Haydn Road area include internal flooding at Moores Place (on Haydn Road) with two properties internally flooded on 6 July 2009 and six properties internally flooded on 5/6 June 2010. The Haydn Road depot contains two 6000 m3 offline storage tanks intended to reduce sewer flooding; tank monitoring limitations were noted at the time of the July 23, 2013 incident. [PAG,MUL] (p9)</p></div><div class="nugget-popup"><p>Properties were flooded during and after the intense rainfall on 23rd July 2013 as a result of rapid overland flow, surcharging of the sewerage system and surface water ponding; steep topography channelled flow towards Haydn Road. (p13)</p></div><div class="nugget-popup"><p>The map and investigation indicate Haydn Road was a primary west&ndash;to&ndash;east surface water flow path during the 23 July 2013 event; surface water moved along Haydn Road into the investigation area, feeding the converging flows that caused flooding on nearby roads. [IMG] (p14)</p></div><div class="nugget-popup"><p>Map and image description show primary surface water flow paths crossing Haydn Road, indicating surface water movement across the road during the investigated event. (p17)</p></div><div class="nugget-popup"><p>Surface water flowed rapidly downhill into Haydn Road; the combined sewer system was capacity&ndash;exceeded causing manholes to surcharge (one manhole was ripped from the carriageway and required emergency repair). Sewage was present in the flood waters. Highway gullies were overwhelmed and acted in reverse, debris and soil reduced gully function, road surfaces on surrounding streets were damaged, and pooled water breached kerbs and flooded properties on Haydn Road. [PAG] (p18)</p></div><div class="nugget-popup"><p>High&ndash;velocity surface water flowed along steep surrounding roads into the valley bottom at Haydn Road, ponding at a former railway bridge underpass. The flood overtopped a low (~0.6 m) flood wall and properties experienced internal flooding; highway gullies were overwhelmed and unable to drain the flow, and water could not escape from the rear of ground floors, causing accumulation. [IMG,PAG] (p20)</p></div><div class="nugget-popup"><p>Combination of surface water and surcharging public sewers caused internal flooding of properties west of Hucknall Road. Floodwater (containing sewage) entered properties through front doors, air bricks, windows and via surcharging internal toilets; a ground&ndash;floor toilet was reported to work in reverse allowing sewage into a property. [IMG,PAG] (p21)</p></div><div class="nugget-popup"><p>East of Hucknall Road: sewer flooding emerging from a Severn Trent Water manhole and highway drainage plus surface water ponding caused internal flooding of neighbouring properties, severe road damage from a ripped&ndash;out sewer cover and at least one vehicle damaged. West of Hucknall Road: surface water and sewer flooding caused internal flooding of properties and overtopping of a flood wall; at least one vehicle damaged. [TAB] (p22)</p></div><div class="nugget-popup"><p>Surface water runoff from intense rainfall overwhelmed drainage systems causing ponding and contributing to internal flooding of properties in the Haydn Road area. (p23)</p></div><div class="nugget-popup"><p>On 23 July 2013 flood volumes overwhelmed temporary measures (sandbags, blocked air bricks), flood gates and door barriers on Haydn Road; properties were not protected and were flooded. Some residents were unable to take preventative action due to the timing and fast onset of the flood. (p24)</p></div><div class="nugget-popup"><p>Flooding on 23rd July 2013 inundated properties. Residents east of Hucknall Road used sandbags to block air bricks and doorways; residents west of Hucknall Road closed flood gates and installed flood barriers on front doors, but these measures were overwhelmed by the storm's flood volume. Some residents were absent during the storm and could not take preventative measures. [TAB,PAG] (p25)</p></div><div class="nugget-popup"><p>The storm on 23rd July 2013 breached the flood wall at Moores Place and resulted in flooding affecting the Haydn Road area. Remedial and protective works include installation of flood&ndash;resistant doors, smart airbricks and non&ndash;return valves on properties, construction of a new 1.6 m reinforced flood defence wall and flood gates (Aug&ndash;Sep 2014), underground storage east of Moores Place to hold stormwater, a soakaway strip between Warren Avenue and Ellesmere Crescent, and enlarged highway gullies with direct connections into Severn Trent Water's trunk sewer. Severn Trent Water also fitted telemetry to storage tanks in Nov 2013 to monitor performance. [PAG,MUL] (p27)</p></div><div class="nugget-popup"><p>Haydn Road experienced surface water entering the highway and public sewer during the 23 July 2013 event; to reduce future risk the highway gullies near Moores Place were replaced with larger gully pots with direct connections into the trunk sewer, underground storage was constructed upstream, and overflow storage tanks on Haydn Road provide relief to the downstream sewer network. [TAB,PAG] (p28)</p></div><div class="nugget-popup"><p>Location of the Severn Trent Water depot whose overflow storage tanks required a telemetry alarm after storm overflows; included in gully maintenance under the targeted cleansing regime and within the Haydn Road/Winchester Street catchment for a new rain gauge to monitor storm response. (p29)</p></div><div class="nugget-popup"><p>Internal and external flooding of properties when extreme surface water overwhelmed highway drainage and the public sewer network; capacity of the public sewer network was exceeded during the storm peak. (p33)</p></div><div class="nugget-popup"><p>Haydn Road was monitored with CCTV following flooding incidents and received highway drainage improvements: creation of large gullies, installation of underground storage and a soakaway to store and infiltrate stormwater. (p34)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>19 domestic properties; one business (reported across the vicinity of Winchester Street and Haydn Road) (p4)</p></div><div class="nugget-popup quant"><p>19 domestic properties; one business (figures apply across the catchment covering Haydn Road, Winchester Street and surrounding roads) [PAG] (p6)</p></div><div class="nugget-popup quant"><p>19 domestic properties; 1 business (internally flooded across the catchment including Haydn Road) [IMG,PAG] (p7)</p></div><div class="nugget-popup quant"><p>2 properties (internal, 6 July 2009); 6 properties (internal, 5/6 June 2010) [PAG,MUL] (p9)</p></div><div class="nugget-popup quant"><p>one manhole [PAG] (p18)</p></div><div class="nugget-popup quant"><p>approximately 900mm internal flooding [IMG,PAG] (p20)</p></div><div class="nugget-popup quant"><p>6 properties; 900mm internal flood depths [IMG,PAG] (p21)</p></div><div class="nugget-popup quant"><p>12 internal properties (east of Hucknall Road); 6 internal properties (west of Hucknall Road); at least 1 vehicle damaged (east); at least 1 vehicle damaged (west); 1 public sewerage cover and frame ripped out [TAB] (p22)</p></div><div class="nugget-popup quant"><p>6 properties (p23)</p></div><div class="nugget-popup quant"><p>19 residential properties; 1 commercial property (across Winchester Street, Spondon Street and Haydn Road) (p33)</p></div><div class="nugget-popup quant"><p>three CCTV cameras (p34)</p></div></div></body></div>`)[0];
+                popup_fae458b1e882f7fc412adb0a29c0937f.setContent(html_b0560bf1edb8b63083780795cae29b85);
+            
+        
+
+        marker_26471abfedb441d494bb78944a05dfd0.bindPopup(popup_fae458b1e882f7fc412adb0a29c0937f)
+        ;
+
+        
+    
+    
+            var marker_bf5bba3d87821253d66ce35c87a90554 = L.marker(
+                [52.9802322, -1.1414465],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_1dbdd7d56c4db6650ae12e9c6b6b68d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bf5bba3d87821253d66ce35c87a90554.setIcon(icon_1dbdd7d56c4db6650ae12e9c6b6b68d8);
+        
+    
+        var popup_b732f7d87a8deead3b0c57a1d971ae54 = L.popup({});
+
+        
+            
+                var html_fee12e9dfb03aa21d1501f27254106a5 = $(`<div id="html_fee12e9dfb03aa21d1501f27254106a5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dornoch Avenue, Nottingham Unitary Authority</h1><div class="nugget-popup"><p>Steep gradient produced rapid flow of surface water downhill that converged at the junction with Winchester Street, contributing to concentrated surface water flooding at the low point. (p14)</p></div><div class="nugget-popup"><p>Steep gradient caused rapid flow of surface water from high ground toward the junction with Winchester Street; highway gullies were observed to be overwhelmed during the storm, contributing to runoff concentrating at the junction. [PAG] (p15)</p></div><div class="nugget-popup"><p>Extensive surface water flooding at the junction with Winchester Street. [TAB] (p22)</p></div></div></body></div>`)[0];
+                popup_b732f7d87a8deead3b0c57a1d971ae54.setContent(html_fee12e9dfb03aa21d1501f27254106a5);
+            
+        
+
+        marker_bf5bba3d87821253d66ce35c87a90554.bindPopup(popup_b732f7d87a8deead3b0c57a1d971ae54)
+        ;
+
+        
+    
+    
+            var marker_066a44c09ce02ec89a55e139b94c3729 = L.marker(
+                [52.9820667, -1.1276361],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_f5452035a81b5ce6ab44289c08b5a42c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_066a44c09ce02ec89a55e139b94c3729.setIcon(icon_f5452035a81b5ce6ab44289c08b5a42c);
+        
+    
+        var popup_8cc49a5d1649cb50ebfd7d1e61f34efb = L.popup({});
+
+        
+            
+                var html_e00b829a883e442a78b53b12da645d67 = $(`<div id="html_e00b829a883e442a78b53b12da645d67" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woodthorpe Road, Sherwood</h1><div class="nugget-popup"><p>During the 23 July 2013 event surface water from Woodthorpe Road flowed downhill into the Winchester Street catchment and contributed to the rapid accumulation of water at the low point (junction of Dornoch Avenue and Winchester Street). (p14)</p></div></div></body></div>`)[0];
+                popup_8cc49a5d1649cb50ebfd7d1e61f34efb.setContent(html_e00b829a883e442a78b53b12da645d67);
+            
+        
+
+        marker_066a44c09ce02ec89a55e139b94c3729.bindPopup(popup_8cc49a5d1649cb50ebfd7d1e61f34efb)
+        ;
+
+        
+    
+    
+            var marker_6cf3cddb866c63876a7c673f3cb30c8a = L.marker(
+                [52.9731631, -1.1392026],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_b561a730c236de358cbcd95f63445adf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6cf3cddb866c63876a7c673f3cb30c8a.setIcon(icon_b561a730c236de358cbcd95f63445adf);
+        
+    
+        var popup_919eda34adf7af2afe47dcf80676333b = L.popup({});
+
+        
+            
+                var html_351c54798fa42072fe7a59dc049c27b7 = $(`<div id="html_351c54798fa42072fe7a59dc049c27b7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woodborough Road, Nottingham Unitary Authority</h1><div class="nugget-popup"><p>During the 23 July 2013 event surface water runoff from Woodborough Road drained towards the low point at Winchester Street/Dornoch Avenue and contributed to the converging flows that caused flooding at Winchester Street. (p14)</p></div><div class="nugget-popup"><p>Surface&ndash;water runoff from Woodborough Road was collected and conveyed downslope toward Winchester Street, contributing to converging flows that overwhelmed highway drainage and added to sewer network pressures during the storm on 23rd July 2013. [IMG,PAG] (p15)</p></div></div></body></div>`)[0];
+                popup_919eda34adf7af2afe47dcf80676333b.setContent(html_351c54798fa42072fe7a59dc049c27b7);
+            
+        
+
+        marker_6cf3cddb866c63876a7c673f3cb30c8a.bindPopup(popup_919eda34adf7af2afe47dcf80676333b)
+        ;
+
+        
+    
+    
+            var marker_33d55228ff2da12c65f0e2375ae81e4d = L.marker(
+                [52.9820845, -1.1397303],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_5e90e795477ee9bfab2bce093a61fb00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_33d55228ff2da12c65f0e2375ae81e4d.setIcon(icon_5e90e795477ee9bfab2bce093a61fb00);
+        
+    
+        var popup_1d59442e4190fe03a0b840ea1aee9ba6 = L.popup({});
+
+        
+            
+                var html_0c44b742511b4879293f59313fcc691a = $(`<div id="html_0c44b742511b4879293f59313fcc691a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cavendish Vale, Nottingham Unitary Authority</h1><div class="nugget-popup"><p>The ordinary watercourse flowing behind Cavendish Vale was unable to enter the combined public sewer during the storm, causing water to back up and eventually overtop the culvert and flow onto the highway; upstream saturation (Woodthorpe Grange Park and surrounding green spaces) likely increased runoff volumes contributing to the failure. (p15)</p></div><div class="nugget-popup"><p>External flooding of a property (garden/driveway) adjacent to a small ditch; area affected by surcharged sewerage system and surface water at the Winchester Street / Dornoch Avenue junction. [TAB] (p22)</p></div><div class="nugget-popup"><p>The ordinary watercourse flowing behind properties at Cavendish Vale contributed to the flooding on 23rd July 2013. The channel, bank and footpath behind the properties were cleared to remove impediments to flow; formal clearance of the channel that joins the public sewer at Winchester Street was completed (2015) to improve conveyance. [TAB] (p26)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 external property [TAB] (p22)</p></div></div></body></div>`)[0];
+                popup_1d59442e4190fe03a0b840ea1aee9ba6.setContent(html_0c44b742511b4879293f59313fcc691a);
+            
+        
+
+        marker_33d55228ff2da12c65f0e2375ae81e4d.bindPopup(popup_1d59442e4190fe03a0b840ea1aee9ba6)
+        ;
+
+        
+    
+    
+            var marker_2731e13c23450aa74b5095de74814af9 = L.marker(
+                [52.9805197, -1.1346298],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_ed2e773e51d144d98860b2715cab1ecd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2731e13c23450aa74b5095de74814af9.setIcon(icon_ed2e773e51d144d98860b2715cab1ecd);
+        
+    
+        var popup_df82d7483d5cd9ccd2e2f2054c9d4f2f = L.popup({});
+
+        
+            
+                var html_f09a438e5d1009e46b44df75e83250a5 = $(`<div id="html_f09a438e5d1009e46b44df75e83250a5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mapperley Rise, Nottingham Unitary Authority</h1><div class="nugget-popup"><p>Surface water runoff from Mapperley Rise flowed downhill and contributed to primary flow paths that converged at Winchester Street, increasing flows into the ordinary watercourse and the combined public sewer and contributing to sewer capacity exceedance and subsequent overtopping/surcharging observed at Winchester Street. [IMG] (p15)</p></div></div></body></div>`)[0];
+                popup_df82d7483d5cd9ccd2e2f2054c9d4f2f.setContent(html_f09a438e5d1009e46b44df75e83250a5);
+            
+        
+
+        marker_2731e13c23450aa74b5095de74814af9.bindPopup(popup_df82d7483d5cd9ccd2e2f2054c9d4f2f)
+        ;
+
+        
+    
+    
+            var marker_dd6457bf22d2be5995214bad3d86541e = L.marker(
+                [52.9789124, -1.1462891],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_68d38950fc762db72e8115e16ac86231 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dd6457bf22d2be5995214bad3d86541e.setIcon(icon_68d38950fc762db72e8115e16ac86231);
+        
+    
+        var popup_d10e792c28972d858bcdd616ce473ea7 = L.popup({});
+
+        
+            
+                var html_8b9c921dce84fd93bf6ee455b752f4e7 = $(`<div id="html_8b9c921dce84fd93bf6ee455b752f4e7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mapperley Street, Sherwood</h1><div class="nugget-popup"><p>Surface water is reported to have flowed along Mapperley Street and likely contributed to increased surface water volumes in Spondon Street during the event (described as a contributing source rather than an explicitly reported internal flood at properties on Mapperley Street). [IMG] (p17)</p></div></div></body></div>`)[0];
+                popup_d10e792c28972d858bcdd616ce473ea7.setContent(html_8b9c921dce84fd93bf6ee455b752f4e7);
+            
+        
+
+        marker_dd6457bf22d2be5995214bad3d86541e.bindPopup(popup_d10e792c28972d858bcdd616ce473ea7)
+        ;
+
+        
+    
+    
+            var marker_3d3255519739ea37e5d38d16456f1bc9 = L.marker(
+                [52.9803216, -1.1454473],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_0dd79543431dcc46777f73abf8231592 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3d3255519739ea37e5d38d16456f1bc9.setIcon(icon_0dd79543431dcc46777f73abf8231592);
+        
+    
+        var popup_bad633bb9b576d8ff1417c1eb681167b = L.popup({});
+
+        
+            
+                var html_579350cf6264c1f2a24274817ec393f0 = $(`<div id="html_579350cf6264c1f2a24274817ec393f0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mansfield Street, Sherwood</h1><div class="nugget-popup"><p>Surface water is reported to have flowed along Mansfield Street and likely contributed to the surface water volumes affecting Spondon Street during the event (identified as a contributing flow path). (p17)</p></div></div></body></div>`)[0];
+                popup_bad633bb9b576d8ff1417c1eb681167b.setContent(html_579350cf6264c1f2a24274817ec393f0);
+            
+        
+
+        marker_3d3255519739ea37e5d38d16456f1bc9.bindPopup(popup_bad633bb9b576d8ff1417c1eb681167b)
+        ;
+
+        
+    
+    
+            var marker_7eed84c60df16dd396cab0769b7c3548 = L.marker(
+                [52.9783732, -1.1538781],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_b41dbe025c049e403ff616d95cb992e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7eed84c60df16dd396cab0769b7c3548.setIcon(icon_b41dbe025c049e403ff616d95cb992e3);
+        
+    
+        var popup_6f79523d6d0fcb3cf9260833ff145325 = L.popup({});
+
+        
+            
+                var html_35c3d09c2b39a5180fea97488f24aaca = $(`<div id="html_35c3d09c2b39a5180fea97488f24aaca" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Devonshire Road, Sherwood</h1><div class="nugget-popup"><p>Surface water ran rapidly downhill along Devonshire Road toward Haydn Road during the storm, contributing overland flow into Haydn Road and the subsequent pooling and flooding there. (p18)</p></div></div></body></div>`)[0];
+                popup_6f79523d6d0fcb3cf9260833ff145325.setContent(html_35c3d09c2b39a5180fea97488f24aaca);
+            
+        
+
+        marker_7eed84c60df16dd396cab0769b7c3548.bindPopup(popup_6f79523d6d0fcb3cf9260833ff145325)
+        ;
+
+        
+    
+    
+            var marker_399665c242b75de96ad4f1af7f1334e8 = L.marker(
+                [52.979547, -1.1492844],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_6747080384a52e44356f1dc0ff626acb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_399665c242b75de96ad4f1af7f1334e8.setIcon(icon_6747080384a52e44356f1dc0ff626acb);
+        
+    
+        var popup_7176871564268cdb1452c3218625aaf4 = L.popup({});
+
+        
+            
+                var html_8cbeff0f302bc44039b3a586a3d0b263 = $(`<div id="html_8cbeff0f302bc44039b3a586a3d0b263" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burnham Street, Sherwood</h1><div class="nugget-popup"><p>Surface water flowed rapidly downhill along Burnham Street toward Haydn Road during the storm, contributing to overland flow and pooling on Haydn Road. (p18)</p></div></div></body></div>`)[0];
+                popup_7176871564268cdb1452c3218625aaf4.setContent(html_8cbeff0f302bc44039b3a586a3d0b263);
+            
+        
+
+        marker_399665c242b75de96ad4f1af7f1334e8.bindPopup(popup_7176871564268cdb1452c3218625aaf4)
+        ;
+
+        
+    
+    
+            var marker_eebf7727efcecf9a66ed452d67d122e9 = L.marker(
+                [52.9784995, -1.156837],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_e5e2d699eb210df7766ef984b42701b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eebf7727efcecf9a66ed452d67d122e9.setIcon(icon_e5e2d699eb210df7766ef984b42701b6);
+        
+    
+        var popup_8cc0c46e4f89e4678e6315fd2932a5e3 = L.popup({});
+
+        
+            
+                var html_0ceb850d32a4c5ae6d480229359ba32c = $(`<div id="html_0ceb850d32a4c5ae6d480229359ba32c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hucknall Road, Bulwell</h1><div class="nugget-popup"><p>The raised crown at the Hucknall Road/Haydn Road junction acted as a barrier to overland flow, allowing water to pond to the east of Hucknall Road and determining the maximum depth of pooling on Haydn Road. Pooling and combined surface&ndash;water and public&ndash;sewer surcharging led to internal flooding of nearby properties (water entered through airbricks, front and back doors and cellars). [IMG] (p19)</p></div><div class="nugget-popup"><p>It is reported that water may have overtopped the crown of Hucknall Road and flowed down onto Haydn Road, contributing to ponding and subsequent property flooding; this is described as a possible mechanism rather than confirmed. [IMG,PAG] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>12 properties; external flood depths of 600&ndash;700 mm on Haydn Road; internal flood depths of 80&ndash;300 mm; one cellar required pumping [IMG] (p19)</p></div></div></body></div>`)[0];
+                popup_8cc0c46e4f89e4678e6315fd2932a5e3.setContent(html_0ceb850d32a4c5ae6d480229359ba32c);
+            
+        
+
+        marker_eebf7727efcecf9a66ed452d67d122e9.bindPopup(popup_8cc0c46e4f89e4678e6315fd2932a5e3)
+        ;
+
+        
+    
+    
+            var marker_5ca72dd9a4c18fca64512168d1405d07 = L.marker(
+                [52.9812277, -1.1503521],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_679ba90cd8147cb1bb67c3e22780807d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5ca72dd9a4c18fca64512168d1405d07.setIcon(icon_679ba90cd8147cb1bb67c3e22780807d);
+        
+    
+        var popup_59c4b94bb33291baa6a198d4e8fd3a05 = L.popup({});
+
+        
+            
+                var html_48f2bb6f972e7a28816ff0c8a122e1ff = $(`<div id="html_48f2bb6f972e7a28816ff0c8a122e1ff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sherwood</h1><div class="nugget-popup"><p>The Sherwood neighbourhood is identified as the area where the 23 July 2013 flood event occurred, affecting main roads including Haydn Road, Winchester Street and Spondon Street. [IMG] (p1)</p></div><div class="nugget-popup"><p>Internal flooding of domestic properties (in the vicinity of Winchester Street and Haydn Road) as part of the wider storm event that caused city&ndash;wide surface water and sewer flooding. (p4)</p></div><div class="nugget-popup"><p>Area of Sherwood (including Winchester Street and Spondon Street) formed part of the hydrologically linked catchment where internal flooding of domestic properties and a business occurred during the event. [PAG] (p7)</p></div><div class="nugget-popup"><p>Sherwood was impacted by the intense storm during which the flood event began on 23rd July 2013; the area experienced surface water flooding associated with that storm. (p12)</p></div><div class="nugget-popup"><p>The flood investigation area is located within a section of Sherwood. During the 23 July 2013 event primary surface water flow paths concentrated along key roads (Haydn Road and Winchester Street) producing urban surface water flooding in the neighbourhood and concentrating flows at low points such as the junction of Dornoch Avenue and Winchester Street. [IMG] (p14)</p></div><div class="nugget-popup"><p>Surface water flooding in the Sherwood neighbourhood concentrated around Spondon Street and the adjacent car park. Surface water pooled where gullies became overwhelmed/blocked and flowed from the car park and along Mapperley Street and Mansfield Street into Spondon Street. Pooling at the west end of the car park led to internal flooding of a commercial property. Flood waters were reported as surface water with no sewage present. [IMG] (p17)</p></div><div class="nugget-popup"><p>Multiple locations in Sherwood experienced surface water and sewer&ndash;related flooding affecting residential and retail properties, road surfaces and vehicles. [TAB] (p22)</p></div><div class="nugget-popup"><p>Low&ndash;lying valley area experienced rapid conveyance of surface water from surrounding high ground, overwhelming highway drainage and public sewers and resulting in internal and external flooding of domestic and commercial properties within the Sherwood area. (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>19 domestic properties; one business (reported across the vicinity of Winchester Street and Haydn Road) (p4)</p></div><div class="nugget-popup quant"><p>19 domestic properties; 1 business (internally flooded across the catchment within Sherwood and adjoining streets) [PAG] (p7)</p></div><div class="nugget-popup quant"><p>one commercial property [IMG] (p17)</p></div><div class="nugget-popup quant"><p>20 internal properties; 10 external properties; at least 2 vehicles damaged [TAB] (p22)</p></div><div class="nugget-popup quant"><p>19 residential properties; 1 commercial property (within Sherwood across Winchester Street, Spondon Street and Haydn Road) (p33)</p></div></div></body></div>`)[0];
+                popup_59c4b94bb33291baa6a198d4e8fd3a05.setContent(html_48f2bb6f972e7a28816ff0c8a122e1ff);
+            
+        
+
+        marker_5ca72dd9a4c18fca64512168d1405d07.bindPopup(popup_59c4b94bb33291baa6a198d4e8fd3a05)
+        ;
+
+        
+    
+    
+            var marker_80acc3ec00805b4a264b182ae3a4ddee = L.marker(
+                [52.9720867, -1.1532287],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_931c5aac9722abe3e8aff2766b60e3b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_80acc3ec00805b4a264b182ae3a4ddee.setIcon(icon_931c5aac9722abe3e8aff2766b60e3b6);
+        
+    
+        var popup_77d14c770881e1f2719ed25e8a3f79ef = L.popup({});
+
+        
+            
+                var html_a695643dfe8ab1c8c7f9142f1a73da02 = $(`<div id="html_a695643dfe8ab1c8c7f9142f1a73da02" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Carrington</h1><div class="nugget-popup"><p>Internal flooding of domestic properties and a business in the vicinity of Winchester Street and Haydn Road; the local highway network was also affected by extensive sewer and surface water flooding. (p4)</p></div><div class="nugget-popup"><p>Carrington (including Haydn Road) lies within the mapped catchment and was part of the area where internal flooding of domestic properties and a business occurred during the event. (p7)</p></div><div class="nugget-popup"><p>Area was affected by the intense storm that triggered the flood event on 23rd July 2013 and experienced surface water flooding associated with the event. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>19 domestic properties; one business (p4)</p></div><div class="nugget-popup quant"><p>19 domestic properties; 1 business (internally flooded across the catchment including Carrington streets) (p7)</p></div></div></body></div>`)[0];
+                popup_77d14c770881e1f2719ed25e8a3f79ef.setContent(html_a695643dfe8ab1c8c7f9142f1a73da02);
+            
+        
+
+        marker_80acc3ec00805b4a264b182ae3a4ddee.bindPopup(popup_77d14c770881e1f2719ed25e8a3f79ef)
+        ;
+
+        
+    
+    
+            var marker_6ff1374ce6a2439f646a44011882099e = L.marker(
+                [52.97998127817618, -1.1504571345172951],
+                {}
+            ).addTo(map_2ae9a1a9db5928a98d4bfa7f6000d0bd);
+        
+    
+            var icon_c5a5b8343f48606f87fe3e6b90ef56d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6ff1374ce6a2439f646a44011882099e.setIcon(icon_c5a5b8343f48606f87fe3e6b90ef56d8);
+        
+    
+        var popup_7453a30f3619f05c70cb21cdb9e4f293 = L.popup({});
+
+        
+            
+                var html_1763fcb298661b6b84276b0844216ec0 = $(`<div id="html_1763fcb298661b6b84276b0844216ec0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Haydn</h1><div class="nugget-popup"><p>East of the Hucknall Road junction: sewer flooding emerging from a Severn Trent Water manhole and highway drainage caused internal flooding of 12 properties; public sewerage cover and frame were ripped out of the road surface causing extensive road damage and at least one vehicle was damaged by flood depths. West of the Hucknall Road junction: surface water flowing from adjacent roads ponded on Haydn Road causing internal flooding of six properties and overtopping of a flood wall; at least one vehicle was damaged by flood depths. [TAB] (p22)</p></div><div class="nugget-popup"><p>The combined sewer on Haydn (an older sewer) is identified as not meeting modern standards and sewers in the Haydn area flooded, contributing to surface water volumes during the 23 July 2013 storm. (p24)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>12 internal properties; 6 internal properties; at least one vehicle damaged; public sewerage cover/frame ripped out [TAB] (p22)</p></div></div></body></div>`)[0];
+                popup_7453a30f3619f05c70cb21cdb9e4f293.setContent(html_1763fcb298661b6b84276b0844216ec0);
+            
+        
+
+        marker_6ff1374ce6a2439f646a44011882099e.bindPopup(popup_7453a30f3619f05c70cb21cdb9e4f293)
+        ;
+
+        
+    
+</script>
+</html>

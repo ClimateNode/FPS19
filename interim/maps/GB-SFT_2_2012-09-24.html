@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1bcc32415783a25ed6b0e5d9bdc3a09f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1bcc32415783a25ed6b0e5d9bdc3a09f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1bcc32415783a25ed6b0e5d9bdc3a09f = L.map(
+                "map_1bcc32415783a25ed6b0e5d9bdc3a09f",
+                {
+                    center: [53.51636249720511, -2.9776333437390163],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ff711f47a5fc67387e7c2997e0c40972 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_ff711f47a5fc67387e7c2997e0c40972.addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+    
+            var marker_52890d88643541356947dc6714eee7bd = L.marker(
+                [53.53156166221673, -2.95027837727458],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_fae81bfc6ab2d8d87e607309564e9cda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_52890d88643541356947dc6714eee7bd.setIcon(icon_fae81bfc6ab2d8d87e607309564e9cda);
+        
+    
+        var popup_0a3078637313c250a0e5831c10ec8197 = L.popup({});
+
+        
+            
+                var html_23e71d6e8797ba9790516a3371dae7e0 = $(`<div id="html_23e71d6e8797ba9790516a3371dae7e0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Park</h1><div class="nugget-popup"><p>The site plan covers a flooding event in the Fouracres area within Park ward. Drainage in Fouracres discharges via gullies to the surface water sewer which outfalls to Dover&#8217;s Brook or Whinny Brook; the plan depicts the spatial relationship between properties, sewers and these watercourses in the area affected by the flooding event. [PAG] (p14)</p></div></div></body></div>`)[0];
+                popup_0a3078637313c250a0e5831c10ec8197.setContent(html_23e71d6e8797ba9790516a3371dae7e0);
+            
+        
+
+        marker_52890d88643541356947dc6714eee7bd.bindPopup(popup_0a3078637313c250a0e5831c10ec8197)
+        ;
+
+        
+    
+    
+            var marker_4189604f3e956d9a7bedafdc6c28fd26 = L.marker(
+                [53.495450699092295, -2.92502338356175],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_7de04967e5aebe80ed1f47e938f4a0ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4189604f3e956d9a7bedafdc6c28fd26.setIcon(icon_7de04967e5aebe80ed1f47e938f4a0ac);
+        
+    
+        var popup_b433b204e6884694f554fa39a6be4ba3 = L.popup({});
+
+        
+            
+                var html_f8e10a4c6cfda90c9a99976691019d26 = $(`<div id="html_f8e10a4c6cfda90c9a99976691019d26" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Molyneux</h1><div class="nugget-popup"><p>Fouracres lies within the mapped wards (Park, Molyneux). The drainage description and the site plan show the Fouracres area experienced a surface&ndash;water/urban flooding event with sewer connections discharging to Dover&#8217;s Brook or Whinny Brook at the boundary of the ward. (p14)</p></div></div></body></div>`)[0];
+                popup_b433b204e6884694f554fa39a6be4ba3.setContent(html_f8e10a4c6cfda90c9a99976691019d26);
+            
+        
+
+        marker_4189604f3e956d9a7bedafdc6c28fd26.bindPopup(popup_b433b204e6884694f554fa39a6be4ba3)
+        ;
+
+        
+    
+    
+            var marker_dda86f01507f6ee66f1354fe83bef4ce = L.marker(
+                [53.50529, -2.9593115],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_e520989558b06144525f90e91c890e5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dda86f01507f6ee66f1354fe83bef4ce.setIcon(icon_e520989558b06144525f90e91c890e5c);
+        
+    
+        var popup_f8fd33d52bac5c6a9b478ba98561d673 = L.popup({});
+
+        
+            
+                var html_1ef54e13c0217abba895e65e566c3572 = $(`<div id="html_1ef54e13c0217abba895e65e566c3572" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dover's Brook</h1><div class="nugget-popup"><p>High levels in Dover's watercourse (Dover's Brook) prevented drainage discharge, flowed back into drainage systems or overflowed; low point in the defence at Dover's Bridge allowed overtopping/entry of water into Sefton Meadows. Environment Agency actions recommended to raise embankment and consider flood warnings. [TAB] (p5)</p></div><div class="nugget-popup"><p>The area of Fouracres (Maghull) experienced local flooding associated with backfilling of drainage outfalls from nearby watercourses (Whinny Brook and Dover's Brook); the report recommends investigating flap valves/non&ndash;return systems on the outfalls into those brooks to reduce backfilling. (p6)</p></div><div class="nugget-popup"><p>Dovers Brook is implicated as the source/adjacent watercourse for the event, with properties closest to its western boundary being flooded; proximity to the brook is identified as a risk factor for the inundation. [PAG,IMG] (p13)</p></div><div class="nugget-popup"><p>High water levels in Dover's Brook prevented outflow at outfalls and caused reverse flow up drainage pipework; water emerged from gullies in residents' gardens and later from manholes, contributing to local flooding. Pumping back into Dover's Brook provided only limited reduction in levels within the nearby residential area until brook levels fell. (p19)</p></div><div class="nugget-popup"><p>Outfalls into Dover's Brook were identified as a mechanism for flooding; the report recommends investigation and installation of flap valves/non&ndash;return systems on these outfalls to reduce backflow and future flooding during the 2012 event. [PAG,TAB] (p21)</p></div><div class="nugget-popup"><p>Bridges Lane (area B) experienced partial highway flooding with water pooling on the road and extending into adjacent fields; photographic evidence (25/09/2012) shows vehicles and agricultural machinery travelling through standing water. Highway flooding depth in the affected stretch was approximately 15 cm. [PAG] (p27)</p></div><div class="nugget-popup"><p>High levels on the River Alt contributed to tide&ndash;locking of the highway drainage system, preventing discharge and contributing to surface water flooding of the highway and gullies overflowing. [PAG,IMG] (p28)</p></div></div></body></div>`)[0];
+                popup_f8fd33d52bac5c6a9b478ba98561d673.setContent(html_1ef54e13c0217abba895e65e566c3572);
+            
+        
+
+        marker_dda86f01507f6ee66f1354fe83bef4ce.bindPopup(popup_f8fd33d52bac5c6a9b478ba98561d673)
+        ;
+
+        
+    
+    
+            var marker_ca3be5b89cc528f013063a5e94b66d5b = L.marker(
+                [53.50932010518491, -2.9643970391712613],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_caa141ecf2deb9898d07cdcb16563876 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ca3be5b89cc528f013063a5e94b66d5b.setIcon(icon_caa141ecf2deb9898d07cdcb16563876);
+        
+    
+        var popup_1e2edba6986fabd620e5ed6f9317104a = L.popup({});
+
+        
+            
+                var html_89bae937b77895408092ab39bee27956 = $(`<div id="html_89bae937b77895408092ab39bee27956" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sefton Meadows</h1><div class="nugget-popup"><p>A low point in the embankment at Dover's Bridge allowed floodwater to inundate the area; surface water flowing from an adjacent field entered the highway. The Environment Agency recommended investigating raising the embankment and expanding flood warning coverage. [TAB] (p5)</p></div><div class="nugget-popup"><p>Surface water from an adjacent field flowed into the highway; a low point in an embankment/defence at Dover's Bridge was identified as a contributory weakness to local flooding risk; recommendation made to expand the flood warning service for the area. (p7)</p></div></div></body></div>`)[0];
+                popup_1e2edba6986fabd620e5ed6f9317104a.setContent(html_89bae937b77895408092ab39bee27956);
+            
+        
+
+        marker_ca3be5b89cc528f013063a5e94b66d5b.bindPopup(popup_1e2edba6986fabd620e5ed6f9317104a)
+        ;
+
+        
+    
+    
+            var marker_23d70b6f491459ef2b6d64fd444b6457 = L.marker(
+                [53.5117251, -2.9892311],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_9a422538719123648f50be7ec456e509 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_23d70b6f491459ef2b6d64fd444b6457.setIcon(icon_9a422538719123648f50be7ec456e509);
+        
+    
+        var popup_4e36d7281b58a7a02eada10f151372bb = L.popup({});
+
+        
+            
+                var html_f685ba00d3307d2aff7c70cb4e1ab900 = $(`<div id="html_f685ba00d3307d2aff7c70cb4e1ab900" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lunt Meadows</h1><div class="nugget-popup"><p>The Lunt Meadows scheme was partially operational at the time of the flooding; when fully operational it will be able to store and take a greater amount of surface water from the system to reduce downstream flooding. (p18)</p></div></div></body></div>`)[0];
+                popup_4e36d7281b58a7a02eada10f151372bb.setContent(html_f685ba00d3307d2aff7c70cb4e1ab900);
+            
+        
+
+        marker_23d70b6f491459ef2b6d64fd444b6457.bindPopup(popup_4e36d7281b58a7a02eada10f151372bb)
+        ;
+
+        
+    
+    
+            var marker_ad3b078256d6376b1c1e290ca706e4d1 = L.marker(
+                [53.4994443, -2.9583345],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_e215dcd056664b5cfc1335a2f5d804b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ad3b078256d6376b1c1e290ca706e4d1.setIcon(icon_e215dcd056664b5cfc1335a2f5d804b8);
+        
+    
+        var popup_3e00c4e3c3ed7cc5cce5217a12fb24ba = L.popup({});
+
+        
+            
+                var html_d3ec802c2f921d1915ec7b4b6247f116 = $(`<div id="html_d3ec802c2f921d1915ec7b4b6247f116" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Alt</h1><div class="nugget-popup"><p>High River Alt levels restricted discharge from the surface water system and contributed to flooding that affected the adjacent road; the report records a roughly 60m stretch of road between Sefton village and the bridge being inundated to approximately 15cm depth on 2012&ndash;09&ndash;24. (p25)</p></div><div class="nugget-popup"><p>Highway flooding occurred on the stretch of highway between the bridges over the River Alt and Dover's Brook; floodwater reached approximately 15 cm depth along the carriageway. (p27)</p></div><div class="nugget-popup"><p>High River Alt levels on 2012&ndash;09&ndash;24 tide&ndash;locked the highway drainage system so drains could not discharge. Once gullies and pipes reached capacity water flowed onto the highway, causing highway flooding between the bridges over the River Alt and Dover's Brook to a depth of approximately 15 cm and contributing to surface water pooling on Sefton Lane (pooling reported at approximately 12 cm in places). [PAG] (p28)</p></div></div></body></div>`)[0];
+                popup_3e00c4e3c3ed7cc5cce5217a12fb24ba.setContent(html_d3ec802c2f921d1915ec7b4b6247f116);
+            
+        
+
+        marker_ad3b078256d6376b1c1e290ca706e4d1.bindPopup(popup_3e00c4e3c3ed7cc5cce5217a12fb24ba)
+        ;
+
+        
+    
+    
+            var marker_3900487b175229af7742830b88c575ed = L.marker(
+                [53.5309022, -2.9518893],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_1e612eed786c66ac23d51422becacafd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3900487b175229af7742830b88c575ed.setIcon(icon_1e612eed786c66ac23d51422becacafd);
+        
+    
+        var popup_76012adbefb9a31659707c1a56c7c09c = L.popup({});
+
+        
+            
+                var html_a4fdeaac093b9238c583536093c2e47b = $(`<div id="html_a4fdeaac093b9238c583536093c2e47b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Moss Lane, Lydiate</h1><div class="nugget-popup"><p>Moss Lane (Lydiate) was identified as one of the areas affected by the 24 September 2012 flooding event. Flooding was associated with overwhelmed drainage / watercourse flow; riparian owners subsequently cleared the watercourse (site meetings held, December 2012) allowing water to divert along its old course. [TAB] (p5)</p></div><div class="nugget-popup"><p>Prolonged rainfall on 2012&ndash;09&ndash;24 overwhelmed the local drainage and culvert capacity causing stormwater to back up and overflow along natural ground contours. The event caused internal flooding to at least 1 property on Moss Lane and flooded gardens and outbuildings. The area also has a recorded significant flood in 2008 that caused internal flooding to 8 properties and led to highway collapse due to wash&ndash;out. (p44)</p></div></div></body></div>`)[0];
+                popup_76012adbefb9a31659707c1a56c7c09c.setContent(html_a4fdeaac093b9238c583536093c2e47b);
+            
+        
+
+        marker_3900487b175229af7742830b88c575ed.bindPopup(popup_76012adbefb9a31659707c1a56c7c09c)
+        ;
+
+        
+    
+    
+            var marker_83278668f02eacf9c47f7bd7d7663616 = L.marker(
+                [53.5030218, -2.9520065],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_405fb732258d005810dbfaaf781d278d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_83278668f02eacf9c47f7bd7d7663616.setIcon(icon_405fb732258d005810dbfaaf781d278d);
+        
+    
+        var popup_df40f12ea7db36c0256b57cac55974ac = L.popup({});
+
+        
+            
+                var html_4a2a9473b5271f9a07df2c87a15c5163 = $(`<div id="html_4a2a9473b5271f9a07df2c87a15c5163" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fouracres, Maghull</h1><div class="nugget-popup"><p>Drainage outfalls into Whinny Brook and Dover's Brook backfilled when watercourse levels were high; drainage systems were overwhelmed and low&ndash;lying land flooded. Properties in the Fouracres area were affected or at risk. United Utilities proposed fitting non&ndash;return (flap) valves to reduce backflow. [TAB] (p5)</p></div><div class="nugget-popup"><p>Flooding occurred due to backfilling from nearby watercourses (Whinny Brook and Dover's Brook) into drainage outfalls during high river levels/excessive rainfall; recommendations were made specifically for Fouracres (Maghull) to investigate flap valves/non&ndash;return systems and for improved coordination of RMAs. (p6)</p></div><div class="nugget-popup"><p>Flooding affected properties in the northwest section of the Fouracres cul&ndash;de&ndash;sac adjacent to Dovers Brook. A contiguous block of homes/properties are shown as inundated on the council map; affected properties are outlined and shaded blue. [PAG,IMG] (p13)</p></div><div class="nugget-popup"><p>The location plan is titled as showing the extent of a flooding event at Fouracres; the map indicates surface water flooding affecting the Fouracres residential street and adjacent properties, with drainage and surface water sewers shown discharging to outfalls at local watercourses (Dover's Brook / Whitney/Whinny Brook). The plan implies inundation of the residential area but gives no property&ndash;level counts or detailed damage descriptions. [IMG] (p14)</p></div><div class="nugget-popup"><p>Flood water rose in gardens of multiple properties and in a number of instances exceeded property thresholds causing internal flooding. Water in at least one instance appeared to come up through drains and through the floor. Fire Service pumps reduced levels but water remained; additional pumping over 24&ndash;26 Sept was required and at least one further property flooded on the evening of 25 Sept. [PAG] (p16)</p></div><div class="nugget-popup"><p>Approximately 40 properties on Fouracres were affected by flood water, with 24 properties internally flooded. Foul flooding was reported but not confirmed by debris; clean (surface) water flooded back gardens of properties adjacent to The Crescent. Additional small pumps were brought in on the 26th to help clear garden flooding around Fouracres. [PAG,IMG] (p17)</p></div><div class="nugget-popup"><p>Floodwater was present around houses in Fouracres (illustrated in Figure 6). United Utilities concluded flooding in the area occurred due to surface water entering the foul sewer system (via cross&ndash;connections, directly through foul drains, or flood water being discharged into it). [PAG,IMG] (p18)</p></div><div class="nugget-popup"><p>Properties and gardens to the rear of 11, 15 and 13 Fouracres were flooded when high levels in the nearby brooks forced water back up pipework and into gullies; pumping reduced levels in Fouracres only to a limited extent and the area began to drain only once brook levels dropped. [IMG] (p19)</p></div><div class="nugget-popup"><p>The drainage system allowed water to flow from the main river (when Brooks levels were high) into Fouracres, causing flooding of this low&ndash;lying area during the event. (p20)</p></div><div class="nugget-popup"><p>Whinney Brook burst its banks and caused flooding at Fouracres. Emergency services attended, manhole covers were opened and pumping commenced overnight. Power to the road was cut then later restored. Sandbags were delivered and pumps were used to remove floodwater (hoses directed into Whinney Brook). Council teams checked householders for vulnerability. (p51)</p></div></div></body></div>`)[0];
+                popup_df40f12ea7db36c0256b57cac55974ac.setContent(html_4a2a9473b5271f9a07df2c87a15c5163);
+            
+        
+
+        marker_83278668f02eacf9c47f7bd7d7663616.bindPopup(popup_df40f12ea7db36c0256b57cac55974ac)
+        ;
+
+        
+    
+    
+            var marker_58c4968f4b9df0560e229c293887f779 = L.marker(
+                [53.5000163, -3.0021368],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_ca0cc803676762f5a061eaad7add1525 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_58c4968f4b9df0560e229c293887f779.setIcon(icon_ca0cc803676762f5a061eaad7add1525);
+        
+    
+        var popup_567a41a1ca785d8bfd64c7c798c4f165 = L.popup({});
+
+        
+            
+                var html_f13799fcb832b41d55c4cabe887deeb1 = $(`<div id="html_f13799fcb832b41d55c4cabe887deeb1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Water Street, Thornton</h1><div class="nugget-popup"><p>Defects and limited capacity in the piped watercourse serving Water Street resulted in flooding. Sefton Council secured funding to make improvements to the piped watercourse and work towards reducing flood risk. [TAB] (p5)</p></div><div class="nugget-popup"><p>Road and properties inundated. Flooding surcharged manholes on Water Street, causing water to rise to a level sufficient to cause internal flooding; gardens and outbuildings were also flooded. [PAG] (p41)</p></div><div class="nugget-popup"><p>A downstream constriction in the culvert caused water to back up and surcharge manholes located within Water Street; this surcharging rose to a level sufficient to cause internal flooding of properties on Water Street. (p42)</p></div></div></body></div>`)[0];
+                popup_567a41a1ca785d8bfd64c7c798c4f165.setContent(html_f13799fcb832b41d55c4cabe887deeb1);
+            
+        
+
+        marker_58c4968f4b9df0560e229c293887f779.bindPopup(popup_567a41a1ca785d8bfd64c7c798c4f165)
+        ;
+
+        
+    
+    
+            var marker_4495ba873be9a5bfe32f324176cc32c8 = L.marker(
+                [53.571147, -3.0518889],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_285bcf64f64e1c5726bede9c474a27de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4495ba873be9a5bfe32f324176cc32c8.setIcon(icon_285bcf64f64e1c5726bede9c474a27de);
+        
+    
+        var popup_a1b6176ec12d062b007d1fdbf723c507 = L.popup({});
+
+        
+            
+                var html_90de93a974ac9f322ecfd95f68a69943 = $(`<div id="html_90de93a974ac9f322ecfd95f68a69943" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hawksworth Drive, Formby</h1><div class="nugget-popup"><p>Surface water from the adjacent field was flowing into the highway via a low spot in the Environment Agency embankment; recommendation to raise the low spot to the same level as the rest of the embankment to stop flow into the highway. (p8)</p></div><div class="nugget-popup"><p>Surface water from tide&ndash;locked highway drainage and overflowing gullies pooled on the highway, found a low point in the pavement and flowed into properties on Hawksworth Drive; 4 properties were flooded and there was minor damage to the highway around a gully. Photos of the flooded area were taken on 2012&ndash;09&ndash;25 and the council received a sandbag request for this location. (p35)</p></div></div></body></div>`)[0];
+                popup_a1b6176ec12d062b007d1fdbf723c507.setContent(html_90de93a974ac9f322ecfd95f68a69943);
+            
+        
+
+        marker_4495ba873be9a5bfe32f324176cc32c8.bindPopup(popup_a1b6176ec12d062b007d1fdbf723c507)
+        ;
+
+        
+    
+    
+            var marker_6ccee0563e5cbadfb983f0d3f8fe0135 = L.marker(
+                [53.5019808, -2.9493874],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_cacb4d960fb74940e7731e1c47f82454 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6ccee0563e5cbadfb983f0d3f8fe0135.setIcon(icon_cacb4d960fb74940e7731e1c47f82454);
+        
+    
+        var popup_53d0af590c5828f9d42655c8a12d88e4 = L.popup({});
+
+        
+            
+                var html_ac3cb462432d128ecb99c4747eaf1b36 = $(`<div id="html_ac3cb462432d128ecb99c4747eaf1b36" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Crescent, Maghull</h1><div class="nugget-popup"><p>Foul (sewage) water flooded at least 3 properties on The Crescent; some foul water escaped via a manhole in the road but the majority emanated from manholes in residence gardens and from a side drain taking water from a kitchen. Clean (surface) water flooded rear gardens of properties on The Crescent. Additional small pumps were brought in on the 26th to clear garden flooding around The Crescent. (p17)</p></div><div class="nugget-popup"><p>Rear gardens at house numbers 39, 37 and 35 flooded when water pooled in low points and/or backflow occurred; mechanism remains unclear but flooding coincided with high levels in the nearby brooks. (p19)</p></div></div></body></div>`)[0];
+                popup_53d0af590c5828f9d42655c8a12d88e4.setContent(html_ac3cb462432d128ecb99c4747eaf1b36);
+            
+        
+
+        marker_6ccee0563e5cbadfb983f0d3f8fe0135.bindPopup(popup_53d0af590c5828f9d42655c8a12d88e4)
+        ;
+
+        
+    
+    
+            var marker_45aba5026b0f806f2f0796a620ca75c9 = L.marker(
+                [53.5090562, -2.9568457],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_37e92125d06d4187382e3a70ae5e22ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_45aba5026b0f806f2f0796a620ca75c9.setIcon(icon_37e92125d06d4187382e3a70ae5e22ca);
+        
+    
+        var popup_15b9735c0484d50811c2c51da29dfb60 = L.popup({});
+
+        
+            
+                var html_086f567f1bfd38e70d368c528f22e2c4 = $(`<div id="html_086f567f1bfd38e70d368c528f22e2c4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sefton Lane, Maghull</h1><div class="nugget-popup"><p>Surface&ndash;water flooding occurred on Sefton Lane between Dover's Brook bridge and the Cheshire Lines Bridge; the highway drain on the opposite side of the road was tide&ndash;locked by Dover's Brook, contributing to standing water on the carriageway. (p27)</p></div><div class="nugget-popup"><p>High river levels tide&ndash;locked highway drainage and gullies, causing surface water to flow onto Sefton Lane between Dover's Brook bridge and the Cheshire Lines Bridge. Flooding formed a pool across the road (~12 cm deep), pooled at the waste recycling centre entrance, flowed around rear of properties damaging outbuildings and a caravan, and caused ingress into at least 1 property. The Council closed the section of Sefton Lane at Dover's Bridge to Bridges Lane. [PAG,IMG] (p28)</p></div></div></body></div>`)[0];
+                popup_15b9735c0484d50811c2c51da29dfb60.setContent(html_086f567f1bfd38e70d368c528f22e2c4);
+            
+        
+
+        marker_45aba5026b0f806f2f0796a620ca75c9.bindPopup(popup_15b9735c0484d50811c2c51da29dfb60)
+        ;
+
+        
+    
+    
+            var marker_f2c42b4c48073620ee883e01b924ea9a = L.marker(
+                [53.506294, -2.9646475],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_d3a0d29963d07b49c21e557b90bac629 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f2c42b4c48073620ee883e01b924ea9a.setIcon(icon_d3a0d29963d07b49c21e557b90bac629);
+        
+    
+        var popup_f1892a1fde7e4533e272e735a434efd0 = L.popup({});
+
+        
+            
+                var html_e8ad819badffef92b001726fbf562de6 = $(`<div id="html_e8ad819badffef92b001726fbf562de6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bridges Lane, Maghull</h1><div class="nugget-popup"><p>Highway flooding on Bridges Lane (area B) between the bridges over the River Alt and Dover's Brook to an approximate depth of 15 cm. Floodwater covered the road and extended into adjacent fields; large vehicles (truck/tractor) were able to pass though the flooded section. [PAG,IMG] (p27)</p></div></div></body></div>`)[0];
+                popup_f1892a1fde7e4533e272e735a434efd0.setContent(html_e8ad819badffef92b001726fbf562de6);
+            
+        
+
+        marker_f2c42b4c48073620ee883e01b924ea9a.bindPopup(popup_f1892a1fde7e4533e272e735a434efd0)
+        ;
+
+        
+    
+    
+            var marker_5e37e4f2a3c7cfa245f0fafa64cfdee2 = L.marker(
+                [53.5002745, -3.0038999],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_6d97dd800c2cc421cdd97a274289c1d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5e37e4f2a3c7cfa245f0fafa64cfdee2.setIcon(icon_6d97dd800c2cc421cdd97a274289c1d6);
+        
+    
+        var popup_b9f7e40a556d19f87ab3a640cf2d8c35 = L.popup({});
+
+        
+            
+                var html_674ccfc01481b3af6b6bd39033cb1119 = $(`<div id="html_674ccfc01481b3af6b6bd39033cb1119" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hartdale Road, Thornton</h1><div class="nugget-popup"><p>Manholes surcharged on the highway following surface water drains failing to discharge into the piped watercourse, producing road flooding that followed the surcharging at Water Street. (p41)</p></div></div></body></div>`)[0];
+                popup_b9f7e40a556d19f87ab3a640cf2d8c35.setContent(html_674ccfc01481b3af6b6bd39033cb1119);
+            
+        
+
+        marker_5e37e4f2a3c7cfa245f0fafa64cfdee2.bindPopup(popup_b9f7e40a556d19f87ab3a640cf2d8c35)
+        ;
+
+        
+    
+    
+            var marker_876f0a3e0131a5cfd018a5dba56e5530 = L.marker(
+                [53.501477, -3.0075264],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_6a396c585cedb50bf2f40545ceed1f97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_876f0a3e0131a5cfd018a5dba56e5530.setIcon(icon_6a396c585cedb50bf2f40545ceed1f97);
+        
+    
+        var popup_7c950da88ebbf9a177b585d3c4ac9e0a = L.popup({});
+
+        
+            
+                var html_79efa81b9b5ac8ae59d4bf03b8b10752 = $(`<div id="html_79efa81b9b5ac8ae59d4bf03b8b10752" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brook Road, Thornton</h1><div class="nugget-popup"><p>A section of the culvert near Brook Road was found to have completely collapsed; the collapse reduced capacity of the piped system and is identified as the mechanism that led to the flooding events. (p42)</p></div></div></body></div>`)[0];
+                popup_7c950da88ebbf9a177b585d3c4ac9e0a.setContent(html_79efa81b9b5ac8ae59d4bf03b8b10752);
+            
+        
+
+        marker_876f0a3e0131a5cfd018a5dba56e5530.bindPopup(popup_7c950da88ebbf9a177b585d3c4ac9e0a)
+        ;
+
+        
+    
+    
+            var marker_5e6ef2ebacd2a72b8caf1110083441ad = L.marker(
+                [53.51538430021749, -2.9454007913665015],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_a6f53567311d36ad9fd3da9489fdd308 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5e6ef2ebacd2a72b8caf1110083441ad.setIcon(icon_a6f53567311d36ad9fd3da9489fdd308);
+        
+    
+        var popup_60290debc4582e1af0973abb0b3e1a9d = L.popup({});
+
+        
+            
+                var html_c6a76348c28197d102b494aeb4973562 = $(`<div id="html_c6a76348c28197d102b494aeb4973562" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Maghull</h1><div class="nugget-popup"><p>Parts of Maghull (specifically the Fouracres and Sefton Meadows areas) experienced flooding or were at risk due to exceptional rainfall on 24 September 2012, overwhelmed drainage, very high groundwater and high watercourse levels causing backflow and overflow. [TAB] (p5)</p></div><div class="nugget-popup"><p>The flood event affected the Fouracres area within Maghull; properties in the northwest section of Fouracres were inundated, indicating a localized flood impact within the town. [IMG] (p13)</p></div></div></body></div>`)[0];
+                popup_60290debc4582e1af0973abb0b3e1a9d.setContent(html_c6a76348c28197d102b494aeb4973562);
+            
+        
+
+        marker_5e6ef2ebacd2a72b8caf1110083441ad.bindPopup(popup_60290debc4582e1af0973abb0b3e1a9d)
+        ;
+
+        
+    
+    
+            var marker_600919e9cf6cee58ae8ff6e8df2acca2 = L.marker(
+                [53.49874171699221, -3.000234962564596],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_1e4d6babc0f89f819e1f27638025b778 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_600919e9cf6cee58ae8ff6e8df2acca2.setIcon(icon_1e4d6babc0f89f819e1f27638025b778);
+        
+    
+        var popup_5170721baacafda0b0d442f45bcc2129 = L.popup({});
+
+        
+            
+                var html_f9c0d49f2157a42838c9980ff0e9f1c1 = $(`<div id="html_f9c0d49f2157a42838c9980ff0e9f1c1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thornton</h1><div class="nugget-popup"><p>Water Street (Thornton) was affected by flooding when local drainage/piped watercourse capacity and defects were overwhelmed, resulting in inundation of the area and a need to increase piped watercourse capacity. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_5170721baacafda0b0d442f45bcc2129.setContent(html_f9c0d49f2157a42838c9980ff0e9f1c1);
+            
+        
+
+        marker_600919e9cf6cee58ae8ff6e8df2acca2.bindPopup(popup_5170721baacafda0b0d442f45bcc2129)
+        ;
+
+        
+    
+    
+            var marker_f3e1448f63fed78d03979566fcd4f762 = L.marker(
+                [53.5034122, -2.9714708],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_d8f71d4c7efbcbcfc64c29b9309da1c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f3e1448f63fed78d03979566fcd4f762.setIcon(icon_d8f71d4c7efbcbcfc64c29b9309da1c8);
+        
+    
+        var popup_17f705ee901356c9ac0ba6f5a1d2f34c = L.popup({});
+
+        
+            
+                var html_335ae4922faf47a7a887ec739bbd809c = $(`<div id="html_335ae4922faf47a7a887ec739bbd809c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sefton</h1><div class="nugget-popup"><p>Rainwater from a field on the north side ran into a dip and pooled, inundating an approximately 60m stretch of road between Sefton village and the bridge over the River Alt to around 15cm depth, causing road inundation and obstruction on 2012&ndash;09&ndash;24. (p25)</p></div></div></body></div>`)[0];
+                popup_17f705ee901356c9ac0ba6f5a1d2f34c.setContent(html_335ae4922faf47a7a887ec739bbd809c);
+            
+        
+
+        marker_f3e1448f63fed78d03979566fcd4f762.bindPopup(popup_17f705ee901356c9ac0ba6f5a1d2f34c)
+        ;
+
+        
+    
+    
+            var marker_e13dc864486b0b5506535fe8ab81136d = L.marker(
+                [53.5577054548088, -3.06551700831967],
+                {}
+            ).addTo(map_1bcc32415783a25ed6b0e5d9bdc3a09f);
+        
+    
+            var icon_6b2c387ba30d0f1f33016098921e1481 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e13dc864486b0b5506535fe8ab81136d.setIcon(icon_6b2c387ba30d0f1f33016098921e1481);
+        
+    
+        var popup_c1bfd36e9c436c10b825ccbeeed45064 = L.popup({});
+
+        
+            
+                var html_f7b599a6767ae180c7bf52db92946137 = $(`<div id="html_f7b599a6767ae180c7bf52db92946137" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Formby</h1><div class="nugget-popup"><p>Surface water drainage could not discharge into Eight Acre Brook because of high water levels, causing flooding of properties (surface water flooding). Eight Acre Brook then overtopped its embankment close to the A565; water pooled behind the defence and flowed along the footpath. There was minor damage to the highway around a gully. [IMG] (p34)</p></div></div></body></div>`)[0];
+                popup_c1bfd36e9c436c10b825ccbeeed45064.setContent(html_f7b599a6767ae180c7bf52db92946137);
+            
+        
+
+        marker_e13dc864486b0b5506535fe8ab81136d.bindPopup(popup_c1bfd36e9c436c10b825ccbeeed45064)
+        ;
+
+        
+    
+</script>
+</html>

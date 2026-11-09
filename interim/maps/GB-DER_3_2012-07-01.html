@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d10a6adfa7d327a8939e4794c96626c7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d10a6adfa7d327a8939e4794c96626c7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d10a6adfa7d327a8939e4794c96626c7 = L.map(
+                "map_d10a6adfa7d327a8939e4794c96626c7",
+                {
+                    center: [52.93387571666667, -1.5032116666666666],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a090eda27dffd4227492d02fb16ba78d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_a090eda27dffd4227492d02fb16ba78d.addTo(map_d10a6adfa7d327a8939e4794c96626c7);
+    
+            var marker_e723fbb804a61e9b799d23de7266f509 = L.marker(
+                [52.93483, -1.505179],
+                {}
+            ).addTo(map_d10a6adfa7d327a8939e4794c96626c7);
+        
+    
+            var icon_02d0ce9fb8e78388a5100237bacc025f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e723fbb804a61e9b799d23de7266f509.setIcon(icon_02d0ce9fb8e78388a5100237bacc025f);
+        
+    
+        var popup_01978eb0bd20cebbab3e65225cfc2164 = L.popup({});
+
+        
+            
+                var html_c2b44839e77d8eed492d503a96857d98 = $(`<div id="html_c2b44839e77d8eed492d503a96857d98" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Markeaton Park</h1><div class="nugget-popup"><p>Map material and the report describe surface water and watercourse flows being channelled toward Markeaton Park and Markeaton Lake, with flood&ndash;relief culvert inlets at the park's northern boundary. The July 2012 event resulted in Markeaton Lane being impassable to the north of Markeaton village and reduced visitor numbers to a commercial site (attributed to the access restriction). The park is therefore a downstream receptor of the runoff and was indirectly affected via access disruption and reduced visitation; the text does not clearly document internal inundation of park buildings. [PAG,IMG] (p8)</p></div><div class="nugget-popup"><p>The Markeaton and Mackworth brooks interact via weirs and high&ndash;level overflows at the west side of Markeaton Park, creating hydraulic interactions that influenced flow paths during heavy rainfall and contributed to the flood behaviour observed in July 2012. (p9)</p></div></div></body></div>`)[0];
+                popup_01978eb0bd20cebbab3e65225cfc2164.setContent(html_c2b44839e77d8eed492d503a96857d98);
+            
+        
+
+        marker_e723fbb804a61e9b799d23de7266f509.bindPopup(popup_01978eb0bd20cebbab3e65225cfc2164)
+        ;
+
+        
+    
+    
+            var marker_10676772e466be4551569c29dcb264c8 = L.marker(
+                [52.9375596, -1.5235724],
+                {}
+            ).addTo(map_d10a6adfa7d327a8939e4794c96626c7);
+        
+    
+            var icon_03b2e58805b459964d543f0396ebfdc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_10676772e466be4551569c29dcb264c8.setIcon(icon_03b2e58805b459964d543f0396ebfdc5);
+        
+    
+        var popup_4b367b3ba751555707b3526f4e7d5e60 = L.popup({});
+
+        
+            
+                var html_f3ebe18374cc9106a5822c93bd608338 = $(`<div id="html_f3ebe18374cc9106a5822c93bd608338" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mackworth Brook</h1><div class="nugget-popup"><p>High water levels within the watercourses (specifically the ordinary watercourse between Mackworth Brook and Markeaton) were identified as contributing to a raised groundwater table and reduced infiltration, limiting the surface water system's ability to discharge and thereby contributing to the flooding experienced in Markeaton during the July 2012 event. (p5)</p></div><div class="nugget-popup"><p>Previous flood&ndash;risk work specifically modelled flooding mechanisms along Mackworth Brook as part of assessing the July 2012 event. The brook is identified as a watercourse flowing from the northwest toward downstream receptors and was therefore implicated in the movement of water toward the Markeaton study area; the report does not explicitly confirm overtopping or a direct record of the brook causing the internal flooding of properties but treats it as a potential contributor to the July 2012 flooding. [PAG,IMG] (p8)</p></div><div class="nugget-popup"><p>Mackworth Brook is described as expected to flood following heavy rainfall, but modelling showed predicted river flooding in Mackworth Brook did not match the full extents observed in July 2012; it therefore contributed to flood conditions but did not alone explain the July 2012 extents. [PAG] (p9)</p></div><div class="nugget-popup"><p>Following heavy rainfall Mackworth Brook experienced elevated river flows; hydraulic modelling shows river flooding is expected along Mackworth Brook but these river flows alone could not reproduce the full flood extents observed in July 2012 nor would they have resulted in internal property flooding. [PAG,IMG] (p10)</p></div><div class="nugget-popup"><p>High water levels within Mackworth Brook contributed to overspill during the July 2012 event; this overspill prevented the drainage system discharging to the watercourses and thereby contributed to surface water ponding and road impassability in the locality. (p11)</p></div><div class="nugget-popup"><p>High water levels in Mackworth Brook were hydraulically linked to the water table; elevated water levels reduced ground infiltration and would have contributed to groundwater and surface water flooding in the area during the July 2012 event. (p12)</p></div><div class="nugget-popup"><p>Mackworth Brook contributed to the July 2012 flooding by providing high flows and by limiting the ability of surface water drainage to discharge; hydraulic connectivity between Mackworth Brook and Markeaton aggravated flooding and modelled high flows in the brook matched observed flood extents. (p14)</p></div><div class="nugget-popup"><p>Mackworth Brook (and the ditch that discharges to it) is the receiving watercourse for local drainage; the outfall and capacity constraints at the ditch/brook interface limited the drainage system's effectiveness and contributed to surface water flooding impacts in Markeaton during the July 2012 event. (p15)</p></div><div class="nugget-popup"><p>Mackworth Brook (referred to in the report) contributed to the flooding dynamics in July 2012: culverted ditches discharge into the brook and high catchment flows meant local outfalls and channels were overwhelmed. The report also records concerns about vegetation management and channel maintenance that could affect flows. [PAG] (p16)</p></div><div class="nugget-popup"><p>Designated Main River downstream of Markeaton that contributed to the July 2012 flooding due to the catchment's rapid response. The report identifies the watercourse between Mackworth Brook and Markeaton as needing inspection to identify restrictions that prevented surface water discharging freely. [PAG] (p17)</p></div></div></body></div>`)[0];
+                popup_4b367b3ba751555707b3526f4e7d5e60.setContent(html_f3ebe18374cc9106a5822c93bd608338);
+            
+        
+
+        marker_10676772e466be4551569c29dcb264c8.bindPopup(popup_4b367b3ba751555707b3526f4e7d5e60)
+        ;
+
+        
+    
+    
+            var marker_754994c58e8da592fdf7877470918369 = L.marker(
+                [52.9350479, -1.498343],
+                {}
+            ).addTo(map_d10a6adfa7d327a8939e4794c96626c7);
+        
+    
+            var icon_f36a05a59bf519d1eccdbe7b307dd481 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_754994c58e8da592fdf7877470918369.setIcon(icon_f36a05a59bf519d1eccdbe7b307dd481);
+        
+    
+        var popup_8f2c35a3640a64f467bdd29f002cde9b = L.popup({});
+
+        
+            
+                var html_6b25b9f3b9db5f853b40a1c2c8752f93 = $(`<div id="html_6b25b9f3b9db5f853b40a1c2c8752f93" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Markeaton Brook</h1><div class="nugget-popup"><p>River flows during July 2012 were modelled (including &gt;1 in 100 annual probability flows and culvert blockages) and while river flooding was expected along Markeaton Brook, the modelling showed river flooding alone would not reproduce the observed July 2012 flood extents nor produce internal property flooding; thus Markeaton Brook contributed but was not the sole cause of the July 2012 flooding. [PAG] (p9)</p></div><div class="nugget-popup"><p>Markeaton Brook experienced elevated river flows during heavy rainfall; modelling indicated river flooding along Markeaton Brook is expected but that river flooding alone could not recreate the flood extents observed in July 2012 or cause internal property flooding. [PAG,IMG] (p10)</p></div><div class="nugget-popup"><p>High water levels in Markeaton Brook were hydraulically linked to a raised water table which reduced infiltration and contributed to groundwater emergence and exacerbated surface water flooding in the catchment during the July 2012 event. (p12)</p></div><div class="nugget-popup"><p>The Brook (and connected ordinary watercourses) contributed to flooding in Markeaton during the July 2012 extreme event. Channel capacity and the outfall constraints to the ditch between the village and Mackworth Brook limited drainage; vegetation and debris management issues were noted that could exacerbate blockages and worsen flows. [PAG,IMG] (p16)</p></div><div class="nugget-popup"><p>Designated Main River downstream of Markeaton identified as part of the network of watercourses that contributed to the July 2012 flooding; the report calls for inspection and maintenance to allow surface water to discharge into the watercourse. (p17)</p></div></div></body></div>`)[0];
+                popup_8f2c35a3640a64f467bdd29f002cde9b.setContent(html_6b25b9f3b9db5f853b40a1c2c8752f93);
+            
+        
+
+        marker_754994c58e8da592fdf7877470918369.bindPopup(popup_8f2c35a3640a64f467bdd29f002cde9b)
+        ;
+
+        
+    
+    
+            var marker_b894fbf3d9fed0a86a8585a1f5468457 = L.marker(
+                [52.9212617, -1.4761491],
+                {}
+            ).addTo(map_d10a6adfa7d327a8939e4794c96626c7);
+        
+    
+            var icon_971bc62f9f3443b4bd1bc607c9e65443 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b894fbf3d9fed0a86a8585a1f5468457.setIcon(icon_971bc62f9f3443b4bd1bc607c9e65443);
+        
+    
+        var popup_cb80b7a7ced0c6dc46104c8d76c95341 = L.popup({});
+
+        
+            
+                var html_3825597593649d2e9c13457564bbcd60 = $(`<div id="html_3825597593649d2e9c13457564bbcd60" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Derby</h1><div class="nugget-popup"><p>Multiple historical flood incidents within the city boundaries: a major river flood in 1931/32 (which prompted construction of the Northern Relief culvert); a Markeaton Brook&ndash;related flood in November 2000 that flooded a residential property; flooding of Markeaton Lane in January 2008; residents recalled additional local events in 2001 and 2007; and the July 2012 event when intense runoff and high water levels caused surface&ndash;water ponding on Markeaton Lane, making the road impassable. The area flooded again approximately four to five weeks after July 2012. [MUL] (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property [MUL] (p11)</p></div></div></body></div>`)[0];
+                popup_cb80b7a7ced0c6dc46104c8d76c95341.setContent(html_3825597593649d2e9c13457564bbcd60);
+            
+        
+
+        marker_b894fbf3d9fed0a86a8585a1f5468457.bindPopup(popup_cb80b7a7ced0c6dc46104c8d76c95341)
+        ;
+
+        
+    
+    
+            var marker_ddf5883344c8fec0afb6234b5e675cd8 = L.marker(
+                [52.9385806, -1.5073104],
+                {}
+            ).addTo(map_d10a6adfa7d327a8939e4794c96626c7);
+        
+    
+            var icon_26142c4ad2664cf75f9fc7162709e74f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ddf5883344c8fec0afb6234b5e675cd8.setIcon(icon_26142c4ad2664cf75f9fc7162709e74f);
+        
+    
+        var popup_2caf73d9b4b589142008a2d5094032db = L.popup({});
+
+        
+            
+                var html_d863878766407d3e18f0936dcb6c5e60 = $(`<div id="html_d863878766407d3e18f0936dcb6c5e60" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Markeaton Lane, Markeaton</h1><div class="nugget-popup"><p>Surface water drainage along Markeaton Lane had limited capacity during the July 2012 event; the drainage arrangement is identified as a contributor to flooding and a potential target for network changes (e.g. allowing flows into the ditch upstream/west of Markeaton) and maintenance (gully checks). (p5)</p></div><div class="nugget-popup"><p>Markeaton Lane highways were substantially flooded during July 2012, rendering the road impassable to the north of Markeaton village and causing access restrictions that reduced visitor numbers to a nearby commercial site; local properties adjacent to the road were flooded. (p7)</p></div><div class="nugget-popup"><p>Markeaton Lane highways were substantially flooded during the July 2012 event, becoming impassable north of Markeaton village. Flooding led to internal inundation of local properties and restricted access to a commercial site, reducing visitor numbers. [PAG,IMG] (p8)</p></div><div class="nugget-popup"><p>Surface water overland flow and drainage system involvement during the July 2012 event &mdash; surface water runoff routes across the lane and into the local ditch network were identified as a significant contributor to the observed July 2012 flood extents. (p9)</p></div><div class="nugget-popup"><p>Markeaton Lane experienced flooding attributable to surface water runoff. A previous assessment concluded that river flooding alone could not reproduce the July 2012 flood extents and identified overland surface water flow paths consistent with the observed July 2012 extents; highway drainage on Markeaton Lane discharges to a ditch which is constrained and can be overwhelmed, contributing to flooding. DCC records also show Markeaton Lane flooded in January 2008. [PAG,IMG,MUL] (p10)</p></div><div class="nugget-popup"><p>Surface water runoff from surrounding wet fields ponded on the carriageway, making the road impassable to vehicles during the July 2012 event. Floodwaters largely receded after a relatively short period (residents reported most water receding after a few (2&ndash;4) hours). Markeaton Lane was also reported flooded in January 2008. [PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>Limited surface water drainage west of Markeaton caused runoff to flow along Markeaton Lane during the July 2012 event. A parallel ditch culverted under Markeaton Road could not accept eastward&ndash;flowing water (owing to a stone wall), so flows were directed towards Markeaton, contributing to flooding along the road during the storm on 6 July 2012. (p12)</p></div><div class="nugget-popup"><p>Culverts under Markeaton Lane were blocked during the July 2012 flood, causing flooding at the lane; culverts were subsequently de&ndash;silted as a response to the July 2012 event to prevent later flooding. (p14)</p></div><div class="nugget-popup"><p>Surface water runoff was managed on Markeaton Lane; the drainage system and a culverted ditch under Markeaton Lane were identified as key conveyance features and potential locations for water to be routed. The drainage operation and capacity constrained flows toward Markeaton during the July 2012 extreme event. (p15)</p></div><div class="nugget-popup"><p>Surface water runoff and drainage capacity on Markeaton Lane were examined after the July 2012 event. DCC (highways authority) maintained the drainage to its design capacity; options to reduce flow easterly into a culverted ditch under Markeaton Lane were identified as a potential low&ndash;cost mitigation, and improvements to the local drainage outfall were considered but judged unlikely to materially reduce flood severity in extreme events. The assessment concludes the July 2012 flooding was driven by an extremely wet catchment and that even a redesigned surface water system may not have significantly reduced the observed severity. [PAG,IMG] (p16)</p></div><div class="nugget-popup"><p>Surface water drainage along Markeaton Lane was implicated in the July 2012 flooding. The report recommends checking gullies, ensuring drainage connections remain clear, and considering changes to the drainage network along Markeaton Lane to allow water to pass into a ditch upstream and to the west of Markeaton to reduce risk. (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property; 2 non&ndash;residential properties; 1 commercial site (p7)</p></div><div class="nugget-popup quant"><p>1 residential property; 2 non&ndash;residential properties; 1 commercial site (impacted by access restrictions) [PAG,IMG] (p8)</p></div><div class="nugget-popup quant"><p>1 recorded flooding incident (January 2008) [PAG,IMG,MUL] (p10)</p></div></div></body></div>`)[0];
+                popup_2caf73d9b4b589142008a2d5094032db.setContent(html_d863878766407d3e18f0936dcb6c5e60);
+            
+        
+
+        marker_ddf5883344c8fec0afb6234b5e675cd8.bindPopup(popup_2caf73d9b4b589142008a2d5094032db)
+        ;
+
+        
+    
+    
+            var marker_d0c24b300e62a2d8ebef32f31b75d682 = L.marker(
+                [52.9359745, -1.5087161],
+                {}
+            ).addTo(map_d10a6adfa7d327a8939e4794c96626c7);
+        
+    
+            var icon_d04d0bf00c103892a329090ec0c41022 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d0c24b300e62a2d8ebef32f31b75d682.setIcon(icon_d04d0bf00c103892a329090ec0c41022);
+        
+    
+        var popup_42d1c6bc73c42fff7fd23f9e99d23827 = L.popup({});
+
+        
+            
+                var html_4a53ad507e7c10d3a1da5957f27d56ab = $(`<div id="html_4a53ad507e7c10d3a1da5957f27d56ab" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Markeaton</h1><div class="nugget-popup"><p>During the July 2012 event commercial and residential properties in Markeaton suffered flooding. Flooding was driven by numerous rainfall events producing saturated ground and high runoff, coupled with high water levels in the ordinary watercourse between Mackworth Brook and Markeaton and a high groundwater table that limited the surface water system's ability to discharge, overwhelming local drainage capacity. (p5)</p></div><div class="nugget-popup"><p>The village of Markeaton experienced substantial flooding in July 2012 that internally flooded local properties (one residential and two non&ndash;residential) and caused access restrictions to the north of the village that reduced visitor numbers to a commercial site. (p7)</p></div><div class="nugget-popup"><p>The village experienced substantial flooding in July 2012: Markeaton Lane highways and local properties were flooded. One residential property and two non&ndash;residential properties suffered internal flooding. An additional commercial site was impacted by access restrictions due to the highway being impassable to the north of the village, which reduced visitor numbers. [PAG,IMG] (p8)</p></div><div class="nugget-popup"><p>The village experienced flooding in July 2012; the previous study concluded that surface water runoff (overland flow) was a significant contributing factor to the observed July 2012 flood extents, and river flooding from local brooks alone could not recreate the extent of inundation seen in the event. [PAG] (p9)</p></div><div class="nugget-popup"><p>The July 2012 flood extents in Markeaton are attributed largely to surface water runoff (overland flow following topography) rather than river flooding alone; surface water runoff was identified as a significant contributing factor to the observed flooding extents in July 2012. [IMG,PAG] (p10)</p></div><div class="nugget-popup"><p>Residents reported multiple flooding incidents affecting the Markeaton area, including flooding during July 2012 (when surface water runoff and overspill from nearby watercourses caused ponding and impassable carriageways). Residents reported the majority of floodwater receded after a few hours. A second flood occurred about four to five weeks after the July 2012 event. Other dated incidents recalled by residents include 2001 and 2007. [PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>Limited surface water drainage serving Markeaton Lane to the west of Markeaton caused water to flow along the road during the July 2012 event, directing runoff towards Markeaton. (p12)</p></div><div class="nugget-popup"><p>The Markeaton area experienced flooding in July 2012 caused by a combination of sources (extremely wet antecedent conditions followed by an approximately 1 in 15 annual probability rainfall event) with hydraulic connectivity between watercourses and groundwater and inadequate discharge from surface water drainage contributing to observed flood extents. (p14)</p></div><div class="nugget-popup"><p>The village experienced surface water flooding during the July 2012 extreme event. Limitations in the local surface water drainage (notably the outfall to the ditch between the village and Mackworth Brook) constrained conveyance and contributed to the observed flooding; improvements to drainage were considered unlikely to materially reduce impacts for an event of this magnitude. (p15)</p></div><div class="nugget-popup"><p>Markeaton experienced significant flooding in July 2012 driven by an extremely wet catchment. Surface water runoff overwhelmed the local drainage/outfall arrangements (including limitations of the outfall between the village and Mackworth Brook), causing flooding of the settlement. Concerns about watercourse vegetation and maintenance were raised during the site visit. [PAG,IMG] (p16)</p></div><div class="nugget-popup"><p>July 2012 flooding affected the village. Flooding arose from a highly responsive catchment and overflowing local watercourses (Markeaton Brook and Mackworth Brook); surface water drainage connections in Markeaton (connecting to the watercourse between Mackworth Brook and Markeaton) contributed to the event. Report recommends inspection and maintenance of gullies and the drainage connection and possible changes to drainage routes to reduce future risk. [PAG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property; 2 non&ndash;residential properties; 1 commercial site (p7)</p></div><div class="nugget-popup quant"><p>1 residential property; 2 non&ndash;residential properties; 1 additional commercial site [PAG,IMG] (p8)</p></div><div class="nugget-popup quant"><p>2 flood incidents (July 2012 and a second flood ~4&ndash;5 weeks later) [PAG,MUL] (p11)</p></div></div></body></div>`)[0];
+                popup_42d1c6bc73c42fff7fd23f9e99d23827.setContent(html_4a53ad507e7c10d3a1da5957f27d56ab);
+            
+        
+
+        marker_d0c24b300e62a2d8ebef32f31b75d682.bindPopup(popup_42d1c6bc73c42fff7fd23f9e99d23827)
+        ;
+
+        
+    
+</script>
+</html>

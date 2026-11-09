@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7470b352bd30e6d378c0994d5decb4c4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7470b352bd30e6d378c0994d5decb4c4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7470b352bd30e6d378c0994d5decb4c4 = L.map(
+                "map_7470b352bd30e6d378c0994d5decb4c4",
+                {
+                    center: [52.259835325, -2.749239125],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1f706f4da018f28cdf8e442ab1114d86 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_1f706f4da018f28cdf8e442ab1114d86.addTo(map_7470b352bd30e6d378c0994d5decb4c4);
+    
+            var marker_91edbd1717ae7858f766e8fac20f9068 = L.marker(
+                [52.2651681, -2.7566455],
+                {}
+            ).addTo(map_7470b352bd30e6d378c0994d5decb4c4);
+        
+    
+            var icon_a46b8e2ee6fa886bbe950ac1c9fee32d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_91edbd1717ae7858f766e8fac20f9068.setIcon(icon_a46b8e2ee6fa886bbe950ac1c9fee32d);
+        
+    
+        var popup_68a1f9d82143c560bcc8949ad745bc67 = L.popup({});
+
+        
+            
+                var html_8206019862a89f7c584f0c63a349a064 = $(`<div id="html_8206019862a89f7c584f0c63a349a064" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Luston Primary School</h1><div class="nugget-popup"><p>Recorded as being impacted during the February 16, 2020 flood event. Flooding arose from surface water runoff (drains could not convey water away quickly) and fluvial/surface&ndash;water interaction on low&ndash;lying land, causing internal/area flooding of the school (critical infrastructure). No injuries or loss of life were reported. [TAB] (p2)</p></div><div class="nugget-popup"><p>Surface water overland flow appeared to pool behind the school before discharging to the watercourse, contributing to local flood risk. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 school (Westland Primary School) [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_68a1f9d82143c560bcc8949ad745bc67.setContent(html_8206019862a89f7c584f0c63a349a064);
+            
+        
+
+        marker_91edbd1717ae7858f766e8fac20f9068.bindPopup(popup_68a1f9d82143c560bcc8949ad745bc67)
+        ;
+
+        
+    
+    
+            var marker_ea8ac47f1aeb2313aada84d06b3f89e0 = L.marker(
+                [52.2465609, -2.7305961],
+                {}
+            ).addTo(map_7470b352bd30e6d378c0994d5decb4c4);
+        
+    
+            var icon_6b44912f7ea8e9053394fc3301515bc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ea8ac47f1aeb2313aada84d06b3f89e0.setIcon(icon_6b44912f7ea8e9053394fc3301515bc7);
+        
+    
+        var popup_335257b318988a00e52145586ff61e2a = L.popup({});
+
+        
+            
+                var html_8ed565c921572814aaf9c621138df960 = $(`<div id="html_8ed565c921572814aaf9c621138df960" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ridgemoor Brook</h1><div class="nugget-popup"><p>The Ridgemoor Brook and its upper tributaries (an ordinary watercourse) are implicated in fluvial flooding that led to internal flooding of properties in Luston; tributary flows contributed to surface&ndash;water risk around the village. [MUL] (p2)</p></div><div class="nugget-popup"><p>Identified as a small watercourse contributing to fluvial flooding in Luston. The brook, together with multiple overland flow routes, contributed to the complex flooding mechanism for the location. Downstream diversion of the channel and possible partial blockages where the channel runs deep may have reduced channel capacity. The brook has been targeted for Natural Flood Management measures and a feasibility study has been proposed by the LLFA. [MUL] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Five properties; 7 properties [MUL] (p2)</p></div></div></body></div>`)[0];
+                popup_335257b318988a00e52145586ff61e2a.setContent(html_8ed565c921572814aaf9c621138df960);
+            
+        
+
+        marker_ea8ac47f1aeb2313aada84d06b3f89e0.bindPopup(popup_335257b318988a00e52145586ff61e2a)
+        ;
+
+        
+    
+    
+            var marker_73306e583e5dbc5f6de7566f141acd01 = L.marker(
+                [52.2630229, -2.7535907],
+                {}
+            ).addTo(map_7470b352bd30e6d378c0994d5decb4c4);
+        
+    
+            var icon_42a2c536cee5661a14cfd47b11963034 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_73306e583e5dbc5f6de7566f141acd01.setIcon(icon_42a2c536cee5661a14cfd47b11963034);
+        
+    
+        var popup_e0d7b3578fb246a95639d2a05c657b34 = L.popup({});
+
+        
+            
+                var html_6b668356e36660529f52bc1c334593d1 = $(`<div id="html_6b668356e36660529f52bc1c334593d1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Luston</h1><div class="nugget-popup"><p>Internal flooding from a small unmapped watercourse/tributary through the village: properties experienced floodwater from the watercourse and from surface&ndash;water runoff (water running down the road). Surface water runoff also caused a dwelling to flood and contributed to flooding at Westland Primary School (critical infrastructure). Foul flooding is referenced. Fire Service attended a domestic property during the event. [MUL] (p2)</p></div><div class="nugget-popup"><p>The village experienced fluvial (small watercourse/Ridgemoor Brook) and surface water flooding during the February 2020 event; respondents reported overland flows and overflowing streams, and foul/sewer flooding and blocked gullies were also reported as part of the episode. [MUL] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Five properties; 7 properties [MUL] (p2)</p></div></div></body></div>`)[0];
+                popup_e0d7b3578fb246a95639d2a05c657b34.setContent(html_6b668356e36660529f52bc1c334593d1);
+            
+        
+
+        marker_73306e583e5dbc5f6de7566f141acd01.bindPopup(popup_e0d7b3578fb246a95639d2a05c657b34)
+        ;
+
+        
+    
+</script>
+</html>

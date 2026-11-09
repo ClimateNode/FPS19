@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_055470dc6bd25109ce2e7104e67f7091 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_055470dc6bd25109ce2e7104e67f7091" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_055470dc6bd25109ce2e7104e67f7091 = L.map(
+                "map_055470dc6bd25109ce2e7104e67f7091",
+                {
+                    center: [51.115563774501815, 0.860866440649731],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4cae1a3a8c8f0691323da6dbc9703c21 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_4cae1a3a8c8f0691323da6dbc9703c21.addTo(map_055470dc6bd25109ce2e7104e67f7091);
+    
+            var marker_934a8c2f4410c22373dfe961ce7e22a6 = L.marker(
+                [51.1105808, 0.8573825],
+                {}
+            ).addTo(map_055470dc6bd25109ce2e7104e67f7091);
+        
+    
+            var icon_d99915b9eae60862b6cca700f8f060ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_934a8c2f4410c22373dfe961ce7e22a6.setIcon(icon_d99915b9eae60862b6cca700f8f060ef);
+        
+    
+        var popup_85a4402ec62a1968bd282f38a9ff4ba0 = L.popup({});
+
+        
+            
+                var html_0b9db3d9c17441a410d01da19588cfac = $(`<div id="html_0b9db3d9c17441a410d01da19588cfac" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Steeds Close, Kingsnorth</h1><div class="nugget-popup"><p>Two residential properties were internally inundated and adjacent gardens flooded. [IMG,PAG,MUL] (p1)</p></div><div class="nugget-popup"><p>Two residential properties and their gardens flooded following periods of heavy rainfall; Figure 2 and accompanying photographs document water pooling against the houses during the January event and emergency responders attending the scene. [MUL] (p2)</p></div><div class="nugget-popup"><p>Properties in Steeds Close were flooded when the adjacent watercourse was overwhelmed and water flowed onto the lowest lying land, inundating some properties. [TAB,MUL] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [IMG,PAG,MUL] (p1)</p></div><div class="nugget-popup quant"><p>2 properties [MUL] (p2)</p></div></div></body></div>`)[0];
+                popup_85a4402ec62a1968bd282f38a9ff4ba0.setContent(html_0b9db3d9c17441a410d01da19588cfac);
+            
+        
+
+        marker_934a8c2f4410c22373dfe961ce7e22a6.bindPopup(popup_85a4402ec62a1968bd282f38a9ff4ba0)
+        ;
+
+        
+    
+    
+            var marker_cc58a975410c5a51882f13874b0d235c = L.marker(
+                [51.1129676, 0.8657456],
+                {}
+            ).addTo(map_055470dc6bd25109ce2e7104e67f7091);
+        
+    
+            var icon_2a90e5a73a1c6fe8dae059c5b6db10d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cc58a975410c5a51882f13874b0d235c.setIcon(icon_2a90e5a73a1c6fe8dae059c5b6db10d2);
+        
+    
+        var popup_5c6b9eb6a81c69efc4abd4c90c72fab6 = L.popup({});
+
+        
+            
+                var html_476786eee5a005a9731bb507240ce15e = $(`<div id="html_476786eee5a005a9731bb507240ce15e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bond Lane, Kingsnorth</h1><div class="nugget-popup"><p>Roadside ditch to the rear of 3 Bond Lane was filled with muddy water; evidence of surface water accumulation in the ditch associated with local flooding. [IMG,PAG,MUL] (p3)</p></div><div class="nugget-popup"><p>Surface water and muddy runoff inundated Bond Lane at the junction with Steeds Lane, covering the road and adjacent verge and reaching the base of the Bond Lane street sign; road surface was waterlogged and posed a hazard to vehicles and pedestrians. [IMG,PAG,MUL] (p4)</p></div><div class="nugget-popup"><p>The culvert connecting the ditches on either side of Bond Lane has been assessed and is thought to have collapsed. The report states this is unlikely to have had a significant impact on properties but could cause or exacerbate highway flooding in the area during the investigated events. [MUL] (p6)</p></div><div class="nugget-popup"><p>The culvert connecting the ditches either side of Bond Lane was assessed and is thought to have collapsed; this collapse could cause or exacerbate highway flooding (though it was assessed as unlikely to have had a significant impact on properties). [TAB,PAG,MUL] (p7)</p></div></div></body></div>`)[0];
+                popup_5c6b9eb6a81c69efc4abd4c90c72fab6.setContent(html_476786eee5a005a9731bb507240ce15e);
+            
+        
+
+        marker_cc58a975410c5a51882f13874b0d235c.bindPopup(popup_5c6b9eb6a81c69efc4abd4c90c72fab6)
+        ;
+
+        
+    
+    
+            var marker_b147d653015c67e7d573e8a61ad13bf1 = L.marker(
+                [51.1098928, 0.8605616],
+                {}
+            ).addTo(map_055470dc6bd25109ce2e7104e67f7091);
+        
+    
+            var icon_a68e6b00c4b700645de43bc38d4b3428 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b147d653015c67e7d573e8a61ad13bf1.setIcon(icon_a68e6b00c4b700645de43bc38d4b3428);
+        
+    
+        var popup_3c2713ecca254ad5dcc7b1cba75b4f89 = L.popup({});
+
+        
+            
+                var html_59872685b026b9a61248b71ad81645e5 = $(`<div id="html_59872685b026b9a61248b71ad81645e5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Steeds Lane, Kingsnorth</h1><div class="nugget-popup"><p>Junction of Steeds Lane and Bond Lane was heavily flooded, with water covering the entire width of the road and extending onto adjacent grassy areas; a culvert beneath Steeds Lane is visible at the site. [IMG,PAG,MUL] (p3)</p></div><div class="nugget-popup"><p>Surface water flooding occurred at the junction with Bond Lane; muddy water covered the junction and adjacent verges. A culvert beneath Steeds Lane is noted at the junction (visible behind railings) in the imagery associated with the flooded scene. [IMG,PAG,MUL] (p4)</p></div><div class="nugget-popup"><p>One half of the twin&ndash;culvert beneath Steeds Lane is believed to be obstructed; this is reported as unlikely to have had a significant impact on properties but could cause or exacerbate highway flooding. Additionally, groundwater emergence to the south of Steeds Lane indicates a high water table in the wider area, which contributed to flood conditions. [IMG,MUL] (p6)</p></div><div class="nugget-popup"><p>One half of the twin culvert beneath Steeds Lane was observed to be partially obstructed; this obstruction could cause or exacerbate highway flooding in the area. [TAB,PAG,MUL] (p7)</p></div></div></body></div>`)[0];
+                popup_3c2713ecca254ad5dcc7b1cba75b4f89.setContent(html_59872685b026b9a61248b71ad81645e5);
+            
+        
+
+        marker_b147d653015c67e7d573e8a61ad13bf1.bindPopup(popup_3c2713ecca254ad5dcc7b1cba75b4f89)
+        ;
+
+        
+    
+    
+            var marker_736e19497c1eb4e154d43a7c627ac281 = L.marker(
+                [51.1250463, 0.8620645],
+                {}
+            ).addTo(map_055470dc6bd25109ce2e7104e67f7091);
+        
+    
+            var icon_c9555625414e91c8f0f68f617eb94fc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_736e19497c1eb4e154d43a7c627ac281.setIcon(icon_c9555625414e91c8f0f68f617eb94fc1);
+        
+    
+        var popup_06921144f9aaab75f5e6ef82fe04ad48 = L.popup({});
+
+        
+            
+                var html_76270f74ef761f41ac7ae5826188e373 = $(`<div id="html_76270f74ef761f41ac7ae5826188e373" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ashford Road, Kingsnorth</h1><div class="nugget-popup"><p>The culvert beneath Ashford Road was observed to be partially obstructed by silt and a nearby chamber (where the watercourse changes direction into the culvert) was also partially obstructed. These obstructions reduced free flow away from the lower&ndash;lying land and were identified as contributory factors to the surface water flooding that affected the area in the two investigated events. [MUL] (p6)</p></div><div class="nugget-popup"><p>The culvert beneath Ashford Road at the western end of the watercourse and the adjacent chamber (where the watercourse changes direction into the culvert) were observed to be partially obstructed by silt, reducing free flow and contributing to the watercourse becoming overwhelmed and flooding nearby low&ndash;lying land. [TAB,PAG,MUL] (p7)</p></div></div></body></div>`)[0];
+                popup_06921144f9aaab75f5e6ef82fe04ad48.setContent(html_76270f74ef761f41ac7ae5826188e373);
+            
+        
+
+        marker_736e19497c1eb4e154d43a7c627ac281.bindPopup(popup_06921144f9aaab75f5e6ef82fe04ad48)
+        ;
+
+        
+    
+    
+            var marker_f6f6bea4e90ab3223cfa5ba6b431be93 = L.marker(
+                [51.119331372509066, 0.8585780032486546],
+                {}
+            ).addTo(map_055470dc6bd25109ce2e7104e67f7091);
+        
+    
+            var icon_87c466544a31021a8feb382c6cbfe685 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f6f6bea4e90ab3223cfa5ba6b431be93.setIcon(icon_87c466544a31021a8feb382c6cbfe685);
+        
+    
+        var popup_ab41db807de953f962762d03542ea927 = L.popup({});
+
+        
+            
+                var html_554c4c74eceefc501f1fc4604a91e60d = $(`<div id="html_554c4c74eceefc501f1fc4604a91e60d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingsnorth</h1><div class="nugget-popup"><p>Flooding at Steeds Close in Kingsnorth led to internal inundation of two properties and flooding of gardens. [IMG,PAG,MUL] (p1)</p></div><div class="nugget-popup"><p>Flooding occurred in Kingsnorth at Steeds Close where two properties and gardens were inundated during the heavy&ndash;rainfall events; photographic evidence and media reports document the January event. [MUL] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [IMG,PAG,MUL] (p1)</p></div><div class="nugget-popup quant"><p>2 properties [MUL] (p2)</p></div></div></body></div>`)[0];
+                popup_ab41db807de953f962762d03542ea927.setContent(html_554c4c74eceefc501f1fc4604a91e60d);
+            
+        
+
+        marker_f6f6bea4e90ab3223cfa5ba6b431be93.bindPopup(popup_ab41db807de953f962762d03542ea927)
+        ;
+
+        
+    
+</script>
+</html>

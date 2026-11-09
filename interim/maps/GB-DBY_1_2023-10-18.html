@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_be7af638b23fd42f5ac4c1d6bab5e7b8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_be7af638b23fd42f5ac4c1d6bab5e7b8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_be7af638b23fd42f5ac4c1d6bab5e7b8 = L.map(
+                "map_be7af638b23fd42f5ac4c1d6bab5e7b8",
+                {
+                    center: [53.14452168214286, -1.358036211572284],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cb9dcddda93cf65c45ff2a098fd3bace = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_cb9dcddda93cf65c45ff2a098fd3bace.addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+    
+            var marker_f8ee558ff1b46c14e191aa7dd9161144 = L.marker(
+                [54.7023545, -3.2765753],
+                {}
+            ).addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+        
+    
+            var icon_9202e870abc4bc696282bc84503c1dfe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f8ee558ff1b46c14e191aa7dd9161144.setIcon(icon_9202e870abc4bc696282bc84503c1dfe);
+        
+    
+        var popup_0177952aa91a74138485220d92b1d694 = L.popup({});
+
+        
+            
+                var html_ecd2afb31d8187a0123e3d09c44679fd = $(`<div id="html_ecd2afb31d8187a0123e3d09c44679fd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>UK</h1><div class="nugget-popup"><p>Storm Babet (18&ndash;21 Oct 2023) produced extreme rainfall across the UK, causing widespread river, surface water and drainage&ndash;network (sewer) flooding in multiple regions. (p5)</p></div></div></body></div>`)[0];
+                popup_0177952aa91a74138485220d92b1d694.setContent(html_ecd2afb31d8187a0123e3d09c44679fd);
+            
+        
+
+        marker_f8ee558ff1b46c14e191aa7dd9161144.bindPopup(popup_0177952aa91a74138485220d92b1d694)
+        ;
+
+        
+    
+    
+            var marker_794fb60d03f1c7bc9d2f3fd6ba9c7dbc = L.marker(
+                [53.2718354, -1.377915],
+                {}
+            ).addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+        
+    
+            var icon_7023156c088a4317e99e0582002244f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_794fb60d03f1c7bc9d2f3fd6ba9c7dbc.setIcon(icon_7023156c088a4317e99e0582002244f9);
+        
+    
+        var popup_b8cca91140cd18c84ea2036590b1a64c = L.popup({});
+
+        
+            
+                var html_b347fc775d72a8e8883141dffe9f335a = $(`<div id="html_b347fc775d72a8e8883141dffe9f335a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Rother</h1><div class="nugget-popup"><p>The Rother catchment was reported to have experienced higher concentrations of internally flooded properties than catchments to the west of the county, associated with the Storm Babet rainfall and resulting watercourse overtopping. (p3)</p></div></div></body></div>`)[0];
+                popup_b8cca91140cd18c84ea2036590b1a64c.setContent(html_b347fc775d72a8e8883141dffe9f335a);
+            
+        
+
+        marker_794fb60d03f1c7bc9d2f3fd6ba9c7dbc.bindPopup(popup_b8cca91140cd18c84ea2036590b1a64c)
+        ;
+
+        
+    
+    
+            var marker_846b4ec03802ca129ad8ee7ab2b89ec8 = L.marker(
+                [52.995808, -1.3017821],
+                {}
+            ).addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+        
+    
+            var icon_5f9518aff38a54310decc8047796d028 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_846b4ec03802ca129ad8ee7ab2b89ec8.setIcon(icon_5f9518aff38a54310decc8047796d028);
+        
+    
+        var popup_41c5e6bcf0a6a1d26ce6268b131ef22a = L.popup({});
+
+        
+            
+                var html_46f42cd16de704b388c4b679836e38f5 = $(`<div id="html_46f42cd16de704b388c4b679836e38f5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Erewash</h1><div class="nugget-popup"><p>The Erewash catchment experienced higher concentrations of internally flooded properties during the Storm Babet event, driven by higher magnitude rainfall in the east of the county and local population density; watercourse overtopping and surface water were significant causes, with some sewer&ndash;related flooding where pumping stations were overwhelmed. (p3)</p></div></div></body></div>`)[0];
+                popup_41c5e6bcf0a6a1d26ce6268b131ef22a.setContent(html_46f42cd16de704b388c4b679836e38f5);
+            
+        
+
+        marker_846b4ec03802ca129ad8ee7ab2b89ec8.bindPopup(popup_41c5e6bcf0a6a1d26ce6268b131ef22a)
+        ;
+
+        
+    
+    
+            var marker_95f06eb34341157cb0db0c6b95fb522c = L.marker(
+                [53.118504, -1.556618],
+                {}
+            ).addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+        
+    
+            var icon_a3659d32e5894bb31cae139a2158cb90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_95f06eb34341157cb0db0c6b95fb522c.setIcon(icon_a3659d32e5894bb31cae139a2158cb90);
+        
+    
+        var popup_ce930f34512b6f2fd5c4d6c43278266c = L.popup({});
+
+        
+            
+                var html_d81d032f30968ebf26b3e22bdaf0bc7c = $(`<div id="html_d81d032f30968ebf26b3e22bdaf0bc7c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Derbyshire</h1><div class="nugget-popup"><p>Between 18 and 21 October 2023 Derbyshire experienced extensive property flooding. Watercourse overtopping was the main cause of property flooding at most communities; surface water flooding was the main cause at some communities and a contributing cause at many; some sewer network flooding occurred where pumping stations were overwhelmed by other sources of flooding. The worst affected communities included Chesterfield, Sandiacre and Long Eaton, with higher concentrations of flooded properties in the Don and Rother, Derwent Lower, and Erewash catchments (east of the county). [PAG] (p3)</p></div><div class="nugget-popup"><p>Widespread flooding across the county during Storm Babet. A total of 1,647 properties were internally flooded across all eight districts and boroughs. Infrastructure damage recorded included bridge scouring, damage to an electricity substation, and a footbridge washed away. Several roads became impassable causing local traffic disruption. The borough of Chesterfield (within Derbyshire) was especially badly affected, with one resident killed and a large number of properties flooded. [PAG] (p5)</p></div><div class="nugget-popup"><p>Widespread internal flooding of residential properties across the county; communities investigated where five or more residential properties were internally flooded. [PAG] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1,647 properties internally flooded; 1,251 residential; 396 non&ndash;residential; 35 communities investigated encompassing 1,284 of the internally flooded properties [PAG] (p3)</p></div><div class="nugget-popup quant"><p>1,647 properties; 1 fatality; more than 400 properties (Chesterfield) [PAG] (p5)</p></div><div class="nugget-popup quant"><p>1,647 internally flooded residential properties; 35 communities identified containing five or more flooded properties; 1,284 of the flooded properties are within the investigated communities [PAG] (p6)</p></div></div></body></div>`)[0];
+                popup_ce930f34512b6f2fd5c4d6c43278266c.setContent(html_d81d032f30968ebf26b3e22bdaf0bc7c);
+            
+        
+
+        marker_95f06eb34341157cb0db0c6b95fb522c.bindPopup(popup_ce930f34512b6f2fd5c4d6c43278266c)
+        ;
+
+        
+    
+    
+            var marker_7698caae3dcc74e4e7b5d3d5e0c6830f = L.marker(
+                [53.9825271, -1.3852499932684972],
+                {}
+            ).addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+        
+    
+            var icon_8a2733d9e45a825cfb9d08fb002f8cdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7698caae3dcc74e4e7b5d3d5e0c6830f.setIcon(icon_8a2733d9e45a825cfb9d08fb002f8cdf);
+        
+    
+        var popup_ac6c22ee9d2708b5eff6322d9306873e = L.popup({});
+
+        
+            
+                var html_c86cd7d9354c98e6724f92c46246459c = $(`<div id="html_c86cd7d9354c98e6724f92c46246459c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Yorkshire</h1><div class="nugget-popup"><p>Significant flooding was observed in parts of Yorkshire during Storm Babet, driven by exceptional rainfall and elevated watercourses. (p5)</p></div></div></body></div>`)[0];
+                popup_ac6c22ee9d2708b5eff6322d9306873e.setContent(html_c86cd7d9354c98e6724f92c46246459c);
+            
+        
+
+        marker_7698caae3dcc74e4e7b5d3d5e0c6830f.bindPopup(popup_ac6c22ee9d2708b5eff6322d9306873e)
+        ;
+
+        
+    
+    
+            var marker_3d98b142d4902b85b29a5a5d63563804 = L.marker(
+                [53.145927, -1.0214971],
+                {}
+            ).addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+        
+    
+            var icon_a59faa0990cc2332f13d967d61352e65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3d98b142d4902b85b29a5a5d63563804.setIcon(icon_a59faa0990cc2332f13d967d61352e65);
+        
+    
+        var popup_f97df691e37dfc33f15e734a248dc81d = L.popup({});
+
+        
+            
+                var html_21e3a1aa46e260102487495eb4194ca6 = $(`<div id="html_21e3a1aa46e260102487495eb4194ca6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottinghamshire</h1><div class="nugget-popup"><p>Nottinghamshire experienced significant flooding associated with Storm Babet as intense rainfall fell on already saturated ground, causing river, surface&ndash;water and drainage&ndash;related flooding in parts of the county. (p5)</p></div></div></body></div>`)[0];
+                popup_f97df691e37dfc33f15e734a248dc81d.setContent(html_21e3a1aa46e260102487495eb4194ca6);
+            
+        
+
+        marker_3d98b142d4902b85b29a5a5d63563804.bindPopup(popup_f97df691e37dfc33f15e734a248dc81d)
+        ;
+
+        
+    
+    
+            var marker_f2c42157b8c7cf1b4bb5189c26a3243b = L.marker(
+                [52.8246942, -2.0074547],
+                {}
+            ).addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+        
+    
+            var icon_a5b029457d7338eed6146b81666decef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f2c42157b8c7cf1b4bb5189c26a3243b.setIcon(icon_a5b029457d7338eed6146b81666decef);
+        
+    
+        var popup_f3105a9293959aef0f2dcbb97905aacb = L.popup({});
+
+        
+            
+                var html_610b77d7ee780aa5353cb64fe9b0c438 = $(`<div id="html_610b77d7ee780aa5353cb64fe9b0c438" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Staffordshire</h1><div class="nugget-popup"><p>Parts of Staffordshire experienced significant flooding during Storm Babet due to exceptional rainfall on saturated ground, producing river and surface&ndash;water flooding impacts. (p5)</p></div></div></body></div>`)[0];
+                popup_f3105a9293959aef0f2dcbb97905aacb.setContent(html_610b77d7ee780aa5353cb64fe9b0c438);
+            
+        
+
+        marker_f2c42157b8c7cf1b4bb5189c26a3243b.bindPopup(popup_f3105a9293959aef0f2dcbb97905aacb)
+        ;
+
+        
+    
+    
+            var marker_eaea3c38d9d2f62baab2c1cac80170b2 = L.marker(
+                [52.241001350000005, 1.0466830312565236],
+                {}
+            ).addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+        
+    
+            var icon_4c0d5576b90b3477c923bdfbeede01db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eaea3c38d9d2f62baab2c1cac80170b2.setIcon(icon_4c0d5576b90b3477c923bdfbeede01db);
+        
+    
+        var popup_b89763165f6bad2f4de87681f02c591e = L.popup({});
+
+        
+            
+                var html_354c590fde9eec499f7d9ddd5cd4acae = $(`<div id="html_354c590fde9eec499f7d9ddd5cd4acae" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Suffolk</h1><div class="nugget-popup"><p>Suffolk was among the areas reported to have significant flooding associated with Storm Babet between 18&ndash;21 October 2023. (p5)</p></div></div></body></div>`)[0];
+                popup_b89763165f6bad2f4de87681f02c591e.setContent(html_354c590fde9eec499f7d9ddd5cd4acae);
+            
+        
+
+        marker_eaea3c38d9d2f62baab2c1cac80170b2.bindPopup(popup_b89763165f6bad2f4de87681f02c591e)
+        ;
+
+        
+    
+    
+            var marker_8c28bdba613ffdf0f54c99ac92a35552 = L.marker(
+                [52.53102, -1.2649062],
+                {}
+            ).addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+        
+    
+            var icon_9ca2ff666e5a23212788854542507a62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8c28bdba613ffdf0f54c99ac92a35552.setIcon(icon_9ca2ff666e5a23212788854542507a62);
+        
+    
+        var popup_0ec5a53f6fa9141a08bcfd11489a746e = L.popup({});
+
+        
+            
+                var html_2dc0f66a6e2bb232fb53db269d95f982 = $(`<div id="html_2dc0f66a6e2bb232fb53db269d95f982" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>England</h1><div class="nugget-popup"><p>Significant flooding occurred across multiple counties in England during 18&ndash;21 Oct 2023, driven by exceptional rainfall on already saturated ground and manifesting as river, surface water and drainage&ndash;network flooding. (p5)</p></div></div></body></div>`)[0];
+                popup_0ec5a53f6fa9141a08bcfd11489a746e.setContent(html_2dc0f66a6e2bb232fb53db269d95f982);
+            
+        
+
+        marker_8c28bdba613ffdf0f54c99ac92a35552.bindPopup(popup_0ec5a53f6fa9141a08bcfd11489a746e)
+        ;
+
+        
+    
+    
+            var marker_679c1aa00db9ded1c9050787238fa773 = L.marker(
+                [53.25, -1.41667],
+                {}
+            ).addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+        
+    
+            var icon_1d0548268561ef1b08f12f7665c49af3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_679c1aa00db9ded1c9050787238fa773.setIcon(icon_1d0548268561ef1b08f12f7665c49af3);
+        
+    
+        var popup_3cc57c776e90bb1014f5cfc5a0382c55 = L.popup({});
+
+        
+            
+                var html_ac9ea41079e0612428eff7b3ee8e4dbb = $(`<div id="html_ac9ea41079e0612428eff7b3ee8e4dbb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chesterfield</h1><div class="nugget-popup"><p>Community was among the worst&ndash;impacted in Derbyshire during Storm Babet with internal property flooding reported. Flooding was associated with watercourse overtopping (the main cause at most communities) with surface&ndash;water flooding a contributing or primary cause in some areas. (p3)</p></div><div class="nugget-popup"><p>During 18&ndash;21 Oct 2023 Chesterfield experienced severe flooding impacts: one resident died and more than 400 properties were internally flooded. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 fatality; more than 400 properties (p5)</p></div></div></body></div>`)[0];
+                popup_3cc57c776e90bb1014f5cfc5a0382c55.setContent(html_ac9ea41079e0612428eff7b3ee8e4dbb);
+            
+        
+
+        marker_679c1aa00db9ded1c9050787238fa773.bindPopup(popup_3cc57c776e90bb1014f5cfc5a0382c55)
+        ;
+
+        
+    
+    
+            var marker_b28d21e453ebb497d8e05b63f6f31d84 = L.marker(
+                [52.9232778, -1.2892153],
+                {}
+            ).addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+        
+    
+            var icon_1a05cb092c9811cb44dfd1aaf876f5c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b28d21e453ebb497d8e05b63f6f31d84.setIcon(icon_1a05cb092c9811cb44dfd1aaf876f5c2);
+        
+    
+        var popup_57907535822c2aa51d13d74c130dfe9a = L.popup({});
+
+        
+            
+                var html_d84a2f8b9dd37a5e819f680e60c6a3e3 = $(`<div id="html_d84a2f8b9dd37a5e819f680e60c6a3e3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sandiacre</h1><div class="nugget-popup"><p>Named as one of the worst&ndash;impacted communities in Derbyshire during Storm Babet, experiencing internal property flooding. Flooding drivers noted in the report include watercourse overtopping and surface&ndash;water flooding (either as a main or contributing cause). (p3)</p></div></div></body></div>`)[0];
+                popup_57907535822c2aa51d13d74c130dfe9a.setContent(html_d84a2f8b9dd37a5e819f680e60c6a3e3);
+            
+        
+
+        marker_b28d21e453ebb497d8e05b63f6f31d84.bindPopup(popup_57907535822c2aa51d13d74c130dfe9a)
+        ;
+
+        
+    
+    
+            var marker_3f13346d1509903d01419f2c5149fcf3 = L.marker(
+                [52.8985715, -1.270813],
+                {}
+            ).addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+        
+    
+            var icon_1bb0267ef70ae06986d2e415fdb04f7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3f13346d1509903d01419f2c5149fcf3.setIcon(icon_1bb0267ef70ae06986d2e415fdb04f7d);
+        
+    
+        var popup_2e1686feb8d9b5da42ff02013f1589a1 = L.popup({});
+
+        
+            
+                var html_babc0c0f48ed2f50f25691fcb90a2f18 = $(`<div id="html_babc0c0f48ed2f50f25691fcb90a2f18" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Long Eaton</h1><div class="nugget-popup"><p>Identified among the worst&ndash;impacted communities in Derbyshire with internal property flooding during Storm Babet. The report attributes most community flooding to watercourse overtopping, with surface&ndash;water flooding either primary at some communities or a contributing factor at others. (p3)</p></div></div></body></div>`)[0];
+                popup_2e1686feb8d9b5da42ff02013f1589a1.setContent(html_babc0c0f48ed2f50f25691fcb90a2f18);
+            
+        
+
+        marker_3f13346d1509903d01419f2c5149fcf3.bindPopup(popup_2e1686feb8d9b5da42ff02013f1589a1)
+        ;
+
+        
+    
+    
+            var marker_5919ef5b67ba98c8158e775a073d8fc4 = L.marker(
+                [52.97109, -1.307171],
+                {}
+            ).addTo(map_be7af638b23fd42f5ac4c1d6bab5e7b8);
+        
+    
+            var icon_4bf022e5107bf453b1c01fd063f01190 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5919ef5b67ba98c8158e775a073d8fc4.setIcon(icon_4bf022e5107bf453b1c01fd063f01190);
+        
+    
+        var popup_7e371b3bd75e13c4004f382d1de49f9d = L.popup({});
+
+        
+            
+                var html_c915fa5c3f67932128350ad594455179 = $(`<div id="html_c915fa5c3f67932128350ad594455179" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ilkeston</h1><div class="nugget-popup"><p>Ilkeston is cited as an area with higher population density within eastern Derbyshire where higher concentrations of internally flooded properties occurred during the Storm Babet event, linked to watercourse overtopping and surface water flooding (with some sewer&ndash;related incidents where infrastructure was overwhelmed). (p3)</p></div></div></body></div>`)[0];
+                popup_7e371b3bd75e13c4004f382d1de49f9d.setContent(html_c915fa5c3f67932128350ad594455179);
+            
+        
+
+        marker_5919ef5b67ba98c8158e775a073d8fc4.bindPopup(popup_7e371b3bd75e13c4004f382d1de49f9d)
+        ;
+
+        
+    
+</script>
+</html>

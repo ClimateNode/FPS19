@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fef5a24833801f577bbbef86d5c8ad9c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fef5a24833801f577bbbef86d5c8ad9c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fef5a24833801f577bbbef86d5c8ad9c = L.map(
+                "map_fef5a24833801f577bbbef86d5c8ad9c",
+                {
+                    center: [53.04844862, -1.06201868],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_486444f98c517e68fccab19c92b72db8 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_486444f98c517e68fccab19c92b72db8.addTo(map_fef5a24833801f577bbbef86d5c8ad9c);
+    
+            var marker_1aa382ff3e7423ffc490a3d3bf95b7b7 = L.marker(
+                [53.023167, -1.060314],
+                {}
+            ).addTo(map_fef5a24833801f577bbbef86d5c8ad9c);
+        
+    
+            var icon_200650bc36b3adecd2d231e652ee5896 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1aa382ff3e7423ffc490a3d3bf95b7b7.setIcon(icon_200650bc36b3adecd2d231e652ee5896);
+        
+    
+        var popup_ac63f24fc7c2f5d1ffc5fcf68acff38b = L.popup({});
+
+        
+            
+                var html_a6480914e0b1e69986799d8a7bf9d946 = $(`<div id="html_a6480914e0b1e69986799d8a7bf9d946" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Main Street, Woodborough</h1><div class="nugget-popup"><p>On 16th February 2020 nine properties on Main Street suffered internal flooding, with reports that water entered properties from both the rear and the front. [PAG] (p2)</p></div><div class="nugget-popup"><p>Internal flooding of properties on Main Street caused by overtopping of the Woodborough Brook where it is culverted (creating pinch points) combined with large volumes of surface water; floodwater entered properties from both the rear and the front. [IMG,PAG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties [PAG] (p2)</p></div><div class="nugget-popup quant"><p>9 properties [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_ac63f24fc7c2f5d1ffc5fcf68acff38b.setContent(html_a6480914e0b1e69986799d8a7bf9d946);
+            
+        
+
+        marker_1aa382ff3e7423ffc490a3d3bf95b7b7.bindPopup(popup_ac63f24fc7c2f5d1ffc5fcf68acff38b)
+        ;
+
+        
+    
+    
+            var marker_1b7d51f439cb6f15bac46e4741ab0198 = L.marker(
+                [53.022466, -1.0558577],
+                {}
+            ).addTo(map_fef5a24833801f577bbbef86d5c8ad9c);
+        
+    
+            var icon_1fbcef8c982be7d1e825a56683059c68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1b7d51f439cb6f15bac46e4741ab0198.setIcon(icon_1fbcef8c982be7d1e825a56683059c68);
+        
+    
+        var popup_636908f7bdb73b7e6b542b5cb5dd0e1e = L.popup({});
+
+        
+            
+                var html_1241e27832fd5c75b06d0f91d35ba1fd = $(`<div id="html_1241e27832fd5c75b06d0f91d35ba1fd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Buckland Dr, Woodborough</h1><div class="nugget-popup"><p>Internal flooding entered properties on Main Street from both the rear and the front after the Woodborough Brook overtopped at culverted pinch points and surface water ran into properties; the drainage network capacity was exceeded during prolonged heavy rainfall. [IMG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties [IMG] (p3)</p></div></div></body></div>`)[0];
+                popup_636908f7bdb73b7e6b542b5cb5dd0e1e.setContent(html_1241e27832fd5c75b06d0f91d35ba1fd);
+            
+        
+
+        marker_1b7d51f439cb6f15bac46e4741ab0198.bindPopup(popup_636908f7bdb73b7e6b542b5cb5dd0e1e)
+        ;
+
+        
+    
+    
+            var marker_99cfffbfc56428ea875eb889527cf502 = L.marker(
+                [53.145927, -1.0214971],
+                {}
+            ).addTo(map_fef5a24833801f577bbbef86d5c8ad9c);
+        
+    
+            var icon_1fc2c8d304e021ad6f8a47b46f90a3b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_99cfffbfc56428ea875eb889527cf502.setIcon(icon_1fc2c8d304e021ad6f8a47b46f90a3b6);
+        
+    
+        var popup_aca7dd52b2a840a4183ba74a5d3774dd = L.popup({});
+
+        
+            
+                var html_6cf152566ec277e5c19022f64f735136 = $(`<div id="html_6cf152566ec277e5c19022f64f735136" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottinghamshire</h1><div class="nugget-popup"><p>Experienced extensive flooding on 16th February 2020 following prolonged heavy rainfall; flood warnings and alerts were issued across the area and a major incident was declared. (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties in Woodborough (p2)</p></div></div></body></div>`)[0];
+                popup_aca7dd52b2a840a4183ba74a5d3774dd.setContent(html_6cf152566ec277e5c19022f64f735136);
+            
+        
+
+        marker_99cfffbfc56428ea875eb889527cf502.bindPopup(popup_aca7dd52b2a840a4183ba74a5d3774dd)
+        ;
+
+        
+    
+    
+            var marker_be9aa0f8961f2a03aca476394748e6d4 = L.marker(
+                [53.0260539, -1.1071169],
+                {}
+            ).addTo(map_fef5a24833801f577bbbef86d5c8ad9c);
+        
+    
+            var icon_8641817e58d54bf7dbaaa7e8e62621ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_be9aa0f8961f2a03aca476394748e6d4.setIcon(icon_8641817e58d54bf7dbaaa7e8e62621ab);
+        
+    
+        var popup_5563ffa70cab7bb2adac53d8dd812928 = L.popup({});
+
+        
+            
+                var html_393add1a3a6f3cb3e5806cb178d2a05a = $(`<div id="html_393add1a3a6f3cb3e5806cb178d2a05a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gedling</h1><div class="nugget-popup"><p>Gedling communities were affected by flooding; local recovery has been managed and continues to be managed there. Gedling responders provided emergency support, delivered sandbags to affected residents, and administered hardship and recovery grants. (p4)</p></div></div></body></div>`)[0];
+                popup_5563ffa70cab7bb2adac53d8dd812928.setContent(html_393add1a3a6f3cb3e5806cb178d2a05a);
+            
+        
+
+        marker_be9aa0f8961f2a03aca476394748e6d4.bindPopup(popup_5563ffa70cab7bb2adac53d8dd812928)
+        ;
+
+        
+    
+    
+            var marker_d674acdc6154fdb51be9ec40525baacd = L.marker(
+                [53.0246292, -1.0653077],
+                {}
+            ).addTo(map_fef5a24833801f577bbbef86d5c8ad9c);
+        
+    
+            var icon_98f1e2c7b7dea979d35aca6b09854c5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d674acdc6154fdb51be9ec40525baacd.setIcon(icon_98f1e2c7b7dea979d35aca6b09854c5f);
+        
+    
+        var popup_0ed081adbeef55d9f41087df2eb3e4f0 = L.popup({});
+
+        
+            
+                var html_b337a4c486f11064068bb5a393fa2c6c = $(`<div id="html_b337a4c486f11064068bb5a393fa2c6c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woodborough</h1><div class="nugget-popup"><p>The village was affected by flooding on 16th February 2020; flooding was associated with the Woodborough Brook (a Main River, partly culverted) and intense rainfall, resulting in internal flooding of properties with water entering from both the rear and front. [IMG,PAG] (p2)</p></div><div class="nugget-popup"><p>Residential properties on Main Street within the village experienced internal flooding when the Woodborough Brook overtopped and surface water exceeded the drainage network capacity. [IMG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties [IMG,PAG] (p2)</p></div><div class="nugget-popup quant"><p>9 properties [IMG] (p3)</p></div></div></body></div>`)[0];
+                popup_0ed081adbeef55d9f41087df2eb3e4f0.setContent(html_b337a4c486f11064068bb5a393fa2c6c);
+            
+        
+
+        marker_d674acdc6154fdb51be9ec40525baacd.bindPopup(popup_0ed081adbeef55d9f41087df2eb3e4f0)
+        ;
+
+        
+    
+</script>
+</html>

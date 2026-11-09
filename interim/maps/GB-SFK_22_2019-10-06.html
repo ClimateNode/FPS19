@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2acc54321342d8a77d91c1caa7d335a4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2acc54321342d8a77d91c1caa7d335a4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2acc54321342d8a77d91c1caa7d335a4 = L.map(
+                "map_2acc54321342d8a77d91c1caa7d335a4",
+                {
+                    center: [52.4770811, 1.7549689499999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_00ac4ca9d86b7c6ee0c429baf412ed07 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_00ac4ca9d86b7c6ee0c429baf412ed07.addTo(map_2acc54321342d8a77d91c1caa7d335a4);
+    
+            var marker_4502440379b6feac887ef065f6ed3113 = L.marker(
+                [52.4775322, 1.7561741],
+                {}
+            ).addTo(map_2acc54321342d8a77d91c1caa7d335a4);
+        
+    
+            var icon_b2f8d606c6bb019b840f80cf99cc721b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4502440379b6feac887ef065f6ed3113.setIcon(icon_b2f8d606c6bb019b840f80cf99cc721b);
+        
+    
+        var popup_15d65c76653bf913ff4e0eff466d4000 = L.popup({});
+
+        
+            
+                var html_5c8d184ba880ee9070ad6a4521ddf1b5 = $(`<div id="html_5c8d184ba880ee9070ad6a4521ddf1b5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Whapload Road, Lowestoft</h1><div class="nugget-popup"><p>Whapload Road converges to a low spot outside Homeport causing runoff from north and south to accumulate; lack of highway drainage/gullies and drop&ndash;kerb levels allowed runoff to top the kerb and convey floodwater into Homeport (road flooding forced water into forecourts). [PAG] (p4)</p></div><div class="nugget-popup"><p>Whapload Rd converges to a low depression outside Homeport causing runoff from north and south to accumulate; when runoff tops kerbs it conveys into Homeport. Lack of highway gullies exacerbated surface&ndash;water runoff and ponding; moving vehicles forced water out of the highway during floods, worsening impacts to adjacent properties. [PAG] (p5)</p></div></div></body></div>`)[0];
+                popup_15d65c76653bf913ff4e0eff466d4000.setContent(html_5c8d184ba880ee9070ad6a4521ddf1b5);
+            
+        
+
+        marker_4502440379b6feac887ef065f6ed3113.bindPopup(popup_15d65c76653bf913ff4e0eff466d4000)
+        ;
+
+        
+    
+    
+            var marker_d2159af37deb4fa4d7f4213b42051b3c = L.marker(
+                [52.47663, 1.7537638],
+                {}
+            ).addTo(map_2acc54321342d8a77d91c1caa7d335a4);
+        
+    
+            var icon_11e90abd3fbdda5794b370cde16f5114 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d2159af37deb4fa4d7f4213b42051b3c.setIcon(icon_11e90abd3fbdda5794b370cde16f5114);
+        
+    
+        var popup_e90738d65fecc96ac46abd516d5ca555 = L.popup({});
+
+        
+            
+                var html_85860e0e0c5c3eb2449e13bab599faf3 = $(`<div id="html_85860e0e0c5c3eb2449e13bab599faf3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lowestoft</h1><div class="nugget-popup"><p>At Homeport on Whapload Road there was internal flooding of properties and external flooding of others; the main private forecourt and internal access roads were flooded. The total affected area was 0.09Ha (900m2). (p2)</p></div><div class="nugget-popup"><p>An intense storm produced surface water exceedance in Lowestoft resulting in internal flooding of properties at the site (OS Grid Reference TM 55210 94258), flooding of a private forecourt and internal access roads where drainage capacity was exceeded. [IMG,MUL] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>8 properties flooded internally; 2 properties with external flooding; 0.09Ha (900m2) affected area (p2)</p></div><div class="nugget-popup quant"><p>8 properties flooded internally; 2 properties with external flooding; total affected area 0.09Ha (900m2); internal flood depths between 100mm&ndash;300mm [IMG,MUL] (p3)</p></div></div></body></div>`)[0];
+                popup_e90738d65fecc96ac46abd516d5ca555.setContent(html_85860e0e0c5c3eb2449e13bab599faf3);
+            
+        
+
+        marker_d2159af37deb4fa4d7f4213b42051b3c.bindPopup(popup_e90738d65fecc96ac46abd516d5ca555)
+        ;
+
+        
+    
+</script>
+</html>

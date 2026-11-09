@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_874cc6f27153f9637ce1f16f80d5247e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_874cc6f27153f9637ce1f16f80d5247e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_874cc6f27153f9637ce1f16f80d5247e = L.map(
+                "map_874cc6f27153f9637ce1f16f80d5247e",
+                {
+                    center: [55.00548010193351, -2.156135434700249],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bf9bb1e5558e8f7ae0f4050c534479e6 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_bf9bb1e5558e8f7ae0f4050c534479e6.addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+    
+            var marker_fa21ed70bb0d50497cf9afc3267bc1db = L.marker(
+                [54.9817308, -1.7758702],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_1a419fe2932c20c4a82f706246f8dbbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fa21ed70bb0d50497cf9afc3267bc1db.setIcon(icon_1a419fe2932c20c4a82f706246f8dbbc);
+        
+    
+        var popup_52b2a48fd200ce897ecb821bf1a3aaa1 = L.popup({});
+
+        
+            
+                var html_b61f0a12239fa446610a1af6dda56265 = $(`<div id="html_b61f0a12239fa446610a1af6dda56265" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Tyne</h1><div class="nugget-popup"><p>During the Storm Desmond event (5&ndash;6 Dec 2015) the River Tyne experienced flows not observed since 1771 and contributed to widespread flooding across the north of England. [PAG] (p3)</p></div><div class="nugget-popup"><p>The River Tyne rose to record&ndash;breaking levels during the Storm Desmond event, resulting in numerous flooding incidents along its length in South Northumberland. [PAG] (p5)</p></div><div class="nugget-popup"><p>Peak river levels associated with Storm Desmond produced river flooding at multiple Tyne locations on 05/12/2015 and 06/12/2015; these were record&ndash;high levels at several gauges and led to flooding impacts across the catchment. [TAB,MUL] (p6)</p></div><div class="nugget-popup"><p>River Tyne rose and breached its banks, flooding numerous areas along the length of the river. [MUL] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 16,000 properties affected across the north of England [PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_52b2a48fd200ce897ecb821bf1a3aaa1.setContent(html_b61f0a12239fa446610a1af6dda56265);
+            
+        
+
+        marker_fa21ed70bb0d50497cf9afc3267bc1db.bindPopup(popup_52b2a48fd200ce897ecb821bf1a3aaa1)
+        ;
+
+        
+    
+    
+            var marker_a948958931af9c9177e84424a093490a = L.marker(
+                [54.7240797, -2.3775756],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_aff233b228b32d60a5fbfc9aab812cfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a948958931af9c9177e84424a093490a.setIcon(icon_aff233b228b32d60a5fbfc9aab812cfd);
+        
+    
+        var popup_a582eba70c51c33e6254a32ba215db76 = L.popup({});
+
+        
+            
+                var html_5e97ec79bcac3da2997362ebf11765bb = $(`<div id="html_5e97ec79bcac3da2997362ebf11765bb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River South Tyne</h1><div class="nugget-popup"><p>Gauges on the South Tyne recorded high/record river levels during the 5&ndash;6 December 2015 event, contributing to river flooding in the South Tyne catchment and affecting local communities. [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_a582eba70c51c33e6254a32ba215db76.setContent(html_5e97ec79bcac3da2997362ebf11765bb);
+            
+        
+
+        marker_a948958931af9c9177e84424a093490a.bindPopup(popup_a582eba70c51c33e6254a32ba215db76)
+        ;
+
+        
+    
+    
+            var marker_e9a47eb9ba06f22704f01d6e78e3ca3d = L.marker(
+                [55.1517494, -2.3205093],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_79b39a7480872a12f9babf6469f48a1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e9a47eb9ba06f22704f01d6e78e3ca3d.setIcon(icon_79b39a7480872a12f9babf6469f48a1f);
+        
+    
+        var popup_b7540acfac40210475c9e55085fa4ee9 = L.popup({});
+
+        
+            
+                var html_16e3157ff53775e639505d2df41ec44a = $(`<div id="html_16e3157ff53775e639505d2df41ec44a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River North Tyne</h1><div class="nugget-popup"><p>Multiple gauges in the North Tyne catchment recorded record&ndash;high river levels during the Storm Desmond event, producing river flooding across the catchment and contributing to widespread flooding in Northumberland. [TAB,MUL] (p6)</p></div></div></body></div>`)[0];
+                popup_b7540acfac40210475c9e55085fa4ee9.setContent(html_16e3157ff53775e639505d2df41ec44a);
+            
+        
+
+        marker_e9a47eb9ba06f22704f01d6e78e3ca3d.bindPopup(popup_b7540acfac40210475c9e55085fa4ee9)
+        ;
+
+        
+    
+    
+            var marker_a11860e1bb496c2667f6492bd1b5d425 = L.marker(
+                [55.2675296, -2.2646012],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_bc16aba89ea0ff3882dbeb687d0a6568 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a11860e1bb496c2667f6492bd1b5d425.setIcon(icon_bc16aba89ea0ff3882dbeb687d0a6568);
+        
+    
+        var popup_6391ac592da75593f0b968a22ed83e99 = L.popup({});
+
+        
+            
+                var html_46b10241a1dee7411ee1e44829d963e7 = $(`<div id="html_46b10241a1dee7411ee1e44829d963e7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Rede</h1><div class="nugget-popup"><p>Banks of the River Rede overtopped, causing flooding of a property in West Woodburn. (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p7)</p></div></div></body></div>`)[0];
+                popup_6391ac592da75593f0b968a22ed83e99.setContent(html_46b10241a1dee7411ee1e44829d963e7);
+            
+        
+
+        marker_a11860e1bb496c2667f6492bd1b5d425.bindPopup(popup_6391ac592da75593f0b968a22ed83e99)
+        ;
+
+        
+    
+    
+            var marker_18491dece70399a64b1e8ddc0e2dd679 = L.marker(
+                [55.6906536, -2.1954626],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_a446e050a0a8e1ea8f5fbc63f3cf58f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_18491dece70399a64b1e8ddc0e2dd679.setIcon(icon_a446e050a0a8e1ea8f5fbc63f3cf58f1);
+        
+    
+        var popup_0b7318cda3a2bd15cb66f406cd3c60a9 = L.popup({});
+
+        
+            
+                var html_9fd955ef3be0a5fcb10d724055ed5df6 = $(`<div id="html_9fd955ef3be0a5fcb10d724055ed5df6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Tweed</h1><div class="nugget-popup"><p>Listed in Appendix A as an area affected by the winter 2015/16 floods and recorded on the report's GIS of known flooding incidents. (p11)</p></div></div></body></div>`)[0];
+                popup_0b7318cda3a2bd15cb66f406cd3c60a9.setContent(html_9fd955ef3be0a5fcb10d724055ed5df6);
+            
+        
+
+        marker_18491dece70399a64b1e8ddc0e2dd679.bindPopup(popup_0b7318cda3a2bd15cb66f406cd3c60a9)
+        ;
+
+        
+    
+    
+            var marker_4f098d0e19d7ed54d5077232760f800e = L.marker(
+                [55.25, -2.000559],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_91fc219d413ec70a8237613f7ce93e2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4f098d0e19d7ed54d5077232760f800e.setIcon(icon_91fc219d413ec70a8237613f7ce93e2c);
+        
+    
+        var popup_9a58d79c375096c3e858041e501e5fb8 = L.popup({});
+
+        
+            
+                var html_97de060f9c14ddd6e7805f7cc6587b81 = $(`<div id="html_97de060f9c14ddd6e7805f7cc6587b81" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northumberland</h1><div class="nugget-popup"><p>Widespread flooding across the county during the winter 2015/16 events (from heavy rainfall and rising rivers), including numerous incidents associated with the River Tyne rising to record levels; flood warnings issued for many locations in the county. [PAG,MUL] (p5)</p></div><div class="nugget-popup"><p>Widespread flooding affected many communities across Northumberland on 05/12/2015 and 06/12/2015 (Storm Desmond), with many houses and businesses damaged by floodwater (internal depths reported up to about 1 metre in some properties). Several roads experienced flooding and closures; there were also isolated incidents elsewhere in the county (including a landslide). The River Rede overtopped at West Woodburn, flooding properties. [PAG,MUL] (p6)</p></div><div class="nugget-popup"><p>Multiple flooding impacts across the county during the winter 2015/16 events: parts of the county were affected by Storm Eva (river levels rose) and by Storm Frank (widespread surface water and ordinary watercourse incidents). The Wansbeck catchment flooding flooded one property and a catering van in Morpeth. Flood warnings/alerts were issued for the county during the events. [PAG,MUL] (p7)</p></div><div class="nugget-popup"><p>The River Tyne rose and breached its banks during the winter 2015/16 events, flooding numerous areas across the county; EA inspected and repaired defences and NW dealt with sewer flooding incidents as part of county&ndash;wide recovery. [PAG,MUL] (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 major rainfall events (5&ndash;6 Dec 2015; 26 Dec 2015; 5 Jan 2016); 16 Flood Warnings issued in Northumberland; River Tyne reached its highest recorded levels in 10 areas. [PAG,MUL] (p5)</p></div><div class="nugget-popup quant"><p>three properties (West Woodburn reported on 05/12/2015) [PAG,MUL] (p6)</p></div><div class="nugget-popup quant"><p>4 flood warnings; 11 alerts; 12 Flood Alerts; 6 Flood Warnings; more than 30 towns or villages; 1 property; 1 catering van [PAG,MUL] (p7)</p></div><div class="nugget-popup quant"><p>over 3500 properties protected by EA flood defences [PAG,MUL] (p11)</p></div></div></body></div>`)[0];
+                popup_9a58d79c375096c3e858041e501e5fb8.setContent(html_97de060f9c14ddd6e7805f7cc6587b81);
+            
+        
+
+        marker_4f098d0e19d7ed54d5077232760f800e.bindPopup(popup_9a58d79c375096c3e858041e501e5fb8)
+        ;
+
+        
+    
+    
+            var marker_dd407baf4cf7962bda5232d45c416fa6 = L.marker(
+                [54.543589940789275, -2.0681574659250455],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_7c9767d86e7a08143110f451b3ad9561 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dd407baf4cf7962bda5232d45c416fa6.setIcon(icon_7c9767d86e7a08143110f451b3ad9561);
+        
+    
+        var popup_b77d104037875f8c249daa2fe23e1c16 = L.popup({});
+
+        
+            
+                var html_57a602a2717b9b211a56a9ed3483ac46 = $(`<div id="html_57a602a2717b9b211a56a9ed3483ac46" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North England</h1><div class="nugget-popup"><p>Heavy rainfall from Storm Desmond across the North of England contributed to intense precipitation, record&ndash;breaking 24&ndash;hour rainfall in Carlisle and to river and surface&ndash;water flooding in the region. (p5)</p></div><div class="nugget-popup"><p>The North of England was heavily affected by both events: Storm Desmond (5&ndash;6/12/2015) produced widespread river flooding (including exceptionally high River Tyne levels at multiple gauges) and Storm Eva (26/12/2015) also brought heavy rainfall and flooding, with the worst impacts noted in Cumbria, Lancashire and Yorkshire. [MUL] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>10 areas (River Tyne gauges) reached their highest recorded levels [MUL] (p6)</p></div></div></body></div>`)[0];
+                popup_b77d104037875f8c249daa2fe23e1c16.setContent(html_57a602a2717b9b211a56a9ed3483ac46);
+            
+        
+
+        marker_dd407baf4cf7962bda5232d45c416fa6.bindPopup(popup_b77d104037875f8c249daa2fe23e1c16)
+        ;
+
+        
+    
+    
+            var marker_3641a42e4ec07a91d7f950ef29a86a8d = L.marker(
+                [53.86117, -2.5650887],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_8f376da9d509f126aced54e13b7c299d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3641a42e4ec07a91d7f950ef29a86a8d.setIcon(icon_8f376da9d509f126aced54e13b7c299d);
+        
+    
+        var popup_5a3c5c01b57b1db8f265360e503d7c91 = L.popup({});
+
+        
+            
+                var html_1203b013d65b8284f247ac2eeb8dcab9 = $(`<div id="html_1203b013d65b8284f247ac2eeb8dcab9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancashire</h1><div class="nugget-popup"><p>Storm Eva (26/12/2015) produced heavy rainfall across the North of England; Lancashire is named as one of the areas worst affected by the event, with associated rises in river levels and flooding. (p6)</p></div></div></body></div>`)[0];
+                popup_5a3c5c01b57b1db8f265360e503d7c91.setContent(html_1203b013d65b8284f247ac2eeb8dcab9);
+            
+        
+
+        marker_3641a42e4ec07a91d7f950ef29a86a8d.bindPopup(popup_5a3c5c01b57b1db8f265360e503d7c91)
+        ;
+
+        
+    
+    
+            var marker_f6ae3ed20393c0de08822ec4843b743c = L.marker(
+                [54.6143136, -2.9420899],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_3de9b47f90a83c15bca110a170affaf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f6ae3ed20393c0de08822ec4843b743c.setIcon(icon_3de9b47f90a83c15bca110a170affaf6);
+        
+    
+        var popup_87b11224630922533eeffc79e0a09ad0 = L.popup({});
+
+        
+            
+                var html_bb2d5963e73ade7fad69fa3eb7e54673 = $(`<div id="html_bb2d5963e73ade7fad69fa3eb7e54673" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cumbria</h1><div class="nugget-popup"><p>Storm Eva (26/12/2015) brought heavy rainfall causing river levels to rise and flooding across the North of England, with Cumbria identified as one of the worst&ndash;affected areas. (p6)</p></div></div></body></div>`)[0];
+                popup_87b11224630922533eeffc79e0a09ad0.setContent(html_bb2d5963e73ade7fad69fa3eb7e54673);
+            
+        
+
+        marker_f6ae3ed20393c0de08822ec4843b743c.bindPopup(popup_87b11224630922533eeffc79e0a09ad0)
+        ;
+
+        
+    
+    
+            var marker_ba79bb966c746a2ac4781ff7c72d6350 = L.marker(
+                [54.9740218, -2.0175509],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_2244b52a261c72d31584696d3e4e9916 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ba79bb966c746a2ac4781ff7c72d6350.setIcon(icon_2244b52a261c72d31584696d3e4e9916);
+        
+    
+        var popup_0e914cf3ae78221575bfc16c269073b5 = L.popup({});
+
+        
+            
+                var html_23a5bc6e349949be6f2698d38217d106 = $(`<div id="html_23a5bc6e349949be6f2698d38217d106" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Corbridge</h1><div class="nugget-popup"><p>Severe river flooding associated with the River Tyne on 05/12/2015 caused damage to houses and businesses (internal flooding with water depths reported up to around 1 metre in some properties) and required rescue of residents from upper floors. Corbridge experienced further flooding on 26/12/2015 with a small number of residential properties suffering repeat internal flooding. [TAB,PAG,MUL] (p6)</p></div><div class="nugget-popup"><p>Repeat internal flooding to residential properties (residential properties experienced repeat internal flooding). (p7)</p></div><div class="nugget-popup"><p>River Tyne/river&ndash;related flooding caused flood banks at Corbridge to be damaged; water rose to exceptionally high levels during the winter 2015/16 events and caused significant damage to properties and infrastructure in the area. [PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>During Storm Desmond (5&ndash;6 Dec 2015) and again during Storm Eva (26 Dec 2015) river levels rose and flooded the area; water rose to exceptionally high levels and caused a large amount of damage to both residential and business properties. [PAG,MUL] (p12)</p></div></div></body></div>`)[0];
+                popup_0e914cf3ae78221575bfc16c269073b5.setContent(html_23a5bc6e349949be6f2698d38217d106);
+            
+        
+
+        marker_ba79bb966c746a2ac4781ff7c72d6350.bindPopup(popup_0e914cf3ae78221575bfc16c269073b5)
+        ;
+
+        
+    
+    
+            var marker_6ce5e65c2cde58a395fdfefcd36292df = L.marker(
+                [55.1758997, -2.16997],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_cc08782699b926cfdd5a410fcb46fed2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6ce5e65c2cde58a395fdfefcd36292df.setIcon(icon_cc08782699b926cfdd5a410fcb46fed2);
+        
+    
+        var popup_912c1d3e774f54f71f79cefbd27022cb = L.popup({});
+
+        
+            
+                var html_546acf99ea383d9bb2a8a2e5d1303f62 = $(`<div id="html_546acf99ea383d9bb2a8a2e5d1303f62" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Woodburn</h1><div class="nugget-popup"><p>The River Rede overtopped its banks at West Woodburn, causing properties to flood. During the 5&ndash;6 December 2015 event properties in the hamlet were flooded; an additional incident on 26/12/2015 again caused internal flooding to a property. [PAG,MUL] (p6)</p></div><div class="nugget-popup"><p>Overtopping of the River Rede caused flooding of a property in the hamlet. (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties; 1 property [PAG,MUL] (p6)</p></div><div class="nugget-popup quant"><p>1 property (p7)</p></div></div></body></div>`)[0];
+                popup_912c1d3e774f54f71f79cefbd27022cb.setContent(html_546acf99ea383d9bb2a8a2e5d1303f62);
+            
+        
+
+        marker_6ce5e65c2cde58a395fdfefcd36292df.bindPopup(popup_912c1d3e774f54f71f79cefbd27022cb)
+        ;
+
+        
+    
+    
+            var marker_2e393ca9f1a5b6e14ba5c3abfc4022a3 = L.marker(
+                [55.1443709, -2.2549272],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_2f2fe9a235d23b4bfbf33a2d3e63f483 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2e393ca9f1a5b6e14ba5c3abfc4022a3.setIcon(icon_2f2fe9a235d23b4bfbf33a2d3e63f483);
+        
+    
+        var popup_9c37499bb5d805659d38c0098200c186 = L.popup({});
+
+        
+            
+                var html_916535946067c765ba35014a253c2557 = $(`<div id="html_916535946067c765ba35014a253c2557" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bellingham</h1><div class="nugget-popup"><p>Bellingham gauge recorded a record&ndash;high river level associated with river flooding in the area. [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_9c37499bb5d805659d38c0098200c186.setContent(html_916535946067c765ba35014a253c2557);
+            
+        
+
+        marker_2e393ca9f1a5b6e14ba5c3abfc4022a3.bindPopup(popup_9c37499bb5d805659d38c0098200c186)
+        ;
+
+        
+    
+    
+            var marker_da3730f38a535e54dabfd8dcf82cc070 = L.marker(
+                [55.031116, -2.1283485],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_d96bb70b8a6f5bb444497085920eeaf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_da3730f38a535e54dabfd8dcf82cc070.setIcon(icon_d96bb70b8a6f5bb444497085920eeaf0);
+        
+    
+        var popup_d39ddec4b16f034ef3ae06720412d5f1 = L.popup({});
+
+        
+            
+                var html_e1659a92c05ca9ae05baa708a218b75c = $(`<div id="html_e1659a92c05ca9ae05baa708a218b75c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chollerford</h1><div class="nugget-popup"><p>Chollerford gauge recorded a record&ndash;high river level associated with river flooding in the area. [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_d39ddec4b16f034ef3ae06720412d5f1.setContent(html_e1659a92c05ca9ae05baa708a218b75c);
+            
+        
+
+        marker_da3730f38a535e54dabfd8dcf82cc070.bindPopup(popup_d39ddec4b16f034ef3ae06720412d5f1)
+        ;
+
+        
+    
+    
+            var marker_8f2ee727496e6dbf48faf7f83a4175a5 = L.marker(
+                [54.94784, -2.500264],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_af9c9727dddfbfe40d358a72b11182c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8f2ee727496e6dbf48faf7f83a4175a5.setIcon(icon_af9c9727dddfbfe40d358a72b11182c4);
+        
+    
+        var popup_d6bd1375b0b831e65ce35b4bfccf4df2 = L.popup({});
+
+        
+            
+                var html_6c71374aa24df4b9a25ff432c8b46613 = $(`<div id="html_6c71374aa24df4b9a25ff432c8b46613" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Featherstone</h1><div class="nugget-popup"><p>South Tyne river levels on 05/12/2015 were unusually high, causing river flooding that affected communities and contributed to damage to properties and businesses (report notes water depths of up to 1 m within some properties in affected areas). [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_d6bd1375b0b831e65ce35b4bfccf4df2.setContent(html_6c71374aa24df4b9a25ff432c8b46613);
+            
+        
+
+        marker_8f2ee727496e6dbf48faf7f83a4175a5.bindPopup(popup_d6bd1375b0b831e65ce35b4bfccf4df2)
+        ;
+
+        
+    
+    
+            var marker_7c082542d51092d2a4103de6f53a0269 = L.marker(
+                [54.9728368, -2.2449558],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_f977dbf953d2eb5c0e5603e4de768748 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7c082542d51092d2a4103de6f53a0269.setIcon(icon_f977dbf953d2eb5c0e5603e4de768748);
+        
+    
+        var popup_1e073e78ad3f52e3eecc9bb3c7d57003 = L.popup({});
+
+        
+            
+                var html_81ba637dde8e680594f75cd152d92e53 = $(`<div id="html_81ba637dde8e680594f75cd152d92e53" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Haydon Bridge</h1><div class="nugget-popup"><p>South Tyne river levels on 05/12/2015 were significantly elevated (record/high), causing river flooding in Haydon Bridge and contributing to damage to properties and businesses (report notes water depths of up to 1 m within some properties in affected areas). [TAB] (p6)</p></div><div class="nugget-popup"><p>Identified as one of the worst hit areas during the winter 2015/16 floods where water rose to exceptionally high levels and caused a large amount of damage to both residential and business properties. [PAG] (p11)</p></div><div class="nugget-popup"><p>Water rose to exceptionally high levels during the Storm Desmond event, causing a large amount of damage to residential and business properties. [PAG] (p12)</p></div></div></body></div>`)[0];
+                popup_1e073e78ad3f52e3eecc9bb3c7d57003.setContent(html_81ba637dde8e680594f75cd152d92e53);
+            
+        
+
+        marker_7c082542d51092d2a4103de6f53a0269.bindPopup(popup_1e073e78ad3f52e3eecc9bb3c7d57003)
+        ;
+
+        
+    
+    
+            var marker_a6e013f6f419362fd00fbf12098628b8 = L.marker(
+                [54.971478, -2.1017928],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_42db256a4739cf0f1f4efba974ad9207 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a6e013f6f419362fd00fbf12098628b8.setIcon(icon_42db256a4739cf0f1f4efba974ad9207);
+        
+    
+        var popup_e4b65bf17d93a97bcf159dc25fcffc56 = L.popup({});
+
+        
+            
+                var html_8d7e3d3e4a5959a5fc7dfec70747c195 = $(`<div id="html_8d7e3d3e4a5959a5fc7dfec70747c195" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hexham</h1><div class="nugget-popup"><p>Hexham experienced very high/record Tyne river levels on 05/12/2015 (peak 34.843 mAOD), contributing to river flooding in the town as part of the wider Tyne catchment impacts. [TAB] (p6)</p></div><div class="nugget-popup"><p>During Storm Desmond (5&ndash;6 Dec 2015) river levels rose to exceptionally high levels and flooded the area, causing a large amount of damage to both residential and business properties. [PAG] (p12)</p></div></div></body></div>`)[0];
+                popup_e4b65bf17d93a97bcf159dc25fcffc56.setContent(html_8d7e3d3e4a5959a5fc7dfec70747c195);
+            
+        
+
+        marker_a6e013f6f419362fd00fbf12098628b8.bindPopup(popup_e4b65bf17d93a97bcf159dc25fcffc56)
+        ;
+
+        
+    
+    
+            var marker_c90e53d5885e1193f35a8872101afd01 = L.marker(
+                [54.949305125893986, -1.9745978891976155],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_caee995be91119a357fdda85cc2f0b32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c90e53d5885e1193f35a8872101afd01.setIcon(icon_caee995be91119a357fdda85cc2f0b32);
+        
+    
+        var popup_574903a38d86d7faf8ac0ca2592e8976 = L.popup({});
+
+        
+            
+                var html_18cb43bfddd76e74e16080a954311d13 = $(`<div id="html_18cb43bfddd76e74e16080a954311d13" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Riding Mill</h1><div class="nugget-popup"><p>River Tyne at the Riding Mill gauge reached a record high river level, indicating river flooding at Riding Mill during Storm Desmond. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>River level 5.99 m (site datum); rank 1 (highest on record) [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_574903a38d86d7faf8ac0ca2592e8976.setContent(html_18cb43bfddd76e74e16080a954311d13);
+            
+        
+
+        marker_c90e53d5885e1193f35a8872101afd01.bindPopup(popup_574903a38d86d7faf8ac0ca2592e8976)
+        ;
+
+        
+    
+    
+            var marker_d4403c58374d2479169f8fbcb8fa1af8 = L.marker(
+                [54.949554, -1.9258955],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_76122f5d9b597db50dd98cafbb5bd6c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d4403c58374d2479169f8fbcb8fa1af8.setIcon(icon_76122f5d9b597db50dd98cafbb5bd6c5);
+        
+    
+        var popup_faf570dadaf268feeb16685e3b2565d0 = L.popup({});
+
+        
+            
+                var html_d9b82db9b1c29ce06ba306fbd0766d99 = $(`<div id="html_d9b82db9b1c29ce06ba306fbd0766d99" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bywell</h1><div class="nugget-popup"><p>River Tyne at the Bywell gauge reached a record high river level, indicating river flooding at Bywell during Storm Desmond. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>River level 6.96 m (site datum); rank 1 (highest on record) [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_faf570dadaf268feeb16685e3b2565d0.setContent(html_d9b82db9b1c29ce06ba306fbd0766d99);
+            
+        
+
+        marker_d4403c58374d2479169f8fbcb8fa1af8.bindPopup(popup_faf570dadaf268feeb16685e3b2565d0)
+        ;
+
+        
+    
+    
+            var marker_64d9e52de6deedab8f02a728266e9778 = L.marker(
+                [54.9705304, -2.4582171],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_a994c1365f288ad2b93a0365f5c499c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_64d9e52de6deedab8f02a728266e9778.setIcon(icon_a994c1365f288ad2b93a0365f5c499c2);
+        
+    
+        var popup_662785c683d1a5bfa84f7685b9c34c16 = L.popup({});
+
+        
+            
+                var html_0a6227bce6fea91acbc87c62781eac6e = $(`<div id="html_0a6227bce6fea91acbc87c62781eac6e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Haltwhistle</h1><div class="nugget-popup"><p>River levels at the South Tyne gauge on 05/12/2015 reached record/high levels, resulting in river flooding in the locality and contributing to damage to houses and businesses (report notes water depths of up to 1 m within some properties in affected areas). [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_662785c683d1a5bfa84f7685b9c34c16.setContent(html_0a6227bce6fea91acbc87c62781eac6e);
+            
+        
+
+        marker_64d9e52de6deedab8f02a728266e9778.bindPopup(popup_662785c683d1a5bfa84f7685b9c34c16)
+        ;
+
+        
+    
+    
+            var marker_4a6b2d10a92fa522eb9f02c52f3ce7a1 = L.marker(
+                [55.1675437, -1.6907444],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_cefc981fc7d893fb1c019bd651c42135 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4a6b2d10a92fa522eb9f02c52f3ce7a1.setIcon(icon_cefc981fc7d893fb1c019bd651c42135);
+        
+    
+        var popup_dc606d2cc7f29614417aaf79f9655581 = L.popup({});
+
+        
+            
+                var html_e7ec6e1ee6d0367ece0b4a2dc5832299 = $(`<div id="html_e7ec6e1ee6d0367ece0b4a2dc5832299" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Morpeth</h1><div class="nugget-popup"><p>Surface water flooding caused internal flooding to one residential property and affected a catering van; recently completed fluvial flood defences prevented more widespread flooding across the town. (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property; 1 catering van (p7)</p></div></div></body></div>`)[0];
+                popup_dc606d2cc7f29614417aaf79f9655581.setContent(html_e7ec6e1ee6d0367ece0b4a2dc5832299);
+            
+        
+
+        marker_4a6b2d10a92fa522eb9f02c52f3ce7a1.bindPopup(popup_dc606d2cc7f29614417aaf79f9655581)
+        ;
+
+        
+    
+    
+            var marker_499bd87f52f1bc18beb158f5b7e3d383 = L.marker(
+                [55.7692442, -2.0026472],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_6560d8ce6ea5bc8832ce5b60bd9e6381 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_499bd87f52f1bc18beb158f5b7e3d383.setIcon(icon_6560d8ce6ea5bc8832ce5b60bd9e6381);
+        
+    
+        var popup_42cbaac1a547203be5ec048d0eda4916 = L.popup({});
+
+        
+            
+                var html_edff1d4bbee2dc73a0fc606026c0cf2c = $(`<div id="html_edff1d4bbee2dc73a0fc606026c0cf2c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Berwick-Upon-Tweed</h1><div class="nugget-popup"><p>Blockage of an unnamed watercourse caused water to surcharge from an underground culvert to the north of the town. (p7)</p></div><div class="nugget-popup"><p>Experienced surface water and ordinary watercourse flooding incidents during the 5&ndash;6 January 2016 event, resulting in properties being affected. [PAG] (p12)</p></div></div></body></div>`)[0];
+                popup_42cbaac1a547203be5ec048d0eda4916.setContent(html_edff1d4bbee2dc73a0fc606026c0cf2c);
+            
+        
+
+        marker_499bd87f52f1bc18beb158f5b7e3d383.bindPopup(popup_42cbaac1a547203be5ec048d0eda4916)
+        ;
+
+        
+    
+    
+            var marker_1376be62a1c06a29c65af5f3d28e345e = L.marker(
+                [54.96760507778747, -1.8677755429830711],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_4029cbaab940ecbffd6bb58f189955d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1376be62a1c06a29c65af5f3d28e345e.setIcon(icon_4029cbaab940ecbffd6bb58f189955d2);
+        
+    
+        var popup_f3b4934438ae10a048c30f00431c2c87 = L.popup({});
+
+        
+            
+                var html_1c9424a46c22023d57a5b9710396ddb0 = $(`<div id="html_1c9424a46c22023d57a5b9710396ddb0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ovingham</h1><div class="nugget-popup"><p>River levels along the Tyne Valley rose and flooded surrounding areas on 26 Dec 2015; additionally experienced surface water and ordinary watercourse flooding on 5&ndash;6 Jan 2016. [PAG,MUL] (p12)</p></div></div></body></div>`)[0];
+                popup_f3b4934438ae10a048c30f00431c2c87.setContent(html_1c9424a46c22023d57a5b9710396ddb0);
+            
+        
+
+        marker_1376be62a1c06a29c65af5f3d28e345e.bindPopup(popup_f3b4934438ae10a048c30f00431c2c87)
+        ;
+
+        
+    
+    
+            var marker_290baa133c2867532bf7c5b77c023ca9 = L.marker(
+                [55.04988, -1.7435142],
+                {}
+            ).addTo(map_874cc6f27153f9637ce1f16f80d5247e);
+        
+    
+            var icon_2078f7f6126a4960d41e608aca8a3596 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_290baa133c2867532bf7c5b77c023ca9.setIcon(icon_2078f7f6126a4960d41e608aca8a3596);
+        
+    
+        var popup_066fd5e149e1b9b4689862e00769b108 = L.popup({});
+
+        
+            
+                var html_53f34dc0c09ad7a3103002656dc5c0f2 = $(`<div id="html_53f34dc0c09ad7a3103002656dc5c0f2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ponteland</h1><div class="nugget-popup"><p>Experienced surface water and ordinary watercourse flooding that affected properties; listed as one of the areas most affected in terms of number of properties flooded during the 5&ndash;6 January 2016 event. (p12)</p></div></div></body></div>`)[0];
+                popup_066fd5e149e1b9b4689862e00769b108.setContent(html_53f34dc0c09ad7a3103002656dc5c0f2);
+            
+        
+
+        marker_290baa133c2867532bf7c5b77c023ca9.bindPopup(popup_066fd5e149e1b9b4689862e00769b108)
+        ;
+
+        
+    
+</script>
+</html>

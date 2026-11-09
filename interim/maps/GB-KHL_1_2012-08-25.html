@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5bd99cde6a2a941caf44262f52f814ce {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5bd99cde6a2a941caf44262f52f814ce" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5bd99cde6a2a941caf44262f52f814ce = L.map(
+                "map_5bd99cde6a2a941caf44262f52f814ce",
+                {
+                    center: [53.770998836135476, -0.35732955321190546],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0b13161121fcd3fd11d09101b1aaedc7 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_0b13161121fcd3fd11d09101b1aaedc7.addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+    
+            var marker_effd6c81f1b304cedd88542934d02856 = L.marker(
+                [53.78632, -0.32134384],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_972b1f55c93b01e24101b8dbc0b02a91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_effd6c81f1b304cedd88542934d02856.setIcon(icon_972b1f55c93b01e24101b8dbc0b02a91);
+        
+    
+        var popup_e795c1723c1fa8feb4e42b9f24adee05 = L.popup({});
+
+        
+            
+                var html_af7a45d1e885611e391e339149b260c6 = $(`<div id="html_af7a45d1e885611e391e339149b260c6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North Point Shopping Centre</h1><div class="nugget-popup"><p>A commercial unit at the shopping centre was flooded due to the extreme localized rainfall, causing internal flooding of the premises. [TAB] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 commercial property [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_e795c1723c1fa8feb4e42b9f24adee05.setContent(html_af7a45d1e885611e391e339149b260c6);
+            
+        
+
+        marker_effd6c81f1b304cedd88542934d02856.bindPopup(popup_e795c1723c1fa8feb4e42b9f24adee05)
+        ;
+
+        
+    
+    
+            var marker_4d6de9cfa73877bb1430488d6475025a = L.marker(
+                [53.7435722, -0.3394758],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_b265ea2f7dbaf3b311b8c07195847c9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4d6de9cfa73877bb1430488d6475025a.setIcon(icon_b265ea2f7dbaf3b311b8c07195847c9c);
+        
+    
+        var popup_0257672a9f614d1d255fe88132b1a18a = L.popup({});
+
+        
+            
+                var html_735c1380696e33fb025171b1b9586292 = $(`<div id="html_735c1380696e33fb025171b1b9586292" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingston Upon Hull</h1><div class="nugget-popup"><p>City&ndash;wide flash flooding in August 2012 caused extensive urban street flooding across Hull. Roads had standing water deep enough to force vehicles to drive through floodwater and left parked cars partially submerged; floodwater contained foam and debris and disrupted transport and streetscape. [PAG] (p1)</p></div><div class="nugget-popup"><p>Widespread highway flooding across the city and surface water inundation; drainage infrastructure was overwhelmed in many areas leading to flooding before drains could convey flows. (p4)</p></div><div class="nugget-popup"><p>Multiple locations across Hull were flooded on 25th August 2012 (Table 1 lists numerous street&ndash;level incidents and the map shows a cluster of flooded points within the urban area). [PAG] (p6)</p></div><div class="nugget-popup"><p>Multiple streets within the city were flooded on 25th August 2012. Flooding affected Stockholm Road (full length), Copenhagen Road, Sutton Road, Garrick Close, Corona Drive, Ullswater Close, Lowgate, Malham Avenue, Kendal Way, Hawkshead Green, Foster Street, Princes Avenue and Calvert Lane. Flooding was associated with the local drainage system being overwhelmed, producing surface&ndash;water/urban flood impacts on the streets listed. [IMG,PAG] (p7)</p></div><div class="nugget-popup"><p>Widespread flooding across the city. In 2007 drains, ditches and watercourses were overwhelmed causing flooding across large areas of Hull; flood flows exceeded drainage capacity. On 25th August 2012 an intense, localised storm caused surface water flooding concentrated in a central belt of the city, with roads affected, sandbagging and pump operations deployed by council and fire crews. [PAG,MUL] (p8)</p></div><div class="nugget-popup"><p>Intense, highly localised rainfall on 25th August 2012 caused surface water (pluvial) flooding across Hull; residents and operating authorities were unprepared, prompting investigations and planned remediation measures. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>21 properties (p4)</p></div><div class="nugget-popup quant"><p>more than 1300 businesses; 8600 residential properties; 19 residential properties; 2 commercial properties [PAG,MUL] (p8)</p></div></div></body></div>`)[0];
+                popup_0257672a9f614d1d255fe88132b1a18a.setContent(html_735c1380696e33fb025171b1b9586292);
+            
+        
+
+        marker_4d6de9cfa73877bb1430488d6475025a.bindPopup(popup_0257672a9f614d1d255fe88132b1a18a)
+        ;
+
+        
+    
+    
+            var marker_b4bd6805b3c95b7afac90a38b01ad9b2 = L.marker(
+                [53.7474574, -0.2875034],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_75db329c09662b831abbc209aeb8c9ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b4bd6805b3c95b7afac90a38b01ad9b2.setIcon(icon_75db329c09662b831abbc209aeb8c9ab);
+        
+    
+        var popup_eae9573e8126759244d4eb953360f424 = L.popup({});
+
+        
+            
+                var html_7afcfe88972a5c4932c129aaeed48d32 = $(`<div id="html_7afcfe88972a5c4932c129aaeed48d32" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Hull Pumping Station</h1><div class="nugget-popup"><p>East Hull Northern trunk sewer and East Hull pumping station were involved in operational response during the 25 August 2012 event. The East Hull pumping station operated following standard telemetry triggers; an intermittent failure of one pump was recorded and was rectified quickly on each occasion. Inspections of branch and trunk sewers found no indications of issues on the branch sewers; some trunk/combined sewer inspections identified minor silt and fat blockages elsewhere that required cleaning. [PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_eae9573e8126759244d4eb953360f424.setContent(html_7afcfe88972a5c4932c129aaeed48d32);
+            
+        
+
+        marker_b4bd6805b3c95b7afac90a38b01ad9b2.bindPopup(popup_eae9573e8126759244d4eb953360f424)
+        ;
+
+        
+    
+    
+            var marker_d09f8bd086e7be6dc4d102295d9086e3 = L.marker(
+                [53.7938212, -0.3166075],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_70f9211f211bef3deb79fdfb1575dd66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d09f8bd086e7be6dc4d102295d9086e3.setIcon(icon_70f9211f211bef3deb79fdfb1575dd66);
+        
+    
+        var popup_2ad831d31920926289d88946299731e7 = L.popup({});
+
+        
+            
+                var html_e5ce775caffbc2480b0f3623c30e8b15 = $(`<div id="html_e5ce775caffbc2480b0f3623c30e8b15" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Noddle Hill Way, Kingston Upon Hull</h1><div class="nugget-popup"><p>Intense, localized extreme rainfall caused surface water flooding on Noddle Hill Way at the junction with Kestrel Avenue resulting in inundation of properties and road flooding. [TAB] (p5)</p></div><div class="nugget-popup"><p>Surface&ndash;water flooding affected Noddle Hill Way during the intense storm of 25 August 2012; sandbags were requested for this location and council sandbag supplies were dispatched. (p8)</p></div><div class="nugget-popup"><p>Experienced surface water (pluvial) flooding of the road (and in some cases nearby properties); residents observed a drawdown in water levels as downstream pumping operations began. [PAG] (p11)</p></div><div class="nugget-popup"><p>Reported highway flooding at a low point on Noddle Hill Way with a mapped flood flow route; HCC is developing capital drainage and storage measures and a new connection to the surface water sewer to manage future events. [TAB,PAG] (p12)</p></div><div class="nugget-popup"><p>Noddle Hill Way was identified for flood risk management scheme development by the council in response to surface water flooding experienced during the event, indicating it was impacted by the 25 August surface water/pluvial incident. (p14)</p></div><div class="nugget-popup"><p>Intense, localised rainfall overwhelmed highway drainage at a low spot in the road causing roadway/footpath ponding and flooding; prompted council&ndash;led works to increase highway drainage provision at the low spot. (p16)</p></div><div class="nugget-popup"><p>Surface water flooding occurred at Noddle Hill Way during the intense, localised rainfall; the report recommends delivery of a surface water flood alleviation scheme at this location as a remediation measure following the 25th August 2012 event. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>10 properties [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_2ad831d31920926289d88946299731e7.setContent(html_e5ce775caffbc2480b0f3623c30e8b15);
+            
+        
+
+        marker_d09f8bd086e7be6dc4d102295d9086e3.bindPopup(popup_2ad831d31920926289d88946299731e7)
+        ;
+
+        
+    
+    
+            var marker_0f5ca800b4a3f7e44ca552c1ce473757 = L.marker(
+                [53.7878626, -0.3034458],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_6feb05de3e261aab1d5d370c5f1343b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0f5ca800b4a3f7e44ca552c1ce473757.setIcon(icon_6feb05de3e261aab1d5d370c5f1343b2);
+        
+    
+        var popup_951993960da59d59d308ff2675e06a65 = L.popup({});
+
+        
+            
+                var html_1fe121b54c54fdf006fb955d25170162 = $(`<div id="html_1fe121b54c54fdf006fb955d25170162" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kestrel Avenue, Kingston Upon Hull</h1><div class="nugget-popup"><p>Flooding at the junction with Noddle Hill Way affected properties adjacent to Kestrel Avenue. [TAB] (p5)</p></div><div class="nugget-popup"><p>Junction with Noddle Hill Way was part of the location where highway surface water flooding was reported; flooding route at the junction was investigated as part of the response. [TAB] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>10 properties [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_951993960da59d59d308ff2675e06a65.setContent(html_1fe121b54c54fdf006fb955d25170162);
+            
+        
+
+        marker_0f5ca800b4a3f7e44ca552c1ce473757.bindPopup(popup_951993960da59d59d308ff2675e06a65)
+        ;
+
+        
+    
+    
+            var marker_4f9e918ba5a30dae7caf239b5a543a4d = L.marker(
+                [53.7714753, -0.3282417],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_7d6efcf8f5104071cc12cea40b22c244 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4f9e918ba5a30dae7caf239b5a543a4d.setIcon(icon_7d6efcf8f5104071cc12cea40b22c244);
+        
+    
+        var popup_f0b0e1d6a99cdf7b455a1d74d2832e57 = L.popup({});
+
+        
+            
+                var html_014f43453a9a0bd45d20397c7e555eaf = $(`<div id="html_014f43453a9a0bd45d20397c7e555eaf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holwell Road, Kingston Upon Hull</h1><div class="nugget-popup"><p>Flooding at North Point Shopping Centre on Holwell Road resulted in a commercial property being flooded. [TAB] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 commercial property [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_f0b0e1d6a99cdf7b455a1d74d2832e57.setContent(html_014f43453a9a0bd45d20397c7e555eaf);
+            
+        
+
+        marker_4f9e918ba5a30dae7caf239b5a543a4d.bindPopup(popup_f0b0e1d6a99cdf7b455a1d74d2832e57)
+        ;
+
+        
+    
+    
+            var marker_a4de86fdf5680675eba3b90f635fea97 = L.marker(
+                [53.7808513, -0.3375289],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_e7fb7c1bd36ff31a0fb1bb22fa8b6b81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a4de86fdf5680675eba3b90f635fea97.setIcon(icon_e7fb7c1bd36ff31a0fb1bb22fa8b6b81);
+        
+    
+        var popup_89e8ca582d42bb712e0d27f35691ad0a = L.popup({});
+
+        
+            
+                var html_03f89cd0fa21fd519728185f63205911 = $(`<div id="html_03f89cd0fa21fd519728185f63205911" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Borrowdale, Bransholme</h1><div class="nugget-popup"><p>Residential properties were inundated by surface water following the intense, localised storm. [TAB] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 properties [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_89e8ca582d42bb712e0d27f35691ad0a.setContent(html_03f89cd0fa21fd519728185f63205911);
+            
+        
+
+        marker_a4de86fdf5680675eba3b90f635fea97.bindPopup(popup_89e8ca582d42bb712e0d27f35691ad0a)
+        ;
+
+        
+    
+    
+            var marker_753b5d8e0ad09d76d54856892861b550 = L.marker(
+                [53.784903, -0.3308315],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_48cc5c1cbfb70819607d7c2562a9b22e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_753b5d8e0ad09d76d54856892861b550.setIcon(icon_48cc5c1cbfb70819607d7c2562a9b22e);
+        
+    
+        var popup_925e69cc9d32a451075c18bf4e6c5b2b = L.popup({});
+
+        
+            
+                var html_270e05c28ce486ff2026a4d068df6dbf = $(`<div id="html_270e05c28ce486ff2026a4d068df6dbf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bisley Grove, Bransholme</h1><div class="nugget-popup"><p>Road&ndash;level flooding occurred as a result of the intense localized rainfall on the same day. [TAB] (p5)</p></div><div class="nugget-popup"><p>A large metal tube and tree roots were identified in the surface water sewer; man&ndash;entry and jetting were carried out to remove blockages and the sewer was cleared. [TAB] (p12)</p></div></div></body></div>`)[0];
+                popup_925e69cc9d32a451075c18bf4e6c5b2b.setContent(html_270e05c28ce486ff2026a4d068df6dbf);
+            
+        
+
+        marker_753b5d8e0ad09d76d54856892861b550.bindPopup(popup_925e69cc9d32a451075c18bf4e6c5b2b)
+        ;
+
+        
+    
+    
+            var marker_1bc54b11abec6568e10c2ad2b9c62356 = L.marker(
+                [53.7817253, -0.3340334],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_3c518bdb9bd37613462c29b906c7f8c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1bc54b11abec6568e10c2ad2b9c62356.setIcon(icon_3c518bdb9bd37613462c29b906c7f8c5);
+        
+    
+        var popup_b3c19447c226ca1d7e358489f56447ce = L.popup({});
+
+        
+            
+                var html_09c668f7789ca024df8be124f77057d9 = $(`<div id="html_09c668f7789ca024df8be124f77057d9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Edendale, Bransholme</h1><div class="nugget-popup"><p>A property on Edendale was flooded following the intense storm. [TAB] (p5)</p></div><div class="nugget-popup"><p>Yorkshire Water inspection identified problems with the surface water sewer servicing Edendale (Nidderdale area); silt was removed from the surface water sewer. [TAB] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_b3c19447c226ca1d7e358489f56447ce.setContent(html_09c668f7789ca024df8be124f77057d9);
+            
+        
+
+        marker_1bc54b11abec6568e10c2ad2b9c62356.bindPopup(popup_b3c19447c226ca1d7e358489f56447ce)
+        ;
+
+        
+    
+    
+            var marker_ceacec292df5d3e5e6469358bb5c2e1d = L.marker(
+                [53.7748448, -0.332883],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_1a5445dffcd7aa34019343aa67c6d633 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ceacec292df5d3e5e6469358bb5c2e1d.setIcon(icon_1a5445dffcd7aa34019343aa67c6d633);
+        
+    
+        var popup_21ecfee0ec1a728db426bd281797685f = L.popup({});
+
+        
+            
+                var html_0f65847d5d7f4225d19b9c4b60243f4e = $(`<div id="html_0f65847d5d7f4225d19b9c4b60243f4e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Copenhagen Road, Kingston Upon Hull</h1><div class="nugget-popup"><p>At least one property was inundated by surface water caused by the intense storm. [TAB,PAG] (p5)</p></div><div class="nugget-popup"><p>Flooding occurred at Copenhagen Road on 25th August 2012 (included in Table 1 of flooded locations). (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB,PAG] (p5)</p></div></div></body></div>`)[0];
+                popup_21ecfee0ec1a728db426bd281797685f.setContent(html_0f65847d5d7f4225d19b9c4b60243f4e);
+            
+        
+
+        marker_ceacec292df5d3e5e6469358bb5c2e1d.bindPopup(popup_21ecfee0ec1a728db426bd281797685f)
+        ;
+
+        
+    
+    
+            var marker_f4604afc17e3391cd10ea3fac7cda551 = L.marker(
+                [53.7792979, -0.3362081],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_2870677965d2ec0c4d0286fcf9e82e25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f4604afc17e3391cd10ea3fac7cda551.setIcon(icon_2870677965d2ec0c4d0286fcf9e82e25);
+        
+    
+        var popup_5175af192255f08f1de5b4fb206c2d63 = L.popup({});
+
+        
+            
+                var html_2480b6423326e26d9550e6c2ce7c3358 = $(`<div id="html_2480b6423326e26d9550e6c2ce7c3358" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sutton Road, Bransholme</h1><div class="nugget-popup"><p>Road flooding occurred due to the intense, localised rainfall on 25 August 2012. [TAB,PAG] (p5)</p></div><div class="nugget-popup"><p>Flooding occurred at Sutton Road on 25th August 2012 (included in the list of flooded locations). (p6)</p></div><div class="nugget-popup"><p>Investigations found good flow in the Sutton Road sewer indicating no trunk sewer problem, but at the rear of properties a single gully serving a 10&ndash;foot area appeared blocked; Hull City Council committed to work with residents to rectify the blocked gully. (p13)</p></div></div></body></div>`)[0];
+                popup_5175af192255f08f1de5b4fb206c2d63.setContent(html_2480b6423326e26d9550e6c2ce7c3358);
+            
+        
+
+        marker_f4604afc17e3391cd10ea3fac7cda551.bindPopup(popup_5175af192255f08f1de5b4fb206c2d63)
+        ;
+
+        
+    
+    
+            var marker_e2ffd3b97677f5a2b2b2b6144941470e = L.marker(
+                [53.7727911, -0.2931572],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_2f3b98c3d68d27dd6838fe63d360abc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e2ffd3b97677f5a2b2b2b6144941470e.setIcon(icon_2f3b98c3d68d27dd6838fe63d360abc8);
+        
+    
+        var popup_b8e74fa1bd6471e120dd11478ae7a39c = L.popup({});
+
+        
+            
+                var html_796991e58ca2676b17efa3adef9f01f7 = $(`<div id="html_796991e58ca2676b17efa3adef9f01f7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Garrick Close, Kingston Upon Hull</h1><div class="nugget-popup"><p>Localised road flooding occurred during the intense storm on the same date. [TAB,PAG] (p5)</p></div><div class="nugget-popup"><p>Flooding affected Garrick Close on 25th August 2012 (listed among flooded locations). (p6)</p></div><div class="nugget-popup"><p>A CCTV survey revealed a broken pipe in the combined sewer on Fortune Close that Garrick Close discharges to; the sewer was flowing but a repair (dig) was scheduled, indicating a sewer infrastructure failure discovered during the flood investigation. [TAB] (p12)</p></div></div></body></div>`)[0];
+                popup_b8e74fa1bd6471e120dd11478ae7a39c.setContent(html_796991e58ca2676b17efa3adef9f01f7);
+            
+        
+
+        marker_e2ffd3b97677f5a2b2b2b6144941470e.bindPopup(popup_b8e74fa1bd6471e120dd11478ae7a39c)
+        ;
+
+        
+    
+    
+            var marker_cdea1924f072686501554b90679d0a1e = L.marker(
+                [53.7739034, -0.3093474],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_bbb92f45d909d941407ab5a2e402f3ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cdea1924f072686501554b90679d0a1e.setIcon(icon_bbb92f45d909d941407ab5a2e402f3ca);
+        
+    
+        var popup_4528d7f798d2e90f0ba3c08ffeb698d1 = L.popup({});
+
+        
+            
+                var html_9884a035da3e7158b231b8c81e445780 = $(`<div id="html_9884a035da3e7158b231b8c81e445780" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Corona Drive, Kingston Upon Hull</h1><div class="nugget-popup"><p>At least one property was inundated by surface water as a result of the intense, localised storm. [TAB,PAG] (p5)</p></div><div class="nugget-popup"><p>Flooding occurred at Corona Drive on 25th August 2012 (included in the Table 1 list of flooded locations). (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB,PAG] (p5)</p></div></div></body></div>`)[0];
+                popup_4528d7f798d2e90f0ba3c08ffeb698d1.setContent(html_9884a035da3e7158b231b8c81e445780);
+            
+        
+
+        marker_cdea1924f072686501554b90679d0a1e.bindPopup(popup_4528d7f798d2e90f0ba3c08ffeb698d1)
+        ;
+
+        
+    
+    
+            var marker_a73b9c22189a99ac34c6d554380cd1d8 = L.marker(
+                [53.7714339, -0.3048125],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_b3260280cd2b00b41c88f8d11d6eeddf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a73b9c22189a99ac34c6d554380cd1d8.setIcon(icon_b3260280cd2b00b41c88f8d11d6eeddf);
+        
+    
+        var popup_32c426f7f3472b9241f9eae084c4b8d6 = L.popup({});
+
+        
+            
+                var html_286e7a5fbbbdd435fde34ccd175fae1d = $(`<div id="html_286e7a5fbbbdd435fde34ccd175fae1d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ullswater Drive, Kingston Upon Hull</h1><div class="nugget-popup"><p>Properties were flooded by surface water runoff during the intense storm on 25th August 2012. [TAB,PAG] (p5)</p></div><div class="nugget-popup"><p>Location recorded as flooded on 25th August 2012 (listed in Table 1 and shown on the indicative map of flooded locations). (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [TAB,PAG] (p5)</p></div></div></body></div>`)[0];
+                popup_32c426f7f3472b9241f9eae084c4b8d6.setContent(html_286e7a5fbbbdd435fde34ccd175fae1d);
+            
+        
+
+        marker_a73b9c22189a99ac34c6d554380cd1d8.bindPopup(popup_32c426f7f3472b9241f9eae084c4b8d6)
+        ;
+
+        
+    
+    
+            var marker_04db42ec16ccb96a72e4e8d06350c6fa = L.marker(
+                [53.7439397, -0.332598],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_51310e8ae0c2393b043f987f49ea940c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_04db42ec16ccb96a72e4e8d06350c6fa.setIcon(icon_51310e8ae0c2393b043f987f49ea940c);
+        
+    
+        var popup_1fd99497fa8c56b7cadef3b73b14967c = L.popup({});
+
+        
+            
+                var html_7d20082b5bd5193356933a29e603afeb = $(`<div id="html_7d20082b5bd5193356933a29e603afeb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lowgate, Kingston Upon Hull</h1><div class="nugget-popup"><p>Road flooding occurred during the intense storm on 25th August 2012. [TAB,PAG] (p5)</p></div><div class="nugget-popup"><p>Location recorded as flooded on 25th August 2012 (listed in Table 1 and shown on the indicative map of flooded locations). (p6)</p></div></div></body></div>`)[0];
+                popup_1fd99497fa8c56b7cadef3b73b14967c.setContent(html_7d20082b5bd5193356933a29e603afeb);
+            
+        
+
+        marker_04db42ec16ccb96a72e4e8d06350c6fa.bindPopup(popup_1fd99497fa8c56b7cadef3b73b14967c)
+        ;
+
+        
+    
+    
+            var marker_30d3d94f079190f35da77d1ef5ab2b58 = L.marker(
+                [53.7451694, -0.4059048],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_44cd7aa124cb089869d1d5aecc7f4f46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_30d3d94f079190f35da77d1ef5ab2b58.setIcon(icon_44cd7aa124cb089869d1d5aecc7f4f46);
+        
+    
+        var popup_29b08e1265c42ecf9c5e40174f5b1ba1 = L.popup({});
+
+        
+            
+                var html_86db05fe91b0f89138204ddaba1d473b = $(`<div id="html_86db05fe91b0f89138204ddaba1d473b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Malham Avenue, Kingston Upon Hull</h1><div class="nugget-popup"><p>Road flooding occurred during the intense storm on 25th August 2012. [TAB,PAG] (p5)</p></div><div class="nugget-popup"><p>Location recorded as flooded on 25th August 2012 (listed in Table 1 and shown on the indicative map of flooded locations). (p6)</p></div><div class="nugget-popup"><p>A number of fat and silt blockages were identified in the sewer serving Malham Avenue; cleaning work has taken place and further cleaning/inspection is ongoing. [TAB,PAG] (p12)</p></div></div></body></div>`)[0];
+                popup_29b08e1265c42ecf9c5e40174f5b1ba1.setContent(html_86db05fe91b0f89138204ddaba1d473b);
+            
+        
+
+        marker_30d3d94f079190f35da77d1ef5ab2b58.bindPopup(popup_29b08e1265c42ecf9c5e40174f5b1ba1)
+        ;
+
+        
+    
+    
+            var marker_a1f91ec4e05f4be927ab55f55d04364c = L.marker(
+                [53.7468632, -0.4062664],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_f0e36a799d6fc6f6cb5dce16dd1ad477 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a1f91ec4e05f4be927ab55f55d04364c.setIcon(icon_f0e36a799d6fc6f6cb5dce16dd1ad477);
+        
+    
+        var popup_789010f0e035ac0e12ab1bffef441027 = L.popup({});
+
+        
+            
+                var html_5d1a8daf6a925d16463ca792d2108990 = $(`<div id="html_5d1a8daf6a925d16463ca792d2108990" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kendal Way, Kingston Upon Hull</h1><div class="nugget-popup"><p>Road flooding occurred during the intense storm on 25th August 2012. [TAB,PAG] (p5)</p></div><div class="nugget-popup"><p>Location recorded as flooded on 25th August 2012 (listed in Table 1 and shown on the indicative map of flooded locations). (p6)</p></div><div class="nugget-popup"><p>Fat and silt blockages were identified in the sewer network serving Kendal Way; cleaning work is ongoing and further trunk sewer inspections may be necessary. [TAB,PAG] (p12)</p></div></div></body></div>`)[0];
+                popup_789010f0e035ac0e12ab1bffef441027.setContent(html_5d1a8daf6a925d16463ca792d2108990);
+            
+        
+
+        marker_a1f91ec4e05f4be927ab55f55d04364c.bindPopup(popup_789010f0e035ac0e12ab1bffef441027)
+        ;
+
+        
+    
+    
+            var marker_d45ccf1e21cccbedfaec9739e74b587d = L.marker(
+                [53.7464823, -0.4072805],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_af039d5a06da1c03568e3433ffd49df8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d45ccf1e21cccbedfaec9739e74b587d.setIcon(icon_af039d5a06da1c03568e3433ffd49df8);
+        
+    
+        var popup_1947467c2a6161a5bb56a76f86317f58 = L.popup({});
+
+        
+            
+                var html_b1f351175b44bf8904d912374cc3ccd3 = $(`<div id="html_b1f351175b44bf8904d912374cc3ccd3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hawkshead Green, Kingston Upon Hull</h1><div class="nugget-popup"><p>Road flooding occurred during the intense storm on 25th August 2012. [TAB,PAG] (p5)</p></div><div class="nugget-popup"><p>Location recorded as flooded on 25th August 2012 (listed in Table 1 and shown on the indicative map of flooded locations). (p6)</p></div><div class="nugget-popup"><p>A number of fat and silt blockages were identified in the trunk sewer serving Malham Avenue, Kendal Way and Hawkshead Green; cleaning work has taken place and further cleaning/inspection is ongoing. These blockages could have impaired sewer performance and contributed to local sewer flooding risk. [TAB,PAG] (p12)</p></div><div class="nugget-popup"><p>Area experienced sewer/drainage problems during the event; Yorkshire Water carried out jetting, cleansing and surveys and remain involved. Residents reported wider problems in the branch sewer network and pushed for further surveys and works. (p15)</p></div><div class="nugget-popup"><p>Flooding caused problems in the Hawkshead Green area; Yorkshire Water was recommended to resolve these problems in full coordination with the council as a response to the impacts of the 25th August 2012 intense/pluvial rainfall. [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_1947467c2a6161a5bb56a76f86317f58.setContent(html_b1f351175b44bf8904d912374cc3ccd3);
+            
+        
+
+        marker_d45ccf1e21cccbedfaec9739e74b587d.bindPopup(popup_1947467c2a6161a5bb56a76f86317f58)
+        ;
+
+        
+    
+    
+            var marker_0aafae547994988217b21738f096dc0b = L.marker(
+                [53.7606308, -0.3303397],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_5a6cd2c20b1d303f99b3083654bdb4c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0aafae547994988217b21738f096dc0b.setIcon(icon_5a6cd2c20b1d303f99b3083654bdb4c5);
+        
+    
+        var popup_c8f125a226f4fad054b25f58a3d0379f = L.popup({});
+
+        
+            
+                var html_ff388033eef58e588cef6ba755692f02 = $(`<div id="html_ff388033eef58e588cef6ba755692f02" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Foster Street, Kingston Upon Hull</h1><div class="nugget-popup"><p>Road flooding occurred during the intense storm on 25th August 2012. [TAB,PAG] (p5)</p></div><div class="nugget-popup"><p>Roadway and adjacent areas were inundated by floodwater on 25th August 2012; local drainage was overwhelmed and roads were rendered impassable. (p6)</p></div><div class="nugget-popup"><p>Combined sewer inspected at the junction with Stoneferry Road; minor silt was identified. Yorkshire Water flushed the sewer as a precaution to maintain operation. [TAB,PAG] (p12)</p></div></div></body></div>`)[0];
+                popup_c8f125a226f4fad054b25f58a3d0379f.setContent(html_ff388033eef58e588cef6ba755692f02);
+            
+        
+
+        marker_0aafae547994988217b21738f096dc0b.bindPopup(popup_c8f125a226f4fad054b25f58a3d0379f)
+        ;
+
+        
+    
+    
+            var marker_4677c64f4b8aa1103661feab1faf3809 = L.marker(
+                [53.7558251, -0.3589098],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_64b9fea09a1fe1a8b62c9573a609d608 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4677c64f4b8aa1103661feab1faf3809.setIcon(icon_64b9fea09a1fe1a8b62c9573a609d608);
+        
+    
+        var popup_af9505519f7079dd5bc627928f59cfc2 = L.popup({});
+
+        
+            
+                var html_e5fc5e27335d00d05a06aa8b0d9f55a1 = $(`<div id="html_e5fc5e27335d00d05a06aa8b0d9f55a1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Princes Avenue, Kingston Upon Hull</h1><div class="nugget-popup"><p>Road flooding affected the street as a result of intense, localised rainfall on 25th August 2012. [TAB,PAG] (p5)</p></div><div class="nugget-popup"><p>Roadway and adjacent areas were inundated by floodwater on 25th August 2012; local drainage was overwhelmed and roads were rendered impassable. (p6)</p></div><div class="nugget-popup"><p>Repeated jetting removed fat blockages from the sewer system here; the sewer is reported clear but will be monitored for further fat deposits. [TAB,PAG] (p12)</p></div></div></body></div>`)[0];
+                popup_af9505519f7079dd5bc627928f59cfc2.setContent(html_e5fc5e27335d00d05a06aa8b0d9f55a1);
+            
+        
+
+        marker_4677c64f4b8aa1103661feab1faf3809.bindPopup(popup_af9505519f7079dd5bc627928f59cfc2)
+        ;
+
+        
+    
+    
+            var marker_f6b7678cb65944dc2898b679e95fd37d = L.marker(
+                [53.7498706, -0.3951144],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_1c4d56d5906d47448b706a77b0b63074 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f6b7678cb65944dc2898b679e95fd37d.setIcon(icon_1c4d56d5906d47448b706a77b0b63074);
+        
+    
+        var popup_af76dcdb51c92b4f0a893c23f6bbfda5 = L.popup({});
+
+        
+            
+                var html_12c26ebd333218d99e7d5601f97cb110 = $(`<div id="html_12c26ebd333218d99e7d5601f97cb110" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Calvert Lane, Kingston Upon Hull</h1><div class="nugget-popup"><p>Road flooding affected the street as a result of intense, localised rainfall on 25th August 2012. [TAB,PAG] (p5)</p></div><div class="nugget-popup"><p>Roadway and adjacent areas were inundated by floodwater on 25th August 2012; local drainage was overwhelmed and roads were rendered impassable. (p6)</p></div><div class="nugget-popup"><p>Yorkshire Water identified a blocked private gully and reported the problem to the resident; a blocked gully can impede surface water drainage and contribute to local flooding. [TAB,PAG] (p12)</p></div></div></body></div>`)[0];
+                popup_af76dcdb51c92b4f0a893c23f6bbfda5.setContent(html_12c26ebd333218d99e7d5601f97cb110);
+            
+        
+
+        marker_f6b7678cb65944dc2898b679e95fd37d.bindPopup(popup_af76dcdb51c92b4f0a893c23f6bbfda5)
+        ;
+
+        
+    
+    
+            var marker_f28a1e269480056b0693cf7c3053ff03 = L.marker(
+                [53.7746157, -0.3396504],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_19e1b3cab7a8d077c615757536760b1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f28a1e269480056b0693cf7c3053ff03.setIcon(icon_19e1b3cab7a8d077c615757536760b1d);
+        
+    
+        var popup_90e6a4f4c3b38cc62a7119b04464c385 = L.popup({});
+
+        
+            
+                var html_ab70e5f763ac0a4633c3d5b922b866c9 = $(`<div id="html_ab70e5f763ac0a4633c3d5b922b866c9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stockholm Road, Kingston Upon Hull</h1><div class="nugget-popup"><p>Flooding affected the full length of Stockholm Road on 25th August 2012 (listed in Table 1 of flooded locations). (p6)</p></div></div></body></div>`)[0];
+                popup_90e6a4f4c3b38cc62a7119b04464c385.setContent(html_ab70e5f763ac0a4633c3d5b922b866c9);
+            
+        
+
+        marker_f28a1e269480056b0693cf7c3053ff03.bindPopup(popup_90e6a4f4c3b38cc62a7119b04464c385)
+        ;
+
+        
+    
+    
+            var marker_06769789fc3ffd68935932591c74f0a6 = L.marker(
+                [53.7827746, -0.3397579],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_f316414053e95101ad8cedbccb8b18c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_06769789fc3ffd68935932591c74f0a6.setIcon(icon_f316414053e95101ad8cedbccb8b18c8);
+        
+    
+        var popup_e9eb37e7871ba852bb4dbb3669e0be68 = L.popup({});
+
+        
+            
+                var html_475d6ef9a5479728e1fff441f607117e = $(`<div id="html_475d6ef9a5479728e1fff441f607117e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cotterdale, Bransholme</h1><div class="nugget-popup"><p>Identified as a location affected by the pluvial (surface water) flooding on 25 August 2012 and targeted for road and public&ndash;realm modifications to manage future surface water issues; subsequent de&ndash;silting, blockage removal and jetting works were identified and undertaken by Yorkshire Water. [PAG] (p11)</p></div><div class="nugget-popup"><p>Minor silt was removed from the Cotterdale surface water sewer and a soft blockage cleared from the foul sewer as part of post&ndash;event investigations. [TAB,PAG] (p12)</p></div><div class="nugget-popup"><p>Cotterdale was identified for flood risk management scheme development by the council in response to surface water flooding experienced during the event, indicating it was impacted by the 25 August surface water/pluvial incident. (p14)</p></div><div class="nugget-popup"><p>Surface water (pluvial) flooding occurred and Cotterdale has been identified for delivery of a surface water flood alleviation scheme as a remediation measure following the 25th August 2012 event. [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_e9eb37e7871ba852bb4dbb3669e0be68.setContent(html_475d6ef9a5479728e1fff441f607117e);
+            
+        
+
+        marker_06769789fc3ffd68935932591c74f0a6.bindPopup(popup_e9eb37e7871ba852bb4dbb3669e0be68)
+        ;
+
+        
+    
+    
+            var marker_21ad53069952186493e46ade5bce2483 = L.marker(
+                [53.7812315, -0.3358716],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_372f13c0190b74dd76570cea786ee6e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_21ad53069952186493e46ade5bce2483.setIcon(icon_372f13c0190b74dd76570cea786ee6e7);
+        
+    
+        var popup_a0835621919f16826ca1d6e9a66561f4 = L.popup({});
+
+        
+            
+                var html_5d0fe58b956f05e4d1bde516469dcbe2 = $(`<div id="html_5d0fe58b956f05e4d1bde516469dcbe2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nidderdale, Bransholme</h1><div class="nugget-popup"><p>Inspection of the surface water sewer identified problems and silt was removed to restore flow following the 25 August 2012 flood investigation. [TAB] (p12)</p></div></div></body></div>`)[0];
+                popup_a0835621919f16826ca1d6e9a66561f4.setContent(html_5d0fe58b956f05e4d1bde516469dcbe2);
+            
+        
+
+        marker_21ad53069952186493e46ade5bce2483.bindPopup(popup_a0835621919f16826ca1d6e9a66561f4)
+        ;
+
+        
+    
+    
+            var marker_65f29293a619e227b0a41dd0a85b65ec = L.marker(
+                [53.7599908, -0.3282915],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_2bdcb0b7adf502655afde1dba5bf6383 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_65f29293a619e227b0a41dd0a85b65ec.setIcon(icon_2bdcb0b7adf502655afde1dba5bf6383);
+        
+    
+        var popup_1b2729e71f95bc4580754c8d3c31c56a = L.popup({});
+
+        
+            
+                var html_1251c1fb80065aeadaa3737f303c9106 = $(`<div id="html_1251c1fb80065aeadaa3737f303c9106" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stoneferry Road, Kingston Upon Hull</h1><div class="nugget-popup"><p>Inspection at the junction with Foster Street identified minor silt in the combined sewer; Yorkshire Water flushed the sewer to ensure good flow, indicating a sewer issue relevant to flooding. [TAB,PAG] (p12)</p></div><div class="nugget-popup"><p>Combined sewer inspected at the junction with Stoneferry Road showed minor silt but remained operational; Yorkshire Water flushed the sewer as a precaution during post&ndash;flood investigations. (p13)</p></div></div></body></div>`)[0];
+                popup_1b2729e71f95bc4580754c8d3c31c56a.setContent(html_1251c1fb80065aeadaa3737f303c9106);
+            
+        
+
+        marker_65f29293a619e227b0a41dd0a85b65ec.bindPopup(popup_1b2729e71f95bc4580754c8d3c31c56a)
+        ;
+
+        
+    
+    
+            var marker_78fea2b8a7df0a6553bcc8d8283df52c = L.marker(
+                [53.78255, -0.338587],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_6339c81037ee1871ba4982760434f169 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_78fea2b8a7df0a6553bcc8d8283df52c.setIcon(icon_6339c81037ee1871ba4982760434f169);
+        
+    
+        var popup_878c414a399ac63d7ecb9e20dd98a2b6 = L.popup({});
+
+        
+            
+                var html_9bf82cec1326a97ce5401cbdd2c4685a = $(`<div id="html_9bf82cec1326a97ce5401cbdd2c4685a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Coverdale, Bransholme</h1><div class="nugget-popup"><p>Minor silt was removed from the Cotterdale surface water sewer and a soft blockage was cleared from a foul sewer. A flood flow route along the footpath network was identified and HCC is developing a capital scheme to install drainage, storage and a new connection to the surface water sewer to manage future flows. [TAB] (p12)</p></div></div></body></div>`)[0];
+                popup_878c414a399ac63d7ecb9e20dd98a2b6.setContent(html_9bf82cec1326a97ce5401cbdd2c4685a);
+            
+        
+
+        marker_78fea2b8a7df0a6553bcc8d8283df52c.bindPopup(popup_878c414a399ac63d7ecb9e20dd98a2b6)
+        ;
+
+        
+    
+    
+            var marker_fd50cba71c68e58036d59e54f0c46866 = L.marker(
+                [53.7320706, -0.36499478762979165],
+                {}
+            ).addTo(map_5bd99cde6a2a941caf44262f52f814ce);
+        
+    
+            var icon_522f41ff86b289aaad64eb7104d4ac8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fd50cba71c68e58036d59e54f0c46866.setIcon(icon_522f41ff86b289aaad64eb7104d4ac8b);
+        
+    
+        var popup_ec96cb2b2d1c74a7f11a9680682397e9 = L.popup({});
+
+        
+            
+                var html_caa92c6b66f9de90898273e8b8b551a6 = $(`<div id="html_caa92c6b66f9de90898273e8b8b551a6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Hull Pumping Station</h1><div class="nugget-popup"><p>West Hull pumping station operated following standard telemetry triggers during the 25th August 2012 event to manage sewer flows. (p13)</p></div></div></body></div>`)[0];
+                popup_ec96cb2b2d1c74a7f11a9680682397e9.setContent(html_caa92c6b66f9de90898273e8b8b551a6);
+            
+        
+
+        marker_fd50cba71c68e58036d59e54f0c46866.bindPopup(popup_ec96cb2b2d1c74a7f11a9680682397e9)
+        ;
+
+        
+    
+</script>
+</html>

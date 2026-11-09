@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e38a153d9dc9e540bb9d1d917c09f02c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e38a153d9dc9e540bb9d1d917c09f02c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e38a153d9dc9e540bb9d1d917c09f02c = L.map(
+                "map_e38a153d9dc9e540bb9d1d917c09f02c",
+                {
+                    center: [52.18078319949926, -0.5693191873536785],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7dfdce1de1ce387383796b816b82b75d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_7dfdce1de1ce387383796b816b82b75d.addTo(map_e38a153d9dc9e540bb9d1d917c09f02c);
+    
+            var marker_cefd175f737825d4aac08e6451c56efb = L.marker(
+                [52.1894467, -0.5850905],
+                {}
+            ).addTo(map_e38a153d9dc9e540bb9d1d917c09f02c);
+        
+    
+            var icon_e34af4b4342f8d3a39a811750fcfa67e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cefd175f737825d4aac08e6451c56efb.setIcon(icon_e34af4b4342f8d3a39a811750fcfa67e);
+        
+    
+        var popup_f9a3b45a7bb2ac6e149fddf89b373c6c = L.popup({});
+
+        
+            
+                var html_6bf9c57715d0fbb60df9aaa55a0c1002 = $(`<div id="html_6bf9c57715d0fbb60df9aaa55a0c1002" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pavenham Road, Chellington</h1><div class="nugget-popup"><p>Overland flow routes and land drains discharge into the Pavenham Road watercourse; water backing up at culverts causes overland flow into the central shaded flood risk area, leading to flooding of adjacent land, roads and nearby properties. (p1)</p></div><div class="nugget-popup"><p>Surface water runoff and an overwhelmed culvert beneath Pavenham Road caused floodwater to back up and follow local topography. The road was rendered impassable and two nearby residential properties experienced internal flooding with damage to floors and carpets; one property had flood depths reported up to 300 mm with sandbags in place. [TAB] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two residential properties; 300 mm flood depth [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_f9a3b45a7bb2ac6e149fddf89b373c6c.setContent(html_6bf9c57715d0fbb60df9aaa55a0c1002);
+            
+        
+
+        marker_cefd175f737825d4aac08e6451c56efb.bindPopup(popup_f9a3b45a7bb2ac6e149fddf89b373c6c)
+        ;
+
+        
+    
+    
+            var marker_b4b803f7d6c3af14f0f9776ee6b2baf8 = L.marker(
+                [52.1895833, -0.6040303],
+                {}
+            ).addTo(map_e38a153d9dc9e540bb9d1d917c09f02c);
+        
+    
+            var icon_fb526a62e317aab7a62c7a7373085057 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b4b803f7d6c3af14f0f9776ee6b2baf8.setIcon(icon_fb526a62e317aab7a62c7a7373085057);
+        
+    
+        var popup_e291d684a42d67f1741cb498401d1058 = L.popup({});
+
+        
+            
+                var html_e6856974957d116198f2dbca536a21a5 = $(`<div id="html_e6856974957d116198f2dbca536a21a5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Causeway, Carlton</h1><div class="nugget-popup"><p>Reported to be impassable due to floodwater during the event. (p2)</p></div></div></body></div>`)[0];
+                popup_e291d684a42d67f1741cb498401d1058.setContent(html_e6856974957d116198f2dbca536a21a5);
+            
+        
+
+        marker_b4b803f7d6c3af14f0f9776ee6b2baf8.bindPopup(popup_e291d684a42d67f1741cb498401d1058)
+        ;
+
+        
+    
+    
+            var marker_d1b31ea0dc7f3769a091f4d1a3e6a90a = L.marker(
+                [52.1925669, -0.6018362],
+                {}
+            ).addTo(map_e38a153d9dc9e540bb9d1d917c09f02c);
+        
+    
+            var icon_d183a198c10ad24c5fd55e0400fd10ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d1b31ea0dc7f3769a091f4d1a3e6a90a.setIcon(icon_d183a198c10ad24c5fd55e0400fd10ea);
+        
+    
+        var popup_844ada3248dc294b5a29bca206e67e5f = L.popup({});
+
+        
+            
+                var html_bd647ecbf848ee29f77aa856987c85a5 = $(`<div id="html_bd647ecbf848ee29f77aa856987c85a5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bridgend, Chellington</h1><div class="nugget-popup"><p>Reported to be impassable due to floodwater during the event. (p2)</p></div></div></body></div>`)[0];
+                popup_844ada3248dc294b5a29bca206e67e5f.setContent(html_bd647ecbf848ee29f77aa856987c85a5);
+            
+        
+
+        marker_d1b31ea0dc7f3769a091f4d1a3e6a90a.bindPopup(popup_844ada3248dc294b5a29bca206e67e5f)
+        ;
+
+        
+    
+    
+            var marker_d317ac7cab5f97e8630630ec27222177 = L.marker(
+                [52.19037, -0.6049492],
+                {}
+            ).addTo(map_e38a153d9dc9e540bb9d1d917c09f02c);
+        
+    
+            var icon_5dc983e156aaaa46243ec9535a6e916a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d317ac7cab5f97e8630630ec27222177.setIcon(icon_5dc983e156aaaa46243ec9535a6e916a);
+        
+    
+        var popup_e34ac2151a1d95b06debea7720efa3ab = L.popup({});
+
+        
+            
+                var html_607881efa76833433011b7a0ca876deb = $(`<div id="html_607881efa76833433011b7a0ca876deb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Carlton</h1><div class="nugget-popup"><p>Map shows Carlton within the mapped flood&ndash;risk area where overland flow routes converge and culvert backups can cause water to overflow into adjacent land and infrastructure; roads and properties in the central shaded zone are at risk of inundation from surface water and drainage backup. (p1)</p></div><div class="nugget-popup"><p>The Pavenham Road watercourse runs culverted for approximately 350 m beneath Carlton; heavy rainfall and an overwhelmed culvert (and identified maintenance issues) contributed to local flooding. Internal flooding occurred at nearby residential properties causing damage to floors and carpets. [TAB] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>two residential properties [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_e34ac2151a1d95b06debea7720efa3ab.setContent(html_607881efa76833433011b7a0ca876deb);
+            
+        
+
+        marker_d317ac7cab5f97e8630630ec27222177.bindPopup(popup_e34ac2151a1d95b06debea7720efa3ab)
+        ;
+
+        
+    
+</script>
+</html>

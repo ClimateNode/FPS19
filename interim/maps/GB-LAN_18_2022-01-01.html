@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fbe23927774766cc4dd8990275f5b40f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fbe23927774766cc4dd8990275f5b40f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fbe23927774766cc4dd8990275f5b40f = L.map(
+                "map_fbe23927774766cc4dd8990275f5b40f",
+                {
+                    center: [53.760455918500305, -2.659717559054914],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8c908a0c599beee3212c8596d5aeaeb2 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_8c908a0c599beee3212c8596d5aeaeb2.addTo(map_fbe23927774766cc4dd8990275f5b40f);
+    
+            var marker_fd554c902ed5736557173e770f4bd067 = L.marker(
+                [53.7384481, -2.6690787],
+                {}
+            ).addTo(map_fbe23927774766cc4dd8990275f5b40f);
+        
+    
+            var icon_9c65e4a3d4d5f74e7121c09266630f94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fd554c902ed5736557173e770f4bd067.setIcon(icon_9c65e4a3d4d5f74e7121c09266630f94);
+        
+    
+        var popup_7e0a4ae96afe03873d7d705ce875a187 = L.popup({});
+
+        
+            
+                var html_0f7fa7459f46f3c354da4daa9b440199 = $(`<div id="html_0f7fa7459f46f3c354da4daa9b440199" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chorley Road, Walton-Le-Dale</h1><div class="nugget-popup"><p>Chorley Road in Bamber Bridge was affected by flooding during the January 2022 event referenced in the document. (p1)</p></div><div class="nugget-popup"><p>A number of homes on Chorley Road suffered internal flooding when a culverted local watercourse, which had been accidentally obstructed during nearby demolition works, backed up and overflowed into the public highway. Floodwater in the highway rose above property thresholds. The damaged and obstructed lengths of the culvert were later replaced, which remedied the problem. (p3)</p></div><div class="nugget-popup"><p>Damage to a culverted watercourse during demolition/site clearance caused a significant blockage that prevented normal flow and local highway drainage. Under heavy rainfall the public highway flooded, water breached thresholds of nearby homes and caused extensive flood damage to ground floors. Emergency out&ndash;of&ndash;hours response was required from the police and the local highway authority. The culvert was repaired and there have been no further instances of flooding since repairs were completed by the end of February 2022. (p6)</p></div></div></body></div>`)[0];
+                popup_7e0a4ae96afe03873d7d705ce875a187.setContent(html_0f7fa7459f46f3c354da4daa9b440199);
+            
+        
+
+        marker_fd554c902ed5736557173e770f4bd067.bindPopup(popup_7e0a4ae96afe03873d7d705ce875a187)
+        ;
+
+        
+    
+    
+            var marker_040c885c5e81d8b3588cf5bac993f6ec = L.marker(
+                [53.86117, -2.5650887],
+                {}
+            ).addTo(map_fbe23927774766cc4dd8990275f5b40f);
+        
+    
+            var icon_998836411924764d9094fa78d51a91f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_040c885c5e81d8b3588cf5bac993f6ec.setIcon(icon_998836411924764d9094fa78d51a91f0);
+        
+    
+        var popup_45c72f24d4be2155e492e5ed38111006 = L.popup({});
+
+        
+            
+                var html_aa22ba14e0df031242ee608a596c2101 = $(`<div id="html_aa22ba14e0df031242ee608a596c2101" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancashire</h1><div class="nugget-popup"><p>Lancashire experienced flooding during the January 2022 event discussed in the report. (p1)</p></div><div class="nugget-popup"><p>Very localised flooding of houses caused by obstruction of the culvert carrying the local watercourse; local drainage system was overwhelmed where culvert had been damaged by unconsented works. [PAG] (p4)</p></div></div></body></div>`)[0];
+                popup_45c72f24d4be2155e492e5ed38111006.setContent(html_aa22ba14e0df031242ee608a596c2101);
+            
+        
+
+        marker_040c885c5e81d8b3588cf5bac993f6ec.bindPopup(popup_45c72f24d4be2155e492e5ed38111006)
+        ;
+
+        
+    
+    
+            var marker_b20b7db1d6761c4649fd98066d1fef74 = L.marker(
+                [53.7271527, -2.7330066],
+                {}
+            ).addTo(map_fbe23927774766cc4dd8990275f5b40f);
+        
+    
+            var icon_50afa14771ed6b95a6688dc1c31c04cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b20b7db1d6761c4649fd98066d1fef74.setIcon(icon_50afa14771ed6b95a6688dc1c31c04cf);
+        
+    
+        var popup_145b017e60de9d27c6c8f7863555d6b3 = L.popup({});
+
+        
+            
+                var html_7c54c776b7e544bb16b03788299a357e = $(`<div id="html_7c54c776b7e544bb16b03788299a357e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Ribble</h1><div class="nugget-popup"><p>The South Ribble district experienced flooding during the January 2022 event; the report headings identify Bamber Bridge and Chorley Road within this district as affected locations. (p1)</p></div></div></body></div>`)[0];
+                popup_145b017e60de9d27c6c8f7863555d6b3.setContent(html_7c54c776b7e544bb16b03788299a357e);
+            
+        
+
+        marker_b20b7db1d6761c4649fd98066d1fef74.bindPopup(popup_145b017e60de9d27c6c8f7863555d6b3)
+        ;
+
+        
+    
+    
+            var marker_37afab18c3eee74f8be395c0d190857a = L.marker(
+                [53.72766879250155, -2.65937809527457],
+                {}
+            ).addTo(map_fbe23927774766cc4dd8990275f5b40f);
+        
+    
+            var icon_8f803be340688bc4abbbe93c8ae082e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_37afab18c3eee74f8be395c0d190857a.setIcon(icon_8f803be340688bc4abbbe93c8ae082e7);
+        
+    
+        var popup_943650ab41e0a65b234d0ca0ec88985f = L.popup({});
+
+        
+            
+                var html_a96c37fc43389d5201c59fe3ffc73e46 = $(`<div id="html_a96c37fc43389d5201c59fe3ffc73e46" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bamber Bridge</h1><div class="nugget-popup"><p>Bamber Bridge experienced flooding during the January 2022 event; Chorley Road in Bamber Bridge is specifically noted in the report headings. (p1)</p></div><div class="nugget-popup"><p>Heavy rainfall overnight into 1 January 2022 and again on 8 January 2022 led to localised flooding in Bamber Bridge. Flooding of homes on Chorley Road occurred when a culverted watercourse backing up (due to an obstruction from demolition works) overflowed into the highway. (p3)</p></div><div class="nugget-popup"><p>Sections of public highway (notably Chorley Road) in Bamber Bridge flooded after a culvert was blocked. Floodwater breached thresholds of nearby homes, causing extensive ground&ndash;floor damage and necessitating emergency out&ndash;of&ndash;hours response by the police and local highway authority. The responsible parties repaired the culvert and no repeat flooding occurred after repairs (completed by end of February 2022). (p6)</p></div></div></body></div>`)[0];
+                popup_943650ab41e0a65b234d0ca0ec88985f.setContent(html_a96c37fc43389d5201c59fe3ffc73e46);
+            
+        
+
+        marker_37afab18c3eee74f8be395c0d190857a.bindPopup(popup_943650ab41e0a65b234d0ca0ec88985f)
+        ;
+
+        
+    
+    
+            var marker_42bbc6374f5b676f8e476ef78b6105ee = L.marker(
+                [53.74784, -2.6720357],
+                {}
+            ).addTo(map_fbe23927774766cc4dd8990275f5b40f);
+        
+    
+            var icon_809a1b4b541c528090336da654b0e1fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_42bbc6374f5b676f8e476ef78b6105ee.setIcon(icon_809a1b4b541c528090336da654b0e1fa);
+        
+    
+        var popup_3b93282d95b7a0dd8cf5f5b80eaae005 = L.popup({});
+
+        
+            
+                var html_8db64963982856497d8ab2abaf852405 = $(`<div id="html_8db64963982856497d8ab2abaf852405" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Walton-Le-Dale</h1><div class="nugget-popup"><p>Heavy rainfall overnight into 1 January 2022 and again on 8 January 2022 contributed to localised flooding in the Walton&ndash;le&ndash;Dale area; the obstruction of a culverted local watercourse caused backing up and overflow into the highway, resulting in internal flooding of nearby homes (notably on Chorley Road). (p3)</p></div></div></body></div>`)[0];
+                popup_3b93282d95b7a0dd8cf5f5b80eaae005.setContent(html_8db64963982856497d8ab2abaf852405);
+            
+        
+
+        marker_42bbc6374f5b676f8e476ef78b6105ee.bindPopup(popup_3b93282d95b7a0dd8cf5f5b80eaae005)
+        ;
+
+        
+    
+</script>
+</html>

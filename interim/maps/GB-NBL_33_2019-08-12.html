@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f5191e9d5bdd846ec9900ba96a4a5c7d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f5191e9d5bdd846ec9900ba96a4a5c7d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f5191e9d5bdd846ec9900ba96a4a5c7d = L.map(
+                "map_f5191e9d5bdd846ec9900ba96a4a5c7d",
+                {
+                    center: [54.97020196530107, -1.8702949895825767],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_383105ae8a604c8a4c7e22b446cbe870 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_383105ae8a604c8a4c7e22b446cbe870.addTo(map_f5191e9d5bdd846ec9900ba96a4a5c7d);
+    
+            var marker_41428cc9c9e253b6ab1d96fed0ef7963 = L.marker(
+                [54.9737403, -1.8799429],
+                {}
+            ).addTo(map_f5191e9d5bdd846ec9900ba96a4a5c7d);
+        
+    
+            var icon_8f0c9964042d1e1c93451e357518099b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_41428cc9c9e253b6ab1d96fed0ef7963.setIcon(icon_8f0c9964042d1e1c93451e357518099b);
+        
+    
+        var popup_ca82d8dde03edc3a20c7f03183f24de5 = L.popup({});
+
+        
+            
+                var html_748e3130f9e1fbf0fe6b4d91aa99d15c = $(`<div id="html_748e3130f9e1fbf0fe6b4d91aa99d15c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Whittle Burn</h1><div class="nugget-popup"><p>High flows and debris caused the burn to back up and breach its banks, flooding the highway and driveways and causing internal flooding of properties; two properties suffered internal flooding (one had property level protection which was overtopped; another had PLP deployed and experienced minor internal seepage). (p1)</p></div><div class="nugget-popup"><p>High river levels with muddy, fast&ndash;flowing water and accumulation of large amounts of natural debris against a road bridge, partially blocking flow and causing turbulence; these high levels and debris are associated with flooding in the area. [IMG,TAB] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (p1)</p></div></div></body></div>`)[0];
+                popup_ca82d8dde03edc3a20c7f03183f24de5.setContent(html_748e3130f9e1fbf0fe6b4d91aa99d15c);
+            
+        
+
+        marker_41428cc9c9e253b6ab1d96fed0ef7963.bindPopup(popup_ca82d8dde03edc3a20c7f03183f24de5)
+        ;
+
+        
+    
+    
+            var marker_b4007fd2e4bf2f1b42e300e4612142bf = L.marker(
+                [54.9706338, -1.8655646],
+                {}
+            ).addTo(map_f5191e9d5bdd846ec9900ba96a4a5c7d);
+        
+    
+            var icon_0eaef9e8bb980bab61a45b880e7a0293 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b4007fd2e4bf2f1b42e300e4612142bf.setIcon(icon_0eaef9e8bb980bab61a45b880e7a0293);
+        
+    
+        var popup_0fd862080a2f03d82e807b8c14f1d7bd = L.popup({});
+
+        
+            
+                var html_107bdf3114c732efc2a69a012ab76d58 = $(`<div id="html_107bdf3114c732efc2a69a012ab76d58" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Windsor Crescent, Ovingham</h1><div class="nugget-popup"><p>Water assumed to be from a spring behind the pavilion on the playing field flowed east along the footway into Windsor Crescent and drained into the gullies; no reports of internal property flooding. (p1)</p></div></div></body></div>`)[0];
+                popup_0fd862080a2f03d82e807b8c14f1d7bd.setContent(html_107bdf3114c732efc2a69a012ab76d58);
+            
+        
+
+        marker_b4007fd2e4bf2f1b42e300e4612142bf.bindPopup(popup_0fd862080a2f03d82e807b8c14f1d7bd)
+        ;
+
+        
+    
+    
+            var marker_f5efea52b04c9349321851bc607bc293 = L.marker(
+                [54.9708449, -1.8691046],
+                {}
+            ).addTo(map_f5191e9d5bdd846ec9900ba96a4a5c7d);
+        
+    
+            var icon_72650d8fe5d55e9899a3bb687c623e19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f5efea52b04c9349321851bc607bc293.setIcon(icon_72650d8fe5d55e9899a3bb687c623e19);
+        
+    
+        var popup_d70e17c1f572e88c077676196aceb32e = L.popup({});
+
+        
+            
+                var html_ea30e42d62cf268bfe81eb8c4a72b9db = $(`<div id="html_ea30e42d62cf268bfe81eb8c4a72b9db" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Horsley Road, Ovingham</h1><div class="nugget-popup"><p>High water levels in the burn caused the watercourse to overtop its banks; water flowed between two chalets towards the footpath alongside Horsley Road. Residents cleared debris from a culvert inlet to divert flows; no internal property flooding reported. (p1)</p></div><div class="nugget-popup"><p>Horsley Road experienced flooding&ndash;related issues that are to be addressed by stage 2 of the Ovingham surface water flood alleviation scheme. (p2)</p></div></div></body></div>`)[0];
+                popup_d70e17c1f572e88c077676196aceb32e.setContent(html_ea30e42d62cf268bfe81eb8c4a72b9db);
+            
+        
+
+        marker_f5efea52b04c9349321851bc607bc293.bindPopup(popup_d70e17c1f572e88c077676196aceb32e)
+        ;
+
+        
+    
+    
+            var marker_2a961f8b1ae6d498a98cd9e11c3187cf = L.marker(
+                [54.96752441401898, -1.869880294512389],
+                {}
+            ).addTo(map_f5191e9d5bdd846ec9900ba96a4a5c7d);
+        
+    
+            var icon_c359994a858ee6c0ce627d7fa9fa5a35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2a961f8b1ae6d498a98cd9e11c3187cf.setIcon(icon_c359994a858ee6c0ce627d7fa9fa5a35);
+        
+    
+        var popup_1239823f261ceab83f43d1e780efcfe4 = L.popup({});
+
+        
+            
+                var html_578d2a815b9c171041d6bf5a6a5adada = $(`<div id="html_578d2a815b9c171041d6bf5a6a5adada" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Road, Ovingham</h1><div class="nugget-popup"><p>Breach of the Whittle Burn led to flooding of the highway on West Road and affected driveways adjacent to the road; associated with the internal flooding of nearby properties. (p1)</p></div></div></body></div>`)[0];
+                popup_1239823f261ceab83f43d1e780efcfe4.setContent(html_578d2a815b9c171041d6bf5a6a5adada);
+            
+        
+
+        marker_2a961f8b1ae6d498a98cd9e11c3187cf.bindPopup(popup_1239823f261ceab83f43d1e780efcfe4)
+        ;
+
+        
+    
+    
+            var marker_cadc10cc2470b34102161cd2f5aa9536 = L.marker(
+                [54.9708633, -1.869502],
+                {}
+            ).addTo(map_f5191e9d5bdd846ec9900ba96a4a5c7d);
+        
+    
+            var icon_ea7d9b1a30cad24f01c14f3006c2a862 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cadc10cc2470b34102161cd2f5aa9536.setIcon(icon_ea7d9b1a30cad24f01c14f3006c2a862);
+        
+    
+        var popup_d1261a0f46c91f1b4ebfb135a34cae63 = L.popup({});
+
+        
+            
+                var html_9b54b87c77c7e071be5b10a3a827f096 = $(`<div id="html_9b54b87c77c7e071be5b10a3a827f096" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dene Garth, Ovingham</h1><div class="nugget-popup"><p>Dene Garth experienced flooding&ndash;related issues that are to be addressed by stage 2 of the Ovingham surface water flood alleviation scheme. (p2)</p></div></div></body></div>`)[0];
+                popup_d1261a0f46c91f1b4ebfb135a34cae63.setContent(html_9b54b87c77c7e071be5b10a3a827f096);
+            
+        
+
+        marker_cadc10cc2470b34102161cd2f5aa9536.bindPopup(popup_d1261a0f46c91f1b4ebfb135a34cae63)
+        ;
+
+        
+    
+    
+            var marker_71873ca52165f4cfcb8d0047be09a03f = L.marker(
+                [54.96760507778747, -1.8677755429830711],
+                {}
+            ).addTo(map_f5191e9d5bdd846ec9900ba96a4a5c7d);
+        
+    
+            var icon_e21d2799063539f10aeb0ca8324e545f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_71873ca52165f4cfcb8d0047be09a03f.setIcon(icon_e21d2799063539f10aeb0ca8324e545f);
+        
+    
+        var popup_752b4a4d5f44d0b7024a6e6576c1ec2f = L.popup({});
+
+        
+            
+                var html_055020727be1a0d3f1e37e68878e4168 = $(`<div id="html_055020727be1a0d3f1e37e68878e4168" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ovingham</h1><div class="nugget-popup"><p>Persistent heavy rainfall over the weekend of 9&ndash;12th August 2019 caused flooding in three areas of the village (playing field, Horsley Road, Whittle Burn), resulting in highway and driveway inundation and internal flooding to properties. [IMG] (p1)</p></div><div class="nugget-popup"><p>Ovingham was affected by flooding driven by sudden rises in the Whittle Burn &mdash; caused when the Whittle Dene Reservoir overtopped during storm events &mdash; with high river levels and debris accumulating against a road bridge (documented on 13 August 2019). [TAB] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 areas; 2 properties; 2 roads [IMG] (p1)</p></div></div></body></div>`)[0];
+                popup_752b4a4d5f44d0b7024a6e6576c1ec2f.setContent(html_055020727be1a0d3f1e37e68878e4168);
+            
+        
+
+        marker_71873ca52165f4cfcb8d0047be09a03f.bindPopup(popup_752b4a4d5f44d0b7024a6e6576c1ec2f)
+        ;
+
+        
+    
+</script>
+</html>

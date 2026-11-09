@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fe318c0d1fbf5af7ed8f8ecbe86341e0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fe318c0d1fbf5af7ed8f8ecbe86341e0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fe318c0d1fbf5af7ed8f8ecbe86341e0 = L.map(
+                "map_fe318c0d1fbf5af7ed8f8ecbe86341e0",
+                {
+                    center: [53.02934138571428, -1.0058511285714287],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9271e603ad34690d03f7472d1d791cbc = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_9271e603ad34690d03f7472d1d791cbc.addTo(map_fe318c0d1fbf5af7ed8f8ecbe86341e0);
+    
+            var marker_1199121bd5efa33c8d4699fe6b34a11c = L.marker(
+                [53.0049734, -0.9971242],
+                {}
+            ).addTo(map_fe318c0d1fbf5af7ed8f8ecbe86341e0);
+        
+    
+            var icon_5c7fdf0e449142f11d1aa838be3c7011 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1199121bd5efa33c8d4699fe6b34a11c.setIcon(icon_5c7fdf0e449142f11d1aa838be3c7011);
+        
+    
+        var popup_a016997d87fa1917cb959201ad02b93b = L.popup({});
+
+        
+            
+                var html_6b0dd968785122c6cde89869bc1710be = $(`<div id="html_6b0dd968785122c6cde89869bc1710be" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cocker Beck</h1><div class="nugget-popup"><p>Cocker Beck (classed as a Main River and serving Lowdham) likely contributed to the fluvial flooding that affected the village. (p2)</p></div><div class="nugget-popup"><p>The Cocker Beck rose to near&ndash;record levels and overtopped its banks; overtopping spilled out onto the Main Street and contributed to flooding of nearby properties. The high river levels also conveyed large volumes of runoff from the hills into the valley. [IMG,PAG] (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1.273m (river level recorded on 14th November) [IMG,PAG] (p4)</p></div></div></body></div>`)[0];
+                popup_a016997d87fa1917cb959201ad02b93b.setContent(html_6b0dd968785122c6cde89869bc1710be);
+            
+        
+
+        marker_1199121bd5efa33c8d4699fe6b34a11c.bindPopup(popup_a016997d87fa1917cb959201ad02b93b)
+        ;
+
+        
+    
+    
+            var marker_5ff3c2371f5b8eb8162bbd9e43a384d3 = L.marker(
+                [53.0150126, -1.008963],
+                {}
+            ).addTo(map_fe318c0d1fbf5af7ed8f8ecbe86341e0);
+        
+    
+            var icon_95e02f1cd9c746b6d0ae7bafeb0e474b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5ff3c2371f5b8eb8162bbd9e43a384d3.setIcon(icon_95e02f1cd9c746b6d0ae7bafeb0e474b);
+        
+    
+        var popup_fd3b9c325a6083efaa9d48478a853b3c = L.popup({});
+
+        
+            
+                var html_38e4d42c8c0e1af81ebc17e752dca053 = $(`<div id="html_38e4d42c8c0e1af81ebc17e752dca053" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Epperstone by-Pass</h1><div class="nugget-popup"><p>Public highways in the village were affected by flooding during the event; the A6097 Epperstone By&ndash;Pass runs along Lowdham's western boundary and is adjacent to the impacted highway network (may have experienced inundation or disruption). (p2)</p></div><div class="nugget-popup"><p>During the event surface water from saturated fields flowed along the Epperstone By&ndash;Pass alignment (referred to as the by&ndash;Pass) and the bypass acted as a channel for overland flow, conveying water that otherwise might have reached the Beck. [PAG] (p4)</p></div></div></body></div>`)[0];
+                popup_fd3b9c325a6083efaa9d48478a853b3c.setContent(html_38e4d42c8c0e1af81ebc17e752dca053);
+            
+        
+
+        marker_5ff3c2371f5b8eb8162bbd9e43a384d3.bindPopup(popup_fd3b9c325a6083efaa9d48478a853b3c)
+        ;
+
+        
+    
+    
+            var marker_01f16b554346ca46986433d4e32ec144 = L.marker(
+                [53.0107613, -1.0035691],
+                {}
+            ).addTo(map_fe318c0d1fbf5af7ed8f8ecbe86341e0);
+        
+    
+            var icon_e6331fb9b6fdb5a95a728b19dd6ea853 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_01f16b554346ca46986433d4e32ec144.setIcon(icon_e6331fb9b6fdb5a95a728b19dd6ea853);
+        
+    
+        var popup_54c981d52871c1feadda7aaf14e4c095 = L.popup({});
+
+        
+            
+                var html_e200fb6fece0bc223fc3a778994854f7 = $(`<div id="html_e200fb6fece0bc223fc3a778994854f7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Main Street, Lowdham</h1><div class="nugget-popup"><p>Floodwater from the overtopping Cocker Beck and surface water flow used Main Street as a flow route; properties along Main Street were flooded and highway drainage was overwhelmed. [IMG,PAG] (p4)</p></div></div></body></div>`)[0];
+                popup_54c981d52871c1feadda7aaf14e4c095.setContent(html_e200fb6fece0bc223fc3a778994854f7);
+            
+        
+
+        marker_01f16b554346ca46986433d4e32ec144.bindPopup(popup_54c981d52871c1feadda7aaf14e4c095)
+        ;
+
+        
+    
+    
+            var marker_5d8170933fbf5eeb01f40c110b6a0284 = L.marker(
+                [53.0080211, -1.0021096],
+                {}
+            ).addTo(map_fe318c0d1fbf5af7ed8f8ecbe86341e0);
+        
+    
+            var icon_6e2a2f3709877a08ceeae27f19e17556 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5d8170933fbf5eeb01f40c110b6a0284.setIcon(icon_6e2a2f3709877a08ceeae27f19e17556);
+        
+    
+        var popup_22e1c295371c11a6f3a5612bebe27f2d = L.popup({});
+
+        
+            
+                var html_70c557f77b0acaee2db7d86f815e5b5b = $(`<div id="html_70c557f77b0acaee2db7d86f815e5b5b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Southwell Road, Lowdham</h1><div class="nugget-popup"><p>Surface water overwhelmed the highway drainage on Southwell Road and properties along Southwell Road were flooded as floodwaters flowed along the road corridor. [IMG] (p4)</p></div></div></body></div>`)[0];
+                popup_22e1c295371c11a6f3a5612bebe27f2d.setContent(html_70c557f77b0acaee2db7d86f815e5b5b);
+            
+        
+
+        marker_5d8170933fbf5eeb01f40c110b6a0284.bindPopup(popup_22e1c295371c11a6f3a5612bebe27f2d)
+        ;
+
+        
+    
+    
+            var marker_67849273dea07ce0ff59db4462cbd5db = L.marker(
+                [53.145927, -1.0214971],
+                {}
+            ).addTo(map_fe318c0d1fbf5af7ed8f8ecbe86341e0);
+        
+    
+            var icon_b424b035272a75aa1fbe7ba3687d4925 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_67849273dea07ce0ff59db4462cbd5db.setIcon(icon_b424b035272a75aa1fbe7ba3687d4925);
+        
+    
+        var popup_f05bc970c926223fe67be08b36242333 = L.popup({});
+
+        
+            
+                var html_b4d5ba717b98a57a07b799e4e674eae2 = $(`<div id="html_b4d5ba717b98a57a07b799e4e674eae2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottinghamshire</h1><div class="nugget-popup"><p>Extensive flooding occurred across the county following heavy and prolonged rainfall between 7 and 14 November 2019; a major incident was declared on 7 November 2019 and county&ndash;level response actions (road closures, flood signage and sandbag distribution) were implemented. [PAG,MUL] (p1)</p></div><div class="nugget-popup"><p>Extensive flooding across the county associated with the severe rainfall event; Nottinghamshire Local Resilience Forum declared a major incident; Environment Agency monitored water levels and issued multiple flood warnings during the period. (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>66 road closures; over 750 flood signs; over 5000 sandbags [PAG,MUL] (p1)</p></div><div class="nugget-popup quant"><p>38 flood warnings; 16 (in November) (p2)</p></div></div></body></div>`)[0];
+                popup_f05bc970c926223fe67be08b36242333.setContent(html_b4d5ba717b98a57a07b799e4e674eae2);
+            
+        
+
+        marker_67849273dea07ce0ff59db4462cbd5db.bindPopup(popup_f05bc970c926223fe67be08b36242333)
+        ;
+
+        
+    
+    
+            var marker_bddd2fa80f7c805bc005f2dd6a2b6d25 = L.marker(
+                [53.012856, -1.0080969],
+                {}
+            ).addTo(map_fe318c0d1fbf5af7ed8f8ecbe86341e0);
+        
+    
+            var icon_e3f0cf61fe268c6fbbaed3b0421d8c8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bddd2fa80f7c805bc005f2dd6a2b6d25.setIcon(icon_e3f0cf61fe268c6fbbaed3b0421d8c8d);
+        
+    
+        var popup_2ff7a0c921e4d9b9374e80c5a3d23be0 = L.popup({});
+
+        
+            
+                var html_573e94d829f8296b13cf2b43c7fa619f = $(`<div id="html_573e94d829f8296b13cf2b43c7fa619f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lowdham</h1><div class="nugget-popup"><p>Extensive flooding across the village following heavy rainfall on 14 November 2019; flooding affected the village which is served by the Cocker Beck (a Main River). [PAG] (p1)</p></div><div class="nugget-popup"><p>Parts of the village suffered a significant flood event causing internal property flooding, public highways were flooded, and several gardens/curtilages were affected. [IMG,PAG] (p2)</p></div><div class="nugget-popup"><p>The Cocker Beck overtopped on 14th November, with surface water running from saturated fields and using the Epperstone By&ndash;Pass and the Main Street as flow paths; surface water overwhelmed highway drainage and properties on Main Street and Southwell Road in Lowdham were flooded. [IMG,PAG,MUL] (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>12 reported incidents of internal property flooding [IMG,PAG] (p2)</p></div></div></body></div>`)[0];
+                popup_2ff7a0c921e4d9b9374e80c5a3d23be0.setContent(html_573e94d829f8296b13cf2b43c7fa619f);
+            
+        
+
+        marker_bddd2fa80f7c805bc005f2dd6a2b6d25.bindPopup(popup_2ff7a0c921e4d9b9374e80c5a3d23be0)
+        ;
+
+        
+    
+</script>
+</html>

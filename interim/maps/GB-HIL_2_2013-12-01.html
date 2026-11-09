@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e75d58f504b1681ff6722f36c61af27f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e75d58f504b1681ff6722f36c61af27f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e75d58f504b1681ff6722f36c61af27f = L.map(
+                "map_e75d58f504b1681ff6722f36c61af27f",
+                {
+                    center: [51.54729168260966, -0.4581756122894533],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3cdfe0958db4e5a633a601ab62b79b02 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_3cdfe0958db4e5a633a601ab62b79b02.addTo(map_e75d58f504b1681ff6722f36c61af27f);
+    
+            var marker_aee0e5c3c30b8ee183adf0a8d16d9fc3 = L.marker(
+                [51.4952464, -0.4880307],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_5abf934d211e5c87896a741561da6076 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aee0e5c3c30b8ee183adf0a8d16d9fc3.setIcon(icon_5abf934d211e5c87896a741561da6076);
+        
+    
+        var popup_e089acc8631b17d22b31cd49012fb36e = L.popup({});
+
+        
+            
+                var html_43d2c06057110cc767ad5572f7eb238f = $(`<div id="html_43d2c06057110cc767ad5572f7eb238f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Common</h1><div class="nugget-popup"><p>As river levels rose in the River Colne and Wraysbury River, water flowed across back gardens and into the main access road. Properties and accesses were surrounded by floodwater (reported to rise under floor boards) and sandbags/pumps were used to protect contents. [IMG,TAB] (p9)</p></div><div class="nugget-popup"><p>The Common was identified in this investigation as the location of a significant flood event and is recommended as a site&ndash;specific project to reduce flood risk. (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 residents reported water surrounding their properties and accesses; water depth approx 30cm; potentially 38 properties and 12 businesses could have been cut off; Approx 2 days duration [IMG,TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_e089acc8631b17d22b31cd49012fb36e.setContent(html_43d2c06057110cc767ad5572f7eb238f);
+            
+        
+
+        marker_aee0e5c3c30b8ee183adf0a8d16d9fc3.bindPopup(popup_e089acc8631b17d22b31cd49012fb36e)
+        ;
+
+        
+    
+    
+            var marker_9f56e54c2f83099d7c6b688a5bed2939 = L.marker(
+                [51.5388085, -0.4944035],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_011146b8503b4f20c3deac485339bd0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9f56e54c2f83099d7c6b688a5bed2939.setIcon(icon_011146b8503b4f20c3deac485339bd0d);
+        
+    
+        var popup_02fe72eef589435b9ef63a2f10213495 = L.popup({});
+
+        
+            
+                var html_5775fe590ace108cb6bbdec89e3dd595 = $(`<div id="html_5775fe590ace108cb6bbdec89e3dd595" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West London Community College</h1><div class="nugget-popup"><p>Internal flooding of the educational institution: water entered the building (internal flooding) as river levels rose and water flowed along an ordinary watercourse onto the highway and entrance to the College. [TAB] (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 educational institution [TAB] (p11)</p></div></div></body></div>`)[0];
+                popup_02fe72eef589435b9ef63a2f10213495.setContent(html_5775fe590ace108cb6bbdec89e3dd595);
+            
+        
+
+        marker_9f56e54c2f83099d7c6b688a5bed2939.bindPopup(popup_02fe72eef589435b9ef63a2f10213495)
+        ;
+
+        
+    
+    
+            var marker_4d59b4809937740c235814789365159c = L.marker(
+                [51.5919562, -0.4299487],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_502e8c9a8b5f9c7511cb755d25bfb042 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4d59b4809937740c235814789365159c.setIcon(icon_502e8c9a8b5f9c7511cb755d25bfb042);
+        
+    
+        var popup_455b18b1e8de6937bcfec813dc7d1120 = L.popup({});
+
+        
+            
+                var html_e871f8d5b7230f181572dca46df83e76 = $(`<div id="html_e871f8d5b7230f181572dca46df83e76" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ruislip Lido</h1><div class="nugget-popup"><p>Water levels in the Lido rose considerably above the agreed managed level and the Lido provided substantial storage for floodwater; water was contained within the Lido during the event, which reduced the likelihood of downstream flooding. The Lido has a history of overflowing (1977, 2000/2001 and 2009). Council operates valves to discharge water from the Lido. [TAB,MUL] (p14)</p></div></div></body></div>`)[0];
+                popup_455b18b1e8de6937bcfec813dc7d1120.setContent(html_e871f8d5b7230f181572dca46df83e76);
+            
+        
+
+        marker_4d59b4809937740c235814789365159c.bindPopup(popup_455b18b1e8de6937bcfec813dc7d1120)
+        ;
+
+        
+    
+    
+            var marker_82f3ea7f08a5111fa81dc09301156c2b = L.marker(
+                [51.608407, -0.4304505],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_daaac176a40fa373068c285126c65db5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_82f3ea7f08a5111fa81dc09301156c2b.setIcon(icon_daaac176a40fa373068c285126c65db5);
+        
+    
+        var popup_cdaa8f5cbda9b159f096ac8c67ee1702 = L.popup({});
+
+        
+            
+                var html_ee2ed9ea39a8c15afa641d96a488d823 = $(`<div id="html_ee2ed9ea39a8c15afa641d96a488d823" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northwood Golf Club</h1><div class="nugget-popup"><p>Reported closure of the golf club due to flooding/raised water levels; the club reported concern that water held back in Ruislip Woods was impacting use of their greens. [TAB] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 report of Northwood Golf Club being closed [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_cdaa8f5cbda9b159f096ac8c67ee1702.setContent(html_ee2ed9ea39a8c15afa641d96a488d823);
+            
+        
+
+        marker_82f3ea7f08a5111fa81dc09301156c2b.bindPopup(popup_cdaa8f5cbda9b159f096ac8c67ee1702)
+        ;
+
+        
+    
+    
+            var marker_0fc4559e6e0d0b995cc64802475d6ffe = L.marker(
+                [51.609373, -0.4981306],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_712cc383e9085d2818c119591386a62e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0fc4559e6e0d0b995cc64802475d6ffe.setIcon(icon_712cc383e9085d2818c119591386a62e);
+        
+    
+        var popup_a79e05d56844c7e38e7eba2f7d913c34 = L.popup({});
+
+        
+            
+                var html_afc9f8836d57f7398039fdfcc7e46b82 = $(`<div id="html_afc9f8836d57f7398039fdfcc7e46b82" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Royal Quay</h1><div class="nugget-popup"><p>Floodwater from the Canal flowed over the proposed development site at Royal Quay; an island at Royal Quay was affected by flooding. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_a79e05d56844c7e38e7eba2f7d913c34.setContent(html_afc9f8836d57f7398039fdfcc7e46b82);
+            
+        
+
+        marker_0fc4559e6e0d0b995cc64802475d6ffe.bindPopup(popup_a79e05d56844c7e38e7eba2f7d913c34)
+        ;
+
+        
+    
+    
+            var marker_b246e60e5c8765cb7a28982da42fe469 = L.marker(
+                [51.5029405, -0.4811768],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_8a58a90f84cbc19ad841d2ab3c6fada9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b246e60e5c8765cb7a28982da42fe469.setIcon(icon_8a58a90f84cbc19ad841d2ab3c6fada9);
+        
+    
+        var popup_7a32d9e23ef8a681213f27d2d2f99352 = L.popup({});
+
+        
+            
+                var html_aa241ac677020147b5996f956f191bbc = $(`<div id="html_aa241ac677020147b5996f956f191bbc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fray's River</h1><div class="nugget-popup"><p>The Frays River was included in the flood warning issued for the area (the warning covered the River Colne and Frays River at West Drayton and Stanwell Moor), indicating it contributed to the local flood risk and was relevant to the event. [TAB] (p7)</p></div><div class="nugget-popup"><p>High river levels in the Frays River caused water to flow into adjacent back gardens and contributed to drains being unable to discharge to the river, producing ponding on the access road and flooding of properties' rear gardens. [TAB] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties' back gardens [TAB] (p10)</p></div></div></body></div>`)[0];
+                popup_7a32d9e23ef8a681213f27d2d2f99352.setContent(html_aa241ac677020147b5996f956f191bbc);
+            
+        
+
+        marker_b246e60e5c8765cb7a28982da42fe469.bindPopup(popup_7a32d9e23ef8a681213f27d2d2f99352)
+        ;
+
+        
+    
+    
+            var marker_aa6ddf8353093bf3890e44352be29cbc = L.marker(
+                [51.5970952, -0.4268884],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_4ead292a5d27e2b4b42599c1586237c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aa6ddf8353093bf3890e44352be29cbc.setIcon(icon_4ead292a5d27e2b4b42599c1586237c9);
+        
+    
+        var popup_79661ce48ce7a9ddf507d2f6d4bd6a43 = L.popup({});
+
+        
+            
+                var html_491a62e8f3368a37e5af6edcee87ea3a = $(`<div id="html_491a62e8f3368a37e5af6edcee87ea3a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cannons Brook</h1><div class="nugget-popup"><p>When the River Pinn is high Cannons Brook cannot discharge and water backs up, flooding the adjacent road and surrounding area. The site flooded in January 2014 and remains at risk of repeat flooding. [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_79661ce48ce7a9ddf507d2f6d4bd6a43.setContent(html_491a62e8f3368a37e5af6edcee87ea3a);
+            
+        
+
+        marker_aa6ddf8353093bf3890e44352be29cbc.bindPopup(popup_79661ce48ce7a9ddf507d2f6d4bd6a43)
+        ;
+
+        
+    
+    
+            var marker_5124d954b0dbad7e86a2fbea84fb694c = L.marker(
+                [51.6306133, -0.4864059],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_92f773ce30bf7f57baa2bb2ada83706d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5124d954b0dbad7e86a2fbea84fb694c.setIcon(icon_92f773ce30bf7f57baa2bb2ada83706d);
+        
+    
+        var popup_40fc410c2e4b20159e5f957e0c8e6d73 = L.popup({});
+
+        
+            
+                var html_439611f009448aea737659d0bd2e8311 = $(`<div id="html_439611f009448aea737659d0bd2e8311" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stockers Lake</h1><div class="nugget-popup"><p>Identified as a potential flowpath: floodwater from the River Colne may have flowed across Stockers Lake and then along an ordinary watercourse toward Springwell Lane, contributing to the observed inundation. [TAB] (p19)</p></div></div></body></div>`)[0];
+                popup_40fc410c2e4b20159e5f957e0c8e6d73.setContent(html_439611f009448aea737659d0bd2e8311);
+            
+        
+
+        marker_5124d954b0dbad7e86a2fbea84fb694c.bindPopup(popup_40fc410c2e4b20159e5f957e0c8e6d73)
+        ;
+
+        
+    
+    
+            var marker_53afd9ea89cd430c74fcb10e530f272d = L.marker(
+                [51.532563, -0.453256],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_dc6958dc8c676d97fb83cc4a1aae8b43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_53afd9ea89cd430c74fcb10e530f272d.setIcon(icon_dc6958dc8c676d97fb83cc4a1aae8b43);
+        
+    
+        var popup_72e8985e632f4ea51b7bf5c0b4f3ba8a = L.popup({});
+
+        
+            
+                var html_a6960d35fe5d135f47da282780cfab0f = $(`<div id="html_a6960d35fe5d135f47da282780cfab0f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>London Borough of Hillingdon</h1><div class="nugget-popup"><p>The borough experienced its largest flood event for a number of years. Flooding in the borough could affect residents and properties across multiple catchments (River Colne, River Crane, River Pinn and Yeading Brooks) and from surface water; evidence of impacts was collected via numerous calls, emails and letters to the Council. (p4)</p></div><div class="nugget-popup"><p>The borough experienced flood impacts requiring coordinated response: highways staff attended sites (including nights/weekends), debris was cleared from river structures to reduce blockages, sandbags were delivered to residents, and the Council and Environment Agency visited known hotspots. [PAG] (p5)</p></div><div class="nugget-popup"><p>Across the borough approximately 29 residential properties (and associated gardens and some garages) were affected by flooding; a small number of businesses and educational institutions were also reported affected, with one educational institution severely affected internally. Flooding reports came from across the whole borough. (p6)</p></div><div class="nugget-popup"><p>The report states the three electricity substations could have issues with flooded access during the event (access may have been compromised by water over the highway/entrances). [TAB] (p7)</p></div><div class="nugget-popup"><p>Flooding at Springwell Lane (Harefield) on the River Colne/ordinary watercourse/surface water pathway caused road inundation. Water could not drain because the River Colne was very high; vehicles were shown standing in water (up to wheel level in photos). Access to one business was cut off. The Council Highways team attended and placed signs to close the road. [TAB] (p19)</p></div><div class="nugget-popup"><p>Areas across the borough experienced flooding from local sources (surface water and groundwater) and from Main River flooding. Main River flooding is reported in association with the River Pinn and Cannons Brook. The investigation identified significant flood events at 'The Common' and 'Kings College Playing Fields'. (p23)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>29 residential properties; 1 educational institution (p6)</p></div><div class="nugget-popup quant"><p>3 Electricity Substations [TAB] (p7)</p></div><div class="nugget-popup quant"><p>1 business [TAB] (p19)</p></div></div></body></div>`)[0];
+                popup_72e8985e632f4ea51b7bf5c0b4f3ba8a.setContent(html_a6960d35fe5d135f47da282780cfab0f);
+            
+        
+
+        marker_53afd9ea89cd430c74fcb10e530f272d.bindPopup(popup_72e8985e632f4ea51b7bf5c0b4f3ba8a)
+        ;
+
+        
+    
+    
+            var marker_491b690be92514086dc4901203f4cdce = L.marker(
+                [51.5978813, -0.4370618],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_54a2ad367a0efa7ca5bdbb41c2e23daf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_491b690be92514086dc4901203f4cdce.setIcon(icon_54a2ad367a0efa7ca5bdbb41c2e23daf);
+        
+    
+        var popup_d5506eb6750cf040edca502ab15b47db = L.popup({});
+
+        
+            
+                var html_e941ac7af7b91c63993f0660d3511168 = $(`<div id="html_e941ac7af7b91c63993f0660d3511168" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ruislip Woods National Nature Reserve</h1><div class="nugget-popup"><p>Water was held back within Ruislip Woods during the high&ndash;flow period; sluices in the woods were confirmed to overflow in times of high flow, contributing to raised levels and flows into the Lido and affecting downstream areas (including Northwood Golf Club). [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_d5506eb6750cf040edca502ab15b47db.setContent(html_e941ac7af7b91c63993f0660d3511168);
+            
+        
+
+        marker_491b690be92514086dc4901203f4cdce.bindPopup(popup_d5506eb6750cf040edca502ab15b47db)
+        ;
+
+        
+    
+    
+            var marker_f70bd00a1cf18b6eeb613b5add1956f9 = L.marker(
+                [51.6341785, -0.4172156],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_afcd66bd7ef9065ec441d372f98769d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f70bd00a1cf18b6eeb613b5add1956f9.setIcon(icon_afcd66bd7ef9065ec441d372f98769d0);
+        
+    
+        var popup_b40efa402784f68cd86dbc0bf4d2c512 = L.popup({});
+
+        
+            
+                var html_2db8935335c1ae7950065cad58cf46c1 = $(`<div id="html_2db8935335c1ae7950065cad58cf46c1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Colne</h1><div class="nugget-popup"><p>High water levels on the River Colne (linked to high River Thames levels in Feb 2014) meant smaller ditches in the catchment could not drain; as a result water spilled onto adjacent land and onto the highway causing access flooding. [TAB] (p7)</p></div><div class="nugget-popup"><p>River Colne levels rose quickly and water flowed onto back gardens, causing inundation concerns; residents contacted the Council and sandbags were provided. The Longford Flood Alleviation Scheme (an overflow channel) appeared to function well and likely reduced inundation. [TAB] (p8)</p></div><div class="nugget-popup"><p>Very high River Colne levels prevented an ordinary watercourse from discharging. The high river levels contributed to water flowing into a residential garden, onto the highway and into the entrance/internal areas of a College. [TAB,MUL] (p11)</p></div><div class="nugget-popup"><p>River Colne was reported very high and is identified as a source of flooding; high river levels prevented road drainage and likely contributed to overland flow into Stockers Lake and along ordinary watercourses leading to inundation of Springwell Lane. [TAB] (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property reported concerns; potentially 23 properties on the island could have been affected [TAB] (p8)</p></div><div class="nugget-popup quant"><p>1 garden; internal flooding to an Educational Institution [TAB,MUL] (p11)</p></div></div></body></div>`)[0];
+                popup_b40efa402784f68cd86dbc0bf4d2c512.setContent(html_2db8935335c1ae7950065cad58cf46c1);
+            
+        
+
+        marker_f70bd00a1cf18b6eeb613b5add1956f9.bindPopup(popup_b40efa402784f68cd86dbc0bf4d2c512)
+        ;
+
+        
+    
+    
+            var marker_2250b0bca01d5716f2ed31368b01945c = L.marker(
+                [51.5575525, -0.781404],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_a0bc1068e3e38ee6dd05bbd3b44bc14e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2250b0bca01d5716f2ed31368b01945c.setIcon(icon_a0bc1068e3e38ee6dd05bbd3b44bc14e);
+        
+    
+        var popup_e6ba5fe227da1eb4b91cfad0f366fbcd = L.popup({});
+
+        
+            
+                var html_ac2361d59141f04071b4140ae611d523 = $(`<div id="html_ac2361d59141f04071b4140ae611d523" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Thames</h1><div class="nugget-popup"><p>The River Thames was particularly high in February 2014; these high Thames levels elevated River Colne levels and contributed to local flooding in the Colne/Frays catchment. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_e6ba5fe227da1eb4b91cfad0f366fbcd.setContent(html_ac2361d59141f04071b4140ae611d523);
+            
+        
+
+        marker_2250b0bca01d5716f2ed31368b01945c.bindPopup(popup_e6ba5fe227da1eb4b91cfad0f366fbcd)
+        ;
+
+        
+    
+    
+            var marker_ef16cc0d9a9acb404440014a9be96f93 = L.marker(
+                [51.4701674, -0.5097022],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_c2dc66eb05eebcc4e12c7e2193953293 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ef16cc0d9a9acb404440014a9be96f93.setIcon(icon_c2dc66eb05eebcc4e12c7e2193953293);
+        
+    
+        var popup_97c34f9ca4d3fd242d1b258a94634fd0 = L.popup({});
+
+        
+            
+                var html_b63fc045cce8f5b4f0abb761aa706eb0 = $(`<div id="html_b63fc045cce8f5b4f0abb761aa706eb0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wraysbury River</h1><div class="nugget-popup"><p>Rising Wraysbury River flows contributed to water flowing across back gardens and into the main access road to the Island, surrounding properties and accesses and contributing to properties being cut off. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Approx 2 days; 3 residents reported water surrounding their properties; water to a depth of approx 30cm; potentially 38 properties and 12 businesses could have been cut off [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_97c34f9ca4d3fd242d1b258a94634fd0.setContent(html_b63fc045cce8f5b4f0abb761aa706eb0);
+            
+        
+
+        marker_ef16cc0d9a9acb404440014a9be96f93.bindPopup(popup_97c34f9ca4d3fd242d1b258a94634fd0)
+        ;
+
+        
+    
+    
+            var marker_3210b5fd81bc8db400923b9291c61393 = L.marker(
+                [51.4919736, -0.4918528],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_b16461e16ffbdc355418625d09324e51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3210b5fd81bc8db400923b9291c61393.setIcon(icon_b16461e16ffbdc355418625d09324e51);
+        
+    
+        var popup_22bc09ebd05fde352cf97b233d25cc55 = L.popup({});
+
+        
+            
+                var html_e3713c0499a4ea3d19131a34e84e6ee5 = $(`<div id="html_e3713c0499a4ea3d19131a34e84e6ee5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Bigley Ditch</h1><div class="nugget-popup"><p>Elevated levels in Bigley Ditch contributed to overflow into nearby residential areas, forming part of the pathway that led to garden inundation and road ponding when drains could not discharge. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties' back gardens (p10)</p></div></div></body></div>`)[0];
+                popup_22bc09ebd05fde352cf97b233d25cc55.setContent(html_e3713c0499a4ea3d19131a34e84e6ee5);
+            
+        
+
+        marker_3210b5fd81bc8db400923b9291c61393.bindPopup(popup_22bc09ebd05fde352cf97b233d25cc55)
+        ;
+
+        
+    
+    
+            var marker_5cf4e87f4bbb1c1adcf77a82db8cc30c = L.marker(
+                [51.5861971, -0.4406675],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_f0e655fdf07db64c49991fdd463fe929 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5cf4e87f4bbb1c1adcf77a82db8cc30c.setIcon(icon_f0e655fdf07db64c49991fdd463fe929);
+        
+    
+        var popup_65abe6c6619242fb1516f5c986c09663 = L.popup({});
+
+        
+            
+                var html_c69c16944a6579bc4e687867476127c5 = $(`<div id="html_c69c16944a6579bc4e687867476127c5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Breakspear Road, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Breakspear Road South, identified as a key highway route, was affected by flooding. (p6)</p></div><div class="nugget-popup"><p>Breakspear Road South was partially submerged under significant floodwater (notably at a location under/near a railway bridge/underpass), impeding vehicle passage; documented by photographs from December 2012 and recorded as a recurring flood location. [IMG,MUL] (p13)</p></div></div></body></div>`)[0];
+                popup_65abe6c6619242fb1516f5c986c09663.setContent(html_c69c16944a6579bc4e687867476127c5);
+            
+        
+
+        marker_5cf4e87f4bbb1c1adcf77a82db8cc30c.bindPopup(popup_65abe6c6619242fb1516f5c986c09663)
+        ;
+
+        
+    
+    
+            var marker_d5c8c4ca283a4cec9b3a7ed4fb199dd7 = L.marker(
+                [51.4666926, -0.4984106],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_3dd8aa715112941868159ef7f8992514 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d5c8c4ca283a4cec9b3a7ed4fb199dd7.setIcon(icon_3dd8aa715112941868159ef7f8992514);
+        
+    
+        var popup_73b70808d26515fa22bf18ee4dc060a6 = L.popup({});
+
+        
+            
+                var html_ea1dfd5805808b67cc8208e9f7374228 = $(`<div id="html_ea1dfd5805808b67cc8208e9f7374228" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Airport Way, London Region</h1><div class="nugget-popup"><p>Smaller ordinary watercourses and ditches could not discharge (exacerbated by high river levels) and flowed onto the highway; flooding affected the area south of Airport Way with water spilling onto adjacent land and over accesses. [TAB] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Water over the access to one residential property and one business; potentially 26 houses and businesses (including 3 electricity substations) could have issues with flooded access; duration approximately 2 days [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_73b70808d26515fa22bf18ee4dc060a6.setContent(html_ea1dfd5805808b67cc8208e9f7374228);
+            
+        
+
+        marker_d5c8c4ca283a4cec9b3a7ed4fb199dd7.bindPopup(popup_73b70808d26515fa22bf18ee4dc060a6)
+        ;
+
+        
+    
+    
+            var marker_481dd8eb8b1bf540938650e3051dc646 = L.marker(
+                [51.4657924, -0.4969644],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_c01b5ae152a95533f1d6f6494f847514 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_481dd8eb8b1bf540938650e3051dc646.setIcon(icon_c01b5ae152a95533f1d6f6494f847514);
+        
+    
+        var popup_5b1700ac51059a16f099f36fe63d2649 = L.popup({});
+
+        
+            
+                var html_b8e790074ac705b3720880b51a4cf008 = $(`<div id="html_b8e790074ac705b3720880b51a4cf008" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Spout Lane, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Water from local ordinary watercourses flowed onto the highway at Spout Lane, causing water over the access to one residential property and one business; access to other properties was at risk. [TAB,MUL] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property; 1 business; potentially 26 houses and business; 3 Electricity Substations [TAB,MUL] (p7)</p></div></div></body></div>`)[0];
+                popup_5b1700ac51059a16f099f36fe63d2649.setContent(html_b8e790074ac705b3720880b51a4cf008);
+            
+        
+
+        marker_481dd8eb8b1bf540938650e3051dc646.bindPopup(popup_5b1700ac51059a16f099f36fe63d2649)
+        ;
+
+        
+    
+    
+            var marker_c54a0ce1d8a4d01c20736cff79ea4af2 = L.marker(
+                [51.4821767, -0.4892117],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_0c1ba8e2fa6ade852015b7329fbcc475 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c54a0ce1d8a4d01c20736cff79ea4af2.setIcon(icon_0c1ba8e2fa6ade852015b7329fbcc475);
+        
+    
+        var popup_ca6a397001f483bd39d521184a57b979 = L.popup({});
+
+        
+            
+                var html_6c07d42c29268931ecefb18fceb24745 = $(`<div id="html_6c07d42c29268931ecefb18fceb24745" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Island, Harmondsworth</h1><div class="nugget-popup"><p>Floodwater flowed into the main access road to the Island, surrounding properties and their accesses; residents reported water reaching approx 30cm and some properties experienced water coming up under floor boards, requiring pumps and sandbags to protect contents. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 residents reported water surrounding their properties and accesses; water depth approx 30cm; potentially 38 properties and 12 businesses could have been cut off; Approx 2 days duration [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_ca6a397001f483bd39d521184a57b979.setContent(html_6c07d42c29268931ecefb18fceb24745);
+            
+        
+
+        marker_c54a0ce1d8a4d01c20736cff79ea4af2.bindPopup(popup_ca6a397001f483bd39d521184a57b979)
+        ;
+
+        
+    
+    
+            var marker_84f5aeacd3bf8d19b1cf58341b422ccd = L.marker(
+                [51.5374929, -0.4288245],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_f504508674ca420fa0b4dbb7ff739f68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_84f5aeacd3bf8d19b1cf58341b422ccd.setIcon(icon_f504508674ca420fa0b4dbb7ff739f68);
+        
+    
+        var popup_c897fb3b6d8d2c7220e9fe2ace9baa61 = L.popup({});
+
+        
+            
+                var html_93b4a39a3269fd2fc4ef47ed0bc73eac = $(`<div id="html_93b4a39a3269fd2fc4ef47ed0bc73eac" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Charville Lane, London Region</h1><div class="nugget-popup"><p>Overflow from an ordinary watercourse and rising River Colne caused water to flow onto the highway and into adjacent residential gardens/properties, producing localised highway flooding and property inundation. Response actions included sandbags being provided and sluices opened to discharge water. [TAB,PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>Properties on Charville Lane were surrounded by floodwater as river levels rose and water entered gardens and highway areas. [TAB] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties surrounded by water [TAB] (p12)</p></div></div></body></div>`)[0];
+                popup_c897fb3b6d8d2c7220e9fe2ace9baa61.setContent(html_93b4a39a3269fd2fc4ef47ed0bc73eac);
+            
+        
+
+        marker_84f5aeacd3bf8d19b1cf58341b422ccd.bindPopup(popup_c897fb3b6d8d2c7220e9fe2ace9baa61)
+        ;
+
+        
+    
+    
+            var marker_755b9bf7d94f3a87cc312a03d893d74b = L.marker(
+                [51.5375772, -0.4250171],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_40dc424664c9da6821b5ede27f67e918 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_755b9bf7d94f3a87cc312a03d893d74b.setIcon(icon_40dc424664c9da6821b5ede27f67e918);
+        
+    
+        var popup_9ae4c3dcebd874665ae3e10652bea7a3 = L.popup({});
+
+        
+            
+                var html_14f2b28eb0c9e8832b08e0faa0b58cb3 = $(`<div id="html_14f2b28eb0c9e8832b08e0faa0b58cb3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ullswater Close, London Region</h1><div class="nugget-popup"><p>Overflow from an ordinary watercourse and high River Colne levels resulted in water flowing onto the highway and into nearby properties/gardens, causing localised highway flooding and property inundation. Sandbags were used and sluices were opened to help discharge water. [TAB,PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>Access roads, front and back gardens and garages in Ullswater Close were flooded when rising river levels entered gardens and the highway and caused water to back up via sewers. [TAB] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 reports of flooded access roads and front and back gardens and garages (across Ullswater Close and Kendal Close); approximately 40 sandbags issued across the affected area [TAB] (p12)</p></div></div></body></div>`)[0];
+                popup_9ae4c3dcebd874665ae3e10652bea7a3.setContent(html_14f2b28eb0c9e8832b08e0faa0b58cb3);
+            
+        
+
+        marker_755b9bf7d94f3a87cc312a03d893d74b.bindPopup(popup_9ae4c3dcebd874665ae3e10652bea7a3)
+        ;
+
+        
+    
+    
+            var marker_e2a87fb8e8e792fa3d885d686ba7680c = L.marker(
+                [51.5379939, -0.4255304],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_6ddfa654970fd73c2062162f3f6c4582 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e2a87fb8e8e792fa3d885d686ba7680c.setIcon(icon_6ddfa654970fd73c2062162f3f6c4582);
+        
+    
+        var popup_501184e26feebf98816db98c245169af = L.popup({});
+
+        
+            
+                var html_a69914167e94f0c57c5d0b0436d73ad4 = $(`<div id="html_a69914167e94f0c57c5d0b0436d73ad4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kendal Close, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Overflow from an ordinary watercourse and elevated River Colne levels led to water flowing onto the highway and into adjacent gardens/properties, causing localised highway flooding and property inundation. Sandbags were provided and sluices opened as part of the response. [TAB,PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>Front and back gardens, garages and access roads at Kendal Close were flooded as river levels rose and water entered properties and the highway; culvert/trash screen issues noted to rear of Kendal Close. [TAB] (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 reports of flooded access roads and front and back gardens and garages (across Ullswater Close and Kendal Close) [TAB] (p12)</p></div></div></body></div>`)[0];
+                popup_501184e26feebf98816db98c245169af.setContent(html_a69914167e94f0c57c5d0b0436d73ad4);
+            
+        
+
+        marker_e2a87fb8e8e792fa3d885d686ba7680c.bindPopup(popup_501184e26feebf98816db98c245169af)
+        ;
+
+        
+    
+    
+            var marker_9bbcc6fa38a63c0426dfa7fe1c73bc04 = L.marker(
+                [51.5374663, -0.4257905],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_a2536d16cfbd9e947e3e43b5cbf31c6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9bbcc6fa38a63c0426dfa7fe1c73bc04.setIcon(icon_a2536d16cfbd9e947e3e43b5cbf31c6a);
+        
+    
+        var popup_4004a32363032e5da1a15a8b2f002dbe = L.popup({});
+
+        
+            
+                var html_fe9ee0b25665cbcfe19bc077943b8bdf = $(`<div id="html_fe9ee0b25665cbcfe19bc077943b8bdf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Langdale Drive, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Overflow from an ordinary watercourse and high River Colne levels caused water to flow onto the highway and into nearby properties/gardens, producing localised highway flooding and property inundation. Sandbags and sluice operation were used in response. [TAB,PAG,MUL] (p11)</p></div><div class="nugget-popup"><p>Roadway on Langdale Drive was flooded when rising river levels and surface water affected the highway. [TAB] (p12)</p></div></div></body></div>`)[0];
+                popup_4004a32363032e5da1a15a8b2f002dbe.setContent(html_fe9ee0b25665cbcfe19bc077943b8bdf);
+            
+        
+
+        marker_9bbcc6fa38a63c0426dfa7fe1c73bc04.bindPopup(popup_4004a32363032e5da1a15a8b2f002dbe)
+        ;
+
+        
+    
+    
+            var marker_7a65ef922d2f7664a47fd861de38c575 = L.marker(
+                [51.5854321, -0.4052699],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_92fb8ae95fb4a95cd23388436fe0c269 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7a65ef922d2f7664a47fd861de38c575.setIcon(icon_92fb8ae95fb4a95cd23388436fe0c269);
+        
+    
+        var popup_726a7e1ea4779680d08c7313b347ba62 = L.popup({});
+
+        
+            
+                var html_0755bb6287b876ab795d2f73dba204d1 = $(`<div id="html_0755bb6287b876ab795d2f73dba204d1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Road Eastcote, Eastcote</h1><div class="nugget-popup"><p>Localised highway flooding reported; Council cleared gullies at sites attended but flooding persisted; matter referred to Thames Water and raised with operations manager. (p20)</p></div></div></body></div>`)[0];
+                popup_726a7e1ea4779680d08c7313b347ba62.setContent(html_0755bb6287b876ab795d2f73dba204d1);
+            
+        
+
+        marker_7a65ef922d2f7664a47fd861de38c575.bindPopup(popup_726a7e1ea4779680d08c7313b347ba62)
+        ;
+
+        
+    
+    
+            var marker_1015fad2a1ef8aff730e105e967a4c01 = L.marker(
+                [51.6270389, -0.4937424],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_d0254fc77cc47fce9037b8da780dad0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1015fad2a1ef8aff730e105e967a4c01.setIcon(icon_d0254fc77cc47fce9037b8da780dad0c);
+        
+    
+        var popup_1db23a042f70aad3ed4629cb6a1eef68 = L.popup({});
+
+        
+            
+                var html_9d1d13c230938bea3ef619012239a53f = $(`<div id="html_9d1d13c230938bea3ef619012239a53f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Springwell Lane, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Road inundated when the River Colne was very high and surface water could not drain; photograph (Feb 2014) shows water up to vehicle wheels. Flooding prevented drainage and cut off access to one business; the Council Highways team placed signs and closed the road. (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 business (p19)</p></div></div></body></div>`)[0];
+                popup_1db23a042f70aad3ed4629cb6a1eef68.setContent(html_9d1d13c230938bea3ef619012239a53f);
+            
+        
+
+        marker_1015fad2a1ef8aff730e105e967a4c01.bindPopup(popup_1db23a042f70aad3ed4629cb6a1eef68)
+        ;
+
+        
+    
+    
+            var marker_e6aeb72b5cd9fe0429a0747b2fd029a9 = L.marker(
+                [51.5806123, -0.4327543],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_77db89037a387bd608ead73df0850f21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e6aeb72b5cd9fe0429a0747b2fd029a9.setIcon(icon_77db89037a387bd608ead73df0850f21);
+        
+    
+        var popup_a120e1c8a57ada8a4247f8915abc7b66 = L.popup({});
+
+        
+            
+                var html_ab54de90768634a6ab685df8197ee316 = $(`<div id="html_ab54de90768634a6ab685df8197ee316" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bury Street, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Ongoing highway flooding reported; Council attended, cleared gullies but flooding remained; issue passed to the water utility (Thames Water) for action. (p20)</p></div></div></body></div>`)[0];
+                popup_a120e1c8a57ada8a4247f8915abc7b66.setContent(html_ab54de90768634a6ab685df8197ee316);
+            
+        
+
+        marker_e6aeb72b5cd9fe0429a0747b2fd029a9.bindPopup(popup_a120e1c8a57ada8a4247f8915abc7b66)
+        ;
+
+        
+    
+    
+            var marker_3fb61be2b0bdbe480f67268d7e833824 = L.marker(
+                [51.5039872, -0.4199166],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_1d61a570394bd4600f8b971cf64b217b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3fb61be2b0bdbe480f67268d7e833824.setIcon(icon_1d61a570394bd4600f8b971cf64b217b);
+        
+    
+        var popup_89af00b697a457d9dfba63830235adb7 = L.popup({});
+
+        
+            
+                var html_65f634ee010825e9eff88f3f4cd68a39 = $(`<div id="html_65f634ee010825e9eff88f3f4cd68a39" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Station Approach, Hayes</h1><div class="nugget-popup"><p>Reported ongoing highway flooding; Council attended and cleared gullies but flooding issues persisted; reported to and followed up with Thames Water. (p20)</p></div></div></body></div>`)[0];
+                popup_89af00b697a457d9dfba63830235adb7.setContent(html_65f634ee010825e9eff88f3f4cd68a39);
+            
+        
+
+        marker_3fb61be2b0bdbe480f67268d7e833824.bindPopup(popup_89af00b697a457d9dfba63830235adb7)
+        ;
+
+        
+    
+    
+            var marker_5aab14d687186a81b2e2fdaaa44aa94f = L.marker(
+                [51.6106543, -0.4986979],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_bb0fa287a38867e140debd5228bfb9e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5aab14d687186a81b2e2fdaaa44aa94f.setIcon(icon_bb0fa287a38867e140debd5228bfb9e9);
+        
+    
+        var popup_07523063554ab7cc505c648968b9d8f8 = L.popup({});
+
+        
+            
+                var html_8d1a13e19f0fb978493bac733c9216d6 = $(`<div id="html_8d1a13e19f0fb978493bac733c9216d6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Coppermill Lock</h1><div class="nugget-popup"><p>The operation of the sluices at Coppermill Lock was identified for further investigation; Thames Water was asked to provide a sluice management plan to demonstrate appropriate management to reduce flood risk. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_07523063554ab7cc505c648968b9d8f8.setContent(html_8d1a13e19f0fb978493bac733c9216d6);
+            
+        
+
+        marker_5aab14d687186a81b2e2fdaaa44aa94f.bindPopup(popup_07523063554ab7cc505c648968b9d8f8)
+        ;
+
+        
+    
+    
+            var marker_1a04e2de10b82660ac6df5aa73b86cd7 = L.marker(
+                [51.503513, -0.4662704],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_2fd2cbaf9717b06e872ef88ff66c6563 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1a04e2de10b82660ac6df5aa73b86cd7.setIcon(icon_2fd2cbaf9717b06e872ef88ff66c6563);
+        
+    
+        var popup_5c9b543ad6c28f9ad48a72392e17c013 = L.popup({});
+
+        
+            
+                var html_a6c6b2151bb3d6e180b11fa8cbf407d4 = $(`<div id="html_a6c6b2151bb3d6e180b11fa8cbf407d4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Drayton</h1><div class="nugget-popup"><p>A flood warning was issued for the River Colne and Frays River at West Drayton and Stanwell Moor; the report notes the area south of Airport Way was mainly affected and that ditches could not drain leading to water spilling onto adjacent land and highways, causing access flooding for properties. [TAB] (p7)</p></div><div class="nugget-popup"><p>Flooding from the River Colne and Wraysbury River affected the The Common area of West Drayton: properties and accesses were inundated, some properties used pumps and sandbags, and access to a number of properties and businesses was at risk of being cut off. [TAB] (p9)</p></div><div class="nugget-popup"><p>Responded to rising river levels by providing sandbags to vulnerable residents, recommended producing a Community Flood Plan, promoted property&ndash;level protection and permeable surfacing, requested the Environment Agency investigate funding for property&ndash;level protection, and committed to publishing the investigation to clarify responsibilities and future support. [TAB,PAG] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 residents reported water surrounding their properties and accesses; potentially 38 properties and 12 businesses could have been cut off; Approx 2 days duration [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_5c9b543ad6c28f9ad48a72392e17c013.setContent(html_a6c6b2151bb3d6e180b11fa8cbf407d4);
+            
+        
+
+        marker_1a04e2de10b82660ac6df5aa73b86cd7.bindPopup(popup_5c9b543ad6c28f9ad48a72392e17c013)
+        ;
+
+        
+    
+    
+            var marker_2751cbe9fd55bf6b55a542bc959a44d3 = L.marker(
+                [51.462147, -0.5020458],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_f436b5c754a0eec745bb233ab8a90196 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2751cbe9fd55bf6b55a542bc959a44d3.setIcon(icon_f436b5c754a0eec745bb233ab8a90196);
+        
+    
+        var popup_50078f25512fa1427d0897c09a60ec32 = L.popup({});
+
+        
+            
+                var html_10839075b2b4d216e1b499660304aa0a = $(`<div id="html_10839075b2b4d216e1b499660304aa0a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stanwell Moor</h1><div class="nugget-popup"><p>Area was included in a flood warning for the River Colne and Frays River; high River Thames levels in Feb 2014 led to raised water on the Colne and smaller ditches could not discharge, causing water to spill onto adjacent land in the Stanwell Moor area. [TAB] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 of the 26 buildings in the reported area were within the flood warning area [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_50078f25512fa1427d0897c09a60ec32.setContent(html_10839075b2b4d216e1b499660304aa0a);
+            
+        
+
+        marker_2751cbe9fd55bf6b55a542bc959a44d3.bindPopup(popup_50078f25512fa1427d0897c09a60ec32)
+        ;
+
+        
+    
+    
+            var marker_c2bac1710389164870f4f0bb194cdd01 = L.marker(
+                [51.46003930090485, -0.42874798981566936],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_e60749a0ddf04b401bac62ddc4b828ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c2bac1710389164870f4f0bb194cdd01.setIcon(icon_e60749a0ddf04b401bac62ddc4b828ec);
+        
+    
+        var popup_12b65a0a99c652189b93ceb884d8b69b = L.popup({});
+
+        
+            
+                var html_5b66bca13a550141bc1c4fb5570fef41 = $(`<div id="html_5b66bca13a550141bc1c4fb5570fef41" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Heathrow</h1><div class="nugget-popup"><p>The flooding event at Spout Lane north (Heathrow TW19 6BW) resulted in water over an access to one residence and one business in the Heathrow area and created potential access issues for other nearby properties and infrastructure. [TAB,MUL] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property; 1 business; potentially 26 houses and business; 3 Electricity Substations [TAB,MUL] (p7)</p></div></div></body></div>`)[0];
+                popup_12b65a0a99c652189b93ceb884d8b69b.setContent(html_5b66bca13a550141bc1c4fb5570fef41);
+            
+        
+
+        marker_c2bac1710389164870f4f0bb194cdd01.bindPopup(popup_12b65a0a99c652189b93ceb884d8b69b)
+        ;
+
+        
+    
+    
+            var marker_abded212c8ef39bc348cbdaff1e27343 = L.marker(
+                [51.4807902, -0.4902523],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_479de5a7036eebd24efb702f3f26b613 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_abded212c8ef39bc348cbdaff1e27343.setIcon(icon_479de5a7036eebd24efb702f3f26b613);
+        
+    
+        var popup_cba470683429ba3e024d597d43cd5c98 = L.popup({});
+
+        
+            
+                var html_f4a80491c11a85b0cdc916906a5efcc8 = $(`<div id="html_f4a80491c11a85b0cdc916906a5efcc8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Longford</h1><div class="nugget-popup"><p>Flooding from the River Colne affected a riverside residential area in Longford; residents contacted the Council and sandbags were provided. The Longford Flood Alleviation Scheme overflow channel (on council land) appeared to function well. [IMG,TAB,MUL] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property reported concerns; potentially 23 properties on the island could have been affected; Approx 2 days [IMG,TAB,MUL] (p8)</p></div></div></body></div>`)[0];
+                popup_cba470683429ba3e024d597d43cd5c98.setContent(html_f4a80491c11a85b0cdc916906a5efcc8);
+            
+        
+
+        marker_abded212c8ef39bc348cbdaff1e27343.bindPopup(popup_cba470683429ba3e024d597d43cd5c98)
+        ;
+
+        
+    
+    
+            var marker_43424bf837a9deda159f77438f3ca3fa = L.marker(
+                [51.5795418, -0.4016534],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_1c5f889904601aaedc6dcebacae4c96c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_43424bf837a9deda159f77438f3ca3fa.setIcon(icon_1c5f889904601aaedc6dcebacae4c96c);
+        
+    
+        var popup_4632f8df506760565982ea9391eabcae = L.popup({});
+
+        
+            
+                var html_aa27cca5274e730493ac3c1e53619d0d = $(`<div id="html_aa27cca5274e730493ac3c1e53619d0d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Eastcote</h1><div class="nugget-popup"><p>Area experienced localised highway flooding (example given: High Road, Eastcote). Council responses included clearing gullies; flooding remained an ongoing issue and was escalated to the water utility. (p20)</p></div></div></body></div>`)[0];
+                popup_4632f8df506760565982ea9391eabcae.setContent(html_aa27cca5274e730493ac3c1e53619d0d);
+            
+        
+
+        marker_43424bf837a9deda159f77438f3ca3fa.bindPopup(popup_4632f8df506760565982ea9391eabcae)
+        ;
+
+        
+    
+    
+            var marker_ca6d673cb683b3c7916b07165875d965 = L.marker(
+                [51.6041828, -0.4825622],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_1c972cbe5d418770c44babefb1c06d6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ca6d673cb683b3c7916b07165875d965.setIcon(icon_1c972cbe5d418770c44babefb1c06d6a);
+        
+    
+        var popup_900e9970bd7d121e614875b007fccd15 = L.popup({});
+
+        
+            
+                var html_01646a62e701dc9b7ec7a8a2ba3140ab = $(`<div id="html_01646a62e701dc9b7ec7a8a2ba3140ab" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Harefield</h1><div class="nugget-popup"><p>The locality (including Springwell Lane) experienced flooding when the River Colne was very high and surface water could not drain; this disrupted road access and led to at least one business being cut off, supported by anecdotal reports and photographs. (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 business (p19)</p></div></div></body></div>`)[0];
+                popup_900e9970bd7d121e614875b007fccd15.setContent(html_01646a62e701dc9b7ec7a8a2ba3140ab);
+            
+        
+
+        marker_ca6d673cb683b3c7916b07165875d965.bindPopup(popup_900e9970bd7d121e614875b007fccd15)
+        ;
+
+        
+    
+    
+            var marker_09913cd95beb95d21b6f6f09d42a979c = L.marker(
+                [51.557801818805615, -0.39585673554775647],
+                {}
+            ).addTo(map_e75d58f504b1681ff6722f36c61af27f);
+        
+    
+            var icon_e8a72cf0177a0371eb4157b5906aad72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_09913cd95beb95d21b6f6f09d42a979c.setIcon(icon_e8a72cf0177a0371eb4157b5906aad72);
+        
+    
+        var popup_50d381ee8d7fa07259f6a14a3675e438 = L.popup({});
+
+        
+            
+                var html_dd7067900229c4d8f94d5d9a0b7ba626 = $(`<div id="html_dd7067900229c4d8f94d5d9a0b7ba626" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Ruislip</h1><div class="nugget-popup"><p>Highway/surface water flooding on Station Approach (South Ruislip) remained ongoing despite council attendance and gully clearing; council passed issues to the utility company and raised incidents with Thames Water. Flooding persisted at the location. (p20)</p></div></div></body></div>`)[0];
+                popup_50d381ee8d7fa07259f6a14a3675e438.setContent(html_dd7067900229c4d8f94d5d9a0b7ba626);
+            
+        
+
+        marker_09913cd95beb95d21b6f6f09d42a979c.bindPopup(popup_50d381ee8d7fa07259f6a14a3675e438)
+        ;
+
+        
+    
+</script>
+</html>

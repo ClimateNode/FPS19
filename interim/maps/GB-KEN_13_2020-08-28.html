@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6fc7f08f9dc1e64f79a52c69acd9fcd5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6fc7f08f9dc1e64f79a52c69acd9fcd5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6fc7f08f9dc1e64f79a52c69acd9fcd5 = L.map(
+                "map_6fc7f08f9dc1e64f79a52c69acd9fcd5",
+                {
+                    center: [51.2196754141562, 1.3945667372797652],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3a3f190c23bf9843baef87e522caa2af = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_3a3f190c23bf9843baef87e522caa2af.addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+    
+            var marker_f795bdb1b32af883c3e02aa85b2c59d5 = L.marker(
+                [51.2241407, 1.3968996],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_62f40ed1223a585981c0a68b09beabfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f795bdb1b32af883c3e02aa85b2c59d5.setIcon(icon_62f40ed1223a585981c0a68b09beabfa);
+        
+    
+        var popup_0e69d3b6f931e215677b5169efd7ffd9 = L.popup({});
+
+        
+            
+                var html_d00a3a8631945c68e892565f993f840e = $(`<div id="html_d00a3a8631945c68e892565f993f840e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Albert Road, Deal</h1><div class="nugget-popup"><p>Internal flooding to 4 properties (reports of up to 3 cm of floodwater inside); external flooding to 21 properties affecting gardens and garages (reported depths up to 50 cm). [TAB] (p2)</p></div><div class="nugget-popup"><p>Intense afternoon rainfall caused the sewer network to surcharge; manholes along Albert Road surcharged and sewage and surface water ponded and accumulated. The road flooded from the junction with Middle Deal Road to the railway. Internal flooding was reported by properties; some properties experienced external flooding where sandbags or flood boards prevented internal ingress. Southern Water did not initiate their emergency response and the road was not initially closed; vehicles drove through the floodwater creating bow waves that threatened internal flooding. KCC highways and the police later implemented a road closure and KCC provided a tanker to clear flood water. [PAG] (p8)</p></div><div class="nugget-popup"><p>Manholes along the sewer network surcharged causing sewage and surface water to pond and accumulate. Road flooding occurred from the junction of Middle Deal Road to the railway; vehicles driving through the floodwater created bow waves that nearly caused internal flooding to properties. KCC Highways and police closed the road (approx. 16:45) and KCC provided a tanker to clear floodwater. Some properties avoided internal flooding using sandbags or flood boards. [PAG] (p9)</p></div><div class="nugget-popup"><p>Foul (sewer) drains were surcharged/unblocked and water levels were reduced by KFRS; debris cleared to prevent further blockage. Post&ndash;event highway works included cleansing of 10 road gullies. Southern Water later reinstated emergency response measures for Albert Road. [TAB,PAG] (p10)</p></div><div class="nugget-popup"><p>Particularly vulnerable to combined sewer surcharge during the intense rainfall on 28 August 2020, with the surface water sewer acting as a CSO and causing flooding of properties and local disruption; Southern Water reinstated emergency measures at this location. (p11)</p></div><div class="nugget-popup"><p>Albert Road was surveyed following the flooding associated with the 28 August 2020 intense rainfall event; the street was subject to surface water and sewer&ndash;related flooding which prompted the council to send out surveys to residents. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 properties; 21 properties [TAB] (p2)</p></div><div class="nugget-popup quant"><p>4 properties; 11 flood survey responses; 6 properties reported external flooding [PAG] (p8)</p></div><div class="nugget-popup quant"><p>4 properties internally flooded; 6 properties externally flooded [PAG] (p9)</p></div><div class="nugget-popup quant"><p>10 road gullies [TAB,PAG] (p10)</p></div><div class="nugget-popup quant"><p>62 flood surveys sent; 12 flood surveys received [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_0e69d3b6f931e215677b5169efd7ffd9.setContent(html_d00a3a8631945c68e892565f993f840e);
+            
+        
+
+        marker_f795bdb1b32af883c3e02aa85b2c59d5.bindPopup(popup_0e69d3b6f931e215677b5169efd7ffd9)
+        ;
+
+        
+    
+    
+            var marker_1f73c8910d36058a3ffc3778898b7c4a = L.marker(
+                [51.2319311, 1.3986234],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_b8c7f6ad7ae3c26d5e05655d6c834ad3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1f73c8910d36058a3ffc3778898b7c4a.setIcon(icon_b8c7f6ad7ae3c26d5e05655d6c834ad3);
+        
+    
+        var popup_237892b9593eab650fcc2ecf01fbf4c5 = L.popup({});
+
+        
+            
+                var html_5581291dbb072b4f2985ca97709d3a50 = $(`<div id="html_5581291dbb072b4f2985ca97709d3a50" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Golf Road, Deal</h1><div class="nugget-popup"><p>One property externally flooded (reported depth approximately 7 cm). [TAB] (p2)</p></div><div class="nugget-popup"><p>Highway flooding reported between Athelstan Place and Godwyn Road and reported to KCC Highways. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_237892b9593eab650fcc2ecf01fbf4c5.setContent(html_5581291dbb072b4f2985ca97709d3a50);
+            
+        
+
+        marker_1f73c8910d36058a3ffc3778898b7c4a.bindPopup(popup_237892b9593eab650fcc2ecf01fbf4c5)
+        ;
+
+        
+    
+    
+            var marker_14da8bed0e92765342d98e8f17c1b372 = L.marker(
+                [51.2180366, 1.3913412],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_863b71ad70f0f47f3d4bd1547bf1fc68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_14da8bed0e92765342d98e8f17c1b372.setIcon(icon_863b71ad70f0f47f3d4bd1547bf1fc68);
+        
+    
+        var popup_a3e8c14577e4d654ea2ef3bb0f59cef8 = L.popup({});
+
+        
+            
+                var html_fb11adc870a15ce04888aa53a677ea78 = $(`<div id="html_fb11adc870a15ce04888aa53a677ea78" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Allenby Avenue, Deal</h1><div class="nugget-popup"><p>Road flooding reported to a depth of approximately 10 cm. [TAB] (p2)</p></div><div class="nugget-popup"><p>Road flooding occurred along Allenby Avenue due to the local sewerage system surcharging; KCC Highways closed the road to prevent bow waves that could cause internal and external flooding to properties. (p9)</p></div></div></body></div>`)[0];
+                popup_a3e8c14577e4d654ea2ef3bb0f59cef8.setContent(html_fb11adc870a15ce04888aa53a677ea78);
+            
+        
+
+        marker_14da8bed0e92765342d98e8f17c1b372.bindPopup(popup_a3e8c14577e4d654ea2ef3bb0f59cef8)
+        ;
+
+        
+    
+    
+            var marker_19e25903e4284374c367aee1393611e1 = L.marker(
+                [51.2236981, 1.4027919],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_43e78bc7dedd5a12a00d77d296f69e72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_19e25903e4284374c367aee1393611e1.setIcon(icon_43e78bc7dedd5a12a00d77d296f69e72);
+        
+    
+        var popup_8f25f057b336cc93129d692fee39fd1e = L.popup({});
+
+        
+            
+                var html_435e37f845ac1f0d93168053a95f6949 = $(`<div id="html_435e37f845ac1f0d93168053a95f6949" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Deal</h1><div class="nugget-popup"><p>Two commercial properties experienced internal flooding; floodwater reported up to ankle depth inside the properties. [TAB] (p2)</p></div><div class="nugget-popup"><p>Flooding at the junction with South Street (sewerage system surcharged) affected the pedestrian area and a number of shops and businesses. A collapsed drain cover was reported and surface water flowed towards Alfred Square. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 commercial properties; ankle&ndash;deep floodwater [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_8f25f057b336cc93129d692fee39fd1e.setContent(html_435e37f845ac1f0d93168053a95f6949);
+            
+        
+
+        marker_19e25903e4284374c367aee1393611e1.bindPopup(popup_8f25f057b336cc93129d692fee39fd1e)
+        ;
+
+        
+    
+    
+            var marker_ec4580ce154fc2e114c52f03120c9d3d = L.marker(
+                [51.2373322, 1.4006587],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_6500337d47abdeb09005f97db489c518 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ec4580ce154fc2e114c52f03120c9d3d.setIcon(icon_6500337d47abdeb09005f97db489c518);
+        
+    
+        var popup_bbb227a94f453351c1a4d442736b6f41 = L.popup({});
+
+        
+            
+                var html_ec6f35f0d24c32e4f1fd9868fd639c51 = $(`<div id="html_ec6f35f0d24c32e4f1fd9868fd639c51" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Canute Road, Deal</h1><div class="nugget-popup"><p>External flooding at one property with ~12 cm of floodwater outside the front door. [TAB] (p2)</p></div><div class="nugget-popup"><p>Severe and prolonged flooding of the carriageway was reported due to soakaways in the road verge failing to drain; KCC Highways provided a tanker to clear floodwater and road flooding affected adjacent property(s). (p10)</p></div><div class="nugget-popup"><p>Canute Road was surveyed after the 28 August 2020 flooding event; the road experienced flooding (surface water and sewer&ndash;related) prompting resident surveys. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property; 12 cm [TAB] (p2)</p></div><div class="nugget-popup quant"><p>one property (p10)</p></div><div class="nugget-popup quant"><p>10 flood surveys sent; 1 flood survey received [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_bbb227a94f453351c1a4d442736b6f41.setContent(html_ec6f35f0d24c32e4f1fd9868fd639c51);
+            
+        
+
+        marker_ec4580ce154fc2e114c52f03120c9d3d.bindPopup(popup_bbb227a94f453351c1a4d442736b6f41)
+        ;
+
+        
+    
+    
+            var marker_aeeb65ba2954cdae426e00df648406d2 = L.marker(
+                [51.2148131, 1.3884295],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_6efce7ea99a407fe3a9e5136de540095 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aeeb65ba2954cdae426e00df648406d2.setIcon(icon_6efce7ea99a407fe3a9e5136de540095);
+        
+    
+        var popup_2639bfc64e234e379c7958734d2abea5 = L.popup({});
+
+        
+            
+                var html_a82ce49ff9318491984434f56f1a0206 = $(`<div id="html_a82ce49ff9318491984434f56f1a0206" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Milldale Close, Mill Hill</h1><div class="nugget-popup"><p>One property reported internal flooding. [TAB] (p2)</p></div><div class="nugget-popup"><p>Was affected by the flood event on 28 August 2020 and attended by KFRS; responders worked to manage water levels and clear debris to reduce further blockage. (p10)</p></div><div class="nugget-popup"><p>Milldale Close was included in the council's post&ndash;event flood survey activity after 28 August 2020, indicating it was affected by flooding (surface water and/or sewer&ndash;related) and surveyed. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p2)</p></div><div class="nugget-popup quant"><p>1 flood survey sent; 0 flood surveys received [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_2639bfc64e234e379c7958734d2abea5.setContent(html_a82ce49ff9318491984434f56f1a0206);
+            
+        
+
+        marker_aeeb65ba2954cdae426e00df648406d2.bindPopup(popup_2639bfc64e234e379c7958734d2abea5)
+        ;
+
+        
+    
+    
+            var marker_44002131137fa911d65c716e6b29e1ea = L.marker(
+                [51.2195351, 1.4007977],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_e3c155d107fc47f026bd057628dbc329 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_44002131137fa911d65c716e6b29e1ea.setIcon(icon_e3c155d107fc47f026bd057628dbc329);
+        
+    
+        var popup_bc28ca27654f3086a6bc246caab1ae27 = L.popup({});
+
+        
+            
+                var html_d548684956137f4a6a0b29de98cfcc86 = $(`<div id="html_d548684956137f4a6a0b29de98cfcc86" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gilford Road, Deal</h1><div class="nugget-popup"><p>Road flooding occurred; vehicles had to be pulled from the floodwater. (p2)</p></div><div class="nugget-popup"><p>Was affected by the flood event on 28 August 2020 and attended by KFRS; responders cleared debris and helped reduce water levels to mitigate flooding impacts. (p10)</p></div></div></body></div>`)[0];
+                popup_bc28ca27654f3086a6bc246caab1ae27.setContent(html_d548684956137f4a6a0b29de98cfcc86);
+            
+        
+
+        marker_44002131137fa911d65c716e6b29e1ea.bindPopup(popup_bc28ca27654f3086a6bc246caab1ae27)
+        ;
+
+        
+    
+    
+            var marker_fd1942d8c34e4d0db781437e8a826617 = L.marker(
+                [51.2243047, 1.3997736],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_291dca9b36d5bb674827f70ce8327212 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fd1942d8c34e4d0db781437e8a826617.setIcon(icon_291dca9b36d5bb674827f70ce8327212);
+        
+    
+        var popup_f292f79866a59eaababb76a1edbdd87a = L.popup({});
+
+        
+            
+                var html_042af1270053dc72bcbda9f1c196c642 = $(`<div id="html_042af1270053dc72bcbda9f1c196c642" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Anchor Lane, Deal</h1><div class="nugget-popup"><p>One property reported external flooding. [TAB] (p2)</p></div><div class="nugget-popup"><p>Was affected by the flood event on 28 August 2020 and attended by KFRS; flooding and drainage issues occurred and responders cleared debris/reduced water levels to mitigate impacts. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_f292f79866a59eaababb76a1edbdd87a.setContent(html_042af1270053dc72bcbda9f1c196c642);
+            
+        
+
+        marker_fd1942d8c34e4d0db781437e8a826617.bindPopup(popup_f292f79866a59eaababb76a1edbdd87a)
+        ;
+
+        
+    
+    
+            var marker_9490f5c15b06a8125630bb1a687e5547 = L.marker(
+                [51.2330975, 1.3892618],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_659df1a59141934e025eeb79917108db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9490f5c15b06a8125630bb1a687e5547.setIcon(icon_659df1a59141934e025eeb79917108db);
+        
+    
+        var popup_0c12b4806c69c52522fe72ffd2f651a5 = L.popup({});
+
+        
+            
+                var html_1321088692fdb97e24ca0898f8b20caa = $(`<div id="html_1321088692fdb97e24ca0898f8b20caa" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northwall Road, Deal</h1><div class="nugget-popup"><p>Road flooding reported to a depth of about 30 cm. [TAB] (p2)</p></div><div class="nugget-popup"><p>Road flooding occurred at the junction with Western Road during the heavy rainfall. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30 cm [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_0c12b4806c69c52522fe72ffd2f651a5.setContent(html_1321088692fdb97e24ca0898f8b20caa);
+            
+        
+
+        marker_9490f5c15b06a8125630bb1a687e5547.bindPopup(popup_0c12b4806c69c52522fe72ffd2f651a5)
+        ;
+
+        
+    
+    
+            var marker_2c95d5c4b083d5ded930ff4af81143e4 = L.marker(
+                [51.2158891, 1.4010899],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_0352c15d1fc3cf7e5b38fa11ac6332cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2c95d5c4b083d5ded930ff4af81143e4.setIcon(icon_0352c15d1fc3cf7e5b38fa11ac6332cd);
+        
+    
+        var popup_a3d7f8e6085d2854bad244b9a6e3f898 = L.popup({});
+
+        
+            
+                var html_5d798ffe8af995909fed223c69ca7341 = $(`<div id="html_5d798ffe8af995909fed223c69ca7341" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North Barrack Road, Walmer</h1><div class="nugget-popup"><p>One property flooded internally; additional properties experienced external flooding. [TAB] (p2)</p></div><div class="nugget-popup"><p>One property internally flooded; multiple properties externally flooded during the intense rainfall and sewer surcharge. (p10)</p></div><div class="nugget-popup"><p>North Barrack Road was targeted with a flood survey after the 28 August 2020 event, indicating it experienced flooding (surface water and/or sewer&ndash;related) that warranted investigation. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded [TAB] (p2)</p></div><div class="nugget-popup quant"><p>1 property internally flooded (p10)</p></div><div class="nugget-popup quant"><p>1 flood survey sent; 0 flood surveys received [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_a3d7f8e6085d2854bad244b9a6e3f898.setContent(html_5d798ffe8af995909fed223c69ca7341);
+            
+        
+
+        marker_2c95d5c4b083d5ded930ff4af81143e4.bindPopup(popup_a3d7f8e6085d2854bad244b9a6e3f898)
+        ;
+
+        
+    
+    
+            var marker_e038304b50515e3e1d435751b5bbb634 = L.marker(
+                [51.2109055, 1.3944802],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_62d0de7ac459032a1fd3439d38711c16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e038304b50515e3e1d435751b5bbb634.setIcon(icon_62d0de7ac459032a1fd3439d38711c16);
+        
+    
+        var popup_695b0fdab51e6440415510163d5ea6d5 = L.popup({});
+
+        
+            
+                var html_2ba445d46a74f58e2d2ae7568a61d67a = $(`<div id="html_2ba445d46a74f58e2d2ae7568a61d67a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>James Hall Gardens, Walmer</h1><div class="nugget-popup"><p>External flooding reported at a property. [TAB] (p2)</p></div><div class="nugget-popup"><p>One property reported internal flooding; KCC Highways jetted road gullies in response to flooding at this location. [TAB] (p10)</p></div><div class="nugget-popup"><p>James Hall Gardens was included in the post&ndash;event flood survey programme after the 28 August 2020 event; the location was impacted by flooding (surface water and/or sewer&ndash;related) and surveyed. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property externally flooded [TAB] (p2)</p></div><div class="nugget-popup quant"><p>1 property internally flooded [TAB] (p10)</p></div><div class="nugget-popup quant"><p>16 flood surveys sent; 0 flood surveys received [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_695b0fdab51e6440415510163d5ea6d5.setContent(html_2ba445d46a74f58e2d2ae7568a61d67a);
+            
+        
+
+        marker_e038304b50515e3e1d435751b5bbb634.bindPopup(popup_695b0fdab51e6440415510163d5ea6d5)
+        ;
+
+        
+    
+    
+            var marker_c413b30a0a14cf46f8a7f0168fd13c4f = L.marker(
+                [51.22563419546702, 1.3893100047917821],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_01ef23c7d8c403df77c6afca78f42243 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c413b30a0a14cf46f8a7f0168fd13c4f.setIcon(icon_01ef23c7d8c403df77c6afca78f42243);
+        
+    
+        var popup_cb1b4b3c2d267b0319594b0532e9f775 = L.popup({});
+
+        
+            
+                var html_7a6d8ecd198a31fe39ab9b517ab4cddd = $(`<div id="html_7a6d8ecd198a31fe39ab9b517ab4cddd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Southwall Road, Deal</h1><div class="nugget-popup"><p>Road and pavement were flooded. [TAB] (p2)</p></div><div class="nugget-popup"><p>Flooding occurred at the junction with Church Lane during the event as the local sewerage system surcharged. (p9)</p></div><div class="nugget-popup"><p>Inspection after the flood event found blocked highway gullies, indicating local drainage failure associated with the flooding. [TAB] (p10)</p></div><div class="nugget-popup"><p>Southwall Road was included in post&ndash;event flood survey activity after the 28 August 2020 event, indicating the street was impacted by flooding (surface water and/or sewer&ndash;related) and surveyed as part of the investigation. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 road gullies [TAB] (p10)</p></div><div class="nugget-popup quant"><p>4 flood surveys sent; 0 flood surveys received [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_cb1b4b3c2d267b0319594b0532e9f775.setContent(html_7a6d8ecd198a31fe39ab9b517ab4cddd);
+            
+        
+
+        marker_c413b30a0a14cf46f8a7f0168fd13c4f.bindPopup(popup_cb1b4b3c2d267b0319594b0532e9f775)
+        ;
+
+        
+    
+    
+            var marker_60e9a7f401bfdab6c34bc4089eb6e563 = L.marker(
+                [51.222631, 1.3866051],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_77a48cb7161aa54e0cf298c06b9d507b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_60e9a7f401bfdab6c34bc4089eb6e563.setIcon(icon_77a48cb7161aa54e0cf298c06b9d507b);
+        
+    
+        var popup_e5b915e2179efa5d6ef67978003eb958 = L.popup({});
+
+        
+            
+                var html_e145d49863b6b692df4d0179d3d7d680 = $(`<div id="html_e145d49863b6b692df4d0179d3d7d680" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Lane, Deal</h1><div class="nugget-popup"><p>Road flooding occurred to a significant depth. [TAB] (p2)</p></div><div class="nugget-popup"><p>Severely flooded at the junction with Southwall Road due to the local sewerage system surcharging; police reported flood depths of approximately 50&ndash;60 cm. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>50&ndash;60 cm flood depth [TAB] (p2)</p></div><div class="nugget-popup quant"><p>50&ndash;60cm depth (p9)</p></div></div></body></div>`)[0];
+                popup_e5b915e2179efa5d6ef67978003eb958.setContent(html_e145d49863b6b692df4d0179d3d7d680);
+            
+        
+
+        marker_60e9a7f401bfdab6c34bc4089eb6e563.bindPopup(popup_e5b915e2179efa5d6ef67978003eb958)
+        ;
+
+        
+    
+    
+            var marker_c717bde5232c6dd4f2faa37f8d8bfac3 = L.marker(
+                [51.2157527, 1.3846488],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_c4bc4332dddced9e4e5809dac664196a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c717bde5232c6dd4f2faa37f8d8bfac3.setIcon(icon_c4bc4332dddced9e4e5809dac664196a);
+        
+    
+        var popup_9078b7403c546cff0a8df1ee226f8816 = L.popup({});
+
+        
+            
+                var html_6122517cb47975d1860b4c2e3aea30ea = $(`<div id="html_6122517cb47975d1860b4c2e3aea30ea" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Manor Road, Deal</h1><div class="nugget-popup"><p>Two properties reported internal flooding and one property reported external flooding. [TAB] (p2)</p></div><div class="nugget-popup"><p>One property internally flooded on Manor Road due to the local sewerage system surcharging; road flooding occurred between St Leonards Road and Bruce Close. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties internally flooded; 1 property externally flooded [TAB] (p2)</p></div><div class="nugget-popup quant"><p>one property internally flooded (p9)</p></div></div></body></div>`)[0];
+                popup_9078b7403c546cff0a8df1ee226f8816.setContent(html_6122517cb47975d1860b4c2e3aea30ea);
+            
+        
+
+        marker_c717bde5232c6dd4f2faa37f8d8bfac3.bindPopup(popup_9078b7403c546cff0a8df1ee226f8816)
+        ;
+
+        
+    
+    
+            var marker_630c92bef0d5296b5dd3539fd1b65c35 = L.marker(
+                [51.2189709, 1.3930029],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_f00e91c365856528fb04eed784689803 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_630c92bef0d5296b5dd3539fd1b65c35.setIcon(icon_f00e91c365856528fb04eed784689803);
+        
+    
+        var popup_2914cc3a681c0cb2bb62db5e265f531c = L.popup({});
+
+        
+            
+                var html_760d4fc7ed164f163ebcd3c40f7255f9 = $(`<div id="html_760d4fc7ed164f163ebcd3c40f7255f9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Park Avenue, Deal</h1><div class="nugget-popup"><p>A property reported internal flooding. [TAB] (p2)</p></div><div class="nugget-popup"><p>Flooding under the railway bridge on Park Avenue required KCC Highways attendance to clear flood water; one property internally flooded as a result of the sewer surcharging. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property internally flooded [TAB] (p2)</p></div><div class="nugget-popup quant"><p>one property internally flooded (p9)</p></div></div></body></div>`)[0];
+                popup_2914cc3a681c0cb2bb62db5e265f531c.setContent(html_760d4fc7ed164f163ebcd3c40f7255f9);
+            
+        
+
+        marker_630c92bef0d5296b5dd3539fd1b65c35.bindPopup(popup_2914cc3a681c0cb2bb62db5e265f531c)
+        ;
+
+        
+    
+    
+            var marker_ea10255c57d6ce4022abdc348f7abe9d = L.marker(
+                [51.2204031, 1.4044269],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_0452c009326296bda973e1920212ba31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ea10255c57d6ce4022abdc348f7abe9d.setIcon(icon_0452c009326296bda973e1920212ba31);
+        
+    
+        var popup_b256038bb6d6d7be56f4d5e03dcf57a6 = L.popup({});
+
+        
+            
+                var html_6a0ee8308a632a8abbf647c71e24c548 = $(`<div id="html_6a0ee8308a632a8abbf647c71e24c548" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ranelagh Road, Deal</h1><div class="nugget-popup"><p>One property reported internal flooding. [TAB] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_b256038bb6d6d7be56f4d5e03dcf57a6.setContent(html_6a0ee8308a632a8abbf647c71e24c548);
+            
+        
+
+        marker_ea10255c57d6ce4022abdc348f7abe9d.bindPopup(popup_b256038bb6d6d7be56f4d5e03dcf57a6)
+        ;
+
+        
+    
+    
+            var marker_750df85279190c239e00668ce3add2fb = L.marker(
+                [51.2208046, 1.3884336],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_9fdfe65779f422014706ccd2801df345 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_750df85279190c239e00668ce3add2fb.setIcon(icon_9fdfe65779f422014706ccd2801df345);
+        
+    
+        var popup_9e48c78b51ca63fac810f16ad6084f8f = L.popup({});
+
+        
+            
+                var html_c74773e9322005d05342c85cdd641f05 = $(`<div id="html_c74773e9322005d05342c85cdd641f05" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Middle Deal Road, Deal</h1><div class="nugget-popup"><p>Road flooding occurred from Southwall Road to the junction with Albert Road; one property reported nearly flooding internally. [TAB] (p2)</p></div><div class="nugget-popup"><p>Road flooding occurred from the junction of Middle Deal Road to the railway as manholes surcharged and sewage and surface water ponded; the flooding contributed to a road closure (placed ~16:45) and vehicles driving through floodwater created bow waves that threatened nearby properties. [PAG] (p8)</p></div><div class="nugget-popup"><p>Middle Deal Road was included in the post&ndash;event flood survey programme and was affected by surface water flooding during the 28 August 2020 event; it was investigated as part of the local flood response. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>33 flood surveys sent; 0 flood surveys received [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_9e48c78b51ca63fac810f16ad6084f8f.setContent(html_c74773e9322005d05342c85cdd641f05);
+            
+        
+
+        marker_750df85279190c239e00668ce3add2fb.bindPopup(popup_9e48c78b51ca63fac810f16ad6084f8f)
+        ;
+
+        
+    
+    
+            var marker_c44f36c945b9536f7df2ebf9b694435f = L.marker(
+                [51.2169841, 1.387394],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_005f1abe1eb1233a5ba40e3d6f41b7e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c44f36c945b9536f7df2ebf9b694435f.setIcon(icon_005f1abe1eb1233a5ba40e3d6f41b7e4);
+        
+    
+        var popup_ef6e762784748032440006b826797b97 = L.popup({});
+
+        
+            
+                var html_d7a803c4122157ec121f675acaf641f0 = $(`<div id="html_d7a803c4122157ec121f675acaf641f0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Leonard's Road, Mill Hill</h1><div class="nugget-popup"><p>Road flooding occurred between St Leonards Road and Bruce Close as a result of the local sewerage system surcharging during the heavy rainfall. (p9)</p></div></div></body></div>`)[0];
+                popup_ef6e762784748032440006b826797b97.setContent(html_d7a803c4122157ec121f675acaf641f0);
+            
+        
+
+        marker_c44f36c945b9536f7df2ebf9b694435f.bindPopup(popup_ef6e762784748032440006b826797b97)
+        ;
+
+        
+    
+    
+            var marker_604dbf7370f72f6e9636c4fccf261293 = L.marker(
+                [51.2290541, 1.4028476],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_57f6f7f9e8ef9c9e85f024541c74254f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_604dbf7370f72f6e9636c4fccf261293.setIcon(icon_57f6f7f9e8ef9c9e85f024541c74254f);
+        
+    
+        var popup_f81ca569e1aed2b6fe2c4a5421a0e24a = L.popup({});
+
+        
+            
+                var html_6e60774d4373cc0c956798e5d9cbe02a = $(`<div id="html_6e60774d4373cc0c956798e5d9cbe02a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Alfred Square, Deal</h1><div class="nugget-popup"><p>Surface water was reported flowing towards Alfred Square from High Street during the event; the pedestrian area and nearby shops and businesses were affected by the flooding. (p9)</p></div></div></body></div>`)[0];
+                popup_f81ca569e1aed2b6fe2c4a5421a0e24a.setContent(html_6e60774d4373cc0c956798e5d9cbe02a);
+            
+        
+
+        marker_604dbf7370f72f6e9636c4fccf261293.bindPopup(popup_f81ca569e1aed2b6fe2c4a5421a0e24a)
+        ;
+
+        
+    
+    
+            var marker_6d5d27d91a17de09c530f236f8293288 = L.marker(
+                [51.2150665, 1.3874665],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_3f1a7d58ec17663af3b9bdb8bf717442 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6d5d27d91a17de09c530f236f8293288.setIcon(icon_3f1a7d58ec17663af3b9bdb8bf717442);
+        
+    
+        var popup_f3cbcd99173727439bca6336e9cbc1ee = L.popup({});
+
+        
+            
+                var html_4188c9fddecd031ec980d218c677e601 = $(`<div id="html_4188c9fddecd031ec980d218c677e601" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bruce Close, Mill Hill</h1><div class="nugget-popup"><p>Road flooding occurred between St Leonards Road and Bruce Close as a result of the local sewerage system surcharging during the heavy rainfall. (p9)</p></div></div></body></div>`)[0];
+                popup_f3cbcd99173727439bca6336e9cbc1ee.setContent(html_4188c9fddecd031ec980d218c677e601);
+            
+        
+
+        marker_6d5d27d91a17de09c530f236f8293288.bindPopup(popup_f3cbcd99173727439bca6336e9cbc1ee)
+        ;
+
+        
+    
+    
+            var marker_b69722414bfc0c1fd39a8c5544446645 = L.marker(
+                [51.226832, 1.3984261],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_66855d8038a9dfcdc52cedfd99a0e3c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b69722414bfc0c1fd39a8c5544446645.setIcon(icon_66855d8038a9dfcdc52cedfd99a0e3c1);
+        
+    
+        var popup_b29b50514e13251dcd557ba94b6d03a8 = L.popup({});
+
+        
+            
+                var html_4203f1aa35eca34935eb44893f67ca6e = $(`<div id="html_4203f1aa35eca34935eb44893f67ca6e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Western Road, Deal</h1><div class="nugget-popup"><p>Road flooding occurred at the junction with Northwall Road during the heavy rainfall. (p10)</p></div></div></body></div>`)[0];
+                popup_b29b50514e13251dcd557ba94b6d03a8.setContent(html_4203f1aa35eca34935eb44893f67ca6e);
+            
+        
+
+        marker_b69722414bfc0c1fd39a8c5544446645.bindPopup(popup_b29b50514e13251dcd557ba94b6d03a8)
+        ;
+
+        
+    
+    
+            var marker_9a678ab8a8433b235e5eda4ae68bcfd6 = L.marker(
+                [51.2208034, 1.3930068],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_a3ed690c9b0e9d993efaee2b26c31d27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9a678ab8a8433b235e5eda4ae68bcfd6.setIcon(icon_a3ed690c9b0e9d993efaee2b26c31d27);
+        
+    
+        var popup_a9e140545ac4217788d148f61049fca5 = L.popup({});
+
+        
+            
+                var html_45443d3386ed8d929f325f5003c641bf = $(`<div id="html_45443d3386ed8d929f325f5003c641bf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>London Road, Deal</h1><div class="nugget-popup"><p>Sewer covers became displaced along London Road near the junction with Haywards Close as a result of the heavy rainfall and sewer surcharge. (p10)</p></div></div></body></div>`)[0];
+                popup_a9e140545ac4217788d148f61049fca5.setContent(html_45443d3386ed8d929f325f5003c641bf);
+            
+        
+
+        marker_9a678ab8a8433b235e5eda4ae68bcfd6.bindPopup(popup_a9e140545ac4217788d148f61049fca5)
+        ;
+
+        
+    
+    
+            var marker_0ef863d9a710175e983be01c87257b68 = L.marker(
+                [51.2132587, 1.3836383],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_f61641ce2be1f292ed7594c6fbbb3a39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0ef863d9a710175e983be01c87257b68.setIcon(icon_f61641ce2be1f292ed7594c6fbbb3a39);
+        
+    
+        var popup_4038ea4cfc759785748fbeb7ead9fcc9 = L.popup({});
+
+        
+            
+                var html_6f14b5195a3f7de8c05f5dc4105b456e = $(`<div id="html_6f14b5195a3f7de8c05f5dc4105b456e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Davis Avenue, Mill Hill</h1><div class="nugget-popup"><p>Reports of sewer covers becoming displaced on Mill Hill between Beuchamp Avenue and Davis Avenue as a result of heavy rainfall and surcharging of the local sewerage system; indicates sewer surcharge impacts to the local road drainage and carriageway adjacent to Davis Avenue. (p10)</p></div></div></body></div>`)[0];
+                popup_4038ea4cfc759785748fbeb7ead9fcc9.setContent(html_6f14b5195a3f7de8c05f5dc4105b456e);
+            
+        
+
+        marker_0ef863d9a710175e983be01c87257b68.bindPopup(popup_4038ea4cfc759785748fbeb7ead9fcc9)
+        ;
+
+        
+    
+    
+            var marker_8e361e7b9340551700c8c6168135d09c = L.marker(
+                [51.2176077, 1.3928627],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_e5c8dbe87def8853bb280091c52236a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8e361e7b9340551700c8c6168135d09c.setIcon(icon_e5c8dbe87def8853bb280091c52236a7);
+        
+    
+        var popup_96ed8b28e26ebfadea2efdaea9c449a0 = L.popup({});
+
+        
+            
+                var html_38d747b9ef717ded5430302700ac40f6 = $(`<div id="html_38d747b9ef717ded5430302700ac40f6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Allenby Road, Deal</h1><div class="nugget-popup"><p>Road gullies were cleansed following the flood event and a small section of road was repaired to reduce surface water ponding caused by the flooding. [TAB] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 road gullies [TAB] (p10)</p></div></div></body></div>`)[0];
+                popup_96ed8b28e26ebfadea2efdaea9c449a0.setContent(html_38d747b9ef717ded5430302700ac40f6);
+            
+        
+
+        marker_8e361e7b9340551700c8c6168135d09c.bindPopup(popup_96ed8b28e26ebfadea2efdaea9c449a0)
+        ;
+
+        
+    
+    
+            var marker_30560ef26a8d97172eccad693d794d6a = L.marker(
+                [51.2240827, 1.3976264],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_9ada02191703a6334d28cf4f28a520a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_30560ef26a8d97172eccad693d794d6a.setIcon(icon_9ada02191703a6334d28cf4f28a520a4);
+        
+    
+        var popup_0659d47d78adb98ddb784dda518295dd = L.popup({});
+
+        
+            
+                var html_08545850aef525d01d9364fd1e7a96a6 = $(`<div id="html_08545850aef525d01d9364fd1e7a96a6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bridgeside, Deal</h1><div class="nugget-popup"><p>Bridgeside was included in flood surveys following the 28 August 2020 Deal flood, indicating the road and nearby properties were affected by surface water/urban flooding during the event and were surveyed as part of the response. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 flood surveys sent; 0 responses received [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_0659d47d78adb98ddb784dda518295dd.setContent(html_08545850aef525d01d9364fd1e7a96a6);
+            
+        
+
+        marker_30560ef26a8d97172eccad693d794d6a.bindPopup(popup_0659d47d78adb98ddb784dda518295dd)
+        ;
+
+        
+    
+    
+            var marker_1fc5505a87fda7ef78a2070a5a1cc564 = L.marker(
+                [51.2266169, 1.4004281],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_9862e78c1e3381ac653b383bfb8b1b19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1fc5505a87fda7ef78a2070a5a1cc564.setIcon(icon_9862e78c1e3381ac653b383bfb8b1b19);
+        
+    
+        var popup_17b5e56f8ce54fa833d90474ff9ed37f = L.popup({});
+
+        
+            
+                var html_a54f70b07adb8cac5a417785834fec84 = $(`<div id="html_a54f70b07adb8cac5a417785834fec84" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Street, Deal</h1><div class="nugget-popup"><p>West Street was included in the post&ndash;event flood survey programme and was affected by surface water flooding during the 28 August 2020 event; it formed part of the local investigation into flood impacts. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 flood survey sent; 0 flood surveys received [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_17b5e56f8ce54fa833d90474ff9ed37f.setContent(html_a54f70b07adb8cac5a417785834fec84);
+            
+        
+
+        marker_1fc5505a87fda7ef78a2070a5a1cc564.bindPopup(popup_17b5e56f8ce54fa833d90474ff9ed37f)
+        ;
+
+        
+    
+    
+            var marker_a95a1d0894252d37a10843c84e956565 = L.marker(
+                [51.2211272, 1.391786],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_e2194d5a1cd2c996257fbf356b33e2dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a95a1d0894252d37a10843c84e956565.setIcon(icon_e2194d5a1cd2c996257fbf356b33e2dd);
+        
+    
+        var popup_330f4cc055d1fb104128dd8fcc8401dc = L.popup({});
+
+        
+            
+                var html_44657fbd97d1592ae1c35009d865eac5 = $(`<div id="html_44657fbd97d1592ae1c35009d865eac5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Grange Road, Deal</h1><div class="nugget-popup"><p>Grange Road was included in the post&ndash;event flood survey programme and was affected by surface water flooding during the 28 August 2020 event; it was investigated as part of the local flood response. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 flood surveys sent; 1 flood survey received [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_330f4cc055d1fb104128dd8fcc8401dc.setContent(html_44657fbd97d1592ae1c35009d865eac5);
+            
+        
+
+        marker_a95a1d0894252d37a10843c84e956565.bindPopup(popup_330f4cc055d1fb104128dd8fcc8401dc)
+        ;
+
+        
+    
+    
+            var marker_75f8caeb977f8528166e3e667a103ce7 = L.marker(
+                [51.2100618, 1.3811553],
+                {}
+            ).addTo(map_6fc7f08f9dc1e64f79a52c69acd9fcd5);
+        
+    
+            var icon_aec2ee93c47dee8cea1f38630b449cb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_75f8caeb977f8528166e3e667a103ce7.setIcon(icon_aec2ee93c47dee8cea1f38630b449cb8);
+        
+    
+        var popup_6ce92551daa848793bce9c2d91942d7c = L.popup({});
+
+        
+            
+                var html_6d3706cba23d173184b9c2c8e8e9822d = $(`<div id="html_6d3706cba23d173184b9c2c8e8e9822d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Hill</h1><div class="nugget-popup"><p>Sewer covers became displaced between Beuchamp Avenue and Davis Avenue; the road surface had broken up due to surcharge pressure from the local sewerage system during the heavy rainfall. (p10)</p></div></div></body></div>`)[0];
+                popup_6ce92551daa848793bce9c2d91942d7c.setContent(html_6d3706cba23d173184b9c2c8e8e9822d);
+            
+        
+
+        marker_75f8caeb977f8528166e3e667a103ce7.bindPopup(popup_6ce92551daa848793bce9c2d91942d7c)
+        ;
+
+        
+    
+</script>
+</html>

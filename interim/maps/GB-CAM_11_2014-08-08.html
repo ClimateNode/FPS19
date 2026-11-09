@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a8627845684cad83e2a159f4e0a8a40d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a8627845684cad83e2a159f4e0a8a40d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a8627845684cad83e2a159f4e0a8a40d = L.map(
+                "map_a8627845684cad83e2a159f4e0a8a40d",
+                {
+                    center: [52.54384911446981, 0.07612770598874581],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_97cb838de3bc6b5f3467b5eb44d44df5 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_97cb838de3bc6b5f3467b5eb44d44df5.addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+    
+            var marker_30c7e9efd16a742424df440db28fa434 = L.marker(
+                [52.56213480587854, 0.07786022820345838],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_dcf522fdbbb391a2910b698d334d4b8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_30c7e9efd16a742424df440db28fa434.setIcon(icon_dcf522fdbbb391a2910b698d334d4b8f);
+        
+    
+        var popup_9365e2340025eb716ee205eb0fea4288 = L.popup({});
+
+        
+            
+                var html_ffd0a4e7ec718afe2c29a8bb1446b36b = $(`<div id="html_ffd0a4e7ec718afe2c29a8bb1446b36b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Beetroot Factory</h1><div class="nugget-popup"><p>The drainage ditch alongside the footpath next to the beetroot factory was silted and full of rubbish, which is thought to have exacerbated flooding; CCC cleared this ditch as a one&ndash;off gesture of goodwill after the flood. [TAB] (p6)</p></div><div class="nugget-popup"><p>The open drainage ditch alongside the footpath next to the beetroot factory was silted and full of rubbish and suffered blockages (including flytipping) that exacerbated local flooding during the 2014 event. The ditch was cleared by CCC as a one&ndash;off; Anglian Water and others cleared systems that outfall into this ditch. [TAB,PAG] (p7)</p></div><div class="nugget-popup"><p>The Anglian Water system outfalls into a drainage ditch alongside the footpath next to the Beetroot Factory; the ditch was silted and full of rubbish and was cleared by Cambridgeshire County Council, while Anglian Water cleared the connected system to improve the situation. (p8)</p></div></div></body></div>`)[0];
+                popup_9365e2340025eb716ee205eb0fea4288.setContent(html_ffd0a4e7ec718afe2c29a8bb1446b36b);
+            
+        
+
+        marker_30c7e9efd16a742424df440db28fa434.bindPopup(popup_9365e2340025eb716ee205eb0fea4288)
+        ;
+
+        
+    
+    
+            var marker_e7b831da39d715002ef727ea45aaffb0 = L.marker(
+                [52.5596511, 0.0806259],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_534e2f3c12250f1a4394ee0da0197895 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e7b831da39d715002ef727ea45aaffb0.setIcon(icon_534e2f3c12250f1a4394ee0da0197895);
+        
+    
+        var popup_78de1fde260cbe6360b4345c81b3bfde = L.popup({});
+
+        
+            
+                var html_bba0ae9e705c48a98be2797ae1e84a79 = $(`<div id="html_bba0ae9e705c48a98be2797ae1e84a79" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Norwood Road, March</h1><div class="nugget-popup"><p>External property flooding. (p5)</p></div><div class="nugget-popup"><p>Surface water runoff and sewer surcharge caused flooding to the road and adjacent properties; highways gullies were jetted and gully maintenance frequency increased as a response. [TAB] (p6)</p></div><div class="nugget-popup"><p>Surface water runoff and an overwhelmed surface water sewer during the August 2014 extreme rainfall led to local flooding and runoff issues on and around Norwood Road. Gullies were jetted and their maintenance frequency increased; a non&ndash;return valve was fitted to the SW sewer but capacity limits meant the system could still become overwhelmed. Blockages in the open ditch alongside the footpath (near the beetroot factory) and flytipping aggravated the flooding; remedial cleansing to the outfall ditch was undertaken. [TAB,PAG] (p7)</p></div><div class="nugget-popup"><p>Linked to flood incident reports FI/14/006 (2014) and referenced in the report as part of the 2014 flooding investigations; actions by LLFA/Highways were taken in response to these incidents. (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2 inches internally to 12 inches externally (p5)</p></div><div class="nugget-popup quant"><p>2&#8220; internally; 12&#8221; externally [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_78de1fde260cbe6360b4345c81b3bfde.setContent(html_bba0ae9e705c48a98be2797ae1e84a79);
+            
+        
+
+        marker_e7b831da39d715002ef727ea45aaffb0.bindPopup(popup_78de1fde260cbe6360b4345c81b3bfde)
+        ;
+
+        
+    
+    
+            var marker_ba16900fa88f3b3ebc86b639ae19e40f = L.marker(
+                [52.5627252, 0.0845293],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_f263b2262acb33cfa8f7f61796862d3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ba16900fa88f3b3ebc86b639ae19e40f.setIcon(icon_f263b2262acb33cfa8f7f61796862d3e);
+        
+    
+        var popup_3253638ad74cff7c0a72189b2dc74420 = L.popup({});
+
+        
+            
+                var html_afe220db8c1bf971831e27b6327f2713 = $(`<div id="html_afe220db8c1bf971831e27b6327f2713" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gold Street, March</h1><div class="nugget-popup"><p>Internal and external flooding with foul (sewer) flooding issues. (p5)</p></div><div class="nugget-popup"><p>Lack of highway gullies and surface water sewer contributed to runoff and local flooding; privately owned dyke behind Gold Street was silted/blocked and was cleared by the LLFA following the flood. [TAB] (p6)</p></div><div class="nugget-popup"><p>Absence of highway gullies and a surface water sewer caused runoff issues and contributed to local flooding during the 2014 event. The privately owned dyke behind Gold Street was silted/blocked and was cleared by CCC as a one&ndash;off following investigation. [TAB,PAG] (p7)</p></div><div class="nugget-popup"><p>Linked to flood incident reports FI/14/074 (2014) and referenced in the report as part of the 2014 flooding investigations; subject to LLFA/Highways follow&ndash;up actions. (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2 inches internally to 12 inches externally (p5)</p></div><div class="nugget-popup quant"><p>2&#8220; internally; 12&#8221; externally [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_3253638ad74cff7c0a72189b2dc74420.setContent(html_afe220db8c1bf971831e27b6327f2713);
+            
+        
+
+        marker_ba16900fa88f3b3ebc86b639ae19e40f.bindPopup(popup_3253638ad74cff7c0a72189b2dc74420)
+        ;
+
+        
+    
+    
+            var marker_cb4ff3529978520f6f72301c48776b65 = L.marker(
+                [52.5467394, 0.0791323],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_d5659076c04aaccebad91be122fb9146 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cb4ff3529978520f6f72301c48776b65.setIcon(icon_d5659076c04aaccebad91be122fb9146);
+        
+    
+        var popup_4845523a5c42b17bdc4bdfe9ec4cace8 = L.popup({});
+
+        
+            
+                var html_20302666652e25bd12795df64d38e301 = $(`<div id="html_20302666652e25bd12795df64d38e301" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ellingham Avenue, March</h1><div class="nugget-popup"><p>Significant road flooding; road closed by Police. (p5)</p></div><div class="nugget-popup"><p>Anglian Water investigated and jetted their part of the drainage system through to the recreation ground so it is now working; County Council Highways checked the drainage network (found clear) and confirmed the surface water pumping station is working. [TAB] (p6)</p></div><div class="nugget-popup"><p>Drainage system investigations and maintenance carried out after flooding: Anglian Water jetted the system through to the recreation ground; Highways checked the drainage network (clear) and confirmed the surface water pumping station was working. (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2 inches internally to 12 inches externally (p5)</p></div></div></body></div>`)[0];
+                popup_4845523a5c42b17bdc4bdfe9ec4cace8.setContent(html_20302666652e25bd12795df64d38e301);
+            
+        
+
+        marker_cb4ff3529978520f6f72301c48776b65.bindPopup(popup_4845523a5c42b17bdc4bdfe9ec4cace8)
+        ;
+
+        
+    
+    
+            var marker_ecc2b3ba72cf6d856107b14cd7cfb4d8 = L.marker(
+                [52.5476065, 0.0785265],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_41313467f1b6e34919c57b8145c03821 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ecc2b3ba72cf6d856107b14cd7cfb4d8.setIcon(icon_41313467f1b6e34919c57b8145c03821);
+        
+    
+        var popup_94286e04f470e8036ee0b0a42190f177 = L.popup({});
+
+        
+            
+                var html_0c3e5a5e94de42714bf4baddd30b6512 = $(`<div id="html_0c3e5a5e94de42714bf4baddd30b6512" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sycamore Close, March</h1><div class="nugget-popup"><p>Significant road flooding; road closed by Police. (p5)</p></div><div class="nugget-popup"><p>Anglian Water investigated and jetted their part of the drainage system through to the recreation ground so it is now working; County Council Highways checked the drainage network (found clear) and confirmed the surface water pumping station is working. [TAB] (p6)</p></div><div class="nugget-popup"><p>Drainage system investigations and maintenance carried out after flooding: Anglian Water jetted the system through to the recreation ground; Highways checked the drainage network (clear) and confirmed the surface water pumping station was working. (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2 inches internally to 12 inches externally (p5)</p></div></div></body></div>`)[0];
+                popup_94286e04f470e8036ee0b0a42190f177.setContent(html_0c3e5a5e94de42714bf4baddd30b6512);
+            
+        
+
+        marker_ecc2b3ba72cf6d856107b14cd7cfb4d8.bindPopup(popup_94286e04f470e8036ee0b0a42190f177)
+        ;
+
+        
+    
+    
+            var marker_989d15b97d1cab367d73793bccaadaee = L.marker(
+                [52.5630855, 0.082303],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_72072c114d5c46c019d21ccf01db4323 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_989d15b97d1cab367d73793bccaadaee.setIcon(icon_72072c114d5c46c019d21ccf01db4323);
+        
+    
+        var popup_4b50c2f3ac102e8aa1e910bc1100d052 = L.popup({});
+
+        
+            
+                var html_f923c1ad245beda7093f2a277d68b788 = $(`<div id="html_f923c1ad245beda7093f2a277d68b788" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Century Way, March</h1><div class="nugget-popup"><p>Significant road flooding; road closed by Police; internal flooding reported. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2 inches internally to 12 inches externally (p5)</p></div></div></body></div>`)[0];
+                popup_4b50c2f3ac102e8aa1e910bc1100d052.setContent(html_f923c1ad245beda7093f2a277d68b788);
+            
+        
+
+        marker_989d15b97d1cab367d73793bccaadaee.bindPopup(popup_4b50c2f3ac102e8aa1e910bc1100d052)
+        ;
+
+        
+    
+    
+            var marker_f387c8c5329fe2af41960c02da78795b = L.marker(
+                [52.5551299, 0.0900551],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_ace1d41eaba9a4646d07f94c8c90921b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f387c8c5329fe2af41960c02da78795b.setIcon(icon_ace1d41eaba9a4646d07f94c8c90921b);
+        
+    
+        var popup_92ad65cce2d3d627c74e6ea457ad35e1 = L.popup({});
+
+        
+            
+                var html_1b3e5d3cdc69287be9b43e52af3feef2 = $(`<div id="html_1b3e5d3cdc69287be9b43e52af3feef2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Alpha Street, March</h1><div class="nugget-popup"><p>Internal and external flooding. (p5)</p></div><div class="nugget-popup"><p>Alpha Street experienced drainage blockages related to the 2014 incident; Highways jetted gullies and lateral systems and cleared minor blockages; two new gullies were subsequently installed in low spots to reduce recurring surface water flooding; Anglian Water carried out camera investigations and cleared a fat&ndash;deposit blockage on nearby Station Road. [TAB] (p7)</p></div><div class="nugget-popup"><p>Road drainage and gullies were blocked during the August 2014 flood (FI/14/097). Gullies and lateral systems were jet&ndash;cleaned and minor blockages cleared; further remedial works included installation of two new gullies in low spots (July 2015) and a new gully (2017) connecting to lesser&ndash;used systems. Camera investigations found no structural failures. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2 inches internally to 12 inches externally (p5)</p></div></div></body></div>`)[0];
+                popup_92ad65cce2d3d627c74e6ea457ad35e1.setContent(html_1b3e5d3cdc69287be9b43e52af3feef2);
+            
+        
+
+        marker_f387c8c5329fe2af41960c02da78795b.bindPopup(popup_92ad65cce2d3d627c74e6ea457ad35e1)
+        ;
+
+        
+    
+    
+            var marker_ec924c1ac6ee377696e8f788e86064d5 = L.marker(
+                [52.5390071, 0.096935],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_e303a75e8860bf580fb37405217f9c5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ec924c1ac6ee377696e8f788e86064d5.setIcon(icon_e303a75e8860bf580fb37405217f9c5a);
+        
+    
+        var popup_e5efc80e2c083abd3aae4bd02c1fdb32 = L.popup({});
+
+        
+            
+                var html_f8342c3025e666cfcd991ab88d3f0902 = $(`<div id="html_f8342c3025e666cfcd991ab88d3f0902" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cavalry Drive, March</h1><div class="nugget-popup"><p>Significant road flooding; road closed by Police; internal flooding reported. (p5)</p></div><div class="nugget-popup"><p>Drainage at Cavalry Drive was impacted by the 2014 floods; highways gullies were cleaned and jetted, the piped system was cleansed and dye&ndash;traced and found to flow to an outfall into a riparian ditch (which required maintenance); the riparian&ndash;owned ditch at the outfall was cleared to increase capacity; Anglian Water checked their systems and Fenland District Council investigated riparian ownership and proposed further works and funding bids. [TAB] (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2 inches internally to 12 inches externally (p5)</p></div></div></body></div>`)[0];
+                popup_e5efc80e2c083abd3aae4bd02c1fdb32.setContent(html_f8342c3025e666cfcd991ab88d3f0902);
+            
+        
+
+        marker_ec924c1ac6ee377696e8f788e86064d5.bindPopup(popup_e5efc80e2c083abd3aae4bd02c1fdb32)
+        ;
+
+        
+    
+    
+            var marker_7befd082d50cf5ae5328e30278744d87 = L.marker(
+                [52.5286516, 0.0368764],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_fd832378144781ea5ba25b737669084c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7befd082d50cf5ae5328e30278744d87.setIcon(icon_fd832378144781ea5ba25b737669084c);
+        
+    
+        var popup_dca5c1c29856be296eae71f9df5989cb = L.popup({});
+
+        
+            
+                var html_2e3a0dcd5f09cbcccf8bb2586a304126 = $(`<div id="html_2e3a0dcd5f09cbcccf8bb2586a304126" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Knight's End Road, March</h1><div class="nugget-popup"><p>Internal and external property flooding affecting properties on the street. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2&#8220; internally; 12&#8221; externally (p5)</p></div></div></body></div>`)[0];
+                popup_dca5c1c29856be296eae71f9df5989cb.setContent(html_2e3a0dcd5f09cbcccf8bb2586a304126);
+            
+        
+
+        marker_7befd082d50cf5ae5328e30278744d87.bindPopup(popup_dca5c1c29856be296eae71f9df5989cb)
+        ;
+
+        
+    
+    
+            var marker_c13b7df0a663f4ccce6f871e1dd08546 = L.marker(
+                [52.5531879, 0.072256],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_ec5ffb719af038402aca3f4b9af99afb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c13b7df0a663f4ccce6f871e1dd08546.setIcon(icon_ec5ffb719af038402aca3f4b9af99afb);
+        
+    
+        var popup_a592a729af4f29124b179f41127c1b20 = L.popup({});
+
+        
+            
+                var html_a2b61ec2fff004826b68fb5a080de61e = $(`<div id="html_a2b61ec2fff004826b68fb5a080de61e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Orwell Drive, March</h1><div class="nugget-popup"><p>Internal and external property flooding affecting properties on the street. (p5)</p></div><div class="nugget-popup"><p>The outfall to the river was blocked with tree roots and was cleared; gullies and pipework were cleaned and jetted and left running, restoring drainage. (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2&#8220; internally; 12&#8221; externally (p5)</p></div></div></body></div>`)[0];
+                popup_a592a729af4f29124b179f41127c1b20.setContent(html_a2b61ec2fff004826b68fb5a080de61e);
+            
+        
+
+        marker_c13b7df0a663f4ccce6f871e1dd08546.bindPopup(popup_a592a729af4f29124b179f41127c1b20)
+        ;
+
+        
+    
+    
+            var marker_9a6b34f01c14a2ec4fdad7ec9dc05a6e = L.marker(
+                [52.5514048, 0.0842776],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_05c11b67e9e46141de1c2253b9cde438 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9a6b34f01c14a2ec4fdad7ec9dc05a6e.setIcon(icon_05c11b67e9e46141de1c2253b9cde438);
+        
+    
+        var popup_334f77376d83d74ab5e5d8a5291c3cd1 = L.popup({});
+
+        
+            
+                var html_aeaafeceb8b9137240ad443fa02cec97 = $(`<div id="html_aeaafeceb8b9137240ad443fa02cec97" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rookswood Road, March</h1><div class="nugget-popup"><p>Internal and external property flooding affecting properties on the street. (p5)</p></div><div class="nugget-popup"><p>LLFA attended to investigate internal (property) flooding and identified a private dispute between neighbouring properties contributing to internal flooding; highways investigations found the highway outfall partially blocked with rubble causing flooding on the highway &mdash; obstructions were removed and pipework left in working order. [TAB] (p7)</p></div><div class="nugget-popup"><p>Internal property flooding was investigated (a private matter between neighbouring properties); highway flooding occurred due to a piped system outfall partially blocked with rubble &mdash; obstructions were removed and pipes left in working order. (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2&#8220; internally; 12&#8221; externally (p5)</p></div></div></body></div>`)[0];
+                popup_334f77376d83d74ab5e5d8a5291c3cd1.setContent(html_aeaafeceb8b9137240ad443fa02cec97);
+            
+        
+
+        marker_9a6b34f01c14a2ec4fdad7ec9dc05a6e.bindPopup(popup_334f77376d83d74ab5e5d8a5291c3cd1)
+        ;
+
+        
+    
+    
+            var marker_f5818f224e2e682bd865bc63a63beab7 = L.marker(
+                [52.5548364, 0.0942652],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_d8e66efa500eb2870b25a8a779663162 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f5818f224e2e682bd865bc63a63beab7.setIcon(icon_d8e66efa500eb2870b25a8a779663162);
+        
+    
+        var popup_7c961fee612a22788a05aa583d24519d = L.popup({});
+
+        
+            
+                var html_11a09f04c7d341727743e00c9e435565 = $(`<div id="html_11a09f04c7d341727743e00c9e435565" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cedar Close, March</h1><div class="nugget-popup"><p>Internal and external property flooding affecting properties on the street. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2&#8220; internally; 12&#8221; externally (p5)</p></div></div></body></div>`)[0];
+                popup_7c961fee612a22788a05aa583d24519d.setContent(html_11a09f04c7d341727743e00c9e435565);
+            
+        
+
+        marker_f5818f224e2e682bd865bc63a63beab7.bindPopup(popup_7c961fee612a22788a05aa583d24519d)
+        ;
+
+        
+    
+    
+            var marker_298c0aac80660477a42a849f7001b554 = L.marker(
+                [52.571313, 0.0928847],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_495f0c86dd6b0cecf6e62c3d41866e37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_298c0aac80660477a42a849f7001b554.setIcon(icon_495f0c86dd6b0cecf6e62c3d41866e37);
+        
+    
+        var popup_480853b807958759208a95bdb6262435 = L.popup({});
+
+        
+            
+                var html_91ce00d908d040863438246041182762 = $(`<div id="html_91ce00d908d040863438246041182762" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Elm Road, March</h1><div class="nugget-popup"><p>External flooding affecting the street and properties fronting the road. (p5)</p></div><div class="nugget-popup"><p>Drainage investigation found no problems; the drainage system was cleaned and was running freely. A section of riparian ditch was identified as needing maintenance; the landowner refused riparian responsibilities and an enforcement case was opened. CCC to investigate local flooding history and risk further. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>12" externally (p5)</p></div></div></body></div>`)[0];
+                popup_480853b807958759208a95bdb6262435.setContent(html_91ce00d908d040863438246041182762);
+            
+        
+
+        marker_298c0aac80660477a42a849f7001b554.bindPopup(popup_480853b807958759208a95bdb6262435)
+        ;
+
+        
+    
+    
+            var marker_ebcd2372cd53372c83bb160c0ab0c18e = L.marker(
+                [52.543771, 0.0767368],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_01a035c6aa7d38ceab107a35d984cd74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ebcd2372cd53372c83bb160c0ab0c18e.setIcon(icon_01a035c6aa7d38ceab107a35d984cd74);
+        
+    
+        var popup_e32cddec45c3a8adf8f6592a216f2f8b = L.popup({});
+
+        
+            
+                var html_df34cbd9eda1c638f33cd4442cda55c5 = $(`<div id="html_df34cbd9eda1c638f33cd4442cda55c5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Birchwood Avenue, March</h1><div class="nugget-popup"><p>Flooding reported (listed among streets affected in the summary). (p5)</p></div><div class="nugget-popup"><p>Dye testing from Birchwood to the outfall was carried out during investigations into blockages and drainage failures identified after the August 2014 floods; investigations identified issues where local drainage terminated at filled&ndash;in ditches requiring longer&ndash;term remedial options. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_e32cddec45c3a8adf8f6592a216f2f8b.setContent(html_df34cbd9eda1c638f33cd4442cda55c5);
+            
+        
+
+        marker_ebcd2372cd53372c83bb160c0ab0c18e.bindPopup(popup_e32cddec45c3a8adf8f6592a216f2f8b)
+        ;
+
+        
+    
+    
+            var marker_23d0b1299d91560c8ab9b05bbf94eaf9 = L.marker(
+                [52.5432245, 0.0771975],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_2c74473582cadd02371858b4119022e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_23d0b1299d91560c8ab9b05bbf94eaf9.setIcon(icon_2c74473582cadd02371858b4119022e2);
+        
+    
+        var popup_6da0e435483f1cdcb08cbf53d01ffcfe = L.popup({});
+
+        
+            
+                var html_65eacbdf37fe9db833eefd3fed703a8f = $(`<div id="html_65eacbdf37fe9db833eefd3fed703a8f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Butt Avenue, March</h1><div class="nugget-popup"><p>Flooding reported (listed among streets affected in the summary). (p5)</p></div><div class="nugget-popup"><p>Investigation showed the drainage connection between Brewin Avenue and Butt Avenue ends at a filled&ndash;in ditch, restricting flow and contributing to local surface water flooding; options to reroute drainage or pipe to an A141 ditch were proposed as part of a joint scheme. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_6da0e435483f1cdcb08cbf53d01ffcfe.setContent(html_65eacbdf37fe9db833eefd3fed703a8f);
+            
+        
+
+        marker_23d0b1299d91560c8ab9b05bbf94eaf9.bindPopup(popup_6da0e435483f1cdcb08cbf53d01ffcfe)
+        ;
+
+        
+    
+    
+            var marker_2eadc83e1fe4ed4c959a18aecda921dc = L.marker(
+                [52.5457681, 0.0779998],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_589c6c00939938cd56e883011f05b333 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2eadc83e1fe4ed4c959a18aecda921dc.setIcon(icon_589c6c00939938cd56e883011f05b333);
+        
+    
+        var popup_37233577044013a957dedad3a19e2789 = L.popup({});
+
+        
+            
+                var html_24f2150dcabb87ef5171893b3bfc111e = $(`<div id="html_24f2150dcabb87ef5171893b3bfc111e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cherrywood Avenue, March</h1><div class="nugget-popup"><p>Flooding reported (listed among streets affected in the summary). (p5)</p></div><div class="nugget-popup"><p>Linked to FI/14/066: a blockage was found near Cherrywood Green that impeded drainage; the blockage was cleared and flushed and dye testing (from Birchwood to the outfall) was carried out to confirm flows as part of the flood response. (p7)</p></div></div></body></div>`)[0];
+                popup_37233577044013a957dedad3a19e2789.setContent(html_24f2150dcabb87ef5171893b3bfc111e);
+            
+        
+
+        marker_2eadc83e1fe4ed4c959a18aecda921dc.bindPopup(popup_37233577044013a957dedad3a19e2789)
+        ;
+
+        
+    
+    
+            var marker_9c07f62fdfae7bf44e101a48151407d3 = L.marker(
+                [52.5456295, 0.0797552],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_e4f8ec476b6400f8bf58bd4f199850f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9c07f62fdfae7bf44e101a48151407d3.setIcon(icon_e4f8ec476b6400f8bf58bd4f199850f1);
+        
+    
+        var popup_cdbbd002bdeabf63cd4caed1ef6acf37 = L.popup({});
+
+        
+            
+                var html_7792587ae73ac039c6508f8af2c6942a = $(`<div id="html_7792587ae73ac039c6508f8af2c6942a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cherryholt Avenue, March</h1><div class="nugget-popup"><p>Significant road flooding and both internal and external property flooding reported. (p5)</p></div><div class="nugget-popup"><p>Linked to FI/14/066: a blockage was found near Cherrywood Green that impeded drainage; the blockage was cleared and flushed and dye testing (from Birchwood to the outfall) was carried out to confirm flows as part of the flood response. (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2&#8220; internally to 12&#8221; externally (p5)</p></div></div></body></div>`)[0];
+                popup_cdbbd002bdeabf63cd4caed1ef6acf37.setContent(html_7792587ae73ac039c6508f8af2c6942a);
+            
+        
+
+        marker_9c07f62fdfae7bf44e101a48151407d3.bindPopup(popup_cdbbd002bdeabf63cd4caed1ef6acf37)
+        ;
+
+        
+    
+    
+            var marker_149f4697178dfb28c3ce0282a72521ee = L.marker(
+                [52.5534454, 0.0757279],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_7ca2a77b93d56dcd53004093f2c4a058 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_149f4697178dfb28c3ce0282a72521ee.setIcon(icon_7ca2a77b93d56dcd53004093f2c4a058);
+        
+    
+        var popup_fd2b2a9c5c1c280ab15336b3c6b0afc9 = L.popup({});
+
+        
+            
+                var html_3b8b94179273718bfc4fc7d70045b9d4 = $(`<div id="html_3b8b94179273718bfc4fc7d70045b9d4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Windsor Drive, March</h1><div class="nugget-popup"><p>External flooding of the street/properties (external flooding reported). (p5)</p></div><div class="nugget-popup"><p>Windsor Drive was included in flood incident reports (FI/14/068) and received jetting and camera inspections; inspections showed the drainage network to be working following the remedial works. (p8)</p></div></div></body></div>`)[0];
+                popup_fd2b2a9c5c1c280ab15336b3c6b0afc9.setContent(html_3b8b94179273718bfc4fc7d70045b9d4);
+            
+        
+
+        marker_149f4697178dfb28c3ce0282a72521ee.bindPopup(popup_fd2b2a9c5c1c280ab15336b3c6b0afc9)
+        ;
+
+        
+    
+    
+            var marker_4b49f12327e92dfe3b7281a57aea95f6 = L.marker(
+                [52.5542353, 0.0756027],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_8cd6e46b4d44232475351770e37d1f0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4b49f12327e92dfe3b7281a57aea95f6.setIcon(icon_8cd6e46b4d44232475351770e37d1f0b);
+        
+    
+        var popup_3ef121b7183623ac43490f328666af94 = L.popup({});
+
+        
+            
+                var html_7fc7f39584bdc3362741eee851363043 = $(`<div id="html_7fc7f39584bdc3362741eee851363043" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Elliott Road, March</h1><div class="nugget-popup"><p>External flooding of the street/properties (external flooding reported). (p5)</p></div><div class="nugget-popup"><p>Subject of flood incident FI/14/141; jetting and CCTV inspections of the drainage network were undertaken following the 2014 flooding and the network was found to be working. (p8)</p></div></div></body></div>`)[0];
+                popup_3ef121b7183623ac43490f328666af94.setContent(html_7fc7f39584bdc3362741eee851363043);
+            
+        
+
+        marker_4b49f12327e92dfe3b7281a57aea95f6.bindPopup(popup_3ef121b7183623ac43490f328666af94)
+        ;
+
+        
+    
+    
+            var marker_1a922a794fd26ac97e173cd5abe1f414 = L.marker(
+                [52.5551664, 0.070897],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_54d9c00e995a8b5b197dfc8c3eee2cc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1a922a794fd26ac97e173cd5abe1f414.setIcon(icon_54d9c00e995a8b5b197dfc8c3eee2cc8);
+        
+    
+        var popup_188bbe41295cf26869959d2e0cbd95a7 = L.popup({});
+
+        
+            
+                var html_14f7b31ba36768a03f0a94b9f2b6c82e = $(`<div id="html_14f7b31ba36768a03f0a94b9f2b6c82e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Truman Avenue, March</h1><div class="nugget-popup"><p>External flooding of the street/properties (external flooding reported). (p5)</p></div><div class="nugget-popup"><p>Localised flooding caused by a blocked/infested highway drainage pipe (root infestation). Highways investigation works found and cleared the roots; pipe was cleared and left in full working condition. (p8)</p></div></div></body></div>`)[0];
+                popup_188bbe41295cf26869959d2e0cbd95a7.setContent(html_14f7b31ba36768a03f0a94b9f2b6c82e);
+            
+        
+
+        marker_1a922a794fd26ac97e173cd5abe1f414.bindPopup(popup_188bbe41295cf26869959d2e0cbd95a7)
+        ;
+
+        
+    
+    
+            var marker_a4a8164a5b4a3c67a717e1b54cc8d3d9 = L.marker(
+                [52.55882, 0.0657955],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_3a9b8cdf5eb8cbbe84ea29e685dc9ab4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a4a8164a5b4a3c67a717e1b54cc8d3d9.setIcon(icon_3a9b8cdf5eb8cbbe84ea29e685dc9ab4);
+        
+    
+        var popup_2b0200ecf55ce6df29a462ec75a45cb5 = L.popup({});
+
+        
+            
+                var html_5a64fee2957bec079dedca4a30a475ee = $(`<div id="html_5a64fee2957bec079dedca4a30a475ee" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wisbech Road, March</h1><div class="nugget-popup"><p>Internal and external flooding of properties and adjacent highway. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2&#8220; internally to 12&#8221; externally (p5)</p></div></div></body></div>`)[0];
+                popup_2b0200ecf55ce6df29a462ec75a45cb5.setContent(html_5a64fee2957bec079dedca4a30a475ee);
+            
+        
+
+        marker_a4a8164a5b4a3c67a717e1b54cc8d3d9.bindPopup(popup_2b0200ecf55ce6df29a462ec75a45cb5)
+        ;
+
+        
+    
+    
+            var marker_a82dae00886f1750396e8ee7ae3be6b9 = L.marker(
+                [52.5546001, 0.0792521],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_0ad09894220d779d6460a324d5a4f332 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a82dae00886f1750396e8ee7ae3be6b9.setIcon(icon_0ad09894220d779d6460a324d5a4f332);
+        
+    
+        var popup_2a9cabec5f0aacfa0aff0c529d5844a7 = L.popup({});
+
+        
+            
+                var html_e2d77649ff632f9f2b07ea05dd4da0b0 = $(`<div id="html_e2d77649ff632f9f2b07ea05dd4da0b0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Poplar Close, March</h1><div class="nugget-popup"><p>Internal and external flooding of properties. (p5)</p></div><div class="nugget-popup"><p>Drainage system at Poplar Close was investigated and cleared after the flood; root infestation was found to be blocking a section and, after clearance, the root regrew causing recurrence &mdash; further clearance was undertaken and proposals for funding for future remedial works were put forward. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2&#8220; internally to 12&#8221; externally (p5)</p></div></div></body></div>`)[0];
+                popup_2a9cabec5f0aacfa0aff0c529d5844a7.setContent(html_e2d77649ff632f9f2b07ea05dd4da0b0);
+            
+        
+
+        marker_a82dae00886f1750396e8ee7ae3be6b9.bindPopup(popup_2a9cabec5f0aacfa0aff0c529d5844a7)
+        ;
+
+        
+    
+    
+            var marker_e30e17470292f3c20ff12e9805f36479 = L.marker(
+                [52.5632215, 0.0910883],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_a7c2eab4994eb26ed4e408b75f9c962c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e30e17470292f3c20ff12e9805f36479.setIcon(icon_a7c2eab4994eb26ed4e408b75f9c962c);
+        
+    
+        var popup_5e8defff6ddccaa94ec86f68afd52282 = L.popup({});
+
+        
+            
+                var html_472a5f149d46043193c9d14f0ab38184 = $(`<div id="html_472a5f149d46043193c9d14f0ab38184" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Highfield Road, March</h1><div class="nugget-popup"><p>Internal and external flooding of properties. (p5)</p></div><div class="nugget-popup"><p>Highways team investigated the drainage network at Highfield Road and found cement wash in the systems; the system was cleared and returned to full working order following the floods. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2&#8220; internally to 12&#8221; externally (p5)</p></div></div></body></div>`)[0];
+                popup_5e8defff6ddccaa94ec86f68afd52282.setContent(html_472a5f149d46043193c9d14f0ab38184);
+            
+        
+
+        marker_e30e17470292f3c20ff12e9805f36479.bindPopup(popup_5e8defff6ddccaa94ec86f68afd52282)
+        ;
+
+        
+    
+    
+            var marker_b5fd6698aca2d2ecc7b15151fe5193ad = L.marker(
+                [52.5640462, 0.0918342],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_7adfe076e54276db2c3698711971e48f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b5fd6698aca2d2ecc7b15151fe5193ad.setIcon(icon_7adfe076e54276db2c3698711971e48f);
+        
+    
+        var popup_96144f2b55b69c5fcd361892a45422f1 = L.popup({});
+
+        
+            
+                var html_62cdab3477f8febb644e20e4d1ee7fdc = $(`<div id="html_62cdab3477f8febb644e20e4d1ee7fdc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Campbell Way, March</h1><div class="nugget-popup"><p>Internal and external flooding of properties. (p5)</p></div><div class="nugget-popup"><p>Drainage was investigated and the system cleaned following the flooding; system found to be running freely after works. [TAB] (p7)</p></div><div class="nugget-popup"><p>Drainage system was investigated after the August 2014 floods; no problems were found, the system was cleaned and left running freely. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2&#8220; internally to 12&#8221; externally (p5)</p></div></div></body></div>`)[0];
+                popup_96144f2b55b69c5fcd361892a45422f1.setContent(html_62cdab3477f8febb644e20e4d1ee7fdc);
+            
+        
+
+        marker_b5fd6698aca2d2ecc7b15151fe5193ad.bindPopup(popup_96144f2b55b69c5fcd361892a45422f1)
+        ;
+
+        
+    
+    
+            var marker_a54f0fa965e7626eb63d51bfea2ac0f5 = L.marker(
+                [52.5625732, 0.0686529],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_7fa0436d08d6dfa7dfca8d6026a25c3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a54f0fa965e7626eb63d51bfea2ac0f5.setIcon(icon_7fa0436d08d6dfa7dfca8d6026a25c3d);
+        
+    
+        var popup_32b9ff43f589520ad7a200a6f8f3c5e8 = L.popup({});
+
+        
+            
+                var html_f13569bf17daba221d54635df3b23ae4 = $(`<div id="html_f13569bf17daba221d54635df3b23ae4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hostmoor Avenue, March</h1><div class="nugget-popup"><p>Internal and external flooding of properties. (p5)</p></div><div class="nugget-popup"><p>The drainage ditch near the Beetroot Factory in Hostmoor Avenue was silted and full of rubbish after the flood; Cambridgeshire County Council cleared the ditch as a one&ndash;off after the flooding and enforcement action against the riparian owner is ongoing. [TAB] (p6)</p></div><div class="nugget-popup"><p>Drainage features in Hostmoor Avenue (including a lagoon and the drainage ditch next to the beetroot factory) were silted and full of rubbish, contributing to local flooding during the 2014 event. Anglian Water cleared silt from their lagoon and CCC cleared the nearby ditch as a one&ndash;off following the flood. [TAB,PAG] (p7)</p></div><div class="nugget-popup"><p>The drainage ditch near the Beetroot Factory in Hostmoor Avenue was found silted and full of rubbish; Anglian Water cleared the connected system that outfalls into this ditch and Cambridgeshire County Council cleared the ditch as a one&ndash;off to improve the situation. (p8)</p></div><div class="nugget-popup"><p>Anglian Water cleared potential additional silt from their lagoon as part of ongoing maintenance following the flooding incident (FI/14/078). (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2&#8220; internally to 12&#8221; externally (p5)</p></div></div></body></div>`)[0];
+                popup_32b9ff43f589520ad7a200a6f8f3c5e8.setContent(html_f13569bf17daba221d54635df3b23ae4);
+            
+        
+
+        marker_a54f0fa965e7626eb63d51bfea2ac0f5.bindPopup(popup_32b9ff43f589520ad7a200a6f8f3c5e8)
+        ;
+
+        
+    
+    
+            var marker_c98f9a5470ad166b5eb5d4c0e0444683 = L.marker(
+                [52.546715, 0.0985852],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_6553b318adbc4e6bc474c1f721c11a54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c98f9a5470ad166b5eb5d4c0e0444683.setIcon(icon_6553b318adbc4e6bc474c1f721c11a54);
+        
+    
+        var popup_192cc3b183b46fcbacc98e3c756bb01c = L.popup({});
+
+        
+            
+                var html_e2d71dfc4d875bb32619aa1de164a51a = $(`<div id="html_e2d71dfc4d875bb32619aa1de164a51a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Morton Avenue, March</h1><div class="nugget-popup"><p>Internal and external flooding of properties. (p5)</p></div><div class="nugget-popup"><p>Surface water pump in Morton Avenue stopped working as a result of a power cut during the floods; Clarion Housing Group assessed and restored emergency operation and completely replaced the pump (Sept 2015). Subsequent works include a SuDS retrofit and Property Level Resilience (PLR) project scoped for the area with funding submissions made to support long&ndash;term reduction of surface water flooding. [TAB] (p7)</p></div><div class="nugget-popup"><p>A surface water pump in Morton Avenue stopped working due to a power cut during the August 2014 floods; electrics and emergency operation were restored and the pump was completely replaced (Sept 2015). A SuDS retrofit and Property Level Resilience (PLR) alleviation project was developed and funding bids submitted; Anglian Water later adopted the pump and agreed to maintain SuDS features (Oct 2016). [MUL] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2&#8220; internally to 12&#8221; externally (p5)</p></div></div></body></div>`)[0];
+                popup_192cc3b183b46fcbacc98e3c756bb01c.setContent(html_e2d71dfc4d875bb32619aa1de164a51a);
+            
+        
+
+        marker_c98f9a5470ad166b5eb5d4c0e0444683.bindPopup(popup_192cc3b183b46fcbacc98e3c756bb01c)
+        ;
+
+        
+    
+    
+            var marker_0d83aeb95e067deda44d9083b7486601 = L.marker(
+                [52.5440874, 0.1127124],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_6390cdc3377721948de9ca089a4b7637 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0d83aeb95e067deda44d9083b7486601.setIcon(icon_6390cdc3377721948de9ca089a4b7637);
+        
+    
+        var popup_4716021cf1c2e2d47625c245ce85bdc2 = L.popup({});
+
+        
+            
+                var html_8ded3d843e13cb50a393f960901c97e1 = $(`<div id="html_8ded3d843e13cb50a393f960901c97e1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Upwell Road, March</h1><div class="nugget-popup"><p>External flooding of the road and adjacent properties. (p5)</p></div><div class="nugget-popup"><p>Drainage network was investigated and cleared after blockage that caused local surface&ndash;water flooding issues on the road. [TAB] (p7)</p></div><div class="nugget-popup"><p>Surface&ndash;water flooding led to investigation and clearance of the road's drainage system to remove blockages and restore drainage function. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2&#8220; internally to 12&#8221; externally. (p5)</p></div></div></body></div>`)[0];
+                popup_4716021cf1c2e2d47625c245ce85bdc2.setContent(html_8ded3d843e13cb50a393f960901c97e1);
+            
+        
+
+        marker_0d83aeb95e067deda44d9083b7486601.bindPopup(popup_4716021cf1c2e2d47625c245ce85bdc2)
+        ;
+
+        
+    
+    
+            var marker_be3f0fbdc7a09d21582f1f15dc69de4f = L.marker(
+                [52.5540986, 0.0958363],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_5c664a43881c93a86a6848a5aa48b1a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_be3f0fbdc7a09d21582f1f15dc69de4f.setIcon(icon_5c664a43881c93a86a6848a5aa48b1a8);
+        
+    
+        var popup_bcb478bceeeeed1a35686a94afc8a8fa = L.popup({});
+
+        
+            
+                var html_b008c7d242089a0ad21af16f4667cda0 = $(`<div id="html_b008c7d242089a0ad21af16f4667cda0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Creek Road, March</h1><div class="nugget-popup"><p>Internal and external flooding of properties and the street. (p5)</p></div><div class="nugget-popup"><p>Blocked gullies and lateral drains were cleansed and jetted; a new gully was installed at Belmont Road to restore drainage and reduce future surface&ndash;water flooding. [TAB] (p7)</p></div><div class="nugget-popup"><p>Flood&ndash;related blocked gullies and lateral drains were cleansed and jetted and left working; further investigation led to installation of a new gully at nearby Belmont Road to address drainage failures after the August 2014 event. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2&#8220; internally to 12&#8221; externally. (p5)</p></div></div></body></div>`)[0];
+                popup_bcb478bceeeeed1a35686a94afc8a8fa.setContent(html_b008c7d242089a0ad21af16f4667cda0);
+            
+        
+
+        marker_be3f0fbdc7a09d21582f1f15dc69de4f.bindPopup(popup_bcb478bceeeeed1a35686a94afc8a8fa)
+        ;
+
+        
+    
+    
+            var marker_07b42e5177c485d6150badd3cdf2d6d7 = L.marker(
+                [52.5603002, 0.0845957],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_53d79fb923118fc7cbca749884a5e5df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_07b42e5177c485d6150badd3cdf2d6d7.setIcon(icon_53d79fb923118fc7cbca749884a5e5df);
+        
+    
+        var popup_7dd36d9dfaa04e77af9291de634b3f06 = L.popup({});
+
+        
+            
+                var html_6ec7b580576cff49e2e80abf265c01b7 = $(`<div id="html_6ec7b580576cff49e2e80abf265c01b7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lime Grove, March</h1><div class="nugget-popup"><p>Internal and external flooding of properties and the street. (p5)</p></div><div class="nugget-popup"><p>Anglian Water CCTV&ndash;surveyed the drainage pipes and fitted a non&ndash;return valve to an affected property to prevent sewer/backflow impacts to the property. [TAB] (p7)</p></div><div class="nugget-popup"><p>After the August 2014 floods a CCTV survey of drainage pipes was undertaken and a non&ndash;return valve was fitted to an affected property to reduce repeat internal/external flooding. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2&#8220; internally to 12&#8221; externally. (p5)</p></div></div></body></div>`)[0];
+                popup_7dd36d9dfaa04e77af9291de634b3f06.setContent(html_6ec7b580576cff49e2e80abf265c01b7);
+            
+        
+
+        marker_07b42e5177c485d6150badd3cdf2d6d7.bindPopup(popup_7dd36d9dfaa04e77af9291de634b3f06)
+        ;
+
+        
+    
+    
+            var marker_d611ae01390cac71595e8b7472ae4acb = L.marker(
+                [52.5495824, 0.0671793],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_10381b6b394aff9a8a0f8d596f686351 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d611ae01390cac71595e8b7472ae4acb.setIcon(icon_10381b6b394aff9a8a0f8d596f686351);
+        
+    
+        var popup_0bd61eef296e6ee2494642ee58afeb5b = L.popup({});
+
+        
+            
+                var html_fda4e7116de577ada1afe71d0c07e2a2 = $(`<div id="html_fda4e7116de577ada1afe71d0c07e2a2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gaul Road, March</h1><div class="nugget-popup"><p>Internal and external flooding of properties and the street; foul (sewer) flooding issues reported. (p5)</p></div><div class="nugget-popup"><p>Gaul Road drainage was affected by silt and blockages during the 2014 event; Anglian Water jetted systems and removed silt and carried out CCTV surveys showing the system running freely; non&ndash;return valves were fitted on some properties; Highways jetted outfalls, carried out patching, raised kerbs and installed two new gullies to improve highway drainage; Fenland District Council cleared the Chase drainage up to Gaul Road. [TAB] (p7)</p></div><div class="nugget-popup"><p>Following flooding in August 2014 drainage systems were jetted and silt removed; CCTV showed the system running freely after works. Non&ndash;return valves were fitted to some properties. After further issues Highways jetted offlets, carried out patching, raised curbs and installed additional gullies to reduce surface water flooding. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>depths reported by residents vary from 2&#8220; internally to 12&#8221; externally. (p5)</p></div></div></body></div>`)[0];
+                popup_0bd61eef296e6ee2494642ee58afeb5b.setContent(html_fda4e7116de577ada1afe71d0c07e2a2);
+            
+        
+
+        marker_d611ae01390cac71595e8b7472ae4acb.bindPopup(popup_0bd61eef296e6ee2494642ee58afeb5b)
+        ;
+
+        
+    
+    
+            var marker_7b5cfac27efafd356156ca5bc38735b7 = L.marker(
+                [52.551744, 0.0946699],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_c89ff5e7eea32219e6e047526b34a358 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7b5cfac27efafd356156ca5bc38735b7.setIcon(icon_c89ff5e7eea32219e6e047526b34a358);
+        
+    
+        var popup_2c8096f04b148fe174b59403f9aee32d = L.popup({});
+
+        
+            
+                var html_82b261329da54ffd3b4400e0c1fa09d1 = $(`<div id="html_82b261329da54ffd3b4400e0c1fa09d1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nene Parade, March</h1><div class="nugget-popup"><p>Road flooding affecting the street (road flooding reported). (p5)</p></div><div class="nugget-popup"><p>Short section of erosion/subsidence damage to the bank of the River Nene caused by water pouring off the Nene Parade carriageway; repaired jointly by the County Council and the Middle Level Commissioners. Highways installed extra gullies in low spots to reduce future surface water flowing over the banks into the river. (p7)</p></div></div></body></div>`)[0];
+                popup_2c8096f04b148fe174b59403f9aee32d.setContent(html_82b261329da54ffd3b4400e0c1fa09d1);
+            
+        
+
+        marker_7b5cfac27efafd356156ca5bc38735b7.bindPopup(popup_2c8096f04b148fe174b59403f9aee32d)
+        ;
+
+        
+    
+    
+            var marker_74f6ec36f4db5302adf08ec78aafd157 = L.marker(
+                [52.5438342, 0.0751492],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_c4eb77f52a4cd1b3edc069ae20446a4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_74f6ec36f4db5302adf08ec78aafd157.setIcon(icon_c4eb77f52a4cd1b3edc069ae20446a4a);
+        
+    
+        var popup_0cd87f80e7b9ef93eba5aa178e7f889c = L.popup({});
+
+        
+            
+                var html_b185c583703b44780e4f86232c9132e7 = $(`<div id="html_b185c583703b44780e4f86232c9132e7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brewin Avenue, March</h1><div class="nugget-popup"><p>Flooding reported (listed among streets affected in the summary). (p5)</p></div><div class="nugget-popup"><p>Drainage investigation found the piped system from Brewin Avenue to Butt Avenue terminates at a filled&ndash;in ditch, limiting outfall capacity and contributing to local drainage/flooding problems. Potential remedial options were identified (divert to existing sewer or pipe across to an A141 ditch via third&ndash;party land) and multi&ndash;agency work was proposed to develop a deliverable scheme. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_0cd87f80e7b9ef93eba5aa178e7f889c.setContent(html_b185c583703b44780e4f86232c9132e7);
+            
+        
+
+        marker_74f6ec36f4db5302adf08ec78aafd157.bindPopup(popup_0cd87f80e7b9ef93eba5aa178e7f889c)
+        ;
+
+        
+    
+    
+            var marker_e2b0357e580f7acb088868892d5c2c70 = L.marker(
+                [52.5448896, 0.0805534],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_fb3de60ae213483dbfd7fc8073a83e30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e2b0357e580f7acb088868892d5c2c70.setIcon(icon_fb3de60ae213483dbfd7fc8073a83e30);
+        
+    
+        var popup_b8a8517efc90fefa16aee348c87925c8 = L.popup({});
+
+        
+            
+                var html_70843389dab03352c25a2ec345c0f1ff = $(`<div id="html_70843389dab03352c25a2ec345c0f1ff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burrowmoor Road, March</h1><div class="nugget-popup"><p>Flooding reported (listed among streets affected in the summary). (p5)</p></div><div class="nugget-popup"><p>Included in FI/14/054 flood response: the drainage system on Burrowmoor Road was surveyed and cleaned as part of the response to the 2014 flooding; no faults were found. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_b8a8517efc90fefa16aee348c87925c8.setContent(html_70843389dab03352c25a2ec345c0f1ff);
+            
+        
+
+        marker_e2b0357e580f7acb088868892d5c2c70.bindPopup(popup_b8a8517efc90fefa16aee348c87925c8)
+        ;
+
+        
+    
+    
+            var marker_edcb6ebd8c8ed5a0ba0cf03a2c93e9ae = L.marker(
+                [52.5546207, 0.069349],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_a5492114ff95f4a222a6c71fe465fc4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_edcb6ebd8c8ed5a0ba0cf03a2c93e9ae.setIcon(icon_a5492114ff95f4a222a6c71fe465fc4d);
+        
+    
+        var popup_51065cdecdccf77c0cf174045a8ff213 = L.popup({});
+
+        
+            
+                var html_0484615dfcf94a7e392d200d37e8296c = $(`<div id="html_0484615dfcf94a7e392d200d37e8296c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fishermans Drive, March</h1><div class="nugget-popup"><p>External flooding of the street/properties (external flooding reported). (p5)</p></div><div class="nugget-popup"><p>In 2014 highway drainage works found a collapsed pipe and a pipe blocked by root infestation; both were cleared and repaired to restore the drainage system. Ongoing root regrowth has led to recurrent blockages requiring repeated clearance and jetting, and further works (e.g. pipe lining) were considered to reduce future flooding risk. (p7)</p></div></div></body></div>`)[0];
+                popup_51065cdecdccf77c0cf174045a8ff213.setContent(html_0484615dfcf94a7e392d200d37e8296c);
+            
+        
+
+        marker_edcb6ebd8c8ed5a0ba0cf03a2c93e9ae.bindPopup(popup_51065cdecdccf77c0cf174045a8ff213)
+        ;
+
+        
+    
+    
+            var marker_7579d82c7d405270908bf6cdf931493a = L.marker(
+                [52.5508146, 0.0842738],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_838cbffead7fd00726a136da7332ab14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7579d82c7d405270908bf6cdf931493a.setIcon(icon_838cbffead7fd00726a136da7332ab14);
+        
+    
+        var popup_94bf6728c22abec0ac5aea02eb7bbc92 = L.popup({});
+
+        
+            
+                var html_7d65e6fa870a1132fcc233a11df1c794 = $(`<div id="html_7d65e6fa870a1132fcc233a11df1c794" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West End, March</h1><div class="nugget-popup"><p>External flooding of the street/properties (external flooding reported). (p5)</p></div></div></body></div>`)[0];
+                popup_94bf6728c22abec0ac5aea02eb7bbc92.setContent(html_7d65e6fa870a1132fcc233a11df1c794);
+            
+        
+
+        marker_7579d82c7d405270908bf6cdf931493a.bindPopup(popup_94bf6728c22abec0ac5aea02eb7bbc92)
+        ;
+
+        
+    
+    
+            var marker_3ff718ce8581bcc5c2cc58d53b55a497 = L.marker(
+                [52.5581951, 0.0911112],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_3662a38e6acea7a95026c024c092ce8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3ff718ce8581bcc5c2cc58d53b55a497.setIcon(icon_3662a38e6acea7a95026c024c092ce8a);
+        
+    
+        var popup_dc6e07a611ac32c274f709877d7e81f0 = L.popup({});
+
+        
+            
+                var html_f3223f51cc173608f8b45d9c1f3fc633 = $(`<div id="html_f3223f51cc173608f8b45d9c1f3fc633" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Queens Street, March</h1><div class="nugget-popup"><p>External flooding of the street/properties (external flooding reported). (p5)</p></div><div class="nugget-popup"><p>Highways inspected and cleared gullies along Queen Street following the flooding incident; one gully was cleared and flushed to restore drainage. [TAB] (p7)</p></div><div class="nugget-popup"><p>Localised highway drainage flooding issues addressed by Highways Authority: gullies along the road were checked and one gully was cleared and flushed. (p8)</p></div></div></body></div>`)[0];
+                popup_dc6e07a611ac32c274f709877d7e81f0.setContent(html_f3223f51cc173608f8b45d9c1f3fc633);
+            
+        
+
+        marker_3ff718ce8581bcc5c2cc58d53b55a497.bindPopup(popup_dc6e07a611ac32c274f709877d7e81f0)
+        ;
+
+        
+    
+    
+            var marker_fac54cebf8720a8d93211999abeabddd = L.marker(
+                [52.5434061, 0.0786333],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_eacc7292f45048038b187ad7c82ee3f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fac54cebf8720a8d93211999abeabddd.setIcon(icon_eacc7292f45048038b187ad7c82ee3f9);
+        
+    
+        var popup_cbc6babb7b45602bcf15f6e19670b5c8 = L.popup({});
+
+        
+            
+                var html_8790fbf19ec4a00d303d87ab65fbefe4 = $(`<div id="html_8790fbf19ec4a00d303d87ab65fbefe4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kingswood Road, March</h1><div class="nugget-popup"><p>Areas around Kingswood Road, Birchwood Avenue, Brewin Avenue, Burrowmoor Road and Cherrywood/Cherryholt experienced drainage blockages and failures linked to the 2014 incidents. Blockages near Cherrywood Green were cleared; sections of drainage were found to end at a filled&ndash;in ditch, contributing to local highway and potential property flooding. Partnership options were developed to divert or pipe drainage to alleviate future flood risk. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_cbc6babb7b45602bcf15f6e19670b5c8.setContent(html_8790fbf19ec4a00d303d87ab65fbefe4);
+            
+        
+
+        marker_fac54cebf8720a8d93211999abeabddd.bindPopup(popup_cbc6babb7b45602bcf15f6e19670b5c8)
+        ;
+
+        
+    
+    
+            var marker_2c79b5b2ae9e765e02f68bc568422c5e = L.marker(
+                [52.55266, 0.0927121],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_a37e8124c4ed39f30d737b3b9b8ab10e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2c79b5b2ae9e765e02f68bc568422c5e.setIcon(icon_a37e8124c4ed39f30d737b3b9b8ab10e);
+        
+    
+        var popup_d17f4f9b9726b4dd06187c401f10cbb2 = L.popup({});
+
+        
+            
+                var html_3c431755bbe6d6bae8ed02690ece6c29 = $(`<div id="html_3c431755bbe6d6bae8ed02690ece6c29" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Belmont Road, March</h1><div class="nugget-popup"><p>A new highway gully was installed at Belmont Road following investigations into blocked gullies to improve drainage and address surface&ndash;water flooding. [TAB] (p7)</p></div><div class="nugget-popup"><p>Following the August 2014 floods, a new gully was installed at Belmont Road to address blocked drainage contributing to surface water flooding. (p10)</p></div></div></body></div>`)[0];
+                popup_d17f4f9b9726b4dd06187c401f10cbb2.setContent(html_3c431755bbe6d6bae8ed02690ece6c29);
+            
+        
+
+        marker_2c79b5b2ae9e765e02f68bc568422c5e.bindPopup(popup_d17f4f9b9726b4dd06187c401f10cbb2)
+        ;
+
+        
+    
+    
+            var marker_0440baf8d5202e2345dcb971cd45725e = L.marker(
+                [52.5475168, 0.0828013],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_fa01492e512a64296bce782045695b53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0440baf8d5202e2345dcb971cd45725e.setIcon(icon_fa01492e512a64296bce782045695b53);
+        
+    
+        var popup_b4d27c19068f9105f7bd45246654639e = L.popup({});
+
+        
+            
+                var html_a757bcc36fde5c53922e92bf0a33c5ec = $(`<div id="html_a757bcc36fde5c53922e92bf0a33c5ec" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Chase, March</h1><div class="nugget-popup"><p>Drainage system in the Chase was impacted by blockages related to the August 2014 event; Fenland District Council cleared the drainage they are responsible for (from the access point for the bungalow up to Gaul Road) to restore flow. [TAB] (p7)</p></div><div class="nugget-popup"><p>The Chase area had its drainage system cleared by FDC (from the access point for the bungalow up to Gaul Road) after the 2014 floods; piped systems were cleansed and dye&ndash;traced to their outfall into a riparian ditch, and the riparian&ndash;owned ditch at the outfall was cleared to improve flow. (p10)</p></div></div></body></div>`)[0];
+                popup_b4d27c19068f9105f7bd45246654639e.setContent(html_a757bcc36fde5c53922e92bf0a33c5ec);
+            
+        
+
+        marker_0440baf8d5202e2345dcb971cd45725e.bindPopup(popup_b4d27c19068f9105f7bd45246654639e)
+        ;
+
+        
+    
+    
+            var marker_5488c353b38bb7a84448ed5672bcc509 = L.marker(
+                [52.5363056, 0.0883124],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_350b2dbac34f365563f922663f1631a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5488c353b38bb7a84448ed5672bcc509.setIcon(icon_350b2dbac34f365563f922663f1631a9);
+        
+    
+        var popup_0d5bc9041eb8cd137850aedbc43cc280 = L.popup({});
+
+        
+            
+                var html_373d5a4996a8100a71dbb5fcc082d270 = $(`<div id="html_373d5a4996a8100a71dbb5fcc082d270" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barker's Lane, March</h1><div class="nugget-popup"><p>Outfall from the Cavalry Drive drainage system discharges into a riparian ditch/attenuation pond adjacent to Barker's Lane that was in need of maintenance. The riparian ditch was cleared to provide extra capacity in heavy rainfall and project proposals were developed to reduce local flood risk. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_0d5bc9041eb8cd137850aedbc43cc280.setContent(html_373d5a4996a8100a71dbb5fcc082d270);
+            
+        
+
+        marker_5488c353b38bb7a84448ed5672bcc509.bindPopup(popup_0d5bc9041eb8cd137850aedbc43cc280)
+        ;
+
+        
+    
+    
+            var marker_66fedad640e1fdc349247600f78a0701 = L.marker(
+                [52.5449191, 0.077321],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_cec5677894fb5171616b4766ddd25109 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_66fedad640e1fdc349247600f78a0701.setIcon(icon_cec5677894fb5171616b4766ddd25109);
+        
+    
+        var popup_eeb13280e758e27c6d65f81817e8794c = L.popup({});
+
+        
+            
+                var html_fc61fb54c46cf015698ab572d6e0d0d4 = $(`<div id="html_fc61fb54c46cf015698ab572d6e0d0d4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cherrywood Green, March</h1><div class="nugget-popup"><p>A blockage located near Cherrywood Green was cleared and flushed as part of the investigations following the August 2014 flooding; dye testing was used to trace flow to the outfall. [TAB] (p7)</p></div></div></body></div>`)[0];
+                popup_eeb13280e758e27c6d65f81817e8794c.setContent(html_fc61fb54c46cf015698ab572d6e0d0d4);
+            
+        
+
+        marker_66fedad640e1fdc349247600f78a0701.bindPopup(popup_eeb13280e758e27c6d65f81817e8794c)
+        ;
+
+        
+    
+    
+            var marker_c3926f262415730422a388190f513cc4 = L.marker(
+                [52.5286516, 0.0368764],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_774b4eabe274073d315450b2b7d7bac7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c3926f262415730422a388190f513cc4.setIcon(icon_774b4eabe274073d315450b2b7d7bac7);
+        
+    
+        var popup_c50a4e9681a7fdc66195f9f6b4da0564 = L.popup({});
+
+        
+            
+                var html_72fe4998e7a64afd1634324162fec732 = $(`<div id="html_72fe4998e7a64afd1634324162fec732" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Knight's End Road, March</h1><div class="nugget-popup"><p>Investigative works commissioned following flood reports; investigation identified a possible break in a pipe potentially contributing to local flooding. [TAB] (p7)</p></div><div class="nugget-popup"><p>Investigative works were commissioned following flooding&ndash;related reports; a possible break in a drainage pipe was identified. (p11)</p></div></div></body></div>`)[0];
+                popup_c50a4e9681a7fdc66195f9f6b4da0564.setContent(html_72fe4998e7a64afd1634324162fec732);
+            
+        
+
+        marker_c3926f262415730422a388190f513cc4.bindPopup(popup_c50a4e9681a7fdc66195f9f6b4da0564)
+        ;
+
+        
+    
+    
+            var marker_a5b9b8bb4909416fb7cd9aca7cfe0df5 = L.marker(
+                [52.5555285, 0.0915605],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_6a4cd041e88e32cf84d366b46723620b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a5b9b8bb4909416fb7cd9aca7cfe0df5.setIcon(icon_6a4cd041e88e32cf84d366b46723620b);
+        
+    
+        var popup_1849a61862629b85738a151a2892a64a = L.popup({});
+
+        
+            
+                var html_c0176261aba4ea59001273f830d05c1e = $(`<div id="html_c0176261aba4ea59001273f830d05c1e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Station Road, March</h1><div class="nugget-popup"><p>Surface water drainage blockages were associated with the August 2014 flood (FI/14/097). Gullies and lateral systems were jet&ndash;cleaned; minor blockages were cleared and repaired ahead of resurfacing works. A blockage due to fat deposits was found and cleared. (p10)</p></div></div></body></div>`)[0];
+                popup_1849a61862629b85738a151a2892a64a.setContent(html_c0176261aba4ea59001273f830d05c1e);
+            
+        
+
+        marker_a5b9b8bb4909416fb7cd9aca7cfe0df5.bindPopup(popup_1849a61862629b85738a151a2892a64a)
+        ;
+
+        
+    
+    
+            var marker_95f1a77781a022daf91eb9e6d55ec67d = L.marker(
+                [52.5561073, 0.0964032],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_17b0f774ae2c562dba841fb4bc691b7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_95f1a77781a022daf91eb9e6d55ec67d.setIcon(icon_17b0f774ae2c562dba841fb4bc691b7a);
+        
+    
+        var popup_0507bc72a3f0cc8df6f3b75e6a90ac06 = L.popup({});
+
+        
+            
+                var html_e954290575c34adbea5820a1990fd7e2 = $(`<div id="html_e954290575c34adbea5820a1990fd7e2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>New Park, March</h1><div class="nugget-popup"><p>Gullies were cleansed (noted in June 2014) and gullies and lateral systems were jetted; most gullies outfall into the Boards drain. The March 5th Board drain is maintained regularly by March Fifth District Drainage Commissioners. Anglian Water checked the AW system and confirmed it was clear to the outfall. (p12)</p></div></div></body></div>`)[0];
+                popup_0507bc72a3f0cc8df6f3b75e6a90ac06.setContent(html_e954290575c34adbea5820a1990fd7e2);
+            
+        
+
+        marker_95f1a77781a022daf91eb9e6d55ec67d.bindPopup(popup_0507bc72a3f0cc8df6f3b75e6a90ac06)
+        ;
+
+        
+    
+    
+            var marker_08666fca53e5068e19944b07181abe39 = L.marker(
+                [52.3729017, -0.04493599422000649],
+                {}
+            ).addTo(map_a8627845684cad83e2a159f4e0a8a40d);
+        
+    
+            var icon_713d3a1b0e637156559fa92556cfd467 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_08666fca53e5068e19944b07181abe39.setIcon(icon_713d3a1b0e637156559fa92556cfd467);
+        
+    
+        var popup_4aee949a06c32ef16dce574507c05434 = L.popup({});
+
+        
+            
+                var html_cc63b80e7db5acbf074feefb0009b0c8 = $(`<div id="html_cc63b80e7db5acbf074feefb0009b0c8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cambridgeshire</h1><div class="nugget-popup"><p>Multiple locations in the town of March experienced flooding caused by a short, very heavy rainfall event; incidents were concentrated in built&ndash;up areas (clusters in central and northern March) and resulted from surface water runoff, ordinary watercourse (overflow/backing) and foul/sewer flooding. Reports were made by residents and councillors and incidents were reported to local RMAs. [IMG,TAB,PAG] (p3)</p></div><div class="nugget-popup"><p>The town of March in Cambridgeshire experienced surface water flooding during the short, very heavy rainfall on 8/9 August 2014. Flooding was linked to blocked/defective surface water sewers and inadequate or filled&ndash;in ditches to which many sewers outfall; the event affected various locations across March as shown on the incident map and the surface water risk map. [PAG,IMG] (p4)</p></div><div class="nugget-popup"><p>Experienced intense rainfall events that exceeded drainage design capacity, resulting in surface&ndash;water collecting on roads and flooding of properties in the March area; residents were advised and urged to report prolonged surface water on roads. [MUL] (p13)</p></div></div></body></div>`)[0];
+                popup_4aee949a06c32ef16dce574507c05434.setContent(html_cc63b80e7db5acbf074feefb0009b0c8);
+            
+        
+
+        marker_08666fca53e5068e19944b07181abe39.bindPopup(popup_4aee949a06c32ef16dce574507c05434)
+        ;
+
+        
+    
+</script>
+</html>

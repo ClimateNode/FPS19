@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fe428f4f8fe4ea55a456f46e1594035a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fe428f4f8fe4ea55a456f46e1594035a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fe428f4f8fe4ea55a456f46e1594035a = L.map(
+                "map_fe428f4f8fe4ea55a456f46e1594035a",
+                {
+                    center: [53.85030258247466, -2.3178898035283653],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_30c5de0169680afd21bdbe5675b9f1b6 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_30c5de0169680afd21bdbe5675b9f1b6.addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+    
+            var marker_fb66af14b557c49a5ff4c761c2a330d6 = L.marker(
+                [53.7898112, -2.2944211],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_90e2ca92afb37f68dbec73820d22218b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fb66af14b557c49a5ff4c761c2a330d6.setIcon(icon_90e2ca92afb37f68dbec73820d22218b);
+        
+    
+        var popup_e59f0d46327e6a57bd9f2b56eea505f9 = L.popup({});
+
+        
+            
+                var html_3d0c5cb50e7308484e5acb77ee5e362a = $(`<div id="html_3d0c5cb50e7308484e5acb77ee5e362a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Green Brook</h1><div class="nugget-popup"><p>Identified as the outfall for a culvert that became dysfunctional; culvert overflow/discharge routed into Green Brook system and contributed to water running across ground and flooding nearby properties. (p15)</p></div></div></body></div>`)[0];
+                popup_e59f0d46327e6a57bd9f2b56eea505f9.setContent(html_3d0c5cb50e7308484e5acb77ee5e362a);
+            
+        
+
+        marker_fb66af14b557c49a5ff4c761c2a330d6.bindPopup(popup_e59f0d46327e6a57bd9f2b56eea505f9)
+        ;
+
+        
+    
+    
+            var marker_d485abe7f09746604440205913391b7f = L.marker(
+                [53.7907123, -2.2917112],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_3f791a0415f78d23e1f8e622ade7736a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d485abe7f09746604440205913391b7f.setIcon(icon_3f791a0415f78d23e1f8e622ade7736a);
+        
+    
+        var popup_08129f7550a3c1df1669a46d5b3837bd = L.popup({});
+
+        
+            
+                var html_cb7a0c6383954534ab4355f95b56f4ef = $(`<div id="html_cb7a0c6383954534ab4355f95b56f4ef" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lowerhouse Lane, Burnley</h1><div class="nugget-popup"><p>Officers from Lancashire Fire and Rescue Service and Burnley Borough Council attended in response to calls from residents reporting water 30&ndash;60 mm deep across the ground floor of their homes and standing water in garden areas; roads and footways were inundated in the area. (p3)</p></div><div class="nugget-popup"><p>Road/street flooding with internal property flooding on the lane; emergency services attended in response to resident calls. (p12)</p></div><div class="nugget-popup"><p>Area experienced flooding during the rainfall event; emergency services (Lancashire Fire and Rescue Service) attended and Burnley Borough Council provided assistance to residents. (p14)</p></div><div class="nugget-popup"><p>Devastating flooding where multiple houses were flooded at the same time; a dysfunctional culvert under/near Lowerhouse Lane caused water to come out of the pipe and run across the ground, inundating properties. Culvert defects were later corrected, restoring capacity and functionality. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30&ndash;60 mm deep (water across ground floors) (p3)</p></div><div class="nugget-popup quant"><p>18 properties; water 30&ndash;60 mm deep across the ground floor of many homes (p12)</p></div><div class="nugget-popup quant"><p>64 properties; 50 homes internally flooded (p14)</p></div></div></body></div>`)[0];
+                popup_08129f7550a3c1df1669a46d5b3837bd.setContent(html_cb7a0c6383954534ab4355f95b56f4ef);
+            
+        
+
+        marker_d485abe7f09746604440205913391b7f.bindPopup(popup_08129f7550a3c1df1669a46d5b3837bd)
+        ;
+
+        
+    
+    
+            var marker_d2daa22eb30199b65e5c4edca6850ee3 = L.marker(
+                [53.791016, -2.289754],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_2904c2a44fe7824df51f1631a825c78b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d2daa22eb30199b65e5c4edca6850ee3.setIcon(icon_2904c2a44fe7824df51f1631a825c78b);
+        
+    
+        var popup_8533418748aeb5f7456bf58aafc0ca8d = L.popup({});
+
+        
+            
+                var html_801a11c729e9e1d2c8cd0fbf3e7f01c6 = $(`<div id="html_801a11c729e9e1d2c8cd0fbf3e7f01c6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lowerhouse Fold, Burnley</h1><div class="nugget-popup"><p>Residential garden experienced standing surface water two hours after rainfall, with water pooling across a significant portion of the rear garden and extending toward a gazebo/shed, indicating poor drainage and localized inundation. [IMG] (p14)</p></div><div class="nugget-popup"><p>Multiple houses were flooded during the same flooding event affecting the Lowerhouse Lane area; flooding was linked to water emerging from a dysfunctional culvert that ran under/near the locality. (p15)</p></div></div></body></div>`)[0];
+                popup_8533418748aeb5f7456bf58aafc0ca8d.setContent(html_801a11c729e9e1d2c8cd0fbf3e7f01c6);
+            
+        
+
+        marker_d2daa22eb30199b65e5c4edca6850ee3.bindPopup(popup_8533418748aeb5f7456bf58aafc0ca8d)
+        ;
+
+        
+    
+    
+            var marker_a9a017033ac1bbde4dad97f6c8484703 = L.marker(
+                [53.79086103049588, -2.2895975663372106],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_fc769eb6a81606e96db461190892150c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a9a017033ac1bbde4dad97f6c8484703.setIcon(icon_fc769eb6a81606e96db461190892150c);
+        
+    
+        var popup_455258c19375e046ddb0fcded2f1d7c5 = L.popup({});
+
+        
+            
+                var html_511716dfa8debd549f4125c5fbdcd2d6 = $(`<div id="html_511716dfa8debd549f4125c5fbdcd2d6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thornhill Street, Burnley</h1><div class="nugget-popup"><p>Multiple houses were flooded during the same flooding event affecting the Lowerhouse Lane area; flooding was associated with a dysfunctional culvert that caused water to run across the ground and flood properties. (p15)</p></div></div></body></div>`)[0];
+                popup_455258c19375e046ddb0fcded2f1d7c5.setContent(html_511716dfa8debd549f4125c5fbdcd2d6);
+            
+        
+
+        marker_a9a017033ac1bbde4dad97f6c8484703.bindPopup(popup_455258c19375e046ddb0fcded2f1d7c5)
+        ;
+
+        
+    
+    
+            var marker_fa0c1cb62b0c92a27f2397a9f02947b0 = L.marker(
+                [53.86117, -2.5650887],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_c8b1567529571c0056fdd729ec956e47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fa0c1cb62b0c92a27f2397a9f02947b0.setIcon(icon_c8b1567529571c0056fdd729ec956e47);
+        
+    
+        var popup_417569f6e334394821f5f9b765141526 = L.popup({});
+
+        
+            
+                var html_6690c2b93f91aef7a5ec9d5e597145f0 = $(`<div id="html_6690c2b93f91aef7a5ec9d5e597145f0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancashire</h1><div class="nugget-popup"><p>Heavy rainfall across the county produced surface water flooding: roads and footways were inundated in various locations and properties flooded during the event. Overall 64 properties were reported as flooded in the event, of which 50 were homes that had been internally flooded. [PAG] (p3)</p></div><div class="nugget-popup"><p>Flooding events occurred on 8 June 2016; reports of those flooding events were made to the Lead Local Flood Authority by individuals, councillors and Food Action Groups, and reports were provided by Risk Management Authorities as part of the investigation. (p10)</p></div><div class="nugget-popup"><p>Widespread surface water flooding across the county during heavy downpours on 8 June 2016; roads and footways inundated in various locations and properties flooded in multiple towns. [PAG] (p12)</p></div><div class="nugget-popup"><p>Roads and footways were inundated in various locations across the county; Lancashire County Council Highways teams attended affected areas and many locations had begun recovering before 18:00 that evening. [PAG] (p13)</p></div><div class="nugget-popup"><p>The extreme rainfall event of 6 June 2016 (sic) overwhelmed natural and man&ndash;made drainage networks in Lancashire, producing particularly damaging flooding across Burnley and Lancaster districts. A culvert in the county was found dysfunctional in multiple locations, causing water to come out of the pipe and run across the ground and flood properties; correcting those defects restored capacity and functionality to the culvert. [PAG] (p16)</p></div><div class="nugget-popup"><p>Extreme rainfall on 6 June 2016 (sic) overwhelmed natural and man&ndash;made drainage networks across locations in Lancashire, producing particularly damaging flooding in parts of the county (notably Burnley and Lancaster districts). [PAG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>64 properties; 50 homes internally flooded [PAG] (p3)</p></div><div class="nugget-popup quant"><p>64 properties reported as flooding; 50 homes internally flooded [PAG] (p12)</p></div><div class="nugget-popup quant"><p>64 properties flooded overall; 50 homes internally flooded [PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_417569f6e334394821f5f9b765141526.setContent(html_6690c2b93f91aef7a5ec9d5e597145f0);
+            
+        
+
+        marker_fa0c1cb62b0c92a27f2397a9f02947b0.bindPopup(popup_417569f6e334394821f5f9b765141526)
+        ;
+
+        
+    
+    
+            var marker_0c3eff76928121daa201eefad0083f49 = L.marker(
+                [53.9026441, -2.422856],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_a87f4c28a40e7e19db09b93baa4ebf73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0c3eff76928121daa201eefad0083f49.setIcon(icon_a87f4c28a40e7e19db09b93baa4ebf73);
+        
+    
+        var popup_d64246199ada39ab8a015a679c9a7089 = L.popup({});
+
+        
+            
+                var html_37217e2d54704ff5bd34db9c40f50665 = $(`<div id="html_37217e2d54704ff5bd34db9c40f50665" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ribble Valley</h1><div class="nugget-popup"><p>Named as the district containing affected places (Chatburn and Rimmington) and listed among other affected places in Lancashire for the flood event. (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>64 properties flooded in the event; 50 homes internally flooded (overall across affected locations including this district). (p13)</p></div></div></body></div>`)[0];
+                popup_d64246199ada39ab8a015a679c9a7089.setContent(html_37217e2d54704ff5bd34db9c40f50665);
+            
+        
+
+        marker_0c3eff76928121daa201eefad0083f49.bindPopup(popup_d64246199ada39ab8a015a679c9a7089)
+        ;
+
+        
+    
+    
+            var marker_cc2ad91df82c95753780b6f7d2d13c2e = L.marker(
+                [53.78981570277851, -2.290457662389783],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_1cccf0540f4cf2bec552b0ef337e66db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cc2ad91df82c95753780b6f7d2d13c2e.setIcon(icon_1cccf0540f4cf2bec552b0ef337e66db);
+        
+    
+        var popup_f6340137689879903239de2018b96cce = L.popup({});
+
+        
+            
+                var html_92167c58a00426f76e7e56aac3bdefd7 = $(`<div id="html_92167c58a00426f76e7e56aac3bdefd7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lowerhouse</h1><div class="nugget-popup"><p>The most intense rainfall was experienced over the Lowerhouse area of Burnley; residents reported water 30&ndash;60 mm deep across ground floors of their homes and/or standing water in garden areas. Roads and footways in the area were inundated and properties were flooded. (p3)</p></div><div class="nugget-popup"><p>Most intense rainfall in the event occurred over the Lowerhouse area of Burnley; residents experienced their first flooding event for 36 years. Substantial but short&ndash;lived impact to local roads and footways; telephone landlines were out of action for a period. (p12)</p></div><div class="nugget-popup"><p>In the Lowerhouse area of Burnley the adverse effects of the 6 June 2016 (sic) event were exacerbated by defects in a historic culverted watercourse, worsening flooding impacts locally. (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30&ndash;60 mm deep (water inside/around homes) (p3)</p></div></div></body></div>`)[0];
+                popup_f6340137689879903239de2018b96cce.setContent(html_92167c58a00426f76e7e56aac3bdefd7);
+            
+        
+
+        marker_cc2ad91df82c95753780b6f7d2d13c2e.bindPopup(popup_f6340137689879903239de2018b96cce)
+        ;
+
+        
+    
+    
+            var marker_379afd01c56f9e9e0dcd9068598b26b0 = L.marker(
+                [53.790726, -2.2439196],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_647c015ebec2e7454141f541fc4e036a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_379afd01c56f9e9e0dcd9068598b26b0.setIcon(icon_647c015ebec2e7454141f541fc4e036a);
+        
+    
+        var popup_d691dafb71a1d0301b05d067fd02c198 = L.popup({});
+
+        
+            
+                var html_32a82bd80070fd2cdb478e76ee016851 = $(`<div id="html_32a82bd80070fd2cdb478e76ee016851" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burnley</h1><div class="nugget-popup"><p>Multiple locations in Burnley experienced surface water flooding during the intense rainfall; roads and footways were inundated and properties (including homes in Lowerhouse) were flooded. (p3)</p></div><div class="nugget-popup"><p>Area of Burnley (Lowerhouse) experienced intense rainfall and inundation of roads and footways; emergency attendees (fire service and borough council) responded to flooding in the Lowerhouse Lane area. [PAG] (p12)</p></div><div class="nugget-popup"><p>Lancashire Fire and Rescue Service attended the Lowerhouse Lane area and requested assistance from Burnley Borough Council; the council provided prompt assistance during the flooding response. [PAG] (p13)</p></div><div class="nugget-popup"><p>The 6 June 2016 (sic) rainfall caused particularly damaging flooding across Burnley district; adverse effects in the Lowerhouse area were exacerbated by defects in a historic culverted watercourse. (p17)</p></div></div></body></div>`)[0];
+                popup_d691dafb71a1d0301b05d067fd02c198.setContent(html_32a82bd80070fd2cdb478e76ee016851);
+            
+        
+
+        marker_379afd01c56f9e9e0dcd9068598b26b0.bindPopup(popup_d691dafb71a1d0301b05d067fd02c198)
+        ;
+
+        
+    
+    
+            var marker_e5db1e553550be49fb33377f8b260cf3 = L.marker(
+                [53.763975847590274, -2.2028026059667725],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_a4ecf317886e25956f7d2501a48c09a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e5db1e553550be49fb33377f8b260cf3.setIcon(icon_a4ecf317886e25956f7d2501a48c09a3);
+        
+    
+        var popup_6d82148974bb157a8119d6d9ed123977 = L.popup({});
+
+        
+            
+                var html_341c861283e018926c3769d817df8be9 = $(`<div id="html_341c861283e018926c3769d817df8be9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cliviger</h1><div class="nugget-popup"><p>Named among the other affected places in Lancashire for this event &mdash; reported/observed surface water flooding during the event. (p13)</p></div></div></body></div>`)[0];
+                popup_6d82148974bb157a8119d6d9ed123977.setContent(html_341c861283e018926c3769d817df8be9);
+            
+        
+
+        marker_e5db1e553550be49fb33377f8b260cf3.bindPopup(popup_6d82148974bb157a8119d6d9ed123977)
+        ;
+
+        
+    
+    
+            var marker_5f530a2b5224184c9c641e7bbe2fba6f = L.marker(
+                [53.8567728, -2.1691238],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_d9fdd123434a237862a4a67a9793e6c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5f530a2b5224184c9c641e7bbe2fba6f.setIcon(icon_d9fdd123434a237862a4a67a9793e6c0);
+        
+    
+        var popup_fddf057ae6011cef19084b317ff1ac7d = L.popup({});
+
+        
+            
+                var html_d1ccc41bb042a51bb5f7b089d0dd1485 = $(`<div id="html_d1ccc41bb042a51bb5f7b089d0dd1485" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Colne</h1><div class="nugget-popup"><p>Listed among the other affected places in Lancashire for this event &mdash; reported/observed surface water flooding during the event. (p13)</p></div></div></body></div>`)[0];
+                popup_fddf057ae6011cef19084b317ff1ac7d.setContent(html_d1ccc41bb042a51bb5f7b089d0dd1485);
+            
+        
+
+        marker_5f530a2b5224184c9c641e7bbe2fba6f.bindPopup(popup_fddf057ae6011cef19084b317ff1ac7d)
+        ;
+
+        
+    
+    
+            var marker_659085c69504e0e2ff09b9973acc0eae = L.marker(
+                [53.914757, -2.1356368],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_4a8b1fb56f68773f5d2bd71548e6de17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_659085c69504e0e2ff09b9973acc0eae.setIcon(icon_4a8b1fb56f68773f5d2bd71548e6de17);
+        
+    
+        var popup_6481214e5fa90ae5bdb504385f28a9a0 = L.popup({});
+
+        
+            
+                var html_b3916f4b10edce050ce262cd8ada5c0a = $(`<div id="html_b3916f4b10edce050ce262cd8ada5c0a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Earby</h1><div class="nugget-popup"><p>Listed among the other affected places in Lancashire for this event &mdash; reported/observed surface water flooding during the event. (p13)</p></div></div></body></div>`)[0];
+                popup_6481214e5fa90ae5bdb504385f28a9a0.setContent(html_b3916f4b10edce050ce262cd8ada5c0a);
+            
+        
+
+        marker_659085c69504e0e2ff09b9973acc0eae.bindPopup(popup_6481214e5fa90ae5bdb504385f28a9a0)
+        ;
+
+        
+    
+    
+            var marker_23d24c1dd3fc06cc50ce9f0af6258663 = L.marker(
+                [53.862578682087864, -2.118801107083863],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_44bc72da9eb9b7b218b4cf731db697d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_23d24c1dd3fc06cc50ce9f0af6258663.setIcon(icon_44bc72da9eb9b7b218b4cf731db697d4);
+        
+    
+        var popup_9a14090bec3fb5f4c969096a8f720548 = L.popup({});
+
+        
+            
+                var html_228bc3d5d6fbf97486d82153d8016512 = $(`<div id="html_228bc3d5d6fbf97486d82153d8016512" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Laneshaw Bridge</h1><div class="nugget-popup"><p>Listed among the other affected places in Lancashire for this event &mdash; reported/observed surface water flooding during the event. (p13)</p></div></div></body></div>`)[0];
+                popup_9a14090bec3fb5f4c969096a8f720548.setContent(html_228bc3d5d6fbf97486d82153d8016512);
+            
+        
+
+        marker_23d24c1dd3fc06cc50ce9f0af6258663.bindPopup(popup_9a14090bec3fb5f4c969096a8f720548)
+        ;
+
+        
+    
+    
+            var marker_8f2300df2c6d4befdd29ff8bfabf2a43 = L.marker(
+                [53.8946941, -2.3564843],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_fcfef5c09a027defa96898be638d665f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8f2300df2c6d4befdd29ff8bfabf2a43.setIcon(icon_fcfef5c09a027defa96898be638d665f);
+        
+    
+        var popup_508ec48dba3e8365a6e09fc2fad80e07 = L.popup({});
+
+        
+            
+                var html_238e70c6a597e779159c080a28c7b4a8 = $(`<div id="html_238e70c6a597e779159c080a28c7b4a8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chatburn</h1><div class="nugget-popup"><p>Listed as an affected location in the flood event; impacted by surface water flooding reported/observed during the event. (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>64 properties flooded in the event; 50 homes internally flooded (overall across affected locations including this place). (p13)</p></div></div></body></div>`)[0];
+                popup_508ec48dba3e8365a6e09fc2fad80e07.setContent(html_238e70c6a597e779159c080a28c7b4a8);
+            
+        
+
+        marker_8f2300df2c6d4befdd29ff8bfabf2a43.bindPopup(popup_508ec48dba3e8365a6e09fc2fad80e07)
+        ;
+
+        
+    
+    
+            var marker_b901b8d79ee6675410de664bd806adde = L.marker(
+                [53.90826362127877, -2.297514865393309],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_4ea21c451135b691abf23f6499973672 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b901b8d79ee6675410de664bd806adde.setIcon(icon_4ea21c451135b691abf23f6499973672);
+        
+    
+        var popup_8a6809836a702a14d7eac2900ecd7006 = L.popup({});
+
+        
+            
+                var html_b5d4a530108c5a238ec46970bebbb107 = $(`<div id="html_b5d4a530108c5a238ec46970bebbb107" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rimington</h1><div class="nugget-popup"><p>Listed as an affected location in the flood event; impacted by surface water flooding reported/observed during the event. (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>64 properties flooded in the event; 50 homes internally flooded (overall across affected locations including this place). (p13)</p></div></div></body></div>`)[0];
+                popup_8a6809836a702a14d7eac2900ecd7006.setContent(html_b5d4a530108c5a238ec46970bebbb107);
+            
+        
+
+        marker_b901b8d79ee6675410de664bd806adde.bindPopup(popup_8a6809836a702a14d7eac2900ecd7006)
+        ;
+
+        
+    
+    
+            var marker_c8b55c8cea142ef293a79097a7809f39 = L.marker(
+                [54.04674035288858, -2.8001777457545383],
+                {}
+            ).addTo(map_fe428f4f8fe4ea55a456f46e1594035a);
+        
+    
+            var icon_2dfc6a9ab5ea521d53cf8ddf7923e834 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c8b55c8cea142ef293a79097a7809f39.setIcon(icon_2dfc6a9ab5ea521d53cf8ddf7923e834);
+        
+    
+        var popup_446160f06c917617d0241a406f72da2d = L.popup({});
+
+        
+            
+                var html_3c1fae6e58a3bb665790f50a0cac3de6 = $(`<div id="html_3c1fae6e58a3bb665790f50a0cac3de6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancaster</h1><div class="nugget-popup"><p>The 6 June 2016 (sic) rainfall produced particularly damaging flooding across Lancaster district. (p17)</p></div></div></body></div>`)[0];
+                popup_446160f06c917617d0241a406f72da2d.setContent(html_3c1fae6e58a3bb665790f50a0cac3de6);
+            
+        
+
+        marker_c8b55c8cea142ef293a79097a7809f39.bindPopup(popup_446160f06c917617d0241a406f72da2d)
+        ;
+
+        
+    
+</script>
+</html>

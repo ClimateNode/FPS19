@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_074622ee567ba362e54a58b4c3ce3905 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_074622ee567ba362e54a58b4c3ce3905" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_074622ee567ba362e54a58b4c3ce3905 = L.map(
+                "map_074622ee567ba362e54a58b4c3ce3905",
+                {
+                    center: [53.85764373374409, -2.654543314370001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d106f51ec1adb8db8e3af73a5c5c42b2 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_d106f51ec1adb8db8e3af73a5c5c42b2.addTo(map_074622ee567ba362e54a58b4c3ce3905);
+    
+            var marker_c528466c927f99700cf6f6eb51e2042b = L.marker(
+                [53.880685933289385, -2.7865186448461667],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_6930121157b48b601c176962529179a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c528466c927f99700cf6f6eb51e2042b.setIcon(icon_6930121157b48b601c176962529179a1);
+        
+    
+        var popup_d100e9eb6a2b513915829534db94e8da = L.popup({});
+
+        
+            
+                var html_c4da44113565b579413c9930d89cd81d = $(`<div id="html_c4da44113565b579413c9930d89cd81d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Helens Church of England Primary School</h1><div class="nugget-popup"><p>Internal flooding of the school as part of the Churchtown event when flood water entered buildings following runoff from Ainspool and a breach of an embankment along the River Wyre; surface water and sewer surcharging were significant contributors. (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>58 properties (p14)</p></div></div></body></div>`)[0];
+                popup_d100e9eb6a2b513915829534db94e8da.setContent(html_c4da44113565b579413c9930d89cd81d);
+            
+        
+
+        marker_c528466c927f99700cf6f6eb51e2042b.bindPopup(popup_d100e9eb6a2b513915829534db94e8da)
+        ;
+
+        
+    
+    
+            var marker_6276909c1c04224b32a12a13ff3248ce = L.marker(
+                [53.9392725, -2.7688052],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_861169c48d69813aa145b48585d6e593 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6276909c1c04224b32a12a13ff3248ce.setIcon(icon_861169c48d69813aa145b48585d6e593);
+        
+    
+        var popup_25a824d9cef7d3aa7b820102c06b2e06 = L.popup({});
+
+        
+            
+                var html_86f60a5a03a58e1cd8b71b04080cf3af = $(`<div id="html_86f60a5a03a58e1cd8b71b04080cf3af" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Six Arches Caravan Park</h1><div class="nugget-popup"><p>Approximately 1 km downstream, six caravans were flooded at the caravan park. [MUL] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 caravans [MUL] (p17)</p></div></div></body></div>`)[0];
+                popup_25a824d9cef7d3aa7b820102c06b2e06.setContent(html_86f60a5a03a58e1cd8b71b04080cf3af);
+            
+        
+
+        marker_6276909c1c04224b32a12a13ff3248ce.bindPopup(popup_25a824d9cef7d3aa7b820102c06b2e06)
+        ;
+
+        
+    
+    
+            var marker_15653447dae464723643f14643210ff3 = L.marker(
+                [53.881414754867706, -2.79305130407062],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_9d5f8aff6b4b330f235a730c9bd1e6f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_15653447dae464723643f14643210ff3.setIcon(icon_9d5f8aff6b4b330f235a730c9bd1e6f3);
+        
+    
+        var popup_a0589eef99381e63a38c7e39f62ab7f7 = L.popup({});
+
+        
+            
+                var html_40eee6aff546b5d289b9a4165272f636 = $(`<div id="html_40eee6aff546b5d289b9a4165272f636" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ains Pool</h1><div class="nugget-popup"><p>Identified as the primary source of the flooding that led to internal flooding of properties in Churchtown on 5 December 2015. (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>58 properties (p14)</p></div></div></body></div>`)[0];
+                popup_a0589eef99381e63a38c7e39f62ab7f7.setContent(html_40eee6aff546b5d289b9a4165272f636);
+            
+        
+
+        marker_15653447dae464723643f14643210ff3.bindPopup(popup_a0589eef99381e63a38c7e39f62ab7f7)
+        ;
+
+        
+    
+    
+            var marker_c0169d7ef5db33a1fd591ea70e750f3a = L.marker(
+                [53.9309171, -2.7685312],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_c14ca8bf5f202a16f55eb899a47f155f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c0169d7ef5db33a1fd591ea70e750f3a.setIcon(icon_c14ca8bf5f202a16f55eb899a47f155f);
+        
+    
+        var popup_6faeeae5e38841200e5ce74394e3fa08 = L.popup({});
+
+        
+            
+                var html_3c704d4f811acea4bde7627241f8408b = $(`<div id="html_3c704d4f811acea4bde7627241f8408b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Wyre</h1><div class="nugget-popup"><p>A breach of an embankment along the River Wyre contributed to the Churchtown flooding event, leading to internal flooding of properties and allowing river water to enter the public sewer network. [PAG] (p14)</p></div><div class="nugget-popup"><p>Identified as the main source of flooding that caused property flooding in Garstang and contributed to flooding elsewhere in the catchment; prompted inspections and maintenance by authorities following the December 2015 event. (p15)</p></div><div class="nugget-popup"><p>River Wyre fluvial flooding affected adjacent properties and contributed to downstream flooding (including caravans at Six Arches Caravan Park). [MUL] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>58 properties [PAG] (p14)</p></div><div class="nugget-popup quant"><p>22 properties; 4 properties (p15)</p></div><div class="nugget-popup quant"><p>1 property; 6 caravans [MUL] (p17)</p></div></div></body></div>`)[0];
+                popup_6faeeae5e38841200e5ce74394e3fa08.setContent(html_3c704d4f811acea4bde7627241f8408b);
+            
+        
+
+        marker_c0169d7ef5db33a1fd591ea70e750f3a.bindPopup(popup_6faeeae5e38841200e5ce74394e3fa08)
+        ;
+
+        
+    
+    
+            var marker_bb70e2cb0166f58201bcbc77f851b576 = L.marker(
+                [53.8686953, -2.7085841],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_46d3fb8ebbbf7e6f2a0ad62791b4d520 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bb70e2cb0166f58201bcbc77f851b576.setIcon(icon_46d3fb8ebbbf7e6f2a0ad62791b4d520);
+        
+    
+        var popup_75282d99f4c15d8b5d90194d270cde98 = L.popup({});
+
+        
+            
+                var html_10f11d190f5e5f3e7820b0e5e035b0e5 = $(`<div id="html_10f11d190f5e5f3e7820b0e5e035b0e5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Brock</h1><div class="nugget-popup"><p>Breach of the River Brock embankment caused fluvial flooding; overflow crossed farmland and led to inundation of properties in St Michaels (Blackpool Road area and Rawcliffe Road area). [TAB] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>27 properties; 5 residential properties [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_75282d99f4c15d8b5d90194d270cde98.setContent(html_10f11d190f5e5f3e7820b0e5e035b0e5);
+            
+        
+
+        marker_bb70e2cb0166f58201bcbc77f851b576.bindPopup(popup_75282d99f4c15d8b5d90194d270cde98)
+        ;
+
+        
+    
+    
+            var marker_4e1cfcb75e4affbae804cccd5dab5e74 = L.marker(
+                [53.9116078, -2.7451765],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_5e41d8e3a5423fa388ed32e78815ad30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4e1cfcb75e4affbae804cccd5dab5e74.setIcon(icon_5e41d8e3a5423fa388ed32e78815ad30);
+        
+    
+        var popup_4be5469584e4035220eba79005cdd8a6 = L.popup({});
+
+        
+            
+                var html_8dd8058bc42106d137d4e6f80ac11723 = $(`<div id="html_8dd8058bc42106d137d4e6f80ac11723" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Eidsforth Lane, Barnacre</h1><div class="nugget-popup"><p>Two properties on Eidsforth Lane (Barnacre) suffered internal flooding on 5 December 2015; properties are adjacent to an unnamed ordinary watercourse, but the exact source of flooding is unclear. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (p12)</p></div></div></body></div>`)[0];
+                popup_4be5469584e4035220eba79005cdd8a6.setContent(html_8dd8058bc42106d137d4e6f80ac11723);
+            
+        
+
+        marker_4e1cfcb75e4affbae804cccd5dab5e74.bindPopup(popup_4be5469584e4035220eba79005cdd8a6)
+        ;
+
+        
+    
+    
+            var marker_b69f292092cc81dd29e285f1bbf56581 = L.marker(
+                [53.8851097, -2.7640777],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_56d6ba26f2e8468fb725051f42930a2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b69f292092cc81dd29e285f1bbf56581.setIcon(icon_56d6ba26f2e8468fb725051f42930a2f);
+        
+    
+        var popup_56f67c22f353e65395ca340a852b7871 = L.popup({});
+
+        
+            
+                var html_f78bb5fe6c666d1085044d53e44684c0 = $(`<div id="html_f78bb5fe6c666d1085044d53e44684c0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Garstang Road, Catterall</h1><div class="nugget-popup"><p>One property on the Garstang Road bypass suffered internal flooding (recorded at this location). (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p13)</p></div></div></body></div>`)[0];
+                popup_56f67c22f353e65395ca340a852b7871.setContent(html_f78bb5fe6c666d1085044d53e44684c0);
+            
+        
+
+        marker_b69f292092cc81dd29e285f1bbf56581.bindPopup(popup_56f67c22f353e65395ca340a852b7871)
+        ;
+
+        
+    
+    
+            var marker_ad0a7386cd332a3c362e801a935ba6a1 = L.marker(
+                [53.8991294, -2.7741019],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_8c5b649384d6c450292906bbe3fef393 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ad0a7386cd332a3c362e801a935ba6a1.setIcon(icon_8c5b649384d6c450292906bbe3fef393);
+        
+    
+        var popup_31ad806cacb4f2315dc561d6c7830e63 = L.popup({});
+
+        
+            
+                var html_b374183c8ad07d48a991956db5f6a951 = $(`<div id="html_b374183c8ad07d48a991956db5f6a951" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bridge Street, Garstang</h1><div class="nugget-popup"><p>The majority of properties flooded in Garstang were located on Bridge Street, affecting residential and commercial premises. (p15)</p></div></div></body></div>`)[0];
+                popup_31ad806cacb4f2315dc561d6c7830e63.setContent(html_b374183c8ad07d48a991956db5f6a951);
+            
+        
+
+        marker_ad0a7386cd332a3c362e801a935ba6a1.bindPopup(popup_31ad806cacb4f2315dc561d6c7830e63)
+        ;
+
+        
+    
+    
+            var marker_3cff1f2f1685d0c504f8155db0596b73 = L.marker(
+                [53.8617864, -2.8230653],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_a5702cd9e42266c485b35ffb156b06dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3cff1f2f1685d0c504f8155db0596b73.setIcon(icon_a5702cd9e42266c485b35ffb156b06dd);
+        
+    
+        var popup_aa1c15d74a94f2fea8c77b0197a33e06 = L.popup({});
+
+        
+            
+                var html_957c4ae05754c6b96304d03131fcbed9 = $(`<div id="html_957c4ae05754c6b96304d03131fcbed9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Blackpool Road, St Michael's-On-Wyre</h1><div class="nugget-popup"><p>Fluvial flooding following a breach of the River Brock embankment flooded properties in the Blackpool Road (A586) area, including a school and a memorial hall. A pumping operation lasting up to a week was required to clear water and the main road (A586 Blackpool Road) was closed for a number of days; floodwater reportedly crossed farmland before flooding properties. (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>27 properties (p18)</p></div></div></body></div>`)[0];
+                popup_aa1c15d74a94f2fea8c77b0197a33e06.setContent(html_957c4ae05754c6b96304d03131fcbed9);
+            
+        
+
+        marker_3cff1f2f1685d0c504f8155db0596b73.bindPopup(popup_aa1c15d74a94f2fea8c77b0197a33e06)
+        ;
+
+        
+    
+    
+            var marker_8eeceb16b5112c8e678d0b5924eb75e5 = L.marker(
+                [53.8654538, -2.8271935],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_92b2db591b5f8e3a78f3c545560ada6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8eeceb16b5112c8e678d0b5924eb75e5.setIcon(icon_92b2db591b5f8e3a78f3c545560ada6a);
+        
+    
+        var popup_952d5d6a6ba1308d2dc794524ecd7a04 = L.popup({});
+
+        
+            
+                var html_9adb723fd74982f7daef8088e516794b = $(`<div id="html_9adb723fd74982f7daef8088e516794b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rawcliffe Road, St Michael's-On-Wyre</h1><div class="nugget-popup"><p>Internal flooding of residential properties in the Rawcliffe Road area caused by overland/surface water and associated sewer surcharging when outfalls were locked by high river levels. (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 residential properties (p19)</p></div></div></body></div>`)[0];
+                popup_952d5d6a6ba1308d2dc794524ecd7a04.setContent(html_9adb723fd74982f7daef8088e516794b);
+            
+        
+
+        marker_8eeceb16b5112c8e678d0b5924eb75e5.bindPopup(popup_952d5d6a6ba1308d2dc794524ecd7a04)
+        ;
+
+        
+    
+    
+            var marker_4676ca9106845ea853ee1b737cfcff71 = L.marker(
+                [53.86117, -2.5650887],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_4fe935e7cea0938f9a4f4157a2359123 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4676ca9106845ea853ee1b737cfcff71.setIcon(icon_4fe935e7cea0938f9a4f4157a2359123);
+        
+    
+        var popup_b2509c0c9c6060546f16ae7bb1a197be = L.popup({});
+
+        
+            
+                var html_10b061792fd864668ba574a91df49e02 = $(`<div id="html_10b061792fd864668ba574a91df49e02" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancashire</h1><div class="nugget-popup"><p>Significant flooding affected the county in December 2015, impacting communities and prompting review of communication and coordination between risk management authorities. [PAG] (p3)</p></div><div class="nugget-popup"><p>The December 2015 extreme rainfall and high river flows caused widespread flooding across the county, resulting in significant impacts on people, homes and businesses. [TAB] (p8)</p></div><div class="nugget-popup"><p>Extreme storms and rainfall in November and December 2015 caused widespread flooding across December 2015, damaging private gardens, garages and out&ndash;buildings, business premises, agricultural property and critical public infrastructure including roads, bridges, retaining walls, water treatment plants, power and communications installations, and community buildings such as schools, village and town halls. (p9)</p></div><div class="nugget-popup"><p>Multiple communities across the county experienced flooding during two major storm events in December 2015; these events prompted a countywide Section 19 investigation to identify and prioritise actions for affected communities and to report findings. [PAG] (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 2,500 properties flooded [TAB] (p8)</p></div><div class="nugget-popup quant"><p>over 2,500 properties (p9)</p></div></div></body></div>`)[0];
+                popup_b2509c0c9c6060546f16ae7bb1a197be.setContent(html_10b061792fd864668ba574a91df49e02);
+            
+        
+
+        marker_4676ca9106845ea853ee1b737cfcff71.bindPopup(popup_b2509c0c9c6060546f16ae7bb1a197be)
+        ;
+
+        
+    
+    
+            var marker_167a4ffb3cd1d289bac04ee146fd26ad = L.marker(
+                [54.6143136, -2.9420899],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_e402a794132199b13053d06396dc6b82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_167a4ffb3cd1d289bac04ee146fd26ad.setIcon(icon_e402a794132199b13053d06396dc6b82);
+        
+    
+        var popup_6199db2ce43d6c9a8626fd3a3f83c21f = L.popup({});
+
+        
+            
+                var html_e42866334a4d591a54715129c09d3ea1 = $(`<div id="html_e42866334a4d591a54715129c09d3ea1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cumbria</h1><div class="nugget-popup"><p>Significant flooding in December 2015 affected communities across Lancashire; the event revealed weaknesses in how flood messages were communicated to affected communities and prompted the development of district&ndash;level reports to improve communication and coordination. (p3)</p></div></div></body></div>`)[0];
+                popup_6199db2ce43d6c9a8626fd3a3f83c21f.setContent(html_e42866334a4d591a54715129c09d3ea1);
+            
+        
+
+        marker_167a4ffb3cd1d289bac04ee146fd26ad.bindPopup(popup_6199db2ce43d6c9a8626fd3a3f83c21f)
+        ;
+
+        
+    
+    
+            var marker_af1580d17f935cabbe1f8147649528ce = L.marker(
+                [53.47769049472794, -2.2435460795004105],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_300d5f66adf068829ccb9f64a19ec0c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_af1580d17f935cabbe1f8147649528ce.setIcon(icon_300d5f66adf068829ccb9f64a19ec0c6);
+        
+    
+        var popup_a0b61cbce7670def7550e28e69de1f84 = L.popup({});
+
+        
+            
+                var html_eb730488a8c1e0b5188bded76cdcd250 = $(`<div id="html_eb730488a8c1e0b5188bded76cdcd250" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Greater Manchester</h1><div class="nugget-popup"><p>The December 2015 flood event struck Lancashire, exposing gaps in communication and coordination; this event prompted Lancashire County Council to develop district&ndash;level reports for affected communities. (p3)</p></div></div></body></div>`)[0];
+                popup_a0b61cbce7670def7550e28e69de1f84.setContent(html_eb730488a8c1e0b5188bded76cdcd250);
+            
+        
+
+        marker_af1580d17f935cabbe1f8147649528ce.bindPopup(popup_a0b61cbce7670def7550e28e69de1f84)
+        ;
+
+        
+    
+    
+            var marker_44fb254926c550cbcb3f007fd6561211 = L.marker(
+                [53.7271527, -2.7330066],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_f0afe3c97d2a977603ece544d54b5c70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_44fb254926c550cbcb3f007fd6561211.setIcon(icon_f0afe3c97d2a977603ece544d54b5c70);
+        
+    
+        var popup_68915c50c8814e32e922431e61d329c1 = L.popup({});
+
+        
+            
+                var html_fca14f4e3e74442da3c6d35634b1e0ad = $(`<div id="html_fca14f4e3e74442da3c6d35634b1e0ad" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Ribble</h1><div class="nugget-popup"><p>Flooding occurred in the district during the December 2015 events; multi&ndash;agency response supported affected residents and businesses and a recovery drop&ndash;in was held on 02 Feb 2016 to provide advice and gather eyewitness reports. (p9)</p></div></div></body></div>`)[0];
+                popup_68915c50c8814e32e922431e61d329c1.setContent(html_fca14f4e3e74442da3c6d35634b1e0ad);
+            
+        
+
+        marker_44fb254926c550cbcb3f007fd6561211.bindPopup(popup_68915c50c8814e32e922431e61d329c1)
+        ;
+
+        
+    
+    
+            var marker_241e17e0c0a004d46def9ba29c429064 = L.marker(
+                [53.9026441, -2.422856],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_265984753e018f15f7ef3fc893383b37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_241e17e0c0a004d46def9ba29c429064.setIcon(icon_265984753e018f15f7ef3fc893383b37);
+        
+    
+        var popup_489084aca4ef78ccd69df9ae8743288a = L.popup({});
+
+        
+            
+                var html_d81d6010b1e4b24cded159039007b4c5 = $(`<div id="html_d81d6010b1e4b24cded159039007b4c5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ribble Valley</h1><div class="nugget-popup"><p>The district experienced impacts from the December 2015 floods; a recovery drop&ndash;in in Whalley (Ribble Valley) on 10 Feb 2016 was held to support affected residents and gather eyewitness information. (p9)</p></div></div></body></div>`)[0];
+                popup_489084aca4ef78ccd69df9ae8743288a.setContent(html_d81d6010b1e4b24cded159039007b4c5);
+            
+        
+
+        marker_241e17e0c0a004d46def9ba29c429064.bindPopup(popup_489084aca4ef78ccd69df9ae8743288a)
+        ;
+
+        
+    
+    
+            var marker_decbf20e591bcbfa604e2dc7b5261fd6 = L.marker(
+                [53.70249, -2.201046],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_3abb84dd8047d3f1c134b38f239385cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_decbf20e591bcbfa604e2dc7b5261fd6.setIcon(icon_3abb84dd8047d3f1c134b38f239385cd);
+        
+    
+        var popup_4a6263400f799020a9f4300a7d0c5d83 = L.popup({});
+
+        
+            
+                var html_3a0f755ba9c8c8365613bc0f4348a1ba = $(`<div id="html_3a0f755ba9c8c8365613bc0f4348a1ba" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rossendale</h1><div class="nugget-popup"><p>Areas within Rossendale were affected by the extreme storms and rainfall in December 2015 that caused flooding across Lancashire; a drop&ndash;in event for affected residents was held in Irwell Vale (Rossendale) on 10 Feb 2016. (p9)</p></div></div></body></div>`)[0];
+                popup_4a6263400f799020a9f4300a7d0c5d83.setContent(html_3a0f755ba9c8c8365613bc0f4348a1ba);
+            
+        
+
+        marker_decbf20e591bcbfa604e2dc7b5261fd6.bindPopup(popup_4a6263400f799020a9f4300a7d0c5d83)
+        ;
+
+        
+    
+    
+            var marker_4a820afea7fc6929cf5e6d0af5c9c846 = L.marker(
+                [53.89728410091331, -2.903724352506046],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_d6b5aad7d10b7988cde607d4c5098ce0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4a820afea7fc6929cf5e6d0af5c9c846.setIcon(icon_d6b5aad7d10b7988cde607d4c5098ce0);
+        
+    
+        var popup_138e707818e268b3cea04b584a781fee = L.popup({});
+
+        
+            
+                var html_dc6c9981a13de1d939d3d90d567fbe1e = $(`<div id="html_dc6c9981a13de1d939d3d90d567fbe1e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wyre</h1><div class="nugget-popup"><p>Two properties at Barnacre (Eidsforth Lane) suffered internal flooding; the affected properties are adjacent to an unnamed ordinary watercourse (it was not clear whether this was the primary source of flooding). [TAB] (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [TAB] (p11)</p></div></div></body></div>`)[0];
+                popup_138e707818e268b3cea04b584a781fee.setContent(html_dc6c9981a13de1d939d3d90d567fbe1e);
+            
+        
+
+        marker_4a820afea7fc6929cf5e6d0af5c9c846.bindPopup(popup_138e707818e268b3cea04b584a781fee)
+        ;
+
+        
+    
+    
+            var marker_187b8ed0b6e0877df4fc312c0f318c02 = L.marker(
+                [53.9031969, -2.7762038183560396],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_ea4ab680a574235b4704c6c2b42861c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_187b8ed0b6e0877df4fc312c0f318c02.setIcon(icon_ea4ab680a574235b4704c6c2b42861c8);
+        
+    
+        var popup_abb3743bde251078ba3f13e51a80fa73 = L.popup({});
+
+        
+            
+                var html_34d9ec07ceba949ddab6807ad37fafaa = $(`<div id="html_34d9ec07ceba949ddab6807ad37fafaa" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Garstang</h1><div class="nugget-popup"><p>Flood&ndash;basin assets were activated in advance of and during the December 2015 event as a preparatory/mitigation response to flooding risk. [TAB] (p8)</p></div><div class="nugget-popup"><p>Properties in Garstang were flooded by the River Wyre. 22 properties were flooded on 5 December 2015 including residential properties, a care home, a home for vulnerable adults and several businesses; the majority of affected properties were on Bridge Street. A further 1 property was flooded on 26 December 2015. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>22 properties; 1 property (p15)</p></div></div></body></div>`)[0];
+                popup_abb3743bde251078ba3f13e51a80fa73.setContent(html_34d9ec07ceba949ddab6807ad37fafaa);
+            
+        
+
+        marker_187b8ed0b6e0877df4fc312c0f318c02.bindPopup(popup_abb3743bde251078ba3f13e51a80fa73)
+        ;
+
+        
+    
+    
+            var marker_5bd34e38438b586d50f274a342d35fa6 = L.marker(
+                [53.877117, -2.7638138],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_f07b91c378f2b22ff0bd8d736f557ee4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5bd34e38438b586d50f274a342d35fa6.setIcon(icon_f07b91c378f2b22ff0bd8d736f557ee4);
+        
+    
+        var popup_492cb645632f0371336931fae4a2c053 = L.popup({});
+
+        
+            
+                var html_ced9490ca4be13eb16b1a0bf21a6ccef = $(`<div id="html_ced9490ca4be13eb16b1a0bf21a6ccef" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Catterall</h1><div class="nugget-popup"><p>Flood&ndash;basin assets were activated in advance of and during the December 2015 event as a preparatory/mitigation response to flooding risk. [TAB] (p8)</p></div><div class="nugget-popup"><p>One property suffered internal flooding; affected property located near Yoad Pool Ordinary Watercourse (possible source). (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p13)</p></div></div></body></div>`)[0];
+                popup_492cb645632f0371336931fae4a2c053.setContent(html_ced9490ca4be13eb16b1a0bf21a6ccef);
+            
+        
+
+        marker_5bd34e38438b586d50f274a342d35fa6.bindPopup(popup_492cb645632f0371336931fae4a2c053)
+        ;
+
+        
+    
+    
+            var marker_7753ad6b2bccc5e9cc9a43d721a91229 = L.marker(
+                [53.81359304893992, -2.5320952047206924],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_77406caba815c3ec6f4bca11bfd265b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7753ad6b2bccc5e9cc9a43d721a91229.setIcon(icon_77406caba815c3ec6f4bca11bfd265b3);
+        
+    
+        var popup_969bf2cc2cd11b9292c88385f8340bd4 = L.popup({});
+
+        
+            
+                var html_79d61c9919d91723b39f9beec90b3bf8 = $(`<div id="html_79d61c9919d91723b39f9beec90b3bf8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ribchester</h1><div class="nugget-popup"><p>Demountable flood barriers were deployed in Ribchester as part of the response to the December 2015 floods. [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_969bf2cc2cd11b9292c88385f8340bd4.setContent(html_79d61c9919d91723b39f9beec90b3bf8);
+            
+        
+
+        marker_7753ad6b2bccc5e9cc9a43d721a91229.bindPopup(popup_969bf2cc2cd11b9292c88385f8340bd4)
+        ;
+
+        
+    
+    
+            var marker_c268d0294f1919fb8fb231c0f57aa1db = L.marker(
+                [53.86503490473704, -2.8195181540067753],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_a0fecae4e8efdfa6e7065397f2acd03b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c268d0294f1919fb8fb231c0f57aa1db.setIcon(icon_a0fecae4e8efdfa6e7065397f2acd03b);
+        
+    
+        var popup_e3690f84df5640928f0dd55bea53dfaf = L.popup({});
+
+        
+            
+                var html_9e1cd503c9ceb180f7a4cf349e4894d2 = $(`<div id="html_9e1cd503c9ceb180f7a4cf349e4894d2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Michael's-On-Wyre</h1><div class="nugget-popup"><p>Demountable flood barriers were deployed in St Michaels as part of the response to the December 2015 floods. [TAB] (p8)</p></div><div class="nugget-popup"><p>Subject of Environment Agency pumping activities during the December 2015 floods (pumping undertaken to manage floodwaters). (p9)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties in the Rawcliffe Road area during the December 2015 event; properties suffered internal inundation. [PAG] (p18)</p></div><div class="nugget-popup"><p>Flooding in the St Michaels area: 2 properties on Moss Side Road flooded on 05 Dec 2015; the wider St Michaels area also includes the Rawcliffe Road internal flooding incident (see Rawcliffe Road entry). [PAG,MUL] (p19)</p></div><div class="nugget-popup"><p>Two properties were flooded on 5 December 2015; EA mapping indicates the affected property is adjacent to an area of high surface water flood risk. [TAB] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 residential properties [PAG] (p18)</p></div><div class="nugget-popup quant"><p>2 properties; 5 residential properties [PAG,MUL] (p19)</p></div><div class="nugget-popup quant"><p>2 properties [TAB] (p20)</p></div></div></body></div>`)[0];
+                popup_e3690f84df5640928f0dd55bea53dfaf.setContent(html_9e1cd503c9ceb180f7a4cf349e4894d2);
+            
+        
+
+        marker_c268d0294f1919fb8fb231c0f57aa1db.bindPopup(popup_e3690f84df5640928f0dd55bea53dfaf)
+        ;
+
+        
+    
+    
+            var marker_d076180275b6b9428a4bccad52885463 = L.marker(
+                [53.82241346770246, -2.4078975614186295],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_494fdc5f379b40a0e5810715a196fb1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d076180275b6b9428a4bccad52885463.setIcon(icon_494fdc5f379b40a0e5810715a196fb1a);
+        
+    
+        var popup_726a1977dfa471bba91a053c83afa015 = L.popup({});
+
+        
+            
+                var html_22a318dc211d2662c53e3c672777bf9c = $(`<div id="html_22a318dc211d2662c53e3c672777bf9c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Whalley</h1><div class="nugget-popup"><p>Demountable flood barriers were deployed in Whalley as part of the response to the December 2015 floods. [TAB] (p8)</p></div><div class="nugget-popup"><p>Flooding affected residents in the area during December 2015; a recovery drop&ndash;in was held in Whalley on 10 Feb 2016 to provide information, support and to gather eyewitness reports. (p9)</p></div></div></body></div>`)[0];
+                popup_726a1977dfa471bba91a053c83afa015.setContent(html_22a318dc211d2662c53e3c672777bf9c);
+            
+        
+
+        marker_d076180275b6b9428a4bccad52885463.bindPopup(popup_726a1977dfa471bba91a053c83afa015)
+        ;
+
+        
+    
+    
+            var marker_7dc618fd997b59a760bed38c2385c215 = L.marker(
+                [53.63459181983808, -2.8158995669174196],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_0ad0febe76fcf1de2d93fe5c6826e448 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7dc618fd997b59a760bed38c2385c215.setIcon(icon_0ad0febe76fcf1de2d93fe5c6826e448);
+        
+    
+        var popup_318721eb761d46d3e27a542270f3a1ab = L.popup({});
+
+        
+            
+                var html_da11e8ecc096b46b5971f682cdaade57 = $(`<div id="html_da11e8ecc096b46b5971f682cdaade57" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rufford</h1><div class="nugget-popup"><p>Subject of Environment Agency pumping activities during the December 2015 floods (pumping undertaken to manage floodwaters). (p9)</p></div></div></body></div>`)[0];
+                popup_318721eb761d46d3e27a542270f3a1ab.setContent(html_da11e8ecc096b46b5971f682cdaade57);
+            
+        
+
+        marker_7dc618fd997b59a760bed38c2385c215.bindPopup(popup_318721eb761d46d3e27a542270f3a1ab)
+        ;
+
+        
+    
+    
+            var marker_e036907d35ff3f88d1bc6e1aa5a30abd = L.marker(
+                [53.66187410234079, -2.7761246324411504],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_581147c29985bbfcbd2f94356921c16e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e036907d35ff3f88d1bc6e1aa5a30abd.setIcon(icon_581147c29985bbfcbd2f94356921c16e);
+        
+    
+        var popup_8c9f9c8fa9d7e6bb72636e82718f8656 = L.popup({});
+
+        
+            
+                var html_61f6b042182f107b3fd61a8c5af2b498 = $(`<div id="html_61f6b042182f107b3fd61a8c5af2b498" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Croston</h1><div class="nugget-popup"><p>The Environment Agency carried out pumping activities in Croston in response to flooding during the December 2015 storms and rainfall. (p9)</p></div></div></body></div>`)[0];
+                popup_8c9f9c8fa9d7e6bb72636e82718f8656.setContent(html_61f6b042182f107b3fd61a8c5af2b498);
+            
+        
+
+        marker_e036907d35ff3f88d1bc6e1aa5a30abd.bindPopup(popup_8c9f9c8fa9d7e6bb72636e82718f8656)
+        ;
+
+        
+    
+    
+            var marker_05872c5d31163dbf22b474e020260e7b = L.marker(
+                [53.790726, -2.2439196],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_e7d5de2834724b5335cb258224ed32e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_05872c5d31163dbf22b474e020260e7b.setIcon(icon_e7d5de2834724b5335cb258224ed32e0);
+        
+    
+        var popup_d234a436d3c49f97f9e73aa419ac43f1 = L.popup({});
+
+        
+            
+                var html_750be3bba4a14df46e1589a7dcfd2435 = $(`<div id="html_750be3bba4a14df46e1589a7dcfd2435" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burnley</h1><div class="nugget-popup"><p>Flooding affected residents and businesses in December 2015; a recovery drop&ndash;in was held at St Leonard's Primary School on 03 Feb 2016 to advise and support those impacted. (p9)</p></div></div></body></div>`)[0];
+                popup_d234a436d3c49f97f9e73aa419ac43f1.setContent(html_750be3bba4a14df46e1589a7dcfd2435);
+            
+        
+
+        marker_05872c5d31163dbf22b474e020260e7b.bindPopup(popup_d234a436d3c49f97f9e73aa419ac43f1)
+        ;
+
+        
+    
+    
+            var marker_2fb993a618f8671e4fb4fe5e6ba0f15f = L.marker(
+                [53.6775859865751, -2.316467158860694],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_7cabf855cfd10b432b339c85f265048d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2fb993a618f8671e4fb4fe5e6ba0f15f.setIcon(icon_7cabf855cfd10b432b339c85f265048d);
+        
+    
+        var popup_4465bc236e836124c8735875a357540d = L.popup({});
+
+        
+            
+                var html_57b403d004f3fa432d46d56b22fb7699 = $(`<div id="html_57b403d004f3fa432d46d56b22fb7699" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Irwell Vale</h1><div class="nugget-popup"><p>Impacted by the December 2015 storms/rainfall that caused flooding in Lancashire; local residents were affected and a multi&ndash;agency drop&ndash;in event to provide flood recovery advice and support was held in Irwell Vale on 10 Feb 2016. (p9)</p></div></div></body></div>`)[0];
+                popup_4465bc236e836124c8735875a357540d.setContent(html_57b403d004f3fa432d46d56b22fb7699);
+            
+        
+
+        marker_2fb993a618f8671e4fb4fe5e6ba0f15f.bindPopup(popup_4465bc236e836124c8735875a357540d)
+        ;
+
+        
+    
+    
+            var marker_8ac5a64c3e1fd05975eb600c13cecb1c = L.marker(
+                [53.9080136, -2.7417],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_3ed36840fbeeb3c1fb4de87dd8e66688 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8ac5a64c3e1fd05975eb600c13cecb1c.setIcon(icon_3ed36840fbeeb3c1fb4de87dd8e66688);
+        
+    
+        var popup_ef36a1bd592b1216d9c1929684ec4fbe = L.popup({});
+
+        
+            
+                var html_627eaee793f7e26a5ee3ddb34647ee39 = $(`<div id="html_627eaee793f7e26a5ee3ddb34647ee39" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barnacre</h1><div class="nugget-popup"><p>Two properties suffered internal flooding on 5 December 2015; the affected properties are adjacent to an unnamed ordinary watercourse though the primary source of the flooding is not confirmed. (p12)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (p12)</p></div></div></body></div>`)[0];
+                popup_ef36a1bd592b1216d9c1929684ec4fbe.setContent(html_627eaee793f7e26a5ee3ddb34647ee39);
+            
+        
+
+        marker_8ac5a64c3e1fd05975eb600c13cecb1c.bindPopup(popup_ef36a1bd592b1216d9c1929684ec4fbe)
+        ;
+
+        
+    
+    
+            var marker_76f00632123cd1e8d8fc3484ee53ac8b = L.marker(
+                [53.9325293, -2.7595152],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_c157a3bcb04b73427677d2cf7a094177 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_76f00632123cd1e8d8fc3484ee53ac8b.setIcon(icon_c157a3bcb04b73427677d2cf7a094177);
+        
+    
+        var popup_a71e88705dce8dddd75264dd35ddcfef = L.popup({});
+
+        
+            
+                var html_b652263605339f2a952227fa9a025fd7 = $(`<div id="html_b652263605339f2a952227fa9a025fd7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Scorton</h1><div class="nugget-popup"><p>Internal flooding reported in the Scorton/Forton (Cleveley Bridge) area: 1 property was affected by flooding on 5 December 2015. [PAG] (p16)</p></div><div class="nugget-popup"><p>One property adjacent to the River Wyre was internally flooded; property lies within fluvial Flood Zone 3. [MUL] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [PAG] (p16)</p></div><div class="nugget-popup quant"><p>1 property [MUL] (p17)</p></div></div></body></div>`)[0];
+                popup_a71e88705dce8dddd75264dd35ddcfef.setContent(html_b652263605339f2a952227fa9a025fd7);
+            
+        
+
+        marker_76f00632123cd1e8d8fc3484ee53ac8b.bindPopup(popup_a71e88705dce8dddd75264dd35ddcfef)
+        ;
+
+        
+    
+    
+            var marker_cb8628339d08505d0af434b26bd770ba = L.marker(
+                [53.95586662632255, -2.7821312278964028],
+                {}
+            ).addTo(map_074622ee567ba362e54a58b4c3ce3905);
+        
+    
+            var icon_5e85a2f4755bdb4b4c1048b8defcc4b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cb8628339d08505d0af434b26bd770ba.setIcon(icon_5e85a2f4755bdb4b4c1048b8defcc4b2);
+        
+    
+        var popup_061a79f5b4e477e70a4d4f582753a5ac = L.popup({});
+
+        
+            
+                var html_865689076b1d73a1fd1faf2a31199811 = $(`<div id="html_865689076b1d73a1fd1faf2a31199811" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Forton</h1><div class="nugget-popup"><p>Highway flooding was reported to the west of the Cleveley Bridge area on 5 December 2015 (no internal flooding reported at that highway location). Approximately 1 km downstream, Six Arches Caravan Park experienced flooding that inundated caravans. [PAG] (p16)</p></div><div class="nugget-popup"><p>Highway flooding reported to the west of the location; no internal property flooding reported. (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 caravans [PAG] (p16)</p></div></div></body></div>`)[0];
+                popup_061a79f5b4e477e70a4d4f582753a5ac.setContent(html_865689076b1d73a1fd1faf2a31199811);
+            
+        
+
+        marker_cb8628339d08505d0af434b26bd770ba.bindPopup(popup_061a79f5b4e477e70a4d4f582753a5ac)
+        ;
+
+        
+    
+</script>
+</html>

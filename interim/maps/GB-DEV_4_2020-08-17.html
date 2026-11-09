@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a811d56d7eeced26783b1bf61ba43f09 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a811d56d7eeced26783b1bf61ba43f09" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a811d56d7eeced26783b1bf61ba43f09 = L.map(
+                "map_a811d56d7eeced26783b1bf61ba43f09",
+                {
+                    center: [50.90380847034007, -3.844045960186681],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_844120cd6643f0f4fadda79b72b6d80e = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_844120cd6643f0f4fadda79b72b6d80e.addTo(map_a811d56d7eeced26783b1bf61ba43f09);
+    
+            var marker_37867d6aacda7e00a288b4bc323ef791 = L.marker(
+                [50.722195159375865, -3.532216042358152],
+                {}
+            ).addTo(map_a811d56d7eeced26783b1bf61ba43f09);
+        
+    
+            var icon_8ed83364c79ad92cf2220e9b2cbec919 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_37867d6aacda7e00a288b4bc323ef791.setIcon(icon_8ed83364c79ad92cf2220e9b2cbec919);
+        
+    
+        var popup_243417c1a303839d21d2777957ff5d81 = L.popup({});
+
+        
+            
+                var html_3d34abc6a6885a044f4def3564bfaa9b = $(`<div id="html_3d34abc6a6885a044f4def3564bfaa9b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Exeter District</h1><div class="nugget-popup"><p>Experienced surface water flooding associated with the intense, localised rainfall event which led to internal property flooding in affected areas. [PAG] (p1)</p></div><div class="nugget-popup"><p>Surface water flooding resulted in internal flooding of properties within the city. [IMG,TAB] (p2)</p></div><div class="nugget-popup"><p>Internal flooding of properties due to intense short&ndash;duration rainfall overwhelming drainage. Six properties flooded internally (five residential, one commercial); Longbrook Street and Victoria Street noted for high levels of surface water. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties flooded [IMG,TAB] (p2)</p></div><div class="nugget-popup quant"><p>6 properties (5 residential, 1 commercial) (p5)</p></div></div></body></div>`)[0];
+                popup_243417c1a303839d21d2777957ff5d81.setContent(html_3d34abc6a6885a044f4def3564bfaa9b);
+            
+        
+
+        marker_37867d6aacda7e00a288b4bc323ef791.bindPopup(popup_243417c1a303839d21d2777957ff5d81)
+        ;
+
+        
+    
+    
+            var marker_e29c7bea7c7f7e49ec7b16671d4a9353 = L.marker(
+                [51.077865700000004, -4.058596501826933],
+                {}
+            ).addTo(map_a811d56d7eeced26783b1bf61ba43f09);
+        
+    
+            var icon_23f49713dfc6a7bc46d3482b5db090ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e29c7bea7c7f7e49ec7b16671d4a9353.setIcon(icon_23f49713dfc6a7bc46d3482b5db090ef);
+        
+    
+        var popup_e7451758b177d56bae25a85f4f00d549 = L.popup({});
+
+        
+            
+                var html_c337ea26090deb81cae4f8df316b48c2 = $(`<div id="html_c337ea26090deb81cae4f8df316b48c2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Square, Barnstaple</h1><div class="nugget-popup"><p>The Square in Barnstaple experienced surface water flooding as part of the town&ndash;centre impacts during the event; contributed to localised transport disruption. (p2)</p></div></div></body></div>`)[0];
+                popup_e7451758b177d56bae25a85f4f00d549.setContent(html_c337ea26090deb81cae4f8df316b48c2);
+            
+        
+
+        marker_e29c7bea7c7f7e49ec7b16671d4a9353.bindPopup(popup_e7451758b177d56bae25a85f4f00d549)
+        ;
+
+        
+    
+    
+            var marker_98a70d2dff70630111c47f560ebeeebc = L.marker(
+                [50.729282, -3.5261471],
+                {}
+            ).addTo(map_a811d56d7eeced26783b1bf61ba43f09);
+        
+    
+            var icon_6c7ba223d93379e93bbee9926e041940 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_98a70d2dff70630111c47f560ebeeebc.setIcon(icon_6c7ba223d93379e93bbee9926e041940);
+        
+    
+        var popup_02c6544562aeb8ef3caecfab3326690c = L.popup({});
+
+        
+            
+                var html_9acadb66f0c5d499bf051d69134ea9f9 = $(`<div id="html_9acadb66f0c5d499bf051d69134ea9f9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Longbrook Street, Exeter District</h1><div class="nugget-popup"><p>High levels of surface water during the intense short&ndash;duration rainfall event, contributing to local flooding impacts in Central Exeter. (p5)</p></div></div></body></div>`)[0];
+                popup_02c6544562aeb8ef3caecfab3326690c.setContent(html_9acadb66f0c5d499bf051d69134ea9f9);
+            
+        
+
+        marker_98a70d2dff70630111c47f560ebeeebc.bindPopup(popup_02c6544562aeb8ef3caecfab3326690c)
+        ;
+
+        
+    
+    
+            var marker_0ab3e2910e5d64c53cc0201aa087ddb1 = L.marker(
+                [50.7323097, -3.5208387],
+                {}
+            ).addTo(map_a811d56d7eeced26783b1bf61ba43f09);
+        
+    
+            var icon_96e45b7f3ca7c60b84f7a2acb40c3ce3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0ab3e2910e5d64c53cc0201aa087ddb1.setIcon(icon_96e45b7f3ca7c60b84f7a2acb40c3ce3);
+        
+    
+        var popup_6584a38425d65083eb516c8623f36ab9 = L.popup({});
+
+        
+            
+                var html_513069a670ea722c0351c04d18105a55 = $(`<div id="html_513069a670ea722c0351c04d18105a55" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Victoria Street, Exeter District</h1><div class="nugget-popup"><p>High levels of surface water during the intense short&ndash;duration rainfall event, contributing to local flooding impacts in Central Exeter. (p5)</p></div></div></body></div>`)[0];
+                popup_6584a38425d65083eb516c8623f36ab9.setContent(html_513069a670ea722c0351c04d18105a55);
+            
+        
+
+        marker_0ab3e2910e5d64c53cc0201aa087ddb1.bindPopup(popup_6584a38425d65083eb516c8623f36ab9)
+        ;
+
+        
+    
+    
+            var marker_1a2d45cf23686f8b9b528aa738ffdedf = L.marker(
+                [50.724140500000004, -3.6607788161410735],
+                {}
+            ).addTo(map_a811d56d7eeced26783b1bf61ba43f09);
+        
+    
+            var icon_dbf95f4ccf7f06e3a3ce0ea10706e857 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1a2d45cf23686f8b9b528aa738ffdedf.setIcon(icon_dbf95f4ccf7f06e3a3ce0ea10706e857);
+        
+    
+        var popup_c0ab16e76bed3b9c689254645a347915 = L.popup({});
+
+        
+            
+                var html_b0ea96a807664d701e88f12d18fdff86 = $(`<div id="html_b0ea96a807664d701e88f12d18fdff86" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Devon</h1><div class="nugget-popup"><p>Intense, very localised rainfall overwhelmed drainage systems across Devon, causing widespread surface water runoff and high numbers of internal property floodings. (p1)</p></div><div class="nugget-popup"><p>Widespread surface water flooding across the county on 17 August 2020 causing internal flooding to properties and disruption to transport networks; totals reported for the event were 175 properties flooded across Devon, concentrated in Barnstaple. [IMG] (p2)</p></div><div class="nugget-popup"><p>A very short&ndash;duration, high&ndash;intensity rainfall event produced large volumes of surface water that overwhelmed local drainage across Devon, affecting multiple areas (including Crediton, Holsworthy, Newton Abbot, North Tawton and Okehampton) and causing flooding of residential properties. [TAB] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>175 properties internal flooding; 128 residential; 47 commercial; 164 properties in Barnstaple (p1)</p></div><div class="nugget-popup quant"><p>175 properties flooded; 128 residential; 47 commercial; 164 properties in Barnstaple (of which 118 residential and 46 commercial) [IMG] (p2)</p></div><div class="nugget-popup quant"><p>5 properties (across Crediton, Holsworthy, Newton Abbot, North Tawton and Okehampton) [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_c0ab16e76bed3b9c689254645a347915.setContent(html_b0ea96a807664d701e88f12d18fdff86);
+            
+        
+
+        marker_1a2d45cf23686f8b9b528aa738ffdedf.bindPopup(popup_c0ab16e76bed3b9c689254645a347915)
+        ;
+
+        
+    
+    
+            var marker_4f24b5e90bdfb08cab7802a82950dc3d = L.marker(
+                [51.0339991, -2.9490119],
+                {}
+            ).addTo(map_a811d56d7eeced26783b1bf61ba43f09);
+        
+    
+            var icon_afda178172b34b80cb7de051411345c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4f24b5e90bdfb08cab7802a82950dc3d.setIcon(icon_afda178172b34b80cb7de051411345c4);
+        
+    
+        var popup_57c747d53a31a5f3151329a1fca8cb02 = L.popup({});
+
+        
+            
+                var html_9cdbac0a2b6e0124e8b1f7a31bce3191 = $(`<div id="html_9cdbac0a2b6e0124e8b1f7a31bce3191" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South West England</h1><div class="nugget-popup"><p>Repeated short&ndash;duration, high&ndash;intensity rainfall events caused surface water flooding in Barnstaple. Highway flooding made many key roads impassable and brought traffic to a standstill; the Square experienced high levels of surface water and was impassable. Major routes (A361 and A39) were blocked by floodwater, causing congestion on surrounding roads. Local drainage was overwhelmed and rapidly surcharged so flood water could not enter the drainage system. Prior incidents also resulted in properties being flooded in residential areas of the town (see quantified impacts). [IMG,MUL] (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (Signal Terrace/Clifton Terrace, 19/01/2016); 3 properties (Bradiford, 19/11/2016); 5 properties (Sherrats Oak, Raleigh, 20/11/2016) [IMG,MUL] (p4)</p></div></div></body></div>`)[0];
+                popup_57c747d53a31a5f3151329a1fca8cb02.setContent(html_9cdbac0a2b6e0124e8b1f7a31bce3191);
+            
+        
+
+        marker_4f24b5e90bdfb08cab7802a82950dc3d.bindPopup(popup_57c747d53a31a5f3151329a1fca8cb02)
+        ;
+
+        
+    
+    
+            var marker_003e0bc06ea7a1c50892e9a0b49a9f3e = L.marker(
+                [51.080406, -4.0600467],
+                {}
+            ).addTo(map_a811d56d7eeced26783b1bf61ba43f09);
+        
+    
+            var icon_22673e68a5039f15cfb854d1c84c422b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_003e0bc06ea7a1c50892e9a0b49a9f3e.setIcon(icon_22673e68a5039f15cfb854d1c84c422b);
+        
+    
+        var popup_8faa9ffe6a31b14664c961ca46cf7d0d = L.popup({});
+
+        
+            
+                var html_9eca15c33f929cd5c29492ead48b1720 = $(`<div id="html_9eca15c33f929cd5c29492ead48b1720" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barnstaple</h1><div class="nugget-popup"><p>Drainage systems were overwhelmed by intense, localised rainfall causing internal property flooding; Barnstaple was the worst affected location. [PAG] (p1)</p></div><div class="nugget-popup"><p>Widespread, localised surface water flooding across the town. Some areas experienced mainly external flooding to gardens and outbuildings while others suffered internal flooding to dwellings and businesses. Significant disruption to the highway network in Barnstaple town centre (including The Square); A361 and A39 were reported blocked by flooding, causing congestion. [IMG,TAB,PAG] (p2)</p></div><div class="nugget-popup"><p>Very localised, high&ndash;intensity rainfall on 17 August produced large volumes of surface water that overwhelmed drainage. Some areas experienced external flooding to gardens and outbuildings while others suffered internal flooding to dwellings and businesses. Major transport routes (A361 and A39) were blocked by flooding, causing congestion on surrounding roads. Localised but widespread property flooding concentrated in central Barnstaple and along the river. [IMG] (p3)</p></div><div class="nugget-popup"><p>High&ndash;intensity short&ndash;duration rainfall caused local drainage to be overwhelmed and rapidly surcharge. Key roads became impassable; The Square experienced high levels of surface water and was impassable; major routes (A361 and A39) were blocked by floodwater, causing congestion on surrounding roads. Floodwater drained away once the storm abated. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>164 properties flooded (part of 175 total properties flooded across Devon; 128 residential and 47 commercial) [PAG] (p1)</p></div><div class="nugget-popup quant"><p>164 properties flooded internally (118 residential, 46 commercial) [IMG,TAB,PAG] (p2)</p></div><div class="nugget-popup quant"><p>164 properties flooded internally; 118 residential; 46 commercial [IMG] (p3)</p></div></div></body></div>`)[0];
+                popup_8faa9ffe6a31b14664c961ca46cf7d0d.setContent(html_9eca15c33f929cd5c29492ead48b1720);
+            
+        
+
+        marker_003e0bc06ea7a1c50892e9a0b49a9f3e.bindPopup(popup_8faa9ffe6a31b14664c961ca46cf7d0d)
+        ;
+
+        
+    
+    
+            var marker_86391093835d59a921d07b8d2be85cf6 = L.marker(
+                [50.8132471, -4.3536662410714255],
+                {}
+            ).addTo(map_a811d56d7eeced26783b1bf61ba43f09);
+        
+    
+            var icon_61a2e4270db402f2f569a58f6a4de433 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_86391093835d59a921d07b8d2be85cf6.setIcon(icon_61a2e4270db402f2f569a58f6a4de433);
+        
+    
+        var popup_ff717653b7b738e6ad59146f02b9b0fc = L.popup({});
+
+        
+            
+                var html_61fac21e7514d376eaa39e3647cf2e97 = $(`<div id="html_61fac21e7514d376eaa39e3647cf2e97" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holsworthy</h1><div class="nugget-popup"><p>Subject to surface water flooding from intense, localised rainfall during the event, contributing to internal property flooding in the area. [PAG] (p1)</p></div><div class="nugget-popup"><p>Surface water caused internal flooding to property(ies) in the town. [TAB] (p2)</p></div><div class="nugget-popup"><p>Intense short&ndash;duration rainfall led to surface water overwhelming drainage adjacent to properties, resulting in internal flooding of residential properties. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property flooded [TAB] (p2)</p></div><div class="nugget-popup quant"><p>5 properties (across Crediton, Holsworthy, Newton Abbot, North Tawton and Okehampton) (p5)</p></div></div></body></div>`)[0];
+                popup_ff717653b7b738e6ad59146f02b9b0fc.setContent(html_61fac21e7514d376eaa39e3647cf2e97);
+            
+        
+
+        marker_86391093835d59a921d07b8d2be85cf6.bindPopup(popup_ff717653b7b738e6ad59146f02b9b0fc)
+        ;
+
+        
+    
+    
+            var marker_c078b74fb99e4d217f6a42514d198f16 = L.marker(
+                [50.5296441, -3.6112097],
+                {}
+            ).addTo(map_a811d56d7eeced26783b1bf61ba43f09);
+        
+    
+            var icon_b7b285357063018b97870bc50f07ed7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c078b74fb99e4d217f6a42514d198f16.setIcon(icon_b7b285357063018b97870bc50f07ed7a);
+        
+    
+        var popup_5508953ee21c71f8c912ce25b332c4d1 = L.popup({});
+
+        
+            
+                var html_554bb62a5e579f33572266ca2d1b43b5 = $(`<div id="html_554bb62a5e579f33572266ca2d1b43b5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Newton Abbot</h1><div class="nugget-popup"><p>Experienced surface water flooding linked to the intense, localised rainfall event, which led to internal property flooding in affected locations. [PAG] (p1)</p></div><div class="nugget-popup"><p>Surface water resulted in internal flooding to property(ies) in the town. [IMG,TAB] (p2)</p></div><div class="nugget-popup"><p>Intense short&ndash;duration rainfall led to surface water overwhelming drainage adjacent to properties, resulting in internal flooding of residential properties. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property flooded [IMG,TAB] (p2)</p></div><div class="nugget-popup quant"><p>5 properties (across Crediton, Holsworthy, Newton Abbot, North Tawton and Okehampton) (p5)</p></div></div></body></div>`)[0];
+                popup_5508953ee21c71f8c912ce25b332c4d1.setContent(html_554bb62a5e579f33572266ca2d1b43b5);
+            
+        
+
+        marker_c078b74fb99e4d217f6a42514d198f16.bindPopup(popup_5508953ee21c71f8c912ce25b332c4d1)
+        ;
+
+        
+    
+    
+            var marker_cf8b1008c05f141dc4737beedcf6fe8e = L.marker(
+                [50.7376766, -4.000319],
+                {}
+            ).addTo(map_a811d56d7eeced26783b1bf61ba43f09);
+        
+    
+            var icon_cd32171d1264e5b5de5ab22f767110cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cf8b1008c05f141dc4737beedcf6fe8e.setIcon(icon_cd32171d1264e5b5de5ab22f767110cf);
+        
+    
+        var popup_3df0e9a9dedd02dc745bea5b66df0c43 = L.popup({});
+
+        
+            
+                var html_f21f3c4a8c916bb3df2b367836fd7366 = $(`<div id="html_f21f3c4a8c916bb3df2b367836fd7366" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Okehampton</h1><div class="nugget-popup"><p>Impacted by surface water flooding during the intense, localised rainfall event, resulting in internal property flooding in the area. [PAG] (p1)</p></div><div class="nugget-popup"><p>Internal property flooding caused by surface water when drainage was overwhelmed by intense, localised rainfall. [IMG,TAB] (p2)</p></div><div class="nugget-popup"><p>Intense short&ndash;duration rainfall led to surface water overwhelming drainage adjacent to properties, resulting in internal flooding of residential properties. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [IMG,TAB] (p2)</p></div><div class="nugget-popup quant"><p>5 properties (across Crediton, Holsworthy, Newton Abbot, North Tawton and Okehampton) (p5)</p></div></div></body></div>`)[0];
+                popup_3df0e9a9dedd02dc745bea5b66df0c43.setContent(html_f21f3c4a8c916bb3df2b367836fd7366);
+            
+        
+
+        marker_cf8b1008c05f141dc4737beedcf6fe8e.bindPopup(popup_3df0e9a9dedd02dc745bea5b66df0c43)
+        ;
+
+        
+    
+    
+            var marker_1ee2dd8456e7249518591e21770f8841 = L.marker(
+                [50.80009110674535, -3.8980850819626776],
+                {}
+            ).addTo(map_a811d56d7eeced26783b1bf61ba43f09);
+        
+    
+            var icon_8c478bace0c9dda284ddcc4b5a84e985 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1ee2dd8456e7249518591e21770f8841.setIcon(icon_8c478bace0c9dda284ddcc4b5a84e985);
+        
+    
+        var popup_a600e366ec0d046b42ccfe21e90fffab = L.popup({});
+
+        
+            
+                var html_2210369c8f37a480eb615cf6beacd481 = $(`<div id="html_2210369c8f37a480eb615cf6beacd481" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>North Tawton</h1><div class="nugget-popup"><p>Experienced surface water flooding as part of the intense, localised rainfall event that caused internal property flooding in affected towns and villages. [PAG] (p1)</p></div><div class="nugget-popup"><p>Surface water caused internal flooding to property(ies) in the town. [TAB] (p2)</p></div><div class="nugget-popup"><p>Intense short&ndash;duration rainfall led to surface water overwhelming drainage adjacent to properties, resulting in internal flooding of residential properties. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property flooded [TAB] (p2)</p></div><div class="nugget-popup quant"><p>5 properties (across Crediton, Holsworthy, Newton Abbot, North Tawton and Okehampton) (p5)</p></div></div></body></div>`)[0];
+                popup_a600e366ec0d046b42ccfe21e90fffab.setContent(html_2210369c8f37a480eb615cf6beacd481);
+            
+        
+
+        marker_1ee2dd8456e7249518591e21770f8841.bindPopup(popup_a600e366ec0d046b42ccfe21e90fffab)
+        ;
+
+        
+    
+    
+            var marker_ccea6645014e646ddd43fe09c2bc1c07 = L.marker(
+                [50.789585, -3.658963],
+                {}
+            ).addTo(map_a811d56d7eeced26783b1bf61ba43f09);
+        
+    
+            var icon_bb8c782ef530a166f1bdc995426baedf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ccea6645014e646ddd43fe09c2bc1c07.setIcon(icon_bb8c782ef530a166f1bdc995426baedf);
+        
+    
+        var popup_d0ad740374eda2135b4d7bca97393a7b = L.popup({});
+
+        
+            
+                var html_9ebb6f9620642386a73a18f844e54122 = $(`<div id="html_9ebb6f9620642386a73a18f844e54122" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Crediton</h1><div class="nugget-popup"><p>Internal property flooding associated with intense, localised rainfall and overwhelmed drainage as part of the 17 August 2020 surface&ndash;water flooding event in Devon. [PAG] (p1)</p></div><div class="nugget-popup"><p>Surface water led to internal flooding of property(ies) in the town. [IMG,TAB] (p2)</p></div><div class="nugget-popup"><p>Intense short&ndash;duration rainfall led to surface water overwhelming drainage adjacent to properties, resulting in internal flooding of residential properties. (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property flooded [IMG,TAB] (p2)</p></div><div class="nugget-popup quant"><p>5 properties (across Crediton, Holsworthy, Newton Abbot, North Tawton and Okehampton) (p5)</p></div></div></body></div>`)[0];
+                popup_d0ad740374eda2135b4d7bca97393a7b.setContent(html_9ebb6f9620642386a73a18f844e54122);
+            
+        
+
+        marker_ccea6645014e646ddd43fe09c2bc1c07.bindPopup(popup_d0ad740374eda2135b4d7bca97393a7b)
+        ;
+
+        
+    
+</script>
+</html>

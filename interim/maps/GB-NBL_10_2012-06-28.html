@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2031f175a8afda70c8a2f1bd6fc1ba5c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2031f175a8afda70c8a2f1bd6fc1ba5c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2031f175a8afda70c8a2f1bd6fc1ba5c = L.map(
+                "map_2031f175a8afda70c8a2f1bd6fc1ba5c",
+                {
+                    center: [54.9754482186767, -2.5268415011287333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_77906a90b6b3ae76b73aa4ad68fc636a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_77906a90b6b3ae76b73aa4ad68fc636a.addTo(map_2031f175a8afda70c8a2f1bd6fc1ba5c);
+    
+            var marker_3d6800f51ae9143058de421f5a8125b4 = L.marker(
+                [54.9762514, -2.5274155],
+                {}
+            ).addTo(map_2031f175a8afda70c8a2f1bd6fc1ba5c);
+        
+    
+            var icon_fee24a6ddef8b580262a111e7c3f09c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3d6800f51ae9143058de421f5a8125b4.setIcon(icon_fee24a6ddef8b580262a111e7c3f09c8);
+        
+    
+        var popup_b93b33acb323c3d0a4365f7c12036be3 = L.popup({});
+
+        
+            
+                var html_d191c9edcf35df7613214587b79a5d3d = $(`<div id="html_d191c9edcf35df7613214587b79a5d3d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bankfoot</h1><div class="nugget-popup"><p>High flows in ordinary watercourses, combined with surface water runoff and debris&ndash;blocked culverts, caused water to come out of bank and flood residential areas and roads in Bankfoot. [IMG] (p1)</p></div><div class="nugget-popup"><p>A culvert entrance in Bankfoot was heavily blocked by vegetation and woody debris, obstructing the watercourse and reducing flow velocity. The blockage caused accumulation of sediment and backwater effects upstream of the culvert and likely contributed to local drainage issues and flooding risk. [IMG] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties; 4 roads (combined Bankfoot/Blenkinsopp) [IMG] (p1)</p></div></div></body></div>`)[0];
+                popup_b93b33acb323c3d0a4365f7c12036be3.setContent(html_d191c9edcf35df7613214587b79a5d3d);
+            
+        
+
+        marker_3d6800f51ae9143058de421f5a8125b4.bindPopup(popup_b93b33acb323c3d0a4365f7c12036be3)
+        ;
+
+        
+    
+    
+            var marker_cf46ac9f1e2ecb0448bfaffbf5b37f9c = L.marker(
+                [54.97464503735341, -2.526267502257466],
+                {}
+            ).addTo(map_2031f175a8afda70c8a2f1bd6fc1ba5c);
+        
+    
+            var icon_edb3986987c8a0801720e57082d73948 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cf46ac9f1e2ecb0448bfaffbf5b37f9c.setIcon(icon_edb3986987c8a0801720e57082d73948);
+        
+    
+        var popup_526ba589035b12d555b0cb888d7b9ec1 = L.popup({});
+
+        
+            
+                var html_2b7628f4aabce64c12a70c13e6f0a5b8 = $(`<div id="html_2b7628f4aabce64c12a70c13e6f0a5b8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Blenkinsopp</h1><div class="nugget-popup"><p>High flows in ordinary watercourses, combined with surface water runoff and debris&ndash;blocked culverts, caused water to come out of bank and flood residential areas and roads in Blenkinsopp. [IMG] (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties; 4 roads (combined Bankfoot/Blenkinsopp) [IMG] (p1)</p></div></div></body></div>`)[0];
+                popup_526ba589035b12d555b0cb888d7b9ec1.setContent(html_2b7628f4aabce64c12a70c13e6f0a5b8);
+            
+        
+
+        marker_cf46ac9f1e2ecb0448bfaffbf5b37f9c.bindPopup(popup_526ba589035b12d555b0cb888d7b9ec1)
+        ;
+
+        
+    
+</script>
+</html>

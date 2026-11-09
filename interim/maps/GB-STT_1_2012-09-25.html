@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7de4e9e3f9e6b8017dfbb46036eaa106 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7de4e9e3f9e6b8017dfbb46036eaa106" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7de4e9e3f9e6b8017dfbb46036eaa106 = L.map(
+                "map_7de4e9e3f9e6b8017dfbb46036eaa106",
+                {
+                    center: [54.52681790255861, -1.3342179334508935],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ec2c7583ce097de731b41e4e9a0db19e = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_ec2c7583ce097de731b41e4e9a0db19e.addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+    
+            var marker_d42f94c9561df1dc015fb1771c15d991 = L.marker(
+                [54.5997639, -1.3025139],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_b252e227d5be6e52190c38c868e5778f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d42f94c9561df1dc015fb1771c15d991.setIcon(icon_b252e227d5be6e52190c38c868e5778f);
+        
+    
+        var popup_e265d00b9de169da265fde95cff6fe4b = L.popup({});
+
+        
+            
+                var html_a5e6747f334bec5e9e2de38fc1e92b8e = $(`<div id="html_a5e6747f334bec5e9e2de38fc1e92b8e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Billingham Beck Valley Country Park</h1><div class="nugget-popup"><p>Billingham Bottoms was reported as one of the worst affected communities during the 25&ndash;26 September 2012 event, experiencing major flooding with internal property flooding and associated local disruption. (p11)</p></div><div class="nugget-popup"><p>Billingham Beck overtopped onto floodplain land and inundated the allotments and Billingham Beck Country Park as river levels rose. (p32)</p></div><div class="nugget-popup"><p>Surface water/drainage problems affected the Billingham Bottoms area; the drainage ditch/channel between the fleet ponds needs restoring and silt levels in the fleet pond must be investigated to address flooding and outfall performance. [TAB,PAG] (p40)</p></div><div class="nugget-popup"><p>The channel/drainage between fleet ponds and the reach downstream of the drainage outfall was overgrown/silted, impairing flow and contributing to local surface water flooding; Highway Agency to clear reeds and check for blockages. (p41)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30 metres (p41)</p></div></div></body></div>`)[0];
+                popup_e265d00b9de169da265fde95cff6fe4b.setContent(html_a5e6747f334bec5e9e2de38fc1e92b8e);
+            
+        
+
+        marker_d42f94c9561df1dc015fb1771c15d991.bindPopup(popup_e265d00b9de169da265fde95cff6fe4b)
+        ;
+
+        
+    
+    
+            var marker_eeff8fe36b1c9f3a3ae38612dedab050 = L.marker(
+                [54.5580896, -1.3308899],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_384f3055173b09aca2877444ec8ba0b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eeff8fe36b1c9f3a3ae38612dedab050.setIcon(icon_384f3055173b09aca2877444ec8ba0b9);
+        
+    
+        var popup_256099ddb9935bcd22572a404860d841 = L.popup({});
+
+        
+            
+                var html_1cc317ff3ceb095e30aa3420f5d430c0 = $(`<div id="html_1cc317ff3ceb095e30aa3420f5d430c0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ropner Park</h1><div class="nugget-popup"><p>Part of Ropner Park was flooded during the event. (p30)</p></div></div></body></div>`)[0];
+                popup_256099ddb9935bcd22572a404860d841.setContent(html_1cc317ff3ceb095e30aa3420f5d430c0);
+            
+        
+
+        marker_eeff8fe36b1c9f3a3ae38612dedab050.bindPopup(popup_256099ddb9935bcd22572a404860d841)
+        ;
+
+        
+    
+    
+            var marker_7bd23b7714e9338824b9c0e8e84ac7ac = L.marker(
+                [54.5716636, -1.3241108],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_6201b39559ce35ad0a222e11a1a4aad4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7bd23b7714e9338824b9c0e8e84ac7ac.setIcon(icon_6201b39559ce35ad0a222e11a1a4aad4);
+        
+    
+        var popup_83892a0e70830424d2b359aabe80712d = L.popup({});
+
+        
+            
+                var html_a408dd6f8d16c2f798da705e6e09f0a8 = $(`<div id="html_a408dd6f8d16c2f798da705e6e09f0a8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Newtown Resource Centre</h1><div class="nugget-popup"><p>Internal flooding of the centre &mdash; water entered and flooded the interior of the building during the event. (p28)</p></div></div></body></div>`)[0];
+                popup_83892a0e70830424d2b359aabe80712d.setContent(html_a408dd6f8d16c2f798da705e6e09f0a8);
+            
+        
+
+        marker_7bd23b7714e9338824b9c0e8e84ac7ac.bindPopup(popup_83892a0e70830424d2b359aabe80712d)
+        ;
+
+        
+    
+    
+            var marker_c551cae63a9bc7a2a5419bcd762fe5b5 = L.marker(
+                [54.5778302, -1.2934215],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_37b51e78f3b91e5f730b06ab33d845f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c551cae63a9bc7a2a5419bcd762fe5b5.setIcon(icon_37b51e78f3b91e5f730b06ab33d845f2);
+        
+    
+        var popup_b9aa6524979b54eba4505ac7b30629af = L.popup({});
+
+        
+            
+                var html_2bea3fa1c6ffc7309da1cd2235427d7c = $(`<div id="html_2bea3fa1c6ffc7309da1cd2235427d7c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holme House</h1><div class="nugget-popup"><p>Access to Holme House (prison) was disrupted because Holme House Road was flooded and impassable to most vehicles. [IMG] (p35)</p></div></div></body></div>`)[0];
+                popup_b9aa6524979b54eba4505ac7b30629af.setContent(html_2bea3fa1c6ffc7309da1cd2235427d7c);
+            
+        
+
+        marker_c551cae63a9bc7a2a5419bcd762fe5b5.bindPopup(popup_b9aa6524979b54eba4505ac7b30629af)
+        ;
+
+        
+    
+    
+            var marker_b5fdabb40041b3145344cf93a2849297 = L.marker(
+                [54.5909726, -1.2608996],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_bc006a0e3390f2ad252b45f07162f32c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b5fdabb40041b3145344cf93a2849297.setIcon(icon_bc006a0e3390f2ad252b45f07162f32c);
+        
+    
+        var popup_99f31af594e3b67ad15b01972a1a9c2f = L.popup({});
+
+        
+            
+                var html_cc76e461c212f06ced2939c29da4e8dc = $(`<div id="html_cc76e461c212f06ced2939c29da4e8dc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Scott Bros</h1><div class="nugget-popup"><p>Overgrown vegetation along the boundary of the cycleway/Scott Bros land obstructed outfalls and access, contributing to drainage issues and localised surface water flooding; SBC was instructed to clear vegetation to locate outfalls and enable maintenance. [TAB] (p40)</p></div></div></body></div>`)[0];
+                popup_99f31af594e3b67ad15b01972a1a9c2f.setContent(html_cc76e461c212f06ced2939c29da4e8dc);
+            
+        
+
+        marker_b5fdabb40041b3145344cf93a2849297.bindPopup(popup_99f31af594e3b67ad15b01972a1a9c2f)
+        ;
+
+        
+    
+    
+            var marker_d03d24e1fa22fabc9423353fd0e31288 = L.marker(
+                [54.5730993, -1.2885203],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_fa3c06472fe1bdef1a7b834d81cbbf98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d03d24e1fa22fabc9423353fd0e31288.setIcon(icon_fa3c06472fe1bdef1a7b834d81cbbf98);
+        
+    
+        var popup_c689dc28d045d927452719aa3a616142 = L.popup({});
+
+        
+            
+                var html_fa0bb2ccb66e2f5be5720ade1151287b = $(`<div id="html_fa0bb2ccb66e2f5be5720ade1151287b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Portrack Retail Park</h1><div class="nugget-popup"><p>Portrack Retail Park was reported among the worst affected locations during the 25&ndash;26 September 2012 event, with businesses at the retail park experiencing flooding and internal damage. (p11)</p></div><div class="nugget-popup"><p>Flooding from the overtopping of Lustrum Beck inundated retail units and associated car parking; three retail units (Betta Living, Race for Furniture and Home Interiors) were badly affected, suffering severe damage and temporary closure. [IMG] (p35)</p></div><div class="nugget-popup"><p>Portrack Retail Park experienced flooding affecting retail businesses; businesses were advised to investigate property protection and the area was identified for consideration of flood alleviation schemes. (p38)</p></div><div class="nugget-popup"><p>Surface water flooding affected Portrack Retail Park leading to EA involvement to cost a flood alleviation scheme or smaller localised measures and advice for businesses to consider property protection. [TAB] (p40)</p></div><div class="nugget-popup"><p>Portrack Retail Park was identified as being at flood risk requiring EA cost estimates for a flood alleviation scheme (Six Fields or localised works); businesses were advised to consider property protection measures to reduce flood damage. (p41)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 retail units [IMG] (p35)</p></div></div></body></div>`)[0];
+                popup_c689dc28d045d927452719aa3a616142.setContent(html_fa0bb2ccb66e2f5be5720ade1151287b);
+            
+        
+
+        marker_d03d24e1fa22fabc9423353fd0e31288.bindPopup(popup_c689dc28d045d927452719aa3a616142)
+        ;
+
+        
+    
+    
+            var marker_179b8a37ef17bf980b18e771cab288e3 = L.marker(
+                [54.5744665, -1.2900064],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_3f953462bc3a074af0a2d278a9e81ea7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_179b8a37ef17bf980b18e771cab288e3.setIcon(icon_3f953462bc3a074af0a2d278a9e81ea7);
+        
+    
+        var popup_841a60ca9bc174f0bd8480f9a0d866e2 = L.popup({});
+
+        
+            
+                var html_b975af6a6e05b77bb8528d47c6d2b8e1 = $(`<div id="html_b975af6a6e05b77bb8528d47c6d2b8e1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lustrum Beck</h1><div class="nugget-popup"><p>Communities along Lustrum Beck were among the most severely affected by flooding during the event. (p8)</p></div><div class="nugget-popup"><p>Lustrum Beck is identified as a main river in the borough and as part of the network of watercourses contributing to fluvial/urban flooding during the 25&ndash;26 September 2012 event. (p11)</p></div><div class="nugget-popup"><p>Identified as the receiving watercourse (the tributary is of Lustrum Beck) related to flooding that caused garden/highway flooding on Grays Road and external property flooding on Grays Road and Grange Avenue. (p15)</p></div><div class="nugget-popup"><p>Levels in Lustrum Beck rose and overtopped flood embankments, causing much of the widespread flooding across the Newtown and Wrensfield areas and contributing to internal flooding of residential properties, inundation of streets and gardens, and flooding of community facilities. (p28)</p></div><div class="nugget-popup"><p>The ordinary watercourse could not discharge into Lustrum Beck (tide&ndash;locked), causing backwater that led to garden flooding on nearby streets; Lustrum Beck's inability to accept flow contributed to regular/severe garden flooding near the culvert. (p29)</p></div><div class="nugget-popup"><p>Fluvial flooding from Lustrum Beck was the main cause of flooding in the Hartburn area, leading to internal property flooding and inundation of adjacent areas. (p30)</p></div><div class="nugget-popup"><p>Referenced as being connected to earlier flooding incidents in the locality; other flood incidents in the area were linked to high flows associated with Lustrum Beck. (p32)</p></div><div class="nugget-popup"><p>Lustrum Beck overtopped its banks (fluvial flooding) and caused surrounding inundation: it completely surrounded the two lowest buildings adjacent to the beck, flooded the gardens of properties on Dundas Street and flooded the allotments. [PAG] (p34)</p></div><div class="nugget-popup"><p>Overtopping of Lustrum Beck caused fluvial flooding to the rear of Portrack Retail Park, leading to inundation of retail units and car parking. (p35)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 buildings [PAG] (p34)</p></div><div class="nugget-popup quant"><p>3 retail units (p35)</p></div></div></body></div>`)[0];
+                popup_841a60ca9bc174f0bd8480f9a0d866e2.setContent(html_b975af6a6e05b77bb8528d47c6d2b8e1);
+            
+        
+
+        marker_179b8a37ef17bf980b18e771cab288e3.bindPopup(popup_841a60ca9bc174f0bd8480f9a0d866e2)
+        ;
+
+        
+    
+    
+            var marker_33d1ea01d345228bd1d02976e5d2c33f = L.marker(
+                [54.5769613, -1.2662943],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_d8a0d00e93a98c4fba013d43ca92a6e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_33d1ea01d345228bd1d02976e5d2c33f.setIcon(icon_d8a0d00e93a98c4fba013d43ca92a6e7);
+        
+    
+        var popup_811a996046809e0ab09dfbc795c5665c = L.popup({});
+
+        
+            
+                var html_a9d86bf8f558ecc8e5bd5a412598956d = $(`<div id="html_a9d86bf8f558ecc8e5bd5a412598956d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Billingham Beck</h1><div class="nugget-popup"><p>The watercourse contributed to flooding that affected nearby residents in Norton. (p8)</p></div><div class="nugget-popup"><p>Billingham Beck is identified as a main river in the borough and as part of the watercourse system contributing to fluvial flooding during the 25&ndash;26 September 2012 event. (p11)</p></div><div class="nugget-popup"><p>High river levels in Billingham Beck overtopped onto floodplain land (including allotments and Billingham Beck Country Park) and caused ordinary watercourses to become tide&ndash;locked, preventing discharge and producing severe flooding across the network of ordinary watercourses and drainage systems; this also prevented drainage discharge from highway gullies, contributing to surface water flooding on the A19 slip. (p32)</p></div><div class="nugget-popup"><p>Drainage issues associated with Billingham Beck and ordinary watercourses contributed to flooding in the Norton/Billingham Bottoms area; a joint investigation and consideration of riparian owner maintenance was recommended. (p38)</p></div></div></body></div>`)[0];
+                popup_811a996046809e0ab09dfbc795c5665c.setContent(html_a9d86bf8f558ecc8e5bd5a412598956d);
+            
+        
+
+        marker_33d1ea01d345228bd1d02976e5d2c33f.bindPopup(popup_811a996046809e0ab09dfbc795c5665c)
+        ;
+
+        
+    
+    
+            var marker_5cfc6023f0107d3f92e523bb2ab0fb86 = L.marker(
+                [54.5212913, -1.3777949],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_044d8a0380d9314197539f9704fc9f8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5cfc6023f0107d3f92e523bb2ab0fb86.setIcon(icon_044d8a0380d9314197539f9704fc9f8a);
+        
+    
+        var popup_fdbec66266318fc9190062b4575eada2 = L.popup({});
+
+        
+            
+                var html_8a70558a737cd96bd5e22006065bbd0c = $(`<div id="html_8a70558a737cd96bd5e22006065bbd0c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nelly Burdon's Beck</h1><div class="nugget-popup"><p>Named as the watercourse causing severe flooding to properties in Aislaby. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties; 2 properties affected internally (p15)</p></div></div></body></div>`)[0];
+                popup_fdbec66266318fc9190062b4575eada2.setContent(html_8a70558a737cd96bd5e22006065bbd0c);
+            
+        
+
+        marker_5cfc6023f0107d3f92e523bb2ab0fb86.bindPopup(popup_fdbec66266318fc9190062b4575eada2)
+        ;
+
+        
+    
+    
+            var marker_4d353f028a1e159032bdda70c83e1cac = L.marker(
+                [54.5596088, -1.3446634],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_5f18fbe0c49abe58a1dbaef4021b4a43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4d353f028a1e159032bdda70c83e1cac.setIcon(icon_5f18fbe0c49abe58a1dbaef4021b4a43);
+        
+    
+        var popup_2b76f46bfdb89a03f06e3ef9f1962638 = L.popup({});
+
+        
+            
+                var html_ea16b6a6f0d33f0a447c0f3eccda6f54 = $(`<div id="html_ea16b6a6f0d33f0a447c0f3eccda6f54" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Greens Beck</h1><div class="nugget-popup"><p>The grassed area adjacent to Greens Beck (an ordinary watercourse and tributary of Lustrum Beck) was flooded; floodwater in that location did not enter properties. (p30)</p></div></div></body></div>`)[0];
+                popup_2b76f46bfdb89a03f06e3ef9f1962638.setContent(html_ea16b6a6f0d33f0a447c0f3eccda6f54);
+            
+        
+
+        marker_4d353f028a1e159032bdda70c83e1cac.bindPopup(popup_2b76f46bfdb89a03f06e3ef9f1962638)
+        ;
+
+        
+    
+    
+            var marker_6c02a38c2a46bfaa60ccd9c20294a5eb = L.marker(
+                [54.564094, -1.3129164],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_cb611d67f7d173a1d8520cec6748d76c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6c02a38c2a46bfaa60ccd9c20294a5eb.setIcon(icon_cb611d67f7d173a1d8520cec6748d76c);
+        
+    
+        var popup_85ee9d05f68e87b137271d5b274bb8dc = L.popup({});
+
+        
+            
+                var html_a44ddb3db860912c9243d969d8afd885 = $(`<div id="html_a44ddb3db860912c9243d969d8afd885" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>Multiple locations across the Borough experienced flooding incidents during the event; the report investigates these flood occurrences within the Borough of Stockton&ndash;on&ndash;Tees. (p1)</p></div><div class="nugget-popup"><p>The Borough experienced the worst flooding in decades with widespread impacts to communities, properties and transport infrastructure. (p8)</p></div><div class="nugget-popup"><p>Parts of the borough experienced tidal and fluvial flooding and surface water flooding during 25&ndash;26 September 2012; communities (for example around Browns Bridge, Hartburn and Billingham Bottoms) were among the worst affected, with internal property flooding, business flooding and significant road closures (including closure of the A66). [PAG] (p11)</p></div><div class="nugget-popup"><p>Surface water and urban flooding on 25&ndash;26 September 2012 affected residences and businesses; drainage systems were overwhelmed so surface water took time to drain, causing properties to flood, some people to be made homeless and businesses to close. (p43)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>150 properties and businesses (p8)</p></div><div class="nugget-popup quant"><p>up to 150 residential and business properties (p43)</p></div></div></body></div>`)[0];
+                popup_85ee9d05f68e87b137271d5b274bb8dc.setContent(html_a44ddb3db860912c9243d969d8afd885);
+            
+        
+
+        marker_6c02a38c2a46bfaa60ccd9c20294a5eb.bindPopup(popup_85ee9d05f68e87b137271d5b274bb8dc)
+        ;
+
+        
+    
+    
+            var marker_ddb27b22fa0bd73ef468c5fa3353e3d3 = L.marker(
+                [54.5707152, -1.3241062],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_e09e40c3314b67b96eb7cc1e27297bd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ddb27b22fa0bd73ef468c5fa3353e3d3.setIcon(icon_e09e40c3314b67b96eb7cc1e27297bd5);
+        
+    
+        var popup_aa0d0db8a986258de487b3c36d6a1c1a = L.popup({});
+
+        
+            
+                var html_6c97959fc0c75750ba49dcbc18ac3e9e = $(`<div id="html_6c97959fc0c75750ba49dcbc18ac3e9e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Browns Bridge</h1><div class="nugget-popup"><p>Described in the report as one of the six locations where flooding was severe; subject of the LLFA investigation into the Sep 2012 event. (p8)</p></div><div class="nugget-popup"><p>Community around Browns Bridge was reported as one of the worst affected areas during the 25&ndash;26 September 2012 event, experiencing major flooding with internal flooding of properties and associated road closures in the locality. [PAG] (p11)</p></div><div class="nugget-popup"><p>The highway drainage outfall under Browns Bridge became full and floodwater overflowed onto Bishopton Road; the overflow led to closure of the road and contributed to wider overtopping of flood embankments that caused extensive flooding in Newtown/Wrensfield. [IMG] (p28)</p></div><div class="nugget-popup"><p>Surface water flooding affected the Browns Bridge area; the report recommends a full investigation of surface water flooding issues, consideration of flood alleviation schemes and assessment of existing local schemes (e.g. alleygates) for potential incorporation of flood risk management; residents are advised to consider property protection measures. (p37)</p></div><div class="nugget-popup"><p>Surface water flooding in the Browns Bridge / Newtown area; EA to progress de&ndash;silting works to locate the NWL outlet and investigate a localised flood alleviation scheme. [TAB] (p40)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (94 Bishopton Road) threatened [IMG] (p28)</p></div></div></body></div>`)[0];
+                popup_aa0d0db8a986258de487b3c36d6a1c1a.setContent(html_6c97959fc0c75750ba49dcbc18ac3e9e);
+            
+        
+
+        marker_ddb27b22fa0bd73ef468c5fa3353e3d3.bindPopup(popup_aa0d0db8a986258de487b3c36d6a1c1a)
+        ;
+
+        
+    
+    
+            var marker_3e0caeeec6e30d90bcf82bf6e244773c = L.marker(
+                [54.54059926017741, -1.4217438461986902],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_25081fd0e4bba4c979f9ec4c86b70c6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3e0caeeec6e30d90bcf82bf6e244773c.setIcon(icon_25081fd0e4bba4c979f9ec4c86b70c6f);
+        
+    
+        var popup_be3b6dc02ab457b20e4a102e8944752a = L.popup({});
+
+        
+            
+                var html_22cc6debf72d5d9c9acd1b18f0e6f0c2 = $(`<div id="html_22cc6debf72d5d9c9acd1b18f0e6f0c2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Long Newton Interchange</h1><div class="nugget-popup"><p>Flooding caused closure of the A66, with the road closed on 12 October 2012 and on 25, 26 and 27 November 2012; traffic was diverted onto the Local Authority's highway network. [MUL] (p18)</p></div><div class="nugget-popup"><p>The A66 at Long Newton Interchange was heavily flooded with carriageways submerged, leading to closure in both directions and significant disruption to travel; surface water from the drainage/balancing pond system overtopped into the carriageway. (p36)</p></div><div class="nugget-popup"><p>Drainage system and balancing pond issues at the interchange were identified as needing investigation and mitigation due to flooding risk; these issues were linked to flooding impacts on the A66 that could cause carriageway ponding and disruption. (p38)</p></div><div class="nugget-popup"><p>Surface water flooding occurred on the A66 carriageway; investigations were required to identify whether adjacent fields contributed to surface water runoff, and the Highway Agency carried out/instructed investigations of drainage performance (including CCTV) to address the flooding. [TAB] (p40)</p></div><div class="nugget-popup"><p>Surface water flooding affected the A66 carriageway; adjacent fields were suspected of contributing to surface&ndash;water runoff onto the carriageway and an investigation was required to identify contributory sources. (p42)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 occasions (p36)</p></div></div></body></div>`)[0];
+                popup_be3b6dc02ab457b20e4a102e8944752a.setContent(html_22cc6debf72d5d9c9acd1b18f0e6f0c2);
+            
+        
+
+        marker_3e0caeeec6e30d90bcf82bf6e244773c.bindPopup(popup_be3b6dc02ab457b20e4a102e8944752a)
+        ;
+
+        
+    
+    
+            var marker_af68426fdb53bdb570287df577cab16f = L.marker(
+                [54.5712074, -1.3185996],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_02c3222e5ecfaa8ee411e2cca24ff976 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_af68426fdb53bdb570287df577cab16f.setIcon(icon_02c3222e5ecfaa8ee411e2cca24ff976);
+        
+    
+        var popup_d41ad1e919fd30ea40c53ff323603e3b = L.popup({});
+
+        
+            
+                var html_4aeccf7aacfcb54e4cd66de19794d14d = $(`<div id="html_4aeccf7aacfcb54e4cd66de19794d14d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Orde Wingate Way, Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>Businesses located on Orde Wingate Way were reported as worst affected during the 25&ndash;26 September 2012 event, with internal flooding of business premises and operational disruption. (p11)</p></div><div class="nugget-popup"><p>Business units on Orde Wingate Way were flooded during the September 2012 event, indicating the flood exceeded the 1 in 100 year design level for the area. (p17)</p></div><div class="nugget-popup"><p>Orde Wingate Way and the business units along it were impacted by fluvial flooding from Lustrum Beck, with flood water encroaching on adjacent commercial property. (p34)</p></div><div class="nugget-popup"><p>Businesses in the Orde Wingate Way / Primrose Hill area were affected by flooding and are advised to investigate property protection measures; wider flood alleviation schemes for the area were recommended. (p38)</p></div><div class="nugget-popup"><p>Surface water flooding impacted Orde Wingate Way (prompting EA to estimate costs for a flood alleviation scheme or small localised works) and businesses on the street were advised to consider property protection measures. [TAB] (p40)</p></div><div class="nugget-popup"><p>Flooding risk at the 'Six Fields' site affecting the Orde Wingate Way area led to the EA being asked to provide cost estimates for a flood alleviation scheme or small localised measures; businesses were advised to consider property protection. (p41)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 buildings (p34)</p></div></div></body></div>`)[0];
+                popup_d41ad1e919fd30ea40c53ff323603e3b.setContent(html_4aeccf7aacfcb54e4cd66de19794d14d);
+            
+        
+
+        marker_af68426fdb53bdb570287df577cab16f.bindPopup(popup_d41ad1e919fd30ea40c53ff323603e3b)
+        ;
+
+        
+    
+    
+            var marker_fba0bf1fe21039586f7b38bdde65ffc3 = L.marker(
+                [54.5682514, -1.33044],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_38363c8ff49a037058195272b4b69258 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fba0bf1fe21039586f7b38bdde65ffc3.setIcon(icon_38363c8ff49a037058195272b4b69258);
+        
+    
+        var popup_a8f240d64a648d2f61eb4d28f1b61959 = L.popup({});
+
+        
+            
+                var html_50cef1dede49dea6504d4f97f971f098 = $(`<div id="html_50cef1dede49dea6504d4f97f971f098" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gray's Road, Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>Severe garden and highway flooding from an ordinary watercourse (a tributary of Lustrum Beck); properties on Grays Road experienced external flooding but floodwater is not known to have entered buildings. (p15)</p></div><div class="nugget-popup"><p>Road became impassable in places due to floodwater; gardens adjacent to Grays Road were flooded. An ordinary watercourse runs across Grays Road and was implicated in the flooding. [PAG] (p28)</p></div><div class="nugget-popup"><p>An ordinary watercourse running across Grays Road became tide&ndash;locked and could not discharge into Lustrum Beck, causing flooding to gardens and flooding on Grays Road itself; the flooding led to the eventual closure of Grays Road. (p29)</p></div></div></body></div>`)[0];
+                popup_a8f240d64a648d2f61eb4d28f1b61959.setContent(html_50cef1dede49dea6504d4f97f971f098);
+            
+        
+
+        marker_fba0bf1fe21039586f7b38bdde65ffc3.bindPopup(popup_a8f240d64a648d2f61eb4d28f1b61959)
+        ;
+
+        
+    
+    
+            var marker_e86eb486a0be98b6d9ff2901ae905ba7 = L.marker(
+                [54.5924354, -1.28713],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_1b5f97d144d748de0e99b731c5af5803 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e86eb486a0be98b6d9ff2901ae905ba7.setIcon(icon_1b5f97d144d748de0e99b731c5af5803);
+        
+    
+        var popup_fce2ef7aeff175b13e088a255b8daa81 = L.popup({});
+
+        
+            
+                var html_9902cc96bc4aa98fbd614b539a6952d1 = $(`<div id="html_9902cc96bc4aa98fbd614b539a6952d1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Grange Avenue, Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>Properties were affected by external flooding (floodwater is not known to have entered the properties) related to the ordinary watercourse tributary of Lustrum Beck. (p15)</p></div><div class="nugget-popup"><p>Several gardens on Grange Avenue were flooded. (p28)</p></div><div class="nugget-popup"><p>The ordinary watercourse became tide&ndash;locked and could not discharge into Lustrum Beck, causing flooding to the rear gardens of properties on Grange Avenue. (p29)</p></div></div></body></div>`)[0];
+                popup_fce2ef7aeff175b13e088a255b8daa81.setContent(html_9902cc96bc4aa98fbd614b539a6952d1);
+            
+        
+
+        marker_e86eb486a0be98b6d9ff2901ae905ba7.bindPopup(popup_fce2ef7aeff175b13e088a255b8daa81)
+        ;
+
+        
+    
+    
+            var marker_405a8456720d90d44d6ce1edb54b911b = L.marker(
+                [54.5856853, -1.2243337],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_2ae90ed2844fe2690fdbd56706017141 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_405a8456720d90d44d6ce1edb54b911b.setIcon(icon_2ae90ed2844fe2690fdbd56706017141);
+        
+    
+        var popup_0093a9806b7cc24280f02d91b80114fc = L.popup({});
+
+        
+            
+                var html_4acdb05c34e59cf90bc97c40c34b8321 = $(`<div id="html_4acdb05c34e59cf90bc97c40c34b8321" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Port Clarence Road, Billingham</h1><div class="nugget-popup"><p>Road was closed due to flooding under the rail bridge. (p15)</p></div></div></body></div>`)[0];
+                popup_0093a9806b7cc24280f02d91b80114fc.setContent(html_4acdb05c34e59cf90bc97c40c34b8321);
+            
+        
+
+        marker_405a8456720d90d44d6ce1edb54b911b.bindPopup(popup_0093a9806b7cc24280f02d91b80114fc)
+        ;
+
+        
+    
+    
+            var marker_73365063c5c9ccb2285e4c4aa49271d9 = L.marker(
+                [54.5094623, -1.3545527],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_70c3348b2ae18584e531bbdb17a9a5d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_73365063c5c9ccb2285e4c4aa49271d9.setIcon(icon_70c3348b2ae18584e531bbdb17a9a5d4);
+        
+    
+        var popup_a0975354a008a9e896372a009828e924 = L.popup({});
+
+        
+            
+                var html_24cf9a81f97fa28931978966e51dd6ae = $(`<div id="html_24cf9a81f97fa28931978966e51dd6ae" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Yarm High Street, Yarm</h1><div class="nugget-popup"><p>Flooding occurred on the high street; it remained open and was passable with care. (p15)</p></div></div></body></div>`)[0];
+                popup_a0975354a008a9e896372a009828e924.setContent(html_24cf9a81f97fa28931978966e51dd6ae);
+            
+        
+
+        marker_73365063c5c9ccb2285e4c4aa49271d9.bindPopup(popup_a0975354a008a9e896372a009828e924)
+        ;
+
+        
+    
+    
+            var marker_c53818e4a2918fd0d797de0b09f07304 = L.marker(
+                [54.5919248, -1.3045944],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_8e1da69e8859d617836bcf151633baaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c53818e4a2918fd0d797de0b09f07304.setIcon(icon_8e1da69e8859d617836bcf151633baaf);
+        
+    
+        var popup_e4178c989c89110baf22dcf0aa91db03 = L.popup({});
+
+        
+            
+                var html_2d563ef06c37f9ee233703efdfb19101 = $(`<div id="html_2d563ef06c37f9ee233703efdfb19101" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Costain Grove, Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>Severe flooding to the gardens of Costain Grove. (p15)</p></div><div class="nugget-popup"><p>Gardens at the lower end of Costain Grove were severely flooded as high river levels and blocked discharge caused water to back up; flooding threatened properties though none are known to have had internal flooding. (p32)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>gardens flooded to a depth of approximately 2 metres (p32)</p></div></div></body></div>`)[0];
+                popup_e4178c989c89110baf22dcf0aa91db03.setContent(html_2d563ef06c37f9ee233703efdfb19101);
+            
+        
+
+        marker_c53818e4a2918fd0d797de0b09f07304.bindPopup(popup_e4178c989c89110baf22dcf0aa91db03)
+        ;
+
+        
+    
+    
+            var marker_99706e60dd5e88ba2b78d3c395c3cb4f = L.marker(
+                [54.5737382, -1.3198844],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_31e1516eb770c0ceadc115da30bba9dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_99706e60dd5e88ba2b78d3c395c3cb4f.setIcon(icon_31e1516eb770c0ceadc115da30bba9dc);
+        
+    
+        var popup_d9cc843911559cbc228ee18b5c02108c = L.popup({});
+
+        
+            
+                var html_9b85781297711d97367e52ebbb4998f5 = $(`<div id="html_9b85781297711d97367e52ebbb4998f5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dundas Street, Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>Severe flooding to gardens and allotments on Dundas Street. (p15)</p></div><div class="nugget-popup"><p>Gardens and allotments on Dundas Street were flooded. (p28)</p></div><div class="nugget-popup"><p>Gardens of the properties on Dundas Street were flooded by water from Lustrum Beck; the flood water is not thought to have entered the residential properties themselves. (p34)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 64 gardens and allotments (p15)</p></div></div></body></div>`)[0];
+                popup_d9cc843911559cbc228ee18b5c02108c.setContent(html_9b85781297711d97367e52ebbb4998f5);
+            
+        
+
+        marker_99706e60dd5e88ba2b78d3c395c3cb4f.bindPopup(popup_d9cc843911559cbc228ee18b5c02108c)
+        ;
+
+        
+    
+    
+            var marker_730eabd326a6b4b48599e2326da23796 = L.marker(
+                [54.5696816, -1.3222991],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_243309b9672a978e757c63b58209cb81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_730eabd326a6b4b48599e2326da23796.setIcon(icon_243309b9672a978e757c63b58209cb81);
+        
+    
+        var popup_59c4421b12a1cbb99a8d0b3eea2c6528 = L.popup({});
+
+        
+            
+                var html_c485c4908e65c8dfd1b16e897056b194 = $(`<div id="html_c485c4908e65c8dfd1b16e897056b194" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bishopton Road, Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>Highway drainage became full and overflowed onto the carriageway; Bishopton Road was closed. Flood water from Lustrum Beck overtopping embankments caused widespread inundation in the area and threatened the nearby property at 94 Bishopton Road. [IMG] (p28)</p></div><div class="nugget-popup"><p>Surface water flooding at the junction of Bishopton Road and Wrensfield Road (reported surface water flooding issue requiring feasibility work by NWL). [TAB] (p40)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 road closed; 1 property (94 Bishopton Road) threatened [IMG] (p28)</p></div></div></body></div>`)[0];
+                popup_59c4421b12a1cbb99a8d0b3eea2c6528.setContent(html_c485c4908e65c8dfd1b16e897056b194);
+            
+        
+
+        marker_730eabd326a6b4b48599e2326da23796.bindPopup(popup_59c4421b12a1cbb99a8d0b3eea2c6528)
+        ;
+
+        
+    
+    
+            var marker_eef5ea8a9476c30b2389cdaa65971c07 = L.marker(
+                [54.5705641, -1.322097],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_013f95c52d5ccdf09ba5536f65046653 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eef5ea8a9476c30b2389cdaa65971c07.setIcon(icon_013f95c52d5ccdf09ba5536f65046653);
+        
+    
+        var popup_81154822f3c06c4f6cb4de9b71c22162 = L.popup({});
+
+        
+            
+                var html_9ee31eceffb83ec3e3b8c4bd283b8d66 = $(`<div id="html_9ee31eceffb83ec3e3b8c4bd283b8d66" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bedford Street, Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>Listed among the streets in Newtown/Wrensfield badly affected by the flood; residential properties suffered internal flooding and the street was impacted by deep floodwater making access difficult or impassable. (p28)</p></div></div></body></div>`)[0];
+                popup_81154822f3c06c4f6cb4de9b71c22162.setContent(html_9ee31eceffb83ec3e3b8c4bd283b8d66);
+            
+        
+
+        marker_eef5ea8a9476c30b2389cdaa65971c07.bindPopup(popup_81154822f3c06c4f6cb4de9b71c22162)
+        ;
+
+        
+    
+    
+            var marker_649bbd566d5fe74441d3b333e4bcf340 = L.marker(
+                [54.56862228018029, -1.3281255601536346],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_e084276c57a34d82ab41ffbcc4a1b959 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_649bbd566d5fe74441d3b333e4bcf340.setIcon(icon_e084276c57a34d82ab41ffbcc4a1b959);
+        
+    
+        var popup_3a5e1694f39e659f87be568d5a8ea36c = L.popup({});
+
+        
+            
+                var html_31aec588d9e1bd165e1f73b655478769 = $(`<div id="html_31aec588d9e1bd165e1f73b655478769" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Duddon Walk, Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>Part of 'Duddon Walk' listed among streets affected; residential areas were subject to internal flooding and floodwaters made streets impassable. (p28)</p></div></div></body></div>`)[0];
+                popup_3a5e1694f39e659f87be568d5a8ea36c.setContent(html_31aec588d9e1bd165e1f73b655478769);
+            
+        
+
+        marker_649bbd566d5fe74441d3b333e4bcf340.bindPopup(popup_3a5e1694f39e659f87be568d5a8ea36c)
+        ;
+
+        
+    
+    
+            var marker_02775a451d5ee76c826442016c944afb = L.marker(
+                [54.5694605, -1.3249711],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_384ea190ab423f173dc0c9537e390456 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_02775a451d5ee76c826442016c944afb.setIcon(icon_384ea190ab423f173dc0c9537e390456);
+        
+    
+        var popup_547a8475b0061ad5b3d8cd5bff14926e = L.popup({});
+
+        
+            
+                var html_b3f5bcb6ab9ad57bdae8970cad80799c = $(`<div id="html_b3f5bcb6ab9ad57bdae8970cad80799c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wrensfield Road, Newtown</h1><div class="nugget-popup"><p>Named among roads that were impassable due to the extent and depth of floodwater; residential properties in the area suffered internal flooding and the road closure increased pressure on the secondary highway network. (p28)</p></div><div class="nugget-popup"><p>Surface water flooding at the junction of Wrensfield Road and Bishopton Road (surface water flooding issue prompting feasibility investigation). [TAB] (p40)</p></div></div></body></div>`)[0];
+                popup_547a8475b0061ad5b3d8cd5bff14926e.setContent(html_b3f5bcb6ab9ad57bdae8970cad80799c);
+            
+        
+
+        marker_02775a451d5ee76c826442016c944afb.bindPopup(popup_547a8475b0061ad5b3d8cd5bff14926e)
+        ;
+
+        
+    
+    
+            var marker_278e386ab65b45337bcccdec952a0005 = L.marker(
+                [54.5613344, -1.3371508],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_7779bd477fd8bfb5b82488f8a10d3ef5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_278e386ab65b45337bcccdec952a0005.setIcon(icon_7779bd477fd8bfb5b82488f8a10d3ef5);
+        
+    
+        var popup_5fc5c71da100bdfc3ced290ae6fbbdb3 = L.popup({});
+
+        
+            
+                var html_4b038b3d5f6b9cd014f0133797e08e63 = $(`<div id="html_4b038b3d5f6b9cd014f0133797e08e63" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hartburn Avenue, Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>Properties on Hartburn Avenue were at risk of flooding; residents were advised to ensure the pump is operated and maintained as originally intended to protect their properties and to consider property protection measures. (p31)</p></div><div class="nugget-popup"><p>Properties on Hartburn Avenue experienced flooding and have flood defences including owner&ndash;operated sump pumps; residents are advised to review maintenance and operation of sump pumps and have an operational plan for flood situations. (p38)</p></div></div></body></div>`)[0];
+                popup_5fc5c71da100bdfc3ced290ae6fbbdb3.setContent(html_4b038b3d5f6b9cd014f0133797e08e63);
+            
+        
+
+        marker_278e386ab65b45337bcccdec952a0005.bindPopup(popup_5fc5c71da100bdfc3ced290ae6fbbdb3)
+        ;
+
+        
+    
+    
+            var marker_c95e0116030ffd4cb0605da0630ab852 = L.marker(
+                [54.560758, -1.3355486],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_fac59832e2cf4256a4f5be0ba7a653aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c95e0116030ffd4cb0605da0630ab852.setIcon(icon_fac59832e2cf4256a4f5be0ba7a653aa);
+        
+    
+        var popup_e25efb88859488206d0d5dee4097ab64 = L.popup({});
+
+        
+            
+                var html_47dc7f5c16749977885200885a38ef5d = $(`<div id="html_47dc7f5c16749977885200885a38ef5d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burnside Grove, Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>The entrance to Burnside Grove was submerged; a fire service rescue boat was used to evacuate residents and the road was impassable. [IMG] (p30)</p></div></div></body></div>`)[0];
+                popup_e25efb88859488206d0d5dee4097ab64.setContent(html_47dc7f5c16749977885200885a38ef5d);
+            
+        
+
+        marker_c95e0116030ffd4cb0605da0630ab852.bindPopup(popup_e25efb88859488206d0d5dee4097ab64)
+        ;
+
+        
+    
+    
+            var marker_23226ad04b66c7b531fff8fafa647e79 = L.marker(
+                [54.568202, -1.3238702],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_532adb442ab58627c4924e32fa78dffc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_23226ad04b66c7b531fff8fafa647e79.setIcon(icon_532adb442ab58627c4924e32fa78dffc);
+        
+    
+        var popup_45945cb28305ddbaa68eb99d6382632e = L.popup({});
+
+        
+            
+                var html_dd0c1816f6bd06f9a083314af7f74b51 = $(`<div id="html_dd0c1816f6bd06f9a083314af7f74b51" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dunmail Road, Newtown</h1><div class="nugget-popup"><p>Included in the list of streets badly affected in Newtown/Wrensfield where residential properties suffered internal flooding and roads were inundated and difficult or impossible to traverse. (p28)</p></div></div></body></div>`)[0];
+                popup_45945cb28305ddbaa68eb99d6382632e.setContent(html_dd0c1816f6bd06f9a083314af7f74b51);
+            
+        
+
+        marker_23226ad04b66c7b531fff8fafa647e79.bindPopup(popup_45945cb28305ddbaa68eb99d6382632e)
+        ;
+
+        
+    
+    
+            var marker_6a4981a70100d5ebd7a28c1407e3ae95 = L.marker(
+                [54.5694467, -1.3260183],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_f9b9f468158bd5d3881a449465ad2223 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6a4981a70100d5ebd7a28c1407e3ae95.setIcon(icon_f9b9f468158bd5d3881a449465ad2223);
+        
+    
+        var popup_496de2f031835310b17fe4fea3c91eb9 = L.popup({});
+
+        
+            
+                var html_04f3ac0d70a4620c0d166de25b9a03bf = $(`<div id="html_04f3ac0d70a4620c0d166de25b9a03bf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tailrigg Close, Newtown</h1><div class="nugget-popup"><p>Tailrigg Close was flooded during the event; the street was listed among residential streets badly affected and rendered impassable by flood water. (p28)</p></div></div></body></div>`)[0];
+                popup_496de2f031835310b17fe4fea3c91eb9.setContent(html_04f3ac0d70a4620c0d166de25b9a03bf);
+            
+        
+
+        marker_6a4981a70100d5ebd7a28c1407e3ae95.bindPopup(popup_496de2f031835310b17fe4fea3c91eb9)
+        ;
+
+        
+    
+    
+            var marker_c168e3df46ad4a04c0b82dbad7bbc6de = L.marker(
+                [54.5819469, -1.3379806],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_a5de63998be6c5432f05eb64e3f981e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c168e3df46ad4a04c0b82dbad7bbc6de.setIcon(icon_a5de63998be6c5432f05eb64e3f981e1);
+        
+    
+        var popup_e7175f87e2fdbcb43335e3ce38f69b1a = L.popup({});
+
+        
+            
+                var html_714c1fa863da15b4f36b4e1771b8250b = $(`<div id="html_714c1fa863da15b4f36b4e1771b8250b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Durham Road, Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>Durham Road suffered flooding during the event; it was included in the list of streets with serious inundation and made impassable by flood water. (p28)</p></div></div></body></div>`)[0];
+                popup_e7175f87e2fdbcb43335e3ce38f69b1a.setContent(html_714c1fa863da15b4f36b4e1771b8250b);
+            
+        
+
+        marker_c168e3df46ad4a04c0b82dbad7bbc6de.bindPopup(popup_e7175f87e2fdbcb43335e3ce38f69b1a)
+        ;
+
+        
+    
+    
+            var marker_53cf95a43b0d1173448acb12f0d88e5d = L.marker(
+                [54.58970046243861, -1.3054722914375732],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_24ea1366dcbde522947bd457bd442130 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_53cf95a43b0d1173448acb12f0d88e5d.setIcon(icon_24ea1366dcbde522947bd457bd442130);
+        
+    
+        var popup_ed90ad213ffabcc4242df610edca4772 = L.popup({});
+
+        
+            
+                var html_d922aed4ca3de3ce4beb62fabdc1b653 = $(`<div id="html_d922aed4ca3de3ce4beb62fabdc1b653" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Meadow Court, Norton</h1><div class="nugget-popup"><p>Properties in the Mill Meadow Court area were flooded internally when the drainage/ordinary watercourse network surcharged due to high river levels and tide&ndash;locking. (p32)</p></div></div></body></div>`)[0];
+                popup_ed90ad213ffabcc4242df610edca4772.setContent(html_d922aed4ca3de3ce4beb62fabdc1b653);
+            
+        
+
+        marker_53cf95a43b0d1173448acb12f0d88e5d.bindPopup(popup_ed90ad213ffabcc4242df610edca4772)
+        ;
+
+        
+    
+    
+            var marker_0656f80ee2a63522c4c6c46348311190 = L.marker(
+                [54.5878866, -1.3039277],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_1be7704dcbf7307629f94b2860ce7b04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0656f80ee2a63522c4c6c46348311190.setIcon(icon_1be7704dcbf7307629f94b2860ce7b04);
+        
+    
+        var popup_1239faeaf9953fec4296999ccd855e59 = L.popup({});
+
+        
+            
+                var html_c5eddcf1d45258acea7acc3d4c5fdbd8 = $(`<div id="html_c5eddcf1d45258acea7acc3d4c5fdbd8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chesham Road, Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>Properties in the Chesham Road area experienced internal flooding caused by the surcharging drainage and tide&ndash;locked ordinary watercourses linked to high Billingham Beck levels. (p32)</p></div></div></body></div>`)[0];
+                popup_1239faeaf9953fec4296999ccd855e59.setContent(html_c5eddcf1d45258acea7acc3d4c5fdbd8);
+            
+        
+
+        marker_0656f80ee2a63522c4c6c46348311190.bindPopup(popup_1239faeaf9953fec4296999ccd855e59)
+        ;
+
+        
+    
+    
+            var marker_6d1ca0de6aaa5ec1079c29325872c32f = L.marker(
+                [54.5894137, -1.3066384],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_65c28ffc529e00663e6cbd227075ca0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6d1ca0de6aaa5ec1079c29325872c32f.setIcon(icon_65c28ffc529e00663e6cbd227075ca0e);
+        
+    
+        var popup_eb35edec4ba0ece405f9ece77f08dd7a = L.popup({});
+
+        
+            
+                var html_fdbbaefe1583cafaba7be519d300a960 = $(`<div id="html_fdbbaefe1583cafaba7be519d300a960" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Billingham Road, Stockton-On-Tees Unitary Authority</h1><div class="nugget-popup"><p>Surface water flooding and drainage surcharging inundated the carriageway and connecting slip roads. Gullies on the roundabout and adjacent carriageway surcharged, forming puddles that grew and rendered parts of the highway impassable, causing significant traffic disruption. [IMG] (p32)</p></div></div></body></div>`)[0];
+                popup_eb35edec4ba0ece405f9ece77f08dd7a.setContent(html_fdbbaefe1583cafaba7be519d300a960);
+            
+        
+
+        marker_6d1ca0de6aaa5ec1079c29325872c32f.bindPopup(popup_eb35edec4ba0ece405f9ece77f08dd7a)
+        ;
+
+        
+    
+    
+            var marker_a3be8215d1f089bd88ab06af9f130e69 = L.marker(
+                [54.5738732, -1.2898434],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_d3b51d71b1666b9db6bec5b396a5743f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a3be8215d1f089bd88ab06af9f130e69.setIcon(icon_d3b51d71b1666b9db6bec5b396a5743f);
+        
+    
+        var popup_b9721fa514f7393ccb3c291726a9bcd9 = L.popup({});
+
+        
+            
+                var html_0c8b1778db2494cd0f44e17aa2110c3a = $(`<div id="html_0c8b1778db2494cd0f44e17aa2110c3a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holme House Road, Portrack</h1><div class="nugget-popup"><p>Road was flooded and impassable to most vehicles, disrupting access. [IMG] (p35)</p></div></div></body></div>`)[0];
+                popup_b9721fa514f7393ccb3c291726a9bcd9.setContent(html_0c8b1778db2494cd0f44e17aa2110c3a);
+            
+        
+
+        marker_a3be8215d1f089bd88ab06af9f130e69.bindPopup(popup_b9721fa514f7393ccb3c291726a9bcd9)
+        ;
+
+        
+    
+    
+            var marker_b6ce432fd98b38823989205ab44edcbd = L.marker(
+                [54.57938983274877, -1.2558380347507125],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_af410370b5d44b79b14ffa73855935ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b6ce432fd98b38823989205ab44edcbd.setIcon(icon_af410370b5d44b79b14ffa73855935ba);
+        
+    
+        var popup_26bb56657c45a0b663b532fa4e445b1e = L.popup({});
+
+        
+            
+                var html_b2b36656904d8dc8a06295f89a964601 = $(`<div id="html_b2b36656904d8dc8a06295f89a964601" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Teesside</h1><div class="nugget-popup"><p>Major flooding across many parts of Teesside on 25&ndash;26 September 2012 (described as the worst flooding in decades), with widespread internal flooding of properties and numerous road closures across the borough. (p11)</p></div></div></body></div>`)[0];
+                popup_26bb56657c45a0b663b532fa4e445b1e.setContent(html_b2b36656904d8dc8a06295f89a964601);
+            
+        
+
+        marker_b6ce432fd98b38823989205ab44edcbd.bindPopup(popup_26bb56657c45a0b663b532fa4e445b1e)
+        ;
+
+        
+    
+    
+            var marker_4b574ef3d4275e86394be3edf94508ba = L.marker(
+                [54.5897654, -1.3115859],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_1f29c67050947e8053ba97885b281ff0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4b574ef3d4275e86394be3edf94508ba.setIcon(icon_1f29c67050947e8053ba97885b281ff0);
+        
+    
+        var popup_e8f101acd6f7d73b9229e45308a97d9e = L.popup({});
+
+        
+            
+                var html_c4d7bb409dbf92f07b2eb6c414510019 = $(`<div id="html_c4d7bb409dbf92f07b2eb6c414510019" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Norton</h1><div class="nugget-popup"><p>Residents in Norton (near Billingham Beck) were affected by flooding originating from the nearby watercourse and surface water/runoff. (p8)</p></div><div class="nugget-popup"><p>Areas within Norton were affected &mdash; severe flooding occurred to gardens at Costain Grove (within Norton). (p15)</p></div><div class="nugget-popup"><p>The Norton/Billingham Bottoms area experienced surface water and river&ndash;driven flooding around the A139/A19 junction as drainage surcharged and ordinary watercourses became tide&ndash;locked due to high Billingham Beck levels. [IMG] (p32)</p></div><div class="nugget-popup"><p>Surface water drainage issues and blocked outfalls in the Norton area contributed to localised flooding; actions include identifying and checking the SBC highway drainage network and clearing vegetation to locate outfalls and enable maintenance. [TAB,PAG] (p40)</p></div><div class="nugget-popup"><p>The drainage ditch/channel between the fleet ponds was silted and required restoration; reduced conveyance contributed to local surface water flooding and prompted investigation and restoration works. (p41)</p></div></div></body></div>`)[0];
+                popup_e8f101acd6f7d73b9229e45308a97d9e.setContent(html_c4d7bb409dbf92f07b2eb6c414510019);
+            
+        
+
+        marker_4b574ef3d4275e86394be3edf94508ba.bindPopup(popup_e8f101acd6f7d73b9229e45308a97d9e)
+        ;
+
+        
+    
+    
+            var marker_6307e2bdda3b124954f47e50aa7b0587 = L.marker(
+                [54.56871645, -1.3263576206374417],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_c4b03eb0d4ddb6323b450f18b5505f2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6307e2bdda3b124954f47e50aa7b0587.setIcon(icon_c4b03eb0d4ddb6323b450f18b5505f2e);
+        
+    
+        var popup_2e5a9c7ad9e1e1a616b813c41ddaef15 = L.popup({});
+
+        
+            
+                var html_0963cf12d088288b9cbf23b89a0bceba = $(`<div id="html_0963cf12d088288b9cbf23b89a0bceba" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Newtown</h1><div class="nugget-popup"><p>Listed in the report as one of the six locations where flooding was severe and investigated by the LLFA for the Sep 2012 event. (p8)</p></div><div class="nugget-popup"><p>Widespread inundation across the area with a large number of residential properties suffering internal flooding; multiple streets were badly affected and several community buildings (The Bishopton Centre, Adult Education Centre, Kingdom Hall, Newtown Resource Centre, Crowe's Nest Day Nursery) suffered internal flooding. Roads became impassable, placing additional pressure on the secondary highway network. [IMG] (p28)</p></div><div class="nugget-popup"><p>Surface water flooding affected the Newtown area; the report recommends investigating surface water flooding issues, considering flood alleviation schemes and assessing existing local schemes for incorporation of flood risk measures; residents are advised to consider property protection measures. (p37)</p></div><div class="nugget-popup"><p>Surface water flooding affecting the Newtown / Browns Bridge area prompting de&ndash;silting works, outlet location efforts and investigation of localised flood alleviation schemes. [TAB] (p40)</p></div></div></body></div>`)[0];
+                popup_2e5a9c7ad9e1e1a616b813c41ddaef15.setContent(html_0963cf12d088288b9cbf23b89a0bceba);
+            
+        
+
+        marker_6307e2bdda3b124954f47e50aa7b0587.bindPopup(popup_2e5a9c7ad9e1e1a616b813c41ddaef15)
+        ;
+
+        
+    
+    
+            var marker_3f6c39b3bd369e61b649d2a65d3d816d = L.marker(
+                [54.5585856, -1.3452019],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_99863dcde5979bc76316515b1bf770d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3f6c39b3bd369e61b649d2a65d3d816d.setIcon(icon_99863dcde5979bc76316515b1bf770d9);
+        
+    
+        var popup_8e3432c6b1f17e0fc447b9512eb058b1 = L.popup({});
+
+        
+            
+                var html_084a93bdff84f4c843d743d24f6f8876 = $(`<div id="html_084a93bdff84f4c843d743d24f6f8876" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hartburn</h1><div class="nugget-popup"><p>Named as one of the six locations where flooding was severe and investigated by the LLFA following the Sep 2012 heavy rainfall and flooding. (p8)</p></div><div class="nugget-popup"><p>Community around Hartburn was reported among the worst affected areas during the 25&ndash;26 September 2012 event, suffering major flooding and internal flooding of properties with local disruption. (p11)</p></div><div class="nugget-popup"><p>Residential properties in the Hartburn/Oxbridge area were flooded internally and adjacent green spaces were inundated. [IMG] (p30)</p></div><div class="nugget-popup"><p>The Hartburn area was affected by flooding during the event; post&ndash;event recommendations call for appraisal of potential flood alleviation schemes to identify affordable measures providing greatest benefit. (p38)</p></div><div class="nugget-popup"><p>Surface water flooding affected Hartburn, prompting EA work on potential flood alleviation at 'Six Fields' and advice for property owners to review sump pump maintenance/operation and consider property protection measures. [TAB] (p40)</p></div></div></body></div>`)[0];
+                popup_8e3432c6b1f17e0fc447b9512eb058b1.setContent(html_084a93bdff84f4c843d743d24f6f8876);
+            
+        
+
+        marker_3f6c39b3bd369e61b649d2a65d3d816d.bindPopup(popup_8e3432c6b1f17e0fc447b9512eb058b1)
+        ;
+
+        
+    
+    
+            var marker_a04aacc5de1837fcf313c8045c3cec40 = L.marker(
+                [54.5411932, -1.4118985],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_1d97ca03f0c27ed8e0d3c0b5abc50d31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a04aacc5de1837fcf313c8045c3cec40.setIcon(icon_1d97ca03f0c27ed8e0d3c0b5abc50d31);
+        
+    
+        var popup_ba32f81063f32c3c239dcec6295b4cf2 = L.popup({});
+
+        
+            
+                var html_96477c8d395ef593f10087a1fa15934e = $(`<div id="html_96477c8d395ef593f10087a1fa15934e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Longnewton</h1><div class="nugget-popup"><p>Identified in the report as one of the six locations where flooding was severe; included in the LLFA investigation into the September 2012 floods. (p8)</p></div></div></body></div>`)[0];
+                popup_ba32f81063f32c3c239dcec6295b4cf2.setContent(html_96477c8d395ef593f10087a1fa15934e);
+            
+        
+
+        marker_a04aacc5de1837fcf313c8045c3cec40.bindPopup(popup_ba32f81063f32c3c239dcec6295b4cf2)
+        ;
+
+        
+    
+    
+            var marker_5a730aa47668bcca53c8db81fafb650e = L.marker(
+                [54.5052411, -1.3752431],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_59e14f1bfc1cfb58339b4af988ed012e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5a730aa47668bcca53c8db81fafb650e.setIcon(icon_59e14f1bfc1cfb58339b4af988ed012e);
+        
+    
+        var popup_3efb881eff7d778b08fcb0f868712b9d = L.popup({});
+
+        
+            
+                var html_e6f6e9c6c7b7a13de5a68381afc94f4a = $(`<div id="html_e6f6e9c6c7b7a13de5a68381afc94f4a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Aislaby</h1><div class="nugget-popup"><p>Severe flooding to properties from Nelly Burdon's Beck; properties affected internally. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties; 2 properties affected internally (p15)</p></div></div></body></div>`)[0];
+                popup_3efb881eff7d778b08fcb0f868712b9d.setContent(html_e6f6e9c6c7b7a13de5a68381afc94f4a);
+            
+        
+
+        marker_5a730aa47668bcca53c8db81fafb650e.bindPopup(popup_3efb881eff7d778b08fcb0f868712b9d)
+        ;
+
+        
+    
+    
+            var marker_bc50dc9365a470d77e75b491ef474ef2 = L.marker(
+                [54.57504843726818, -1.3184556524648365],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_d2611f4ffca6c6eb7b42d174fbde97ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bc50dc9365a470d77e75b491ef474ef2.setIcon(icon_d2611f4ffca6c6eb7b42d174fbde97ea);
+        
+    
+        var popup_dfabf40c6eb1a28a5f55d9407259681c = L.popup({});
+
+        
+            
+                var html_41b60908b440f3107ff86adf75226603 = $(`<div id="html_41b60908b440f3107ff86adf75226603" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Primrose Hill</h1><div class="nugget-popup"><p>The Primrose Hill area (adjacent residential streets) experienced flooding of gardens and surrounding land from Lustrum Beck overtopping; residential properties are reported as not having floodwater enter. (p34)</p></div><div class="nugget-popup"><p>The Primrose Hill area was affected by flooding during the event; recommendations include considering potential flood alleviation schemes and businesses investigating property protection. (p38)</p></div></div></body></div>`)[0];
+                popup_dfabf40c6eb1a28a5f55d9407259681c.setContent(html_41b60908b440f3107ff86adf75226603);
+            
+        
+
+        marker_bc50dc9365a470d77e75b491ef474ef2.bindPopup(popup_dfabf40c6eb1a28a5f55d9407259681c)
+        ;
+
+        
+    
+    
+            var marker_83162a7d82704dce78d12bda43146d2b = L.marker(
+                [54.5600489, -1.328932],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_b8bde6b446502a171285c7ebac13b144 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_83162a7d82704dce78d12bda43146d2b.setIcon(icon_b8bde6b446502a171285c7ebac13b144);
+        
+    
+        var popup_ace44d4fe10a9ea3f496b87b7647d3d6 = L.popup({});
+
+        
+            
+                var html_175763c53da9d545a7a5da6a141e6fa4 = $(`<div id="html_175763c53da9d545a7a5da6a141e6fa4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oxbridge</h1><div class="nugget-popup"><p>Part of the Hartburn/Oxbridge area is shown in the report as flooded with properties flooded internally during the event; flooding in the area was mainly fluvial from Lustrum Beck. (p30)</p></div></div></body></div>`)[0];
+                popup_ace44d4fe10a9ea3f496b87b7647d3d6.setContent(html_175763c53da9d545a7a5da6a141e6fa4);
+            
+        
+
+        marker_83162a7d82704dce78d12bda43146d2b.bindPopup(popup_ace44d4fe10a9ea3f496b87b7647d3d6)
+        ;
+
+        
+    
+    
+            var marker_d5d8d1dc94d11cb1760e366a9cfce4c4 = L.marker(
+                [54.6071441, -1.2912166],
+                {}
+            ).addTo(map_7de4e9e3f9e6b8017dfbb46036eaa106);
+        
+    
+            var icon_2f1415ca4a5ca813449a39070513ad73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d5d8d1dc94d11cb1760e366a9cfce4c4.setIcon(icon_2f1415ca4a5ca813449a39070513ad73);
+        
+    
+        var popup_edcd2ffa56c154ccd29ef350b2fa4ec9 = L.popup({});
+
+        
+            
+                var html_b1f2dc7bdefae60a206d241cbf0a3e4a = $(`<div id="html_b1f2dc7bdefae60a206d241cbf0a3e4a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Billingham</h1><div class="nugget-popup"><p>Flooding affected parts of the town: internal flooding of properties occurred in the Mill Meadow Court and Chesham Road areas; severe highway flooding affected the A19 slips; gardens at the lower end of Costain Grove were flooded to substantial depth, threatening properties though none are recorded as having internal flooding. [IMG] (p32)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 2 metres (garden flood depth at lower end of Costain Grove) [IMG] (p32)</p></div></div></body></div>`)[0];
+                popup_edcd2ffa56c154ccd29ef350b2fa4ec9.setContent(html_b1f2dc7bdefae60a206d241cbf0a3e4a);
+            
+        
+
+        marker_d5d8d1dc94d11cb1760e366a9cfce4c4.bindPopup(popup_edcd2ffa56c154ccd29ef350b2fa4ec9)
+        ;
+
+        
+    
+</script>
+</html>

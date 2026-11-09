@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cde18e24217bb32402d984a36a50b4c9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cde18e24217bb32402d984a36a50b4c9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cde18e24217bb32402d984a36a50b4c9 = L.map(
+                "map_cde18e24217bb32402d984a36a50b4c9",
+                {
+                    center: [53.1665103501064, -1.1909964368425738],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3a2263cb67559d286d57cbbef822ff4e = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_3a2263cb67559d286d57cbbef822ff4e.addTo(map_cde18e24217bb32402d984a36a50b4c9);
+    
+            var marker_009da98dc7ace4f9da3c109f2f3f2099 = L.marker(
+                [53.1733742, -1.2482026],
+                {}
+            ).addTo(map_cde18e24217bb32402d984a36a50b4c9);
+        
+    
+            var icon_b8ff53b8c0876777d62d3bbf86a26c2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_009da98dc7ace4f9da3c109f2f3f2099.setIcon(icon_b8ff53b8c0876777d62d3bbf86a26c2c);
+        
+    
+        var popup_4bda52583322600db0769e55e1cac797 = L.popup({});
+
+        
+            
+                var html_29a207599504e9ec830dd9747fe9d56c = $(`<div id="html_29a207599504e9ec830dd9747fe9d56c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chesterfield Road, Pleasley</h1><div class="nugget-popup"><p>River Meden overtopped/rose and flooded onto Chesterfield Road, with floodwater entering and flooding properties on the road. [IMG] (p3)</p></div><div class="nugget-popup"><p>Eyewitnesses report floodwater moved from the south side of Chesterfield Road into Meden Square; water also came out of the millpond bank on the north side of Chesterfield Road, contributing to the flooding of Meden Square. [IMG,PAG] (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>12 residential properties; 3 businesses [IMG] (p3)</p></div></div></body></div>`)[0];
+                popup_4bda52583322600db0769e55e1cac797.setContent(html_29a207599504e9ec830dd9747fe9d56c);
+            
+        
+
+        marker_009da98dc7ace4f9da3c109f2f3f2099.bindPopup(popup_4bda52583322600db0769e55e1cac797)
+        ;
+
+        
+    
+    
+            var marker_a2e8ae8541ac0a124847e64f495f156b = L.marker(
+                [53.172674, -1.2451074],
+                {}
+            ).addTo(map_cde18e24217bb32402d984a36a50b4c9);
+        
+    
+            var icon_ce368243d4447eb4f933bc186896d4f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a2e8ae8541ac0a124847e64f495f156b.setIcon(icon_ce368243d4447eb4f933bc186896d4f5);
+        
+    
+        var popup_17b32ef1c585e99b54bb0109945037fa = L.popup({});
+
+        
+            
+                var html_5596b3f28e12165be60c90395d6c63e8 = $(`<div id="html_5596b3f28e12165be60c90395d6c63e8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Meden Square, Pleasley</h1><div class="nugget-popup"><p>Floodwater from the River Meden inundated Meden Square. Eyewitnesses indicate Meden Square flooded from the south side of Chesterfield Road before additional water came out of bank from the millpond north of Chesterfield Road, causing properties/businesses to be flooded. [IMG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 businesses [IMG] (p3)</p></div></div></body></div>`)[0];
+                popup_17b32ef1c585e99b54bb0109945037fa.setContent(html_5596b3f28e12165be60c90395d6c63e8);
+            
+        
+
+        marker_a2e8ae8541ac0a124847e64f495f156b.bindPopup(popup_17b32ef1c585e99b54bb0109945037fa)
+        ;
+
+        
+    
+    
+            var marker_114e323f2d3a7e1f914c171d1924c9da = L.marker(
+                [53.145927, -1.0214971],
+                {}
+            ).addTo(map_cde18e24217bb32402d984a36a50b4c9);
+        
+    
+            var icon_5b65e90ecdf099fedcdb3280e0998cfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_114e323f2d3a7e1f914c171d1924c9da.setIcon(icon_5b65e90ecdf099fedcdb3280e0998cfa);
+        
+    
+        var popup_c5a3efb96018e9ea908a53389db48bbe = L.popup({});
+
+        
+            
+                var html_642e67bc1ec6aece674b99b39616a399 = $(`<div id="html_642e67bc1ec6aece674b99b39616a399" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Nottinghamshire</h1><div class="nugget-popup"><p>Major Incident with significant impacts across the county including internal flooding of properties and businesses; county teams attended sites, verified internal flooding, delivered sandbags and provided 24&ndash;hour support; 77 roads were closed to promote road safety and avoid further flood damage; led recovery actions including Section 19 Flood Investigation and grant delivery. (p5)</p></div><div class="nugget-popup"><p>A Flood Alert for the River Meden in Nottinghamshire was issued by the Environment Agency (area covered by the alert). (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>77 roads (p5)</p></div></div></body></div>`)[0];
+                popup_c5a3efb96018e9ea908a53389db48bbe.setContent(html_642e67bc1ec6aece674b99b39616a399);
+            
+        
+
+        marker_114e323f2d3a7e1f914c171d1924c9da.bindPopup(popup_c5a3efb96018e9ea908a53389db48bbe)
+        ;
+
+        
+    
+    
+            var marker_ead27355779a2ff32b7d06e3356ccf29 = L.marker(
+                [53.17406620042561, -1.249178647370295],
+                {}
+            ).addTo(map_cde18e24217bb32402d984a36a50b4c9);
+        
+    
+            var icon_4f6fbbd161f57707621b3848387dbce4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ead27355779a2ff32b7d06e3356ccf29.setIcon(icon_4f6fbbd161f57707621b3848387dbce4);
+        
+    
+        var popup_c50fb19b86e73bc091eb0777a43d665e = L.popup({});
+
+        
+            
+                var html_767507483f23d8c8d6a4d3e19c013ade = $(`<div id="html_767507483f23d8c8d6a4d3e19c013ade" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pleasley</h1><div class="nugget-popup"><p>Internal flooding of buildings and flooding of roads: 12 residential properties and 5 businesses experienced internal flooding during the event; roads and properties flooded more quickly due to already&ndash;saturated ground. (p1)</p></div><div class="nugget-popup"><p>At Pleasley the River Meden reached the highest recorded gauge level (peak 3.34 m) at the measuring station, and the high river levels caused flooding onto Chesterfield Road and Meden Square, resulting in flooded properties. [PAG] (p3)</p></div><div class="nugget-popup"><p>Eyewitnesses report flooding at Meden Square and Chesterfield Road: water entered Meden Square from the south side of Chesterfield Road, followed by water emerging/outletting from the millpond bank on the north side of Chesterfield Road. [IMG] (p4)</p></div><div class="nugget-popup"><p>Associated with flood&ndash;risk activity following Storm Babet: a community flood signage scheme is being developed with support from NCC and officers are working with the community to help develop a local flood action group; suitability of the Property Flood Resilience Programme for communities affected by Storm Babet will be considered. (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>12 residential properties; 5 businesses (p1)</p></div><div class="nugget-popup quant"><p>Gauge peak 3.34 m; 12 residential properties; 5 businesses [PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_c50fb19b86e73bc091eb0777a43d665e.setContent(html_767507483f23d8c8d6a4d3e19c013ade);
+            
+        
+
+        marker_ead27355779a2ff32b7d06e3356ccf29.bindPopup(popup_c50fb19b86e73bc091eb0777a43d665e)
+        ;
+
+        
+    
+</script>
+</html>

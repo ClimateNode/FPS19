@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_88715d0a2587b40d558ef68b86a03c4c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_88715d0a2587b40d558ef68b86a03c4c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_88715d0a2587b40d558ef68b86a03c4c = L.map(
+                "map_88715d0a2587b40d558ef68b86a03c4c",
+                {
+                    center: [50.93386800885851, -2.9182796879409154],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cb2848e3dfe63f4fa358376457697cc1 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_cb2848e3dfe63f4fa358376457697cc1.addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+    
+            var marker_82cdceedbb039a3ef450edf20224c54c = L.marker(
+                [50.9324, -2.928429],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_dd580d276f3b249d67815590207e43bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_82cdceedbb039a3ef450edf20224c54c.setIcon(icon_dd580d276f3b249d67815590207e43bb);
+        
+    
+        var popup_519e273dd67d5210f5e7b61af9054fe2 = L.popup({});
+
+        
+            
+                var html_d52cd731cc7970f29773bb5fd14aa553 = $(`<div id="html_d52cd731cc7970f29773bb5fd14aa553" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holway House Park</h1><div class="nugget-popup"><p>Park home site was particularly impacted by flooding during the event on 2021&ndash;10&ndash;20; park homes and site areas were inundated as local watercourses (Slape Stream culverted beneath the development) and overland surface water flows inundated the site. (p13)</p></div><div class="nugget-popup"><p>Flooding began at about 01:00&ndash;01:30 with very rapid onset and peak depths reached within 20&ndash;25 minutes. Fire and Rescue began rescuing people from the park home development (Holway House Park) at about 02:00. (p16)</p></div><div class="nugget-popup"><p>One of the worst&ndash;affected areas with water depths up to 1.25 m; around 19 park homes flooded internally and nine were damaged beyond repair. Floodwater flowed down the lane next to Holway House into the park. (p21)</p></div><div class="nugget-popup"><p>Residents gave testimony that Holway Park was flooded during the investigated event. (p29)</p></div><div class="nugget-popup"><p>Floodwater flowed across Station Road into Holway House Park where it became trapped by the low bank around the park, causing ponding within the park and affecting adjacent houses. (p41)</p></div><div class="nugget-popup"><p>Caravan/park homes development where the river appears to have burst its banks; emergency services performed boat rescues (specialist boat rescue of 10 people reported) and multiple people were evacuated from park homes; floodwaters mixed with sewage from a septic tank at the site. [TAB] (p44)</p></div></div></body></div>`)[0];
+                popup_519e273dd67d5210f5e7b61af9054fe2.setContent(html_d52cd731cc7970f29773bb5fd14aa553);
+            
+        
+
+        marker_82cdceedbb039a3ef450edf20224c54c.bindPopup(popup_519e273dd67d5210f5e7b61af9054fe2)
+        ;
+
+        
+    
+    
+            var marker_a1748260a3a9b944166f7b4aa4fb3fd8 = L.marker(
+                [50.9240925, -2.908937],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_6765593d649372a418feb6fb59a9a205 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a1748260a3a9b944166f7b4aa4fb3fd8.setIcon(icon_6765593d649372a418feb6fb59a9a205);
+        
+    
+        var popup_0b4eace78f6ea65f37bf9834a9c0bb34 = L.popup({});
+
+        
+            
+                var html_d782b41331120883f287c776b809c8d9 = $(`<div id="html_d782b41331120883f287c776b809c8d9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Swanmead School</h1><div class="nugget-popup"><p>Part of the Swanmead school playing field was inundated by floodwater during the event. (p20)</p></div></div></body></div>`)[0];
+                popup_0b4eace78f6ea65f37bf9834a9c0bb34.setContent(html_d782b41331120883f287c776b809c8d9);
+            
+        
+
+        marker_a1748260a3a9b944166f7b4aa4fb3fd8.bindPopup(popup_0b4eace78f6ea65f37bf9834a9c0bb34)
+        ;
+
+        
+    
+    
+            var marker_b4567221218917118951c12fbcba74f4 = L.marker(
+                [50.9309415, -2.9346688],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_e30d944fecbc8cb62b3c3c980f3b9b76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b4567221218917118951c12fbcba74f4.setIcon(icon_e30d944fecbc8cb62b3c3c980f3b9b76);
+        
+    
+        var popup_1effea7b8afe7ece316364bfe6f156ec = L.popup({});
+
+        
+            
+                var html_c1ce66ddd30822980bcad884baae0839 = $(`<div id="html_c1ce66ddd30822980bcad884baae0839" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rose Mills Industrial Estate</h1><div class="nugget-popup"><p>Three commercial properties were flooded; building damage indicated water depths of up to about 10 centimetres. (p21)</p></div><div class="nugget-popup"><p>Fluvial floodwater from the River Isle entered and affected the Rose Mill Industrial estate after the river bypassed Environment Agency defences upstream of Hort Bridge. [TAB] (p37)</p></div></div></body></div>`)[0];
+                popup_1effea7b8afe7ece316364bfe6f156ec.setContent(html_c1ce66ddd30822980bcad884baae0839);
+            
+        
+
+        marker_b4567221218917118951c12fbcba74f4.bindPopup(popup_1effea7b8afe7ece316364bfe6f156ec)
+        ;
+
+        
+    
+    
+            var marker_6a64e18b36bf6c2f5ab46ba06172e43e = L.marker(
+                [50.9256425, -2.9089863],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_08a462dd91754f006d7c55211f376f07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6a64e18b36bf6c2f5ab46ba06172e43e.setIcon(icon_08a462dd91754f006d7c55211f376f07);
+        
+    
+        var popup_8a466cfa1ed6ee9b37775e6642171e55 = L.popup({});
+
+        
+            
+                var html_b98f09b2abe4bceec074296962bf6179 = $(`<div id="html_b98f09b2abe4bceec074296962bf6179" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tesco</h1><div class="nugget-popup"><p>The culvert that runs under the Tesco petrol station was overwhelmed by the volume of water from the Shudrick Stream; this contributed to surface water flooding emerging in Abbots Close and compounded flooding on Ditton Street. The culvert (600mm diameter) was noted as comparatively undersized for the catchment it serves. (p16)</p></div><div class="nugget-popup"><p>The culvert carrying the Shudrick Stream beneath the Tesco filling station was reported to have become partially blinded with debris during the night, adding to local flooding issues at the site. (p26)</p></div></div></body></div>`)[0];
+                popup_8a466cfa1ed6ee9b37775e6642171e55.setContent(html_b98f09b2abe4bceec074296962bf6179);
+            
+        
+
+        marker_6a64e18b36bf6c2f5ab46ba06172e43e.bindPopup(popup_8a466cfa1ed6ee9b37775e6642171e55)
+        ;
+
+        
+    
+    
+            var marker_14a17faeb014005b0fb214fd4e8067b7 = L.marker(
+                [50.9263234, -2.9162004],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_fc601dca32f1bf4b5e20e6438029c699 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_14a17faeb014005b0fb214fd4e8067b7.setIcon(icon_fc601dca32f1bf4b5e20e6438029c699);
+        
+    
+        var popup_7c2bb1c6e7e415f571e2e17461fbfdfe = L.popup({});
+
+        
+            
+                var html_55f72b135a04b2fdd9c01397ff9e0415 = $(`<div id="html_55f72b135a04b2fdd9c01397ff9e0415" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Shudrick Stream</h1><div class="nugget-popup"><p>The Shudrick Stream spilled water (high flows) and the volume entering the stream and culvert overwhelmed the 600mm culvert feeding under Tesco, causing water to escape the channel/culvert and contribute to rapid surface water flooding at Ditton Street and surrounding areas. (p16)</p></div><div class="nugget-popup"><p>The Shudrick Stream spilled and produced very high flows into the culvert at Shudrick Lane on 2021&ndash;10&ndash;20; the volume overwhelmed the culvert, fed the large drain under the Tesco petrol station, emerged in Abbots Close and compounded surface&ndash;water flooding on Ditton Street. [PAG,IMG] (p17)</p></div><div class="nugget-popup"><p>High flows moved through the culverted reach beneath Ditton Street and Wharf Lane, then through an open channel and into the storage feature upstream of Station Road, contributing to inundation of that storage area and to flooding of Ditton Street and nearby homes and shops. [PAG] (p18)</p></div><div class="nugget-popup"><p>The Shudrick Stream flows in a culvert under Ditton Street and Wharf Lane and in open channel through housing; its course and the town culvert are described in the context of surface water and culvert&ndash;related flooding that contributed to roadway and property inundation. [PAG] (p19)</p></div><div class="nugget-popup"><p>Received large volumes of runoff from fields uphill of the eastern end of town carrying soil and debris; this caused the stream to flood and contributed to local flooding. The stream flows through a culvert beneath the Tesco filling station, which was reported to have become partially blinded with debris during the night, exacerbating the flooding. (p26)</p></div><div class="nugget-popup"><p>Flooding occurred in the low&ndash;lying area around the Shudrick Stream as overland flows accumulated and moved downhill; these flows contributed to damage to roads and property and carried debris that blocked drains. [TAB] (p34)</p></div><div class="nugget-popup"><p>The Shudrick Stream came out of its banks on 2021&ndash;10&ndash;20 and added to the floodwater collecting at the low point by Ditton Street and Shudrick Lane. The stream overflow was possibly linked to the culvert under Ditton Street becoming blinded with debris or overwhelmed by the large quantity of water, increasing local overtopping and contributing debris to the flood. (p42)</p></div><div class="nugget-popup"><p>Shudrick Stream and the Shudrick Valley are identified as contributors to local flood flows on 20 October 2021; the stream/valley is proposed for Natural Flood Management investigation and will be added into the catchment fluvial model to better understand and mitigate its role in flooding. (p46)</p></div></div></body></div>`)[0];
+                popup_7c2bb1c6e7e415f571e2e17461fbfdfe.setContent(html_55f72b135a04b2fdd9c01397ff9e0415);
+            
+        
+
+        marker_14a17faeb014005b0fb214fd4e8067b7.bindPopup(popup_7c2bb1c6e7e415f571e2e17461fbfdfe)
+        ;
+
+        
+    
+    
+            var marker_71a7b42b8ea522667bdcb4aa24d96e07 = L.marker(
+                [50.93125283046356, -2.9104103346219485],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_af92571f310992c5035d4418969ea47e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_71a7b42b8ea522667bdcb4aa24d96e07.setIcon(icon_af92571f310992c5035d4418969ea47e);
+        
+    
+        var popup_ad53420133249945dcbdc65b4751d022 = L.popup({});
+
+        
+            
+                var html_a412ca6b12f136e486d9ff9ab128d3c8 = $(`<div id="html_a412ca6b12f136e486d9ff9ab128d3c8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Beacon Hill</h1><div class="nugget-popup"><p>Runoff from Beacon Hill flowed down tracks past allotments, along Old Road and into North Street, supplying pluvial flow into the town; this runoff carried soil, stones and debris which contributed to drain blockages and increased surface water impacts. (p42)</p></div></div></body></div>`)[0];
+                popup_ad53420133249945dcbdc65b4751d022.setContent(html_a412ca6b12f136e486d9ff9ab128d3c8);
+            
+        
+
+        marker_71a7b42b8ea522667bdcb4aa24d96e07.bindPopup(popup_ad53420133249945dcbdc65b4751d022)
+        ;
+
+        
+    
+    
+            var marker_ae40c93cba253ea257e4a1e41092af12 = L.marker(
+                [50.9209791, -2.9240333],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_7ca99c7e6d77cc5688d843b1be74710f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ae40c93cba253ea257e4a1e41092af12.setIcon(icon_7ca99c7e6d77cc5688d843b1be74710f);
+        
+    
+        var popup_18e7f044691b156f6dc7e828697835fe = L.popup({});
+
+        
+            
+                var html_e90410346ac662bf59fae9c8f31c0aba = $(`<div id="html_e90410346ac662bf59fae9c8f31c0aba" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Herne Hill</h1><div class="nugget-popup"><p>Pluvial runoff from Herne Hill on 2021&ndash;10&ndash;20 produced high volumes of surface water that flowed off fields toward the town, carrying soil, stones and debris which contributed to blocking drains and downstream surface water flooding. (p43)</p></div></div></body></div>`)[0];
+                popup_18e7f044691b156f6dc7e828697835fe.setContent(html_e90410346ac662bf59fae9c8f31c0aba);
+            
+        
+
+        marker_ae40c93cba253ea257e4a1e41092af12.bindPopup(popup_18e7f044691b156f6dc7e828697835fe)
+        ;
+
+        
+    
+    
+            var marker_b0fa5e0e10210a32a9a3f9ffbb48e7d6 = L.marker(
+                [50.92313181762741, -2.9043422892857866],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_42cfb9b745aec47fcbc9a9f9e7f55ee3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b0fa5e0e10210a32a9a3f9ffbb48e7d6.setIcon(icon_42cfb9b745aec47fcbc9a9f9e7f55ee3);
+        
+    
+        var popup_8a5de0818661cd78cda2f36640dd935d = L.popup({});
+
+        
+            
+                var html_e01ec1e487de6f3350952c4a3ec678dc = $(`<div id="html_e01ec1e487de6f3350952c4a3ec678dc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pretwood Hill</h1><div class="nugget-popup"><p>Pluvial runoff from Pretwood Hill on 2021&ndash;10&ndash;20 contributed high volumes of surface water flowing toward the town and low&ndash;lying areas, transporting soil and debris that could block drains and add to surface water flooding downstream. (p43)</p></div></div></body></div>`)[0];
+                popup_8a5de0818661cd78cda2f36640dd935d.setContent(html_e01ec1e487de6f3350952c4a3ec678dc);
+            
+        
+
+        marker_b0fa5e0e10210a32a9a3f9ffbb48e7d6.bindPopup(popup_8a5de0818661cd78cda2f36640dd935d)
+        ;
+
+        
+    
+    
+            var marker_4bb259d0dc147f17498be13cca30e8e9 = L.marker(
+                [50.9631628, -2.9042869],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_b104753b29b8e45d1f2e4d499a34ff46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4bb259d0dc147f17498be13cca30e8e9.setIcon(icon_b104753b29b8e45d1f2e4d499a34ff46);
+        
+    
+        var popup_f572eacb6280219c845072619880571a = L.popup({});
+
+        
+            
+                var html_a242c719e91d8b5cdc13777e3585ed24 = $(`<div id="html_a242c719e91d8b5cdc13777e3585ed24" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Isle</h1><div class="nugget-popup"><p>Flooding from the River Isle (and connected Dowlish Brook) produced an area of inundation in the catchment near Uphill / northeast of Ilminster, spanning the main road and adjacent buildings and contributing to flood extent shown on the report maps. [IMG] (p6)</p></div><div class="nugget-popup"><p>Experienced one of the highest water levels in 30 years of gauge history; flows were the highest recorded, causing the river to come out of its banks and flood areas to the west of Ilminster on 2021&ndash;10&ndash;20. [PAG,IMG,TAB] (p13)</p></div><div class="nugget-popup"><p>Experienced one of the highest water levels in 30 years of gauge record; flows were the highest recorded. The river overtopped its banks, causing flooding of areas to the west of Ilminster. (p14)</p></div><div class="nugget-popup"><p>The River Isle burst its banks due to high rainfall and saturated ground, causing severe flooding at the western edge of Ilminster and triggering evacuations. River levels rose rapidly (peaks recorded at nearby gauges during the night of 20&ndash;21 October 2021). (p15)</p></div><div class="nugget-popup"><p>The River Isle was reported to have burst its banks during the event, contributing to local flooding and prompting rescue activity. (p16)</p></div><div class="nugget-popup"><p>The River Isle overflowed into nearby park home developments, Rose Mill Industrial Estate and the Station Road area; defences upstream of Hort Bridge were outflanked at the upstream end (first time since the 1970s), increasing flows into adjacent areas. (p21)</p></div><div class="nugget-popup"><p>The river Isle recorded its highest level on the Donyatt gauge in its 30&ndash;year history on 2021&ndash;10&ndash;20. This high river level is used by the Environment Agency to predict and issue flood warnings for Ilminster. [TAB] (p34)</p></div><div class="nugget-popup"><p>A flood warning was issued at about 22:20 for the River Isle (from Chard Reservoir to Hambridge) as levels continued to rise, peaking around 23:30. The river apparently burst its banks and mixed with sewage from a septic tank in the area where park homes/caravan park flooding occurred. [TAB] (p44)</p></div><div class="nugget-popup"><p>The river reportedly burst its banks and mixed with sewage from a septic tank, leading to flooding of a residential park homes development; Fire and Rescue deployed boats and rescued people (8 people reported rescued), with evacuees transferred to hotel accommodation and prolonged loss of electricity at the residential parks delaying reoccupation and drying&ndash;out efforts. [PAG] (p45)</p></div><div class="nugget-popup"><p>The River Isle is implicated in the catchment flood flows affecting Ilminster; it is identified for inclusion in updated fluvial modelling and as a location where Natural Flood Management measures should be investigated to reduce future fluvial flooding. [PAG] (p46)</p></div></div></body></div>`)[0];
+                popup_f572eacb6280219c845072619880571a.setContent(html_a242c719e91d8b5cdc13777e3585ed24);
+            
+        
+
+        marker_4bb259d0dc147f17498be13cca30e8e9.bindPopup(popup_f572eacb6280219c845072619880571a)
+        ;
+
+        
+    
+    
+            var marker_e3cf9c5e9cc651a6f41f7c631a9194e3 = L.marker(
+                [50.9135239, -2.9326336],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_a55f17f22002b6ad5eb6ed80e2a41d14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e3cf9c5e9cc651a6f41f7c631a9194e3.setIcon(icon_a55f17f22002b6ad5eb6ed80e2a41d14);
+        
+    
+        var popup_1d54eab36ee4b1d5dbf9dfd5a3a5752f = L.popup({});
+
+        
+            
+                var html_5bf63cc59c0581f97ca4d60c6064c0d6 = $(`<div id="html_5bf63cc59c0581f97ca4d60c6064c0d6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Watery Lane, Donyatt</h1><div class="nugget-popup"><p>A section of Watery Ln was flooded and multiple adjacent properties (six properties clustered along the lane) were reported affected, indicating localized flooding and road inundation. [IMG] (p11)</p></div><div class="nugget-popup"><p>Surface water ran down Watery Lane on 2021&ndash;10&ndash;20, likely originating from rainfall on Herne Hill or Pretwood Hill. The flow carried soil, stones and debris which can collect in and block drains and contributed to downstream flooding and ingress to properties. (p43)</p></div></div></body></div>`)[0];
+                popup_1d54eab36ee4b1d5dbf9dfd5a3a5752f.setContent(html_5bf63cc59c0581f97ca4d60c6064c0d6);
+            
+        
+
+        marker_e3cf9c5e9cc651a6f41f7c631a9194e3.bindPopup(popup_1d54eab36ee4b1d5dbf9dfd5a3a5752f)
+        ;
+
+        
+    
+    
+            var marker_238adbcfda48364e89b8cb2e93d962cf = L.marker(
+                [50.9153409, -2.9148905],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_7eda98d37ab4e4d312b951114bdb5cd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_238adbcfda48364e89b8cb2e93d962cf.setIcon(icon_7eda98d37ab4e4d312b951114bdb5cd7);
+        
+    
+        var popup_ef2e0ef72e06875e8517dd8dec08c057 = L.popup({});
+
+        
+            
+                var html_22ead45ecc1cf9cb96297252b59caee2 = $(`<div id="html_22ead45ecc1cf9cb96297252b59caee2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Greenway, Ilminster</h1><div class="nugget-popup"><p>Houses on Green Way (sic) experienced flooding during the severe event on 2021&ndash;10&ndash;20 as overland surface water inundated residential streets. (p13)</p></div></div></body></div>`)[0];
+                popup_ef2e0ef72e06875e8517dd8dec08c057.setContent(html_22ead45ecc1cf9cb96297252b59caee2);
+            
+        
+
+        marker_238adbcfda48364e89b8cb2e93d962cf.bindPopup(popup_ef2e0ef72e06875e8517dd8dec08c057)
+        ;
+
+        
+    
+    
+            var marker_03574f4a804e94c0ebcb1f4680d5e390 = L.marker(
+                [50.9314336, -2.9243746],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_082a7ebe7456fb5bb94ce6c8de26f6e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_03574f4a804e94c0ebcb1f4680d5e390.setIcon(icon_082a7ebe7456fb5bb94ce6c8de26f6e4);
+        
+    
+        var popup_80ff408e5228bb70b84553822a55b777 = L.popup({});
+
+        
+            
+                var html_22cafdbc6adae7178004037206efd457 = $(`<div id="html_22cafdbc6adae7178004037206efd457" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Whaites Drive, Ilminster</h1><div class="nugget-popup"><p>The industrial area around Whaites Drive experienced flooding during the 2021&ndash;10&ndash;20 event, with industrial premises and site areas inundated by surface water. (p13)</p></div></div></body></div>`)[0];
+                popup_80ff408e5228bb70b84553822a55b777.setContent(html_22cafdbc6adae7178004037206efd457);
+            
+        
+
+        marker_03574f4a804e94c0ebcb1f4680d5e390.bindPopup(popup_80ff408e5228bb70b84553822a55b777)
+        ;
+
+        
+    
+    
+            var marker_9f73e64bbf692e6b275dd83d9c3c6ab2 = L.marker(
+                [50.9270956, -2.9104639],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_6a0a8c5408311de7d82ab81b06690e3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9f73e64bbf692e6b275dd83d9c3c6ab2.setIcon(icon_6a0a8c5408311de7d82ab81b06690e3a);
+        
+    
+        var popup_e6776678dbd9cafc8076a93454ee96c4 = L.popup({});
+
+        
+            
+                var html_d53f4a2b594efb7eb112389fd2620a62 = $(`<div id="html_d53f4a2b594efb7eb112389fd2620a62" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>North Street, Ilminster</h1><div class="nugget-popup"><p>Rainwater accumulated in North Street during the 2021&ndash;10&ndash;20 event, causing localized flooding and inundation of the street and adjacent properties. [PAG,TAB] (p13)</p></div><div class="nugget-popup"><p>Rainwater accumulated in North Street during the event, causing localised flooding in the street. (p14)</p></div><div class="nugget-popup"><p>Runoff from fields to the north flowed down Old Road and across the road into North Street; surface water entered North Street and reached the shops at the bottom of the Market Square, with residents reporting an overwhelming volume of water. (p20)</p></div><div class="nugget-popup"><p>On 2021&ndash;10&ndash;20 North Street received large volumes of surface water from uphill fields; runoff likely carried debris and contributed to gullies/drains becoming impaired and to surface water flooding on the highway. (p25)</p></div><div class="nugget-popup"><p>Runoff from Beacon Hill and along Old Road entered North Street on 2021&ndash;10&ndash;20, contributing to accumulation of water in the town centre. Flows carried soil, stones and debris that tended to collect in and potentially block drains, exacerbating surface water flooding in North Street. (p42)</p></div></div></body></div>`)[0];
+                popup_e6776678dbd9cafc8076a93454ee96c4.setContent(html_d53f4a2b594efb7eb112389fd2620a62);
+            
+        
+
+        marker_9f73e64bbf692e6b275dd83d9c3c6ab2.bindPopup(popup_e6776678dbd9cafc8076a93454ee96c4)
+        ;
+
+        
+    
+    
+            var marker_975b166dcb7b591f5b42d2d1f70c4dfe = L.marker(
+                [50.9254574, -2.9095103],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_c98576ee2ba89bc9fabbeb05c1baf116 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_975b166dcb7b591f5b42d2d1f70c4dfe.setIcon(icon_c98576ee2ba89bc9fabbeb05c1baf116);
+        
+    
+        var popup_e418428a15f16052ba1b0f07b30d434c = L.popup({});
+
+        
+            
+                var html_388495b682bbef706a65d46b9eddd9a2 = $(`<div id="html_388495b682bbef706a65d46b9eddd9a2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Shudrick Lane, Ilminster</h1><div class="nugget-popup"><p>Rainwater accumulated in Shudrick Lane during the severe event, causing street flooding and associated local inundation on 2021&ndash;10&ndash;20. [PAG,TAB] (p13)</p></div><div class="nugget-popup"><p>Rainwater accumulated in Shudrick Lane during the event, causing localised flooding along the lane. (p14)</p></div><div class="nugget-popup"><p>Rapid overland flows and surface&ndash;water runoff came off land at the end of Shudrick Lane and into the Shudrick Stream/culvert; residents reported unusually large volumes of water coming down the Shudrick catchment into the culvert by Tesco, which appeared to overwhelm the culvert and contribute to surface water flooding on Ditton Street. [PAG] (p16)</p></div><div class="nugget-popup"><p>Surface water runoff from land at the end of Shudrick Lane contributed to flooding on Ditton Street on 2021&ndash;10&ndash;20. The Shudrick Stream runs along Shudrick Lane and its high flows entered the culvert at this location, contributing to the culvert being overwhelmed and to downstream surface&ndash;water flooding. [PAG,IMG] (p17)</p></div><div class="nugget-popup"><p>The east end of Shudrick Lane at Walnut Close is shown with the road surface covered in water; surface water flowed into the town culvert at the lane and the roadway and parked vehicles were flooded. [IMG] (p19)</p></div><div class="nugget-popup"><p>Rainwater from fields east of Ilminster flowed down Shudrick Lane and collected at the low point at its junction with Ditton Street; contributed to the accumulation of floodwater in the town centre and interacted with Shudrick Stream flows. (p42)</p></div><div class="nugget-popup"><p>Map and eyewitness observations show pluvial flow converging on the low point at the Ditton Street / Shudrick Lane junction. During the event surface water ran to this low&ndash;lying junction, producing pooling on the highway and concentrating high volumes of runoff that carried soil, stones and debris which would tend to collect in and potentially block drains. [IMG] (p43)</p></div></div></body></div>`)[0];
+                popup_e418428a15f16052ba1b0f07b30d434c.setContent(html_388495b682bbef706a65d46b9eddd9a2);
+            
+        
+
+        marker_975b166dcb7b591f5b42d2d1f70c4dfe.bindPopup(popup_e418428a15f16052ba1b0f07b30d434c)
+        ;
+
+        
+    
+    
+            var marker_eccded5699417e6ff498c54b7c69f7e0 = L.marker(
+                [50.93114, -2.9168689],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_2859a8c44083b001d60405ef9c58b06a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eccded5699417e6ff498c54b7c69f7e0.setIcon(icon_2859a8c44083b001d60405ef9c58b06a);
+        
+    
+        var popup_ecab09828540c37daf9e81241a0b5882 = L.popup({});
+
+        
+            
+                var html_c80b9c5d67b9cb8a89f200d6c181ebd8 = $(`<div id="html_c80b9c5d67b9cb8a89f200d6c181ebd8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Beacon, Ilminster</h1><div class="nugget-popup"><p>Accumulated rainfall on the Beacon (Snowdon Hill) ran down into Ilminster, causing surface water flooding at the eastern end of town. (p15)</p></div></div></body></div>`)[0];
+                popup_ecab09828540c37daf9e81241a0b5882.setContent(html_c80b9c5d67b9cb8a89f200d6c181ebd8);
+            
+        
+
+        marker_eccded5699417e6ff498c54b7c69f7e0.bindPopup(popup_ecab09828540c37daf9e81241a0b5882)
+        ;
+
+        
+    
+    
+            var marker_fa8e1b1a939c5ac1496cf51574f92678 = L.marker(
+                [50.9335949, -2.9263906],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_06e0a3d58d065c61a68b8985d9c6cba3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fa8e1b1a939c5ac1496cf51574f92678.setIcon(icon_06e0a3d58d065c61a68b8985d9c6cba3);
+        
+    
+        var popup_d903a4dbc0bdff8c600d90f94782808e = L.popup({});
+
+        
+            
+                var html_955aa64439da3e88e2af590380c0be3e = $(`<div id="html_955aa64439da3e88e2af590380c0be3e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Green Lane, Ilminster</h1><div class="nugget-popup"><p>Flooding started at about 01:00&ndash;01:30 with very rapid onset; peak depths were reached within 20&ndash;25 minutes, inundating Green Lane. (p16)</p></div><div class="nugget-popup"><p>Floodwater from Home Farm Park and combined flows carried down Green Lane reaching significant depth; around 13 residential properties along Green Lane flooded with depths to about 1 metre. (p21)</p></div><div class="nugget-popup"><p>Map annotations and resident records show a ditch to be cleared running parallel to Green Lane and indicate the route of flooding approaching the residential area; residents around Green Lane provided records about the bund and its construction. The area was implicated in the October 2021 flood (20 October 2021) as part of the flow route into the homes. [IMG] (p33)</p></div><div class="nugget-popup"><p>Flows from Home Farm Park and from the north combined in Green Lane, inundating the lane. A resident reported that culverting and ground&ndash;level changes made during 2018/19 reduced the passage of water away from Green Lane, and downstream ditches are overgrown, exacerbating the flooding. (p41)</p></div><div class="nugget-popup"><p>Culverting on Green Lane was identified as requiring review to determine whether unpermitted changes were made and because the culvert arrangement influenced flood conveyance during the event; the feature therefore contributed to localised flood impacts and must be included in modelling and mitigation. [TAB] (p47)</p></div></div></body></div>`)[0];
+                popup_d903a4dbc0bdff8c600d90f94782808e.setContent(html_955aa64439da3e88e2af590380c0be3e);
+            
+        
+
+        marker_fa8e1b1a939c5ac1496cf51574f92678.bindPopup(popup_d903a4dbc0bdff8c600d90f94782808e)
+        ;
+
+        
+    
+    
+            var marker_cb983ec36a5c4aba0cd5e6f3f64f243c = L.marker(
+                [50.9333202, -2.9261569],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_577c2749549b5c679f9dfdcfdca8e1a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cb983ec36a5c4aba0cd5e6f3f64f243c.setIcon(icon_577c2749549b5c679f9dfdcfdca8e1a9);
+        
+    
+        var popup_db5564cac7a55300365b5dae6d30047a = L.popup({});
+
+        
+            
+                var html_29b142d5ed92f0d8e56ee699ec934a5a = $(`<div id="html_29b142d5ed92f0d8e56ee699ec934a5a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Old Orchard, Ilminster</h1><div class="nugget-popup"><p>Flooding began at about 01:00&ndash;01:30 with very rapid onset and peak depths reached within 20&ndash;25 minutes, causing inundation at Old Orchard. (p16)</p></div><div class="nugget-popup"><p>Old Orchard area was reached by the combined flood flows from Home Farm Park/Green Lane and suffered significant flooding depths as the flow continued down into the area. (p21)</p></div><div class="nugget-popup"><p>Residents around Old Orchard provided records relating to the bund's construction and context; these records and resident testimony associate Old Orchard with the October 2021 flooding (20 October 2021) and the local protective measures (bund, cattle grid) intended to intercept floodwater entering the residential area. (p33)</p></div><div class="nugget-popup"><p>Resident reports and the map indicate water from the Isle (spilling north and south of Hort bridge) combined with pluvial flows and flows down Home Farm Way to join in Green Lane and Old Orchard, causing inundation of the Old Orchard residential area. Floodwaters from the river and surface runoff entered the street/adjacent properties, exacerbated by altered culverting/ground levels and poorly maintained downstream ditches (reported by residents). (p41)</p></div></div></body></div>`)[0];
+                popup_db5564cac7a55300365b5dae6d30047a.setContent(html_29b142d5ed92f0d8e56ee699ec934a5a);
+            
+        
+
+        marker_cb983ec36a5c4aba0cd5e6f3f64f243c.bindPopup(popup_db5564cac7a55300365b5dae6d30047a)
+        ;
+
+        
+    
+    
+            var marker_aa4b615cfb615b7784e4a2156fc0b949 = L.marker(
+                [50.9224625, -2.9109214],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_51170f1b2378a2c3abeff6846e537ad4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aa4b615cfb615b7784e4a2156fc0b949.setIcon(icon_51170f1b2378a2c3abeff6846e537ad4);
+        
+    
+        var popup_13df5a300f0b2821b83b5416d88a9e4c = L.popup({});
+
+        
+            
+                var html_e9034a75684ec757785587915c0d6f50 = $(`<div id="html_e9034a75684ec757785587915c0d6f50" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Listers Hill, Ilminster</h1><div class="nugget-popup"><p>Surface water runoff from the top of Listers Hill flowed downhill and was identified by agencies as one of the contributors to flooding on Ditton Street and nearby areas. (p16)</p></div><div class="nugget-popup"><p>Flow down Listers Hill was reported as a problem during the event; resident reports indicate significant runoff and that drains on Listers Hill were blocked, contributing to surface water issues. (p20)</p></div><div class="nugget-popup"><p>On 2021&ndash;10&ndash;20 large amounts of surface water emanated from fields uphill of the eastern end of town and affected Lister Hill; runoff carried soil and debris that likely impaired gullies and drains and led to surface water flooding of the highway/area. (p25)</p></div><div class="nugget-popup"><p>Surface water from the south flowed down Listers Hill into Ditton Street on 2021&ndash;10&ndash;20, contributing to the volume of water that collected at the low point in the town and increasing flood levels in the central area. (p42)</p></div></div></body></div>`)[0];
+                popup_13df5a300f0b2821b83b5416d88a9e4c.setContent(html_e9034a75684ec757785587915c0d6f50);
+            
+        
+
+        marker_aa4b615cfb615b7784e4a2156fc0b949.bindPopup(popup_13df5a300f0b2821b83b5416d88a9e4c)
+        ;
+
+        
+    
+    
+            var marker_68579bb64d24786606d40afaa67dba88 = L.marker(
+                [50.9257567, -2.9142903],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_4db7e96c0be2568fc1a58772c7632823 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_68579bb64d24786606d40afaa67dba88.setIcon(icon_4db7e96c0be2568fc1a58772c7632823);
+        
+    
+        var popup_cfd3651d5f797a23bc8b666b9402c8ba = L.popup({});
+
+        
+            
+                var html_6274dd0c49f508112915adb974a185f8 = $(`<div id="html_6274dd0c49f508112915adb974a185f8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Abbots Close, Ilminster</h1><div class="nugget-popup"><p>The large drain fed by the Shudrick Stream and culvert under the Tesco petrol station emerges in Abbots Close; the culvert was overwhelmed by flows from the Shudrick catchment during the event, discharging into Abbots Close and contributing to surface water flooding on Ditton Street. [MUL] (p16)</p></div></div></body></div>`)[0];
+                popup_cfd3651d5f797a23bc8b666b9402c8ba.setContent(html_6274dd0c49f508112915adb974a185f8);
+            
+        
+
+        marker_68579bb64d24786606d40afaa67dba88.bindPopup(popup_cfd3651d5f797a23bc8b666b9402c8ba)
+        ;
+
+        
+    
+    
+            var marker_0fc1d048ff1c9e30d7a547d300319cf2 = L.marker(
+                [50.9257951, -2.9070722],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_c9acd7d71a2edda82a25f653b9e66365 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0fc1d048ff1c9e30d7a547d300319cf2.setIcon(icon_c9acd7d71a2edda82a25f653b9e66365);
+        
+    
+        var popup_efa39e8269deeaa06cdb56c74701972b = L.popup({});
+
+        
+            
+                var html_b67e12e86c37130d0b0c22c9564d13ef = $(`<div id="html_b67e12e86c37130d0b0c22c9564d13ef" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Walnut Place, Ilminster</h1><div class="nugget-popup"><p>Photograph caption and AI description show the flooded street at the east end of Shudrick Lane at Walnut Close (sic) with water covering the road surface and parked cars affected; adjacent areas (e.g. part of Swanmead school playing field) also flooded. [IMG] (p19)</p></div></div></body></div>`)[0];
+                popup_efa39e8269deeaa06cdb56c74701972b.setContent(html_b67e12e86c37130d0b0c22c9564d13ef);
+            
+        
+
+        marker_0fc1d048ff1c9e30d7a547d300319cf2.bindPopup(popup_efa39e8269deeaa06cdb56c74701972b)
+        ;
+
+        
+    
+    
+            var marker_3733cf080327762ef4fbe78b6d868271 = L.marker(
+                [50.9283431, -2.9124687],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_1101265e3893949bbae266f49b0ac6b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3733cf080327762ef4fbe78b6d868271.setIcon(icon_1101265e3893949bbae266f49b0ac6b4);
+        
+    
+        var popup_200cc38ea328ef18ab7a9f95858a2ee3 = L.popup({});
+
+        
+            
+                var html_053554de553f0c168c8e4099bbb4d73a = $(`<div id="html_053554de553f0c168c8e4099bbb4d73a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>High Street, Ilminster</h1><div class="nugget-popup"><p>Drains on High Street were reported by residents as blocked during the event, contributing to surface water runoff and local flooding impacts in the town centre area. (p20)</p></div><div class="nugget-popup"><p>On 2021&ndash;10&ndash;20 the High Street experienced large amounts of surface water flowing from the fields uphill at the eastern end of town; the runoff carried soil/debris, likely impairing gullies and drains and causing highway surface water flooding. [PAG] (p25)</p></div></div></body></div>`)[0];
+                popup_200cc38ea328ef18ab7a9f95858a2ee3.setContent(html_053554de553f0c168c8e4099bbb4d73a);
+            
+        
+
+        marker_3733cf080327762ef4fbe78b6d868271.bindPopup(popup_200cc38ea328ef18ab7a9f95858a2ee3)
+        ;
+
+        
+    
+    
+            var marker_01fa658986eed6589f27b11782952011 = L.marker(
+                [50.9286057, -2.9110748],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_2a913f235ec6014d7277518b362b5549 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_01fa658986eed6589f27b11782952011.setIcon(icon_2a913f235ec6014d7277518b362b5549);
+        
+    
+        var popup_168c78d7df45cc7dd4da3ac0fa77c0ae = L.popup({});
+
+        
+            
+                var html_0f631e3c28c05737fe829349d1bd0b0c = $(`<div id="html_0f631e3c28c05737fe829349d1bd0b0c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Old Road, Ilminster</h1><div class="nugget-popup"><p>On 2021&ndash;10&ndash;20 intense runoff from fields to the north flowed down the beacon and right down Old Road past the allotments, crossed the road and carried straight into North Street, contributing to local flooding and delivering a large volume of water towards the shops at the bottom of Market Square. (p20)</p></div><div class="nugget-popup"><p>Pluvial runoff from Beacon Hill flowed down the track past the allotments and along Old Road into North Street on 2021&ndash;10&ndash;20, carrying soil, stones and debris. This contributed to surface water flooding along Old Road and deposited debris that could block drains and impede drainage. (p42)</p></div></div></body></div>`)[0];
+                popup_168c78d7df45cc7dd4da3ac0fa77c0ae.setContent(html_0f631e3c28c05737fe829349d1bd0b0c);
+            
+        
+
+        marker_01fa658986eed6589f27b11782952011.bindPopup(popup_168c78d7df45cc7dd4da3ac0fa77c0ae)
+        ;
+
+        
+    
+    
+            var marker_8ebfd373b44c834f652c34f35366b28d = L.marker(
+                [50.92671091188763, -2.9100312439531386],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_04bd9089bf33f1673b555aa2e68b390f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8ebfd373b44c834f652c34f35366b28d.setIcon(icon_04bd9089bf33f1673b555aa2e68b390f);
+        
+    
+        var popup_5fd4d2c5b813fa40190aedc125407d77 = L.popup({});
+
+        
+            
+                var html_7034e3f7d971f9ba220c3e3cb45dc499 = $(`<div id="html_7034e3f7d971f9ba220c3e3cb45dc499" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Market Square, Ilminster</h1><div class="nugget-popup"><p>On 2021&ndash;10&ndash;20 runoff flowing down Old Road and North Street reached the bottom of the Market Square where the shops acted as the first obstacle to the flow; this interaction contributed to localised urban flooding impacts at the foot of the Market Square (affecting shopfronts and impeding flow). (p20)</p></div></div></body></div>`)[0];
+                popup_5fd4d2c5b813fa40190aedc125407d77.setContent(html_7034e3f7d971f9ba220c3e3cb45dc499);
+            
+        
+
+        marker_8ebfd373b44c834f652c34f35366b28d.bindPopup(popup_5fd4d2c5b813fa40190aedc125407d77)
+        ;
+
+        
+    
+    
+            var marker_ce41158cd34239529548d4353623df81 = L.marker(
+                [50.9261003, -2.9127004],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_1b6d4c5b41847787e60cf228acafbe4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ce41158cd34239529548d4353623df81.setIcon(icon_1b6d4c5b41847787e60cf228acafbe4f);
+        
+    
+        var popup_da579b19f88e33520cca365e72fe77d1 = L.popup({});
+
+        
+            
+                var html_382bcae6b662ce793cdbc357eb847dcf = $(`<div id="html_382bcae6b662ce793cdbc357eb847dcf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Lamplighters, Ilminster</h1><div class="nugget-popup"><p>Runoff from the Lamplighters development flowed off&ndash;site and into the middle of town, contributing to surface water/urban flooding during the event. (p22)</p></div></div></body></div>`)[0];
+                popup_da579b19f88e33520cca365e72fe77d1.setContent(html_382bcae6b662ce793cdbc357eb847dcf);
+            
+        
+
+        marker_ce41158cd34239529548d4353623df81.bindPopup(popup_da579b19f88e33520cca365e72fe77d1)
+        ;
+
+        
+    
+    
+            var marker_3e729b303128790a307ae88cfc159ba0 = L.marker(
+                [50.9267137, -2.9025423],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_18e8b8fab669bcaef74ea53275f94d63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3e729b303128790a307ae88cfc159ba0.setIcon(icon_18e8b8fab669bcaef74ea53275f94d63);
+        
+    
+        var popup_b3d2ad8ca6257fdb1f3ef88d9f3ed2a4 = L.popup({});
+
+        
+            
+                var html_fa8d4e89245a77c66f465188811a15b0 = $(`<div id="html_fa8d4e89245a77c66f465188811a15b0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Townsend, Ilminster</h1><div class="nugget-popup"><p>Map and report indicate a high density of highways access hatches and drainpipes and specific reports of blocked drains in Green Meadows; blocked highways drains were reported during the night of 2021&ndash;10&ndash;20 and are likely to have caused local surface&ndash;water flooding affecting Townsend. [IMG] (p26)</p></div></div></body></div>`)[0];
+                popup_b3d2ad8ca6257fdb1f3ef88d9f3ed2a4.setContent(html_fa8d4e89245a77c66f465188811a15b0);
+            
+        
+
+        marker_3e729b303128790a307ae88cfc159ba0.bindPopup(popup_b3d2ad8ca6257fdb1f3ef88d9f3ed2a4)
+        ;
+
+        
+    
+    
+            var marker_eb317b3fd8563a1b69488f3ccda6780f = L.marker(
+                [50.9235503, -2.9142515],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_c34ffe37afc72f8dda24a9eec3891556 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eb317b3fd8563a1b69488f3ccda6780f.setIcon(icon_c34ffe37afc72f8dda24a9eec3891556);
+        
+    
+        var popup_7cdb7a1500b0f4e3f67f0424eccfa921 = L.popup({});
+
+        
+            
+                var html_915b6135fab738ad48a50ba2c17001e4 = $(`<div id="html_915b6135fab738ad48a50ba2c17001e4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>The Mead, Ilminster</h1><div class="nugget-popup"><p>The annotated map shows pluvial flow paths converging toward the town centre and names The Mead among central roads/locations. It is therefore likely The Mead experienced concentrated surface&ndash;water (pluvial) runoff during the event, with flows carrying soil, stones and debris from surrounding fields that could cause pooling, highway flooding and block drains. (Assessment based on map annotation; direct eyewitness reports for The Mead are not provided.) [IMG] (p43)</p></div></div></body></div>`)[0];
+                popup_7cdb7a1500b0f4e3f67f0424eccfa921.setContent(html_915b6135fab738ad48a50ba2c17001e4);
+            
+        
+
+        marker_eb317b3fd8563a1b69488f3ccda6780f.bindPopup(popup_7cdb7a1500b0f4e3f67f0424eccfa921)
+        ;
+
+        
+    
+    
+            var marker_65de5d0ebb4e08902b2c8e6a6fd7ea7d = L.marker(
+                [50.9230804, -2.9097593],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_aa977e23577400541e7f15df500a24d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_65de5d0ebb4e08902b2c8e6a6fd7ea7d.setIcon(icon_aa977e23577400541e7f15df500a24d0);
+        
+    
+        var popup_ff4498f6c4b169ecd93edb584420cd70 = L.popup({});
+
+        
+            
+                var html_58c3fc29d85f405ebe8434309ec3b7b6 = $(`<div id="html_58c3fc29d85f405ebe8434309ec3b7b6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>The Cross, Ilminster</h1><div class="nugget-popup"><p>The map labels The Cross among named roads/locations in the central area where pluvial flow converges. It is likely The Cross was affected by concentrated surface&ndash;water runoff on the day, experiencing potential pooling, flows across the highway and transport of soil, stones and debris which could block drains. This is inferred from the mapped flow patterns rather than direct text reports. [IMG] (p43)</p></div></div></body></div>`)[0];
+                popup_ff4498f6c4b169ecd93edb584420cd70.setContent(html_58c3fc29d85f405ebe8434309ec3b7b6);
+            
+        
+
+        marker_65de5d0ebb4e08902b2c8e6a6fd7ea7d.bindPopup(popup_ff4498f6c4b169ecd93edb584420cd70)
+        ;
+
+        
+    
+    
+            var marker_32dc217c255cbb05b40523a81e189171 = L.marker(
+                [51.161750850000004, -3.0753867062227487],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_2cbcab2d4644e53b60ae413b84486322 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_32dc217c255cbb05b40523a81e189171.setIcon(icon_2cbcab2d4644e53b60ae413b84486322);
+        
+    
+        var popup_f513edc800228a34175da34e54f22cad = L.popup({});
+
+        
+            
+                var html_56444887c8fd7e9b04156cecd2d525bd = $(`<div id="html_56444887c8fd7e9b04156cecd2d525bd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Somerset</h1><div class="nugget-popup"><p>River Isle levels rose and burst banks overnight, mixing with sewage from a septic tank; surface water runoff travelled down Watery Lane into the centre of Sea and entered houses via front and back doors. Highway drains outside properties were reported blocked. Devon & Somerset Fire and Rescue carried out rescues (including boat rescue from a caravan park). Somerset County Council (Highways) began clear&ndash;up work the following day and the LLFA commissioned a Section 19 investigation. [TAB] (p44)</p></div><div class="nugget-popup"><p>Flooding in Ilminster (within Somerset) where the river burst its banks and mixed with sewage from a septic tank; evacuations and rescues were required, properties were inundated and residential parks lost power which delayed people returning to their homes. [PAG] (p45)</p></div><div class="nugget-popup"><p>The River Isle contributed to flooding around Ilminster on 2021&ndash;10&ndash;20, affecting nearby development sites (including land near Hort Bridge) and creating a need for improvement of flood defences and mitigation along the river corridor. [PAG,TAB] (p47)</p></div></div></body></div>`)[0];
+                popup_f513edc800228a34175da34e54f22cad.setContent(html_56444887c8fd7e9b04156cecd2d525bd);
+            
+        
+
+        marker_32dc217c255cbb05b40523a81e189171.bindPopup(popup_f513edc800228a34175da34e54f22cad)
+        ;
+
+        
+    
+    
+            var marker_54e94d85aae1cc6c9ecbbc0f7b14c477 = L.marker(
+                [50.9328668, -2.9324632],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_b881ac2298468cd3bf71ad504650fa8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_54e94d85aae1cc6c9ecbbc0f7b14c477.setIcon(icon_b881ac2298468cd3bf71ad504650fa8d);
+        
+    
+        var popup_33d140043b9899389c387341e6debc50 = L.popup({});
+
+        
+            
+                var html_1153b6bdd9b9a0c48ddd9570e040ed67 = $(`<div id="html_1153b6bdd9b9a0c48ddd9570e040ed67" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hort Bridge</h1><div class="nugget-popup"><p>River Isle levels reached a peak at Hort Bridge at approximately 23:45 during the event, indicating river flooding at this structure/location and contribution to downstream flooding. (p15)</p></div><div class="nugget-popup"><p>Floodwater flowing from the Isle downstream of Hort Bridge increased flows entering areas such as Holway House Park. Rose Mills Industrial Estate (on the left bank upstream of Hort Bridge) experienced flooding of three commercial properties with observed water depths up to about 10 cm. (p21)</p></div><div class="nugget-popup"><p>The River Isle spilled over its banks both to the north of Hort Bridge and around defences to the south of the bridge, contributing to overland flows that inundated nearby fields and fed water into downstream streets, parks and properties. [MUL] (p41)</p></div></div></body></div>`)[0];
+                popup_33d140043b9899389c387341e6debc50.setContent(html_1153b6bdd9b9a0c48ddd9570e040ed67);
+            
+        
+
+        marker_54e94d85aae1cc6c9ecbbc0f7b14c477.bindPopup(popup_33d140043b9899389c387341e6debc50)
+        ;
+
+        
+    
+    
+            var marker_5de52fb7499b0cf4f1648c3f038baec2 = L.marker(
+                [50.9128965, -2.9288543],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_c787292b2179aaea4a4dfcf1b5944140 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5de52fb7499b0cf4f1648c3f038baec2.setIcon(icon_c787292b2179aaea4a4dfcf1b5944140);
+        
+    
+        var popup_3d33975100494b362c6d5ae5903900fb = L.popup({});
+
+        
+            
+                var html_ca2d716e263cef8b6b528f6eccefbb5e = $(`<div id="html_ca2d716e263cef8b6b528f6eccefbb5e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sea</h1><div class="nugget-popup"><p>Severe flooding on 2021&ndash;10&ndash;20 driven by very high rainfall and saturated ground. High river flows and overland surface water led to flooding across the town, described as in excess of residents' lifetimes; widespread inundation and accumulation of rainwater in streets and low&ndash;lying areas. [TAB,MUL] (p13)</p></div><div class="nugget-popup"><p>Surface water ran down the main road in Sea and entered properties, mostly via front doors, flooding homes and properties during the event. (p15)</p></div><div class="nugget-popup"><p>Widespread rapid&ndash;onset flooding across Ilminster: flooding started in Station Road, Holway House Park, Green Lane and the Old Orchard at ~01:00&ndash;01:30 with peak depths reached within 20&ndash;25 minutes. River Isle was reported to have burst its banks and rescue operations occurred (Fire and Rescue rescuing people from a park home development). Ditton Street (the Ditton Street end of Ilminster and Sea) was also flooded from a combination of urban surface water, overland flow from Shudrick Lane/Listers Hill and water spilling from the Shudrick Stream. (p16)</p></div><div class="nugget-popup"><p>Surface water ran down the main road and entered properties via front doors; six properties were flooded internally (some to over 0.5 m depth). One fitted flood door failed. Residents reported suspected blocked road drains; local pond and an overgrown ditch were cited as possible contributors to the flooding. (p22)</p></div><div class="nugget-popup"><p>Reports that highways drains in the Green Meadows area of Sea were blocked, contributing to surface water drainage problems and localised flooding during the event. [PAG,IMG] (p26)</p></div><div class="nugget-popup"><p>On 2021&ndash;10&ndash;20 residents reported water entering properties from the highway via front and back doors. Highway drains outside properties were reported blocked. Surface water running down from higher ground and possibly from a nearby stream contributed to water flowing through the centre of Sea and entering properties. [PAG] (p43)</p></div><div class="nugget-popup"><p>Highways drains outside at least one property were reported blocked, allowing surface water from the highway to enter houses via front and back doors. [PAG,TAB,MUL] (p44)</p></div></div></body></div>`)[0];
+                popup_3d33975100494b362c6d5ae5903900fb.setContent(html_ca2d716e263cef8b6b528f6eccefbb5e);
+            
+        
+
+        marker_5de52fb7499b0cf4f1648c3f038baec2.bindPopup(popup_3d33975100494b362c6d5ae5903900fb)
+        ;
+
+        
+    
+    
+            var marker_a7823155dca862cd8b01a605a6e1f100 = L.marker(
+                [50.9163069, -2.9135818],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_8aa1bcaa6ee959f57258410d06634afd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a7823155dca862cd8b01a605a6e1f100.setIcon(icon_8aa1bcaa6ee959f57258410d06634afd);
+        
+    
+        var popup_8de14c3f25932b6048dfb7715dafdf62 = L.popup({});
+
+        
+            
+                var html_7e590440ab84ff1b2a4bc60f75622101 = $(`<div id="html_7e590440ab84ff1b2a4bc60f75622101" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dowlish Ford</h1><div class="nugget-popup"><p>One property reported as flooded in Dowlish Ford. [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_8de14c3f25932b6048dfb7715dafdf62.setContent(html_7e590440ab84ff1b2a4bc60f75622101);
+            
+        
+
+        marker_a7823155dca862cd8b01a605a6e1f100.bindPopup(popup_8de14c3f25932b6048dfb7715dafdf62)
+        ;
+
+        
+    
+    
+            var marker_f3cc335da5391431c125ed0f02cba286 = L.marker(
+                [50.9161609, -2.865179],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_2e76b21add64c3bc0565ec6863bab79d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f3cc335da5391431c125ed0f02cba286.setIcon(icon_2e76b21add64c3bc0565ec6863bab79d);
+        
+    
+        var popup_5bbbc9deac06c5d4aa18a9d174464bd5 = L.popup({});
+
+        
+            
+                var html_32a92d82a4a065e29617da6d4c8619cc = $(`<div id="html_32a92d82a4a065e29617da6d4c8619cc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Allowenshay</h1><div class="nugget-popup"><p>Roads in Allowenshay were flooded, causing local transport disruption. (p11)</p></div><div class="nugget-popup"><p>October 2021 flooding (20 October 2021) caused roads and multiple properties in Allowenshay to flood. Park home sites Holway House Park and Home Farm Park were particularly impacted. Houses on Station Road, Green Way and Home Farm Way were flooded, and the industrial area around Whaites Drive experienced flooding. Flooded roads around Allowenshay are shown on the map. [IMG] (p12)</p></div></div></body></div>`)[0];
+                popup_5bbbc9deac06c5d4aa18a9d174464bd5.setContent(html_32a92d82a4a065e29617da6d4c8619cc);
+            
+        
+
+        marker_f3cc335da5391431c125ed0f02cba286.bindPopup(popup_5bbbc9deac06c5d4aa18a9d174464bd5)
+        ;
+
+        
+    
+    
+            var marker_734950f106698436f462a99d851d568d = L.marker(
+                [50.9288225, -2.9672822],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_718a1fdcae7c5ae56cdd716054083f97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_734950f106698436f462a99d851d568d.setIcon(icon_718a1fdcae7c5ae56cdd716054083f97);
+        
+    
+        var popup_1d24c7356456b1e586d6028a0b0bc032 = L.popup({});
+
+        
+            
+                var html_f51a2992cd3d4a454e7d8c8648870c72 = $(`<div id="html_f51a2992cd3d4a454e7d8c8648870c72" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Horton</h1><div class="nugget-popup"><p>Reported as being badly affected by flooding (no further details provided in the source). (p11)</p></div></div></body></div>`)[0];
+                popup_1d24c7356456b1e586d6028a0b0bc032.setContent(html_f51a2992cd3d4a454e7d8c8648870c72);
+            
+        
+
+        marker_734950f106698436f462a99d851d568d.bindPopup(popup_1d24c7356456b1e586d6028a0b0bc032)
+        ;
+
+        
+    
+    
+            var marker_24767dbb4ab6802adfb918ebb8b816cc = L.marker(
+                [50.92165410457484, -2.941906114042616],
+                {}
+            ).addTo(map_88715d0a2587b40d558ef68b86a03c4c);
+        
+    
+            var icon_180f212c962b977102ad4798204a4d5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_24767dbb4ab6802adfb918ebb8b816cc.setIcon(icon_180f212c962b977102ad4798204a4d5b);
+        
+    
+        var popup_72d41c2064eced63c53b3fd10da72af6 = L.popup({});
+
+        
+            
+                var html_b6638803a060a23bad5229abd4328025 = $(`<div id="html_b6638803a060a23bad5229abd4328025" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Donyatt</h1><div class="nugget-popup"><p>River Isle levels rose and reached a peak at Donyatt at approximately 23:30 during the event, indicating river flooding at this location as part of the incident. (p15)</p></div></div></body></div>`)[0];
+                popup_72d41c2064eced63c53b3fd10da72af6.setContent(html_b6638803a060a23bad5229abd4328025);
+            
+        
+
+        marker_24767dbb4ab6802adfb918ebb8b816cc.bindPopup(popup_72d41c2064eced63c53b3fd10da72af6)
+        ;
+
+        
+    
+</script>
+</html>

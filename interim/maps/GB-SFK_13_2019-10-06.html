@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_05e9c9f01cdfb8e1a8900bc1b3f7689e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_05e9c9f01cdfb8e1a8900bc1b3f7689e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_05e9c9f01cdfb8e1a8900bc1b3f7689e = L.map(
+                "map_05e9c9f01cdfb8e1a8900bc1b3f7689e",
+                {
+                    center: [51.9592962, 1.341781675],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1a11cc4cd2478f68106508413871d1e6 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_1a11cc4cd2478f68106508413871d1e6.addTo(map_05e9c9f01cdfb8e1a8900bc1b3f7689e);
+    
+            var marker_ae378d3e9a9ab80263081991af14cb4c = L.marker(
+                [51.955364, 1.3385607],
+                {}
+            ).addTo(map_05e9c9f01cdfb8e1a8900bc1b3f7689e);
+        
+    
+            var icon_91b6b7a2675ec745fb79033eb036aa8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ae378d3e9a9ab80263081991af14cb4c.setIcon(icon_91b6b7a2675ec745fb79033eb036aa8e);
+        
+    
+        var popup_b4a94e1c608f355d49ef504e9bdd22fc = L.popup({});
+
+        
+            
+                var html_7ad729a6485cad3b3f5a6365fba29ae6 = $(`<div id="html_7ad729a6485cad3b3f5a6365fba29ae6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Langer Road, Felixstowe</h1><div class="nugget-popup"><p>Subject of a Section 19 investigation by the Lead Local Flood Authority (Suffolk County Council) into a flood event affecting the location. (p1)</p></div><div class="nugget-popup"><p>Public highway partially flooded for approximately 50 m to an approximate depth of 200 mm; local surface water drainage (Anglian Water system) surcharged contributing to the flood of the highway and nearby properties. (p2)</p></div><div class="nugget-popup"><p>Public highway partially flooded (approx. 50m length) to around 200mm depth; Anglian Water surface water drainage system surcharged causing surcharge onto Langer Road. Four domestic properties internally flooded (main living areas, garages and gardens); some properties flooded above floor level and some experienced flooding below floor level in void under suspended floor. [MUL] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 domestic properties; approx. 50 m public highway; approx. 200 mm depth (p2)</p></div><div class="nugget-popup quant"><p>4 domestic properties; 50m of public highway; 200mm depth [MUL] (p3)</p></div></div></body></div>`)[0];
+                popup_b4a94e1c608f355d49ef504e9bdd22fc.setContent(html_7ad729a6485cad3b3f5a6365fba29ae6);
+            
+        
+
+        marker_ae378d3e9a9ab80263081991af14cb4c.bindPopup(popup_b4a94e1c608f355d49ef504e9bdd22fc)
+        ;
+
+        
+    
+    
+            var marker_ec9ad427db3ece9d30679dd82059ea36 = L.marker(
+                [51.966606, 1.351027],
+                {}
+            ).addTo(map_05e9c9f01cdfb8e1a8900bc1b3f7689e);
+        
+    
+            var icon_44f75d09d742a53ccc521fd57b41218c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ec9ad427db3ece9d30679dd82059ea36.setIcon(icon_44f75d09d742a53ccc521fd57b41218c);
+        
+    
+        var popup_7a8005dd68e5bc18c204643d1895c341 = L.popup({});
+
+        
+            
+                var html_89c0b16fbc99c065cc2db7ec4194d117 = $(`<div id="html_89c0b16fbc99c065cc2db7ec4194d117" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Felixstowe</h1><div class="nugget-popup"><p>Four domestic properties experienced internal flooding affecting main living areas, garages and gardens; local highway flooding (see Langer Road) and surcharging of the Anglian Water surface water drainage system occurred in the locality. (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 domestic properties; approx. 50 m public highway; approx. 200 mm depth (p2)</p></div></div></body></div>`)[0];
+                popup_7a8005dd68e5bc18c204643d1895c341.setContent(html_89c0b16fbc99c065cc2db7ec4194d117);
+            
+        
+
+        marker_ec9ad427db3ece9d30679dd82059ea36.bindPopup(popup_7a8005dd68e5bc18c204643d1895c341)
+        ;
+
+        
+    
+</script>
+</html>

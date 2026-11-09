@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b66239e87cac35c47c135e45e1b2195b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b66239e87cac35c47c135e45e1b2195b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b66239e87cac35c47c135e45e1b2195b = L.map(
+                "map_b66239e87cac35c47c135e45e1b2195b",
+                {
+                    center: [54.8651544, -2.5044524],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_957f8bd09d3534f09ed3d8b2b9adc389 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_957f8bd09d3534f09ed3d8b2b9adc389.addTo(map_b66239e87cac35c47c135e45e1b2195b);
+    
+            var marker_5c9bc3f67263ea68295f1df0c396ae79 = L.marker(
+                [54.8651544, -2.5044524],
+                {}
+            ).addTo(map_b66239e87cac35c47c135e45e1b2195b);
+        
+    
+            var icon_8a2a94c6df6b6998232444b9114b13c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5c9bc3f67263ea68295f1df0c396ae79.setIcon(icon_8a2a94c6df6b6998232444b9114b13c7);
+        
+    
+        var popup_8e1890a1200635bd16f9b16a37305c46 = L.popup({});
+
+        
+            
+                var html_2dddc69b4d1542eb2b2d71e9c6e9600d = $(`<div id="html_2dddc69b4d1542eb2b2d71e9c6e9600d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Slaggyford</h1><div class="nugget-popup"><p>Three residential properties flooded due to surface water runoff from the access road pooling and an ordinary watercourse coming out of bank and flowing overland, which combined to produce deeper floodwater; one road was also affected. [IMG] (p1)</p></div><div class="nugget-popup"><p>Annotated map shows multiple surface&ndash;water flow routes entering Slaggyford from the northwest, west and southwest, converging in the village centre and then dispersing to the southeast/east. This indicates surface&ndash;water flooding flowed through the settlement (the map also shows The Croft and Lamb House Caravan Park on or near these flow paths). [IMG] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties; 1 road [IMG] (p1)</p></div></div></body></div>`)[0];
+                popup_8e1890a1200635bd16f9b16a37305c46.setContent(html_2dddc69b4d1542eb2b2d71e9c6e9600d);
+            
+        
+
+        marker_5c9bc3f67263ea68295f1df0c396ae79.bindPopup(popup_8e1890a1200635bd16f9b16a37305c46)
+        ;
+
+        
+    
+</script>
+</html>

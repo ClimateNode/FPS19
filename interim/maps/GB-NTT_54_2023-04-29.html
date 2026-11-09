@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c2381c43a042a4ca966f5ad9e4f03cfe {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c2381c43a042a4ca966f5ad9e4f03cfe" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c2381c43a042a4ca966f5ad9e4f03cfe = L.map(
+                "map_c2381c43a042a4ca966f5ad9e4f03cfe",
+                {
+                    center: [53.0878034, -1.1567487],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_98229da8c1e2f9eaedb1298a0a81ce1b = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_98229da8c1e2f9eaedb1298a0a81ce1b.addTo(map_c2381c43a042a4ca966f5ad9e4f03cfe);
+    
+            var marker_89efacead2ec9d6c25b033fc37bac9cb = L.marker(
+                [53.0925606, -1.152471],
+                {}
+            ).addTo(map_c2381c43a042a4ca966f5ad9e4f03cfe);
+        
+    
+            var icon_b4e00257611f160958a75e014f3b61de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_89efacead2ec9d6c25b033fc37bac9cb.setIcon(icon_b4e00257611f160958a75e014f3b61de);
+        
+    
+        var popup_53c8b84b8bd22e6dbb93893e15b151c2 = L.popup({});
+
+        
+            
+                var html_7afd09043ba808dcab2372925e05be91 = $(`<div id="html_7afd09043ba808dcab2372925e05be91" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Main Road, Ravenshead</h1><div class="nugget-popup"><p>Listed among the streets identified as flood&ndash;affected in the report. (p2)</p></div><div class="nugget-popup"><p>Four residential properties and one business were internally flooded. Additional properties experienced external flooding. A surface&ndash;water flow path north of Main Road conveyed water during the event; water also flowed from adjacent agricultural land and along the highway, entering properties built at a lower elevation than the road. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Surface water flowed along a predicted flow path north of Main Road and along the highway; water from agricultural land and along the highway contributed. Several properties, built lower than the road, experienced water entering across property boundaries. Four residential properties and one business were internally flooded and additional properties experienced external flooding. [IMG] (p4)</p></div><div class="nugget-popup"><p>Predicted surface water flood extents and modelling show surface&ndash;water flooding concentrated along Main Road during the event, with flows following the road network and affecting adjacent residential streets. [IMG] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 residential properties; 1 business [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>4 residential properties; 1 business [IMG] (p4)</p></div></div></body></div>`)[0];
+                popup_53c8b84b8bd22e6dbb93893e15b151c2.setContent(html_7afd09043ba808dcab2372925e05be91);
+            
+        
+
+        marker_89efacead2ec9d6c25b033fc37bac9cb.bindPopup(popup_53c8b84b8bd22e6dbb93893e15b151c2)
+        ;
+
+        
+    
+    
+            var marker_39f12109a33068eb6ca304d012174455 = L.marker(
+                [53.078277, -1.1269286],
+                {}
+            ).addTo(map_c2381c43a042a4ca966f5ad9e4f03cfe);
+        
+    
+            var icon_6bc87b52c1627d3cc401e6b14ae869e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_39f12109a33068eb6ca304d012174455.setIcon(icon_6bc87b52c1627d3cc401e6b14ae869e2);
+        
+    
+        var popup_1ecac6603826f54bbefc5b9b338fe669 = L.popup({});
+
+        
+            
+                var html_aef5337aaba4bcc875441c15c84fb55e = $(`<div id="html_aef5337aaba4bcc875441c15c84fb55e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rigg Lane, Ravenshead</h1><div class="nugget-popup"><p>Listed among the streets identified as flood&ndash;affected in the report. (p2)</p></div><div class="nugget-popup"><p>Map and figure annotation identify one flood&ndash;affected site at Rigg Lane; no further details of the nature of flooding or impacts are provided in the text. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>A surface water flow path ran south along Rigg Lane; high intensity rainfall caused the flow to overwhelm drainage and one residential property on Rigg Lane was internally flooded. [IMG] (p5)</p></div><div class="nugget-popup"><p>A surface&ndash;water flowpath flows from Longdale Lane south along Rigg Lane; during the high&ndash;intensity rainfall residents observed this flowpath overwhelm drainage systems and one residential property on Rigg Lane was internally flooded. [IMG,PAG] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 flood&ndash;affected site [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>1 residential property [IMG] (p5)</p></div><div class="nugget-popup quant"><p>One residential property [IMG,PAG] (p6)</p></div></div></body></div>`)[0];
+                popup_1ecac6603826f54bbefc5b9b338fe669.setContent(html_aef5337aaba4bcc875441c15c84fb55e);
+            
+        
+
+        marker_39f12109a33068eb6ca304d012174455.bindPopup(popup_1ecac6603826f54bbefc5b9b338fe669)
+        ;
+
+        
+    
+    
+            var marker_4b2508c5eb6344bca9fddf2b5e159a2f = L.marker(
+                [53.0908862, -1.161796],
+                {}
+            ).addTo(map_c2381c43a042a4ca966f5ad9e4f03cfe);
+        
+    
+            var icon_8c19fe6b5a0cb5bc36f4af0bb9ac3c41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4b2508c5eb6344bca9fddf2b5e159a2f.setIcon(icon_8c19fe6b5a0cb5bc36f4af0bb9ac3c41);
+        
+    
+        var popup_98754bb6a94ddc3d3a47006aea9fce88 = L.popup({});
+
+        
+            
+                var html_c6923b677b2c1795973c413f377dbbf0 = $(`<div id="html_c6923b677b2c1795973c413f377dbbf0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Haddon Road, Ravenshead</h1><div class="nugget-popup"><p>Listed among the streets identified as flood&ndash;affected in the report. (p2)</p></div><div class="nugget-popup"><p>Map and figure annotation identify one flood&ndash;affected site at Haddon Road; no further details of the nature of flooding or impacts are provided in the text. [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>A surface&ndash;water flowpath routed perpendicular to Haddon Road and, during the high&ndash;intensity rainfall event, water from that flowpath entered a residential property causing internal flooding. (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 flood&ndash;affected site [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>One residential property (p6)</p></div></div></body></div>`)[0];
+                popup_98754bb6a94ddc3d3a47006aea9fce88.setContent(html_c6923b677b2c1795973c413f377dbbf0);
+            
+        
+
+        marker_4b2508c5eb6344bca9fddf2b5e159a2f.bindPopup(popup_98754bb6a94ddc3d3a47006aea9fce88)
+        ;
+
+        
+    
+    
+            var marker_f0d44d4d9ffce1a9201d542a8c8033a8 = L.marker(
+                [53.0883816, -1.1612376],
+                {}
+            ).addTo(map_c2381c43a042a4ca966f5ad9e4f03cfe);
+        
+    
+            var icon_72999601b9acc4c8f8c222887cfbc0f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f0d44d4d9ffce1a9201d542a8c8033a8.setIcon(icon_72999601b9acc4c8f8c222887cfbc0f0);
+        
+    
+        var popup_87fd2c020542e0c4741856ae4e5f3a3d = L.popup({});
+
+        
+            
+                var html_3551222073ddfb2ee51f6e941d7f7349 = $(`<div id="html_3551222073ddfb2ee51f6e941d7f7349" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Southview Gardens, Ravenshead</h1><div class="nugget-popup"><p>Marked as a flood&ndash;affected site on Figure 2; properties at this location experienced flooding (no further detail provided in the text). [IMG,PAG] (p3)</p></div><div class="nugget-popup"><p>Surface water flowed west along Swinton Rise then followed lower&ndash;elevation highway into Southview Gardens where water pooled at a low spot; when depth increased it flowed down a residential driveway and into the property, causing internal flooding. [PAG] (p4)</p></div><div class="nugget-popup"><p>Water pooled at a low spot in Southview Gardens and, after reaching sufficient depth, flowed down a residential driveway into the property causing internal flooding. [IMG,PAG] (p5)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 flood&ndash;affected site [IMG,PAG] (p3)</p></div><div class="nugget-popup quant"><p>1 residential property [PAG] (p4)</p></div><div class="nugget-popup quant"><p>1 residential property [IMG,PAG] (p5)</p></div></div></body></div>`)[0];
+                popup_87fd2c020542e0c4741856ae4e5f3a3d.setContent(html_3551222073ddfb2ee51f6e941d7f7349);
+            
+        
+
+        marker_f0d44d4d9ffce1a9201d542a8c8033a8.bindPopup(popup_87fd2c020542e0c4741856ae4e5f3a3d)
+        ;
+
+        
+    
+    
+            var marker_8e33a1607e4e2241f8420593240d081e = L.marker(
+                [53.0889295, -1.163299],
+                {}
+            ).addTo(map_c2381c43a042a4ca966f5ad9e4f03cfe);
+        
+    
+            var icon_2a45fb9db33541990abc21c8af1967bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8e33a1607e4e2241f8420593240d081e.setIcon(icon_2a45fb9db33541990abc21c8af1967bc);
+        
+    
+        var popup_b4c0c7dcaae9b7422d503e1b7acd4404 = L.popup({});
+
+        
+            
+                var html_a31d964681548c10cad6f95a72c460b7 = $(`<div id="html_a31d964681548c10cad6f95a72c460b7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Swinton Rise, Ravenshead</h1><div class="nugget-popup"><p>Surface water was observed to flow west along Swinton Rise during the event and routed into lower&ndash;lying highway and Southview Gardens. [PAG] (p4)</p></div><div class="nugget-popup"><p>Surface water flowed west along Swinton Rise toward lower elevations and into Southview Gardens, acting as a flow path that routed water into the cul&ndash;de&ndash;sac. [IMG,PAG] (p5)</p></div></div></body></div>`)[0];
+                popup_b4c0c7dcaae9b7422d503e1b7acd4404.setContent(html_a31d964681548c10cad6f95a72c460b7);
+            
+        
+
+        marker_8e33a1607e4e2241f8420593240d081e.bindPopup(popup_b4c0c7dcaae9b7422d503e1b7acd4404)
+        ;
+
+        
+    
+    
+            var marker_d0df7f389f760784350d1e6ba6be3fa3 = L.marker(
+                [53.0759981, -1.1546522],
+                {}
+            ).addTo(map_c2381c43a042a4ca966f5ad9e4f03cfe);
+        
+    
+            var icon_a9b7a0b50c3a8f5bd29ca95e23462f51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d0df7f389f760784350d1e6ba6be3fa3.setIcon(icon_a9b7a0b50c3a8f5bd29ca95e23462f51);
+        
+    
+        var popup_d63a7656c264e654141cd2e77199f66e = L.popup({});
+
+        
+            
+                var html_e018fe0a2f80a82c783950f68668c634 = $(`<div id="html_e018fe0a2f80a82c783950f68668c634" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Longdale Lane, Ravenshead</h1><div class="nugget-popup"><p>A surface water flow path was present along Longdale Lane (NW to SE) that routed water toward Rigg Lane; during high intensity rainfall this flow path contributed to drainage being overwhelmed. [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_d63a7656c264e654141cd2e77199f66e.setContent(html_e018fe0a2f80a82c783950f68668c634);
+            
+        
+
+        marker_d0df7f389f760784350d1e6ba6be3fa3.bindPopup(popup_d63a7656c264e654141cd2e77199f66e)
+        ;
+
+        
+    
+    
+            var marker_e57d2a731f213b93252912c6126dbf88 = L.marker(
+                [53.0911116, -1.1620598],
+                {}
+            ).addTo(map_c2381c43a042a4ca966f5ad9e4f03cfe);
+        
+    
+            var icon_8e564046c0485503de5b6018319f6800 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e57d2a731f213b93252912c6126dbf88.setIcon(icon_8e564046c0485503de5b6018319f6800);
+        
+    
+        var popup_fa0f2e5ae9d3736f561240d42d070c51 = L.popup({});
+
+        
+            
+                var html_535fba8972f5c4c1f15a21ff95f98ce9 = $(`<div id="html_535fba8972f5c4c1f15a21ff95f98ce9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Doveridge Court, Ravenshead</h1><div class="nugget-popup"><p>A surface&ndash;water flowpath is described as flowing downhill along Doveridge Court toward Main Road during the high&ndash;intensity rainfall; this flow contributed to water reaching and entering a residential property (on Haddon Road). (p6)</p></div></div></body></div>`)[0];
+                popup_fa0f2e5ae9d3736f561240d42d070c51.setContent(html_535fba8972f5c4c1f15a21ff95f98ce9);
+            
+        
+
+        marker_e57d2a731f213b93252912c6126dbf88.bindPopup(popup_fa0f2e5ae9d3736f561240d42d070c51)
+        ;
+
+        
+    
+    
+            var marker_ca92c899827fa3d8df5c6328c3941175 = L.marker(
+                [53.0924777, -1.171197],
+                {}
+            ).addTo(map_c2381c43a042a4ca966f5ad9e4f03cfe);
+        
+    
+            var icon_f760300f828bfd4018c873f90bd17c14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ca92c899827fa3d8df5c6328c3941175.setIcon(icon_f760300f828bfd4018c873f90bd17c14);
+        
+    
+        var popup_40bc854e1a0b3ca0dbb7bd8e918f986a = L.popup({});
+
+        
+            
+                var html_3ca0fe9a2c4e51d2a4701607cf6eb354 = $(`<div id="html_3ca0fe9a2c4e51d2a4701607cf6eb354" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Beech Avenue, Ravenshead</h1><div class="nugget-popup"><p>Predicted surface water flood extents include Beech Avenue; surface water flooding followed the road network and low&ndash;lying areas, producing smaller flood patches along connecting streets that would affect the roadway and adjacent residential areas. [IMG] (p6)</p></div></div></body></div>`)[0];
+                popup_40bc854e1a0b3ca0dbb7bd8e918f986a.setContent(html_3ca0fe9a2c4e51d2a4701607cf6eb354);
+            
+        
+
+        marker_ca92c899827fa3d8df5c6328c3941175.bindPopup(popup_40bc854e1a0b3ca0dbb7bd8e918f986a)
+        ;
+
+        
+    
+    
+            var marker_08da54ec0c5093e0387cf66278e82cd2 = L.marker(
+                [53.0925296, -1.1526474],
+                {}
+            ).addTo(map_c2381c43a042a4ca966f5ad9e4f03cfe);
+        
+    
+            var icon_068c806140c206484c07f5f4488c2adf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_08da54ec0c5093e0387cf66278e82cd2.setIcon(icon_068c806140c206484c07f5f4488c2adf);
+        
+    
+        var popup_4f05fc11b63b78c4c9314420b9d6140c = L.popup({});
+
+        
+            
+                var html_69c05a9656fe17da840665915424d75e = $(`<div id="html_69c05a9656fe17da840665915424d75e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chapel Road, Ravenshead</h1><div class="nugget-popup"><p>Predicted surface water flood extents include Chapel Road; surface water flooding is shown to follow roads and low&ndash;lying areas with smaller flood patches along side streets, indicating the street and nearby properties are within the predicted surface water flood area. [IMG] (p6)</p></div></div></body></div>`)[0];
+                popup_4f05fc11b63b78c4c9314420b9d6140c.setContent(html_69c05a9656fe17da840665915424d75e);
+            
+        
+
+        marker_08da54ec0c5093e0387cf66278e82cd2.bindPopup(popup_4f05fc11b63b78c4c9314420b9d6140c)
+        ;
+
+        
+    
+    
+            var marker_6b1d34807f03705bb8dc01f5789cfead = L.marker(
+                [53.0868821, -1.1611984],
+                {}
+            ).addTo(map_c2381c43a042a4ca966f5ad9e4f03cfe);
+        
+    
+            var icon_874ebc7499a1df7139445419155358de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6b1d34807f03705bb8dc01f5789cfead.setIcon(icon_874ebc7499a1df7139445419155358de);
+        
+    
+        var popup_f3eca5dfc20e5bfd03071ceafec50ffe = L.popup({});
+
+        
+            
+                var html_e2e996f8810525f9c5b8fa0cd367b201 = $(`<div id="html_e2e996f8810525f9c5b8fa0cd367b201" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ravenshead</h1><div class="nugget-popup"><p>Short&ndash;duration, intense rainfall on the evening of 29 April 2023 caused flooding across the village: 7 residential properties and 1 business suffered internal flooding; additional properties experienced flooding to gardens and outbuildings. (p1)</p></div><div class="nugget-popup"><p>Identified in the report as the settlement containing multiple flood&ndash;affected areas (the report lists affected streets within Ravenshead). [PAG] (p2)</p></div><div class="nugget-popup"><p>Multiple locations within the village were flood&ndash;affected, including a cluster in the main residential area and isolated points on the periphery. Reported affected sites include Main Road (multiple properties internally flooded), Haddon Road, Southview Gardens and Rigg Lane. [IMG,PAG] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>7 residential properties; 1 business (p1)</p></div><div class="nugget-popup quant"><p>8 flood&ndash;affected sites (5 on Main Road; 1 Haddon Road; 1 Southview Gardens; 1 Rigg Lane); 4 residential properties and 1 business internally flooded on Main Road [IMG,PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_f3eca5dfc20e5bfd03071ceafec50ffe.setContent(html_e2e996f8810525f9c5b8fa0cd367b201);
+            
+        
+
+        marker_6b1d34807f03705bb8dc01f5789cfead.bindPopup(popup_f3eca5dfc20e5bfd03071ceafec50ffe)
+        ;
+
+        
+    
+</script>
+</html>

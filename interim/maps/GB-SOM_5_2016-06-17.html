@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_799ebed39f4a3c06a01f466291f9def8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_799ebed39f4a3c06a01f466291f9def8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_799ebed39f4a3c06a01f466291f9def8 = L.map(
+                "map_799ebed39f4a3c06a01f466291f9def8",
+                {
+                    center: [51.13054600974778, -2.658804523395801],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6dd285a0693952c4f211b18eb5321448 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_6dd285a0693952c4f211b18eb5321448.addTo(map_799ebed39f4a3c06a01f466291f9def8);
+    
+            var marker_3ebdc51898f774ce8ddd10f1fb29a396 = L.marker(
+                [51.12025930937037, -2.5768126662042277],
+                {}
+            ).addTo(map_799ebed39f4a3c06a01f466291f9def8);
+        
+    
+            var icon_29dc76b838245aa9c776a84a344eb0af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3ebdc51898f774ce8ddd10f1fb29a396.setIcon(icon_29dc76b838245aa9c776a84a344eb0af);
+        
+    
+        var popup_49b53daf3cb99be32d5a760455174a5f = L.popup({});
+
+        
+            
+                var html_3e76a19157ecda54c08d46cf7d10ac0c = $(`<div id="html_3e76a19157ecda54c08d46cf7d10ac0c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>A37 at Wraxall</h1><div class="nugget-popup"><p>Flood water on the A37 carriageway. SCC and landowners cleared the culvert inlet and outlet and SCC removed up to 450 mm of silt from the culvert build&ndash;up, which improved water flow through the culvert and provided relief to flood water on the highway, reducing the threat of flooding to nearby property. SCC also removed a willow tree above the culvert's inlet at the Lye Lane junction with the A37. Ditches adjacent to the A37 (north and south bound) between the property known as Coppits and the junction for Stone required considerable clearing and an annual maintenance programme was recommended. A 150 mm pipe running under the north&ndash;bound carriageway (approx. 70 m south of Leighbridge Lodge) was suspected by residents to be blocked; SCC arranged CCTV survey and jetting (works to be completed in 2016/17). (p14)</p></div></div></body></div>`)[0];
+                popup_49b53daf3cb99be32d5a760455174a5f.setContent(html_3e76a19157ecda54c08d46cf7d10ac0c);
+            
+        
+
+        marker_3ebdc51898f774ce8ddd10f1fb29a396.bindPopup(popup_49b53daf3cb99be32d5a760455174a5f)
+        ;
+
+        
+    
+    
+            var marker_2e3f20aa0d3c279e31c8cd3e0c5cd1c2 = L.marker(
+                [51.1218775, -2.5771183],
+                {}
+            ).addTo(map_799ebed39f4a3c06a01f466291f9def8);
+        
+    
+            var icon_fa07cf11488a171401f20daf06364c56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2e3f20aa0d3c279e31c8cd3e0c5cd1c2.setIcon(icon_fa07cf11488a171401f20daf06364c56);
+        
+    
+        var popup_440e11380e194586204a692614a2a90d = L.popup({});
+
+        
+            
+                var html_6d1df54a3b5e0d7b010af2a335279dfe = $(`<div id="html_6d1df54a3b5e0d7b010af2a335279dfe" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1>Lye Lane, East Pennard</h1><div class="nugget-popup"><p>The flood event originated at the A37 junction with Lye Lane; surface water flooding from this location was central to the incident which directly affected four properties and prompted local correspondence and concern. [PAG,IMG] (p8)</p></div><div class="nugget-popup"><p>The culvert at the A37 / Lye Lane junction acted as a pinch point during heavy rainfall: inlet/outlet obscured by dense vegetation and ~300mm silt build&ndash;up (≈25% capacity reduction), impeding flow and contributing to highway flooding and risk to nearby properties during the event. Subsequent clearance of vegetation, silt (up to 450mm cleared) and removal of a willow reduced flood threat and improved flow. [PAG] (p13)</p></div></div></body></div>`)[0];
+                popup_440e11380e194586204a692614a2a90d.setContent(html_6d1df54a3b5e0d7b010af2a335279dfe);
+            
+        
+
+        marker_2e3f20aa0d3c279e31c8cd3e0c5cd1c2.bindPopup(popup_440e11380e194586204a692614a2a90d)
+        ;
+
+        
+    
+    
+            var marker_f5144844ddfcb3fe4532e1299c8709d3 = L.marker(
+                [51.12580832380366, -2.5715177937051124],
+                {}
+            ).addTo(map_799ebed39f4a3c06a01f466291f9def8);
+        
+    
+            var icon_b8c7a485c5a9a76eb14c07039fdd52f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f5144844ddfcb3fe4532e1299c8709d3.setIcon(icon_b8c7a485c5a9a76eb14c07039fdd52f4);
+        
+    
+        var popup_afd468e37279c84e387c69a6993e0cf4 = L.popup({});
+
+        
+            
+                var html_d4c9757f59bb25683495134864e27747 = $(`<div id="html_d4c9757f59bb25683495134864e27747" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wraxall</h1><div class="nugget-popup"><p>Area south of Wraxall: four properties were internally flooded to depths up to 300 mm; the highway was flooded to depths up to 400 mm. (p4)</p></div><div class="nugget-popup"><p>The A37 at the junction with Kilkenny Lane (in Wraxall) is described as a low point where catchment flows combine and cross the road. Highway drainage in South Wraxall is noted as susceptible to flooding and is scheduled for gully cleansing according to flood susceptibility. [PAG,IMG] (p9)</p></div><div class="nugget-popup"><p>Part of the area affected by the exceptional rainfall event on 2016&ndash;06&ndash;17; residents cooperated with the investigation and experienced flooding from rapid intense rainfall on saturated ground. (p13)</p></div></div></body></div>`)[0];
+                popup_afd468e37279c84e387c69a6993e0cf4.setContent(html_d4c9757f59bb25683495134864e27747);
+            
+        
+
+        marker_f5144844ddfcb3fe4532e1299c8709d3.bindPopup(popup_afd468e37279c84e387c69a6993e0cf4)
+        ;
+
+        
+    
+    
+            var marker_737d0d3752afdd94e18d86dc284f1f05 = L.marker(
+                [51.13548091106418, -2.5766431558779446],
+                {}
+            ).addTo(map_799ebed39f4a3c06a01f466291f9def8);
+        
+    
+            var icon_8718d52d48983278a9706e7acf1e32d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_737d0d3752afdd94e18d86dc284f1f05.setIcon(icon_8718d52d48983278a9706e7acf1e32d0);
+        
+    
+        var popup_f6b196200150b84e2614f64426ddfd9a = L.popup({});
+
+        
+            
+                var html_fc5060f6295561cb1fca02953402fb55 = $(`<div id="html_fc5060f6295561cb1fca02953402fb55" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>East Pennard</h1><div class="nugget-popup"><p>Experienced flooding associated with the exceptional short&ndash;duration rainfall on saturated soils on 2016&ndash;06&ndash;17; residents in the East Pennard area were involved in the investigation and reported impacts from the event. (p13)</p></div></div></body></div>`)[0];
+                popup_f6b196200150b84e2614f64426ddfd9a.setContent(html_fc5060f6295561cb1fca02953402fb55);
+            
+        
+
+        marker_737d0d3752afdd94e18d86dc284f1f05.bindPopup(popup_f6b196200150b84e2614f64426ddfd9a)
+        ;
+
+        
+    
+</script>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_799bd8954095067a9bbfcc11cd216e72 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_799bd8954095067a9bbfcc11cd216e72" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_799bd8954095067a9bbfcc11cd216e72 = L.map(
+                "map_799bd8954095067a9bbfcc11cd216e72",
+                {
+                    center: [52.068544525, -2.734190925],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_89d17a28ff645b83435f363dfdfa2026 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_89d17a28ff645b83435f363dfdfa2026.addTo(map_799bd8954095067a9bbfcc11cd216e72);
+    
+            var marker_eeb72eade15f74dc12b780c55615705a = L.marker(
+                [52.0625321, -2.7362102],
+                {}
+            ).addTo(map_799bd8954095067a9bbfcc11cd216e72);
+        
+    
+            var icon_17e3224bbcbf04a099b2da20e2ed17a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eeb72eade15f74dc12b780c55615705a.setIcon(icon_17e3224bbcbf04a099b2da20e2ed17a4);
+        
+    
+        var popup_e307c5cf1649f45b5bcd67c4a69cbc7f = L.popup({});
+
+        
+            
+                var html_e334e0a00064009c4c2582375e8ce873 = $(`<div id="html_e334e0a00064009c4c2582375e8ce873" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Yazor Brook</h1><div class="nugget-popup"><p>Identified as the main river (blue line) along which Flood Zones 2 and 3 are concentrated; the brook is the watercourse driving river flooding that exposes adjacent properties and infrastructure to inundation. [IMG] (p1)</p></div><div class="nugget-popup"><p>Overflowing Yazor Brook (and associated blocked bridge/culvert and overflowing ditch) contributed to fluvial flooding that caused internal flooding of nearby properties close to the confluence with an unnamed tributary draining Crowmoor. (p2)</p></div><div class="nugget-popup"><p>The Yazor Brook feeds a fishing lake via a weir and has a series of small weirs upstream of Roman Road; the diverted watercourse can break out of bank (towards the south&ndash;east) and flood lower&ndash;lying farmland, contributing to local flood risk around Roman Road. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties; flood depths from less than 6 inches up to 4 ft (p2)</p></div></div></body></div>`)[0];
+                popup_e307c5cf1649f45b5bcd67c4a69cbc7f.setContent(html_e334e0a00064009c4c2582375e8ce873);
+            
+        
+
+        marker_eeb72eade15f74dc12b780c55615705a.bindPopup(popup_e307c5cf1649f45b5bcd67c4a69cbc7f)
+        ;
+
+        
+    
+    
+            var marker_315cf824097e1e682b5cee1141e0bb69 = L.marker(
+                [52.081078, -2.7630056],
+                {}
+            ).addTo(map_799bd8954095067a9bbfcc11cd216e72);
+        
+    
+            var icon_da713fcaab27111b4207bd0675587b1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_315cf824097e1e682b5cee1141e0bb69.setIcon(icon_da713fcaab27111b4207bd0675587b1e);
+        
+    
+        var popup_6601e4d05ac8084750d55bb1a5aecd65 = L.popup({});
+
+        
+            
+                var html_5907200df83a0fc936fcc925a84e1894 = $(`<div id="html_5907200df83a0fc936fcc925a84e1894" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Towtree Lane, Burghill</h1><div class="nugget-popup"><p>A ditch on Towtree Lane has been culverted; the absence of a surface feature (pond/ditch) prevents easy discharge of floodwater from the flood zone, increasing local flood risk and reducing drainage capacity. (p3)</p></div><div class="nugget-popup"><p>Fluvial (river) flooding affected areas around Towtree Lane, prompting proposals to improve the land drain on Towtree Lane and consideration of bunding works as mitigation. (p4)</p></div></div></body></div>`)[0];
+                popup_6601e4d05ac8084750d55bb1a5aecd65.setContent(html_5907200df83a0fc936fcc925a84e1894);
+            
+        
+
+        marker_315cf824097e1e682b5cee1141e0bb69.bindPopup(popup_6601e4d05ac8084750d55bb1a5aecd65)
+        ;
+
+        
+    
+    
+            var marker_4c4ee9e13ddfba56b05333802d13bf25 = L.marker(
+                [52.0751867, -2.7223744],
+                {}
+            ).addTo(map_799bd8954095067a9bbfcc11cd216e72);
+        
+    
+            var icon_72f1c5fbc58046884ba0be8ebe303aec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4c4ee9e13ddfba56b05333802d13bf25.setIcon(icon_72f1c5fbc58046884ba0be8ebe303aec);
+        
+    
+        var popup_ec4f583429f4adea0dbcf357bd7b9cda = L.popup({});
+
+        
+            
+                var html_88e5052cbe4ddbc2203ee96244aa6e30 = $(`<div id="html_88e5052cbe4ddbc2203ee96244aa6e30" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Roman Road, Hereford</h1><div class="nugget-popup"><p>A4110 Roman Road (Roman Road) was affected during the event; it is a known location of surface water flooding and lies close to flood flow paths. The highway was implicated in the event (strategic highway network impact) and road&ndash;raising works previously included structures to convey floodwater beneath the carriageway. [TAB] (p2)</p></div><div class="nugget-popup"><p>Flood water is conveyed under the carriageway via a concrete weir and overflow channel constructed when Roman Road was raised in the 2000s; Herefordshire Council has identified a requirement to promote drainage improvements at Roman Road and scheduled a highway drainage project (2021/22) in response to recent flooding. (p3)</p></div><div class="nugget-popup"><p>Fluvial (river) flooding affected areas of Roman Road in Hereford, leading to a proposed flood risk study and consideration of local mitigation measures. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties (in the Towtree Lane / Roman Road area); flood depths from less than 6 inches up to 4 ft [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_ec4f583429f4adea0dbcf357bd7b9cda.setContent(html_88e5052cbe4ddbc2203ee96244aa6e30);
+            
+        
+
+        marker_4c4ee9e13ddfba56b05333802d13bf25.bindPopup(popup_ec4f583429f4adea0dbcf357bd7b9cda)
+        ;
+
+        
+    
+    
+            var marker_634ba92a40fcbdd99a2f0d1908ba96bf = L.marker(
+                [52.0553813, -2.7151735],
+                {}
+            ).addTo(map_799bd8954095067a9bbfcc11cd216e72);
+        
+    
+            var icon_3721e6030f9399955748bfce217575ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_634ba92a40fcbdd99a2f0d1908ba96bf.setIcon(icon_3721e6030f9399955748bfce217575ef);
+        
+    
+        var popup_26d7ca5e5a335a67621939ee71ea89ce = L.popup({});
+
+        
+            
+                var html_6bdb251223c5caf3d5dff5a900a31400 = $(`<div id="html_6bdb251223c5caf3d5dff5a900a31400" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hereford</h1><div class="nugget-popup"><p>Five properties in the Towtree Lane / Roman Road area of Hereford reported internal flooding during the February 2020 fluvial event; affected properties are within or adjacent to Flood Zone 3 and are close to the confluence of Yazor Brook and its unnamed tributary draining Crowmoor. [TAB] (p2)</p></div><div class="nugget-popup"><p>Areas of Hereford (notably Towtree Lane and Roman Road) experienced fluvial flooding, prompting pursuit of DEFRA grant funding for a flood risk study and consideration of conveyance improvements to the local brook (weir level adjustments and overflow channel optimisation) and bunding. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>5 properties; flood depths from less than 6 inches up to 4 ft [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_26d7ca5e5a335a67621939ee71ea89ce.setContent(html_6bdb251223c5caf3d5dff5a900a31400);
+            
+        
+
+        marker_634ba92a40fcbdd99a2f0d1908ba96bf.bindPopup(popup_26d7ca5e5a335a67621939ee71ea89ce)
+        ;
+
+        
+    
+</script>
+</html>

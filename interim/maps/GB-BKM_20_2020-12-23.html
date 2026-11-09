@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_660a28914c348c5a3caa959ad6be8bd4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_660a28914c348c5a3caa959ad6be8bd4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_660a28914c348c5a3caa959ad6be8bd4 = L.map(
+                "map_660a28914c348c5a3caa959ad6be8bd4",
+                {
+                    center: [52.000559761811324, -0.8953273799130141],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fcb50cd6ea6f7f18f11d63884efed4ed = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_fcb50cd6ea6f7f18f11d63884efed4ed.addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+    
+            var marker_1332fdf11310548a867b689cdee82fbe = L.marker(
+                [52.01170948298128, -0.9302632957565421],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_ef0b57ac895ac0098d0e0207a272a796 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1332fdf11310548a867b689cdee82fbe.setIcon(icon_ef0b57ac895ac0098d0e0207a272a796);
+        
+    
+        var popup_c95d07f5ee5e1d227c4273814411e37e = L.popup({});
+
+        
+            
+                var html_ca08995613995485f968ea69beda8372 = $(`<div id="html_ca08995613995485f968ea69beda8372" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thornborough Mill</h1><div class="nugget-popup"><p>Flooding from the river (Great Ouse) was reported in the Thornborough Mill area and receded the following evening. (p6)</p></div><div class="nugget-popup"><p>Following the 23 December 2020 flood event, landowners in the Thornborough Mill area worked together to reinstate the ditch alongside the solar farm to re&ndash;establish channelled land drainage. (p30)</p></div><div class="nugget-popup"><p>Flooding occurred in the Thornborough Mill area later in the evening of 23 December 2020, associated with high flows on the Great Ouse; an Environment Agency warning for the Great Ouse was issued that evening. [TAB,PAG] (p33)</p></div><div class="nugget-popup"><p>The Thornborough Mill area started to flood from surface runoff in the late evening of 23/12/2020; residents deployed resilience measures and sandbags that night. The area then started to flood from the main river (Great Ouse) at about 03:30 on 24/12/2020. Flood waters at the Mill receded by late evening on 24/12/2020. [TAB,PAG,MUL] (p34)</p></div><div class="nugget-popup"><p>Area flooded first from surface runoff (late evening) and later from the main river; residents at Thornborough Mill deployed resilience measures and sandbags; flood later receded. [PAG] (p35)</p></div><div class="nugget-popup"><p>Mill area was flooded during the event; flood water later receded at the mill. (p36)</p></div><div class="nugget-popup"><p>High river levels on the River Great Ouse led to overtopping of the south bank at Thornborough Mill; surface water flowed south from the river into the floodplain, affecting properties immediately south of the river. [IMG] (p38)</p></div><div class="nugget-popup"><p>High River Great Ouse levels overtopped the south bank at Thornborough Mill; surface water from fields to the south was also observed flowing onto the site. [PAG] (p39)</p></div><div class="nugget-popup"><p>Two properties reported internal flooding across ground floors; one property experienced flood depths up to 14cm and subsequently installed resilience measures including raised floor levels. (p41)</p></div><div class="nugget-popup"><p>The Great Ouse overtopped its banks at Thornborough Mill during the 23rd December 2020 event, causing flooding at the mill location and adjacent areas. A large left&ndash;bank floodplain exists but raised ground at the bank restricted flow from the channel to the floodplain, likely concentrating floodwater at the mill. A weir immediately upstream controls water levels and is noted in relation to the event. (p49)</p></div><div class="nugget-popup"><p>The Thornborough Mill area was inundated by the December 2020 flood event. [PAG] (p50)</p></div><div class="nugget-popup"><p>Subject to flooding from the Great Ouse during the extreme December 2020 event; the catchment and river flows at Thornborough Mill were directly discussed in relation to the December 2020 flood magnitude. [PAG,IMG] (p51)</p></div><div class="nugget-popup"><p>Overland flows were observed in the Thornborough Mill area, contributed to by a blocked ditch below the solar farm at Thornborough Grounds. (p62)</p></div><div class="nugget-popup"><p>High River Great Ouse levels caused floodwater to overtop the south bank near Thornborough Mill, with surface water observed flowing off the adjoining fields onto the area. [PAG] (p64)</p></div><div class="nugget-popup"><p>The Thornborough Mill catchment on the Great Ouse experienced elevated flows in response to the 23rd December 2020 rainfall (soils already saturated), with an approximate flow return period of 10&ndash;30 years. This increased flood risk at Thornborough Mill and underpinned recommendations for measures such as natural flood management and property flood resilience. [PAG] (p65)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 400 mm depth [PAG] (p35)</p></div><div class="nugget-popup quant"><p>2 properties; 14cm (ground&ndash;floor flood depth) (p41)</p></div></div></body></div>`)[0];
+                popup_c95d07f5ee5e1d227c4273814411e37e.setContent(html_ca08995613995485f968ea69beda8372);
+            
+        
+
+        marker_1332fdf11310548a867b689cdee82fbe.bindPopup(popup_c95d07f5ee5e1d227c4273814411e37e)
+        ;
+
+        
+    
+    
+            var marker_3d5361cf4b9d2a8c518cb7796be25275 = L.marker(
+                [51.996635990340835, -0.9186163260386571],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_a041cbdb87b61514aa9317ed2a09c241 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3d5361cf4b9d2a8c518cb7796be25275.setIcon(icon_a041cbdb87b61514aa9317ed2a09c241);
+        
+    
+        var popup_fd47fc922a57a9cee4403d4eeaba74aa = L.popup({});
+
+        
+            
+                var html_b574eb8411957b114a415b85736c3d6f = $(`<div id="html_b574eb8411957b114a415b85736c3d6f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thornborough Village Hall</h1><div class="nugget-popup"><p>Road outside the village hall (Church Lane) flooded, making it impassable in places. (p35)</p></div><div class="nugget-popup"><p>The pond adjacent to the Village Hall was overtopped by Tonne Brook, causing flooding at/near the Village Hall area. [PAG] (p36)</p></div></div></body></div>`)[0];
+                popup_fd47fc922a57a9cee4403d4eeaba74aa.setContent(html_b574eb8411957b114a415b85736c3d6f);
+            
+        
+
+        marker_3d5361cf4b9d2a8c518cb7796be25275.bindPopup(popup_fd47fc922a57a9cee4403d4eeaba74aa)
+        ;
+
+        
+    
+    
+            var marker_a9308c5e6771e093c385fa56f82fc896 = L.marker(
+                [51.9949995, -0.9263237],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_ee80bfd35c8c65b983eb74caf8e9c4b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a9308c5e6771e093c385fa56f82fc896.setIcon(icon_ee80bfd35c8c65b983eb74caf8e9c4b2);
+        
+    
+        var popup_ad0810b6277c717a574937bc9bfefc8b = L.popup({});
+
+        
+            
+                var html_aa285487985c3863bfec94b04f8a4e77 = $(`<div id="html_aa285487985c3863bfec94b04f8a4e77" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stonelands Farm</h1><div class="nugget-popup"><p>The area surrounding Stonelands Farm generated overland surface water flows that ran off towards the village and contributed substantial runoff into nearby streets and properties. (p39)</p></div><div class="nugget-popup"><p>Fields in the area surrounding Stonelands Farm produced overland surface water flows during the 23 December 2020 event; these contributed significant volumes of runoff that flowed towards and impacted the rear of properties on Lower End and High Street. (p64)</p></div></div></body></div>`)[0];
+                popup_ad0810b6277c717a574937bc9bfefc8b.setContent(html_aa285487985c3863bfec94b04f8a4e77);
+            
+        
+
+        marker_a9308c5e6771e093c385fa56f82fc896.bindPopup(popup_ad0810b6277c717a574937bc9bfefc8b)
+        ;
+
+        
+    
+    
+            var marker_29d08e4ce605105122356d2538eefbd6 = L.marker(
+                [52.0008063, -0.938927],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_1d69d8ef7cce0687450158f65d6bbae8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_29d08e4ce605105122356d2538eefbd6.setIcon(icon_1d69d8ef7cce0687450158f65d6bbae8);
+        
+    
+        var popup_3a8228f9fc90ecb1152041de253504d5 = L.popup({});
+
+        
+            
+                var html_7ca195d03499dbf3b214901a782a0fa0 = $(`<div id="html_7ca195d03499dbf3b214901a782a0fa0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thornborough Grounds</h1><div class="nugget-popup"><p>A blocked ditch below the solar farm at Thornborough Grounds was identified as a contributor to the overland flows observed in the Thornborough Mill area during the event. (p62)</p></div></div></body></div>`)[0];
+                popup_3a8228f9fc90ecb1152041de253504d5.setContent(html_7ca195d03499dbf3b214901a782a0fa0);
+            
+        
+
+        marker_29d08e4ce605105122356d2538eefbd6.bindPopup(popup_3a8228f9fc90ecb1152041de253504d5)
+        ;
+
+        
+    
+    
+            var marker_6c1be647fc6ae778dd14fb942da8b747 = L.marker(
+                [51.998123908630134, -0.9186427083143276],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_fdf54ef4f2b34a68a80385cde82db42d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6c1be647fc6ae778dd14fb942da8b747.setIcon(icon_fdf54ef4f2b34a68a80385cde82db42d);
+        
+    
+        var popup_b0bb32e8d72e0d553a7eafec48795b94 = L.popup({});
+
+        
+            
+                var html_c64573431dca1c4050bc32f34f017cb7 = $(`<div id="html_c64573431dca1c4050bc32f34f017cb7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Back Street Ford</h1><div class="nugget-popup"><p>Road flooding was seen at the ford on Back Street with water levels anecdotally reaching greater than 6 ft; water level was noted as above the 6 ft marker at the ford. (p24)</p></div><div class="nugget-popup"><p>The ford at Back Street was overtopped by Thorn Brook, causing inundation at that crossing/location. [PAG] (p36)</p></div><div class="nugget-popup"><p>The ford and adjacent footpath on Back Street were flooded from Thorn Brook, with water pooling on the road and reaching the second railing. (p37)</p></div><div class="nugget-popup"><p>The Ford on Back Street was flooded during the event; when both this Ford and Lower End were flooded, residents who live between these two points were cut off until the flood waters receded. (p42)</p></div><div class="nugget-popup"><p>Vegetation in the narrow channel downstream of the Ford contributed to exacerbation of flooding on nearby Back Street by restricting conveyance. (p48)</p></div><div class="nugget-popup"><p>Flooding at Back Street Ford (Thorn Brook) produced concentrated overland flows along Back Street; in the Back Street/Lower End area at least 13 cars became stranded and flooded requiring Fire Brigade attendance. (p64)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>water levels above 6ft marker; greater than 6ft (anecdotal) (p24)</p></div><div class="nugget-popup quant"><p>5 ft 2 in (flood board reading at the Back Street ford) (p37)</p></div><div class="nugget-popup quant"><p>13 cars (p64)</p></div></div></body></div>`)[0];
+                popup_b0bb32e8d72e0d553a7eafec48795b94.setContent(html_c64573431dca1c4050bc32f34f017cb7);
+            
+        
+
+        marker_6c1be647fc6ae778dd14fb942da8b747.bindPopup(popup_b0bb32e8d72e0d553a7eafec48795b94)
+        ;
+
+        
+    
+    
+            var marker_6361edc313b94f1c97e6af4247a067e8 = L.marker(
+                [52.1278302, -0.4250206],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_13d7ee46972603a70cd3b60a65104001 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6361edc313b94f1c97e6af4247a067e8.setIcon(icon_13d7ee46972603a70cd3b60a65104001);
+        
+    
+        var popup_8dc5c20d6e0bf10deaef1136d627acb4 = L.popup({});
+
+        
+            
+                var html_2278752b0f0b87d1cf73831f604db2df = $(`<div id="html_2278752b0f0b87d1cf73831f604db2df" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Great Ouse</h1><div class="nugget-popup"><p>The Great Ouse experienced high flows contributing to flooding at Thornborough Mill later in the evening of 23 December 2020; an Environment Agency flood warning for the Great Ouse was issued at 18:35 referencing the area. [PAG] (p33)</p></div><div class="nugget-popup"><p>The south bank of the River Great Ouse at Thornborough Mill was overtopped, allowing river water to flow southward across the floodplain and into properties immediately south of the river. [IMG] (p38)</p></div><div class="nugget-popup"><p>Experienced an extreme river flood event during December 2020 that affected flows at Thornborough Mill; the December 2020 flood magnitude on the Great Ouse at Thornborough Mill was described as 'too extreme' in the report and is the primary river flooding influence in the Thornborough Mill area. [PAG] (p51)</p></div><div class="nugget-popup"><p>The Great Ouse (affecting the Thornborough Mill catchment) experienced elevated flows in response to the 23rd December 2020 rainfall and saturated soils, contributing to raised river levels and flood risk at Thornborough Mill; this influenced recommendations for catchment and riparian measures. (p65)</p></div></div></body></div>`)[0];
+                popup_8dc5c20d6e0bf10deaef1136d627acb4.setContent(html_2278752b0f0b87d1cf73831f604db2df);
+            
+        
+
+        marker_6361edc313b94f1c97e6af4247a067e8.bindPopup(popup_8dc5c20d6e0bf10deaef1136d627acb4)
+        ;
+
+        
+    
+    
+            var marker_8812eae067fe4446f53b4d8320502ee6 = L.marker(
+                [51.99881914734554, -0.924389080465892],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_d0c4538e16e7b273e140d635005c9283 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8812eae067fe4446f53b4d8320502ee6.setIcon(icon_d0c4538e16e7b273e140d635005c9283);
+        
+    
+        var popup_2f666404d7f94ffe16d5704186825c18 = L.popup({});
+
+        
+            
+                var html_70b9471b2e92c9c04ae5ca5d83c1de2e = $(`<div id="html_70b9471b2e92c9c04ae5ca5d83c1de2e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lower End Bridge</h1><div class="nugget-popup"><p>The bridge at Lower End Road became impassable due to flooding. (p6)</p></div><div class="nugget-popup"><p>The location where the watercourse passes under Lower End Bridge was identified in maintenance responsibility notes and was adjacent to channel clearance works carried out after the 23rd December 2020 flood; the IDB cleared upstream sections to increase capacity and removed a concrete in&ndash;channel weir on the upstream face of Hatchet Leys Bridge. (p29)</p></div><div class="nugget-popup"><p>Lower End Bridge became impassable due to flood water; road impassable and flood water at the bridge reached approximately 400 mm depth (observed 23/12/2020). [TAB] (p34)</p></div><div class="nugget-popup"><p>Floodwater reached road level at the bridge, making the road impassable. (p35)</p></div><div class="nugget-popup"><p>Cowerde Brook overtopped the bridge and spilled into the road, submerging areas of Back Street and Lower End. Flooding began at around 16:00 and is shown in Figure 8&ndash;2. (p37)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>400 mm depth at Lower End Bridge [TAB] (p34)</p></div><div class="nugget-popup quant"><p>approximately 400 mm depth (p35)</p></div></div></body></div>`)[0];
+                popup_2f666404d7f94ffe16d5704186825c18.setContent(html_70b9471b2e92c9c04ae5ca5d83c1de2e);
+            
+        
+
+        marker_8812eae067fe4446f53b4d8320502ee6.bindPopup(popup_2f666404d7f94ffe16d5704186825c18)
+        ;
+
+        
+    
+    
+            var marker_c02404a7a1dbb40213242ce5b1708ba7 = L.marker(
+                [51.99902235004813, -0.9247592033582557],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_b0a6ebf4889514b0cb6ea9a36edcaa1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c02404a7a1dbb40213242ce5b1708ba7.setIcon(icon_b0a6ebf4889514b0cb6ea9a36edcaa1f);
+        
+    
+        var popup_3ea08d4f672a0956e95be5dc744a9681 = L.popup({});
+
+        
+            
+                var html_0d3e18e3ea3a77ba63be962cf5aec638 = $(`<div id="html_0d3e18e3ea3a77ba63be962cf5aec638" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hatchet Leys Bridge</h1><div class="nugget-popup"><p>Following the 23 December 2020 flood the IDB removed a concrete in&ndash;channel weir on the upstream face of Hatchet Leys Bridge and cleared the stream between the bridges to increase conveyance and reduce blockages. (p30)</p></div><div class="nugget-popup"><p>Bridge/road became impassable due to flood water; depth at Lower End Bridge reached approximately 400 mm making the road impassable. [TAB] (p34)</p></div><div class="nugget-popup"><p>Cowerde Brook overtopped the bridge and spilled into the road, submerging areas of Back Street and Lower End. Flooding began at around 16:00 and is shown in Figure 8&ndash;2. (p37)</p></div><div class="nugget-popup"><p>Overflow at Hatchet Leys Bridge caused floodwater onto Hatchet Leys Lane; a property flooded internally with one room inundated to about 10 cm, fast&ndash;flowing water breached raised ground outside the front door, and pumping measures were deployed to limit further ingress. Flooding at the bridge was also worsened by converging overland flows from Back Street and High Street. (p40)</p></div><div class="nugget-popup"><p>Water backed up immediately downstream of Hatchet Leys bridge due to blockages in the upstream channel/IDB drain, contributing to local flooding at the bridge location. (p48)</p></div><div class="nugget-popup"><p>Concrete single&ndash;span bridge with a downstream livestock gate that can trap debris and contribute to blockage; during the 23rd December 2020 event water pooled upstream of the bridge, leading to the watercourse overtopping and floodwater spilling onto nearby fields, roads and properties. (p59)</p></div><div class="nugget-popup"><p>The bridge and associated livestock gate/constriction caused water to back up; recommendations include removing the livestock gate and investigating a bypass around the bridge to allow floodwater to flow onto downstream fields to reduce upstream backing. [TAB] (p60)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>400 mm depth [TAB] (p34)</p></div><div class="nugget-popup quant"><p>one room flooded; approximately 10cm depth (p40)</p></div></div></body></div>`)[0];
+                popup_3ea08d4f672a0956e95be5dc744a9681.setContent(html_0d3e18e3ea3a77ba63be962cf5aec638);
+            
+        
+
+        marker_c02404a7a1dbb40213242ce5b1708ba7.bindPopup(popup_3ea08d4f672a0956e95be5dc744a9681)
+        ;
+
+        
+    
+    
+            var marker_474661f85dda6d7ad2616f4ac72e24c2 = L.marker(
+                [51.9971062, -0.9201385],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_05186b0bbf9a32d826bfa4382b3bb5bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_474661f85dda6d7ad2616f4ac72e24c2.setIcon(icon_05186b0bbf9a32d826bfa4382b3bb5bd);
+        
+    
+        var popup_32b08066f113e4981a43d4a479ef678a = L.popup({});
+
+        
+            
+                var html_61565bff7c9ae8d793ac49a6ac0f8395 = $(`<div id="html_61565bff7c9ae8d793ac49a6ac0f8395" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Thornborough</h1><div class="nugget-popup"><p>Tonne Brook was observed beginning to overtop at the High Street, causing water to reach and flow along the street (photo evidence from the event). A small watercourse is culverted under the High Street and was a pathway for flows. [PAG] (p22)</p></div><div class="nugget-popup"><p>After overtopping of the River Great Ouse, ordinary watercourses overtopped and floodwater on High Street flooded the green to approximately 6 ft in depth. (p24)</p></div><div class="nugget-popup"><p>Flooding affected the street during the event; residents on High Street deployed resilience measures and sandbags, and Transport for Buckinghamshire implemented road closures affecting High Street. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Residents deployed resilience measures and sandbags to protect properties from floodwater. (p35)</p></div><div class="nugget-popup"><p>Tonne Brook began to overtop at High Street (at the pond next to the Village Hall and downstream pond outlet), with photographic evidence of overtopping during the event. [PAG,IMG] (p36)</p></div><div class="nugget-popup"><p>Water from the surcharging culvert flowed onto High Street and combined with surface water (exacerbated by blocked drains), resulting in flooding of the street. [PAG] (p37)</p></div><div class="nugget-popup"><p>The culvert under High Street surcharged, backing up water that flowed onto the road; this combined with surface water from blocked drains. Tonne Brook began to overtop adjacent to High Street, with floodwater encroaching onto the grassy area, footpath and carriageway. [PAG,IMG] (p38)</p></div><div class="nugget-popup"><p>Overland surface water flows from saturated fields (notably from the area around Stonelands Farm) contributed significant amounts of water towards the rear of properties on Lower End and High Street. (p39)</p></div><div class="nugget-popup"><p>A channel developed on High Street flowing northwards from the spring at Location 9, directing floodwater towards the village. A property near the village hall flooded internally when muddy water entered via a surcharged manhole, reaching approximately 15&ndash;20cm in two rooms. The main village High Street experienced significant flooding between about 19:00 and 20:00 that lasted roughly five hours, causing residents to wade to their cars. (p40)</p></div><div class="nugget-popup"><p>Two properties flooded externally; at one property floodwater reached the front&ndash;door sill, and at another floodwaters from Tonne Brook flowed through the rear garden via a diversion flow path (residents reported this garden floods regularly; a sluice is fitted at the gate). (p41)</p></div><div class="nugget-popup"><p>External flooding was reported at properties (from field runoff) and flooding occurred near the village hall on High Street during the event. [PAG] (p42)</p></div><div class="nugget-popup"><p>Playing fields and footpaths on the floodplain off the High Street (sports fields and adjacent footpaths) were flooded; these floodings did not present a significant hazard to residents. [PAG] (p43)</p></div><div class="nugget-popup"><p>Tonne Brook began to overtop onto High Street on 23rd December 2020, resulting in water flowing onto the street (reported and photographed in the investigation). [PAG,IMG] (p46)</p></div><div class="nugget-popup"><p>Overland flow from farmland to the south of the village caused external flooding around properties off High Street. No internal flooding was reported, largely because homeowners had carried out resilience works to route water around properties. (p62)</p></div><div class="nugget-popup"><p>Significant flooding of High Street after a village&ndash;hall meeting forced residents to wade to their cars; the flooding began between 19:00 and 20:00 and caused major disruption. (p64)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 6ft in depth (p24)</p></div><div class="nugget-popup quant"><p>two rooms; 15&ndash;20cm; approximately five hours (p40)</p></div><div class="nugget-popup quant"><p>2 properties; 1 property (flood reached front&ndash;door sill) (p41)</p></div><div class="nugget-popup quant"><p>2 properties [PAG] (p42)</p></div></div></body></div>`)[0];
+                popup_32b08066f113e4981a43d4a479ef678a.setContent(html_61565bff7c9ae8d793ac49a6ac0f8395);
+            
+        
+
+        marker_474661f85dda6d7ad2616f4ac72e24c2.bindPopup(popup_32b08066f113e4981a43d4a479ef678a)
+        ;
+
+        
+    
+    
+            var marker_4f5c1095d8278e43c3f809f6726e0d20 = L.marker(
+                [51.9988998, -0.9204107],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_d5bc7e6b6bdfc4ad49296e1bc506ca05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4f5c1095d8278e43c3f809f6726e0d20.setIcon(icon_d5bc7e6b6bdfc4ad49296e1bc506ca05);
+        
+    
+        var popup_b394aa94127924995495659b7073cebb = L.popup({});
+
+        
+            
+                var html_4feeea16f64e109cb70c31d98c9b1feb = $(`<div id="html_4feeea16f64e109cb70c31d98c9b1feb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Back Street, Thornborough</h1><div class="nugget-popup"><p>Overland flow from agricultural fields accumulated on Back Street, producing surface&ndash;water pooling/flow on the roadway during the event (photo evidence). [PAG] (p22)</p></div><div class="nugget-popup"><p>Floodwater on Back Street flooded the green to around 6 ft; road flooding was reported at the ford on Back Street with water levels noted above the 6 ft marker and anecdotal reports of depths greater than 6 ft. (p24)</p></div><div class="nugget-popup"><p>Cowerde Brook overtopped at Hatchet Leys Lane (around 16:00 on 23 December 2020) and spilled into the road, submerging areas of Back Street and Lower End. [PAG] (p36)</p></div><div class="nugget-popup"><p>Back Street was flooded: the ford and footpath were inundated and floodwater pooled on the road. Areas of Back Street were submerged by water overflowing from local brooks (including Cowerde Brook). [PAG] (p37)</p></div><div class="nugget-popup"><p>Surface water was observed flowing off fields onto Back Street; an overflowing drainage ditch along the highway verge exacerbated flooding and a channel formed that flowed along the street towards Lower End. (p39)</p></div><div class="nugget-popup"><p>A defined channel developed from converging surface water from fields to the north and flowed along Back Street towards Lower End. Flooding at the junction of Back Street and Lower End stranded and flooded numerous vehicles, creating a hazardous situation that required emergency response. (p40)</p></div><div class="nugget-popup"><p>Flooding occurred along Back Street (including the ford) during the 23 December 2020 event, contributing to local road inundation and isolating residents between the flooded points until waters receded. (p42)</p></div><div class="nugget-popup"><p>Watercourse overtopped at Back Street, causing flooding of the Back Street area. (p43)</p></div><div class="nugget-popup"><p>Flooding was exacerbated on Back Street due to vegetation in the narrow channel downstream of the Ford; channel condition contributed to increased local flood risk though a relief route exists. [TAB] (p48)</p></div><div class="nugget-popup"><p>Runoff from fields to the north of Back Street was reported to flow out onto the road and down to the junction with Lower End, contributing to overland flows affecting the highway and local area. (p62)</p></div><div class="nugget-popup"><p>Severe road flooding at the junction of Back Street and Lower End caused at least 13 cars to become stranded and flooded, creating a hazardous situation that required emergency response. (p64)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 6ft in depth; water level above 6ft marker; greater than 6ft (anecdotal) (p24)</p></div><div class="nugget-popup quant"><p>at least 13 cars (p40)</p></div></div></body></div>`)[0];
+                popup_b394aa94127924995495659b7073cebb.setContent(html_4feeea16f64e109cb70c31d98c9b1feb);
+            
+        
+
+        marker_4f5c1095d8278e43c3f809f6726e0d20.bindPopup(popup_b394aa94127924995495659b7073cebb)
+        ;
+
+        
+    
+    
+            var marker_0497c80345056101e21fcff67fbc0208 = L.marker(
+                [51.9961812, -0.9165076],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_82c75de7b3c071e1723bb38227a04106 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0497c80345056101e21fcff67fbc0208.setIcon(icon_82c75de7b3c071e1723bb38227a04106);
+        
+    
+        var popup_dc672312dde11d6b67161b4dec8dd633 = L.popup({});
+
+        
+            
+                var html_001b482d01e4e89786131a462c9789b6 = $(`<div id="html_001b482d01e4e89786131a462c9789b6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Green, Thornborough</h1><div class="nugget-popup"><p>Flooding affected the Green near the Two Brewers pub during the event. (p42)</p></div><div class="nugget-popup"><p>Footpaths located within the floodplain were flooded (inundation of pedestrian routes across the floodplain). [TAB] (p43)</p></div></div></body></div>`)[0];
+                popup_dc672312dde11d6b67161b4dec8dd633.setContent(html_001b482d01e4e89786131a462c9789b6);
+            
+        
+
+        marker_0497c80345056101e21fcff67fbc0208.bindPopup(popup_dc672312dde11d6b67161b4dec8dd633)
+        ;
+
+        
+    
+    
+            var marker_c8685ad26eca7d3b75e7c5b2e16d3d05 = L.marker(
+                [51.9927301, -0.9172068],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_13a40ea38aebc545a6ba19227697336f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c8685ad26eca7d3b75e7c5b2e16d3d05.setIcon(icon_13a40ea38aebc545a6ba19227697336f);
+        
+    
+        var popup_093595aebbae2aa2e01d43ac95abde35 = L.popup({});
+
+        
+            
+                var html_5de6744afdf6768cd6a61b82fea244bd = $(`<div id="html_5de6744afdf6768cd6a61b82fea244bd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bridge Street, Thornborough</h1><div class="nugget-popup"><p>Internal flooding observed in a property, with water coming up through floorboards. [TAB] (p34)</p></div><div class="nugget-popup"><p>Tonne Brook overtopped at Bridge Street (location 15), causing flooding of the street and adjacent areas. [PAG] (p36)</p></div><div class="nugget-popup"><p>Overtopping of Tonne Brook occurred at Bridge Street, with floodwater reaching the first white railing of the bridge. (p37)</p></div><div class="nugget-popup"><p>Residents reported sewage backing up into toilets (sewer flooding) and observers noted overland flows pouring off fields onto Bridge Street (surface water reaching the road). (p39)</p></div><div class="nugget-popup"><p>Overland flows from surrounding fields and overflows from the Tonne Brook converged on Bridge Street. Floodwater ran down the street, encroaching on the front of one property; on the far side of the bridge flows reportedly reached depths of about 30 cm as they ran into the village. (p40)</p></div><div class="nugget-popup"><p>Flooding occurred along Bridge Street causing external flooding to properties (water reaching door thresholds) and contributing to road inundation in the village. [PAG] (p41)</p></div><div class="nugget-popup"><p>Flooding occurred along Bridge Street during the event. (p42)</p></div><div class="nugget-popup"><p>Watercourse overtopped at Bridge Street, resulting in overtopping&ndash;related flooding at this location. (p43)</p></div><div class="nugget-popup"><p>Bridge Street acted as the only possible relief flow route for the Tonne Brook where overtopping of the bridge deck occurred once in&ndash;channel levels backed up; the restricted floodplain (houses on banks) forced flows to use this route, causing floodwater to pass over the bridge and threaten adjoining properties. (p44)</p></div><div class="nugget-popup"><p>Flooding was exacerbated on Bridge Street because the narrow, engineered channel provides no relief flow routes, increasing flood depths/impact on the street. [TAB] (p48)</p></div><div class="nugget-popup"><p>On 23 December 2020 Bridge Street experienced surface water flowing onto the road (including water pouring off adjacent fields) and sewer&ndash;related impacts: residents reported sewer backup with water entering toilets. The ordinary watercourse at Bridge Street was also recorded as overtopping during the event. (p64)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property; 30 cm deep (p40)</p></div><div class="nugget-popup quant"><p>6 properties; 18cm (reported maximum depth at door thresholds along Bridge Street) [PAG] (p41)</p></div></div></body></div>`)[0];
+                popup_093595aebbae2aa2e01d43ac95abde35.setContent(html_5de6744afdf6768cd6a61b82fea244bd);
+            
+        
+
+        marker_c8685ad26eca7d3b75e7c5b2e16d3d05.bindPopup(popup_093595aebbae2aa2e01d43ac95abde35)
+        ;
+
+        
+    
+    
+            var marker_c79d1d149be7f3da1632c9bd793fef21 = L.marker(
+                [51.9989568, -0.9249728],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_0c7df9ecc938c8d35ec4c72f6a92b629 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c79d1d149be7f3da1632c9bd793fef21.setIcon(icon_0c7df9ecc938c8d35ec4c72f6a92b629);
+        
+    
+        var popup_f0201972735697794fbf34a48c06c818 = L.popup({});
+
+        
+            
+                var html_e791aaa6c16e78f97532d201609fb3d2 = $(`<div id="html_e791aaa6c16e78f97532d201609fb3d2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hatchet Leys Lane, Thornborough</h1><div class="nugget-popup"><p>Road flooding with vehicles stuck; Fire and Rescue attended and the road was shut for safety. [TAB] (p34)</p></div><div class="nugget-popup"><p>The bridge at Hatchet Leys Lane was overtopped and the lane/adjacent road was submerged by overflow from Cowerde Brook (flooding began at around 16:00). [PAG,IMG] (p36)</p></div><div class="nugget-popup"><p>A property on Hatchet Leys Lane flooded from overflow of Cowerde Brook at Hatchet Leys Bridge; one room flooded to approximately 10cm depth. Fast&ndash;flowing water breached raised land outside the front door, though further internal flooding was limited by use of a sump pump and other measures. Flooding was exacerbated by converging overland flows from Back Street and High Street. (p40)</p></div><div class="nugget-popup"><p>River/watercourse overtopped at the location adjacent to Hatchet Leys Lane, causing localised flooding of the lane/adjacent land. (p43)</p></div><div class="nugget-popup"><p>Moderate siltation of the Cowerde Brook between the bridges at Lower End and Hatchet Leys End produced low&ndash;velocity flows and reduced conveyance in this reach, contributing to local flooding risk during the event. (p44)</p></div><div class="nugget-popup"><p>Highway gullies were reported blocked or overwhelmed during the event, producing surface water flow paths at the road edges; this roadside surface water contributed to internal flooding of a property and caused localised roadside inundation. [TAB] (p60)</p></div><div class="nugget-popup"><p>The Hatchet Leys Lane bridge area experienced overtopping (from Cowerde Brook), causing road flooding and contributing to roads being unpassable in the village. (p64)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>13 vehicles; one person [TAB] (p34)</p></div><div class="nugget-popup quant"><p>one room; approximately 10cm (p40)</p></div><div class="nugget-popup quant"><p>1 property [TAB] (p60)</p></div></div></body></div>`)[0];
+                popup_f0201972735697794fbf34a48c06c818.setContent(html_e791aaa6c16e78f97532d201609fb3d2);
+            
+        
+
+        marker_c79d1d149be7f3da1632c9bd793fef21.bindPopup(popup_f0201972735697794fbf34a48c06c818)
+        ;
+
+        
+    
+    
+            var marker_3fb71a627f95caa2b656bc1a28511c21 = L.marker(
+                [51.9966594, -0.918559],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_9b911360e08d88455e47b36ca87d760a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3fb71a627f95caa2b656bc1a28511c21.setIcon(icon_9b911360e08d88455e47b36ca87d760a);
+        
+    
+        var popup_3e98d468a49c8c3a77e68cceb6c633cf = L.popup({});
+
+        
+            
+                var html_eeeaeb8edf196d137d94145f6b1ac14e = $(`<div id="html_eeeaeb8edf196d137d94145f6b1ac14e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Lane, Thornborough</h1><div class="nugget-popup"><p>Road outside the village hall (Church Lane) was flooded (observed at approximately 20:00 on 23/12/2020). [TAB] (p34)</p></div><div class="nugget-popup"><p>Road outside the village hall (Church Lane) was flooded. (p35)</p></div></div></body></div>`)[0];
+                popup_3e98d468a49c8c3a77e68cceb6c633cf.setContent(html_eeeaeb8edf196d137d94145f6b1ac14e);
+            
+        
+
+        marker_3fb71a627f95caa2b656bc1a28511c21.bindPopup(popup_3e98d468a49c8c3a77e68cceb6c633cf)
+        ;
+
+        
+    
+    
+            var marker_b3a2f6aba80613faf8b8f5acc00575d2 = L.marker(
+                [51.86619751869193, -0.8610230642396219],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_54e620ba185e82ceaac17c3fe1a5cb38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b3a2f6aba80613faf8b8f5acc00575d2.setIcon(icon_54e620ba185e82ceaac17c3fe1a5cb38);
+        
+    
+        var popup_d1cced4ee60f23cf0bf4dfa41a985fda = L.popup({});
+
+        
+            
+                var html_7d549290b027be707206f44f14101af3 = $(`<div id="html_7d549290b027be707206f44f14101af3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Buckinghamshire</h1><div class="nugget-popup"><p>Widespread flooding across the county during the event: main roads (including A422 and A421) were impassable in places, multiple communities were cut off, and emergency services prioritised risk&ndash;to&ndash;life responses; in some cases water tables were too high to pump properties dry. (p34)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>161 incidents; 13 vehicles; 1 person (p34)</p></div></div></body></div>`)[0];
+                popup_d1cced4ee60f23cf0bf4dfa41a985fda.setContent(html_7d549290b027be707206f44f14101af3);
+            
+        
+
+        marker_b3a2f6aba80613faf8b8f5acc00575d2.bindPopup(popup_d1cced4ee60f23cf0bf4dfa41a985fda)
+        ;
+
+        
+    
+    
+            var marker_230e2933db156ce15b9926f2838b80ec = L.marker(
+                [51.9955872, -0.9136531],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_a4f6039d7fdea42caf96136c779e7aa7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_230e2933db156ce15b9926f2838b80ec.setIcon(icon_a4f6039d7fdea42caf96136c779e7aa7);
+        
+    
+        var popup_f59134e50d8c5c772e7cc44f5d65436e = L.popup({});
+
+        
+            
+                var html_2a71f7d99bbceae50c0b0796467479e7 = $(`<div id="html_2a71f7d99bbceae50c0b0796467479e7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thornborough</h1><div class="nugget-popup"><p>The village experienced flooding during the 23 December 2020 storm (flooding began around 15:00), with overtopping of local watercourses, converged overland and surface water flows and groundwater emergence causing internal flooding of homes, resident displacement, loss of possessions and negative mental and physical health impacts. (p6)</p></div><div class="nugget-popup"><p>Internal flooding to residential properties within the settlement, triggering a Section 19 investigation. (p13)</p></div><div class="nugget-popup"><p>The village was impacted by flooding during the December 2020 event (23 December 2020); this prompted a Section 19 flood investigation and collection of evidence (photos, questionnaires, rainfall and drainage data) to understand causes and impacts. (p14)</p></div><div class="nugget-popup"><p>Overbank flows and surface&ndash;water overland flow affected multiple locations in the village during the event: flooding at Lower End Bridge and Hatchet Leys Bridge, Tonne Brook beginning to overtop at the High Street, overland flow from fields accumulating on Back Street, and high flows at the inlet to Thornborough Pond. [PAG,IMG] (p22)</p></div><div class="nugget-popup"><p>Repeated flooding of the village from ordinary watercourses, surface water and the River Great Ouse across multiple events: 1902 (whole village flooded, several houses flooded by rapid ingress), 1935 (storm &mdash; brook at Bridge Street burst its banks, forced down a brick wall, water rose rapidly to around 6 ft and entered houses to ~1 ft depth; many properties affected), March 1947 (overtopping of the River Great Ouse led to ordinary watercourses overtopping and High Street/Back Street and the village green being flooded to about 6 ft), April 1998 (heavy rainfall led to very high river levels and road/ford flooding), July 2000 (internal/external flooding affecting the village), 2006 (two properties reported flooded), July 2007 (around 10 properties flooded; River Great Ouse believed to have flooded the Thornborough Mill area), and the reported event on 23 December 2020 when the village was the subject of the investigation. Impacts described include inundation of streets (High Street, Back Street, The Green), internal property flooding, damage to carpets and furniture, and significant depths of standing water in parts of the village and at the ford on Back Street. [PAG,IMG,TAB,MUL] (p23)</p></div><div class="nugget-popup"><p>The village experienced overtopping of the River Great Ouse and subsequent overtopping of ordinary watercourses; properties across the centre and Lower End were flooded (internal and external flooding reported), with roughly ten properties cited in some accounts and reports that up to 17 or 18 houses had water entry. (p24)</p></div><div class="nugget-popup"><p>Following the flood event on 23rd December 2020, local watercourses (notably Cowerde Brook) caused flooding issues in the village. Transport for Buckinghamshire cleared gullies and culverts in the adopted highway. The Buckingham and Ouzel IDB cleared a section of channel upstream of Lower End bridge to increase capacity, removed a concrete in&ndash;channel weir on the upstream face of Hatchet Leys Bridge, and cleared the stream between bridges. Fly&ndash;tipped debris in the highway ditch beside the IDB&ndash;maintained watercourse was identified as obstructing flow and a potential contributor to flooding. A section of watercourse flows to a pumping station alongside Lower Road. (p29)</p></div><div class="nugget-popup"><p>Flooding occurred in the village beginning at approximately 15:00 on 23 December 2020; floodwaters affected the village and later receded. [TAB,PAG] (p33)</p></div><div class="nugget-popup"><p>Flooding began in the village at approximately 15:00 on 23/12/2020. Internal flooding was observed on Bridge Street at 16:00 with water coming up through the floorboards of a property. Lower End Bridge and Hatchet Leys bridge became impassable; roads were flooded and closed (including High Street). Residents deployed sandbags on Lower End and High Street. Flood water in the village had receded by about 23:00 on 23/12/2020. [TAB,PAG] (p34)</p></div><div class="nugget-popup"><p>Extreme rainfall on an already saturated catchment caused multiple ordinary watercourses to overtop in the village (at least seven locations) and produced overland flow pathways, resulting in widespread flooding across Thornborough on 23 December 2020. [PAG,IMG] (p36)</p></div><div class="nugget-popup"><p>Multiple local watercourses overtopped in the village: Thorn Brook flooded the ford and footpath on Back Street (water pooled on the road, reaching the second railing); Tonne Brook overtopped near the pond and flowed through the grounds of Thornborough Manor; the pond overtopped and flooded the road at Location 2; Bridge Street experienced overtopping to the first white railing; a culvert near the Old Manor surcharged and backed water onto High Street; blocked culvert/culvert debris caused flooding behind the Maltings. [PAG] (p37)</p></div><div class="nugget-popup"><p>Extreme rainfall on a saturated catchment and overtopping of ordinary watercourses caused widespread local flooding in the village. Ordinary watercourses overtopped in at least seven locations, producing overland flow paths that flooded streets and low&ndash;lying areas; groundwater emerged from springs behind the Maltings and on High Street; culvert surcharge and blocked drains exacerbated flooding in the village. [PAG,IMG] (p38)</p></div><div class="nugget-popup"><p>High River Great Ouse levels occurred in the village, with the south bank overtopped at Thornborough Mill. Groundwater emerged from a spring behind the Maltings on Bridge Lane (Location 14) and from the ground on the High Street (Location 9). Overland runoff from saturated fields (including around Stonelands Farm) flowed onto roads and into rear gardens on Lower End and High Street and 'poured' onto Bridge Street. A manhole cover near Location 2 lifted with flood water, and sewer backup caused water to enter toilets on Bridge Street near Location 17. [PAG] (p39)</p></div><div class="nugget-popup"><p>Converging overland flows, overflows from watercourses and groundwater ingress caused widespread localised flooding across the village. Flooding led to vehicles becoming stranded and flooded at the Back Street / Lower End junction, significant inundation of the High Street (residents had to wade to cars), and multiple properties flooded internally (including a property on Hatchet Leys Lane, a property on High Street and the Two Brewers pub). (p40)</p></div><div class="nugget-popup"><p>Village&ndash;wide flooding affected multiple properties (internal and external) and infrastructure: properties flooded internally and externally, roads inundated (including Lower End, Back Street Ford, Bridge Street, High Street), vehicles stranded requiring rescue, and some residents cut off while floodwaters persisted. (p41)</p></div><div class="nugget-popup"><p>Footpaths located within the village floodplain were inundated during the event; this flooding did not present a significant hazard to residents. (p43)</p></div><div class="nugget-popup"><p>Flooding in Thornborough caused damage to property and affected people/communities, prompting a high&ndash;level appraisal of mitigation measures (improvements to data collection and modelling, flood warning and incident management, community resilience, asset maintenance and flood risk management schemes). [PAG] (p52)</p></div><div class="nugget-popup"><p>Properties in Thornborough were affected by flooding during the event on 23 December 2020. The investigation recommends Property Flood Resilience measures for at&ndash;risk properties and community&ndash;level actions (a Community Flood Toolkit and a flood&ndash;preparedness information pack) to reduce future impacts. [TAB,PAG] (p54)</p></div><div class="nugget-popup"><p>During the 23rd December 2020 event floodwater reached close to multiple properties in the village. Some residents deployed door barriers which successfully prevented water ingress; others, despite landscaping intended to redirect flows, still experienced floodwater approaching their properties. (p55)</p></div><div class="nugget-popup"><p>Highway gullies were blocked or overwhelmed producing surface water flow paths at the sides of roads. Overland flow from farmland (south of the village and from fields north of Back Street) caused external flooding around properties off High Street and runoff flowed onto roads down to the junction with Lower End. A blocked ditch below the solar farm at Thornborough Grounds contributed to overland flows in the Thornborough Mill area. Homeowner resilience measures prevented internal flooding in some cases. [PAG] (p61)</p></div><div class="nugget-popup"><p>Overland flow from farmland to the south of the village caused external flooding around properties off High Street; properties avoided internal flooding due to resilience works carried out by homeowners. [PAG] (p62)</p></div><div class="nugget-popup"><p>On 23 December 2020 the village experienced intense surface water and river&ndash;related flooding. At least five residential properties suffered internal flooding. Multiple ordinary watercourses and culverts were overtopped in the village, roads became unpassable, drains were blocked and overwhelmed, and a manhole cover lifted with flood water near properties. Water backed up from sewers into toilets (reported on Bridge Street). Concentrated overland flows and runoff from saturated surrounding fields contributed to flooding across streets. At the junction of Back Street and Lower End at least 13 cars became stranded and flooded requiring Fire Brigade attendance. Residents leaving the village hall had to wade through significant flooding on the High Street during an episode starting between 19:00&ndash;20:00 and lasting roughly five hours, causing major disruption and distress. [PAG] (p64)</p></div><div class="nugget-popup"><p>The Thornborough village catchment (Cowerde Brook) produced an elevated flow response to heavy rainfall on 23rd December 2020 while soils were saturated, giving an estimated flow return period of about 5&ndash;20 years. This led to increased flood risk to the village and prompted recommendations for community resilience (Flood Action Plan, Community Flood Toolkit) and Property Flood Resilience at highest&ndash;risk properties. [TAB,PAG] (p65)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>five residential properties (p6)</p></div><div class="nugget-popup quant"><p>at least five properties (p13)</p></div><div class="nugget-popup quant"><p>17 or 18 houses; approximately 10 properties; Two properties; Approximately 10 properties [PAG,IMG,TAB,MUL] (p23)</p></div><div class="nugget-popup quant"><p>approximately 10 properties; 17 or 18 houses (p24)</p></div><div class="nugget-popup quant"><p>1 property; 13 vehicles [TAB,PAG] (p34)</p></div><div class="nugget-popup quant"><p>5 ft 2 in (flood board reading at the Back Street ford) [PAG] (p37)</p></div><div class="nugget-popup quant"><p>7 locations [PAG,IMG] (p38)</p></div><div class="nugget-popup quant"><p>5 properties; 3 properties in Thornborough; at least 13 cars; approximately five hours (p40)</p></div><div class="nugget-popup quant"><p>6 properties (along Bridge Street); 2 properties (Thornborough Mill internal); 2 properties (High Street Location 2 external) (p41)</p></div><div class="nugget-popup quant"><p>1 property [PAG] (p61)</p></div><div class="nugget-popup quant"><p>at least five residential properties; at least seven overtopping locations; at least 13 cars; approximately five hours [PAG] (p64)</p></div></div></body></div>`)[0];
+                popup_f59134e50d8c5c772e7cc44f5d65436e.setContent(html_2a71f7d99bbceae50c0b0796467479e7);
+            
+        
+
+        marker_230e2933db156ce15b9926f2838b80ec.bindPopup(popup_f59134e50d8c5c772e7cc44f5d65436e)
+        ;
+
+        
+    
+    
+            var marker_3264abf518b0563f50830fcc5ae5dded = L.marker(
+                [51.9980626, -0.9236183],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_9381e1ffa9f1e41e8b7c9230f88ec815 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3264abf518b0563f50830fcc5ae5dded.setIcon(icon_9381e1ffa9f1e41e8b7c9230f88ec815);
+        
+    
+        var popup_a6f8c9bdd51ccd12736669c53a19c302 = L.popup({});
+
+        
+            
+                var html_e5ae63da9f3530a2a1661739fcc20130 = $(`<div id="html_e5ae63da9f3530a2a1661739fcc20130" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lower End</h1><div class="nugget-popup"><p>Flooding made the bridge on Lower End Road impassable during the event. (p6)</p></div><div class="nugget-popup"><p>Lower End is repeatedly reported as being flooded: in 1902 the whole village (including Lower End) was flooded; in the September 1935 storm many homes at Lower End were invaded and houses near the brook were commonly flooded, with floodwater sweeping over a 6 ft wall and entering houses (reports describe water entering properties to depths around 1 ft). Photographic evidence in the report shows flooding at Lower End Bridge and Hatchet Leys Bridge on 23 December 2020. [PAG,TAB,MUL] (p23)</p></div><div class="nugget-popup"><p>Houses at Lower End near the brook were flooded; many homes were invaded when the brook burst its banks and water entered houses up to 1 foot deep in some properties. [PAG] (p24)</p></div><div class="nugget-popup"><p>The reach of watercourse passing under the Lower End bridge was the focus of post&ndash;flood clearance works carried out after the 23rd December 2020 event (IDB cleared upstream channel to increase capacity). (p29)</p></div><div class="nugget-popup"><p>Cowerde Brook overtopped at Hatchet Leys Lane (around 16:00 on 23 December 2020) and spilled into the road, submerging areas of Back Street and Lower End. [PAG] (p36)</p></div><div class="nugget-popup"><p>Overland surface water flows from saturated fields (notably from the area around Stonelands Farm) contributed significant amounts of water towards the rear of properties on Lower End and High Street. (p39)</p></div><div class="nugget-popup"><p>Converging overland flows and overflows from nearby watercourses reached Lower End. Flow paths from College Farm discharged onto the road at Lower End and then flowed northwards; the junction with Back Street experienced stranded vehicles. Surface flows and overtopping combined here to exacerbate flooding. (p40)</p></div><div class="nugget-popup"><p>Field runoff converging from fields to the south caused external flooding at properties on Lower End and High Street; roads were flooded (notably Lower End), the Fire and Rescue Service were called to rescue cars stranded in floodwater, and when Lower End and Back Street Ford were both flooded residents between those points were cut off until waters receded. (p41)</p></div><div class="nugget-popup"><p>External flooding reported at properties from field runoff converging from fields to the south. The road along Lower End was flooded and the Fire and Rescue Service were called to rescue cars stranded in the floodwater. When Lower End and the Ford on Back Street were both flooded during the event, residents between these points were cut off until waters receded. [PAG] (p42)</p></div><div class="nugget-popup"><p>Watercourse overtopped at Lower End, causing flooding of the Lower End area. (p43)</p></div><div class="nugget-popup"><p>Moderate siltation of the Cowerde Brook between the bridges at Lower End and Hatchet Leys End produced low&ndash;velocity flows and reduced conveyance in this reach, contributing to local flooding risk during the event. (p44)</p></div><div class="nugget-popup"><p>Overland flows/runoff from surrounding fields flowed down to the junction with Lower End, indicating local road flooding and contribution to flood pathways in this area during the event. (p62)</p></div><div class="nugget-popup"><p>Severe road flooding at the junction of Back Street and Lower End caused at least 13 cars to become stranded and flooded, creating a hazardous situation that required emergency response. (p64)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>water entered houses to a depth of 1 foot; 17 or 18 houses; many homes [PAG] (p24)</p></div><div class="nugget-popup quant"><p>at least 13 cars (p40)</p></div><div class="nugget-popup quant"><p>2 properties (Lower End and High Street) (p41)</p></div><div class="nugget-popup quant"><p>2 properties [PAG] (p42)</p></div></div></body></div>`)[0];
+                popup_a6f8c9bdd51ccd12736669c53a19c302.setContent(html_e5ae63da9f3530a2a1661739fcc20130);
+            
+        
+
+        marker_3264abf518b0563f50830fcc5ae5dded.bindPopup(popup_a6f8c9bdd51ccd12736669c53a19c302)
+        ;
+
+        
+    
+    
+            var marker_4f779e520c91178507eddd0793e179b8 = L.marker(
+                [52.0154955, -0.9053801],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_0882215856377069df346db739b3b347 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4f779e520c91178507eddd0793e179b8.setIcon(icon_0882215856377069df346db739b3b347);
+        
+    
+        var popup_c8769c56cb3c31101eaa78dcf80e31c8 = L.popup({});
+
+        
+            
+                var html_4443b95fb2c37be19dda3ef2b4eee25f = $(`<div id="html_4443b95fb2c37be19dda3ef2b4eee25f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thornton</h1><div class="nugget-popup"><p>Experienced flooding during the 23 December 2020 event. (p14)</p></div></div></body></div>`)[0];
+                popup_c8769c56cb3c31101eaa78dcf80e31c8.setContent(html_4443b95fb2c37be19dda3ef2b4eee25f);
+            
+        
+
+        marker_4f779e520c91178507eddd0793e179b8.bindPopup(popup_c8769c56cb3c31101eaa78dcf80e31c8)
+        ;
+
+        
+    
+    
+            var marker_ef9b1a8d5fa9602f7f8b8f03fa1e16ff = L.marker(
+                [52.0336802, -0.9402602],
+                {}
+            ).addTo(map_660a28914c348c5a3caa959ad6be8bd4);
+        
+    
+            var icon_d07e32fe075406f198a02270f92215ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ef9b1a8d5fa9602f7f8b8f03fa1e16ff.setIcon(icon_d07e32fe075406f198a02270f92215ca);
+        
+    
+        var popup_e06d6d5eb818af73915cd31edf7af1af = L.popup({});
+
+        
+            
+                var html_a719f19298dc4383dcdb79253b040ec5 = $(`<div id="html_a719f19298dc4383dcdb79253b040ec5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Leckhampstead</h1><div class="nugget-popup"><p>Experienced flooding during the 23 December 2020 event. (p14)</p></div></div></body></div>`)[0];
+                popup_e06d6d5eb818af73915cd31edf7af1af.setContent(html_a719f19298dc4383dcdb79253b040ec5);
+            
+        
+
+        marker_ef9b1a8d5fa9602f7f8b8f03fa1e16ff.bindPopup(popup_e06d6d5eb818af73915cd31edf7af1af)
+        ;
+
+        
+    
+</script>
+</html>

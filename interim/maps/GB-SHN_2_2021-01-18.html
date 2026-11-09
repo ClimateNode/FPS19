@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0c11c5f4679d89947d8c7663b4c773f1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0c11c5f4679d89947d8c7663b4c773f1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0c11c5f4679d89947d8c7663b4c773f1 = L.map(
+                "map_0c11c5f4679d89947d8c7663b4c773f1",
+                {
+                    center: [53.47617532056183, -2.723037960297266],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_379dc303209f07aa61938bcb31d2026d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_379dc303209f07aa61938bcb31d2026d.addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+    
+            var marker_8f2deceb3e2420365c3c4372105f230b = L.marker(
+                [53.4443085, -2.7005798],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_661c4bddaeca628c9a1f2e1c69b718bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8f2deceb3e2420365c3c4372105f230b.setIcon(icon_661c4bddaeca628c9a1f2e1c69b718bd);
+        
+    
+        var popup_e9e2e619a7559cf4113482a1399da78e = L.popup({});
+
+        
+            
+                var html_806626439e06c1b27864461fc7970fae = $(`<div id="html_806626439e06c1b27864461fc7970fae" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Cuthberts School</h1><div class="nugget-popup"><p>St Cuthberts school was listed as being at risk within the Sutton Brook (Moss Nook) flood warning area. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>62 properties in total (Sutton Brook warning area) [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_e9e2e619a7559cf4113482a1399da78e.setContent(html_806626439e06c1b27864461fc7970fae);
+            
+        
+
+        marker_8f2deceb3e2420365c3c4372105f230b.bindPopup(popup_e9e2e619a7559cf4113482a1399da78e)
+        ;
+
+        
+    
+    
+            var marker_c6cb764686888760ab5b9e3ca76418dc = L.marker(
+                [53.447435624005585, -2.726286163904508],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_c507748b52c42411fa38684fd6a5e28c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c6cb764686888760ab5b9e3ca76418dc.setIcon(icon_c507748b52c42411fa38684fd6a5e28c);
+        
+    
+        var popup_1ed9b09efeeb56b52fd72d6d1ae3f4ed = L.popup({});
+
+        
+            
+                var html_0ad9bc6949c4f0ce918bb1a80de2f964 = $(`<div id="html_0ad9bc6949c4f0ce918bb1a80de2f964" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Helens Rugby Stadium</h1><div class="nugget-popup"><p>Flooding damaged the automatic flood barriers; temporary alternate access to the stadium side entrance was provided via the Tesco superstore car park. The vaccination site remained operational with signage in place despite the incident. (p13)</p></div><div class="nugget-popup"><p>Automatic flood barriers at the stadium were damaged by the flooding; temporary alternate access was provided via the Tesco superstore car park to the stadium side entrance. The on&ndash;site COVID&ndash;19 vaccination service remained operational with appropriate signage. [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_1ed9b09efeeb56b52fd72d6d1ae3f4ed.setContent(html_0ad9bc6949c4f0ce918bb1a80de2f964);
+            
+        
+
+        marker_c6cb764686888760ab5b9e3ca76418dc.bindPopup(popup_1ed9b09efeeb56b52fd72d6d1ae3f4ed)
+        ;
+
+        
+    
+    
+            var marker_794ca77ca63eaf588b73814e857a1fb8 = L.marker(
+                [53.4674646, -2.76174],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_b1de8085f40eb35e358a7362aa5f955d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_794ca77ca63eaf588b73814e857a1fb8.setIcon(icon_b1de8085f40eb35e358a7362aa5f955d);
+        
+    
+        var popup_03bd9995e6092e49b2987013cc2a5bd2 = L.popup({});
+
+        
+            
+                var html_7019fe3de8118118add04cfa1405a3b2 = $(`<div id="html_7019fe3de8118118add04cfa1405a3b2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Helens Crematorium</h1><div class="nugget-popup"><p>Externally flooded; the external flooding was threatening to affect a Scottish Power substation located on the perimeter of the site and emergency services were called to assist. [TAB] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 Scottish Power substation threatened [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_03bd9995e6092e49b2987013cc2a5bd2.setContent(html_7019fe3de8118118add04cfa1405a3b2);
+            
+        
+
+        marker_794ca77ca63eaf588b73814e857a1fb8.bindPopup(popup_03bd9995e6092e49b2987013cc2a5bd2)
+        ;
+
+        
+    
+    
+            var marker_7cbbea4aa71228a058102c72c49de223 = L.marker(
+                [53.467656669032046, -2.7618843022793884],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_ac60962f2203e5c8d15db2559daaf337 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7cbbea4aa71228a058102c72c49de223.setIcon(icon_ac60962f2203e5c8d15db2559daaf337);
+        
+    
+        var popup_e912485f497a532efa47d3b41b0a658f = L.popup({});
+
+        
+            
+                var html_5bf4874edffe0989561e1ed78e53b4cf = $(`<div id="html_5bf4874edffe0989561e1ed78e53b4cf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Helens Cemetery and Crematorium</h1><div class="nugget-popup"><p>Sandbag requests were recorded for St Helens Cemetery and Crematorium as part of the ward&ndash;wide flood response to protect the site from surface water flooding during the heavy rainfall. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_e912485f497a532efa47d3b41b0a658f.setContent(html_5bf4874edffe0989561e1ed78e53b4cf);
+            
+        
+
+        marker_7cbbea4aa71228a058102c72c49de223.bindPopup(popup_e912485f497a532efa47d3b41b0a658f)
+        ;
+
+        
+    
+    
+            var marker_ea2687521917d99c2942c4a384e6bffb = L.marker(
+                [53.41567382949563, -2.713384990924632],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_c3d35ba99398f0628030c3d3f4776dba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ea2687521917d99c2942c4a384e6bffb.setIcon(icon_c3d35ba99398f0628030c3d3f4776dba);
+        
+    
+        var popup_3ed37b107dc193f0c670dfcb3d337fc5 = L.popup({});
+
+        
+            
+                var html_f10fe50cb6fbb89bb8940607350e7219 = $(`<div id="html_f10fe50cb6fbb89bb8940607350e7219" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bold and Lea Green</h1><div class="nugget-popup"><p>Road closures (including Gorsey Lane and Travers Entry) implemented in the ward due to flooding. [TAB] (p14)</p></div><div class="nugget-popup"><p>Ward recorded sandbag requests (Begonia Gardens, Paddock Grove) during 18&ndash;20 Jan 2021 to protect properties from surface&ndash;water/urban flooding. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_3ed37b107dc193f0c670dfcb3d337fc5.setContent(html_f10fe50cb6fbb89bb8940607350e7219);
+            
+        
+
+        marker_ea2687521917d99c2942c4a384e6bffb.bindPopup(popup_3ed37b107dc193f0c670dfcb3d337fc5)
+        ;
+
+        
+    
+    
+            var marker_16ab94ceed0df01c2c4bc2b9bb1d140d = L.marker(
+                [53.45163219458354, -2.7260562167728133],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_f5f97412d1c780efbea00b5f47663c61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_16ab94ceed0df01c2c4bc2b9bb1d140d.setIcon(icon_f5f97412d1c780efbea00b5f47663c61);
+        
+    
+        var popup_06762ca5a83b064eae0aba7ce355b965 = L.popup({});
+
+        
+            
+                var html_539b5ef824b5711145d4e24f887e8cad = $(`<div id="html_539b5ef824b5711145d4e24f887e8cad" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Peasley Cross and Fingerpost</h1><div class="nugget-popup"><p>Peasley Cross Lane was flooded causing a road closure and access diversion to the Totally Wicked Stadium (St Helens Rugby Stadium) vaccination site; the stadium remained operational with signage. Automatic flood barriers at the stadium were damaged by the flooding and temporary alternate access was provided via the Tesco superstore car park to the stadium side entrance. [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_06762ca5a83b064eae0aba7ce355b965.setContent(html_539b5ef824b5711145d4e24f887e8cad);
+            
+        
+
+        marker_16ab94ceed0df01c2c4bc2b9bb1d140d.bindPopup(popup_06762ca5a83b064eae0aba7ce355b965)
+        ;
+
+        
+    
+    
+            var marker_0b9bde420cf916a2feab233be5aa21d9 = L.marker(
+                [53.455479260166264, -2.736902662451628],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_21893661c3fc0f4a41eef470d08c4ab0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0b9bde420cf916a2feab233be5aa21d9.setIcon(icon_21893661c3fc0f4a41eef470d08c4ab0);
+        
+    
+        var popup_748ad9de35f541549138285f5244ecc2 = L.popup({});
+
+        
+            
+                var html_fca86fd43751e5f62d3b7e637e00a9f0 = $(`<div id="html_fca86fd43751e5f62d3b7e637e00a9f0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Helens Metropolitan District</h1><div class="nugget-popup"><p>Urban areas within the borough experienced surface water / urban flooding: roads and underpasses were inundated (impassable), public paths and parkland were waterlogged and submerged, and vehicles were caught in high water. (p1)</p></div><div class="nugget-popup"><p>The St Helens area was placed under an Environment Agency Flood Alert (location code 013WAFSA) for the River Sankey catchment during the flood event, indicating the potential for flooding to properties and services within the alert area. (p8)</p></div><div class="nugget-popup"><p>Included within Flood Alert 013WAFSA for the River Sankey catchment; properties and critical services within the St Helens portion of the alert area were identified as at risk. [TAB,PAG] (p9)</p></div><div class="nugget-popup"><p>Widespread surface water / urban flooding across central St Helens and peripheral neighbourhoods that prompted a multi&ndash;agency emergency response (Gold Command) during the event. [PAG,IMG] (p11)</p></div><div class="nugget-popup"><p>Road closures were implemented at Burton Head Road and College Street. A road closure at Peasley Cross Lane caused access issues to the Totally Wicked Stadium vaccination site; traffic was diverted so the vaccination site could continue to operate. Automatic flood barriers at the stadium location were damaged by the flooding and temporary alternate access was provided via the Tesco superstore car park to the stadium side entrance. [TAB,PAG] (p14)</p></div><div class="nugget-popup"><p>Sandbag requests were made for locations in the town centre (Dodd Avenue, Lingholme Road, Kiln Lane) during the 18&ndash;20 Jan 2021 rainfall event, indicating properties were at risk of external inundation from surface water. [TAB,PAG] (p15)</p></div><div class="nugget-popup"><p>Borough&ndash;wide flooding caused by an unprecedented storm over 18&ndash;20 January 2021. Intense, exceptional rainfall and saturated ground led to groundwater emerging as surface water and runoff from higher land flowing onto saturated or impermeable areas, inundating urban areas and infrastructure across the borough. [PAG] (p16)</p></div><div class="nugget-popup"><p>Borough&ndash;wide flooding occurred: groundwater emerging as surface water from higher ground, combined with runoff and river flows, inundated areas across the borough. [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>385 residential properties; 78 non&ndash;residential properties; 8 critical services (p8)</p></div><div class="nugget-popup quant"><p>385 residential properties; 78 non&ndash;residential properties; 8 critical services [TAB,PAG] (p9)</p></div><div class="nugget-popup quant"><p>3 road closures (Burton Head Road, College Street, Peasley Cross Lane); 1 vaccination site (Totally Wicked Stadium) affected with damaged automatic flood barriers [TAB,PAG] (p14)</p></div></div></body></div>`)[0];
+                popup_748ad9de35f541549138285f5244ecc2.setContent(html_fca86fd43751e5f62d3b7e637e00a9f0);
+            
+        
+
+        marker_0b9bde420cf916a2feab233be5aa21d9.bindPopup(popup_748ad9de35f541549138285f5244ecc2)
+        ;
+
+        
+    
+    
+            var marker_f0b40bf495df2d9d1103534b850038a7 = L.marker(
+                [53.39117518202302, -2.5967829867827383],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_9b1d65616f49106c61db66c9d6fdc5c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f0b40bf495df2d9d1103534b850038a7.setIcon(icon_9b1d65616f49106c61db66c9d6fdc5c0);
+        
+    
+        var popup_c958e5e2f71a73caf199bfcd6948693b = L.popup({});
+
+        
+            
+                var html_a0ff46b2c0cfb4ba3163a1b862693677 = $(`<div id="html_a0ff46b2c0cfb4ba3163a1b862693677" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Warrington Unitary Authority</h1><div class="nugget-popup"><p>The Warrington part of the River Sankey catchment was placed under a Flood Alert in relation to the flood event; the alert area covered both St Helens and Warrington. (p8)</p></div><div class="nugget-popup"><p>Included within Flood Alert 013WAFSA for the River Sankey catchment; areas within Warrington in that alert area were identified as at risk. [TAB,PAG] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>385 residential properties; 78 non&ndash;residential properties; 8 critical services (these counts cover St Helens and Warrington) (p8)</p></div><div class="nugget-popup quant"><p>385 residential properties; 78 non&ndash;residential properties; 8 critical services [TAB,PAG] (p9)</p></div></div></body></div>`)[0];
+                popup_c958e5e2f71a73caf199bfcd6948693b.setContent(html_a0ff46b2c0cfb4ba3163a1b862693677);
+            
+        
+
+        marker_f0b40bf495df2d9d1103534b850038a7.bindPopup(popup_c958e5e2f71a73caf199bfcd6948693b)
+        ;
+
+        
+    
+    
+            var marker_29f797a6395bdb7afdd5e95a73571d76 = L.marker(
+                [54.704139, -2.482178],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_8e2dd10d69469902da36debb4dfe8ed3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_29f797a6395bdb7afdd5e95a73571d76.setIcon(icon_8e2dd10d69469902da36debb4dfe8ed3);
+        
+    
+        var popup_9ea5e77c145114c5bc3837da2a981bf0 = L.popup({});
+
+        
+            
+                var html_2b1a46f1b4dda2150aaa525b3af85624 = $(`<div id="html_2b1a46f1b4dda2150aaa525b3af85624" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pennines</h1><div class="nugget-popup"><p>Upland areas of the Pennines received exceptionally large rainfall amounts during Storm Christoph (18&ndash;20 Jan 2021). This extreme 48&ndash;72 hour rain accumulation (over 100 mm across uplands, locally 150&ndash;200 mm) produced exceptionally wet conditions in the Pennines during that period and materially increased flood risk in the uplands and downstream catchments. (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>over 100 mm; 150 to 200 mm (p6)</p></div></div></body></div>`)[0];
+                popup_9ea5e77c145114c5bc3837da2a981bf0.setContent(html_2b1a46f1b4dda2150aaa525b3af85624);
+            
+        
+
+        marker_29f797a6395bdb7afdd5e95a73571d76.bindPopup(popup_9ea5e77c145114c5bc3837da2a981bf0)
+        ;
+
+        
+    
+    
+            var marker_f4792b2663cc6d6560a25eb87311dbb2 = L.marker(
+                [53.492437, -2.7824653],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_1ae03a220c98f70a42e52a8f88fbbc89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f4792b2663cc6d6560a25eb87311dbb2.setIcon(icon_1ae03a220c98f70a42e52a8f88fbbc89);
+        
+    
+        var popup_1bf0908f4d1eff0921887c198a14968e = L.popup({});
+
+        
+            
+                var html_15561c3faf334a32cd4917772dda1fac = $(`<div id="html_15561c3faf334a32cd4917772dda1fac" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pasture Lane Business Centre</h1><div class="nugget-popup"><p>Identified in the Rainford Brook (Rainford South) flood warning area; land and properties at Pasture Lane Business Centre were listed as at risk from river flooding during the event. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>26 properties (total in Rainford South warning area) [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_1bf0908f4d1eff0921887c198a14968e.setContent(html_15561c3faf334a32cd4917772dda1fac);
+            
+        
+
+        marker_f4792b2663cc6d6560a25eb87311dbb2.bindPopup(popup_1bf0908f4d1eff0921887c198a14968e)
+        ;
+
+        
+    
+    
+            var marker_b4598693563bc8ae114dfcf2802e4979 = L.marker(
+                [53.4258263, -2.7165742],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_5af79c03828998f5e5adecc7f2802dec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b4598693563bc8ae114dfcf2802e4979.setIcon(icon_5af79c03828998f5e5adecc7f2802dec);
+        
+    
+        var popup_e851514466cfb510efa19689c1afe645 = L.popup({});
+
+        
+            
+                var html_2186e407691a37db6a2af7d6a0f84c7d = $(`<div id="html_2186e407691a37db6a2af7d6a0f84c7d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sutton Mill Dam</h1><div class="nugget-popup"><p>Named as being at risk within the Sutton Mill Brook warning area during the event; land alongside Sutton Mill Brook from Waterdale Crescent to Damhouse Bridge including Sutton Mill Dam was included in the flood warning. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>102 properties in total (Sutton Mill Brook warning area) [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_e851514466cfb510efa19689c1afe645.setContent(html_2186e407691a37db6a2af7d6a0f84c7d);
+            
+        
+
+        marker_b4598693563bc8ae114dfcf2802e4979.bindPopup(popup_e851514466cfb510efa19689c1afe645)
+        ;
+
+        
+    
+    
+            var marker_4e6d76c146ff10991d175196f36ad556 = L.marker(
+                [53.4841538, -2.7613107],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_ca1318cfe8827c32b67ca339ad693674 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4e6d76c146ff10991d175196f36ad556.setIcon(icon_ca1318cfe8827c32b67ca339ad693674);
+        
+    
+        var popup_a356f8abffcd453b49ca8823f3ffb23b = L.popup({});
+
+        
+            
+                var html_815ac1119c7b1c21fb387309ca8949c7 = $(`<div id="html_815ac1119c7b1c21fb387309ca8949c7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rainford Brook</h1><div class="nugget-popup"><p>Rainford Brook was the source for a series of flood warnings (codes 013FWFM3, 013FWFM4, 013FWFM5 issued 20/01/2021) covering Moss Bank and Rainford areas; land and properties adjacent to the brook were identified as at risk during the event. [TAB] (p9)</p></div><div class="nugget-popup"><p>By 20 January 2021 Rainford Brook was overtopping and threatening nearby properties and a Scottish Power sub&ndash;station. Merseyside Fire and Rescue Service assisted by pumping at Rainford Road and West End Road to manage flows. [PAG] (p12)</p></div><div class="nugget-popup"><p>Rainford Brook was overtopping, creating a flood risk to nearby properties and to a nearby Scottish Power sub&ndash;station and contributing to local flooding issues (including impacts on Rainford Road and Malt House Court). (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>13 properties; 22 properties; 26 properties (these totals correspond to the three Rainford Brook warning areas at Moss Bank, Rainford North and Rainford South respectively) [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_a356f8abffcd453b49ca8823f3ffb23b.setContent(html_815ac1119c7b1c21fb387309ca8949c7);
+            
+        
+
+        marker_4e6d76c146ff10991d175196f36ad556.bindPopup(popup_a356f8abffcd453b49ca8823f3ffb23b)
+        ;
+
+        
+    
+    
+            var marker_7c0fad9796960d04c3827d6ed5447757 = L.marker(
+                [53.4745514, -2.7459159],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_f420140638624fd05246b80fb0998d2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7c0fad9796960d04c3827d6ed5447757.setIcon(icon_f420140638624fd05246b80fb0998d2d);
+        
+    
+        var popup_7a40681ed51f481ee02232f20d9100a1 = L.popup({});
+
+        
+            
+                var html_0db5e734e728ff2684f8fb421ec1cad2 = $(`<div id="html_0db5e734e728ff2684f8fb421ec1cad2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Windle Park Wood</h1><div class="nugget-popup"><p>Listed as an area at risk in the Rainford Brook (Moss Bank) flood warning; land at Windle Park Wood was identified as at risk during the event. [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_7a40681ed51f481ee02232f20d9100a1.setContent(html_0db5e734e728ff2684f8fb421ec1cad2);
+            
+        
+
+        marker_7c0fad9796960d04c3827d6ed5447757.bindPopup(popup_7a40681ed51f481ee02232f20d9100a1)
+        ;
+
+        
+    
+    
+            var marker_bc195f917d9d96b9395e44b194ab02f5 = L.marker(
+                [53.4373526, -2.7056704],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_a4830782c866f6276ad23996b1077a96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bc195f917d9d96b9395e44b194ab02f5.setIcon(icon_a4830782c866f6276ad23996b1077a96);
+        
+    
+        var popup_a124e3cbf41f3e6daf283f7603660de7 = L.popup({});
+
+        
+            
+                var html_2018565895b5d286682367a17cf9c1b7 = $(`<div id="html_2018565895b5d286682367a17cf9c1b7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sutton Mill Brook</h1><div class="nugget-popup"><p>Identified in the Sutton Mill Brook (Sutton Leach) flood warning area; land and properties alongside Sutton Mill Brook (including Landsdowne Court, parts of Waterdale Crescent, Boscow Crescent, Dawsone Avenue, Gerrards Lane, land from Waterdale Crescent to Damhouse Bridge, and Sutton Mill Dam) were listed as at risk from river flooding during the event. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>102 properties (total in Sutton Mill Brook warning area) [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_a124e3cbf41f3e6daf283f7603660de7.setContent(html_2018565895b5d286682367a17cf9c1b7);
+            
+        
+
+        marker_bc195f917d9d96b9395e44b194ab02f5.bindPopup(popup_a124e3cbf41f3e6daf283f7603660de7)
+        ;
+
+        
+    
+    
+            var marker_d6382f2b8dddc98c79fc1222a548d2b4 = L.marker(
+                [53.4403729, -2.7007282],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_ab876b6955cda824e6d6fd72de190376 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d6382f2b8dddc98c79fc1222a548d2b4.setIcon(icon_ab876b6955cda824e6d6fd72de190376);
+        
+    
+        var popup_72457716bf4648fccbf76d5b9a0b41f8 = L.popup({});
+
+        
+            
+                var html_4436d5da922d672944044b77081b058c = $(`<div id="html_4436d5da922d672944044b77081b058c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Moss Nook</h1><div class="nugget-popup"><p>Sutton Brook flood warning for Moss Nook identified land and properties at risk including St Cuthberts school, Berrys Lane, Watery Lane, Portland Way and The Moss Nook. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>62 properties in total [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_72457716bf4648fccbf76d5b9a0b41f8.setContent(html_4436d5da922d672944044b77081b058c);
+            
+        
+
+        marker_d6382f2b8dddc98c79fc1222a548d2b4.bindPopup(popup_72457716bf4648fccbf76d5b9a0b41f8)
+        ;
+
+        
+    
+    
+            var marker_d249f36fefe623d4a59f3f3704f1a006 = L.marker(
+                [53.4795442, -2.7348427],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_a859e11400b8b43334fc1d49a9fa76d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d249f36fefe623d4a59f3f3704f1a006.setIcon(icon_a859e11400b8b43334fc1d49a9fa76d2);
+        
+    
+        var popup_38388235746c00a7178657aadce4115e = L.popup({});
+
+        
+            
+                var html_0c7d2f69a87536d46caa1cb1d289e80b = $(`<div id="html_0c7d2f69a87536d46caa1cb1d289e80b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Moss Bank</h1><div class="nugget-popup"><p>Rainford Brook flood warning for Moss Bank identified land and properties at risk including Berrington Road (between Grey House Farm and the river), Windle Park Wood, and properties on Woodside and Birch Tree Avenues. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>13 properties in total [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_38388235746c00a7178657aadce4115e.setContent(html_0c7d2f69a87536d46caa1cb1d289e80b);
+            
+        
+
+        marker_d249f36fefe623d4a59f3f3704f1a006.bindPopup(popup_38388235746c00a7178657aadce4115e)
+        ;
+
+        
+    
+    
+            var marker_67377cf1c257aed62dfe6a1594a0d8d3 = L.marker(
+                [53.474567, -2.7422397],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_9331f9a1625fd35d71b81aa8bd956a55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_67377cf1c257aed62dfe6a1594a0d8d3.setIcon(icon_9331f9a1625fd35d71b81aa8bd956a55);
+        
+    
+        var popup_fc4a9e1543c8121cb5ba0fb64cd9d1ed = L.popup({});
+
+        
+            
+                var html_f4fc05c0a3315d0ffbf09183129ef3ab = $(`<div id="html_f4fc05c0a3315d0ffbf09183129ef3ab" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Birch Tree Avenue, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Some properties on Birch Tree Avenues were identified as at risk in the Rainford Brook (Moss Bank) flood warning. [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_fc4a9e1543c8121cb5ba0fb64cd9d1ed.setContent(html_f4fc05c0a3315d0ffbf09183129ef3ab);
+            
+        
+
+        marker_67377cf1c257aed62dfe6a1594a0d8d3.bindPopup(popup_fc4a9e1543c8121cb5ba0fb64cd9d1ed)
+        ;
+
+        
+    
+    
+            var marker_5b3de59a4e58034227c0d0c499905d86 = L.marker(
+                [53.5138772, -2.8041135],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_773c36d298c9ce9af6c0903b2746dd0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5b3de59a4e58034227c0d0c499905d86.setIcon(icon_773c36d298c9ce9af6c0903b2746dd0e);
+        
+    
+        var popup_3c73b2a3fa3c7751722c714cfe3b5ff3 = L.popup({});
+
+        
+            
+                var html_246d8c868adea8cfe77f826de2439aa2 = $(`<div id="html_246d8c868adea8cfe77f826de2439aa2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Siding Lane, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Identified in the Rainford Brook (Rainford North) flood warning area; land and properties at Siding Lane were listed as at risk from river flooding during the event. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>22 properties (total in Rainford North warning area) [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_3c73b2a3fa3c7751722c714cfe3b5ff3.setContent(html_246d8c868adea8cfe77f826de2439aa2);
+            
+        
+
+        marker_5b3de59a4e58034227c0d0c499905d86.bindPopup(popup_3c73b2a3fa3c7751722c714cfe3b5ff3)
+        ;
+
+        
+    
+    
+            var marker_62aaa09cf2f01080c2b2d45549488312 = L.marker(
+                [53.5048882, -2.7996135],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_b93cb5119800d7f29ec099fc274ee2a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_62aaa09cf2f01080c2b2d45549488312.setIcon(icon_b93cb5119800d7f29ec099fc274ee2a5);
+        
+    
+        var popup_b6a15bec1ab3a86764e9ae4c216f49f8 = L.popup({});
+
+        
+            
+                var html_5233d12031b855762fba43298e2985cf = $(`<div id="html_5233d12031b855762fba43298e2985cf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lords Fold, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Identified in the Rainford Brook (Rainford North) flood warning area; land and properties at Lords Fold were listed as at risk from river flooding during the event. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>22 properties (total in Rainford North warning area) [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_b6a15bec1ab3a86764e9ae4c216f49f8.setContent(html_5233d12031b855762fba43298e2985cf);
+            
+        
+
+        marker_62aaa09cf2f01080c2b2d45549488312.bindPopup(popup_b6a15bec1ab3a86764e9ae4c216f49f8)
+        ;
+
+        
+    
+    
+            var marker_ebc1cc6ef5a459203c02f9895a414903 = L.marker(
+                [53.5026875, -2.791064],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_256feb268524ff7cb664612e522c9534 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ebc1cc6ef5a459203c02f9895a414903.setIcon(icon_256feb268524ff7cb664612e522c9534);
+        
+    
+        var popup_ddc6f541f4f89d56f8de556a22ee1f96 = L.popup({});
+
+        
+            
+                var html_6e2baed928a169d08ea7973177feb67a = $(`<div id="html_6e2baed928a169d08ea7973177feb67a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Beech Gardens, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Some properties on Beech Gardens were identified as at risk in the Rainford Brook (Rainford North) flood warning area during the event. [TAB] (p9)</p></div><div class="nugget-popup"><p>A property on Beech Gardens was internally flooded during the event. [TAB] (p14)</p></div><div class="nugget-popup"><p>Listed as a sandbag request location during 18&ndash;20 Jan 2021 in response to intense rainfall, indicating localized surface water flooding risk to properties. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>22 properties (total in Rainford North warning area) [TAB] (p9)</p></div><div class="nugget-popup quant"><p>1 property [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_ddc6f541f4f89d56f8de556a22ee1f96.setContent(html_6e2baed928a169d08ea7973177feb67a);
+            
+        
+
+        marker_ebc1cc6ef5a459203c02f9895a414903.bindPopup(popup_ddc6f541f4f89d56f8de556a22ee1f96)
+        ;
+
+        
+    
+    
+            var marker_ed32c988162608c4b3541de13c8c71b4 = L.marker(
+                [53.4351412, -2.7126409],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_f8fcdd979cd7d6906b02508e0ff78a0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ed32c988162608c4b3541de13c8c71b4.setIcon(icon_f8fcdd979cd7d6906b02508e0ff78a0e);
+        
+    
+        var popup_832a0f0d9137ab19713a35a626d75f5b = L.popup({});
+
+        
+            
+                var html_91a9998448e8a7ff662ca623f8d70545 = $(`<div id="html_91a9998448e8a7ff662ca623f8d70545" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Boscow Crescent, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Land and property on Boscow Crescent were identified as at risk and included in the Flood Warning for Sutton Mill Brook. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>102 properties in total (area including Landsdowne Court, Waterdale Crescent, Boscow Crescent, Dawsone Avenue and Gerrards Lane). [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_832a0f0d9137ab19713a35a626d75f5b.setContent(html_91a9998448e8a7ff662ca623f8d70545);
+            
+        
+
+        marker_ed32c988162608c4b3541de13c8c71b4.bindPopup(popup_832a0f0d9137ab19713a35a626d75f5b)
+        ;
+
+        
+    
+    
+            var marker_a4cf221411cefc8e84866acb8d406e46 = L.marker(
+                [53.4442091, -2.6977399],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_9714adca16e1622af09ef02c6dcd8e05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a4cf221411cefc8e84866acb8d406e46.setIcon(icon_9714adca16e1622af09ef02c6dcd8e05);
+        
+    
+        var popup_18bcea84f68da7cc76c5d665ff86b29d = L.popup({});
+
+        
+            
+                var html_850653f0e2b89dcbb36e21decc2acd10 = $(`<div id="html_850653f0e2b89dcbb36e21decc2acd10" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Berrys Lane, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Berrys Lane was listed as being at risk within the Sutton Brook (Moss Nook) flood warning area. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>62 properties in total (Sutton Brook warning area) [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_18bcea84f68da7cc76c5d665ff86b29d.setContent(html_850653f0e2b89dcbb36e21decc2acd10);
+            
+        
+
+        marker_a4cf221411cefc8e84866acb8d406e46.bindPopup(popup_18bcea84f68da7cc76c5d665ff86b29d)
+        ;
+
+        
+    
+    
+            var marker_8c3a217d6ae3810609dc1954ffe9651f = L.marker(
+                [53.4399335, -2.6995663],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_b16d4402f88970e2277004b03a0011db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8c3a217d6ae3810609dc1954ffe9651f.setIcon(icon_b16d4402f88970e2277004b03a0011db);
+        
+    
+        var popup_c87a2efae19ea05b3e24a39da002ff8c = L.popup({});
+
+        
+            
+                var html_26c1c389dcdb5bf8a37548d251808390 = $(`<div id="html_26c1c389dcdb5bf8a37548d251808390" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Watery Lane, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Watery Lane was listed as being at risk within the Sutton Brook (Moss Nook) flood warning area. [TAB] (p9)</p></div><div class="nugget-popup"><p>Identified as a sandbag request location during 18&ndash;20 Jan 2021, indicating properties on Watery Lane were at risk of external flooding from surface water. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>62 properties in total (Sutton Brook warning area) [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_c87a2efae19ea05b3e24a39da002ff8c.setContent(html_26c1c389dcdb5bf8a37548d251808390);
+            
+        
+
+        marker_8c3a217d6ae3810609dc1954ffe9651f.bindPopup(popup_c87a2efae19ea05b3e24a39da002ff8c)
+        ;
+
+        
+    
+    
+            var marker_cc5340fe8a5090a9032b3949581d269a = L.marker(
+                [53.4433557, -2.6981615],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_3611c6994ed30ee50bda1a985280cf40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cc5340fe8a5090a9032b3949581d269a.setIcon(icon_3611c6994ed30ee50bda1a985280cf40);
+        
+    
+        var popup_ec7b75561f9837c798d5d7d8a1b0e74a = L.popup({});
+
+        
+            
+                var html_bbd4014f03e2f1be0901771334191fc3 = $(`<div id="html_bbd4014f03e2f1be0901771334191fc3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Portland Way, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Portland Way was listed as being at risk within the Sutton Brook (Moss Nook) flood warning area. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>62 properties in total (Sutton Brook warning area) [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_ec7b75561f9837c798d5d7d8a1b0e74a.setContent(html_bbd4014f03e2f1be0901771334191fc3);
+            
+        
+
+        marker_cc5340fe8a5090a9032b3949581d269a.bindPopup(popup_ec7b75561f9837c798d5d7d8a1b0e74a)
+        ;
+
+        
+    
+    
+            var marker_452baf55745a33fc203719b7f3a783ed = L.marker(
+                [53.4535886, -2.7820183],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_78f5cfaef2729c225a641850c2a79380 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_452baf55745a33fc203719b7f3a783ed.setIcon(icon_78f5cfaef2729c225a641850c2a79380);
+        
+    
+        var popup_e2885b6f2d5092eaa509caf0f5b221fe = L.popup({});
+
+        
+            
+                var html_e376c80ca938c77295a43712b17201ea = $(`<div id="html_e376c80ca938c77295a43712b17201ea" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bobbies Lane, Eccleston</h1><div class="nugget-popup"><p>Road closure due to flooding on the afternoon of 19 January 2021. (p12)</p></div><div class="nugget-popup"><p>Properties on Bobbies Lane were externally flooded. [TAB] (p14)</p></div><div class="nugget-popup"><p>Sandbag requests were made for properties on Bobbies Lane during the heavy rainfall event, indicating properties were at risk of external flooding and required protection. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 properties [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_e2885b6f2d5092eaa509caf0f5b221fe.setContent(html_e376c80ca938c77295a43712b17201ea);
+            
+        
+
+        marker_452baf55745a33fc203719b7f3a783ed.bindPopup(popup_e2885b6f2d5092eaa509caf0f5b221fe)
+        ;
+
+        
+    
+    
+            var marker_f468f3c9a169c3762d24959c439b13c2 = L.marker(
+                [53.44808183076651, -2.7901457683909117],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_a0d1f90a3a6820438dd95bba5c8d1fc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f468f3c9a169c3762d24959c439b13c2.setIcon(icon_a0d1f90a3a6820438dd95bba5c8d1fc6);
+        
+    
+        var popup_d4f533ab4b70b9c9ac2f3c7a2d6686d6 = L.popup({});
+
+        
+            
+                var html_7fc83481c8c27bcba2a01bfe6e651ab3 = $(`<div id="html_7fc83481c8c27bcba2a01bfe6e651ab3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burrows Lane, Eccleston</h1><div class="nugget-popup"><p>Road closure due to flooding on 19 January 2021; remained closed into the morning of 20 January 2021. (p12)</p></div><div class="nugget-popup"><p>Temporary traffic signals and road closures implemented at Burrows Lane due to flooding&ndash;related impacts. [TAB] (p14)</p></div><div class="nugget-popup"><p>Sandbag requests were made for properties on Burrows Lane during the heavy rainfall event, indicating properties were at risk of external flooding and required protection. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_d4f533ab4b70b9c9ac2f3c7a2d6686d6.setContent(html_7fc83481c8c27bcba2a01bfe6e651ab3);
+            
+        
+
+        marker_f468f3c9a169c3762d24959c439b13c2.bindPopup(popup_d4f533ab4b70b9c9ac2f3c7a2d6686d6)
+        ;
+
+        
+    
+    
+            var marker_141cef5474b13cf88ef7719cef78cbfb = L.marker(
+                [53.4280852, -2.6738752],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_c72ddaf31eb0b607f24b7ce67821d141 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_141cef5474b13cf88ef7719cef78cbfb.setIcon(icon_c72ddaf31eb0b607f24b7ce67821d141);
+        
+    
+        var popup_47fd5748378544f15b48d99dac2b2cbd = L.popup({});
+
+        
+            
+                var html_a72d5c1fe9a19db41c4615189327706a = $(`<div id="html_a72d5c1fe9a19db41c4615189327706a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gorsey Lane, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Road closure due to flooding on 19 January 2021; remained closed into the morning of 20 January 2021. (p12)</p></div><div class="nugget-popup"><p>Road closure was implemented on Gorsey Lane due to flooding during the event. [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_47fd5748378544f15b48d99dac2b2cbd.setContent(html_a72d5c1fe9a19db41c4615189327706a);
+            
+        
+
+        marker_141cef5474b13cf88ef7719cef78cbfb.bindPopup(popup_47fd5748378544f15b48d99dac2b2cbd)
+        ;
+
+        
+    
+    
+            var marker_d242ed24cd230289399bbd50483fa98f = L.marker(
+                [53.4591374, -2.64429],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_dbed742583b06b37e36f332fec1f659f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d242ed24cd230289399bbd50483fa98f.setIcon(icon_dbed742583b06b37e36f332fec1f659f);
+        
+    
+        var popup_482c1ae2be1b534007046b9fd54a8e58 = L.popup({});
+
+        
+            
+                var html_b78af3f355f848a3a190302e3d855694 = $(`<div id="html_b78af3f355f848a3a190302e3d855694" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Vista Road, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Road closure due to flooding on 19 January 2021; remained closed into the morning of 20 January 2021. (p12)</p></div></div></body></div>`)[0];
+                popup_482c1ae2be1b534007046b9fd54a8e58.setContent(html_b78af3f355f848a3a190302e3d855694);
+            
+        
+
+        marker_d242ed24cd230289399bbd50483fa98f.bindPopup(popup_482c1ae2be1b534007046b9fd54a8e58)
+        ;
+
+        
+    
+    
+            var marker_226d0cdaba200c11cbef54bacaee4007 = L.marker(
+                [53.4722951, -2.767799],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_2e8a5446c48e03c4803725ebdeefa57d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_226d0cdaba200c11cbef54bacaee4007.setIcon(icon_2e8a5446c48e03c4803725ebdeefa57d);
+        
+    
+        var popup_24c82af78422154635a2b6a7710941fe = L.popup({});
+
+        
+            
+                var html_5ded30aa96af8635804d6f09ee2b6a70 = $(`<div id="html_5ded30aa96af8635804d6f09ee2b6a70" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rainford Road, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Floodwater from Rainford Brook overtopped and impacted Rainford Road; the road remained passable with traffic management on standby, and Merseyside FRS carried out pumping at Rainford Road. [PAG] (p12)</p></div><div class="nugget-popup"><p>Water from overtopping Rainford Brook was impacting Rainford Road; the road remained passable with traffic management on standby. Merseyside FRS carried out pumping at Rainford Road to assist the response. [PAG] (p13)</p></div><div class="nugget-popup"><p>A land drainage collapse occurred on Rainford Road (A571). [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_24c82af78422154635a2b6a7710941fe.setContent(html_5ded30aa96af8635804d6f09ee2b6a70);
+            
+        
+
+        marker_226d0cdaba200c11cbef54bacaee4007.bindPopup(popup_24c82af78422154635a2b6a7710941fe)
+        ;
+
+        
+    
+    
+            var marker_bfad9793f533666c287db27735044c4a = L.marker(
+                [53.4456631, -2.7228893],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_4218ecae8efe487f7a4df0dfe2a5a95c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bfad9793f533666c287db27735044c4a.setIcon(icon_4218ecae8efe487f7a4df0dfe2a5a95c);
+        
+    
+        var popup_a824157da0ec4ff940337ed2c737a665 = L.popup({});
+
+        
+            
+                var html_3082d954109661465eac37e1ffd4228d = $(`<div id="html_3082d954109661465eac37e1ffd4228d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Peasley Cross Lane, Peasley Cross</h1><div class="nugget-popup"><p>The Peasley Cross Lane flood defence barrier was activated on the morning of 20 Jan 2021 to protect against flooding/overtopping. (p12)</p></div><div class="nugget-popup"><p>Flooding caused access to be diverted. (p13)</p></div></div></body></div>`)[0];
+                popup_a824157da0ec4ff940337ed2c737a665.setContent(html_3082d954109661465eac37e1ffd4228d);
+            
+        
+
+        marker_bfad9793f533666c287db27735044c4a.bindPopup(popup_a824157da0ec4ff940337ed2c737a665)
+        ;
+
+        
+    
+    
+            var marker_bb5efbf72ded4463ba1e313510b800f2 = L.marker(
+                [53.465553, -2.7628849],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_65ebcc1fe95e88960e64d94c5f68ad86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bb5efbf72ded4463ba1e313510b800f2.setIcon(icon_65ebcc1fe95e88960e64d94c5f68ad86);
+        
+    
+        var popup_7d5ce8e3ce7c7dd0fc248a56fbb2dca1 = L.popup({});
+
+        
+            
+                var html_d33b6fa76b0332726e51cdce453c1c10 = $(`<div id="html_d33b6fa76b0332726e51cdce453c1c10" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Malt House Court, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Malt House Court flooded on 20 Jan 2021; properties were affected and Merseyside FRS attended to pump and assist with property protection. [PAG] (p12)</p></div><div class="nugget-popup"><p>Malt House Court had flooded (properties affected) by the afternoon of 20 January 2021; Merseyside FRS were on scene assisting with the flooding of properties. [PAG] (p13)</p></div><div class="nugget-popup"><p>Dwellings on Malt House Court were affected by internal and external flooding as part of a joint issue affecting the Windle Ward. [TAB] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 dwellings; 8 dwellings [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_7d5ce8e3ce7c7dd0fc248a56fbb2dca1.setContent(html_d33b6fa76b0332726e51cdce453c1c10);
+            
+        
+
+        marker_bb5efbf72ded4463ba1e313510b800f2.bindPopup(popup_7d5ce8e3ce7c7dd0fc248a56fbb2dca1)
+        ;
+
+        
+    
+    
+            var marker_d8f51ca14a6b280ce1dbb6d9711646ed = L.marker(
+                [53.463843, -2.7012969],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_c1e7e7910f2974e0d243060978cbd631 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d8f51ca14a6b280ce1dbb6d9711646ed.setIcon(icon_c1e7e7910f2974e0d243060978cbd631);
+        
+    
+        var popup_734e0689d2c52b74c1ae72cac724de12 = L.popup({});
+
+        
+            
+                var html_59689c76c25e3c5e8b3964767ec05d62 = $(`<div id="html_59689c76c25e3c5e8b3964767ec05d62" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West End Road, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Flooding at West End Road required pumping assistance provided by Merseyside FRS as part of the response. (p13)</p></div><div class="nugget-popup"><p>External flooding occurred to properties on West End Road. [TAB] (p14)</p></div><div class="nugget-popup"><p>Location recorded as a sandbag request site during the 18&ndash;20 Jan 2021 rainfall event; residents requested sandbags to protect properties from surface&ndash;water/urban flooding. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_734e0689d2c52b74c1ae72cac724de12.setContent(html_59689c76c25e3c5e8b3964767ec05d62);
+            
+        
+
+        marker_d8f51ca14a6b280ce1dbb6d9711646ed.bindPopup(popup_734e0689d2c52b74c1ae72cac724de12)
+        ;
+
+        
+    
+    
+            var marker_64ce50a45453c4b9f33556dc6c742ef9 = L.marker(
+                [53.4967461, -2.6714908],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_a7a0cdfe6c30ebfc6a3a010cbbfc2a6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_64ce50a45453c4b9f33556dc6c742ef9.setIcon(icon_a7a0cdfe6c30ebfc6a3a010cbbfc2a6e);
+        
+    
+        var popup_a17487f57018b9b3ff9e6d1a863e7124 = L.popup({});
+
+        
+            
+                var html_b258014814679ee104e71f2b436ad539 = $(`<div id="html_b258014814679ee104e71f2b436ad539" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Birch Grove, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Properties on Birch Grove were affected by external flooding. [TAB] (p14)</p></div><div class="nugget-popup"><p>Sandbag request recorded at this street indicating external flooding impact to dwellings/properties. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_a17487f57018b9b3ff9e6d1a863e7124.setContent(html_b258014814679ee104e71f2b436ad539);
+            
+        
+
+        marker_64ce50a45453c4b9f33556dc6c742ef9.bindPopup(popup_a17487f57018b9b3ff9e6d1a863e7124)
+        ;
+
+        
+    
+    
+            var marker_e0f21392e706d5ab5c57b83196081cc9 = L.marker(
+                [53.454666, -2.7856148],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_55077afc34c54c5e994be3f58bb75d2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e0f21392e706d5ab5c57b83196081cc9.setIcon(icon_55077afc34c54c5e994be3f58bb75d2e);
+        
+    
+        var popup_0571bf09b5438cbc127497c811b9f100 = L.popup({});
+
+        
+            
+                var html_08579afaaff077c2bc001d3a31855bfb = $(`<div id="html_08579afaaff077c2bc001d3a31855bfb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Griffin Close, Eccleston</h1><div class="nugget-popup"><p>Properties on Griffin Close were externally flooded. [TAB] (p14)</p></div><div class="nugget-popup"><p>Sandbag requests were made for properties on Griffin Close during the heavy rainfall event, indicating properties were at risk of external flooding and required protection. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 properties [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_0571bf09b5438cbc127497c811b9f100.setContent(html_08579afaaff077c2bc001d3a31855bfb);
+            
+        
+
+        marker_e0f21392e706d5ab5c57b83196081cc9.bindPopup(popup_0571bf09b5438cbc127497c811b9f100)
+        ;
+
+        
+    
+    
+            var marker_c389b33b9a012115a41fb5aa5b6d51cb = L.marker(
+                [53.480584, -2.763332],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_c3889e3f6041f3947afd9acb69ede9fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c389b33b9a012115a41fb5aa5b6d51cb.setIcon(icon_c3889e3f6041f3947afd9acb69ede9fe);
+        
+    
+        var popup_01a9fe69aa3e54484eaa7cf6a02eb592 = L.popup({});
+
+        
+            
+                var html_86207c13c0cce496c2641953a15c303b = $(`<div id="html_86207c13c0cce496c2641953a15c303b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Berringtons Lane, Rainford</h1><div class="nugget-popup"><p>A property on Berrington's Lane was internally flooded. [TAB] (p14)</p></div><div class="nugget-popup"><p>Listed as a sandbag request location during 18&ndash;20 Jan 2021 in response to intense rainfall, indicating localized surface water flooding risk to properties. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_01a9fe69aa3e54484eaa7cf6a02eb592.setContent(html_86207c13c0cce496c2641953a15c303b);
+            
+        
+
+        marker_c389b33b9a012115a41fb5aa5b6d51cb.bindPopup(popup_01a9fe69aa3e54484eaa7cf6a02eb592)
+        ;
+
+        
+    
+    
+            var marker_2fe2da0f4c9671c33007e382faac2576 = L.marker(
+                [53.4748983, -2.6358348],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_ec5c903781101d813881d76fef38c0d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2fe2da0f4c9671c33007e382faac2576.setIcon(icon_ec5c903781101d813881d76fef38c0d3);
+        
+    
+        var popup_d074bc3466f271241192c554ffbe166e = L.popup({});
+
+        
+            
+                var html_ca7c1afbf84aa61e9845f7d6845f8b24 = $(`<div id="html_ca7c1afbf84aa61e9845f7d6845f8b24" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lodge Lane, Newton-Le-Willows</h1><div class="nugget-popup"><p>Road/pathway closures were implemented on Lodge Lane due to flooding, restricting access. [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_d074bc3466f271241192c554ffbe166e.setContent(html_ca7c1afbf84aa61e9845f7d6845f8b24);
+            
+        
+
+        marker_2fe2da0f4c9671c33007e382faac2576.bindPopup(popup_d074bc3466f271241192c554ffbe166e)
+        ;
+
+        
+    
+    
+            var marker_9fb99e21f99810d1cf6c8bce7f58b1a8 = L.marker(
+                [53.5040107, -2.7910116],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_96e0e0bb39da5b79b87d15457a12cfc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9fb99e21f99810d1cf6c8bce7f58b1a8.setIcon(icon_96e0e0bb39da5b79b87d15457a12cfc3);
+        
+    
+        var popup_9489316af84b63b57cea1db28566d61f = L.popup({});
+
+        
+            
+                var html_f3b381b2cd93f12e1c96c87825767ee1 = $(`<div id="html_f3b381b2cd93f12e1c96c87825767ee1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ormskirk Road, St Helens Metropolitan District</h1><div class="nugget-popup"><p>One property on Ormskirk Road was affected by external flooding. [TAB] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_9489316af84b63b57cea1db28566d61f.setContent(html_f3b381b2cd93f12e1c96c87825767ee1);
+            
+        
+
+        marker_9fb99e21f99810d1cf6c8bce7f58b1a8.bindPopup(popup_9489316af84b63b57cea1db28566d61f)
+        ;
+
+        
+    
+    
+            var marker_784006fc967a687a0f02ad67f961719b = L.marker(
+                [53.4318543, -2.692366],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_a652d29896e25890d32b453b735102c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_784006fc967a687a0f02ad67f961719b.setIcon(icon_a652d29896e25890d32b453b735102c8);
+        
+    
+        var popup_ae6c8b13b5b1c683a3ed75c786b0d185 = L.popup({});
+
+        
+            
+                var html_5fe274c4e63e726675e9ee70ccf61b5c = $(`<div id="html_5fe274c4e63e726675e9ee70ccf61b5c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Travers Entry, New Bold</h1><div class="nugget-popup"><p>Road closure was implemented on Travers Entry (B5204) as part of flood response. [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_ae6c8b13b5b1c683a3ed75c786b0d185.setContent(html_5fe274c4e63e726675e9ee70ccf61b5c);
+            
+        
+
+        marker_784006fc967a687a0f02ad67f961719b.bindPopup(popup_ae6c8b13b5b1c683a3ed75c786b0d185)
+        ;
+
+        
+    
+    
+            var marker_a3d93b01a49f307952a733190d1996f0 = L.marker(
+                [53.502514, -2.7885337],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_83cef9ed331c9f44a7eb856fccee2cc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a3d93b01a49f307952a733190d1996f0.setIcon(icon_83cef9ed331c9f44a7eb856fccee2cc6);
+        
+    
+        var popup_3a4344ca7658ede8d3c72dfcee819be3 = L.popup({});
+
+        
+            
+                var html_48b54cdbefbc2d47abe73d686864cfbc = $(`<div id="html_48b54cdbefbc2d47abe73d686864cfbc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ormskirk Road, Rainford</h1><div class="nugget-popup"><p>One property on Ormskirk Road was affected by external flooding. [TAB] (p14)</p></div><div class="nugget-popup"><p>Sandbag request recorded for Ormskirk Road to protect properties from surface water flooding during the heavy rainfall event. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_3a4344ca7658ede8d3c72dfcee819be3.setContent(html_48b54cdbefbc2d47abe73d686864cfbc);
+            
+        
+
+        marker_a3d93b01a49f307952a733190d1996f0.bindPopup(popup_3a4344ca7658ede8d3c72dfcee819be3)
+        ;
+
+        
+    
+    
+            var marker_b72e86a09007637c97c5c750bd0258ba = L.marker(
+                [53.4596529, -2.7351168],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_adf63a957b88dc09f5749cce9371517a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b72e86a09007637c97c5c750bd0258ba.setIcon(icon_adf63a957b88dc09f5749cce9371517a);
+        
+    
+        var popup_c7a36457ca8d30196bc0c2b656225d5b = L.popup({});
+
+        
+            
+                var html_11f639cb3199b7011a77af9b2d040c1a = $(`<div id="html_11f639cb3199b7011a77af9b2d040c1a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>College Street, St Helens Metropolitan District</h1><div class="nugget-popup"><p>College Street experienced a road closure during the flooding event, causing local access disruption. [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_c7a36457ca8d30196bc0c2b656225d5b.setContent(html_11f639cb3199b7011a77af9b2d040c1a);
+            
+        
+
+        marker_b72e86a09007637c97c5c750bd0258ba.bindPopup(popup_c7a36457ca8d30196bc0c2b656225d5b)
+        ;
+
+        
+    
+    
+            var marker_72a18f1d77efae0916e1d9334538bf10 = L.marker(
+                [53.4684426, -2.7668521],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_bf8e8c23053114d59f9b960853d6076d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_72a18f1d77efae0916e1d9334538bf10.setIcon(icon_bf8e8c23053114d59f9b960853d6076d);
+        
+    
+        var popup_593e5a05456b309af329a68f5382c606 = L.popup({});
+
+        
+            
+                var html_8990c07f3532ab817d42af920d9afa7d = $(`<div id="html_8990c07f3532ab817d42af920d9afa7d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bleak Hill Road, Windle</h1><div class="nugget-popup"><p>A school on Bleak Hill Road experienced internal and external flooding. [TAB] (p14)</p></div><div class="nugget-popup"><p>Sandbag requests were made for properties on Bleak Hill Road to protect against external flooding during the heavy rainfall event. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_593e5a05456b309af329a68f5382c606.setContent(html_8990c07f3532ab817d42af920d9afa7d);
+            
+        
+
+        marker_72a18f1d77efae0916e1d9334538bf10.bindPopup(popup_593e5a05456b309af329a68f5382c606)
+        ;
+
+        
+    
+    
+            var marker_49229942d911608c4ad53316ba94d671 = L.marker(
+                [53.4452411, -2.7381682],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_582e73960d58ed696ecd3e37d98af13c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_49229942d911608c4ad53316ba94d671.setIcon(icon_582e73960d58ed696ecd3e37d98af13c);
+        
+    
+        var popup_140646e21b559d214f5b54006d28464a = L.popup({});
+
+        
+            
+                var html_c740d671e61afdb03513658ac5472417 = $(`<div id="html_c740d671e61afdb03513658ac5472417" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burtonhead Road, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Burton Head Road was subject to a road closure implemented during the flooding event, indicating disruption to access from the flood incident. [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_140646e21b559d214f5b54006d28464a.setContent(html_c740d671e61afdb03513658ac5472417);
+            
+        
+
+        marker_49229942d911608c4ad53316ba94d671.bindPopup(popup_140646e21b559d214f5b54006d28464a)
+        ;
+
+        
+    
+    
+            var marker_0d61e5e52d553884c7b808c89c621502 = L.marker(
+                [53.4514985, -2.7266025],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_0bd08022ae6523d5ad10595d2fa7d0d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0d61e5e52d553884c7b808c89c621502.setIcon(icon_0bd08022ae6523d5ad10595d2fa7d0d3);
+        
+    
+        var popup_80c324892838540054eea6064e8db9a7 = L.popup({});
+
+        
+            
+                var html_a8993cb8ec10cd0c6239dc0b8a7734fe = $(`<div id="html_a8993cb8ec10cd0c6239dc0b8a7734fe" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Peasley Cross Lane, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Flooding led to a road closure and caused access issues to the Totally Wicked Stadium (used as a vaccination site); traffic was diverted so the vaccination site could continue operating. [TAB,PAG] (p14)</p></div></div></body></div>`)[0];
+                popup_80c324892838540054eea6064e8db9a7.setContent(html_a8993cb8ec10cd0c6239dc0b8a7734fe);
+            
+        
+
+        marker_0d61e5e52d553884c7b808c89c621502.bindPopup(popup_80c324892838540054eea6064e8db9a7)
+        ;
+
+        
+    
+    
+            var marker_eacc8ac429f3a4deb8156e2103ceca01 = L.marker(
+                [53.4809703, -2.6787389],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_4a9a64198222c5f362ae9812e8078d55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eacc8ac429f3a4deb8156e2103ceca01.setIcon(icon_4a9a64198222c5f362ae9812e8078d55);
+        
+    
+        var popup_9f22b79bae2c7e5579ef5fb7b5c64a11 = L.popup({});
+
+        
+            
+                var html_9c6771f66831f281cd64c0b582034db2 = $(`<div id="html_9c6771f66831f281cd64c0b582034db2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Garswood Road, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Sandbag request recorded at this street indicating external flooding impact to dwellings/properties. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_9f22b79bae2c7e5579ef5fb7b5c64a11.setContent(html_9c6771f66831f281cd64c0b582034db2);
+            
+        
+
+        marker_eacc8ac429f3a4deb8156e2103ceca01.bindPopup(popup_9f22b79bae2c7e5579ef5fb7b5c64a11)
+        ;
+
+        
+    
+    
+            var marker_cb10d399fc35ef7b9b3b942e111a23a6 = L.marker(
+                [53.4325335, -2.689925],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_6b727c9ad8d166abb5d2c2b0c3bec758 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cb10d399fc35ef7b9b3b942e111a23a6.setIcon(icon_6b727c9ad8d166abb5d2c2b0c3bec758);
+        
+    
+        var popup_cefc97a950d76f83a0c914697e09727e = L.popup({});
+
+        
+            
+                var html_21924bf87efb1858fb9e41aa835d0377 = $(`<div id="html_21924bf87efb1858fb9e41aa835d0377" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Begonia Gardens, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Recorded as a sandbag request location on 18&ndash;20 Jan 2021; sandbags were requested to protect properties from surface&ndash;water/urban flooding. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_cefc97a950d76f83a0c914697e09727e.setContent(html_21924bf87efb1858fb9e41aa835d0377);
+            
+        
+
+        marker_cb10d399fc35ef7b9b3b942e111a23a6.bindPopup(popup_cefc97a950d76f83a0c914697e09727e)
+        ;
+
+        
+    
+    
+            var marker_3954f3ae95ff678ad0f92f594559ce35 = L.marker(
+                [53.4328146, -2.789067],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_d53fc8acfc444edc2d2ba97f95164bb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3954f3ae95ff678ad0f92f594559ce35.setIcon(icon_d53fc8acfc444edc2d2ba97f95164bb8);
+        
+    
+        var popup_515821df487a08e5bd10f203ea309b9a = L.popup({});
+
+        
+            
+                var html_dbd645cf42419cc996695d1df3cb1a17 = $(`<div id="html_dbd645cf42419cc996695d1df3cb1a17" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Albany Avenue, Eccleston</h1><div class="nugget-popup"><p>Sandbag requests were made for properties on Albany Avenue during the heavy rainfall event, indicating properties were at risk of external flooding and required protection. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_515821df487a08e5bd10f203ea309b9a.setContent(html_dbd645cf42419cc996695d1df3cb1a17);
+            
+        
+
+        marker_3954f3ae95ff678ad0f92f594559ce35.bindPopup(popup_515821df487a08e5bd10f203ea309b9a)
+        ;
+
+        
+    
+    
+            var marker_f2cdf1e5cd8847b9fda5739a7bfc44ea = L.marker(
+                [53.45749, -2.6479261],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_b2f2043a32b1b8761624c127345b1279 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f2cdf1e5cd8847b9fda5739a7bfc44ea.setIcon(icon_b2f2043a32b1b8761624c127345b1279);
+        
+    
+        var popup_7e03bec762bc62ce0a60252f951b3494 = L.popup({});
+
+        
+            
+                var html_390c09a4ab82197b96f6141b774546b1 = $(`<div id="html_390c09a4ab82197b96f6141b774546b1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Vista Way, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Sandbag requests were made for properties on Vista Way during the heavy rainfall event, indicating properties were at risk of external flooding and required protection. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_7e03bec762bc62ce0a60252f951b3494.setContent(html_390c09a4ab82197b96f6141b774546b1);
+            
+        
+
+        marker_f2cdf1e5cd8847b9fda5739a7bfc44ea.bindPopup(popup_7e03bec762bc62ce0a60252f951b3494)
+        ;
+
+        
+    
+    
+            var marker_bcfde9322d099450b0a263afa4b1af1b = L.marker(
+                [53.4456117, -2.6899699],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_bda1666e8a57b964b83c0879103f4bf1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bcfde9322d099450b0a263afa4b1af1b.setIcon(icon_bda1666e8a57b964b83c0879103f4bf1);
+        
+    
+        var popup_6b6c46ef2a219f61d114980cadef5793 = L.popup({});
+
+        
+            
+                var html_74370f2fbe6e87a28cd25465af719773 = $(`<div id="html_74370f2fbe6e87a28cd25465af719773" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fleet Lane, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Sandbag request made for Fleet Lane to protect properties from surface water flooding / external water ingress during the heavy rainfall event. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_6b6c46ef2a219f61d114980cadef5793.setContent(html_74370f2fbe6e87a28cd25465af719773);
+            
+        
+
+        marker_bcfde9322d099450b0a263afa4b1af1b.bindPopup(popup_6b6c46ef2a219f61d114980cadef5793)
+        ;
+
+        
+    
+    
+            var marker_f3c31ae75f96daded67d87e09510d081 = L.marker(
+                [53.505364, -2.7469846],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_02df8e73fff626f8fc6782c26acea196 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f3c31ae75f96daded67d87e09510d081.setIcon(icon_02df8e73fff626f8fc6782c26acea196);
+        
+    
+        var popup_8bacf5fb4baac54ed47db6d673a37756 = L.popup({});
+
+        
+            
+                var html_5d47b8c4510d7e526045351ad2c654e0 = $(`<div id="html_5d47b8c4510d7e526045351ad2c654e0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pimbo Road, Rainford</h1><div class="nugget-popup"><p>Sandbag request recorded for Pimbo Road to protect properties from surface water flooding during the heavy rainfall event. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_8bacf5fb4baac54ed47db6d673a37756.setContent(html_5d47b8c4510d7e526045351ad2c654e0);
+            
+        
+
+        marker_f3c31ae75f96daded67d87e09510d081.bindPopup(popup_8bacf5fb4baac54ed47db6d673a37756)
+        ;
+
+        
+    
+    
+            var marker_6f0cb395a9a9b31773a65ad13885710b = L.marker(
+                [53.5013438, -2.789545],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_ad0d87a7249d240d69294c10b667fe11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6f0cb395a9a9b31773a65ad13885710b.setIcon(icon_ad0d87a7249d240d69294c10b667fe11);
+        
+    
+        var popup_01ee1d4a4550635da9fcf0cfd555246f = L.popup({});
+
+        
+            
+                var html_5c46735c5032be18200a34883752a8e2 = $(`<div id="html_5c46735c5032be18200a34883752a8e2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Avenue, Rainford</h1><div class="nugget-popup"><p>Listed as a sandbag request location during 18&ndash;20 Jan 2021 in response to intense rainfall, indicating localized surface water flooding risk to properties. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_01ee1d4a4550635da9fcf0cfd555246f.setContent(html_5c46735c5032be18200a34883752a8e2);
+            
+        
+
+        marker_6f0cb395a9a9b31773a65ad13885710b.bindPopup(popup_01ee1d4a4550635da9fcf0cfd555246f)
+        ;
+
+        
+    
+    
+            var marker_acffbdaf4f464a2b0e5e3f53a0ccf1f4 = L.marker(
+                [53.4048409, -2.748797],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_81854a2db43efa4e28142a949f64764a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_acffbdaf4f464a2b0e5e3f53a0ccf1f4.setIcon(icon_81854a2db43efa4e28142a949f64764a);
+        
+    
+        var popup_58eb3d66db19e7583987edd107edbaf1 = L.popup({});
+
+        
+            
+                var html_42fb353381b4c10e9fde0aea6ba0ddd3 = $(`<div id="html_42fb353381b4c10e9fde0aea6ba0ddd3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Marley Close, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Listed as a sandbag request location during 18&ndash;20 Jan 2021 in response to intense rainfall, indicating localized surface water flooding risk to properties. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_58eb3d66db19e7583987edd107edbaf1.setContent(html_42fb353381b4c10e9fde0aea6ba0ddd3);
+            
+        
+
+        marker_acffbdaf4f464a2b0e5e3f53a0ccf1f4.bindPopup(popup_58eb3d66db19e7583987edd107edbaf1)
+        ;
+
+        
+    
+    
+            var marker_ee538a1ed63de3f1e5d84e1ea537f6fc = L.marker(
+                [53.4575, -2.7505603],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_3433123a48101c5df39a9e54e514211d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ee538a1ed63de3f1e5d84e1ea537f6fc.setIcon(icon_3433123a48101c5df39a9e54e514211d);
+        
+    
+        var popup_631e8b32b1a587446db946d275b4b00e = L.popup({});
+
+        
+            
+                var html_8ea89c9a5cc8b923310ce18ad29dcb85 = $(`<div id="html_8ea89c9a5cc8b923310ce18ad29dcb85" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lingholme Road, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Identified as a sandbag request location during 18&ndash;20 Jan 2021, indicating properties on Lingholme Road were at risk of external flooding from surface water. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_631e8b32b1a587446db946d275b4b00e.setContent(html_8ea89c9a5cc8b923310ce18ad29dcb85);
+            
+        
+
+        marker_ee538a1ed63de3f1e5d84e1ea537f6fc.bindPopup(popup_631e8b32b1a587446db946d275b4b00e)
+        ;
+
+        
+    
+    
+            var marker_061623d6ee1ca1867630ba7511871334 = L.marker(
+                [53.4750494, -2.7687434],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_5b90eae452bcf4f4d2092dc3326ea441 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_061623d6ee1ca1867630ba7511871334.setIcon(icon_5b90eae452bcf4f4d2092dc3326ea441);
+        
+    
+        var popup_2f332ed6ff5f57f7bcf14ecc4716794f = L.popup({});
+
+        
+            
+                var html_b0065ccc28deee6334329974e45561c3 = $(`<div id="html_b0065ccc28deee6334329974e45561c3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Inglewood Road, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Sandbag requests were made for properties on Inglewood Road to protect against external flooding during the heavy rainfall event. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_2f332ed6ff5f57f7bcf14ecc4716794f.setContent(html_b0065ccc28deee6334329974e45561c3);
+            
+        
+
+        marker_061623d6ee1ca1867630ba7511871334.bindPopup(popup_2f332ed6ff5f57f7bcf14ecc4716794f)
+        ;
+
+        
+    
+    
+            var marker_4121ceda84fd3354d1a34cb9539f91cd = L.marker(
+                [53.4692727, -2.685398],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_2b741570acab728a72aba29fccfcb56d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4121ceda84fd3354d1a34cb9539f91cd.setIcon(icon_2b741570acab728a72aba29fccfcb56d);
+        
+    
+        var popup_c63c1e42c930043764e8ac046b757817 = L.popup({});
+
+        
+            
+                var html_25273c2553643223e8fdce3f2f552f48 = $(`<div id="html_25273c2553643223e8fdce3f2f552f48" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brookside Close, Blackbrook</h1><div class="nugget-popup"><p>Sandbag request recorded at this street indicating external flooding impact to dwellings/properties. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_c63c1e42c930043764e8ac046b757817.setContent(html_25273c2553643223e8fdce3f2f552f48);
+            
+        
+
+        marker_4121ceda84fd3354d1a34cb9539f91cd.bindPopup(popup_c63c1e42c930043764e8ac046b757817)
+        ;
+
+        
+    
+    
+            var marker_9ada80d373caba2cbe276f7d1e1f67fd = L.marker(
+                [53.4628626, -2.7072519],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_f05a41e33bcf5b2da65f4ab07cf9f5f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9ada80d373caba2cbe276f7d1e1f67fd.setIcon(icon_f05a41e33bcf5b2da65f4ab07cf9f5f3);
+        
+    
+        var popup_53a381c41972f7bd83f5e6171eae02a4 = L.popup({});
+
+        
+            
+                var html_cf9e1387c2d2c7ab0dadfe1ba5c65f34 = $(`<div id="html_cf9e1387c2d2c7ab0dadfe1ba5c65f34" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Link Avenue, Blackbrook</h1><div class="nugget-popup"><p>Sandbag request recorded at this street indicating external flooding impact to dwellings/properties. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_53a381c41972f7bd83f5e6171eae02a4.setContent(html_cf9e1387c2d2c7ab0dadfe1ba5c65f34);
+            
+        
+
+        marker_9ada80d373caba2cbe276f7d1e1f67fd.bindPopup(popup_53a381c41972f7bd83f5e6171eae02a4)
+        ;
+
+        
+    
+    
+            var marker_d8ee332060e7d716d687cbe26e69b89a = L.marker(
+                [53.4157298, -2.7105877],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_5e0d1de11d0c1069db56499a0d268d52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d8ee332060e7d716d687cbe26e69b89a.setIcon(icon_5e0d1de11d0c1069db56499a0d268d52);
+        
+    
+        var popup_ca6287d78261a71e4bb184f2ee4d4cd1 = L.popup({});
+
+        
+            
+                var html_6f605bc5901df9002886d860620a1f0d = $(`<div id="html_6f605bc5901df9002886d860620a1f0d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Paddock Grove, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Recorded as a sandbag request location on 18&ndash;20 Jan 2021; sandbags were requested to protect properties from surface&ndash;water/urban flooding. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_ca6287d78261a71e4bb184f2ee4d4cd1.setContent(html_6f605bc5901df9002886d860620a1f0d);
+            
+        
+
+        marker_d8ee332060e7d716d687cbe26e69b89a.bindPopup(popup_ca6287d78261a71e4bb184f2ee4d4cd1)
+        ;
+
+        
+    
+    
+            var marker_05a47f61e679ac9222f82c73e9081297 = L.marker(
+                [53.4576235, -2.7717142],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_cfc5a0eeedce99d8418420f6ba4912a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_05a47f61e679ac9222f82c73e9081297.setIcon(icon_cfc5a0eeedce99d8418420f6ba4912a9);
+        
+    
+        var popup_517169d65fe6c1de526da79e87c2f13a = L.popup({});
+
+        
+            
+                var html_3cf6a2af314e925444454b3b4b229398 = $(`<div id="html_3cf6a2af314e925444454b3b4b229398" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Millbrook Lane, Eccleston</h1><div class="nugget-popup"><p>Recorded as a sandbag request location on 18&ndash;20 Jan 2021; sandbags were requested to protect properties from surface&ndash;water/urban flooding. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_517169d65fe6c1de526da79e87c2f13a.setContent(html_3cf6a2af314e925444454b3b4b229398);
+            
+        
+
+        marker_05a47f61e679ac9222f82c73e9081297.bindPopup(popup_517169d65fe6c1de526da79e87c2f13a)
+        ;
+
+        
+    
+    
+            var marker_4a62422d6ca3614842dbef07aa0c0274 = L.marker(
+                [53.4887826, -2.797936],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_6ab38756906bf11a3b617fc164957a1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4a62422d6ca3614842dbef07aa0c0274.setIcon(icon_6ab38756906bf11a3b617fc164957a1e);
+        
+    
+        var popup_66ddbf4911d29a73d3a8525199642523 = L.popup({});
+
+        
+            
+                var html_355b077509c07e19485650a60dfc9dde = $(`<div id="html_355b077509c07e19485650a60dfc9dde" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mossborough Road, Rainford</h1><div class="nugget-popup"><p>Sandbag request recorded for Mossborough Road to protect properties from surface water flooding during the heavy rainfall event. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_66ddbf4911d29a73d3a8525199642523.setContent(html_355b077509c07e19485650a60dfc9dde);
+            
+        
+
+        marker_4a62422d6ca3614842dbef07aa0c0274.bindPopup(popup_66ddbf4911d29a73d3a8525199642523)
+        ;
+
+        
+    
+    
+            var marker_8aafcceb669a9ecc86779758851a1aa2 = L.marker(
+                [53.4073683, -2.7599703],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_fe3636cb8498569b85751582343a5228 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8aafcceb669a9ecc86779758851a1aa2.setIcon(icon_fe3636cb8498569b85751582343a5228);
+        
+    
+        var popup_875d75a6516f1d13b0621ede540b9255 = L.popup({});
+
+        
+            
+                var html_c742a27bcd80a780651768d0de9e4c22 = $(`<div id="html_c742a27bcd80a780651768d0de9e4c22" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Mill Lane, Rainhill</h1><div class="nugget-popup"><p>Listed as a sandbag request location during 18&ndash;20 Jan 2021 in response to intense rainfall, indicating localized surface water flooding risk to properties. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_875d75a6516f1d13b0621ede540b9255.setContent(html_c742a27bcd80a780651768d0de9e4c22);
+            
+        
+
+        marker_8aafcceb669a9ecc86779758851a1aa2.bindPopup(popup_875d75a6516f1d13b0621ede540b9255)
+        ;
+
+        
+    
+    
+            var marker_fe6e10ae8f9cc00c360b0e7b7346d809 = L.marker(
+                [53.457323, -2.7651195],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_a5a9125ba63c6ec71d4421e2ed710bbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fe6e10ae8f9cc00c360b0e7b7346d809.setIcon(icon_a5a9125ba63c6ec71d4421e2ed710bbb);
+        
+    
+        var popup_4626320e80f191e81f2bfad41f6e08d1 = L.popup({});
+
+        
+            
+                var html_56ba417826bba225fb53efd7fb7291e1 = $(`<div id="html_56ba417826bba225fb53efd7fb7291e1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dodd Avenue, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Identified as a sandbag request location during 18&ndash;20 Jan 2021, indicating properties on Dodd Avenue were at risk of external flooding from surface water. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_4626320e80f191e81f2bfad41f6e08d1.setContent(html_56ba417826bba225fb53efd7fb7291e1);
+            
+        
+
+        marker_fe6e10ae8f9cc00c360b0e7b7346d809.bindPopup(popup_4626320e80f191e81f2bfad41f6e08d1)
+        ;
+
+        
+    
+    
+            var marker_0d6cbdff2de4e43d9bb0834f2d766ce1 = L.marker(
+                [53.4600077, -2.7680278],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_ea0e470ed4e125ad96b22bbd0d2cf512 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0d6cbdff2de4e43d9bb0834f2d766ce1.setIcon(icon_ea0e470ed4e125ad96b22bbd0d2cf512);
+        
+    
+        var popup_e1c65d538351b251335681f54c0ecd83 = L.popup({});
+
+        
+            
+                var html_bb703dcede5ef721823062e44c771bb8 = $(`<div id="html_bb703dcede5ef721823062e44c771bb8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kiln Lane, St Helens Metropolitan District</h1><div class="nugget-popup"><p>Identified as a sandbag request location during 18&ndash;20 Jan 2021, indicating properties on Kiln Lane were at risk of external flooding from surface water. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_e1c65d538351b251335681f54c0ecd83.setContent(html_bb703dcede5ef721823062e44c771bb8);
+            
+        
+
+        marker_0d6cbdff2de4e43d9bb0834f2d766ce1.bindPopup(popup_e1c65d538351b251335681f54c0ecd83)
+        ;
+
+        
+    
+    
+            var marker_d9bcb73b4cae157f9f87d31110e85de7 = L.marker(
+                [53.4613646, -2.7667481],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_d9919d22ff191aa8787b43c366c4a2d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d9bcb73b4cae157f9f87d31110e85de7.setIcon(icon_d9919d22ff191aa8787b43c366c4a2d3);
+        
+    
+        var popup_6555d3b86db5e076c152969349970593 = L.popup({});
+
+        
+            
+                var html_a6703532f5ad0d1e446d84941ee9cd0e = $(`<div id="html_a6703532f5ad0d1e446d84941ee9cd0e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Regal Drive, Windle</h1><div class="nugget-popup"><p>Sandbag requests were made for properties on Regal Drive to protect against external flooding during the heavy rainfall event. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_6555d3b86db5e076c152969349970593.setContent(html_a6703532f5ad0d1e446d84941ee9cd0e);
+            
+        
+
+        marker_d9bcb73b4cae157f9f87d31110e85de7.bindPopup(popup_6555d3b86db5e076c152969349970593)
+        ;
+
+        
+    
+    
+            var marker_21200ed948e897e134f4fa15b98a3762 = L.marker(
+                [53.4620954, -2.7661104],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_943705b42856835414f9129a8879c3a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_21200ed948e897e134f4fa15b98a3762.setIcon(icon_943705b42856835414f9129a8879c3a1);
+        
+    
+        var popup_554b8b27cc3d6105f3f5c74818e32257 = L.popup({});
+
+        
+            
+                var html_8bb4b8bd390b361dd55bef7f8d38cdc4 = $(`<div id="html_8bb4b8bd390b361dd55bef7f8d38cdc4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Coronation Road, Windle</h1><div class="nugget-popup"><p>Sandbag requests were made for properties on Coronation Road to protect against external flooding during the heavy rainfall event. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_554b8b27cc3d6105f3f5c74818e32257.setContent(html_8bb4b8bd390b361dd55bef7f8d38cdc4);
+            
+        
+
+        marker_21200ed948e897e134f4fa15b98a3762.bindPopup(popup_554b8b27cc3d6105f3f5c74818e32257)
+        ;
+
+        
+    
+    
+            var marker_d9b781063353649efa8f96e9fc87de68 = L.marker(
+                [53.47769049472794, -2.2435460795004105],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_dde647b6707b3348b2e47e9f69451efc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d9b781063353649efa8f96e9fc87de68.setIcon(icon_dde647b6707b3348b2e47e9f69451efc);
+        
+    
+        var popup_7e3957448058e1bf44edba9f7fab472f = L.popup({});
+
+        
+            
+                var html_aab71443d56da58be9447f24ccc8a6c9 = $(`<div id="html_aab71443d56da58be9447f24ccc8a6c9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Greater Manchester</h1><div class="nugget-popup"><p>Affected by the exceptionally wet period from Storm Christoph (18&ndash;20 Jan 2021); heavy rainfall in the area contributed to flooding that formed part of the 20 Jan 2021 incident under investigation. (p5)</p></div></div></body></div>`)[0];
+                popup_7e3957448058e1bf44edba9f7fab472f.setContent(html_aab71443d56da58be9447f24ccc8a6c9);
+            
+        
+
+        marker_d9b781063353649efa8f96e9fc87de68.bindPopup(popup_7e3957448058e1bf44edba9f7fab472f)
+        ;
+
+        
+    
+    
+            var marker_af66cbcb78a1217c86b3dd0d34b58e1f = L.marker(
+                [53.4870981, -2.6858469],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_1c0c5e198824cc62e476d2a5dd878407 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_af66cbcb78a1217c86b3dd0d34b58e1f.setIcon(icon_1c0c5e198824cc62e476d2a5dd878407);
+        
+    
+        var popup_561810be8ad34700984732170ce82b05 = L.popup({});
+
+        
+            
+                var html_169f3b3b9e04a9671ea48a0416731a12 = $(`<div id="html_169f3b3b9e04a9671ea48a0416731a12" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Seneley Green</h1><div class="nugget-popup"><p>Land drainage collapse occurred on Rainford Road (A571) and properties on Birch Grove experienced external flooding. [TAB] (p14)</p></div><div class="nugget-popup"><p>Sandbag requests were made for Brookside Close, Garswood Road and Birch Grove in this ward indicating external flooding risk to dwellings. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_561810be8ad34700984732170ce82b05.setContent(html_169f3b3b9e04a9671ea48a0416731a12);
+            
+        
+
+        marker_af66cbcb78a1217c86b3dd0d34b58e1f.bindPopup(popup_561810be8ad34700984732170ce82b05)
+        ;
+
+        
+    
+    
+            var marker_853eb79b7e6bbd8d47923c09256da1e9 = L.marker(
+                [53.5020825, -2.7878773],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_7bb7b6d3ea2f894f84f36f44b8369305 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_853eb79b7e6bbd8d47923c09256da1e9.setIcon(icon_7bb7b6d3ea2f894f84f36f44b8369305);
+        
+    
+        var popup_b4629c0a2813fff86498e2dbfd82a86f = L.popup({});
+
+        
+            
+                var html_fc7a552e0da44cc7de07fbfd1f831cac = $(`<div id="html_fc7a552e0da44cc7de07fbfd1f831cac" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rainford</h1><div class="nugget-popup"><p>Flooding threatened land and properties along Rainford Brook in multiple locations: Berrington Road (between Grey House Farm and the river), Windle Park Wood, properties on Woodside and Birch Tree Avenues; Siding Lane, Lords Fold, Lower Shades and some properties on Beech Gardens; and Pasture Lane Business Centre, Pasture Lane Bridge and other businesses in Rainford South. [TAB] (p9)</p></div><div class="nugget-popup"><p>On 20 January 2021 Malt House Court flooded and properties there were affected; Rainford Road was impacted by floodwater but remained passable with traffic management on standby. Emergency services (Merseyside FRS) pumped water at Rainford Road and West End Road and assisted with property flooding and protecting a sub&ndash;station. The Emergency Duty Officer attended the Crematorium incident (Rainford Road/Malt House Court) on 20 January 2021. [PAG] (p12)</p></div><div class="nugget-popup"><p>Multiple locations in Rainford experienced flooding: a property on Berrington's Lane was internally flooded; a property on Beech Gardens was internally flooded; one property on Ormskirk Road was externally flooded; Rainford Church was flooded internally and externally. Road/pathway closures were implemented on Berrington's Lane and Lodge Lane / Intake Road. [TAB] (p14)</p></div><div class="nugget-popup"><p>Multiple sandbag requests across Rainford (Ormskirk Road, Pimbo Road, Mossborough Road, The Avenue, Beech Gardens, Berringtons Lane) indicate widespread threat from surface water flooding to properties in the village during the event. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>13 properties; 22 properties; 26 properties (61 properties total) [TAB] (p9)</p></div><div class="nugget-popup quant"><p>1 property on Berrington's Lane; 1 property on Beech Gardens; 1 property on Ormskirk Road; 1 church [TAB] (p14)</p></div><div class="nugget-popup quant"><p>6 sandbag request locations [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_b4629c0a2813fff86498e2dbfd82a86f.setContent(html_fc7a552e0da44cc7de07fbfd1f831cac);
+            
+        
+
+        marker_853eb79b7e6bbd8d47923c09256da1e9.bindPopup(popup_b4629c0a2813fff86498e2dbfd82a86f)
+        ;
+
+        
+    
+    
+            var marker_2020d9909063fbe1d17d8c92d5b526d5 = L.marker(
+                [53.4254852, -2.7108606],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_eb6ecfd5abd67f142c1d9654ca119ad5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2020d9909063fbe1d17d8c92d5b526d5.setIcon(icon_eb6ecfd5abd67f142c1d9654ca119ad5);
+        
+    
+        var popup_24723701817655b9d91ffc08f56a335e = L.popup({});
+
+        
+            
+                var html_e2e80166870af6a600c599f717715453 = $(`<div id="html_e2e80166870af6a600c599f717715453" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sutton Leach</h1><div class="nugget-popup"><p>Flooding threatened land and properties on Landsdowne Court, parts of Waterdale Crescent, Boscow Crescent, Dawsone Avenue and Gerrards Lane; land alongside Sutton Mill Brook from Waterdale Crescent to Damhouse Bridge and Sutton Mill Dam. [TAB] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>102 properties [TAB] (p9)</p></div></div></body></div>`)[0];
+                popup_24723701817655b9d91ffc08f56a335e.setContent(html_e2e80166870af6a600c599f717715453);
+            
+        
+
+        marker_2020d9909063fbe1d17d8c92d5b526d5.bindPopup(popup_24723701817655b9d91ffc08f56a335e)
+        ;
+
+        
+    
+    
+            var marker_3303a9daf6e0a6914d8b45c1e3131d10 = L.marker(
+                [53.494548057336544, -2.7092675512879127],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_d5c6ff5f70961af91ef2a0cc90a09a42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3303a9daf6e0a6914d8b45c1e3131d10.setIcon(icon_d5c6ff5f70961af91ef2a0cc90a09a42);
+        
+    
+        var popup_d37ba443c88f6c5d6343ad19a9392c8c = L.popup({});
+
+        
+            
+                var html_461daf0987935a56aee63c96d5725927 = $(`<div id="html_461daf0987935a56aee63c96d5725927" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Billinge</h1><div class="nugget-popup"><p>Land drainage collapse occurred on Rainford Road (A571) and properties on Birch Grove experienced external flooding. [TAB] (p14)</p></div><div class="nugget-popup"><p>Sandbag requests were made for Brookside Close, Garswood Road and Birch Grove in this ward indicating external flooding risk to dwellings. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_d37ba443c88f6c5d6343ad19a9392c8c.setContent(html_461daf0987935a56aee63c96d5725927);
+            
+        
+
+        marker_3303a9daf6e0a6914d8b45c1e3131d10.bindPopup(popup_d37ba443c88f6c5d6343ad19a9392c8c)
+        ;
+
+        
+    
+    
+            var marker_9900b71b290848ad190383adb8146138 = L.marker(
+                [53.4681177, -2.7659515],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_df223be65851598510565d90677c81e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9900b71b290848ad190383adb8146138.setIcon(icon_df223be65851598510565d90677c81e4);
+        
+    
+        var popup_cd8f9e137c12f976b0062f4a9e9fc1fc = L.popup({});
+
+        
+            
+                var html_5d19d5a3a161e7e59399ce42784b10b3 = $(`<div id="html_5d19d5a3a161e7e59399ce42784b10b3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Windle</h1><div class="nugget-popup"><p>Windle ward experienced external and internal flooding including dwellings on Malt House Court; road closure on Rainford Road (A570) was also implemented. Impacts in the ward were part of a joint issue. [TAB] (p14)</p></div><div class="nugget-popup"><p>Windle ward experienced a joint flooding issue during which multiple sandbag requests were made to protect properties and assets in the ward. [TAB,PAG] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 dwellings affected internally and externally; 8 dwellings affected externally [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_cd8f9e137c12f976b0062f4a9e9fc1fc.setContent(html_5d19d5a3a161e7e59399ce42784b10b3);
+            
+        
+
+        marker_9900b71b290848ad190383adb8146138.bindPopup(popup_cd8f9e137c12f976b0062f4a9e9fc1fc)
+        ;
+
+        
+    
+    
+            var marker_278d7c295ae3477fae5c631e894f2bdd = L.marker(
+                [53.4676165, -2.6916573],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_50e28290cac27eb7f4a0411971c41ae8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_278d7c295ae3477fae5c631e894f2bdd.setIcon(icon_50e28290cac27eb7f4a0411971c41ae8);
+        
+    
+        var popup_cad37b52ae27504d06be9f7d371a513a = L.popup({});
+
+        
+            
+                var html_2c0be3d70cc319e761bdf6ca95c469e2 = $(`<div id="html_2c0be3d70cc319e761bdf6ca95c469e2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Blackbrook</h1><div class="nugget-popup"><p>External flooding affected properties located on West End Road within the ward. [TAB] (p14)</p></div><div class="nugget-popup"><p>Sandbag requests were made for Link Avenue (and West End Road) in this ward indicating external flooding risk to properties. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_cad37b52ae27504d06be9f7d371a513a.setContent(html_2c0be3d70cc319e761bdf6ca95c469e2);
+            
+        
+
+        marker_278d7c295ae3477fae5c631e894f2bdd.bindPopup(popup_cad37b52ae27504d06be9f7d371a513a)
+        ;
+
+        
+    
+    
+            var marker_ab07c64aff7057ef8f7273a5f731bc5d = L.marker(
+                [53.4554592, -2.7790276],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_e39d31f3833d69a1725ee2cfe1005550 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ab07c64aff7057ef8f7273a5f731bc5d.setIcon(icon_e39d31f3833d69a1725ee2cfe1005550);
+        
+    
+        var popup_e735c4849363210622fbacbd63b53b02 = L.popup({});
+
+        
+            
+                var html_dc8d5f38cbd3363503c456718a28f926 = $(`<div id="html_dc8d5f38cbd3363503c456718a28f926" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Eccleston</h1><div class="nugget-popup"><p>Multiple locations in Eccleston experienced flooding: Griffin Close had external flooding to properties; Bobbies Lane had external flooding to properties; a school on Bleak Hill Road suffered internal and external flooding. [TAB] (p14)</p></div><div class="nugget-popup"><p>Multiple streets in Eccleston (Millbrook Lane, Albany Avenue, Burrows Lane, Bobbies Lane, Griffin Close) were recorded as sandbag request locations during 18&ndash;20 Jan 2021 to protect properties from surface&ndash;water/urban flooding. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 properties; 4 properties [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_e735c4849363210622fbacbd63b53b02.setContent(html_dc8d5f38cbd3363503c456718a28f926);
+            
+        
+
+        marker_ab07c64aff7057ef8f7273a5f731bc5d.bindPopup(popup_e735c4849363210622fbacbd63b53b02)
+        ;
+
+        
+    
+    
+            var marker_a56375bd5cba1bc9845eb039bd0da028 = L.marker(
+                [53.4530667, -2.6263483],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_4f80aadc11e9d97ba02083d0819a26ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a56375bd5cba1bc9845eb039bd0da028.setIcon(icon_4f80aadc11e9d97ba02083d0819a26ef);
+        
+    
+        var popup_e5271cd5904646ce27439a2434c29608 = L.popup({});
+
+        
+            
+                var html_fb3bc32dfdec4c12192657f74e3f3ee7 = $(`<div id="html_fb3bc32dfdec4c12192657f74e3f3ee7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Newton-Le-Willows</h1><div class="nugget-popup"><p>A road closure was implemented at Vista Road (B5209) in Newton&ndash;le&ndash;Willows West as part of the flooding impacts during the event. [TAB] (p14)</p></div><div class="nugget-popup"><p>The Newton&ndash;le&ndash;Willows West area (listed as Newton&ndash;Le&ndash; in the report) had sandbag requests for Vista Way during the heavy rainfall event, indicating properties in the town/ward were at risk of external flooding and required protective sandbags. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_e5271cd5904646ce27439a2434c29608.setContent(html_fb3bc32dfdec4c12192657f74e3f3ee7);
+            
+        
+
+        marker_a56375bd5cba1bc9845eb039bd0da028.bindPopup(popup_e5271cd5904646ce27439a2434c29608)
+        ;
+
+        
+    
+    
+            var marker_222096cd472f52518280b6f9697f566b = L.marker(
+                [53.4516377, -2.7125548],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_3a6c1a7f63b4250292ec1eb40b0e355f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_222096cd472f52518280b6f9697f566b.setIcon(icon_3a6c1a7f63b4250292ec1eb40b0e355f);
+        
+    
+        var popup_246b7dc831a95d6e55484d8125a6e2b5 = L.popup({});
+
+        
+            
+                var html_a55f4c0a86a914ff329affec66a1354e = $(`<div id="html_a55f4c0a86a914ff329affec66a1354e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Parr</h1><div class="nugget-popup"><p>Sandbag request recorded for Fleet Lane indicating properties in the Parr ward were threatened by surface water flooding during the event; sandbags deployed/ requested to protect properties from external water ingress. [TAB] (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 sandbag request location (Fleet Lane) [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_246b7dc831a95d6e55484d8125a6e2b5.setContent(html_a55f4c0a86a914ff329affec66a1354e);
+            
+        
+
+        marker_222096cd472f52518280b6f9697f566b.bindPopup(popup_246b7dc831a95d6e55484d8125a6e2b5)
+        ;
+
+        
+    
+    
+            var marker_afde9f614c26fa9820f82f8aee216422 = L.marker(
+                [53.436742, -2.7164385],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_bd602d0b62fbfd39ad75aecf88b9c9d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_afde9f614c26fa9820f82f8aee216422.setIcon(icon_bd602d0b62fbfd39ad75aecf88b9c9d9);
+        
+    
+        var popup_5a079f0eaaf9857a85afc8a7f76a80f4 = L.popup({});
+
+        
+            
+                var html_5ce47c0df65115cea09b32ffb29f69c2 = $(`<div id="html_5ce47c0df65115cea09b32ffb29f69c2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sutton</h1><div class="nugget-popup"><p>The ward included a sandbag request location (Watery Lane) during 18&ndash;20 Jan 2021, indicating the ward experienced surface water flooding risk and external impacts to properties. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_5a079f0eaaf9857a85afc8a7f76a80f4.setContent(html_5ce47c0df65115cea09b32ffb29f69c2);
+            
+        
+
+        marker_afde9f614c26fa9820f82f8aee216422.bindPopup(popup_5a079f0eaaf9857a85afc8a7f76a80f4)
+        ;
+
+        
+    
+    
+            var marker_110ed14fc17029ef7c70ba7b2809aa72 = L.marker(
+                [53.4134383, -2.760785],
+                {}
+            ).addTo(map_0c11c5f4679d89947d8c7663b4c773f1);
+        
+    
+            var icon_a33ead27b16b5cb116e669aff8ec76d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_110ed14fc17029ef7c70ba7b2809aa72.setIcon(icon_a33ead27b16b5cb116e669aff8ec76d8);
+        
+    
+        var popup_b3d1353de0126513efccf1701b28988f = L.popup({});
+
+        
+            
+                var html_2eb6b284fddf9c2751f8c7e0ce85dd21 = $(`<div id="html_2eb6b284fddf9c2751f8c7e0ce85dd21" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rainhill</h1><div class="nugget-popup"><p>Sandbag requests were made for streets in Rainhill (Marley Close and Mill Lane) during 18&ndash;20 Jan 2021 in response to intense rainfall, indicating localised surface water flooding impacts to residential streets. [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_b3d1353de0126513efccf1701b28988f.setContent(html_2eb6b284fddf9c2751f8c7e0ce85dd21);
+            
+        
+
+        marker_110ed14fc17029ef7c70ba7b2809aa72.bindPopup(popup_b3d1353de0126513efccf1701b28988f)
+        ;
+
+        
+    
+</script>
+</html>

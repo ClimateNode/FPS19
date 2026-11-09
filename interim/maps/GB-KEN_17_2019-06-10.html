@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7fbae0d9b25fac7d7b5b792912ddc16f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7fbae0d9b25fac7d7b5b792912ddc16f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7fbae0d9b25fac7d7b5b792912ddc16f = L.map(
+                "map_7fbae0d9b25fac7d7b5b792912ddc16f",
+                {
+                    center: [51.31907762084745, 0.42560743046592087],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6cd244c103d8b141b27752e4c757d04b = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_6cd244c103d8b141b27752e4c757d04b.addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+    
+            var marker_0487917cb5d51d2cd075fab3680d760a = L.marker(
+                [51.3249854, 0.4368134],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_d41dc86c1c0524ca2ef1948c5ee597ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0487917cb5d51d2cd075fab3680d760a.setIcon(icon_d41dc86c1c0524ca2ef1948c5ee597ea);
+        
+    
+        var popup_15dfca9f362c55b1facf4c0ca37b4357 = L.popup({});
+
+        
+            
+                var html_52cee8aae188e6c0b523e49eb697cc3d = $(`<div id="html_52cee8aae188e6c0b523e49eb697cc3d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Katherines School</h1><div class="nugget-popup"><p>Internal flooding affected school premises; 21 classrooms flooded and the school was closed for two days following the event. [TAB] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>21 classrooms affected [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_15dfca9f362c55b1facf4c0ca37b4357.setContent(html_52cee8aae188e6c0b523e49eb697cc3d);
+            
+        
+
+        marker_0487917cb5d51d2cd075fab3680d760a.bindPopup(popup_15dfca9f362c55b1facf4c0ca37b4357)
+        ;
+
+        
+    
+    
+            var marker_a671f4594fb1ed2b2cb5d0ccfeb123ea = L.marker(
+                [51.2145638, 0.4062156],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_8a0f5fcfd996bca5ddd4a01e8a9a555c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a671f4594fb1ed2b2cb5d0ccfeb123ea.setIcon(icon_8a0f5fcfd996bca5ddd4a01e8a9a555c);
+        
+    
+        var popup_899200af5a36e2838467f3c6b1067363 = L.popup({});
+
+        
+            
+                var html_47bd2985afe583bc11d94296d1fee9f7 = $(`<div id="html_47bd2985afe583bc11d94296d1fee9f7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Medway</h1><div class="nugget-popup"><p>Areas adjacent to the watercourse are identified by the uFMfSW as the route along which surface water flows during rainfall events; the report states that locations of flooded properties correspond to this area, indicating the river corridor contributed to surface&ndash;water flooding of nearby parts of Snodland. [IMG] (p5)</p></div></div></body></div>`)[0];
+                popup_899200af5a36e2838467f3c6b1067363.setContent(html_47bd2985afe583bc11d94296d1fee9f7);
+            
+        
+
+        marker_a671f4594fb1ed2b2cb5d0ccfeb123ea.bindPopup(popup_899200af5a36e2838467f3c6b1067363)
+        ;
+
+        
+    
+    
+            var marker_515d6207ebb11e4f9f0a262b90b033b7 = L.marker(
+                [51.3256288, 0.4337833],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_8a98060f15d52fb0a52a5f7f30a8b6ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_515d6207ebb11e4f9f0a262b90b033b7.setIcon(icon_8a98060f15d52fb0a52a5f7f30a8b6ca);
+        
+    
+        var popup_78af3d10073df75b9557a3cfff02df36 = L.popup({});
+
+        
+            
+                var html_d654f39831fbdc9256ea3f0582f66add = $(`<div id="html_d654f39831fbdc9256ea3f0582f66add" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pout Road, Snodland</h1><div class="nugget-popup"><p>Internal flooding to properties on Pout Road. [TAB] (p2)</p></div><div class="nugget-popup"><p>Highway soakaways were overwhelmed by the heavy rainfall, producing surface&ndash;water accumulation and contributing to local flooding conditions affecting Pout Road and nearby Lakeside. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_78af3d10073df75b9557a3cfff02df36.setContent(html_d654f39831fbdc9256ea3f0582f66add);
+            
+        
+
+        marker_515d6207ebb11e4f9f0a262b90b033b7.bindPopup(popup_78af3d10073df75b9557a3cfff02df36)
+        ;
+
+        
+    
+    
+            var marker_c5aeca912586bf1503e855e4b776adfc = L.marker(
+                [51.3246674, 0.4430885],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_210f0b23d4296266e942ebbc3a88d461 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c5aeca912586bf1503e855e4b776adfc.setIcon(icon_210f0b23d4296266e942ebbc3a88d461);
+        
+    
+        var popup_4c920d8dc9819a5119038134559724f3 = L.popup({});
+
+        
+            
+                var html_524ba09b7464ee64b3e5a47d3e5df3b1 = $(`<div id="html_524ba09b7464ee64b3e5a47d3e5df3b1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Saltings Road, Snodland</h1><div class="nugget-popup"><p>Internal flooding to properties on Saltings Road; water reported to have come from an overflowing drain in Oxford Road and flowed into Saltings Road, reaching a depth of 4 to 5 inches. [TAB] (p2)</p></div><div class="nugget-popup"><p>Open water to the rear of properties on Saltings Road adjacent to the A228; open channel observed between Saltings Road and the A228 and standing water present. Nearby drainage outlet/security screen had significant debris accumulation (18/06/2019), indicating reduced drainage capacity and contributing to local flooding/standing water at Saltings Road. [IMG] (p4)</p></div><div class="nugget-popup"><p>Deep surface water flooding as local drainage was overwhelmed by rapid overland flows collecting in low&ndash;lying areas. (p8)</p></div><div class="nugget-popup"><p>Excessive rainfall exceeded drainage capacity and run&ndash;off accumulated in topographical low points, causing surface water flooding on the street. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties; water depth 4 to 5 inches [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_4c920d8dc9819a5119038134559724f3.setContent(html_524ba09b7464ee64b3e5a47d3e5df3b1);
+            
+        
+
+        marker_c5aeca912586bf1503e855e4b776adfc.bindPopup(popup_4c920d8dc9819a5119038134559724f3)
+        ;
+
+        
+    
+    
+            var marker_233e57ed5e96802989d5922f490a35da = L.marker(
+                [51.3289204, 0.4392305],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_566e8cbe66ee43ffd55d2567b84759ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_233e57ed5e96802989d5922f490a35da.setIcon(icon_566e8cbe66ee43ffd55d2567b84759ec);
+        
+    
+        var popup_85aaf4459a71b09e292cfd4a1dd51a8f = L.popup({});
+
+        
+            
+                var html_29f4a406e289dcd0d8966fce635e8535 = $(`<div id="html_29f4a406e289dcd0d8966fce635e8535" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Recreation Avenue, Snodland</h1><div class="nugget-popup"><p>Internal flooding to residential properties on Recreation Avenue. [TAB] (p2)</p></div><div class="nugget-popup"><p>Deep surface water flooding occurred as overland flows collected in topographical low points and exceeded the capacity of the drainage system. (p8)</p></div><div class="nugget-popup"><p>Excessive rainfall exceeded drainage capacity and run&ndash;off accumulated in topographical low points, causing surface water flooding on the street. (p9)</p></div><div class="nugget-popup"><p>Inspection after the flood found drainage affected: 1 of the 4 gullies was full. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 properties [TAB] (p2)</p></div><div class="nugget-popup quant"><p>1 of the 4 gullies (p10)</p></div></div></body></div>`)[0];
+                popup_85aaf4459a71b09e292cfd4a1dd51a8f.setContent(html_29f4a406e289dcd0d8966fce635e8535);
+            
+        
+
+        marker_233e57ed5e96802989d5922f490a35da.bindPopup(popup_85aaf4459a71b09e292cfd4a1dd51a8f)
+        ;
+
+        
+    
+    
+            var marker_e0ed9e70bc599caedf28aed6b2a2f033 = L.marker(
+                [51.329899, 0.4363086],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_b623dc19394ae4009ff5819b721ad1e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e0ed9e70bc599caedf28aed6b2a2f033.setIcon(icon_b623dc19394ae4009ff5819b721ad1e3);
+        
+    
+        var popup_d622b0ba63c481e8e3024c7a7e851fba = L.popup({});
+
+        
+            
+                var html_2c8b9c974238302525fe314babd08178 = $(`<div id="html_2c8b9c974238302525fe314babd08178" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pridmore Road, Snodland</h1><div class="nugget-popup"><p>Properties on Pridmore Road affected by flooding. [TAB] (p2)</p></div><div class="nugget-popup"><p>Excessive rainfall exceeded drainage capacity and run&ndash;off accumulated in topographical low points, causing surface water flooding on the street. (p9)</p></div><div class="nugget-popup"><p>The whole road was cleansed including the stream culvert as part of the post&ndash;flood response; investigations concluded that the blocked drainage on the road did not appear to be a significant contributor to the flood. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_d622b0ba63c481e8e3024c7a7e851fba.setContent(html_2c8b9c974238302525fe314babd08178);
+            
+        
+
+        marker_e0ed9e70bc599caedf28aed6b2a2f033.bindPopup(popup_d622b0ba63c481e8e3024c7a7e851fba)
+        ;
+
+        
+    
+    
+            var marker_33dff1fd8fc6b48897f8c67848d41d28 = L.marker(
+                [51.32979115526456, 0.44560732065182546],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_31bdcc1f03184f9e46c1518504fee530 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_33dff1fd8fc6b48897f8c67848d41d28.setIcon(icon_31bdcc1f03184f9e46c1518504fee530);
+        
+    
+        var popup_483cda4cf07441e81cb9fa2b45a406f3 = L.popup({});
+
+        
+            
+                var html_c41091232880020bee054e82aa47dfee = $(`<div id="html_c41091232880020bee054e82aa47dfee" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Snodland</h1><div class="nugget-popup"><p>Water reached the property; garden was flooded. No confirmation that water entered the building. [TAB] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property affected [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_483cda4cf07441e81cb9fa2b45a406f3.setContent(html_c41091232880020bee054e82aa47dfee);
+            
+        
+
+        marker_33dff1fd8fc6b48897f8c67848d41d28.bindPopup(popup_483cda4cf07441e81cb9fa2b45a406f3)
+        ;
+
+        
+    
+    
+            var marker_519f38830823789adfca5892f1316de1 = L.marker(
+                [51.3350873, 0.4449505],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_e84b30fa8c0893c910dccb92c08f8d84 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_519f38830823789adfca5892f1316de1.setIcon(icon_e84b30fa8c0893c910dccb92c08f8d84);
+        
+    
+        var popup_266e9a2128caff6fa99c0d0407d41bd8 = L.popup({});
+
+        
+            
+                var html_5496fcbea4e6bab473d8eb328570d87b = $(`<div id="html_5496fcbea4e6bab473d8eb328570d87b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holborough Road, Snodland</h1><div class="nugget-popup"><p>Internal flooding to one property; water reached around 10 inches. [TAB] (p2)</p></div><div class="nugget-popup"><p>Reported flooding on the road during the storm; Kent Fire & Rescue Service (KFRS) responded to a flooding report at 20:56 as heavy overland flows overwhelmed drainage. (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property affected [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_266e9a2128caff6fa99c0d0407d41bd8.setContent(html_5496fcbea4e6bab473d8eb328570d87b);
+            
+        
+
+        marker_519f38830823789adfca5892f1316de1.bindPopup(popup_266e9a2128caff6fa99c0d0407d41bd8)
+        ;
+
+        
+    
+    
+            var marker_a20c52aaf076c4b7bbdcdfb449bd4eb5 = L.marker(
+                [51.324657, 0.439313],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_99aff8a44b80ca2be6cb03993d1dcd15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a20c52aaf076c4b7bbdcdfb449bd4eb5.setIcon(icon_99aff8a44b80ca2be6cb03993d1dcd15);
+        
+    
+        var popup_072b9b85ef84f320e0c1cd6327e99551 = L.popup({});
+
+        
+            
+                var html_7da4770276f2aa090f602de5a1bac2f1 = $(`<div id="html_7da4770276f2aa090f602de5a1bac2f1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Katherine's Lane, Snodland</h1><div class="nugget-popup"><p>Internal flooding to one property. [TAB] (p2)</p></div><div class="nugget-popup"><p>Overland flow from the school playing field and runoff from roofs/carparks flowed onto the highway and into the school buildings. Floodwater entered the school affecting classrooms; sections of the flat roof collapsed and the privately owned rising main surcharged within the main building causing extensive damage to the property. Surface water also overwhelmed the highway drainage on St Katherines Lane. (p9)</p></div><div class="nugget-popup"><p>Highway drainage and gullies were found blocked after the flood: 3 of the 18 gullies were full. A partially completed CCTV survey found a complete blockage within one section of the highway drainage system and numerous smaller defects; a full CCTV survey is outstanding. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property affected [TAB] (p2)</p></div><div class="nugget-popup quant"><p>18 classrooms; one property; 6 inches water depth (p9)</p></div><div class="nugget-popup quant"><p>3 of the 18 gullies (p10)</p></div></div></body></div>`)[0];
+                popup_072b9b85ef84f320e0c1cd6327e99551.setContent(html_7da4770276f2aa090f602de5a1bac2f1);
+            
+        
+
+        marker_a20c52aaf076c4b7bbdcdfb449bd4eb5.bindPopup(popup_072b9b85ef84f320e0c1cd6327e99551)
+        ;
+
+        
+    
+    
+            var marker_65b612ba57e47d843737362f8339e3dd = L.marker(
+                [51.3185158, 0.436801],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_cc74b015f16397662ca2a6946edae48b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_65b612ba57e47d843737362f8339e3dd.setIcon(icon_cc74b015f16397662ca2a6946edae48b);
+        
+    
+        var popup_117a14a5ec58ab02eb387278de728b98 = L.popup({});
+
+        
+            
+                var html_28f3cef1d7449cc76febc33c1c17990f = $(`<div id="html_28f3cef1d7449cc76febc33c1c17990f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lakeside, Snodland</h1><div class="nugget-popup"><p>Floodwater reached sufficient depth to affect 6 properties and caused damage to vehicles. [TAB] (p2)</p></div><div class="nugget-popup"><p>Surface water collected at the topographical low point, flooding the highway and entering property. Drainage had nowhere to disperse and was overwhelmed. (p9)</p></div><div class="nugget-popup"><p>Tanker attended to clear flood water and all gullies were cleansed. CCTV of soakaways found all were holding water at inspection; groundwater ingress has reduced soakaway capacity and one soakaway had a foul misconnection from a private property, compromising their ability to accept surface water. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>6 properties; damage to vehicles (number not specified) [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_117a14a5ec58ab02eb387278de728b98.setContent(html_28f3cef1d7449cc76febc33c1c17990f);
+            
+        
+
+        marker_65b612ba57e47d843737362f8339e3dd.bindPopup(popup_117a14a5ec58ab02eb387278de728b98)
+        ;
+
+        
+    
+    
+            var marker_7f2ff9fdf664d8e7151fa70848f32381 = L.marker(
+                [51.329709, 0.4358767],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_1d8b0bf167135d6b2e405f626f36fd5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7f2ff9fdf664d8e7151fa70848f32381.setIcon(icon_1d8b0bf167135d6b2e405f626f36fd5e);
+        
+    
+        var popup_eb2c289163f0363581967530ddddfe8f = L.popup({});
+
+        
+            
+                var html_af5bc927a56932769a274eb1261b6440 = $(`<div id="html_af5bc927a56932769a274eb1261b6440" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Roberts Road, Snodland</h1><div class="nugget-popup"><p>Highway carriageway inundated (recorded as 'Highway Flooding'). [TAB] (p2)</p></div><div class="nugget-popup"><p>Excessive rainfall exceeded drainage capacity and run&ndash;off accumulated in topographical low points, causing surface water flooding on the street. (p9)</p></div></div></body></div>`)[0];
+                popup_eb2c289163f0363581967530ddddfe8f.setContent(html_af5bc927a56932769a274eb1261b6440);
+            
+        
+
+        marker_7f2ff9fdf664d8e7151fa70848f32381.bindPopup(popup_eb2c289163f0363581967530ddddfe8f)
+        ;
+
+        
+    
+    
+            var marker_ec96fa96a24beb95e6651f0e742111b7 = L.marker(
+                [51.327509, 0.4364798],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_1533fc8e699ad0889a1f0e73dd4ab7ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ec96fa96a24beb95e6651f0e742111b7.setIcon(icon_1533fc8e699ad0889a1f0e73dd4ab7ef);
+        
+    
+        var popup_a5dc0eee362ad62ead7baae97a6dd086 = L.popup({});
+
+        
+            
+                var html_704de39494db98e1f291120890401bc3 = $(`<div id="html_704de39494db98e1f291120890401bc3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Birling Road, Snodland</h1><div class="nugget-popup"><p>Internal flooding affected a residential property on Birling Road. [TAB] (p2)</p></div><div class="nugget-popup"><p>The culvert inlet on Birling Road was obstructed by debris and litter trapped on the metal bars, with pooled water adjacent to the inlet; this obstruction reduced drainage capacity and was associated with local surface water flooding. [IMG] (p4)</p></div><div class="nugget-popup"><p>Excessive rainfall exceeded drainage capacity and run&ndash;off accumulated in topographical low points, causing surface water flooding on the street. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_a5dc0eee362ad62ead7baae97a6dd086.setContent(html_704de39494db98e1f291120890401bc3);
+            
+        
+
+        marker_ec96fa96a24beb95e6651f0e742111b7.bindPopup(popup_a5dc0eee362ad62ead7baae97a6dd086)
+        ;
+
+        
+    
+    
+            var marker_7ac3262512a458171a60721bd8234ac3 = L.marker(
+                [51.3282454, 0.4428275],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_f215bbf975567f159f226043fd7a4d1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7ac3262512a458171a60721bd8234ac3.setIcon(icon_f215bbf975567f159f226043fd7a4d1a);
+        
+    
+        var popup_12e47b12beecbdb4bf4da1f70e1439ee = L.popup({});
+
+        
+            
+                var html_e7523f0660afbe62eb0db2cc3c2fe458 = $(`<div id="html_e7523f0660afbe62eb0db2cc3c2fe458" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rectory Close, Snodland</h1><div class="nugget-popup"><p>Internal flooding affected a residential property on Rectory Close. [TAB] (p2)</p></div><div class="nugget-popup"><p>Significant street flooding with water covering the road and partially submerging parked vehicles; visual evidence (photo) documents severity and disruption to residents and infrastructure. [IMG] (p8)</p></div><div class="nugget-popup"><p>Excessive rainfall exceeded drainage capacity and run&ndash;off accumulated in topographical low points, causing surface water flooding on the street. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_12e47b12beecbdb4bf4da1f70e1439ee.setContent(html_e7523f0660afbe62eb0db2cc3c2fe458);
+            
+        
+
+        marker_7ac3262512a458171a60721bd8234ac3.bindPopup(popup_12e47b12beecbdb4bf4da1f70e1439ee)
+        ;
+
+        
+    
+    
+            var marker_d36a2e0fd3ce8652c717e4aaa2a247b2 = L.marker(
+                [51.3208517, 0.4365735],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_50cc7755a5258e19b004832041ae4cb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d36a2e0fd3ce8652c717e4aaa2a247b2.setIcon(icon_50cc7755a5258e19b004832041ae4cb7);
+        
+    
+        var popup_e257ad01465d1b1f53cdc6bcfc697174 = L.popup({});
+
+        
+            
+                var html_1914592fa18a1a3f9a3f00a2a04a321b = $(`<div id="html_1914592fa18a1a3f9a3f00a2a04a321b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cooper Road, Snodland</h1><div class="nugget-popup"><p>Internal flooding to one property on Cooper Road. [TAB] (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_e257ad01465d1b1f53cdc6bcfc697174.setContent(html_1914592fa18a1a3f9a3f00a2a04a321b);
+            
+        
+
+        marker_d36a2e0fd3ce8652c717e4aaa2a247b2.bindPopup(popup_e257ad01465d1b1f53cdc6bcfc697174)
+        ;
+
+        
+    
+    
+            var marker_4101b18a7f656f91784abb00c1c10331 = L.marker(
+                [51.3250792, 0.4472476],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_e82752840e6e5a78dc2bac0c4d81b52e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4101b18a7f656f91784abb00c1c10331.setIcon(icon_e82752840e6e5a78dc2bac0c4d81b52e);
+        
+    
+        var popup_c4111c511c72275ae599629bfab4ee2f = L.popup({});
+
+        
+            
+                var html_20464ced7c572a15323a447c09a7793b = $(`<div id="html_20464ced7c572a15323a447c09a7793b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sortmill Road, Snodland</h1><div class="nugget-popup"><p>Internal flooding to a retail depot on Sortmill Road. [TAB] (p2)</p></div><div class="nugget-popup"><p>During the storm Leybourne Stream river levels rose, preventing the surface water system from discharging. Water collected at topographical low points and caused flooding to the depot at Sortmill Road. (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 retail depot [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_c4111c511c72275ae599629bfab4ee2f.setContent(html_20464ced7c572a15323a447c09a7793b);
+            
+        
+
+        marker_4101b18a7f656f91784abb00c1c10331.bindPopup(popup_c4111c511c72275ae599629bfab4ee2f)
+        ;
+
+        
+    
+    
+            var marker_a82d0a0440f4e7d035421218ae8dfbdc = L.marker(
+                [51.3273383, 0.4417827],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_05cca00c89d5d18f96c8199a104887d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a82d0a0440f4e7d035421218ae8dfbdc.setIcon(icon_05cca00c89d5d18f96c8199a104887d1);
+        
+    
+        var popup_5d7ed54b93caba0b18bddf05ef46e490 = L.popup({});
+
+        
+            
+                var html_04fd04830d89cf1afcd3cdf5a809e3e9 = $(`<div id="html_04fd04830d89cf1afcd3cdf5a809e3e9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oxford Street, Snodland</h1><div class="nugget-popup"><p>Highway flooding reported on Oxford Street. [TAB] (p2)</p></div><div class="nugget-popup"><p>Excessive rainfall exceeded drainage capacity and run&ndash;off accumulated in topographical low points, causing surface water flooding on the street. (p9)</p></div></div></body></div>`)[0];
+                popup_5d7ed54b93caba0b18bddf05ef46e490.setContent(html_04fd04830d89cf1afcd3cdf5a809e3e9);
+            
+        
+
+        marker_a82d0a0440f4e7d035421218ae8dfbdc.bindPopup(popup_5d7ed54b93caba0b18bddf05ef46e490)
+        ;
+
+        
+    
+    
+            var marker_0329384f72541e2237fc2c6fbdb2b494 = L.marker(
+                [51.3281139, 0.432208],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_451dadec153274c43848057cba697d65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0329384f72541e2237fc2c6fbdb2b494.setIcon(icon_451dadec153274c43848057cba697d65);
+        
+    
+        var popup_d05f7dbd2dbe5a0f78a401f61d81450b = L.popup({});
+
+        
+            
+                var html_b88d51f53b07a0239739ae0b859c5226 = $(`<div id="html_b88d51f53b07a0239739ae0b859c5226" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Freelands Road, Snodland</h1><div class="nugget-popup"><p>Highway flooding reported on Freelands Road. [TAB] (p2)</p></div></div></body></div>`)[0];
+                popup_d05f7dbd2dbe5a0f78a401f61d81450b.setContent(html_b88d51f53b07a0239739ae0b859c5226);
+            
+        
+
+        marker_0329384f72541e2237fc2c6fbdb2b494.bindPopup(popup_d05f7dbd2dbe5a0f78a401f61d81450b)
+        ;
+
+        
+    
+    
+            var marker_0db295a3567194e7be93b889cc732459 = L.marker(
+                [51.3335989, 0.44141],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_773985dbebe94ea12c4bb3d6ade8e1a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0db295a3567194e7be93b889cc732459.setIcon(icon_773985dbebe94ea12c4bb3d6ade8e1a0);
+        
+    
+        var popup_3d32b6ce00da210691717930a0e80995 = L.popup({});
+
+        
+            
+                var html_d533d19fd6d863327d8f30ae9ac876ee = $(`<div id="html_d533d19fd6d863327d8f30ae9ac876ee" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Covey Hall Road, Snodland</h1><div class="nugget-popup"><p>Earliest report of flooding received at 20:28: a blocked drain caused flooding to the road and external flooding to a property. (p8)</p></div></div></body></div>`)[0];
+                popup_3d32b6ce00da210691717930a0e80995.setContent(html_d533d19fd6d863327d8f30ae9ac876ee);
+            
+        
+
+        marker_0db295a3567194e7be93b889cc732459.bindPopup(popup_3d32b6ce00da210691717930a0e80995)
+        ;
+
+        
+    
+    
+            var marker_dae9285a3a95a18efad510502f242438 = L.marker(
+                [51.3193509, 0.4385067],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_591b4dc971f838a583ba1113c33d5186 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dae9285a3a95a18efad510502f242438.setIcon(icon_591b4dc971f838a583ba1113c33d5186);
+        
+    
+        var popup_a5bd1470a4dfbe254fcd8f41f9ad23c4 = L.popup({});
+
+        
+            
+                var html_f74d1304b4fdf66ab644bc2a4e18d723 = $(`<div id="html_f74d1304b4fdf66ab644bc2a4e18d723" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brook Lane, Snodland</h1><div class="nugget-popup"><p>CCTV survey of highway drainage located a damaged pipe (found during post&ndash;event investigations); the damaged pipe was repaired in May 2020 and further drainage works are required. (p10)</p></div></div></body></div>`)[0];
+                popup_a5bd1470a4dfbe254fcd8f41f9ad23c4.setContent(html_f74d1304b4fdf66ab644bc2a4e18d723);
+            
+        
+
+        marker_dae9285a3a95a18efad510502f242438.bindPopup(popup_a5bd1470a4dfbe254fcd8f41f9ad23c4)
+        ;
+
+        
+    
+    
+            var marker_8ef6876d88ea3c9b78942b686dd1c2d5 = L.marker(
+                [51.2717306, 0.3566598],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_15830e9f58756b1b3d06c2ec2a5df166 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8ef6876d88ea3c9b78942b686dd1c2d5.setIcon(icon_15830e9f58756b1b3d06c2ec2a5df166);
+        
+    
+        var popup_1466b700d7035a3bc3ee2143c23e95b6 = L.popup({});
+
+        
+            
+                var html_4ee54388f0be5dbacfdba06955d534c8 = $(`<div id="html_4ee54388f0be5dbacfdba06955d534c8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tonbridge and Malling</h1><div class="nugget-popup"><p>Snodland, within Tonbridge and Malling, experienced surface&ndash;water flooding during the event; around 20 properties in Snodland were flooded (many internally). (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>around 20 properties (p1)</p></div></div></body></div>`)[0];
+                popup_1466b700d7035a3bc3ee2143c23e95b6.setContent(html_4ee54388f0be5dbacfdba06955d534c8);
+            
+        
+
+        marker_8ef6876d88ea3c9b78942b686dd1c2d5.bindPopup(popup_1466b700d7035a3bc3ee2143c23e95b6)
+        ;
+
+        
+    
+    
+            var marker_8401337eb77fd4316360db5234f0ea0e = L.marker(
+                [51.2070749, 0.7210362],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_7b846c32e8977ffb813eeb4930a7ff5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8401337eb77fd4316360db5234f0ea0e.setIcon(icon_7b846c32e8977ffb813eeb4930a7ff5b);
+        
+    
+        var popup_e2833c67cdb05918c4bc7d7214b381a5 = L.popup({});
+
+        
+            
+                var html_9267eb94a10938f2cc865559660162df = $(`<div id="html_9267eb94a10938f2cc865559660162df" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kent</h1><div class="nugget-popup"><p>Very heavy rainfall occurred county&ndash;wide on 10 June 2019, with parts of the county particularly badly affected and flooding reported in places such as Snodland. (p1)</p></div></div></body></div>`)[0];
+                popup_e2833c67cdb05918c4bc7d7214b381a5.setContent(html_9267eb94a10938f2cc865559660162df);
+            
+        
+
+        marker_8401337eb77fd4316360db5234f0ea0e.bindPopup(popup_e2833c67cdb05918c4bc7d7214b381a5)
+        ;
+
+        
+    
+    
+            var marker_cb7c925e1efe435bb4477af3bb4f8aba = L.marker(
+                [51.3307836506775, 0.44540565893173256],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_4adfc8f73a11354bad46bce4e1737963 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cb7c925e1efe435bb4477af3bb4f8aba.setIcon(icon_4adfc8f73a11354bad46bce4e1737963);
+        
+    
+        var popup_7c65609b07fd41bc0156397992e82038 = L.popup({});
+
+        
+            
+                var html_7665c3dc925fe567043e5623343b6742 = $(`<div id="html_7665c3dc925fe567043e5623343b6742" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Snodland</h1><div class="nugget-popup"><p>Around 20 properties were flooded by surface water; many of those were affected internally. (p1)</p></div><div class="nugget-popup"><p>Flooding across the town caused internal flooding to numerous properties, internal flooding at a retail depot, damage to vehicles at Lakeside, and internal flooding at St Katherine&#8217;s School (21 classrooms) which led to the school being closed for 2 days. Several roads experienced highway flooding. [IMG] (p2)</p></div><div class="nugget-popup"><p>Drainage network and watercourse infrastructure in Snodland were observed with blockages and reduced conveyance after the 10 June 2019 event: culvert inlets (e.g. at Paddlesworth Lake and Birling Road) had debris/litter lodged against security bars, a security screen at Saltings Way had significant debris accumulation, and standing water was observed in the open channel between Salting Road and the A228, indicating impaired drainage and local surface water pooling. (p4)</p></div><div class="nugget-popup"><p>Parts of the town experienced surface water flooding on the routes shown by the Environment Agency surface water flood map; locations of flooded properties correspond to the watercourse route through the town. The town's impermeable urban surfaces and local drainage arrangements contributed to surface water run&ndash;off and flooding of properties. [IMG] (p5)</p></div><div class="nugget-popup"><p>Intense rainfall produced significant overland flows that drained towards culverted watercourses and collected in topographical lows. Deep surface water flooding affected multiple streets (Recreational Avenue, Rectory Lane, Saltings Road). A blocked drain caused road flooding and external flooding to property (Covey Hall Road). Overland flow from a school playing field entered school buildings, affecting classrooms; sections of a flat roof collapsed and a private rising main surcharged within the main building causing extensive damage. KFRS attended reports of internal flooding at a property where water reached 6 inches. [TAB] (p8)</p></div><div class="nugget-popup"><p>Prolonged and intense rainfall on saturated ground caused widespread surface&ndash;water and overland flow across Snodland. Drainage capacity was exceeded and water accumulated in topographical low points, flooding multiple roads (Pridmore Road, Robert Road, Birling Road, Recreational Avenue, Rectory Close Oxford Street, Saltings Road) and entering buildings. At the school on St Katherines Lane overland flow entered the buildings affecting classrooms; sections of flat roof collapsed and the private rising main surcharged within the main building causing extensive damage. KFRS attended internal flooding at a property on St Katherines Lane; KCC Highways deployed a tanker at Lakeside to control floodwater. (p9)</p></div><div class="nugget-popup"><p>A heavy rainstorm (10 June 2019) produced extensive flooding from overland flows and overwhelmed drainage. Deep surface water collected at local low points and above the culverted watercourse, causing flooding to properties as water could not discharge quickly enough through the surface water sewer; floodwater drained away after the rainfall ceased. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>around 20 properties (p1)</p></div><div class="nugget-popup quant"><p>28 properties affected (aggregate); 21 classrooms affected at St Katherine&#8217;s School; 6 properties at Lakeside; multiple highway flooding incidents (roads named separately) [IMG] (p2)</p></div><div class="nugget-popup quant"><p>18 classrooms; 1 property (internal flooding); water depth 6 inches [TAB] (p8)</p></div><div class="nugget-popup quant"><p>18 classrooms; one property; 6 inches (water depth reported at one property) (p9)</p></div></div></body></div>`)[0];
+                popup_7c65609b07fd41bc0156397992e82038.setContent(html_7665c3dc925fe567043e5623343b6742);
+            
+        
+
+        marker_cb7c925e1efe435bb4477af3bb4f8aba.bindPopup(popup_7c65609b07fd41bc0156397992e82038)
+        ;
+
+        
+    
+    
+            var marker_3be02f764a39e908721e279e22954150 = L.marker(
+                [51.342944665244204, 0.2627640552737047],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_8f6c717e784ca4f3f278b5a94084f130 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3be02f764a39e908721e279e22954150.setIcon(icon_8f6c717e784ca4f3f278b5a94084f130);
+        
+    
+        var popup_06db300f2c3d51f051be037e8b49e593 = L.popup({});
+
+        
+            
+                var html_622d0818ee27abcab208a911c39c8b9a = $(`<div id="html_622d0818ee27abcab208a911c39c8b9a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Kingsdown</h1><div class="nugget-popup"><p>Described as being 'particularly badly affected' by the very heavy rainfall associated with the 10 June 2019 flood event (specific local flood impacts not detailed in this excerpt). (p1)</p></div></div></body></div>`)[0];
+                popup_06db300f2c3d51f051be037e8b49e593.setContent(html_622d0818ee27abcab208a911c39c8b9a);
+            
+        
+
+        marker_3be02f764a39e908721e279e22954150.bindPopup(popup_06db300f2c3d51f051be037e8b49e593)
+        ;
+
+        
+    
+    
+            var marker_33035e29390db75f5282f42b1a41d4fa = L.marker(
+                [51.3303854, 0.3590695],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_4421be8dad2bd40c58b8ba8d7a8b5a2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_33035e29390db75f5282f42b1a41d4fa.setIcon(icon_4421be8dad2bd40c58b8ba8d7a8b5a2e);
+        
+    
+        var popup_86e2e90894483e6e38c62c151a72778e = L.popup({});
+
+        
+            
+                var html_99daaf19738b65473a5e8fa35ff787c2 = $(`<div id="html_99daaf19738b65473a5e8fa35ff787c2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Vigo Village</h1><div class="nugget-popup"><p>Described as being 'particularly badly affected' by the very heavy rainfall associated with the 10 June 2019 flood event (specific local flood impacts not detailed in this excerpt). (p1)</p></div></div></body></div>`)[0];
+                popup_86e2e90894483e6e38c62c151a72778e.setContent(html_99daaf19738b65473a5e8fa35ff787c2);
+            
+        
+
+        marker_33035e29390db75f5282f42b1a41d4fa.bindPopup(popup_86e2e90894483e6e38c62c151a72778e)
+        ;
+
+        
+    
+    
+            var marker_b1e95e5c93448941cc48dae020912a94 = L.marker(
+                [51.39750895, 0.18022632679075817],
+                {}
+            ).addTo(map_7fbae0d9b25fac7d7b5b792912ddc16f);
+        
+    
+            var icon_2a2449268f5ffbb818f072125fdeb4a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b1e95e5c93448941cc48dae020912a94.setIcon(icon_2a2449268f5ffbb818f072125fdeb4a7);
+        
+    
+        var popup_f37b2c38151a67b1bcc702ecf8b1d603 = L.popup({});
+
+        
+            
+                var html_956bd9aa05276a31a84a2bcaf781c1ea = $(`<div id="html_956bd9aa05276a31a84a2bcaf781c1ea" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Swanley</h1><div class="nugget-popup"><p>Described as being 'particularly badly affected' by the very heavy rainfall associated with the 10 June 2019 flood event (specific local flood impacts not detailed in this excerpt). (p1)</p></div></div></body></div>`)[0];
+                popup_f37b2c38151a67b1bcc702ecf8b1d603.setContent(html_956bd9aa05276a31a84a2bcaf781c1ea);
+            
+        
+
+        marker_b1e95e5c93448941cc48dae020912a94.bindPopup(popup_f37b2c38151a67b1bcc702ecf8b1d603)
+        ;
+
+        
+    
+</script>
+</html>

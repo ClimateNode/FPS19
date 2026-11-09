@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_61cbc9251c2be0b8a180a2d3c9af589e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_61cbc9251c2be0b8a180a2d3c9af589e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_61cbc9251c2be0b8a180a2d3c9af589e = L.map(
+                "map_61cbc9251c2be0b8a180a2d3c9af589e",
+                {
+                    center: [53.7919383906521, -2.4778057854698057],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a42096dc6a072e30cb0cde4bade29eaf = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_a42096dc6a072e30cb0cde4bade29eaf.addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+    
+            var marker_3b1295133111efdc2738dbce6bedf755 = L.marker(
+                [53.7663092, -2.7594263],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_5cda40b251d94c07297b42c8f3a4f46a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3b1295133111efdc2738dbce6bedf755.setIcon(icon_5cda40b251d94c07297b42c8f3a4f46a);
+        
+    
+        var popup_440b6e65588cf6cc21a2dc7322aef918 = L.popup({});
+
+        
+            
+                var html_3271b2d99a8dd76df2600a7c4e6f45d8 = $(`<div id="html_3271b2d99a8dd76df2600a7c4e6f45d8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Greaves Town Lane, Preston</h1><div class="nugget-popup"><p>Roadway in Greaves Town was flooded (public highway) and required emergency response, as shown in Fig.2 (photograph of flooded street and a 'Flood' temporary sign). (p15)</p></div></div></body></div>`)[0];
+                popup_440b6e65588cf6cc21a2dc7322aef918.setContent(html_3271b2d99a8dd76df2600a7c4e6f45d8);
+            
+        
+
+        marker_3b1295133111efdc2738dbce6bedf755.bindPopup(popup_440b6e65588cf6cc21a2dc7322aef918)
+        ;
+
+        
+    
+    
+            var marker_fc260648135d34e34a268efdf18a2f2c = L.marker(
+                [53.86117, -2.5650887],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_193d66eb69b77613a59df2474903aaaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fc260648135d34e34a268efdf18a2f2c.setIcon(icon_193d66eb69b77613a59df2474903aaaa);
+        
+    
+        var popup_57ae92af2fe41c2de4b14aebb7af2338 = L.popup({});
+
+        
+            
+                var html_de6a47773f6e559f3dcedbd0ce4dfefd = $(`<div id="html_de6a47773f6e559f3dcedbd0ce4dfefd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancashire</h1><div class="nugget-popup"><p>Parts of the county were affected by flooding during the event on 1 June 2018. (p1)</p></div><div class="nugget-popup"><p>On the evening of 1 June 2018, very localised high&ndash;intensity downpours temporarily overwhelmed urban drainage systems across parts of Lancashire. Emergency responder records show flooding incidents in Leyland, Lea (Preston), Pilling (Wyre), Bacup, Accrington, Barnoldswick, Earby and Longridge. The event led to flooded highways and domestic property flooding. (p3)</p></div><div class="nugget-popup"><p>Part of Lancashire experienced flooding on 1 June 2018. (p10)</p></div><div class="nugget-popup"><p>Intense, concentrated rainfall on 1 June 2018 exceeded the capacity of local urban drainage (public and private) across the county, producing surface water flooding of highways, homes, gardens and garages and deep water running downhill on main roads. [PAG] (p13)</p></div><div class="nugget-popup"><p>Multiple reported flooding incidents across the county on 1 June 2018, affecting public highways and private property. Clusters of reports were noted particularly around Preston, Pendle and Rossendale; emergency services and water companies responded on the night. [IMG,PAG] (p14)</p></div><div class="nugget-popup"><p>On the night of 1 June 2018 intense rainfall overwhelmed many urban drainage networks across the county, producing standing water on public highways and causing towns and villages to be badly affected; people experienced damage to their homes and belongings and concern for personal safety. [PAG] (p17)</p></div><div class="nugget-popup"><p>Extreme rainfall on 1 June 2018 overwhelmed many urban drainage networks in parts of the county, producing surface water / urban flooding that entered homes and caused damage to people's homes and belongings and concern for personal safety. [PAG] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>60 homes; 19 homes flooded internally to at least one habitable room (p3)</p></div></div></body></div>`)[0];
+                popup_57ae92af2fe41c2de4b14aebb7af2338.setContent(html_de6a47773f6e559f3dcedbd0ce4dfefd);
+            
+        
+
+        marker_fc260648135d34e34a268efdf18a2f2c.bindPopup(popup_57ae92af2fe41c2de4b14aebb7af2338)
+        ;
+
+        
+    
+    
+            var marker_b699ece071b957abd820ee23827a3ea4 = L.marker(
+                [53.89728410091331, -2.903724352506046],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_72c78302e3b0c39d6e0a64c8d8b35425 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b699ece071b957abd820ee23827a3ea4.setIcon(icon_72c78302e3b0c39d6e0a64c8d8b35425);
+        
+    
+        var popup_4ad5d69992bbc226da374786fef5a371 = L.popup({});
+
+        
+            
+                var html_d6b382207009a302e709627bbdf9e98f = $(`<div id="html_d6b382207009a302e709627bbdf9e98f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wyre</h1><div class="nugget-popup"><p>Localised, high&ndash;intensity downpours on the evening of 1 June 2018 caused surface water/urban flooding in parts of Wyre (reports include Pilling), with drainage systems temporarily overwhelmed and incidents reported to the county council. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>60 homes flooded across affected locations (19 flooded internally to at least one habitable room) (p3)</p></div></div></body></div>`)[0];
+                popup_4ad5d69992bbc226da374786fef5a371.setContent(html_d6b382207009a302e709627bbdf9e98f);
+            
+        
+
+        marker_b699ece071b957abd820ee23827a3ea4.bindPopup(popup_4ad5d69992bbc226da374786fef5a371)
+        ;
+
+        
+    
+    
+            var marker_f05b995b9015fb35727a3697cdfaf1df = L.marker(
+                [53.9026441, -2.422856],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_a3b5c46b52d2d109bef7034479fce098 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f05b995b9015fb35727a3697cdfaf1df.setIcon(icon_a3b5c46b52d2d109bef7034479fce098);
+        
+    
+        var popup_413b470c2f0bbbe3a87523e6c7b7d012 = L.popup({});
+
+        
+            
+                var html_82f0ced25019d53ed13a625a8c17c44c = $(`<div id="html_82f0ced25019d53ed13a625a8c17c44c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ribble Valley</h1><div class="nugget-popup"><p>Areas within the district (notably Longridge) experienced surface water flooding when intense rainfall overwhelmed urban drainage, leading to flooded roads, properties, gardens and garages. (p13)</p></div></div></body></div>`)[0];
+                popup_413b470c2f0bbbe3a87523e6c7b7d012.setContent(html_82f0ced25019d53ed13a625a8c17c44c);
+            
+        
+
+        marker_f05b995b9015fb35727a3697cdfaf1df.bindPopup(popup_413b470c2f0bbbe3a87523e6c7b7d012)
+        ;
+
+        
+    
+    
+            var marker_d62df56132dd42b9eca93ac447e6f0ee = L.marker(
+                [53.8611712, -2.5650945],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_a99a13c225431cf6bc9d7fc35f21ddb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d62df56132dd42b9eca93ac447e6f0ee.setIcon(icon_a99a13c225431cf6bc9d7fc35f21ddb1);
+        
+    
+        var popup_1fda30c15ca684914419a88d0a104b59 = L.popup({});
+
+        
+            
+                var html_7abcdbade3e323acc3c06c30d5c49725 = $(`<div id="html_7abcdbade3e323acc3c06c30d5c49725" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancashire</h1><div class="nugget-popup"><p>Reported flooding incidents on 1 June 2018 with emergency responses to flooded public highways and private properties. [IMG] (p14)</p></div></div></body></div>`)[0];
+                popup_1fda30c15ca684914419a88d0a104b59.setContent(html_7abcdbade3e323acc3c06c30d5c49725);
+            
+        
+
+        marker_d62df56132dd42b9eca93ac447e6f0ee.bindPopup(popup_1fda30c15ca684914419a88d0a104b59)
+        ;
+
+        
+    
+    
+            var marker_7cda97cd038616dd3489fffbd000aa78 = L.marker(
+                [53.6109397, -2.8565713],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_34cef44d23e2f948a9e751b76251f58d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7cda97cd038616dd3489fffbd000aa78.setIcon(icon_34cef44d23e2f948a9e751b76251f58d);
+        
+    
+        var popup_4942ac740a2c294844f9c5414d97e090 = L.popup({});
+
+        
+            
+                var html_17b85d9a7b580c1af636ff74e0743fdf = $(`<div id="html_17b85d9a7b580c1af636ff74e0743fdf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Lancashire</h1><div class="nugget-popup"><p>Reported flooding incidents on 1st June 2018 affecting public highways and private property (incidents indicated by red dots on the county map). [IMG] (p14)</p></div></div></body></div>`)[0];
+                popup_4942ac740a2c294844f9c5414d97e090.setContent(html_17b85d9a7b580c1af636ff74e0743fdf);
+            
+        
+
+        marker_7cda97cd038616dd3489fffbd000aa78.bindPopup(popup_4942ac740a2c294844f9c5414d97e090)
+        ;
+
+        
+    
+    
+            var marker_004044574621418f2a81326379b4daf2 = L.marker(
+                [53.7607317, -2.3900549],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_8420049e5c92adec1ed841f655d06643 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_004044574621418f2a81326379b4daf2.setIcon(icon_8420049e5c92adec1ed841f655d06643);
+        
+    
+        var popup_db218d876e1de3354275a173179dc4aa = L.popup({});
+
+        
+            
+                var html_0498313b74cd2a5ceb74542dcafc9ce6 = $(`<div id="html_0498313b74cd2a5ceb74542dcafc9ce6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hyndburn</h1><div class="nugget-popup"><p>Reported flooding incidents on 1st June 2018 affecting public highways and private property, consistent with the map showing clustered incidents in eastern parts of the county. [IMG] (p14)</p></div></div></body></div>`)[0];
+                popup_db218d876e1de3354275a173179dc4aa.setContent(html_0498313b74cd2a5ceb74542dcafc9ce6);
+            
+        
+
+        marker_004044574621418f2a81326379b4daf2.bindPopup(popup_db218d876e1de3354275a173179dc4aa)
+        ;
+
+        
+    
+    
+            var marker_621912a2f7e98ce4eea01c287934a4ff = L.marker(
+                [53.8790402, -2.1717795],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_1edcb3b9461ae24ceb41285cd4aa6ea6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_621912a2f7e98ce4eea01c287934a4ff.setIcon(icon_1edcb3b9461ae24ceb41285cd4aa6ea6);
+        
+    
+        var popup_622e906411f24271749e9b3ed781f2c5 = L.popup({});
+
+        
+            
+                var html_859d3912c9145a19c30e9d2edf498f80 = $(`<div id="html_859d3912c9145a19c30e9d2edf498f80" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pendle</h1><div class="nugget-popup"><p>Clusters of reported flooding incidents on 1 June 2018 affecting public highways and private property in the Pendle area; emergency services (Police, Lancashire Fire and Rescue Service), LCC Highways and water companies responded to reports that night. [IMG] (p14)</p></div></div></body></div>`)[0];
+                popup_622e906411f24271749e9b3ed781f2c5.setContent(html_859d3912c9145a19c30e9d2edf498f80);
+            
+        
+
+        marker_621912a2f7e98ce4eea01c287934a4ff.bindPopup(popup_622e906411f24271749e9b3ed781f2c5)
+        ;
+
+        
+    
+    
+            var marker_e1628fb42b3f0a8627d652fe0fb96413 = L.marker(
+                [53.70249, -2.201046],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_d8b82ff6a23768e4a47b3a0458d281eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e1628fb42b3f0a8627d652fe0fb96413.setIcon(icon_d8b82ff6a23768e4a47b3a0458d281eb);
+        
+    
+        var popup_787465d69b0c5b993f6c58980e184c23 = L.popup({});
+
+        
+            
+                var html_c1896edfda8fad3957e6a6e1b8993ed9 = $(`<div id="html_c1896edfda8fad3957e6a6e1b8993ed9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rossendale</h1><div class="nugget-popup"><p>Clusters of reported flooding incidents on 1 June 2018 affecting public highways and private property in the Rossendale area; emergency services (Police, Lancashire Fire and Rescue Service), LCC Highways and water companies responded to reports that night. [IMG] (p14)</p></div></div></body></div>`)[0];
+                popup_787465d69b0c5b993f6c58980e184c23.setContent(html_c1896edfda8fad3957e6a6e1b8993ed9);
+            
+        
+
+        marker_e1628fb42b3f0a8627d652fe0fb96413.bindPopup(popup_787465d69b0c5b993f6c58980e184c23)
+        ;
+
+        
+    
+    
+            var marker_aa8649b50cb0a0d54f9083fa912c292e = L.marker(
+                [53.690483, -2.6991336],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_2a5bbfe0e4e872af7f3f85099b8d7344 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aa8649b50cb0a0d54f9083fa912c292e.setIcon(icon_2a5bbfe0e4e872af7f3f85099b8d7344);
+        
+    
+        var popup_cd6f98746dc849ea36d4ac6ef777ac96 = L.popup({});
+
+        
+            
+                var html_1408cc93e2edd6672a1053208fed5302 = $(`<div id="html_1408cc93e2edd6672a1053208fed5302" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Leyland</h1><div class="nugget-popup"><p>Localised, high&ndash;intensity downpours on the evening of 1 June 2018 temporarily overwhelmed urban drainage in Leyland, causing surface water/urban flooding reported to the county council; residential properties were among those flooded as part of the wider event. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>60 homes flooded across affected locations (19 flooded internally to at least one habitable room) (p3)</p></div></div></body></div>`)[0];
+                popup_cd6f98746dc849ea36d4ac6ef777ac96.setContent(html_1408cc93e2edd6672a1053208fed5302);
+            
+        
+
+        marker_aa8649b50cb0a0d54f9083fa912c292e.bindPopup(popup_cd6f98746dc849ea36d4ac6ef777ac96)
+        ;
+
+        
+    
+    
+            var marker_0a9af49351f040b855a3184c9b18c1cd = L.marker(
+                [53.7024932, -2.201046],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_c0a3ebd5b33763ec3cd1a10eff644f1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0a9af49351f040b855a3184c9b18c1cd.setIcon(icon_c0a3ebd5b33763ec3cd1a10eff644f1d);
+        
+    
+        var popup_ca9c4ac96707fcf6ea961c7e086e5b80 = L.popup({});
+
+        
+            
+                var html_050d54388f42f210da7e517a72f4c3a6 = $(`<div id="html_050d54388f42f210da7e517a72f4c3a6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bacup</h1><div class="nugget-popup"><p>Localised, high&ndash;intensity downpours on the evening of 1 June 2018 temporarily overwhelmed drainage in Bacup, producing surface water/urban flooding incidents reported to the county council. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>60 homes flooded across affected locations (19 flooded internally to at least one habitable room) (p3)</p></div></div></body></div>`)[0];
+                popup_ca9c4ac96707fcf6ea961c7e086e5b80.setContent(html_050d54388f42f210da7e517a72f4c3a6);
+            
+        
+
+        marker_0a9af49351f040b855a3184c9b18c1cd.bindPopup(popup_ca9c4ac96707fcf6ea961c7e086e5b80)
+        ;
+
+        
+    
+    
+            var marker_71c0c2273db3b4bf740a4c25b76462cc = L.marker(
+                [53.7541156, -2.3655434],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_ce45a58d2c9e11952325f92ee8cd9cf9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_71c0c2273db3b4bf740a4c25b76462cc.setIcon(icon_ce45a58d2c9e11952325f92ee8cd9cf9);
+        
+    
+        var popup_6b79ca810ce2afaa7319b14e36a01228 = L.popup({});
+
+        
+            
+                var html_3994083610d3ab91e8d8bcdcf74a04f3 = $(`<div id="html_3994083610d3ab91e8d8bcdcf74a04f3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Accrington</h1><div class="nugget-popup"><p>Localised, high&ndash;intensity downpours on the evening of 1 June 2018 temporarily overwhelmed drainage in Accrington, causing surface water/urban flooding incidents reported to the county council. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>60 homes flooded across affected locations (19 flooded internally to at least one habitable room) (p3)</p></div></div></body></div>`)[0];
+                popup_6b79ca810ce2afaa7319b14e36a01228.setContent(html_3994083610d3ab91e8d8bcdcf74a04f3);
+            
+        
+
+        marker_71c0c2273db3b4bf740a4c25b76462cc.bindPopup(popup_6b79ca810ce2afaa7319b14e36a01228)
+        ;
+
+        
+    
+    
+            var marker_e19f4a5a409c6f83774b7f51cfa90125 = L.marker(
+                [53.9170798, -2.187322],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_fc5d706c88af1b933f5f2e37b93fe67a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e19f4a5a409c6f83774b7f51cfa90125.setIcon(icon_fc5d706c88af1b933f5f2e37b93fe67a);
+        
+    
+        var popup_0abdeb7d06fc604b7bc6d5a41fd74cad = L.popup({});
+
+        
+            
+                var html_2b374e5893df0c807ab5f7f088df72fd = $(`<div id="html_2b374e5893df0c807ab5f7f088df72fd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barnoldswick</h1><div class="nugget-popup"><p>Localised, high&ndash;intensity downpours on the evening of 1 June 2018 temporarily overwhelmed drainage in Barnoldswick, producing surface water/urban flooding incidents reported to the county council. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>60 homes flooded across affected locations (19 flooded internally to at least one habitable room) (p3)</p></div></div></body></div>`)[0];
+                popup_0abdeb7d06fc604b7bc6d5a41fd74cad.setContent(html_2b374e5893df0c807ab5f7f088df72fd);
+            
+        
+
+        marker_e19f4a5a409c6f83774b7f51cfa90125.bindPopup(popup_0abdeb7d06fc604b7bc6d5a41fd74cad)
+        ;
+
+        
+    
+    
+            var marker_c3599b636490576ebac174de9ef84f9c = L.marker(
+                [53.914757, -2.1356368],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_28cca3cdeea1922350ceb6211b22ec14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c3599b636490576ebac174de9ef84f9c.setIcon(icon_28cca3cdeea1922350ceb6211b22ec14);
+        
+    
+        var popup_fbb24e7f1d539ab38f436ec13fd26d8f = L.popup({});
+
+        
+            
+                var html_bdcb6d4c6e2bff17a5d3549df4b52f5d = $(`<div id="html_bdcb6d4c6e2bff17a5d3549df4b52f5d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Earby</h1><div class="nugget-popup"><p>Localised, high&ndash;intensity downpours on the evening of 1 June 2018 temporarily overwhelmed drainage in Earby, causing surface water/urban flooding incidents reported to the county council. (p3)</p></div><div class="nugget-popup"><p>Area within the IDB district (Earby/Salterforth area) was affected by the flood on 1 June 2018. (p10)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>60 homes flooded across affected locations (19 flooded internally to at least one habitable room) (p3)</p></div></div></body></div>`)[0];
+                popup_fbb24e7f1d539ab38f436ec13fd26d8f.setContent(html_bdcb6d4c6e2bff17a5d3549df4b52f5d);
+            
+        
+
+        marker_c3599b636490576ebac174de9ef84f9c.bindPopup(popup_fbb24e7f1d539ab38f436ec13fd26d8f)
+        ;
+
+        
+    
+    
+            var marker_174b018b4adb3fafffd9be4474771456 = L.marker(
+                [53.83152822214879, -2.598802818264975],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_fd62a27dbbdae0f8d40bdf2b047812f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_174b018b4adb3fafffd9be4474771456.setIcon(icon_fd62a27dbbdae0f8d40bdf2b047812f5);
+        
+    
+        var popup_6a9ca6313fc56406a688dcd586ccdb24 = L.popup({});
+
+        
+            
+                var html_f81c6d9fded6c8e37ededad55e9a5ce7 = $(`<div id="html_f81c6d9fded6c8e37ededad55e9a5ce7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Longridge</h1><div class="nugget-popup"><p>Flooding incidents were reported to the county council on the evening of 1 June 2018. The report identifies that the flooding was caused by very localised, high&ndash;intensity downpours that temporarily overwhelmed urban drainage systems. (p3)</p></div><div class="nugget-popup"><p>Intense bursts of heavy rainfall exceeded local drainage capacity, causing surface water flooding in the town: highways, homes, gardens and garages were flooded; deep water rushed downhill on main roads and eyewitnesses reported rain being forced inside buildings through window frames. (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>60 homes flooded across all reported locations; 19 properties flooded internally across all reported locations (p3)</p></div></div></body></div>`)[0];
+                popup_6a9ca6313fc56406a688dcd586ccdb24.setContent(html_f81c6d9fded6c8e37ededad55e9a5ce7);
+            
+        
+
+        marker_174b018b4adb3fafffd9be4474771456.bindPopup(popup_6a9ca6313fc56406a688dcd586ccdb24)
+        ;
+
+        
+    
+    
+            var marker_96598669cb563508d9ab9d9f8fa1aca1 = L.marker(
+                [53.75873650867573, -2.7040270676854843],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_cdad2034371ba7eeb4d7ce2f91944651 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_96598669cb563508d9ab9d9f8fa1aca1.setIcon(icon_cdad2034371ba7eeb4d7ce2f91944651);
+        
+    
+        var popup_690cde61483c90871774e4babd355fe3 = L.popup({});
+
+        
+            
+                var html_4ab60af6bc339222d0e3844566520841 = $(`<div id="html_4ab60af6bc339222d0e3844566520841" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Preston</h1><div class="nugget-popup"><p>A notably larger cluster of reported flooding incidents is shown near Preston. Emergency responders attended on the night of 1 June 2018 to reports of flooding affecting public highways and private property in the affected area. [IMG] (p14)</p></div><div class="nugget-popup"><p>Experienced roadway flooding in areas such as Greaves Town, with emergency services responding to reports of flooded roads and private property on 1 June 2018. (p15)</p></div></div></body></div>`)[0];
+                popup_690cde61483c90871774e4babd355fe3.setContent(html_4ab60af6bc339222d0e3844566520841);
+            
+        
+
+        marker_96598669cb563508d9ab9d9f8fa1aca1.bindPopup(popup_690cde61483c90871774e4babd355fe3)
+        ;
+
+        
+    
+    
+            var marker_e64e50b2d84b0c344a47e03e8b16972d = L.marker(
+                [53.6531915, -2.6294313],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_1308151818ee21954233a8cb2a7e3d65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e64e50b2d84b0c344a47e03e8b16972d.setIcon(icon_1308151818ee21954233a8cb2a7e3d65);
+        
+    
+        var popup_03c4981d259122f1e235323f3fc5c0e0 = L.popup({});
+
+        
+            
+                var html_4f22e3b1691c6e9f8a4c3ee44698eacf = $(`<div id="html_4f22e3b1691c6e9f8a4c3ee44698eacf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chorley</h1><div class="nugget-popup"><p>Reported flooding incidents on 1st June 2018 affecting public highways and private property (incidents shown as red dots on the county map in central Lancashire). [IMG] (p14)</p></div></div></body></div>`)[0];
+                popup_03c4981d259122f1e235323f3fc5c0e0.setContent(html_4f22e3b1691c6e9f8a4c3ee44698eacf);
+            
+        
+
+        marker_e64e50b2d84b0c344a47e03e8b16972d.bindPopup(popup_03c4981d259122f1e235323f3fc5c0e0)
+        ;
+
+        
+    
+    
+            var marker_41e54f66db43323da14906e17708e33f = L.marker(
+                [53.790726, -2.2439196],
+                {}
+            ).addTo(map_61cbc9251c2be0b8a180a2d3c9af589e);
+        
+    
+            var icon_14b363a5f34b073ed81b3daa257ff008 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_41e54f66db43323da14906e17708e33f.setIcon(icon_14b363a5f34b073ed81b3daa257ff008);
+        
+    
+        var popup_eca7a4cca75c9e203cfc35070f72d08c = L.popup({});
+
+        
+            
+                var html_8ee8387f5746fb1aabe51435526e7320 = $(`<div id="html_8ee8387f5746fb1aabe51435526e7320" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Burnley</h1><div class="nugget-popup"><p>Reported flooding incidents on 1st June 2018 affecting public highways and private property, as part of the cluster of incidents in eastern/northern Lancashire shown on the map. [IMG] (p14)</p></div></div></body></div>`)[0];
+                popup_eca7a4cca75c9e203cfc35070f72d08c.setContent(html_8ee8387f5746fb1aabe51435526e7320);
+            
+        
+
+        marker_41e54f66db43323da14906e17708e33f.bindPopup(popup_eca7a4cca75c9e203cfc35070f72d08c)
+        ;
+
+        
+    
+</script>
+</html>

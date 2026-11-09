@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d4666766278e5df4f39b6d4f734c5495 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d4666766278e5df4f39b6d4f734c5495" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d4666766278e5df4f39b6d4f734c5495 = L.map(
+                "map_d4666766278e5df4f39b6d4f734c5495",
+                {
+                    center: [52.46288035, 1.7295131],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2fcf92a39e6c5a83f450845f6c92a77f = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_2fcf92a39e6c5a83f450845f6c92a77f.addTo(map_d4666766278e5df4f39b6d4f734c5495);
+    
+            var marker_3971c7b0ca735cf27fa8f7f9f81f6723 = L.marker(
+                [52.4639795, 1.7296338],
+                {}
+            ).addTo(map_d4666766278e5df4f39b6d4f734c5495);
+        
+    
+            var icon_e69a14e7ea9f308102b93d2697a2057f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3971c7b0ca735cf27fa8f7f9f81f6723.setIcon(icon_e69a14e7ea9f308102b93d2697a2057f);
+        
+    
+        var popup_86171acb1d32544a1431ae2987732454 = L.popup({});
+
+        
+            
+                var html_c95a792cd513ae1abc6ba9a58ea98db5 = $(`<div id="html_c95a792cd513ae1abc6ba9a58ea98db5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kirkley Stream</h1><div class="nugget-popup"><p>Blockages, debris and excessive vegetation within the channel at several locations contributed to the drainage system being exceeded and to surcharge of surface water systems, which in turn caused internal flooding of properties and highway flooding in the area. [PAG,MUL] (p3)</p></div><div class="nugget-popup"><p>Blockages at several locations along Kirkley Stream &mdash; caused by structures, debris, excessive vegetation and illegally dumped/fly&ndash;tipped material washed downstream &mdash; contributed to channel blockages, impeding drainage and exacerbating flooding. Some surface water outlets were at bed level and could not drain into the stream. [PAG] (p4)</p></div><div class="nugget-popup"><p>Subject of a commissioned full topographical survey and of actions to consider limiting new discharges related to development following the flood investigation. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>33 domestic properties [PAG,MUL] (p3)</p></div></div></body></div>`)[0];
+                popup_86171acb1d32544a1431ae2987732454.setContent(html_c95a792cd513ae1abc6ba9a58ea98db5);
+            
+        
+
+        marker_3971c7b0ca735cf27fa8f7f9f81f6723.bindPopup(popup_86171acb1d32544a1431ae2987732454)
+        ;
+
+        
+    
+    
+            var marker_c8c6b5fece3c1b1ccede819482b125dd = L.marker(
+                [52.4556905, 1.7150105],
+                {}
+            ).addTo(map_d4666766278e5df4f39b6d4f734c5495);
+        
+    
+            var icon_e09f42587b7450548890b7ac232bf3ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c8c6b5fece3c1b1ccede819482b125dd.setIcon(icon_e09f42587b7450548890b7ac232bf3ab);
+        
+    
+        var popup_34bb74dc14d29d95e15c82faa42a8574 = L.popup({});
+
+        
+            
+                var html_4bf95e7ff381f933da267e1efaac2740 = $(`<div id="html_4bf95e7ff381f933da267e1efaac2740" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Velda Close, Lowestoft</h1><div class="nugget-popup"><p>Site of a flood event that was the subject of a Section 19 (Flood and Water Management Act 2010) investigation by Suffolk County Council as Lead Local Flood Authority. (p1)</p></div><div class="nugget-popup"><p>Internal flooding of domestic properties affecting main living areas; flooding of outbuildings and gardens; public highway flooded for approx. 50 m to an approximate depth of 450 mm; local Anglian Water surface water drainage system was surcharged. (p2)</p></div><div class="nugget-popup"><p>Identified in the action plan for Suffolk County Council Highways to evaluate the highway surface&ndash;water drainage system and its design capacity. [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>33 domestic properties; approx. 50 m of public highway; approx. 450 mm depth (p2)</p></div></div></body></div>`)[0];
+                popup_34bb74dc14d29d95e15c82faa42a8574.setContent(html_4bf95e7ff381f933da267e1efaac2740);
+            
+        
+
+        marker_c8c6b5fece3c1b1ccede819482b125dd.bindPopup(popup_34bb74dc14d29d95e15c82faa42a8574)
+        ;
+
+        
+    
+    
+            var marker_685551c97dc85db2f06d75d9251f90e5 = L.marker(
+                [52.4568382, 1.7162772],
+                {}
+            ).addTo(map_d4666766278e5df4f39b6d4f734c5495);
+        
+    
+            var icon_d7310632e1e960143b2ec87e2d536d01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_685551c97dc85db2f06d75d9251f90e5.setIcon(icon_d7310632e1e960143b2ec87e2d536d01);
+        
+    
+        var popup_781e04b029ac0f032a26e8d035ca583a = L.popup({});
+
+        
+            
+                var html_e5821a8e3833474b4489551543dc1d20 = $(`<div id="html_e5821a8e3833474b4489551543dc1d20" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Aldwyck Way, Lowestoft</h1><div class="nugget-popup"><p>Site of a flood event that was the subject of a Section 19 (Flood and Water Management Act 2010) investigation by Suffolk County Council as Lead Local Flood Authority. (p1)</p></div><div class="nugget-popup"><p>Internal flooding of domestic properties affecting main living areas; flooding of outbuildings and gardens; public highway flooded for approx. 50 m to an approximate depth of 450 mm; local Anglian Water surface water drainage system was surcharged. (p2)</p></div><div class="nugget-popup"><p>The audible early warning system on Aldwyck Way (owned by Cotman Housing Association) failed to activate during the flood event. (p4)</p></div><div class="nugget-popup"><p>Highway surface water drainage capacity at this location was identified for evaluation and reporting following the flood investigation (i.e. the highway drainage was a concern in the flood event). [TAB] (p6)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>33 domestic properties; approx. 50 m of public highway; approx. 450 mm depth (p2)</p></div></div></body></div>`)[0];
+                popup_781e04b029ac0f032a26e8d035ca583a.setContent(html_e5821a8e3833474b4489551543dc1d20);
+            
+        
+
+        marker_685551c97dc85db2f06d75d9251f90e5.bindPopup(popup_781e04b029ac0f032a26e8d035ca583a)
+        ;
+
+        
+    
+    
+            var marker_a68550b23ae86bfdd860ff0e368a029a = L.marker(
+                [52.4627014, 1.7285585],
+                {}
+            ).addTo(map_d4666766278e5df4f39b6d4f734c5495);
+        
+    
+            var icon_a0ee7e41085ff297273d3d8e80daeb39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a68550b23ae86bfdd860ff0e368a029a.setIcon(icon_a0ee7e41085ff297273d3d8e80daeb39);
+        
+    
+        var popup_71af78e1ad4739b1b8d51de38e662db7 = L.popup({});
+
+        
+            
+                var html_43f8d42a5909d406f08cc8e7ee167a14 = $(`<div id="html_43f8d42a5909d406f08cc8e7ee167a14" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tom Crisp Way, Lowestoft</h1><div class="nugget-popup"><p>Highway surface water drainage capacity at this location was identified for evaluation and reporting following the flood investigation (i.e. the highway drainage was a concern in the flood event). [TAB] (p6)</p></div></div></body></div>`)[0];
+                popup_71af78e1ad4739b1b8d51de38e662db7.setContent(html_43f8d42a5909d406f08cc8e7ee167a14);
+            
+        
+
+        marker_a68550b23ae86bfdd860ff0e368a029a.bindPopup(popup_71af78e1ad4739b1b8d51de38e662db7)
+        ;
+
+        
+    
+    
+            var marker_49f80260563abe17e0978efe3bc99703 = L.marker(
+                [52.47663, 1.7537638],
+                {}
+            ).addTo(map_d4666766278e5df4f39b6d4f734c5495);
+        
+    
+            var icon_7c484b36576e7c524e8580330070f1d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_49f80260563abe17e0978efe3bc99703.setIcon(icon_7c484b36576e7c524e8580330070f1d2);
+        
+    
+        var popup_71c865e0d472bdd1dfdbfd2b404e3da6 = L.popup({});
+
+        
+            
+                var html_54d2cffee92029b4144e5207f33cb12f = $(`<div id="html_54d2cffee92029b4144e5207f33cb12f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lowestoft</h1><div class="nugget-popup"><p>The town containing Velda Close and Aldwyck Way, which were the subject locations of a Section 19 flood investigation by Suffolk County Council (LLFA). (p1)</p></div><div class="nugget-popup"><p>Parts of Lowestoft (specifically Velda Close and Aldwyck Way) experienced internal flooding of domestic properties (main living areas), flooding to outbuildings and gardens, and highway flooding; the Anglian Water surface water drainage system was surcharged during the event. (p2)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>33 domestic properties; approx. 50 m of public highway; approx. 450 mm depth (p2)</p></div></div></body></div>`)[0];
+                popup_71c865e0d472bdd1dfdbfd2b404e3da6.setContent(html_54d2cffee92029b4144e5207f33cb12f);
+            
+        
+
+        marker_49f80260563abe17e0978efe3bc99703.bindPopup(popup_71c865e0d472bdd1dfdbfd2b404e3da6)
+        ;
+
+        
+    
+    
+            var marker_b62cf2583a5fe3e24148f1d8ed0e8133 = L.marker(
+                [52.4614425, 1.7338348],
+                {}
+            ).addTo(map_d4666766278e5df4f39b6d4f734c5495);
+        
+    
+            var icon_dd3ec8ebcf9b011dc037599e0780f319 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b62cf2583a5fe3e24148f1d8ed0e8133.setIcon(icon_dd3ec8ebcf9b011dc037599e0780f319);
+        
+    
+        var popup_b2ba37887a9201704281eabb9167f009 = L.popup({});
+
+        
+            
+                var html_0932a2af601dd312905d534abaaae05d = $(`<div id="html_0932a2af601dd312905d534abaaae05d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kirkley</h1><div class="nugget-popup"><p>Residential area experienced internal flooding of domestic properties (main living areas) and flooding of outbuildings and gardens. The public highway flooded over a stretch of approximately 50 m to around 450 mm depth. The Anglian Water surface water drainage system and highway drainage were exceeded/surcharged. There is a history of repeat internal flooding reported in September 2002, September/October 2006 and 2013. [IMG,PAG,MUL] (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>33 domestic properties; 50 m of public highway; 450 mm depth (public highway); 300 mm internal depth [IMG,PAG,MUL] (p3)</p></div></div></body></div>`)[0];
+                popup_b2ba37887a9201704281eabb9167f009.setContent(html_0932a2af601dd312905d534abaaae05d);
+            
+        
+
+        marker_b62cf2583a5fe3e24148f1d8ed0e8133.bindPopup(popup_b2ba37887a9201704281eabb9167f009)
+        ;
+
+        
+    
+</script>
+</html>

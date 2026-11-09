@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_07af0c9a73a377268f87bce908aca776 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_07af0c9a73a377268f87bce908aca776" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_07af0c9a73a377268f87bce908aca776 = L.map(
+                "map_07af0c9a73a377268f87bce908aca776",
+                {
+                    center: [52.00099238621393, -0.5025473998264615],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_28750f429e280575226c60d2b2b2ff4d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_28750f429e280575226c60d2b2b2ff4d.addTo(map_07af0c9a73a377268f87bce908aca776);
+    
+            var marker_6e06905f50efb9a5b6f4971acd97cd03 = L.marker(
+                [52.0151535, -0.6264464],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_e6556f63bc46631e1cfe6939ec2fa1f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6e06905f50efb9a5b6f4971acd97cd03.setIcon(icon_e6556f63bc46631e1cfe6939ec2fa1f7);
+        
+    
+        var popup_4ea5f9a1dbf24afb9f3cd4b11ca0dfe0 = L.popup({});
+
+        
+            
+                var html_09873c7c1269dda615111a4ebc309f0b = $(`<div id="html_09873c7c1269dda615111a4ebc309f0b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Aspley House</h1><div class="nugget-popup"><p>During post&ndash;event investigations after the 07 Jun 2016 &ndash; 12 Jun 2016 flooding, a pond in the grounds of Aspley House was uncovered and reinstated; the pond is thought to provide a small volume of storage via an overflow pipe from the local drainage system (part of the response/maintenance actions related to the event). [IMG] (p15)</p></div><div class="nugget-popup"><p>Drains at Aspley House were investigated and cleared as part of the flood response. [TAB] (p30)</p></div></div></body></div>`)[0];
+                popup_4ea5f9a1dbf24afb9f3cd4b11ca0dfe0.setContent(html_09873c7c1269dda615111a4ebc309f0b);
+            
+        
+
+        marker_6e06905f50efb9a5b6f4971acd97cd03.bindPopup(popup_4ea5f9a1dbf24afb9f3cd4b11ca0dfe0)
+        ;
+
+        
+    
+    
+            var marker_b67a308947aca733d0acc9c4dbb82fc4 = L.marker(
+                [52.0701329, -0.6287023],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_b42d1b2017095fff9f9def524a5a1164 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b67a308947aca733d0acc9c4dbb82fc4.setIcon(icon_b42d1b2017095fff9f9def524a5a1164);
+        
+    
+        var popup_c575b5491b25188081cf458b87d3c58b = L.popup({});
+
+        
+            
+                var html_fd23344d86112fb9fdf79470335b4821 = $(`<div id="html_fd23344d86112fb9fdf79470335b4821" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cranfield University</h1><div class="nugget-popup"><p>Identified as one of three concentrated flood&ndash;report areas; internal flooding within the university campus was reported. (p8)</p></div><div class="nugget-popup"><p>Flooding was reported on the Cranfield University campus, with inundation along University Way and College Road and a number of campus buildings affected. (p16)</p></div><div class="nugget-popup"><p>Flooding occurred on the campus during the intense rainfall on 7 June 2016; local drainage and surface water runoff overwhelmed drainage capacity leading to flooding of the university area. (p26)</p></div><div class="nugget-popup"><p>Surface&ndash;water runoff from the university campus and airport grounds increased flows to the receiving system; drainage and riparian assets within the campus/airport were identified as needing improvement to reduce runoff and future flooding risk. [TAB] (p39)</p></div><div class="nugget-popup"><p>Overland surface water flow from the airfield and campus drainage influenced local surface water sewer outfall. Culverted sections within the airfield/campus were identified for condition assessment and maintenance to ensure unrestricted flow and to reduce flood risk to the university grounds and the local area. [TAB] (p40)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 80 properties affected across Cranfield and on the Cranfield University campus; 59 internal flooding; 49 residential (p16)</p></div></div></body></div>`)[0];
+                popup_c575b5491b25188081cf458b87d3c58b.setContent(html_fd23344d86112fb9fdf79470335b4821);
+            
+        
+
+        marker_b67a308947aca733d0acc9c4dbb82fc4.bindPopup(popup_c575b5491b25188081cf458b87d3c58b)
+        ;
+
+        
+    
+    
+            var marker_5d9fc2c8e1ab8bc8ed08dccab7330e7a = L.marker(
+                [52.0168398, -0.2433318],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_687a3f764413110636d5d562d0aafc8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5d9fc2c8e1ab8bc8ed08dccab7330e7a.setIcon(icon_687a3f764413110636d5d562d0aafc8e);
+        
+    
+        var popup_d10f2e9b8dbb008c688f8b673c6b576e = L.popup({});
+
+        
+            
+                var html_f80397c1d0ae0ca5ea023441d37cb891 = $(`<div id="html_f80397c1d0ae0ca5ea023441d37cb891" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pix Brook</h1><div class="nugget-popup"><p>The Pix Brook flows through Stotfold and is implicated in local flooding that affected properties in the village (notably on Coppice Mead and Brook Street). (p10)</p></div><div class="nugget-popup"><p>Culverts along the immediate area of Pix Brook were inspected and cleared of obstructions as part of the response to local flooding; culvert condition was a focus for reducing local flood impacts around Stotfold/Coppice Mead. (p13)</p></div><div class="nugget-popup"><p>The Pix Brook flowed out of bank and caused flooding in Stotfold on 12 June 2016, leading to inundation of Brook Street and Coppice Mead. [PAG] (p20)</p></div><div class="nugget-popup"><p>Out&ndash;of&ndash;bank flows from Pix Brook caused flooding in Stotfold (notably Brook Street and Coppice Mead) on 12 June 2016. Debris was conveyed along the brook and in the 4 July 2015 event overwhelmed and blocked the trash screen at Brook Street causing rapid upstream water level rise and local flooding. Debris was also photographed at the face of the box culvert at Hitchin Road after the June 2016 event. [PAG,IMG,MUL] (p21)</p></div><div class="nugget-popup"><p>Pix Brook overflowed during the June 2016 event causing bank erosion downstream of the confluence of the old and new channels; channel alterations (new channel with the old channel used as an overflow) have been made; evidence of erosion protection was observed and a number of properties constructed brick walls along the left bank in response to bank erosion/flooding. The IDB undertook hydraulic and blockage modelling of the Pix Brook and found that areas affected in 2016 are not well represented on the Environment Agency Flood Map for Planning. [PAG] (p22)</p></div><div class="nugget-popup"><p>Pix Brook overtopped/blocked channel flows during the June 2016 event, with debris partially blocking a box culvert at Hitchin Road and water reaching the level of air bricks on new properties. Brick walls were observed along the brook bank (photographed 2016) and floodwaters reached ground&ndash;floor ventilation openings, evidencing property inundation risk. (p23)</p></div><div class="nugget-popup"><p>The Pix Brook experienced out&ndash;of&ndash;bank flows during the event, causing flooding in Stotfold. (p25)</p></div><div class="nugget-popup"><p>The channel capacity was exceeded and water flowed out of the Pix Brook at susceptible locations; raised water levels were exacerbated by debris and culvert restrictions causing out&ndash;of&ndash;bank flows. (p27)</p></div><div class="nugget-popup"><p>Culverts on Pix Brook were inspected and debris removed by IDB officers to address local flooding and reduce obstruction to flow. [TAB] (p30)</p></div><div class="nugget-popup"><p>Flooding along the Pix Brook caused flood risk within Stotfold; the brook's behaviour and catchment response are identified as key drivers of local flooding and the report recommends a catchment&ndash;wide study (including upstream Hertfordshire) and assessment of the Standalone Farm Flood Storage Reservoir operating instructions to understand and mitigate future floods. [TAB] (p44)</p></div><div class="nugget-popup"><p>Pix Brook overtopped/caused flooding that affected Stotfold and its infrastructure, contributing to debris and blockages on downstream channels and highway assets; prompted recommendations for a catchment&ndash;wide study, modelling review and changes to asset management. [TAB,PAG] (p45)</p></div><div class="nugget-popup"><p>Pix Brook carried a significant debris load (including watercress and woody debris) from adjacent conservation woodland; debris accumulation and movement during flood flows contributed to blockages and increased flood risk in Stotfold and along the Pix Brook corridor. [TAB,PAG] (p46)</p></div><div class="nugget-popup"><p>The brook has a significant debris load that contributes to blockages and increases local flood risk; debris and blockages at structures (culverts/trash screens) were identified as a cause of flooding risk and must be allowed for in screen design and maintenance. [TAB,PAG] (p47)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 properties; 6 properties [PAG] (p20)</p></div><div class="nugget-popup quant"><p>11 properties; 6 properties (internal flooding) [PAG,IMG,MUL] (p21)</p></div></div></body></div>`)[0];
+                popup_d10f2e9b8dbb008c688f8b673c6b576e.setContent(html_f80397c1d0ae0ca5ea023441d37cb891);
+            
+        
+
+        marker_5d9fc2c8e1ab8bc8ed08dccab7330e7a.bindPopup(popup_d10f2e9b8dbb008c688f8b673c6b576e)
+        ;
+
+        
+    
+    
+            var marker_77a7aecf9ed1b6d8b46f11b9a0a90b83 = L.marker(
+                [52.0763881, -0.2714684],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_f749dfdceac73423fde7bc65fc853700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_77a7aecf9ed1b6d8b46f11b9a0a90b83.setIcon(icon_f749dfdceac73423fde7bc65fc853700);
+        
+    
+        var popup_b4c78c7fef631e12cd55f61787159211 = L.popup({});
+
+        
+            
+                var html_0b0865b14d32966563e4fe6e85a3302f = $(`<div id="html_0b0865b14d32966563e4fe6e85a3302f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Ivel</h1><div class="nugget-popup"><p>Flooding affected residential properties adjacent to the River Ivel corridor in Stotfold, with the majority of affected properties reported on Coppice Mead and Brook Street. [IMG] (p10)</p></div></div></body></div>`)[0];
+                popup_b4c78c7fef631e12cd55f61787159211.setContent(html_0b0865b14d32966563e4fe6e85a3302f);
+            
+        
+
+        marker_77a7aecf9ed1b6d8b46f11b9a0a90b83.bindPopup(popup_b4c78c7fef631e12cd55f61787159211)
+        ;
+
+        
+    
+    
+            var marker_370ada862b04a0c1f255f2f6a0abeb98 = L.marker(
+                [52.0154978, -0.6167142],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_316b793af387a6e6d517788bf9667f1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_370ada862b04a0c1f255f2f6a0abeb98.setIcon(icon_316b793af387a6e6d517788bf9667f1a);
+        
+    
+        var popup_b23e9a8ef33a6b47470a41f159967ec3 = L.popup({});
+
+        
+            
+                var html_90904b13b351e2771a29665c8ba84393 = $(`<div id="html_90904b13b351e2771a29665c8ba84393" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bedford Road, Aspley Guise</h1><div class="nugget-popup"><p>Surface water flooding inundated Bedford Road, affecting the highway and adjacent low&ndash;lying areas and disrupting transport along this route. [IMG] (p7)</p></div><div class="nugget-popup"><p>These lower&ndash;lying areas received surface water flows routed from Church Street, Woburn Lane and West Hill during the 07 Jun 2016 &ndash; 12 Jun 2016 event. The configuration of highway levels and low property thresholds contributed to floodwater entering properties in this area. [PAG] (p15)</p></div><div class="nugget-popup"><p>A resident on Bedford Road in Aspley submitted correspondence regarding the flood event, indicating that the area was affected by the flood. (p16)</p></div><div class="nugget-popup"><p>Heavy localized rainfall produced surface water runoff along West Hill and Bedford Road which overwhelmed highway drainage. Surface water and surcharged public foul sewers flowed onto the carriageway (kerb overtopping), flooded pavements and entered properties causing both external and internal flooding; many properties lacked raised thresholds so had no protection from internal flooding. (p25)</p></div><div class="nugget-popup"><p>Flooding affected the area through which a culvert runs (Bedford Road and Aspley House), leading to a recommendation to coordinate an investigation of that culvert and to promote property resilience measures. [TAB] (p37)</p></div><div class="nugget-popup"><p>Surface water overwhelmed highway drainage leading to water retention in the road and risk to adjacent properties; recommendation to increase kerb heights and provide downstream drainage improvements and SuDS integration. [TAB] (p38)</p></div></div></body></div>`)[0];
+                popup_b23e9a8ef33a6b47470a41f159967ec3.setContent(html_90904b13b351e2771a29665c8ba84393);
+            
+        
+
+        marker_370ada862b04a0c1f255f2f6a0abeb98.bindPopup(popup_b23e9a8ef33a6b47470a41f159967ec3)
+        ;
+
+        
+    
+    
+            var marker_93432e38cf823edf222f41d7f7470a50 = L.marker(
+                [52.0140235, -0.6282296],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_e5cbda299ddc6b0a2cd1a5170eab3102 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_93432e38cf823edf222f41d7f7470a50.setIcon(icon_e5cbda299ddc6b0a2cd1a5170eab3102);
+        
+    
+        var popup_abdd52c56e738126fb43ccf4aed9af33 = L.popup({});
+
+        
+            
+                var html_7ccb44730f7ac160024fcd17a831f551 = $(`<div id="html_7ccb44730f7ac160024fcd17a831f551" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Square, Aspley Guise</h1><div class="nugget-popup"><p>Surface water flooding affected The Square area, inundating the roadway and adjacent low&ndash;lying spaces. (p7)</p></div><div class="nugget-popup"><p>These lower&ndash;lying areas received surface water flows routed from Church Street, Woburn Lane and West Hill during the 07 Jun 2016 &ndash; 12 Jun 2016 event. The configuration of highway levels and low property thresholds contributed to floodwater entering properties in this area. [PAG] (p15)</p></div><div class="nugget-popup"><p>Properties and the local highway drainage in The Square were affected by flooding, leading to suggestions for Property Resilience Measures and investigation/maintenance of drainage. [TAB] (p37)</p></div><div class="nugget-popup"><p>Highway drainage overwhelmed during the event, with surface water being retained within the road; recommended raising kerb heights to provide protection to properties and downstream works to collect and discharge retained water. [TAB,PAG] (p38)</p></div></div></body></div>`)[0];
+                popup_abdd52c56e738126fb43ccf4aed9af33.setContent(html_7ccb44730f7ac160024fcd17a831f551);
+            
+        
+
+        marker_93432e38cf823edf222f41d7f7470a50.bindPopup(popup_abdd52c56e738126fb43ccf4aed9af33)
+        ;
+
+        
+    
+    
+            var marker_4a0126c707a55d90c1193d19bd8a512b = L.marker(
+                [52.0119096, -0.6322064],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_32bd7dfbee056a8d40f038ce8f0baa23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4a0126c707a55d90c1193d19bd8a512b.setIcon(icon_32bd7dfbee056a8d40f038ce8f0baa23);
+        
+    
+        var popup_8683204f3db8427f097b9a2f3ff11920 = L.popup({});
+
+        
+            
+                var html_3e52f57c826f499423b2179944a4baa2 = $(`<div id="html_3e52f57c826f499423b2179944a4baa2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Hill, Aspley Guise</h1><div class="nugget-popup"><p>Surface water flooding occurred on West Hill, flooding the highway and nearby low&ndash;lying areas and impacting local transport. [IMG] (p7)</p></div><div class="nugget-popup"><p>Local topography caused surface water to flow along Woburn Lane and West Hill toward the lower&ndash;lying Bedford Road and The Square during the 07 Jun 2016 &ndash; 12 Jun 2016 event; road levels and dropped kerbs allowed runoff to access properties. (p15)</p></div><div class="nugget-popup"><p>Heavy localized rainfall produced surface water runoff along West Hill and Bedford Road which overwhelmed highway drainage. Surface water and surcharged public foul sewers flowed onto the carriageway (kerb overtopping), flooded pavements and entered properties causing both external and internal flooding; many properties lacked raised thresholds so had no protection from internal flooding. (p25)</p></div><div class="nugget-popup"><p>Flooding in West Hill was associated with a culvert and highway drainage issues; this prompted recommendations to investigate the culvert and to promote property resilience measures for residents. [TAB] (p37)</p></div><div class="nugget-popup"><p>Surface water overwhelmed highway drainage leading to water retention in the road and risk to adjacent properties; recommendation to increase kerb heights and provide downstream drainage improvements and SuDS integration. [TAB] (p38)</p></div></div></body></div>`)[0];
+                popup_8683204f3db8427f097b9a2f3ff11920.setContent(html_3e52f57c826f499423b2179944a4baa2);
+            
+        
+
+        marker_4a0126c707a55d90c1193d19bd8a512b.bindPopup(popup_8683204f3db8427f097b9a2f3ff11920)
+        ;
+
+        
+    
+    
+            var marker_3863bb5704b9b16bec35a54d573c6025 = L.marker(
+                [52.0662664, -0.6130284],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_64a568fa6fd20b6f26bab27371aa589d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3863bb5704b9b16bec35a54d573c6025.setIcon(icon_64a568fa6fd20b6f26bab27371aa589d);
+        
+    
+        var popup_899f5139a7fececd826e5f9597464a2b = L.popup({});
+
+        
+            
+                var html_d3e6736a475f2ce01cf4ba90cd7f2d75 = $(`<div id="html_d3e6736a475f2ce01cf4ba90cd7f2d75" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street, Cranfield</h1><div class="nugget-popup"><p>Area identified as one of three concentrated flood&ndash;report areas; the majority of internal (property) flooding reported in the village occurred along High Street and Merchant Lane. (p8)</p></div><div class="nugget-popup"><p>Majority of internal flooding was reported along High Street; some properties reported basement flooding with water depths in excess of 1 m. [IMG] (p9)</p></div><div class="nugget-popup"><p>High Street in Cranfield was affected by flooding and was cleansed by the CBC Waste Team as part of the post&ndash;flood response. (p11)</p></div><div class="nugget-popup"><p>A single property on the High Street experienced internal flooding following the event in Cranfield. (p12)</p></div><div class="nugget-popup"><p>Surface water exceeded the carriageway at low points and flowed onto properties which are lower than the road level; residents reported flooding of properties on the High Street. CBC cleared gullies along the High Street on 11 Jun to restore drainage; one gully at the junction with Merchant Lane was found defective. [PAG] (p17)</p></div><div class="nugget-popup"><p>Gullies along the High Street were emptied and connections rodded on 11 Jun; a gully at the junction of High Street and Merchant Lane was recorded as defective (likely broken connection); some gully connections were obstructed with debris/construction material. Speed tables at the Merchant Lane junction may have blocked surface water flow during rainfall causing accumulation and flooding of lower sections of the carriageway. Properties on the High Street are lower than the carriageway and standing water was reported to have been driven through by vehicles, potentially causing water to exceed the carriageway and affect low points and properties. [PAG] (p18)</p></div><div class="nugget-popup"><p>Properties on the High Street had thresholds lower than the carriageway and surrounding land; standing water on the road overtopped the carriageway at low points (residents reported cars driving through standing water contributing to this). Increased traffic through the village (due to other routes being closed/impassable) was reported at the time. CBC Highways had previously attempted to provide protection to properties. [PAG] (p19)</p></div><div class="nugget-popup"><p>During the 7 June 2016 event highway drains in the High Street lacked capacity, causing surface water ponding that exceeded the carriageway at susceptible points; speed tables increased local ponding and traffic may have driven water off the highway. (p26)</p></div><div class="nugget-popup"><p>Highway drainage defects (including issues associated with service ducting) were identified and recommended for investigation and maintenance to address highway flooding and surface water entering the drainage system. [TAB] (p39)</p></div><div class="nugget-popup"><p>Surface water ponding and flooding of the highway with a risk to adjacent property thresholds; known drainage defects (including issues associated with service ducting) identified prompting recommendations for kerb height increases, gully cleaning and highway drainage maintenance to protect properties. [TAB,PAG] (p40)</p></div><div class="nugget-popup"><p>Recommendations target improvements to the surface water network and receiving systems particularly along Merchant Lane and High Street, indicating these streets experienced surface water flooding/drainage problems during the event. [TAB] (p41)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (p12)</p></div></div></body></div>`)[0];
+                popup_899f5139a7fececd826e5f9597464a2b.setContent(html_d3e6736a475f2ce01cf4ba90cd7f2d75);
+            
+        
+
+        marker_3863bb5704b9b16bec35a54d573c6025.bindPopup(popup_899f5139a7fececd826e5f9597464a2b)
+        ;
+
+        
+    
+    
+            var marker_9862a0cdc83fb8255be8bd656792dd19 = L.marker(
+                [52.0701055, -0.6110168],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_460f899da53c32da6d872b8c2014d7ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9862a0cdc83fb8255be8bd656792dd19.setIcon(icon_460f899da53c32da6d872b8c2014d7ff);
+        
+    
+        var popup_28fd796da129a7fc813af0e01c565d81 = L.popup({});
+
+        
+            
+                var html_132244232bbb9d05247c1350cc7bc4c1 = $(`<div id="html_132244232bbb9d05247c1350cc7bc4c1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Merchant Lane, Cranfield</h1><div class="nugget-popup"><p>Internal flooding was reported along Merchant Lane (part of the concentrated High Street/Merchant Lane area), resulting in internal flooding of properties during the event. [IMG] (p8)</p></div><div class="nugget-popup"><p>Merchant Lane in Cranfield was affected by flooding and was cleansed by the CBC Waste Team as part of the post&ndash;flood response. (p11)</p></div><div class="nugget-popup"><p>Surface water runoff and sewer discharge routes along Merchant Lane contributed to accumulation of water within the carriageway; a defective gully at the junction with High Street was identified and gulley connections were found obstructed, which likely affected drainage and may have exacerbated local flooding. CBC attended to gully cleansing and rodding in the area during the event. [PAG] (p17)</p></div><div class="nugget-popup"><p>Surface&ndash;water runoff from the Airfield and ponding on the carriageway during the 7 June 2016 rainfall caused flooding in the Merchants Lane/Maltings Close area; a vegetated boundary ditch limited drainage and adjacent hardstanding reduced infiltration, contributing to the flooding. (p26)</p></div><div class="nugget-popup"><p>Surface water sewer outfall at Merchant Lane was affected/blocked and was cleared by Anglian Water following the flood. [TAB] (p30)</p></div><div class="nugget-popup"><p>Surface water overwhelmed/blocked the surface water sewer outfall on Merchant Lane; responsible parties investigated system performance and arranged for clearing of the outfall to restore drainage. (p32)</p></div><div class="nugget-popup"><p>Highway drainage within Merchant Lane was identified for further investigation and maintenance to reduce the risk of surface water flooding. [TAB] (p39)</p></div><div class="nugget-popup"><p>Surface water flooding/overland flow affected the ditch along Merchant Lane; the ditch and surface water sewer outfall were identified as needing maintenance so overland flow from the airfield can be collected and to reduce surface water ponding on the highway. [TAB,PAG] (p40)</p></div><div class="nugget-popup"><p>The surface water sewer outfall at Merchant Lane required inspection/maintenance to ensure a free discharge; a small ditch discharge pipe impacted sewer operation, contributing to drainage failure and localised surface water flooding risk along Merchant Lane. [TAB,PAG] (p41)</p></div></div></body></div>`)[0];
+                popup_28fd796da129a7fc813af0e01c565d81.setContent(html_132244232bbb9d05247c1350cc7bc4c1);
+            
+        
+
+        marker_9862a0cdc83fb8255be8bd656792dd19.bindPopup(popup_28fd796da129a7fc813af0e01c565d81)
+        ;
+
+        
+    
+    
+            var marker_cb60be221c0033a779b1ed3918bc807f = L.marker(
+                [52.0849265, -0.6162623],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_013dbb9495a18a9bdc5b586916fa37cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cb60be221c0033a779b1ed3918bc807f.setIcon(icon_013dbb9495a18a9bdc5b586916fa37cf);
+        
+    
+        var popup_d11a75462853de32a9f488c651c464a6 = L.popup({});
+
+        
+            
+                var html_1aaa19f654642a036807a301d17bf712 = $(`<div id="html_1aaa19f654642a036807a301d17bf712" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Crawley Road, Cranfield</h1><div class="nugget-popup"><p>Identified as one of three concentrated areas of flooding reports along Crawley Road. Map annotations show Crawley Road adjacent to areas at risk of 1&ndash;in&ndash;100&ndash;year surface water flooding. [IMG] (p8)</p></div><div class="nugget-popup"><p>Crawley Road in Cranfield was affected by flooding and was cleansed by the CBC Waste Team as part of the post&ndash;flood response. (p11)</p></div><div class="nugget-popup"><p>Properties on Crawley Road are located in a natural low spot and were reported by owners to be at risk from runoff from land to the south; highway drainage was reported to have broken connections at a number of points (possibly related to recent service ducting work). A historic ditch along the highway boundary may have been infilled or culverted over time, altering drainage and contributing to flood risk to properties. (p18)</p></div><div class="nugget-popup"><p>Runoff from land to the south and surface&ndash;water ponding on the carriageway during the 7 June 2016 rainfall caused water to collect along Crawley Road; exceeded highway drainage capacity, loss/poor condition of ditches and a likely blocked/broken drainage connection led to flooding around Crawley Road. (p26)</p></div><div class="nugget-popup"><p>Highway drainage was overwhelmed and ditches to the south had been lost or heavily vegetated, reducing conveyance and contributing to surface&ndash;water flooding affecting the road and nearby areas. [TAB] (p39)</p></div><div class="nugget-popup"><p>Highway drainage defects (including those associated with service ducting) contributed to surface water ponding on the road and a risk to nearby property thresholds; recommendations include drainage maintenance and planning controls to limit surface water runoff. [TAB,PAG] (p40)</p></div></div></body></div>`)[0];
+                popup_d11a75462853de32a9f488c651c464a6.setContent(html_1aaa19f654642a036807a301d17bf712);
+            
+        
+
+        marker_cb60be221c0033a779b1ed3918bc807f.bindPopup(popup_d11a75462853de32a9f488c651c464a6)
+        ;
+
+        
+    
+    
+            var marker_fe509c4e950e9c23fed0d27adf227564 = L.marker(
+                [52.0690223, -0.6101107],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_7a746943f28a5b3835b440041aaa08c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fe509c4e950e9c23fed0d27adf227564.setIcon(icon_7a746943f28a5b3835b440041aaa08c9);
+        
+    
+        var popup_0158a3ffe7bbe2edfbacb1f90af76c6b = L.popup({});
+
+        
+            
+                var html_92343f7c0326c3fb23da557b9caaf1f4 = $(`<div id="html_92343f7c0326c3fb23da557b9caaf1f4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Maltings Close, Cranfield</h1><div class="nugget-popup"><p>Internal flooding reported at Maltings Close and within Cranfield University Campus; identified as one of three distinct concentrated flooding locations. (p8)</p></div><div class="nugget-popup"><p>Floodwaters entered properties from both the front and rear, associated with runoff from the adjacent airfield and connection to a heavily vegetated boundary ditch; occupants reported direct inundation of properties. [PAG,IMG] (p17)</p></div><div class="nugget-popup"><p>Surface&ndash;water runoff from the Airfield and carriageway ponding during the 7 June 2016 rainfall caused flooding at Maltings Close; poor ditch drainage (vegetation) and surrounding hardstanding limited outfall and infiltration, contributing to local flooding. (p26)</p></div></div></body></div>`)[0];
+                popup_0158a3ffe7bbe2edfbacb1f90af76c6b.setContent(html_92343f7c0326c3fb23da557b9caaf1f4);
+            
+        
+
+        marker_fe509c4e950e9c23fed0d27adf227564.bindPopup(popup_0158a3ffe7bbe2edfbacb1f90af76c6b)
+        ;
+
+        
+    
+    
+            var marker_5d596f00777dd78ea8675be27ea1d744 = L.marker(
+                [51.8844344, -0.5186353],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_fce3abe8ebfab1db7cc7458553eb2dda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5d596f00777dd78ea8675be27ea1d744.setIcon(icon_fce3abe8ebfab1db7cc7458553eb2dda);
+        
+    
+        var popup_e9be65ef97cfbecd9ba10d400bd130b7 = L.popup({});
+
+        
+            
+                var html_8377be2b6993f40d247c30110e600b9a = $(`<div id="html_8377be2b6993f40d247c30110e600b9a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street South, Dunstable</h1><div class="nugget-popup"><p>Internal flooding in properties along High Street; some basements contained water depths in excess of 1 m. [IMG] (p9)</p></div><div class="nugget-popup"><p>Surface water flowed along High Street South through commercial properties. Property thresholds were typically level with the footway and some properties had lower ingress routes (including basement entrances), allowing floodwater to enter; one property with a flood gate still experienced basement flooding, indicating other routes of ingress. [PAG] (p18)</p></div><div class="nugget-popup"><p>Surface water flowed along High Street South during the 7 June 2016 event, passing through affected properties; low kerbs and commercial thresholds offered little protection and passing vehicles generated bow waves that increased property flooding. (p26)</p></div><div class="nugget-popup"><p>Properties on High Street South were identified as suitable for property&ndash;level flood resilience (PRM) measures due to flood impact or risk; commercial occupiers have expressed interest and potential part&ndash;funding was suggested (including from Anglian Water). [TAB] (p42)</p></div><div class="nugget-popup"><p>Surface water and sewer&ndash;related flooding affected High Street South during the event, overwhelming local drainage and sewer systems and placing commercial properties at risk; measures such as PRM, sewer inspection/maintenance, and SuDS retrofit are recommended in response. [TAB] (p43)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>in excess of 1 m (basement water depth) [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_e9be65ef97cfbecd9ba10d400bd130b7.setContent(html_8377be2b6993f40d247c30110e600b9a);
+            
+        
+
+        marker_5d596f00777dd78ea8675be27ea1d744.bindPopup(popup_e9be65ef97cfbecd9ba10d400bd130b7)
+        ;
+
+        
+    
+    
+            var marker_161ea7e6f677df2c731a8e4285afa7ae = L.marker(
+                [51.8903073, -0.5340785],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_6f4808c070eb086fea49754d7f29f991 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_161ea7e6f677df2c731a8e4285afa7ae.setIcon(icon_6f4808c070eb086fea49754d7f29f991);
+        
+    
+        var popup_e2cdeba419415e91084d640ad57ca7c6 = L.popup({});
+
+        
+            
+                var html_974a88fb2b447262fc19809e2c0d16ef = $(`<div id="html_974a88fb2b447262fc19809e2c0d16ef" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Westfield Road, Dunstable</h1><div class="nugget-popup"><p>Significant internal flooding was reported along Westfield Road, with some properties experiencing basement flooding in excess of 1 m. [IMG] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>in excess of 1 m (basement water depth) [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_e2cdeba419415e91084d640ad57ca7c6.setContent(html_974a88fb2b447262fc19809e2c0d16ef);
+            
+        
+
+        marker_161ea7e6f677df2c731a8e4285afa7ae.bindPopup(popup_e2cdeba419415e91084d640ad57ca7c6)
+        ;
+
+        
+    
+    
+            var marker_2bfabd3cc87dc209e1d59989da3bec85 = L.marker(
+                [51.8864428, -0.519405],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_c76221215b0d38b3d72a449f60592357 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2bfabd3cc87dc209e1d59989da3bec85.setIcon(icon_c76221215b0d38b3d72a449f60592357);
+        
+    
+        var popup_53cb9ddb77229f1ce9104ab6b92461e4 = L.popup({});
+
+        
+            
+                var html_e51a80bbc6a451699a83acbb70239f29 = $(`<div id="html_e51a80bbc6a451699a83acbb70239f29" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Street, Dunstable</h1><div class="nugget-popup"><p>Flooding occurred beneath the busway on the A505, inundating the carriageway/underpass and affecting the road corridor. (p9)</p></div><div class="nugget-popup"><p>Road (A505 Church Street) closed to traffic due to heavy rainfall and flooding. (p12)</p></div><div class="nugget-popup"><p>A surface&ndash;water flow path was identified running north along High Street South, through commercial properties, and across Church Street. The Environment Agency map identified High Street South and Church Street as high risk and the flow followed local topography to low points during the event, causing flooding along this route. (p18)</p></div><div class="nugget-popup"><p>A surface water flow path was identified running north along High Street South through commercial properties, across Church Street and north toward the Leisure Centre. A large number of gullies were observed along Church Street and Luton Road to collect surface water runoff. [PAG] (p19)</p></div><div class="nugget-popup"><p>Church Street, being significantly lower than surrounding ground under the A505 busway, experienced large amounts of surface water ponding during the 7 June 2016 rainfall; surface water entering the foul sewer is thought to have overloaded the system and caused foul flooding under the busway. (p26)</p></div><div class="nugget-popup"><p>Highway drainage issues and flooding affecting Church Street prompted a recommendation to establish a Flood Response Plan and to investigate and carry out maintenance of the highway drainage system. [TAB] (p42)</p></div><div class="nugget-popup"><p>Surface water runoff and sewer issues caused flooding on Church Street during the event; actions advised include inspecting and maintaining surface water and foul sewers to outfall, understanding pump station and storage shaft capacity, and developing highway drainage improvements or a flood response plan to manage road flooding and closures. [TAB,PAG] (p43)</p></div></div></body></div>`)[0];
+                popup_53cb9ddb77229f1ce9104ab6b92461e4.setContent(html_e51a80bbc6a451699a83acbb70239f29);
+            
+        
+
+        marker_2bfabd3cc87dc209e1d59989da3bec85.bindPopup(popup_53cb9ddb77229f1ce9104ab6b92461e4)
+        ;
+
+        
+    
+    
+            var marker_a8bf97afc0c03ae90cac3fe68de9553b = L.marker(
+                [51.8867939, -0.5220918],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_fc3e50982f2476b1bcde4f90c536885b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a8bf97afc0c03ae90cac3fe68de9553b.setIcon(icon_fc3e50982f2476b1bcde4f90c536885b);
+        
+    
+        var popup_70b4d1a95ba4ffbb86493220a3c896a9 = L.popup({});
+
+        
+            
+                var html_aed25aef0f96c8d90e7ff773179d6058 = $(`<div id="html_aed25aef0f96c8d90e7ff773179d6058" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street North, Dunstable</h1><div class="nugget-popup"><p>Internal flooding in properties along High Street; some basements contained water depths in excess of 1 m. [IMG] (p9)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>water depth in basements: in excess of 1 m [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_70b4d1a95ba4ffbb86493220a3c896a9.setContent(html_aed25aef0f96c8d90e7ff773179d6058);
+            
+        
+
+        marker_a8bf97afc0c03ae90cac3fe68de9553b.bindPopup(popup_70b4d1a95ba4ffbb86493220a3c896a9)
+        ;
+
+        
+    
+    
+            var marker_b8d23cc58cb6417f412f3b1f7c9bddff = L.marker(
+                [52.0123996, -0.2344371],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_f36edbbda0c2e1306ae4f5c7d67e3096 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b8d23cc58cb6417f412f3b1f7c9bddff.setIcon(icon_f36edbbda0c2e1306ae4f5c7d67e3096);
+        
+    
+        var popup_848e516eb221bebfa1726b282a570528 = L.popup({});
+
+        
+            
+                var html_ec629b1802dbb2535ff29f7facb1884e = $(`<div id="html_ec629b1802dbb2535ff29f7facb1884e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Coppice Mead, Stotfold</h1><div class="nugget-popup"><p>Residential properties on Coppice Mead were flooded during the event; the report states the majority of affected properties in Stotfold were situated on Coppice Mead. (p10)</p></div><div class="nugget-popup"><p>Out&ndash;of&ndash;bank flows from the Pix Brook flooded Brook Street and Coppice Mead on 12 June 2016, inundating the local area and affecting residential properties. (p20)</p></div><div class="nugget-popup"><p>Properties on Coppice Mead were observed to have built brick walls along the Pix Brook left bank and erosion protection was recorded nearby during the 2016 site visit, indicating bank erosion and flood impacts from the Pix Brook. (p22)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 properties affected; 6 properties internally (Brook Street and Coppice Mead) (p20)</p></div></div></body></div>`)[0];
+                popup_848e516eb221bebfa1726b282a570528.setContent(html_ec629b1802dbb2535ff29f7facb1884e);
+            
+        
+
+        marker_b8d23cc58cb6417f412f3b1f7c9bddff.bindPopup(popup_848e516eb221bebfa1726b282a570528)
+        ;
+
+        
+    
+    
+            var marker_07f6b853e2e9f01fbca01c43b2b84b3c = L.marker(
+                [52.0138423, -0.2313026],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_984286c619a8b9bb6129166fc83d4693 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_07f6b853e2e9f01fbca01c43b2b84b3c.setIcon(icon_984286c619a8b9bb6129166fc83d4693);
+        
+    
+        var popup_1e7d24b99a92d3685eaed8d446c0a420 = L.popup({});
+
+        
+            
+                var html_92d17fe75d77e4b09468d5f31e981341 = $(`<div id="html_92d17fe75d77e4b09468d5f31e981341" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brook Street, Stotfold</h1><div class="nugget-popup"><p>Residential properties on Brook Street were flooded during the event; the report identifies Brook Street as one of the main locations of affected properties in Stotfold. [IMG] (p10)</p></div><div class="nugget-popup"><p>Flooding on 12 June 2016 affected Brook Street (part of the Brook Street and Coppice Mead area). The Brook Street culverts and trash screen have been implicated in past and recent flood incidents and debris was associated with culvert blockage issues. [PAG] (p20)</p></div><div class="nugget-popup"><p>Flooding occurred at Brook Street on 12 June 2016 due to out&ndash;of&ndash;bank flows from the Pix Brook. On 4 July 2015 debris conveyed along Pix Brook overwhelmed and blocked the trash screen on the upstream side of Brook Street, causing rapid upstream water level rise and local flooding; the trash screen was removed by the IDB under Police instruction. [PAG,MUL] (p21)</p></div><div class="nugget-popup"><p>The redevelopment off Brook Street was observed to have suffered flooding in the 2016 event, with water&ndash;marks evident up to the air bricks. The area was largely unoccupied at the time but showed clear flood impact; the supporting Flood Risk Assessment did not consider culvert blockage and the observed flood levels indicate the event magnitude approached the design allowances used. [PAG] (p22)</p></div><div class="nugget-popup"><p>In the June 2016 flood event floodwater reached the level of airbricks on new properties and left visible water marks on external brick walls. The development&#8217;s Flood Risk Assessment did not consider potential culvert blockage, indicating a risk that floor&ndash;level mitigation advice may have been insufficient for the observed event. (p23)</p></div><div class="nugget-popup"><p>The culvert at Brook Street presented a restriction to Pix Brook flow, likely causing localised flooding when downstream levels were already raised; channel geometry immediately up&ndash; and downstream (including sharp changes of direction) increased the potential for silt/debris deposition and out&ndash;of&ndash;bank flows. (p27)</p></div><div class="nugget-popup"><p>The culvert at Brook Street and Hitchin Road was implicated in local flood risk; alterations to the culvert were recommended to be evaluated because of effects on downstream water levels and associated flood risk, and to reduce potential blockage and highway flooding. [TAB] (p45)</p></div><div class="nugget-popup"><p>A back channel running parallel to the gardens of Brook Street accumulated debris which could enter the Pix Brook during flood flows, increasing flood risk to gardens and properties adjacent to that back channel. [TAB] (p46)</p></div><div class="nugget-popup"><p>Culverts at Brook Street and Hitchin Road had compromised performance during flood conditions, contributing to road flooding; actions recommended include review of Risk Assessment and Method Statement for culvert maintenance during floods and advising the highway authority of asset performance issues. [TAB] (p47)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 properties affected; 6 properties internally (Brook Street and Coppice Mead) (p20)</p></div><div class="nugget-popup quant"><p>11 properties; 6 properties (internal flooding) [PAG,MUL] (p21)</p></div></div></body></div>`)[0];
+                popup_1e7d24b99a92d3685eaed8d446c0a420.setContent(html_92d17fe75d77e4b09468d5f31e981341);
+            
+        
+
+        marker_07f6b853e2e9f01fbca01c43b2b84b3c.bindPopup(popup_1e7d24b99a92d3685eaed8d446c0a420)
+        ;
+
+        
+    
+    
+            var marker_fbad3a59d5160c639309efc3803995d3 = L.marker(
+                [52.0089332, -0.2403982],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_09d254d92f8af46084508c484ad545b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fbad3a59d5160c639309efc3803995d3.setIcon(icon_09d254d92f8af46084508c484ad545b5);
+        
+    
+        var popup_c768fcd50b312cd1acb18fb3fb6eb32b = L.popup({});
+
+        
+            
+                var html_41d92d5a4dcb67be3fae04e69263809f = $(`<div id="html_41d92d5a4dcb67be3fae04e69263809f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hitchin Road, Stotfold</h1><div class="nugget-popup"><p>Culverts at Hitchin Road were inspected and some obstructions removed by the Internal Drainage Board; culverts were generally free flowing after clearance following local flooding. (p13)</p></div><div class="nugget-popup"><p>After the June 2016 flood event debris was photographed at the face of the box culvert at Hitchin Road; the Hitchin Road culverts are noted as locations where blockage and partial obstruction contributed to flooding issues. (p20)</p></div><div class="nugget-popup"><p>Debris was photographed at the face of the box culvert at Hitchin Road after the June 2016 flood. On 17 July 2015 the Hitchin Road culverts became partially blocked with vegetation and debris, causing flooding. [PAG,MUL] (p21)</p></div><div class="nugget-popup"><p>Twin culverts at Hitchin Road were partially restricted by debris, which raised upstream water levels and increased the risk and occurrence of localised flooding; debris was found at the face of the box culvert after the event. (p27)</p></div><div class="nugget-popup"><p>The culvert at Brook Street and Hitchin Road was implicated in local flood risk; alterations to the culvert were recommended to be evaluated because of effects on downstream water levels and associated flood risk, and to reduce potential blockage and highway flooding. [TAB] (p45)</p></div><div class="nugget-popup"><p>Culverts at Brook Street and Hitchin Road had compromised performance during flood conditions, contributing to road flooding; actions recommended include review of Risk Assessment and Method Statement for culvert maintenance during floods and advising the highway authority of asset performance issues. [TAB] (p47)</p></div></div></body></div>`)[0];
+                popup_c768fcd50b312cd1acb18fb3fb6eb32b.setContent(html_41d92d5a4dcb67be3fae04e69263809f);
+            
+        
+
+        marker_fbad3a59d5160c639309efc3803995d3.bindPopup(popup_c768fcd50b312cd1acb18fb3fb6eb32b)
+        ;
+
+        
+    
+    
+            var marker_7a3dbbbc9072d32788156d2e16de8422 = L.marker(
+                [52.0161468, -0.6278234],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_4458d0cea3bc8f7c0c9c7081fe160bea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7a3dbbbc9072d32788156d2e16de8422.setIcon(icon_4458d0cea3bc8f7c0c9c7081fe160bea);
+        
+    
+        var popup_1a3f8dbf106ac1f06829c138e6dd53e2 = L.popup({});
+
+        
+            
+                var html_2d746ec800d54558035086137745bf97 = $(`<div id="html_2d746ec800d54558035086137745bf97" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Street, Aspley Guise</h1><div class="nugget-popup"><p>Local topography channelled surface water along Church Street toward lower&ndash;lying Bedford Road and The Square. Highway levels and dropped kerbs gave surface runoff an unobstructed route to properties, contributing to internal flooding of nearby residences during the 07 Jun 2016 &ndash; 12 Jun 2016 event. (p15)</p></div></div></body></div>`)[0];
+                popup_1a3f8dbf106ac1f06829c138e6dd53e2.setContent(html_2d746ec800d54558035086137745bf97);
+            
+        
+
+        marker_7a3dbbbc9072d32788156d2e16de8422.bindPopup(popup_1a3f8dbf106ac1f06829c138e6dd53e2)
+        ;
+
+        
+    
+    
+            var marker_71258f523174780bf18c0a476b253091 = L.marker(
+                [52.010382831273596, -0.6270359779654163],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_7aac4a19bab7993bd6a422c1b4730a7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_71258f523174780bf18c0a476b253091.setIcon(icon_7aac4a19bab7993bd6a422c1b4730a7b);
+        
+    
+        var popup_2c389dbbb0689b835f9a607b1bff893e = L.popup({});
+
+        
+            
+                var html_b409b882bbd86d98bff3f44dd3802ff0 = $(`<div id="html_b409b882bbd86d98bff3f44dd3802ff0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woburn Lane, Aspley Guise</h1><div class="nugget-popup"><p>Local topography caused surface water to flow along Woburn Lane and West Hill toward the lower&ndash;lying Bedford Road and The Square during the 07 Jun 2016 &ndash; 12 Jun 2016 event; road levels and dropped kerbs allowed runoff to access properties. (p15)</p></div></div></body></div>`)[0];
+                popup_2c389dbbb0689b835f9a607b1bff893e.setContent(html_b409b882bbd86d98bff3f44dd3802ff0);
+            
+        
+
+        marker_71258f523174780bf18c0a476b253091.bindPopup(popup_2c389dbbb0689b835f9a607b1bff893e)
+        ;
+
+        
+    
+    
+            var marker_9efd30dada69c1efd79c9ae60ddc01d0 = L.marker(
+                [52.0707062, -0.6310313],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_607dde5eb8cbbb52a655315440b2556b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9efd30dada69c1efd79c9ae60ddc01d0.setIcon(icon_607dde5eb8cbbb52a655315440b2556b);
+        
+    
+        var popup_8786c6a981a784ccba8120e352727313 = L.popup({});
+
+        
+            
+                var html_d464aa029d830d6caa50a3f79f4f0de9 = $(`<div id="html_d464aa029d830d6caa50a3f79f4f0de9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>University Way, Cranfield</h1><div class="nugget-popup"><p>University Way on the Cranfield campus was reported flooded during the event, with surface water/runoff entering adjacent properties. (p16)</p></div></div></body></div>`)[0];
+                popup_8786c6a981a784ccba8120e352727313.setContent(html_d464aa029d830d6caa50a3f79f4f0de9);
+            
+        
+
+        marker_9efd30dada69c1efd79c9ae60ddc01d0.bindPopup(popup_8786c6a981a784ccba8120e352727313)
+        ;
+
+        
+    
+    
+            var marker_480dfb4bb5d66445119b14c9b7344a9f = L.marker(
+                [52.075318, -0.6236699],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_6885eac5be19e481d0321cf1880081f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_480dfb4bb5d66445119b14c9b7344a9f.setIcon(icon_6885eac5be19e481d0321cf1880081f0);
+        
+    
+        var popup_6177b8b75619875a1af70f0b090fbfa4 = L.popup({});
+
+        
+            
+                var html_6022684b631916c94410b4f5f9c842cf = $(`<div id="html_6022684b631916c94410b4f5f9c842cf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>College Road, Cranfield</h1><div class="nugget-popup"><p>Flooding occurred at College Road where a culverted watercourse runs beneath the road; buildings on or near College Road were shown to be at risk and flooding was reported. (p16)</p></div></div></body></div>`)[0];
+                popup_6177b8b75619875a1af70f0b090fbfa4.setContent(html_6022684b631916c94410b4f5f9c842cf);
+            
+        
+
+        marker_480dfb4bb5d66445119b14c9b7344a9f.bindPopup(popup_6177b8b75619875a1af70f0b090fbfa4)
+        ;
+
+        
+    
+    
+            var marker_f9234304384d456de74ac2f1f852f527 = L.marker(
+                [51.8880859, -0.5027165],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_aafe1007a15bab66c141cea0f812aeec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f9234304384d456de74ac2f1f852f527.setIcon(icon_aafe1007a15bab66c141cea0f812aeec);
+        
+    
+        var popup_17dc426408d7b16800922dd5acdfcfd7 = L.popup({});
+
+        
+            
+                var html_f2a0c219fc6ac5105991d7e8b00652b4 = $(`<div id="html_f2a0c219fc6ac5105991d7e8b00652b4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Luton Road, Dunstable</h1><div class="nugget-popup"><p>A surface water flow path was identified running north along High Street South through commercial properties, across Church Street and north toward the Leisure Centre. A large number of gullies were observed along Church Street and Luton Road to collect surface water runoff. [PAG] (p19)</p></div><div class="nugget-popup"><p>The highway drainage system on Luton Road and surrounding areas required further investigation and maintenance due to flooding problems, prompting recommended remedial works. [TAB] (p42)</p></div></div></body></div>`)[0];
+                popup_17dc426408d7b16800922dd5acdfcfd7.setContent(html_f2a0c219fc6ac5105991d7e8b00652b4);
+            
+        
+
+        marker_f9234304384d456de74ac2f1f852f527.bindPopup(popup_17dc426408d7b16800922dd5acdfcfd7)
+        ;
+
+        
+    
+    
+            var marker_0d441820245486189250303a1e8d8bd6 = L.marker(
+                [51.8807464, -0.5194826],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_48a7593b7cde7b4b59e29e1c0376764a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0d441820245486189250303a1e8d8bd6.setIcon(icon_48a7593b7cde7b4b59e29e1c0376764a);
+        
+    
+        var popup_2c96231afbbb298e7d79f30bc48ff873 = L.popup({});
+
+        
+            
+                var html_e54a304b789815ba935e568c1a933ff6 = $(`<div id="html_e54a304b789815ba935e568c1a933ff6" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bullpond Lane, Dunstable</h1><div class="nugget-popup"><p>Bullpond Lane is listed among areas that experienced flooding during the event. [PAG] (p19)</p></div></div></body></div>`)[0];
+                popup_2c96231afbbb298e7d79f30bc48ff873.setContent(html_e54a304b789815ba935e568c1a933ff6);
+            
+        
+
+        marker_0d441820245486189250303a1e8d8bd6.bindPopup(popup_2c96231afbbb298e7d79f30bc48ff873)
+        ;
+
+        
+    
+    
+            var marker_ecbe76b7ce420bbd59afc9df0b54c15a = L.marker(
+                [51.8913878, -0.4971587],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_51390b94550cb76c69566b574bc76e47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ecbe76b7ce420bbd59afc9df0b54c15a.setIcon(icon_51390b94550cb76c69566b574bc76e47);
+        
+    
+        var popup_4d704c7da90e5d830796e54a59cc8d3b = L.popup({});
+
+        
+            
+                var html_91f4b52c3b9ee66ee447b545e1c1e36b = $(`<div id="html_91f4b52c3b9ee66ee447b545e1c1e36b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wingate Road, Dunstable</h1><div class="nugget-popup"><p>Wingate Road is identified as another area that experienced flooding during the event. [PAG] (p19)</p></div></div></body></div>`)[0];
+                popup_4d704c7da90e5d830796e54a59cc8d3b.setContent(html_91f4b52c3b9ee66ee447b545e1c1e36b);
+            
+        
+
+        marker_ecbe76b7ce420bbd59afc9df0b54c15a.bindPopup(popup_4d704c7da90e5d830796e54a59cc8d3b)
+        ;
+
+        
+    
+    
+            var marker_ebcddc0fd65eddbe4e0e4b5c98b226ef = L.marker(
+                [52.0084918, -0.2383904],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_cae03d34dc9c23a8c05d02dfe56c08f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ebcddc0fd65eddbe4e0e4b5c98b226ef.setIcon(icon_cae03d34dc9c23a8c05d02dfe56c08f2);
+        
+    
+        var popup_6ef9e255259006577ce864848404eb84 = L.popup({});
+
+        
+            
+                var html_aaac784fedbae2754738fe2242c3925d = $(`<div id="html_aaac784fedbae2754738fe2242c3925d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Valerian Way, Stotfold</h1><div class="nugget-popup"><p>Debris accumulated on a metal debris screen where Pix Brook splits near Valerian Way, partially obstructing flow; high, turbulent water and pooling were visible at the structure, indicating localised flooding risk and obstruction of the channel adjacent to residential properties. [PAG,IMG] (p21)</p></div></div></body></div>`)[0];
+                popup_6ef9e255259006577ce864848404eb84.setContent(html_aaac784fedbae2754738fe2242c3925d);
+            
+        
+
+        marker_ebcddc0fd65eddbe4e0e4b5c98b226ef.bindPopup(popup_6ef9e255259006577ce864848404eb84)
+        ;
+
+        
+    
+    
+            var marker_85cba6a6cf86c3e8762775a73df30758 = L.marker(
+                [52.0680874, -0.6084003],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_46376a5666fb2216e9a9a4ae29c0278f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_85cba6a6cf86c3e8762775a73df30758.setIcon(icon_46376a5666fb2216e9a9a4ae29c0278f);
+        
+    
+        var popup_03340c106e9db2c2f65d4e6a03f3a211 = L.popup({});
+
+        
+            
+                var html_06fa59c457cd255c4493997d14c0fe27 = $(`<div id="html_06fa59c457cd255c4493997d14c0fe27" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Walk, Cranfield</h1><div class="nugget-popup"><p>Highway drainage in Church Walk was highlighted for investigation and maintenance to manage surface water flood risk. [TAB] (p39)</p></div></div></body></div>`)[0];
+                popup_03340c106e9db2c2f65d4e6a03f3a211.setContent(html_06fa59c457cd255c4493997d14c0fe27);
+            
+        
+
+        marker_85cba6a6cf86c3e8762775a73df30758.bindPopup(popup_03340c106e9db2c2f65d4e6a03f3a211)
+        ;
+
+        
+    
+    
+            var marker_02fd6c398d15b8ecf966027f3549296f = L.marker(
+                [51.9980328, -0.4791514],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_b40c532519f8f1cc31267f2ff1f89e9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_02fd6c398d15b8ecf966027f3549296f.setIcon(icon_b40c532519f8f1cc31267f2ff1f89e9b);
+        
+    
+        var popup_fa7bcaf4ed87e0f5b023df00e976a9e5 = L.popup({});
+
+        
+            
+                var html_61b84153df845f9c7218e6be1988c072 = $(`<div id="html_61b84153df845f9c7218e6be1988c072" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Central Bedfordshire</h1><div class="nugget-popup"><p>Flooding across the district affected properties with concentrations in four towns; the investigation reports approximately 137 properties directly affected, of which 94 were flooded internally and 58 of the internally flooded properties were residential. [IMG] (p6)</p></div><div class="nugget-popup"><p>Surface water flooding occurred within Central Bedfordshire during the event, notably affecting the Aspley Guise area and key local transport routes. [IMG] (p7)</p></div><div class="nugget-popup"><p>Drainage lines (Central Bedfordshire drainage network) are shown coincident with flood&ndash;prone corridors and contributed to surface water flow paths through the village during the event, concentrating runoff along watercourses and drainage lines. [IMG] (p8)</p></div><div class="nugget-popup"><p>The southern part of Central Bedfordshire (Dunstable) experienced internal flooding, including properties with basement flooding in excess of 1 m and flooding on the A505 under the busway. [IMG] (p9)</p></div><div class="nugget-popup"><p>The local authority area contained flooded communities during the event, including impacts in Stotfold where residential properties were affected. [IMG] (p10)</p></div><div class="nugget-popup"><p>Localized flooding incidents recorded across the area, including reported incidents in Aspley Guise and confirmed flooding in Cranfield; emergency services and council teams attended. (p11)</p></div><div class="nugget-popup"><p>The Pix Brook exceeded channel capacity and water flowed out of the channel at susceptible locations, causing river flooding across parts of Central Bedfordshire. (p28)</p></div><div class="nugget-popup"><p>Areas within Central Bedfordshire experienced flooding on 7 and 12 June 2016, prompting a Section 19 investigation and publication of strategic and local recommendations to improve recording, communication and community resilience. (p34)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>137 properties; 94 properties flooded internally; 58 residential properties flooded internally [IMG] (p6)</p></div><div class="nugget-popup quant"><p>in excess of 1 m (basement water depth) [IMG] (p9)</p></div></div></body></div>`)[0];
+                popup_fa7bcaf4ed87e0f5b023df00e976a9e5.setContent(html_61b84153df845f9c7218e6be1988c072);
+            
+        
+
+        marker_02fd6c398d15b8ecf966027f3549296f.bindPopup(popup_fa7bcaf4ed87e0f5b023df00e976a9e5)
+        ;
+
+        
+    
+    
+            var marker_91f8ac67a133c45efc5be24b86ccddc0 = L.marker(
+                [52.0721618, -0.6200462],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_d9f3cc048351dd4d93420cf39b6be518 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_91f8ac67a133c45efc5be24b86ccddc0.setIcon(icon_d9f3cc048351dd4d93420cf39b6be518);
+        
+    
+        var popup_794d3a5b5b888b7f3f257409ff06d3d7 = L.popup({});
+
+        
+            
+                var html_a2396865ecf1907773af0fd1d538c593 = $(`<div id="html_a2396865ecf1907773af0fd1d538c593" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cranfield Airport</h1><div class="nugget-popup"><p>Surface&ndash;water runoff from the Airfield during the 7 June 2016 rainfall drained toward adjacent roads; poor drainage to the boundary ditch (vegetation) and extensive hardstanding reduced infiltration and contributed to downstream flooding at Merchants Lane/Maltings Close. (p26)</p></div><div class="nugget-popup"><p>Surface&ndash;water runoff from the university campus and airport grounds increased flows to the receiving system; drainage and riparian assets within the campus/airport were identified as needing improvement to reduce runoff and future flooding risk. [TAB] (p39)</p></div></div></body></div>`)[0];
+                popup_794d3a5b5b888b7f3f257409ff06d3d7.setContent(html_a2396865ecf1907773af0fd1d538c593);
+            
+        
+
+        marker_91f8ac67a133c45efc5be24b86ccddc0.bindPopup(popup_794d3a5b5b888b7f3f257409ff06d3d7)
+        ;
+
+        
+    
+    
+            var marker_c47ff04fb0f57374e639e887c67a7c19 = L.marker(
+                [52.0138979, -0.6293182],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_b966452cb803f78195ad9e669da6e4d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c47ff04fb0f57374e639e887c67a7c19.setIcon(icon_b966452cb803f78195ad9e669da6e4d8);
+        
+    
+        var popup_e12a270f11fd17f50f0d6cae8c48e530 = L.popup({});
+
+        
+            
+                var html_34d6e7f649d9f61e0e66dba33323e272 = $(`<div id="html_34d6e7f649d9f61e0e66dba33323e272" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Aspley Guise</h1><div class="nugget-popup"><p>Properties in Aspley Guise were affected by the June 2016 flood event. [IMG,TAB] (p6)</p></div><div class="nugget-popup"><p>Surface water flooding occurred in Aspley Guise, concentrated along watercourses and low&ndash;lying areas; key roads were flooded (Bedford Road, The Square and West Hill), impacting local transport and adjacent areas. [IMG] (p7)</p></div><div class="nugget-popup"><p>Experienced flood incidents on the night of 7 June that required police and fire attendance; two vehicles were reported stranded and road debris was later identified and swept. (p11)</p></div><div class="nugget-popup"><p>Residents reported flooding in the area; CBC received correspondence (14 June) from a resident regarding the flood event in Aspley. (p16)</p></div><div class="nugget-popup"><p>Localised intense rainfall produced surface water flooding across these settlements. Surface water was the primary source of flooding during the event, with highway drainage and drainage networks overwhelmed leading to overland flows, surcharge of drainage systems and flooding of highways and properties (internal and external). (p25)</p></div><div class="nugget-popup"><p>Area experienced flooding during the incident, with surface water inundation affecting local roads, land and posing risk to properties and drainage systems; the report recommends considering flood risk in future planning and reviewing assets for this area. (p35)</p></div><div class="nugget-popup"><p>Flooding affected the area through which a culvert runs (Bedford Road and Aspley House), leading to a recommendation to coordinate an investigation of that culvert and to promote property resilience measures. [TAB] (p37)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>16 properties [IMG,TAB] (p6)</p></div><div class="nugget-popup quant"><p>16 properties; 9 residential properties [PAG] (p15)</p></div></div></body></div>`)[0];
+                popup_e12a270f11fd17f50f0d6cae8c48e530.setContent(html_34d6e7f649d9f61e0e66dba33323e272);
+            
+        
+
+        marker_c47ff04fb0f57374e639e887c67a7c19.bindPopup(popup_e12a270f11fd17f50f0d6cae8c48e530)
+        ;
+
+        
+    
+    
+            var marker_06a73198c2d61fb1e813cf414842bb7c = L.marker(
+                [52.0690205, -0.6079317],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_e3aad7c1c09aba85099b921687b2d439 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_06a73198c2d61fb1e813cf414842bb7c.setIcon(icon_e3aad7c1c09aba85099b921687b2d439);
+        
+    
+        var popup_552f9ca30c18a959ef616bd64e902671 = L.popup({});
+
+        
+            
+                var html_c411271941d9f8d3a75c925b524427bd = $(`<div id="html_c411271941d9f8d3a75c925b524427bd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cranfield</h1><div class="nugget-popup"><p>Cranfield experienced property flooding during the June 2016 event. [IMG,TAB] (p6)</p></div><div class="nugget-popup"><p>Three concentrated areas of flooding were reported within Cranfield (High Street / Merchant Lane area; Cranfield University Campus; Crawley Road). The majority of recorded internal (property) flooding within the village occurred on High Street, Merchant Lane, Maltings Close and within the University campus. [IMG] (p8)</p></div><div class="nugget-popup"><p>Cranfield was affected by flooding on the night of 7th June; CBC visited affected properties and offered assistance, requested urgent cleaning of all gullies, and CBC Waste Team was deployed to cleanse streets and surrounding affected areas. (p11)</p></div><div class="nugget-popup"><p>Flooding reported on 12 June with one property on the High Street experiencing internal flooding; residents were spoken to and did not require assistance; urgent gully cleaning in Cranfield was requested and understood to have been undertaken on 16 June. (p12)</p></div><div class="nugget-popup"><p>Flooding affected Cranfield and the Cranfield University campus: floodwater occurred along University Way and College Road; occupiers reported waters entering properties from front and rear at Maltings Close; a vegetated ditch and connections from surface water/sewers were identified as drainage issues; CBC Highways cleared a main run on University Way after the event and the university is investigating future risk&ndash;reduction measures. (p16)</p></div><div class="nugget-popup"><p>Approximately 80 properties across Cranfield and the Cranfield University campus were recorded as affected by flooding; around 59 properties suffered internal flooding (49 of which were residential). Flooding was reported on the campus along University Way and College Road; CBC Highways subsequently undertook main run clearance on University Way. [PAG] (p17)</p></div><div class="nugget-popup"><p>Localised intense rainfall produced surface water flooding across these settlements. Surface water was the primary source of flooding during the event, with highway drainage and drainage networks overwhelmed leading to overland flows, surcharge of drainage systems and flooding of highways and properties (internal and external). (p25)</p></div><div class="nugget-popup"><p>Severe surface&ndash;water flooding on 7 June 2016: the intense rainfall overwhelmed local drainage causing ponding, carriageway exceedance and localised flooding across the village; highway drainage capacity was exceeded in multiple locations, exacerbating impacts at specific streets. (p26)</p></div><div class="nugget-popup"><p>These areas were affected by the flood incident, with surface water inundation causing localised flooding impacts to streets, drainage systems and properties; the report advises using its findings for planning decisions and reviewing flood assets. (p35)</p></div><div class="nugget-popup"><p>Foul (sewer) flooding and surface&ndash;water runoff affected the village; blocked, altered or lost ditches (notably south of Crawley Road) and drainage defects contributed to increased runoff and flooding of local drainage systems. [TAB,PAG] (p39)</p></div><div class="nugget-popup"><p>Surface water and overland flow issues (notably from the airfield) and restricted/culverted ditches leading to poor outfalls increased local flood risk; recommendations include maintenance of the ditch along Merchant Lane, identification and repair of culverted sections within the airfield and campus, and improvements to ordinary watercourses to restore unrestricted flow. [TAB,PAG] (p40)</p></div><div class="nugget-popup"><p>Overland surface water flow from the airfield and restricted drainage within the campus/airfield affected local land drainage; culverted sections and the ditch along Merchant Lane were identified as needing inspection and maintenance to ensure unrestricted flow and a clear outfall for the surface water sewer. [TAB,PAG] (p41)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>80 properties [IMG,TAB] (p6)</p></div><div class="nugget-popup quant"><p>25 residential properties; 19 commercial properties (p11)</p></div><div class="nugget-popup quant"><p>1 property (p12)</p></div><div class="nugget-popup quant"><p>approximately 80 properties affected; 59 properties suffered internal flooding; 49 of these were residential (p16)</p></div><div class="nugget-popup quant"><p>approximately 80 properties affected; 59 properties suffered internal flooding; 49 of these were residential [PAG] (p17)</p></div></div></body></div>`)[0];
+                popup_552f9ca30c18a959ef616bd64e902671.setContent(html_c411271941d9f8d3a75c925b524427bd);
+            
+        
+
+        marker_06a73198c2d61fb1e813cf414842bb7c.bindPopup(popup_552f9ca30c18a959ef616bd64e902671)
+        ;
+
+        
+    
+    
+            var marker_c3a7e8af2f2ea2c8d47b689681baf9c7 = L.marker(
+                [52.015001, -0.22513521613427134],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_4cfa8260a3c5dae241fe72dc047a02bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c3a7e8af2f2ea2c8d47b689681baf9c7.setIcon(icon_4cfa8260a3c5dae241fe72dc047a02bc);
+        
+    
+        var popup_1b65b66bcfa97e8115b49f557ccec5ec = L.popup({});
+
+        
+            
+                var html_a9d647d415c3e1bbbe10753e5f91bd85 = $(`<div id="html_a9d647d415c3e1bbbe10753e5f91bd85" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stotfold</h1><div class="nugget-popup"><p>Properties in Stotfold were directly affected by flooding during the Central Bedfordshire event. [IMG,TAB] (p6)</p></div><div class="nugget-popup"><p>Residential properties in the village were flooded during the event; the majority of affected properties were situated on Coppice Mead and Brook Street. [IMG] (p10)</p></div><div class="nugget-popup"><p>Experienced flooding that prompted multi&ndash;agency response: potential impacts around Coppice Mead; culvert inspections and clearance (including Hitchin Road); deployment of investigatory officers/volunteers; aquasacs/sandbags made available for residents; clean&ndash;up operations instructed to waste contractor; stand down issued after no further actions. (p13)</p></div><div class="nugget-popup"><p>Flooding occurred on 12 June 2016 when Pix Brook overtopped, affecting streets within Stotfold (notably Brook Street and Coppice Mead) and residential properties. (p20)</p></div><div class="nugget-popup"><p>Area around Brook Street suffered fluvial flooding during the June 2016 event with watermarks observed up to air bricks on buildings; the area was highlighted by the Internal Drainage Board in a 2015 post&ndash;flood report and was one of the areas actually affected in the 2016 flood although subsequent publicly available flood mapping did not show these areas as at risk. (p22)</p></div><div class="nugget-popup"><p>Flooding in Stotfold during the event was related to out&ndash;of&ndash;bank flows from the Pix Brook. [PAG] (p25)</p></div><div class="nugget-popup"><p>Rural areas between Stotfold and Letchworth allowed debris and vegetation to enter Pix Brook; debris was found after the event and contributed to culvert blockage and raised upstream water levels, culminating in the brook exceeding capacity and out&ndash;of&ndash;channel flows at susceptible locations. (p27)</p></div><div class="nugget-popup"><p>These areas were affected by the flood incident, with surface water inundation causing localised flooding impacts to streets, drainage systems and properties; the report advises using its findings for planning decisions and reviewing flood assets. (p35)</p></div><div class="nugget-popup"><p>Flooding affected Stotfold from the Pix Brook and overloaded local sewer/receiving systems, with impacts concentrated around High Street South and Church Street; the event prompted recommendations for an Emergency Action Plan, better communication with riparian owners and a catchment&ndash;wide study to understand flood mechanisms and identify solutions. [TAB,PAG] (p44)</p></div><div class="nugget-popup"><p>Stotfold experienced flooding driven by the Pix Brook, leading to infrastructure impacts and triggering recommendations for a catchment&ndash;wide study, asset inspections, planning consultation and review of flood mapping and modelling. [TAB,PAG] (p45)</p></div><div class="nugget-popup"><p>Flooding associated with Pix Brook affected the town, prompting recommended measures including catchment&ndash;wide studies, community resilience actions, an Emergency Action Plan, and liaison between agencies to reduce future flood risk. [TAB,PAG] (p47)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>11 properties affected [IMG,TAB] (p6)</p></div><div class="nugget-popup quant"><p>11 properties; 6 properties (p20)</p></div></div></body></div>`)[0];
+                popup_1b65b66bcfa97e8115b49f557ccec5ec.setContent(html_a9d647d415c3e1bbbe10753e5f91bd85);
+            
+        
+
+        marker_c3a7e8af2f2ea2c8d47b689681baf9c7.bindPopup(popup_1b65b66bcfa97e8115b49f557ccec5ec)
+        ;
+
+        
+    
+    
+            var marker_3824b86e94cc3c8db44b7c40ac3c4fec = L.marker(
+                [51.8861316, -0.5209341],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_4d8e2fcb3bb27a2f79f862ac3dc55c79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3824b86e94cc3c8db44b7c40ac3c4fec.setIcon(icon_4d8e2fcb3bb27a2f79f862ac3dc55c79);
+        
+    
+        var popup_b48c22e080afc47a72f6216aa53dd41f = L.popup({});
+
+        
+            
+                var html_01b852fe1c0e0c1c7ea9e63de2157802 = $(`<div id="html_01b852fe1c0e0c1c7ea9e63de2157802" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dunstable</h1><div class="nugget-popup"><p>Properties in Dunstable were directly affected by flooding during the Central Bedfordshire event. [IMG,TAB] (p6)</p></div><div class="nugget-popup"><p>Internal flooding across the town, with the majority of internal flooding reported along High Street and Westfield Road; some properties experienced water depths in excess of 1 m within basements. The A505 experienced flooding under the busway. [IMG] (p9)</p></div><div class="nugget-popup"><p>Experienced flood incidents on the night of 7 June that required police and fire attendance; two vehicles were reported stranded and road debris was later identified and swept. (p11)</p></div><div class="nugget-popup"><p>Heavy rainfall on 7 June caused flooding in Dunstable leading to closure of the A505 Church Street, internal flooding of commercial businesses on the A5 High Street South, road damage around sewer manholes, removal of abandoned vehicles and multi&ndash;agency emergency response. (p12)</p></div><div class="nugget-popup"><p>Thirty properties in Dunstable were recorded as affected by flooding during the event; twenty of these suffered internal flooding (ten residential and ten commercial). Surface water flow paths ran north along High Street South through commercial properties, across Church Street and toward the Leisure Centre; low thresholds and basement entrances allowed ingress to properties (one property had a front flood gate but still experienced basement flooding). (p18)</p></div><div class="nugget-popup"><p>Surface water flooding followed a flow path along High Street South through commercial properties, across Church Street and north toward the Leisure Centre, entering lower&ndash;lying properties. Surface water entered the public foul sewer causing overloading and resultant foul flooding beneath the busway. Property thresholds (including basement entrances) allowed ingress; one property with a fitted flood gate still experienced basement flooding, indicating other routes of ingress. [PAG] (p19)</p></div><div class="nugget-popup"><p>Localised intense rainfall produced surface water flooding across these settlements. Surface water was the primary source of flooding during the event, with highway drainage and drainage networks overwhelmed leading to overland flows, surcharge of drainage systems and flooding of highways and properties (internal and external). (p25)</p></div><div class="nugget-popup"><p>The 7 June 2016 rainfall produced predominantly surface water flooding across Dunstable. Topography channelled flows along High Street South into properties, highway drains were overwhelmed, vehicles worsened impacts by creating bow waves, and surface water entered and overloaded the foul public sewer causing foul flooding (notably under the busway). (p26)</p></div><div class="nugget-popup"><p>These areas were affected by the flood incident, with surface water inundation causing localised flooding impacts to streets, drainage systems and properties; the report advises using its findings for planning decisions and reviewing flood assets. (p35)</p></div><div class="nugget-popup"><p>Surface water / urban flooding affected parts of Dunstable during the event, overwhelming local drainage and prompting actions such as investigation of a pump station adjacent to the bus way, proposals for a Flood Response Plan for Church Street and maintenance of highway drainage on Church Street and Luton Road. [TAB,PAG] (p42)</p></div><div class="nugget-popup"><p>Surface water and sewer&ndash;related flooding affected the town during the event, overwhelming highway drainage and sewer capacity in central streets (notably Church Street and High Street South), causing roads to become impassable and creating risk to commercial properties. [TAB] (p43)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>30 properties affected [IMG,TAB] (p6)</p></div><div class="nugget-popup quant"><p>in excess of 1 m (basement water depth) [IMG] (p9)</p></div><div class="nugget-popup quant"><p>30 properties; 20 properties; 10 residential; 10 commercial (p18)</p></div><div class="nugget-popup quant"><p>30 properties; 20 properties internally flooded; 10 residential; 10 commercial [PAG] (p19)</p></div></div></body></div>`)[0];
+                popup_b48c22e080afc47a72f6216aa53dd41f.setContent(html_01b852fe1c0e0c1c7ea9e63de2157802);
+            
+        
+
+        marker_3824b86e94cc3c8db44b7c40ac3c4fec.bindPopup(popup_b48c22e080afc47a72f6216aa53dd41f)
+        ;
+
+        
+    
+    
+            var marker_6daa4b2d1ac7465988b1ec48da40f4f5 = L.marker(
+                [51.976723, -0.2305199],
+                {}
+            ).addTo(map_07af0c9a73a377268f87bce908aca776);
+        
+    
+            var icon_e3ca3596ea73461b21a3dfdfe6d8d5a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6daa4b2d1ac7465988b1ec48da40f4f5.setIcon(icon_e3ca3596ea73461b21a3dfdfe6d8d5a9);
+        
+    
+        var popup_167000ab4a613e66365e47bfde00012a = L.popup({});
+
+        
+            
+                var html_0e763ce7297fc84fd73e08a56ce39cf4 = $(`<div id="html_0e763ce7297fc84fd73e08a56ce39cf4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Letchworth</h1><div class="nugget-popup"><p>Rural areas between Stotfold and Letchworth allowed debris and vegetation to enter Pix Brook; debris was found after the event and contributed to culvert blockage and raised upstream water levels, culminating in the brook exceeding capacity and out&ndash;of&ndash;channel flows at susceptible locations. (p27)</p></div></div></body></div>`)[0];
+                popup_167000ab4a613e66365e47bfde00012a.setContent(html_0e763ce7297fc84fd73e08a56ce39cf4);
+            
+        
+
+        marker_6daa4b2d1ac7465988b1ec48da40f4f5.bindPopup(popup_167000ab4a613e66365e47bfde00012a)
+        ;
+
+        
+    
+</script>
+</html>

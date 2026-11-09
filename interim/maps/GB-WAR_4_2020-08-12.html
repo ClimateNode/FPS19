@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b3391c19e5f6713b1edd51cf8d39572d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b3391c19e5f6713b1edd51cf8d39572d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b3391c19e5f6713b1edd51cf8d39572d = L.map(
+                "map_b3391c19e5f6713b1edd51cf8d39572d",
+                {
+                    center: [52.28537729861916, -1.5856278643222916],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3b0359d1f2ef2902cc2a82ec11ac607e = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_3b0359d1f2ef2902cc2a82ec11ac607e.addTo(map_b3391c19e5f6713b1edd51cf8d39572d);
+    
+            var marker_7babd9aa2f2f18478149833c52d12d16 = L.marker(
+                [52.2851314, -1.5844608],
+                {}
+            ).addTo(map_b3391c19e5f6713b1edd51cf8d39572d);
+        
+    
+            var icon_0bd652b7e148bfb8ca87e96a0ba8009e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7babd9aa2f2f18478149833c52d12d16.setIcon(icon_0bd652b7e148bfb8ca87e96a0ba8009e);
+        
+    
+        var popup_f59288be2d823bb2b906cf1a2554c05f = L.popup({});
+
+        
+            
+                var html_c4a3cca01afa310256eb20938fe9a442 = $(`<div id="html_c4a3cca01afa310256eb20938fe9a442" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Priory Park</h1><div class="nugget-popup"><p>Overland flows issued from the higher ground in Priory Park onto the adjacent highway and footpaths; flows cut into footpaths and deposited silt onto the highway and into local sewer/highway drains, contributing to local surface water flooding and drainage blockages. [PAG] (p9)</p></div><div class="nugget-popup"><p>Overland flows issued from Priory Park onto the highway during the event, cutting into footpaths and washing silt onto footways and into the highway and surface water sewer network, contributing to surface water flooding and blockage of drainage on 12th August 2020. [PAG] (p10)</p></div><div class="nugget-popup"><p>Surface water from Priory Park issued onto the adjacent highway via an observed flow path (site photographs taken the day after the event show evidence of this flow path), contributing to highway flooding. [PAG,IMG] (p11)</p></div></div></body></div>`)[0];
+                popup_f59288be2d823bb2b906cf1a2554c05f.setContent(html_c4a3cca01afa310256eb20938fe9a442);
+            
+        
+
+        marker_7babd9aa2f2f18478149833c52d12d16.bindPopup(popup_f59288be2d823bb2b906cf1a2554c05f)
+        ;
+
+        
+    
+    
+            var marker_4ef2bb1e95fc83fcd58fb9b635a8d480 = L.marker(
+                [52.29462673525684, -1.5896038141352895],
+                {}
+            ).addTo(map_b3391c19e5f6713b1edd51cf8d39572d);
+        
+    
+            var icon_f18444520682109f84ac4cdd412e3767 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4ef2bb1e95fc83fcd58fb9b635a8d480.setIcon(icon_f18444520682109f84ac4cdd412e3767);
+        
+    
+        var popup_7efe33fae515715137f7c605f590bbff = L.popup({});
+
+        
+            
+                var html_c4105bf0a6f86faaa3a43a13e6bb9880 = $(`<div id="html_c4105bf0a6f86faaa3a43a13e6bb9880" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woodloes Estate</h1><div class="nugget-popup"><p>Properties and businesses in the Woodloes Estate catchment were identified as being at risk following the August 12 2020 event; an Outline Business Case is being developed to assess measures to reduce flooding to these properties and businesses. (p13)</p></div></div></body></div>`)[0];
+                popup_7efe33fae515715137f7c605f590bbff.setContent(html_c4105bf0a6f86faaa3a43a13e6bb9880);
+            
+        
+
+        marker_4ef2bb1e95fc83fcd58fb9b635a8d480.bindPopup(popup_7efe33fae515715137f7c605f590bbff)
+        ;
+
+        
+    
+    
+            var marker_b788181b37407917c36c84d21f9e57f8 = L.marker(
+                [52.2860675, -1.5823633],
+                {}
+            ).addTo(map_b3391c19e5f6713b1edd51cf8d39572d);
+        
+    
+            var icon_4d4f398097f9ce28366f26466ddd529f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b788181b37407917c36c84d21f9e57f8.setIcon(icon_4d4f398097f9ce28366f26466ddd529f);
+        
+    
+        var popup_dca5658674d6da86f9de002a99ee4df7 = L.popup({});
+
+        
+            
+                var html_3b283baee6d9887dbbed07964577f780 = $(`<div id="html_3b283baee6d9887dbbed07964577f780" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Johns Brook</h1><div class="nugget-popup"><p>Surcharging of surface&ndash;water systems discharging into the St Johns Brook culvert contributed to surface&ndash;water flooding in the catchment, increasing flood risk to properties and businesses within the St John's Brook catchment. (p13)</p></div></div></body></div>`)[0];
+                popup_dca5658674d6da86f9de002a99ee4df7.setContent(html_3b283baee6d9887dbbed07964577f780);
+            
+        
+
+        marker_b788181b37407917c36c84d21f9e57f8.bindPopup(popup_dca5658674d6da86f9de002a99ee4df7)
+        ;
+
+        
+    
+    
+            var marker_9bffadc50bb8256ba0e4039723f1a9b5 = L.marker(
+                [52.28376974817309, -1.58086485773221],
+                {}
+            ).addTo(map_b3391c19e5f6713b1edd51cf8d39572d);
+        
+    
+            var icon_dd74425488f5a6ae47c7e2d129013ddf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9bffadc50bb8256ba0e4039723f1a9b5.setIcon(icon_dd74425488f5a6ae47c7e2d129013ddf);
+        
+    
+        var popup_4744785a31d7fd9db47e80299d4f9360 = L.popup({});
+
+        
+            
+                var html_82713140b80611271caae06c604cda8e = $(`<div id="html_82713140b80611271caae06c604cda8e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Johns, Warwick</h1><div class="nugget-popup"><p>Highway at the junction flooded; bow waves from cars observed as drivers sped through flood water, increasing wave action. (p3)</p></div><div class="nugget-popup"><p>Highway flooding across the junction at the traffic lights (junction of St Johns, Smith Street and Priory Road) on 12 August 2020, with water over the entire highway and footway and up to the frontages of business premises; depths well in excess of kerb height. [PAG] (p7)</p></div><div class="nugget-popup"><p>Highway at the junction of St Johns, Smith Street and Priory Road flooded across the traffic&ndash;light junction and up to commercial frontages on St Johns. Floodwater covered the entire highway and footway and reached the frontages of business premises to depths well in excess of the kerb height; bow waves from vehicles driving through the floodwater contributed to internal flooding of premises during the 12 August 2020 event. [PAG] (p8)</p></div><div class="nugget-popup"><p>Surface water flows from surrounding streets cumulated at St Johns, causing local inundation of the highway and contributing to property flooding during 12 August 2020. Separately, flooding was reported along St Johns Brook upstream of the culverted section beneath the St Johns highway in December 2019; that report was passed to the Environment Agency as St Johns Brook is designated main river at that location. [PAG,MUL] (p9)</p></div><div class="nugget-popup"><p>Surface water flow paths (from Smith Street and Priory Road) cumulated at St Johns, causing surface water accumulation in the area. The St Johns Brook culvert passes beneath the highway here (though the brook was reported at low level), so surface water flows accumulated at this location during the 12th August 2020 event. [PAG] (p10)</p></div><div class="nugget-popup"><p>The junction with Coton Road experienced surface water flooding during the intense rainfall on 12th August 2020; existing gullies (and additional gullies previously installed) were insufficient, and vehicle bow waves increased kerb overtopping and ingress onto the highway. (p12)</p></div><div class="nugget-popup"><p>During the 12 August 2020 event surface water flooded the carriageway and footway in the St Johns area; multiple returns from residents reported highway flooding and gullies were overwhelmed leading to surface water build&ndash;up on the highway. (p13)</p></div></div></body></div>`)[0];
+                popup_4744785a31d7fd9db47e80299d4f9360.setContent(html_82713140b80611271caae06c604cda8e);
+            
+        
+
+        marker_9bffadc50bb8256ba0e4039723f1a9b5.bindPopup(popup_4744785a31d7fd9db47e80299d4f9360)
+        ;
+
+        
+    
+    
+            var marker_86871ea1ebbd3c4d88bb66a6bd739c8f = L.marker(
+                [52.2834186, -1.5823912],
+                {}
+            ).addTo(map_b3391c19e5f6713b1edd51cf8d39572d);
+        
+    
+            var icon_cb07990521d74327d0235e27ba3a516e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_86871ea1ebbd3c4d88bb66a6bd739c8f.setIcon(icon_cb07990521d74327d0235e27ba3a516e);
+        
+    
+        var popup_f42282b4a211a3e6aced569da3975bee = L.popup({});
+
+        
+            
+                var html_d4cf215fce381eeb2f5de8b9ff1c1cd8 = $(`<div id="html_d4cf215fce381eeb2f5de8b9ff1c1cd8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Priory Road, Warwick</h1><div class="nugget-popup"><p>Highway at the junction flooded (Priory Road forms part of the flooded junction). (p3)</p></div><div class="nugget-popup"><p>Part of the junction that was flooded on 12 August 2020; floodwaters covered the highway and footway and extended to business frontages. (p7)</p></div><div class="nugget-popup"><p>Surface water flow paths ran down Priory Road, carrying silt from Priory Park onto footpaths and carriageway; where properties had no threshold, surface water overtopped kerbs and entered buildings internally. (p9)</p></div><div class="nugget-popup"><p>Surface water sewer in Priory Road surcharged during the intense rainfall, damaging a manhole cover; overland flow from Priory Park issued onto the highway and the damaged manhole cover and adjacent highway were sectioned off on site. [PAG] (p11)</p></div><div class="nugget-popup"><p>Further investigation of the sewer system in Priory Road was recommended because of the likelihood of damage to a chamber (shown in Photo 2) reoccurring following the August 12 2020 event; the LLFA reported this for Severn Trent Water action. (p13)</p></div><div class="nugget-popup"><p>Surface water flooding led to damage/defect of a surface water manhole cover and chamber; repair of the manhole cover and chamber was completed following the August 2020 event. Highway surface water management actions (gully cleansing, kerb&ndash;raising investigation) were recommended to reduce carriageway flooding risk. [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_f42282b4a211a3e6aced569da3975bee.setContent(html_d4cf215fce381eeb2f5de8b9ff1c1cd8);
+            
+        
+
+        marker_86871ea1ebbd3c4d88bb66a6bd739c8f.bindPopup(popup_f42282b4a211a3e6aced569da3975bee)
+        ;
+
+        
+    
+    
+            var marker_2db20aebc4f3f2aa410ad8403e15e68b = L.marker(
+                [52.2828315, -1.5832256],
+                {}
+            ).addTo(map_b3391c19e5f6713b1edd51cf8d39572d);
+        
+    
+            var icon_3fc84de74e3d7bc6ad26c2c59c8bffd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2db20aebc4f3f2aa410ad8403e15e68b.setIcon(icon_3fc84de74e3d7bc6ad26c2c59c8bffd9);
+        
+    
+        var popup_e5a7370e711058b16ce2e04930a1d0a1 = L.popup({});
+
+        
+            
+                var html_865df5ca73fb20fdca9e44790c308e3b = $(`<div id="html_865df5ca73fb20fdca9e44790c308e3b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Smith Street, Warwick</h1><div class="nugget-popup"><p>Highway at the junction flooded (Smith Street forms part of the flooded junction). (p3)</p></div><div class="nugget-popup"><p>Part of the flooded junction (with St Johns and Priory Road) on 12 August 2020; flooding covered carriageway and footway and reached commercial frontages. (p7)</p></div><div class="nugget-popup"><p>Part of the junction at Smith Street was inundated when the highway flooded across the traffic&ndash;light junction on 12 August 2020. Businesses and residents reported historic flooding of Smith Street, particularly prior to an upgrade of the surface water sewer system. [PAG] (p8)</p></div><div class="nugget-popup"><p>Observed surface water flow paths followed Smith Street toward St Johns, inundating highway and footpaths and contributing to downstream accumulation of floodwater at St Johns. (p9)</p></div></div></body></div>`)[0];
+                popup_e5a7370e711058b16ce2e04930a1d0a1.setContent(html_865df5ca73fb20fdca9e44790c308e3b);
+            
+        
+
+        marker_2db20aebc4f3f2aa410ad8403e15e68b.bindPopup(popup_e5a7370e711058b16ce2e04930a1d0a1)
+        ;
+
+        
+    
+    
+            var marker_bf492b9a65a57faafff9ef8994dc98c0 = L.marker(
+                [52.2847475, -1.5770839],
+                {}
+            ).addTo(map_b3391c19e5f6713b1edd51cf8d39572d);
+        
+    
+            var icon_087aba5514f4fc395a5145689f88732a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bf492b9a65a57faafff9ef8994dc98c0.setIcon(icon_087aba5514f4fc395a5145689f88732a);
+        
+    
+        var popup_f3d02ba97b13e0296c026eb597cbad40 = L.popup({});
+
+        
+            
+                var html_399cda3494eaa738957503cbd5fc82be = $(`<div id="html_399cda3494eaa738957503cbd5fc82be" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Coten End, Warwick</h1><div class="nugget-popup"><p>Highway drainage at the junction with St Johns was overwhelmed by the intense rainfall on 12th August 2020, causing surface water to overtop kerbs. Vehicles driving through the flooded junction created bow waves that increased surface water ingress and overtopping. (p12)</p></div><div class="nugget-popup"><p>Surface water flooding occurred at the StJohns/Coton Road (sic) junction during the 12 August 2020 event, producing carriageway/footway flooding and prompting prior installation of additional gullies; further measures (more frequent gully cleansing, suspension of parking during cleansing, and investigating raising kerb heights) were recommended. (p13)</p></div></div></body></div>`)[0];
+                popup_f3d02ba97b13e0296c026eb597cbad40.setContent(html_399cda3494eaa738957503cbd5fc82be);
+            
+        
+
+        marker_bf492b9a65a57faafff9ef8994dc98c0.bindPopup(popup_f3d02ba97b13e0296c026eb597cbad40)
+        ;
+
+        
+    
+    
+            var marker_fe99c825b274b63c0520d041895e5fd2 = L.marker(
+                [52.2935009, -1.5898409],
+                {}
+            ).addTo(map_b3391c19e5f6713b1edd51cf8d39572d);
+        
+    
+            var icon_0d8135c206eb4ba2baef059266b4d1d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_fe99c825b274b63c0520d041895e5fd2.setIcon(icon_0d8135c206eb4ba2baef059266b4d1d9);
+        
+    
+        var popup_c4f4cbdb49830b95822cd2022face23f = L.popup({});
+
+        
+            
+                var html_81ce91a51479ec7c89399e7140de8ee0 = $(`<div id="html_81ce91a51479ec7c89399e7140de8ee0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Exham Close, Warwick</h1><div class="nugget-popup"><p>Exham Close is identified as part of the St. John's Brook catchment where options are being assessed to reduce flood risk to properties and businesses following the August 12 2020 event. (p13)</p></div></div></body></div>`)[0];
+                popup_c4f4cbdb49830b95822cd2022face23f.setContent(html_81ce91a51479ec7c89399e7140de8ee0);
+            
+        
+
+        marker_fe99c825b274b63c0520d041895e5fd2.bindPopup(popup_c4f4cbdb49830b95822cd2022face23f)
+        ;
+
+        
+    
+    
+            var marker_eebbae2e83230840830d27247d28d59c = L.marker(
+                [52.3213064, -1.5536906],
+                {}
+            ).addTo(map_b3391c19e5f6713b1edd51cf8d39572d);
+        
+    
+            var icon_87c3e33a4920c29eead8b80ba8511a75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_eebbae2e83230840830d27247d28d59c.setIcon(icon_87c3e33a4920c29eead8b80ba8511a75);
+        
+    
+        var popup_1d50f8074fd598bacf87e944fb76e3ef = L.popup({});
+
+        
+            
+                var html_c0c450dc0ebc22f91a26cafc6878b8bf = $(`<div id="html_c0c450dc0ebc22f91a26cafc6878b8bf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Warwickshire</h1><div class="nugget-popup"><p>Flooding occurred in the Warwick area (within Warwickshire) on 12 August 2020, triggering investigations by the county Lead Local Flood Authority. (p4)</p></div></div></body></div>`)[0];
+                popup_1d50f8074fd598bacf87e944fb76e3ef.setContent(html_c0c450dc0ebc22f91a26cafc6878b8bf);
+            
+        
+
+        marker_eebbae2e83230840830d27247d28d59c.bindPopup(popup_1d50f8074fd598bacf87e944fb76e3ef)
+        ;
+
+        
+    
+    
+            var marker_8bb6861d71b0600ff6b102cbed65e866 = L.marker(
+                [52.2814519, -1.5815742],
+                {}
+            ).addTo(map_b3391c19e5f6713b1edd51cf8d39572d);
+        
+    
+            var icon_e15b7944fc5d8d14de501026e120175d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8bb6861d71b0600ff6b102cbed65e866.setIcon(icon_e15b7944fc5d8d14de501026e120175d);
+        
+    
+        var popup_267f4f319d82fa2d19980beb0c54b8d0 = L.popup({});
+
+        
+            
+                var html_4bb43ebb1ff9cf47fc0405be077e9019 = $(`<div id="html_4bb43ebb1ff9cf47fc0405be077e9019" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Warwick</h1><div class="nugget-popup"><p>Flooding affected the town. (p1)</p></div><div class="nugget-popup"><p>Internal property flooding to commercial and residential properties within Warwick (internal flooding reported to properties). (p3)</p></div><div class="nugget-popup"><p>The Warwick area experienced flooding on 12 August 2020 which prompted a Section 19 investigation by the Lead Local Flood Authority. (p4)</p></div><div class="nugget-popup"><p>Internal flooding of properties within the town during the event on 12 August 2020; highway flooding reported in the town. Flooding affected commercial frontages and streets in the investigation area. [IMG] (p7)</p></div><div class="nugget-popup"><p>Intense rainfall caused surface water to overwhelm highway and surface water drainage so flows followed surface water routes across the urban area. Surface water exceeded kerb heights and entered commercial and residential properties with level thresholds (internal flooding). Flow paths transported silt onto footpaths and into highway and sewer systems across Warwick on 12th August 2020. [PAG] (p10)</p></div><div class="nugget-popup"><p>The flooding event in Warwick produced surface&ndash;water flow paths across public highways and urban areas (for example flow from Priory Park onto the highway and a surcharged surface water sewer in Priory Road that damaged a manhole cover). [PAG,IMG] (p11)</p></div><div class="nugget-popup"><p>Surface water sewer systems surcharged in locations (notably Priory Road), damaging a manhole cover and surrounding highway. Highway drainage was overwhelmed in places, causing street flooding. Intense, wind&ndash;driven thunderstorm rain caused water ingress into some properties through poorly sealed windows and doors. (p12)</p></div><div class="nugget-popup"><p>Surface&ndash;water and sewer&ndash;related flooding inundated parts of Warwick (including the town centre and St John's Brook catchment), causing internal flooding of residential and business premises and surface&ndash;water ingress where finished floor levels were at footway level; highways and gullies were affected, and sewer infrastructure (Smith Street / Priory Road areas) required further investigation. (p13)</p></div><div class="nugget-popup"><p>Planning applications in the town centre were identified as connecting to the surface water sewer system upstream of the location where flooding occurred; the LLFA requires reduced surface water discharge rates (minimum 50% reduction where greenfield rates cannot be achieved) to reduce pressure on the sewer system that contributed to the August 2020 surface water flooding. [TAB,PAG] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>9 reports of internal flooding; 5 commercial premises; 4 residential properties (p3)</p></div><div class="nugget-popup quant"><p>5 commercial premises; 4 residential properties [IMG] (p7)</p></div><div class="nugget-popup quant"><p>28 responses; 3 residential properties confirmed flooded; 1 residential property reported on site (p12)</p></div><div class="nugget-popup quant"><p>4 residential properties (p13)</p></div></div></body></div>`)[0];
+                popup_267f4f319d82fa2d19980beb0c54b8d0.setContent(html_4bb43ebb1ff9cf47fc0405be077e9019);
+            
+        
+
+        marker_8bb6861d71b0600ff6b102cbed65e866.bindPopup(popup_267f4f319d82fa2d19980beb0c54b8d0)
+        ;
+
+        
+    
+    
+            var marker_aae883787276a65f192e98f2b1283920 = L.marker(
+                [52.2913394, -1.536404],
+                {}
+            ).addTo(map_b3391c19e5f6713b1edd51cf8d39572d);
+        
+    
+            var icon_9059afd877867e6e853ab9f36e89a1a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aae883787276a65f192e98f2b1283920.setIcon(icon_9059afd877867e6e853ab9f36e89a1a0);
+        
+    
+        var popup_8dedfe2c98ab17f3b8c91b69b842a53c = L.popup({});
+
+        
+            
+                var html_908d9269e80559ca95b6bdc01ad9891b = $(`<div id="html_908d9269e80559ca95b6bdc01ad9891b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Leamington Spa</h1><div class="nugget-popup"><p>Reports of highway flooding in areas of Leamington associated with the 12 August 2020 event. (p7)</p></div></div></body></div>`)[0];
+                popup_8dedfe2c98ab17f3b8c91b69b842a53c.setContent(html_908d9269e80559ca95b6bdc01ad9891b);
+            
+        
+
+        marker_aae883787276a65f192e98f2b1283920.bindPopup(popup_8dedfe2c98ab17f3b8c91b69b842a53c)
+        ;
+
+        
+    
+</script>
+</html>

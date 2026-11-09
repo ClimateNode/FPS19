@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2a4a8c8fc25bf2e3c5e42537c15ed82d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2a4a8c8fc25bf2e3c5e42537c15ed82d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2a4a8c8fc25bf2e3c5e42537c15ed82d = L.map(
+                "map_2a4a8c8fc25bf2e3c5e42537c15ed82d",
+                {
+                    center: [51.2594429, -1.130345875],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dc464c2da33676529d771e6b7a0a347c = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_dc464c2da33676529d771e6b7a0a347c.addTo(map_2a4a8c8fc25bf2e3c5e42537c15ed82d);
+    
+            var marker_2d7f27d2ec0d87eeb7f38b28e2efa984 = L.marker(
+                [51.2559522, -1.1330365],
+                {}
+            ).addTo(map_2a4a8c8fc25bf2e3c5e42537c15ed82d);
+        
+    
+            var icon_3d70f45a3e498e18936b4540792c64aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2d7f27d2ec0d87eeb7f38b28e2efa984.setIcon(icon_3d70f45a3e498e18936b4540792c64aa);
+        
+    
+        var popup_658ce983ed6d4cd69a387f25f84923af = L.popup({});
+
+        
+            
+                var html_973fed85c91e9d3b539f1ae2673630b0 = $(`<div id="html_973fed85c91e9d3b539f1ae2673630b0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ridgeway Centre</h1><div class="nugget-popup"><p>The area surrounding the Ridgeway Centre was affected by fluvial (river), surface water, groundwater and foul/sewer flooding. High groundwater activated a dormant spring and soakaways did not function, causing runoff to follow a historic river course and accumulate in low&ndash;lying areas; nearby properties were flooded and the foul sewer network was inundated leading to foul flooding at properties. (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of the investigation area where 45 properties were reported flooded (36 internally and 9 externally); 36 properties reported foul flooding; up to 88 properties estimated flooded (p1)</p></div></div></body></div>`)[0];
+                popup_658ce983ed6d4cd69a387f25f84923af.setContent(html_973fed85c91e9d3b539f1ae2673630b0);
+            
+        
+
+        marker_2d7f27d2ec0d87eeb7f38b28e2efa984.bindPopup(popup_658ce983ed6d4cd69a387f25f84923af)
+        ;
+
+        
+    
+    
+            var marker_e0b91ea559d18f2b6442d94a7c199cf3 = L.marker(
+                [51.2630694, -1.1253803],
+                {}
+            ).addTo(map_2a4a8c8fc25bf2e3c5e42537c15ed82d);
+        
+    
+            var icon_1cf2d12d078fa2454f0f170d0096d95b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e0b91ea559d18f2b6442d94a7c199cf3.setIcon(icon_1cf2d12d078fa2454f0f170d0096d95b);
+        
+    
+        var popup_d584b4a1bd875aa212aa215171e45f0d = L.popup({});
+
+        
+            
+                var html_bf2a308bd1ffc31a6c9b8ae78e028b2b = $(`<div id="html_bf2a308bd1ffc31a6c9b8ae78e028b2b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Basingstoke Golf Centre</h1><div class="nugget-popup"><p>The area surrounding Basingstoke Golf Centre was affected by fluvial (river), surface water, groundwater and foul/sewer flooding. High groundwater activated a dormant spring and soakaways did not function, causing runoff to follow a historic river course and accumulate in low&ndash;lying areas; nearby properties were flooded and the foul sewer network was inundated leading to foul flooding at properties. (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of the investigation area where 45 properties were reported flooded (36 internally and 9 externally); 36 properties reported foul flooding; up to 88 properties estimated flooded (p1)</p></div></div></body></div>`)[0];
+                popup_d584b4a1bd875aa212aa215171e45f0d.setContent(html_bf2a308bd1ffc31a6c9b8ae78e028b2b);
+            
+        
+
+        marker_e0b91ea559d18f2b6442d94a7c199cf3.bindPopup(popup_d584b4a1bd875aa212aa215171e45f0d)
+        ;
+
+        
+    
+    
+            var marker_20530023402a4258c08984e77b6d5d60 = L.marker(
+                [51.25901, -1.130112],
+                {}
+            ).addTo(map_2a4a8c8fc25bf2e3c5e42537c15ed82d);
+        
+    
+            var icon_412dcaeebc05ddb724028ab0e2fb1029 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_20530023402a4258c08984e77b6d5d60.setIcon(icon_412dcaeebc05ddb724028ab0e2fb1029);
+        
+    
+        var popup_bcfae48794033e1092b73118c4910725 = L.popup({});
+
+        
+            
+                var html_0d318b50cad933c7ca14832ba9be00ce = $(`<div id="html_0d318b50cad933c7ca14832ba9be00ce" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Grampian Way, Buckskin</h1><div class="nugget-popup"><p>The area surrounding Grampian Way was affected by fluvial (river), surface water, groundwater and foul/sewer flooding. High groundwater activated a dormant spring and soakaways did not function, causing runoff to follow a historic river course and accumulate in low&ndash;lying areas; nearby properties were flooded and the foul sewer network was inundated leading to foul flooding at properties. (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Part of the investigation area where 45 properties were reported flooded (36 internally and 9 externally); 36 properties reported foul flooding; up to 88 properties estimated flooded (p1)</p></div></div></body></div>`)[0];
+                popup_bcfae48794033e1092b73118c4910725.setContent(html_0d318b50cad933c7ca14832ba9be00ce);
+            
+        
+
+        marker_20530023402a4258c08984e77b6d5d60.bindPopup(popup_bcfae48794033e1092b73118c4910725)
+        ;
+
+        
+    
+    
+            var marker_0d4cecbc79a8c06090490a0f1f030566 = L.marker(
+                [51.25974, -1.1328547],
+                {}
+            ).addTo(map_2a4a8c8fc25bf2e3c5e42537c15ed82d);
+        
+    
+            var icon_1978b09cf4ef36ec6a1c6608cbf3c8b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0d4cecbc79a8c06090490a0f1f030566.setIcon(icon_1978b09cf4ef36ec6a1c6608cbf3c8b7);
+        
+    
+        var popup_e78db4af38f6a164bda513392bc00f52 = L.popup({});
+
+        
+            
+                var html_7435f73c77e66a050b7eecbe9d4481df = $(`<div id="html_7435f73c77e66a050b7eecbe9d4481df" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Buckskin</h1><div class="nugget-popup"><p>High groundwater levels instigated flooding in Bucksin: a dormant spring became active, surface water soakaways failed, and runoff followed the historic river course to accumulate in low&ndash;lying areas. Foul sewer network was overwhelmed by the inundation. (p1)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>45 properties reported as flooding (36 internally and 9 externally); up to 88 properties could have been flooded; 36 properties reported foul (sewer) flooding. (p1)</p></div></div></body></div>`)[0];
+                popup_e78db4af38f6a164bda513392bc00f52.setContent(html_7435f73c77e66a050b7eecbe9d4481df);
+            
+        
+
+        marker_0d4cecbc79a8c06090490a0f1f030566.bindPopup(popup_e78db4af38f6a164bda513392bc00f52)
+        ;
+
+        
+    
+</script>
+</html>

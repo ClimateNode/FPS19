@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_de0f587f520204f6a784ff372740bdfd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_de0f587f520204f6a784ff372740bdfd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_de0f587f520204f6a784ff372740bdfd = L.map(
+                "map_de0f587f520204f6a784ff372740bdfd",
+                {
+                    center: [52.922220957142855, -1.4013435952380953],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_92b39966be7f0351e6c08a9de9326a0f = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_92b39966be7f0351e6c08a9de9326a0f.addTo(map_de0f587f520204f6a784ff372740bdfd);
+    
+            var marker_39131471c214953b9a041d3410220983 = L.marker(
+                [52.9212617, -1.4761491],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_6ca873e6b4f0166c6b634d08762b7bb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_39131471c214953b9a041d3410220983.setIcon(icon_6ca873e6b4f0166c6b634d08762b7bb4);
+        
+    
+        var popup_a9af65dae60f30581b1229c1f0692ca4 = L.popup({});
+
+        
+            
+                var html_0f8847d711192adc4b46d74b70b71ed8 = $(`<div id="html_0f8847d711192adc4b46d74b70b71ed8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Derby</h1><div class="nugget-popup"><p>During the intense rainfall event on 19 July 2014, large areas of impermeable urban surface drained to adopted highways gullies and to public surface water sewers which outfall to an unnamed tributary of the River Derwent. This contributed to flooding of local roads and drainage infrastructure within the Derby City area. [PAG] (p8)</p></div><div class="nugget-popup"><p>Large areas experienced surface water flooding as intense rainfall overwhelmed local drainage networks, causing rapid runoff and accumulation in localised low spots; Spondon was particularly affected and a cluster of internally flooded properties occurred within this area. (p14)</p></div><div class="nugget-popup"><p>The storm exceeded local drainage capacity resulting in surface water (highway) flooding and flooding to gardens and external property areas; locally low&ndash;lying areas were worst hit. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>17 properties (p14)</p></div></div></body></div>`)[0];
+                popup_a9af65dae60f30581b1229c1f0692ca4.setContent(html_0f8847d711192adc4b46d74b70b71ed8);
+            
+        
+
+        marker_39131471c214953b9a041d3410220983.bindPopup(popup_a9af65dae60f30581b1229c1f0692ca4)
+        ;
+
+        
+    
+    
+            var marker_cd1821fe6c85bfda0bf6d05f3bf4f4ac = L.marker(
+                [52.9204799, -1.3930457],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_d6434f272d5105fcaf9b6429f40a9e43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cd1821fe6c85bfda0bf6d05f3bf4f4ac.setIcon(icon_d6434f272d5105fcaf9b6429f40a9e43);
+        
+    
+        var popup_5a72c19f38c7cdd6018cb482015c91dd = L.popup({});
+
+        
+            
+                var html_9757f8248be2cb44461b4c8a33704133 = $(`<div id="html_9757f8248be2cb44461b4c8a33704133" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sandringham Drive, Derby</h1><div class="nugget-popup"><p>Severe highway and external property flooding and part of the area where a large cluster of properties experienced internal flooding during the intense rainfall event. (p4)</p></div><div class="nugget-popup"><p>Residential properties on Sandringham Drive were internally flooded during the Spondon flood event. (p5)</p></div><div class="nugget-popup"><p>Cluster of reported internal and external property flooding and highway flooding incidents (internal properties flooded) associated with the 19 July 2014 flood event. (p6)</p></div><div class="nugget-popup"><p>The northernmost 250 m section of the road was affected by surface water flooding as runoff from higher land drained towards the surface water sewer and its outfall to an unnamed tributary of the River Derwent, leading to inundation of the carriageway. (p8)</p></div><div class="nugget-popup"><p>Flood water reached ground&ndash;floor living areas of properties; properties in the street were part of a group that experienced severe external property flooding, in some cases close to entering ground&ndash;floor living areas. [MUL] (p11)</p></div><div class="nugget-popup"><p>Surface water runoff from paved carriageways, footways and drives during the intense storm caused flooding into ground&ndash;floor living areas of properties. (p13)</p></div><div class="nugget-popup"><p>Surface water runoff from paved carriageway, footways and drives caused flooding to ground&ndash;floor living areas. (p14)</p></div><div class="nugget-popup"><p>Residents reported foul (sewer) water flooding on this street; incidents were reported to Derby City Council and Severn Trent Water were asked to investigate reports on behalf of affected residents. (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>up to 18 properties (p4)</p></div><div class="nugget-popup quant"><p>Part of up to 17 residential properties internally flooded (total across Sandringham Drive, Caernarvon Close, Holyrood Close and Harlech Close). (p5)</p></div><div class="nugget-popup quant"><p>around 17 homes in total across Sandringham Drive, Caernarvon Close, Holyrood Close and Harlech Close experienced some depth of flood water in ground&ndash;floor living areas [MUL] (p11)</p></div><div class="nugget-popup quant"><p>4 properties (p13)</p></div><div class="nugget-popup quant"><p>4 properties (p14)</p></div></div></body></div>`)[0];
+                popup_5a72c19f38c7cdd6018cb482015c91dd.setContent(html_9757f8248be2cb44461b4c8a33704133);
+            
+        
+
+        marker_cd1821fe6c85bfda0bf6d05f3bf4f4ac.bindPopup(popup_5a72c19f38c7cdd6018cb482015c91dd)
+        ;
+
+        
+    
+    
+            var marker_f51710dda11b63fa719f456328e55e84 = L.marker(
+                [52.9222738, -1.3940171],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_a8c6798e31830b6559b354f672fc9f33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f51710dda11b63fa719f456328e55e84.setIcon(icon_a8c6798e31830b6559b354f672fc9f33);
+        
+    
+        var popup_c2f020127543a499da99c4eda40b7918 = L.popup({});
+
+        
+            
+                var html_54e6ce86d108f4ac35c37b3fafce5dc5 = $(`<div id="html_54e6ce86d108f4ac35c37b3fafce5dc5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Caernarvon Close, Derby</h1><div class="nugget-popup"><p>Severe highway and external property flooding during the intense short&ndash;duration rainfall event. (p4)</p></div><div class="nugget-popup"><p>Residential properties on Caernarvon Close were internally flooded during the Spondon flood event. (p5)</p></div><div class="nugget-popup"><p>Cluster of reported internal and external property flooding and highway flooding incidents (internal properties flooded) associated with the 19 July 2014 flood event. (p6)</p></div><div class="nugget-popup"><p>Experienced surface water flooding as part of the same urban drainage system that drains to the surface water sewer and its outfall to an unnamed tributary of the River Derwent, resulting in road inundation during the event. (p8)</p></div><div class="nugget-popup"><p>Some properties experienced flood water in ground&ndash;floor living areas; areas also suffered severe external property flooding which in some cases approached or may have entered ground&ndash;floor living areas. [MUL] (p11)</p></div><div class="nugget-popup"><p>Surface water runoff from the overwhelmed urban drainage and from inadequately draining flat roofs led to water entering properties (including via walls and high&ndash;level windows). Garden and highway flooding were widely reported; in one case foul water contributed with water rising into bathrooms. (p13)</p></div><div class="nugget-popup"><p>Surface water flooding entered internal property areas; garden and highway flooding were also widely reported on the street. (p14)</p></div><div class="nugget-popup"><p>Foul (sewer) water entered a property internally; report suggests surface water may have entered the foul system due to misconnections. (p15)</p></div><div class="nugget-popup"><p>Residents reported foul (sewer) water flooding on this street; incidents were reported to Derby City Council and Severn Trent Water were asked to investigate reports on behalf of affected residents. (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>up to 18 properties (event&ndash;wide) (p4)</p></div><div class="nugget-popup quant"><p>Part of up to 17 residential properties internally flooded (total across Sandringham Drive, Caernarvon Close, Holyrood Close and Harlech Close). (p5)</p></div><div class="nugget-popup quant"><p>around 17 homes (total across Sandringham Drive, Caernarvon Close, Holyrood Close and Harlech Close) [MUL] (p11)</p></div><div class="nugget-popup quant"><p>9 properties (p13)</p></div><div class="nugget-popup quant"><p>nine properties (p14)</p></div><div class="nugget-popup quant"><p>one property (p15)</p></div></div></body></div>`)[0];
+                popup_c2f020127543a499da99c4eda40b7918.setContent(html_54e6ce86d108f4ac35c37b3fafce5dc5);
+            
+        
+
+        marker_f51710dda11b63fa719f456328e55e84.bindPopup(popup_c2f020127543a499da99c4eda40b7918)
+        ;
+
+        
+    
+    
+            var marker_f7e5d4796314591fb07c8e0b3cae7b18 = L.marker(
+                [52.9231621, -1.3915303],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_9e6582aeb4e68cd0bd74d2f0566b506b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f7e5d4796314591fb07c8e0b3cae7b18.setIcon(icon_9e6582aeb4e68cd0bd74d2f0566b506b);
+        
+    
+        var popup_9e9c16ee697253753b6ea719d24ee0e4 = L.popup({});
+
+        
+            
+                var html_184a0386e9e162209cb74fafc4cae3c7 = $(`<div id="html_184a0386e9e162209cb74fafc4cae3c7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holyrood Close, Spondon</h1><div class="nugget-popup"><p>Severe highway flooding and external property flooding on Holyrood Close during the Sandringham Drive area flood event. (p4)</p></div><div class="nugget-popup"><p>Residential properties on Holyrood Close were internally flooded during the Spondon flood event. (p5)</p></div><div class="nugget-popup"><p>Cluster of reported internal and external property flooding and highway flooding incidents (internal properties flooded) associated with the 19 July 2014 flood event. [IMG] (p6)</p></div><div class="nugget-popup"><p>Subject to surface water flooding during the event as runoff from the upslope urban area drained to the surface water sewer and outfall to the unnamed tributary of the River Derwent, leading to inundation of the close. (p8)</p></div><div class="nugget-popup"><p>Some properties experienced flood water in ground&ndash;floor living areas; areas also suffered severe external property flooding which in some cases approached or may have entered ground&ndash;floor living areas. [MUL] (p11)</p></div><div class="nugget-popup"><p>Internal flooding to ground&ndash;floor living areas of properties due to heavy rainfall and rapid surface water runoff along localised flow routes. (p13)</p></div><div class="nugget-popup"><p>Surface water runoff caused internal flooding to ground floor living areas in households on the street. (p14)</p></div><div class="nugget-popup"><p>Residents reported foul (sewer) water flooding on this street; incidents were reported to Derby City Council and Severn Trent Water were asked to investigate reports on behalf of affected residents. (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>up to 18 properties (internal flooding across the Sandringham Drive area, including the listed streets) (p4)</p></div><div class="nugget-popup quant"><p>Part of up to 17 residential properties internally flooded (total across Sandringham Drive, Caernarvon Close, Holyrood Close and Harlech Close). (p5)</p></div><div class="nugget-popup quant"><p>around 17 homes (total across Sandringham Drive, Caernarvon Close, Holyrood Close and Harlech Close) [MUL] (p11)</p></div><div class="nugget-popup quant"><p>3 properties (p13)</p></div><div class="nugget-popup quant"><p>three households (p14)</p></div></div></body></div>`)[0];
+                popup_9e9c16ee697253753b6ea719d24ee0e4.setContent(html_184a0386e9e162209cb74fafc4cae3c7);
+            
+        
+
+        marker_f7e5d4796314591fb07c8e0b3cae7b18.bindPopup(popup_9e9c16ee697253753b6ea719d24ee0e4)
+        ;
+
+        
+    
+    
+            var marker_716eeaf10512876a2d817073c92dce85 = L.marker(
+                [52.9228152, -1.3914924],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_3801f4f50da6cd222c2db4b34d30942e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_716eeaf10512876a2d817073c92dce85.setIcon(icon_3801f4f50da6cd222c2db4b34d30942e);
+        
+    
+        var popup_634f8d24196fa128c815111f38b7e0b8 = L.popup({});
+
+        
+            
+                var html_a0bbe632a2a10ec3712e8f970cb33e09 = $(`<div id="html_a0bbe632a2a10ec3712e8f970cb33e09" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Harlech Close, Spondon</h1><div class="nugget-popup"><p>Severe highway flooding and external property flooding on Harlech Close during the Sandringham Drive area flood event. (p4)</p></div><div class="nugget-popup"><p>Residential properties on Harlech Close were internally flooded during the Spondon flood event. (p5)</p></div><div class="nugget-popup"><p>Cluster of reported internal and external property flooding and highway flooding incidents (internal properties flooded) associated with the 19 July 2014 flood event. (p6)</p></div><div class="nugget-popup"><p>Experienced surface water flooding as part of the same drainage system (urban runoff to the surface water sewer and outfall to an unnamed tributary of the River Derwent), resulting in inundation of the close. (p8)</p></div><div class="nugget-popup"><p>Some properties experienced flood water in ground&ndash;floor living areas; areas also suffered severe external property flooding which in some cases approached or may have entered ground&ndash;floor living areas. [MUL] (p11)</p></div><div class="nugget-popup"><p>Surface water runoff (carried silt and debris from blocked private drainage serving two car parks) entered gardens and properties, causing internal flooding. (p13)</p></div><div class="nugget-popup"><p>Surface water runoff flooded properties on the street; the report links the flooding to blocked private drainage serving two car parks. (p14)</p></div><div class="nugget-popup"><p>Residents reported foul (sewer) water flooding on this street; incidents were reported to Derby City Council and Severn Trent Water were asked to investigate reports on behalf of affected residents. (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>up to 18 properties (internal flooding across the Sandringham Drive area, including the listed streets) (p4)</p></div><div class="nugget-popup quant"><p>Part of up to 17 residential properties internally flooded (total across Sandringham Drive, Caernarvon Close, Holyrood Close and Harlech Close). (p5)</p></div><div class="nugget-popup quant"><p>around 17 homes (total across Sandringham Drive, Caernarvon Close, Holyrood Close and Harlech Close) [MUL] (p11)</p></div><div class="nugget-popup quant"><p>2 properties (p13)</p></div><div class="nugget-popup quant"><p>two properties (p14)</p></div></div></body></div>`)[0];
+                popup_634f8d24196fa128c815111f38b7e0b8.setContent(html_a0bbe632a2a10ec3712e8f970cb33e09);
+            
+        
+
+        marker_716eeaf10512876a2d817073c92dce85.bindPopup(popup_634f8d24196fa128c815111f38b7e0b8)
+        ;
+
+        
+    
+    
+            var marker_aa32d20517a4f49d25a8c007da9d8659 = L.marker(
+                [52.9268175, -1.3985185],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_6a3cc36527dbf7e82661f6c525c92f74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_aa32d20517a4f49d25a8c007da9d8659.setIcon(icon_6a3cc36527dbf7e82661f6c525c92f74);
+        
+    
+        var popup_de7f1960b6b90b17c54ad41a67e87b55 = L.popup({});
+
+        
+            
+                var html_efe80a1d82f4f5711ca5ddda09f68099 = $(`<div id="html_efe80a1d82f4f5711ca5ddda09f68099" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sancroft Road, Spondon</h1><div class="nugget-popup"><p>Drains to the same surface water sewer/outfall system feeding an unnamed tributary of the River Derwent and is part of the urban catchment implicated in the flooding event; therefore at risk of, and involved in, surface water/urban flooding when the system is overwhelmed. (p8)</p></div></div></body></div>`)[0];
+                popup_de7f1960b6b90b17c54ad41a67e87b55.setContent(html_efe80a1d82f4f5711ca5ddda09f68099);
+            
+        
+
+        marker_aa32d20517a4f49d25a8c007da9d8659.bindPopup(popup_de7f1960b6b90b17c54ad41a67e87b55)
+        ;
+
+        
+    
+    
+            var marker_cae71d7366c2984f4e06b090bbb04dbc = L.marker(
+                [52.9252189, -1.3947462],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_2462adeb7afe2341e02ad52b97bf7f2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cae71d7366c2984f4e06b090bbb04dbc.setIcon(icon_2462adeb7afe2341e02ad52b97bf7f2b);
+        
+    
+        var popup_35ae2bec66ccd056383ae5d92a0cf193 = L.popup({});
+
+        
+            
+                var html_1e461f515de1cc028d0116037cd9e168 = $(`<div id="html_1e461f515de1cc028d0116037cd9e168" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fellside, Spondon</h1><div class="nugget-popup"><p>Identified as draining to the same surface water sewer/outfall to the unnamed tributary; implicated in the catchment that contributes runoff and is therefore affected by surface water/urban flooding during the event. (p8)</p></div></div></body></div>`)[0];
+                popup_35ae2bec66ccd056383ae5d92a0cf193.setContent(html_1e461f515de1cc028d0116037cd9e168);
+            
+        
+
+        marker_cae71d7366c2984f4e06b090bbb04dbc.bindPopup(popup_35ae2bec66ccd056383ae5d92a0cf193)
+        ;
+
+        
+    
+    
+            var marker_d64e6a8afc44b5ca5af99abd1a7beb9f = L.marker(
+                [52.9251502, -1.3958767],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_a0303e9f70e2f93d1dea277d2f3baf22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d64e6a8afc44b5ca5af99abd1a7beb9f.setIcon(icon_a0303e9f70e2f93d1dea277d2f3baf22);
+        
+    
+        var popup_5263e5974df1537e6d413deddb6f0708 = L.popup({});
+
+        
+            
+                var html_0d69bd5072ce12416ca4552df0308fa3 = $(`<div id="html_0d69bd5072ce12416ca4552df0308fa3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hamilton Road, Spondon</h1><div class="nugget-popup"><p>Drains to the same surface water sewer and outfall to the unnamed tributary and is therefore part of the urban flow path contributing to and affected by surface water/urban flooding when the system is overwhelmed. (p8)</p></div></div></body></div>`)[0];
+                popup_5263e5974df1537e6d413deddb6f0708.setContent(html_0d69bd5072ce12416ca4552df0308fa3);
+            
+        
+
+        marker_d64e6a8afc44b5ca5af99abd1a7beb9f.bindPopup(popup_5263e5974df1537e6d413deddb6f0708)
+        ;
+
+        
+    
+    
+            var marker_5848d63b8376ea3ffea86a89fdc7cf94 = L.marker(
+                [52.9277763, -1.3914742],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_658d028c534b49d58b05da06aedb7950 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5848d63b8376ea3ffea86a89fdc7cf94.setIcon(icon_658d028c534b49d58b05da06aedb7950);
+        
+    
+        var popup_255d2d87594ae7ed4719971de373cee6 = L.popup({});
+
+        
+            
+                var html_f5e671a2f41237c839adec07b7dc51cc = $(`<div id="html_f5e671a2f41237c839adec07b7dc51cc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Huntley Avenue, Spondon</h1><div class="nugget-popup"><p>Part of the urban catchment feeding the surface water sewer and outfall to the unnamed tributary; implicated in the surface water/urban flooding described in the report. (p8)</p></div></div></body></div>`)[0];
+                popup_255d2d87594ae7ed4719971de373cee6.setContent(html_f5e671a2f41237c839adec07b7dc51cc);
+            
+        
+
+        marker_5848d63b8376ea3ffea86a89fdc7cf94.bindPopup(popup_255d2d87594ae7ed4719971de373cee6)
+        ;
+
+        
+    
+    
+            var marker_646083ff8593897e73cd1fec50a0d5eb = L.marker(
+                [52.9251035, -1.3910414],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_ca7374195a4a949ab235dabf077a02a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_646083ff8593897e73cd1fec50a0d5eb.setIcon(icon_ca7374195a4a949ab235dabf077a02a2);
+        
+    
+        var popup_a2d3c02c34de4edad66f3f00cc03ee8d = L.popup({});
+
+        
+            
+                var html_48a0801a2a0d468f983bfa2b88570456 = $(`<div id="html_48a0801a2a0d468f983bfa2b88570456" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Windsor Drive, Spondon</h1><div class="nugget-popup"><p>Drains to the same surface water sewer/outfall into the unnamed tributary and is therefore part of the area affected by surface water/urban flooding when the system is overloaded. (p8)</p></div></div></body></div>`)[0];
+                popup_a2d3c02c34de4edad66f3f00cc03ee8d.setContent(html_48a0801a2a0d468f983bfa2b88570456);
+            
+        
+
+        marker_646083ff8593897e73cd1fec50a0d5eb.bindPopup(popup_a2d3c02c34de4edad66f3f00cc03ee8d)
+        ;
+
+        
+    
+    
+            var marker_8edd59142a3afc193195d7d6522a4a64 = L.marker(
+                [52.9219996, -1.3921391],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_6c4990379b9216d707b7a14c0c741cfe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8edd59142a3afc193195d7d6522a4a64.setIcon(icon_6c4990379b9216d707b7a14c0c741cfe);
+        
+    
+        var popup_c4d2a27cf6a4646014c329e5f6b067a9 = L.popup({});
+
+        
+            
+                var html_58190ac3eb2ead0bbe3623ca2b57fc18 = $(`<div id="html_58190ac3eb2ead0bbe3623ca2b57fc18" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hampton Close, Spondon</h1><div class="nugget-popup"><p>Affected by surface water flooding from the urban catchment draining to the surface water sewer and its outfall to an unnamed tributary of the River Derwent, causing inundation of the road area. (p8)</p></div></div></body></div>`)[0];
+                popup_c4d2a27cf6a4646014c329e5f6b067a9.setContent(html_58190ac3eb2ead0bbe3623ca2b57fc18);
+            
+        
+
+        marker_8edd59142a3afc193195d7d6522a4a64.bindPopup(popup_c4d2a27cf6a4646014c329e5f6b067a9)
+        ;
+
+        
+    
+    
+            var marker_30310cf14cf941445af0d49acdadeb93 = L.marker(
+                [52.9227253, -1.393481],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_a6e919bbb44756c185bca4ab56a7e90e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_30310cf14cf941445af0d49acdadeb93.setIcon(icon_a6e919bbb44756c185bca4ab56a7e90e);
+        
+    
+        var popup_2ef65e8f5183fe19fa9592c6b0fd7dd1 = L.popup({});
+
+        
+            
+                var html_fd9b30c08f8797fb4a7aeeb4f4ef3df1 = $(`<div id="html_fd9b30c08f8797fb4a7aeeb4f4ef3df1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Beaumaris Court, Spondon</h1><div class="nugget-popup"><p>Affected by surface water flooding from the urban catchment relying on the surface water sewer and its outfall to the unnamed tributary of the River Derwent, causing inundation at the court during the event. (p8)</p></div></div></body></div>`)[0];
+                popup_2ef65e8f5183fe19fa9592c6b0fd7dd1.setContent(html_fd9b30c08f8797fb4a7aeeb4f4ef3df1);
+            
+        
+
+        marker_30310cf14cf941445af0d49acdadeb93.bindPopup(popup_2ef65e8f5183fe19fa9592c6b0fd7dd1)
+        ;
+
+        
+    
+    
+            var marker_86b2fc22c2a441f6786c8bdde2a8853e = L.marker(
+                [52.9233938, -1.3963915],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_b0fdc8de1d0fa02add33085f5aac0995 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_86b2fc22c2a441f6786c8bdde2a8853e.setIcon(icon_b0fdc8de1d0fa02add33085f5aac0995);
+        
+    
+        var popup_8e08b18260768523e5ea66929fc15d33 = L.popup({});
+
+        
+            
+                var html_cb308706e92895a7f1b88b0769637f89 = $(`<div id="html_cb308706e92895a7f1b88b0769637f89" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Dale Road, Spondon</h1><div class="nugget-popup"><p>A section of Dale Road formed part of the surface water sewer catchment and received runoff via highway drains that outfall to a ditch / unnamed tributary of the River Derwent. During the intense rainfall event on 19 July 2014 the surface water drainage on and around Dale Road conveyed runoff to the outfall, contributing to the surface water flooding that affected local roads. [PAG,IMG] (p8)</p></div></div></body></div>`)[0];
+                popup_8e08b18260768523e5ea66929fc15d33.setContent(html_cb308706e92895a7f1b88b0769637f89);
+            
+        
+
+        marker_86b2fc22c2a441f6786c8bdde2a8853e.bindPopup(popup_8e08b18260768523e5ea66929fc15d33)
+        ;
+
+        
+    
+    
+            var marker_0209b52adef8a78f54f097f8461177b4 = L.marker(
+                [52.9205217, -1.4057218],
+                {}
+            ).addTo(map_de0f587f520204f6a784ff372740bdfd);
+        
+    
+            var icon_f237916b4e2dea22983f4468a4c73724 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0209b52adef8a78f54f097f8461177b4.setIcon(icon_f237916b4e2dea22983f4468a4c73724);
+        
+    
+        var popup_b12f9aae1f6ebd4502e6331abca63fc3 = L.popup({});
+
+        
+            
+                var html_dddebe078590c14484efdf538cab921b = $(`<div id="html_dddebe078590c14484efdf538cab921b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Spondon</h1><div class="nugget-popup"><p>Surface water flooding across the area on 19 July 2014, including internal property flooding in multiple locations and concentrated severe flooding in the Sandringham Drive area. (p4)</p></div><div class="nugget-popup"><p>Up to 17 residential properties were internally flooded in the Spondon area (properties on Sandringham Drive, Caernarvon Close, Holyrood Close and Harlech Close experienced internal flooding). (p5)</p></div><div class="nugget-popup"><p>Many areas of Spondon were affected by the flooding event on 19 July 2014, including internal property flooding. The City Council identified a significant cluster of reported internal and external property and highway flooding incidents on Sandringham Drive, Caernarvon Close, Holyrood Close and Harlech Close. [IMG] (p6)</p></div><div class="nugget-popup"><p>Experienced an extremely localised, short&ndash;duration intense storm (around 15:30 on 19 July 2014) that produced very high rainfall rates centred on and just southwest of Spondon. Because watercourse levels were not expected to be high, any flood impacts associated with this event would be due to rapid, localised surface&ndash;water/urban flooding rather than river overtopping. [IMG] (p12)</p></div><div class="nugget-popup"><p>Surface water flooding occurred across Spondon during the intense localised storm, with local drainage overwhelmed and rapid runoff accumulating in low spots leading to property flooding in parts of the area. (p14)</p></div><div class="nugget-popup"><p>An intense thunderstorm struck Spondon on the afternoon of 19 July 2014, producing extreme/localised rainfall that caused surface water flooding conditions in the area. (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>up to 18 properties (p4)</p></div><div class="nugget-popup quant"><p>up to 17 residential properties (p5)</p></div></div></body></div>`)[0];
+                popup_b12f9aae1f6ebd4502e6331abca63fc3.setContent(html_dddebe078590c14484efdf538cab921b);
+            
+        
+
+        marker_0209b52adef8a78f54f097f8461177b4.bindPopup(popup_b12f9aae1f6ebd4502e6331abca63fc3)
+        ;
+
+        
+    
+</script>
+</html>

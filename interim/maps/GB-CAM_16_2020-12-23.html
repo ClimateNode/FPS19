@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_50e1e117ad922780d2805efb1b84a280 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_50e1e117ad922780d2805efb1b84a280" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_50e1e117ad922780d2805efb1b84a280 = L.map(
+                "map_50e1e117ad922780d2805efb1b84a280",
+                {
+                    center: [52.311403074859264, -0.17901899069486743],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ee1ccc380f6068f97da7886aa504641e = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_ee1ccc380f6068f97da7886aa504641e.addTo(map_50e1e117ad922780d2805efb1b84a280);
+    
+            var marker_bcc3b8883682e04117f3f9003eca9cd6 = L.marker(
+                [52.3156904, -0.1450631],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_7133da03c0a8914386e4f054a4b7f6d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_bcc3b8883682e04117f3f9003eca9cd6.setIcon(icon_7133da03c0a8914386e4f054a4b7f6d8);
+        
+    
+        var popup_f09f7ea257f3e3a79c90c546da1dfb16 = L.popup({});
+
+        
+            
+                var html_45d6524542e28f59f7bf43a407203aaf = $(`<div id="html_45d6524542e28f59f7bf43a407203aaf" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Harcourt Farm</h1><div class="nugget-popup"><p>Riparian landowners/tenants for the Harcourt Farm access road were to be followed up by the LLFA regarding adjacent watercourses after flooding, indicating the access area experienced flood&ndash;related issues requiring riparian maintenance. [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_f09f7ea257f3e3a79c90c546da1dfb16.setContent(html_45d6524542e28f59f7bf43a407203aaf);
+            
+        
+
+        marker_bcc3b8883682e04117f3f9003eca9cd6.bindPopup(popup_f09f7ea257f3e3a79c90c546da1dfb16)
+        ;
+
+        
+    
+    
+            var marker_3793353af327ed01a78cb394e0bcfa4f = L.marker(
+                [52.3120637, -0.1787039],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_2000c1075e205f02e6c6cdae465b60bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3793353af327ed01a78cb394e0bcfa4f.setIcon(icon_2000c1075e205f02e6c6cdae465b60bb);
+        
+    
+        var popup_3fc14aaab9b788c63ba267bf414d4029 = L.popup({});
+
+        
+            
+                var html_8b9f4fa25b8cb86d9be214def411df10 = $(`<div id="html_8b9f4fa25b8cb86d9be214def411df10" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stoneyhill Brook</h1><div class="nugget-popup"><p>The brook cannot discharge into the River Great Ouse when river levels are high (outfall submerged), causing backwater and increased flood risk to nearby properties; the brook is silted and losing conveyance capacity upstream of its outfall, reducing discharge ability. (p13)</p></div><div class="nugget-popup"><p>Elevated levels and conveyance/restriction issues in Stoneyhill Brook contributed to flooding of adjacent streets (including West Street and Silver Street); culvert removal/opening and other works were undertaken following the flooding to improve flow. [TAB] (p17)</p></div><div class="nugget-popup"><p>The watercourse had flow obstructions and limited conveyance to the River Great Ouse, contributing to flood risk upstream; residents cleared sections of the brook to improve flow and reduce flooding risk, and authorities evaluated the channel and engaged riparian owners to ensure channel capacity and remove obstructions. (p18)</p></div><div class="nugget-popup"><p>Obstructions/culvert in the brook were identified as impairing flow; actions taken include removal of the culvert to open the watercourse, resident clearance of brook sections, and engagement with landowners to ensure riparian maintenance to reduce flood risk. (p19)</p></div></div></body></div>`)[0];
+                popup_3fc14aaab9b788c63ba267bf414d4029.setContent(html_8b9f4fa25b8cb86d9be214def411df10);
+            
+        
+
+        marker_3793353af327ed01a78cb394e0bcfa4f.bindPopup(popup_3fc14aaab9b788c63ba267bf414d4029)
+        ;
+
+        
+    
+    
+            var marker_6610dedf3efd7c6e019608dad69f1351 = L.marker(
+                [52.3210521, -0.1672709],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_0609ca04ee4f10a8c13b4c439e85338e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6610dedf3efd7c6e019608dad69f1351.setIcon(icon_0609ca04ee4f10a8c13b4c439e85338e);
+        
+    
+        var popup_43c348c17e70662cd6e378327cc76046 = L.popup({});
+
+        
+            
+                var html_400250661f99f6e25c648cc0e1177dd5 = $(`<div id="html_400250661f99f6e25c648cc0e1177dd5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>A1307 at Godmanchester</h1><div class="nugget-popup"><p>Culvert passing under the roundabout/A1307 overpass and the area immediately north of the A1307 intersection require survey and cleansing following the flood. (p20)</p></div></div></body></div>`)[0];
+                popup_43c348c17e70662cd6e378327cc76046.setContent(html_400250661f99f6e25c648cc0e1177dd5);
+            
+        
+
+        marker_6610dedf3efd7c6e019608dad69f1351.bindPopup(popup_43c348c17e70662cd6e378327cc76046)
+        ;
+
+        
+    
+    
+            var marker_4224d458abe0be7139a586493cb28229 = L.marker(
+                [52.1278302, -0.4250206],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_d08bf34a142b5658d7da449671295170 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4224d458abe0be7139a586493cb28229.setIcon(icon_d08bf34a142b5658d7da449671295170);
+        
+    
+        var popup_df0797470808802a348ba18fd804c1de = L.popup({});
+
+        
+            
+                var html_90e235d23d6de89c185d6ca179cc02fc = $(`<div id="html_90e235d23d6de89c185d6ca179cc02fc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Great Ouse</h1><div class="nugget-popup"><p>High water volumes and levels in the Great River Ouse contributed to flooding pressure on drainage and surrounding land in Godmanchester, exacerbating surface water flooding of properties and overwhelming surface water drainage systems. (p7)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>river flow upstream of Godmanchester recorded at 47.98 m3/s (204% of long&ndash;term average); river gauge levels exceeded those of 1998 and were the highest on record (p7)</p></div></div></body></div>`)[0];
+                popup_df0797470808802a348ba18fd804c1de.setContent(html_90e235d23d6de89c185d6ca179cc02fc);
+            
+        
+
+        marker_4224d458abe0be7139a586493cb28229.bindPopup(popup_df0797470808802a348ba18fd804c1de)
+        ;
+
+        
+    
+    
+            var marker_b157b25d2bddbc2a2d06435ee5becec3 = L.marker(
+                [52.3222861, -0.1519477],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_eac94a93a853ae516bcf745ab079fb50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b157b25d2bddbc2a2d06435ee5becec3.setIcon(icon_eac94a93a853ae516bcf745ab079fb50);
+        
+    
+        var popup_d3e12f040a7b85a5eb1a2ded8caa9580 = L.popup({});
+
+        
+            
+                var html_854a2edd52dface5617b9a92c59d3e6b = $(`<div id="html_854a2edd52dface5617b9a92c59d3e6b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cow Lane, Godmanchester</h1><div class="nugget-popup"><p>External highway flooding was reported on Cow Lane. [TAB] (p10)</p></div><div class="nugget-popup"><p>External flooding affected the highway on Cow Lane. [TAB] (p15)</p></div><div class="nugget-popup"><p>Areas adjacent to Cambridge Road and Cow Lane had flood&ndash;related issues with nearby watercourses; LLFA and District Council to follow up riparian owners and evaluate the condition of the awarded watercourse adjacent to Cow Lane to remove obstructions and reduce flood risk. [TAB] (p17)</p></div><div class="nugget-popup"><p>Watercourse adjacent to Cow Lane to be evaluated for obstructions; culvert under Cambridge Road (immediately north of the A1307 intersection) identified for cleansing following the flood. (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>At least 1 property (Cambridge Villas, Cambridge Road and Cow Lane) [TAB] (p11)</p></div><div class="nugget-popup quant"><p>0 properties internal [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_d3e12f040a7b85a5eb1a2ded8caa9580.setContent(html_854a2edd52dface5617b9a92c59d3e6b);
+            
+        
+
+        marker_b157b25d2bddbc2a2d06435ee5becec3.bindPopup(popup_d3e12f040a7b85a5eb1a2ded8caa9580)
+        ;
+
+        
+    
+    
+            var marker_25e7e7a3c94865a428c6805ed2430f08 = L.marker(
+                [52.3143886, -0.1865002],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_648013eff3530585e10bb19cb0095647 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_25e7e7a3c94865a428c6805ed2430f08.setIcon(icon_648013eff3530585e10bb19cb0095647);
+        
+    
+        var popup_c790c40c672f6c92188c9d1c4e2e1016 = L.popup({});
+
+        
+            
+                var html_8adb1ab7ff1ceaf2d1d7eb0f369085d8 = $(`<div id="html_8adb1ab7ff1ceaf2d1d7eb0f369085d8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Berry Lane, Godmanchester</h1><div class="nugget-popup"><p>External highway flooding was reported on Berry Lane. [TAB] (p10)</p></div><div class="nugget-popup"><p>External flooding with highway flooding that cut off access to properties. [TAB,PAG] (p11)</p></div><div class="nugget-popup"><p>External (highway) inundation by surface water flooding. [TAB] (p13)</p></div><div class="nugget-popup"><p>Surface water backed up into Berry Lane from the adjacent brook when brook levels were elevated; a flapped outfall sits only just above normal water level which causes back&ndash;up of surface water into Berry Lane during high brook levels. [TAB,PAG] (p17)</p></div><div class="nugget-popup"><p>Berry Lane is subject to flooding risk; a proposal to raise the lane was evaluated to prevent future flooding (with consideration of displacement of flood water). The watercourse running north/south of Berry Lane was reviewed to ensure no obstructions to its outfall into the River Great Ouse. Flood Alert text was amended to include Berry Lane among roads likely to be affected at the alert level. (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>10 properties [TAB,PAG] (p11)</p></div><div class="nugget-popup quant"><p>0 properties [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_c790c40c672f6c92188c9d1c4e2e1016.setContent(html_8adb1ab7ff1ceaf2d1d7eb0f369085d8);
+            
+        
+
+        marker_25e7e7a3c94865a428c6805ed2430f08.bindPopup(popup_c790c40c672f6c92188c9d1c4e2e1016)
+        ;
+
+        
+    
+    
+            var marker_50fb98421d7ec71fbe215ded4c1537dc = L.marker(
+                [52.313322, -0.1682954],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_68c5917fd9a27e8c79423911d65eeab6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_50fb98421d7ec71fbe215ded4c1537dc.setIcon(icon_68c5917fd9a27e8c79423911d65eeab6);
+        
+    
+        var popup_c7f34e86aa29cc65e19a6b884da9b18c = L.popup({});
+
+        
+            
+                var html_70f78f532a2369761e163f372f9392a8 = $(`<div id="html_70f78f532a2369761e163f372f9392a8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>London Road, Godmanchester</h1><div class="nugget-popup"><p>External highway flooding was reported on London Road. [TAB] (p10)</p></div><div class="nugget-popup"><p>External flooding with highway flooding affecting the road/highway network. [TAB,PAG] (p11)</p></div><div class="nugget-popup"><p>One property reported flooding to its external curtilage; the highway was significantly affected by flooding. Surface water manholes surcharged at high pressure and toilets were affected (sewerage issues and toilets blocking were reported repeatedly). [TAB,MUL] (p15)</p></div><div class="nugget-popup"><p>Local Highways officer attended during the flood event; Anglian Water asset was observed surcharging at this location. The location was assigned to the priority gully&ndash;cleansing scheme and gully cleansing to take place as a priority. (p21)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property (external curtilage flooded) [TAB,MUL] (p15)</p></div></div></body></div>`)[0];
+                popup_c7f34e86aa29cc65e19a6b884da9b18c.setContent(html_70f78f532a2369761e163f372f9392a8);
+            
+        
+
+        marker_50fb98421d7ec71fbe215ded4c1537dc.bindPopup(popup_c7f34e86aa29cc65e19a6b884da9b18c)
+        ;
+
+        
+    
+    
+            var marker_93d0bbaafe6faee517f972374cc67d8d = L.marker(
+                [52.3139261, -0.1649991],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_a36ea37e7813b294cc0255dcab0301e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_93d0bbaafe6faee517f972374cc67d8d.setIcon(icon_a36ea37e7813b294cc0255dcab0301e3);
+        
+    
+        var popup_d6e461682074921f8612ea4b198640cc = L.popup({});
+
+        
+            
+                var html_ae445413d41ffe97e31b672c9eae36f8 = $(`<div id="html_ae445413d41ffe97e31b672c9eae36f8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Roman Way, Godmanchester</h1><div class="nugget-popup"><p>External flooding affected gardens on Roman Way. [TAB] (p10)</p></div><div class="nugget-popup"><p>External flooding with highway flooding affecting the road/highway network. [TAB] (p11)</p></div><div class="nugget-popup"><p>Local Highways officer attended during the flood event; Anglian Water asset was observed surcharging at this location. Assigned to the priority gully&ndash;cleansing scheme; gully cleansing to be carried out as a priority. (p21)</p></div></div></body></div>`)[0];
+                popup_d6e461682074921f8612ea4b198640cc.setContent(html_ae445413d41ffe97e31b672c9eae36f8);
+            
+        
+
+        marker_93d0bbaafe6faee517f972374cc67d8d.bindPopup(popup_d6e461682074921f8612ea4b198640cc)
+        ;
+
+        
+    
+    
+            var marker_3ab358ca54083d6373868c785bbca290 = L.marker(
+                [52.319266, -0.1750559],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_f328492a4db5c1b5fb8b5408aeb8391a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3ab358ca54083d6373868c785bbca290.setIcon(icon_f328492a4db5c1b5fb8b5408aeb8391a);
+        
+    
+        var popup_0a2d6d8b24643674b445b8ed08e11e26 = L.popup({});
+
+        
+            
+                var html_5f49a8df67d33fbf362680a20abee673 = $(`<div id="html_5f49a8df67d33fbf362680a20abee673" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Causeway, Godmanchester</h1><div class="nugget-popup"><p>Internal flooding of residential properties on The Causeway. [TAB] (p10)</p></div><div class="nugget-popup"><p>Internal and external flooding affected properties on The Causeway: three properties were affected. One house was internally flooded and lost power; another property was evacuated. Floodwater surrounded other houses and was held back by sandbags. [TAB] (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [TAB] (p10)</p></div><div class="nugget-popup quant"><p>three properties; one house (internally flooded and lost power); one house evacuated [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_0a2d6d8b24643674b445b8ed08e11e26.setContent(html_5f49a8df67d33fbf362680a20abee673);
+            
+        
+
+        marker_3ab358ca54083d6373868c785bbca290.bindPopup(popup_0a2d6d8b24643674b445b8ed08e11e26)
+        ;
+
+        
+    
+    
+            var marker_5dd34c839d2b0a5954d688ee85d5b0f0 = L.marker(
+                [52.3190322, -0.1625821],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_f251399e8f8ab523fa8628f178c7ffcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5dd34c839d2b0a5954d688ee85d5b0f0.setIcon(icon_f251399e8f8ab523fa8628f178c7ffcb);
+        
+    
+        var popup_eb2b5aac742b35f4aceb69e4cf12c1eb = L.popup({});
+
+        
+            
+                var html_25c41f107392496781be8f500579ff5f = $(`<div id="html_25c41f107392496781be8f500579ff5f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cambridge Villas, Godmanchester</h1><div class="nugget-popup"><p>Internal flooding of a residential property on Cambridge Villas. [TAB] (p10)</p></div><div class="nugget-popup"><p>Internal property flooding affecting residential property(ies). [TAB,PAG] (p11)</p></div><div class="nugget-popup"><p>Internal flooding: one property flooded internally; the conservatory of another property flooded; at least three gardens were flooded. [TAB] (p15)</p></div><div class="nugget-popup"><p>Flooding identified issues with the outfall ditch and culvert in the vicinity of 52 Cambridge Villas (culvert passing under the roundabout/A1307 overpass). Actions include clearing the outfall ditch and surveying/cleansing the culvert to restore conveyance. [TAB] (p17)</p></div><div class="nugget-popup"><p>Culvert serving the area (noted between 52 Cambridge Villas) requires surveying and cleansing after the flood and as part of clearance works. (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div><div class="nugget-popup quant"><p>At least 1 property [TAB,PAG] (p11)</p></div><div class="nugget-popup quant"><p>1 property; conservatory of 1 other property; at least 3 gardens [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_eb2b5aac742b35f4aceb69e4cf12c1eb.setContent(html_25c41f107392496781be8f500579ff5f);
+            
+        
+
+        marker_5dd34c839d2b0a5954d688ee85d5b0f0.bindPopup(popup_eb2b5aac742b35f4aceb69e4cf12c1eb)
+        ;
+
+        
+    
+    
+            var marker_8f00f6a334b70dfdaf4e2e665d581887 = L.marker(
+                [52.3098847, -0.1614162],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_52ca6dc69246d59ef75a75f017509faa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8f00f6a334b70dfdaf4e2e665d581887.setIcon(icon_52ca6dc69246d59ef75a75f017509faa);
+        
+    
+        var popup_c81490b98976925688f190c9e1a629df = L.popup({});
+
+        
+            
+                var html_48c00a824ea1add529867df0b5856b42 = $(`<div id="html_48c00a824ea1add529867df0b5856b42" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Baumgartner, Godmanchester</h1><div class="nugget-popup"><p>Internal flooding of a residential property on Baumgartner. [TAB] (p10)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties &mdash; properties within the Baumgartner area were flooded internally as part of the Bearscroft Lane area impacts. [TAB,PAG] (p11)</p></div><div class="nugget-popup"><p>External flooding affected three properties; the report states internal flooding was avoided using pumping, sandbags and sweeping, while a table records 1 property with internal flooding. [TAB] (p16)</p></div><div class="nugget-popup"><p>Internal property flooding was recorded at this location (reported as 'Internal' under known properties with internal property flooding). [TAB,PAG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div><div class="nugget-popup quant"><p>At least two properties flooded internally (in the Bearscroft Lane area) [TAB,PAG] (p11)</p></div><div class="nugget-popup quant"><p>3 properties external; 1 property internal [TAB] (p16)</p></div></div></body></div>`)[0];
+                popup_c81490b98976925688f190c9e1a629df.setContent(html_48c00a824ea1add529867df0b5856b42);
+            
+        
+
+        marker_8f00f6a334b70dfdaf4e2e665d581887.bindPopup(popup_c81490b98976925688f190c9e1a629df)
+        ;
+
+        
+    
+    
+            var marker_947a629f7e2d8f16c325791e493e69a6 = L.marker(
+                [52.3108314, -0.1683267],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_8b3323b1396d4d46240a4098b564d8f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_947a629f7e2d8f16c325791e493e69a6.setIcon(icon_8b3323b1396d4d46240a4098b564d8f8);
+        
+    
+        var popup_02565145807066a6c186bc24d3c39316 = L.popup({});
+
+        
+            
+                var html_365421fa380bd783c3637784e5b265a9 = $(`<div id="html_365421fa380bd783c3637784e5b265a9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Crowhill, Godmanchester</h1><div class="nugget-popup"><p>External flooding affecting garages/outbuildings at Crowhill. (p10)</p></div><div class="nugget-popup"><p>External flooding with highway flooding affecting the road/highway network. [TAB,PAG] (p11)</p></div><div class="nugget-popup"><p>Local Highways officer attended during the flood event; Anglian Water asset was observed surcharging in the area. Site assigned to the priority gully&ndash;cleansing scheme with gully cleansing to take place as a priority. (p21)</p></div></div></body></div>`)[0];
+                popup_02565145807066a6c186bc24d3c39316.setContent(html_365421fa380bd783c3637784e5b265a9);
+            
+        
+
+        marker_947a629f7e2d8f16c325791e493e69a6.bindPopup(popup_02565145807066a6c186bc24d3c39316)
+        ;
+
+        
+    
+    
+            var marker_724c90a330541639f61cc81775be7391 = L.marker(
+                [52.3118694, -0.1682321],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_f27f40836cbd24192dd49e7a909d7fcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_724c90a330541639f61cc81775be7391.setIcon(icon_f27f40836cbd24192dd49e7a909d7fcf);
+        
+    
+        var popup_aec43646ecea73b8d8561cc0cdfc809b = L.popup({});
+
+        
+            
+                var html_da1583e25540eb77e999dca0b62fd1a7 = $(`<div id="html_da1583e25540eb77e999dca0b62fd1a7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thickwillow, Godmanchester</h1><div class="nugget-popup"><p>External flooding impacting the highway on Thickwillow. [TAB] (p10)</p></div><div class="nugget-popup"><p>External flooding with highway flooding affecting the road/highway network. [TAB] (p11)</p></div><div class="nugget-popup"><p>Local Highways officer attended during the flood event; Anglian Water asset was observed surcharging at this location. Assigned to the priority gully&ndash;cleansing scheme; gully cleansing to be carried out as a priority. (p21)</p></div></div></body></div>`)[0];
+                popup_aec43646ecea73b8d8561cc0cdfc809b.setContent(html_da1583e25540eb77e999dca0b62fd1a7);
+            
+        
+
+        marker_724c90a330541639f61cc81775be7391.bindPopup(popup_aec43646ecea73b8d8561cc0cdfc809b)
+        ;
+
+        
+    
+    
+            var marker_720e8e0c5fd25df0e1c7dcfbfd644319 = L.marker(
+                [52.3165338, -0.1779064],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_62c2a9fe16e2b69b87237d316017d59c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_720e8e0c5fd25df0e1c7dcfbfd644319.setIcon(icon_62c2a9fe16e2b69b87237d316017d59c);
+        
+    
+        var popup_80265803d722d00e4fb385d11b9ed6ed = L.popup({});
+
+        
+            
+                var html_6dae3b1e4970dde1fb0cbe86196fdfb3 = $(`<div id="html_6dae3b1e4970dde1fb0cbe86196fdfb3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Street, Godmanchester</h1><div class="nugget-popup"><p>Internal flooding of residential properties. [TAB] (p10)</p></div><div class="nugget-popup"><p>Internal property flooding affecting residential properties. [TAB,PAG] (p11)</p></div><div class="nugget-popup"><p>Internal and external flooding affected properties on West Street; three properties reported internal flooding. Flood risk is increased because Stoneyhill Brook close to the outfall cannot discharge when the River Great Ouse is high, and the brook is silted reducing conveyance. [TAB] (p13)</p></div><div class="nugget-popup"><p>Flooding/poor drainage associated with nearby Stoneyhill Brook and culvert/outfall issues led to highway flooding and prompted installation of a new carriageway gully and post&ndash;flood clearance by residents. [TAB,PAG] (p17)</p></div><div class="nugget-popup"><p>Highway drainage networks were blocked/collapsed and ACO&ndash;type drains and channels required inclusion in the gully cleansing programme; action to obtain cost for a new carriageway gully and connection was raised. Residents cleared sections of the adjacent brook (Stoneyhill Brook) to improve flow and reduce flood risk; works and investigations were undertaken following flooding. (p18)</p></div><div class="nugget-popup"><p>The reach of Stoneyhill Brook between Silver Street and West Street was the focus of maintenance and culvert&ndash;removal works to address obstructions and improve flow to reduce flooding risk. (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>3 properties [TAB] (p10)</p></div><div class="nugget-popup quant"><p>three properties [TAB,PAG] (p11)</p></div><div class="nugget-popup quant"><p>3 properties [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_80265803d722d00e4fb385d11b9ed6ed.setContent(html_6dae3b1e4970dde1fb0cbe86196fdfb3);
+            
+        
+
+        marker_720e8e0c5fd25df0e1c7dcfbfd644319.bindPopup(popup_80265803d722d00e4fb385d11b9ed6ed)
+        ;
+
+        
+    
+    
+            var marker_f26957fd5e017990b90ee47971323887 = L.marker(
+                [52.3146252, -0.1745591],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_689b5d517bfcefffb43ddfdfa5f7ca5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f26957fd5e017990b90ee47971323887.setIcon(icon_689b5d517bfcefffb43ddfdfa5f7ca5c);
+        
+    
+        var popup_a42555f54cba6eac2a97e35d3c7e5259 = L.popup({});
+
+        
+            
+                var html_c52c7b57e38ed27a1b12badb635de326 = $(`<div id="html_c52c7b57e38ed27a1b12badb635de326" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Silver Street, Godmanchester</h1><div class="nugget-popup"><p>Internal flooding of residential properties. [TAB] (p10)</p></div><div class="nugget-popup"><p>Internal property flooding affecting residential properties. [TAB,PAG] (p11)</p></div><div class="nugget-popup"><p>Internal and external flooding affected properties on Silver Street. [TAB] (p14)</p></div><div class="nugget-popup"><p>Overflow and backup of Stoneyhill Brook and blocked highway drainage impacted the West Street / Silver Street area, prompting investigations of maintenance responsibilities, installation of new carriageway gully works and resident clearance of brook sections to improve flow. [TAB] (p17)</p></div><div class="nugget-popup"><p>The reach of Stoneyhill Brook between Silver Street and West Street was the focus of maintenance and culvert&ndash;removal works to address obstructions and improve flow to reduce flooding risk. (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties [TAB] (p10)</p></div><div class="nugget-popup quant"><p>two properties [TAB,PAG] (p11)</p></div><div class="nugget-popup quant"><p>two properties [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_a42555f54cba6eac2a97e35d3c7e5259.setContent(html_c52c7b57e38ed27a1b12badb635de326);
+            
+        
+
+        marker_f26957fd5e017990b90ee47971323887.bindPopup(popup_a42555f54cba6eac2a97e35d3c7e5259)
+        ;
+
+        
+    
+    
+            var marker_f3bff6e7f75e3391c816fbae56c43688 = L.marker(
+                [52.3220759, -0.172859],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_89c46a2f2696783bc5c222afd690bbd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f3bff6e7f75e3391c816fbae56c43688.setIcon(icon_89c46a2f2696783bc5c222afd690bbd5);
+        
+    
+        var popup_e250cdbfdde6f1ca89029b6d5fd95da1 = L.popup({});
+
+        
+            
+                var html_346d49cd0986006e68c6310ab40bf055 = $(`<div id="html_346d49cd0986006e68c6310ab40bf055" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pavilion Close, Godmanchester</h1><div class="nugget-popup"><p>Internal flooding of a residential property. [TAB] (p10)</p></div><div class="nugget-popup"><p>Internal property flooding affecting residential properties. [TAB] (p11)</p></div><div class="nugget-popup"><p>Internal and external flooding affected properties; blocked toilets and surcharging of foul drains reported in the area served by the Rectory Gardens Pumping Station. [TAB] (p14)</p></div><div class="nugget-popup"><p>Foul pumping station serving the Pavilion Close and Fox Grove area may be inundated during times of extreme rainfall due to ingress of surface water and groundwater; Anglian Water is to finalise adoption and investigate resilience of pumping station assets. [TAB] (p17)</p></div><div class="nugget-popup"><p>Following flooding, responsibility for a new pumping station valve chamber and associated pipework was investigated; inspections and follow&ndash;up were undertaken and a culvert was removed to open the watercourse as part of flood&ndash;related works. (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div><div class="nugget-popup quant"><p>1 property [TAB] (p11)</p></div><div class="nugget-popup quant"><p>1 property [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_e250cdbfdde6f1ca89029b6d5fd95da1.setContent(html_346d49cd0986006e68c6310ab40bf055);
+            
+        
+
+        marker_f3bff6e7f75e3391c816fbae56c43688.bindPopup(popup_e250cdbfdde6f1ca89029b6d5fd95da1)
+        ;
+
+        
+    
+    
+            var marker_13f7717bae364ccff26290b25f5c089d = L.marker(
+                [52.3205088, -0.169329],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_5464f9b1d2900096a6c0f285ec55cd1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_13f7717bae364ccff26290b25f5c089d.setIcon(icon_5464f9b1d2900096a6c0f285ec55cd1d);
+        
+    
+        var popup_c93c66fc01b5e3aebaf8536627351772 = L.popup({});
+
+        
+            
+                var html_40ea763a4aa2f9f959e45cd560b0ca72 = $(`<div id="html_40ea763a4aa2f9f959e45cd560b0ca72" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fox Grove, Godmanchester</h1><div class="nugget-popup"><p>Internal flooding of a residential property. [TAB] (p10)</p></div><div class="nugget-popup"><p>Internal property flooding affecting residential properties. [TAB] (p11)</p></div><div class="nugget-popup"><p>Internal and external flooding affected properties; blocked toilets and surcharging of foul drains reported in the area. [TAB] (p14)</p></div><div class="nugget-popup"><p>Foul pumping station serving the Pavilion Close and Fox Grove area may be inundated during times of extreme rainfall due to ingress of surface water and groundwater; Anglian Water is to finalise adoption and investigate resilience of pumping station assets. [TAB] (p17)</p></div><div class="nugget-popup"><p>Following flooding, responsibility for a new pumping station valve chamber and associated pipework was investigated; inspections and follow&ndash;up were undertaken and a culvert was removed to open the watercourse as part of flood&ndash;related works. (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div><div class="nugget-popup quant"><p>1 property [TAB] (p11)</p></div><div class="nugget-popup quant"><p>1 property [TAB] (p14)</p></div></div></body></div>`)[0];
+                popup_c93c66fc01b5e3aebaf8536627351772.setContent(html_40ea763a4aa2f9f959e45cd560b0ca72);
+            
+        
+
+        marker_13f7717bae364ccff26290b25f5c089d.bindPopup(popup_c93c66fc01b5e3aebaf8536627351772)
+        ;
+
+        
+    
+    
+            var marker_34380d86e7adad1b887536cd758a6420 = L.marker(
+                [52.3098239, -0.1627619],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_f10474ff0209b92f6706eb3eb6640c1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_34380d86e7adad1b887536cd758a6420.setIcon(icon_f10474ff0209b92f6706eb3eb6640c1c);
+        
+    
+        var popup_b4ebd9e707a901f89625b3a338018242 = L.popup({});
+
+        
+            
+                var html_365c44a9b022dbd8bb19e1d033d82665 = $(`<div id="html_365c44a9b022dbd8bb19e1d033d82665" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chandlers Square, Godmanchester</h1><div class="nugget-popup"><p>Internal flooding of a residential property. [TAB] (p10)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties &mdash; properties within Chandlers Square were flooded internally as part of the Bearscroft Lane area impacts. [TAB,PAG] (p11)</p></div><div class="nugget-popup"><p>External flooding affected three properties; the report describes pumping, sandbags and sweeping being used to avoid internal flooding. A separate table in the report records 1 property with internal flooding in Chandlers Square. [TAB] (p16)</p></div><div class="nugget-popup"><p>Internal property flooding was recorded at this location (reported as 'Internal' under known properties with internal property flooding). [TAB,PAG] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 property [TAB] (p10)</p></div><div class="nugget-popup quant"><p>At least two properties flooded internally (in the Bearscroft Lane area) [TAB,PAG] (p11)</p></div><div class="nugget-popup quant"><p>3 properties external; 1 property internal [TAB] (p16)</p></div></div></body></div>`)[0];
+                popup_b4ebd9e707a901f89625b3a338018242.setContent(html_365c44a9b022dbd8bb19e1d033d82665);
+            
+        
+
+        marker_34380d86e7adad1b887536cd758a6420.bindPopup(popup_b4ebd9e707a901f89625b3a338018242)
+        ;
+
+        
+    
+    
+            var marker_747024c73a163147c6728bf145ef8035 = L.marker(
+                [52.3109588, -0.1568361],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_7e7800da94114562af9aaa0c720cbd31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_747024c73a163147c6728bf145ef8035.setIcon(icon_7e7800da94114562af9aaa0c720cbd31);
+        
+    
+        var popup_3b0e2f9e60f29a5c56c064a8a3c793ff = L.popup({});
+
+        
+            
+                var html_50ee01479dbf44b466b0a26cc3ee39f5 = $(`<div id="html_50ee01479dbf44b466b0a26cc3ee39f5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gallier Close, Godmanchester</h1><div class="nugget-popup"><p>External flooding affected garages and outbuildings. [TAB] (p10)</p></div><div class="nugget-popup"><p>Internal flooding of residential properties &mdash; properties within Galliers Close were flooded internally as part of the Bearscroft Lane area impacts. [TAB,PAG] (p11)</p></div><div class="nugget-popup"><p>One house reported extensive flooding to the garage. Five nearby properties reported external flooding, including floodwater damage to gardens and fences. [TAB] (p16)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 internal properties [TAB] (p10)</p></div><div class="nugget-popup quant"><p>At least two properties flooded internally (in the Bearscroft Lane area) [TAB,PAG] (p11)</p></div><div class="nugget-popup quant"><p>1 house garage; 5 properties external [TAB] (p16)</p></div></div></body></div>`)[0];
+                popup_3b0e2f9e60f29a5c56c064a8a3c793ff.setContent(html_50ee01479dbf44b466b0a26cc3ee39f5);
+            
+        
+
+        marker_747024c73a163147c6728bf145ef8035.bindPopup(popup_3b0e2f9e60f29a5c56c064a8a3c793ff)
+        ;
+
+        
+    
+    
+            var marker_717f6b41ef9c06506359ab5ef8d7a6d9 = L.marker(
+                [52.3197504, -0.1638623],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_49b240e7997dd4b1e10858462a4e94ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_717f6b41ef9c06506359ab5ef8d7a6d9.setIcon(icon_49b240e7997dd4b1e10858462a4e94ce);
+        
+    
+        var popup_43de46fb8f4bca4a01515c0cc921a8ef = L.popup({});
+
+        
+            
+                var html_e1fdac2223cd9aec69f7a53a484e4f84 = $(`<div id="html_e1fdac2223cd9aec69f7a53a484e4f84" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cambridge Road, Godmanchester</h1><div class="nugget-popup"><p>External flooding affected the highway and gardens. [TAB] (p10)</p></div><div class="nugget-popup"><p>Extensive surface water flooding affected Cambridge Road (under the A1307), causing the road to be closed for several days; external flooding affected the highway and adjacent gardens. [TAB] (p15)</p></div><div class="nugget-popup"><p>Culvert under Cambridge Road (immediately north of the A1307 intersection) was identified for cleansing to improve drainage following flooding; works planned to reduce risk of future flooding. [TAB] (p17)</p></div><div class="nugget-popup"><p>Culvert under Cambridge Road (immediately north of the A1307 intersection) identified to be cleansed following the flood; works to be costed and programmed. (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 internal properties [TAB] (p10)</p></div><div class="nugget-popup quant"><p>At least 1 property (Cambridge Villas, Cambridge Road and Cow Lane) [TAB] (p11)</p></div><div class="nugget-popup quant"><p>0 properties internal [TAB] (p15)</p></div></div></body></div>`)[0];
+                popup_43de46fb8f4bca4a01515c0cc921a8ef.setContent(html_e1fdac2223cd9aec69f7a53a484e4f84);
+            
+        
+
+        marker_717f6b41ef9c06506359ab5ef8d7a6d9.bindPopup(popup_43de46fb8f4bca4a01515c0cc921a8ef)
+        ;
+
+        
+    
+    
+            var marker_2502521ead0c4b6a4f6d3e8d216cb722 = L.marker(
+                [52.3183135, -0.1751813],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_c5a2e1fef4d2ea22218bec5440d80b05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2502521ead0c4b6a4f6d3e8d216cb722.setIcon(icon_c5a2e1fef4d2ea22218bec5440d80b05);
+        
+    
+        var popup_1abb0d5f6e231ebdc7fceaad69532b76 = L.popup({});
+
+        
+            
+                var html_9243b6746d94a847a5a931bb5a807322 = $(`<div id="html_9243b6746d94a847a5a931bb5a807322" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Causeway, Godmanchester</h1><div class="nugget-popup"><p>Internal property flooding affecting residential properties. [TAB] (p11)</p></div><div class="nugget-popup"><p>Surface water from the adjacent brook can back up into Berry Lane when brook levels are elevated due to a flap outfall that sits only just above normal levels, causing surface water flooding of the lane. [TAB] (p17)</p></div><div class="nugget-popup"><p>Highway drainage (ACO type drains and channels) were identified as blocked/collapsed and targeted for inclusion in the gully&ndash;cleansing programme and for clearance and repairs to restore drainage and reduce flood risk. (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>three properties (Causeway and Old Court Hall) [TAB] (p11)</p></div></div></body></div>`)[0];
+                popup_1abb0d5f6e231ebdc7fceaad69532b76.setContent(html_9243b6746d94a847a5a931bb5a807322);
+            
+        
+
+        marker_2502521ead0c4b6a4f6d3e8d216cb722.bindPopup(popup_1abb0d5f6e231ebdc7fceaad69532b76)
+        ;
+
+        
+    
+    
+            var marker_e239132be4830f168676434449a7dd16 = L.marker(
+                [52.3169477, -0.1748301],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_e956d1e9519688a9a45aeb11576f7a6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e239132be4830f168676434449a7dd16.setIcon(icon_e956d1e9519688a9a45aeb11576f7a6a);
+        
+    
+        var popup_5589898a7f1912c4dd9ddecb46e61d60 = L.popup({});
+
+        
+            
+                var html_3bc54ac30e966c2692622df8c77cb16f = $(`<div id="html_3bc54ac30e966c2692622df8c77cb16f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Old Court Hall, Godmanchester</h1><div class="nugget-popup"><p>Internal property flooding affecting residential properties. [TAB] (p11)</p></div><div class="nugget-popup"><p>External flooding affected properties associated with (Old) Court Hall; water surrounded houses and sandbags were used to keep water out. [TAB] (p14)</p></div><div class="nugget-popup"><p>Surface water from the adjacent brook can back up into Berry Lane when brook levels are elevated due to a flap outfall that sits only just above normal levels, causing surface water flooding of the lane. [TAB] (p17)</p></div><div class="nugget-popup"><p>Highway drainage (ACO type drains and channels) were identified as blocked/collapsed and targeted for inclusion in the gully&ndash;cleansing programme and for clearance and repairs to restore drainage and reduce flood risk. (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>three properties (Causeway and Old Court Hall) [TAB] (p11)</p></div></div></body></div>`)[0];
+                popup_5589898a7f1912c4dd9ddecb46e61d60.setContent(html_3bc54ac30e966c2692622df8c77cb16f);
+            
+        
+
+        marker_e239132be4830f168676434449a7dd16.bindPopup(popup_5589898a7f1912c4dd9ddecb46e61d60)
+        ;
+
+        
+    
+    
+            var marker_68fd520fdfb2838087f22587115d9698 = L.marker(
+                [52.3098089, -0.1605699],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_2d10f5ba5fc51353246cb5637e6544a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_68fd520fdfb2838087f22587115d9698.setIcon(icon_2d10f5ba5fc51353246cb5637e6544a4);
+        
+    
+        var popup_e8c048394eab41e514550893b1f76d9c = L.popup({});
+
+        
+            
+                var html_45acc49091b4ce2d45d6b2b9bc24bcd8 = $(`<div id="html_45acc49091b4ce2d45d6b2b9bc24bcd8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bearscroft Lane, Godmanchester</h1><div class="nugget-popup"><p>Internal property flooding affecting properties in the Bearscroft Lane area (includes Chandlers Square, Baumgartner, Galliers Close). [TAB] (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>At least 2 properties [TAB] (p11)</p></div></div></body></div>`)[0];
+                popup_e8c048394eab41e514550893b1f76d9c.setContent(html_45acc49091b4ce2d45d6b2b9bc24bcd8);
+            
+        
+
+        marker_68fd520fdfb2838087f22587115d9698.bindPopup(popup_e8c048394eab41e514550893b1f76d9c)
+        ;
+
+        
+    
+    
+            var marker_99a5683c65c29a01cf5fc7921b4ca4f3 = L.marker(
+                [52.371044, -0.2235779],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_6cb0371cf11e2d0f7b861851d509ed72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_99a5683c65c29a01cf5fc7921b4ca4f3.setIcon(icon_6cb0371cf11e2d0f7b861851d509ed72);
+        
+    
+        var popup_06222051c5626c4bbfe743bf69709c64 = L.popup({});
+
+        
+            
+                var html_b581778bfa25be52ea1c34eb70bb37ee = $(`<div id="html_b581778bfa25be52ea1c34eb70bb37ee" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Huntingdonshire</h1><div class="nugget-popup"><p>External flooding affecting garages/outbuildings (heading 'Gallier[s] Close' with 'External (garages/outbuildings)' immediately below). [TAB] (p17)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>0 properties [TAB] (p17)</p></div></div></body></div>`)[0];
+                popup_06222051c5626c4bbfe743bf69709c64.setContent(html_b581778bfa25be52ea1c34eb70bb37ee);
+            
+        
+
+        marker_99a5683c65c29a01cf5fc7921b4ca4f3.bindPopup(popup_06222051c5626c4bbfe743bf69709c64)
+        ;
+
+        
+    
+    
+            var marker_b3e4f633d2ab162eb7055de50aed7bf6 = L.marker(
+                [52.31565062120004, -0.17036124876142078],
+                {}
+            ).addTo(map_50e1e117ad922780d2805efb1b84a280);
+        
+    
+            var icon_80ec75bd54d0ccc3ba66d302c3a17a08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b3e4f633d2ab162eb7055de50aed7bf6.setIcon(icon_80ec75bd54d0ccc3ba66d302c3a17a08);
+        
+    
+        var popup_b9b090090231ce40180afcaff3b8a5ac = L.popup({});
+
+        
+            
+                var html_6745a8b9d709fae746f9fce27b06526f = $(`<div id="html_6745a8b9d709fae746f9fce27b06526f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Godmanchester</h1><div class="nugget-popup"><p>Significant rainfall on 23 December 2020 caused surface&ndash;water flooding and increased river (fluvial) flood pressure in the Godmanchester area; drainage systems were placed under substantial pressure and low&ndash;lying/residential areas adjacent to the River Great Ouse were vulnerable to inundation. [PAG,IMG] (p6)</p></div><div class="nugget-popup"><p>Surface water drainage systems were unable to convey runoff after the 23 December rainfall, leading to excess surface water flowing over ground and following local topography. Ditches, drainage systems and the Great River Ouse experienced high volumes and levels, placing properties at risk of surface water flooding. (p7)</p></div><div class="nugget-popup"><p>Surface water drainage systems in Godmanchester were unable to convey runoff, causing excess surface water to flow over the ground following local topography and putting properties at risk of surface water flooding. Some surface water outfalls discharge into the River Great Ouse; when river levels were high the outfalls became submerged, putting pressure on flap valves and causing water to back up within surface water systems. River levels following the 23 December rainfall exceeded previous records (highest on record) and river flow upstream of Godmanchester was recorded at 47.98 m3/s (204% of the long&ndash;term average), contributing to the back&ndash;up and overtopping issues. [PAG] (p8)</p></div><div class="nugget-popup"><p>Properties, roads, gardens and fields in Godmanchester were flooded: internal property flooding was reported and external flooding affected garages/outbuildings, gardens and highway areas. (p10)</p></div><div class="nugget-popup"><p>Significant surface water flooding when intense and antecedent rainfall caused watercourses throughout Godmanchester to exceed channel capacity and surface water drainage systems to surcharge; at least two properties flooded internally. [IMG,PAG] (p12)</p></div><div class="nugget-popup"><p>Watercourses throughout Godmanchester exceeded channel capacity and surface water drainage systems surcharged, causing significant surface water flooding across the town. (p13)</p></div><div class="nugget-popup"><p>Severe flooding in December 2020 led to blocked/surcharging highway drainage and stress on sewer/pumping assets. Foul pumping stations in Godmanchester were identified as susceptible to inundation from ingress of surface water and groundwater; priority gully cleansing and highway drainage repairs were required. [TAB] (p17)</p></div><div class="nugget-popup"><p>Actions for the town include inclusion of highway drains in the gully cleansing programme and investigation/repair of blocked or collapsed highway drainage networks, reflecting impacts to drainage systems from flooding. (p19)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>12 properties; 4 properties (p10)</p></div><div class="nugget-popup quant"><p>at least two properties [IMG,PAG] (p12)</p></div></div></body></div>`)[0];
+                popup_b9b090090231ce40180afcaff3b8a5ac.setContent(html_6745a8b9d709fae746f9fce27b06526f);
+            
+        
+
+        marker_b3e4f633d2ab162eb7055de50aed7bf6.bindPopup(popup_b9b090090231ce40180afcaff3b8a5ac)
+        ;
+
+        
+    
+</script>
+</html>

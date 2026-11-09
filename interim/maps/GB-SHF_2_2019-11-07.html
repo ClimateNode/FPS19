@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b7851750d5168444ad18a1f6a71ac305 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b7851750d5168444ad18a1f6a71ac305" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b7851750d5168444ad18a1f6a71ac305 = L.map(
+                "map_b7851750d5168444ad18a1f6a71ac305",
+                {
+                    center: [53.42375840659884, -1.4512002138906972],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1569a25fda2a38b123076e1c40fb69dc = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_1569a25fda2a38b123076e1c40fb69dc.addTo(map_b7851750d5168444ad18a1f6a71ac305);
+    
+            var marker_f75c046729f11fa85a30d2f940987dc1 = L.marker(
+                [53.41429010665741, -1.411039805243152],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_b494526cafbe3adad4860af4cedc6b28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f75c046729f11fa85a30d2f940987dc1.setIcon(icon_b494526cafbe3adad4860af4cedc6b28);
+        
+    
+        var popup_b26f672e317f6a0c0e81aa74bc004b91 = L.popup({});
+
+        
+            
+                var html_40021da0849cafa34da05ebaa2997b99 = $(`<div id="html_40021da0849cafa34da05ebaa2997b99" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Meadowhall Centre</h1><div class="nugget-popup"><p>Flood gates on the River Don were closed from Kelham Island to Meadowhall as part of the emergency response to the rainfall event. (p2)</p></div><div class="nugget-popup"><p>The shopping centre provided overnight accommodation for stranded customers because the surrounding area was flooded; Meadowhall experienced localised overtopping of flood defences/river walls. (p3)</p></div><div class="nugget-popup"><p>Localised overtopping of flood defences and river walls by flood water. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Stranded customers accommodated overnight [PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_b26f672e317f6a0c0e81aa74bc004b91.setContent(html_40021da0849cafa34da05ebaa2997b99);
+            
+        
+
+        marker_f75c046729f11fa85a30d2f940987dc1.bindPopup(popup_b26f672e317f6a0c0e81aa74bc004b91)
+        ;
+
+        
+    
+    
+            var marker_e27fe7d93cc0f105dd894f37b60d0879 = L.marker(
+                [53.4327545, -1.4281638],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_32e37b2d1f10afc36a57bc467f1c8f7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e27fe7d93cc0f105dd894f37b60d0879.setIcon(icon_32e37b2d1f10afc36a57bc467f1c8f7d);
+        
+    
+        var popup_b2d5a1bc46021f92dd5d9b15585755d1 = L.popup({});
+
+        
+            
+                var html_9df44822985150fae12852450f8d50f3 = $(`<div id="html_9df44822985150fae12852450f8d50f3" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Blackburn Brook</h1><div class="nugget-popup"><p>Environment Agency issued a flood warning for Blackburn Brook on 7 November 2019 during the heavy rainfall event; river depths were reported as very high (second only to 2007) as part of the city&ndash;wide flood event. (p1)</p></div></div></body></div>`)[0];
+                popup_b2d5a1bc46021f92dd5d9b15585755d1.setContent(html_9df44822985150fae12852450f8d50f3);
+            
+        
+
+        marker_e27fe7d93cc0f105dd894f37b60d0879.bindPopup(popup_b2d5a1bc46021f92dd5d9b15585755d1)
+        ;
+
+        
+    
+    
+            var marker_4e3264a50da6e692039992962cab5edb = L.marker(
+                [53.3806626, -1.4702278],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_a1d1134e88ff5d8cb759c4e576d3371d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4e3264a50da6e692039992962cab5edb.setIcon(icon_a1d1134e88ff5d8cb759c4e576d3371d);
+        
+    
+        var popup_8eba85ce428a01b40f7d52d9fca94f5a = L.popup({});
+
+        
+            
+                var html_9296f04505da4ef29eee3aa06303bf88 = $(`<div id="html_9296f04505da4ef29eee3aa06303bf88" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sheffield Metropolitan District</h1><div class="nugget-popup"><p>Flooding occurred within the city during the heavy rainfall event on 7th&ndash;8th November 2019; the event caused urban/surface water and river&ndash;related flooding across Sheffield (Environment Agency reported river depths and rainfall second only to 2007). (p1)</p></div><div class="nugget-popup"><p>City&ndash;wide flooding impacted properties, transport and services: 41 residential and 36 commercial properties were flooded internally across multiple districts; transport disruption included hundreds of roads flooded, road closures, tram suspensions and rail line disruption; localised overtopping of river defences occurred at Meadowhall and Brightside and internal property flooding at Owlerton, Ecclesfield and Woodhouse Mill. Some businesses and hotels in the lower Don Valley were evacuated and Meadowhall Shopping Centre provided overnight accommodation for stranded customers. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>41 residential properties; 36 commercial properties; 129 roads flooded; 12 roads closed; tram services suspended for two days (p3)</p></div></div></body></div>`)[0];
+                popup_8eba85ce428a01b40f7d52d9fca94f5a.setContent(html_9296f04505da4ef29eee3aa06303bf88);
+            
+        
+
+        marker_4e3264a50da6e692039992962cab5edb.bindPopup(popup_8eba85ce428a01b40f7d52d9fca94f5a)
+        ;
+
+        
+    
+    
+            var marker_27090ae347fb35e9dbcb87b4aa4a3380 = L.marker(
+                [53.476202, -1.5778726],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_41b91890ad42fa1bbfb9a81cd349b2a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_27090ae347fb35e9dbcb87b4aa4a3380.setIcon(icon_41b91890ad42fa1bbfb9a81cd349b2a4);
+        
+    
+        var popup_8974f85d089cae2dc7507a5cbf4087cf = L.popup({});
+
+        
+            
+                var html_54b6de65c0e0e86c02f28581cd80beb8 = $(`<div id="html_54b6de65c0e0e86c02f28581cd80beb8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Clough Dike</h1><div class="nugget-popup"><p>Debris/culvert blockage on the Clough Dyke caused a build&ndash;up of floodwater in adjacent parkland; clearance work in November removed the blockage and released the floodwater. (p4)</p></div></div></body></div>`)[0];
+                popup_8974f85d089cae2dc7507a5cbf4087cf.setContent(html_54b6de65c0e0e86c02f28581cd80beb8);
+            
+        
+
+        marker_27090ae347fb35e9dbcb87b4aa4a3380.bindPopup(popup_8974f85d089cae2dc7507a5cbf4087cf)
+        ;
+
+        
+    
+    
+            var marker_8be15d060090995d022ccc1c7b865f25 = L.marker(
+                [53.4834061, -1.3014261],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_c9b3a280fa4797dc81929b3464cc8b6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8be15d060090995d022ccc1c7b865f25.setIcon(icon_c9b3a280fa4797dc81929b3464cc8b6d);
+        
+    
+        var popup_33d1f48315dbde272fe07a2c3978b6f4 = L.popup({});
+
+        
+            
+                var html_6af8f6dc0c5c1334015f110e13e196e9 = $(`<div id="html_6af8f6dc0c5c1334015f110e13e196e9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Don</h1><div class="nugget-popup"><p>Moveable flood gates, penstock and doors on the River Don were closed as part of the emergency response; all River Don flood gates and doors had been closed at 4:30 am to manage river flood risk. (p2)</p></div><div class="nugget-popup"><p>Rising levels in the River Don led to precautionary evacuations in the lower Don Valley; river levels were largely contained by defences but there was localised overtopping at Meadowhall and Brightside and some properties flooded internally at Owlerton, Ecclesfield and Woodhouse Mill. (p3)</p></div><div class="nugget-popup"><p>Rising River Don levels during the event. Levels were largely contained within the channel by newly built flood defences, but there was some localised overtopping of flood defences and river walls leading to flooding at locations including Meadowhall, Brightside, Owlerton, Ecclesfield and Woodhouse Mill. [PAG] (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>41 residential properties; 36 commercial properties flooded internally (city&ndash;wide incident; affected districts include Ecclesfield, Chapeltown, Deepcar, Woodhouse Mill, Hillsborough, Owlerton and Brightside). (p3)</p></div></div></body></div>`)[0];
+                popup_33d1f48315dbde272fe07a2c3978b6f4.setContent(html_6af8f6dc0c5c1334015f110e13e196e9);
+            
+        
+
+        marker_8be15d060090995d022ccc1c7b865f25.bindPopup(popup_33d1f48315dbde272fe07a2c3978b6f4)
+        ;
+
+        
+    
+    
+            var marker_2444bbf1638b171274e68fe15bd8ee1f = L.marker(
+                [53.3635606, -1.4701527],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_24394d2e42950c3050ec50451374a1ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2444bbf1638b171274e68fe15bd8ee1f.setIcon(icon_24394d2e42950c3050ec50451374a1ab);
+        
+    
+        var popup_a80974bec5c183883548ec7f93e21d39 = L.popup({});
+
+        
+            
+                var html_85af314891619c0f2992d1ca7e704420 = $(`<div id="html_85af314891619c0f2992d1ca7e704420" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Sheaf</h1><div class="nugget-popup"><p>Very heavy rainfall on the Sheaf catchment contributed to overwhelmed watercourses and local drainage, resulting in flooding of properties and roads in the city. (p3)</p></div></div></body></div>`)[0];
+                popup_a80974bec5c183883548ec7f93e21d39.setContent(html_85af314891619c0f2992d1ca7e704420);
+            
+        
+
+        marker_2444bbf1638b171274e68fe15bd8ee1f.bindPopup(popup_a80974bec5c183883548ec7f93e21d39)
+        ;
+
+        
+    
+    
+            var marker_e74b55a72997862be1cbe012462eaba4 = L.marker(
+                [53.422396077533165, -1.4113046204574238],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_0b7b461eebf933d55c74760724413f8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e74b55a72997862be1cbe012462eaba4.setIcon(icon_0b7b461eebf933d55c74760724413f8e);
+        
+    
+        var popup_4a44368deace744b0f3d255e81ed944c = L.popup({});
+
+        
+            
+                var html_689c273b2f0c533dc3b751fc61326940 = $(`<div id="html_689c273b2f0c533dc3b751fc61326940" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Junction 34 M1</h1><div class="nugget-popup"><p>Flooding on Meadowhall Road led to the closure of Junction 34 of the M1 Motorway, disrupting motorway access. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Junction 34 closed (p3)</p></div></div></body></div>`)[0];
+                popup_4a44368deace744b0f3d255e81ed944c.setContent(html_689c273b2f0c533dc3b751fc61326940);
+            
+        
+
+        marker_e74b55a72997862be1cbe012462eaba4.bindPopup(popup_4a44368deace744b0f3d255e81ed944c)
+        ;
+
+        
+    
+    
+            var marker_9b045b7d8841291686d954fb9cb70e71 = L.marker(
+                [53.4176103, -1.4110937],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_e506309b8949777bee5d2494673c9797 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9b045b7d8841291686d954fb9cb70e71.setIcon(icon_e506309b8949777bee5d2494673c9797);
+        
+    
+        var popup_ebd1488831534d09025fb065548810a5 = L.popup({});
+
+        
+            
+                var html_20c04ec36ec93ebc8957ad6bf4824b86 = $(`<div id="html_20c04ec36ec93ebc8957ad6bf4824b86" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Meadowhall Road, Brightside</h1><div class="nugget-popup"><p>A6109 Meadowhall Road was flooded, which contributed to transport disruption and led to the closure of Junction 34 of the M1 Motorway. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>Junction 34 of the M1 Motorway closed (p3)</p></div></div></body></div>`)[0];
+                popup_ebd1488831534d09025fb065548810a5.setContent(html_20c04ec36ec93ebc8957ad6bf4824b86);
+            
+        
+
+        marker_9b045b7d8841291686d954fb9cb70e71.bindPopup(popup_ebd1488831534d09025fb065548810a5)
+        ;
+
+        
+    
+    
+            var marker_cc138d57073588c09eb0ee7ae3b1c8ad = L.marker(
+                [53.4605604, -1.4648177],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_1a4becbddd6c32476bf827419481c5e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cc138d57073588c09eb0ee7ae3b1c8ad.setIcon(icon_1a4becbddd6c32476bf827419481c5e3);
+        
+    
+        var popup_71c2c1ef1d74aa91ecb5f59b5af0324f = L.popup({});
+
+        
+            
+                var html_d6a33fbb469bbb4134b40714bbede454 = $(`<div id="html_d6a33fbb469bbb4134b40714bbede454" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Falding Street, Ecclesfield</h1><div class="nugget-popup"><p>The local combined sewer system was overwhelmed by storm flows and surcharged, resulting in internal flooding to houses. The nearby sewer overflow could not outfall to the Blackburn Brook because of high watercourse levels. (p4)</p></div></div></body></div>`)[0];
+                popup_71c2c1ef1d74aa91ecb5f59b5af0324f.setContent(html_d6a33fbb469bbb4134b40714bbede454);
+            
+        
+
+        marker_cc138d57073588c09eb0ee7ae3b1c8ad.bindPopup(popup_71c2c1ef1d74aa91ecb5f59b5af0324f)
+        ;
+
+        
+    
+    
+            var marker_c8ccbeab800a8f54f284213624fc3ca6 = L.marker(
+                [53.46198, -1.4654915],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_32c09cb5e6663788f151289e904c2404 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c8ccbeab800a8f54f284213624fc3ca6.setIcon(icon_32c09cb5e6663788f151289e904c2404);
+        
+    
+        var popup_d3c7472701bd22bfacbe2ba050e08d43 = L.popup({});
+
+        
+            
+                var html_4e55c24d8037bfe64567d7082e023774 = $(`<div id="html_4e55c24d8037bfe64567d7082e023774" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chapeltown</h1><div class="nugget-popup"><p>Environment Agency flood warnings issued from 8:00 to 20:00 on 7 November 2019 for Blackburn Brook, which was listed with Chapeltown as an affected area during the heavy rainfall event. (p1)</p></div><div class="nugget-popup"><p>Residential and commercial properties were flooded internally. (p3)</p></div><div class="nugget-popup"><p>Chapeltown (at Falding Street) experienced an overwhelmed combined sewer system that surcharged and caused internal flooding to houses; the sewer overflow could not discharge to the Blackburn Brook due to high water levels. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>41 residential properties and 36 commercial properties (across Ecclesfield, Chapeltown, Deepcar, Woodhouse Mill, Hillsborough, Owlerton and Brightside) (p3)</p></div></div></body></div>`)[0];
+                popup_d3c7472701bd22bfacbe2ba050e08d43.setContent(html_4e55c24d8037bfe64567d7082e023774);
+            
+        
+
+        marker_c8ccbeab800a8f54f284213624fc3ca6.bindPopup(popup_d3c7472701bd22bfacbe2ba050e08d43)
+        ;
+
+        
+    
+    
+            var marker_0e44e8757a75077f26d70f935a495d99 = L.marker(
+                [53.4426555, -1.4688881],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_821bdc5c2954bcc69f3cc86df7397bd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0e44e8757a75077f26d70f935a495d99.setIcon(icon_821bdc5c2954bcc69f3cc86df7397bd2);
+        
+    
+        var popup_a40636cf1c0f100176d98caa9438275d = L.popup({});
+
+        
+            
+                var html_837ade9fe7357d9788b5a090405a6711 = $(`<div id="html_837ade9fe7357d9788b5a090405a6711" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ecclesfield</h1><div class="nugget-popup"><p>Environment Agency flood warnings issued from 8:00 to 20:00 on 7 November 2019 for Blackburn Brook, with Ecclesfield listed as an affected area during the heavy rainfall event. (p1)</p></div><div class="nugget-popup"><p>Some properties were flooded internally; there was localised overtopping of flood defences/river walls at Ecclesfield. [PAG] (p3)</p></div><div class="nugget-popup"><p>Some properties were flooded internally. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>41 residential properties and 36 commercial properties (across Ecclesfield, Chapeltown, Deepcar, Woodhouse Mill, Hillsborough, Owlerton and Brightside) [PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_a40636cf1c0f100176d98caa9438275d.setContent(html_837ade9fe7357d9788b5a090405a6711);
+            
+        
+
+        marker_0e44e8757a75077f26d70f935a495d99.bindPopup(popup_a40636cf1c0f100176d98caa9438275d)
+        ;
+
+        
+    
+    
+            var marker_ed5d9850847679abe33c94f4e89b5552 = L.marker(
+                [53.4178872, -1.4310631],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_c8b84c5c9c8dc14e357cef8be4a2da40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ed5d9850847679abe33c94f4e89b5552.setIcon(icon_c8b84c5c9c8dc14e357cef8be4a2da40);
+        
+    
+        var popup_e6c008cd07945336fda63a3921fa97c5 = L.popup({});
+
+        
+            
+                var html_a0917c1a72456683f7b7beb1f8acce93 = $(`<div id="html_a0917c1a72456683f7b7beb1f8acce93" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wincobank</h1><div class="nugget-popup"><p>Environment Agency flood warnings issued from 8:00 to 20:00 on 7 November 2019 for Blackburn Brook, with Wincobank listed among the affected areas during the heavy rainfall event. (p1)</p></div></div></body></div>`)[0];
+                popup_e6c008cd07945336fda63a3921fa97c5.setContent(html_a0917c1a72456683f7b7beb1f8acce93);
+            
+        
+
+        marker_ed5d9850847679abe33c94f4e89b5552.bindPopup(popup_e6c008cd07945336fda63a3921fa97c5)
+        ;
+
+        
+    
+    
+            var marker_454999d3095d2c0ec00569c37c9040da = L.marker(
+                [53.38764985, -1.4667575250454816],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_79052c6bd4bd15c2a7e2511064efcdda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_454999d3095d2c0ec00569c37c9040da.setIcon(icon_79052c6bd4bd15c2a7e2511064efcdda);
+        
+    
+        var popup_6af15e41119cb392579af43381a02cd5 = L.popup({});
+
+        
+            
+                var html_7e46e853b45817b1a21f4501abe93a2b = $(`<div id="html_7e46e853b45817b1a21f4501abe93a2b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Kelham Island</h1><div class="nugget-popup"><p>Flood gates on the River Don were closed from Kelham Island to Meadowhall as part of the emergency response to the rainfall event. (p2)</p></div></div></body></div>`)[0];
+                popup_6af15e41119cb392579af43381a02cd5.setContent(html_7e46e853b45817b1a21f4501abe93a2b);
+            
+        
+
+        marker_454999d3095d2c0ec00569c37c9040da.bindPopup(popup_6af15e41119cb392579af43381a02cd5)
+        ;
+
+        
+    
+    
+            var marker_e2c4cf697e1cdf3250a0a028b9a84fee = L.marker(
+                [53.4764, -1.568887],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_53bf64af0335d0e0d3bef8baecb5146b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e2c4cf697e1cdf3250a0a028b9a84fee.setIcon(icon_53bf64af0335d0e0d3bef8baecb5146b);
+        
+    
+        var popup_a4a43e96aa2f36fef1af505a460f002d = L.popup({});
+
+        
+            
+                var html_e3207ee2e3252df22e74d49d02048044 = $(`<div id="html_e3207ee2e3252df22e74d49d02048044" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Deepcar</h1><div class="nugget-popup"><p>Residential and commercial properties were flooded internally. (p3)</p></div><div class="nugget-popup"><p>Build&ndash;up of floodwater within parkland caused by blockage of the Clough Dyke culvert; Amey carried out clearance during November, releasing the accumulated floodwater. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>41 residential properties and 36 commercial properties (across Ecclesfield, Chapeltown, Deepcar, Woodhouse Mill, Hillsborough, Owlerton and Brightside) (p3)</p></div></div></body></div>`)[0];
+                popup_a4a43e96aa2f36fef1af505a460f002d.setContent(html_e3207ee2e3252df22e74d49d02048044);
+            
+        
+
+        marker_e2c4cf697e1cdf3250a0a028b9a84fee.bindPopup(popup_a4a43e96aa2f36fef1af505a460f002d)
+        ;
+
+        
+    
+    
+            var marker_117098b9d90032799e63a435ecd1d09d = L.marker(
+                [53.3644059, -1.3534239],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_72a5dd9c9bb65fb6f12fda2da615bc4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_117098b9d90032799e63a435ecd1d09d.setIcon(icon_72a5dd9c9bb65fb6f12fda2da615bc4e);
+        
+    
+        var popup_5022cac4acf8c0f2c11e120983af2476 = L.popup({});
+
+        
+            
+                var html_2da8d01241b7e911e6a640001e0a59e8 = $(`<div id="html_2da8d01241b7e911e6a640001e0a59e8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woodhouse Mill</h1><div class="nugget-popup"><p>Some properties were flooded internally; localised overtopping of flood defences/river walls occurred at Woodhouse Mill. [PAG] (p3)</p></div><div class="nugget-popup"><p>Some properties were flooded internally. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>41 residential properties and 36 commercial properties (across Ecclesfield, Chapeltown, Deepcar, Woodhouse Mill, Hillsborough, Owlerton and Brightside) [PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_5022cac4acf8c0f2c11e120983af2476.setContent(html_2da8d01241b7e911e6a640001e0a59e8);
+            
+        
+
+        marker_117098b9d90032799e63a435ecd1d09d.bindPopup(popup_5022cac4acf8c0f2c11e120983af2476)
+        ;
+
+        
+    
+    
+            var marker_7b8d11dc749459f5f1d3ee3bc281d355 = L.marker(
+                [53.401541124265876, -1.49871630588435],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_f314ec1c1672c1be125ce1f80f91364a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7b8d11dc749459f5f1d3ee3bc281d355.setIcon(icon_f314ec1c1672c1be125ce1f80f91364a);
+        
+    
+        var popup_5776a662b0893b00126c1f3c06fbb086 = L.popup({});
+
+        
+            
+                var html_ec8333da3b2385d829b08b86bcf4a9ad = $(`<div id="html_ec8333da3b2385d829b08b86bcf4a9ad" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hillsborough</h1><div class="nugget-popup"><p>Residential and commercial properties were flooded internally. (p3)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>41 residential properties and 36 commercial properties (across Ecclesfield, Chapeltown, Deepcar, Woodhouse Mill, Hillsborough, Owlerton and Brightside) (p3)</p></div></div></body></div>`)[0];
+                popup_5776a662b0893b00126c1f3c06fbb086.setContent(html_ec8333da3b2385d829b08b86bcf4a9ad);
+            
+        
+
+        marker_7b8d11dc749459f5f1d3ee3bc281d355.bindPopup(popup_5776a662b0893b00126c1f3c06fbb086)
+        ;
+
+        
+    
+    
+            var marker_9383618279a456eb0a3db66e518e86dc = L.marker(
+                [53.41143176032276, -1.5008731934021406],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_8d86928916a6818099a856b8a91791b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9383618279a456eb0a3db66e518e86dc.setIcon(icon_8d86928916a6818099a856b8a91791b1);
+        
+    
+        var popup_9aedef7e85119f5c7bcb9ee20bb610d6 = L.popup({});
+
+        
+            
+                var html_ffbb24b2ffe6eef3d1e40e9edcf98867 = $(`<div id="html_ffbb24b2ffe6eef3d1e40e9edcf98867" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Owlerton</h1><div class="nugget-popup"><p>Some properties were flooded internally; there was localised overtopping of flood defences/river walls at Owlerton. [PAG] (p3)</p></div><div class="nugget-popup"><p>Some properties were flooded internally. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>41 residential properties and 36 commercial properties (across Ecclesfield, Chapeltown, Deepcar, Woodhouse Mill, Hillsborough, Owlerton and Brightside) [PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_9aedef7e85119f5c7bcb9ee20bb610d6.setContent(html_ffbb24b2ffe6eef3d1e40e9edcf98867);
+            
+        
+
+        marker_9383618279a456eb0a3db66e518e86dc.bindPopup(popup_9aedef7e85119f5c7bcb9ee20bb610d6)
+        ;
+
+        
+    
+    
+            var marker_5fe56bdda6d129e33e690adc9fccb349 = L.marker(
+                [53.4122573, -1.4214044],
+                {}
+            ).addTo(map_b7851750d5168444ad18a1f6a71ac305);
+        
+    
+            var icon_dcc978f6ef393c6057ef9c1c88fb83b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5fe56bdda6d129e33e690adc9fccb349.setIcon(icon_dcc978f6ef393c6057ef9c1c88fb83b2);
+        
+    
+        var popup_cbd1328f27161616a0e01479d4b32674 = L.popup({});
+
+        
+            
+                var html_30121761f871d96ca0925b681492e5fa = $(`<div id="html_30121761f871d96ca0925b681492e5fa" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Brightside</h1><div class="nugget-popup"><p>Localised overtopping of flood defences and river walls by floodwater at Brightside, resulting in some properties being flooded internally. [PAG] (p3)</p></div><div class="nugget-popup"><p>Localised overtopping of flood defences and river walls by flood water. (p4)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>41 residential properties and 36 commercial properties (these properties are located across the districts of Ecclesfield, Chapeltown, Deepcar, Woodhouse Mill, Hillsborough, Owlerton and Brightside) [PAG] (p3)</p></div></div></body></div>`)[0];
+                popup_cbd1328f27161616a0e01479d4b32674.setContent(html_30121761f871d96ca0925b681492e5fa);
+            
+        
+
+        marker_5fe56bdda6d129e33e690adc9fccb349.bindPopup(popup_cbd1328f27161616a0e01479d4b32674)
+        ;
+
+        
+    
+</script>
+</html>

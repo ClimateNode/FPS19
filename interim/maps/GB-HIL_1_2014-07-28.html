@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bdd48ef46aa39fcfec26de3a7060e474 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bdd48ef46aa39fcfec26de3a7060e474" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bdd48ef46aa39fcfec26de3a7060e474 = L.map(
+                "map_bdd48ef46aa39fcfec26de3a7060e474",
+                {
+                    center: [51.55143363091516, -0.43708083509286344],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7067f62c8b304420c51c5b3f7cb815dc = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_7067f62c8b304420c51c5b3f7cb815dc.addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+    
+            var marker_cb4dbb92e80e770d201f2bc33dd88856 = L.marker(
+                [51.5029405, -0.4811768],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_c81e80460f2245905a5c1bd471cff438 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cb4dbb92e80e770d201f2bc33dd88856.setIcon(icon_c81e80460f2245905a5c1bd471cff438);
+        
+    
+        var popup_c750ede0e269a5f15e9418aebf353800 = L.popup({});
+
+        
+            
+                var html_9431b2bcb6d2c4dbea641de3e4270856 = $(`<div id="html_9431b2bcb6d2c4dbea641de3e4270856" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fray's River</h1><div class="nugget-popup"><p>The Environment Agency issued a flood alert for Fray's River in response to the heavy rainfall during the event. (p3)</p></div><div class="nugget-popup"><p>Named alongside the Lower River Colne in the Flood Alert for the area; contributed to elevated catchment river levels that influenced local drainage and flooding conditions. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_c750ede0e269a5f15e9418aebf353800.setContent(html_9431b2bcb6d2c4dbea641de3e4270856);
+            
+        
+
+        marker_cb4dbb92e80e770d201f2bc33dd88856.bindPopup(popup_c750ede0e269a5f15e9418aebf353800)
+        ;
+
+        
+    
+    
+            var marker_cf3427a0b98c78acb1f7a80305335cb4 = L.marker(
+                [51.5625936, -0.4369523],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_5fb4a781461358fcb81f02e8606c31b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cf3427a0b98c78acb1f7a80305335cb4.setIcon(icon_5fb4a781461358fcb81f02e8606c31b9);
+        
+    
+        var popup_a69be8cfa2e52bd34615ccc8d703f850 = L.popup({});
+
+        
+            
+                var html_cff8e71b811c6cd901a72afb7545720c = $(`<div id="html_cff8e71b811c6cd901a72afb7545720c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ickenham Stream</h1><div class="nugget-popup"><p>Surface water from overwhelmed highway drains and the connected Thames Water surface water sewer discharged into/through the Ickenham Stream corridor, contributing to flood water that flowed across Glebe Avenue and entered nearby properties. [TAB] (p13)</p></div><div class="nugget-popup"><p>Contractors prioritised and carried out clearance of the stream to restore and maintain flow following the flood event; clearance works were referenced in the report (scheduled previously for Nov/Dec 2014). (p14)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 households [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_a69be8cfa2e52bd34615ccc8d703f850.setContent(html_cff8e71b811c6cd901a72afb7545720c);
+            
+        
+
+        marker_cf3427a0b98c78acb1f7a80305335cb4.bindPopup(popup_a69be8cfa2e52bd34615ccc8d703f850)
+        ;
+
+        
+    
+    
+            var marker_f68a40d879bc3be5426e4e6ae20c6621 = L.marker(
+                [51.532563, -0.453256],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_ee6c5d1c555abd9915bea67ca3b254c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f68a40d879bc3be5426e4e6ae20c6621.setIcon(icon_ee6c5d1c555abd9915bea67ca3b254c4);
+        
+    
+        var popup_86fb07c08881a0fc1de98bdb9bdda409 = L.popup({});
+
+        
+            
+                var html_b9766b0565180e99c08bfa02d4499089 = $(`<div id="html_b9766b0565180e99c08bfa02d4499089" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>London Borough of Hillingdon</h1><div class="nugget-popup"><p>Borough&ndash;wide impacts from the 28 July storm: roads and transport infrastructure flooded or closed; residents displaced and some placed in temporary accommodation. (p3)</p></div><div class="nugget-popup"><p>Closure of the A40 and the resulting diversions caused tailbacks and traffic disruption across the borough. [TAB] (p7)</p></div><div class="nugget-popup"><p>Surface water flooding overwhelmed local drains after heavy short&ndash;duration rainfall, causing flooding across access roads and into front/rear gardens and properties on Bedford Road, Clyfford Road and West End Road. The event lasted approximately 3 hours; approximately 23 houses were flooded and sandbags were issued to properties; some properties experienced internal flooding. The London Fire Brigade attended to assist residents. [TAB] (p8)</p></div><div class="nugget-popup"><p>Flooding occurred within the borough at Rockingham Parade / The Lynch; resident reports and photographs document local impacts and the location lies within an Environment Agency Flood Zone. [TAB] (p16)</p></div><div class="nugget-popup"><p>Surface water flooding affected the local highway network within the borough (notably Cowley Road). The London Borough of Hillingdon undertook immediate response actions, including checking gullies to assist drainage and mitigate the event. [IMG] (p18)</p></div><div class="nugget-popup"><p>Surface water ponding on the highway at Blossom Way; road flooded and remained covered for approximately 3 hours because verge soakaways were full. The Council created a new soakaway in the verge to reduce the extent of future flooding. [IMG,TAB,MUL] (p20)</p></div><div class="nugget-popup"><p>Experienced surface water/urban flooding during the heavy rainfall event leading to visible water on highways; the council carries out gully clearance maintenance and provided reporting routes to investigate and resolve blocked gullies or sewers causing the flooding. (p21)</p></div><div class="nugget-popup"><p>Local news coverage and photo reports documented flooding across parts of Hillingdon; streets and properties were reported as affected by floodwater. [TAB] (p24)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>approximately 29 properties flooded internally; six cars stuck in floodwater (p3)</p></div><div class="nugget-popup quant"><p>approximately 23 houses; duration approximately 3 hours; sandbags provided to 20&ndash;50 properties [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_86fb07c08881a0fc1de98bdb9bdda409.setContent(html_b9766b0565180e99c08bfa02d4499089);
+            
+        
+
+        marker_f68a40d879bc3be5426e4e6ae20c6621.bindPopup(popup_86fb07c08881a0fc1de98bdb9bdda409)
+        ;
+
+        
+    
+    
+            var marker_8cc78ee68ebce60ee917dfee0e369631 = L.marker(
+                [51.6341785, -0.4172156],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_df7b12bebaee9a1a13224bb0ae42151c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8cc78ee68ebce60ee917dfee0e369631.setIcon(icon_df7b12bebaee9a1a13224bb0ae42151c);
+        
+    
+        var popup_76395a6c3549bc28177da5a4934c13c2 = L.popup({});
+
+        
+            
+                var html_748d81d4def9ba318a98413dc1a5933e = $(`<div id="html_748d81d4def9ba318a98413dc1a5933e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Colne</h1><div class="nugget-popup"><p>River Colne water levels rose following heavy rainfall and caused overflow that led to floodwater crossing the road and entering front gardens at Rockingham Parade / The Lynch. [TAB] (p16)</p></div><div class="nugget-popup"><p>The River Colne rose above the level of Thames Water pipe outfalls used to discharge road drainage, preventing water from draining from the road into the river and contributing to the flooding on Cowley Road. [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_76395a6c3549bc28177da5a4934c13c2.setContent(html_748d81d4def9ba318a98413dc1a5933e);
+            
+        
+
+        marker_8cc78ee68ebce60ee917dfee0e369631.bindPopup(popup_76395a6c3549bc28177da5a4934c13c2)
+        ;
+
+        
+    
+    
+            var marker_d789e00daf7452bb90635a1129e36399 = L.marker(
+                [51.576508, -0.3975487],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_1e04fe3b18035c97711c12876a3b6048 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d789e00daf7452bb90635a1129e36399.setIcon(icon_1e04fe3b18035c97711c12876a3b6048);
+        
+    
+        var popup_16846fff3a77b9a38c74771ab9c4a9a5 = L.popup({});
+
+        
+            
+                var html_743e4149121eeb8bac07cc0eb2cbb653 = $(`<div id="html_743e4149121eeb8bac07cc0eb2cbb653" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Field End Road, Ruislip</h1><div class="nugget-popup"><p>Flooding on Field End Road led to Eastcote Station (on Field End Road) being closed for a period while engineers dealt with floodwater. (p4)</p></div></div></body></div>`)[0];
+                popup_16846fff3a77b9a38c74771ab9c4a9a5.setContent(html_743e4149121eeb8bac07cc0eb2cbb653);
+            
+        
+
+        marker_d789e00daf7452bb90635a1129e36399.bindPopup(popup_16846fff3a77b9a38c74771ab9c4a9a5)
+        ;
+
+        
+    
+    
+            var marker_1b6a808b95d44883ae6114dc3e2adcac = L.marker(
+                [51.6130008, -0.4845115],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_ad885a28808e2dd1a26ae3b57a34cf77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1b6a808b95d44883ae6114dc3e2adcac.setIcon(icon_ad885a28808e2dd1a26ae3b57a34cf77);
+        
+    
+        var popup_a5ac663d88cb25d0b44883b5a9d02b6a = L.popup({});
+
+        
+            
+                var html_80f4468fc96e0ae33082fb7e12e36842 = $(`<div id="html_80f4468fc96e0ae33082fb7e12e36842" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hill End Road, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Hill End Road was inundated by surface water flooding, affecting the carriageway and access along the road. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_a5ac663d88cb25d0b44883b5a9d02b6a.setContent(html_80f4468fc96e0ae33082fb7e12e36842);
+            
+        
+
+        marker_1b6a808b95d44883ae6114dc3e2adcac.bindPopup(popup_a5ac663d88cb25d0b44883b5a9d02b6a)
+        ;
+
+        
+    
+    
+            var marker_12ff220180592467f9287c99e3b39354 = L.marker(
+                [51.4896171, -0.4744255],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_2028e4790b30a85bfa695ad62a241087 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_12ff220180592467f9287c99e3b39354.setIcon(icon_2028e4790b30a85bfa695ad62a241087);
+        
+    
+        var popup_4e5e8eddcb2e7753c9d0331405701eda = L.popup({});
+
+        
+            
+                var html_c20cdf33176222778db1a4ba8a7c9a54 = $(`<div id="html_c20cdf33176222778db1a4ba8a7c9a54" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Holloway Lane, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Holloway Lane in Harmondsworth was affected by surface water flooding, inundating the carriageway. (p5)</p></div></div></body></div>`)[0];
+                popup_4e5e8eddcb2e7753c9d0331405701eda.setContent(html_c20cdf33176222778db1a4ba8a7c9a54);
+            
+        
+
+        marker_12ff220180592467f9287c99e3b39354.bindPopup(popup_4e5e8eddcb2e7753c9d0331405701eda)
+        ;
+
+        
+    
+    
+            var marker_8a5bf3cf413d17abfe35e5f4c51e5296 = L.marker(
+                [51.5854321, -0.4052699],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_e03b80cb3bf24c1fd2ac61dbe7f12990 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8a5bf3cf413d17abfe35e5f4c51e5296.setIcon(icon_e03b80cb3bf24c1fd2ac61dbe7f12990);
+        
+    
+        var popup_cf61be310c97d6c0ac93bc721bb7ae27 = L.popup({});
+
+        
+            
+                var html_5baffe93329b71b624fe17700c856f77 = $(`<div id="html_5baffe93329b71b624fe17700c856f77" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Road Eastcote, Eastcote</h1><div class="nugget-popup"><p>High Road is listed among roads affected by flooding in the council's summary. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_cf61be310c97d6c0ac93bc721bb7ae27.setContent(html_5baffe93329b71b624fe17700c856f77);
+            
+        
+
+        marker_8a5bf3cf413d17abfe35e5f4c51e5296.bindPopup(popup_cf61be310c97d6c0ac93bc721bb7ae27)
+        ;
+
+        
+    
+    
+            var marker_477d534a7824f6d89b27fddd999d062e = L.marker(
+                [51.5230717, -0.4354755],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_d1e789e2fa69d80b1407f8135a51557b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_477d534a7824f6d89b27fddd999d062e.setIcon(icon_d1e789e2fa69d80b1407f8135a51557b);
+        
+    
+        var popup_d86bde5db74c9a815f02efaca990af58 = L.popup({});
+
+        
+            
+                var html_a8f41bdfcc231e135b65fcc5657f8542 = $(`<div id="html_a8f41bdfcc231e135b65fcc5657f8542" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wood End Green Road, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Wood End Green Road, Lansbury Drive and Fairholme Crescent in Hayes experienced surface water flooding, flooding carriageways and affecting local traffic and access. (p5)</p></div></div></body></div>`)[0];
+                popup_d86bde5db74c9a815f02efaca990af58.setContent(html_a8f41bdfcc231e135b65fcc5657f8542);
+            
+        
+
+        marker_477d534a7824f6d89b27fddd999d062e.bindPopup(popup_d86bde5db74c9a815f02efaca990af58)
+        ;
+
+        
+    
+    
+            var marker_6212911133a14020da161b07d32cde94 = L.marker(
+                [51.5231571, -0.4218405],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_881b5f95d43e158d5217bce68fb94bc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6212911133a14020da161b07d32cde94.setIcon(icon_881b5f95d43e158d5217bce68fb94bc3);
+        
+    
+        var popup_2acb1ed4d24769e7611e34cc0a171154 = L.popup({});
+
+        
+            
+                var html_e531fb0e9e45237075aa1d13de156da4 = $(`<div id="html_e531fb0e9e45237075aa1d13de156da4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lansbury Drive, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Wood End Green Road, Lansbury Drive and Fairholme Crescent in Hayes experienced surface water flooding, flooding carriageways and affecting local traffic and access. (p5)</p></div></div></body></div>`)[0];
+                popup_2acb1ed4d24769e7611e34cc0a171154.setContent(html_e531fb0e9e45237075aa1d13de156da4);
+            
+        
+
+        marker_6212911133a14020da161b07d32cde94.bindPopup(popup_2acb1ed4d24769e7611e34cc0a171154)
+        ;
+
+        
+    
+    
+            var marker_7f6cfef78046444176823677acd91048 = L.marker(
+                [51.5299888, -0.4174393],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_ee3c468c019e2974127616a784bc4f33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7f6cfef78046444176823677acd91048.setIcon(icon_ee3c468c019e2974127616a784bc4f33);
+        
+    
+        var popup_131038fa4f57e706ab6ec276641b2dc9 = L.popup({});
+
+        
+            
+                var html_52b659e8d2dca0494b274b74a584c4df = $(`<div id="html_52b659e8d2dca0494b274b74a584c4df" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fairholme Crescent, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Wood End Green Road, Lansbury Drive and Fairholme Crescent in Hayes experienced surface water flooding, flooding carriageways and affecting local traffic and access. (p5)</p></div></div></body></div>`)[0];
+                popup_131038fa4f57e706ab6ec276641b2dc9.setContent(html_52b659e8d2dca0494b274b74a584c4df);
+            
+        
+
+        marker_7f6cfef78046444176823677acd91048.bindPopup(popup_131038fa4f57e706ab6ec276641b2dc9)
+        ;
+
+        
+    
+    
+            var marker_814f669d0d19d6135fa7df023758ee7a = L.marker(
+                [51.5422184, -0.4815975],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_44c7d128b8b1adec31fc774b8b841ba7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_814f669d0d19d6135fa7df023758ee7a.setIcon(icon_44c7d128b8b1adec31fc774b8b841ba7);
+        
+    
+        var popup_4e9733e4930ff7a96f1669d2013b11dd = L.popup({});
+
+        
+            
+                var html_2e1623db9d2a99b9f3aa9cd030779c7c = $(`<div id="html_2e1623db9d2a99b9f3aa9cd030779c7c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cowley Road, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Cowley Road is listed among roads affected by flooding in the council's summary. [TAB] (p5)</p></div><div class="nugget-popup"><p>Heavy rain overwhelmed the surface water sewer and elevated River Colne levels prevented discharge to the river, so water built up on the carriageway. The road was flooded (photo evidence), closed to buses with tailbacks and diversions, and vehicles were partially submerged. The council checked gullies as part of the response. [TAB] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 road closure affecting bus services; duration approximately 3 hours (p18)</p></div></div></body></div>`)[0];
+                popup_4e9733e4930ff7a96f1669d2013b11dd.setContent(html_2e1623db9d2a99b9f3aa9cd030779c7c);
+            
+        
+
+        marker_814f669d0d19d6135fa7df023758ee7a.bindPopup(popup_4e9733e4930ff7a96f1669d2013b11dd)
+        ;
+
+        
+    
+    
+            var marker_7e4367b1e5f150f0b43e4c2f90512f1b = L.marker(
+                [51.5464901, -0.4460226],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_8ecebdccff22f99dd3cf7d8cdeab0c6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7e4367b1e5f150f0b43e4c2f90512f1b.setIcon(icon_8ecebdccff22f99dd3cf7d8cdeab0c6d);
+        
+    
+        var popup_a3bce0b05b73cebe8136b60e6883df9b = L.popup({});
+
+        
+            
+                var html_bdd6302c37860001918a1ab1e70b63af = $(`<div id="html_bdd6302c37860001918a1ab1e70b63af" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Regents Avenue, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Regents Avenue is listed among roads affected by flooding in the council's summary. [TAB] (p5)</p></div><div class="nugget-popup"><p>Surface water built up in the road, flowed over footpaths into front gardens and into some houses, causing internal flooding; floodwater flowed across the road. (p17)</p></div></div></body></div>`)[0];
+                popup_a3bce0b05b73cebe8136b60e6883df9b.setContent(html_bdd6302c37860001918a1ab1e70b63af);
+            
+        
+
+        marker_7e4367b1e5f150f0b43e4c2f90512f1b.bindPopup(popup_a3bce0b05b73cebe8136b60e6883df9b)
+        ;
+
+        
+    
+    
+            var marker_c76cbe0ac478e19cfb22cf366745e6f9 = L.marker(
+                [51.5358272, -0.4715204],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_cdf8c080b2aa98b4efa37f6870a735a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c76cbe0ac478e19cfb22cf366745e6f9.setIcon(icon_cdf8c080b2aa98b4efa37f6870a735a8);
+        
+    
+        var popup_820f172926f449cc90d1aadc7c4e0e66 = L.popup({});
+
+        
+            
+                var html_f961311dd61c97a9370dc800832c72dd = $(`<div id="html_f961311dd61c97a9370dc800832c72dd" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Turnpike Lane, Cowley</h1><div class="nugget-popup"><p>Turnpike Lane was reported flooded during the event. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_820f172926f449cc90d1aadc7c4e0e66.setContent(html_f961311dd61c97a9370dc800832c72dd);
+            
+        
+
+        marker_c76cbe0ac478e19cfb22cf366745e6f9.bindPopup(popup_820f172926f449cc90d1aadc7c4e0e66)
+        ;
+
+        
+    
+    
+            var marker_21458556786620794f901c0bb68dfc31 = L.marker(
+                [51.5606573, -0.4104614],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_be55127225028e2272f98a9a7294ae39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_21458556786620794f901c0bb68dfc31.setIcon(icon_be55127225028e2272f98a9a7294ae39);
+        
+    
+        var popup_23a218d172979bfc290e047118a26eff = L.popup({});
+
+        
+            
+                var html_a312d57c050ba30f36ab6f7fb172cca5 = $(`<div id="html_a312d57c050ba30f36ab6f7fb172cca5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ruislip Gardens, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Ruislip Gardens was reported flooded. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_23a218d172979bfc290e047118a26eff.setContent(html_a312d57c050ba30f36ab6f7fb172cca5);
+            
+        
+
+        marker_21458556786620794f901c0bb68dfc31.bindPopup(popup_23a218d172979bfc290e047118a26eff)
+        ;
+
+        
+    
+    
+            var marker_2f4ece39ae6492f35b874bbd7a67210a = L.marker(
+                [51.5604827, -0.4161294],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_0dc940f5294e74e29a25a1d373d181d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2f4ece39ae6492f35b874bbd7a67210a.setIcon(icon_0dc940f5294e74e29a25a1d373d181d0);
+        
+    
+        var popup_883ece996e1b18b43a3d75f35af26d85 = L.popup({});
+
+        
+            
+                var html_491edfe38b2d5c70df8462e244b2ee32 = $(`<div id="html_491edfe38b2d5c70df8462e244b2ee32" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bedford Road, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Bedford Road was listed among the roads affected by flooding during the event. [TAB] (p5)</p></div><div class="nugget-popup"><p>Street and access flooded after heavy rainfall; surface water overwhelmed local drains and spilled onto footpaths and into front gardens, contributing to flooding of houses in the area. (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>23 houses; 20&ndash;50 properties (sandbags provided by LFB) (p8)</p></div></div></body></div>`)[0];
+                popup_883ece996e1b18b43a3d75f35af26d85.setContent(html_491edfe38b2d5c70df8462e244b2ee32);
+            
+        
+
+        marker_2f4ece39ae6492f35b874bbd7a67210a.bindPopup(popup_883ece996e1b18b43a3d75f35af26d85)
+        ;
+
+        
+    
+    
+            var marker_e2ba87f874be4e85a35de4287f579ebc = L.marker(
+                [51.5584277, -0.4184965],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_213e3f6829c44562aee2e858b7acbef3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e2ba87f874be4e85a35de4287f579ebc.setIcon(icon_213e3f6829c44562aee2e858b7acbef3);
+        
+    
+        var popup_7937e4cb7984fcf6f0cf0d5ad61ca938 = L.popup({});
+
+        
+            
+                var html_0de167e798c474da120ee944c8dc4ab8 = $(`<div id="html_0de167e798c474da120ee944c8dc4ab8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lea Crescent, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Lea Crescent was listed among the roads affected by flooding during the event. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_7937e4cb7984fcf6f0cf0d5ad61ca938.setContent(html_0de167e798c474da120ee944c8dc4ab8);
+            
+        
+
+        marker_e2ba87f874be4e85a35de4287f579ebc.bindPopup(popup_7937e4cb7984fcf6f0cf0d5ad61ca938)
+        ;
+
+        
+    
+    
+            var marker_7c56649b70205d3bc26816a2084a811c = L.marker(
+                [51.5661541, -0.4212996],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_d945d3d9d1d77428ce3af0d1562b9918 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7c56649b70205d3bc26816a2084a811c.setIcon(icon_d945d3d9d1d77428ce3af0d1562b9918);
+        
+    
+        var popup_b395c6cd8aaa2919193b5abe9ee82a49 = L.popup({});
+
+        
+            
+                var html_62aa3b00bf001d2ff559628f98b6a351 = $(`<div id="html_62aa3b00bf001d2ff559628f98b6a351" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Westfield Way, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Westfield Way was listed among the roads affected by flooding during the event. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_b395c6cd8aaa2919193b5abe9ee82a49.setContent(html_62aa3b00bf001d2ff559628f98b6a351);
+            
+        
+
+        marker_7c56649b70205d3bc26816a2084a811c.bindPopup(popup_b395c6cd8aaa2919193b5abe9ee82a49)
+        ;
+
+        
+    
+    
+            var marker_22c0061b24bbaefc4075d5b42181db86 = L.marker(
+                [51.5723399, -0.4218076],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_0bb9a1898d26debad43026cfb9dac705 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_22c0061b24bbaefc4075d5b42181db86.setIcon(icon_0bb9a1898d26debad43026cfb9dac705);
+        
+    
+        var popup_058ac2d6372c68e4c4dbcd09f17d8378 = L.popup({});
+
+        
+            
+                var html_ce332f229547654052bd020e40fd824c = $(`<div id="html_ce332f229547654052bd020e40fd824c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Pembroke Road, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Carriageway inundated by floodwater causing obstruction to traffic and local travel disruption. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_058ac2d6372c68e4c4dbcd09f17d8378.setContent(html_ce332f229547654052bd020e40fd824c);
+            
+        
+
+        marker_22c0061b24bbaefc4075d5b42181db86.bindPopup(popup_058ac2d6372c68e4c4dbcd09f17d8378)
+        ;
+
+        
+    
+    
+            var marker_9aea5d187f1bedcdb362a6193cb82d9e = L.marker(
+                [51.5661681, -0.4546782],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_47c0a8666002905ab36bbc3879aa3584 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9aea5d187f1bedcdb362a6193cb82d9e.setIcon(icon_47c0a8666002905ab36bbc3879aa3584);
+        
+    
+        var popup_41f2411d784d29669cb7c1e385938d11 = L.popup({});
+
+        
+            
+                var html_5afd4b181fb79773d8f83f6d695280d0 = $(`<div id="html_5afd4b181fb79773d8f83f6d695280d0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Derwent Avenue, Ickenham</h1><div class="nugget-popup"><p>Floodwater on the carriageway leading to travel disruption and localised inundation of the road. [TAB] (p5)</p></div><div class="nugget-popup"><p>Surface water flooding from overwhelming of the surface water sewer flooded the road; one home on Derwent Avenue was flooded internally. Flooding persisted for approximately 24 hours. (p11)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 home (p11)</p></div></div></body></div>`)[0];
+                popup_41f2411d784d29669cb7c1e385938d11.setContent(html_5afd4b181fb79773d8f83f6d695280d0);
+            
+        
+
+        marker_9aea5d187f1bedcdb362a6193cb82d9e.bindPopup(popup_41f2411d784d29669cb7c1e385938d11)
+        ;
+
+        
+    
+    
+            var marker_e5f04c1d002f519c067410a67233f028 = L.marker(
+                [51.5683797, -0.4571971],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_8aee3ffc6e87d5e9a2eba3162ae8903e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e5f04c1d002f519c067410a67233f028.setIcon(icon_8aee3ffc6e87d5e9a2eba3162ae8903e);
+        
+    
+        var popup_c1a4a387f52bc44e36c09b0da8c2771e = L.popup({});
+
+        
+            
+                var html_3075b05f07db5d630ac343f5e4e3e788 = $(`<div id="html_3075b05f07db5d630ac343f5e4e3e788" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>St Georges Drive, Ickenham</h1><div class="nugget-popup"><p>Road inundated with surface water, resulting in traffic obstruction and local travel disruption. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_c1a4a387f52bc44e36c09b0da8c2771e.setContent(html_3075b05f07db5d630ac343f5e4e3e788);
+            
+        
+
+        marker_e5f04c1d002f519c067410a67233f028.bindPopup(popup_c1a4a387f52bc44e36c09b0da8c2771e)
+        ;
+
+        
+    
+    
+            var marker_d4d6fb911d571d0db0e136b37660d286 = L.marker(
+                [51.5678324, -0.4447586],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_fb71b41868a1bd248b0806544f9cbe9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d4d6fb911d571d0db0e136b37660d286.setIcon(icon_fb71b41868a1bd248b0806544f9cbe9c);
+        
+    
+        var popup_f567a799edb03e1a1191a5d277fe57ff = L.popup({});
+
+        
+            
+                var html_40be0e8a856f58c52940a4e666afbeb0 = $(`<div id="html_40be0e8a856f58c52940a4e666afbeb0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Parkfield Road, Ickenham</h1><div class="nugget-popup"><p>Surface water flooding across the carriageway, obstructing traffic and local access on Parkfield Road. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_f567a799edb03e1a1191a5d277fe57ff.setContent(html_40be0e8a856f58c52940a4e666afbeb0);
+            
+        
+
+        marker_d4d6fb911d571d0db0e136b37660d286.bindPopup(popup_f567a799edb03e1a1191a5d277fe57ff)
+        ;
+
+        
+    
+    
+            var marker_a45d775a8de6b9cd369be81ee2f2efac = L.marker(
+                [51.5627641, -0.443074],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_042cc675a8f5ba9bb943e89198a86dcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a45d775a8de6b9cd369be81ee2f2efac.setIcon(icon_042cc675a8f5ba9bb943e89198a86dcd);
+        
+    
+        var popup_ff3a12493cccfb690c67d1de1fd31f70 = L.popup({});
+
+        
+            
+                var html_0e3fd8ec056b2d11fe901e053d2af7c9 = $(`<div id="html_0e3fd8ec056b2d11fe901e053d2af7c9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Glebe Avenue, Ickenham</h1><div class="nugget-popup"><p>Surface water flooding across the carriageway, obstructing traffic and local access on Glebe Avenue. [TAB] (p5)</p></div><div class="nugget-popup"><p>Surface water overwhelmed highway drains; flood water flowed across the road and entered residential properties. The event also caused issues with the foul network where drains backed up. Flooding persisted for approximately 3 hours. Evidence from photos and resident correspondence. [TAB] (p13)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>4 households [TAB] (p13)</p></div></div></body></div>`)[0];
+                popup_ff3a12493cccfb690c67d1de1fd31f70.setContent(html_0e3fd8ec056b2d11fe901e053d2af7c9);
+            
+        
+
+        marker_a45d775a8de6b9cd369be81ee2f2efac.bindPopup(popup_ff3a12493cccfb690c67d1de1fd31f70)
+        ;
+
+        
+    
+    
+            var marker_4a85871641855fa13cfcf6587ceffb12 = L.marker(
+                [51.5585615, -0.4386111],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_db411d556960dcbaaadf5c54ad5c047d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4a85871641855fa13cfcf6587ceffb12.setIcon(icon_db411d556960dcbaaadf5c54ad5c047d);
+        
+    
+        var popup_c2fa49df41db99f4b347f3611faff1be = L.popup({});
+
+        
+            
+                var html_a609adfe6171aed5c818099b95c39f10 = $(`<div id="html_a609adfe6171aed5c818099b95c39f10" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Milverton Drive, Ickenham</h1><div class="nugget-popup"><p>Surface water flooding across the carriageway, obstructing traffic and local access on Milverton Drive. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_c2fa49df41db99f4b347f3611faff1be.setContent(html_a609adfe6171aed5c818099b95c39f10);
+            
+        
+
+        marker_4a85871641855fa13cfcf6587ceffb12.bindPopup(popup_c2fa49df41db99f4b347f3611faff1be)
+        ;
+
+        
+    
+    
+            var marker_7531951261a7320ac82862ecb946fe53 = L.marker(
+                [51.4859462, -0.4760607],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_1c5f46dac15390554c6afa72caeb29a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7531951261a7320ac82862ecb946fe53.setIcon(icon_1c5f46dac15390554c6afa72caeb29a3);
+        
+    
+        var popup_a148bed03980ec50f5c27763d9848933 = L.popup({});
+
+        
+            
+                var html_90e0c9bbc278cb284830e649da6525fb = $(`<div id="html_90e0c9bbc278cb284830e649da6525fb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hatch Lane, Harmondsworth</h1><div class="nugget-popup"><p>Hatch Lane was affected by surface water flooding, impacting the road. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_a148bed03980ec50f5c27763d9848933.setContent(html_90e0c9bbc278cb284830e649da6525fb);
+            
+        
+
+        marker_7531951261a7320ac82862ecb946fe53.bindPopup(popup_a148bed03980ec50f5c27763d9848933)
+        ;
+
+        
+    
+    
+            var marker_723cd081813d363d1c9b431b3b85584e = L.marker(
+                [51.5214399, -0.4300701],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_a1c0572317277245f968f898bceedeaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_723cd081813d363d1c9b431b3b85584e.setIcon(icon_a1c0572317277245f968f898bceedeaf);
+        
+    
+        var popup_4575cae8fe7781ff042cb918e33f0c6d = L.popup({});
+
+        
+            
+                var html_5270f8e0b90c943db31db7b702d4acb4 = $(`<div id="html_5270f8e0b90c943db31db7b702d4acb4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wood End Green Road, Hayes</h1><div class="nugget-popup"><p>Wood End Green Road experienced surface water flooding of the carriageway, impairing local access and traffic movement. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_4575cae8fe7781ff042cb918e33f0c6d.setContent(html_5270f8e0b90c943db31db7b702d4acb4);
+            
+        
+
+        marker_723cd081813d363d1c9b431b3b85584e.bindPopup(popup_4575cae8fe7781ff042cb918e33f0c6d)
+        ;
+
+        
+    
+    
+            var marker_2c79f5b8c1a0136ab8b295cc731be373 = L.marker(
+                [51.5300525, -0.4152351],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_78f5c7f723b43295ee171f4a7eed9fed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2c79f5b8c1a0136ab8b295cc731be373.setIcon(icon_78f5c7f723b43295ee171f4a7eed9fed);
+        
+    
+        var popup_1238b4a65eba411d5c59e4b131c7e001 = L.popup({});
+
+        
+            
+                var html_574cc95a89f9a1fcc5badd71ddea6af9 = $(`<div id="html_574cc95a89f9a1fcc5badd71ddea6af9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fairholme Crescent, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Fairholme Crescent experienced surface water flooding of the carriageway, resulting in local access and traffic impacts. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_1238b4a65eba411d5c59e4b131c7e001.setContent(html_574cc95a89f9a1fcc5badd71ddea6af9);
+            
+        
+
+        marker_2c79f5b8c1a0136ab8b295cc731be373.bindPopup(popup_1238b4a65eba411d5c59e4b131c7e001)
+        ;
+
+        
+    
+    
+            var marker_b7cfb0f53ebd983dd99e5000c188822d = L.marker(
+                [51.5470587, -0.4589588],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_a9786f0ff19285f6002adb554efc59e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b7cfb0f53ebd983dd99e5000c188822d.setIcon(icon_a9786f0ff19285f6002adb554efc59e1);
+        
+    
+        var popup_dfc9cbea90a3d7171e231a71aad711e1 = L.popup({});
+
+        
+            
+                var html_321ade627b4facf9a8890b5f788ce300 = $(`<div id="html_321ade627b4facf9a8890b5f788ce300" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Blossom Way, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Blossom Road (sic) was affected by surface water flooding, impacting the road. [TAB] (p5)</p></div><div class="nugget-popup"><p>Surface water ponding on the highway; soakaways were full so water could not drain away. Road was flooded and remained impassable/covered in water for a number of hours; resident photograph and map mark the location. Issue described as recurring. [IMG] (p20)</p></div></div></body></div>`)[0];
+                popup_dfc9cbea90a3d7171e231a71aad711e1.setContent(html_321ade627b4facf9a8890b5f788ce300);
+            
+        
+
+        marker_b7cfb0f53ebd983dd99e5000c188822d.bindPopup(popup_dfc9cbea90a3d7171e231a71aad711e1)
+        ;
+
+        
+    
+    
+            var marker_87f7f82e4cb5287c401e210ce3f4b989 = L.marker(
+                [51.5038397, -0.4793646],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_a45b8719536f061c233858c6194caede = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_87f7f82e4cb5287c401e210ce3f4b989.setIcon(icon_a45b8719536f061c233858c6194caede);
+        
+    
+        var popup_7def75b55825caf8725c5f2cf756a6d2 = L.popup({});
+
+        
+            
+                var html_cdda4c49855138720078becacf851ae5 = $(`<div id="html_cdda4c49855138720078becacf851ae5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Money Lane, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Blossom Road (sic), Hatch Lane and Money Lane in West Drayton experienced surface water flooding that impacted the roads and access. (p5)</p></div></div></body></div>`)[0];
+                popup_7def75b55825caf8725c5f2cf756a6d2.setContent(html_cdda4c49855138720078becacf851ae5);
+            
+        
+
+        marker_87f7f82e4cb5287c401e210ce3f4b989.bindPopup(popup_7def75b55825caf8725c5f2cf756a6d2)
+        ;
+
+        
+    
+    
+            var marker_83f687282b42bc92c91e802b81becc2f = L.marker(
+                [51.4806766, -0.4342178],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_c5cdf34d3bda057bff9840f165229d8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_83f687282b42bc92c91e802b81becc2f.setIcon(icon_c5cdf34d3bda057bff9840f165229d8d);
+        
+    
+        var popup_5084b1bd69371f8bbfaa07f6fd94438e = L.popup({});
+
+        
+            
+                var html_ab406c5895a17d20e18ddbe732ad1787 = $(`<div id="html_ab406c5895a17d20e18ddbe732ad1787" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Street Harlington, Harlington</h1><div class="nugget-popup"><p>High Street in Harlington was flooded with surface water on the carriageway, causing disruption to traffic and access. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_5084b1bd69371f8bbfaa07f6fd94438e.setContent(html_ab406c5895a17d20e18ddbe732ad1787);
+            
+        
+
+        marker_83f687282b42bc92c91e802b81becc2f.bindPopup(popup_5084b1bd69371f8bbfaa07f6fd94438e)
+        ;
+
+        
+    
+    
+            var marker_672d6823a03a298b022badb9fdb59b6a = L.marker(
+                [51.54523, -0.4842672],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_d7d5952a11b43d05b317034329937549 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_672d6823a03a298b022badb9fdb59b6a.setIcon(icon_d7d5952a11b43d05b317034329937549);
+        
+    
+        var popup_e6e07a6a33da17770f0afa31968d5644 = L.popup({});
+
+        
+            
+                var html_23dfcf2b9a86c32c8254a8b6886d628a = $(`<div id="html_23dfcf2b9a86c32c8254a8b6886d628a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Lynch, London Borough of Hillingdon</h1><div class="nugget-popup"><p>The Lynch is listed among roads affected by flooding in the council's summary. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_e6e07a6a33da17770f0afa31968d5644.setContent(html_23dfcf2b9a86c32c8254a8b6886d628a);
+            
+        
+
+        marker_672d6823a03a298b022badb9fdb59b6a.bindPopup(popup_e6e07a6a33da17770f0afa31968d5644)
+        ;
+
+        
+    
+    
+            var marker_5db4a63ae7149b3d5eb0873d077b6915 = L.marker(
+                [51.545277, -0.4442263],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_93f983ed76a3835d76192a17f70b0348 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5db4a63ae7149b3d5eb0873d077b6915.setIcon(icon_93f983ed76a3835d76192a17f70b0348);
+        
+    
+        var popup_d4c9adf7e1ff87dffc7a63bca6cf71f5 = L.popup({});
+
+        
+            
+                var html_46017a0610c5f7e7cacfd6c504056346 = $(`<div id="html_46017a0610c5f7e7cacfd6c504056346" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Windsor Avenue, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Windsor Avenue was reported flooded. [TAB] (p5)</p></div><div class="nugget-popup"><p>Surface water accumulated on the road and flowed into front gardens and into some houses, resulting in internal flooding of properties. (p17)</p></div></div></body></div>`)[0];
+                popup_d4c9adf7e1ff87dffc7a63bca6cf71f5.setContent(html_46017a0610c5f7e7cacfd6c504056346);
+            
+        
+
+        marker_5db4a63ae7149b3d5eb0873d077b6915.bindPopup(popup_d4c9adf7e1ff87dffc7a63bca6cf71f5)
+        ;
+
+        
+    
+    
+            var marker_23eede8e3599f129dd340cc550ac36fa = L.marker(
+                [51.5600989, -0.3807334],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_a4160aebc07c278baead8da2c4aa380a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_23eede8e3599f129dd340cc550ac36fa.setIcon(icon_a4160aebc07c278baead8da2c4aa380a);
+        
+    
+        var popup_0669760046ef3317ac50d9eb084757eb = L.popup({});
+
+        
+            
+                var html_83d6bc76b2fd3ea28c25e75f9f586003 = $(`<div id="html_83d6bc76b2fd3ea28c25e75f9f586003" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Victoria Road, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Victoria Road was reported flooded. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_0669760046ef3317ac50d9eb084757eb.setContent(html_83d6bc76b2fd3ea28c25e75f9f586003);
+            
+        
+
+        marker_23eede8e3599f129dd340cc550ac36fa.bindPopup(popup_0669760046ef3317ac50d9eb084757eb)
+        ;
+
+        
+    
+    
+            var marker_0d09b3e84b826dc0b6699a7735f44387 = L.marker(
+                [51.5597065, -0.4162977],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_1e3bc5361323c5978247f568c6eb87c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0d09b3e84b826dc0b6699a7735f44387.setIcon(icon_1e3bc5361323c5978247f568c6eb87c4);
+        
+    
+        var popup_a54e7adc5b470de46606c411ae8db6c5 = L.popup({});
+
+        
+            
+                var html_389ed18aca849792b76330a42ba24674 = $(`<div id="html_389ed18aca849792b76330a42ba24674" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Clyfford Road, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Clyfford Road was listed among the roads affected by flooding during the event. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_a54e7adc5b470de46606c411ae8db6c5.setContent(html_389ed18aca849792b76330a42ba24674);
+            
+        
+
+        marker_0d09b3e84b826dc0b6699a7735f44387.bindPopup(popup_a54e7adc5b470de46606c411ae8db6c5)
+        ;
+
+        
+    
+    
+            var marker_2924fdd6f480e7b4f9fb49489a77111e = L.marker(
+                [51.55541, -0.4005544],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_5bfce8a4a75d2863f0541194850ec871 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2924fdd6f480e7b4f9fb49489a77111e.setIcon(icon_5bfce8a4a75d2863f0541194850ec871);
+        
+    
+        var popup_bda0d1dc220114cef17fa82bc58f02e7 = L.popup({});
+
+        
+            
+                var html_916e1ce2cd57fd1675da6bc646047c04 = $(`<div id="html_916e1ce2cd57fd1675da6bc646047c04" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Station Approach, Ruislip</h1><div class="nugget-popup"><p>Station Approach was listed among the roads affected by flooding during the event. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_bda0d1dc220114cef17fa82bc58f02e7.setContent(html_916e1ce2cd57fd1675da6bc646047c04);
+            
+        
+
+        marker_2924fdd6f480e7b4f9fb49489a77111e.bindPopup(popup_bda0d1dc220114cef17fa82bc58f02e7)
+        ;
+
+        
+    
+    
+            var marker_dcd0b66a71556d6445eea063c4f4e8ff = L.marker(
+                [51.5521578, -0.4754738],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_56e6a38a2f581ca3bdb668189fa929b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_dcd0b66a71556d6445eea063c4f4e8ff.setIcon(icon_56e6a38a2f581ca3bdb668189fa929b7);
+        
+    
+        var popup_df490a26818dc1fa71ade3a29d346133 = L.popup({});
+
+        
+            
+                var html_d6ba70c830943df79a447fad9af64aa7 = $(`<div id="html_d6ba70c830943df79a447fad9af64aa7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cornwall Road, Ickenham</h1><div class="nugget-popup"><p>Cornwall Road was listed among the roads affected by flooding during the event. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_df490a26818dc1fa71ade3a29d346133.setContent(html_d6ba70c830943df79a447fad9af64aa7);
+            
+        
+
+        marker_dcd0b66a71556d6445eea063c4f4e8ff.bindPopup(popup_df490a26818dc1fa71ade3a29d346133)
+        ;
+
+        
+    
+    
+            var marker_e10e740369dc78bf996073b6cdabdacb = L.marker(
+                [51.5652053, -0.457218],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_eaf450674269b19ab559408f4bbf84a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e10e740369dc78bf996073b6cdabdacb.setIcon(icon_eaf450674269b19ab559408f4bbf84a3);
+        
+    
+        var popup_ae8044dc6fa5d0b84ea7535aceca34c6 = L.popup({});
+
+        
+            
+                var html_b26826b1563e943f756da4fe4628311b = $(`<div id="html_b26826b1563e943f756da4fe4628311b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Swakeleys Road, Ickenham</h1><div class="nugget-popup"><p>Road surface flooded, causing obstruction to vehicle movement and local travel disruption. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_ae8044dc6fa5d0b84ea7535aceca34c6.setContent(html_b26826b1563e943f756da4fe4628311b);
+            
+        
+
+        marker_e10e740369dc78bf996073b6cdabdacb.bindPopup(popup_ae8044dc6fa5d0b84ea7535aceca34c6)
+        ;
+
+        
+    
+    
+            var marker_ce216af56cac885cbff5881cccbf0568 = L.marker(
+                [51.5653361, -0.4541707],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_88b612c3c0ee5570c5a057f2d0123ed2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ce216af56cac885cbff5881cccbf0568.setIcon(icon_88b612c3c0ee5570c5a057f2d0123ed2);
+        
+    
+        var popup_db38466a0be35d86525bff523039aa89 = L.popup({});
+
+        
+            
+                var html_0423b104585b6ef5569850ff6f0dd4b2 = $(`<div id="html_0423b104585b6ef5569850ff6f0dd4b2" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Thornhill Road, Ickenham</h1><div class="nugget-popup"><p>Carriageway affected by floodwater, causing obstruction to vehicles and disruption to local travel. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_db38466a0be35d86525bff523039aa89.setContent(html_0423b104585b6ef5569850ff6f0dd4b2);
+            
+        
+
+        marker_ce216af56cac885cbff5881cccbf0568.bindPopup(popup_db38466a0be35d86525bff523039aa89)
+        ;
+
+        
+    
+    
+            var marker_c9045977f71a52e5b117a34e98b1a0ec = L.marker(
+                [51.5861971, -0.4406675],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_20fcd0fd2f549551f8f1e548084c532a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c9045977f71a52e5b117a34e98b1a0ec.setIcon(icon_20fcd0fd2f549551f8f1e548084c532a);
+        
+    
+        var popup_c712ea2951f065992c29e857cc4edd0f = L.popup({});
+
+        
+            
+                var html_9e10d652e452f80c09ea83eb10376cd4 = $(`<div id="html_9e10d652e452f80c09ea83eb10376cd4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Breakspear Road, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Floodwater affected the carriageway (Breakspear Road South listed), causing obstruction to traffic and disruption. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_c712ea2951f065992c29e857cc4edd0f.setContent(html_9e10d652e452f80c09ea83eb10376cd4);
+            
+        
+
+        marker_c9045977f71a52e5b117a34e98b1a0ec.bindPopup(popup_c712ea2951f065992c29e857cc4edd0f)
+        ;
+
+        
+    
+    
+            var marker_1a221f1b6bc57b2b1234d86dd1696a82 = L.marker(
+                [51.5652986, -0.4431675],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_4407e6c1d7f5fd0e412bd43131ee5262 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1a221f1b6bc57b2b1234d86dd1696a82.setIcon(icon_4407e6c1d7f5fd0e412bd43131ee5262);
+        
+    
+        var popup_5b0c3d25c9af79a6425b1f1997a62e13 = L.popup({});
+
+        
+            
+                var html_d25961954c0354c664c8767babf02945 = $(`<div id="html_d25961954c0354c664c8767babf02945" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Austins Road, Ickenham</h1><div class="nugget-popup"><p>Surface water flooding across the carriageway, obstructing traffic and local access on Austins Road. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_5b0c3d25c9af79a6425b1f1997a62e13.setContent(html_d25961954c0354c664c8767babf02945);
+            
+        
+
+        marker_1a221f1b6bc57b2b1234d86dd1696a82.bindPopup(popup_5b0c3d25c9af79a6425b1f1997a62e13)
+        ;
+
+        
+    
+    
+            var marker_767f56d55f47d21856fb2d0575800e9b = L.marker(
+                [51.5562347, -0.4367939],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_a98c6b9ac779362c2dbc3ad718df6968 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_767f56d55f47d21856fb2d0575800e9b.setIcon(icon_a98c6b9ac779362c2dbc3ad718df6968);
+        
+    
+        var popup_cc23eecf1ec0bb01ade5ee1e2f7e7a24 = L.popup({});
+
+        
+            
+                var html_adeeef190778be832476060db12213d1 = $(`<div id="html_adeeef190778be832476060db12213d1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sussex Road, Ickenham</h1><div class="nugget-popup"><p>Surface water flooding across the carriageway, obstructing traffic and local access on Sussex Road. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_cc23eecf1ec0bb01ade5ee1e2f7e7a24.setContent(html_adeeef190778be832476060db12213d1);
+            
+        
+
+        marker_767f56d55f47d21856fb2d0575800e9b.bindPopup(popup_cc23eecf1ec0bb01ade5ee1e2f7e7a24)
+        ;
+
+        
+    
+    
+            var marker_c66b3e81a81c9936a1a810eaed26808b = L.marker(
+                [51.5348777, -0.4211459],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_31013f6e55edb3bb3ecb0ff0e93dfa5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c66b3e81a81c9936a1a810eaed26808b.setIcon(icon_31013f6e55edb3bb3ecb0ff0e93dfa5b);
+        
+    
+        var popup_04e0cbf1d162a69595c856abcbc4957e = L.popup({});
+
+        
+            
+                var html_56bc1f51dfb2fbbc169046dd45abfe1b = $(`<div id="html_56bc1f51dfb2fbbc169046dd45abfe1b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lansbury Drive, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Lansbury Drive experienced surface water flooding of the carriageway, causing local access and traffic disruption. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_04e0cbf1d162a69595c856abcbc4957e.setContent(html_56bc1f51dfb2fbbc169046dd45abfe1b);
+            
+        
+
+        marker_c66b3e81a81c9936a1a810eaed26808b.bindPopup(popup_04e0cbf1d162a69595c856abcbc4957e)
+        ;
+
+        
+    
+    
+            var marker_144aa5221f2da03f10e44781ff9014bb = L.marker(
+                [51.559444, -0.4173986],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_28a1a2bfab06b940529d6cbadc332c77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_144aa5221f2da03f10e44781ff9014bb.setIcon(icon_28a1a2bfab06b940529d6cbadc332c77);
+        
+    
+        var popup_081806fd690f5614d85a2bc5887be212 = L.popup({});
+
+        
+            
+                var html_3375f95816aac7b3bb951944fa69cfb7 = $(`<div id="html_3375f95816aac7b3bb951944fa69cfb7" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Clyfford Road, Ruislip</h1><div class="nugget-popup"><p>Surface water flooding across the access road and into properties' gardens/frontages as drains were overwhelmed; contributed to the area&ndash;wide impacts on residential properties. (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>23 houses; 20&ndash;50 properties (sandbags provided by LFB) (p8)</p></div></div></body></div>`)[0];
+                popup_081806fd690f5614d85a2bc5887be212.setContent(html_3375f95816aac7b3bb951944fa69cfb7);
+            
+        
+
+        marker_144aa5221f2da03f10e44781ff9014bb.bindPopup(popup_081806fd690f5614d85a2bc5887be212)
+        ;
+
+        
+    
+    
+            var marker_03f42ec81c121dab227cdaf3980809d7 = L.marker(
+                [51.5434208, -0.3976799],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_69a832f28ece8220c2be785912d88234 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_03f42ec81c121dab227cdaf3980809d7.setIcon(icon_69a832f28ece8220c2be785912d88234);
+        
+    
+        var popup_5cd52f35b81840d3d07fea4a071aefa6 = L.popup({});
+
+        
+            
+                var html_d780a75c9024f4b2009471d2291aa8df = $(`<div id="html_d780a75c9024f4b2009471d2291aa8df" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West End Road, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Flooding of the access road and surrounding properties due to overwhelmed surface water sewer; the report notes previous reports of flooding on West End Road and that water built up at low points and at rear of some properties. [TAB] (p8)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>23 houses; 20&ndash;50 properties (sandbags provided by LFB) [TAB] (p8)</p></div></div></body></div>`)[0];
+                popup_5cd52f35b81840d3d07fea4a071aefa6.setContent(html_d780a75c9024f4b2009471d2291aa8df);
+            
+        
+
+        marker_03f42ec81c121dab227cdaf3980809d7.bindPopup(popup_5cd52f35b81840d3d07fea4a071aefa6)
+        ;
+
+        
+    
+    
+            var marker_93f81e8e96c553b5855d404e9990a9f3 = L.marker(
+                [51.5656975, -0.4427535],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_7add09a69d573d8bb76f350cee2a2936 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_93f81e8e96c553b5855d404e9990a9f3.setIcon(icon_7add09a69d573d8bb76f350cee2a2936);
+        
+    
+        var popup_bbe993005eddd4173d0c2332fe558f18 = L.popup({});
+
+        
+            
+                var html_4638d626c32b98501492d5f0b2ed44a1 = $(`<div id="html_4638d626c32b98501492d5f0b2ed44a1" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>High Road Ickenham, Ickenham</h1><div class="nugget-popup"><p>Road was flooded following surface water/ordinary watercourse overflow; vehicles observed driving through deep water. Flooding persisted for about 24 hours and approached nearby properties on Church Place and Tweedale Grove. (p12)</p></div></div></body></div>`)[0];
+                popup_bbe993005eddd4173d0c2332fe558f18.setContent(html_4638d626c32b98501492d5f0b2ed44a1);
+            
+        
+
+        marker_93f81e8e96c553b5855d404e9990a9f3.bindPopup(popup_bbe993005eddd4173d0c2332fe558f18)
+        ;
+
+        
+    
+    
+            var marker_2fad0aa8f0d21fc8bec45fbd1c978431 = L.marker(
+                [51.5623647, -0.4368022],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_b54cc123feff8c1a8e5a4b2884c327a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2fad0aa8f0d21fc8bec45fbd1c978431.setIcon(icon_b54cc123feff8c1a8e5a4b2884c327a5);
+        
+    
+        var popup_8a141126d65d8bd2ea2f770e6379aac4 = L.popup({});
+
+        
+            
+                var html_9ef3be78e9e0aa0e57e1c43e93a2270c = $(`<div id="html_9ef3be78e9e0aa0e57e1c43e93a2270c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Austins Lane, Ickenham</h1><div class="nugget-popup"><p>Road flooding reported at this location associated with surface water/ordinary watercourse not draining to the Ickenham stream; contributed to local standing water around properties. (p12)</p></div></div></body></div>`)[0];
+                popup_8a141126d65d8bd2ea2f770e6379aac4.setContent(html_9ef3be78e9e0aa0e57e1c43e93a2270c);
+            
+        
+
+        marker_2fad0aa8f0d21fc8bec45fbd1c978431.bindPopup(popup_8a141126d65d8bd2ea2f770e6379aac4)
+        ;
+
+        
+    
+    
+            var marker_e94296eb68ffc63b4aab4be717712d95 = L.marker(
+                [51.56445340370508, -0.4418919659269921],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_c4ecd85bb5d699bb30939f4391dcd7ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e94296eb68ffc63b4aab4be717712d95.setIcon(icon_c4ecd85bb5d699bb30939f4391dcd7ce);
+        
+    
+        var popup_799c5a2a9dd4c0a09bfcd34c44e9897a = L.popup({});
+
+        
+            
+                var html_c83529f2ba9c0c2bbad9df29a66bed23 = $(`<div id="html_c83529f2ba9c0c2bbad9df29a66bed23" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Church Place, Ickenham</h1><div class="nugget-popup"><p>Houses on Church Place were reported as being nearly flooded due to surface water pooling on adjacent roads. [TAB] (p12)</p></div></div></body></div>`)[0];
+                popup_799c5a2a9dd4c0a09bfcd34c44e9897a.setContent(html_c83529f2ba9c0c2bbad9df29a66bed23);
+            
+        
+
+        marker_e94296eb68ffc63b4aab4be717712d95.bindPopup(popup_799c5a2a9dd4c0a09bfcd34c44e9897a)
+        ;
+
+        
+    
+    
+            var marker_196cd49573cfe8adc1572fe208fb2a84 = L.marker(
+                [51.5649645, -0.4400389],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_7b2119771ebcb3e08f2164204ea64acf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_196cd49573cfe8adc1572fe208fb2a84.setIcon(icon_7b2119771ebcb3e08f2164204ea64acf);
+        
+    
+        var popup_8eb10f11e89bd7b316d765bdab227d36 = L.popup({});
+
+        
+            
+                var html_6e9ba9c4724959c01313e08943a5f08e = $(`<div id="html_6e9ba9c4724959c01313e08943a5f08e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Tweeddale Grove, Ickenham</h1><div class="nugget-popup"><p>Houses on Tweedale Grove were reported as being at risk and nearly flooded because water on nearby roads did not drain away. [TAB] (p12)</p></div></div></body></div>`)[0];
+                popup_8eb10f11e89bd7b316d765bdab227d36.setContent(html_6e9ba9c4724959c01313e08943a5f08e);
+            
+        
+
+        marker_196cd49573cfe8adc1572fe208fb2a84.bindPopup(popup_8eb10f11e89bd7b316d765bdab227d36)
+        ;
+
+        
+    
+    
+            var marker_48bcb0080b765978a1f2f236e0b8fb58 = L.marker(
+                [51.5636551, -0.4504939],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_05f361b70b123a8832ed90c669c81401 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_48bcb0080b765978a1f2f236e0b8fb58.setIcon(icon_05f361b70b123a8832ed90c669c81401);
+        
+    
+        var popup_4f1e6577599fed296dbe7a90649add02 = L.popup({});
+
+        
+            
+                var html_968927257c226fdc509bd2ed2e5f4c89 = $(`<div id="html_968927257c226fdc509bd2ed2e5f4c89" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>The Avenue, Ickenham</h1><div class="nugget-popup"><p>Foul sewer water flooded a number of garages and the highway; reports that the foul sewer discharged into the River Pinn. Floodwater was present for approximately 3 hours. (p15)</p></div></div></body></div>`)[0];
+                popup_4f1e6577599fed296dbe7a90649add02.setContent(html_968927257c226fdc509bd2ed2e5f4c89);
+            
+        
+
+        marker_48bcb0080b765978a1f2f236e0b8fb58.bindPopup(popup_4f1e6577599fed296dbe7a90649add02)
+        ;
+
+        
+    
+    
+            var marker_1d503dded55086bdf06fcfb76fa198bd = L.marker(
+                [51.5457653, -0.485021],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_115a982a01112055ba5d1a48e34153dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1d503dded55086bdf06fcfb76fa198bd.setIcon(icon_115a982a01112055ba5d1a48e34153dd);
+        
+    
+        var popup_ebc8125f1fc7f810fcfe341d67538a9c = L.popup({});
+
+        
+            
+                var html_bcba233532009ff7708562eb8fd77d83 = $(`<div id="html_bcba233532009ff7708562eb8fd77d83" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rockingham Parade, London Borough of Hillingdon</h1><div class="nugget-popup"><p>Flood water from the River Colne flowed across the road and into front gardens at Rockingham Parade; residents reported (unverified) ingress through airbricks. (p16)</p></div></div></body></div>`)[0];
+                popup_ebc8125f1fc7f810fcfe341d67538a9c.setContent(html_bcba233532009ff7708562eb8fd77d83);
+            
+        
+
+        marker_1d503dded55086bdf06fcfb76fa198bd.bindPopup(popup_ebc8125f1fc7f810fcfe341d67538a9c)
+        ;
+
+        
+    
+    
+            var marker_99d757abf55dc88db1fbfffab6be341e = L.marker(
+                [51.57528438695023, -0.42080260672149],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_0e300f4daf6f4eeef6b584bef513c113 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_99d757abf55dc88db1fbfffab6be341e.setIcon(icon_0e300f4daf6f4eeef6b584bef513c113);
+        
+    
+        var popup_ec8a63679b80f955ab2c4ecc8026c895 = L.popup({});
+
+        
+            
+                var html_d5aeae4b254a72e90f0b40f988d36848 = $(`<div id="html_d5aeae4b254a72e90f0b40f988d36848" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ruislip</h1><div class="nugget-popup"><p>Ruislip area experienced surface water/urban flooding on 28 July after heavy rain overwhelmed surface water sewers. London Underground infrastructure in the Ruislip area was affected: nearby West Ruislip saw flooding, South Ruislip Station was flooded and closed, Ruislip Manor (Victoria Road) subway was flooded and Ruislip Station was closed for a period while engineers dealt with floodwater. (p4)</p></div><div class="nugget-popup"><p>Multiple roads in Ruislip (including Ruislip Gardens, Victoria Road, Bedford Road, Clyfford Road, Lea Crescent, Station Approach, Westfield Way, Cornwall Road and Pembroke Road) were reported as affected by flooding. [TAB] (p5)</p></div><div class="nugget-popup"><p>Road and footpath at Station Approach (HA4 6TP) were flooded when the surface water sewer was overwhelmed and blocked (tree roots). Two people became stranded and required rescue; Council Highways used a tanker to remove water until Thames Water attended. (p10)</p></div></div></body></div>`)[0];
+                popup_ec8a63679b80f955ab2c4ecc8026c895.setContent(html_d5aeae4b254a72e90f0b40f988d36848);
+            
+        
+
+        marker_99d757abf55dc88db1fbfffab6be341e.bindPopup(popup_ec8a63679b80f955ab2c4ecc8026c895)
+        ;
+
+        
+    
+    
+            var marker_66fbcb3eda19897ebef921304fcafa38 = L.marker(
+                [51.5465937, -0.369565],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_ab59690e0415046f2869ef6a0d9f6d43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_66fbcb3eda19897ebef921304fcafa38.setIcon(icon_ab59690e0415046f2869ef6a0d9f6d43);
+        
+    
+        var popup_2aceaaf24097b99f0714758683944170 = L.popup({});
+
+        
+            
+                var html_53afc642028d459a2da972087114c113 = $(`<div id="html_53afc642028d459a2da972087114c113" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Northolt</h1><div class="nugget-popup"><p>Northolt area reported flooding on 28 July due to heavy rain overwhelming surface water sewers. (p4)</p></div></div></body></div>`)[0];
+                popup_2aceaaf24097b99f0714758683944170.setContent(html_53afc642028d459a2da972087114c113);
+            
+        
+
+        marker_66fbcb3eda19897ebef921304fcafa38.bindPopup(popup_2aceaaf24097b99f0714758683944170)
+        ;
+
+        
+    
+    
+            var marker_1685f5fb02181b62931c5d055f5a958f = L.marker(
+                [51.5449509, -0.4816672],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_36c5a9c18522a12864544499234470a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_1685f5fb02181b62931c5d055f5a958f.setIcon(icon_36c5a9c18522a12864544499234470a7);
+        
+    
+        var popup_783510de476c602edac9bcac8afeaa45 = L.popup({});
+
+        
+            
+                var html_92f18919571035b132fd7d7964c7ad61 = $(`<div id="html_92f18919571035b132fd7d7964c7ad61" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Uxbridge</h1><div class="nugget-popup"><p>Localised surface water flooding issues reported on 28 July associated with heavy rainfall overwhelming drainage. (p4)</p></div><div class="nugget-popup"><p>Multiple roads in Uxbridge (Cowley Road, The Lynch, Regents Avenue, Granville Road/Windsor Avenue, Turnpike Lane) were affected by surface water flooding, impacting the carriageways and access. [TAB] (p5)</p></div><div class="nugget-popup"><p>Area around Rockingham Parade and The Lynch in Uxbridge experienced fluvial flooding driven by high River Colne levels; surface water covered pedestrian routes and affected properties' front gardens. (p16)</p></div><div class="nugget-popup"><p>Localized surface water flooding on Cowley Road caused transport disruption in Uxbridge (bus diversions and tailbacks). [TAB] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 road closure affecting bus services [TAB] (p18)</p></div></div></body></div>`)[0];
+                popup_783510de476c602edac9bcac8afeaa45.setContent(html_92f18919571035b132fd7d7964c7ad61);
+            
+        
+
+        marker_1685f5fb02181b62931c5d055f5a958f.bindPopup(popup_783510de476c602edac9bcac8afeaa45)
+        ;
+
+        
+    
+    
+            var marker_b356c30f7a33daf41768cd9e289e6e50 = L.marker(
+                [51.503513, -0.4662704],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_a89d169efdfd4cdc17d5784f13a70f21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b356c30f7a33daf41768cd9e289e6e50.setIcon(icon_a89d169efdfd4cdc17d5784f13a70f21);
+        
+    
+        var popup_0bb8e77748a6cc2e2c6e79753849cb5e = L.popup({});
+
+        
+            
+                var html_c499dfea31c29f689b9697030c7af45c = $(`<div id="html_c499dfea31c29f689b9697030c7af45c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Drayton</h1><div class="nugget-popup"><p>Localised flooding issues reported on 28 July caused by heavy rain and overwhelmed surface water sewers. (p4)</p></div><div class="nugget-popup"><p>Roads in West Drayton (including Blossom Road, Hatch Lane and Money Lane) were affected by surface water flooding. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_0bb8e77748a6cc2e2c6e79753849cb5e.setContent(html_c499dfea31c29f689b9697030c7af45c);
+            
+        
+
+        marker_b356c30f7a33daf41768cd9e289e6e50.bindPopup(popup_0bb8e77748a6cc2e2c6e79753849cb5e)
+        ;
+
+        
+    
+    
+            var marker_851fb3b6bfcf6a233c90f054e947c863 = L.marker(
+                [51.4889317, -0.4755435],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_83a55c3f3f61fe18cf4eb88405e238a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_851fb3b6bfcf6a233c90f054e947c863.setIcon(icon_83a55c3f3f61fe18cf4eb88405e238a8);
+        
+    
+        var popup_c74926c0e080d049bd0989b89e42392e = L.popup({});
+
+        
+            
+                var html_df7020d8529d69bfac2305db460c0c6b = $(`<div id="html_df7020d8529d69bfac2305db460c0c6b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Harmondsworth</h1><div class="nugget-popup"><p>Holloway Lane in Harmondsworth was affected by surface water flooding. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_c74926c0e080d049bd0989b89e42392e.setContent(html_df7020d8529d69bfac2305db460c0c6b);
+            
+        
+
+        marker_851fb3b6bfcf6a233c90f054e947c863.bindPopup(popup_c74926c0e080d049bd0989b89e42392e)
+        ;
+
+        
+    
+    
+            var marker_c058c670e5a57202c00e1fc9e357e850 = L.marker(
+                [51.4884891, -0.4363028],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_7fee2eb4ff74c15dc58342e2f75ef82d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c058c670e5a57202c00e1fc9e357e850.setIcon(icon_7fee2eb4ff74c15dc58342e2f75ef82d);
+        
+    
+        var popup_7a896fb8fdabd809c803af4e0c28db2c = L.popup({});
+
+        
+            
+                var html_1e70f1fa1c4d530a3525bdda8fac2947 = $(`<div id="html_1e70f1fa1c4d530a3525bdda8fac2947" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Harlington</h1><div class="nugget-popup"><p>High Street in Harlington experienced surface water flooding of the carriageway, causing local access disruption and traffic impacts. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_7a896fb8fdabd809c803af4e0c28db2c.setContent(html_1e70f1fa1c4d530a3525bdda8fac2947);
+            
+        
+
+        marker_c058c670e5a57202c00e1fc9e357e850.bindPopup(popup_7a896fb8fdabd809c803af4e0c28db2c)
+        ;
+
+        
+    
+    
+            var marker_79aba444c02860e322c72787b6bc71e5 = L.marker(
+                [51.507717, -0.4181471],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_08b6ad58c0a0604b5d77fe51058b634d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_79aba444c02860e322c72787b6bc71e5.setIcon(icon_08b6ad58c0a0604b5d77fe51058b634d);
+        
+    
+        var popup_5ef45625f8d2288866dcc023bbf12519 = L.popup({});
+
+        
+            
+                var html_eb9436ea70cc3fcc584c0498e0d6e100 = $(`<div id="html_eb9436ea70cc3fcc584c0498e0d6e100" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hayes</h1><div class="nugget-popup"><p>Roads in Hayes (including Wood End Green Road, Lansbury Drive and Fairholme Crescent) were affected by surface water flooding, causing inundation of carriageways and disruption to local access and traffic. [TAB] (p5)</p></div></div></body></div>`)[0];
+                popup_5ef45625f8d2288866dcc023bbf12519.setContent(html_eb9436ea70cc3fcc584c0498e0d6e100);
+            
+        
+
+        marker_79aba444c02860e322c72787b6bc71e5.bindPopup(popup_5ef45625f8d2288866dcc023bbf12519)
+        ;
+
+        
+    
+    
+            var marker_c149ef23bfdf5c442f6428b01a14cda5 = L.marker(
+                [51.56415564165698, -0.44315573469572056],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_cfbceac5fe95226c97bcf48e98979471 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c149ef23bfdf5c442f6428b01a14cda5.setIcon(icon_cfbceac5fe95226c97bcf48e98979471);
+        
+    
+        var popup_8183fa02a697ddeb8978adba8ba16f63 = L.popup({});
+
+        
+            
+                var html_e24fc4f21ca541a15e1df9726d2698ef = $(`<div id="html_e24fc4f21ca541a15e1df9726d2698ef" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ickenham</h1><div class="nugget-popup"><p>Part of Ickenham (Derwent Avenue) experienced surface water flooding when the surface water sewer was overwhelmed; one home flooded internally and a road was inundated. [TAB] (p11)</p></div><div class="nugget-popup"><p>Area of Ickenham (UB10) experienced surface water flooding on roads (High Road and Austins Lane) where water did not drain into the Ickenham stream, with standing water lasting about 24 hours and posing a risk to nearby houses. [TAB] (p12)</p></div><div class="nugget-popup"><p>Flooding at The Avenue in Ickenham where foul sewer water inundated garages and the highway and was reported to have flowed into the River Pinn. (p15)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 home [TAB] (p11)</p></div></div></body></div>`)[0];
+                popup_8183fa02a697ddeb8978adba8ba16f63.setContent(html_e24fc4f21ca541a15e1df9726d2698ef);
+            
+        
+
+        marker_c149ef23bfdf5c442f6428b01a14cda5.bindPopup(popup_8183fa02a697ddeb8978adba8ba16f63)
+        ;
+
+        
+    
+    
+            var marker_89e0783138615ea4513dac835a1d3342 = L.marker(
+                [51.5751352, -0.3709086],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_905c818069abc3949049be94046bad27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_89e0783138615ea4513dac835a1d3342.setIcon(icon_905c818069abc3949049be94046bad27);
+        
+    
+        var popup_058b13e2acd3e70bb7f67c189c726d1b = L.popup({});
+
+        
+            
+                var html_fac63c5582adff5badc2f85ba3ca3122 = $(`<div id="html_fac63c5582adff5badc2f85ba3ca3122" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Rayners Lane</h1><div class="nugget-popup"><p>Rail tracks between Ruislip and Rayners Lane were submerged by floodwater, causing closure of the Metropolitan and Piccadilly lines on that section and resulting in rail service disruption. (p4)</p></div></div></body></div>`)[0];
+                popup_058b13e2acd3e70bb7f67c189c726d1b.setContent(html_fac63c5582adff5badc2f85ba3ca3122);
+            
+        
+
+        marker_89e0783138615ea4513dac835a1d3342.bindPopup(popup_058b13e2acd3e70bb7f67c189c726d1b)
+        ;
+
+        
+    
+    
+            var marker_e5d569c965a21f27eb7642177d8ef231 = L.marker(
+                [51.569504, -0.4370447],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_398b6ab68bfa5c65d1e136df3bbb5594 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e5d569c965a21f27eb7642177d8ef231.setIcon(icon_398b6ab68bfa5c65d1e136df3bbb5594);
+        
+    
+        var popup_86a798fb58b07d908d89c01bb6a6f54e = L.popup({});
+
+        
+            
+                var html_c7f8f6d71892ce57a87304329ee07281 = $(`<div id="html_c7f8f6d71892ce57a87304329ee07281" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>West Ruislip Tube Station</h1><div class="nugget-popup"><p>Flooding occurred nearby West Ruislip station (station environs affected by floodwater). (p4)</p></div></div></body></div>`)[0];
+                popup_86a798fb58b07d908d89c01bb6a6f54e.setContent(html_c7f8f6d71892ce57a87304329ee07281);
+            
+        
+
+        marker_e5d569c965a21f27eb7642177d8ef231.bindPopup(popup_86a798fb58b07d908d89c01bb6a6f54e)
+        ;
+
+        
+    
+    
+            var marker_d1e618658bc18e2b5f5cb102db8409db = L.marker(
+                [51.55657515, -0.3986189147433542],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_4f2f5388f44b36d502d2195fa9486c1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d1e618658bc18e2b5f5cb102db8409db.setIcon(icon_4f2f5388f44b36d502d2195fa9486c1c);
+        
+    
+        var popup_be5378f6bcd4bf072fc9a530f1ec754f = L.popup({});
+
+        
+            
+                var html_ad15f5e4cb2ff5e9485e0ba69b3e5714 = $(`<div id="html_ad15f5e4cb2ff5e9485e0ba69b3e5714" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>South Ruislip Tube Station</h1><div class="nugget-popup"><p>South Ruislip Station was flooded and closed as a result of the event. (p4)</p></div></div></body></div>`)[0];
+                popup_be5378f6bcd4bf072fc9a530f1ec754f.setContent(html_ad15f5e4cb2ff5e9485e0ba69b3e5714);
+            
+        
+
+        marker_d1e618658bc18e2b5f5cb102db8409db.bindPopup(popup_be5378f6bcd4bf072fc9a530f1ec754f)
+        ;
+
+        
+    
+    
+            var marker_4e87865f7cafe9b07551a54983e1ceb6 = L.marker(
+                [51.5734, -0.4117997],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_8ce3c9774182a8a9590565283442f100 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4e87865f7cafe9b07551a54983e1ceb6.setIcon(icon_8ce3c9774182a8a9590565283442f100);
+        
+    
+        var popup_4034952728b1cc2b402224cab45e0caf = L.popup({});
+
+        
+            
+                var html_dfc79d5a8d5b36b6122f9e4521e1adf0 = $(`<div id="html_dfc79d5a8d5b36b6122f9e4521e1adf0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ruislip Manor Tube Station</h1><div class="nugget-popup"><p>The subway (underpass) at Ruislip Manor Station (on Victoria Road) was flooded. (p4)</p></div></div></body></div>`)[0];
+                popup_4034952728b1cc2b402224cab45e0caf.setContent(html_dfc79d5a8d5b36b6122f9e4521e1adf0);
+            
+        
+
+        marker_4e87865f7cafe9b07551a54983e1ceb6.bindPopup(popup_4034952728b1cc2b402224cab45e0caf)
+        ;
+
+        
+    
+    
+            var marker_5264c6bb4d9b1c3abfc4ee6c2668f9a6 = L.marker(
+                [51.57154348498764, -0.42135289599105],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_2846e25ab63fa03ea6048455729e7223 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_5264c6bb4d9b1c3abfc4ee6c2668f9a6.setIcon(icon_2846e25ab63fa03ea6048455729e7223);
+        
+    
+        var popup_0f8103fa33c3e9ae2cceb11ee8ea67ff = L.popup({});
+
+        
+            
+                var html_e82f4bd021a81dee19776f64cde70052 = $(`<div id="html_e82f4bd021a81dee19776f64cde70052" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Ruislip Tube Station</h1><div class="nugget-popup"><p>Ruislip Station was closed for a period while floods were dealt with by engineers. (p4)</p></div></div></body></div>`)[0];
+                popup_0f8103fa33c3e9ae2cceb11ee8ea67ff.setContent(html_e82f4bd021a81dee19776f64cde70052);
+            
+        
+
+        marker_5264c6bb4d9b1c3abfc4ee6c2668f9a6.bindPopup(popup_0f8103fa33c3e9ae2cceb11ee8ea67ff)
+        ;
+
+        
+    
+    
+            var marker_57e6f4a4690e008081545f62c02fcef7 = L.marker(
+                [51.57593877310085, -0.40047139805038096],
+                {}
+            ).addTo(map_bdd48ef46aa39fcfec26de3a7060e474);
+        
+    
+            var icon_74ab7c4dfcbabc938552c3b7c9079ba7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_57e6f4a4690e008081545f62c02fcef7.setIcon(icon_74ab7c4dfcbabc938552c3b7c9079ba7);
+        
+    
+        var popup_38fa26a202d26192c9521237519271a5 = L.popup({});
+
+        
+            
+                var html_eb93f46510b5164926a1d30e524579e0 = $(`<div id="html_eb93f46510b5164926a1d30e524579e0" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Metropolitan Line Between Ruislip and Rayners Lane</h1><div class="nugget-popup"><p>Section of the Metropolitan line between Ruislip and Rayners Lane was closed on 28 July after tracks were submerged by floodwater; services were suspended while engineers responded. (p4)</p></div></div></body></div>`)[0];
+                popup_38fa26a202d26192c9521237519271a5.setContent(html_eb93f46510b5164926a1d30e524579e0);
+            
+        
+
+        marker_57e6f4a4690e008081545f62c02fcef7.bindPopup(popup_38fa26a202d26192c9521237519271a5)
+        ;
+
+        
+    
+</script>
+</html>

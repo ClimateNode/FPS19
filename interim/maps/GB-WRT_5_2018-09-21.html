@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b5db9b473ed36e31d4dc13eb9c8bbbfb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b5db9b473ed36e31d4dc13eb9c8bbbfb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b5db9b473ed36e31d4dc13eb9c8bbbfb = L.map(
+                "map_b5db9b473ed36e31d4dc13eb9c8bbbfb",
+                {
+                    center: [53.37778034561049, -2.5619011408575],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a5f6971f2ac9ecd21d31956716088bb7 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_a5f6971f2ac9ecd21d31956716088bb7.addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+    
+            var marker_3d1b9d90e48ceaf99f3d3a9d18ddc042 = L.marker(
+                [53.3706972, -2.6852179],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_6101e1fa2035c21a5efc88a8b5a7c7ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_3d1b9d90e48ceaf99f3d3a9d18ddc042.setIcon(icon_6101e1fa2035c21a5efc88a8b5a7c7ca);
+        
+    
+        var popup_9fd7af218968619110f83a91f9f18c63 = L.popup({});
+
+        
+            
+                var html_9325b72e3844ad13f05e1642b120860e = $(`<div id="html_9325b72e3844ad13f05e1642b120860e" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fiddlers Ferry Power Station</h1><div class="nugget-popup"><p>The Fiddlers Ferry monitoring site recorded raised water depths across 20&ndash;23 September 2018 associated with Storm Ali and Storm Bronagh, with levels on average about 1 m higher than dry&ndash;weather measurements; recorded peak depths remained within the site's typical depth range. [IMG] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>average increase ≈1.0 m [IMG] (p20)</p></div></div></body></div>`)[0];
+                popup_9fd7af218968619110f83a91f9f18c63.setContent(html_9325b72e3844ad13f05e1642b120860e);
+            
+        
+
+        marker_3d1b9d90e48ceaf99f3d3a9d18ddc042.bindPopup(popup_9fd7af218968619110f83a91f9f18c63)
+        ;
+
+        
+    
+    
+            var marker_ee153eb61713ad7203c1d6de03d926c2 = L.marker(
+                [53.3782147, -2.458511],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_8e02571305e8a55a192e076ac5e9c40c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ee153eb61713ad7203c1d6de03d926c2.setIcon(icon_8e02571305e8a55a192e076ac5e9c40c);
+        
+    
+        var popup_e821373969bb58ff2725a95e67f849c2 = L.popup({});
+
+        
+            
+                var html_f950f0e968418902c590d327f1cc6ec4 = $(`<div id="html_f950f0e968418902c590d327f1cc6ec4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lymm High School</h1><div class="nugget-popup"><p>Access to the school was affected by flooding on Oughtrington Lane; police presence and road closures were used to manage safety and help students get to school during the flooding incident. [IMG] (p56)</p></div></div></body></div>`)[0];
+                popup_e821373969bb58ff2725a95e67f849c2.setContent(html_f950f0e968418902c590d327f1cc6ec4);
+            
+        
+
+        marker_ee153eb61713ad7203c1d6de03d926c2.bindPopup(popup_e821373969bb58ff2725a95e67f849c2)
+        ;
+
+        
+    
+    
+            var marker_277570228d35d12c77d53867dcf7034a = L.marker(
+                [53.38908038628612, -2.624008845814998],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_54a265b2a2f055163a12667c5de81054 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_277570228d35d12c77d53867dcf7034a.setIcon(icon_54a265b2a2f055163a12667c5de81054);
+        
+    
+        var popup_974ca9a96099c921ee0d0d3b31655a8a = L.popup({});
+
+        
+            
+                var html_2948230749583b5bf89c527f8a4f0086 = $(`<div id="html_2948230749583b5bf89c527f8a4f0086" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Great Sankey South Ward</h1><div class="nugget-popup"><p>Liverpool Road, located in Great Sankey South Ward, experienced street and external property flooding during the event. (p34)</p></div></div></body></div>`)[0];
+                popup_974ca9a96099c921ee0d0d3b31655a8a.setContent(html_2948230749583b5bf89c527f8a4f0086);
+            
+        
+
+        marker_277570228d35d12c77d53867dcf7034a.bindPopup(popup_974ca9a96099c921ee0d0d3b31655a8a)
+        ;
+
+        
+    
+    
+            var marker_e519b45e8801e037d497a6e47c562232 = L.marker(
+                [53.394264298836426, -2.6040277014093576],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_c0ec10c00143f12fbb26f6e93bd6fda2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e519b45e8801e037d497a6e47c562232.setIcon(icon_c0ec10c00143f12fbb26f6e93bd6fda2);
+        
+    
+        var popup_17f2786075324747f5ef8b9133f33d62 = L.popup({});
+
+        
+            
+                var html_49466c8714f5b7a1bf0134dda7965e75 = $(`<div id="html_49466c8714f5b7a1bf0134dda7965e75" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bewsey and Whitecross</h1><div class="nugget-popup"><p>Public highway flooding occurred on Sankey Street within the ward. (p45)</p></div><div class="nugget-popup"><p>Part of the ward (Bridge Street) experienced internal cellar flooding in two properties due to an issue on a United Utilities combined sewer. (p62)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (p62)</p></div></div></body></div>`)[0];
+                popup_17f2786075324747f5ef8b9133f33d62.setContent(html_49466c8714f5b7a1bf0134dda7965e75);
+            
+        
+
+        marker_e519b45e8801e037d497a6e47c562232.bindPopup(popup_17f2786075324747f5ef8b9133f33d62)
+        ;
+
+        
+    
+    
+            var marker_4e6aad5d574f3bcf7ebbaa9e584fbf36 = L.marker(
+                [53.4013215781025, -2.660003552711668],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_49809c8d3246a5d4156286dc04168435 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_4e6aad5d574f3bcf7ebbaa9e584fbf36.setIcon(icon_49809c8d3246a5d4156286dc04168435);
+        
+    
+        var popup_a9878ae0ba0e398aedabc0d3a914eb69 = L.popup({});
+
+        
+            
+                var html_1bec28c233649f115e6cff25a31c5b43 = $(`<div id="html_1bec28c233649f115e6cff25a31c5b43" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Great Sankey North and Whittle Hall</h1><div class="nugget-popup"><p>Contains Highfield Avenue where external flooding from the combined public sewer occurred. (p60)</p></div><div class="nugget-popup"><p>A residential property within this ward (Alderbank Road) experienced external flooding. (p70)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property (p70)</p></div></div></body></div>`)[0];
+                popup_a9878ae0ba0e398aedabc0d3a914eb69.setContent(html_1bec28c233649f115e6cff25a31c5b43);
+            
+        
+
+        marker_4e6aad5d574f3bcf7ebbaa9e584fbf36.bindPopup(popup_a9878ae0ba0e398aedabc0d3a914eb69)
+        ;
+
+        
+    
+    
+            var marker_8d9260e2cd8c708461cba299b61c23d7 = L.marker(
+                [53.3877994, -2.5527162],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_34855d63beb65811446f2d53f4d265d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_8d9260e2cd8c708461cba299b61c23d7.setIcon(icon_34855d63beb65811446f2d53f4d265d8);
+        
+    
+        var popup_7e1980bbe1b44ad8ee309616f8a7cf95 = L.popup({});
+
+        
+            
+                var html_8b0686b78dd863c1bcdce5b4f643909b = $(`<div id="html_8b0686b78dd863c1bcdce5b4f643909b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Morris Brook</h1><div class="nugget-popup"><p>The Morris Brook monitoring series showed more gradual changes in depth over 20&ndash;23 September 2018, with levels rising in response to Storm Ali and Storm Bronagh but remaining comparatively low (generally below ~1.5 m) and within typical recorded ranges. [IMG] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>remained below ~1.5 m; average increase ≈1.0 m [IMG] (p20)</p></div></div></body></div>`)[0];
+                popup_7e1980bbe1b44ad8ee309616f8a7cf95.setContent(html_8b0686b78dd863c1bcdce5b4f643909b);
+            
+        
+
+        marker_8d9260e2cd8c708461cba299b61c23d7.bindPopup(popup_7e1980bbe1b44ad8ee309616f8a7cf95)
+        ;
+
+        
+    
+    
+            var marker_7ef851ce042e5f83c0774c020b28edf4 = L.marker(
+                [53.39117518202302, -2.5967829867827383],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_0c07659cb14159c5c768d5c0229b66d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7ef851ce042e5f83c0774c020b28edf4.setIcon(icon_0c07659cb14159c5c768d5c0229b66d8);
+        
+    
+        var popup_9c1b356ed416b596a6f5775f55a0cb5f = L.popup({});
+
+        
+            
+                var html_d69b6a975bf0985b871e974360bde24f = $(`<div id="html_d69b6a975bf0985b871e974360bde24f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Warrington Unitary Authority</h1><div class="nugget-popup"><p>Flooding occurred across multiple locations in the borough; incident reported to Warrington Borough Council by United Utilities. [TAB,PAG] (p9)</p></div><div class="nugget-popup"><p>Warrington Borough Council was notified by United Utilities that flooding occurred at multiple locations in the borough. [PAG] (p10)</p></div><div class="nugget-popup"><p>Surface water flows from adjacent agricultural fields were reported reaching the highway, causing surface water flooding on roads as intense rainfall exceeded the local infiltration capacity and water remained on or flowed across the surface. [IMG,PAG] (p29)</p></div><div class="nugget-popup"><p>Flooding of the public highway at Sankey Street, which is in the town centre. [PAG] (p45)</p></div><div class="nugget-popup"><p>Widespread surface water flooding across Warrington caused by extreme rainfall (pluvial) on 21 September 2018. [PAG] (p72)</p></div><div class="nugget-popup"><p>Widespread pluvial (surface water / urban) flooding across Warrington caused by extreme rainfall on 21 September 2018. [TAB,PAG] (p73)</p></div></div></body></div>`)[0];
+                popup_9c1b356ed416b596a6f5775f55a0cb5f.setContent(html_d69b6a975bf0985b871e974360bde24f);
+            
+        
+
+        marker_7ef851ce042e5f83c0774c020b28edf4.bindPopup(popup_9c1b356ed416b596a6f5775f55a0cb5f)
+        ;
+
+        
+    
+    
+            var marker_ab8f6f83ca2873069bae8756c0b029d7 = L.marker(
+                [54.2230168, -2.6021945],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_d9e9b759e0463c3d1cb2c9d24d10e78a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ab8f6f83ca2873069bae8756c0b029d7.setIcon(icon_d9e9b759e0463c3d1cb2c9d24d10e78a);
+        
+    
+        var popup_7953ccd854166cce881544e2b9f06295 = L.popup({});
+
+        
+            
+                var html_0c6fe0a283692ee0e8697b21759f6cfb = $(`<div id="html_0c6fe0a283692ee0e8697b21759f6cfb" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Lune</h1><div class="nugget-popup"><p>A notable peak flow was recorded in the Lune catchment during the September storms: the Caton gauging station registered an instantaneous flow value that was unusually high during the event. [IMG] (p18)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>instantaneous flow value above Q1 (exceeded less than 1% of the time) [IMG] (p18)</p></div></div></body></div>`)[0];
+                popup_7953ccd854166cce881544e2b9f06295.setContent(html_0c6fe0a283692ee0e8697b21759f6cfb);
+            
+        
+
+        marker_ab8f6f83ca2873069bae8756c0b029d7.bindPopup(popup_7953ccd854166cce881544e2b9f06295)
+        ;
+
+        
+    
+    
+            var marker_49216be7190d0c0bec0d9f24e12e3fcd = L.marker(
+                [53.4100451, -2.4564502],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_56977fbb7ebe41b90536c0fa7de7ea85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_49216be7190d0c0bec0d9f24e12e3fcd.setIcon(icon_56977fbb7ebe41b90536c0fa7de7ea85);
+        
+    
+        var popup_47f31a2f9fa10452e12ec41f3188ea99 = L.popup({});
+
+        
+            
+                var html_078e3874191f505ddaaeed7becd1d215 = $(`<div id="html_078e3874191f505ddaaeed7becd1d215" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>River Mersey</h1><div class="nugget-popup"><p>Flood alert issued for the Lower River Mersey catchment covering areas including Fishington, Bradley, Sow, Keckwick and Lumb Brooks; the alert identified Warrington, Runcorn and Lymm areas at risk of river flooding during the heavy rainfall period around 20&ndash;23 September 2018. [TAB] (p25)</p></div></div></body></div>`)[0];
+                popup_47f31a2f9fa10452e12ec41f3188ea99.setContent(html_078e3874191f505ddaaeed7becd1d215);
+            
+        
+
+        marker_49216be7190d0c0bec0d9f24e12e3fcd.bindPopup(popup_47f31a2f9fa10452e12ec41f3188ea99)
+        ;
+
+        
+    
+    
+            var marker_be1c34949790fa1783e269d330a0bf89 = L.marker(
+                [53.4070704, -2.6080217],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_96905eb7d375526d9e8587ea84612d0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_be1c34949790fa1783e269d330a0bf89.setIcon(icon_96905eb7d375526d9e8587ea84612d0e);
+        
+    
+        var popup_a7eaeeef71480e0f50123a80500f1e4f = L.popup({});
+
+        
+            
+                var html_01c93d46e550cb9bb4bf6d73b990e357 = $(`<div id="html_01c93d46e550cb9bb4bf6d73b990e357" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Higham Avenue, Dallam</h1><div class="nugget-popup"><p>Gauge recorded an increase in watercourse level (approx. 1 m) over 20&ndash;23 September 2018; peak depths remained within the long&ndash;term typical range. [IMG] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 m increase in water level [IMG] (p20)</p></div></div></body></div>`)[0];
+                popup_a7eaeeef71480e0f50123a80500f1e4f.setContent(html_01c93d46e550cb9bb4bf6d73b990e357);
+            
+        
+
+        marker_be1c34949790fa1783e269d330a0bf89.bindPopup(popup_a7eaeeef71480e0f50123a80500f1e4f)
+        ;
+
+        
+    
+    
+            var marker_c2868844d8fbdc036c460d33425f071a = L.marker(
+                [53.410725, -2.5638439],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_03f7885aceee6a545ba901a0f0276961 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c2868844d8fbdc036c460d33425f071a.setIcon(icon_03f7885aceee6a545ba901a0f0276961);
+        
+    
+        var popup_e21cfda9619502c019d06565f41d0fab = L.popup({});
+
+        
+            
+                var html_d997ddcb89a083232a3403bd7c47c686 = $(`<div id="html_d997ddcb89a083232a3403bd7c47c686" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Hilden Road, Warrington Unitary Authority</h1><div class="nugget-popup"><p>Gauge recorded an increase in watercourse level (approx. 1 m) during 20&ndash;23 September 2018; recorded peaks were within the expected long&ndash;term range. [IMG] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 m increase in water level [IMG] (p20)</p></div></div></body></div>`)[0];
+                popup_e21cfda9619502c019d06565f41d0fab.setContent(html_d997ddcb89a083232a3403bd7c47c686);
+            
+        
+
+        marker_c2868844d8fbdc036c460d33425f071a.bindPopup(popup_e21cfda9619502c019d06565f41d0fab)
+        ;
+
+        
+    
+    
+            var marker_b78b08d3f3d9e470aaea50619fd59171 = L.marker(
+                [53.4071664, -2.5409912],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_e4bd68701abb95617e159e9e2ea01ed1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b78b08d3f3d9e470aaea50619fd59171.setIcon(icon_e4bd68701abb95617e159e9e2ea01ed1);
+        
+    
+        var popup_75314188567fdb32054cdf5286f2345f = L.popup({});
+
+        
+            
+                var html_078712abf6514210de425aba2f71130f = $(`<div id="html_078712abf6514210de425aba2f71130f" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Grosvenor Grange, Woolston</h1><div class="nugget-popup"><p>Gauge recorded an increase in watercourse level (approx. 1 m) across 20&ndash;23 September 2018; peak depths stayed within the site's long&ndash;term typical range. [IMG] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 m increase in water level [IMG] (p20)</p></div></div></body></div>`)[0];
+                popup_75314188567fdb32054cdf5286f2345f.setContent(html_078712abf6514210de425aba2f71130f);
+            
+        
+
+        marker_b78b08d3f3d9e470aaea50619fd59171.bindPopup(popup_75314188567fdb32054cdf5286f2345f)
+        ;
+
+        
+    
+    
+            var marker_201fb00127785e9a0ba37dd479e37132 = L.marker(
+                [53.3920555, -2.6601186],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_e51870a84eef66815bf216e309915cda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_201fb00127785e9a0ba37dd479e37132.setIcon(icon_e51870a84eef66815bf216e309915cda);
+        
+    
+        var popup_07e2b16b407b1cc8a2ee2a1554081aaf = L.popup({});
+
+        
+            
+                var html_6d7b99f875b445a39260ec8eedbecee4 = $(`<div id="html_6d7b99f875b445a39260ec8eedbecee4" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Liverpool Road, Great Sankey</h1><div class="nugget-popup"><p>Watercourse levels at the Liverpool Road monitoring site rose during the 20&ndash;23 September 2018 period (storm&ndash;influenced), showing an increase of about 1 m above dry&ndash;weather levels; peaks at this site remained within the typical recorded depth range. [IMG] (p20)</p></div><div class="nugget-popup"><p>Overland flows and surface water flooding occurred on Liverpool Road when intense rainfall exceeded infiltration and drainage capacity, causing flooding of the highway. (p40)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>average increase ≈1.0 m [IMG] (p20)</p></div></div></body></div>`)[0];
+                popup_07e2b16b407b1cc8a2ee2a1554081aaf.setContent(html_6d7b99f875b445a39260ec8eedbecee4);
+            
+        
+
+        marker_201fb00127785e9a0ba37dd479e37132.bindPopup(popup_07e2b16b407b1cc8a2ee2a1554081aaf)
+        ;
+
+        
+    
+    
+            var marker_deee9bbe71155b411fe3b4c099794d41 = L.marker(
+                [53.3766465, -2.5396518],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_5a8695c3bbaca28b2cf9aee300f2afdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_deee9bbe71155b411fe3b4c099794d41.setIcon(icon_5a8695c3bbaca28b2cf9aee300f2afdb);
+        
+    
+        var popup_64c7a77fcf91ba1544b57cf8ce03476c = L.popup({});
+
+        
+            
+                var html_bf170c7677925a053b960b7151d1713a = $(`<div id="html_bf170c7677925a053b960b7151d1713a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Chester Road, Warrington Unitary Authority</h1><div class="nugget-popup"><p>Road flooding reported as also affected in the same news report; affected driving conditions. [IMG] (p34)</p></div></div></body></div>`)[0];
+                popup_64c7a77fcf91ba1544b57cf8ce03476c.setContent(html_bf170c7677925a053b960b7151d1713a);
+            
+        
+
+        marker_deee9bbe71155b411fe3b4c099794d41.bindPopup(popup_64c7a77fcf91ba1544b57cf8ce03476c)
+        ;
+
+        
+    
+    
+            var marker_502c3d40b8e5036ca0c5e8f0f25a4a1a = L.marker(
+                [53.3929026, -2.6509245],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_db68239c4003bedbc1de989b4a1c14d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_502c3d40b8e5036ca0c5e8f0f25a4a1a.setIcon(icon_db68239c4003bedbc1de989b4a1c14d9);
+        
+    
+        var popup_7aebfcc11b73bad40ed605dfe3b62292 = L.popup({});
+
+        
+            
+                var html_50e57039a2d4bcb39de9ad75d730475a = $(`<div id="html_50e57039a2d4bcb39de9ad75d730475a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Campbell Crescent, Great Sankey</h1><div class="nugget-popup"><p>External flooding to at least one residential property and flooding of the public highway (carriageway). [PAG] (p30)</p></div><div class="nugget-popup"><p>Area experienced overland flows and surface water flooding caused by intense rainfall that exceeded infiltration and drainage capacity. [PAG] (p33)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>at least one property [PAG] (p30)</p></div></div></body></div>`)[0];
+                popup_7aebfcc11b73bad40ed605dfe3b62292.setContent(html_50e57039a2d4bcb39de9ad75d730475a);
+            
+        
+
+        marker_502c3d40b8e5036ca0c5e8f0f25a4a1a.bindPopup(popup_7aebfcc11b73bad40ed605dfe3b62292)
+        ;
+
+        
+    
+    
+            var marker_6adc36e820499e34eddd3c3818f91c73 = L.marker(
+                [53.3909082, -2.6508473],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_35c866c2642b40696696e47225567a09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_6adc36e820499e34eddd3c3818f91c73.setIcon(icon_35c866c2642b40696696e47225567a09);
+        
+    
+        var popup_f7edee8fd1bb0b40fd7340028faa511e = L.popup({});
+
+        
+            
+                var html_054c07e7c99f38a72d5661de040d602b = $(`<div id="html_054c07e7c99f38a72d5661de040d602b" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Liverpool Road, Great Sankey</h1><div class="nugget-popup"><p>External flooding to properties and flooding of the public highway on Liverpool Road; standing water covered much of the street, creating hazardous driving conditions. [IMG] (p34)</p></div></div></body></div>`)[0];
+                popup_f7edee8fd1bb0b40fd7340028faa511e.setContent(html_054c07e7c99f38a72d5661de040d602b);
+            
+        
+
+        marker_6adc36e820499e34eddd3c3818f91c73.bindPopup(popup_f7edee8fd1bb0b40fd7340028faa511e)
+        ;
+
+        
+    
+    
+            var marker_2a7966340068235b9ba1b03b4854dfd2 = L.marker(
+                [53.3840327, -2.6248918],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_b55263b6c91c74d0de4ea258f729e3d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_2a7966340068235b9ba1b03b4854dfd2.setIcon(icon_b55263b6c91c74d0de4ea258f729e3d3);
+        
+    
+        var popup_37ddcc0b9fc70fe74b84fb03d7c6f50f = L.popup({});
+
+        
+            
+                var html_2143b4ac9a3df58910f3bef80d2ffb94 = $(`<div id="html_2143b4ac9a3df58910f3bef80d2ffb94" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Liverpool Road, Sankey Bridges</h1><div class="nugget-popup"><p>A section of Liverpool Road was affected by flooding on the day of the investigation. The Statutory Sewer Map shows a 450mm diameter surface water sewer running along Liverpool Road discharging to a 900mm combined drainage system; the road lies within an area shown as high fluvial/tidal flood risk (Flood Zone 3) and historic mapping notes areas around Liverpool Road as 'liable to floods'. [PAG] (p37)</p></div><div class="nugget-popup"><p>A section of Liverpool Road was affected by flooding on 21 September 2018. The Environment Agency Flood Map for Planning shows the road in Flood Zone 3 (high probability of river/tidal flooding) and the Risk of Flooding from Surface Water mapping shows the road at risk of surface water flooding. [PAG] (p38)</p></div></div></body></div>`)[0];
+                popup_37ddcc0b9fc70fe74b84fb03d7c6f50f.setContent(html_2143b4ac9a3df58910f3bef80d2ffb94);
+            
+        
+
+        marker_2a7966340068235b9ba1b03b4854dfd2.bindPopup(popup_37ddcc0b9fc70fe74b84fb03d7c6f50f)
+        ;
+
+        
+    
+    
+            var marker_e59ced5df264fe77540e60f7abef74b1 = L.marker(
+                [53.3746424, -2.5745258],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_d83a61a3cfd78532f1c8596a6019311e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e59ced5df264fe77540e60f7abef74b1.setIcon(icon_d83a61a3cfd78532f1c8596a6019311e);
+        
+    
+        var popup_f5ba8855f24993fa9db6f4e074b1501d = L.popup({});
+
+        
+            
+                var html_e2b908b52e413e61e6b3831eb6e6ecb8 = $(`<div id="html_e2b908b52e413e61e6b3831eb6e6ecb8" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fairfield Road, Warrington Unitary Authority</h1><div class="nugget-popup"><p>External flooding occurred to numerous properties on Fairfield Road; the public highway at the junction with Gaskell Street was flooded, rendering the road hazardous and partially impassable and affecting parked vehicles. [PAG] (p41)</p></div><div class="nugget-popup"><p>A section of Fairfield Road was affected by flooding during the 21 September 2018 event. The United Utilities statutory sewer map for the affected section shows multiple combined sewer systems beneath the road with pipe sizes ranging from 225 mm to 2450 mm. [IMG,PAG] (p42)</p></div><div class="nugget-popup"><p>Section of Fairfield Road (junction with Gaskell Street) was inundated by surface water during the flood event; the area of inundation corresponds with the high&ndash;risk area shown on the Environment Agency surface water mapping and is described as the affected area in the report. United Utilities' statutory sewer mapping identifies combined sewer systems running through the affected section. [PAG] (p43)</p></div></div></body></div>`)[0];
+                popup_f5ba8855f24993fa9db6f4e074b1501d.setContent(html_e2b908b52e413e61e6b3831eb6e6ecb8);
+            
+        
+
+        marker_e59ced5df264fe77540e60f7abef74b1.bindPopup(popup_f5ba8855f24993fa9db6f4e074b1501d)
+        ;
+
+        
+    
+    
+            var marker_afaa197699566ee859655ec62e5b6117 = L.marker(
+                [53.3722658, -2.5806826],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_814c67d1dc058a2c8a2798578cc8006d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_afaa197699566ee859655ec62e5b6117.setIcon(icon_814c67d1dc058a2c8a2798578cc8006d);
+        
+    
+        var popup_bc042e8b3527eeead80040a0e08d297a = L.popup({});
+
+        
+            
+                var html_14828a29ed7cde1cb21cd63b6707919c = $(`<div id="html_14828a29ed7cde1cb21cd63b6707919c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Gaskell Street, Warrington Unitary Authority</h1><div class="nugget-popup"><p>Public highway flooding occurred at the junction of Gaskell Street and Fairfield Road, causing the road to be inundated and hazardous for vehicles and pedestrians. (p41)</p></div><div class="nugget-popup"><p>The junction of Gaskell Street with Fairfield Road was inundated by surface water during the flood event; the Environment Agency surface water mapping shows this junction as an area of surface&ndash;water flood risk and the mapping area matches the affected area observed during the event. (p43)</p></div></div></body></div>`)[0];
+                popup_bc042e8b3527eeead80040a0e08d297a.setContent(html_14828a29ed7cde1cb21cd63b6707919c);
+            
+        
+
+        marker_afaa197699566ee859655ec62e5b6117.bindPopup(popup_bc042e8b3527eeead80040a0e08d297a)
+        ;
+
+        
+    
+    
+            var marker_cbd402e607c12350906966089c2cfaf0 = L.marker(
+                [53.3886207, -2.5983175],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_c775b37b222b8d2e6a8cd7a83cdf34af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_cbd402e607c12350906966089c2cfaf0.setIcon(icon_c775b37b222b8d2e6a8cd7a83cdf34af);
+        
+    
+        var popup_aa3beff97811575e5a0af24981b4f765 = L.popup({});
+
+        
+            
+                var html_407be5627fbdb4a5047b1df62c56ce02 = $(`<div id="html_407be5627fbdb4a5047b1df62c56ce02" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Sankey Street, Bewsey</h1><div class="nugget-popup"><p>Flooding of the public highway on Sankey Street. [IMG,PAG] (p45)</p></div><div class="nugget-popup"><p>Experienced surface water flooding caused by intense rainfall exceeding infiltration and drainage capacity, producing overland flows; the incident was associated with an apparent blocked gully that highlighted the surface water flow pathway. [PAG] (p47)</p></div></div></body></div>`)[0];
+                popup_aa3beff97811575e5a0af24981b4f765.setContent(html_407be5627fbdb4a5047b1df62c56ce02);
+            
+        
+
+        marker_cbd402e607c12350906966089c2cfaf0.bindPopup(popup_aa3beff97811575e5a0af24981b4f765)
+        ;
+
+        
+    
+    
+            var marker_7d806a10e5d13a0c4ba3f0a613623ea8 = L.marker(
+                [53.3770929, -2.5710012],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_bccb2085c1daa70c5cb86a764221d234 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7d806a10e5d13a0c4ba3f0a613623ea8.setIcon(icon_bccb2085c1daa70c5cb86a764221d234);
+        
+    
+        var popup_4878247cdf2a98aef319418fa80ac34a = L.popup({});
+
+        
+            
+                var html_f05bcdadb11fc85bcc6d8c3dc0475c03 = $(`<div id="html_f05bcdadb11fc85bcc6d8c3dc0475c03" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Wash Lane, Latchford</h1><div class="nugget-popup"><p>Public highway (Wash Lane) was inundated; flooding covered the road surface and disrupted traffic, with vehicles required to drive through deep water. [MUL] (p48)</p></div><div class="nugget-popup"><p>Surface&ndash;water flooding from intense rainfall exceeding infiltration and drainage capacity, producing overland flows. The area mapped as high risk for surface&ndash;water flooding corresponds with the area observed to be affected in a previous 2008 flood; the report concludes Wash Lane flooded during the report event due to drainage/infiltration exceedance. [PAG,MUL] (p51)</p></div></div></body></div>`)[0];
+                popup_4878247cdf2a98aef319418fa80ac34a.setContent(html_f05bcdadb11fc85bcc6d8c3dc0475c03);
+            
+        
+
+        marker_7d806a10e5d13a0c4ba3f0a613623ea8.bindPopup(popup_4878247cdf2a98aef319418fa80ac34a)
+        ;
+
+        
+    
+    
+            var marker_422baa3612e88edb5122332df56f0be6 = L.marker(
+                [53.3792677, -2.5830344],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_39cc839f4d0fb603b22cac779b5b81ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_422baa3612e88edb5122332df56f0be6.setIcon(icon_39cc839f4d0fb603b22cac779b5b81ad);
+        
+    
+        var popup_cd5c50d3ec8167928571be2ad3b4bd84 = L.popup({});
+
+        
+            
+                var html_900f82692ee58ba5096bce52d6c9d5e5 = $(`<div id="html_900f82692ee58ba5096bce52d6c9d5e5" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Priestley College, Howley</h1><div class="nugget-popup"><p>Surface water (overland) flows occurred where intense rainfall exceeded infiltration and drainage capacity; the mapped high&ndash;risk area on Wash Lane is comparable with the area observed during a previous (2008) flood and was the location of the event described in the report. [IMG] (p51)</p></div></div></body></div>`)[0];
+                popup_cd5c50d3ec8167928571be2ad3b4bd84.setContent(html_900f82692ee58ba5096bce52d6c9d5e5);
+            
+        
+
+        marker_422baa3612e88edb5122332df56f0be6.bindPopup(popup_cd5c50d3ec8167928571be2ad3b4bd84)
+        ;
+
+        
+    
+    
+            var marker_083fab6dd6905d65d77d5300036dc75e = L.marker(
+                [53.4125776, -2.5488236],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_fd99e3316f263915f5c76b6e6e94e51d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_083fab6dd6905d65d77d5300036dc75e.setIcon(icon_fd99e3316f263915f5c76b6e6e94e51d);
+        
+    
+        var popup_bf8217f9c118b32e6f6914b7c1df8af9 = L.popup({});
+
+        
+            
+                var html_85e97d6d28f4cc1d9c4fd0a462ce406d = $(`<div id="html_85e97d6d28f4cc1d9c4fd0a462ce406d" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Barnes Avenue, Warrington Unitary Authority</h1><div class="nugget-popup"><p>External flooding affected numerous properties and the public highway on Barnes Avenue. (p52)</p></div><div class="nugget-popup"><p>Intense rainfall exceeded infiltration and local drainage capacity producing overland flows and surface water flooding at Barnes Avenue. The observed flood extent did not match national surface&ndash;water mapping and is thought to include additional flows from another mechanism; prompted further investigation into drainage to the rear of properties on Nook Lane. (p55)</p></div></div></body></div>`)[0];
+                popup_bf8217f9c118b32e6f6914b7c1df8af9.setContent(html_85e97d6d28f4cc1d9c4fd0a462ce406d);
+            
+        
+
+        marker_083fab6dd6905d65d77d5300036dc75e.bindPopup(popup_bf8217f9c118b32e6f6914b7c1df8af9)
+        ;
+
+        
+    
+    
+            var marker_9bbaf6b1cec55bcea8f67de26a409f3e = L.marker(
+                [53.3766803, -2.4605528],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_0a17579b1b40edce40c79fcf400e177b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9bbaf6b1cec55bcea8f67de26a409f3e.setIcon(icon_0a17579b1b40edce40c79fcf400e177b);
+        
+    
+        var popup_5a05c52a9261ee17340386d9ad6de2d4 = L.popup({});
+
+        
+            
+                var html_b8f3987a3344e59cb3760a60ecf6df17 = $(`<div id="html_b8f3987a3344e59cb3760a60ecf6df17" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Oughtrington Lane, Lymm</h1><div class="nugget-popup"><p>Road surface inundated with water covering most or all of the carriageway; traffic disrupted and vehicles driving through deep standing water; road was closed by police and traffic cones were used to block the flooded road; access along the lane (south of its junction with Longbutt Lane) was affected, restricting access to Lymm High School. [IMG] (p56)</p></div><div class="nugget-popup"><p>Road flooding south of the junction with Longbutt Lane that affected access to Lymm High School. [IMG,PAG] (p57)</p></div><div class="nugget-popup"><p>Carriageway inundated by surface water during the flood event; the Environment Agency Risk of Flooding from Surface Water mapping shows the carriageway at high risk and this mapped high&ndash;risk area matches the area observed to be affected in the event. [PAG] (p58)</p></div><div class="nugget-popup"><p>Intense rainfall exceeded infiltration and/or drainage capacity causing overland flows and surface water flooding of the carriageway; an apparent blocked gully contributed to the flooding. [IMG,PAG] (p59)</p></div></div></body></div>`)[0];
+                popup_5a05c52a9261ee17340386d9ad6de2d4.setContent(html_b8f3987a3344e59cb3760a60ecf6df17);
+            
+        
+
+        marker_9bbaf6b1cec55bcea8f67de26a409f3e.bindPopup(popup_5a05c52a9261ee17340386d9ad6de2d4)
+        ;
+
+        
+    
+    
+            var marker_a6edff8715da167ed5ace3eed184b54e = L.marker(
+                [53.3890954, -2.646721],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_42f69b1caf7ea83857c0f53cce257db4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_a6edff8715da167ed5ace3eed184b54e.setIcon(icon_42f69b1caf7ea83857c0f53cce257db4);
+        
+    
+        var popup_4d9d61a6bf01c35797a01506094be447 = L.popup({});
+
+        
+            
+                var html_cff1e1a3cf6e1c248ab2caaef8adab18 = $(`<div id="html_cff1e1a3cf6e1c248ab2caaef8adab18" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Highfield Avenue, Warrington Unitary Authority</h1><div class="nugget-popup"><p>External flooding occurred from the combined public sewer, affecting external areas on Highfield Avenue. (p60)</p></div><div class="nugget-popup"><p>Affected by flooding attributed to a hydraulic issue on the United Utilities combined sewer serving Highfield Avenue, with a possible influence from a nearby brook; the Flooding Mechanism Conclusion Review attributes the flooding experienced on 21 September 2018 to this combined sewer issue. [PAG] (p61)</p></div></div></body></div>`)[0];
+                popup_4d9d61a6bf01c35797a01506094be447.setContent(html_cff1e1a3cf6e1c248ab2caaef8adab18);
+            
+        
+
+        marker_a6edff8715da167ed5ace3eed184b54e.bindPopup(popup_4d9d61a6bf01c35797a01506094be447)
+        ;
+
+        
+    
+    
+            var marker_7c97fd7dee268c17316d186123ffcdce = L.marker(
+                [53.3868836, -2.5921992],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_d35a91e638b123ce970ca1cd5ba6034f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7c97fd7dee268c17316d186123ffcdce.setIcon(icon_d35a91e638b123ce970ca1cd5ba6034f);
+        
+    
+        var popup_6a79e9106437d975c16966293d406905 = L.popup({});
+
+        
+            
+                var html_3a82d945e5ceed9c325a41a8e57a1d49 = $(`<div id="html_3a82d945e5ceed9c325a41a8e57a1d49" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Bridge Street, Howley</h1><div class="nugget-popup"><p>Internal flooding occurred in the cellar spaces of properties on Bridge Street as a result of an issue on a United Utilities combined sewer. (p62)</p></div><div class="nugget-popup"><p>Intense rainfall exceeded available infiltration and/or drainage capacity, producing overland flows and surface water flooding affecting Bridge Street. [MUL] (p63)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>2 properties (p62)</p></div></div></body></div>`)[0];
+                popup_6a79e9106437d975c16966293d406905.setContent(html_3a82d945e5ceed9c325a41a8e57a1d49);
+            
+        
+
+        marker_7c97fd7dee268c17316d186123ffcdce.bindPopup(popup_6a79e9106437d975c16966293d406905)
+        ;
+
+        
+    
+    
+            var marker_0c6c8b80a03900d18d7276c45256b328 = L.marker(
+                [53.3903101, -2.614777],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_31f2d815930b925582646d0414876988 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0c6c8b80a03900d18d7276c45256b328.setIcon(icon_31f2d815930b925582646d0414876988);
+        
+    
+        var popup_f06097b5d7874275dc80b13548524b4a = L.popup({});
+
+        
+            
+                var html_3210bd45eb7dbd727f334e6f780af096 = $(`<div id="html_3210bd45eb7dbd727f334e6f780af096" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fox Street, Bewsey</h1><div class="nugget-popup"><p>External flooding occurred at Fox Street caused by a partially blocked surface water gully amplified by severe / intense rainfall; highway maintenance records record the defect as 'gully blocked causing flooding' on 05 December 2018 and show the gully was cleaned and the connection jetted on 07 December 2018. [MUL] (p64)</p></div><div class="nugget-popup"><p>Intense rainfall on 21 September 2018 exceeded infiltration and drainage capacity, producing overland flows and surface&ndash;water flooding at Fox Street. Flooding was associated with an apparently partially blocked gully (defect recorded as 'gully blocked causing flooding'). (p65)</p></div></div></body></div>`)[0];
+                popup_f06097b5d7874275dc80b13548524b4a.setContent(html_3210bd45eb7dbd727f334e6f780af096);
+            
+        
+
+        marker_0c6c8b80a03900d18d7276c45256b328.bindPopup(popup_f06097b5d7874275dc80b13548524b4a)
+        ;
+
+        
+    
+    
+            var marker_877ef5afd3b32f6c81b74b08570b3c62 = L.marker(
+                [53.3927164, -2.6595958],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_ed6c31d7eb97830d296c73c2e3c9901a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_877ef5afd3b32f6c81b74b08570b3c62.setIcon(icon_ed6c31d7eb97830d296c73c2e3c9901a);
+        
+    
+        var popup_192eb9da76061a464513881a410a35d4 = L.popup({});
+
+        
+            
+                var html_381e482930bcff80ad4bdd1d19ab715c = $(`<div id="html_381e482930bcff80ad4bdd1d19ab715c" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Duncansby Crescent, Great Sankey</h1><div class="nugget-popup"><p>External and highway flooding occurred at the street; flooding affected the carriageway/external areas and was reported to Warrington Borough Council by United Utilities. (p66)</p></div></div></body></div>`)[0];
+                popup_192eb9da76061a464513881a410a35d4.setContent(html_381e482930bcff80ad4bdd1d19ab715c);
+            
+        
+
+        marker_877ef5afd3b32f6c81b74b08570b3c62.bindPopup(popup_192eb9da76061a464513881a410a35d4)
+        ;
+
+        
+    
+    
+            var marker_06ddaa2272e75a1e381df9e6d4e984fc = L.marker(
+                [53.3899823, -2.6064205],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_f1f65131b81c9cdaaf25281d973d313a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_06ddaa2272e75a1e381df9e6d4e984fc.setIcon(icon_f1f65131b81c9cdaaf25281d973d313a);
+        
+    
+        var popup_8526b67cf981cd762b5a78012d0007a1 = L.popup({});
+
+        
+            
+                var html_617f6a28016cade5fcfe454fc47586c9 = $(`<div id="html_617f6a28016cade5fcfe454fc47586c9" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Milner Street, Bewsey</h1><div class="nugget-popup"><p>Surface water flooding affected a car park on Milner Street; United Utilities reported the cause as possible siltation or a problem with private drains, amplified by severe rainfall. (p68)</p></div><div class="nugget-popup"><p>Intense rainfall on 21 September 2018 exceeded infiltration and drainage capacity, causing overland flows and surface water flooding on Milner Street; private drainage arrangement issues were highlighted. [PAG] (p69)</p></div></div></body></div>`)[0];
+                popup_8526b67cf981cd762b5a78012d0007a1.setContent(html_617f6a28016cade5fcfe454fc47586c9);
+            
+        
+
+        marker_06ddaa2272e75a1e381df9e6d4e984fc.bindPopup(popup_8526b67cf981cd762b5a78012d0007a1)
+        ;
+
+        
+    
+    
+            var marker_151fd67b836aedc6186c559a3741bf9c = L.marker(
+                [53.3942225, -2.6474281],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_11f027daf8cd6f9702c6b56b6dd0af34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_151fd67b836aedc6186c559a3741bf9c.setIcon(icon_11f027daf8cd6f9702c6b56b6dd0af34);
+        
+    
+        var popup_443def3caa4dddaa8708dbc3782e2afb = L.popup({});
+
+        
+            
+                var html_549e4701e4ad30c8048acd8aae070d81 = $(`<div id="html_549e4701e4ad30c8048acd8aae070d81" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Alderbank Road, Great Sankey</h1><div class="nugget-popup"><p>External flooding occurred to a residential property on Alderbank Road. (p70)</p></div><div class="nugget-popup"><p>On 21 September 2018 intense rainfall exceeded infiltration and the local drainage capacity causing overland flows and surface water flooding at Alderbank Road. Private drainage arrangement issues were highlighted as contributing factors. [IMG,PAG] (p71)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property (p70)</p></div></div></body></div>`)[0];
+                popup_443def3caa4dddaa8708dbc3782e2afb.setContent(html_549e4701e4ad30c8048acd8aae070d81);
+            
+        
+
+        marker_151fd67b836aedc6186c559a3741bf9c.bindPopup(popup_443def3caa4dddaa8708dbc3782e2afb)
+        ;
+
+        
+    
+    
+            var marker_ab6d1a3496d5f379a3d95c8156ec85ba = L.marker(
+                [53.86117, -2.5650887],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_b3255f607d89c26a77b6079abd9c275f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ab6d1a3496d5f379a3d95c8156ec85ba.setIcon(icon_b3255f607d89c26a77b6079abd9c275f);
+        
+    
+        var popup_2bc3c103e392c9ed336cdcbf29b1212b = L.popup({});
+
+        
+            
+                var html_5db32a5d3e2e6152e98f66406b13c8be = $(`<div id="html_5db32a5d3e2e6152e98f66406b13c8be" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lancashire</h1><div class="nugget-popup"><p>Lancashire was recorded as having above&ndash;normal rainfall in September 2018, part of the regional antecedent wetness that contributed to the flooding conditions reported in Warrington on 21 September 2018. (p10)</p></div></div></body></div>`)[0];
+                popup_2bc3c103e392c9ed336cdcbf29b1212b.setContent(html_5db32a5d3e2e6152e98f66406b13c8be);
+            
+        
+
+        marker_ab6d1a3496d5f379a3d95c8156ec85ba.bindPopup(popup_2bc3c103e392c9ed336cdcbf29b1212b)
+        ;
+
+        
+    
+    
+            var marker_b1577ac0f794a9a6f9cacfd807795245 = L.marker(
+                [53.2141028, -2.4717701],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_4d59820decf4f6331ebf5a846e7b9b1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_b1577ac0f794a9a6f9cacfd807795245.setIcon(icon_4d59820decf4f6331ebf5a846e7b9b1b);
+        
+    
+        var popup_c13aab3cfbbced95f42e08bd7f223921 = L.popup({});
+
+        
+            
+                var html_d1f55d5d0f876894cc16260e0d0612ff = $(`<div id="html_d1f55d5d0f876894cc16260e0d0612ff" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Cheshire</h1><div class="nugget-popup"><p>Flooding occurred in Warrington (a borough within Cheshire) on 21 September 2018; the Council was notified of these flooding events by United Utilities. (p10)</p></div></div></body></div>`)[0];
+                popup_c13aab3cfbbced95f42e08bd7f223921.setContent(html_d1f55d5d0f876894cc16260e0d0612ff);
+            
+        
+
+        marker_b1577ac0f794a9a6f9cacfd807795245.bindPopup(popup_c13aab3cfbbced95f42e08bd7f223921)
+        ;
+
+        
+    
+    
+            var marker_ead8d323c464e2a9faf4cb8e383219cb = L.marker(
+                [53.406047, -2.5943227],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_a582a074ad85bd6ad2950aa1a5ab86f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ead8d323c464e2a9faf4cb8e383219cb.setIcon(icon_a582a074ad85bd6ad2950aa1a5ab86f3);
+        
+    
+        var popup_05dbc93e8f2ded60f07d6addb319941a = L.popup({});
+
+        
+            
+                var html_b6e82c85f8bde97c0694a4746e720893 = $(`<div id="html_b6e82c85f8bde97c0694a4746e720893" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Longford Bridge</h1><div class="nugget-popup"><p>Gauge recorded an increase in watercourse level (approx. 1 m) during the period 20&ndash;23 September 2018; recorded peak depths were within the typical long&ndash;term range. [IMG] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 m increase in water level [IMG] (p20)</p></div></div></body></div>`)[0];
+                popup_05dbc93e8f2ded60f07d6addb319941a.setContent(html_b6e82c85f8bde97c0694a4746e720893);
+            
+        
+
+        marker_ead8d323c464e2a9faf4cb8e383219cb.bindPopup(popup_05dbc93e8f2ded60f07d6addb319941a)
+        ;
+
+        
+    
+    
+            var marker_7ac5bf40f9c737799cbb7fc7ae379f90 = L.marker(
+                [53.390488, -2.6514907],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_1f5eb5be7c0868484715ef3974d81164 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7ac5bf40f9c737799cbb7fc7ae379f90.setIcon(icon_1f5eb5be7c0868484715ef3974d81164);
+        
+    
+        var popup_0e5cc9fed5a706f7bf1aa2934c0d999b = L.popup({});
+
+        
+            
+                var html_9d46620dc245b9485a3aaeca33db8aca = $(`<div id="html_9d46620dc245b9485a3aaeca33db8aca" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Great Sankey</h1><div class="nugget-popup"><p>Flooding occurred on Liverpool Road within Great Sankey, producing external property flooding and public highway flooding in the settlement. (p34)</p></div></div></body></div>`)[0];
+                popup_0e5cc9fed5a706f7bf1aa2934c0d999b.setContent(html_9d46620dc245b9485a3aaeca33db8aca);
+            
+        
+
+        marker_7ac5bf40f9c737799cbb7fc7ae379f90.bindPopup(popup_0e5cc9fed5a706f7bf1aa2934c0d999b)
+        ;
+
+        
+    
+    
+            var marker_566dd94f62a5b9acd506939a913cce36 = L.marker(
+                [53.34095407202267, -2.7295397340900465],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_70fbf0cbf86d1eafc33df5598483b554 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_566dd94f62a5b9acd506939a913cce36.setIcon(icon_70fbf0cbf86d1eafc33df5598483b554);
+        
+    
+        var popup_6bfc6837e3f7b75ba1ec37e724d22831 = L.popup({});
+
+        
+            
+                var html_a03d6df7cc13da07434bcb40eb826ead = $(`<div id="html_a03d6df7cc13da07434bcb40eb826ead" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Runcorn</h1><div class="nugget-popup"><p>Identified within the Lower River Mersey flood alert area for the heavy rainfall during 20&ndash;23 September 2018 and therefore listed among areas at risk of river/estuary&ndash;related flooding during that period. [TAB] (p25)</p></div></div></body></div>`)[0];
+                popup_6bfc6837e3f7b75ba1ec37e724d22831.setContent(html_a03d6df7cc13da07434bcb40eb826ead);
+            
+        
+
+        marker_566dd94f62a5b9acd506939a913cce36.bindPopup(popup_6bfc6837e3f7b75ba1ec37e724d22831)
+        ;
+
+        
+    
+    
+            var marker_c9ea35431d17f06c2dae849764deedca = L.marker(
+                [53.3811782, -2.4764512],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_bc0de4cbd9cd2c28c48e0cdbb7cbf2e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c9ea35431d17f06c2dae849764deedca.setIcon(icon_bc0de4cbd9cd2c28c48e0cdbb7cbf2e0);
+        
+    
+        var popup_c4334493398b47e2257bee61494266a5 = L.popup({});
+
+        
+            
+                var html_2de9438a09af8bb56c9c8bd265d475cc = $(`<div id="html_2de9438a09af8bb56c9c8bd265d475cc" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Lymm</h1><div class="nugget-popup"><p>Named as within the Lower River Mersey flood alert area and identified as at risk of river flooding during the significant rainfall event around 20&ndash;23 September 2018. [TAB] (p25)</p></div></div></body></div>`)[0];
+                popup_c4334493398b47e2257bee61494266a5.setContent(html_2de9438a09af8bb56c9c8bd265d475cc);
+            
+        
+
+        marker_c9ea35431d17f06c2dae849764deedca.bindPopup(popup_c4334493398b47e2257bee61494266a5)
+        ;
+
+        
+    
+    
+            var marker_22bca6bbe81647a27b96cc6663b0734a = L.marker(
+                [53.3725455, -2.5744227],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_94c1e2a70d3e4494b15e41a2f4b50980 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_22bca6bbe81647a27b96cc6663b0734a.setIcon(icon_94c1e2a70d3e4494b15e41a2f4b50980);
+        
+    
+        var popup_b9d8f821183825281e31d3b9b66cb7f4 = L.popup({});
+
+        
+            
+                var html_6460c1b5cac2ed5ca0d203162954ca5a = $(`<div id="html_6460c1b5cac2ed5ca0d203162954ca5a" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Stockton Heath</h1><div class="nugget-popup"><p>The residential area of Stockton Heath experienced external flooding to properties and flooding of the public highway at the Fairfield Road / Gaskell Street junction. (p41)</p></div><div class="nugget-popup"><p>Surface water flooding occurred at the junction of Fairfield Road and Gaskell Street in Stockton Heath; the area mapped as high risk corresponds with the area observed to be affected during the flood event on 21st September 2018. [IMG] (p43)</p></div></div></body></div>`)[0];
+                popup_b9d8f821183825281e31d3b9b66cb7f4.setContent(html_6460c1b5cac2ed5ca0d203162954ca5a);
+            
+        
+
+        marker_22bca6bbe81647a27b96cc6663b0734a.bindPopup(popup_b9d8f821183825281e31d3b9b66cb7f4)
+        ;
+
+        
+    
+    
+            var marker_47c1c80c88f9ac447eab67a44aca1cbb = L.marker(
+                [53.4127654, -2.5559012],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_3c99cb4603f8234d6fe7da0b314332fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_47c1c80c88f9ac447eab67a44aca1cbb.setIcon(icon_3c99cb4603f8234d6fe7da0b314332fc);
+        
+    
+        var popup_ded1981331817ca675cde1f3684053bb = L.popup({});
+
+        
+            
+                var html_96f5902180181cf822aefde2f0e40298 = $(`<div id="html_96f5902180181cf822aefde2f0e40298" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Fearnhead</h1><div class="nugget-popup"><p>External flooding occurred to numerous properties and to the public highway in the Fearnhead area around Barnes Avenue. [PAG] (p52)</p></div></div></body></div>`)[0];
+                popup_ded1981331817ca675cde1f3684053bb.setContent(html_96f5902180181cf822aefde2f0e40298);
+            
+        
+
+        marker_47c1c80c88f9ac447eab67a44aca1cbb.bindPopup(popup_ded1981331817ca675cde1f3684053bb)
+        ;
+
+        
+    
+    
+            var marker_ab686a5152c7276faa6eab52ac3a4b72 = L.marker(
+                [53.3997123, -2.6542556],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_6bac5aee9b931afe117f7eec238260bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ab686a5152c7276faa6eab52ac3a4b72.setIcon(icon_6bac5aee9b931afe117f7eec238260bc);
+        
+    
+        var popup_be5d0f9b4cd2e685af43a3602e3219ed = L.popup({});
+
+        
+            
+                var html_9ec70d90683aab20c1d190fae1eb8743 = $(`<div id="html_9ec70d90683aab20c1d190fae1eb8743" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Whittle Hall</h1><div class="nugget-popup"><p>Contains Highfield Avenue where external flooding from the combined public sewer occurred. (p60)</p></div><div class="nugget-popup"><p>A residential property within this ward (Alderbank Road) experienced external flooding. (p70)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 residential property (p70)</p></div></div></body></div>`)[0];
+                popup_be5d0f9b4cd2e685af43a3602e3219ed.setContent(html_9ec70d90683aab20c1d190fae1eb8743);
+            
+        
+
+        marker_ab686a5152c7276faa6eab52ac3a4b72.bindPopup(popup_be5d0f9b4cd2e685af43a3602e3219ed)
+        ;
+
+        
+    
+    
+            var marker_96c89374e2d58b6e82e4aaa86e6b93bb = L.marker(
+                [53.3947418, -2.5214552],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_4f686542382fd7e34ad0c47ead15aa05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_96c89374e2d58b6e82e4aaa86e6b93bb.setIcon(icon_4f686542382fd7e34ad0c47ead15aa05);
+        
+    
+        var popup_b04e996105919b3a5497f549013a146f = L.popup({});
+
+        
+            
+                var html_75678683403d020cbcd5f63f72ca2854 = $(`<div id="html_75678683403d020cbcd5f63f72ca2854" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Woolston Weir</h1><div class="nugget-popup"><p>Woolston Weir exhibited sharp, periodic spikes in water depth during 20&ndash;23 September 2018 that reached up to about 4.0 m, reflecting substantial short&ndash;term river level rises associated with the storm period; overall peaks remain reported within the typical depth range for the site. [IMG] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>peak depth up to ~4.0 m; average increase ≈1.0 m [IMG] (p20)</p></div></div></body></div>`)[0];
+                popup_b04e996105919b3a5497f549013a146f.setContent(html_75678683403d020cbcd5f63f72ca2854);
+            
+        
+
+        marker_96c89374e2d58b6e82e4aaa86e6b93bb.bindPopup(popup_b04e996105919b3a5497f549013a146f)
+        ;
+
+        
+    
+    
+            var marker_f5cde2c26bc92b509a045c4b517147c1 = L.marker(
+                [53.3847565, -2.5781241],
+                {}
+            ).addTo(map_b5db9b473ed36e31d4dc13eb9c8bbbfb);
+        
+    
+            var icon_6fd8bd6186a45c1f0dadf1b2af0bff4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-dot", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_f5cde2c26bc92b509a045c4b517147c1.setIcon(icon_6fd8bd6186a45c1f0dadf1b2af0bff4c);
+        
+    
+        var popup_af3fced9d745c3bd44a43f7fc402704a = L.popup({});
+
+        
+            
+                var html_cb84cdb161641752995f1ea130981f56 = $(`<div id="html_cb84cdb161641752995f1ea130981f56" style="width: 100.0%; height: 100.0%;"><head><meta charset="utf-8"><link href="../../../../output/html/style.css" rel="stylesheet"/></head><body class="readout"><div><h1 class='h-popup'>Howley Weir</h1><div class="nugget-popup"><p>Watercourse levels at the weir increased, with river levels about 1 metre higher than normal during the named storm events, indicating elevated river flood levels at this location. [TAB] (p19)</p></div><div class="nugget-popup"><p>Howley Weir downstream experienced pronounced, regular spikes in water depth during 20&ndash;23 September 2018 (storm&ndash;influenced), with peaks reaching approximately 4.0 m; these spikes reflect notable river level rises during the event though peak depths are reported as within the site's typical range. [IMG] (p20)</p></div><i>Quantified impacts</i><div class="nugget-popup quant"><p>1 metre increase in watercourse level [TAB] (p19)</p></div><div class="nugget-popup quant"><p>peak depth up to ~4.0 m; average increase ≈1.0 m [IMG] (p20)</p></div></div></body></div>`)[0];
+                popup_af3fced9d745c3bd44a43f7fc402704a.setContent(html_cb84cdb161641752995f1ea130981f56);
+            
+        
+
+        marker_f5cde2c26bc92b509a045c4b517147c1.bindPopup(popup_af3fced9d745c3bd44a43f7fc402704a)
+        ;
+
+        
+    
+</script>
+</html>
